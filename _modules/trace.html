@@ -1,0 +1,1056 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>trace &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>trace</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for trace</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python</span>
+
+<span class="c1"># portions copyright 2001, Autonomous Zones Industries, Inc., all rights...</span>
+<span class="c1"># err...  reserved and offered to the public under the terms of the</span>
+<span class="c1"># Python 2.2 license.</span>
+<span class="c1"># Author: Zooko O&#39;Whielacronx</span>
+<span class="c1"># http://zooko.com/</span>
+<span class="c1"># mailto:zooko@zooko.com</span>
+<span class="c1">#</span>
+<span class="c1"># Copyright 2000, Mojam Media, Inc., all rights reserved.</span>
+<span class="c1"># Author: Skip Montanaro</span>
+<span class="c1">#</span>
+<span class="c1"># Copyright 1999, Bioreason, Inc., all rights reserved.</span>
+<span class="c1"># Author: Andrew Dalke</span>
+<span class="c1">#</span>
+<span class="c1"># Copyright 1995-1997, Automatrix, Inc., all rights reserved.</span>
+<span class="c1"># Author: Skip Montanaro</span>
+<span class="c1">#</span>
+<span class="c1"># Copyright 1991-1995, Stichting Mathematisch Centrum, all rights reserved.</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># Permission to use, copy, modify, and distribute this Python software and</span>
+<span class="c1"># its associated documentation for any purpose without fee is hereby</span>
+<span class="c1"># granted, provided that the above copyright notice appears in all copies,</span>
+<span class="c1"># and that both that copyright notice and this permission notice appear in</span>
+<span class="c1"># supporting documentation, and that the name of neither Automatrix,</span>
+<span class="c1"># Bioreason or Mojam Media be used in advertising or publicity pertaining to</span>
+<span class="c1"># distribution of the software without specific, written prior permission.</span>
+<span class="c1">#</span>
+<span class="sd">&quot;&quot;&quot;program/module to trace Python program or function execution</span>
+
+<span class="sd">Sample use, command line:</span>
+<span class="sd">  trace.py -c -f counts --ignore-dir &#39;$prefix&#39; spam.py eggs</span>
+<span class="sd">  trace.py -t --ignore-dir &#39;$prefix&#39; spam.py eggs</span>
+<span class="sd">  trace.py --trackcalls spam.py eggs</span>
+
+<span class="sd">Sample use, programmatically</span>
+<span class="sd">  import sys</span>
+
+<span class="sd">  # create a Trace object, telling it what to ignore, and whether to</span>
+<span class="sd">  # do tracing or line-counting or both.</span>
+<span class="sd">  tracer = trace.Trace(ignoredirs=[sys.prefix, sys.exec_prefix,], trace=0,</span>
+<span class="sd">                    count=1)</span>
+<span class="sd">  # run the new command using the given tracer</span>
+<span class="sd">  tracer.run(&#39;main()&#39;)</span>
+<span class="sd">  # make a report, placing output in /tmp</span>
+<span class="sd">  r = tracer.results()</span>
+<span class="sd">  r.write_results(show_missing=True, coverdir=&quot;/tmp&quot;)</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">linecache</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">token</span>
+<span class="kn">import</span> <span class="nn">tokenize</span>
+<span class="kn">import</span> <span class="nn">inspect</span>
+<span class="kn">import</span> <span class="nn">gc</span>
+<span class="kn">import</span> <span class="nn">dis</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">cPickle</span>
+    <span class="n">pickle</span> <span class="o">=</span> <span class="n">cPickle</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">pickle</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">threading</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="n">_settrace</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">settrace</span>
+
+    <span class="k">def</span> <span class="nf">_unsettrace</span><span class="p">():</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">settrace</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">_settrace</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+        <span class="n">threading</span><span class="o">.</span><span class="n">settrace</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">settrace</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_unsettrace</span><span class="p">():</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">settrace</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+        <span class="n">threading</span><span class="o">.</span><span class="n">settrace</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+
+<div class="viewcode-block" id="usage"><a class="viewcode-back" href="../misc/generated/trace.usage.html#trace.usage">[docs]</a><span class="k">def</span> <span class="nf">usage</span><span class="p">(</span><span class="n">outfile</span><span class="p">):</span>
+    <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Usage: </span><span class="si">%s</span><span class="s2"> [OPTIONS] &lt;file&gt; [ARGS]</span>
+
+<span class="s2">Meta-options:</span>
+<span class="s2">--help                Display this help then exit.</span>
+<span class="s2">--version             Output version information then exit.</span>
+
+<span class="s2">Otherwise, exactly one of the following three options must be given:</span>
+<span class="s2">-t, --trace           Print each line to sys.stdout before it is executed.</span>
+<span class="s2">-c, --count           Count the number of times each line is executed</span>
+<span class="s2">                      and write the counts to &lt;module&gt;.cover for each</span>
+<span class="s2">                      module executed, in the module&#39;s directory.</span>
+<span class="s2">                      See also `--coverdir&#39;, `--file&#39;, `--no-report&#39; below.</span>
+<span class="s2">-l, --listfuncs       Keep track of which functions are executed at least</span>
+<span class="s2">                      once and write the results to sys.stdout after the</span>
+<span class="s2">                      program exits.</span>
+<span class="s2">-T, --trackcalls      Keep track of caller/called pairs and write the</span>
+<span class="s2">                      results to sys.stdout after the program exits.</span>
+<span class="s2">-r, --report          Generate a report from a counts file; do not execute</span>
+<span class="s2">                      any code.  `--file&#39; must specify the results file to</span>
+<span class="s2">                      read, which must have been created in a previous run</span>
+<span class="s2">                      with `--count --file=FILE&#39;.</span>
+
+<span class="s2">Modifiers:</span>
+<span class="s2">-f, --file=&lt;file&gt;     File to accumulate counts over several runs.</span>
+<span class="s2">-R, --no-report       Do not generate the coverage report files.</span>
+<span class="s2">                      Useful if you want to accumulate over several runs.</span>
+<span class="s2">-C, --coverdir=&lt;dir&gt;  Directory where the report files.  The coverage</span>
+<span class="s2">                      report for &lt;package&gt;.&lt;module&gt; is written to file</span>
+<span class="s2">                      &lt;dir&gt;/&lt;package&gt;/&lt;module&gt;.cover.</span>
+<span class="s2">-m, --missing         Annotate executable lines that were not executed</span>
+<span class="s2">                      with &#39;&gt;&gt;&gt;&gt;&gt;&gt; &#39;.</span>
+<span class="s2">-s, --summary         Write a brief summary on stdout for each file.</span>
+<span class="s2">                      (Can only be used with --count or --report.)</span>
+<span class="s2">-g, --timing          Prefix each line with the time since the program started.</span>
+<span class="s2">                      Only used while tracing.</span>
+
+<span class="s2">Filters, may be repeated multiple times:</span>
+<span class="s2">--ignore-module=&lt;mod&gt; Ignore the given module(s) and its submodules</span>
+<span class="s2">                      (if it is a package).  Accepts comma separated</span>
+<span class="s2">                      list of module names</span>
+<span class="s2">--ignore-dir=&lt;dir&gt;    Ignore files in the given directory (multiple</span>
+<span class="s2">                      directories can be joined by os.pathsep).</span>
+<span class="s2">&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span></div>
+
+<span class="n">PRAGMA_NOCOVER</span> <span class="o">=</span> <span class="s2">&quot;#pragma NO COVER&quot;</span>
+
+<span class="c1"># Simple rx to find lines with no code.</span>
+<span class="n">rx_blank</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">r&#39;^\s*(#.*)?$&#39;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Ignore"><a class="viewcode-back" href="../misc/generated/generated/trace.Ignore.html#trace.Ignore">[docs]</a><span class="k">class</span> <span class="nc">Ignore</span><span class="p">:</span>
+<div class="viewcode-block" id="Ignore.__init__"><a class="viewcode-back" href="../misc/generated/generated/trace.Ignore.__init__.html#trace.Ignore.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">modules</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">dirs</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mods</span> <span class="o">=</span> <span class="n">modules</span> <span class="ow">or</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dirs</span> <span class="o">=</span> <span class="n">dirs</span> <span class="ow">or</span> <span class="p">[]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dirs</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dirs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ignore</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;&lt;string&gt;&#39;</span><span class="p">:</span> <span class="mi">1</span> <span class="p">}</span></div>
+
+<div class="viewcode-block" id="Ignore.names"><a class="viewcode-back" href="../misc/generated/generated/trace.Ignore.names.html#trace.Ignore.names">[docs]</a>    <span class="k">def</span> <span class="nf">names</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">modulename</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">modulename</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ignore</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ignore</span><span class="p">[</span><span class="n">modulename</span><span class="p">]</span>
+
+        <span class="c1"># haven&#39;t seen this one before, so see if the module name is</span>
+        <span class="c1"># on the ignore list.  Need to take some care since ignoring</span>
+        <span class="c1"># &quot;cmp&quot; musn&#39;t mean ignoring &quot;cmpcache&quot; but ignoring</span>
+        <span class="c1"># &quot;Spam&quot; must also mean ignoring &quot;Spam.Eggs&quot;.</span>
+        <span class="k">for</span> <span class="n">mod</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mods</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">mod</span> <span class="o">==</span> <span class="n">modulename</span><span class="p">:</span>  <span class="c1"># Identical names, so ignore</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_ignore</span><span class="p">[</span><span class="n">modulename</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="k">return</span> <span class="mi">1</span>
+            <span class="c1"># check if the module is a proper submodule of something on</span>
+            <span class="c1"># the ignore list</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
+            <span class="c1"># (will not overflow since if the first n characters are the</span>
+            <span class="c1"># same and the name has not already occurred, then the size</span>
+            <span class="c1"># of &quot;name&quot; is greater than that of &quot;mod&quot;)</span>
+            <span class="k">if</span> <span class="n">mod</span> <span class="o">==</span> <span class="n">modulename</span><span class="p">[:</span><span class="n">n</span><span class="p">]</span> <span class="ow">and</span> <span class="n">modulename</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;.&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_ignore</span><span class="p">[</span><span class="n">modulename</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="k">return</span> <span class="mi">1</span>
+
+        <span class="c1"># Now check that __file__ isn&#39;t in one of the directories</span>
+        <span class="k">if</span> <span class="n">filename</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># must be a built-in, so we must ignore</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_ignore</span><span class="p">[</span><span class="n">modulename</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">return</span> <span class="mi">1</span>
+
+        <span class="c1"># Ignore a file when it contains one of the ignorable paths</span>
+        <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dirs</span><span class="p">:</span>
+            <span class="c1"># The &#39;+ os.sep&#39; is to ensure that d is a parent directory,</span>
+            <span class="c1"># as compared to cases like:</span>
+            <span class="c1">#  d = &quot;/usr/local&quot;</span>
+            <span class="c1">#  filename = &quot;/usr/local.py&quot;</span>
+            <span class="c1"># or</span>
+            <span class="c1">#  d = &quot;/usr/local.py&quot;</span>
+            <span class="c1">#  filename = &quot;/usr/local.py&quot;</span>
+            <span class="k">if</span> <span class="n">filename</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">d</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">sep</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_ignore</span><span class="p">[</span><span class="n">modulename</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="k">return</span> <span class="mi">1</span>
+
+        <span class="c1"># Tried the different ways, so we don&#39;t ignore this module</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ignore</span><span class="p">[</span><span class="n">modulename</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="mi">0</span></div></div>
+
+<div class="viewcode-block" id="modname"><a class="viewcode-back" href="../misc/generated/trace.modname.html#trace.modname">[docs]</a><span class="k">def</span> <span class="nf">modname</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return a plausible module name for the patch.&quot;&quot;&quot;</span>
+
+    <span class="n">base</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="n">filename</span><span class="p">,</span> <span class="n">ext</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">base</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">filename</span></div>
+
+<div class="viewcode-block" id="fullmodname"><a class="viewcode-back" href="../misc/generated/trace.fullmodname.html#trace.fullmodname">[docs]</a><span class="k">def</span> <span class="nf">fullmodname</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return a plausible module name for the path.&quot;&quot;&quot;</span>
+
+    <span class="c1"># If the file &#39;path&#39; is part of a package, then the filename isn&#39;t</span>
+    <span class="c1"># enough to uniquely identify it.  Try to do the right thing by</span>
+    <span class="c1"># looking in sys.path for the longest matching prefix.  We&#39;ll</span>
+    <span class="c1"># assume that the rest is the package name.</span>
+
+    <span class="n">comparepath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normcase</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="n">longest</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">for</span> <span class="nb">dir</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+        <span class="nb">dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normcase</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">comparepath</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span> <span class="ow">and</span> <span class="n">comparepath</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="nb">dir</span><span class="p">)]</span> <span class="o">==</span> <span class="n">os</span><span class="o">.</span><span class="n">sep</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">longest</span><span class="p">):</span>
+                <span class="n">longest</span> <span class="o">=</span> <span class="nb">dir</span>
+
+    <span class="k">if</span> <span class="n">longest</span><span class="p">:</span>
+        <span class="n">base</span> <span class="o">=</span> <span class="n">path</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">longest</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">base</span> <span class="o">=</span> <span class="n">path</span>
+    <span class="c1"># the drive letter is never part of the module name</span>
+    <span class="n">drive</span><span class="p">,</span> <span class="n">base</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitdrive</span><span class="p">(</span><span class="n">base</span><span class="p">)</span>
+    <span class="n">base</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">sep</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">altsep</span><span class="p">:</span>
+        <span class="n">base</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">altsep</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+    <span class="n">filename</span><span class="p">,</span> <span class="n">ext</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">base</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">filename</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CoverageResults"><a class="viewcode-back" href="../misc/generated/generated/trace.CoverageResults.html#trace.CoverageResults">[docs]</a><span class="k">class</span> <span class="nc">CoverageResults</span><span class="p">:</span>
+<div class="viewcode-block" id="CoverageResults.__init__"><a class="viewcode-back" href="../misc/generated/generated/trace.CoverageResults.__init__.html#trace.CoverageResults.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">counts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">calledfuncs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">infile</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">callers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">outfile</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">counts</span> <span class="o">=</span> <span class="n">counts</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">counts</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">counter</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">counts</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="c1"># map (filename, lineno) to count</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">calledfuncs</span> <span class="o">=</span> <span class="n">calledfuncs</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">calledfuncs</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">calledfuncs</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">calledfuncs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">calledfuncs</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">callers</span> <span class="o">=</span> <span class="n">callers</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">callers</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">callers</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">callers</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">callers</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">infile</span> <span class="o">=</span> <span class="n">infile</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">outfile</span> <span class="o">=</span> <span class="n">outfile</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">infile</span><span class="p">:</span>
+            <span class="c1"># Try to merge existing counts file.</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">counts</span><span class="p">,</span> <span class="n">calledfuncs</span><span class="p">,</span> <span class="n">callers</span> <span class="o">=</span> \
+                        <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">infile</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">))</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span> <span class="n">calledfuncs</span><span class="p">,</span> <span class="n">callers</span><span class="p">))</span>
+            <span class="k">except</span> <span class="p">(</span><span class="ne">IOError</span><span class="p">,</span> <span class="ne">EOFError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">),</span> <span class="n">err</span><span class="p">:</span>
+                <span class="nb">print</span> <span class="o">&gt;&gt;</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Skipping counts file </span><span class="si">%r</span><span class="s2">: </span><span class="si">%s</span><span class="s2">&quot;</span>
+                                      <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">infile</span><span class="p">,</span> <span class="n">err</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="CoverageResults.update"><a class="viewcode-back" href="../misc/generated/generated/trace.CoverageResults.update.html#trace.CoverageResults.update">[docs]</a>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Merge in the data from another CoverageResults&quot;&quot;&quot;</span>
+        <span class="n">counts</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">counts</span>
+        <span class="n">calledfuncs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">calledfuncs</span>
+        <span class="n">callers</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">callers</span>
+        <span class="n">other_counts</span> <span class="o">=</span> <span class="n">other</span><span class="o">.</span><span class="n">counts</span>
+        <span class="n">other_calledfuncs</span> <span class="o">=</span> <span class="n">other</span><span class="o">.</span><span class="n">calledfuncs</span>
+        <span class="n">other_callers</span> <span class="o">=</span> <span class="n">other</span><span class="o">.</span><span class="n">callers</span>
+
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">other_counts</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">counts</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">other_counts</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">other_calledfuncs</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">calledfuncs</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">other_callers</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">callers</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span></div>
+
+<div class="viewcode-block" id="CoverageResults.write_results"><a class="viewcode-back" href="../misc/generated/generated/trace.CoverageResults.write_results.html#trace.CoverageResults.write_results">[docs]</a>    <span class="k">def</span> <span class="nf">write_results</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">show_missing</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">summary</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">coverdir</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        @param coverdir</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">calledfuncs</span><span class="p">:</span>
+            <span class="nb">print</span>
+            <span class="nb">print</span> <span class="s2">&quot;functions called:&quot;</span>
+            <span class="n">calls</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">calledfuncs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+            <span class="n">calls</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">filename</span><span class="p">,</span> <span class="n">modulename</span><span class="p">,</span> <span class="n">funcname</span> <span class="ow">in</span> <span class="n">calls</span><span class="p">:</span>
+                <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;filename: </span><span class="si">%s</span><span class="s2">, modulename: </span><span class="si">%s</span><span class="s2">, funcname: </span><span class="si">%s</span><span class="s2">&quot;</span>
+                       <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">modulename</span><span class="p">,</span> <span class="n">funcname</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">callers</span><span class="p">:</span>
+            <span class="nb">print</span>
+            <span class="nb">print</span> <span class="s2">&quot;calling relationships:&quot;</span>
+            <span class="n">calls</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">callers</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+            <span class="n">calls</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+            <span class="n">lastfile</span> <span class="o">=</span> <span class="n">lastcfile</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+            <span class="k">for</span> <span class="p">((</span><span class="n">pfile</span><span class="p">,</span> <span class="n">pmod</span><span class="p">,</span> <span class="n">pfunc</span><span class="p">),</span> <span class="p">(</span><span class="n">cfile</span><span class="p">,</span> <span class="n">cmod</span><span class="p">,</span> <span class="n">cfunc</span><span class="p">))</span> <span class="ow">in</span> <span class="n">calls</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">pfile</span> <span class="o">!=</span> <span class="n">lastfile</span><span class="p">:</span>
+                    <span class="nb">print</span>
+                    <span class="nb">print</span> <span class="s2">&quot;***&quot;</span><span class="p">,</span> <span class="n">pfile</span><span class="p">,</span> <span class="s2">&quot;***&quot;</span>
+                    <span class="n">lastfile</span> <span class="o">=</span> <span class="n">pfile</span>
+                    <span class="n">lastcfile</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                <span class="k">if</span> <span class="n">cfile</span> <span class="o">!=</span> <span class="n">pfile</span> <span class="ow">and</span> <span class="n">lastcfile</span> <span class="o">!=</span> <span class="n">cfile</span><span class="p">:</span>
+                    <span class="nb">print</span> <span class="s2">&quot;  --&gt;&quot;</span><span class="p">,</span> <span class="n">cfile</span>
+                    <span class="n">lastcfile</span> <span class="o">=</span> <span class="n">cfile</span>
+                <span class="nb">print</span> <span class="s2">&quot;    </span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2"> -&gt; </span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">pmod</span><span class="p">,</span> <span class="n">pfunc</span><span class="p">,</span> <span class="n">cmod</span><span class="p">,</span> <span class="n">cfunc</span><span class="p">)</span>
+
+        <span class="c1"># turn the counts data (&quot;(filename, lineno) = count&quot;) into something</span>
+        <span class="c1"># accessible on a per-file basis</span>
+        <span class="n">per_file</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">counts</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">lines_hit</span> <span class="o">=</span> <span class="n">per_file</span><span class="p">[</span><span class="n">filename</span><span class="p">]</span> <span class="o">=</span> <span class="n">per_file</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="p">{})</span>
+            <span class="n">lines_hit</span><span class="p">[</span><span class="n">lineno</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">counts</span><span class="p">[(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">)]</span>
+
+        <span class="c1"># accumulate summary info, if needed</span>
+        <span class="n">sums</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">filename</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">per_file</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+            <span class="c1"># skip some &quot;files&quot; we don&#39;t care about...</span>
+            <span class="k">if</span> <span class="n">filename</span> <span class="o">==</span> <span class="s2">&quot;&lt;string&gt;&quot;</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">filename</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;&lt;doctest &quot;</span><span class="p">):</span>
+                <span class="k">continue</span>
+
+            <span class="k">if</span> <span class="n">filename</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s2">&quot;.pyc&quot;</span><span class="p">,</span> <span class="s2">&quot;.pyo&quot;</span><span class="p">)):</span>
+                <span class="n">filename</span> <span class="o">=</span> <span class="n">filename</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+            <span class="k">if</span> <span class="n">coverdir</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="nb">dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">filename</span><span class="p">))</span>
+                <span class="n">modulename</span> <span class="o">=</span> <span class="n">modname</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">dir</span> <span class="o">=</span> <span class="n">coverdir</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="nb">dir</span><span class="p">):</span>
+                    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span>
+                <span class="n">modulename</span> <span class="o">=</span> <span class="n">fullmodname</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+
+            <span class="c1"># If desired, get a list of the line numbers which represent</span>
+            <span class="c1"># executable content (returned as a dict for better lookup speed)</span>
+            <span class="k">if</span> <span class="n">show_missing</span><span class="p">:</span>
+                <span class="n">lnotab</span> <span class="o">=</span> <span class="n">find_executable_linenos</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">lnotab</span> <span class="o">=</span> <span class="p">{}</span>
+
+            <span class="n">source</span> <span class="o">=</span> <span class="n">linecache</span><span class="o">.</span><span class="n">getlines</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+            <span class="n">coverpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">modulename</span> <span class="o">+</span> <span class="s2">&quot;.cover&quot;</span><span class="p">)</span>
+            <span class="n">n_hits</span><span class="p">,</span> <span class="n">n_lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">write_results_file</span><span class="p">(</span><span class="n">coverpath</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span>
+                                                      <span class="n">lnotab</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">summary</span> <span class="ow">and</span> <span class="n">n_lines</span><span class="p">:</span>
+                <span class="n">percent</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">n_hits</span> <span class="o">//</span> <span class="n">n_lines</span>
+                <span class="n">sums</span><span class="p">[</span><span class="n">modulename</span><span class="p">]</span> <span class="o">=</span> <span class="n">n_lines</span><span class="p">,</span> <span class="n">percent</span><span class="p">,</span> <span class="n">modulename</span><span class="p">,</span> <span class="n">filename</span>
+
+        <span class="k">if</span> <span class="n">summary</span> <span class="ow">and</span> <span class="n">sums</span><span class="p">:</span>
+            <span class="n">mods</span> <span class="o">=</span> <span class="n">sums</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+            <span class="n">mods</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+            <span class="nb">print</span> <span class="s2">&quot;lines   cov%   module   (path)&quot;</span>
+            <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">mods</span><span class="p">:</span>
+                <span class="n">n_lines</span><span class="p">,</span> <span class="n">percent</span><span class="p">,</span> <span class="n">modulename</span><span class="p">,</span> <span class="n">filename</span> <span class="o">=</span> <span class="n">sums</span><span class="p">[</span><span class="n">m</span><span class="p">]</span>
+                <span class="nb">print</span> <span class="s2">&quot;</span><span class="si">%5d</span><span class="s2">   </span><span class="si">%3d%%</span><span class="s2">   </span><span class="si">%s</span><span class="s2">   (</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">sums</span><span class="p">[</span><span class="n">m</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">outfile</span><span class="p">:</span>
+            <span class="c1"># try and store counts and module info into self.outfile</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">counts</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">calledfuncs</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">callers</span><span class="p">),</span>
+                            <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">outfile</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">IOError</span><span class="p">,</span> <span class="n">err</span><span class="p">:</span>
+                <span class="nb">print</span> <span class="o">&gt;&gt;</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="s2">&quot;Can&#39;t save counts files because </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">err</span></div>
+
+<div class="viewcode-block" id="CoverageResults.write_results_file"><a class="viewcode-back" href="../misc/generated/generated/trace.CoverageResults.write_results_file.html#trace.CoverageResults.write_results_file">[docs]</a>    <span class="k">def</span> <span class="nf">write_results_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">lines</span><span class="p">,</span> <span class="n">lnotab</span><span class="p">,</span> <span class="n">lines_hit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a coverage results file in path.&quot;&quot;&quot;</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">outfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">IOError</span><span class="p">,</span> <span class="n">err</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="o">&gt;&gt;</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;trace: Could not open </span><span class="si">%r</span><span class="s2"> for writing: </span><span class="si">%s</span><span class="s2">&quot;</span>
+                                  <span class="s2">&quot;- skipping&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">err</span><span class="p">))</span>
+            <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+
+        <span class="n">n_lines</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">n_hits</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
+            <span class="n">lineno</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="c1"># do the blank/comment match to try to mark more lines</span>
+            <span class="c1"># (help the reader find stuff that hasn&#39;t been covered)</span>
+            <span class="k">if</span> <span class="n">lineno</span> <span class="ow">in</span> <span class="n">lines_hit</span><span class="p">:</span>
+                <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%5d</span><span class="s2">: &quot;</span> <span class="o">%</span> <span class="n">lines_hit</span><span class="p">[</span><span class="n">lineno</span><span class="p">])</span>
+                <span class="n">n_hits</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="n">n_lines</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">elif</span> <span class="n">rx_blank</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+                <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;       &quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># lines preceded by no marks weren&#39;t hit</span>
+                <span class="c1"># Highlight them if so indicated, unless the line contains</span>
+                <span class="c1"># #pragma: NO COVER</span>
+                <span class="k">if</span> <span class="n">lineno</span> <span class="ow">in</span> <span class="n">lnotab</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">PRAGMA_NOCOVER</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&gt;&gt;&gt;&gt;&gt;&gt; &quot;</span><span class="p">)</span>
+                    <span class="n">n_lines</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;       &quot;</span><span class="p">)</span>
+            <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">expandtabs</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+        <span class="n">outfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">n_hits</span><span class="p">,</span> <span class="n">n_lines</span></div></div>
+
+<div class="viewcode-block" id="find_lines_from_code"><a class="viewcode-back" href="../misc/generated/trace.find_lines_from_code.html#trace.find_lines_from_code">[docs]</a><span class="k">def</span> <span class="nf">find_lines_from_code</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">strs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return dict where keys are lines in the line number table.&quot;&quot;&quot;</span>
+    <span class="n">linenos</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">lineno</span> <span class="ow">in</span> <span class="n">dis</span><span class="o">.</span><span class="n">findlinestarts</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">lineno</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">strs</span><span class="p">:</span>
+            <span class="n">linenos</span><span class="p">[</span><span class="n">lineno</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">linenos</span></div>
+
+<div class="viewcode-block" id="find_lines"><a class="viewcode-back" href="../misc/generated/trace.find_lines.html#trace.find_lines">[docs]</a><span class="k">def</span> <span class="nf">find_lines</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">strs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return lineno dict for all code objects reachable from code.&quot;&quot;&quot;</span>
+    <span class="c1"># get all of the lineno information from the code of this scope level</span>
+    <span class="n">linenos</span> <span class="o">=</span> <span class="n">find_lines_from_code</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">strs</span><span class="p">)</span>
+
+    <span class="c1"># and check the constants for references to other code objects</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">code</span><span class="o">.</span><span class="n">co_consts</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">inspect</span><span class="o">.</span><span class="n">iscode</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
+            <span class="c1"># find another code object, so recurse into it</span>
+            <span class="n">linenos</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">find_lines</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">strs</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">linenos</span></div>
+
+<div class="viewcode-block" id="find_strings"><a class="viewcode-back" href="../misc/generated/trace.find_strings.html#trace.find_strings">[docs]</a><span class="k">def</span> <span class="nf">find_strings</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return a dict of possible docstring positions.</span>
+
+<span class="sd">    The dict maps line numbers to strings.  There is an entry for</span>
+<span class="sd">    line that contains only a string or a part of a triple-quoted</span>
+<span class="sd">    string.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="c1"># If the first token is a string, then it&#39;s the module docstring.</span>
+    <span class="c1"># Add this special case so that the test in the loop passes.</span>
+    <span class="n">prev_ttype</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">INDENT</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">ttype</span><span class="p">,</span> <span class="n">tstr</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">tokenize</span><span class="o">.</span><span class="n">generate_tokens</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">ttype</span> <span class="o">==</span> <span class="n">token</span><span class="o">.</span><span class="n">STRING</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">prev_ttype</span> <span class="o">==</span> <span class="n">token</span><span class="o">.</span><span class="n">INDENT</span><span class="p">:</span>
+                <span class="n">sline</span><span class="p">,</span> <span class="n">scol</span> <span class="o">=</span> <span class="n">start</span>
+                <span class="n">eline</span><span class="p">,</span> <span class="n">ecol</span> <span class="o">=</span> <span class="n">end</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">sline</span><span class="p">,</span> <span class="n">eline</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+                    <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">prev_ttype</span> <span class="o">=</span> <span class="n">ttype</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">d</span></div>
+
+<div class="viewcode-block" id="find_executable_linenos"><a class="viewcode-back" href="../misc/generated/trace.find_executable_linenos.html#trace.find_executable_linenos">[docs]</a><span class="k">def</span> <span class="nf">find_executable_linenos</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return dict where keys are line numbers in the line number table.&quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">prog</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;rU&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="k">except</span> <span class="ne">IOError</span><span class="p">,</span> <span class="n">err</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="o">&gt;&gt;</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Not printing coverage data for </span><span class="si">%r</span><span class="s2">: </span><span class="si">%s</span><span class="s2">&quot;</span>
+                              <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">err</span><span class="p">))</span>
+        <span class="k">return</span> <span class="p">{}</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="nb">compile</span><span class="p">(</span><span class="n">prog</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;exec&quot;</span><span class="p">)</span>
+    <span class="n">strs</span> <span class="o">=</span> <span class="n">find_strings</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">find_lines</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">strs</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Trace"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.html#trace.Trace">[docs]</a><span class="k">class</span> <span class="nc">Trace</span><span class="p">:</span>
+<div class="viewcode-block" id="Trace.__init__"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.__init__.html#trace.Trace.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">trace</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">countfuncs</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">countcallers</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                 <span class="n">ignoremods</span><span class="o">=</span><span class="p">(),</span> <span class="n">ignoredirs</span><span class="o">=</span><span class="p">(),</span> <span class="n">infile</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">outfile</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">timing</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        @param count true iff it should count number of times each</span>
+<span class="sd">                     line is executed</span>
+<span class="sd">        @param trace true iff it should print out each line that is</span>
+<span class="sd">                     being counted</span>
+<span class="sd">        @param countfuncs true iff it should just output a list of</span>
+<span class="sd">                     (filename, modulename, funcname,) for functions</span>
+<span class="sd">                     that were called at least once;  This overrides</span>
+<span class="sd">                     `count&#39; and `trace&#39;</span>
+<span class="sd">        @param ignoremods a list of the names of modules to ignore</span>
+<span class="sd">        @param ignoredirs a list of the names of directories to ignore</span>
+<span class="sd">                     all of the (recursive) contents of</span>
+<span class="sd">        @param infile file from which to read stored counts to be</span>
+<span class="sd">                     added into the results</span>
+<span class="sd">        @param outfile file in which to write the results</span>
+<span class="sd">        @param timing true iff timing information be displayed</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">infile</span> <span class="o">=</span> <span class="n">infile</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">outfile</span> <span class="o">=</span> <span class="n">outfile</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ignore</span> <span class="o">=</span> <span class="n">Ignore</span><span class="p">(</span><span class="n">ignoremods</span><span class="p">,</span> <span class="n">ignoredirs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>   <span class="c1"># keys are (filename, linenumber)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">blabbed</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># for debugging</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pathtobasename</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># for memoizing os.path.basename</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">donothing</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trace</span> <span class="o">=</span> <span class="n">trace</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_calledfuncs</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_callers</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_caller_cache</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">start_time</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">timing</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">countcallers</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">globaltrace</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">globaltrace_trackcallers</span>
+        <span class="k">elif</span> <span class="n">countfuncs</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">globaltrace</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">globaltrace_countfuncs</span>
+        <span class="k">elif</span> <span class="n">trace</span> <span class="ow">and</span> <span class="n">count</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">globaltrace</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">globaltrace_lt</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">localtrace</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">localtrace_trace_and_count</span>
+        <span class="k">elif</span> <span class="n">trace</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">globaltrace</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">globaltrace_lt</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">localtrace</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">localtrace_trace</span>
+        <span class="k">elif</span> <span class="n">count</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">globaltrace</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">globaltrace_lt</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">localtrace</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">localtrace_count</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Ahem -- do nothing?  Okay.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">donothing</span> <span class="o">=</span> <span class="mi">1</span></div>
+
+<div class="viewcode-block" id="Trace.run"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.run.html#trace.Trace.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmd</span><span class="p">):</span>
+        <span class="kn">import</span> <span class="nn">__main__</span>
+        <span class="nb">dict</span> <span class="o">=</span> <span class="n">__main__</span><span class="o">.</span><span class="n">__dict__</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">runctx</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Trace.runctx"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.runctx.html#trace.Trace.runctx">[docs]</a>    <span class="k">def</span> <span class="nf">runctx</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmd</span><span class="p">,</span> <span class="nb">globals</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">locals</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">globals</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="nb">globals</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="nb">locals</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="nb">locals</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">donothing</span><span class="p">:</span>
+            <span class="n">_settrace</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">globaltrace</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">exec</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="nb">globals</span><span class="p">,</span> <span class="nb">locals</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">donothing</span><span class="p">:</span>
+                <span class="n">_unsettrace</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Trace.runfunc"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.runfunc.html#trace.Trace.runfunc">[docs]</a>    <span class="k">def</span> <span class="nf">runfunc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">donothing</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">settrace</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">globaltrace</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">donothing</span><span class="p">:</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">settrace</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="Trace.file_module_function_of"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.file_module_function_of.html#trace.Trace.file_module_function_of">[docs]</a>    <span class="k">def</span> <span class="nf">file_module_function_of</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frame</span><span class="p">):</span>
+        <span class="n">code</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_code</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">code</span><span class="o">.</span><span class="n">co_filename</span>
+        <span class="k">if</span> <span class="n">filename</span><span class="p">:</span>
+            <span class="n">modulename</span> <span class="o">=</span> <span class="n">modname</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">modulename</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="n">funcname</span> <span class="o">=</span> <span class="n">code</span><span class="o">.</span><span class="n">co_name</span>
+        <span class="n">clsname</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">code</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_caller_cache</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_caller_cache</span><span class="p">[</span><span class="n">code</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">clsname</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_caller_cache</span><span class="p">[</span><span class="n">code</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_caller_cache</span><span class="p">[</span><span class="n">code</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="c1">## use of gc.get_referrers() was suggested by Michael Hudson</span>
+            <span class="c1"># all functions which refer to this code object</span>
+            <span class="n">funcs</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">gc</span><span class="o">.</span><span class="n">get_referrers</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
+                         <span class="k">if</span> <span class="n">inspect</span><span class="o">.</span><span class="n">isfunction</span><span class="p">(</span><span class="n">f</span><span class="p">)]</span>
+            <span class="c1"># require len(func) == 1 to avoid ambiguity caused by calls to</span>
+            <span class="c1"># new.function(): &quot;In the face of ambiguity, refuse the</span>
+            <span class="c1"># temptation to guess.&quot;</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">funcs</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">dicts</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">gc</span><span class="o">.</span><span class="n">get_referrers</span><span class="p">(</span><span class="n">funcs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                             <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)]</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">dicts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">classes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">gc</span><span class="o">.</span><span class="n">get_referrers</span><span class="p">(</span><span class="n">dicts</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                                   <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="s2">&quot;__bases__&quot;</span><span class="p">)]</span>
+                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">classes</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                        <span class="c1"># ditto for new.classobj()</span>
+                        <span class="n">clsname</span> <span class="o">=</span> <span class="n">classes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">__name__</span>
+                        <span class="c1"># cache the result - assumption is that new.* is</span>
+                        <span class="c1"># not called later to disturb this relationship</span>
+                        <span class="c1"># _caller_cache could be flushed if functions in</span>
+                        <span class="c1"># the new module get called.</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_caller_cache</span><span class="p">[</span><span class="n">code</span><span class="p">]</span> <span class="o">=</span> <span class="n">clsname</span>
+        <span class="k">if</span> <span class="n">clsname</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">funcname</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">clsname</span><span class="p">,</span> <span class="n">funcname</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">filename</span><span class="p">,</span> <span class="n">modulename</span><span class="p">,</span> <span class="n">funcname</span></div>
+
+<div class="viewcode-block" id="Trace.globaltrace_trackcallers"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.globaltrace_trackcallers.html#trace.Trace.globaltrace_trackcallers">[docs]</a>    <span class="k">def</span> <span class="nf">globaltrace_trackcallers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frame</span><span class="p">,</span> <span class="n">why</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Handler for call events.</span>
+
+<span class="sd">        Adds information about who called who to the self._callers dict.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">why</span> <span class="o">==</span> <span class="s1">&#39;call&#39;</span><span class="p">:</span>
+            <span class="c1"># XXX Should do a better job of identifying methods</span>
+            <span class="n">this_func</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_module_function_of</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+            <span class="n">parent_func</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_module_function_of</span><span class="p">(</span><span class="n">frame</span><span class="o">.</span><span class="n">f_back</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_callers</span><span class="p">[(</span><span class="n">parent_func</span><span class="p">,</span> <span class="n">this_func</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">1</span></div>
+
+<div class="viewcode-block" id="Trace.globaltrace_countfuncs"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.globaltrace_countfuncs.html#trace.Trace.globaltrace_countfuncs">[docs]</a>    <span class="k">def</span> <span class="nf">globaltrace_countfuncs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frame</span><span class="p">,</span> <span class="n">why</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Handler for call events.</span>
+
+<span class="sd">        Adds (filename, modulename, funcname) to the self._calledfuncs dict.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">why</span> <span class="o">==</span> <span class="s1">&#39;call&#39;</span><span class="p">:</span>
+            <span class="n">this_func</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_module_function_of</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_calledfuncs</span><span class="p">[</span><span class="n">this_func</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span></div>
+
+<div class="viewcode-block" id="Trace.globaltrace_lt"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.globaltrace_lt.html#trace.Trace.globaltrace_lt">[docs]</a>    <span class="k">def</span> <span class="nf">globaltrace_lt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frame</span><span class="p">,</span> <span class="n">why</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Handler for call events.</span>
+
+<span class="sd">        If the code block being entered is to be ignored, returns `None&#39;,</span>
+<span class="sd">        else returns self.localtrace.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">why</span> <span class="o">==</span> <span class="s1">&#39;call&#39;</span><span class="p">:</span>
+            <span class="n">code</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_code</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_globals</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;__file__&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">filename</span><span class="p">:</span>
+                <span class="c1"># XXX modname() doesn&#39;t work right for packages, so</span>
+                <span class="c1"># the ignore support won&#39;t work right for packages</span>
+                <span class="n">modulename</span> <span class="o">=</span> <span class="n">modname</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">modulename</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">ignore_it</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ignore</span><span class="o">.</span><span class="n">names</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">modulename</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="n">ignore_it</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">trace</span><span class="p">:</span>
+                            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot; --- modulename: </span><span class="si">%s</span><span class="s2">, funcname: </span><span class="si">%s</span><span class="s2">&quot;</span>
+                                   <span class="o">%</span> <span class="p">(</span><span class="n">modulename</span><span class="p">,</span> <span class="n">code</span><span class="o">.</span><span class="n">co_name</span><span class="p">))</span>
+                        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">localtrace</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">None</span></div>
+
+<div class="viewcode-block" id="Trace.localtrace_trace_and_count"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.localtrace_trace_and_count.html#trace.Trace.localtrace_trace_and_count">[docs]</a>    <span class="k">def</span> <span class="nf">localtrace_trace_and_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frame</span><span class="p">,</span> <span class="n">why</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">why</span> <span class="o">==</span> <span class="s2">&quot;line&quot;</span><span class="p">:</span>
+            <span class="c1"># record the file name and line number of every trace</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_code</span><span class="o">.</span><span class="n">co_filename</span>
+            <span class="n">lineno</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_lineno</span>
+            <span class="n">key</span> <span class="o">=</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">counts</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_time</span><span class="p">:</span>
+                <span class="nb">print</span> <span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_time</span><span class="p">),</span>
+            <span class="n">bname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+            <span class="nb">print</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">(</span><span class="si">%d</span><span class="s2">): </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">bname</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span>
+                                  <span class="n">linecache</span><span class="o">.</span><span class="n">getline</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">)),</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">localtrace</span></div>
+
+<div class="viewcode-block" id="Trace.localtrace_trace"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.localtrace_trace.html#trace.Trace.localtrace_trace">[docs]</a>    <span class="k">def</span> <span class="nf">localtrace_trace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frame</span><span class="p">,</span> <span class="n">why</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">why</span> <span class="o">==</span> <span class="s2">&quot;line&quot;</span><span class="p">:</span>
+            <span class="c1"># record the file name and line number of every trace</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_code</span><span class="o">.</span><span class="n">co_filename</span>
+            <span class="n">lineno</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_lineno</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_time</span><span class="p">:</span>
+                <span class="nb">print</span> <span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_time</span><span class="p">),</span>
+            <span class="n">bname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+            <span class="nb">print</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">(</span><span class="si">%d</span><span class="s2">): </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">bname</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span>
+                                  <span class="n">linecache</span><span class="o">.</span><span class="n">getline</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">)),</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">localtrace</span></div>
+
+<div class="viewcode-block" id="Trace.localtrace_count"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.localtrace_count.html#trace.Trace.localtrace_count">[docs]</a>    <span class="k">def</span> <span class="nf">localtrace_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frame</span><span class="p">,</span> <span class="n">why</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">why</span> <span class="o">==</span> <span class="s2">&quot;line&quot;</span><span class="p">:</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_code</span><span class="o">.</span><span class="n">co_filename</span>
+            <span class="n">lineno</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_lineno</span>
+            <span class="n">key</span> <span class="o">=</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">counts</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">localtrace</span></div>
+
+<div class="viewcode-block" id="Trace.results"><a class="viewcode-back" href="../misc/generated/generated/trace.Trace.results.html#trace.Trace.results">[docs]</a>    <span class="k">def</span> <span class="nf">results</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">CoverageResults</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">counts</span><span class="p">,</span> <span class="n">infile</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">infile</span><span class="p">,</span>
+                               <span class="n">outfile</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">outfile</span><span class="p">,</span>
+                               <span class="n">calledfuncs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_calledfuncs</span><span class="p">,</span>
+                               <span class="n">callers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_callers</span><span class="p">)</span></div></div>
+
+<span class="k">def</span> <span class="nf">_err_exit</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">msg</span><span class="p">))</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../misc/generated/trace.main.html#trace.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">argv</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">getopt</span>
+
+    <span class="k">if</span> <span class="n">argv</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">argv</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">opts</span><span class="p">,</span> <span class="n">prog_argv</span> <span class="o">=</span> <span class="n">getopt</span><span class="o">.</span><span class="n">getopt</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="s2">&quot;tcrRf:d:msC:lTg&quot;</span><span class="p">,</span>
+                                        <span class="p">[</span><span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;version&quot;</span><span class="p">,</span> <span class="s2">&quot;trace&quot;</span><span class="p">,</span> <span class="s2">&quot;count&quot;</span><span class="p">,</span>
+                                         <span class="s2">&quot;report&quot;</span><span class="p">,</span> <span class="s2">&quot;no-report&quot;</span><span class="p">,</span> <span class="s2">&quot;summary&quot;</span><span class="p">,</span>
+                                         <span class="s2">&quot;file=&quot;</span><span class="p">,</span> <span class="s2">&quot;missing&quot;</span><span class="p">,</span>
+                                         <span class="s2">&quot;ignore-module=&quot;</span><span class="p">,</span> <span class="s2">&quot;ignore-dir=&quot;</span><span class="p">,</span>
+                                         <span class="s2">&quot;coverdir=&quot;</span><span class="p">,</span> <span class="s2">&quot;listfuncs&quot;</span><span class="p">,</span>
+                                         <span class="s2">&quot;trackcalls&quot;</span><span class="p">,</span> <span class="s2">&quot;timing&quot;</span><span class="p">])</span>
+
+    <span class="k">except</span> <span class="n">getopt</span><span class="o">.</span><span class="n">error</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">msg</span><span class="p">))</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Try `</span><span class="si">%s</span><span class="s2"> --help&#39; for more information</span><span class="se">\n</span><span class="s2">&quot;</span>
+                         <span class="o">%</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">trace</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">report</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">no_report</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">counts_file</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">missing</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">ignore_modules</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">ignore_dirs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">coverdir</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">summary</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">listfuncs</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">countcallers</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">timing</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="k">for</span> <span class="n">opt</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">opts</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--help&quot;</span><span class="p">:</span>
+            <span class="n">usage</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--version&quot;</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;trace 2.0</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;-T&quot;</span> <span class="ow">or</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--trackcalls&quot;</span><span class="p">:</span>
+            <span class="n">countcallers</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;-l&quot;</span> <span class="ow">or</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--listfuncs&quot;</span><span class="p">:</span>
+            <span class="n">listfuncs</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;-g&quot;</span> <span class="ow">or</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--timing&quot;</span><span class="p">:</span>
+            <span class="n">timing</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;-t&quot;</span> <span class="ow">or</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--trace&quot;</span><span class="p">:</span>
+            <span class="n">trace</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;-c&quot;</span> <span class="ow">or</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--count&quot;</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;-r&quot;</span> <span class="ow">or</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--report&quot;</span><span class="p">:</span>
+            <span class="n">report</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;-R&quot;</span> <span class="ow">or</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--no-report&quot;</span><span class="p">:</span>
+            <span class="n">no_report</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;-f&quot;</span> <span class="ow">or</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--file&quot;</span><span class="p">:</span>
+            <span class="n">counts_file</span> <span class="o">=</span> <span class="n">val</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;-m&quot;</span> <span class="ow">or</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--missing&quot;</span><span class="p">:</span>
+            <span class="n">missing</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;-C&quot;</span> <span class="ow">or</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--coverdir&quot;</span><span class="p">:</span>
+            <span class="n">coverdir</span> <span class="o">=</span> <span class="n">val</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;-s&quot;</span> <span class="ow">or</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--summary&quot;</span><span class="p">:</span>
+            <span class="n">summary</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--ignore-module&quot;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">mod</span> <span class="ow">in</span> <span class="n">val</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">):</span>
+                <span class="n">ignore_modules</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mod</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="s2">&quot;--ignore-dir&quot;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">val</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pathsep</span><span class="p">):</span>
+                <span class="n">s</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expandvars</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+                <span class="c1"># should I also call expanduser? (after all, could use $HOME)</span>
+
+                <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;$prefix&quot;</span><span class="p">,</span>
+                              <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">prefix</span><span class="p">,</span> <span class="s2">&quot;lib&quot;</span><span class="p">,</span>
+                                           <span class="s2">&quot;python&quot;</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">[:</span><span class="mi">3</span><span class="p">]))</span>
+                <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;$exec_prefix&quot;</span><span class="p">,</span>
+                              <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">exec_prefix</span><span class="p">,</span> <span class="s2">&quot;lib&quot;</span><span class="p">,</span>
+                                           <span class="s2">&quot;python&quot;</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">[:</span><span class="mi">3</span><span class="p">]))</span>
+                <span class="n">s</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+                <span class="n">ignore_dirs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="k">assert</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Should never get here&quot;</span>
+
+    <span class="k">if</span> <span class="n">listfuncs</span> <span class="ow">and</span> <span class="p">(</span><span class="n">count</span> <span class="ow">or</span> <span class="n">trace</span><span class="p">):</span>
+        <span class="n">_err_exit</span><span class="p">(</span><span class="s2">&quot;cannot specify both --listfuncs and (--trace or --count)&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">count</span> <span class="ow">or</span> <span class="n">trace</span> <span class="ow">or</span> <span class="n">report</span> <span class="ow">or</span> <span class="n">listfuncs</span> <span class="ow">or</span> <span class="n">countcallers</span><span class="p">):</span>
+        <span class="n">_err_exit</span><span class="p">(</span><span class="s2">&quot;must specify one of --trace, --count, --report, &quot;</span>
+                  <span class="s2">&quot;--listfuncs, or --trackcalls&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">report</span> <span class="ow">and</span> <span class="n">no_report</span><span class="p">:</span>
+        <span class="n">_err_exit</span><span class="p">(</span><span class="s2">&quot;cannot specify both --report and --no-report&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">report</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">counts_file</span><span class="p">:</span>
+        <span class="n">_err_exit</span><span class="p">(</span><span class="s2">&quot;--report requires a --file&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">no_report</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">prog_argv</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">_err_exit</span><span class="p">(</span><span class="s2">&quot;missing name of file to run&quot;</span><span class="p">)</span>
+
+    <span class="c1"># everything is ready</span>
+    <span class="k">if</span> <span class="n">report</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="n">CoverageResults</span><span class="p">(</span><span class="n">infile</span><span class="o">=</span><span class="n">counts_file</span><span class="p">,</span> <span class="n">outfile</span><span class="o">=</span><span class="n">counts_file</span><span class="p">)</span>
+        <span class="n">results</span><span class="o">.</span><span class="n">write_results</span><span class="p">(</span><span class="n">missing</span><span class="p">,</span> <span class="n">summary</span><span class="o">=</span><span class="n">summary</span><span class="p">,</span> <span class="n">coverdir</span><span class="o">=</span><span class="n">coverdir</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">argv</span> <span class="o">=</span> <span class="n">prog_argv</span>
+        <span class="n">progname</span> <span class="o">=</span> <span class="n">prog_argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">progname</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">t</span> <span class="o">=</span> <span class="n">Trace</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="n">trace</span><span class="p">,</span> <span class="n">countfuncs</span><span class="o">=</span><span class="n">listfuncs</span><span class="p">,</span>
+                  <span class="n">countcallers</span><span class="o">=</span><span class="n">countcallers</span><span class="p">,</span> <span class="n">ignoremods</span><span class="o">=</span><span class="n">ignore_modules</span><span class="p">,</span>
+                  <span class="n">ignoredirs</span><span class="o">=</span><span class="n">ignore_dirs</span><span class="p">,</span> <span class="n">infile</span><span class="o">=</span><span class="n">counts_file</span><span class="p">,</span>
+                  <span class="n">outfile</span><span class="o">=</span><span class="n">counts_file</span><span class="p">,</span> <span class="n">timing</span><span class="o">=</span><span class="n">timing</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">progname</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+                <span class="n">code</span> <span class="o">=</span> <span class="nb">compile</span><span class="p">(</span><span class="n">fp</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">progname</span><span class="p">,</span> <span class="s1">&#39;exec&#39;</span><span class="p">)</span>
+            <span class="c1"># try to emulate __main__ namespace as much as possible</span>
+            <span class="n">globs</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s1">&#39;__file__&#39;</span><span class="p">:</span> <span class="n">progname</span><span class="p">,</span>
+                <span class="s1">&#39;__name__&#39;</span><span class="p">:</span> <span class="s1">&#39;__main__&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;__package__&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="s1">&#39;__cached__&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="p">}</span>
+            <span class="n">t</span><span class="o">.</span><span class="n">runctx</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">globs</span><span class="p">,</span> <span class="n">globs</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">IOError</span><span class="p">,</span> <span class="n">err</span><span class="p">:</span>
+            <span class="n">_err_exit</span><span class="p">(</span><span class="s2">&quot;Cannot run file </span><span class="si">%r</span><span class="s2"> because: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">err</span><span class="p">))</span>
+        <span class="k">except</span> <span class="ne">SystemExit</span><span class="p">:</span>
+            <span class="k">pass</span>
+
+        <span class="n">results</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">results</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">no_report</span><span class="p">:</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">write_results</span><span class="p">(</span><span class="n">missing</span><span class="p">,</span> <span class="n">summary</span><span class="o">=</span><span class="n">summary</span><span class="p">,</span> <span class="n">coverdir</span><span class="o">=</span><span class="n">coverdir</span><span class="p">)</span></div>
+
+<span class="k">if</span> <span class="n">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+textwrap.TextWrapper
+====================
+
+.. currentmodule:: textwrap
+
+.. autoclass:: TextWrapper
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~TextWrapper.__init__
+   ~TextWrapper.fill
+   ~TextWrapper.wrap
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~TextWrapper.sentence_end_re
+   ~TextWrapper.unicode_whitespace_trans
+   ~TextWrapper.uspace
+   ~TextWrapper.whitespace_trans
+   ~TextWrapper.wordsep_re
+   ~TextWrapper.wordsep_simple_re
+   ~TextWrapper.x
+

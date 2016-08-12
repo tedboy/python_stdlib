@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SimpleHTTPServer.SimpleHTTPRequestHandler &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../../index.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>SimpleHTTPServer.SimpleHTTPRequestHandler</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/misc/generated/generated/SimpleHTTPServer.SimpleHTTPRequestHandler.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="simplehttpserver-simplehttprequesthandler">
+<h1>SimpleHTTPServer.SimpleHTTPRequestHandler<a class="headerlink" href="#simplehttpserver-simplehttprequesthandler" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="SimpleHTTPServer.SimpleHTTPRequestHandler">
+<em class="property">class </em><code class="descclassname">SimpleHTTPServer.</code><code class="descname">SimpleHTTPRequestHandler</code><span class="sig-paren">(</span><em>request</em>, <em>client_address</em>, <em>server</em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/SimpleHTTPServer.html#SimpleHTTPRequestHandler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#SimpleHTTPServer.SimpleHTTPRequestHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple HTTP request handler with GET and HEAD commands.</p>
+<p>This serves files from the current directory and any of its
+subdirectories.  The MIME type for files is determined by
+calling the .guess_type() method.</p>
+<p>The GET and HEAD requests are identical except that the HEAD
+request omits the actual contents of the file.</p>
+<p class="rubric">Attributes</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="41%" />
+<col width="59%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>timeout</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">MessageClass</span></code></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">Message</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.address_string.html#SimpleHTTPServer.SimpleHTTPRequestHandler.address_string" title="SimpleHTTPServer.SimpleHTTPRequestHandler.address_string"><code class="xref py py-obj docutils literal"><span class="pre">address_string</span></code></a>()</td>
+<td>Return the client address formatted for logging.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.copyfile.html#SimpleHTTPServer.SimpleHTTPRequestHandler.copyfile" title="SimpleHTTPServer.SimpleHTTPRequestHandler.copyfile"><code class="xref py py-obj docutils literal"><span class="pre">copyfile</span></code></a>(source,&nbsp;outputfile)</td>
+<td>Copy all data between two file objects.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.date_time_string.html#SimpleHTTPServer.SimpleHTTPRequestHandler.date_time_string" title="SimpleHTTPServer.SimpleHTTPRequestHandler.date_time_string"><code class="xref py py-obj docutils literal"><span class="pre">date_time_string</span></code></a>([timestamp])</td>
+<td>Return the current date and time formatted for a message header.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET.html#SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET" title="SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET"><code class="xref py py-obj docutils literal"><span class="pre">do_GET</span></code></a>()</td>
+<td>Serve a GET request.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.do_HEAD.html#SimpleHTTPServer.SimpleHTTPRequestHandler.do_HEAD" title="SimpleHTTPServer.SimpleHTTPRequestHandler.do_HEAD"><code class="xref py py-obj docutils literal"><span class="pre">do_HEAD</span></code></a>()</td>
+<td>Serve a HEAD request.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.end_headers.html#SimpleHTTPServer.SimpleHTTPRequestHandler.end_headers" title="SimpleHTTPServer.SimpleHTTPRequestHandler.end_headers"><code class="xref py py-obj docutils literal"><span class="pre">end_headers</span></code></a>()</td>
+<td>Send the blank line ending the MIME headers.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.finish.html#SimpleHTTPServer.SimpleHTTPRequestHandler.finish" title="SimpleHTTPServer.SimpleHTTPRequestHandler.finish"><code class="xref py py-obj docutils literal"><span class="pre">finish</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.guess_type.html#SimpleHTTPServer.SimpleHTTPRequestHandler.guess_type" title="SimpleHTTPServer.SimpleHTTPRequestHandler.guess_type"><code class="xref py py-obj docutils literal"><span class="pre">guess_type</span></code></a>(path)</td>
+<td>Guess the type of a file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.handle.html#SimpleHTTPServer.SimpleHTTPRequestHandler.handle" title="SimpleHTTPServer.SimpleHTTPRequestHandler.handle"><code class="xref py py-obj docutils literal"><span class="pre">handle</span></code></a>()</td>
+<td>Handle multiple requests if necessary.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.handle_one_request.html#SimpleHTTPServer.SimpleHTTPRequestHandler.handle_one_request" title="SimpleHTTPServer.SimpleHTTPRequestHandler.handle_one_request"><code class="xref py py-obj docutils literal"><span class="pre">handle_one_request</span></code></a>()</td>
+<td>Handle a single HTTP request.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.list_directory.html#SimpleHTTPServer.SimpleHTTPRequestHandler.list_directory" title="SimpleHTTPServer.SimpleHTTPRequestHandler.list_directory"><code class="xref py py-obj docutils literal"><span class="pre">list_directory</span></code></a>(path)</td>
+<td>Helper to produce a directory listing (absent index.html).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.log_date_time_string.html#SimpleHTTPServer.SimpleHTTPRequestHandler.log_date_time_string" title="SimpleHTTPServer.SimpleHTTPRequestHandler.log_date_time_string"><code class="xref py py-obj docutils literal"><span class="pre">log_date_time_string</span></code></a>()</td>
+<td>Return the current time formatted for logging.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.log_error.html#SimpleHTTPServer.SimpleHTTPRequestHandler.log_error" title="SimpleHTTPServer.SimpleHTTPRequestHandler.log_error"><code class="xref py py-obj docutils literal"><span class="pre">log_error</span></code></a>(format,&nbsp;*args)</td>
+<td>Log an error.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.log_message.html#SimpleHTTPServer.SimpleHTTPRequestHandler.log_message" title="SimpleHTTPServer.SimpleHTTPRequestHandler.log_message"><code class="xref py py-obj docutils literal"><span class="pre">log_message</span></code></a>(format,&nbsp;*args)</td>
+<td>Log an arbitrary message.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.log_request.html#SimpleHTTPServer.SimpleHTTPRequestHandler.log_request" title="SimpleHTTPServer.SimpleHTTPRequestHandler.log_request"><code class="xref py py-obj docutils literal"><span class="pre">log_request</span></code></a>([code,&nbsp;size])</td>
+<td>Log an accepted request.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.parse_request.html#SimpleHTTPServer.SimpleHTTPRequestHandler.parse_request" title="SimpleHTTPServer.SimpleHTTPRequestHandler.parse_request"><code class="xref py py-obj docutils literal"><span class="pre">parse_request</span></code></a>()</td>
+<td>Parse a request (internal).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.send_error.html#SimpleHTTPServer.SimpleHTTPRequestHandler.send_error" title="SimpleHTTPServer.SimpleHTTPRequestHandler.send_error"><code class="xref py py-obj docutils literal"><span class="pre">send_error</span></code></a>(code[,&nbsp;message])</td>
+<td>Send and log an error reply.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.send_head.html#SimpleHTTPServer.SimpleHTTPRequestHandler.send_head" title="SimpleHTTPServer.SimpleHTTPRequestHandler.send_head"><code class="xref py py-obj docutils literal"><span class="pre">send_head</span></code></a>()</td>
+<td>Common code for GET and HEAD commands.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.send_header.html#SimpleHTTPServer.SimpleHTTPRequestHandler.send_header" title="SimpleHTTPServer.SimpleHTTPRequestHandler.send_header"><code class="xref py py-obj docutils literal"><span class="pre">send_header</span></code></a>(keyword,&nbsp;value)</td>
+<td>Send a MIME header.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.send_response.html#SimpleHTTPServer.SimpleHTTPRequestHandler.send_response" title="SimpleHTTPServer.SimpleHTTPRequestHandler.send_response"><code class="xref py py-obj docutils literal"><span class="pre">send_response</span></code></a>(code[,&nbsp;message])</td>
+<td>Send the response header and log the response code.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.setup.html#SimpleHTTPServer.SimpleHTTPRequestHandler.setup" title="SimpleHTTPServer.SimpleHTTPRequestHandler.setup"><code class="xref py py-obj docutils literal"><span class="pre">setup</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.translate_path.html#SimpleHTTPServer.SimpleHTTPRequestHandler.translate_path" title="SimpleHTTPServer.SimpleHTTPRequestHandler.translate_path"><code class="xref py py-obj docutils literal"><span class="pre">translate_path</span></code></a>(path)</td>
+<td>Translate a /-separated PATH to the local filename syntax.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.version_string.html#SimpleHTTPServer.SimpleHTTPRequestHandler.version_string" title="SimpleHTTPServer.SimpleHTTPRequestHandler.version_string"><code class="xref py py-obj docutils literal"><span class="pre">version_string</span></code></a>()</td>
+<td>Return the server software version string.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

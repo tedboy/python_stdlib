@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>trace &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>trace</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/misc/generated/trace.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-trace">
+<span id="trace"></span><h1>trace<a class="headerlink" href="#module-trace" title="Permalink to this headline">¶</a></h1>
+<p>program/module to trace Python program or function execution</p>
+<dl class="docutils">
+<dt>Sample use, command line:</dt>
+<dd>trace.py -c -f counts &#8211;ignore-dir &#8216;$prefix&#8217; spam.py eggs
+trace.py -t &#8211;ignore-dir &#8216;$prefix&#8217; spam.py eggs
+trace.py &#8211;trackcalls spam.py eggs</dd>
+<dt>Sample use, programmatically</dt>
+<dd><p class="first">import sys</p>
+<p># create a Trace object, telling it what to ignore, and whether to
+# do tracing or line-counting or both.
+tracer = trace.Trace(ignoredirs=[sys.prefix, sys.exec_prefix,], trace=0,</p>
+<blockquote>
+<div>count=1)</div></blockquote>
+<p class="last"># run the new command using the given tracer
+tracer.run(&#8216;main()&#8217;)
+# make a report, placing output in /tmp
+r = tracer.results()
+r.write_results(show_missing=True, coverdir=&#8221;/tmp&#8221;)</p>
+</dd>
+</dl>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="trace.find_executable_linenos.html#trace.find_executable_linenos" title="trace.find_executable_linenos"><code class="xref py py-obj docutils literal"><span class="pre">find_executable_linenos</span></code></a>(filename)</td>
+<td>Return dict where keys are line numbers in the line number table.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="trace.find_lines.html#trace.find_lines" title="trace.find_lines"><code class="xref py py-obj docutils literal"><span class="pre">find_lines</span></code></a>(code,&nbsp;strs)</td>
+<td>Return lineno dict for all code objects reachable from code.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="trace.find_lines_from_code.html#trace.find_lines_from_code" title="trace.find_lines_from_code"><code class="xref py py-obj docutils literal"><span class="pre">find_lines_from_code</span></code></a>(code,&nbsp;strs)</td>
+<td>Return dict where keys are lines in the line number table.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="trace.find_strings.html#trace.find_strings" title="trace.find_strings"><code class="xref py py-obj docutils literal"><span class="pre">find_strings</span></code></a>(filename)</td>
+<td>Return a dict of possible docstring positions.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="trace.fullmodname.html#trace.fullmodname" title="trace.fullmodname"><code class="xref py py-obj docutils literal"><span class="pre">fullmodname</span></code></a>(path)</td>
+<td>Return a plausible module name for the path.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="trace.main.html#trace.main" title="trace.main"><code class="xref py py-obj docutils literal"><span class="pre">main</span></code></a>([argv])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="trace.modname.html#trace.modname" title="trace.modname"><code class="xref py py-obj docutils literal"><span class="pre">modname</span></code></a>(path)</td>
+<td>Return a plausible module name for the patch.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="trace.usage.html#trace.usage" title="trace.usage"><code class="xref py py-obj docutils literal"><span class="pre">usage</span></code></a>(outfile)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/trace.CoverageResults.html#trace.CoverageResults" title="trace.CoverageResults"><code class="xref py py-obj docutils literal"><span class="pre">CoverageResults</span></code></a>([counts,&nbsp;calledfuncs,&nbsp;...])</td>
+<td><p class="rubric">Methods</p>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/trace.Ignore.html#trace.Ignore" title="trace.Ignore"><code class="xref py py-obj docutils literal"><span class="pre">Ignore</span></code></a>([modules,&nbsp;dirs])</td>
+<td><p class="rubric">Methods</p>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/trace.Trace.html#trace.Trace" title="trace.Trace"><code class="xref py py-obj docutils literal"><span class="pre">Trace</span></code></a>([count,&nbsp;trace,&nbsp;countfuncs,&nbsp;...])</td>
+<td><p class="rubric">Methods</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

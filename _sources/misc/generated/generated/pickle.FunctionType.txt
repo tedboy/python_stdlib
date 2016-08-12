@@ -1,0 +1,29 @@
+pickle.FunctionType
+===================
+
+.. currentmodule:: pickle
+
+.. autoclass:: FunctionType
+
+
+
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~FunctionType.func_closure
+   ~FunctionType.func_code
+   ~FunctionType.func_defaults
+   ~FunctionType.func_dict
+   ~FunctionType.func_doc
+   ~FunctionType.func_globals
+   ~FunctionType.func_name
+

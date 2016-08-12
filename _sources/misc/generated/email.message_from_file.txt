@@ -1,0 +1,6 @@
+email.message_from_file
+=======================
+
+.. currentmodule:: email
+
+.. autofunction:: message_from_file

@@ -1,0 +1,438 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2.2.2. socket &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="2.2. Networks and Internet" href="../misc/networks_internet.html"/>
+        <link rel="next" title="2.2.2.1.1. socket.RAND_add" href="socket.RAND_add.html"/>
+        <link rel="prev" title="2.2.1.2.2.2. popen2.Popen4.wait" href="generated/popen2.Popen4.wait.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../misc/index.html">2. misc package I may use in future</a> &raquo;</li>
+        
+          <li><a href="../misc/networks_internet.html">2.2. Networks and Internet</a> &raquo;</li>
+        
+      <li>2.2.2. socket</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/socket.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-socket">
+<span id="socket"></span><h1>2.2.2. socket<a class="headerlink" href="#module-socket" title="Permalink to this headline">¶</a></h1>
+<p>This module provides socket operations and some related functions.
+On Unix, it supports IP (Internet Protocol) and Unix domain sockets.
+On other systems, it only supports IP. Functions specific for a
+socket are available as methods of the socket object.</p>
+<p>Functions:</p>
+<p>socket() &#8211; create a new socket object
+socketpair() &#8211; create a pair of new socket objects [*]
+fromfd() &#8211; create a socket object from an open file descriptor [*]
+gethostname() &#8211; return the current hostname
+gethostbyname() &#8211; map a hostname to its IP number
+gethostbyaddr() &#8211; map an IP number or hostname to DNS info
+getservbyname() &#8211; map a service name and a protocol name to a port number
+getprotobyname() &#8211; map a protocol name (e.g. &#8216;tcp&#8217;) to a number
+ntohs(), ntohl() &#8211; convert 16, 32 bit int from network to host byte order
+htons(), htonl() &#8211; convert 16, 32 bit int from host to network byte order
+inet_aton() &#8211; convert IP addr string (123.45.67.89) to 32-bit packed format
+inet_ntoa() &#8211; convert 32-bit packed format IP to string (123.45.67.89)
+ssl() &#8211; secure socket layer support (only available if configured)
+socket.getdefaulttimeout() &#8211; get the default timeout value
+socket.setdefaulttimeout() &#8211; set the default timeout value
+create_connection() &#8211; connects to an address, with an optional timeout and</p>
+<blockquote>
+<div><blockquote>
+<div>optional source address.</div></blockquote>
+<p>[*] not available on all platforms!</p>
+</div></blockquote>
+<p>Special objects:</p>
+<p>SocketType &#8211; type object for socket objects
+error &#8211; exception raised for I/O errors
+has_ipv6 &#8211; boolean value indicating if IPv6 is supported</p>
+<p>Integer constants:</p>
+<p>AF_INET, AF_UNIX &#8211; socket domains (first argument to socket() call)
+SOCK_STREAM, SOCK_DGRAM, SOCK_RAW &#8211; socket types (second argument)</p>
+<p>Many other constants may be defined; these may be used in calls to
+the setsockopt() and getsockopt() methods.</p>
+<div class="section" id="functions">
+<h2>2.2.2.1. Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.RAND_add.html#socket.RAND_add" title="socket.RAND_add"><code class="xref py py-obj docutils literal"><span class="pre">RAND_add</span></code></a>(string,&nbsp;entropy)</td>
+<td>Mix string into the OpenSSL PRNG state.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.RAND_egd.html#socket.RAND_egd" title="socket.RAND_egd"><code class="xref py py-obj docutils literal"><span class="pre">RAND_egd</span></code></a>((path)&nbsp;-&gt;&nbsp;bytes)</td>
+<td>Queries the entropy gather daemon (EGD) on the socket named by &#8216;path&#8217;.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.RAND_status.html#socket.RAND_status" title="socket.RAND_status"><code class="xref py py-obj docutils literal"><span class="pre">RAND_status</span></code></a>(()&nbsp;-&gt;&nbsp;0&nbsp;or&nbsp;1)</td>
+<td>Returns 1 if the OpenSSL PRNG has been seeded with enough data and 0 if not.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.StringIO.html#socket.StringIO" title="socket.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
+<td>StringIO([s]) &#8211; Return a StringIO-like stream for reading or writing</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.create_connection.html#socket.create_connection" title="socket.create_connection"><code class="xref py py-obj docutils literal"><span class="pre">create_connection</span></code></a>(address[,&nbsp;timeout,&nbsp;...])</td>
+<td>Connect to <em>address</em> and return the socket object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.fromfd.html#socket.fromfd" title="socket.fromfd"><code class="xref py py-obj docutils literal"><span class="pre">fromfd</span></code></a>((fd,&nbsp;family,&nbsp;type[,&nbsp;...)</td>
+<td>Create a socket object from a duplicate of the given file descriptor.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.getaddrinfo.html#socket.getaddrinfo" title="socket.getaddrinfo"><code class="xref py py-obj docutils literal"><span class="pre">getaddrinfo</span></code></a>(host,&nbsp;port&nbsp;[,&nbsp;family,&nbsp;socktype,&nbsp;...)</td>
+<td>-&gt; list of (family, socktype, proto, canonname, sockaddr)</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.getdefaulttimeout.html#socket.getdefaulttimeout" title="socket.getdefaulttimeout"><code class="xref py py-obj docutils literal"><span class="pre">getdefaulttimeout</span></code></a>(()&nbsp;-&gt;&nbsp;timeout)</td>
+<td>Returns the default timeout in seconds (float) for new socket objects.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.getfqdn.html#socket.getfqdn" title="socket.getfqdn"><code class="xref py py-obj docutils literal"><span class="pre">getfqdn</span></code></a>([name])</td>
+<td>Get fully qualified domain name from name.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.gethostbyaddr.html#socket.gethostbyaddr" title="socket.gethostbyaddr"><code class="xref py py-obj docutils literal"><span class="pre">gethostbyaddr</span></code></a>(host)&nbsp;-&gt;&nbsp;(name,&nbsp;aliaslist,&nbsp;...)</td>
+<td>Return the true host name, a list of aliases, and a list of IP addresses, for a host.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.gethostbyname.html#socket.gethostbyname" title="socket.gethostbyname"><code class="xref py py-obj docutils literal"><span class="pre">gethostbyname</span></code></a>((host)&nbsp;-&gt;&nbsp;address)</td>
+<td>Return the IP address (a string of the form &#8216;255.255.255.255&#8217;) for a host.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.gethostbyname_ex.html#socket.gethostbyname_ex" title="socket.gethostbyname_ex"><code class="xref py py-obj docutils literal"><span class="pre">gethostbyname_ex</span></code></a>(host)&nbsp;-&gt;&nbsp;(name,&nbsp;aliaslist,&nbsp;...)</td>
+<td>Return the true host name, a list of aliases, and a list of IP addresses, for a host.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.gethostname.html#socket.gethostname" title="socket.gethostname"><code class="xref py py-obj docutils literal"><span class="pre">gethostname</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the current host name.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.getnameinfo.html#socket.getnameinfo" title="socket.getnameinfo"><code class="xref py py-obj docutils literal"><span class="pre">getnameinfo</span></code></a>(sockaddr,&nbsp;flags)&nbsp;&#8211;&gt;&nbsp;(host,&nbsp;port)</td>
+<td>Get host and port for a sockaddr.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.getprotobyname.html#socket.getprotobyname" title="socket.getprotobyname"><code class="xref py py-obj docutils literal"><span class="pre">getprotobyname</span></code></a>((name)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the protocol number for the named protocol.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.getservbyname.html#socket.getservbyname" title="socket.getservbyname"><code class="xref py py-obj docutils literal"><span class="pre">getservbyname</span></code></a>((servicename[,&nbsp;...)</td>
+<td>Return a port number from a service name and protocol name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.getservbyport.html#socket.getservbyport" title="socket.getservbyport"><code class="xref py py-obj docutils literal"><span class="pre">getservbyport</span></code></a>((port[,&nbsp;protocolname])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the service name from a port number and protocol name.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.htonl.html#socket.htonl" title="socket.htonl"><code class="xref py py-obj docutils literal"><span class="pre">htonl</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Convert a 32-bit integer from host to network byte order.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.htons.html#socket.htons" title="socket.htons"><code class="xref py py-obj docutils literal"><span class="pre">htons</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Convert a 16-bit integer from host to network byte order.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.inet_aton.html#socket.inet_aton" title="socket.inet_aton"><code class="xref py py-obj docutils literal"><span class="pre">inet_aton</span></code></a>(...)</td>
+<td>Convert an IP address in string format (123.45.67.89) to the 32-bit packed binary format used in low-level network functions.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.inet_ntoa.html#socket.inet_ntoa" title="socket.inet_ntoa"><code class="xref py py-obj docutils literal"><span class="pre">inet_ntoa</span></code></a>((packed_ip)&nbsp;-&gt;&nbsp;ip_address_string)</td>
+<td>Convert an IP address from 32-bit packed binary format to string format</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.inet_ntop.html#socket.inet_ntop" title="socket.inet_ntop"><code class="xref py py-obj docutils literal"><span class="pre">inet_ntop</span></code></a>((af,&nbsp;...)</td>
+<td>Convert a packed IP address of the given family to string format.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.inet_pton.html#socket.inet_pton" title="socket.inet_pton"><code class="xref py py-obj docutils literal"><span class="pre">inet_pton</span></code></a>((af,&nbsp;ip)&nbsp;-&gt;&nbsp;packed&nbsp;IP&nbsp;address&nbsp;string)</td>
+<td>Convert an IP address from string format to a packed string suitable for use with low-level network functions.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.meth.html#socket.meth" title="socket.meth"><code class="xref py py-obj docutils literal"><span class="pre">meth</span></code></a>(name,&nbsp;self,&nbsp;*args)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.ntohl.html#socket.ntohl" title="socket.ntohl"><code class="xref py py-obj docutils literal"><span class="pre">ntohl</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Convert a 32-bit integer from network to host byte order.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.ntohs.html#socket.ntohs" title="socket.ntohs"><code class="xref py py-obj docutils literal"><span class="pre">ntohs</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Convert a 16-bit integer from network to host byte order.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.setdefaulttimeout.html#socket.setdefaulttimeout" title="socket.setdefaulttimeout"><code class="xref py py-obj docutils literal"><span class="pre">setdefaulttimeout</span></code></a>(timeout)</td>
+<td>Set the default timeout in seconds (float) for new socket objects.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.socketpair.html#socket.socketpair" title="socket.socketpair"><code class="xref py py-obj docutils literal"><span class="pre">socketpair</span></code></a>([family[,&nbsp;type[,&nbsp;...)</td>
+<td>Create a pair of socket objects from the sockets returned by the platform socketpair() function.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.ssl.html#socket.ssl" title="socket.ssl"><code class="xref py py-obj docutils literal"><span class="pre">ssl</span></code></a>(sock[,&nbsp;keyfile,&nbsp;certfile])</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="classes">
+<h2>2.2.2.2. Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/generated/socket.MethodType.html#socket.MethodType" title="socket.MethodType"><code class="xref py py-obj docutils literal"><span class="pre">MethodType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">instancemethod</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/generated/socket.SocketType.html#socket.SocketType" title="socket.SocketType"><code class="xref py py-obj docutils literal"><span class="pre">SocketType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">_socketobject</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/generated/socket.partial.html#socket.partial" title="socket.partial"><code class="xref py py-obj docutils literal"><span class="pre">partial</span></code></a></td>
+<td>partial(func, <a href="#id1"><span class="problematic" id="id2">*</span></a>args, <a href="#id3"><span class="problematic" id="id4">**</span></a>keywords) - new function with partial application</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/generated/socket.socket.html#socket.socket" title="socket.socket"><code class="xref py py-obj docutils literal"><span class="pre">socket</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">_socketobject</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="exceptions">
+<h2>2.2.2.3. Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.error.html#socket.error" title="socket.error"><code class="xref py py-obj docutils literal"><span class="pre">error</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.gaierror.html#socket.gaierror" title="socket.gaierror"><code class="xref py py-obj docutils literal"><span class="pre">gaierror</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.herror.html#socket.herror" title="socket.herror"><code class="xref py py-obj docutils literal"><span class="pre">herror</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/socket.sslerror.html#socket.sslerror" title="socket.sslerror"><code class="xref py py-obj docutils literal"><span class="pre">sslerror</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">SSLError</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/socket.timeout.html#socket.timeout" title="socket.timeout"><code class="xref py py-obj docutils literal"><span class="pre">timeout</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="socket.RAND_add.html" class="btn btn-neutral float-right" title="2.2.2.1.1. socket.RAND_add" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="generated/popen2.Popen4.wait.html" class="btn btn-neutral" title="2.2.1.2.2.2. popen2.Popen4.wait" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+cgi.print_form
+==============
+
+.. currentmodule:: cgi
+
+.. autofunction:: print_form

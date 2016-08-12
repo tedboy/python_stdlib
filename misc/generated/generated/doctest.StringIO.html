@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>doctest.StringIO &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../../index.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>doctest.StringIO</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/misc/generated/generated/doctest.StringIO.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="doctest-stringio">
+<h1>doctest.StringIO<a class="headerlink" href="#doctest-stringio" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="doctest.StringIO">
+<em class="property">class </em><code class="descclassname">doctest.</code><code class="descname">StringIO</code><span class="sig-paren">(</span><em>buf=''</em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/StringIO.html#StringIO"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#doctest.StringIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>class StringIO([buffer])</p>
+<p>When a StringIO object is created, it can be initialized to an existing
+string by passing the string to the constructor. If no string is given,
+the StringIO will start empty.</p>
+<p>The StringIO object can accept either Unicode or 8-bit strings, but
+mixing the two may take some care. If both are used, 8-bit strings that
+cannot be interpreted as 7-bit ASCII (that use the 8th bit) will cause
+a UnicodeError to be raised when getvalue() is called.</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="doctest.StringIO.close.html#doctest.StringIO.close" title="doctest.StringIO.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>()</td>
+<td>Free the memory buffer.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.StringIO.flush.html#doctest.StringIO.flush" title="doctest.StringIO.flush"><code class="xref py py-obj docutils literal"><span class="pre">flush</span></code></a>()</td>
+<td>Flush the internal buffer</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.StringIO.getvalue.html#doctest.StringIO.getvalue" title="doctest.StringIO.getvalue"><code class="xref py py-obj docutils literal"><span class="pre">getvalue</span></code></a>()</td>
+<td>Retrieve the entire contents of the &#8220;file&#8221; at any time before the StringIO object&#8217;s close() method is called.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.StringIO.isatty.html#doctest.StringIO.isatty" title="doctest.StringIO.isatty"><code class="xref py py-obj docutils literal"><span class="pre">isatty</span></code></a>()</td>
+<td>Returns False because StringIO objects are not connected to a tty-like device.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.StringIO.next.html#doctest.StringIO.next" title="doctest.StringIO.next"><code class="xref py py-obj docutils literal"><span class="pre">next</span></code></a>()</td>
+<td>A file object is its own iterator, for example iter(f) returns f (unless f is closed).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.StringIO.read.html#doctest.StringIO.read" title="doctest.StringIO.read"><code class="xref py py-obj docutils literal"><span class="pre">read</span></code></a>([n])</td>
+<td>Read at most size bytes from the file (less if the read hits EOF before obtaining size bytes).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.StringIO.readline.html#doctest.StringIO.readline" title="doctest.StringIO.readline"><code class="xref py py-obj docutils literal"><span class="pre">readline</span></code></a>([length])</td>
+<td>Read one entire line from the file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.StringIO.readlines.html#doctest.StringIO.readlines" title="doctest.StringIO.readlines"><code class="xref py py-obj docutils literal"><span class="pre">readlines</span></code></a>([sizehint])</td>
+<td>Read until EOF using readline() and return a list containing the lines thus read.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.StringIO.seek.html#doctest.StringIO.seek" title="doctest.StringIO.seek"><code class="xref py py-obj docutils literal"><span class="pre">seek</span></code></a>(pos[,&nbsp;mode])</td>
+<td>Set the file&#8217;s current position.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.StringIO.tell.html#doctest.StringIO.tell" title="doctest.StringIO.tell"><code class="xref py py-obj docutils literal"><span class="pre">tell</span></code></a>()</td>
+<td>Return the file&#8217;s current position.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.StringIO.truncate.html#doctest.StringIO.truncate" title="doctest.StringIO.truncate"><code class="xref py py-obj docutils literal"><span class="pre">truncate</span></code></a>([size])</td>
+<td>Truncate the file&#8217;s size.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.StringIO.write.html#doctest.StringIO.write" title="doctest.StringIO.write"><code class="xref py py-obj docutils literal"><span class="pre">write</span></code></a>(s)</td>
+<td>Write a string to the file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.StringIO.writelines.html#doctest.StringIO.writelines" title="doctest.StringIO.writelines"><code class="xref py py-obj docutils literal"><span class="pre">writelines</span></code></a>(iterable)</td>
+<td>Write a sequence of strings to the file.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

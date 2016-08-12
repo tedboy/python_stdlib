@@ -1,0 +1,589 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>json &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>json</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for json</h1><div class="highlight"><pre>
+<span></span><span class="sd">r&quot;&quot;&quot;JSON (JavaScript Object Notation) &lt;http://json.org&gt; is a subset of</span>
+<span class="sd">JavaScript syntax (ECMA-262 3rd edition) used as a lightweight data</span>
+<span class="sd">interchange format.</span>
+
+<span class="sd">:mod:`json` exposes an API familiar to users of the standard library</span>
+<span class="sd">:mod:`marshal` and :mod:`pickle` modules. It is the externally maintained</span>
+<span class="sd">version of the :mod:`json` library contained in Python 2.6, but maintains</span>
+<span class="sd">compatibility with Python 2.4 and Python 2.5 and (currently) has</span>
+<span class="sd">significant performance advantages, even without using the optional C</span>
+<span class="sd">extension for speedups.</span>
+
+<span class="sd">Encoding basic Python object hierarchies::</span>
+
+<span class="sd">    &gt;&gt;&gt; import json</span>
+<span class="sd">    &gt;&gt;&gt; json.dumps([&#39;foo&#39;, {&#39;bar&#39;: (&#39;baz&#39;, None, 1.0, 2)}])</span>
+<span class="sd">    &#39;[&quot;foo&quot;, {&quot;bar&quot;: [&quot;baz&quot;, null, 1.0, 2]}]&#39;</span>
+<span class="sd">    &gt;&gt;&gt; print json.dumps(&quot;\&quot;foo\bar&quot;)</span>
+<span class="sd">    &quot;\&quot;foo\bar&quot;</span>
+<span class="sd">    &gt;&gt;&gt; print json.dumps(u&#39;\u1234&#39;)</span>
+<span class="sd">    &quot;\u1234&quot;</span>
+<span class="sd">    &gt;&gt;&gt; print json.dumps(&#39;\\&#39;)</span>
+<span class="sd">    &quot;\\&quot;</span>
+<span class="sd">    &gt;&gt;&gt; print json.dumps({&quot;c&quot;: 0, &quot;b&quot;: 0, &quot;a&quot;: 0}, sort_keys=True)</span>
+<span class="sd">    {&quot;a&quot;: 0, &quot;b&quot;: 0, &quot;c&quot;: 0}</span>
+<span class="sd">    &gt;&gt;&gt; from StringIO import StringIO</span>
+<span class="sd">    &gt;&gt;&gt; io = StringIO()</span>
+<span class="sd">    &gt;&gt;&gt; json.dump([&#39;streaming API&#39;], io)</span>
+<span class="sd">    &gt;&gt;&gt; io.getvalue()</span>
+<span class="sd">    &#39;[&quot;streaming API&quot;]&#39;</span>
+
+<span class="sd">Compact encoding::</span>
+
+<span class="sd">    &gt;&gt;&gt; import json</span>
+<span class="sd">    &gt;&gt;&gt; json.dumps([1,2,3,{&#39;4&#39;: 5, &#39;6&#39;: 7}], sort_keys=True, separators=(&#39;,&#39;,&#39;:&#39;))</span>
+<span class="sd">    &#39;[1,2,3,{&quot;4&quot;:5,&quot;6&quot;:7}]&#39;</span>
+
+<span class="sd">Pretty printing::</span>
+
+<span class="sd">    &gt;&gt;&gt; import json</span>
+<span class="sd">    &gt;&gt;&gt; print json.dumps({&#39;4&#39;: 5, &#39;6&#39;: 7}, sort_keys=True,</span>
+<span class="sd">    ...                  indent=4, separators=(&#39;,&#39;, &#39;: &#39;))</span>
+<span class="sd">    {</span>
+<span class="sd">        &quot;4&quot;: 5,</span>
+<span class="sd">        &quot;6&quot;: 7</span>
+<span class="sd">    }</span>
+
+<span class="sd">Decoding JSON::</span>
+
+<span class="sd">    &gt;&gt;&gt; import json</span>
+<span class="sd">    &gt;&gt;&gt; obj = [u&#39;foo&#39;, {u&#39;bar&#39;: [u&#39;baz&#39;, None, 1.0, 2]}]</span>
+<span class="sd">    &gt;&gt;&gt; json.loads(&#39;[&quot;foo&quot;, {&quot;bar&quot;:[&quot;baz&quot;, null, 1.0, 2]}]&#39;) == obj</span>
+<span class="sd">    True</span>
+<span class="sd">    &gt;&gt;&gt; json.loads(&#39;&quot;\\&quot;foo\\bar&quot;&#39;) == u&#39;&quot;foo\x08ar&#39;</span>
+<span class="sd">    True</span>
+<span class="sd">    &gt;&gt;&gt; from StringIO import StringIO</span>
+<span class="sd">    &gt;&gt;&gt; io = StringIO(&#39;[&quot;streaming API&quot;]&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; json.load(io)[0] == &#39;streaming API&#39;</span>
+<span class="sd">    True</span>
+
+<span class="sd">Specializing JSON object decoding::</span>
+
+<span class="sd">    &gt;&gt;&gt; import json</span>
+<span class="sd">    &gt;&gt;&gt; def as_complex(dct):</span>
+<span class="sd">    ...     if &#39;__complex__&#39; in dct:</span>
+<span class="sd">    ...         return complex(dct[&#39;real&#39;], dct[&#39;imag&#39;])</span>
+<span class="sd">    ...     return dct</span>
+<span class="sd">    ...</span>
+<span class="sd">    &gt;&gt;&gt; json.loads(&#39;{&quot;__complex__&quot;: true, &quot;real&quot;: 1, &quot;imag&quot;: 2}&#39;,</span>
+<span class="sd">    ...     object_hook=as_complex)</span>
+<span class="sd">    (1+2j)</span>
+<span class="sd">    &gt;&gt;&gt; from decimal import Decimal</span>
+<span class="sd">    &gt;&gt;&gt; json.loads(&#39;1.1&#39;, parse_float=Decimal) == Decimal(&#39;1.1&#39;)</span>
+<span class="sd">    True</span>
+
+<span class="sd">Specializing JSON object encoding::</span>
+
+<span class="sd">    &gt;&gt;&gt; import json</span>
+<span class="sd">    &gt;&gt;&gt; def encode_complex(obj):</span>
+<span class="sd">    ...     if isinstance(obj, complex):</span>
+<span class="sd">    ...         return [obj.real, obj.imag]</span>
+<span class="sd">    ...     raise TypeError(repr(o) + &quot; is not JSON serializable&quot;)</span>
+<span class="sd">    ...</span>
+<span class="sd">    &gt;&gt;&gt; json.dumps(2 + 1j, default=encode_complex)</span>
+<span class="sd">    &#39;[2.0, 1.0]&#39;</span>
+<span class="sd">    &gt;&gt;&gt; json.JSONEncoder(default=encode_complex).encode(2 + 1j)</span>
+<span class="sd">    &#39;[2.0, 1.0]&#39;</span>
+<span class="sd">    &gt;&gt;&gt; &#39;&#39;.join(json.JSONEncoder(default=encode_complex).iterencode(2 + 1j))</span>
+<span class="sd">    &#39;[2.0, 1.0]&#39;</span>
+
+
+<span class="sd">Using json.tool from the shell to validate and pretty-print::</span>
+
+<span class="sd">    $ echo &#39;{&quot;json&quot;:&quot;obj&quot;}&#39; | python -m json.tool</span>
+<span class="sd">    {</span>
+<span class="sd">        &quot;json&quot;: &quot;obj&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">    $ echo &#39;{ 1.2:3.4}&#39; | python -m json.tool</span>
+<span class="sd">    Expecting property name enclosed in double quotes: line 1 column 3 (char 2)</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">__version__</span> <span class="o">=</span> <span class="s1">&#39;2.0.9&#39;</span>
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;dump&#39;</span><span class="p">,</span> <span class="s1">&#39;dumps&#39;</span><span class="p">,</span> <span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="s1">&#39;loads&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;JSONDecoder&#39;</span><span class="p">,</span> <span class="s1">&#39;JSONEncoder&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;Bob Ippolito &lt;bob@redivi.com&gt;&#39;</span>
+
+<span class="kn">from</span> <span class="nn">.decoder</span> <span class="k">import</span> <span class="n">JSONDecoder</span>
+<span class="kn">from</span> <span class="nn">.encoder</span> <span class="k">import</span> <span class="n">JSONEncoder</span>
+
+<span class="n">_default_encoder</span> <span class="o">=</span> <span class="n">JSONEncoder</span><span class="p">(</span>
+    <span class="n">skipkeys</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">check_circular</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">allow_nan</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">indent</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">separators</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span>
+    <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span>
+
+<div class="viewcode-block" id="dump"><a class="viewcode-back" href="../misc/generated/json.dump.html#json.dump">[docs]</a><span class="k">def</span> <span class="nf">dump</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">fp</span><span class="p">,</span> <span class="n">skipkeys</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">check_circular</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">allow_nan</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cls</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Serialize ``obj`` as a JSON formatted stream to ``fp`` (a</span>
+<span class="sd">    ``.write()``-supporting file-like object).</span>
+
+<span class="sd">    If ``skipkeys`` is true then ``dict`` keys that are not basic types</span>
+<span class="sd">    (``str``, ``unicode``, ``int``, ``long``, ``float``, ``bool``, ``None``)</span>
+<span class="sd">    will be skipped instead of raising a ``TypeError``.</span>
+
+<span class="sd">    If ``ensure_ascii`` is true (the default), all non-ASCII characters in the</span>
+<span class="sd">    output are escaped with ``\uXXXX`` sequences, and the result is a ``str``</span>
+<span class="sd">    instance consisting of ASCII characters only.  If ``ensure_ascii`` is</span>
+<span class="sd">    ``False``, some chunks written to ``fp`` may be ``unicode`` instances.</span>
+<span class="sd">    This usually happens because the input contains unicode strings or the</span>
+<span class="sd">    ``encoding`` parameter is used. Unless ``fp.write()`` explicitly</span>
+<span class="sd">    understands ``unicode`` (as in ``codecs.getwriter``) this is likely to</span>
+<span class="sd">    cause an error.</span>
+
+<span class="sd">    If ``check_circular`` is false, then the circular reference check</span>
+<span class="sd">    for container types will be skipped and a circular reference will</span>
+<span class="sd">    result in an ``OverflowError`` (or worse).</span>
+
+<span class="sd">    If ``allow_nan`` is false, then it will be a ``ValueError`` to</span>
+<span class="sd">    serialize out of range ``float`` values (``nan``, ``inf``, ``-inf``)</span>
+<span class="sd">    in strict compliance of the JSON specification, instead of using the</span>
+<span class="sd">    JavaScript equivalents (``NaN``, ``Infinity``, ``-Infinity``).</span>
+
+<span class="sd">    If ``indent`` is a non-negative integer, then JSON array elements and</span>
+<span class="sd">    object members will be pretty-printed with that indent level. An indent</span>
+<span class="sd">    level of 0 will only insert newlines. ``None`` is the most compact</span>
+<span class="sd">    representation.  Since the default item separator is ``&#39;, &#39;``,  the</span>
+<span class="sd">    output might include trailing whitespace when ``indent`` is specified.</span>
+<span class="sd">    You can use ``separators=(&#39;,&#39;, &#39;: &#39;)`` to avoid this.</span>
+
+<span class="sd">    If ``separators`` is an ``(item_separator, dict_separator)`` tuple</span>
+<span class="sd">    then it will be used instead of the default ``(&#39;, &#39;, &#39;: &#39;)`` separators.</span>
+<span class="sd">    ``(&#39;,&#39;, &#39;:&#39;)`` is the most compact JSON representation.</span>
+
+<span class="sd">    ``encoding`` is the character encoding for str instances, default is UTF-8.</span>
+
+<span class="sd">    ``default(obj)`` is a function that should return a serializable version</span>
+<span class="sd">    of obj or raise TypeError. The default simply raises TypeError.</span>
+
+<span class="sd">    If *sort_keys* is ``True`` (default: ``False``), then the output of</span>
+<span class="sd">    dictionaries will be sorted by key.</span>
+
+<span class="sd">    To use a custom ``JSONEncoder`` subclass (e.g. one that overrides the</span>
+<span class="sd">    ``.default()`` method to serialize additional types), specify it with</span>
+<span class="sd">    the ``cls`` kwarg; otherwise ``JSONEncoder`` is used.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># cached encoder</span>
+    <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">skipkeys</span> <span class="ow">and</span> <span class="n">ensure_ascii</span> <span class="ow">and</span>
+        <span class="n">check_circular</span> <span class="ow">and</span> <span class="n">allow_nan</span> <span class="ow">and</span>
+        <span class="n">cls</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">indent</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">separators</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span>
+        <span class="n">encoding</span> <span class="o">==</span> <span class="s1">&#39;utf-8&#39;</span> <span class="ow">and</span> <span class="n">default</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">sort_keys</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">kw</span><span class="p">):</span>
+        <span class="n">iterable</span> <span class="o">=</span> <span class="n">_default_encoder</span><span class="o">.</span><span class="n">iterencode</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">cls</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">cls</span> <span class="o">=</span> <span class="n">JSONEncoder</span>
+        <span class="n">iterable</span> <span class="o">=</span> <span class="n">cls</span><span class="p">(</span><span class="n">skipkeys</span><span class="o">=</span><span class="n">skipkeys</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="n">ensure_ascii</span><span class="p">,</span>
+            <span class="n">check_circular</span><span class="o">=</span><span class="n">check_circular</span><span class="p">,</span> <span class="n">allow_nan</span><span class="o">=</span><span class="n">allow_nan</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="n">indent</span><span class="p">,</span>
+            <span class="n">separators</span><span class="o">=</span><span class="n">separators</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span>
+            <span class="n">default</span><span class="o">=</span><span class="n">default</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="n">sort_keys</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span><span class="o">.</span><span class="n">iterencode</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+    <span class="c1"># could accelerate with writelines in some versions of Python, at</span>
+    <span class="c1"># a debuggability cost</span>
+    <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">iterable</span><span class="p">:</span>
+        <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="dumps"><a class="viewcode-back" href="../misc/generated/json.dumps.html#json.dumps">[docs]</a><span class="k">def</span> <span class="nf">dumps</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">skipkeys</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">check_circular</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">allow_nan</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cls</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Serialize ``obj`` to a JSON formatted ``str``.</span>
+
+<span class="sd">    If ``skipkeys`` is true then ``dict`` keys that are not basic types</span>
+<span class="sd">    (``str``, ``unicode``, ``int``, ``long``, ``float``, ``bool``, ``None``)</span>
+<span class="sd">    will be skipped instead of raising a ``TypeError``.</span>
+
+
+<span class="sd">    If ``ensure_ascii`` is false, all non-ASCII characters are not escaped, and</span>
+<span class="sd">    the return value may be a ``unicode`` instance. See ``dump`` for details.</span>
+
+<span class="sd">    If ``check_circular`` is false, then the circular reference check</span>
+<span class="sd">    for container types will be skipped and a circular reference will</span>
+<span class="sd">    result in an ``OverflowError`` (or worse).</span>
+
+<span class="sd">    If ``allow_nan`` is false, then it will be a ``ValueError`` to</span>
+<span class="sd">    serialize out of range ``float`` values (``nan``, ``inf``, ``-inf``) in</span>
+<span class="sd">    strict compliance of the JSON specification, instead of using the</span>
+<span class="sd">    JavaScript equivalents (``NaN``, ``Infinity``, ``-Infinity``).</span>
+
+<span class="sd">    If ``indent`` is a non-negative integer, then JSON array elements and</span>
+<span class="sd">    object members will be pretty-printed with that indent level. An indent</span>
+<span class="sd">    level of 0 will only insert newlines. ``None`` is the most compact</span>
+<span class="sd">    representation.  Since the default item separator is ``&#39;, &#39;``,  the</span>
+<span class="sd">    output might include trailing whitespace when ``indent`` is specified.</span>
+<span class="sd">    You can use ``separators=(&#39;,&#39;, &#39;: &#39;)`` to avoid this.</span>
+
+<span class="sd">    If ``separators`` is an ``(item_separator, dict_separator)`` tuple</span>
+<span class="sd">    then it will be used instead of the default ``(&#39;, &#39;, &#39;: &#39;)`` separators.</span>
+<span class="sd">    ``(&#39;,&#39;, &#39;:&#39;)`` is the most compact JSON representation.</span>
+
+<span class="sd">    ``encoding`` is the character encoding for str instances, default is UTF-8.</span>
+
+<span class="sd">    ``default(obj)`` is a function that should return a serializable version</span>
+<span class="sd">    of obj or raise TypeError. The default simply raises TypeError.</span>
+
+<span class="sd">    If *sort_keys* is ``True`` (default: ``False``), then the output of</span>
+<span class="sd">    dictionaries will be sorted by key.</span>
+
+<span class="sd">    To use a custom ``JSONEncoder`` subclass (e.g. one that overrides the</span>
+<span class="sd">    ``.default()`` method to serialize additional types), specify it with</span>
+<span class="sd">    the ``cls`` kwarg; otherwise ``JSONEncoder`` is used.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># cached encoder</span>
+    <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">skipkeys</span> <span class="ow">and</span> <span class="n">ensure_ascii</span> <span class="ow">and</span>
+        <span class="n">check_circular</span> <span class="ow">and</span> <span class="n">allow_nan</span> <span class="ow">and</span>
+        <span class="n">cls</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">indent</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">separators</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span>
+        <span class="n">encoding</span> <span class="o">==</span> <span class="s1">&#39;utf-8&#39;</span> <span class="ow">and</span> <span class="n">default</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">sort_keys</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">kw</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">_default_encoder</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">cls</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">cls</span> <span class="o">=</span> <span class="n">JSONEncoder</span>
+    <span class="k">return</span> <span class="n">cls</span><span class="p">(</span>
+        <span class="n">skipkeys</span><span class="o">=</span><span class="n">skipkeys</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="n">ensure_ascii</span><span class="p">,</span>
+        <span class="n">check_circular</span><span class="o">=</span><span class="n">check_circular</span><span class="p">,</span> <span class="n">allow_nan</span><span class="o">=</span><span class="n">allow_nan</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="n">indent</span><span class="p">,</span>
+        <span class="n">separators</span><span class="o">=</span><span class="n">separators</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">default</span><span class="p">,</span>
+        <span class="n">sort_keys</span><span class="o">=</span><span class="n">sort_keys</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span></div>
+
+
+<span class="n">_default_decoder</span> <span class="o">=</span> <span class="n">JSONDecoder</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">object_hook</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                               <span class="n">object_pairs_hook</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="load"><a class="viewcode-back" href="../misc/generated/json.load.html#json.load">[docs]</a><span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cls</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">object_hook</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">parse_float</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">parse_int</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">parse_constant</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">object_pairs_hook</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Deserialize ``fp`` (a ``.read()``-supporting file-like object containing</span>
+<span class="sd">    a JSON document) to a Python object.</span>
+
+<span class="sd">    If the contents of ``fp`` is encoded with an ASCII based encoding other</span>
+<span class="sd">    than utf-8 (e.g. latin-1), then an appropriate ``encoding`` name must</span>
+<span class="sd">    be specified. Encodings that are not ASCII based (such as UCS-2) are</span>
+<span class="sd">    not allowed, and should be wrapped with</span>
+<span class="sd">    ``codecs.getreader(fp)(encoding)``, or simply decoded to a ``unicode``</span>
+<span class="sd">    object and passed to ``loads()``</span>
+
+<span class="sd">    ``object_hook`` is an optional function that will be called with the</span>
+<span class="sd">    result of any object literal decode (a ``dict``). The return value of</span>
+<span class="sd">    ``object_hook`` will be used instead of the ``dict``. This feature</span>
+<span class="sd">    can be used to implement custom decoders (e.g. JSON-RPC class hinting).</span>
+
+<span class="sd">    ``object_pairs_hook`` is an optional function that will be called with the</span>
+<span class="sd">    result of any object literal decoded with an ordered list of pairs.  The</span>
+<span class="sd">    return value of ``object_pairs_hook`` will be used instead of the ``dict``.</span>
+<span class="sd">    This feature can be used to implement custom decoders that rely on the</span>
+<span class="sd">    order that the key and value pairs are decoded (for example,</span>
+<span class="sd">    collections.OrderedDict will remember the order of insertion). If</span>
+<span class="sd">    ``object_hook`` is also defined, the ``object_pairs_hook`` takes priority.</span>
+
+<span class="sd">    To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``</span>
+<span class="sd">    kwarg; otherwise ``JSONDecoder`` is used.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">loads</span><span class="p">(</span><span class="n">fp</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span>
+        <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span> <span class="n">cls</span><span class="o">=</span><span class="n">cls</span><span class="p">,</span> <span class="n">object_hook</span><span class="o">=</span><span class="n">object_hook</span><span class="p">,</span>
+        <span class="n">parse_float</span><span class="o">=</span><span class="n">parse_float</span><span class="p">,</span> <span class="n">parse_int</span><span class="o">=</span><span class="n">parse_int</span><span class="p">,</span>
+        <span class="n">parse_constant</span><span class="o">=</span><span class="n">parse_constant</span><span class="p">,</span> <span class="n">object_pairs_hook</span><span class="o">=</span><span class="n">object_pairs_hook</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kw</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="loads"><a class="viewcode-back" href="../misc/generated/json.loads.html#json.loads">[docs]</a><span class="k">def</span> <span class="nf">loads</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cls</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">object_hook</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">parse_float</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">parse_int</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">parse_constant</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">object_pairs_hook</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Deserialize ``s`` (a ``str`` or ``unicode`` instance containing a JSON</span>
+<span class="sd">    document) to a Python object.</span>
+
+<span class="sd">    If ``s`` is a ``str`` instance and is encoded with an ASCII based encoding</span>
+<span class="sd">    other than utf-8 (e.g. latin-1) then an appropriate ``encoding`` name</span>
+<span class="sd">    must be specified. Encodings that are not ASCII based (such as UCS-2)</span>
+<span class="sd">    are not allowed and should be decoded to ``unicode`` first.</span>
+
+<span class="sd">    ``object_hook`` is an optional function that will be called with the</span>
+<span class="sd">    result of any object literal decode (a ``dict``). The return value of</span>
+<span class="sd">    ``object_hook`` will be used instead of the ``dict``. This feature</span>
+<span class="sd">    can be used to implement custom decoders (e.g. JSON-RPC class hinting).</span>
+
+<span class="sd">    ``object_pairs_hook`` is an optional function that will be called with the</span>
+<span class="sd">    result of any object literal decoded with an ordered list of pairs.  The</span>
+<span class="sd">    return value of ``object_pairs_hook`` will be used instead of the ``dict``.</span>
+<span class="sd">    This feature can be used to implement custom decoders that rely on the</span>
+<span class="sd">    order that the key and value pairs are decoded (for example,</span>
+<span class="sd">    collections.OrderedDict will remember the order of insertion). If</span>
+<span class="sd">    ``object_hook`` is also defined, the ``object_pairs_hook`` takes priority.</span>
+
+<span class="sd">    ``parse_float``, if specified, will be called with the string</span>
+<span class="sd">    of every JSON float to be decoded. By default this is equivalent to</span>
+<span class="sd">    float(num_str). This can be used to use another datatype or parser</span>
+<span class="sd">    for JSON floats (e.g. decimal.Decimal).</span>
+
+<span class="sd">    ``parse_int``, if specified, will be called with the string</span>
+<span class="sd">    of every JSON int to be decoded. By default this is equivalent to</span>
+<span class="sd">    int(num_str). This can be used to use another datatype or parser</span>
+<span class="sd">    for JSON integers (e.g. float).</span>
+
+<span class="sd">    ``parse_constant``, if specified, will be called with one of the</span>
+<span class="sd">    following strings: -Infinity, Infinity, NaN, null, true, false.</span>
+<span class="sd">    This can be used to raise an exception if invalid JSON numbers</span>
+<span class="sd">    are encountered.</span>
+
+<span class="sd">    To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``</span>
+<span class="sd">    kwarg; otherwise ``JSONDecoder`` is used.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">cls</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">encoding</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">object_hook</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span>
+            <span class="n">parse_int</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">parse_float</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span>
+            <span class="n">parse_constant</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">object_pairs_hook</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">kw</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">_default_decoder</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">cls</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">cls</span> <span class="o">=</span> <span class="n">JSONDecoder</span>
+    <span class="k">if</span> <span class="n">object_hook</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">kw</span><span class="p">[</span><span class="s1">&#39;object_hook&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">object_hook</span>
+    <span class="k">if</span> <span class="n">object_pairs_hook</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">kw</span><span class="p">[</span><span class="s1">&#39;object_pairs_hook&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">object_pairs_hook</span>
+    <span class="k">if</span> <span class="n">parse_float</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">kw</span><span class="p">[</span><span class="s1">&#39;parse_float&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">parse_float</span>
+    <span class="k">if</span> <span class="n">parse_int</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">kw</span><span class="p">[</span><span class="s1">&#39;parse_int&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">parse_int</span>
+    <span class="k">if</span> <span class="n">parse_constant</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">kw</span><span class="p">[</span><span class="s1">&#39;parse_constant&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">parse_constant</span>
+    <span class="k">return</span> <span class="n">cls</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pickle &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>pickle</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/misc/generated/pickle.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pickle">
+<span id="pickle"></span><h1>pickle<a class="headerlink" href="#module-pickle" title="Permalink to this headline">¶</a></h1>
+<p>Create portable serialized representations of Python objects.</p>
+<p>See module cPickle for a (much) faster implementation.
+See module copy_reg for a mechanism for registering custom picklers.
+See module pickletools source for extensive comments.</p>
+<p>Classes:</p>
+<blockquote>
+<div>Pickler
+Unpickler</div></blockquote>
+<p>Functions:</p>
+<blockquote>
+<div>dump(object, file)
+dumps(object) -&gt; string
+load(file) -&gt; object
+loads(string) -&gt; object</div></blockquote>
+<p>Misc variables:</p>
+<blockquote>
+<div>__version__
+format_version
+compatible_formats</div></blockquote>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringIO.html#pickle.StringIO" title="pickle.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
+<td>StringIO([s]) &#8211; Return a StringIO-like stream for reading or writing</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.decode_long.html#pickle.decode_long" title="pickle.decode_long"><code class="xref py py-obj docutils literal"><span class="pre">decode_long</span></code></a>(data)</td>
+<td>Decode a long from a two&#8217;s complement little-endian binary string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.dump.html#pickle.dump" title="pickle.dump"><code class="xref py py-obj docutils literal"><span class="pre">dump</span></code></a>(obj,&nbsp;file[,&nbsp;protocol])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.dumps.html#pickle.dumps" title="pickle.dumps"><code class="xref py py-obj docutils literal"><span class="pre">dumps</span></code></a>(obj[,&nbsp;protocol])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.encode_long.html#pickle.encode_long" title="pickle.encode_long"><code class="xref py py-obj docutils literal"><span class="pre">encode_long</span></code></a>(x)</td>
+<td>Encode a long to a two&#8217;s complement little-endian binary string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.load.html#pickle.load" title="pickle.load"><code class="xref py py-obj docutils literal"><span class="pre">load</span></code></a>(file)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.loads.html#pickle.loads" title="pickle.loads"><code class="xref py py-obj docutils literal"><span class="pre">loads</span></code></a>(str)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.mloads.html#pickle.mloads" title="pickle.mloads"><code class="xref py py-obj docutils literal"><span class="pre">mloads</span></code></a>(string)</td>
+<td>Convert the string to a value.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.whichmodule.html#pickle.whichmodule" title="pickle.whichmodule"><code class="xref py py-obj docutils literal"><span class="pre">whichmodule</span></code></a>(func,&nbsp;funcname)</td>
+<td>Figure out the module in which a function occurs.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.BooleanType.html#pickle.BooleanType" title="pickle.BooleanType"><code class="xref py py-obj docutils literal"><span class="pre">BooleanType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">bool</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.BufferType.html#pickle.BufferType" title="pickle.BufferType"><code class="xref py py-obj docutils literal"><span class="pre">BufferType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">buffer</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.BuiltinFunctionType.html#pickle.BuiltinFunctionType" title="pickle.BuiltinFunctionType"><code class="xref py py-obj docutils literal"><span class="pre">BuiltinFunctionType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">builtin_function_or_method</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.BuiltinMethodType.html#pickle.BuiltinMethodType" title="pickle.BuiltinMethodType"><code class="xref py py-obj docutils literal"><span class="pre">BuiltinMethodType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">builtin_function_or_method</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.ClassType.html#pickle.ClassType" title="pickle.ClassType"><code class="xref py py-obj docutils literal"><span class="pre">ClassType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">classobj</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.CodeType.html#pickle.CodeType" title="pickle.CodeType"><code class="xref py py-obj docutils literal"><span class="pre">CodeType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">code</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.ComplexType.html#pickle.ComplexType" title="pickle.ComplexType"><code class="xref py py-obj docutils literal"><span class="pre">ComplexType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">complex</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.DictProxyType.html#pickle.DictProxyType" title="pickle.DictProxyType"><code class="xref py py-obj docutils literal"><span class="pre">DictProxyType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">dictproxy</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.DictType.html#pickle.DictType" title="pickle.DictType"><code class="xref py py-obj docutils literal"><span class="pre">DictType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">dict</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.DictionaryType.html#pickle.DictionaryType" title="pickle.DictionaryType"><code class="xref py py-obj docutils literal"><span class="pre">DictionaryType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">dict</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.EllipsisType.html#pickle.EllipsisType" title="pickle.EllipsisType"><code class="xref py py-obj docutils literal"><span class="pre">EllipsisType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">ellipsis</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.FileType.html#pickle.FileType" title="pickle.FileType"><code class="xref py py-obj docutils literal"><span class="pre">FileType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">file</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.FloatType.html#pickle.FloatType" title="pickle.FloatType"><code class="xref py py-obj docutils literal"><span class="pre">FloatType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">float</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.FrameType.html#pickle.FrameType" title="pickle.FrameType"><code class="xref py py-obj docutils literal"><span class="pre">FrameType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">frame</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.FunctionType.html#pickle.FunctionType" title="pickle.FunctionType"><code class="xref py py-obj docutils literal"><span class="pre">FunctionType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">function</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.GeneratorType.html#pickle.GeneratorType" title="pickle.GeneratorType"><code class="xref py py-obj docutils literal"><span class="pre">GeneratorType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">generator</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.GetSetDescriptorType.html#pickle.GetSetDescriptorType" title="pickle.GetSetDescriptorType"><code class="xref py py-obj docutils literal"><span class="pre">GetSetDescriptorType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">getset_descriptor</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.InstanceType.html#pickle.InstanceType" title="pickle.InstanceType"><code class="xref py py-obj docutils literal"><span class="pre">InstanceType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">instance</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.IntType.html#pickle.IntType" title="pickle.IntType"><code class="xref py py-obj docutils literal"><span class="pre">IntType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">int</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.LambdaType.html#pickle.LambdaType" title="pickle.LambdaType"><code class="xref py py-obj docutils literal"><span class="pre">LambdaType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">function</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.ListType.html#pickle.ListType" title="pickle.ListType"><code class="xref py py-obj docutils literal"><span class="pre">ListType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">list</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.LongType.html#pickle.LongType" title="pickle.LongType"><code class="xref py py-obj docutils literal"><span class="pre">LongType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">long</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.MemberDescriptorType.html#pickle.MemberDescriptorType" title="pickle.MemberDescriptorType"><code class="xref py py-obj docutils literal"><span class="pre">MemberDescriptorType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">member_descriptor</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.MethodType.html#pickle.MethodType" title="pickle.MethodType"><code class="xref py py-obj docutils literal"><span class="pre">MethodType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">instancemethod</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.ModuleType.html#pickle.ModuleType" title="pickle.ModuleType"><code class="xref py py-obj docutils literal"><span class="pre">ModuleType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">module</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.NoneType.html#pickle.NoneType" title="pickle.NoneType"><code class="xref py py-obj docutils literal"><span class="pre">NoneType</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.NotImplementedType.html#pickle.NotImplementedType" title="pickle.NotImplementedType"><code class="xref py py-obj docutils literal"><span class="pre">NotImplementedType</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.ObjectType.html#pickle.ObjectType" title="pickle.ObjectType"><code class="xref py py-obj docutils literal"><span class="pre">ObjectType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">object</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.Pickler.html#pickle.Pickler" title="pickle.Pickler"><code class="xref py py-obj docutils literal"><span class="pre">Pickler</span></code></a>(file[,&nbsp;protocol])</td>
+<td><p class="rubric">Methods</p>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.SliceType.html#pickle.SliceType" title="pickle.SliceType"><code class="xref py py-obj docutils literal"><span class="pre">SliceType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">slice</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.StringType.html#pickle.StringType" title="pickle.StringType"><code class="xref py py-obj docutils literal"><span class="pre">StringType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">str</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.TracebackType.html#pickle.TracebackType" title="pickle.TracebackType"><code class="xref py py-obj docutils literal"><span class="pre">TracebackType</span></code></a></td>
+<td>alias of <a class="reference internal" href="traceback.html#module-traceback" title="traceback"><code class="xref py py-class docutils literal"><span class="pre">traceback</span></code></a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.TupleType.html#pickle.TupleType" title="pickle.TupleType"><code class="xref py py-obj docutils literal"><span class="pre">TupleType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.TypeType.html#pickle.TypeType" title="pickle.TypeType"><code class="xref py py-obj docutils literal"><span class="pre">TypeType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">type</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.UnboundMethodType.html#pickle.UnboundMethodType" title="pickle.UnboundMethodType"><code class="xref py py-obj docutils literal"><span class="pre">UnboundMethodType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">instancemethod</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.UnicodeType.html#pickle.UnicodeType" title="pickle.UnicodeType"><code class="xref py py-obj docutils literal"><span class="pre">UnicodeType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">unicode</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.Unpickler.html#pickle.Unpickler" title="pickle.Unpickler"><code class="xref py py-obj docutils literal"><span class="pre">Unpickler</span></code></a>(file)</td>
+<td><p class="rubric">Methods</p>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.XRangeType.html#pickle.XRangeType" title="pickle.XRangeType"><code class="xref py py-obj docutils literal"><span class="pre">XRangeType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">xrange</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="pickle.PickleError.html#pickle.PickleError" title="pickle.PickleError"><code class="xref py py-obj docutils literal"><span class="pre">PickleError</span></code></a></td>
+<td>A common base class for the other pickling exceptions.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.PicklingError.html#pickle.PicklingError" title="pickle.PicklingError"><code class="xref py py-obj docutils literal"><span class="pre">PicklingError</span></code></a></td>
+<td>This exception is raised when an unpicklable object is passed to the dump() method.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.UnpicklingError.html#pickle.UnpicklingError" title="pickle.UnpicklingError"><code class="xref py py-obj docutils literal"><span class="pre">UnpicklingError</span></code></a></td>
+<td>This exception is raised when there is a problem unpickling an object, such as a security violation.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

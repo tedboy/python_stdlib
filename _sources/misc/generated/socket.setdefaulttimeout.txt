@@ -1,0 +1,6 @@
+socket.setdefaulttimeout
+========================
+
+.. currentmodule:: socket
+
+.. autofunction:: setdefaulttimeout

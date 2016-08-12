@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cgi &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>cgi</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/misc/generated/cgi.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-cgi">
+<span id="cgi"></span><h1>cgi<a class="headerlink" href="#module-cgi" title="Permalink to this headline">¶</a></h1>
+<p>Support module for CGI (Common Gateway Interface) scripts.</p>
+<p>This module defines a number of utilities for use by CGI scripts
+written in Python.</p>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="cgi.StringIO.html#cgi.StringIO" title="cgi.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
+<td>StringIO([s]) &#8211; Return a StringIO-like stream for reading or writing</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cgi.dolog.html#cgi.dolog" title="cgi.dolog"><code class="xref py py-obj docutils literal"><span class="pre">dolog</span></code></a>(fmt,&nbsp;*args)</td>
+<td>Write a log message to the log file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cgi.escape.html#cgi.escape" title="cgi.escape"><code class="xref py py-obj docutils literal"><span class="pre">escape</span></code></a>(s[,&nbsp;quote])</td>
+<td>Replace special characters &#8220;&amp;&#8221;, &#8220;&lt;&#8221; and &#8220;&gt;&#8221; to HTML-safe sequences.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cgi.filterwarnings.html#cgi.filterwarnings" title="cgi.filterwarnings"><code class="xref py py-obj docutils literal"><span class="pre">filterwarnings</span></code></a>(action[,&nbsp;message,&nbsp;category,&nbsp;...])</td>
+<td>Insert an entry into the list of warnings filters (at the front).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cgi.initlog.html#cgi.initlog" title="cgi.initlog"><code class="xref py py-obj docutils literal"><span class="pre">initlog</span></code></a>(*allargs)</td>
+<td>Write a log message, if there is a log file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cgi.log.html#cgi.log" title="cgi.log"><code class="xref py py-obj docutils literal"><span class="pre">log</span></code></a>(*allargs)</td>
+<td>Write a log message, if there is a log file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cgi.nolog.html#cgi.nolog" title="cgi.nolog"><code class="xref py py-obj docutils literal"><span class="pre">nolog</span></code></a>(*allargs)</td>
+<td>Dummy function, assigned to log when logging is disabled.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cgi.parse.html#cgi.parse" title="cgi.parse"><code class="xref py py-obj docutils literal"><span class="pre">parse</span></code></a>([fp,&nbsp;environ,&nbsp;keep_blank_values,&nbsp;...])</td>
+<td>Parse a query in the environment or from a file (default stdin)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cgi.parse_header.html#cgi.parse_header" title="cgi.parse_header"><code class="xref py py-obj docutils literal"><span class="pre">parse_header</span></code></a>(line)</td>
+<td>Parse a Content-type like header.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cgi.parse_multipart.html#cgi.parse_multipart" title="cgi.parse_multipart"><code class="xref py py-obj docutils literal"><span class="pre">parse_multipart</span></code></a>(fp,&nbsp;pdict)</td>
+<td>Parse multipart input.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cgi.parse_qs.html#cgi.parse_qs" title="cgi.parse_qs"><code class="xref py py-obj docutils literal"><span class="pre">parse_qs</span></code></a>(qs[,&nbsp;keep_blank_values,&nbsp;strict_parsing])</td>
+<td>Parse a query given as a string argument.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cgi.parse_qsl.html#cgi.parse_qsl" title="cgi.parse_qsl"><code class="xref py py-obj docutils literal"><span class="pre">parse_qsl</span></code></a>(qs[,&nbsp;keep_blank_values,&nbsp;...])</td>
+<td>Parse a query given as a string argument.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cgi.print_arguments.html#cgi.print_arguments" title="cgi.print_arguments"><code class="xref py py-obj docutils literal"><span class="pre">print_arguments</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cgi.print_directory.html#cgi.print_directory" title="cgi.print_directory"><code class="xref py py-obj docutils literal"><span class="pre">print_directory</span></code></a>()</td>
+<td>Dump the current directory as HTML.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cgi.print_environ.html#cgi.print_environ" title="cgi.print_environ"><code class="xref py py-obj docutils literal"><span class="pre">print_environ</span></code></a>([environ])</td>
+<td>Dump the shell environment as HTML.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cgi.print_environ_usage.html#cgi.print_environ_usage" title="cgi.print_environ_usage"><code class="xref py py-obj docutils literal"><span class="pre">print_environ_usage</span></code></a>()</td>
+<td>Dump a list of environment variables used by CGI as HTML.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cgi.print_exception.html#cgi.print_exception" title="cgi.print_exception"><code class="xref py py-obj docutils literal"><span class="pre">print_exception</span></code></a>([type,&nbsp;value,&nbsp;tb,&nbsp;limit])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cgi.print_form.html#cgi.print_form" title="cgi.print_form"><code class="xref py py-obj docutils literal"><span class="pre">print_form</span></code></a>(form)</td>
+<td>Dump the contents of a form as HTML.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cgi.test.html#cgi.test" title="cgi.test"><code class="xref py py-obj docutils literal"><span class="pre">test</span></code></a>([environ])</td>
+<td>Robust test CGI script, usable as main program.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cgi.valid_boundary.html#cgi.valid_boundary" title="cgi.valid_boundary"><code class="xref py py-obj docutils literal"><span class="pre">valid_boundary</span></code></a>(s[,&nbsp;_vb_pattern])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cgi.warn.html#cgi.warn" title="cgi.warn"><code class="xref py py-obj docutils literal"><span class="pre">warn</span></code></a></td>
+<td>Issue a warning, or maybe ignore it or raise an exception.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.FieldStorage.html#cgi.FieldStorage" title="cgi.FieldStorage"><code class="xref py py-obj docutils literal"><span class="pre">FieldStorage</span></code></a>([fp,&nbsp;headers,&nbsp;outerboundary,&nbsp;...])</td>
+<td>Store a sequence of fields, reading multipart/form-data.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.FormContent.html#cgi.FormContent" title="cgi.FormContent"><code class="xref py py-obj docutils literal"><span class="pre">FormContent</span></code></a>([environ,&nbsp;keep_blank_values,&nbsp;...])</td>
+<td>This class is present for backwards compatibility only.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.FormContentDict.html#cgi.FormContentDict" title="cgi.FormContentDict"><code class="xref py py-obj docutils literal"><span class="pre">FormContentDict</span></code></a>([environ,&nbsp;...])</td>
+<td>Form content as dictionary with a list of values per field.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.InterpFormContentDict.html#cgi.InterpFormContentDict" title="cgi.InterpFormContentDict"><code class="xref py py-obj docutils literal"><span class="pre">InterpFormContentDict</span></code></a>([environ,&nbsp;...])</td>
+<td>This class is present for backwards compatibility only.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.MiniFieldStorage.html#cgi.MiniFieldStorage" title="cgi.MiniFieldStorage"><code class="xref py py-obj docutils literal"><span class="pre">MiniFieldStorage</span></code></a>(name,&nbsp;value)</td>
+<td>Like FieldStorage, for use when no file uploads are possible.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.SvFormContentDict.html#cgi.SvFormContentDict" title="cgi.SvFormContentDict"><code class="xref py py-obj docutils literal"><span class="pre">SvFormContentDict</span></code></a>([environ,&nbsp;...])</td>
+<td>Form content as dictionary expecting a single value per field.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.attrgetter.html#cgi.attrgetter" title="cgi.attrgetter"><code class="xref py py-obj docutils literal"><span class="pre">attrgetter</span></code></a></td>
+<td>attrgetter(attr, ...) &#8211;&gt; attrgetter object</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.catch_warnings.html#cgi.catch_warnings" title="cgi.catch_warnings"><code class="xref py py-obj docutils literal"><span class="pre">catch_warnings</span></code></a>([record,&nbsp;module])</td>
+<td>A context manager that copies and restores the warnings filter upon exiting the context.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

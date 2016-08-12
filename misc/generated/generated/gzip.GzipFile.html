@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>gzip.GzipFile &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../../index.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>gzip.GzipFile</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/misc/generated/generated/gzip.GzipFile.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gzip-gzipfile">
+<h1>gzip.GzipFile<a class="headerlink" href="#gzip-gzipfile" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="gzip.GzipFile">
+<em class="property">class </em><code class="descclassname">gzip.</code><code class="descname">GzipFile</code><span class="sig-paren">(</span><em>filename=None</em>, <em>mode=None</em>, <em>compresslevel=9</em>, <em>fileobj=None</em>, <em>mtime=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/gzip.html#GzipFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gzip.GzipFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>The GzipFile class simulates most of the methods of a file object with
+the exception of the readinto() and truncate() methods.</p>
+<p class="rubric">Attributes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.closed.html#gzip.GzipFile.closed" title="gzip.GzipFile.closed"><code class="xref py py-obj docutils literal"><span class="pre">closed</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.filename.html#gzip.GzipFile.filename" title="gzip.GzipFile.filename"><code class="xref py py-obj docutils literal"><span class="pre">filename</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="53%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>myfileobj</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.close.html#gzip.GzipFile.close" title="gzip.GzipFile.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.detach.html#gzip.GzipFile.detach" title="gzip.GzipFile.detach"><code class="xref py py-obj docutils literal"><span class="pre">detach</span></code></a></td>
+<td>Disconnect this buffer from its underlying raw stream and return it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.fileno.html#gzip.GzipFile.fileno" title="gzip.GzipFile.fileno"><code class="xref py py-obj docutils literal"><span class="pre">fileno</span></code></a>()</td>
+<td>Invoke the underlying file object&#8217;s fileno() method.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.flush.html#gzip.GzipFile.flush" title="gzip.GzipFile.flush"><code class="xref py py-obj docutils literal"><span class="pre">flush</span></code></a>([zlib_mode])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.isatty.html#gzip.GzipFile.isatty" title="gzip.GzipFile.isatty"><code class="xref py py-obj docutils literal"><span class="pre">isatty</span></code></a></td>
+<td>Return whether this is an &#8216;interactive&#8217; stream.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.next.html#gzip.GzipFile.next" title="gzip.GzipFile.next"><code class="xref py py-obj docutils literal"><span class="pre">next</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.read.html#gzip.GzipFile.read" title="gzip.GzipFile.read"><code class="xref py py-obj docutils literal"><span class="pre">read</span></code></a>([size])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.read1.html#gzip.GzipFile.read1" title="gzip.GzipFile.read1"><code class="xref py py-obj docutils literal"><span class="pre">read1</span></code></a></td>
+<td>Read and return up to n bytes, with at most one read() call to the underlying raw stream.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.readable.html#gzip.GzipFile.readable" title="gzip.GzipFile.readable"><code class="xref py py-obj docutils literal"><span class="pre">readable</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.readinto.html#gzip.GzipFile.readinto" title="gzip.GzipFile.readinto"><code class="xref py py-obj docutils literal"><span class="pre">readinto</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.readline.html#gzip.GzipFile.readline" title="gzip.GzipFile.readline"><code class="xref py py-obj docutils literal"><span class="pre">readline</span></code></a>([size])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.readlines.html#gzip.GzipFile.readlines" title="gzip.GzipFile.readlines"><code class="xref py py-obj docutils literal"><span class="pre">readlines</span></code></a></td>
+<td>Return a list of lines from the stream.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.rewind.html#gzip.GzipFile.rewind" title="gzip.GzipFile.rewind"><code class="xref py py-obj docutils literal"><span class="pre">rewind</span></code></a>()</td>
+<td>Return the uncompressed stream file position indicator to the</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.seek.html#gzip.GzipFile.seek" title="gzip.GzipFile.seek"><code class="xref py py-obj docutils literal"><span class="pre">seek</span></code></a>(offset[,&nbsp;whence])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.seekable.html#gzip.GzipFile.seekable" title="gzip.GzipFile.seekable"><code class="xref py py-obj docutils literal"><span class="pre">seekable</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.tell.html#gzip.GzipFile.tell" title="gzip.GzipFile.tell"><code class="xref py py-obj docutils literal"><span class="pre">tell</span></code></a></td>
+<td>Return current stream position.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.truncate.html#gzip.GzipFile.truncate" title="gzip.GzipFile.truncate"><code class="xref py py-obj docutils literal"><span class="pre">truncate</span></code></a></td>
+<td>Truncate file to size bytes.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.writable.html#gzip.GzipFile.writable" title="gzip.GzipFile.writable"><code class="xref py py-obj docutils literal"><span class="pre">writable</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.write.html#gzip.GzipFile.write" title="gzip.GzipFile.write"><code class="xref py py-obj docutils literal"><span class="pre">write</span></code></a>(data)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.writelines.html#gzip.GzipFile.writelines" title="gzip.GzipFile.writelines"><code class="xref py py-obj docutils literal"><span class="pre">writelines</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

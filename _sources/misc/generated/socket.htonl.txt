@@ -1,0 +1,6 @@
+socket.htonl
+============
+
+.. currentmodule:: socket
+
+.. autofunction:: htonl

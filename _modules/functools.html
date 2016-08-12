@@ -1,0 +1,337 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>functools &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>functools</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for functools</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;functools.py - Tools for working with functions and callable objects</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># Python module wrapper for _functools C module</span>
+<span class="c1"># to allow utilities written in Python to be added</span>
+<span class="c1"># to the functools module.</span>
+<span class="c1"># Written by Nick Coghlan &lt;ncoghlan at gmail.com&gt;</span>
+<span class="c1">#   Copyright (C) 2006 Python Software Foundation.</span>
+<span class="c1"># See C source code for _functools credits/copyright</span>
+
+<span class="kn">from</span> <span class="nn">_functools</span> <span class="k">import</span> <span class="n">partial</span><span class="p">,</span> <span class="n">reduce</span>
+
+<span class="c1"># update_wrapper() and wraps() are tools to help write</span>
+<span class="c1"># wrapper functions that can handle naive introspection</span>
+
+<span class="n">WRAPPER_ASSIGNMENTS</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;__module__&#39;</span><span class="p">,</span> <span class="s1">&#39;__name__&#39;</span><span class="p">,</span> <span class="s1">&#39;__doc__&#39;</span><span class="p">)</span>
+<span class="n">WRAPPER_UPDATES</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;__dict__&#39;</span><span class="p">,)</span>
+<span class="k">def</span> <span class="nf">update_wrapper</span><span class="p">(</span><span class="n">wrapper</span><span class="p">,</span>
+                   <span class="n">wrapped</span><span class="p">,</span>
+                   <span class="n">assigned</span> <span class="o">=</span> <span class="n">WRAPPER_ASSIGNMENTS</span><span class="p">,</span>
+                   <span class="n">updated</span> <span class="o">=</span> <span class="n">WRAPPER_UPDATES</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Update a wrapper function to look like the wrapped function</span>
+
+<span class="sd">       wrapper is the function to be updated</span>
+<span class="sd">       wrapped is the original function</span>
+<span class="sd">       assigned is a tuple naming the attributes assigned directly</span>
+<span class="sd">       from the wrapped function to the wrapper function (defaults to</span>
+<span class="sd">       functools.WRAPPER_ASSIGNMENTS)</span>
+<span class="sd">       updated is a tuple naming the attributes of the wrapper that</span>
+<span class="sd">       are updated with the corresponding attribute from the wrapped</span>
+<span class="sd">       function (defaults to functools.WRAPPER_UPDATES)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">attr</span> <span class="ow">in</span> <span class="n">assigned</span><span class="p">:</span>
+        <span class="nb">setattr</span><span class="p">(</span><span class="n">wrapper</span><span class="p">,</span> <span class="n">attr</span><span class="p">,</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">wrapped</span><span class="p">,</span> <span class="n">attr</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">attr</span> <span class="ow">in</span> <span class="n">updated</span><span class="p">:</span>
+        <span class="nb">getattr</span><span class="p">(</span><span class="n">wrapper</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">wrapped</span><span class="p">,</span> <span class="n">attr</span><span class="p">,</span> <span class="p">{}))</span>
+    <span class="c1"># Return the wrapper so this can be used as a decorator via partial()</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
+
+<div class="viewcode-block" id="wraps"><a class="viewcode-back" href="../misc/generated/contextlib.wraps.html#socket.wraps">[docs]</a><span class="k">def</span> <span class="nf">wraps</span><span class="p">(</span><span class="n">wrapped</span><span class="p">,</span>
+          <span class="n">assigned</span> <span class="o">=</span> <span class="n">WRAPPER_ASSIGNMENTS</span><span class="p">,</span>
+          <span class="n">updated</span> <span class="o">=</span> <span class="n">WRAPPER_UPDATES</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Decorator factory to apply update_wrapper() to a wrapper function</span>
+
+<span class="sd">       Returns a decorator that invokes update_wrapper() with the decorated</span>
+<span class="sd">       function as the wrapper argument and the arguments to wraps() as the</span>
+<span class="sd">       remaining arguments. Default arguments are as for update_wrapper().</span>
+<span class="sd">       This is a convenience function to simplify applying partial() to</span>
+<span class="sd">       update_wrapper().</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">partial</span><span class="p">(</span><span class="n">update_wrapper</span><span class="p">,</span> <span class="n">wrapped</span><span class="o">=</span><span class="n">wrapped</span><span class="p">,</span>
+                   <span class="n">assigned</span><span class="o">=</span><span class="n">assigned</span><span class="p">,</span> <span class="n">updated</span><span class="o">=</span><span class="n">updated</span><span class="p">)</span></div>
+
+<span class="k">def</span> <span class="nf">total_ordering</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Class decorator that fills in missing ordering methods&quot;&quot;&quot;</span>
+    <span class="n">convert</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;__lt__&#39;</span><span class="p">:</span> <span class="p">[(</span><span class="s1">&#39;__gt__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="ow">not</span> <span class="p">(</span><span class="bp">self</span> <span class="o">&lt;</span> <span class="n">other</span> <span class="ow">or</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span><span class="p">)),</span>
+                   <span class="p">(</span><span class="s1">&#39;__le__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="bp">self</span> <span class="o">&lt;</span> <span class="n">other</span> <span class="ow">or</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s1">&#39;__ge__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">&lt;</span> <span class="n">other</span><span class="p">)],</span>
+        <span class="s1">&#39;__le__&#39;</span><span class="p">:</span> <span class="p">[(</span><span class="s1">&#39;__ge__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">&lt;=</span> <span class="n">other</span> <span class="ow">or</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s1">&#39;__lt__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="bp">self</span> <span class="o">&lt;=</span> <span class="n">other</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s1">&#39;__gt__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">&lt;=</span> <span class="n">other</span><span class="p">)],</span>
+        <span class="s1">&#39;__gt__&#39;</span><span class="p">:</span> <span class="p">[(</span><span class="s1">&#39;__lt__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="ow">not</span> <span class="p">(</span><span class="bp">self</span> <span class="o">&gt;</span> <span class="n">other</span> <span class="ow">or</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span><span class="p">)),</span>
+                   <span class="p">(</span><span class="s1">&#39;__ge__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="bp">self</span> <span class="o">&gt;</span> <span class="n">other</span> <span class="ow">or</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s1">&#39;__le__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">&gt;</span> <span class="n">other</span><span class="p">)],</span>
+        <span class="s1">&#39;__ge__&#39;</span><span class="p">:</span> <span class="p">[(</span><span class="s1">&#39;__le__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="p">(</span><span class="ow">not</span> <span class="bp">self</span> <span class="o">&gt;=</span> <span class="n">other</span><span class="p">)</span> <span class="ow">or</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s1">&#39;__gt__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="bp">self</span> <span class="o">&gt;=</span> <span class="n">other</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span><span class="p">),</span>
+                   <span class="p">(</span><span class="s1">&#39;__lt__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">&gt;=</span> <span class="n">other</span><span class="p">)]</span>
+    <span class="p">}</span>
+    <span class="n">roots</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">cls</span><span class="p">))</span> <span class="o">&amp;</span> <span class="nb">set</span><span class="p">(</span><span class="n">convert</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">roots</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;must define at least one ordering operation: &lt; &gt; &lt;= &gt;=&#39;</span><span class="p">)</span>
+    <span class="n">root</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">roots</span><span class="p">)</span>       <span class="c1"># prefer __lt__ to __le__ to __gt__ to __ge__</span>
+    <span class="k">for</span> <span class="n">opname</span><span class="p">,</span> <span class="n">opfunc</span> <span class="ow">in</span> <span class="n">convert</span><span class="p">[</span><span class="n">root</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">opname</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">roots</span><span class="p">:</span>
+            <span class="n">opfunc</span><span class="o">.</span><span class="n">__name__</span> <span class="o">=</span> <span class="n">opname</span>
+            <span class="n">opfunc</span><span class="o">.</span><span class="n">__doc__</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">opname</span><span class="p">)</span><span class="o">.</span><span class="n">__doc__</span>
+            <span class="nb">setattr</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">opname</span><span class="p">,</span> <span class="n">opfunc</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">cls</span>
+
+<span class="k">def</span> <span class="nf">cmp_to_key</span><span class="p">(</span><span class="n">mycmp</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Convert a cmp= function into a key= function&quot;&quot;&quot;</span>
+    <span class="k">class</span> <span class="nc">K</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+        <span class="n">__slots__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;obj&#39;</span><span class="p">]</span>
+        <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">obj</span> <span class="o">=</span> <span class="n">obj</span>
+        <span class="k">def</span> <span class="nf">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">mycmp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span>
+        <span class="k">def</span> <span class="nf">__gt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">mycmp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
+        <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">mycmp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+        <span class="k">def</span> <span class="nf">__le__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">mycmp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span>
+        <span class="k">def</span> <span class="nf">__ge__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">mycmp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span>
+        <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">mycmp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span>
+        <span class="k">def</span> <span class="nf">__hash__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;hash not implemented&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">K</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

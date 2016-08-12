@@ -1,0 +1,6 @@
+tarfile.calc_chksums
+====================
+
+.. currentmodule:: tarfile
+
+.. autofunction:: calc_chksums

@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>doctest &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>doctest</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/misc/generated/doctest.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-doctest">
+<span id="doctest"></span><h1>doctest<a class="headerlink" href="#module-doctest" title="Permalink to this headline">¶</a></h1>
+<p>Module doctest &#8211; a framework for running examples in docstrings.</p>
+<p>In simplest use, end each module M to be tested with:</p>
+<dl class="docutils">
+<dt>def _test():</dt>
+<dd>import doctest
+doctest.testmod()</dd>
+<dt>if __name__ == &#8220;__main__&#8221;:</dt>
+<dd>_test()</dd>
+</dl>
+<p>Then running the module as a script will cause the examples in the
+docstrings to get executed and verified:</p>
+<p>python M.py</p>
+<p>This won&#8217;t display anything unless an example fails, in which case the
+failing example(s) and the cause(s) of the failure(s) are printed to stdout
+(why not stderr? because stderr is a lame hack &lt;0.2 wink&gt;), and the final
+line of output is &#8220;Test failed.&#8221;.</p>
+<p>Run it with the -v switch instead:</p>
+<p>python M.py -v</p>
+<p>and a detailed report of all examples tried is printed to stdout, along
+with assorted summaries at the end.</p>
+<p>You can force verbose mode by passing &#8220;verbose=True&#8221; to testmod, or prohibit
+it by passing &#8220;verbose=False&#8221;.  In either of those cases, sys.argv is not
+examined by testmod.</p>
+<p>There are a variety of other ways to run doctests, including integration
+with the unittest framework, and support for running non-Python text
+files containing doctests.  There are also many ways to override parts
+of doctest&#8217;s default behaviors.  See the Library Reference Manual for
+details.</p>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DocFileSuite.html#doctest.DocFileSuite" title="doctest.DocFileSuite"><code class="xref py py-obj docutils literal"><span class="pre">DocFileSuite</span></code></a>(*paths,&nbsp;**kw)</td>
+<td>A unittest suite for one or more doctest files.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.DocFileTest.html#doctest.DocFileTest" title="doctest.DocFileTest"><code class="xref py py-obj docutils literal"><span class="pre">DocFileTest</span></code></a>(path[,&nbsp;module_relative,&nbsp;...])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestSuite.html#doctest.DocTestSuite" title="doctest.DocTestSuite"><code class="xref py py-obj docutils literal"><span class="pre">DocTestSuite</span></code></a>([module,&nbsp;globs,&nbsp;extraglobs,&nbsp;...])</td>
+<td>Convert doctest tests for a module to a unittest test suite.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.debug.html#doctest.debug" title="doctest.debug"><code class="xref py py-obj docutils literal"><span class="pre">debug</span></code></a>(module,&nbsp;name[,&nbsp;pm])</td>
+<td>Debug a single doctest docstring.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.debug_script.html#doctest.debug_script" title="doctest.debug_script"><code class="xref py py-obj docutils literal"><span class="pre">debug_script</span></code></a>(src[,&nbsp;pm,&nbsp;globs])</td>
+<td>Debug a test script.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.debug_src.html#doctest.debug_src" title="doctest.debug_src"><code class="xref py py-obj docutils literal"><span class="pre">debug_src</span></code></a>(src[,&nbsp;pm,&nbsp;globs])</td>
+<td>Debug a single doctest docstring, in argument <cite>src</cite>&#8216;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.namedtuple.html#doctest.namedtuple" title="doctest.namedtuple"><code class="xref py py-obj docutils literal"><span class="pre">namedtuple</span></code></a>(typename,&nbsp;field_names[,&nbsp;verbose,&nbsp;...])</td>
+<td>Returns a new subclass of tuple with named fields.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.register_optionflag.html#doctest.register_optionflag" title="doctest.register_optionflag"><code class="xref py py-obj docutils literal"><span class="pre">register_optionflag</span></code></a>(name)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.run_docstring_examples.html#doctest.run_docstring_examples" title="doctest.run_docstring_examples"><code class="xref py py-obj docutils literal"><span class="pre">run_docstring_examples</span></code></a>(f,&nbsp;globs[,&nbsp;verbose,&nbsp;...])</td>
+<td>Test examples in the given object&#8217;s docstring (<cite>f</cite>), using <cite>globs</cite> as globals.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.script_from_examples.html#doctest.script_from_examples" title="doctest.script_from_examples"><code class="xref py py-obj docutils literal"><span class="pre">script_from_examples</span></code></a>(s)</td>
+<td>Extract script from text with examples.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.set_unittest_reportflags.html#doctest.set_unittest_reportflags" title="doctest.set_unittest_reportflags"><code class="xref py py-obj docutils literal"><span class="pre">set_unittest_reportflags</span></code></a>(flags)</td>
+<td>Sets the unittest option flags.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-obj docutils literal"><span class="pre">testfile</span></code></a>(filename[,&nbsp;module_relative,&nbsp;name,&nbsp;...])</td>
+<td>Test examples in the given file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-obj docutils literal"><span class="pre">testmod</span></code></a>([m,&nbsp;name,&nbsp;globs,&nbsp;verbose,&nbsp;report,&nbsp;...])</td>
+<td>m=None, name=None, globs=None, verbose=None, report=True,</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.testsource.html#doctest.testsource" title="doctest.testsource"><code class="xref py py-obj docutils literal"><span class="pre">testsource</span></code></a>(module,&nbsp;name)</td>
+<td>Extract the test sources from a doctest docstring as a script.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/doctest.DebugRunner.html#doctest.DebugRunner" title="doctest.DebugRunner"><code class="xref py py-obj docutils literal"><span class="pre">DebugRunner</span></code></a>([checker,&nbsp;verbose,&nbsp;optionflags])</td>
+<td>Run doc tests but raise an exception as soon as there is a failure.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/doctest.DocFileCase.html#doctest.DocFileCase" title="doctest.DocFileCase"><code class="xref py py-obj docutils literal"><span class="pre">DocFileCase</span></code></a>(test[,&nbsp;optionflags,&nbsp;setUp,&nbsp;...])</td>
+<td><p class="rubric">Methods</p>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/doctest.DocTest.html#doctest.DocTest" title="doctest.DocTest"><code class="xref py py-obj docutils literal"><span class="pre">DocTest</span></code></a>(examples,&nbsp;globs,&nbsp;name,&nbsp;filename,&nbsp;...)</td>
+<td>A collection of doctest examples that should be run in a single namespace.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/doctest.DocTestCase.html#doctest.DocTestCase" title="doctest.DocTestCase"><code class="xref py py-obj docutils literal"><span class="pre">DocTestCase</span></code></a>(test[,&nbsp;optionflags,&nbsp;setUp,&nbsp;...])</td>
+<td><p class="rubric">Methods</p>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/doctest.DocTestFinder.html#doctest.DocTestFinder" title="doctest.DocTestFinder"><code class="xref py py-obj docutils literal"><span class="pre">DocTestFinder</span></code></a>([verbose,&nbsp;parser,&nbsp;recurse,&nbsp;...])</td>
+<td>A class used to extract the DocTests that are relevant to a given object, from its docstring and the docstrings of its contained objects.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/doctest.DocTestParser.html#doctest.DocTestParser" title="doctest.DocTestParser"><code class="xref py py-obj docutils literal"><span class="pre">DocTestParser</span></code></a></td>
+<td>A class used to parse strings containing doctest examples.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/doctest.DocTestRunner.html#doctest.DocTestRunner" title="doctest.DocTestRunner"><code class="xref py py-obj docutils literal"><span class="pre">DocTestRunner</span></code></a>([checker,&nbsp;verbose,&nbsp;optionflags])</td>
+<td>A class used to run DocTest test cases, and accumulate statistics.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/doctest.Example.html#doctest.Example" title="doctest.Example"><code class="xref py py-obj docutils literal"><span class="pre">Example</span></code></a>(source,&nbsp;want[,&nbsp;exc_msg,&nbsp;lineno,&nbsp;...])</td>
+<td>A single doctest example, consisting of source code and expected output.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/doctest.OutputChecker.html#doctest.OutputChecker" title="doctest.OutputChecker"><code class="xref py py-obj docutils literal"><span class="pre">OutputChecker</span></code></a></td>
+<td>A class used to check the whether the actual output from a doctest example matches the expected output.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/doctest.SkipDocTestCase.html#doctest.SkipDocTestCase" title="doctest.SkipDocTestCase"><code class="xref py py-obj docutils literal"><span class="pre">SkipDocTestCase</span></code></a>(module)</td>
+<td><p class="rubric">Methods</p>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/doctest.StringIO.html#doctest.StringIO" title="doctest.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a>([buf])</td>
+<td>class StringIO([buffer])</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/doctest.TestResults.html#doctest.TestResults" title="doctest.TestResults"><code class="xref py py-obj docutils literal"><span class="pre">TestResults</span></code></a></td>
+<td><p class="rubric">Attributes</p>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/doctest.Tester.html#doctest.Tester" title="doctest.Tester"><code class="xref py py-obj docutils literal"><span class="pre">Tester</span></code></a>([mod,&nbsp;globs,&nbsp;verbose,&nbsp;optionflags])</td>
+<td><p class="rubric">Methods</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestFailure.html#doctest.DocTestFailure" title="doctest.DocTestFailure"><code class="xref py py-obj docutils literal"><span class="pre">DocTestFailure</span></code></a>(test,&nbsp;example,&nbsp;got)</td>
+<td>A DocTest example has failed in debugging mode.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.UnexpectedException.html#doctest.UnexpectedException" title="doctest.UnexpectedException"><code class="xref py py-obj docutils literal"><span class="pre">UnexpectedException</span></code></a>(test,&nbsp;example,&nbsp;exc_info)</td>
+<td>A DocTest example has encountered an unexpected exception</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>email &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>email</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for email</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (C) 2001-2006 Python Software Foundation</span>
+<span class="c1"># Author: Barry Warsaw</span>
+<span class="c1"># Contact: email-sig@python.org</span>
+
+<span class="sd">&quot;&quot;&quot;A package for parsing, handling, and generating email messages.&quot;&quot;&quot;</span>
+
+<span class="n">__version__</span> <span class="o">=</span> <span class="s1">&#39;4.0.3&#39;</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># Old names</span>
+    <span class="s1">&#39;base64MIME&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Charset&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Encoders&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Errors&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Generator&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Header&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Iterators&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Message&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MIMEAudio&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MIMEBase&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MIMEImage&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MIMEMessage&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MIMEMultipart&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MIMENonMultipart&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MIMEText&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Parser&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;quopriMIME&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Utils&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;message_from_string&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;message_from_file&#39;</span><span class="p">,</span>
+    <span class="c1"># new names</span>
+    <span class="s1">&#39;base64mime&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;charset&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;encoders&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;errors&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;generator&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;header&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;iterators&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;message&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;mime&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;parser&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;quoprimime&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;utils&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+
+
+
+
+<span class="c1"># Some convenience routines.  Don&#39;t import Parser and Message as side-effects</span>
+<span class="c1"># of importing email since those cascadingly import most of the rest of the</span>
+<span class="c1"># email package.</span>
+<div class="viewcode-block" id="message_from_string"><a class="viewcode-back" href="../misc/generated/email.message_from_string.html#email.message_from_string">[docs]</a><span class="k">def</span> <span class="nf">message_from_string</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kws</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Parse a string into a Message object model.</span>
+
+<span class="sd">    Optional _class and strict are passed to the Parser constructor.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">from</span> <span class="nn">email.parser</span> <span class="k">import</span> <span class="n">Parser</span>
+    <span class="k">return</span> <span class="n">Parser</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kws</span><span class="p">)</span><span class="o">.</span><span class="n">parsestr</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="message_from_file"><a class="viewcode-back" href="../misc/generated/email.message_from_file.html#email.message_from_file">[docs]</a><span class="k">def</span> <span class="nf">message_from_file</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kws</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read a file and parse its contents into a Message object model.</span>
+
+<span class="sd">    Optional _class and strict are passed to the Parser constructor.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">from</span> <span class="nn">email.parser</span> <span class="k">import</span> <span class="n">Parser</span>
+    <span class="k">return</span> <span class="n">Parser</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kws</span><span class="p">)</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">fp</span><span class="p">)</span></div>
+
+
+
+
+<span class="c1"># Lazy loading to provide name mapping from new-style names (PEP 8 compatible</span>
+<span class="c1"># email 4.0 module names), to old-style names (email 3.0 module names).</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<div class="viewcode-block" id="LazyImporter"><a class="viewcode-back" href="../misc/generated/generated/email.LazyImporter.html#email.LazyImporter">[docs]</a><span class="k">class</span> <span class="nc">LazyImporter</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="LazyImporter.__init__"><a class="viewcode-back" href="../misc/generated/generated/email.LazyImporter.__init__.html#email.LazyImporter.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">module_name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__name__</span> <span class="o">=</span> <span class="s1">&#39;email.&#39;</span> <span class="o">+</span> <span class="n">module_name</span></div>
+
+    <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">__import__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__name__</span><span class="p">)</span>
+        <span class="n">mod</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">__name__</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">mod</span><span class="o">.</span><span class="n">__dict__</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span></div>
+
+
+<span class="n">_LOWERNAMES</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># email.&lt;old name&gt; -&gt; email.&lt;new name is lowercased old name&gt;</span>
+    <span class="s1">&#39;Charset&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Encoders&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Errors&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;FeedParser&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Generator&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Header&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Iterators&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Message&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Parser&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Utils&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;base64MIME&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;quopriMIME&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+
+<span class="n">_MIMENAMES</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># email.MIME&lt;old name&gt; -&gt; email.mime.&lt;new name is lowercased old name&gt;</span>
+    <span class="s1">&#39;Audio&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Base&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Image&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Message&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Multipart&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;NonMultipart&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Text&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+
+<span class="k">for</span> <span class="n">_name</span> <span class="ow">in</span> <span class="n">_LOWERNAMES</span><span class="p">:</span>
+    <span class="n">importer</span> <span class="o">=</span> <span class="n">LazyImporter</span><span class="p">(</span><span class="n">_name</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="s1">&#39;email.&#39;</span> <span class="o">+</span> <span class="n">_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">importer</span>
+    <span class="nb">setattr</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">],</span> <span class="n">_name</span><span class="p">,</span> <span class="n">importer</span><span class="p">)</span>
+
+
+<span class="kn">import</span> <span class="nn">email.mime</span>
+<span class="k">for</span> <span class="n">_name</span> <span class="ow">in</span> <span class="n">_MIMENAMES</span><span class="p">:</span>
+    <span class="n">importer</span> <span class="o">=</span> <span class="n">LazyImporter</span><span class="p">(</span><span class="s1">&#39;mime.&#39;</span> <span class="o">+</span> <span class="n">_name</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="s1">&#39;email.MIME&#39;</span> <span class="o">+</span> <span class="n">_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">importer</span>
+    <span class="nb">setattr</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">],</span> <span class="s1">&#39;MIME&#39;</span> <span class="o">+</span> <span class="n">_name</span><span class="p">,</span> <span class="n">importer</span><span class="p">)</span>
+    <span class="nb">setattr</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="s1">&#39;email.mime&#39;</span><span class="p">],</span> <span class="n">_name</span><span class="p">,</span> <span class="n">importer</span><span class="p">)</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

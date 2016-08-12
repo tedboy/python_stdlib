@@ -1,0 +1,50 @@
+shutil
+======
+
+.. automodule:: shutil
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      abspath
+      copy
+      copy2
+      copyfile
+      copyfileobj
+      copymode
+      copystat
+      copytree
+      get_archive_formats
+      getgrnam
+      getpwnam
+      ignore_patterns
+      make_archive
+      move
+      register_archive_format
+      rmtree
+      unregister_archive_format
+   
+   
+
+   
+   
+   
+
+   
+   
+   Exceptions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      Error
+      ExecError
+      SpecialFileError
+   
+   

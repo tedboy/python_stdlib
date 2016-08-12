@@ -1,0 +1,6 @@
+urllib.splitport
+================
+
+.. currentmodule:: urllib
+
+.. autofunction:: splitport

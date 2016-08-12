@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>json &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>json</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/misc/generated/json.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-json">
+<span id="json"></span><h1>json<a class="headerlink" href="#module-json" title="Permalink to this headline">¶</a></h1>
+<p>JSON (JavaScript Object Notation) &lt;<a class="reference external" href="http://json.org">http://json.org</a>&gt; is a subset of
+JavaScript syntax (ECMA-262 3rd edition) used as a lightweight data
+interchange format.</p>
+<p><a class="reference internal" href="#module-json" title="json"><code class="xref py py-mod docutils literal"><span class="pre">json</span></code></a> exposes an API familiar to users of the standard library
+<code class="xref py py-mod docutils literal"><span class="pre">marshal</span></code> and <a class="reference internal" href="pickle.html#module-pickle" title="pickle"><code class="xref py py-mod docutils literal"><span class="pre">pickle</span></code></a> modules. It is the externally maintained
+version of the <a class="reference internal" href="#module-json" title="json"><code class="xref py py-mod docutils literal"><span class="pre">json</span></code></a> library contained in Python 2.6, but maintains
+compatibility with Python 2.4 and Python 2.5 and (currently) has
+significant performance advantages, even without using the optional C
+extension for speedups.</p>
+<p>Encoding basic Python object hierarchies:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">([</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;bar&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;baz&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)}])</span>
+<span class="go">&#39;[&quot;foo&quot;, {&quot;bar&quot;: [&quot;baz&quot;, null, 1.0, 2]}]&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">foo</span><span class="se">\b</span><span class="s2">ar&quot;</span><span class="p">)</span>
+<span class="go">&quot;\&quot;foo\bar&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="s1">u&#39;</span><span class="se">\u1234</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="go">&quot;\u1234&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="go">&quot;\\&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">{&quot;a&quot;: 0, &quot;b&quot;: 0, &quot;c&quot;: 0}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">StringIO</span> <span class="k">import</span> <span class="n">StringIO</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">io</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">([</span><span class="s1">&#39;streaming API&#39;</span><span class="p">],</span> <span class="n">io</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">io</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+<span class="go">&#39;[&quot;streaming API&quot;]&#39;</span>
+</pre></div>
+</div>
+<p>Compact encoding:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,{</span><span class="s1">&#39;4&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;6&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">}],</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;:&#39;</span><span class="p">))</span>
+<span class="go">&#39;[1,2,3,{&quot;4&quot;:5,&quot;6&quot;:7}]&#39;</span>
+</pre></div>
+</div>
+<p>Pretty printing:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s1">&#39;4&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;6&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">},</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">... </span>                 <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;: &#39;</span><span class="p">))</span>
+<span class="go">{</span>
+<span class="go">    &quot;4&quot;: 5,</span>
+<span class="go">    &quot;6&quot;: 7</span>
+<span class="go">}</span>
+</pre></div>
+</div>
+<p>Decoding JSON:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="p">[</span><span class="s1">u&#39;foo&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">u&#39;bar&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">u&#39;baz&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]}]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="s1">&#39;[&quot;foo&quot;, {&quot;bar&quot;:[&quot;baz&quot;, null, 1.0, 2]}]&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="n">obj</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="s1">&#39;&quot;</span><span class="se">\\</span><span class="s1">&quot;foo</span><span class="se">\\</span><span class="s1">bar&quot;&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">u&#39;&quot;foo</span><span class="se">\x08</span><span class="s1">ar&#39;</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">StringIO</span> <span class="k">import</span> <span class="n">StringIO</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">io</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">(</span><span class="s1">&#39;[&quot;streaming API&quot;]&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">io</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;streaming API&#39;</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Specializing JSON object decoding:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">as_complex</span><span class="p">(</span><span class="n">dct</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="s1">&#39;__complex__&#39;</span> <span class="ow">in</span> <span class="n">dct</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="k">return</span> <span class="nb">complex</span><span class="p">(</span><span class="n">dct</span><span class="p">[</span><span class="s1">&#39;real&#39;</span><span class="p">],</span> <span class="n">dct</span><span class="p">[</span><span class="s1">&#39;imag&#39;</span><span class="p">])</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">dct</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="s1">&#39;{&quot;__complex__&quot;: true, &quot;real&quot;: 1, &quot;imag&quot;: 2}&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">object_hook</span><span class="o">=</span><span class="n">as_complex</span><span class="p">)</span>
+<span class="go">(1+2j)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">decimal</span> <span class="k">import</span> <span class="n">Decimal</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="s1">&#39;1.1&#39;</span><span class="p">,</span> <span class="n">parse_float</span><span class="o">=</span><span class="n">Decimal</span><span class="p">)</span> <span class="o">==</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;1.1&#39;</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Specializing JSON object encoding:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">encode_complex</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="nb">complex</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="k">return</span> <span class="p">[</span><span class="n">obj</span><span class="o">.</span><span class="n">real</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">imag</span><span class="p">]</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="nb">repr</span><span class="p">(</span><span class="n">o</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; is not JSON serializable&quot;</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">encode_complex</span><span class="p">)</span>
+<span class="go">&#39;[2.0, 1.0]&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">json</span><span class="o">.</span><span class="n">JSONEncoder</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">encode_complex</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span><span class="p">)</span>
+<span class="go">&#39;[2.0, 1.0]&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">JSONEncoder</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">encode_complex</span><span class="p">)</span><span class="o">.</span><span class="n">iterencode</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span><span class="p">))</span>
+<span class="go">&#39;[2.0, 1.0]&#39;</span>
+</pre></div>
+</div>
+<p>Using json.tool from the shell to validate and pretty-print:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ echo &#39;{&quot;json&quot;:&quot;obj&quot;}&#39; | python -m json.tool
+{
+    &quot;json&quot;: &quot;obj&quot;
+}
+$ echo &#39;{ 1.2:3.4}&#39; | python -m json.tool
+Expecting property name enclosed in double quotes: line 1 column 3 (char 2)
+</pre></div>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="json.dump.html#json.dump" title="json.dump"><code class="xref py py-obj docutils literal"><span class="pre">dump</span></code></a>(obj,&nbsp;fp[,&nbsp;skipkeys,&nbsp;ensure_ascii,&nbsp;...])</td>
+<td>Serialize <code class="docutils literal"><span class="pre">obj</span></code> as a JSON formatted stream to <code class="docutils literal"><span class="pre">fp</span></code> (a <code class="docutils literal"><span class="pre">.write()</span></code>-supporting file-like object).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="json.dumps.html#json.dumps" title="json.dumps"><code class="xref py py-obj docutils literal"><span class="pre">dumps</span></code></a>(obj[,&nbsp;skipkeys,&nbsp;ensure_ascii,&nbsp;...])</td>
+<td>Serialize <code class="docutils literal"><span class="pre">obj</span></code> to a JSON formatted <code class="docutils literal"><span class="pre">str</span></code>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="json.load.html#json.load" title="json.load"><code class="xref py py-obj docutils literal"><span class="pre">load</span></code></a>(fp[,&nbsp;encoding,&nbsp;cls,&nbsp;object_hook,&nbsp;...])</td>
+<td>Deserialize <code class="docutils literal"><span class="pre">fp</span></code> (a <code class="docutils literal"><span class="pre">.read()</span></code>-supporting file-like object containing a JSON document) to a Python object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="json.loads.html#json.loads" title="json.loads"><code class="xref py py-obj docutils literal"><span class="pre">loads</span></code></a>(s[,&nbsp;encoding,&nbsp;cls,&nbsp;object_hook,&nbsp;...])</td>
+<td>Deserialize <code class="docutils literal"><span class="pre">s</span></code> (a <code class="docutils literal"><span class="pre">str</span></code> or <code class="docutils literal"><span class="pre">unicode</span></code> instance containing a JSON document) to a Python object.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/json.JSONDecoder.html#json.JSONDecoder" title="json.JSONDecoder"><code class="xref py py-obj docutils literal"><span class="pre">JSONDecoder</span></code></a>([encoding,&nbsp;object_hook,&nbsp;...])</td>
+<td>Simple JSON &lt;<a class="reference external" href="http://json.org">http://json.org</a>&gt; decoder</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/json.JSONEncoder.html#json.JSONEncoder" title="json.JSONEncoder"><code class="xref py py-obj docutils literal"><span class="pre">JSONEncoder</span></code></a>([skipkeys,&nbsp;ensure_ascii,&nbsp;...])</td>
+<td>Extensible JSON &lt;<a class="reference external" href="http://json.org">http://json.org</a>&gt; encoder for Python data structures.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

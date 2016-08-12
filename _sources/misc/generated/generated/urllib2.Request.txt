@@ -1,0 +1,39 @@
+urllib2.Request
+===============
+
+.. currentmodule:: urllib2
+
+.. autoclass:: Request
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~Request.__init__
+   ~Request.add_data
+   ~Request.add_header
+   ~Request.add_unredirected_header
+   ~Request.get_data
+   ~Request.get_full_url
+   ~Request.get_header
+   ~Request.get_host
+   ~Request.get_method
+   ~Request.get_origin_req_host
+   ~Request.get_selector
+   ~Request.get_type
+   ~Request.has_data
+   ~Request.has_header
+   ~Request.has_proxy
+   ~Request.header_items
+   ~Request.is_unverifiable
+   ~Request.set_proxy
+
+
+
+
+

@@ -1,0 +1,840 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>BaseHTTPServer &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>BaseHTTPServer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for BaseHTTPServer</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;HTTP server base class.</span>
+
+<span class="sd">Note: the class in this module doesn&#39;t implement any HTTP request; see</span>
+<span class="sd">SimpleHTTPServer for simple implementations of GET, HEAD and POST</span>
+<span class="sd">(including CGI scripts).  It does, however, optionally implement HTTP/1.1</span>
+<span class="sd">persistent connections, as of version 0.3.</span>
+
+<span class="sd">Contents:</span>
+
+<span class="sd">- BaseHTTPRequestHandler: HTTP request handler base class</span>
+<span class="sd">- test: test function</span>
+
+<span class="sd">XXX To do:</span>
+
+<span class="sd">- log requests even later (to capture byte count)</span>
+<span class="sd">- log user-agent header and other interesting goodies</span>
+<span class="sd">- send error log to separate file</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<span class="c1"># See also:</span>
+<span class="c1">#</span>
+<span class="c1"># HTTP Working Group                                        T. Berners-Lee</span>
+<span class="c1"># INTERNET-DRAFT                                            R. T. Fielding</span>
+<span class="c1"># &lt;draft-ietf-http-v10-spec-00.txt&gt;                     H. Frystyk Nielsen</span>
+<span class="c1"># Expires September 8, 1995                                  March 8, 1995</span>
+<span class="c1">#</span>
+<span class="c1"># URL: http://www.ics.uci.edu/pub/ietf/http/draft-ietf-http-v10-spec-00.txt</span>
+<span class="c1">#</span>
+<span class="c1"># and</span>
+<span class="c1">#</span>
+<span class="c1"># Network Working Group                                      R. Fielding</span>
+<span class="c1"># Request for Comments: 2616                                       et al</span>
+<span class="c1"># Obsoletes: 2068                                              June 1999</span>
+<span class="c1"># Category: Standards Track</span>
+<span class="c1">#</span>
+<span class="c1"># URL: http://www.faqs.org/rfcs/rfc2616.html</span>
+
+<span class="c1"># Log files</span>
+<span class="c1"># ---------</span>
+<span class="c1">#</span>
+<span class="c1"># Here&#39;s a quote from the NCSA httpd docs about log file format.</span>
+<span class="c1">#</span>
+<span class="c1"># | The logfile format is as follows. Each line consists of:</span>
+<span class="c1"># |</span>
+<span class="c1"># | host rfc931 authuser [DD/Mon/YYYY:hh:mm:ss] &quot;request&quot; ddd bbbb</span>
+<span class="c1"># |</span>
+<span class="c1"># |        host: Either the DNS name or the IP number of the remote client</span>
+<span class="c1"># |        rfc931: Any information returned by identd for this person,</span>
+<span class="c1"># |                - otherwise.</span>
+<span class="c1"># |        authuser: If user sent a userid for authentication, the user name,</span>
+<span class="c1"># |                  - otherwise.</span>
+<span class="c1"># |        DD: Day</span>
+<span class="c1"># |        Mon: Month (calendar name)</span>
+<span class="c1"># |        YYYY: Year</span>
+<span class="c1"># |        hh: hour (24-hour format, the machine&#39;s timezone)</span>
+<span class="c1"># |        mm: minutes</span>
+<span class="c1"># |        ss: seconds</span>
+<span class="c1"># |        request: The first line of the HTTP request as sent by the client.</span>
+<span class="c1"># |        ddd: the status code returned by the server, - if not available.</span>
+<span class="c1"># |        bbbb: the total number of bytes sent,</span>
+<span class="c1"># |              *not including the HTTP/1.0 header*, - if not available</span>
+<span class="c1"># |</span>
+<span class="c1"># | You can determine the name of the file accessed through request.</span>
+<span class="c1">#</span>
+<span class="c1"># (Actually, the latter is only true if you know the server configuration</span>
+<span class="c1"># at the time the request was made!)</span>
+
+<span class="n">__version__</span> <span class="o">=</span> <span class="s2">&quot;0.3&quot;</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;HTTPServer&quot;</span><span class="p">,</span> <span class="s2">&quot;BaseHTTPRequestHandler&quot;</span><span class="p">]</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">socket</span> <span class="c1"># For gethostbyaddr()</span>
+<span class="kn">from</span> <span class="nn">warnings</span> <span class="k">import</span> <span class="n">filterwarnings</span><span class="p">,</span> <span class="n">catch_warnings</span>
+<span class="k">with</span> <span class="n">catch_warnings</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">py3kwarning</span><span class="p">:</span>
+        <span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="s2">&quot;.*mimetools has been removed&quot;</span><span class="p">,</span>
+                        <span class="ne">DeprecationWarning</span><span class="p">)</span>
+    <span class="kn">import</span> <span class="nn">mimetools</span>
+<span class="kn">import</span> <span class="nn">SocketServer</span>
+
+<span class="c1"># Default error message template</span>
+<span class="n">DEFAULT_ERROR_MESSAGE</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="s2">&lt;head&gt;</span>
+<span class="s2">&lt;title&gt;Error response&lt;/title&gt;</span>
+<span class="s2">&lt;/head&gt;</span>
+<span class="s2">&lt;body&gt;</span>
+<span class="s2">&lt;h1&gt;Error response&lt;/h1&gt;</span>
+<span class="s2">&lt;p&gt;Error code </span><span class="si">%(code)d</span><span class="s2">.</span>
+<span class="s2">&lt;p&gt;Message: </span><span class="si">%(message)s</span><span class="s2">.</span>
+<span class="s2">&lt;p&gt;Error code explanation: </span><span class="si">%(code)s</span><span class="s2"> = </span><span class="si">%(explain)s</span><span class="s2">.</span>
+<span class="s2">&lt;/body&gt;</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">DEFAULT_ERROR_CONTENT_TYPE</span> <span class="o">=</span> <span class="s2">&quot;text/html&quot;</span>
+
+<span class="k">def</span> <span class="nf">_quote_html</span><span class="p">(</span><span class="n">html</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">html</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&amp;&quot;</span><span class="p">,</span> <span class="s2">&quot;&amp;amp;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&lt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&amp;lt;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&amp;gt;&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">HTTPServer</span><span class="p">(</span><span class="n">SocketServer</span><span class="o">.</span><span class="n">TCPServer</span><span class="p">):</span>
+
+    <span class="n">allow_reuse_address</span> <span class="o">=</span> <span class="mi">1</span>    <span class="c1"># Seems to make sense in testing environment</span>
+
+    <span class="k">def</span> <span class="nf">server_bind</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Override server_bind to store the server name.&quot;&quot;&quot;</span>
+        <span class="n">SocketServer</span><span class="o">.</span><span class="n">TCPServer</span><span class="o">.</span><span class="n">server_bind</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">host</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">socket</span><span class="o">.</span><span class="n">getsockname</span><span class="p">()[:</span><span class="mi">2</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">server_name</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">getfqdn</span><span class="p">(</span><span class="n">host</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">server_port</span> <span class="o">=</span> <span class="n">port</span>
+
+
+<span class="k">class</span> <span class="nc">BaseHTTPRequestHandler</span><span class="p">(</span><span class="n">SocketServer</span><span class="o">.</span><span class="n">StreamRequestHandler</span><span class="p">):</span>
+
+    <span class="sd">&quot;&quot;&quot;HTTP request handler base class.</span>
+
+<span class="sd">    The following explanation of HTTP serves to guide you through the</span>
+<span class="sd">    code as well as to expose any misunderstandings I may have about</span>
+<span class="sd">    HTTP (so you don&#39;t need to read the code to figure out I&#39;m wrong</span>
+<span class="sd">    :-).</span>
+
+<span class="sd">    HTTP (HyperText Transfer Protocol) is an extensible protocol on</span>
+<span class="sd">    top of a reliable stream transport (e.g. TCP/IP).  The protocol</span>
+<span class="sd">    recognizes three parts to a request:</span>
+
+<span class="sd">    1. One line identifying the request type and path</span>
+<span class="sd">    2. An optional set of RFC-822-style headers</span>
+<span class="sd">    3. An optional data part</span>
+
+<span class="sd">    The headers and data are separated by a blank line.</span>
+
+<span class="sd">    The first line of the request has the form</span>
+
+<span class="sd">    &lt;command&gt; &lt;path&gt; &lt;version&gt;</span>
+
+<span class="sd">    where &lt;command&gt; is a (case-sensitive) keyword such as GET or POST,</span>
+<span class="sd">    &lt;path&gt; is a string containing path information for the request,</span>
+<span class="sd">    and &lt;version&gt; should be the string &quot;HTTP/1.0&quot; or &quot;HTTP/1.1&quot;.</span>
+<span class="sd">    &lt;path&gt; is encoded using the URL encoding scheme (using %xx to signify</span>
+<span class="sd">    the ASCII character with hex code xx).</span>
+
+<span class="sd">    The specification specifies that lines are separated by CRLF but</span>
+<span class="sd">    for compatibility with the widest range of clients recommends</span>
+<span class="sd">    servers also handle LF.  Similarly, whitespace in the request line</span>
+<span class="sd">    is treated sensibly (allowing multiple spaces between components</span>
+<span class="sd">    and allowing trailing whitespace).</span>
+
+<span class="sd">    Similarly, for output, lines ought to be separated by CRLF pairs</span>
+<span class="sd">    but most clients grok LF characters just fine.</span>
+
+<span class="sd">    If the first line of the request has the form</span>
+
+<span class="sd">    &lt;command&gt; &lt;path&gt;</span>
+
+<span class="sd">    (i.e. &lt;version&gt; is left out) then this is assumed to be an HTTP</span>
+<span class="sd">    0.9 request; this form has no optional headers and data part and</span>
+<span class="sd">    the reply consists of just the data.</span>
+
+<span class="sd">    The reply form of the HTTP 1.x protocol again has three parts:</span>
+
+<span class="sd">    1. One line giving the response code</span>
+<span class="sd">    2. An optional set of RFC-822-style headers</span>
+<span class="sd">    3. The data</span>
+
+<span class="sd">    Again, the headers and data are separated by a blank line.</span>
+
+<span class="sd">    The response code line has the form</span>
+
+<span class="sd">    &lt;version&gt; &lt;responsecode&gt; &lt;responsestring&gt;</span>
+
+<span class="sd">    where &lt;version&gt; is the protocol version (&quot;HTTP/1.0&quot; or &quot;HTTP/1.1&quot;),</span>
+<span class="sd">    &lt;responsecode&gt; is a 3-digit response code indicating success or</span>
+<span class="sd">    failure of the request, and &lt;responsestring&gt; is an optional</span>
+<span class="sd">    human-readable string explaining what the response code means.</span>
+
+<span class="sd">    This server parses the request and the headers, and then calls a</span>
+<span class="sd">    function specific to the request type (&lt;command&gt;).  Specifically,</span>
+<span class="sd">    a request SPAM will be handled by a method do_SPAM().  If no</span>
+<span class="sd">    such method exists the server sends an error response to the</span>
+<span class="sd">    client.  If it exists, it is called with no arguments:</span>
+
+<span class="sd">    do_SPAM()</span>
+
+<span class="sd">    Note that the request name is case sensitive (i.e. SPAM and spam</span>
+<span class="sd">    are different requests).</span>
+
+<span class="sd">    The various request details are stored in instance variables:</span>
+
+<span class="sd">    - client_address is the client IP address in the form (host,</span>
+<span class="sd">    port);</span>
+
+<span class="sd">    - command, path and version are the broken-down request line;</span>
+
+<span class="sd">    - headers is an instance of mimetools.Message (or a derived</span>
+<span class="sd">    class) containing the header information;</span>
+
+<span class="sd">    - rfile is a file object open for reading positioned at the</span>
+<span class="sd">    start of the optional input data part;</span>
+
+<span class="sd">    - wfile is a file object open for writing.</span>
+
+<span class="sd">    IT IS IMPORTANT TO ADHERE TO THE PROTOCOL FOR WRITING!</span>
+
+<span class="sd">    The first thing to be written must be the response line.  Then</span>
+<span class="sd">    follow 0 or more header lines, then a blank line, and then the</span>
+<span class="sd">    actual data (if any).  The meaning of the header lines depends on</span>
+<span class="sd">    the command executed by the server; in most cases, when data is</span>
+<span class="sd">    returned, there should be at least one header line of the form</span>
+
+<span class="sd">    Content-type: &lt;type&gt;/&lt;subtype&gt;</span>
+
+<span class="sd">    where &lt;type&gt; and &lt;subtype&gt; should be registered MIME types,</span>
+<span class="sd">    e.g. &quot;text/html&quot; or &quot;text/plain&quot;.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># The Python system version, truncated to its first component.</span>
+    <span class="n">sys_version</span> <span class="o">=</span> <span class="s2">&quot;Python/&quot;</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="c1"># The server software version.  You may want to override this.</span>
+    <span class="c1"># The format is multiple whitespace-separated strings,</span>
+    <span class="c1"># where each string is of the form name[/version].</span>
+    <span class="n">server_version</span> <span class="o">=</span> <span class="s2">&quot;BaseHTTP/&quot;</span> <span class="o">+</span> <span class="n">__version__</span>
+
+    <span class="c1"># The default request version.  This only affects responses up until</span>
+    <span class="c1"># the point where the request line is parsed, so it mainly decides what</span>
+    <span class="c1"># the client gets back when sending a malformed request line.</span>
+    <span class="c1"># Most web servers default to HTTP 0.9, i.e. don&#39;t send a status line.</span>
+    <span class="n">default_request_version</span> <span class="o">=</span> <span class="s2">&quot;HTTP/0.9&quot;</span>
+
+    <span class="k">def</span> <span class="nf">parse_request</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Parse a request (internal).</span>
+
+<span class="sd">        The request should be stored in self.raw_requestline; the results</span>
+<span class="sd">        are in self.command, self.path, self.request_version and</span>
+<span class="sd">        self.headers.</span>
+
+<span class="sd">        Return True for success, False for failure; on failure, an</span>
+<span class="sd">        error is sent back.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">command</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># set in case of error on the first line</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">request_version</span> <span class="o">=</span> <span class="n">version</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_request_version</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">requestline</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">raw_requestline</span>
+        <span class="n">requestline</span> <span class="o">=</span> <span class="n">requestline</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">requestline</span> <span class="o">=</span> <span class="n">requestline</span>
+        <span class="n">words</span> <span class="o">=</span> <span class="n">requestline</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="n">command</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">version</span> <span class="o">=</span> <span class="n">words</span>
+            <span class="k">if</span> <span class="n">version</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;HTTP/&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">send_error</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="s2">&quot;Bad request version (</span><span class="si">%r</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">version</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">False</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">base_version_number</span> <span class="o">=</span> <span class="n">version</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">version_number</span> <span class="o">=</span> <span class="n">base_version_number</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+                <span class="c1"># RFC 2145 section 3.1 says there can be only one &quot;.&quot; and</span>
+                <span class="c1">#   - major and minor numbers MUST be treated as</span>
+                <span class="c1">#      separate integers;</span>
+                <span class="c1">#   - HTTP/2.4 is a lower version than HTTP/2.13, which in</span>
+                <span class="c1">#      turn is lower than HTTP/12.3;</span>
+                <span class="c1">#   - Leading zeros MUST be ignored by recipients.</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">version_number</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">ValueError</span>
+                <span class="n">version_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">version_number</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">version_number</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="k">except</span> <span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">IndexError</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">send_error</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="s2">&quot;Bad request version (</span><span class="si">%r</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">version</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">False</span>
+            <span class="k">if</span> <span class="n">version_number</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">protocol_version</span> <span class="o">&gt;=</span> <span class="s2">&quot;HTTP/1.1&quot;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">if</span> <span class="n">version_number</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">send_error</span><span class="p">(</span><span class="mi">505</span><span class="p">,</span>
+                          <span class="s2">&quot;Invalid HTTP Version (</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">base_version_number</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">command</span><span class="p">,</span> <span class="n">path</span> <span class="o">=</span> <span class="n">words</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">command</span> <span class="o">!=</span> <span class="s1">&#39;GET&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">send_error</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span>
+                                <span class="s2">&quot;Bad HTTP/0.9 request type (</span><span class="si">%r</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">command</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="n">words</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">send_error</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="s2">&quot;Bad request syntax (</span><span class="si">%r</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">requestline</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">request_version</span> <span class="o">=</span> <span class="n">command</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">version</span>
+
+        <span class="c1"># Examine the headers and look for a Connection directive</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">headers</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">MessageClass</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">rfile</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+        <span class="n">conntype</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;Connection&#39;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">conntype</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;close&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">conntype</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;keep-alive&#39;</span> <span class="ow">and</span>
+              <span class="bp">self</span><span class="o">.</span><span class="n">protocol_version</span> <span class="o">&gt;=</span> <span class="s2">&quot;HTTP/1.1&quot;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">def</span> <span class="nf">handle_one_request</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Handle a single HTTP request.</span>
+
+<span class="sd">        You normally don&#39;t need to override this method; see the class</span>
+<span class="sd">        __doc__ string for information on how to handle specific HTTP</span>
+<span class="sd">        commands such as GET and POST.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">raw_requestline</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rfile</span><span class="o">.</span><span class="n">readline</span><span class="p">(</span><span class="mi">65537</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">raw_requestline</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">65536</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">requestline</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">request_version</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">command</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">send_error</span><span class="p">(</span><span class="mi">414</span><span class="p">)</span>
+                <span class="k">return</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">raw_requestline</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="k">return</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">parse_request</span><span class="p">():</span>
+                <span class="c1"># An error code has been sent, just exit</span>
+                <span class="k">return</span>
+            <span class="n">mname</span> <span class="o">=</span> <span class="s1">&#39;do_&#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">command</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mname</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">send_error</span><span class="p">(</span><span class="mi">501</span><span class="p">,</span> <span class="s2">&quot;Unsupported method (</span><span class="si">%r</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">)</span>
+                <span class="k">return</span>
+            <span class="n">method</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mname</span><span class="p">)</span>
+            <span class="n">method</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wfile</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span> <span class="c1">#actually send the response if not already done.</span>
+        <span class="k">except</span> <span class="n">socket</span><span class="o">.</span><span class="n">timeout</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+            <span class="c1">#a read or a write timed out.  Discard this connection</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log_error</span><span class="p">(</span><span class="s2">&quot;Request timed out: </span><span class="si">%r</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">return</span>
+
+    <span class="k">def</span> <span class="nf">handle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Handle multiple requests if necessary.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span> <span class="o">=</span> <span class="mi">1</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">handle_one_request</span><span class="p">()</span>
+        <span class="k">while</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">handle_one_request</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">send_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Send and log an error reply.</span>
+
+<span class="sd">        Arguments are the error code, and a detailed message.</span>
+<span class="sd">        The detailed message defaults to the short entry matching the</span>
+<span class="sd">        response code.</span>
+
+<span class="sd">        This sends an error response (so it must be called before any</span>
+<span class="sd">        output has been generated), logs the error, and finally sends</span>
+<span class="sd">        a piece of HTML explaining the error to the user.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">short</span><span class="p">,</span> <span class="n">long</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">responses</span><span class="p">[</span><span class="n">code</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="n">short</span><span class="p">,</span> <span class="n">long</span> <span class="o">=</span> <span class="s1">&#39;???&#39;</span><span class="p">,</span> <span class="s1">&#39;???&#39;</span>
+        <span class="k">if</span> <span class="n">message</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">message</span> <span class="o">=</span> <span class="n">short</span>
+        <span class="n">explain</span> <span class="o">=</span> <span class="n">long</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_error</span><span class="p">(</span><span class="s2">&quot;code </span><span class="si">%d</span><span class="s2">, message </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+        <span class="c1"># using _quote_html to prevent Cross Site Scripting attacks (see bug #1100201)</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">error_message_format</span> <span class="o">%</span>
+                   <span class="p">{</span><span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="n">code</span><span class="p">,</span> <span class="s1">&#39;message&#39;</span><span class="p">:</span> <span class="n">_quote_html</span><span class="p">(</span><span class="n">message</span><span class="p">),</span> <span class="s1">&#39;explain&#39;</span><span class="p">:</span> <span class="n">explain</span><span class="p">})</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">send_response</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">send_header</span><span class="p">(</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">error_content_type</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">send_header</span><span class="p">(</span><span class="s1">&#39;Connection&#39;</span><span class="p">,</span> <span class="s1">&#39;close&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">end_headers</span><span class="p">()</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">command</span> <span class="o">!=</span> <span class="s1">&#39;HEAD&#39;</span> <span class="ow">and</span> <span class="n">code</span> <span class="o">&gt;=</span> <span class="mi">200</span> <span class="ow">and</span> <span class="n">code</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">204</span><span class="p">,</span> <span class="mi">304</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+
+    <span class="n">error_message_format</span> <span class="o">=</span> <span class="n">DEFAULT_ERROR_MESSAGE</span>
+    <span class="n">error_content_type</span> <span class="o">=</span> <span class="n">DEFAULT_ERROR_CONTENT_TYPE</span>
+
+    <span class="k">def</span> <span class="nf">send_response</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Send the response header and log the response code.</span>
+
+<span class="sd">        Also send two standard headers with the server software</span>
+<span class="sd">        version and the current date.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_request</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">message</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">code</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">responses</span><span class="p">:</span>
+                <span class="n">message</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">responses</span><span class="p">[</span><span class="n">code</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">request_version</span> <span class="o">!=</span> <span class="s1">&#39;HTTP/0.9&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> </span><span class="si">%d</span><span class="s2"> </span><span class="si">%s</span><span class="se">\r\n</span><span class="s2">&quot;</span> <span class="o">%</span>
+                             <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">protocol_version</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="p">))</span>
+            <span class="c1"># print (self.protocol_version, code, message)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">send_header</span><span class="p">(</span><span class="s1">&#39;Server&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">version_string</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">send_header</span><span class="p">(</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">date_time_string</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="nf">send_header</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keyword</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Send a MIME header.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">request_version</span> <span class="o">!=</span> <span class="s1">&#39;HTTP/0.9&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="se">\r\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">keyword</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="n">keyword</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;connection&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">value</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;close&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">elif</span> <span class="n">value</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;keep-alive&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">end_headers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Send the blank line ending the MIME headers.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">request_version</span> <span class="o">!=</span> <span class="s1">&#39;HTTP/0.9&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">log_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Log an accepted request.</span>
+
+<span class="sd">        This is called by send_response().</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_message</span><span class="p">(</span><span class="s1">&#39;&quot;</span><span class="si">%s</span><span class="s1">&quot; </span><span class="si">%s</span><span class="s1"> </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+                         <span class="bp">self</span><span class="o">.</span><span class="n">requestline</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">code</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">size</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">log_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Log an error.</span>
+
+<span class="sd">        This is called when a request cannot be fulfilled.  By</span>
+<span class="sd">        default it passes the message on to log_message().</span>
+
+<span class="sd">        Arguments are the same as for log_message().</span>
+
+<span class="sd">        XXX This should go to the separate error log.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_message</span><span class="p">(</span><span class="nb">format</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">log_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Log an arbitrary message.</span>
+
+<span class="sd">        This is used by all other logging functions.  Override</span>
+<span class="sd">        it if you have specific logging wishes.</span>
+
+<span class="sd">        The first argument, FORMAT, is a format string for the</span>
+<span class="sd">        message to be logged.  If the format string contains</span>
+<span class="sd">        any % escapes requiring parameters, they should be</span>
+<span class="sd">        specified as subsequent arguments (it&#39;s just like</span>
+<span class="sd">        printf!).</span>
+
+<span class="sd">        The client ip address and current date/time are prefixed to every</span>
+<span class="sd">        message.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> - - [</span><span class="si">%s</span><span class="s2">] </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span>
+                         <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">client_address</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                          <span class="bp">self</span><span class="o">.</span><span class="n">log_date_time_string</span><span class="p">(),</span>
+                          <span class="nb">format</span><span class="o">%</span><span class="n">args</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">version_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the server software version string.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">server_version</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">sys_version</span>
+
+    <span class="k">def</span> <span class="nf">date_time_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timestamp</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the current date and time formatted for a message header.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">timestamp</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">timestamp</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">hh</span><span class="p">,</span> <span class="n">mm</span><span class="p">,</span> <span class="n">ss</span><span class="p">,</span> <span class="n">wd</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">gmtime</span><span class="p">(</span><span class="n">timestamp</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">, </span><span class="si">%02d</span><span class="s2"> </span><span class="si">%3s</span><span class="s2"> </span><span class="si">%4d</span><span class="s2"> </span><span class="si">%02d</span><span class="s2">:</span><span class="si">%02d</span><span class="s2">:</span><span class="si">%02d</span><span class="s2"> GMT&quot;</span> <span class="o">%</span> <span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">weekdayname</span><span class="p">[</span><span class="n">wd</span><span class="p">],</span>
+                <span class="n">day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthname</span><span class="p">[</span><span class="n">month</span><span class="p">],</span> <span class="n">year</span><span class="p">,</span>
+                <span class="n">hh</span><span class="p">,</span> <span class="n">mm</span><span class="p">,</span> <span class="n">ss</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">s</span>
+
+    <span class="k">def</span> <span class="nf">log_date_time_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the current time formatted for logging.&quot;&quot;&quot;</span>
+        <span class="n">now</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">hh</span><span class="p">,</span> <span class="n">mm</span><span class="p">,</span> <span class="n">ss</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">(</span><span class="n">now</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%02d</span><span class="s2">/</span><span class="si">%3s</span><span class="s2">/</span><span class="si">%04d</span><span class="s2"> </span><span class="si">%02d</span><span class="s2">:</span><span class="si">%02d</span><span class="s2">:</span><span class="si">%02d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span>
+                <span class="n">day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">monthname</span><span class="p">[</span><span class="n">month</span><span class="p">],</span> <span class="n">year</span><span class="p">,</span> <span class="n">hh</span><span class="p">,</span> <span class="n">mm</span><span class="p">,</span> <span class="n">ss</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">s</span>
+
+    <span class="n">weekdayname</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Mon&#39;</span><span class="p">,</span> <span class="s1">&#39;Tue&#39;</span><span class="p">,</span> <span class="s1">&#39;Wed&#39;</span><span class="p">,</span> <span class="s1">&#39;Thu&#39;</span><span class="p">,</span> <span class="s1">&#39;Fri&#39;</span><span class="p">,</span> <span class="s1">&#39;Sat&#39;</span><span class="p">,</span> <span class="s1">&#39;Sun&#39;</span><span class="p">]</span>
+
+    <span class="n">monthname</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="s1">&#39;Jan&#39;</span><span class="p">,</span> <span class="s1">&#39;Feb&#39;</span><span class="p">,</span> <span class="s1">&#39;Mar&#39;</span><span class="p">,</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span> <span class="s1">&#39;Jun&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;Jul&#39;</span><span class="p">,</span> <span class="s1">&#39;Aug&#39;</span><span class="p">,</span> <span class="s1">&#39;Sep&#39;</span><span class="p">,</span> <span class="s1">&#39;Oct&#39;</span><span class="p">,</span> <span class="s1">&#39;Nov&#39;</span><span class="p">,</span> <span class="s1">&#39;Dec&#39;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">address_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the client address formatted for logging.</span>
+
+<span class="sd">        This version looks up the full hostname using gethostbyaddr(),</span>
+<span class="sd">        and tries to find a name that contains at least one dot.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">host</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client_address</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">socket</span><span class="o">.</span><span class="n">getfqdn</span><span class="p">(</span><span class="n">host</span><span class="p">)</span>
+
+    <span class="c1"># Essentially static class variables</span>
+
+    <span class="c1"># The version of the HTTP protocol we support.</span>
+    <span class="c1"># Set this to HTTP/1.1 to enable automatic keepalive</span>
+    <span class="n">protocol_version</span> <span class="o">=</span> <span class="s2">&quot;HTTP/1.0&quot;</span>
+
+    <span class="c1"># The Message-like class used to parse headers</span>
+    <span class="n">MessageClass</span> <span class="o">=</span> <span class="n">mimetools</span><span class="o">.</span><span class="n">Message</span>
+
+    <span class="c1"># Table mapping response codes to messages; entries have the</span>
+    <span class="c1"># form {code: (shortmessage, longmessage)}.</span>
+    <span class="c1"># See RFC 2616.</span>
+    <span class="n">responses</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="mi">100</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Continue&#39;</span><span class="p">,</span> <span class="s1">&#39;Request received, please continue&#39;</span><span class="p">),</span>
+        <span class="mi">101</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Switching Protocols&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Switching to new protocol; obey Upgrade header&#39;</span><span class="p">),</span>
+
+        <span class="mi">200</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;OK&#39;</span><span class="p">,</span> <span class="s1">&#39;Request fulfilled, document follows&#39;</span><span class="p">),</span>
+        <span class="mi">201</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Created&#39;</span><span class="p">,</span> <span class="s1">&#39;Document created, URL follows&#39;</span><span class="p">),</span>
+        <span class="mi">202</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Accepted&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Request accepted, processing continues off-line&#39;</span><span class="p">),</span>
+        <span class="mi">203</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Non-Authoritative Information&#39;</span><span class="p">,</span> <span class="s1">&#39;Request fulfilled from cache&#39;</span><span class="p">),</span>
+        <span class="mi">204</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;No Content&#39;</span><span class="p">,</span> <span class="s1">&#39;Request fulfilled, nothing follows&#39;</span><span class="p">),</span>
+        <span class="mi">205</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Reset Content&#39;</span><span class="p">,</span> <span class="s1">&#39;Clear input form for further input.&#39;</span><span class="p">),</span>
+        <span class="mi">206</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Partial Content&#39;</span><span class="p">,</span> <span class="s1">&#39;Partial content follows.&#39;</span><span class="p">),</span>
+
+        <span class="mi">300</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Multiple Choices&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Object has several resources -- see URI list&#39;</span><span class="p">),</span>
+        <span class="mi">301</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Moved Permanently&#39;</span><span class="p">,</span> <span class="s1">&#39;Object moved permanently -- see URI list&#39;</span><span class="p">),</span>
+        <span class="mi">302</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Found&#39;</span><span class="p">,</span> <span class="s1">&#39;Object moved temporarily -- see URI list&#39;</span><span class="p">),</span>
+        <span class="mi">303</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;See Other&#39;</span><span class="p">,</span> <span class="s1">&#39;Object moved -- see Method and URL list&#39;</span><span class="p">),</span>
+        <span class="mi">304</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Not Modified&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Document has not changed since given time&#39;</span><span class="p">),</span>
+        <span class="mi">305</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Use Proxy&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;You must use proxy specified in Location to access this &#39;</span>
+              <span class="s1">&#39;resource.&#39;</span><span class="p">),</span>
+        <span class="mi">307</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Temporary Redirect&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Object moved temporarily -- see URI list&#39;</span><span class="p">),</span>
+
+        <span class="mi">400</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Bad Request&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Bad request syntax or unsupported method&#39;</span><span class="p">),</span>
+        <span class="mi">401</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Unauthorized&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;No permission -- see authorization schemes&#39;</span><span class="p">),</span>
+        <span class="mi">402</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Payment Required&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;No payment -- see charging schemes&#39;</span><span class="p">),</span>
+        <span class="mi">403</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Forbidden&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Request forbidden -- authorization will not help&#39;</span><span class="p">),</span>
+        <span class="mi">404</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Not Found&#39;</span><span class="p">,</span> <span class="s1">&#39;Nothing matches the given URI&#39;</span><span class="p">),</span>
+        <span class="mi">405</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Method Not Allowed&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Specified method is invalid for this resource.&#39;</span><span class="p">),</span>
+        <span class="mi">406</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Not Acceptable&#39;</span><span class="p">,</span> <span class="s1">&#39;URI not available in preferred format.&#39;</span><span class="p">),</span>
+        <span class="mi">407</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Proxy Authentication Required&#39;</span><span class="p">,</span> <span class="s1">&#39;You must authenticate with &#39;</span>
+              <span class="s1">&#39;this proxy before proceeding.&#39;</span><span class="p">),</span>
+        <span class="mi">408</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Request Timeout&#39;</span><span class="p">,</span> <span class="s1">&#39;Request timed out; try again later.&#39;</span><span class="p">),</span>
+        <span class="mi">409</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Conflict&#39;</span><span class="p">,</span> <span class="s1">&#39;Request conflict.&#39;</span><span class="p">),</span>
+        <span class="mi">410</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Gone&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;URI no longer exists and has been permanently removed.&#39;</span><span class="p">),</span>
+        <span class="mi">411</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Length Required&#39;</span><span class="p">,</span> <span class="s1">&#39;Client must specify Content-Length.&#39;</span><span class="p">),</span>
+        <span class="mi">412</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Precondition Failed&#39;</span><span class="p">,</span> <span class="s1">&#39;Precondition in headers is false.&#39;</span><span class="p">),</span>
+        <span class="mi">413</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Request Entity Too Large&#39;</span><span class="p">,</span> <span class="s1">&#39;Entity is too large.&#39;</span><span class="p">),</span>
+        <span class="mi">414</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Request-URI Too Long&#39;</span><span class="p">,</span> <span class="s1">&#39;URI is too long.&#39;</span><span class="p">),</span>
+        <span class="mi">415</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Unsupported Media Type&#39;</span><span class="p">,</span> <span class="s1">&#39;Entity body in unsupported format.&#39;</span><span class="p">),</span>
+        <span class="mi">416</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Requested Range Not Satisfiable&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Cannot satisfy request range.&#39;</span><span class="p">),</span>
+        <span class="mi">417</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Expectation Failed&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Expect condition could not be satisfied.&#39;</span><span class="p">),</span>
+
+        <span class="mi">500</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Internal Server Error&#39;</span><span class="p">,</span> <span class="s1">&#39;Server got itself in trouble&#39;</span><span class="p">),</span>
+        <span class="mi">501</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Not Implemented&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;Server does not support this operation&#39;</span><span class="p">),</span>
+        <span class="mi">502</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Bad Gateway&#39;</span><span class="p">,</span> <span class="s1">&#39;Invalid responses from another server/proxy.&#39;</span><span class="p">),</span>
+        <span class="mi">503</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Service Unavailable&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;The server cannot process the request due to a high load&#39;</span><span class="p">),</span>
+        <span class="mi">504</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Gateway Timeout&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;The gateway server did not receive a timely response&#39;</span><span class="p">),</span>
+        <span class="mi">505</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;HTTP Version Not Supported&#39;</span><span class="p">,</span> <span class="s1">&#39;Cannot fulfill request.&#39;</span><span class="p">),</span>
+        <span class="p">}</span>
+
+
+<span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">HandlerClass</span> <span class="o">=</span> <span class="n">BaseHTTPRequestHandler</span><span class="p">,</span>
+         <span class="n">ServerClass</span> <span class="o">=</span> <span class="n">HTTPServer</span><span class="p">,</span> <span class="n">protocol</span><span class="o">=</span><span class="s2">&quot;HTTP/1.0&quot;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Test the HTTP request handler class.</span>
+
+<span class="sd">    This runs an HTTP server on port 8000 (or the first command line</span>
+<span class="sd">    argument).</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="mi">8000</span>
+    <span class="n">server_address</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
+
+    <span class="n">HandlerClass</span><span class="o">.</span><span class="n">protocol_version</span> <span class="o">=</span> <span class="n">protocol</span>
+    <span class="n">httpd</span> <span class="o">=</span> <span class="n">ServerClass</span><span class="p">(</span><span class="n">server_address</span><span class="p">,</span> <span class="n">HandlerClass</span><span class="p">)</span>
+
+    <span class="n">sa</span> <span class="o">=</span> <span class="n">httpd</span><span class="o">.</span><span class="n">socket</span><span class="o">.</span><span class="n">getsockname</span><span class="p">()</span>
+    <span class="nb">print</span> <span class="s2">&quot;Serving HTTP on&quot;</span><span class="p">,</span> <span class="n">sa</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;port&quot;</span><span class="p">,</span> <span class="n">sa</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;...&quot;</span>
+    <span class="n">httpd</span><span class="o">.</span><span class="n">serve_forever</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">test</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,837 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>site &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>site</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for site</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Append module search paths for third-party packages to sys.path.</span>
+
+<span class="sd">****************************************************************</span>
+<span class="sd">* This module is automatically imported during initialization. *</span>
+<span class="sd">****************************************************************</span>
+
+<span class="sd">In earlier versions of Python (up to 1.5a3), scripts or modules that</span>
+<span class="sd">needed to use site-specific modules would place ``import site&#39;&#39;</span>
+<span class="sd">somewhere near the top of their code.  Because of the automatic</span>
+<span class="sd">import, this is no longer necessary (but code that does it still</span>
+<span class="sd">works).</span>
+
+<span class="sd">This will append site-specific paths to the module search path.  On</span>
+<span class="sd">Unix (including Mac OSX), it starts with sys.prefix and</span>
+<span class="sd">sys.exec_prefix (if different) and appends</span>
+<span class="sd">lib/python&lt;version&gt;/site-packages as well as lib/site-python.</span>
+<span class="sd">On other platforms (such as Windows), it tries each of the</span>
+<span class="sd">prefixes directly, as well as with lib/site-packages appended.  The</span>
+<span class="sd">resulting directories, if they exist, are appended to sys.path, and</span>
+<span class="sd">also inspected for path configuration files.</span>
+
+<span class="sd">A path configuration file is a file whose name has the form</span>
+<span class="sd">&lt;package&gt;.pth; its contents are additional directories (one per line)</span>
+<span class="sd">to be added to sys.path.  Non-existing directories (or</span>
+<span class="sd">non-directories) are never added to sys.path; no directory is added to</span>
+<span class="sd">sys.path more than once.  Blank lines and lines beginning with</span>
+<span class="sd">&#39;#&#39; are skipped. Lines starting with &#39;import&#39; are executed.</span>
+
+<span class="sd">For example, suppose sys.prefix and sys.exec_prefix are set to</span>
+<span class="sd">/usr/local and there is a directory /usr/local/lib/python2.5/site-packages</span>
+<span class="sd">with three subdirectories, foo, bar and spam, and two path</span>
+<span class="sd">configuration files, foo.pth and bar.pth.  Assume foo.pth contains the</span>
+<span class="sd">following:</span>
+
+<span class="sd">  # foo package configuration</span>
+<span class="sd">  foo</span>
+<span class="sd">  bar</span>
+<span class="sd">  bletch</span>
+
+<span class="sd">and bar.pth contains:</span>
+
+<span class="sd">  # bar package configuration</span>
+<span class="sd">  bar</span>
+
+<span class="sd">Then the following directories are added to sys.path, in this order:</span>
+
+<span class="sd">  /usr/local/lib/python2.5/site-packages/bar</span>
+<span class="sd">  /usr/local/lib/python2.5/site-packages/foo</span>
+
+<span class="sd">Note that bletch is omitted because it doesn&#39;t exist; bar precedes foo</span>
+<span class="sd">because bar.pth comes alphabetically before foo.pth; and spam is</span>
+<span class="sd">omitted because it is not mentioned in either path configuration file.</span>
+
+<span class="sd">After these path manipulations, an attempt is made to import a module</span>
+<span class="sd">named sitecustomize, which can perform arbitrary additional</span>
+<span class="sd">site-specific customizations.  If this import fails with an</span>
+<span class="sd">ImportError exception, it is silently ignored.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">__builtin__</span>
+<span class="kn">import</span> <span class="nn">traceback</span>
+
+<span class="c1"># Prefixes for site-packages; add additional prefixes like /usr/local here</span>
+<span class="n">PREFIXES</span> <span class="o">=</span> <span class="p">[</span><span class="n">sys</span><span class="o">.</span><span class="n">prefix</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">exec_prefix</span><span class="p">]</span>
+<span class="c1"># Enable per user site-packages directory</span>
+<span class="c1"># set it to False to disable the feature or True to force the feature</span>
+<span class="n">ENABLE_USER_SITE</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="c1"># for distutils.commands.install</span>
+<span class="c1"># These values are initialized by the getuserbase() and getusersitepackages()</span>
+<span class="c1"># functions, through the main() function when Python starts.</span>
+<span class="n">USER_SITE</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">USER_BASE</span> <span class="o">=</span> <span class="kc">None</span>
+
+
+<div class="viewcode-block" id="makepath"><a class="viewcode-back" href="../misc/generated/site.makepath.html#site.makepath">[docs]</a><span class="k">def</span> <span class="nf">makepath</span><span class="p">(</span><span class="o">*</span><span class="n">paths</span><span class="p">):</span>
+    <span class="nb">dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="o">*</span><span class="n">paths</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="nb">dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">return</span> <span class="nb">dir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normcase</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="abs__file__"><a class="viewcode-back" href="../misc/generated/site.abs__file__.html#site.abs__file__">[docs]</a><span class="k">def</span> <span class="nf">abs__file__</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Set all module&#39; __file__ attribute to an absolute path&quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="s1">&#39;__loader__&#39;</span><span class="p">):</span>
+            <span class="k">continue</span>   <span class="c1"># don&#39;t mess with a PEP 302-supplied __file__</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">m</span><span class="o">.</span><span class="n">__file__</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">__file__</span><span class="p">)</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">AttributeError</span><span class="p">,</span> <span class="ne">OSError</span><span class="p">):</span>
+            <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="removeduppaths"><a class="viewcode-back" href="../misc/generated/site.removeduppaths.html#site.removeduppaths">[docs]</a><span class="k">def</span> <span class="nf">removeduppaths</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; Remove duplicate entries from sys.path along with making them</span>
+<span class="sd">    absolute&quot;&quot;&quot;</span>
+    <span class="c1"># This ensures that the initial path provided by the interpreter contains</span>
+    <span class="c1"># only absolute pathnames, even if we&#39;re running from the build directory.</span>
+    <span class="n">L</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">known_paths</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="nb">dir</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+        <span class="c1"># Filter out duplicate paths (on case-insensitive file systems also</span>
+        <span class="c1"># if they only differ in case); turn relative paths into absolute</span>
+        <span class="c1"># paths.</span>
+        <span class="nb">dir</span><span class="p">,</span> <span class="n">dircase</span> <span class="o">=</span> <span class="n">makepath</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">dircase</span> <span class="ow">in</span> <span class="n">known_paths</span><span class="p">:</span>
+            <span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span>
+            <span class="n">known_paths</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">dircase</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[:]</span> <span class="o">=</span> <span class="n">L</span>
+    <span class="k">return</span> <span class="n">known_paths</span></div>
+
+
+<span class="k">def</span> <span class="nf">_init_pathinfo</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Return a set containing all existing directory entries from sys.path&quot;&quot;&quot;</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="nb">dir</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="nb">dir</span><span class="p">):</span>
+                <span class="nb">dir</span><span class="p">,</span> <span class="n">dircase</span> <span class="o">=</span> <span class="n">makepath</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span>
+                <span class="n">d</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">dircase</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+            <span class="k">continue</span>
+    <span class="k">return</span> <span class="n">d</span>
+
+
+<div class="viewcode-block" id="addpackage"><a class="viewcode-back" href="../misc/generated/site.addpackage.html#site.addpackage">[docs]</a><span class="k">def</span> <span class="nf">addpackage</span><span class="p">(</span><span class="n">sitedir</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">known_paths</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Process a .pth file within the site-packages directory:</span>
+<span class="sd">       For each line in the file, either combine it with sitedir to a path</span>
+<span class="sd">       and add that to known_paths, or execute it if it starts with &#39;import &#39;.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">known_paths</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">_init_pathinfo</span><span class="p">()</span>
+        <span class="n">reset</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">reset</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">fullname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sitedir</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">fullname</span><span class="p">,</span> <span class="s2">&quot;rU&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">IOError</span><span class="p">:</span>
+        <span class="k">return</span>
+    <span class="k">with</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">((</span><span class="s2">&quot;import &quot;</span><span class="p">,</span> <span class="s2">&quot;import</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)):</span>
+                    <span class="n">exec</span> <span class="n">line</span>
+                    <span class="k">continue</span>
+                <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+                <span class="nb">dir</span><span class="p">,</span> <span class="n">dircase</span> <span class="o">=</span> <span class="n">makepath</span><span class="p">(</span><span class="n">sitedir</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">dircase</span> <span class="ow">in</span> <span class="n">known_paths</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="nb">dir</span><span class="p">):</span>
+                    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span>
+                    <span class="n">known_paths</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">dircase</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+                <span class="nb">print</span> <span class="o">&gt;&gt;</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="s2">&quot;Error processing line </span><span class="si">{:d}</span><span class="s2"> of </span><span class="si">{}</span><span class="s2">:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                    <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">fullname</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exception</span><span class="p">(</span><span class="o">*</span><span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()):</span>
+                    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">splitlines</span><span class="p">():</span>
+                        <span class="nb">print</span> <span class="o">&gt;&gt;</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="s1">&#39;  &#39;</span><span class="o">+</span><span class="n">line</span>
+                <span class="nb">print</span> <span class="o">&gt;&gt;</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Remainder of file ignored&quot;</span>
+                <span class="k">break</span>
+    <span class="k">if</span> <span class="n">reset</span><span class="p">:</span>
+        <span class="n">known_paths</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="n">known_paths</span></div>
+
+
+<div class="viewcode-block" id="addsitedir"><a class="viewcode-back" href="../misc/generated/site.addsitedir.html#site.addsitedir">[docs]</a><span class="k">def</span> <span class="nf">addsitedir</span><span class="p">(</span><span class="n">sitedir</span><span class="p">,</span> <span class="n">known_paths</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Add &#39;sitedir&#39; argument to sys.path if missing and handle .pth files in</span>
+<span class="sd">    &#39;sitedir&#39;&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">known_paths</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">known_paths</span> <span class="o">=</span> <span class="n">_init_pathinfo</span><span class="p">()</span>
+        <span class="n">reset</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">reset</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">sitedir</span><span class="p">,</span> <span class="n">sitedircase</span> <span class="o">=</span> <span class="n">makepath</span><span class="p">(</span><span class="n">sitedir</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">sitedircase</span> <span class="ow">in</span> <span class="n">known_paths</span><span class="p">:</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sitedir</span><span class="p">)</span>        <span class="c1"># Add path component</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">sitedir</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">os</span><span class="o">.</span><span class="n">error</span><span class="p">:</span>
+        <span class="k">return</span>
+    <span class="n">dotpth</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">extsep</span> <span class="o">+</span> <span class="s2">&quot;pth&quot;</span>
+    <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="n">name</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span> <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">dotpth</span><span class="p">)]</span>
+    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
+        <span class="n">addpackage</span><span class="p">(</span><span class="n">sitedir</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">known_paths</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">reset</span><span class="p">:</span>
+        <span class="n">known_paths</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="n">known_paths</span></div>
+
+
+<div class="viewcode-block" id="check_enableusersite"><a class="viewcode-back" href="../misc/generated/site.check_enableusersite.html#site.check_enableusersite">[docs]</a><span class="k">def</span> <span class="nf">check_enableusersite</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Check if user site directory is safe for inclusion</span>
+
+<span class="sd">    The function tests for the command line flag (including environment var),</span>
+<span class="sd">    process uid/gid equal to effective uid/gid.</span>
+
+<span class="sd">    None: Disabled for security reasons</span>
+<span class="sd">    False: Disabled by user (command line option)</span>
+<span class="sd">    True: Safe and enabled</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">flags</span><span class="o">.</span><span class="n">no_user_site</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">os</span><span class="p">,</span> <span class="s2">&quot;getuid&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">os</span><span class="p">,</span> <span class="s2">&quot;geteuid&quot;</span><span class="p">):</span>
+        <span class="c1"># check process uid == effective uid</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">geteuid</span><span class="p">()</span> <span class="o">!=</span> <span class="n">os</span><span class="o">.</span><span class="n">getuid</span><span class="p">():</span>
+            <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">os</span><span class="p">,</span> <span class="s2">&quot;getgid&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">os</span><span class="p">,</span> <span class="s2">&quot;getegid&quot;</span><span class="p">):</span>
+        <span class="c1"># check process gid == effective gid</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">getegid</span><span class="p">()</span> <span class="o">!=</span> <span class="n">os</span><span class="o">.</span><span class="n">getgid</span><span class="p">():</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">return</span> <span class="kc">True</span></div>
+
+<div class="viewcode-block" id="getuserbase"><a class="viewcode-back" href="../misc/generated/site.getuserbase.html#site.getuserbase">[docs]</a><span class="k">def</span> <span class="nf">getuserbase</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Returns the `user base` directory path.</span>
+
+<span class="sd">    The `user base` directory can be used to store data. If the global</span>
+<span class="sd">    variable ``USER_BASE`` is not initialized yet, this function will also set</span>
+<span class="sd">    it.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">USER_BASE</span>
+    <span class="k">if</span> <span class="n">USER_BASE</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">USER_BASE</span>
+    <span class="kn">from</span> <span class="nn">sysconfig</span> <span class="k">import</span> <span class="n">get_config_var</span>
+    <span class="n">USER_BASE</span> <span class="o">=</span> <span class="n">get_config_var</span><span class="p">(</span><span class="s1">&#39;userbase&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">USER_BASE</span></div>
+
+<div class="viewcode-block" id="getusersitepackages"><a class="viewcode-back" href="../misc/generated/site.getusersitepackages.html#site.getusersitepackages">[docs]</a><span class="k">def</span> <span class="nf">getusersitepackages</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Returns the user-specific site-packages directory path.</span>
+
+<span class="sd">    If the global variable ``USER_SITE`` is not initialized yet, this</span>
+<span class="sd">    function will also set it.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">USER_SITE</span>
+    <span class="n">user_base</span> <span class="o">=</span> <span class="n">getuserbase</span><span class="p">()</span> <span class="c1"># this will also set USER_BASE</span>
+
+    <span class="k">if</span> <span class="n">USER_SITE</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">USER_SITE</span>
+
+    <span class="kn">from</span> <span class="nn">sysconfig</span> <span class="k">import</span> <span class="n">get_path</span>
+    <span class="kn">import</span> <span class="nn">os</span>
+
+    <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;darwin&#39;</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">sysconfig</span> <span class="k">import</span> <span class="n">get_config_var</span>
+        <span class="k">if</span> <span class="n">get_config_var</span><span class="p">(</span><span class="s1">&#39;PYTHONFRAMEWORK&#39;</span><span class="p">):</span>
+            <span class="n">USER_SITE</span> <span class="o">=</span> <span class="n">get_path</span><span class="p">(</span><span class="s1">&#39;purelib&#39;</span><span class="p">,</span> <span class="s1">&#39;osx_framework_user&#39;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">USER_SITE</span>
+
+    <span class="n">USER_SITE</span> <span class="o">=</span> <span class="n">get_path</span><span class="p">(</span><span class="s1">&#39;purelib&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">_user&#39;</span> <span class="o">%</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">USER_SITE</span></div>
+
+<div class="viewcode-block" id="addusersitepackages"><a class="viewcode-back" href="../misc/generated/site.addusersitepackages.html#site.addusersitepackages">[docs]</a><span class="k">def</span> <span class="nf">addusersitepackages</span><span class="p">(</span><span class="n">known_paths</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Add a per user site-package to sys.path</span>
+
+<span class="sd">    Each user has its own python directory with site-packages in the</span>
+<span class="sd">    home directory.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># get the per user site-package path</span>
+    <span class="c1"># this call will also make sure USER_BASE and USER_SITE are set</span>
+    <span class="n">user_site</span> <span class="o">=</span> <span class="n">getusersitepackages</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">ENABLE_USER_SITE</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">user_site</span><span class="p">):</span>
+        <span class="n">addsitedir</span><span class="p">(</span><span class="n">user_site</span><span class="p">,</span> <span class="n">known_paths</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">known_paths</span></div>
+
+<div class="viewcode-block" id="getsitepackages"><a class="viewcode-back" href="../misc/generated/site.getsitepackages.html#site.getsitepackages">[docs]</a><span class="k">def</span> <span class="nf">getsitepackages</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Returns a list containing all global site-packages directories</span>
+<span class="sd">    (and possibly site-python).</span>
+
+<span class="sd">    For each directory present in the global ``PREFIXES``, this function</span>
+<span class="sd">    will find its `site-packages` subdirectory depending on the system</span>
+<span class="sd">    environment, and will return a list of full paths.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sitepackages</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">prefix</span> <span class="ow">in</span> <span class="n">PREFIXES</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">prefix</span> <span class="ow">or</span> <span class="n">prefix</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">prefix</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;os2emx&#39;</span><span class="p">,</span> <span class="s1">&#39;riscos&#39;</span><span class="p">):</span>
+            <span class="n">sitepackages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="s2">&quot;Lib&quot;</span><span class="p">,</span> <span class="s2">&quot;site-packages&quot;</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">os</span><span class="o">.</span><span class="n">sep</span> <span class="o">==</span> <span class="s1">&#39;/&#39;</span><span class="p">:</span>
+            <span class="n">sitepackages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="s2">&quot;lib&quot;</span><span class="p">,</span>
+                                        <span class="s2">&quot;python&quot;</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">[:</span><span class="mi">3</span><span class="p">],</span>
+                                        <span class="s2">&quot;site-packages&quot;</span><span class="p">))</span>
+            <span class="n">sitepackages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="s2">&quot;lib&quot;</span><span class="p">,</span> <span class="s2">&quot;site-python&quot;</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">sitepackages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">prefix</span><span class="p">)</span>
+            <span class="n">sitepackages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="s2">&quot;lib&quot;</span><span class="p">,</span> <span class="s2">&quot;site-packages&quot;</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s2">&quot;darwin&quot;</span><span class="p">:</span>
+            <span class="c1"># for framework builds *only* we add the standard Apple</span>
+            <span class="c1"># locations.</span>
+            <span class="kn">from</span> <span class="nn">sysconfig</span> <span class="k">import</span> <span class="n">get_config_var</span>
+            <span class="n">framework</span> <span class="o">=</span> <span class="n">get_config_var</span><span class="p">(</span><span class="s2">&quot;PYTHONFRAMEWORK&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">framework</span><span class="p">:</span>
+                <span class="n">sitepackages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                        <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;/Library&quot;</span><span class="p">,</span> <span class="n">framework</span><span class="p">,</span>
+                            <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">[:</span><span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;site-packages&quot;</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">sitepackages</span></div>
+
+<div class="viewcode-block" id="addsitepackages"><a class="viewcode-back" href="../misc/generated/site.addsitepackages.html#site.addsitepackages">[docs]</a><span class="k">def</span> <span class="nf">addsitepackages</span><span class="p">(</span><span class="n">known_paths</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Add site-packages (and possibly site-python) to sys.path&quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">sitedir</span> <span class="ow">in</span> <span class="n">getsitepackages</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">sitedir</span><span class="p">):</span>
+            <span class="n">addsitedir</span><span class="p">(</span><span class="n">sitedir</span><span class="p">,</span> <span class="n">known_paths</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">known_paths</span></div>
+
+<div class="viewcode-block" id="setBEGINLIBPATH"><a class="viewcode-back" href="../misc/generated/site.setBEGINLIBPATH.html#site.setBEGINLIBPATH">[docs]</a><span class="k">def</span> <span class="nf">setBEGINLIBPATH</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;The OS/2 EMX port has optional extension modules that do double duty</span>
+<span class="sd">    as DLLs (and must use the .DLL file extension) for other extensions.</span>
+<span class="sd">    The library search path needs to be amended so these will be found</span>
+<span class="sd">    during module import.  Use BEGINLIBPATH so that these are at the start</span>
+<span class="sd">    of the library search path.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">dllpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">prefix</span><span class="p">,</span> <span class="s2">&quot;Lib&quot;</span><span class="p">,</span> <span class="s2">&quot;lib-dynload&quot;</span><span class="p">)</span>
+    <span class="n">libpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;BEGINLIBPATH&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">libpath</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+        <span class="n">libpath</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dllpath</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">libpath</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">dllpath</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;BEGINLIBPATH&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">libpath</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="setquit"><a class="viewcode-back" href="../misc/generated/site.setquit.html#site.setquit">[docs]</a><span class="k">def</span> <span class="nf">setquit</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Define new builtins &#39;quit&#39; and &#39;exit&#39;.</span>
+
+<span class="sd">    These are objects which make the interpreter exit when called.</span>
+<span class="sd">    The repr of each object contains a hint at how it works.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">sep</span> <span class="o">==</span> <span class="s1">&#39;:&#39;</span><span class="p">:</span>
+        <span class="n">eof</span> <span class="o">=</span> <span class="s1">&#39;Cmd-Q&#39;</span>
+    <span class="k">elif</span> <span class="n">os</span><span class="o">.</span><span class="n">sep</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">:</span>
+        <span class="n">eof</span> <span class="o">=</span> <span class="s1">&#39;Ctrl-Z plus Return&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">eof</span> <span class="o">=</span> <span class="s1">&#39;Ctrl-D (i.e. EOF)&#39;</span>
+
+    <span class="k">class</span> <span class="nc">Quitter</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="k">return</span> <span class="s1">&#39;Use </span><span class="si">%s</span><span class="s1">() or </span><span class="si">%s</span><span class="s1"> to exit&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">eof</span><span class="p">)</span>
+        <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+            <span class="c1"># Shells like IDLE catch the SystemExit, but listen when their</span>
+            <span class="c1"># stdin wrapper is closed.</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="k">pass</span>
+            <span class="k">raise</span> <span class="ne">SystemExit</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
+    <span class="n">__builtin__</span><span class="o">.</span><span class="n">quit</span> <span class="o">=</span> <span class="n">Quitter</span><span class="p">(</span><span class="s1">&#39;quit&#39;</span><span class="p">)</span>
+    <span class="n">__builtin__</span><span class="o">.</span><span class="n">exit</span> <span class="o">=</span> <span class="n">Quitter</span><span class="p">(</span><span class="s1">&#39;exit&#39;</span><span class="p">)</span></div>
+
+
+<span class="k">class</span> <span class="nc">_Printer</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;interactive prompt objects for printing the license text, a list of</span>
+<span class="sd">    contributors and the copyright notice.&quot;&quot;&quot;</span>
+
+    <span class="n">MAXLINES</span> <span class="o">=</span> <span class="mi">23</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">(),</span> <span class="n">dirs</span><span class="o">=</span><span class="p">()):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__files</span> <span class="o">=</span> <span class="n">files</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__dirs</span> <span class="o">=</span> <span class="n">dirs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__lines</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">__setup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__lines</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="nb">dir</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dirs</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__files</span><span class="p">:</span>
+                <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">fp</span> <span class="o">=</span> <span class="n">file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;rU&quot;</span><span class="p">)</span>
+                    <span class="n">data</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+                    <span class="n">fp</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+                    <span class="k">break</span>
+                <span class="k">except</span> <span class="ne">IOError</span><span class="p">:</span>
+                    <span class="k">pass</span>
+            <span class="k">if</span> <span class="n">data</span><span class="p">:</span>
+                <span class="k">break</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__lines</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__linecnt</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__lines</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__setup</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__lines</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">MAXLINES</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__lines</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;Type </span><span class="si">%s</span><span class="s2">() to see the full </span><span class="si">%s</span><span class="s2"> text&quot;</span> <span class="o">%</span> <span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">__name</span><span class="p">,)</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__setup</span><span class="p">()</span>
+        <span class="n">prompt</span> <span class="o">=</span> <span class="s1">&#39;Hit Return for more, or q (and Return) to quit: &#39;</span>
+        <span class="n">lineno</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">lineno</span><span class="p">,</span> <span class="n">lineno</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">MAXLINES</span><span class="p">):</span>
+                    <span class="nb">print</span> <span class="bp">self</span><span class="o">.</span><span class="n">__lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+                <span class="k">break</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">lineno</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">MAXLINES</span>
+                <span class="n">key</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="k">while</span> <span class="n">key</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">key</span> <span class="o">=</span> <span class="n">raw_input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;q&#39;</span><span class="p">):</span>
+                        <span class="n">key</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;q&#39;</span><span class="p">:</span>
+                    <span class="k">break</span>
+
+<div class="viewcode-block" id="setcopyright"><a class="viewcode-back" href="../misc/generated/site.setcopyright.html#site.setcopyright">[docs]</a><span class="k">def</span> <span class="nf">setcopyright</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Set &#39;copyright&#39; and &#39;credits&#39; in __builtin__&quot;&quot;&quot;</span>
+    <span class="n">__builtin__</span><span class="o">.</span><span class="n">copyright</span> <span class="o">=</span> <span class="n">_Printer</span><span class="p">(</span><span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">copyright</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;java&#39;</span><span class="p">:</span>
+        <span class="n">__builtin__</span><span class="o">.</span><span class="n">credits</span> <span class="o">=</span> <span class="n">_Printer</span><span class="p">(</span>
+            <span class="s2">&quot;credits&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Jython is maintained by the Jython developers (www.jython.org).&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">__builtin__</span><span class="o">.</span><span class="n">credits</span> <span class="o">=</span> <span class="n">_Printer</span><span class="p">(</span><span class="s2">&quot;credits&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="s2">    Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands</span>
+<span class="s2">    for supporting Python development.  See www.python.org for more information.&quot;&quot;&quot;</span><span class="p">)</span>
+    <span class="n">here</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">__file__</span><span class="p">)</span>
+    <span class="n">__builtin__</span><span class="o">.</span><span class="n">license</span> <span class="o">=</span> <span class="n">_Printer</span><span class="p">(</span>
+        <span class="s2">&quot;license&quot;</span><span class="p">,</span> <span class="s2">&quot;See https://www.python.org/psf/license/&quot;</span><span class="p">,</span>
+        <span class="p">[</span><span class="s2">&quot;LICENSE.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;LICENSE&quot;</span><span class="p">],</span>
+        <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">here</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">),</span> <span class="n">here</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">curdir</span><span class="p">])</span></div>
+
+
+<span class="k">class</span> <span class="nc">_Helper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Define the builtin &#39;help&#39;.</span>
+<span class="sd">    This is a wrapper around pydoc.help (with a twist).</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Type help() for interactive help, &quot;</span> \
+               <span class="s2">&quot;or help(object) for help about object.&quot;</span>
+    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+        <span class="kn">import</span> <span class="nn">pydoc</span>
+        <span class="k">return</span> <span class="n">pydoc</span><span class="o">.</span><span class="n">help</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+
+<div class="viewcode-block" id="sethelper"><a class="viewcode-back" href="../misc/generated/site.sethelper.html#site.sethelper">[docs]</a><span class="k">def</span> <span class="nf">sethelper</span><span class="p">():</span>
+    <span class="n">__builtin__</span><span class="o">.</span><span class="n">help</span> <span class="o">=</span> <span class="n">_Helper</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="aliasmbcs"><a class="viewcode-back" href="../misc/generated/site.aliasmbcs.html#site.aliasmbcs">[docs]</a><span class="k">def</span> <span class="nf">aliasmbcs</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;On Windows, some default encodings are not provided by Python,</span>
+<span class="sd">    while they are always available as &quot;mbcs&quot; in each locale. Make</span>
+<span class="sd">    them usable by aliasing to &quot;mbcs&quot; in such a case.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;win32&#39;</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">locale</span><span class="o">,</span> <span class="nn">codecs</span>
+        <span class="n">enc</span> <span class="o">=</span> <span class="n">locale</span><span class="o">.</span><span class="n">getdefaultlocale</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">enc</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;cp&#39;</span><span class="p">):</span>            <span class="c1"># &quot;cp***&quot; ?</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">codecs</span><span class="o">.</span><span class="n">lookup</span><span class="p">(</span><span class="n">enc</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">LookupError</span><span class="p">:</span>
+                <span class="kn">import</span> <span class="nn">encodings</span>
+                <span class="n">encodings</span><span class="o">.</span><span class="n">_cache</span><span class="p">[</span><span class="n">enc</span><span class="p">]</span> <span class="o">=</span> <span class="n">encodings</span><span class="o">.</span><span class="n">_unknown</span>
+                <span class="n">encodings</span><span class="o">.</span><span class="n">aliases</span><span class="o">.</span><span class="n">aliases</span><span class="p">[</span><span class="n">enc</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;mbcs&#39;</span></div>
+
+<div class="viewcode-block" id="setencoding"><a class="viewcode-back" href="../misc/generated/site.setencoding.html#site.setencoding">[docs]</a><span class="k">def</span> <span class="nf">setencoding</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Set the string encoding used by the Unicode implementation.  The</span>
+<span class="sd">    default is &#39;ascii&#39;, but if you&#39;re willing to experiment, you can</span>
+<span class="sd">    change this.&quot;&quot;&quot;</span>
+    <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&quot;ascii&quot;</span> <span class="c1"># Default value set by _PyUnicode_Init()</span>
+    <span class="k">if</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c1"># Enable to support locale aware default string encodings.</span>
+        <span class="kn">import</span> <span class="nn">locale</span>
+        <span class="n">loc</span> <span class="o">=</span> <span class="n">locale</span><span class="o">.</span><span class="n">getdefaultlocale</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">encoding</span> <span class="o">=</span> <span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c1"># Enable to switch off string to Unicode coercion and implicit</span>
+        <span class="c1"># Unicode to string conversion.</span>
+        <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&quot;undefined&quot;</span>
+    <span class="k">if</span> <span class="n">encoding</span> <span class="o">!=</span> <span class="s2">&quot;ascii&quot;</span><span class="p">:</span>
+        <span class="c1"># On Non-Unicode builds this will raise an AttributeError...</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">setdefaultencoding</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span> <span class="c1"># Needs Python Unicode build !</span></div>
+
+
+<div class="viewcode-block" id="execsitecustomize"><a class="viewcode-back" href="../misc/generated/site.execsitecustomize.html#site.execsitecustomize">[docs]</a><span class="k">def</span> <span class="nf">execsitecustomize</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Run custom site specific code, if available.&quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">sitecustomize</span>
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">flags</span><span class="o">.</span><span class="n">verbose</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">excepthook</span><span class="p">(</span><span class="o">*</span><span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">())</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="o">&gt;&gt;</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> \
+                <span class="s2">&quot;&#39;import sitecustomize&#39; failed; use -v for traceback&quot;</span></div>
+
+
+<div class="viewcode-block" id="execusercustomize"><a class="viewcode-back" href="../misc/generated/site.execusercustomize.html#site.execusercustomize">[docs]</a><span class="k">def</span> <span class="nf">execusercustomize</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Run custom user specific code, if available.&quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">usercustomize</span>
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">flags</span><span class="o">.</span><span class="n">verbose</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">excepthook</span><span class="p">(</span><span class="o">*</span><span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">())</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="o">&gt;&gt;</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> \
+                <span class="s2">&quot;&#39;import usercustomize&#39; failed; use -v for traceback&quot;</span></div>
+
+
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../misc/generated/site.main.html#site.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">ENABLE_USER_SITE</span>
+
+    <span class="n">abs__file__</span><span class="p">()</span>
+    <span class="n">known_paths</span> <span class="o">=</span> <span class="n">removeduppaths</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">ENABLE_USER_SITE</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ENABLE_USER_SITE</span> <span class="o">=</span> <span class="n">check_enableusersite</span><span class="p">()</span>
+    <span class="n">known_paths</span> <span class="o">=</span> <span class="n">addusersitepackages</span><span class="p">(</span><span class="n">known_paths</span><span class="p">)</span>
+    <span class="n">known_paths</span> <span class="o">=</span> <span class="n">addsitepackages</span><span class="p">(</span><span class="n">known_paths</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;os2emx&#39;</span><span class="p">:</span>
+        <span class="n">setBEGINLIBPATH</span><span class="p">()</span>
+    <span class="n">setquit</span><span class="p">()</span>
+    <span class="n">setcopyright</span><span class="p">()</span>
+    <span class="n">sethelper</span><span class="p">()</span>
+    <span class="n">aliasmbcs</span><span class="p">()</span>
+    <span class="n">setencoding</span><span class="p">()</span>
+    <span class="n">execsitecustomize</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">ENABLE_USER_SITE</span><span class="p">:</span>
+        <span class="n">execusercustomize</span><span class="p">()</span>
+    <span class="c1"># Remove sys.setdefaultencoding() so that users cannot change the</span>
+    <span class="c1"># encoding after initialization.  The test for presence is needed when</span>
+    <span class="c1"># this module is run as a script, because this code is executed twice.</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">sys</span><span class="p">,</span> <span class="s2">&quot;setdefaultencoding&quot;</span><span class="p">):</span>
+        <span class="k">del</span> <span class="n">sys</span><span class="o">.</span><span class="n">setdefaultencoding</span></div>
+
+<span class="n">main</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">_script</span><span class="p">():</span>
+    <span class="n">help</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="s2">    </span><span class="si">%s</span><span class="s2"> [--user-base] [--user-site]</span>
+
+<span class="s2">    Without arguments print some useful information</span>
+<span class="s2">    With arguments print the value of USER_BASE and/or USER_SITE separated</span>
+<span class="s2">    by &#39;</span><span class="si">%s</span><span class="s2">&#39;.</span>
+
+<span class="s2">    Exit codes with --user-base or --user-site:</span>
+<span class="s2">      0 - user site directory is enabled</span>
+<span class="s2">      1 - user site directory is disabled by user</span>
+<span class="s2">      2 - uses site directory is disabled by super user</span>
+<span class="s2">          or for security reasons</span>
+<span class="s2">     &gt;2 - unknown error</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">args</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="s2">&quot;sys.path = [&quot;</span>
+        <span class="k">for</span> <span class="nb">dir</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="s2">&quot;    </span><span class="si">%r</span><span class="s2">,&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">dir</span><span class="p">,)</span>
+        <span class="nb">print</span> <span class="s2">&quot;]&quot;</span>
+        <span class="nb">print</span> <span class="s2">&quot;USER_BASE: </span><span class="si">%r</span><span class="s2"> (</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">USER_BASE</span><span class="p">,</span>
+            <span class="s2">&quot;exists&quot;</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">USER_BASE</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;doesn&#39;t exist&quot;</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="s2">&quot;USER_SITE: </span><span class="si">%r</span><span class="s2"> (</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">USER_SITE</span><span class="p">,</span>
+            <span class="s2">&quot;exists&quot;</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">USER_SITE</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;doesn&#39;t exist&quot;</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="s2">&quot;ENABLE_USER_SITE: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span>  <span class="n">ENABLE_USER_SITE</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="n">buffer</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="s1">&#39;--user-base&#39;</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">buffer</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">USER_BASE</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s1">&#39;--user-site&#39;</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">buffer</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">USER_SITE</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">buffer</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="n">os</span><span class="o">.</span><span class="n">pathsep</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ENABLE_USER_SITE</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">ENABLE_USER_SITE</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">ENABLE_USER_SITE</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">textwrap</span>
+        <span class="nb">print</span> <span class="n">textwrap</span><span class="o">.</span><span class="n">dedent</span><span class="p">(</span><span class="n">help</span> <span class="o">%</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">os</span><span class="o">.</span><span class="n">pathsep</span><span class="p">))</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">_script</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

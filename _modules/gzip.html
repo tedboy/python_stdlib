@@ -1,0 +1,764 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>gzip &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>gzip</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for gzip</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Functions that read and write gzipped files.</span>
+
+<span class="sd">The user of the file doesn&#39;t have to worry about the compression,</span>
+<span class="sd">but random access is not allowed.&quot;&quot;&quot;</span>
+
+<span class="c1"># based on Andrew Kuchling&#39;s minigzip.py distributed with the zlib module</span>
+
+<span class="kn">import</span> <span class="nn">struct</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">zlib</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">__builtin__</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;GzipFile&quot;</span><span class="p">,</span><span class="s2">&quot;open&quot;</span><span class="p">]</span>
+
+<span class="n">FTEXT</span><span class="p">,</span> <span class="n">FHCRC</span><span class="p">,</span> <span class="n">FEXTRA</span><span class="p">,</span> <span class="n">FNAME</span><span class="p">,</span> <span class="n">FCOMMENT</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span>
+
+<span class="n">READ</span><span class="p">,</span> <span class="n">WRITE</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
+
+<div class="viewcode-block" id="write32u"><a class="viewcode-back" href="../misc/generated/gzip.write32u.html#gzip.write32u">[docs]</a><span class="k">def</span> <span class="nf">write32u</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="c1"># The L format writes the bit pattern correctly whether signed</span>
+    <span class="c1"># or unsigned.</span>
+    <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;&lt;L&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="read32"><a class="viewcode-back" href="../misc/generated/gzip.read32.html#gzip.read32">[docs]</a><span class="k">def</span> <span class="nf">read32</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">&quot;&lt;I&quot;</span><span class="p">,</span> <span class="nb">input</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">4</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="open"><a class="viewcode-back" href="../misc/generated/gzip.open.html#gzip.open">[docs]</a><span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;rb&quot;</span><span class="p">,</span> <span class="n">compresslevel</span><span class="o">=</span><span class="mi">9</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Shorthand for GzipFile(filename, mode, compresslevel).</span>
+
+<span class="sd">    The filename argument is required; mode defaults to &#39;rb&#39;</span>
+<span class="sd">    and compresslevel defaults to 9.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">GzipFile</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">compresslevel</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="GzipFile"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.html#gzip.GzipFile">[docs]</a><span class="k">class</span> <span class="nc">GzipFile</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">BufferedIOBase</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;The GzipFile class simulates most of the methods of a file object with</span>
+<span class="sd">    the exception of the readinto() and truncate() methods.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">myfileobj</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">max_read_chunk</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span>   <span class="c1"># 10Mb</span>
+
+<div class="viewcode-block" id="GzipFile.__init__"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.__init__.html#gzip.GzipFile.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">compresslevel</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">fileobj</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mtime</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Constructor for the GzipFile class.</span>
+
+<span class="sd">        At least one of fileobj and filename must be given a</span>
+<span class="sd">        non-trivial value.</span>
+
+<span class="sd">        The new class instance is based on fileobj, which can be a regular</span>
+<span class="sd">        file, a StringIO object, or any other object which simulates a file.</span>
+<span class="sd">        It defaults to None, in which case filename is opened to provide</span>
+<span class="sd">        a file object.</span>
+
+<span class="sd">        When fileobj is not None, the filename argument is only used to be</span>
+<span class="sd">        included in the gzip file header, which may includes the original</span>
+<span class="sd">        filename of the uncompressed file.  It defaults to the filename of</span>
+<span class="sd">        fileobj, if discernible; otherwise, it defaults to the empty string,</span>
+<span class="sd">        and in this case the original filename is not included in the header.</span>
+
+<span class="sd">        The mode argument can be any of &#39;r&#39;, &#39;rb&#39;, &#39;a&#39;, &#39;ab&#39;, &#39;w&#39;, or &#39;wb&#39;,</span>
+<span class="sd">        depending on whether the file will be read or written.  The default</span>
+<span class="sd">        is the mode of fileobj if discernible; otherwise, the default is &#39;rb&#39;.</span>
+<span class="sd">        Be aware that only the &#39;rb&#39;, &#39;ab&#39;, and &#39;wb&#39; values should be used</span>
+<span class="sd">        for cross-platform portability.</span>
+
+<span class="sd">        The compresslevel argument is an integer from 0 to 9 controlling the</span>
+<span class="sd">        level of compression; 1 is fastest and produces the least compression,</span>
+<span class="sd">        and 9 is slowest and produces the most compression. 0 is no compression</span>
+<span class="sd">        at all. The default is 9.</span>
+
+<span class="sd">        The mtime argument is an optional numeric timestamp to be written</span>
+<span class="sd">        to the stream when compressing.  All gzip compressed streams</span>
+<span class="sd">        are required to contain a timestamp.  If omitted or None, the</span>
+<span class="sd">        current time is used.  This module ignores the timestamp when</span>
+<span class="sd">        decompressing; however, some programs, such as gunzip, make use</span>
+<span class="sd">        of it.  The format of the timestamp is the same as that of the</span>
+<span class="sd">        return value of time.time() and of the st_mtime member of the</span>
+<span class="sd">        object returned by os.stat().</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># Make sure we don&#39;t inadvertently enable universal newlines on the</span>
+        <span class="c1"># underlying file object - in read mode, this causes data corruption.</span>
+        <span class="k">if</span> <span class="n">mode</span><span class="p">:</span>
+            <span class="n">mode</span> <span class="o">=</span> <span class="n">mode</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="c1"># guarantee the file is opened in binary mode on platforms</span>
+        <span class="c1"># that care about that sort of thing</span>
+        <span class="k">if</span> <span class="n">mode</span> <span class="ow">and</span> <span class="s1">&#39;b&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+            <span class="n">mode</span> <span class="o">+=</span> <span class="s1">&#39;b&#39;</span>
+        <span class="k">if</span> <span class="n">fileobj</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">fileobj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">myfileobj</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span> <span class="ow">or</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">filename</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># Issue #13781: os.fdopen() creates a fileobj with a bogus name</span>
+            <span class="c1"># attribute. Avoid saving this in the gzip header&#39;s filename field.</span>
+            <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">fileobj</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">fileobj</span><span class="o">.</span><span class="n">name</span> <span class="o">!=</span> <span class="s1">&#39;&lt;fdopen&gt;&#39;</span><span class="p">:</span>
+                <span class="n">filename</span> <span class="o">=</span> <span class="n">fileobj</span><span class="o">.</span><span class="n">name</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">if</span> <span class="n">mode</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">fileobj</span><span class="p">,</span> <span class="s1">&#39;mode&#39;</span><span class="p">):</span> <span class="n">mode</span> <span class="o">=</span> <span class="n">fileobj</span><span class="o">.</span><span class="n">mode</span>
+            <span class="k">else</span><span class="p">:</span> <span class="n">mode</span> <span class="o">=</span> <span class="s1">&#39;rb&#39;</span>
+
+        <span class="k">if</span> <span class="n">mode</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="n">READ</span>
+            <span class="c1"># Set flag indicating start of a new member</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_new_member</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="c1"># Buffer data read from gzip file. extrastart is offset in</span>
+            <span class="c1"># stream where buffer starts. extrasize is number of</span>
+            <span class="c1"># bytes remaining in buffer from current stream position.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">extrabuf</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">extrastart</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">filename</span>
+            <span class="c1"># Starts small, scales exponentially</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">min_readsize</span> <span class="o">=</span> <span class="mi">100</span>
+
+        <span class="k">elif</span> <span class="n">mode</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;w&#39;</span> <span class="ow">or</span> <span class="n">mode</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="n">WRITE</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_init_write</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">compress</span> <span class="o">=</span> <span class="n">zlib</span><span class="o">.</span><span class="n">compressobj</span><span class="p">(</span><span class="n">compresslevel</span><span class="p">,</span>
+                                             <span class="n">zlib</span><span class="o">.</span><span class="n">DEFLATED</span><span class="p">,</span>
+                                             <span class="o">-</span><span class="n">zlib</span><span class="o">.</span><span class="n">MAX_WBITS</span><span class="p">,</span>
+                                             <span class="n">zlib</span><span class="o">.</span><span class="n">DEF_MEM_LEVEL</span><span class="p">,</span>
+                                             <span class="mi">0</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">,</span> <span class="s2">&quot;Mode &quot;</span> <span class="o">+</span> <span class="n">mode</span> <span class="o">+</span> <span class="s2">&quot; not supported&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span> <span class="o">=</span> <span class="n">fileobj</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">offset</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mtime</span> <span class="o">=</span> <span class="n">mtime</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="n">WRITE</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_write_gzip_header</span><span class="p">()</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">filename</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="kn">import</span> <span class="nn">warnings</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;use the name attribute&quot;</span><span class="p">,</span> <span class="ne">DeprecationWarning</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="n">WRITE</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span> <span class="o">!=</span> <span class="s2">&quot;.gz&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;.gz&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="nb">repr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s1">&#39;&lt;gzip &#39;</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nb">hex</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;&gt;&#39;</span>
+
+    <span class="k">def</span> <span class="nf">_check_closed</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Raises a ValueError if the underlying file object has been closed.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">closed</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;I/O operation on closed file.&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_init_write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">filename</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">crc</span> <span class="o">=</span> <span class="n">zlib</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span><span class="n">L</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">writebuf</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bufsize</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">_write_gzip_header</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\037\213</span><span class="s1">&#39;</span><span class="p">)</span>             <span class="c1"># magic header</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\010</span><span class="s1">&#39;</span><span class="p">)</span>                 <span class="c1"># compression method</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># RFC 1952 requires the FNAME field to be Latin-1. Do not</span>
+            <span class="c1"># include filenames that cannot be represented that way.</span>
+            <span class="n">fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+                <span class="n">fname</span> <span class="o">=</span> <span class="n">fname</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;latin-1&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">fname</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.gz&#39;</span><span class="p">):</span>
+                <span class="n">fname</span> <span class="o">=</span> <span class="n">fname</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">UnicodeEncodeError</span><span class="p">:</span>
+            <span class="n">fname</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="n">flags</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">fname</span><span class="p">:</span>
+            <span class="n">flags</span> <span class="o">=</span> <span class="n">FNAME</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">flags</span><span class="p">))</span>
+        <span class="n">mtime</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mtime</span>
+        <span class="k">if</span> <span class="n">mtime</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">mtime</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="n">write32u</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="p">,</span> <span class="n">long</span><span class="p">(</span><span class="n">mtime</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\002</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\377</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">fname</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">fname</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\000</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_init_read</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">crc</span> <span class="o">=</span> <span class="n">zlib</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span><span class="n">L</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">_read_gzip_header</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">magic</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">magic</span> <span class="o">!=</span> <span class="s1">&#39;</span><span class="se">\037\213</span><span class="s1">&#39;</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">,</span> <span class="s1">&#39;Not a gzipped file&#39;</span>
+        <span class="n">method</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+        <span class="k">if</span> <span class="n">method</span> <span class="o">!=</span> <span class="mi">8</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">,</span> <span class="s1">&#39;Unknown compression method&#39;</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mtime</span> <span class="o">=</span> <span class="n">read32</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="p">)</span>
+        <span class="c1"># extraflag = self.fileobj.read(1)</span>
+        <span class="c1"># os = self.fileobj.read(1)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">flag</span> <span class="o">&amp;</span> <span class="n">FEXTRA</span><span class="p">:</span>
+            <span class="c1"># Read &amp; discard the extra field, if present</span>
+            <span class="n">xlen</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+            <span class="n">xlen</span> <span class="o">=</span> <span class="n">xlen</span> <span class="o">+</span> <span class="mi">256</span><span class="o">*</span><span class="nb">ord</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">xlen</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">flag</span> <span class="o">&amp;</span> <span class="n">FNAME</span><span class="p">:</span>
+            <span class="c1"># Read and discard a null-terminated string containing the filename</span>
+            <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">s</span> <span class="ow">or</span> <span class="n">s</span><span class="o">==</span><span class="s1">&#39;</span><span class="se">\000</span><span class="s1">&#39;</span><span class="p">:</span>
+                    <span class="k">break</span>
+        <span class="k">if</span> <span class="n">flag</span> <span class="o">&amp;</span> <span class="n">FCOMMENT</span><span class="p">:</span>
+            <span class="c1"># Read and discard a null-terminated string containing a comment</span>
+            <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">s</span> <span class="ow">or</span> <span class="n">s</span><span class="o">==</span><span class="s1">&#39;</span><span class="se">\000</span><span class="s1">&#39;</span><span class="p">:</span>
+                    <span class="k">break</span>
+        <span class="k">if</span> <span class="n">flag</span> <span class="o">&amp;</span> <span class="n">FHCRC</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>     <span class="c1"># Read &amp; discard the 16-bit header CRC</span>
+
+<div class="viewcode-block" id="GzipFile.write"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.write.html#gzip.GzipFile.write">[docs]</a>    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">data</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_check_closed</span><span class="p">()</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">!=</span> <span class="n">WRITE</span><span class="p">:</span>
+            <span class="kn">import</span> <span class="nn">errno</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="n">errno</span><span class="o">.</span><span class="n">EBADF</span><span class="p">,</span> <span class="s2">&quot;write() on read-only GzipFile object&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;write() on closed GzipFile object&quot;</span>
+
+        <span class="c1"># Convert data type if called by io.BufferedWriter.</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">memoryview</span><span class="p">):</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">tobytes</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">compress</span><span class="o">.</span><span class="n">compress</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">crc</span> <span class="o">=</span> <span class="n">zlib</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">crc</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span><span class="n">L</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">offset</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="GzipFile.read"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.read.html#gzip.GzipFile.read">[docs]</a>    <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_check_closed</span><span class="p">()</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">!=</span> <span class="n">READ</span><span class="p">:</span>
+            <span class="kn">import</span> <span class="nn">errno</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="n">errno</span><span class="o">.</span><span class="n">EBADF</span><span class="p">,</span> <span class="s2">&quot;read() on write-only GzipFile object&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;&#39;</span>
+
+        <span class="n">readsize</span> <span class="o">=</span> <span class="mi">1024</span>
+        <span class="k">if</span> <span class="n">size</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>        <span class="c1"># get the whole thing</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_read</span><span class="p">(</span><span class="n">readsize</span><span class="p">)</span>
+                    <span class="n">readsize</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">max_read_chunk</span><span class="p">,</span> <span class="n">readsize</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">EOFError</span><span class="p">:</span>
+                <span class="n">size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span>
+        <span class="k">else</span><span class="p">:</span>               <span class="c1"># just get some more of it</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">while</span> <span class="n">size</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_read</span><span class="p">(</span><span class="n">readsize</span><span class="p">)</span>
+                    <span class="n">readsize</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">max_read_chunk</span><span class="p">,</span> <span class="n">readsize</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">EOFError</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">size</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span><span class="p">:</span>
+                    <span class="n">size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span>
+
+        <span class="n">offset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">offset</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrastart</span>
+        <span class="n">chunk</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrabuf</span><span class="p">[</span><span class="n">offset</span><span class="p">:</span> <span class="n">offset</span> <span class="o">+</span> <span class="n">size</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span> <span class="o">-</span> <span class="n">size</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">offset</span> <span class="o">+=</span> <span class="n">size</span>
+        <span class="k">return</span> <span class="n">chunk</span></div>
+
+    <span class="k">def</span> <span class="nf">_unread</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">buf</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">offset</span> <span class="o">-=</span> <span class="nb">len</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">1024</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">EOFError</span><span class="p">,</span> <span class="s2">&quot;Reached EOF&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_new_member</span><span class="p">:</span>
+            <span class="c1"># If the _new_member flag is set, we have to</span>
+            <span class="c1"># jump to the next member, if there is one.</span>
+            <span class="c1">#</span>
+            <span class="c1"># First, check if we&#39;re at the end of the file;</span>
+            <span class="c1"># if so, it&#39;s time to stop; no more members to read.</span>
+            <span class="n">pos</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>   <span class="c1"># Save current position</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>     <span class="c1"># Seek to end of file</span>
+            <span class="k">if</span> <span class="n">pos</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">tell</span><span class="p">():</span>
+                <span class="k">raise</span> <span class="ne">EOFError</span><span class="p">,</span> <span class="s2">&quot;Reached EOF&quot;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span> <span class="n">pos</span> <span class="p">)</span> <span class="c1"># Return to original position</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">_init_read</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_read_gzip_header</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">decompress</span> <span class="o">=</span> <span class="n">zlib</span><span class="o">.</span><span class="n">decompressobj</span><span class="p">(</span><span class="o">-</span><span class="n">zlib</span><span class="o">.</span><span class="n">MAX_WBITS</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_new_member</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="c1"># Read a chunk of data from the file</span>
+        <span class="n">buf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+
+        <span class="c1"># If the EOF has been reached, flush the decompression object</span>
+        <span class="c1"># and mark this object as finished.</span>
+
+        <span class="k">if</span> <span class="n">buf</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">uncompress</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">decompress</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_read_eof</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_add_read_data</span><span class="p">(</span> <span class="n">uncompress</span> <span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">EOFError</span><span class="p">,</span> <span class="s1">&#39;Reached EOF&#39;</span>
+
+        <span class="n">uncompress</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">decompress</span><span class="o">.</span><span class="n">decompress</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_add_read_data</span><span class="p">(</span> <span class="n">uncompress</span> <span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">decompress</span><span class="o">.</span><span class="n">unused_data</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="c1"># Ending case: we&#39;ve come to the end of a member in the file,</span>
+            <span class="c1"># so seek back to the start of the unused data, finish up</span>
+            <span class="c1"># this member, and read a new gzip header.</span>
+            <span class="c1"># (The number of bytes to seek back is the length of the unused</span>
+            <span class="c1"># data, minus 8 because _read_eof() will rewind a further 8 bytes)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span> <span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">decompress</span><span class="o">.</span><span class="n">unused_data</span><span class="p">)</span><span class="o">+</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+            <span class="c1"># Check the CRC and file size, and set the flag so we read</span>
+            <span class="c1"># a new member on the next call</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_read_eof</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_new_member</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="k">def</span> <span class="nf">_add_read_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">crc</span> <span class="o">=</span> <span class="n">zlib</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">crc</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span><span class="n">L</span>
+        <span class="n">offset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">offset</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrastart</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extrabuf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrabuf</span><span class="p">[</span><span class="n">offset</span><span class="p">:]</span> <span class="o">+</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extrastart</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">offset</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_read_eof</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># We&#39;ve read to the end of the file, so we have to rewind in order</span>
+        <span class="c1"># to reread the 8 bytes containing the CRC and the file size.</span>
+        <span class="c1"># We check the that the computed CRC and size of the</span>
+        <span class="c1"># uncompressed data matches the stored values.  Note that the size</span>
+        <span class="c1"># stored is the true file size mod 2**32.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">crc32</span> <span class="o">=</span> <span class="n">read32</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="p">)</span>
+        <span class="n">isize</span> <span class="o">=</span> <span class="n">read32</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="p">)</span>  <span class="c1"># may exceed 2GB</span>
+        <span class="k">if</span> <span class="n">crc32</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">crc</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s2">&quot;CRC check failed </span><span class="si">%s</span><span class="s2"> != </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">crc32</span><span class="p">),</span>
+                                                         <span class="nb">hex</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">crc</span><span class="p">)))</span>
+        <span class="k">elif</span> <span class="n">isize</span> <span class="o">!=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span><span class="n">L</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">,</span> <span class="s2">&quot;Incorrect length of data produced&quot;</span>
+
+        <span class="c1"># Gzip files can be padded with zeroes and still have archives.</span>
+        <span class="c1"># Consume all zero bytes and set the file position to the first</span>
+        <span class="c1"># non-zero byte. See http://www.gzip.org/#faq8</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\x00</span><span class="s2">&quot;</span>
+        <span class="k">while</span> <span class="n">c</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="se">\x00</span><span class="s2">&quot;</span><span class="p">:</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">c</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">closed</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span> <span class="ow">is</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="GzipFile.close"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.close.html#gzip.GzipFile.close">[docs]</a>    <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">fileobj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span>
+        <span class="k">if</span> <span class="n">fileobj</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="n">WRITE</span><span class="p">:</span>
+                <span class="n">fileobj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">compress</span><span class="o">.</span><span class="n">flush</span><span class="p">())</span>
+                <span class="n">write32u</span><span class="p">(</span><span class="n">fileobj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">crc</span><span class="p">)</span>
+                <span class="c1"># self.size may exceed 2GB, or even 4GB</span>
+                <span class="n">write32u</span><span class="p">(</span><span class="n">fileobj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span><span class="n">L</span><span class="p">)</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="n">myfileobj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">myfileobj</span>
+            <span class="k">if</span> <span class="n">myfileobj</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">myfileobj</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="n">myfileobj</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GzipFile.flush"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.flush.html#gzip.GzipFile.flush">[docs]</a>    <span class="k">def</span> <span class="nf">flush</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">zlib_mode</span><span class="o">=</span><span class="n">zlib</span><span class="o">.</span><span class="n">Z_SYNC_FLUSH</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_check_closed</span><span class="p">()</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="n">WRITE</span><span class="p">:</span>
+            <span class="c1"># Ensure the compressor&#39;s buffer is flushed</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">compress</span><span class="o">.</span><span class="n">flush</span><span class="p">(</span><span class="n">zlib_mode</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GzipFile.fileno"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.fileno.html#gzip.GzipFile.fileno">[docs]</a>    <span class="k">def</span> <span class="nf">fileno</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Invoke the underlying file object&#39;s fileno() method.</span>
+
+<span class="sd">        This will raise AttributeError if the underlying file object</span>
+<span class="sd">        doesn&#39;t support fileno().</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">fileno</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GzipFile.rewind"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.rewind.html#gzip.GzipFile.rewind">[docs]</a>    <span class="k">def</span> <span class="nf">rewind</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;Return the uncompressed stream file position indicator to the</span>
+<span class="sd">        beginning of the file&#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">!=</span> <span class="n">READ</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s2">&quot;Can&#39;t rewind in write mode&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileobj</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_new_member</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extrabuf</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extrastart</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">offset</span> <span class="o">=</span> <span class="mi">0</span></div>
+
+<div class="viewcode-block" id="GzipFile.readable"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.readable.html#gzip.GzipFile.readable">[docs]</a>    <span class="k">def</span> <span class="nf">readable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="n">READ</span></div>
+
+<div class="viewcode-block" id="GzipFile.writable"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.writable.html#gzip.GzipFile.writable">[docs]</a>    <span class="k">def</span> <span class="nf">writable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="n">WRITE</span></div>
+
+<div class="viewcode-block" id="GzipFile.seekable"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.seekable.html#gzip.GzipFile.seekable">[docs]</a>    <span class="k">def</span> <span class="nf">seekable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span></div>
+
+<div class="viewcode-block" id="GzipFile.seek"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.seek.html#gzip.GzipFile.seek">[docs]</a>    <span class="k">def</span> <span class="nf">seek</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">whence</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">whence</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">whence</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">offset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">offset</span> <span class="o">+</span> <span class="n">offset</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Seek from end not supported&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="n">WRITE</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">offset</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">offset</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;Negative seek in write mode&#39;</span><span class="p">)</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="n">offset</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">offset</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="n">count</span> <span class="o">//</span> <span class="mi">1024</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="mi">1024</span> <span class="o">*</span> <span class="s1">&#39;</span><span class="se">\0</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">write</span><span class="p">((</span><span class="n">count</span> <span class="o">%</span> <span class="mi">1024</span><span class="p">)</span> <span class="o">*</span> <span class="s1">&#39;</span><span class="se">\0</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="n">READ</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">offset</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">offset</span><span class="p">:</span>
+                <span class="c1"># for negative seek, rewind and do positive seek</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">rewind</span><span class="p">()</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="n">offset</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">offset</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="n">count</span> <span class="o">//</span> <span class="mi">1024</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">count</span> <span class="o">%</span> <span class="mi">1024</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">offset</span></div>
+
+<div class="viewcode-block" id="GzipFile.readline"><a class="viewcode-back" href="../misc/generated/generated/gzip.GzipFile.readline.html#gzip.GzipFile.readline">[docs]</a>    <span class="k">def</span> <span class="nf">readline</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">size</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># Shortcut common case - newline found in buffer.</span>
+            <span class="n">offset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">offset</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrastart</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrabuf</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">offset</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">extrasize</span> <span class="o">-=</span> <span class="n">i</span> <span class="o">-</span> <span class="n">offset</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">offset</span> <span class="o">+=</span> <span class="n">i</span> <span class="o">-</span> <span class="n">offset</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extrabuf</span><span class="p">[</span><span class="n">offset</span><span class="p">:</span> <span class="n">i</span><span class="p">]</span>
+
+            <span class="n">size</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">maxint</span>
+            <span class="n">readsize</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_readsize</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">readsize</span> <span class="o">=</span> <span class="n">size</span>
+        <span class="n">bufs</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">while</span> <span class="n">size</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">readsize</span><span class="p">)</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="c1"># We set i=size to break out of the loop under two</span>
+            <span class="c1"># conditions: 1) there&#39;s no newline, and the chunk is</span>
+            <span class="c1"># larger than size, or 2) there is a newline, but the</span>
+            <span class="c1"># resulting line would be longer than &#39;size&#39;.</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">size</span> <span class="o">&lt;=</span> <span class="n">i</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">size</span><span class="p">):</span>
+                <span class="n">i</span> <span class="o">=</span> <span class="n">size</span> <span class="o">-</span> <span class="mi">1</span>
+
+            <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+                <span class="n">bufs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">c</span><span class="p">[:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>    <span class="c1"># Add portion of last chunk</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_unread</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:])</span>   <span class="c1"># Push back rest of chunk</span>
+                <span class="k">break</span>
+
+            <span class="c1"># Append chunk to list, decrease &#39;size&#39;,</span>
+            <span class="n">bufs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+            <span class="n">size</span> <span class="o">=</span> <span class="n">size</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+            <span class="n">readsize</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">readsize</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">readsize</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_readsize</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">min_readsize</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">readsize</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_readsize</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">512</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bufs</span><span class="p">)</span> <span class="c1"># Return resulting line</span></div></div>
+
+
+<span class="k">def</span> <span class="nf">_test</span><span class="p">():</span>
+    <span class="c1"># Act like gzip; with -d, act like gunzip.</span>
+    <span class="c1"># The input file is not deleted, however, nor are any other gzip</span>
+    <span class="c1"># options or features supported.</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="n">decompress</span> <span class="o">=</span> <span class="n">args</span> <span class="ow">and</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;-d&quot;</span>
+    <span class="k">if</span> <span class="n">decompress</span><span class="p">:</span>
+        <span class="n">args</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">args</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;-&quot;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">decompress</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">arg</span> <span class="o">==</span> <span class="s2">&quot;-&quot;</span><span class="p">:</span>
+                <span class="n">f</span> <span class="o">=</span> <span class="n">GzipFile</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;rb&quot;</span><span class="p">,</span> <span class="n">fileobj</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="p">)</span>
+                <span class="n">g</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">arg</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span> <span class="o">!=</span> <span class="s2">&quot;.gz&quot;</span><span class="p">:</span>
+                    <span class="nb">print</span> <span class="s2">&quot;filename doesn&#39;t end in .gz:&quot;</span><span class="p">,</span> <span class="nb">repr</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+                    <span class="k">continue</span>
+                <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span>
+                <span class="n">g</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">arg</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">arg</span> <span class="o">==</span> <span class="s2">&quot;-&quot;</span><span class="p">:</span>
+                <span class="n">f</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span>
+                <span class="n">g</span> <span class="o">=</span> <span class="n">GzipFile</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;wb&quot;</span><span class="p">,</span> <span class="n">fileobj</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">f</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span>
+                <span class="n">g</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">arg</span> <span class="o">+</span> <span class="s2">&quot;.gz&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span>
+        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">chunk</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">chunk</span><span class="p">:</span>
+                <span class="k">break</span>
+            <span class="n">g</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">g</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">:</span>
+            <span class="n">g</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">f</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">_test</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

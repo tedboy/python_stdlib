@@ -1,0 +1,6 @@
+sysconfig.get_python_version
+============================
+
+.. currentmodule:: sysconfig
+
+.. autofunction:: get_python_version

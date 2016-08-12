@@ -1,0 +1,6 @@
+xml.dom.getDOMImplementation
+============================
+
+.. currentmodule:: xml.dom
+
+.. autofunction:: getDOMImplementation

@@ -1,0 +1,41 @@
+pydoc.deque
+===========
+
+.. currentmodule:: pydoc
+
+.. autoclass:: deque
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~deque.append
+   ~deque.appendleft
+   ~deque.clear
+   ~deque.count
+   ~deque.extend
+   ~deque.extendleft
+   ~deque.pop
+   ~deque.popleft
+   ~deque.remove
+   ~deque.reverse
+   ~deque.rotate
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~deque.maxlen
+

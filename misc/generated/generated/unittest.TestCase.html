@@ -1,0 +1,465 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>unittest.TestCase &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../../index.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>unittest.TestCase</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/misc/generated/generated/unittest.TestCase.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unittest-testcase">
+<h1>unittest.TestCase<a class="headerlink" href="#unittest-testcase" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="unittest.TestCase">
+<em class="property">class </em><code class="descclassname">unittest.</code><code class="descname">TestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/unittest/case.html#TestCase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#unittest.TestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class whose instances are single test cases.</p>
+<p>By default, the test code itself should be placed in a method named
+&#8216;runTest&#8217;.</p>
+<p>If the fixture may be used for many test cases, create as
+many test methods as are needed. When instantiating such a TestCase
+subclass, specify in the constructor arguments the name of the test method
+that the instance is to execute.</p>
+<p>Test authors should subclass TestCase for their own tests. Construction
+and deconstruction of the test&#8217;s environment (&#8216;fixture&#8217;) can be
+implemented by overriding the &#8216;setUp&#8217; and &#8216;tearDown&#8217; methods respectively.</p>
+<p>If it is necessary to override the __init__ method, the base class
+__init__ method must always be called. It is important that subclasses
+should not change the signature of their __init__ method, since instances
+of the classes are instantiated automatically by parts of the framework
+in order to be run.</p>
+<p>When subclassing TestCase, you can set these attributes:
+* failureException: determines which exception will be raised when</p>
+<blockquote>
+<div>the instance&#8217;s assertion methods fail; test methods raising this
+exception will be deemed to have &#8216;failed&#8217; rather than &#8216;errored&#8217;.</div></blockquote>
+<ul>
+<li><dl class="first docutils">
+<dt>longMessage: determines whether long messages (including repr of</dt>
+<dd><p class="first last">objects used in assert methods) will be printed on failure in <em>addition</em>
+to any explicit message passed.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>maxDiff: sets the maximum length of a diff in failure messages</dt>
+<dd><p class="first last">by assert methods using difflib. It is looked up as an instance
+attribute so can be configured by individual tests if required.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">__call__</span></code>(*args,&nbsp;**kwds)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.addCleanup.html#unittest.TestCase.addCleanup" title="unittest.TestCase.addCleanup"><code class="xref py py-obj docutils literal"><span class="pre">addCleanup</span></code></a>(function,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Add a function, with arguments, to be called when the test is completed.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.addTypeEqualityFunc.html#unittest.TestCase.addTypeEqualityFunc" title="unittest.TestCase.addTypeEqualityFunc"><code class="xref py py-obj docutils literal"><span class="pre">addTypeEqualityFunc</span></code></a>(typeobj,&nbsp;function)</td>
+<td>Add a type specific assertEqual style function to compare a type.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertAlmostEqual.html#unittest.TestCase.assertAlmostEqual" title="unittest.TestCase.assertAlmostEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertAlmostEqual</span></code></a>(first,&nbsp;second[,&nbsp;places,&nbsp;...])</td>
+<td>Fail if the two objects are unequal as determined by their difference rounded to the given number of decimal places (default 7) and comparing to zero, or by comparing that the between the two objects is more than the given delta.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertAlmostEquals.html#unittest.TestCase.assertAlmostEquals" title="unittest.TestCase.assertAlmostEquals"><code class="xref py py-obj docutils literal"><span class="pre">assertAlmostEquals</span></code></a>(first,&nbsp;second[,&nbsp;places,&nbsp;...])</td>
+<td>Fail if the two objects are unequal as determined by their difference rounded to the given number of decimal places (default 7) and comparing to zero, or by comparing that the between the two objects is more than the given delta.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertDictContainsSubset.html#unittest.TestCase.assertDictContainsSubset" title="unittest.TestCase.assertDictContainsSubset"><code class="xref py py-obj docutils literal"><span class="pre">assertDictContainsSubset</span></code></a>(expected,&nbsp;actual[,&nbsp;msg])</td>
+<td>Checks whether actual is a superset of expected.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertDictEqual.html#unittest.TestCase.assertDictEqual" title="unittest.TestCase.assertDictEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertDictEqual</span></code></a>(d1,&nbsp;d2[,&nbsp;msg])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertEqual.html#unittest.TestCase.assertEqual" title="unittest.TestCase.assertEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertEqual</span></code></a>(first,&nbsp;second[,&nbsp;msg])</td>
+<td>Fail if the two objects are unequal as determined by the &#8216;==&#8217; operator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertEquals.html#unittest.TestCase.assertEquals" title="unittest.TestCase.assertEquals"><code class="xref py py-obj docutils literal"><span class="pre">assertEquals</span></code></a>(first,&nbsp;second[,&nbsp;msg])</td>
+<td>Fail if the two objects are unequal as determined by the &#8216;==&#8217; operator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertFalse.html#unittest.TestCase.assertFalse" title="unittest.TestCase.assertFalse"><code class="xref py py-obj docutils literal"><span class="pre">assertFalse</span></code></a>(expr[,&nbsp;msg])</td>
+<td>Check that the expression is false.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertGreater.html#unittest.TestCase.assertGreater" title="unittest.TestCase.assertGreater"><code class="xref py py-obj docutils literal"><span class="pre">assertGreater</span></code></a>(a,&nbsp;b[,&nbsp;msg])</td>
+<td>Just like self.assertTrue(a &gt; b), but with a nicer default message.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertGreaterEqual.html#unittest.TestCase.assertGreaterEqual" title="unittest.TestCase.assertGreaterEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertGreaterEqual</span></code></a>(a,&nbsp;b[,&nbsp;msg])</td>
+<td>Just like self.assertTrue(a &gt;= b), but with a nicer default message.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertIn.html#unittest.TestCase.assertIn" title="unittest.TestCase.assertIn"><code class="xref py py-obj docutils literal"><span class="pre">assertIn</span></code></a>(member,&nbsp;container[,&nbsp;msg])</td>
+<td>Just like self.assertTrue(a in b), but with a nicer default message.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertIs.html#unittest.TestCase.assertIs" title="unittest.TestCase.assertIs"><code class="xref py py-obj docutils literal"><span class="pre">assertIs</span></code></a>(expr1,&nbsp;expr2[,&nbsp;msg])</td>
+<td>Just like self.assertTrue(a is b), but with a nicer default message.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertIsInstance.html#unittest.TestCase.assertIsInstance" title="unittest.TestCase.assertIsInstance"><code class="xref py py-obj docutils literal"><span class="pre">assertIsInstance</span></code></a>(obj,&nbsp;cls[,&nbsp;msg])</td>
+<td>Same as self.assertTrue(isinstance(obj, cls)), with a nicer default message.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertIsNone.html#unittest.TestCase.assertIsNone" title="unittest.TestCase.assertIsNone"><code class="xref py py-obj docutils literal"><span class="pre">assertIsNone</span></code></a>(obj[,&nbsp;msg])</td>
+<td>Same as self.assertTrue(obj is None), with a nicer default message.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertIsNot.html#unittest.TestCase.assertIsNot" title="unittest.TestCase.assertIsNot"><code class="xref py py-obj docutils literal"><span class="pre">assertIsNot</span></code></a>(expr1,&nbsp;expr2[,&nbsp;msg])</td>
+<td>Just like self.assertTrue(a is not b), but with a nicer default message.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertIsNotNone.html#unittest.TestCase.assertIsNotNone" title="unittest.TestCase.assertIsNotNone"><code class="xref py py-obj docutils literal"><span class="pre">assertIsNotNone</span></code></a>(obj[,&nbsp;msg])</td>
+<td>Included for symmetry with assertIsNone.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertItemsEqual.html#unittest.TestCase.assertItemsEqual" title="unittest.TestCase.assertItemsEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertItemsEqual</span></code></a>(expected_seq,&nbsp;actual_seq[,&nbsp;msg])</td>
+<td>An unordered sequence specific comparison.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertLess.html#unittest.TestCase.assertLess" title="unittest.TestCase.assertLess"><code class="xref py py-obj docutils literal"><span class="pre">assertLess</span></code></a>(a,&nbsp;b[,&nbsp;msg])</td>
+<td>Just like self.assertTrue(a &lt; b), but with a nicer default message.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertLessEqual.html#unittest.TestCase.assertLessEqual" title="unittest.TestCase.assertLessEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertLessEqual</span></code></a>(a,&nbsp;b[,&nbsp;msg])</td>
+<td>Just like self.assertTrue(a &lt;= b), but with a nicer default message.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertListEqual.html#unittest.TestCase.assertListEqual" title="unittest.TestCase.assertListEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertListEqual</span></code></a>(list1,&nbsp;list2[,&nbsp;msg])</td>
+<td>A list-specific equality assertion.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertMultiLineEqual.html#unittest.TestCase.assertMultiLineEqual" title="unittest.TestCase.assertMultiLineEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertMultiLineEqual</span></code></a>(first,&nbsp;second[,&nbsp;msg])</td>
+<td>Assert that two multi-line strings are equal.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertNotAlmostEqual.html#unittest.TestCase.assertNotAlmostEqual" title="unittest.TestCase.assertNotAlmostEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertNotAlmostEqual</span></code></a>(first,&nbsp;second[,&nbsp;...])</td>
+<td>Fail if the two objects are equal as determined by their difference rounded to the given number of decimal places (default 7) and comparing to zero, or by comparing that the between the two objects is less than the given delta.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertNotAlmostEquals.html#unittest.TestCase.assertNotAlmostEquals" title="unittest.TestCase.assertNotAlmostEquals"><code class="xref py py-obj docutils literal"><span class="pre">assertNotAlmostEquals</span></code></a>(first,&nbsp;second[,&nbsp;...])</td>
+<td>Fail if the two objects are equal as determined by their difference rounded to the given number of decimal places (default 7) and comparing to zero, or by comparing that the between the two objects is less than the given delta.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertNotEqual.html#unittest.TestCase.assertNotEqual" title="unittest.TestCase.assertNotEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertNotEqual</span></code></a>(first,&nbsp;second[,&nbsp;msg])</td>
+<td>Fail if the two objects are equal as determined by the &#8216;!=&#8217; operator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertNotEquals.html#unittest.TestCase.assertNotEquals" title="unittest.TestCase.assertNotEquals"><code class="xref py py-obj docutils literal"><span class="pre">assertNotEquals</span></code></a>(first,&nbsp;second[,&nbsp;msg])</td>
+<td>Fail if the two objects are equal as determined by the &#8216;!=&#8217; operator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertNotIn.html#unittest.TestCase.assertNotIn" title="unittest.TestCase.assertNotIn"><code class="xref py py-obj docutils literal"><span class="pre">assertNotIn</span></code></a>(member,&nbsp;container[,&nbsp;msg])</td>
+<td>Just like self.assertTrue(a not in b), but with a nicer default message.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertNotIsInstance.html#unittest.TestCase.assertNotIsInstance" title="unittest.TestCase.assertNotIsInstance"><code class="xref py py-obj docutils literal"><span class="pre">assertNotIsInstance</span></code></a>(obj,&nbsp;cls[,&nbsp;msg])</td>
+<td>Included for symmetry with assertIsInstance.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertNotRegexpMatches.html#unittest.TestCase.assertNotRegexpMatches" title="unittest.TestCase.assertNotRegexpMatches"><code class="xref py py-obj docutils literal"><span class="pre">assertNotRegexpMatches</span></code></a>(text,&nbsp;unexpected_regexp)</td>
+<td>Fail the test if the text matches the regular expression.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertRaises.html#unittest.TestCase.assertRaises" title="unittest.TestCase.assertRaises"><code class="xref py py-obj docutils literal"><span class="pre">assertRaises</span></code></a>(excClass[,&nbsp;callableObj])</td>
+<td>Fail unless an exception of class excClass is raised by callableObj when invoked with arguments args and keyword arguments kwargs.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertRaisesRegexp.html#unittest.TestCase.assertRaisesRegexp" title="unittest.TestCase.assertRaisesRegexp"><code class="xref py py-obj docutils literal"><span class="pre">assertRaisesRegexp</span></code></a>(expected_exception,&nbsp;...)</td>
+<td>Asserts that the message in a raised exception matches a regexp.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertRegexpMatches.html#unittest.TestCase.assertRegexpMatches" title="unittest.TestCase.assertRegexpMatches"><code class="xref py py-obj docutils literal"><span class="pre">assertRegexpMatches</span></code></a>(text,&nbsp;expected_regexp[,&nbsp;msg])</td>
+<td>Fail the test unless the text matches the regular expression.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertSequenceEqual.html#unittest.TestCase.assertSequenceEqual" title="unittest.TestCase.assertSequenceEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertSequenceEqual</span></code></a>(seq1,&nbsp;seq2[,&nbsp;msg,&nbsp;seq_type])</td>
+<td>An equality assertion for ordered sequences (like lists and tuples).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertSetEqual.html#unittest.TestCase.assertSetEqual" title="unittest.TestCase.assertSetEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertSetEqual</span></code></a>(set1,&nbsp;set2[,&nbsp;msg])</td>
+<td>A set-specific equality assertion.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assertTrue.html#unittest.TestCase.assertTrue" title="unittest.TestCase.assertTrue"><code class="xref py py-obj docutils literal"><span class="pre">assertTrue</span></code></a>(expr[,&nbsp;msg])</td>
+<td>Check that the expression is true.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.assertTupleEqual.html#unittest.TestCase.assertTupleEqual" title="unittest.TestCase.assertTupleEqual"><code class="xref py py-obj docutils literal"><span class="pre">assertTupleEqual</span></code></a>(tuple1,&nbsp;tuple2[,&nbsp;msg])</td>
+<td>A tuple-specific equality assertion.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.assert_.html#unittest.TestCase.assert_" title="unittest.TestCase.assert_"><code class="xref py py-obj docutils literal"><span class="pre">assert_</span></code></a>(expr[,&nbsp;msg])</td>
+<td>Check that the expression is true.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.countTestCases.html#unittest.TestCase.countTestCases" title="unittest.TestCase.countTestCases"><code class="xref py py-obj docutils literal"><span class="pre">countTestCases</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.debug.html#unittest.TestCase.debug" title="unittest.TestCase.debug"><code class="xref py py-obj docutils literal"><span class="pre">debug</span></code></a>()</td>
+<td>Run the test without collecting errors in a TestResult</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.defaultTestResult.html#unittest.TestCase.defaultTestResult" title="unittest.TestCase.defaultTestResult"><code class="xref py py-obj docutils literal"><span class="pre">defaultTestResult</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.doCleanups.html#unittest.TestCase.doCleanups" title="unittest.TestCase.doCleanups"><code class="xref py py-obj docutils literal"><span class="pre">doCleanups</span></code></a>()</td>
+<td>Execute all cleanup functions.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.fail.html#unittest.TestCase.fail" title="unittest.TestCase.fail"><code class="xref py py-obj docutils literal"><span class="pre">fail</span></code></a>([msg])</td>
+<td>Fail immediately, with the given message.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.failIf.html#unittest.TestCase.failIf" title="unittest.TestCase.failIf"><code class="xref py py-obj docutils literal"><span class="pre">failIf</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.failIfAlmostEqual.html#unittest.TestCase.failIfAlmostEqual" title="unittest.TestCase.failIfAlmostEqual"><code class="xref py py-obj docutils literal"><span class="pre">failIfAlmostEqual</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.failIfEqual.html#unittest.TestCase.failIfEqual" title="unittest.TestCase.failIfEqual"><code class="xref py py-obj docutils literal"><span class="pre">failIfEqual</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.failUnless.html#unittest.TestCase.failUnless" title="unittest.TestCase.failUnless"><code class="xref py py-obj docutils literal"><span class="pre">failUnless</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.failUnlessAlmostEqual.html#unittest.TestCase.failUnlessAlmostEqual" title="unittest.TestCase.failUnlessAlmostEqual"><code class="xref py py-obj docutils literal"><span class="pre">failUnlessAlmostEqual</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.failUnlessEqual.html#unittest.TestCase.failUnlessEqual" title="unittest.TestCase.failUnlessEqual"><code class="xref py py-obj docutils literal"><span class="pre">failUnlessEqual</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.failUnlessRaises.html#unittest.TestCase.failUnlessRaises" title="unittest.TestCase.failUnlessRaises"><code class="xref py py-obj docutils literal"><span class="pre">failUnlessRaises</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">failureException</span></code></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">AssertionError</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.id.html#unittest.TestCase.id" title="unittest.TestCase.id"><code class="xref py py-obj docutils literal"><span class="pre">id</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.run.html#unittest.TestCase.run" title="unittest.TestCase.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>([result])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.setUp.html#unittest.TestCase.setUp" title="unittest.TestCase.setUp"><code class="xref py py-obj docutils literal"><span class="pre">setUp</span></code></a>()</td>
+<td>Hook method for setting up the test fixture before exercising it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.setUpClass.html#unittest.TestCase.setUpClass" title="unittest.TestCase.setUpClass"><code class="xref py py-obj docutils literal"><span class="pre">setUpClass</span></code></a>()</td>
+<td>Hook method for setting up class fixture before running tests in the class.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.shortDescription.html#unittest.TestCase.shortDescription" title="unittest.TestCase.shortDescription"><code class="xref py py-obj docutils literal"><span class="pre">shortDescription</span></code></a>()</td>
+<td>Returns a one-line description of the test, or None if no description has been provided.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.skipTest.html#unittest.TestCase.skipTest" title="unittest.TestCase.skipTest"><code class="xref py py-obj docutils literal"><span class="pre">skipTest</span></code></a>(reason)</td>
+<td>Skip this test.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.tearDown.html#unittest.TestCase.tearDown" title="unittest.TestCase.tearDown"><code class="xref py py-obj docutils literal"><span class="pre">tearDown</span></code></a>()</td>
+<td>Hook method for deconstructing the test fixture after testing it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.tearDownClass.html#unittest.TestCase.tearDownClass" title="unittest.TestCase.tearDownClass"><code class="xref py py-obj docutils literal"><span class="pre">tearDownClass</span></code></a>()</td>
+<td>Hook method for deconstructing the class fixture after running all tests in the class.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

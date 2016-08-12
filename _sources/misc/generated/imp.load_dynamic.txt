@@ -1,0 +1,6 @@
+imp.load_dynamic
+================
+
+.. currentmodule:: imp
+
+.. autofunction:: load_dynamic

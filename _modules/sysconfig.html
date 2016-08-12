@@ -1,0 +1,877 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sysconfig &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>sysconfig</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for sysconfig</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Provide access to Python&#39;s configuration information.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="k">import</span> <span class="n">pardir</span><span class="p">,</span> <span class="n">realpath</span>
+
+<span class="n">_INSTALL_SCHEMES</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;posix_prefix&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;stdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platstdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{platbase}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;purelib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{platbase}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;include&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/include/python</span><span class="si">{py_version_short}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platinclude&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{platbase}</span><span class="s1">/include/python</span><span class="si">{py_version_short}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;scripts&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/bin&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="s1">&#39;posix_home&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;stdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/lib/python&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platstdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/lib/python&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;purelib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/lib/python&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/lib/python&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;include&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/include/python&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platinclude&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/include/python&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;scripts&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/bin&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;data&#39;</span>   <span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="s1">&#39;nt&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;stdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Lib&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platstdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Lib&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;purelib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Lib/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Lib/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;include&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Include&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platinclude&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Include&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;scripts&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Scripts&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;data&#39;</span>   <span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="s1">&#39;os2&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;stdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Lib&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platstdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Lib&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;purelib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Lib/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Lib/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;include&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Include&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platinclude&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Include&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;scripts&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">/Scripts&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;data&#39;</span>   <span class="p">:</span> <span class="s1">&#39;</span><span class="si">{base}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="s1">&#39;os2_home&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;stdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platstdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;purelib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;include&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/include/python</span><span class="si">{py_version_short}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;scripts&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/bin&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;data&#39;</span>   <span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="s1">&#39;nt_user&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;stdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/Python</span><span class="si">{py_version_nodot}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platstdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/Python</span><span class="si">{py_version_nodot}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;purelib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/Python</span><span class="si">{py_version_nodot}</span><span class="s1">/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/Python</span><span class="si">{py_version_nodot}</span><span class="s1">/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;include&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/Python</span><span class="si">{py_version_nodot}</span><span class="s1">/Include&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;scripts&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/Scripts&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;data&#39;</span>   <span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="s1">&#39;posix_user&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;stdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platstdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;purelib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python</span><span class="si">{py_version_short}</span><span class="s1">/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;include&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/include/python</span><span class="si">{py_version_short}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;scripts&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/bin&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;data&#39;</span>   <span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="s1">&#39;osx_framework_user&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;stdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platstdlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;purelib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;platlib&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/lib/python/site-packages&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;include&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/include&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;scripts&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">/bin&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;data&#39;</span>   <span class="p">:</span> <span class="s1">&#39;</span><span class="si">{userbase}</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">}</span>
+
+<span class="n">_SCHEME_KEYS</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;stdlib&#39;</span><span class="p">,</span> <span class="s1">&#39;platstdlib&#39;</span><span class="p">,</span> <span class="s1">&#39;purelib&#39;</span><span class="p">,</span> <span class="s1">&#39;platlib&#39;</span><span class="p">,</span> <span class="s1">&#39;include&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;scripts&#39;</span><span class="p">,</span> <span class="s1">&#39;data&#39;</span><span class="p">)</span>
+<span class="n">_PY_VERSION</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">_PY_VERSION_SHORT</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">_PY_VERSION_SHORT_NO_DOT</span> <span class="o">=</span> <span class="n">_PY_VERSION</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">_PY_VERSION</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">_PREFIX</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">prefix</span><span class="p">)</span>
+<span class="n">_EXEC_PREFIX</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">exec_prefix</span><span class="p">)</span>
+<span class="n">_CONFIG_VARS</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">_USER_BASE</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="k">def</span> <span class="nf">_safe_realpath</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">realpath</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">path</span>
+
+<span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">:</span>
+    <span class="n">_PROJECT_BASE</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">_safe_realpath</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># sys.executable can be empty if argv[0] has been changed and Python is</span>
+    <span class="c1"># unable to retrieve the real program name</span>
+    <span class="n">_PROJECT_BASE</span> <span class="o">=</span> <span class="n">_safe_realpath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;nt&quot;</span> <span class="ow">and</span> <span class="s2">&quot;pcbuild&quot;</span> <span class="ow">in</span> <span class="n">_PROJECT_BASE</span><span class="p">[</span><span class="o">-</span><span class="mi">8</span><span class="p">:]</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+    <span class="n">_PROJECT_BASE</span> <span class="o">=</span> <span class="n">_safe_realpath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">_PROJECT_BASE</span><span class="p">,</span> <span class="n">pardir</span><span class="p">))</span>
+<span class="c1"># PC/VS7.1</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;nt&quot;</span> <span class="ow">and</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">pc</span><span class="se">\\</span><span class="s2">v&quot;</span> <span class="ow">in</span> <span class="n">_PROJECT_BASE</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:]</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+    <span class="n">_PROJECT_BASE</span> <span class="o">=</span> <span class="n">_safe_realpath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">_PROJECT_BASE</span><span class="p">,</span> <span class="n">pardir</span><span class="p">,</span> <span class="n">pardir</span><span class="p">))</span>
+<span class="c1"># PC/AMD64</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;nt&quot;</span> <span class="ow">and</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">pcbuild</span><span class="se">\\</span><span class="s2">amd64&quot;</span> <span class="ow">in</span> <span class="n">_PROJECT_BASE</span><span class="p">[</span><span class="o">-</span><span class="mi">14</span><span class="p">:]</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+    <span class="n">_PROJECT_BASE</span> <span class="o">=</span> <span class="n">_safe_realpath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">_PROJECT_BASE</span><span class="p">,</span> <span class="n">pardir</span><span class="p">,</span> <span class="n">pardir</span><span class="p">))</span>
+
+<span class="c1"># set for cross builds</span>
+<span class="k">if</span> <span class="s2">&quot;_PYTHON_PROJECT_BASE&quot;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+    <span class="c1"># the build directory for posix builds</span>
+    <span class="n">_PROJECT_BASE</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">))</span>
+<div class="viewcode-block" id="is_python_build"><a class="viewcode-back" href="../misc/generated/sysconfig.is_python_build.html#sysconfig.is_python_build">[docs]</a><span class="k">def</span> <span class="nf">is_python_build</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">fn</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;Setup.dist&quot;</span><span class="p">,</span> <span class="s2">&quot;Setup.local&quot;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">_PROJECT_BASE</span><span class="p">,</span> <span class="s2">&quot;Modules&quot;</span><span class="p">,</span> <span class="n">fn</span><span class="p">)):</span>
+            <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">False</span></div>
+
+<span class="n">_PYTHON_BUILD</span> <span class="o">=</span> <span class="n">is_python_build</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">_PYTHON_BUILD</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">scheme</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;posix_prefix&#39;</span><span class="p">,</span> <span class="s1">&#39;posix_home&#39;</span><span class="p">):</span>
+        <span class="n">_INSTALL_SCHEMES</span><span class="p">[</span><span class="n">scheme</span><span class="p">][</span><span class="s1">&#39;include&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{projectbase}</span><span class="s1">/Include&#39;</span>
+        <span class="n">_INSTALL_SCHEMES</span><span class="p">[</span><span class="n">scheme</span><span class="p">][</span><span class="s1">&#39;platinclude&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{srcdir}</span><span class="s1">&#39;</span>
+
+<span class="k">def</span> <span class="nf">_subst_vars</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">local_vars</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">**</span><span class="n">local_vars</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">**</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">,</span> <span class="n">var</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="s1">&#39;{</span><span class="si">%s</span><span class="s1">}&#39;</span> <span class="o">%</span> <span class="n">var</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">_extend_dict</span><span class="p">(</span><span class="n">target_dict</span><span class="p">,</span> <span class="n">other_dict</span><span class="p">):</span>
+    <span class="n">target_keys</span> <span class="o">=</span> <span class="n">target_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">other_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">target_keys</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="n">target_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+<span class="k">def</span> <span class="nf">_expand_vars</span><span class="p">(</span><span class="n">scheme</span><span class="p">,</span> <span class="nb">vars</span><span class="p">):</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">if</span> <span class="nb">vars</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">vars</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">_extend_dict</span><span class="p">(</span><span class="nb">vars</span><span class="p">,</span> <span class="n">get_config_vars</span><span class="p">())</span>
+
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">_INSTALL_SCHEMES</span><span class="p">[</span><span class="n">scheme</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;posix&#39;</span><span class="p">,</span> <span class="s1">&#39;nt&#39;</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="n">res</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">_subst_vars</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">vars</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">res</span>
+
+<span class="k">def</span> <span class="nf">_get_default_scheme</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;posix&#39;</span><span class="p">:</span>
+        <span class="c1"># the default scheme for posix is posix_prefix</span>
+        <span class="k">return</span> <span class="s1">&#39;posix_prefix&#39;</span>
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span>
+
+<span class="k">def</span> <span class="nf">_getuserbase</span><span class="p">():</span>
+    <span class="n">env_base</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;PYTHONUSERBASE&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">joinuser</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">))</span>
+
+    <span class="c1"># what about &#39;os2emx&#39;, &#39;riscos&#39; ?</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;nt&quot;</span><span class="p">:</span>
+        <span class="n">base</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;APPDATA&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="s2">&quot;~&quot;</span>
+        <span class="k">return</span> <span class="n">env_base</span> <span class="k">if</span> <span class="n">env_base</span> <span class="k">else</span> <span class="n">joinuser</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="s2">&quot;Python&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s2">&quot;darwin&quot;</span><span class="p">:</span>
+        <span class="n">framework</span> <span class="o">=</span> <span class="n">get_config_var</span><span class="p">(</span><span class="s2">&quot;PYTHONFRAMEWORK&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">framework</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">env_base</span> <span class="k">if</span> <span class="n">env_base</span> <span class="k">else</span> \
+                               <span class="n">joinuser</span><span class="p">(</span><span class="s2">&quot;~&quot;</span><span class="p">,</span> <span class="s2">&quot;Library&quot;</span><span class="p">,</span> <span class="n">framework</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2">.</span><span class="si">%d</span><span class="s2">&quot;</span>
+                                            <span class="o">%</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[:</span><span class="mi">2</span><span class="p">]))</span>
+
+    <span class="k">return</span> <span class="n">env_base</span> <span class="k">if</span> <span class="n">env_base</span> <span class="k">else</span> <span class="n">joinuser</span><span class="p">(</span><span class="s2">&quot;~&quot;</span><span class="p">,</span> <span class="s2">&quot;.local&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_parse_makefile</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="nb">vars</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Parse a Makefile-style file.</span>
+
+<span class="sd">    A dictionary containing name/value pairs is returned.  If an</span>
+<span class="sd">    optional dictionary is passed in as the second argument, it is</span>
+<span class="sd">    used instead of a new dictionary.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">re</span>
+    <span class="c1"># Regexes needed for parsing Makefile (and similar syntaxes,</span>
+    <span class="c1"># like old-style Setup files).</span>
+    <span class="n">_variable_rx</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;([a-zA-Z][a-zA-Z0-9_]+)\s*=\s*(.*)&quot;</span><span class="p">)</span>
+    <span class="n">_findvar1_rx</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">r&quot;\$\(([A-Za-z][A-Za-z0-9_]*)\)&quot;</span><span class="p">)</span>
+    <span class="n">_findvar2_rx</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">r&quot;\${([A-Za-z][A-Za-z0-9_]*)}&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">vars</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">vars</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">done</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">notdone</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">_variable_rx</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+            <span class="n">n</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="n">v</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+            <span class="c1"># `$$&#39; is a literal `$&#39; in make</span>
+            <span class="n">tmpv</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;$$&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="s2">&quot;$&quot;</span> <span class="ow">in</span> <span class="n">tmpv</span><span class="p">:</span>
+                <span class="n">notdone</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">v</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                    <span class="c1"># insert literal `$&#39;</span>
+                    <span class="n">done</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;$$&#39;</span><span class="p">,</span> <span class="s1">&#39;$&#39;</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">done</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+
+    <span class="c1"># do variable interpolation here</span>
+    <span class="k">while</span> <span class="n">notdone</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">notdone</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">notdone</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+            <span class="n">m</span> <span class="o">=</span> <span class="n">_findvar1_rx</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="ow">or</span> <span class="n">_findvar2_rx</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+                <span class="n">n</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">done</span><span class="p">:</span>
+                    <span class="n">item</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">done</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
+                <span class="k">elif</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">notdone</span><span class="p">:</span>
+                    <span class="c1"># get it on a subsequent round</span>
+                    <span class="n">found</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="k">elif</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+                    <span class="c1"># do it like make: fall back to environment</span>
+                    <span class="n">item</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">done</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">item</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                <span class="k">if</span> <span class="n">found</span><span class="p">:</span>
+                    <span class="n">after</span> <span class="o">=</span> <span class="n">value</span><span class="p">[</span><span class="n">m</span><span class="o">.</span><span class="n">end</span><span class="p">():]</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="p">[:</span><span class="n">m</span><span class="o">.</span><span class="n">start</span><span class="p">()]</span> <span class="o">+</span> <span class="n">item</span> <span class="o">+</span> <span class="n">after</span>
+                    <span class="k">if</span> <span class="s2">&quot;$&quot;</span> <span class="ow">in</span> <span class="n">after</span><span class="p">:</span>
+                        <span class="n">notdone</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="k">try</span><span class="p">:</span> <span class="n">value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+                        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                            <span class="n">done</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">done</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+                        <span class="k">del</span> <span class="n">notdone</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># bogus variable reference; just drop it since we can&#39;t deal</span>
+                <span class="k">del</span> <span class="n">notdone</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+    <span class="c1"># strip spurious spaces</span>
+    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">done</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="n">done</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="c1"># save the results in the global dictionary</span>
+    <span class="nb">vars</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">done</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">vars</span>
+
+
+<div class="viewcode-block" id="get_makefile_filename"><a class="viewcode-back" href="../misc/generated/sysconfig.get_makefile_filename.html#sysconfig.get_makefile_filename">[docs]</a><span class="k">def</span> <span class="nf">get_makefile_filename</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Return the path of the Makefile.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">_PYTHON_BUILD</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">_PROJECT_BASE</span><span class="p">,</span> <span class="s2">&quot;Makefile&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">get_path</span><span class="p">(</span><span class="s1">&#39;platstdlib&#39;</span><span class="p">),</span> <span class="s2">&quot;config&quot;</span><span class="p">,</span> <span class="s2">&quot;Makefile&quot;</span><span class="p">)</span></div>
+
+<span class="c1"># Issue #22199: retain undocumented private name for compatibility</span>
+<span class="n">_get_makefile_filename</span> <span class="o">=</span> <span class="n">get_makefile_filename</span>
+
+<span class="k">def</span> <span class="nf">_generate_posix_vars</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Generate the Python module containing build-time variables.&quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">pprint</span>
+    <span class="nb">vars</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="c1"># load the installed Makefile:</span>
+    <span class="n">makefile</span> <span class="o">=</span> <span class="n">get_makefile_filename</span><span class="p">()</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">_parse_makefile</span><span class="p">(</span><span class="n">makefile</span><span class="p">,</span> <span class="nb">vars</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">IOError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;invalid Python installation: unable to open </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">makefile</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="s2">&quot;strerror&quot;</span><span class="p">):</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="n">msg</span> <span class="o">+</span> <span class="s2">&quot; (</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">e</span><span class="o">.</span><span class="n">strerror</span>
+        <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+    <span class="c1"># load the installed pyconfig.h:</span>
+    <span class="n">config_h</span> <span class="o">=</span> <span class="n">get_config_h_filename</span><span class="p">()</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">config_h</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">parse_config_h</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="nb">vars</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">IOError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;invalid Python installation: unable to open </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">config_h</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="s2">&quot;strerror&quot;</span><span class="p">):</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="n">msg</span> <span class="o">+</span> <span class="s2">&quot; (</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">e</span><span class="o">.</span><span class="n">strerror</span>
+        <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+    <span class="c1"># On AIX, there are wrong paths to the linker scripts in the Makefile</span>
+    <span class="c1"># -- these paths are relative to the Python source, but when installed</span>
+    <span class="c1"># the scripts are in another directory.</span>
+    <span class="k">if</span> <span class="n">_PYTHON_BUILD</span><span class="p">:</span>
+        <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;LDSHARED&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;BLDSHARED&#39;</span><span class="p">]</span>
+
+    <span class="c1"># There&#39;s a chicken-and-egg situation on OS X with regards to the</span>
+    <span class="c1"># _sysconfigdata module after the changes introduced by #15298:</span>
+    <span class="c1"># get_config_vars() is called by get_platform() as part of the</span>
+    <span class="c1"># `make pybuilddir.txt` target -- which is a precursor to the</span>
+    <span class="c1"># _sysconfigdata.py module being constructed.  Unfortunately,</span>
+    <span class="c1"># get_config_vars() eventually calls _init_posix(), which attempts</span>
+    <span class="c1"># to import _sysconfigdata, which we won&#39;t have built yet.  In order</span>
+    <span class="c1"># for _init_posix() to work, if we&#39;re on Darwin, just mock up the</span>
+    <span class="c1"># _sysconfigdata module manually and populate it with the build vars.</span>
+    <span class="c1"># This is more than sufficient for ensuring the subsequent call to</span>
+    <span class="c1"># get_platform() succeeds.</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;_sysconfigdata&#39;</span>
+    <span class="k">if</span> <span class="s1">&#39;darwin&#39;</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">imp</span>
+        <span class="n">module</span> <span class="o">=</span> <span class="n">imp</span><span class="o">.</span><span class="n">new_module</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="n">module</span><span class="o">.</span><span class="n">build_time_vars</span> <span class="o">=</span> <span class="nb">vars</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">module</span>
+
+    <span class="n">pybuilddir</span> <span class="o">=</span> <span class="s1">&#39;build/lib.</span><span class="si">%s</span><span class="s1">-</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">get_platform</span><span class="p">(),</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">sys</span><span class="p">,</span> <span class="s2">&quot;gettotalrefcount&quot;</span><span class="p">):</span>
+        <span class="n">pybuilddir</span> <span class="o">+=</span> <span class="s1">&#39;-pydebug&#39;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">pybuilddir</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="n">destfile</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pybuilddir</span><span class="p">,</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;.py&#39;</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">destfile</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;# system configuration generated and used by&#39;</span>
+                <span class="s1">&#39; the sysconfig module</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;build_time_vars = &#39;</span><span class="p">)</span>
+        <span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="nb">vars</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="n">f</span><span class="p">)</span>
+
+    <span class="c1"># Create file used for sys.path fixup -- see Modules/getpath.c</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;pybuilddir.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">pybuilddir</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">_init_posix</span><span class="p">(</span><span class="nb">vars</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Initialize the module as appropriate for POSIX systems.&quot;&quot;&quot;</span>
+    <span class="c1"># _sysconfigdata is generated at build time, see _generate_posix_vars()</span>
+    <span class="kn">from</span> <span class="nn">_sysconfigdata</span> <span class="k">import</span> <span class="n">build_time_vars</span>
+    <span class="nb">vars</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">build_time_vars</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">_init_non_posix</span><span class="p">(</span><span class="nb">vars</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Initialize the module as appropriate for NT&quot;&quot;&quot;</span>
+    <span class="c1"># set basic install directories</span>
+    <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;LIBDEST&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_path</span><span class="p">(</span><span class="s1">&#39;stdlib&#39;</span><span class="p">)</span>
+    <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;BINLIBDEST&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_path</span><span class="p">(</span><span class="s1">&#39;platstdlib&#39;</span><span class="p">)</span>
+    <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;INCLUDEPY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_path</span><span class="p">(</span><span class="s1">&#39;include&#39;</span><span class="p">)</span>
+    <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;SO&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;.pyd&#39;</span>
+    <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;EXE&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;.exe&#39;</span>
+    <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;VERSION&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_PY_VERSION_SHORT_NO_DOT</span>
+    <span class="nb">vars</span><span class="p">[</span><span class="s1">&#39;BINDIR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">_safe_realpath</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">))</span>
+
+<span class="c1">#</span>
+<span class="c1"># public APIs</span>
+<span class="c1">#</span>
+
+
+<div class="viewcode-block" id="parse_config_h"><a class="viewcode-back" href="../misc/generated/sysconfig.parse_config_h.html#sysconfig.parse_config_h">[docs]</a><span class="k">def</span> <span class="nf">parse_config_h</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="nb">vars</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Parse a config.h-style file.</span>
+
+<span class="sd">    A dictionary containing name/value pairs is returned.  If an</span>
+<span class="sd">    optional dictionary is passed in as the second argument, it is</span>
+<span class="sd">    used instead of a new dictionary.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">re</span>
+    <span class="k">if</span> <span class="nb">vars</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">vars</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">define_rx</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;#define ([A-Z][A-Za-z0-9_]+) (.*)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">undef_rx</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;/[*] #undef ([A-Z][A-Za-z0-9_]+) [*]/</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">line</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">define_rx</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+            <span class="n">n</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="k">try</span><span class="p">:</span> <span class="n">v</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span> <span class="k">pass</span>
+            <span class="nb">vars</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">m</span> <span class="o">=</span> <span class="n">undef_rx</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+                <span class="nb">vars</span><span class="p">[</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="nb">vars</span></div>
+
+<div class="viewcode-block" id="get_config_h_filename"><a class="viewcode-back" href="../misc/generated/sysconfig.get_config_h_filename.html#sysconfig.get_config_h_filename">[docs]</a><span class="k">def</span> <span class="nf">get_config_h_filename</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Returns the path of pyconfig.h.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">_PYTHON_BUILD</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;nt&quot;</span><span class="p">:</span>
+            <span class="n">inc_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">_PROJECT_BASE</span><span class="p">,</span> <span class="s2">&quot;PC&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">inc_dir</span> <span class="o">=</span> <span class="n">_PROJECT_BASE</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">inc_dir</span> <span class="o">=</span> <span class="n">get_path</span><span class="p">(</span><span class="s1">&#39;platinclude&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">inc_dir</span><span class="p">,</span> <span class="s1">&#39;pyconfig.h&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="get_scheme_names"><a class="viewcode-back" href="../misc/generated/sysconfig.get_scheme_names.html#sysconfig.get_scheme_names">[docs]</a><span class="k">def</span> <span class="nf">get_scheme_names</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Returns a tuple containing the schemes names.&quot;&quot;&quot;</span>
+    <span class="n">schemes</span> <span class="o">=</span> <span class="n">_INSTALL_SCHEMES</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+    <span class="n">schemes</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">schemes</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="get_path_names"><a class="viewcode-back" href="../misc/generated/sysconfig.get_path_names.html#sysconfig.get_path_names">[docs]</a><span class="k">def</span> <span class="nf">get_path_names</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Returns a tuple containing the paths names.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">_SCHEME_KEYS</span></div>
+
+<div class="viewcode-block" id="get_paths"><a class="viewcode-back" href="../misc/generated/sysconfig.get_paths.html#sysconfig.get_paths">[docs]</a><span class="k">def</span> <span class="nf">get_paths</span><span class="p">(</span><span class="n">scheme</span><span class="o">=</span><span class="n">_get_default_scheme</span><span class="p">(),</span> <span class="nb">vars</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Returns a mapping containing an install scheme.</span>
+
+<span class="sd">    ``scheme`` is the install scheme name. If not provided, it will</span>
+<span class="sd">    return the default scheme for the current platform.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">expand</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">_expand_vars</span><span class="p">(</span><span class="n">scheme</span><span class="p">,</span> <span class="nb">vars</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">_INSTALL_SCHEMES</span><span class="p">[</span><span class="n">scheme</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="get_path"><a class="viewcode-back" href="../misc/generated/sysconfig.get_path.html#sysconfig.get_path">[docs]</a><span class="k">def</span> <span class="nf">get_path</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">scheme</span><span class="o">=</span><span class="n">_get_default_scheme</span><span class="p">(),</span> <span class="nb">vars</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Returns a path corresponding to the scheme.</span>
+
+<span class="sd">    ``scheme`` is the install scheme name.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">get_paths</span><span class="p">(</span><span class="n">scheme</span><span class="p">,</span> <span class="nb">vars</span><span class="p">,</span> <span class="n">expand</span><span class="p">)[</span><span class="n">name</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="get_config_vars"><a class="viewcode-back" href="../misc/generated/sysconfig.get_config_vars.html#sysconfig.get_config_vars">[docs]</a><span class="k">def</span> <span class="nf">get_config_vars</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;With no arguments, return a dictionary of all configuration</span>
+<span class="sd">    variables relevant for the current platform.</span>
+
+<span class="sd">    On Unix, this means every variable defined in Python&#39;s installed Makefile;</span>
+<span class="sd">    On Windows and Mac OS it&#39;s a much smaller set.</span>
+
+<span class="sd">    With arguments, return a list of values that result from looking up</span>
+<span class="sd">    each argument in the configuration variable dictionary.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">re</span>
+    <span class="k">global</span> <span class="n">_CONFIG_VARS</span>
+    <span class="k">if</span> <span class="n">_CONFIG_VARS</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">_CONFIG_VARS</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="c1"># Normalized versions of prefix and exec_prefix are handy to have;</span>
+        <span class="c1"># in fact, these are the standard versions used most places in the</span>
+        <span class="c1"># Distutils.</span>
+        <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;prefix&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_PREFIX</span>
+        <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;exec_prefix&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_EXEC_PREFIX</span>
+        <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;py_version&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_PY_VERSION</span>
+        <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;py_version_short&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_PY_VERSION_SHORT</span>
+        <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;py_version_nodot&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_PY_VERSION</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">_PY_VERSION</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;base&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_PREFIX</span>
+        <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;platbase&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_EXEC_PREFIX</span>
+        <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;projectbase&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_PROJECT_BASE</span>
+
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;nt&#39;</span><span class="p">,</span> <span class="s1">&#39;os2&#39;</span><span class="p">):</span>
+            <span class="n">_init_non_posix</span><span class="p">(</span><span class="n">_CONFIG_VARS</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;posix&#39;</span><span class="p">:</span>
+            <span class="n">_init_posix</span><span class="p">(</span><span class="n">_CONFIG_VARS</span><span class="p">)</span>
+
+        <span class="c1"># Setting &#39;userbase&#39; is done below the call to the</span>
+        <span class="c1"># init function to enable using &#39;get_config_var&#39; in</span>
+        <span class="c1"># the init-function.</span>
+        <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;userbase&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_getuserbase</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="s1">&#39;srcdir&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">_CONFIG_VARS</span><span class="p">:</span>
+            <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;srcdir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_PROJECT_BASE</span>
+
+        <span class="c1"># Convert srcdir into an absolute path if it appears necessary.</span>
+        <span class="c1"># Normally it is relative to the build directory.  However, during</span>
+        <span class="c1"># testing, for example, we might be running a non-installed python</span>
+        <span class="c1"># from a different directory.</span>
+        <span class="k">if</span> <span class="n">_PYTHON_BUILD</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;posix&quot;</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">_PROJECT_BASE</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">cwd</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+            <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+                <span class="n">cwd</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isabs</span><span class="p">(</span><span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;srcdir&#39;</span><span class="p">])</span> <span class="ow">and</span>
+                <span class="n">base</span> <span class="o">!=</span> <span class="n">cwd</span><span class="p">):</span>
+                <span class="c1"># srcdir is relative and we are not in the same directory</span>
+                <span class="c1"># as the executable. Assume executable is in the build</span>
+                <span class="c1"># directory and make srcdir absolute.</span>
+                <span class="n">srcdir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;srcdir&#39;</span><span class="p">])</span>
+                <span class="n">_CONFIG_VARS</span><span class="p">[</span><span class="s1">&#39;srcdir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">srcdir</span><span class="p">)</span>
+
+        <span class="c1"># OS X platforms require special customization to handle</span>
+        <span class="c1"># multi-architecture, multi-os-version installers</span>
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;darwin&#39;</span><span class="p">:</span>
+            <span class="kn">import</span> <span class="nn">_osx_support</span>
+            <span class="n">_osx_support</span><span class="o">.</span><span class="n">customize_config_vars</span><span class="p">(</span><span class="n">_CONFIG_VARS</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">vals</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+            <span class="n">vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_CONFIG_VARS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">vals</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">_CONFIG_VARS</span></div>
+
+<div class="viewcode-block" id="get_config_var"><a class="viewcode-back" href="../misc/generated/sysconfig.get_config_var.html#sysconfig.get_config_var">[docs]</a><span class="k">def</span> <span class="nf">get_config_var</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return the value of a single variable using the dictionary returned by</span>
+<span class="sd">    &#39;get_config_vars()&#39;.</span>
+
+<span class="sd">    Equivalent to get_config_vars().get(name)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">get_config_vars</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="get_platform"><a class="viewcode-back" href="../misc/generated/sysconfig.get_platform.html#sysconfig.get_platform">[docs]</a><span class="k">def</span> <span class="nf">get_platform</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Return a string that identifies the current platform.</span>
+
+<span class="sd">    This is used mainly to distinguish platform-specific build directories and</span>
+<span class="sd">    platform-specific built distributions.  Typically includes the OS name</span>
+<span class="sd">    and version and the architecture (as supplied by &#39;os.uname()&#39;),</span>
+<span class="sd">    although the exact information included depends on the OS; eg. for IRIX</span>
+<span class="sd">    the architecture isn&#39;t particularly important (IRIX only runs on SGI</span>
+<span class="sd">    hardware), but for Linux the kernel version isn&#39;t particularly</span>
+<span class="sd">    important.</span>
+
+<span class="sd">    Examples of returned values:</span>
+<span class="sd">       linux-i586</span>
+<span class="sd">       linux-alpha (?)</span>
+<span class="sd">       solaris-2.6-sun4u</span>
+<span class="sd">       irix-5.3</span>
+<span class="sd">       irix64-6.2</span>
+
+<span class="sd">    Windows will return one of:</span>
+<span class="sd">       win-amd64 (64bit Windows on AMD64 (aka x86_64, Intel64, EM64T, etc)</span>
+<span class="sd">       win-ia64 (64bit Windows on Itanium)</span>
+<span class="sd">       win32 (all others - specifically, sys.platform is returned)</span>
+
+<span class="sd">    For other non-POSIX platforms, currently just returns &#39;sys.platform&#39;.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">re</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;nt&#39;</span><span class="p">:</span>
+        <span class="c1"># sniff sys.version for architecture.</span>
+        <span class="n">prefix</span> <span class="o">=</span> <span class="s2">&quot; bit (&quot;</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">prefix</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;)&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+        <span class="n">look</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="nb">len</span><span class="p">(</span><span class="n">prefix</span><span class="p">):</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">look</span> <span class="o">==</span> <span class="s1">&#39;amd64&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;win-amd64&#39;</span>
+        <span class="k">if</span> <span class="n">look</span> <span class="o">==</span> <span class="s1">&#39;itanium&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;win-ia64&#39;</span>
+        <span class="k">return</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span>
+
+    <span class="c1"># Set for cross builds explicitly</span>
+    <span class="k">if</span> <span class="s2">&quot;_PYTHON_HOST_PLATFORM&quot;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;_PYTHON_HOST_PLATFORM&quot;</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">!=</span> <span class="s2">&quot;posix&quot;</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">os</span><span class="p">,</span> <span class="s1">&#39;uname&#39;</span><span class="p">):</span>
+        <span class="c1"># XXX what about the architecture? NT is Intel or Alpha,</span>
+        <span class="c1"># Mac OS is M68k or PPC, etc.</span>
+        <span class="k">return</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span>
+
+    <span class="c1"># Try to distinguish various flavours of Unix</span>
+    <span class="n">osname</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">release</span><span class="p">,</span> <span class="n">version</span><span class="p">,</span> <span class="n">machine</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">uname</span><span class="p">()</span>
+
+    <span class="c1"># Convert the OS name to lowercase, remove &#39;/&#39; characters</span>
+    <span class="c1"># (to accommodate BSD/OS), and translate spaces (for &quot;Power Macintosh&quot;)</span>
+    <span class="n">osname</span> <span class="o">=</span> <span class="n">osname</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">machine</span> <span class="o">=</span> <span class="n">machine</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;_&#39;</span><span class="p">)</span>
+    <span class="n">machine</span> <span class="o">=</span> <span class="n">machine</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">osname</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;linux&quot;</span><span class="p">:</span>
+        <span class="c1"># At least on Linux/Intel, &#39;machine&#39; is the processor --</span>
+        <span class="c1"># i386, etc.</span>
+        <span class="c1"># XXX what about Alpha, SPARC, etc?</span>
+        <span class="k">return</span>  <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">-</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">osname</span><span class="p">,</span> <span class="n">machine</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">osname</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;sunos&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">release</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="s2">&quot;5&quot;</span><span class="p">:</span>           <span class="c1"># SunOS 5 == Solaris 2</span>
+            <span class="n">osname</span> <span class="o">=</span> <span class="s2">&quot;solaris&quot;</span>
+            <span class="n">release</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2">.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">release</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="mi">3</span><span class="p">,</span> <span class="n">release</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+            <span class="c1"># We can&#39;t use &quot;platform.architecture()[0]&quot; because a</span>
+            <span class="c1"># bootstrap problem. We use a dict to get an error</span>
+            <span class="c1"># if some suspicious happens.</span>
+            <span class="n">bitness</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2147483647</span><span class="p">:</span><span class="s2">&quot;32bit&quot;</span><span class="p">,</span> <span class="mi">9223372036854775807</span><span class="p">:</span><span class="s2">&quot;64bit&quot;</span><span class="p">}</span>
+            <span class="n">machine</span> <span class="o">+=</span> <span class="s2">&quot;.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">bitness</span><span class="p">[</span><span class="n">sys</span><span class="o">.</span><span class="n">maxint</span><span class="p">]</span>
+        <span class="c1"># fall through to standard osname-release-machine representation</span>
+    <span class="k">elif</span> <span class="n">osname</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;irix&quot;</span><span class="p">:</span>              <span class="c1"># could be &quot;irix64&quot;!</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">-</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">osname</span><span class="p">,</span> <span class="n">release</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">osname</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;aix&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">-</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">osname</span><span class="p">,</span> <span class="n">version</span><span class="p">,</span> <span class="n">release</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">osname</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;cygwin&quot;</span><span class="p">:</span>
+        <span class="n">osname</span> <span class="o">=</span> <span class="s2">&quot;cygwin&quot;</span>
+        <span class="n">rel_re</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span> <span class="p">(</span><span class="s1">r&#39;[\d.]+&#39;</span><span class="p">)</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">rel_re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">release</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+            <span class="n">release</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">osname</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;darwin&quot;</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">_osx_support</span>
+        <span class="n">osname</span><span class="p">,</span> <span class="n">release</span><span class="p">,</span> <span class="n">machine</span> <span class="o">=</span> <span class="n">_osx_support</span><span class="o">.</span><span class="n">get_platform_osx</span><span class="p">(</span>
+                                            <span class="n">get_config_vars</span><span class="p">(),</span>
+                                            <span class="n">osname</span><span class="p">,</span> <span class="n">release</span><span class="p">,</span> <span class="n">machine</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">-</span><span class="si">%s</span><span class="s2">-</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">osname</span><span class="p">,</span> <span class="n">release</span><span class="p">,</span> <span class="n">machine</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="get_python_version"><a class="viewcode-back" href="../misc/generated/sysconfig.get_python_version.html#sysconfig.get_python_version">[docs]</a><span class="k">def</span> <span class="nf">get_python_version</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">_PY_VERSION_SHORT</span></div>
+
+
+<span class="k">def</span> <span class="nf">_print_dict</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">items</span><span class="p">())):</span>
+        <span class="k">if</span> <span class="n">index</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">: &#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">title</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="s1">&#39;</span><span class="se">\t</span><span class="si">%s</span><span class="s1"> = &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_main</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Display all information sysconfig detains.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="s1">&#39;--generate-posix-vars&#39;</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">:</span>
+        <span class="n">_generate_posix_vars</span><span class="p">()</span>
+        <span class="k">return</span>
+    <span class="nb">print</span> <span class="s1">&#39;Platform: &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="n">get_platform</span><span class="p">()</span>
+    <span class="nb">print</span> <span class="s1">&#39;Python version: &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="n">get_python_version</span><span class="p">()</span>
+    <span class="nb">print</span> <span class="s1">&#39;Current installation scheme: &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="n">_get_default_scheme</span><span class="p">()</span>
+    <span class="nb">print</span>
+    <span class="n">_print_dict</span><span class="p">(</span><span class="s1">&#39;Paths&#39;</span><span class="p">,</span> <span class="n">get_paths</span><span class="p">())</span>
+    <span class="nb">print</span>
+    <span class="n">_print_dict</span><span class="p">(</span><span class="s1">&#39;Variables&#39;</span><span class="p">,</span> <span class="n">get_config_vars</span><span class="p">())</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">_main</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

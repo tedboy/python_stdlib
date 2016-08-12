@@ -1,0 +1,557 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>traceback &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>traceback</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for traceback</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Extract, format and print information about Python stack traces.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">linecache</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">types</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;extract_stack&#39;</span><span class="p">,</span> <span class="s1">&#39;extract_tb&#39;</span><span class="p">,</span> <span class="s1">&#39;format_exception&#39;</span><span class="p">,</span>
+           <span class="s1">&#39;format_exception_only&#39;</span><span class="p">,</span> <span class="s1">&#39;format_list&#39;</span><span class="p">,</span> <span class="s1">&#39;format_stack&#39;</span><span class="p">,</span>
+           <span class="s1">&#39;format_tb&#39;</span><span class="p">,</span> <span class="s1">&#39;print_exc&#39;</span><span class="p">,</span> <span class="s1">&#39;format_exc&#39;</span><span class="p">,</span> <span class="s1">&#39;print_exception&#39;</span><span class="p">,</span>
+           <span class="s1">&#39;print_last&#39;</span><span class="p">,</span> <span class="s1">&#39;print_stack&#39;</span><span class="p">,</span> <span class="s1">&#39;print_tb&#39;</span><span class="p">,</span> <span class="s1">&#39;tb_lineno&#39;</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">_print</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="nb">str</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">terminator</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">):</span>
+    <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="o">+</span><span class="n">terminator</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="print_list"><a class="viewcode-back" href="../misc/generated/traceback.print_list.html#pydoc.print_list">[docs]</a><span class="k">def</span> <span class="nf">print_list</span><span class="p">(</span><span class="n">extracted_list</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Print the list of tuples as returned by extract_tb() or</span>
+<span class="sd">    extract_stack() as a formatted stack trace to the given file.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">file</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span>
+    <span class="k">for</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">extracted_list</span><span class="p">:</span>
+        <span class="n">_print</span><span class="p">(</span><span class="n">file</span><span class="p">,</span>
+               <span class="s1">&#39;  File &quot;</span><span class="si">%s</span><span class="s1">&quot;, line </span><span class="si">%d</span><span class="s1">, in </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="n">lineno</span><span class="p">,</span><span class="n">name</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">line</span><span class="p">:</span>
+            <span class="n">_print</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s1">&#39;    </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="format_list"><a class="viewcode-back" href="../misc/generated/traceback.format_list.html#pydoc.format_list">[docs]</a><span class="k">def</span> <span class="nf">format_list</span><span class="p">(</span><span class="n">extracted_list</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Format a list of traceback entry tuples for printing.</span>
+
+<span class="sd">    Given a list of tuples as returned by extract_tb() or</span>
+<span class="sd">    extract_stack(), return a list of strings ready for printing.</span>
+<span class="sd">    Each string in the resulting list corresponds to the item with the</span>
+<span class="sd">    same index in the argument list.  Each string ends in a newline;</span>
+<span class="sd">    the strings may contain internal newlines as well, for those items</span>
+<span class="sd">    whose source text line is not None.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">extracted_list</span><span class="p">:</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="s1">&#39;  File &quot;</span><span class="si">%s</span><span class="s1">&quot;, line </span><span class="si">%d</span><span class="s1">, in </span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="n">lineno</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">line</span><span class="p">:</span>
+            <span class="n">item</span> <span class="o">=</span> <span class="n">item</span> <span class="o">+</span> <span class="s1">&#39;    </span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="nb">list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">list</span></div>
+
+
+<div class="viewcode-block" id="print_tb"><a class="viewcode-back" href="../misc/generated/traceback.print_tb.html#pydoc.print_tb">[docs]</a><span class="k">def</span> <span class="nf">print_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Print up to &#39;limit&#39; stack trace entries from the traceback &#39;tb&#39;.</span>
+
+<span class="sd">    If &#39;limit&#39; is omitted or None, all entries are printed.  If &#39;file&#39;</span>
+<span class="sd">    is omitted or None, the output goes to sys.stderr; otherwise</span>
+<span class="sd">    &#39;file&#39; should be an open file or file-like object with a write()</span>
+<span class="sd">    method.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">file</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span>
+    <span class="k">if</span> <span class="n">limit</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">sys</span><span class="p">,</span> <span class="s1">&#39;tracebacklimit&#39;</span><span class="p">):</span>
+            <span class="n">limit</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">tracebacklimit</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">tb</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="p">(</span><span class="n">limit</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">limit</span><span class="p">):</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_frame</span>
+        <span class="n">lineno</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_lineno</span>
+        <span class="n">co</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">f_code</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">co</span><span class="o">.</span><span class="n">co_filename</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">co</span><span class="o">.</span><span class="n">co_name</span>
+        <span class="n">_print</span><span class="p">(</span><span class="n">file</span><span class="p">,</span>
+               <span class="s1">&#39;  File &quot;</span><span class="si">%s</span><span class="s1">&quot;, line </span><span class="si">%d</span><span class="s1">, in </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">linecache</span><span class="o">.</span><span class="n">checkcache</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="n">linecache</span><span class="o">.</span><span class="n">getline</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">f</span><span class="o">.</span><span class="n">f_globals</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">line</span><span class="p">:</span> <span class="n">_print</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s1">&#39;    &#39;</span> <span class="o">+</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+        <span class="n">tb</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_next</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span></div>
+
+<div class="viewcode-block" id="format_tb"><a class="viewcode-back" href="../misc/generated/traceback.format_tb.html#pydoc.format_tb">[docs]</a><span class="k">def</span> <span class="nf">format_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A shorthand for &#39;format_list(extract_tb(tb, limit))&#39;.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">format_list</span><span class="p">(</span><span class="n">extract_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="extract_tb"><a class="viewcode-back" href="../misc/generated/traceback.extract_tb.html#pydoc.extract_tb">[docs]</a><span class="k">def</span> <span class="nf">extract_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return list of up to limit pre-processed entries from traceback.</span>
+
+<span class="sd">    This is useful for alternate formatting of stack traces.  If</span>
+<span class="sd">    &#39;limit&#39; is omitted or None, all entries are extracted.  A</span>
+<span class="sd">    pre-processed stack trace entry is a quadruple (filename, line</span>
+<span class="sd">    number, function name, text) representing the information that is</span>
+<span class="sd">    usually printed for a stack trace.  The text is a string with</span>
+<span class="sd">    leading and trailing whitespace stripped; if the source is not</span>
+<span class="sd">    available it is None.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">limit</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">sys</span><span class="p">,</span> <span class="s1">&#39;tracebacklimit&#39;</span><span class="p">):</span>
+            <span class="n">limit</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">tracebacklimit</span>
+    <span class="nb">list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">tb</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="p">(</span><span class="n">limit</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">limit</span><span class="p">):</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_frame</span>
+        <span class="n">lineno</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_lineno</span>
+        <span class="n">co</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">f_code</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">co</span><span class="o">.</span><span class="n">co_filename</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">co</span><span class="o">.</span><span class="n">co_name</span>
+        <span class="n">linecache</span><span class="o">.</span><span class="n">checkcache</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="n">linecache</span><span class="o">.</span><span class="n">getline</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">f</span><span class="o">.</span><span class="n">f_globals</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">line</span><span class="p">:</span> <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span> <span class="n">line</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="nb">list</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">line</span><span class="p">))</span>
+        <span class="n">tb</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_next</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">return</span> <span class="nb">list</span></div>
+
+
+<div class="viewcode-block" id="print_exception"><a class="viewcode-back" href="../misc/generated/traceback.print_exception.html#pydoc.print_exception">[docs]</a><span class="k">def</span> <span class="nf">print_exception</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Print exception up to &#39;limit&#39; stack trace entries from &#39;tb&#39; to &#39;file&#39;.</span>
+
+<span class="sd">    This differs from print_tb() in the following ways: (1) if</span>
+<span class="sd">    traceback is not None, it prints a header &quot;Traceback (most recent</span>
+<span class="sd">    call last):&quot;; (2) it prints the exception type and value after the</span>
+<span class="sd">    stack trace; (3) if type is SyntaxError and value has the</span>
+<span class="sd">    appropriate format, it prints the line where the syntax error</span>
+<span class="sd">    occurred with a caret on the next line indicating the approximate</span>
+<span class="sd">    position of the error.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">file</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span>
+    <span class="k">if</span> <span class="n">tb</span><span class="p">:</span>
+        <span class="n">_print</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s1">&#39;Traceback (most recent call last):&#39;</span><span class="p">)</span>
+        <span class="n">print_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">format_exception_only</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+        <span class="n">_print</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">line</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="format_exception"><a class="viewcode-back" href="../misc/generated/traceback.format_exception.html#pydoc.format_exception">[docs]</a><span class="k">def</span> <span class="nf">format_exception</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Format a stack trace and the exception information.</span>
+
+<span class="sd">    The arguments have the same meaning as the corresponding arguments</span>
+<span class="sd">    to print_exception().  The return value is a list of strings, each</span>
+<span class="sd">    ending in a newline and some containing internal newlines.  When</span>
+<span class="sd">    these lines are concatenated and printed, exactly the same text is</span>
+<span class="sd">    printed as does print_exception().</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">tb</span><span class="p">:</span>
+        <span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Traceback (most recent call last):</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">]</span>
+        <span class="nb">list</span> <span class="o">=</span> <span class="nb">list</span> <span class="o">+</span> <span class="n">format_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="nb">list</span> <span class="o">=</span> <span class="nb">list</span> <span class="o">+</span> <span class="n">format_exception_only</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">list</span></div>
+
+<div class="viewcode-block" id="format_exception_only"><a class="viewcode-back" href="../misc/generated/traceback.format_exception_only.html#pydoc.format_exception_only">[docs]</a><span class="k">def</span> <span class="nf">format_exception_only</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Format the exception part of a traceback.</span>
+
+<span class="sd">    The arguments are the exception type and value such as given by</span>
+<span class="sd">    sys.last_type and sys.last_value. The return value is a list of</span>
+<span class="sd">    strings, each ending in a newline.</span>
+
+<span class="sd">    Normally, the list contains a single string; however, for</span>
+<span class="sd">    SyntaxError exceptions, it contains several lines that (when</span>
+<span class="sd">    printed) display detailed information about where the syntax</span>
+<span class="sd">    error occurred.</span>
+
+<span class="sd">    The message indicating which exception occurred is always the last</span>
+<span class="sd">    string in the list.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># An instance should not have a meaningful value parameter, but</span>
+    <span class="c1"># sometimes does, particularly for string exceptions, such as</span>
+    <span class="c1"># &gt;&gt;&gt; raise string1, string2  # deprecated</span>
+    <span class="c1">#</span>
+    <span class="c1"># Clear these out first because issubtype(string1, SyntaxError)</span>
+    <span class="c1"># would raise another exception and mask the original problem.</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="ne">BaseException</span><span class="p">)</span> <span class="ow">or</span>
+        <span class="nb">isinstance</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">InstanceType</span><span class="p">)</span> <span class="ow">or</span>
+        <span class="n">etype</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">type</span><span class="p">(</span><span class="n">etype</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">_format_final_exc_line</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">)]</span>
+
+    <span class="n">stype</span> <span class="o">=</span> <span class="n">etype</span><span class="o">.</span><span class="n">__name__</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="ne">SyntaxError</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">_format_final_exc_line</span><span class="p">(</span><span class="n">stype</span><span class="p">,</span> <span class="n">value</span><span class="p">)]</span>
+
+    <span class="c1"># It was a syntax error; show exactly where the problem was found.</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">msg</span><span class="p">,</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">badline</span><span class="p">)</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">args</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">filename</span> <span class="ow">or</span> <span class="s2">&quot;&lt;string&gt;&quot;</span>
+        <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;  File &quot;</span><span class="si">%s</span><span class="s1">&quot;, line </span><span class="si">%d</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">badline</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;    </span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">badline</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+            <span class="k">if</span> <span class="n">offset</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">caretspace</span> <span class="o">=</span> <span class="n">badline</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="n">offset</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">caretspace</span><span class="p">),</span> <span class="n">offset</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+                <span class="n">caretspace</span> <span class="o">=</span> <span class="n">caretspace</span><span class="p">[:</span><span class="n">offset</span><span class="p">]</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+                <span class="c1"># non-space whitespace (likes tabs) must be kept for alignment</span>
+                <span class="n">caretspace</span> <span class="o">=</span> <span class="p">((</span><span class="n">c</span><span class="o">.</span><span class="n">isspace</span><span class="p">()</span> <span class="ow">and</span> <span class="n">c</span> <span class="ow">or</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">caretspace</span><span class="p">)</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;    </span><span class="si">%s</span><span class="s1">^</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">caretspace</span><span class="p">))</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">msg</span>
+
+    <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_format_final_exc_line</span><span class="p">(</span><span class="n">stype</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">lines</span></div>
+
+<span class="k">def</span> <span class="nf">_format_final_exc_line</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return a list of a single line -- normal case for format_exception_only&quot;&quot;&quot;</span>
+    <span class="n">valuestr</span> <span class="o">=</span> <span class="n">_some_str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">valuestr</span><span class="p">:</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">etype</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">valuestr</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">line</span>
+
+<span class="k">def</span> <span class="nf">_some_str</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">unicode</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">value</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;ascii&quot;</span><span class="p">,</span> <span class="s2">&quot;backslashreplace&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">return</span> <span class="s1">&#39;&lt;unprintable </span><span class="si">%s</span><span class="s1"> object&gt;&#39;</span> <span class="o">%</span> <span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
+
+
+<div class="viewcode-block" id="print_exc"><a class="viewcode-back" href="../misc/generated/traceback.print_exc.html#pydoc.print_exc">[docs]</a><span class="k">def</span> <span class="nf">print_exc</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Shorthand for &#39;print_exception(sys.exc_type, sys.exc_value, sys.exc_traceback, limit, file)&#39;.</span>
+<span class="sd">    (In fact, it uses sys.exc_info() to retrieve the same information</span>
+<span class="sd">    in a thread-safe way.)&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">file</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
+        <span class="n">print_exception</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">etype</span> <span class="o">=</span> <span class="n">value</span> <span class="o">=</span> <span class="n">tb</span> <span class="o">=</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="format_exc"><a class="viewcode-back" href="../misc/generated/traceback.format_exc.html#pydoc.format_exc">[docs]</a><span class="k">def</span> <span class="nf">format_exc</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Like print_exc() but return a string.&quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
+        <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">format_exception</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="p">))</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">etype</span> <span class="o">=</span> <span class="n">value</span> <span class="o">=</span> <span class="n">tb</span> <span class="o">=</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="print_last"><a class="viewcode-back" href="../misc/generated/traceback.print_last.html#pydoc.print_last">[docs]</a><span class="k">def</span> <span class="nf">print_last</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This is a shorthand for &#39;print_exception(sys.last_type,</span>
+<span class="sd">    sys.last_value, sys.last_traceback, limit, file)&#39;.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">sys</span><span class="p">,</span> <span class="s2">&quot;last_type&quot;</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;no last exception&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">file</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span>
+    <span class="n">print_exception</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">last_type</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">last_value</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">last_traceback</span><span class="p">,</span>
+                    <span class="n">limit</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="print_stack"><a class="viewcode-back" href="../misc/generated/traceback.print_stack.html#pydoc.print_stack">[docs]</a><span class="k">def</span> <span class="nf">print_stack</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Print a stack trace from its invocation point.</span>
+
+<span class="sd">    The optional &#39;f&#39; argument can be used to specify an alternate</span>
+<span class="sd">    stack frame at which to start. The optional &#39;limit&#39; and &#39;file&#39;</span>
+<span class="sd">    arguments have the same meaning as for print_exception().</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">f</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ZeroDivisionError</span>
+        <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">tb_frame</span><span class="o">.</span><span class="n">f_back</span>
+    <span class="n">print_list</span><span class="p">(</span><span class="n">extract_stack</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">limit</span><span class="p">),</span> <span class="n">file</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="format_stack"><a class="viewcode-back" href="../misc/generated/traceback.format_stack.html#pydoc.format_stack">[docs]</a><span class="k">def</span> <span class="nf">format_stack</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Shorthand for &#39;format_list(extract_stack(f, limit))&#39;.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">f</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ZeroDivisionError</span>
+        <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">tb_frame</span><span class="o">.</span><span class="n">f_back</span>
+    <span class="k">return</span> <span class="n">format_list</span><span class="p">(</span><span class="n">extract_stack</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">limit</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="extract_stack"><a class="viewcode-back" href="../misc/generated/traceback.extract_stack.html#pydoc.extract_stack">[docs]</a><span class="k">def</span> <span class="nf">extract_stack</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Extract the raw traceback from the current stack frame.</span>
+
+<span class="sd">    The return value has the same format as for extract_tb().  The</span>
+<span class="sd">    optional &#39;f&#39; and &#39;limit&#39; arguments have the same meaning as for</span>
+<span class="sd">    print_stack().  Each item in the list is a quadruple (filename,</span>
+<span class="sd">    line number, function name, text), and the entries are in order</span>
+<span class="sd">    from oldest to newest stack frame.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">f</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ZeroDivisionError</span>
+        <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">tb_frame</span><span class="o">.</span><span class="n">f_back</span>
+    <span class="k">if</span> <span class="n">limit</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">sys</span><span class="p">,</span> <span class="s1">&#39;tracebacklimit&#39;</span><span class="p">):</span>
+            <span class="n">limit</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">tracebacklimit</span>
+    <span class="nb">list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">f</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="p">(</span><span class="n">limit</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">limit</span><span class="p">):</span>
+        <span class="n">lineno</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">f_lineno</span>
+        <span class="n">co</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">f_code</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">co</span><span class="o">.</span><span class="n">co_filename</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">co</span><span class="o">.</span><span class="n">co_name</span>
+        <span class="n">linecache</span><span class="o">.</span><span class="n">checkcache</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="n">linecache</span><span class="o">.</span><span class="n">getline</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">f</span><span class="o">.</span><span class="n">f_globals</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">line</span><span class="p">:</span> <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span> <span class="n">line</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="nb">list</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">line</span><span class="p">))</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">f_back</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span>
+    <span class="nb">list</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+    <span class="k">return</span> <span class="nb">list</span></div>
+
+<div class="viewcode-block" id="tb_lineno"><a class="viewcode-back" href="../misc/generated/traceback.tb_lineno.html#pydoc.tb_lineno">[docs]</a><span class="k">def</span> <span class="nf">tb_lineno</span><span class="p">(</span><span class="n">tb</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Calculate correct line number of traceback given in tb.</span>
+
+<span class="sd">    Obsolete in 2.3.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_lineno</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

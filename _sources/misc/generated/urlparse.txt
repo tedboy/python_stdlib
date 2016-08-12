@@ -1,0 +1,55 @@
+urlparse
+========
+
+.. automodule:: urlparse
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      clear_cache
+      namedtuple
+      parse_qs
+      parse_qsl
+      unquote
+      urldefrag
+      urljoin
+      urlparse
+      urlsplit
+      urlunparse
+      urlunsplit
+   
+   
+
+   
+   
+   Classes
+   ---------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_custom.rst
+
+   
+      ParseResult
+      ResultMixin
+      SplitResult
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/urlparse.ParseResult
+       generated/urlparse.ResultMixin
+       generated/urlparse.SplitResult
+
+   
+   
+
+   
+   
+   

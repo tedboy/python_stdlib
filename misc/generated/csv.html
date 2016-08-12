@@ -1,0 +1,412 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>csv &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>csv</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/misc/generated/csv.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-csv">
+<span id="csv"></span><h1>csv<a class="headerlink" href="#module-csv" title="Permalink to this headline">¶</a></h1>
+<p>CSV parsing and writing.</p>
+<p>This module provides classes that assist in the reading and writing
+of Comma Separated Value (CSV) files, and implements the interface
+described by PEP 305.  Although many CSV files are simple to parse,
+the format is not formally defined by a stable specification and
+is subtle enough that parsing lines of a CSV file with something
+like line.split(&#8221;,&#8221;) is bound to fail.  The module supports three
+basic APIs: reading, writing, and registration of dialects.</p>
+<p>DIALECT REGISTRATION:</p>
+<p>Readers and writers support a dialect argument, which is a convenient
+handle on a group of settings.  When the dialect argument is a string,
+it identifies one of the dialects previously registered with the module.
+If it is a class or instance, the attributes of the argument are used as
+the settings for the reader or writer:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>class excel:</dt>
+<dd>delimiter = &#8216;,&#8217;
+quotechar = &#8216;&#8221;&#8217;
+escapechar = None
+doublequote = True
+skipinitialspace = False
+lineterminator = &#8216;rn&#8217;
+quoting = QUOTE_MINIMAL</dd>
+</dl>
+</div></blockquote>
+<p>SETTINGS:</p>
+<blockquote>
+<div><ul>
+<li><dl class="first docutils">
+<dt>quotechar - specifies a one-character string to use as the </dt>
+<dd><p class="first last">quoting character.  It defaults to &#8216;&#8221;&#8217;.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>delimiter - specifies a one-character string to use as the </dt>
+<dd><p class="first last">field separator.  It defaults to &#8216;,&#8217;.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>skipinitialspace - specifies how to interpret whitespace which</dt>
+<dd><p class="first last">immediately follows a delimiter.  It defaults to False, which
+means that whitespace immediately following a delimiter is part
+of the following field.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>lineterminator -  specifies the character sequence which should </dt>
+<dd><p class="first last">terminate rows.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>quoting - controls when quotes should be generated by the writer.</dt>
+<dd><p class="first">It can take on any of the following module constants:</p>
+<dl class="docutils">
+<dt>csv.QUOTE_MINIMAL means only when required, for example, when a</dt>
+<dd><p class="first last">field contains either the quotechar or the delimiter</p>
+</dd>
+</dl>
+<p>csv.QUOTE_ALL means that quotes are always placed around fields.
+csv.QUOTE_NONNUMERIC means that quotes are always placed around</p>
+<blockquote>
+<div><p>fields which do not parse as integers or floating point
+numbers.</p>
+</div></blockquote>
+<p class="last">csv.QUOTE_NONE means that quotes are never placed around fields.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>escapechar - specifies a one-character string used to escape </dt>
+<dd><p class="first last">the delimiter when quoting is set to QUOTE_NONE.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>doublequote - controls the handling of quotes inside fields.  When</dt>
+<dd><p class="first last">True, two consecutive quotes are interpreted as one during read,
+and when writing, each quote character embedded in the data is
+written as two quotes</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="csv.StringIO.html#csv.StringIO" title="csv.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
+<td>StringIO([s]) &#8211; Return a StringIO-like stream for reading or writing</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="csv.field_size_limit.html#csv.field_size_limit" title="csv.field_size_limit"><code class="xref py py-obj docutils literal"><span class="pre">field_size_limit</span></code></a></td>
+<td>Sets an upper limit on parsed fields.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="csv.get_dialect.html#csv.get_dialect" title="csv.get_dialect"><code class="xref py py-obj docutils literal"><span class="pre">get_dialect</span></code></a>(name)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="csv.list_dialects.html#csv.list_dialects" title="csv.list_dialects"><code class="xref py py-obj docutils literal"><span class="pre">list_dialects</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="csv.reader.html#csv.reader" title="csv.reader"><code class="xref py py-obj docutils literal"><span class="pre">reader</span></code></a>(iterable&nbsp;[[,&nbsp;dialect])</td>
+<td>The &#8220;iterable&#8221; argument can be any object that returns a line of input for each iteration, such as a file object or a list.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="csv.reduce.html#csv.reduce" title="csv.reduce"><code class="xref py py-obj docutils literal"><span class="pre">reduce</span></code></a>((function,&nbsp;sequence[,&nbsp;initial])&nbsp;-&gt;&nbsp;value)</td>
+<td>Apply a function of two arguments cumulatively to the items of a sequence, from left to right, so as to reduce the sequence to a single value.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="csv.register_dialect.html#csv.register_dialect" title="csv.register_dialect"><code class="xref py py-obj docutils literal"><span class="pre">register_dialect</span></code></a>(name,&nbsp;dialect)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="csv.unregister_dialect.html#csv.unregister_dialect" title="csv.unregister_dialect"><code class="xref py py-obj docutils literal"><span class="pre">unregister_dialect</span></code></a></td>
+<td>Delete the name/dialect mapping associated with a string name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="csv.writer.html#csv.writer" title="csv.writer"><code class="xref py py-obj docutils literal"><span class="pre">writer</span></code></a>(fileobj&nbsp;[[,&nbsp;dialect])</td>
+<td>[or]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/csv.Dialect.html#csv.Dialect" title="csv.Dialect"><code class="xref py py-obj docutils literal"><span class="pre">Dialect</span></code></a>()</td>
+<td>Describe an Excel dialect.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/csv.DictReader.html#csv.DictReader" title="csv.DictReader"><code class="xref py py-obj docutils literal"><span class="pre">DictReader</span></code></a>(f[,&nbsp;fieldnames,&nbsp;restkey,&nbsp;...])</td>
+<td><p class="rubric">Attributes</p>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/csv.DictWriter.html#csv.DictWriter" title="csv.DictWriter"><code class="xref py py-obj docutils literal"><span class="pre">DictWriter</span></code></a>(f,&nbsp;fieldnames[,&nbsp;restval,&nbsp;...])</td>
+<td><p class="rubric">Methods</p>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/csv.Sniffer.html#csv.Sniffer" title="csv.Sniffer"><code class="xref py py-obj docutils literal"><span class="pre">Sniffer</span></code></a>()</td>
+<td>&#8220;Sniffs&#8221; the format of a CSV file (i.e. delimiter, quotechar)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/csv.excel.html#csv.excel" title="csv.excel"><code class="xref py py-obj docutils literal"><span class="pre">excel</span></code></a>()</td>
+<td>Describe the usual properties of Excel-generated CSV files.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/csv.excel_tab.html#csv.excel_tab" title="csv.excel_tab"><code class="xref py py-obj docutils literal"><span class="pre">excel_tab</span></code></a>()</td>
+<td>Describe the usual properties of Excel-generated TAB-delimited files.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="csv.Error.html#csv.Error" title="csv.Error"><code class="xref py py-obj docutils literal"><span class="pre">Error</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

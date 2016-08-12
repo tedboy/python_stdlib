@@ -1,0 +1,6 @@
+sysconfig.get_path_names
+========================
+
+.. currentmodule:: sysconfig
+
+.. autofunction:: get_path_names

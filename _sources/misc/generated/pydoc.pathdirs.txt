@@ -1,0 +1,6 @@
+pydoc.pathdirs
+==============
+
+.. currentmodule:: pydoc
+
+.. autofunction:: pathdirs

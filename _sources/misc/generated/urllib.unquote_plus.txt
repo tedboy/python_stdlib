@@ -1,0 +1,6 @@
+urllib.unquote_plus
+===================
+
+.. currentmodule:: urllib
+
+.. autofunction:: unquote_plus

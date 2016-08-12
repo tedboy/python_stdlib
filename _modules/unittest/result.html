@@ -1,0 +1,430 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>unittest.result &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="Module code" href="../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>unittest.result</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for unittest.result</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Test result object&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">traceback</span>
+
+<span class="kn">from</span> <span class="nn">StringIO</span> <span class="k">import</span> <span class="n">StringIO</span>
+
+<span class="kn">from</span> <span class="nn">.</span> <span class="k">import</span> <span class="n">util</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="k">import</span> <span class="n">wraps</span>
+
+<span class="n">__unittest</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="k">def</span> <span class="nf">failfast</span><span class="p">(</span><span class="n">method</span><span class="p">):</span>
+    <span class="nd">@wraps</span><span class="p">(</span><span class="n">method</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;failfast&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">inner</span>
+
+<span class="n">STDOUT_LINE</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Stdout:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">&#39;</span>
+<span class="n">STDERR_LINE</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Stderr:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">&#39;</span>
+
+
+<div class="viewcode-block" id="TestResult"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.html#unittest.TestResult">[docs]</a><span class="k">class</span> <span class="nc">TestResult</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Holder for test result information.</span>
+
+<span class="sd">    Test results are automatically managed by the TestCase and TestSuite</span>
+<span class="sd">    classes, and do not need to be explicitly manipulated by writers of tests.</span>
+
+<span class="sd">    Each instance holds the total number of tests run, and collections of</span>
+<span class="sd">    failures and errors that occurred among those test runs. The collections</span>
+<span class="sd">    contain tuples of (testcase, exceptioninfo), where exceptioninfo is the</span>
+<span class="sd">    formatted traceback of the error that occurred.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_previousTestClass</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">_testRunEntered</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">_moduleSetUpFailed</span> <span class="o">=</span> <span class="kc">False</span>
+<div class="viewcode-block" id="TestResult.__init__"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.__init__.html#unittest.TestResult.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">descriptions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">verbosity</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">failfast</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">failures</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">errors</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">testsRun</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">skipped</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">expectedFailures</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unexpectedSuccesses</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">shouldStop</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buffer</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_stdout_buffer</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_stderr_buffer</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_original_stdout</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_original_stderr</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mirrorOutput</span> <span class="o">=</span> <span class="kc">False</span></div>
+
+<div class="viewcode-block" id="TestResult.printErrors"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.printErrors.html#unittest.TestResult.printErrors">[docs]</a>    <span class="k">def</span> <span class="nf">printErrors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s2">&quot;Called by TestRunner after test run&quot;</span></div>
+
+<div class="viewcode-block" id="TestResult.startTest"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.startTest.html#unittest.TestResult.startTest">[docs]</a>    <span class="k">def</span> <span class="nf">startTest</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test</span><span class="p">):</span>
+        <span class="s2">&quot;Called when the given test is about to be run&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">testsRun</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mirrorOutput</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_setupStdout</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="nf">_setupStdout</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">buffer</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stderr_buffer</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_stderr_buffer</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_stdout_buffer</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stdout_buffer</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stderr_buffer</span>
+
+<div class="viewcode-block" id="TestResult.startTestRun"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.startTestRun.html#unittest.TestResult.startTestRun">[docs]</a>    <span class="k">def</span> <span class="nf">startTestRun</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called once before any tests are executed.</span>
+
+<span class="sd">        See startTest for a method called before each test.</span>
+<span class="sd">        &quot;&quot;&quot;</span></div>
+
+<div class="viewcode-block" id="TestResult.stopTest"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.stopTest.html#unittest.TestResult.stopTest">[docs]</a>    <span class="k">def</span> <span class="nf">stopTest</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called when the given test has been run&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_restoreStdout</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mirrorOutput</span> <span class="o">=</span> <span class="kc">False</span></div>
+
+    <span class="k">def</span> <span class="nf">_restoreStdout</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">buffer</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mirrorOutput</span><span class="p">:</span>
+                <span class="n">output</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+                <span class="n">error</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+                <span class="k">if</span> <span class="n">output</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="n">output</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">):</span>
+                        <span class="n">output</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_original_stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">STDOUT_LINE</span> <span class="o">%</span> <span class="n">output</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">error</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="n">error</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">):</span>
+                        <span class="n">error</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_original_stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">STDERR_LINE</span> <span class="o">%</span> <span class="n">error</span><span class="p">)</span>
+
+            <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_original_stdout</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_original_stderr</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_stdout_buffer</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_stdout_buffer</span><span class="o">.</span><span class="n">truncate</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_stderr_buffer</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_stderr_buffer</span><span class="o">.</span><span class="n">truncate</span><span class="p">()</span>
+
+<div class="viewcode-block" id="TestResult.stopTestRun"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.stopTestRun.html#unittest.TestResult.stopTestRun">[docs]</a>    <span class="k">def</span> <span class="nf">stopTestRun</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called once after all tests are executed.</span>
+
+<span class="sd">        See stopTest for a method called after each test.</span>
+<span class="sd">        &quot;&quot;&quot;</span></div>
+
+    <span class="nd">@failfast</span>
+<div class="viewcode-block" id="TestResult.addError"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.addError.html#unittest.TestResult.addError">[docs]</a>    <span class="k">def</span> <span class="nf">addError</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">err</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called when an error has occurred. &#39;err&#39; is a tuple of values as</span>
+<span class="sd">        returned by sys.exc_info().</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">test</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_exc_info_to_string</span><span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="n">test</span><span class="p">)))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mirrorOutput</span> <span class="o">=</span> <span class="kc">True</span></div>
+
+    <span class="nd">@failfast</span>
+<div class="viewcode-block" id="TestResult.addFailure"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.addFailure.html#unittest.TestResult.addFailure">[docs]</a>    <span class="k">def</span> <span class="nf">addFailure</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">err</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called when an error has occurred. &#39;err&#39; is a tuple of values as</span>
+<span class="sd">        returned by sys.exc_info().&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">failures</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">test</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_exc_info_to_string</span><span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="n">test</span><span class="p">)))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mirrorOutput</span> <span class="o">=</span> <span class="kc">True</span></div>
+
+<div class="viewcode-block" id="TestResult.addSuccess"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.addSuccess.html#unittest.TestResult.addSuccess">[docs]</a>    <span class="k">def</span> <span class="nf">addSuccess</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test</span><span class="p">):</span>
+        <span class="s2">&quot;Called when a test has completed successfully&quot;</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="TestResult.addSkip"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.addSkip.html#unittest.TestResult.addSkip">[docs]</a>    <span class="k">def</span> <span class="nf">addSkip</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">reason</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called when a test is skipped.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">skipped</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">test</span><span class="p">,</span> <span class="n">reason</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="TestResult.addExpectedFailure"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.addExpectedFailure.html#unittest.TestResult.addExpectedFailure">[docs]</a>    <span class="k">def</span> <span class="nf">addExpectedFailure</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">err</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called when an expected failure/error occured.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">expectedFailures</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_exc_info_to_string</span><span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="n">test</span><span class="p">)))</span></div>
+
+    <span class="nd">@failfast</span>
+<div class="viewcode-block" id="TestResult.addUnexpectedSuccess"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.addUnexpectedSuccess.html#unittest.TestResult.addUnexpectedSuccess">[docs]</a>    <span class="k">def</span> <span class="nf">addUnexpectedSuccess</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">test</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called when a test was expected to fail, but succeed.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unexpectedSuccesses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TestResult.wasSuccessful"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.wasSuccessful.html#unittest.TestResult.wasSuccessful">[docs]</a>    <span class="k">def</span> <span class="nf">wasSuccessful</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s2">&quot;Tells whether or not this result was a success&quot;</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">failures</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">errors</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span></div>
+
+<div class="viewcode-block" id="TestResult.stop"><a class="viewcode-back" href="../../misc/generated/generated/unittest.TestResult.stop.html#unittest.TestResult.stop">[docs]</a>    <span class="k">def</span> <span class="nf">stop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s2">&quot;Indicates that the tests should be aborted&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">shouldStop</span> <span class="o">=</span> <span class="kc">True</span></div>
+
+    <span class="k">def</span> <span class="nf">_exc_info_to_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">err</span><span class="p">,</span> <span class="n">test</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Converts a sys.exc_info()-style tuple of values into a string.&quot;&quot;&quot;</span>
+        <span class="n">exctype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span> <span class="o">=</span> <span class="n">err</span>
+        <span class="c1"># Skip test runner traceback levels</span>
+        <span class="k">while</span> <span class="n">tb</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_relevant_tb_level</span><span class="p">(</span><span class="n">tb</span><span class="p">):</span>
+            <span class="n">tb</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_next</span>
+
+        <span class="k">if</span> <span class="n">exctype</span> <span class="ow">is</span> <span class="n">test</span><span class="o">.</span><span class="n">failureException</span><span class="p">:</span>
+            <span class="c1"># Skip assert*() traceback levels</span>
+            <span class="n">length</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_count_relevant_tb_levels</span><span class="p">(</span><span class="n">tb</span><span class="p">)</span>
+            <span class="n">msgLines</span> <span class="o">=</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exception</span><span class="p">(</span><span class="n">exctype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">msgLines</span> <span class="o">=</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exception</span><span class="p">(</span><span class="n">exctype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">buffer</span><span class="p">:</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+            <span class="n">error</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">output</span><span class="p">:</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">output</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">):</span>
+                    <span class="n">output</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+                <span class="n">msgLines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">STDOUT_LINE</span> <span class="o">%</span> <span class="n">output</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">error</span><span class="p">:</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">error</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">):</span>
+                    <span class="n">error</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+                <span class="n">msgLines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">STDERR_LINE</span> <span class="o">%</span> <span class="n">error</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">msgLines</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">_is_relevant_tb_level</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tb</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;__unittest&#39;</span> <span class="ow">in</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_frame</span><span class="o">.</span><span class="n">f_globals</span>
+
+    <span class="k">def</span> <span class="nf">_count_relevant_tb_levels</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tb</span><span class="p">):</span>
+        <span class="n">length</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="n">tb</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_relevant_tb_level</span><span class="p">(</span><span class="n">tb</span><span class="p">):</span>
+            <span class="n">length</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">tb</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_next</span>
+        <span class="k">return</span> <span class="n">length</span>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="s2">&quot;&lt;</span><span class="si">%s</span><span class="s2"> run=</span><span class="si">%i</span><span class="s2"> errors=</span><span class="si">%i</span><span class="s2"> failures=</span><span class="si">%i</span><span class="s2">&gt;&quot;</span> <span class="o">%</span>
+               <span class="p">(</span><span class="n">util</span><span class="o">.</span><span class="n">strclass</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">testsRun</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">errors</span><span class="p">),</span>
+                <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">failures</span><span class="p">)))</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+gc.set_threshold
+================
+
+.. currentmodule:: gc
+
+.. autofunction:: set_threshold

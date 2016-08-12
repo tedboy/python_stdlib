@@ -1,0 +1,6 @@
+cgi.warn
+========
+
+.. currentmodule:: cgi
+
+.. autofunction:: warn

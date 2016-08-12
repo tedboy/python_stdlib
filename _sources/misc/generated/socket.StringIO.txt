@@ -1,0 +1,6 @@
+socket.StringIO
+===============
+
+.. currentmodule:: socket
+
+.. autofunction:: StringIO

@@ -1,0 +1,438 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>popen2 &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>popen2</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for popen2</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Spawn a command with pipes to its stdin, stdout, and optionally stderr.</span>
+
+<span class="sd">The normal os.popen(cmd, mode) call spawns a shell command and provides a</span>
+<span class="sd">file interface to just the input or output of the process depending on</span>
+<span class="sd">whether mode is &#39;r&#39; or &#39;w&#39;.  This module provides the functions popen2(cmd)</span>
+<span class="sd">and popen3(cmd) which return two or three pipes to the spawned command.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;The popen2 module is deprecated.  Use the subprocess module.&quot;</span><span class="p">,</span>
+              <span class="ne">DeprecationWarning</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;popen2&quot;</span><span class="p">,</span> <span class="s2">&quot;popen3&quot;</span><span class="p">,</span> <span class="s2">&quot;popen4&quot;</span><span class="p">]</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">MAXFD</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">sysconf</span><span class="p">(</span><span class="s1">&#39;SC_OPEN_MAX&#39;</span><span class="p">)</span>
+<span class="k">except</span> <span class="p">(</span><span class="ne">AttributeError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+    <span class="n">MAXFD</span> <span class="o">=</span> <span class="mi">256</span>
+
+<span class="n">_active</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">def</span> <span class="nf">_cleanup</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">inst</span> <span class="ow">in</span> <span class="n">_active</span><span class="p">[:]:</span>
+        <span class="k">if</span> <span class="n">inst</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="n">_deadstate</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">maxint</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">_active</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">inst</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                <span class="c1"># This can happen if two threads create a new Popen instance.</span>
+                <span class="c1"># It&#39;s harmless that it was already removed, so ignore.</span>
+                <span class="k">pass</span>
+
+<div class="viewcode-block" id="Popen3"><a class="viewcode-back" href="../misc/generated/generated/popen2.Popen3.html#popen2.Popen3">[docs]</a><span class="k">class</span> <span class="nc">Popen3</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Class representing a child process.  Normally, instances are created</span>
+<span class="sd">    internally by the functions popen2() and popen3().&quot;&quot;&quot;</span>
+
+    <span class="n">sts</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>                    <span class="c1"># Child not completed yet</span>
+
+<div class="viewcode-block" id="Popen3.__init__"><a class="viewcode-back" href="../misc/generated/generated/popen2.Popen3.__init__.html#popen2.Popen3.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmd</span><span class="p">,</span> <span class="n">capturestderr</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;The parameter &#39;cmd&#39; is the shell command to execute in a</span>
+<span class="sd">        sub-process.  On UNIX, &#39;cmd&#39; may be a sequence, in which case arguments</span>
+<span class="sd">        will be passed directly to the program without shell intervention (as</span>
+<span class="sd">        with os.spawnv()).  If &#39;cmd&#39; is a string it will be passed to the shell</span>
+<span class="sd">        (as with os.system()).   The &#39;capturestderr&#39; flag, if true, specifies</span>
+<span class="sd">        that the object should capture standard error output of the child</span>
+<span class="sd">        process.  The default is false.  If the &#39;bufsize&#39; parameter is</span>
+<span class="sd">        specified, it specifies the size of the I/O buffers to/from the child</span>
+<span class="sd">        process.&quot;&quot;&quot;</span>
+        <span class="n">_cleanup</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cmd</span> <span class="o">=</span> <span class="n">cmd</span>
+        <span class="n">p2cread</span><span class="p">,</span> <span class="n">p2cwrite</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">pipe</span><span class="p">()</span>
+        <span class="n">c2pread</span><span class="p">,</span> <span class="n">c2pwrite</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">pipe</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">capturestderr</span><span class="p">:</span>
+            <span class="n">errout</span><span class="p">,</span> <span class="n">errin</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">pipe</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pid</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fork</span><span class="p">()</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">pid</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># Child</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">p2cread</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">c2pwrite</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">capturestderr</span><span class="p">:</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">errin</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_run_child</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">p2cread</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tochild</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fdopen</span><span class="p">(</span><span class="n">p2cwrite</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">bufsize</span><span class="p">)</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">c2pwrite</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fromchild</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fdopen</span><span class="p">(</span><span class="n">c2pread</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">bufsize</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">capturestderr</span><span class="p">:</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">errin</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">childerr</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fdopen</span><span class="p">(</span><span class="n">errout</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">bufsize</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">childerr</span> <span class="o">=</span> <span class="kc">None</span></div>
+
+    <span class="k">def</span> <span class="nf">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># In case the child hasn&#39;t been waited on, check if it&#39;s done.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="n">_deadstate</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">maxint</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">sts</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">_active</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="c1"># Child is still running, keep us alive until we can wait on it.</span>
+                <span class="n">_active</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_run_child</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmd</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">basestring</span><span class="p">):</span>
+            <span class="n">cmd</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;/bin/sh&#39;</span><span class="p">,</span> <span class="s1">&#39;-c&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="p">]</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">closerange</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">MAXFD</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">execvp</span><span class="p">(</span><span class="n">cmd</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cmd</span><span class="p">)</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">_exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Popen3.poll"><a class="viewcode-back" href="../misc/generated/generated/popen2.Popen3.poll.html#popen2.Popen3.poll">[docs]</a>    <span class="k">def</span> <span class="nf">poll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_deadstate</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the exit status of the child process if it has finished,</span>
+<span class="sd">        or -1 if it hasn&#39;t finished yet.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">sts</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">pid</span><span class="p">,</span> <span class="n">sts</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">waitpid</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pid</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">WNOHANG</span><span class="p">)</span>
+                <span class="c1"># pid will be 0 if self.pid hasn&#39;t terminated</span>
+                <span class="k">if</span> <span class="n">pid</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">pid</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">sts</span> <span class="o">=</span> <span class="n">sts</span>
+            <span class="k">except</span> <span class="n">os</span><span class="o">.</span><span class="n">error</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">_deadstate</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">sts</span> <span class="o">=</span> <span class="n">_deadstate</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sts</span></div>
+
+<div class="viewcode-block" id="Popen3.wait"><a class="viewcode-back" href="../misc/generated/generated/popen2.Popen3.wait.html#popen2.Popen3.wait">[docs]</a>    <span class="k">def</span> <span class="nf">wait</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Wait for and return the exit status of the child process.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">sts</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">pid</span><span class="p">,</span> <span class="n">sts</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">waitpid</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pid</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="c1"># This used to be a test, but it is believed to be</span>
+            <span class="c1"># always true, so I changed it to an assertion - mvl</span>
+            <span class="k">assert</span> <span class="n">pid</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">pid</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sts</span> <span class="o">=</span> <span class="n">sts</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sts</span></div></div>
+
+
+<div class="viewcode-block" id="Popen4"><a class="viewcode-back" href="../misc/generated/generated/popen2.Popen4.html#popen2.Popen4">[docs]</a><span class="k">class</span> <span class="nc">Popen4</span><span class="p">(</span><span class="n">Popen3</span><span class="p">):</span>
+    <span class="n">childerr</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="Popen4.__init__"><a class="viewcode-back" href="../misc/generated/generated/popen2.Popen4.__init__.html#popen2.Popen4.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmd</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">_cleanup</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cmd</span> <span class="o">=</span> <span class="n">cmd</span>
+        <span class="n">p2cread</span><span class="p">,</span> <span class="n">p2cwrite</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">pipe</span><span class="p">()</span>
+        <span class="n">c2pread</span><span class="p">,</span> <span class="n">c2pwrite</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">pipe</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pid</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fork</span><span class="p">()</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">pid</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># Child</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">p2cread</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">c2pwrite</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">dup2</span><span class="p">(</span><span class="n">c2pwrite</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_run_child</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">p2cread</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tochild</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fdopen</span><span class="p">(</span><span class="n">p2cwrite</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">bufsize</span><span class="p">)</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">c2pwrite</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fromchild</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fdopen</span><span class="p">(</span><span class="n">c2pread</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">bufsize</span><span class="p">)</span></div></div>
+
+
+<span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;win&quot;</span> <span class="ow">or</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s2">&quot;os2emx&quot;</span><span class="p">:</span>
+    <span class="c1"># Some things don&#39;t make sense on non-Unix platforms.</span>
+    <span class="k">del</span> <span class="n">Popen3</span><span class="p">,</span> <span class="n">Popen4</span>
+
+    <span class="k">def</span> <span class="nf">popen2</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;t&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Execute the shell command &#39;cmd&#39; in a sub-process. On UNIX, &#39;cmd&#39; may</span>
+<span class="sd">        be a sequence, in which case arguments will be passed directly to the</span>
+<span class="sd">        program without shell intervention (as with os.spawnv()). If &#39;cmd&#39; is a</span>
+<span class="sd">        string it will be passed to the shell (as with os.system()). If</span>
+<span class="sd">        &#39;bufsize&#39; is specified, it sets the buffer size for the I/O pipes. The</span>
+<span class="sd">        file objects (child_stdout, child_stdin) are returned.&quot;&quot;&quot;</span>
+        <span class="n">w</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">popen2</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">bufsize</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="p">,</span> <span class="n">w</span>
+
+    <span class="k">def</span> <span class="nf">popen3</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;t&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Execute the shell command &#39;cmd&#39; in a sub-process. On UNIX, &#39;cmd&#39; may</span>
+<span class="sd">        be a sequence, in which case arguments will be passed directly to the</span>
+<span class="sd">        program without shell intervention (as with os.spawnv()). If &#39;cmd&#39; is a</span>
+<span class="sd">        string it will be passed to the shell (as with os.system()). If</span>
+<span class="sd">        &#39;bufsize&#39; is specified, it sets the buffer size for the I/O pipes. The</span>
+<span class="sd">        file objects (child_stdout, child_stdin, child_stderr) are returned.&quot;&quot;&quot;</span>
+        <span class="n">w</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">popen3</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">bufsize</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">e</span>
+
+    <span class="k">def</span> <span class="nf">popen4</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;t&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Execute the shell command &#39;cmd&#39; in a sub-process. On UNIX, &#39;cmd&#39; may</span>
+<span class="sd">        be a sequence, in which case arguments will be passed directly to the</span>
+<span class="sd">        program without shell intervention (as with os.spawnv()). If &#39;cmd&#39; is a</span>
+<span class="sd">        string it will be passed to the shell (as with os.system()). If</span>
+<span class="sd">        &#39;bufsize&#39; is specified, it sets the buffer size for the I/O pipes. The</span>
+<span class="sd">        file objects (child_stdout_stderr, child_stdin) are returned.&quot;&quot;&quot;</span>
+        <span class="n">w</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">popen4</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">bufsize</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="p">,</span> <span class="n">w</span>
+<span class="k">else</span><span class="p">:</span>
+<div class="viewcode-block" id="popen2"><a class="viewcode-back" href="../misc/generated/popen2.popen2.html#popen2.popen2">[docs]</a>    <span class="k">def</span> <span class="nf">popen2</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;t&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Execute the shell command &#39;cmd&#39; in a sub-process. On UNIX, &#39;cmd&#39; may</span>
+<span class="sd">        be a sequence, in which case arguments will be passed directly to the</span>
+<span class="sd">        program without shell intervention (as with os.spawnv()). If &#39;cmd&#39; is a</span>
+<span class="sd">        string it will be passed to the shell (as with os.system()). If</span>
+<span class="sd">        &#39;bufsize&#39; is specified, it sets the buffer size for the I/O pipes. The</span>
+<span class="sd">        file objects (child_stdout, child_stdin) are returned.&quot;&quot;&quot;</span>
+        <span class="n">inst</span> <span class="o">=</span> <span class="n">Popen3</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="n">bufsize</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">inst</span><span class="o">.</span><span class="n">fromchild</span><span class="p">,</span> <span class="n">inst</span><span class="o">.</span><span class="n">tochild</span></div>
+
+<div class="viewcode-block" id="popen3"><a class="viewcode-back" href="../misc/generated/popen2.popen3.html#popen2.popen3">[docs]</a>    <span class="k">def</span> <span class="nf">popen3</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;t&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Execute the shell command &#39;cmd&#39; in a sub-process. On UNIX, &#39;cmd&#39; may</span>
+<span class="sd">        be a sequence, in which case arguments will be passed directly to the</span>
+<span class="sd">        program without shell intervention (as with os.spawnv()). If &#39;cmd&#39; is a</span>
+<span class="sd">        string it will be passed to the shell (as with os.system()). If</span>
+<span class="sd">        &#39;bufsize&#39; is specified, it sets the buffer size for the I/O pipes. The</span>
+<span class="sd">        file objects (child_stdout, child_stdin, child_stderr) are returned.&quot;&quot;&quot;</span>
+        <span class="n">inst</span> <span class="o">=</span> <span class="n">Popen3</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">bufsize</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">inst</span><span class="o">.</span><span class="n">fromchild</span><span class="p">,</span> <span class="n">inst</span><span class="o">.</span><span class="n">tochild</span><span class="p">,</span> <span class="n">inst</span><span class="o">.</span><span class="n">childerr</span></div>
+
+<div class="viewcode-block" id="popen4"><a class="viewcode-back" href="../misc/generated/popen2.popen4.html#popen2.popen4">[docs]</a>    <span class="k">def</span> <span class="nf">popen4</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;t&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Execute the shell command &#39;cmd&#39; in a sub-process. On UNIX, &#39;cmd&#39; may</span>
+<span class="sd">        be a sequence, in which case arguments will be passed directly to the</span>
+<span class="sd">        program without shell intervention (as with os.spawnv()). If &#39;cmd&#39; is a</span>
+<span class="sd">        string it will be passed to the shell (as with os.system()). If</span>
+<span class="sd">        &#39;bufsize&#39; is specified, it sets the buffer size for the I/O pipes. The</span>
+<span class="sd">        file objects (child_stdout_stderr, child_stdin) are returned.&quot;&quot;&quot;</span>
+        <span class="n">inst</span> <span class="o">=</span> <span class="n">Popen4</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">bufsize</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">inst</span><span class="o">.</span><span class="n">fromchild</span><span class="p">,</span> <span class="n">inst</span><span class="o">.</span><span class="n">tochild</span></div>
+
+    <span class="n">__all__</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="s2">&quot;Popen3&quot;</span><span class="p">,</span> <span class="s2">&quot;Popen4&quot;</span><span class="p">])</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

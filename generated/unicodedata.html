@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2.1.2. unicodedata &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="2.1. String Services" href="../misc/string_services.html"/>
+        <link rel="next" title="2.1.2.1.1. unicodedata.bidirectional" href="unicodedata.bidirectional.html"/>
+        <link rel="prev" title="2.1.1.2.1.2. textwrap.TextWrapper.wrap" href="generated/textwrap.TextWrapper.wrap.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../misc/index.html">2. misc package I may use in future</a> &raquo;</li>
+        
+          <li><a href="../misc/string_services.html">2.1. String Services</a> &raquo;</li>
+        
+      <li>2.1.2. unicodedata</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/unicodedata.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-unicodedata">
+<span id="unicodedata"></span><h1>2.1.2. unicodedata<a class="headerlink" href="#module-unicodedata" title="Permalink to this headline">¶</a></h1>
+<p>This module provides access to the Unicode Character Database which
+defines character properties for all Unicode characters. The data in
+this database is based on the UnicodeData.txt file version
+5.2.0 which is publically available from <a class="reference external" href="ftp://ftp.unicode.org/">ftp://ftp.unicode.org/</a>.</p>
+<p>The module uses the same names and symbols as defined by the
+UnicodeData File Format 5.2.0 (see
+<a class="reference external" href="http://www.unicode.org/reports/tr44/tr44-4.html">http://www.unicode.org/reports/tr44/tr44-4.html</a>).</p>
+<div class="section" id="functions">
+<h2>2.1.2.1. Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/unicodedata.bidirectional.html#unicodedata.bidirectional" title="unicodedata.bidirectional"><code class="xref py py-obj docutils literal"><span class="pre">bidirectional</span></code></a>(unichr)</td>
+<td>Returns the bidirectional class assigned to the Unicode character unichr as string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/unicodedata.category.html#unicodedata.category" title="unicodedata.category"><code class="xref py py-obj docutils literal"><span class="pre">category</span></code></a>(unichr)</td>
+<td>Returns the general category assigned to the Unicode character unichr as string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/unicodedata.combining.html#unicodedata.combining" title="unicodedata.combining"><code class="xref py py-obj docutils literal"><span class="pre">combining</span></code></a>(unichr)</td>
+<td>Returns the canonical combining class assigned to the Unicode character unichr as integer.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/unicodedata.decimal.html#unicodedata.decimal" title="unicodedata.decimal"><code class="xref py py-obj docutils literal"><span class="pre">decimal</span></code></a>(unichr[,&nbsp;default])</td>
+<td>Returns the decimal value assigned to the Unicode character unichr as integer.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/unicodedata.decomposition.html#unicodedata.decomposition" title="unicodedata.decomposition"><code class="xref py py-obj docutils literal"><span class="pre">decomposition</span></code></a>(unichr)</td>
+<td>Returns the character decomposition mapping assigned to the Unicode character unichr as string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/unicodedata.digit.html#unicodedata.digit" title="unicodedata.digit"><code class="xref py py-obj docutils literal"><span class="pre">digit</span></code></a>(unichr[,&nbsp;default])</td>
+<td>Returns the digit value assigned to the Unicode character unichr as integer.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/unicodedata.east_asian_width.html#unicodedata.east_asian_width" title="unicodedata.east_asian_width"><code class="xref py py-obj docutils literal"><span class="pre">east_asian_width</span></code></a>(unichr)</td>
+<td>Returns the east asian width assigned to the Unicode character unichr as string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/unicodedata.lookup.html#unicodedata.lookup" title="unicodedata.lookup"><code class="xref py py-obj docutils literal"><span class="pre">lookup</span></code></a>(name)</td>
+<td>Look up character by name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/unicodedata.mirrored.html#unicodedata.mirrored" title="unicodedata.mirrored"><code class="xref py py-obj docutils literal"><span class="pre">mirrored</span></code></a>(unichr)</td>
+<td>Returns the mirrored property assigned to the Unicode character unichr as integer.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/unicodedata.name.html#unicodedata.name" title="unicodedata.name"><code class="xref py py-obj docutils literal"><span class="pre">name</span></code></a>(unichr[,&nbsp;default])</td>
+<td>Returns the name assigned to the Unicode character unichr as a string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/unicodedata.normalize.html#unicodedata.normalize" title="unicodedata.normalize"><code class="xref py py-obj docutils literal"><span class="pre">normalize</span></code></a>(form,&nbsp;unistr)</td>
+<td>Return the normal form &#8216;form&#8217; for the Unicode string unistr.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../misc/generated/unicodedata.numeric.html#unicodedata.numeric" title="unicodedata.numeric"><code class="xref py py-obj docutils literal"><span class="pre">numeric</span></code></a>(unichr[,&nbsp;default])</td>
+<td>Returns the numeric value assigned to the Unicode character unichr as float.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="classes">
+<h2>2.1.2.2. Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../misc/generated/generated/unicodedata.UCD.html#unicodedata.UCD" title="unicodedata.UCD"><code class="xref py py-obj docutils literal"><span class="pre">UCD</span></code></a></td>
+<td><p class="rubric">Methods</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="unicodedata.bidirectional.html" class="btn btn-neutral float-right" title="2.1.2.1.1. unicodedata.bidirectional" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="generated/textwrap.TextWrapper.wrap.html" class="btn btn-neutral" title="2.1.1.2.1.2. textwrap.TextWrapper.wrap" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

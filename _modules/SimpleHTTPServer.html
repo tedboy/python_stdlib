@@ -1,0 +1,472 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SimpleHTTPServer &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>SimpleHTTPServer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for SimpleHTTPServer</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Simple HTTP Server.</span>
+
+<span class="sd">This module builds on BaseHTTPServer by implementing the standard GET</span>
+<span class="sd">and HEAD requests in a fairly straightforward manner.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<span class="n">__version__</span> <span class="o">=</span> <span class="s2">&quot;0.6&quot;</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;SimpleHTTPRequestHandler&quot;</span><span class="p">]</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">posixpath</span>
+<span class="kn">import</span> <span class="nn">BaseHTTPServer</span>
+<span class="kn">import</span> <span class="nn">urllib</span>
+<span class="kn">import</span> <span class="nn">urlparse</span>
+<span class="kn">import</span> <span class="nn">cgi</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+<span class="kn">import</span> <span class="nn">mimetypes</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">cStringIO</span> <span class="k">import</span> <span class="n">StringIO</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">StringIO</span> <span class="k">import</span> <span class="n">StringIO</span>
+
+
+<div class="viewcode-block" id="SimpleHTTPRequestHandler"><a class="viewcode-back" href="../misc/generated/generated/SimpleHTTPServer.SimpleHTTPRequestHandler.html#SimpleHTTPServer.SimpleHTTPRequestHandler">[docs]</a><span class="k">class</span> <span class="nc">SimpleHTTPRequestHandler</span><span class="p">(</span><span class="n">BaseHTTPServer</span><span class="o">.</span><span class="n">BaseHTTPRequestHandler</span><span class="p">):</span>
+
+    <span class="sd">&quot;&quot;&quot;Simple HTTP request handler with GET and HEAD commands.</span>
+
+<span class="sd">    This serves files from the current directory and any of its</span>
+<span class="sd">    subdirectories.  The MIME type for files is determined by</span>
+<span class="sd">    calling the .guess_type() method.</span>
+
+<span class="sd">    The GET and HEAD requests are identical except that the HEAD</span>
+<span class="sd">    request omits the actual contents of the file.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">server_version</span> <span class="o">=</span> <span class="s2">&quot;SimpleHTTP/&quot;</span> <span class="o">+</span> <span class="n">__version__</span>
+
+<div class="viewcode-block" id="SimpleHTTPRequestHandler.do_GET"><a class="viewcode-back" href="../misc/generated/generated/SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET.html#SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET">[docs]</a>    <span class="k">def</span> <span class="nf">do_GET</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Serve a GET request.&quot;&quot;&quot;</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send_head</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">copyfile</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">wfile</span><span class="p">)</span>
+            <span class="k">finally</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SimpleHTTPRequestHandler.do_HEAD"><a class="viewcode-back" href="../misc/generated/generated/SimpleHTTPServer.SimpleHTTPRequestHandler.do_HEAD.html#SimpleHTTPServer.SimpleHTTPRequestHandler.do_HEAD">[docs]</a>    <span class="k">def</span> <span class="nf">do_HEAD</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Serve a HEAD request.&quot;&quot;&quot;</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send_head</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SimpleHTTPRequestHandler.send_head"><a class="viewcode-back" href="../misc/generated/generated/SimpleHTTPServer.SimpleHTTPRequestHandler.send_head.html#SimpleHTTPServer.SimpleHTTPRequestHandler.send_head">[docs]</a>    <span class="k">def</span> <span class="nf">send_head</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Common code for GET and HEAD commands.</span>
+
+<span class="sd">        This sends the response code and MIME headers.</span>
+
+<span class="sd">        Return value is either a file object (which has to be copied</span>
+<span class="sd">        to the outputfile by the caller unless the command was HEAD,</span>
+<span class="sd">        and must be closed by the caller under all circumstances), or</span>
+<span class="sd">        None, in which case the caller has nothing further to do.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">translate_path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+            <span class="n">parts</span> <span class="o">=</span> <span class="n">urlparse</span><span class="o">.</span><span class="n">urlsplit</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">parts</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">):</span>
+                <span class="c1"># redirect browser - doing basically what apache does</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">send_response</span><span class="p">(</span><span class="mi">301</span><span class="p">)</span>
+                <span class="n">new_parts</span> <span class="o">=</span> <span class="p">(</span><span class="n">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span>
+                             <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">parts</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+                <span class="n">new_url</span> <span class="o">=</span> <span class="n">urlparse</span><span class="o">.</span><span class="n">urlunsplit</span><span class="p">(</span><span class="n">new_parts</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">send_header</span><span class="p">(</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span> <span class="n">new_url</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">end_headers</span><span class="p">()</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="s2">&quot;index.html&quot;</span><span class="p">,</span> <span class="s2">&quot;index.htm&quot;</span><span class="p">:</span>
+                <span class="n">index</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">index</span><span class="p">):</span>
+                    <span class="n">path</span> <span class="o">=</span> <span class="n">index</span>
+                    <span class="k">break</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">list_directory</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="n">ctype</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">guess_type</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># Always read in binary mode. Opening files in text mode may cause</span>
+            <span class="c1"># newline translations, making the actual size of the content</span>
+            <span class="c1"># transmitted *less* than the content-length!</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">IOError</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">send_error</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s2">&quot;File not found&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">send_response</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">send_header</span><span class="p">(</span><span class="s2">&quot;Content-type&quot;</span><span class="p">,</span> <span class="n">ctype</span><span class="p">)</span>
+            <span class="n">fs</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fstat</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">fileno</span><span class="p">())</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">send_header</span><span class="p">(</span><span class="s2">&quot;Content-Length&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">fs</span><span class="p">[</span><span class="mi">6</span><span class="p">]))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">send_header</span><span class="p">(</span><span class="s2">&quot;Last-Modified&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">date_time_string</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">st_mtime</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">end_headers</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">f</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">raise</span></div>
+
+<div class="viewcode-block" id="SimpleHTTPRequestHandler.list_directory"><a class="viewcode-back" href="../misc/generated/generated/SimpleHTTPServer.SimpleHTTPRequestHandler.list_directory.html#SimpleHTTPServer.SimpleHTTPRequestHandler.list_directory">[docs]</a>    <span class="k">def</span> <span class="nf">list_directory</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Helper to produce a directory listing (absent index.html).</span>
+
+<span class="sd">        Return value is either a file object, or None (indicating an</span>
+<span class="sd">        error).  In either case, the headers are sent, making the</span>
+<span class="sd">        interface the same as for send_head().</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="nb">list</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">os</span><span class="o">.</span><span class="n">error</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">send_error</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s2">&quot;No permission to list directory&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="nb">list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">a</span><span class="p">:</span> <span class="n">a</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
+        <span class="n">displaypath</span> <span class="o">=</span> <span class="n">cgi</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">unquote</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">))</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;&#39;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&lt;html&gt;</span><span class="se">\n</span><span class="s2">&lt;title&gt;Directory listing for </span><span class="si">%s</span><span class="s2">&lt;/title&gt;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">displaypath</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&lt;body&gt;</span><span class="se">\n</span><span class="s2">&lt;h2&gt;Directory listing for </span><span class="si">%s</span><span class="s2">&lt;/h2&gt;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">displaypath</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&lt;hr&gt;</span><span class="se">\n</span><span class="s2">&lt;ul&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">:</span>
+            <span class="n">fullname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+            <span class="n">displayname</span> <span class="o">=</span> <span class="n">linkname</span> <span class="o">=</span> <span class="n">name</span>
+            <span class="c1"># Append / for directories or @ for symbolic links</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">fullname</span><span class="p">):</span>
+                <span class="n">displayname</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span>
+                <span class="n">linkname</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">islink</span><span class="p">(</span><span class="n">fullname</span><span class="p">):</span>
+                <span class="n">displayname</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;@&quot;</span>
+                <span class="c1"># Note: a link to a directory displays with @ and links with /</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;&lt;li&gt;&lt;a href=&quot;</span><span class="si">%s</span><span class="s1">&quot;&gt;</span><span class="si">%s</span><span class="s1">&lt;/a&gt;</span><span class="se">\n</span><span class="s1">&#39;</span>
+                    <span class="o">%</span> <span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="n">linkname</span><span class="p">),</span> <span class="n">cgi</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">displayname</span><span class="p">)))</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&lt;/ul&gt;</span><span class="se">\n</span><span class="s2">&lt;hr&gt;</span><span class="se">\n</span><span class="s2">&lt;/body&gt;</span><span class="se">\n</span><span class="s2">&lt;/html&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">length</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">send_response</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+        <span class="n">encoding</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">getfilesystemencoding</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">send_header</span><span class="p">(</span><span class="s2">&quot;Content-type&quot;</span><span class="p">,</span> <span class="s2">&quot;text/html; charset=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">encoding</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">send_header</span><span class="p">(</span><span class="s2">&quot;Content-Length&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">length</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">end_headers</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">f</span></div>
+
+<div class="viewcode-block" id="SimpleHTTPRequestHandler.translate_path"><a class="viewcode-back" href="../misc/generated/generated/SimpleHTTPServer.SimpleHTTPRequestHandler.translate_path.html#SimpleHTTPServer.SimpleHTTPRequestHandler.translate_path">[docs]</a>    <span class="k">def</span> <span class="nf">translate_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Translate a /-separated PATH to the local filename syntax.</span>
+
+<span class="sd">        Components that mean special things to the local file system</span>
+<span class="sd">        (e.g. drive or directory names) are ignored.  (XXX They should</span>
+<span class="sd">        probably be diagnosed.)</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># abandon query parameters</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;?&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="c1"># Don&#39;t forget explicit trailing slash when normalizing. Issue17324</span>
+        <span class="n">trailing_slash</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">posixpath</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">unquote</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+        <span class="n">words</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+        <span class="n">words</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">words</span><span class="p">)</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+            <span class="n">drive</span><span class="p">,</span> <span class="n">word</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitdrive</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+            <span class="n">head</span><span class="p">,</span> <span class="n">word</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">curdir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">):</span> <span class="k">continue</span>
+            <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">word</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">trailing_slash</span><span class="p">:</span>
+            <span class="n">path</span> <span class="o">+=</span> <span class="s1">&#39;/&#39;</span>
+        <span class="k">return</span> <span class="n">path</span></div>
+
+<div class="viewcode-block" id="SimpleHTTPRequestHandler.copyfile"><a class="viewcode-back" href="../misc/generated/generated/SimpleHTTPServer.SimpleHTTPRequestHandler.copyfile.html#SimpleHTTPServer.SimpleHTTPRequestHandler.copyfile">[docs]</a>    <span class="k">def</span> <span class="nf">copyfile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">outputfile</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Copy all data between two file objects.</span>
+
+<span class="sd">        The SOURCE argument is a file object open for reading</span>
+<span class="sd">        (or anything with a read() method) and the DESTINATION</span>
+<span class="sd">        argument is a file object open for writing (or</span>
+<span class="sd">        anything with a write() method).</span>
+
+<span class="sd">        The only reason for overriding this would be to change</span>
+<span class="sd">        the block size or perhaps to replace newlines by CRLF</span>
+<span class="sd">        -- note however that this the default server uses this</span>
+<span class="sd">        to copy binary data as well.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">shutil</span><span class="o">.</span><span class="n">copyfileobj</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">outputfile</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SimpleHTTPRequestHandler.guess_type"><a class="viewcode-back" href="../misc/generated/generated/SimpleHTTPServer.SimpleHTTPRequestHandler.guess_type.html#SimpleHTTPServer.SimpleHTTPRequestHandler.guess_type">[docs]</a>    <span class="k">def</span> <span class="nf">guess_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Guess the type of a file.</span>
+
+<span class="sd">        Argument is a PATH (a filename).</span>
+
+<span class="sd">        Return value is a string of the form type/subtype,</span>
+<span class="sd">        usable for a MIME Content-type header.</span>
+
+<span class="sd">        The default implementation looks the file&#39;s extension</span>
+<span class="sd">        up in the table self.extensions_map, using application/octet-stream</span>
+<span class="sd">        as a default; however it would be permissible (if</span>
+<span class="sd">        slow) to look inside the data to make a better guess.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">base</span><span class="p">,</span> <span class="n">ext</span> <span class="o">=</span> <span class="n">posixpath</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ext</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">extensions_map</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extensions_map</span><span class="p">[</span><span class="n">ext</span><span class="p">]</span>
+        <span class="n">ext</span> <span class="o">=</span> <span class="n">ext</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">ext</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">extensions_map</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extensions_map</span><span class="p">[</span><span class="n">ext</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extensions_map</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]</span></div>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">mimetypes</span><span class="o">.</span><span class="n">inited</span><span class="p">:</span>
+        <span class="n">mimetypes</span><span class="o">.</span><span class="n">init</span><span class="p">()</span> <span class="c1"># try to read system mime.types</span>
+    <span class="n">extensions_map</span> <span class="o">=</span> <span class="n">mimetypes</span><span class="o">.</span><span class="n">types_map</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">extensions_map</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+        <span class="s1">&#39;&#39;</span><span class="p">:</span> <span class="s1">&#39;application/octet-stream&#39;</span><span class="p">,</span> <span class="c1"># Default</span>
+        <span class="s1">&#39;.py&#39;</span><span class="p">:</span> <span class="s1">&#39;text/plain&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;.c&#39;</span><span class="p">:</span> <span class="s1">&#39;text/plain&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;.h&#39;</span><span class="p">:</span> <span class="s1">&#39;text/plain&#39;</span><span class="p">,</span>
+        <span class="p">})</span></div>
+
+
+<div class="viewcode-block" id="test"><a class="viewcode-back" href="../misc/generated/SimpleHTTPServer.test.html#SimpleHTTPServer.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">HandlerClass</span> <span class="o">=</span> <span class="n">SimpleHTTPRequestHandler</span><span class="p">,</span>
+         <span class="n">ServerClass</span> <span class="o">=</span> <span class="n">BaseHTTPServer</span><span class="o">.</span><span class="n">HTTPServer</span><span class="p">):</span>
+    <span class="n">BaseHTTPServer</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="n">HandlerClass</span><span class="p">,</span> <span class="n">ServerClass</span><span class="p">)</span></div>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">test</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

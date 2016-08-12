@@ -1,0 +1,39 @@
+pickle.DictionaryType
+=====================
+
+.. currentmodule:: pickle
+
+.. autoclass:: DictionaryType
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~DictionaryType.clear
+   ~DictionaryType.copy
+   ~DictionaryType.fromkeys
+   ~DictionaryType.get
+   ~DictionaryType.has_key
+   ~DictionaryType.items
+   ~DictionaryType.iteritems
+   ~DictionaryType.iterkeys
+   ~DictionaryType.itervalues
+   ~DictionaryType.keys
+   ~DictionaryType.pop
+   ~DictionaryType.popitem
+   ~DictionaryType.setdefault
+   ~DictionaryType.update
+   ~DictionaryType.values
+   ~DictionaryType.viewitems
+   ~DictionaryType.viewkeys
+   ~DictionaryType.viewvalues
+
+
+
+
+

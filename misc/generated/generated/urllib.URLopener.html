@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>urllib.URLopener &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../../index.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>urllib.URLopener</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/misc/generated/generated/urllib.URLopener.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="urllib-urlopener">
+<h1>urllib.URLopener<a class="headerlink" href="#urllib-urlopener" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="urllib.URLopener">
+<em class="property">class </em><code class="descclassname">urllib.</code><code class="descname">URLopener</code><span class="sig-paren">(</span><em>proxies=None</em>, <em>context=None</em>, <em>**x509</em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/urllib.html#URLopener"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#urllib.URLopener" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to open URLs.
+This is a class rather than just a subroutine because we may need
+more than one set of global protocol-specific options.
+Note &#8211; this is a base class for those who don&#8217;t want the
+automatic handling of errors type 302 (relocated) and 401
+(authorization needed).</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="urllib.URLopener.addheader.html#urllib.URLopener.addheader" title="urllib.URLopener.addheader"><code class="xref py py-obj docutils literal"><span class="pre">addheader</span></code></a>(*args)</td>
+<td>Add a header to be used by the HTTP interface only e.g.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.URLopener.cleanup.html#urllib.URLopener.cleanup" title="urllib.URLopener.cleanup"><code class="xref py py-obj docutils literal"><span class="pre">cleanup</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.URLopener.close.html#urllib.URLopener.close" title="urllib.URLopener.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.URLopener.http_error.html#urllib.URLopener.http_error" title="urllib.URLopener.http_error"><code class="xref py py-obj docutils literal"><span class="pre">http_error</span></code></a>(url,&nbsp;fp,&nbsp;errcode,&nbsp;errmsg,&nbsp;headers)</td>
+<td>Handle http errors.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.URLopener.http_error_default.html#urllib.URLopener.http_error_default" title="urllib.URLopener.http_error_default"><code class="xref py py-obj docutils literal"><span class="pre">http_error_default</span></code></a>(url,&nbsp;fp,&nbsp;errcode,&nbsp;errmsg,&nbsp;...)</td>
+<td>Default error handler: close the connection and raise IOError.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.URLopener.open.html#urllib.URLopener.open" title="urllib.URLopener.open"><code class="xref py py-obj docutils literal"><span class="pre">open</span></code></a>(fullurl[,&nbsp;data])</td>
+<td>Use URLopener().open(file) instead of open(file, &#8216;r&#8217;).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.URLopener.open_data.html#urllib.URLopener.open_data" title="urllib.URLopener.open_data"><code class="xref py py-obj docutils literal"><span class="pre">open_data</span></code></a>(url[,&nbsp;data])</td>
+<td>Use &#8220;data&#8221; URL.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.URLopener.open_file.html#urllib.URLopener.open_file" title="urllib.URLopener.open_file"><code class="xref py py-obj docutils literal"><span class="pre">open_file</span></code></a>(url)</td>
+<td>Use local file or FTP depending on form of URL.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.URLopener.open_ftp.html#urllib.URLopener.open_ftp" title="urllib.URLopener.open_ftp"><code class="xref py py-obj docutils literal"><span class="pre">open_ftp</span></code></a>(url)</td>
+<td>Use FTP protocol.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.URLopener.open_http.html#urllib.URLopener.open_http" title="urllib.URLopener.open_http"><code class="xref py py-obj docutils literal"><span class="pre">open_http</span></code></a>(url[,&nbsp;data])</td>
+<td>Use HTTP protocol.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.URLopener.open_https.html#urllib.URLopener.open_https" title="urllib.URLopener.open_https"><code class="xref py py-obj docutils literal"><span class="pre">open_https</span></code></a>(url[,&nbsp;data])</td>
+<td>Use HTTPS protocol.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.URLopener.open_local_file.html#urllib.URLopener.open_local_file" title="urllib.URLopener.open_local_file"><code class="xref py py-obj docutils literal"><span class="pre">open_local_file</span></code></a>(url)</td>
+<td>Use local file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.URLopener.open_unknown.html#urllib.URLopener.open_unknown" title="urllib.URLopener.open_unknown"><code class="xref py py-obj docutils literal"><span class="pre">open_unknown</span></code></a>(fullurl[,&nbsp;data])</td>
+<td>Overridable interface to open unknown URL type.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.URLopener.open_unknown_proxy.html#urllib.URLopener.open_unknown_proxy" title="urllib.URLopener.open_unknown_proxy"><code class="xref py py-obj docutils literal"><span class="pre">open_unknown_proxy</span></code></a>(proxy,&nbsp;fullurl[,&nbsp;data])</td>
+<td>Overridable interface to open unknown URL type.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.URLopener.retrieve.html#urllib.URLopener.retrieve" title="urllib.URLopener.retrieve"><code class="xref py py-obj docutils literal"><span class="pre">retrieve</span></code></a>(url[,&nbsp;filename,&nbsp;reporthook,&nbsp;data])</td>
+<td>retrieve(url) returns (filename, headers) for a local object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

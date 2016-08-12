@@ -1,0 +1,51 @@
+pickle.FileType
+===============
+
+.. currentmodule:: pickle
+
+.. autoclass:: FileType
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~FileType.close
+   ~FileType.fileno
+   ~FileType.flush
+   ~FileType.isatty
+   ~FileType.read
+   ~FileType.readinto
+   ~FileType.readline
+   ~FileType.readlines
+   ~FileType.seek
+   ~FileType.tell
+   ~FileType.truncate
+   ~FileType.write
+   ~FileType.writelines
+   ~FileType.xreadlines
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~FileType.closed
+   ~FileType.encoding
+   ~FileType.errors
+   ~FileType.mode
+   ~FileType.name
+   ~FileType.newlines
+   ~FileType.next
+   ~FileType.softspace
+

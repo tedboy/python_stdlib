@@ -1,0 +1,29 @@
+pickle.LambdaType
+=================
+
+.. currentmodule:: pickle
+
+.. autoclass:: LambdaType
+
+
+
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~LambdaType.func_closure
+   ~LambdaType.func_code
+   ~LambdaType.func_defaults
+   ~LambdaType.func_dict
+   ~LambdaType.func_doc
+   ~LambdaType.func_globals
+   ~LambdaType.func_name
+

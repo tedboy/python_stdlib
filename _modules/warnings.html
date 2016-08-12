@@ -1,0 +1,659 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>warnings &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>warnings</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for warnings</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Python part of the warnings subsystem.&quot;&quot;&quot;</span>
+
+<span class="c1"># Note: function level imports should *not* be used</span>
+<span class="c1"># in this module as it may cause import lock deadlock.</span>
+<span class="c1"># See bug 683658.</span>
+<span class="kn">import</span> <span class="nn">linecache</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">types</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;warn&quot;</span><span class="p">,</span> <span class="s2">&quot;warn_explicit&quot;</span><span class="p">,</span> <span class="s2">&quot;showwarning&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;formatwarning&quot;</span><span class="p">,</span> <span class="s2">&quot;filterwarnings&quot;</span><span class="p">,</span> <span class="s2">&quot;simplefilter&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;resetwarnings&quot;</span><span class="p">,</span> <span class="s2">&quot;catch_warnings&quot;</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">warnpy3k</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Issue a deprecation warning for Python 3.x related changes.</span>
+
+<span class="sd">    Warnings are omitted unless Python is started with the -3 option.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">py3kwarning</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">category</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">category</span> <span class="o">=</span> <span class="ne">DeprecationWarning</span>
+        <span class="n">warn</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">_show_warning</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Hook to write a warning to a file; replace if you like.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">file</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span>
+        <span class="k">if</span> <span class="n">file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># sys.stderr is None - warnings get lost</span>
+            <span class="k">return</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">formatwarning</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">line</span><span class="p">))</span>
+    <span class="k">except</span> <span class="p">(</span><span class="ne">IOError</span><span class="p">,</span> <span class="ne">UnicodeError</span><span class="p">):</span>
+        <span class="k">pass</span> <span class="c1"># the file (probably stderr) is invalid - this warning gets lost.</span>
+<span class="c1"># Keep a working version around in case the deprecation of the old API is</span>
+<span class="c1"># triggered.</span>
+<span class="n">showwarning</span> <span class="o">=</span> <span class="n">_show_warning</span>
+
+<span class="k">def</span> <span class="nf">formatwarning</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Function to format a warning the standard way.&quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">unicodetype</span> <span class="o">=</span> <span class="n">unicode</span>
+    <span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+        <span class="n">unicodetype</span> <span class="o">=</span> <span class="p">()</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">UnicodeEncodeError</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="n">s</span> <span class="o">=</span>  <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">lineno</span><span class="p">,</span> <span class="n">category</span><span class="o">.</span><span class="n">__name__</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">linecache</span><span class="o">.</span><span class="n">getline</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">)</span> <span class="k">if</span> <span class="n">line</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">line</span>
+    <span class="k">if</span> <span class="n">line</span><span class="p">:</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">unicodetype</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="n">unicode</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="s1">&#39;latin1&#39;</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;  </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">line</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">unicodetype</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">enc</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">getfilesystemencoding</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">enc</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">filename</span> <span class="o">=</span> <span class="n">unicode</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">enc</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">UnicodeDecodeError</span><span class="p">:</span>
+                <span class="k">pass</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">:</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">s</span>
+
+<div class="viewcode-block" id="filterwarnings"><a class="viewcode-back" href="../misc/generated/cgi.filterwarnings.html#cgi.filterwarnings">[docs]</a><span class="k">def</span> <span class="nf">filterwarnings</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">Warning</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                   <span class="n">append</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Insert an entry into the list of warnings filters (at the front).</span>
+
+<span class="sd">    &#39;action&#39; -- one of &quot;error&quot;, &quot;ignore&quot;, &quot;always&quot;, &quot;default&quot;, &quot;module&quot;,</span>
+<span class="sd">                or &quot;once&quot;</span>
+<span class="sd">    &#39;message&#39; -- a regex that the warning message must match</span>
+<span class="sd">    &#39;category&#39; -- a class that the warning must be a subclass of</span>
+<span class="sd">    &#39;module&#39; -- a regex that the module name must match</span>
+<span class="sd">    &#39;lineno&#39; -- an integer line number, 0 matches all warnings</span>
+<span class="sd">    &#39;append&#39; -- if true, append to the list of filters</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">re</span>
+    <span class="k">assert</span> <span class="n">action</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="s2">&quot;always&quot;</span><span class="p">,</span> <span class="s2">&quot;default&quot;</span><span class="p">,</span> <span class="s2">&quot;module&quot;</span><span class="p">,</span>
+                      <span class="s2">&quot;once&quot;</span><span class="p">),</span> <span class="s2">&quot;invalid action: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">action</span><span class="p">,)</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">basestring</span><span class="p">),</span> <span class="s2">&quot;message must be a string&quot;</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="p">(</span><span class="nb">type</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">ClassType</span><span class="p">)),</span> \
+           <span class="s2">&quot;category must be a class&quot;</span>
+    <span class="k">assert</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="ne">Warning</span><span class="p">),</span> <span class="s2">&quot;category must be a Warning subclass&quot;</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">basestring</span><span class="p">),</span> <span class="s2">&quot;module must be a string&quot;</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lineno</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">and</span> <span class="n">lineno</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">,</span> \
+           <span class="s2">&quot;lineno must be an int &gt;= 0&quot;</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="p">),</span> <span class="n">category</span><span class="p">,</span>
+            <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">module</span><span class="p">),</span> <span class="n">lineno</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">append</span><span class="p">:</span>
+        <span class="n">filters</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">filters</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span></div>
+
+<span class="k">def</span> <span class="nf">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">Warning</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Insert a simple entry into the list of warnings filters (at the front).</span>
+
+<span class="sd">    A simple filter matches all modules and messages.</span>
+<span class="sd">    &#39;action&#39; -- one of &quot;error&quot;, &quot;ignore&quot;, &quot;always&quot;, &quot;default&quot;, &quot;module&quot;,</span>
+<span class="sd">                or &quot;once&quot;</span>
+<span class="sd">    &#39;category&#39; -- a class that the warning must be a subclass of</span>
+<span class="sd">    &#39;lineno&#39; -- an integer line number, 0 matches all warnings</span>
+<span class="sd">    &#39;append&#39; -- if true, append to the list of filters</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">assert</span> <span class="n">action</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="s2">&quot;always&quot;</span><span class="p">,</span> <span class="s2">&quot;default&quot;</span><span class="p">,</span> <span class="s2">&quot;module&quot;</span><span class="p">,</span>
+                      <span class="s2">&quot;once&quot;</span><span class="p">),</span> <span class="s2">&quot;invalid action: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">action</span><span class="p">,)</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lineno</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">and</span> <span class="n">lineno</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">,</span> \
+           <span class="s2">&quot;lineno must be an int &gt;= 0&quot;</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">lineno</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">append</span><span class="p">:</span>
+        <span class="n">filters</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">filters</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">resetwarnings</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Clear the list of warning filters, so that no filters are active.&quot;&quot;&quot;</span>
+    <span class="n">filters</span><span class="p">[:]</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">class</span> <span class="nc">_OptionError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Exception used by option processing helpers.&quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+
+<span class="c1"># Helper to process -W options passed via sys.warnoptions</span>
+<span class="k">def</span> <span class="nf">_processoptions</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">_setoption</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">_OptionError</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="o">&gt;&gt;</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="s2">&quot;Invalid -W option ignored:&quot;</span><span class="p">,</span> <span class="n">msg</span>
+
+<span class="c1"># Helper for _processoptions()</span>
+<span class="k">def</span> <span class="nf">_setoption</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">re</span>
+    <span class="n">parts</span> <span class="o">=</span> <span class="n">arg</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">_OptionError</span><span class="p">(</span><span class="s2">&quot;too many fields (max 5): </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">arg</span><span class="p">,))</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="n">parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">action</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">module</span><span class="p">,</span> <span class="n">lineno</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                                                 <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">parts</span><span class="p">]</span>
+    <span class="n">action</span> <span class="o">=</span> <span class="n">_getaction</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+    <span class="n">category</span> <span class="o">=</span> <span class="n">_getcategory</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+    <span class="n">module</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">module</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">module</span><span class="p">:</span>
+        <span class="n">module</span> <span class="o">=</span> <span class="n">module</span> <span class="o">+</span> <span class="s1">&#39;$&#39;</span>
+    <span class="k">if</span> <span class="n">lineno</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">lineno</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lineno</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">lineno</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">OverflowError</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">_OptionError</span><span class="p">(</span><span class="s2">&quot;invalid lineno </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">lineno</span><span class="p">,))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">lineno</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">filterwarnings</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">module</span><span class="p">,</span> <span class="n">lineno</span><span class="p">)</span>
+
+<span class="c1"># Helper for _setoption()</span>
+<span class="k">def</span> <span class="nf">_getaction</span><span class="p">(</span><span class="n">action</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">action</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;default&quot;</span>
+    <span class="k">if</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;all&quot;</span><span class="p">:</span> <span class="k">return</span> <span class="s2">&quot;always&quot;</span> <span class="c1"># Alias</span>
+    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="s1">&#39;always&#39;</span><span class="p">,</span> <span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="s1">&#39;module&#39;</span><span class="p">,</span> <span class="s1">&#39;once&#39;</span><span class="p">,</span> <span class="s1">&#39;error&#39;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">action</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">a</span>
+    <span class="k">raise</span> <span class="n">_OptionError</span><span class="p">(</span><span class="s2">&quot;invalid action: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">action</span><span class="p">,))</span>
+
+<span class="c1"># Helper for _setoption()</span>
+<span class="k">def</span> <span class="nf">_getcategory</span><span class="p">(</span><span class="n">category</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">re</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">category</span><span class="p">:</span>
+        <span class="k">return</span> <span class="ne">Warning</span>
+    <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;^[a-zA-Z0-9_]+$&quot;</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">cat</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">_OptionError</span><span class="p">(</span><span class="s2">&quot;unknown warning category: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">category</span><span class="p">,))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">category</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+        <span class="n">module</span> <span class="o">=</span> <span class="n">category</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">klass</span> <span class="o">=</span> <span class="n">category</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">m</span> <span class="o">=</span> <span class="nb">__import__</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="p">[</span><span class="n">klass</span><span class="p">])</span>
+        <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">_OptionError</span><span class="p">(</span><span class="s2">&quot;invalid module name: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">module</span><span class="p">,))</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">cat</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">klass</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">_OptionError</span><span class="p">(</span><span class="s2">&quot;unknown warning category: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">category</span><span class="p">,))</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">cat</span><span class="p">,</span> <span class="ne">Warning</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="n">_OptionError</span><span class="p">(</span><span class="s2">&quot;invalid warning category: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">category</span><span class="p">,))</span>
+    <span class="k">return</span> <span class="n">cat</span>
+
+
+<span class="c1"># Code typically replaced by _warnings</span>
+<span class="k">def</span> <span class="nf">warn</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Issue a warning, or maybe ignore it or raise an exception.&quot;&quot;&quot;</span>
+    <span class="c1"># Check if message is already a Warning object</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="ne">Warning</span><span class="p">):</span>
+        <span class="n">category</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">__class__</span>
+    <span class="c1"># Check category argument</span>
+    <span class="k">if</span> <span class="n">category</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">category</span> <span class="o">=</span> <span class="ne">UserWarning</span>
+    <span class="k">assert</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="ne">Warning</span><span class="p">)</span>
+    <span class="c1"># Get context information</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">caller</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">_getframe</span><span class="p">(</span><span class="n">stacklevel</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="nb">globals</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">__dict__</span>
+        <span class="n">lineno</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">globals</span> <span class="o">=</span> <span class="n">caller</span><span class="o">.</span><span class="n">f_globals</span>
+        <span class="n">lineno</span> <span class="o">=</span> <span class="n">caller</span><span class="o">.</span><span class="n">f_lineno</span>
+    <span class="k">if</span> <span class="s1">&#39;__name__&#39;</span> <span class="ow">in</span> <span class="nb">globals</span><span class="p">:</span>
+        <span class="n">module</span> <span class="o">=</span> <span class="nb">globals</span><span class="p">[</span><span class="s1">&#39;__name__&#39;</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">module</span> <span class="o">=</span> <span class="s2">&quot;&lt;string&gt;&quot;</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="nb">globals</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;__file__&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">filename</span><span class="p">:</span>
+        <span class="n">fnl</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">fnl</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s2">&quot;.pyc&quot;</span><span class="p">,</span> <span class="s2">&quot;.pyo&quot;</span><span class="p">)):</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">filename</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">module</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">filename</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+                <span class="c1"># embedded interpreters don&#39;t have sys.argv, see bug #839151</span>
+                <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;__main__&#39;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">filename</span><span class="p">:</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">module</span>
+    <span class="n">registry</span> <span class="o">=</span> <span class="nb">globals</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s2">&quot;__warningregistry__&quot;</span><span class="p">,</span> <span class="p">{})</span>
+    <span class="n">warn_explicit</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">module</span><span class="p">,</span> <span class="n">registry</span><span class="p">,</span>
+                  <span class="nb">globals</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">warn_explicit</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span>
+                  <span class="n">module</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">registry</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">module_globals</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">lineno</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lineno</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">module</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">module</span> <span class="o">=</span> <span class="n">filename</span> <span class="ow">or</span> <span class="s2">&quot;&lt;unknown&gt;&quot;</span>
+        <span class="k">if</span> <span class="n">module</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;.py&quot;</span><span class="p">:</span>
+            <span class="n">module</span> <span class="o">=</span> <span class="n">module</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># XXX What about leading pathname?</span>
+    <span class="k">if</span> <span class="n">registry</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">registry</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="ne">Warning</span><span class="p">):</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+        <span class="n">category</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">__class__</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">message</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="n">category</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">lineno</span><span class="p">)</span>
+    <span class="c1"># Quick test for common case</span>
+    <span class="k">if</span> <span class="n">registry</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+        <span class="k">return</span>
+    <span class="c1"># Search the filters</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">filters</span><span class="p">:</span>
+        <span class="n">action</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">cat</span><span class="p">,</span> <span class="n">mod</span><span class="p">,</span> <span class="n">ln</span> <span class="o">=</span> <span class="n">item</span>
+        <span class="k">if</span> <span class="p">((</span><span class="n">msg</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">msg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">text</span><span class="p">))</span> <span class="ow">and</span>
+            <span class="nb">issubclass</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="n">cat</span><span class="p">)</span> <span class="ow">and</span>
+            <span class="p">(</span><span class="n">mod</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">mod</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">module</span><span class="p">))</span> <span class="ow">and</span>
+            <span class="p">(</span><span class="n">ln</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">lineno</span> <span class="o">==</span> <span class="n">ln</span><span class="p">)):</span>
+            <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="n">defaultaction</span>
+    <span class="c1"># Early exit actions</span>
+    <span class="k">if</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;ignore&quot;</span><span class="p">:</span>
+        <span class="n">registry</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">return</span>
+
+    <span class="c1"># Prime the linecache for formatting, in case the</span>
+    <span class="c1"># &quot;file&quot; is actually in a zipfile or something.</span>
+    <span class="n">linecache</span><span class="o">.</span><span class="n">getlines</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">module_globals</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;error&quot;</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">message</span>
+    <span class="c1"># Other actions</span>
+    <span class="k">if</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;once&quot;</span><span class="p">:</span>
+        <span class="n">registry</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">oncekey</span> <span class="o">=</span> <span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">category</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">onceregistry</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">oncekey</span><span class="p">):</span>
+            <span class="k">return</span>
+        <span class="n">onceregistry</span><span class="p">[</span><span class="n">oncekey</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;always&quot;</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">elif</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;module&quot;</span><span class="p">:</span>
+        <span class="n">registry</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">altkey</span> <span class="o">=</span> <span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">registry</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">altkey</span><span class="p">):</span>
+            <span class="k">return</span>
+        <span class="n">registry</span><span class="p">[</span><span class="n">altkey</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;default&quot;</span><span class="p">:</span>
+        <span class="n">registry</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># Unrecognized actions are errors</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span>
+              <span class="s2">&quot;Unrecognized action (</span><span class="si">%r</span><span class="s2">) in warnings.filters:</span><span class="se">\n</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span>
+              <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">item</span><span class="p">))</span>
+    <span class="c1"># Print message and context</span>
+    <span class="n">showwarning</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">WarningMessage</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="sd">&quot;&quot;&quot;Holds the result of a single showwarning() call.&quot;&quot;&quot;</span>
+
+    <span class="n">_WARNING_DETAILS</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;message&quot;</span><span class="p">,</span> <span class="s2">&quot;category&quot;</span><span class="p">,</span> <span class="s2">&quot;filename&quot;</span><span class="p">,</span> <span class="s2">&quot;lineno&quot;</span><span class="p">,</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;line&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="n">line</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">local_values</span> <span class="o">=</span> <span class="nb">locals</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">attr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_WARNING_DETAILS</span><span class="p">:</span>
+            <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">,</span> <span class="n">local_values</span><span class="p">[</span><span class="n">attr</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_category_name</span> <span class="o">=</span> <span class="n">category</span><span class="o">.</span><span class="n">__name__</span> <span class="k">if</span> <span class="n">category</span> <span class="k">else</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="s2">&quot;{message : </span><span class="si">%r</span><span class="s2">, category : </span><span class="si">%r</span><span class="s2">, filename : </span><span class="si">%r</span><span class="s2">, lineno : </span><span class="si">%s</span><span class="s2">, &quot;</span>
+                    <span class="s2">&quot;line : </span><span class="si">%r</span><span class="s2">}&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">message</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_category_name</span><span class="p">,</span>
+                                    <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">lineno</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">line</span><span class="p">))</span>
+
+
+<div class="viewcode-block" id="catch_warnings"><a class="viewcode-back" href="../misc/generated/generated/cgi.catch_warnings.html#cgi.catch_warnings">[docs]</a><span class="k">class</span> <span class="nc">catch_warnings</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="sd">&quot;&quot;&quot;A context manager that copies and restores the warnings filter upon</span>
+<span class="sd">    exiting the context.</span>
+
+<span class="sd">    The &#39;record&#39; argument specifies whether warnings should be captured by a</span>
+<span class="sd">    custom implementation of warnings.showwarning() and be appended to a list</span>
+<span class="sd">    returned by the context manager. Otherwise None is returned by the context</span>
+<span class="sd">    manager. The objects appended to the list are arguments whose attributes</span>
+<span class="sd">    mirror the arguments to showwarning().</span>
+
+<span class="sd">    The &#39;module&#39; argument is to specify an alternative module to the module</span>
+<span class="sd">    named &#39;warnings&#39; and imported under that name. This argument is only useful</span>
+<span class="sd">    when testing the warnings module itself.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="catch_warnings.__init__"><a class="viewcode-back" href="../misc/generated/generated/cgi.catch_warnings.__init__.html#cgi.catch_warnings.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Specify whether to record warnings and if an alternative module</span>
+<span class="sd">        should be used other than sys.modules[&#39;warnings&#39;].</span>
+
+<span class="sd">        For compatibility with Python 3.0, please consider all arguments to be</span>
+<span class="sd">        keyword-only.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_record</span> <span class="o">=</span> <span class="n">record</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_module</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="s1">&#39;warnings&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">module</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">module</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_entered</span> <span class="o">=</span> <span class="kc">False</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">args</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_record</span><span class="p">:</span>
+            <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;record=True&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_module</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="s1">&#39;warnings&#39;</span><span class="p">]:</span>
+            <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;module=</span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">_module</span><span class="p">)</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_entered</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Cannot enter </span><span class="si">%r</span><span class="s2"> twice&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_entered</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_filters</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_module</span><span class="o">.</span><span class="n">filters</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_module</span><span class="o">.</span><span class="n">filters</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_filters</span><span class="p">[:]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_showwarning</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_module</span><span class="o">.</span><span class="n">showwarning</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_record</span><span class="p">:</span>
+            <span class="n">log</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">def</span> <span class="nf">showwarning</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+                <span class="n">log</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">WarningMessage</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_module</span><span class="o">.</span><span class="n">showwarning</span> <span class="o">=</span> <span class="n">showwarning</span>
+            <span class="k">return</span> <span class="n">log</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">__exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">exc_info</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_entered</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Cannot exit </span><span class="si">%r</span><span class="s2"> without entering first&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_module</span><span class="o">.</span><span class="n">filters</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_filters</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_module</span><span class="o">.</span><span class="n">showwarning</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_showwarning</span></div>
+
+
+<span class="c1"># filters contains a sequence of filter 5-tuples</span>
+<span class="c1"># The components of the 5-tuple are:</span>
+<span class="c1"># - an action: error, ignore, always, default, module, or once</span>
+<span class="c1"># - a compiled regex that must match the warning message</span>
+<span class="c1"># - a class representing the warning category</span>
+<span class="c1"># - a compiled regex that must match the module that is being warned</span>
+<span class="c1"># - a line number for the line being warning, or 0 to mean any line</span>
+<span class="c1"># If either if the compiled regexs are None, match anything.</span>
+<span class="n">_warnings_defaults</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">_warnings</span> <span class="k">import</span> <span class="p">(</span><span class="n">filters</span><span class="p">,</span> <span class="n">default_action</span><span class="p">,</span> <span class="n">once_registry</span><span class="p">,</span>
+                            <span class="n">warn</span><span class="p">,</span> <span class="n">warn_explicit</span><span class="p">)</span>
+    <span class="n">defaultaction</span> <span class="o">=</span> <span class="n">default_action</span>
+    <span class="n">onceregistry</span> <span class="o">=</span> <span class="n">once_registry</span>
+    <span class="n">_warnings_defaults</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="n">filters</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">defaultaction</span> <span class="o">=</span> <span class="s2">&quot;default&quot;</span>
+    <span class="n">onceregistry</span> <span class="o">=</span> <span class="p">{}</span>
+
+
+<span class="c1"># Module initialization</span>
+<span class="n">_processoptions</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">warnoptions</span><span class="p">)</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">_warnings_defaults</span><span class="p">:</span>
+    <span class="n">silence</span> <span class="o">=</span> <span class="p">[</span><span class="ne">ImportWarning</span><span class="p">,</span> <span class="ne">PendingDeprecationWarning</span><span class="p">]</span>
+    <span class="c1"># Don&#39;t silence DeprecationWarning if -3 or -Q was used.</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">sys</span><span class="o">.</span><span class="n">py3kwarning</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">sys</span><span class="o">.</span><span class="n">flags</span><span class="o">.</span><span class="n">division_warning</span><span class="p">:</span>
+        <span class="n">silence</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="ne">DeprecationWarning</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">cls</span> <span class="ow">in</span> <span class="n">silence</span><span class="p">:</span>
+        <span class="n">simplefilter</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">cls</span><span class="p">)</span>
+    <span class="n">bytes_warning</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">flags</span><span class="o">.</span><span class="n">bytes_warning</span>
+    <span class="k">if</span> <span class="n">bytes_warning</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">bytes_action</span> <span class="o">=</span> <span class="s2">&quot;error&quot;</span>
+    <span class="k">elif</span> <span class="n">bytes_warning</span><span class="p">:</span>
+        <span class="n">bytes_action</span> <span class="o">=</span> <span class="s2">&quot;default&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">bytes_action</span> <span class="o">=</span> <span class="s2">&quot;ignore&quot;</span>
+    <span class="n">simplefilter</span><span class="p">(</span><span class="n">bytes_action</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">BytesWarning</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">del</span> <span class="n">_warnings_defaults</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

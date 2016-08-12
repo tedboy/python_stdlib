@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>doctest.DebugRunner &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../../index.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>doctest.DebugRunner</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/misc/generated/generated/doctest.DebugRunner.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="doctest-debugrunner">
+<h1>doctest.DebugRunner<a class="headerlink" href="#doctest-debugrunner" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="doctest.DebugRunner">
+<em class="property">class </em><code class="descclassname">doctest.</code><code class="descname">DebugRunner</code><span class="sig-paren">(</span><em>checker=None</em>, <em>verbose=None</em>, <em>optionflags=0</em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/doctest.html#DebugRunner"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#doctest.DebugRunner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run doc tests but raise an exception as soon as there is a failure.</p>
+<p>If an unexpected exception occurs, an UnexpectedException is raised.
+It contains the test, the example, and the original exception:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">runner</span> <span class="o">=</span> <span class="n">DebugRunner</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">test</span> <span class="o">=</span> <span class="n">DocTestParser</span><span class="p">()</span><span class="o">.</span><span class="n">get_doctest</span><span class="p">(</span><span class="s1">&#39;&gt;&gt;&gt; raise KeyError</span><span class="se">\n</span><span class="s1">42&#39;</span><span class="p">,</span>
+<span class="gp">... </span>                                   <span class="p">{},</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;foo.py&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">runner</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">except</span> <span class="n">UnexpectedException</span><span class="p">,</span> <span class="n">failure</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">failure</span><span class="o">.</span><span class="n">test</span> <span class="ow">is</span> <span class="n">test</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">failure</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">want</span>
+<span class="go">&#39;42\n&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">exc_info</span> <span class="o">=</span> <span class="n">failure</span><span class="o">.</span><span class="n">exc_info</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">raise</span> <span class="n">exc_info</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">exc_info</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">exc_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="c">...</span>
+<span class="gr">KeyError</span>
+</pre></div>
+</div>
+<p>We wrap the original exception to give the calling application
+access to the test and example information.</p>
+<p>If the output doesn&#8217;t match, then a DocTestFailure is raised:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">test</span> <span class="o">=</span> <span class="n">DocTestParser</span><span class="p">()</span><span class="o">.</span><span class="n">get_doctest</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="gp">... </span><span class="s1">     &gt;&gt;&gt; x = 1</span>
+<span class="gp">... </span><span class="s1">     &gt;&gt;&gt; x</span>
+<span class="gp">... </span><span class="s1">     2</span>
+<span class="gp">... </span><span class="s1">     &#39;&#39;&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;foo.py&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>   <span class="n">runner</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">except</span> <span class="n">DocTestFailure</span><span class="p">,</span> <span class="n">failure</span><span class="p">:</span>
+<span class="gp">... </span>   <span class="k">pass</span>
+</pre></div>
+</div>
+<p>DocTestFailure objects provide access to the test:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">failure</span><span class="o">.</span><span class="n">test</span> <span class="ow">is</span> <span class="n">test</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>As well as to the example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">failure</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">want</span>
+<span class="go">&#39;2\n&#39;</span>
+</pre></div>
+</div>
+<p>and the actual output:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">failure</span><span class="o">.</span><span class="n">got</span>
+<span class="go">&#39;1\n&#39;</span>
+</pre></div>
+</div>
+<p>If a failure or error occurs, the globals are left intact:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">del</span> <span class="n">test</span><span class="o">.</span><span class="n">globs</span><span class="p">[</span><span class="s1">&#39;__builtins__&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">test</span><span class="o">.</span><span class="n">globs</span>
+<span class="go">{&#39;x&#39;: 1}</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">test</span> <span class="o">=</span> <span class="n">DocTestParser</span><span class="p">()</span><span class="o">.</span><span class="n">get_doctest</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="gp">... </span><span class="s1">     &gt;&gt;&gt; x = 2</span>
+<span class="gp">... </span><span class="s1">     &gt;&gt;&gt; raise KeyError</span>
+<span class="gp">... </span><span class="s1">     &#39;&#39;&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;foo.py&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">runner</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="c">...</span>
+<span class="gr">UnexpectedException</span>: <span class="n">&lt;DocTest foo from foo.py:0 (2 examples)&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">del</span> <span class="n">test</span><span class="o">.</span><span class="n">globs</span><span class="p">[</span><span class="s1">&#39;__builtins__&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">test</span><span class="o">.</span><span class="n">globs</span>
+<span class="go">{&#39;x&#39;: 2}</span>
+</pre></div>
+</div>
+<p>But the globals are cleared if there is no error:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">test</span> <span class="o">=</span> <span class="n">DocTestParser</span><span class="p">()</span><span class="o">.</span><span class="n">get_doctest</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="gp">... </span><span class="s1">     &gt;&gt;&gt; x = 2</span>
+<span class="gp">... </span><span class="s1">     &#39;&#39;&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;foo.py&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">runner</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+<span class="go">TestResults(failed=0, attempted=1)</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">test</span><span class="o">.</span><span class="n">globs</span>
+<span class="go">{}</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DebugRunner.merge.html#doctest.DebugRunner.merge" title="doctest.DebugRunner.merge"><code class="xref py py-obj docutils literal"><span class="pre">merge</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.DebugRunner.report_failure.html#doctest.DebugRunner.report_failure" title="doctest.DebugRunner.report_failure"><code class="xref py py-obj docutils literal"><span class="pre">report_failure</span></code></a>(out,&nbsp;test,&nbsp;example,&nbsp;got)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DebugRunner.report_start.html#doctest.DebugRunner.report_start" title="doctest.DebugRunner.report_start"><code class="xref py py-obj docutils literal"><span class="pre">report_start</span></code></a>(out,&nbsp;test,&nbsp;example)</td>
+<td>Report that the test runner is about to process the given example.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.DebugRunner.report_success.html#doctest.DebugRunner.report_success" title="doctest.DebugRunner.report_success"><code class="xref py py-obj docutils literal"><span class="pre">report_success</span></code></a>(out,&nbsp;test,&nbsp;example,&nbsp;got)</td>
+<td>Report that the given example ran successfully.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DebugRunner.report_unexpected_exception.html#doctest.DebugRunner.report_unexpected_exception" title="doctest.DebugRunner.report_unexpected_exception"><code class="xref py py-obj docutils literal"><span class="pre">report_unexpected_exception</span></code></a>(out,&nbsp;test,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.DebugRunner.run.html#doctest.DebugRunner.run" title="doctest.DebugRunner.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>(test[,&nbsp;compileflags,&nbsp;out,&nbsp;clear_globs])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DebugRunner.summarize.html#doctest.DebugRunner.summarize" title="doctest.DebugRunner.summarize"><code class="xref py py-obj docutils literal"><span class="pre">summarize</span></code></a>([verbose])</td>
+<td>Print a summary of all the test cases that have been run by this DocTestRunner, and return a tuple <cite>(f, t)</cite>, where <cite>f</cite> is the total number of failed examples, and <cite>t</cite> is the total number of tried examples.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

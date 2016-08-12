@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>contextlib &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">1. Official page TOC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/index.html">2. misc package I may use in future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/string_services.html">2.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/textwrap.html">2.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/networks_internet.html">2.2. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/popen2.html">2.2.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/socket.html">2.2.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#functions">2.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#classes">2.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>contextlib</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for contextlib</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Utilities for with-statement contexts.  See PEP 343.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="k">import</span> <span class="n">wraps</span>
+<span class="kn">from</span> <span class="nn">warnings</span> <span class="k">import</span> <span class="n">warn</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;contextmanager&quot;</span><span class="p">,</span> <span class="s2">&quot;nested&quot;</span><span class="p">,</span> <span class="s2">&quot;closing&quot;</span><span class="p">]</span>
+
+<div class="viewcode-block" id="GeneratorContextManager"><a class="viewcode-back" href="../misc/generated/generated/contextlib.GeneratorContextManager.html#contextlib.GeneratorContextManager">[docs]</a><span class="k">class</span> <span class="nc">GeneratorContextManager</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Helper for @contextmanager decorator.&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="GeneratorContextManager.__init__"><a class="viewcode-back" href="../misc/generated/generated/contextlib.GeneratorContextManager.__init__.html#contextlib.GeneratorContextManager.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gen</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">gen</span> <span class="o">=</span> <span class="n">gen</span></div>
+
+    <span class="k">def</span> <span class="nf">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">gen</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;generator didn&#39;t yield&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">traceback</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">gen</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+            <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
+                <span class="k">return</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;generator didn&#39;t stop&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="c1"># Need to force instantiation so we can reliably</span>
+                <span class="c1"># tell if we get the same exception back</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="nb">type</span><span class="p">()</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">gen</span><span class="o">.</span><span class="n">throw</span><span class="p">(</span><span class="nb">type</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">traceback</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;generator didn&#39;t stop after throw()&quot;</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">,</span> <span class="n">exc</span><span class="p">:</span>
+                <span class="c1"># Suppress the exception *unless* it&#39;s the same exception that</span>
+                <span class="c1"># was passed to throw().  This prevents a StopIteration</span>
+                <span class="c1"># raised inside the &quot;with&quot; statement from being suppressed</span>
+                <span class="k">return</span> <span class="n">exc</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">value</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="c1"># only re-raise if it&#39;s *not* the exception that was</span>
+                <span class="c1"># passed to throw(), because __exit__() must not raise</span>
+                <span class="c1"># an exception unless __exit__() itself failed.  But throw()</span>
+                <span class="c1"># has to raise the exception to signal propagation, so this</span>
+                <span class="c1"># fixes the impedance mismatch between the throw() protocol</span>
+                <span class="c1"># and the __exit__() protocol.</span>
+                <span class="c1">#</span>
+                <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">value</span><span class="p">:</span>
+                    <span class="k">raise</span></div>
+
+
+<div class="viewcode-block" id="contextmanager"><a class="viewcode-back" href="../misc/generated/contextlib.contextmanager.html#contextlib.contextmanager">[docs]</a><span class="k">def</span> <span class="nf">contextmanager</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;@contextmanager decorator.</span>
+
+<span class="sd">    Typical usage:</span>
+
+<span class="sd">        @contextmanager</span>
+<span class="sd">        def some_generator(&lt;arguments&gt;):</span>
+<span class="sd">            &lt;setup&gt;</span>
+<span class="sd">            try:</span>
+<span class="sd">                yield &lt;value&gt;</span>
+<span class="sd">            finally:</span>
+<span class="sd">                &lt;cleanup&gt;</span>
+
+<span class="sd">    This makes this:</span>
+
+<span class="sd">        with some_generator(&lt;arguments&gt;) as &lt;variable&gt;:</span>
+<span class="sd">            &lt;body&gt;</span>
+
+<span class="sd">    equivalent to this:</span>
+
+<span class="sd">        &lt;setup&gt;</span>
+<span class="sd">        try:</span>
+<span class="sd">            &lt;variable&gt; = &lt;value&gt;</span>
+<span class="sd">            &lt;body&gt;</span>
+<span class="sd">        finally:</span>
+<span class="sd">            &lt;cleanup&gt;</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nd">@wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">helper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">GeneratorContextManager</span><span class="p">(</span><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">helper</span></div>
+
+
+<span class="nd">@contextmanager</span>
+<div class="viewcode-block" id="nested"><a class="viewcode-back" href="../misc/generated/contextlib.nested.html#contextlib.nested">[docs]</a><span class="k">def</span> <span class="nf">nested</span><span class="p">(</span><span class="o">*</span><span class="n">managers</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Combine multiple context managers into a single nested context manager.</span>
+
+<span class="sd">   This function has been deprecated in favour of the multiple manager form</span>
+<span class="sd">   of the with statement.</span>
+
+<span class="sd">   The one advantage of this function over the multiple manager form of the</span>
+<span class="sd">   with statement is that argument unpacking allows it to be</span>
+<span class="sd">   used with a variable number of context managers as follows:</span>
+
+<span class="sd">      with nested(*managers):</span>
+<span class="sd">          do_something()</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">warn</span><span class="p">(</span><span class="s2">&quot;With-statements now directly support multiple context managers&quot;</span><span class="p">,</span>
+         <span class="ne">DeprecationWarning</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="n">exits</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="nb">vars</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">exc</span> <span class="o">=</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">mgr</span> <span class="ow">in</span> <span class="n">managers</span><span class="p">:</span>
+            <span class="n">exit</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">__exit__</span>
+            <span class="n">enter</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">__enter__</span>
+            <span class="nb">vars</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">enter</span><span class="p">())</span>
+            <span class="n">exits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">exit</span><span class="p">)</span>
+        <span class="k">yield</span> <span class="nb">vars</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="n">exc</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="k">while</span> <span class="n">exits</span><span class="p">:</span>
+            <span class="n">exit</span> <span class="o">=</span> <span class="n">exits</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">exit</span><span class="p">(</span><span class="o">*</span><span class="n">exc</span><span class="p">):</span>
+                    <span class="n">exc</span> <span class="o">=</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="n">exc</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">exc</span> <span class="o">!=</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
+            <span class="c1"># Don&#39;t rely on sys.exc_info() still containing</span>
+            <span class="c1"># the right information. Another exception may</span>
+            <span class="c1"># have been raised and caught by an exit method</span>
+            <span class="k">raise</span> <span class="n">exc</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">exc</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">exc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="closing"><a class="viewcode-back" href="../misc/generated/generated/contextlib.closing.html#contextlib.closing">[docs]</a><span class="k">class</span> <span class="nc">closing</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Context to automatically close something at the end of a block.</span>
+
+<span class="sd">    Code like this:</span>
+
+<span class="sd">        with closing(&lt;module&gt;.open(&lt;arguments&gt;)) as f:</span>
+<span class="sd">            &lt;block&gt;</span>
+
+<span class="sd">    is equivalent to this:</span>
+
+<span class="sd">        f = &lt;module&gt;.open(&lt;arguments&gt;)</span>
+<span class="sd">        try:</span>
+<span class="sd">            &lt;block&gt;</span>
+<span class="sd">        finally:</span>
+<span class="sd">            f.close()</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+<div class="viewcode-block" id="closing.__init__"><a class="viewcode-back" href="../misc/generated/generated/contextlib.closing.__init__.html#contextlib.closing.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">thing</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">thing</span> <span class="o">=</span> <span class="n">thing</span></div>
+    <span class="k">def</span> <span class="nf">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">thing</span>
+    <span class="k">def</span> <span class="nf">__exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">exc_info</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">thing</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

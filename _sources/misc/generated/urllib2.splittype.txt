@@ -1,0 +1,6 @@
+urllib2.splittype
+=================
+
+.. currentmodule:: urllib2
+
+.. autofunction:: splittype
