@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.3.10.2.1. urllib.FancyURLopener &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="3.3.10. urllib" href="../urllib.html"/>
+        <link rel="next" title="3.3.10.2.1.1. urllib.FancyURLopener.addheader" href="urllib.FancyURLopener.addheader.html"/>
+        <link rel="prev" title="3.3.10.1.33. urllib.urlretrieve" href="../urllib.urlretrieve.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../popen2.html">3.3.1. popen2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../socket.html">3.3.2. socket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../email.html">3.3.3. email</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../json.html">3.3.4. json</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../HTMLParser.html">3.3.5. HTMLParser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../xml.dom.html">3.3.6. xml.dom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../webbrowser.html">3.3.7. webbrowser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cgi.html">3.3.8. cgi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wsgiref.html">3.3.9. wsgiref</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../urllib.html">3.3.10. urllib</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../urllib.html#functions">3.3.10.1. Functions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../urllib.html#classes">3.3.10.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../urllib.html#exceptions">3.3.10.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../urllib2.html">3.3.11. urllib2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../urlparse.html">3.3.12. urlparse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../SimpleHTTPServer.html">3.3.13. SimpleHTTPServer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+          <li><a href="../urllib.html">3.3.10. urllib</a> &raquo;</li>
+        
+      <li>3.3.10.2.1. urllib.FancyURLopener</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/urllib.FancyURLopener.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="urllib-fancyurlopener">
+<h1>3.3.10.2.1. urllib.FancyURLopener<a class="headerlink" href="#urllib-fancyurlopener" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="urllib.FancyURLopener.__init__.html#urllib.FancyURLopener.__init__" title="urllib.FancyURLopener.__init__"><code class="xref py py-func docutils literal"><span class="pre">FancyURLopener.__init__()</span></code></a></p>
+<dl class="class">
+<dt id="urllib.FancyURLopener">
+<em class="property">class </em><code class="descclassname">urllib.</code><code class="descname">FancyURLopener</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/urllib.html#FancyURLopener"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#urllib.FancyURLopener" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived class with handlers for errors we can handle (perhaps).</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.addheader.html#urllib.FancyURLopener.addheader" title="urllib.FancyURLopener.addheader"><code class="xref py py-obj docutils literal"><span class="pre">addheader</span></code></a>(*args)</td>
+<td>Add a header to be used by the HTTP interface only e.g.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.cleanup.html#urllib.FancyURLopener.cleanup" title="urllib.FancyURLopener.cleanup"><code class="xref py py-obj docutils literal"><span class="pre">cleanup</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.close.html#urllib.FancyURLopener.close" title="urllib.FancyURLopener.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.get_user_passwd.html#urllib.FancyURLopener.get_user_passwd" title="urllib.FancyURLopener.get_user_passwd"><code class="xref py py-obj docutils literal"><span class="pre">get_user_passwd</span></code></a>(host,&nbsp;realm[,&nbsp;clear_cache])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.http_error.html#urllib.FancyURLopener.http_error" title="urllib.FancyURLopener.http_error"><code class="xref py py-obj docutils literal"><span class="pre">http_error</span></code></a>(url,&nbsp;fp,&nbsp;errcode,&nbsp;errmsg,&nbsp;headers)</td>
+<td>Handle http errors.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.http_error_301.html#urllib.FancyURLopener.http_error_301" title="urllib.FancyURLopener.http_error_301"><code class="xref py py-obj docutils literal"><span class="pre">http_error_301</span></code></a>(url,&nbsp;fp,&nbsp;errcode,&nbsp;errmsg,&nbsp;headers)</td>
+<td>Error 301 &#8211; also relocated (permanently).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.http_error_302.html#urllib.FancyURLopener.http_error_302" title="urllib.FancyURLopener.http_error_302"><code class="xref py py-obj docutils literal"><span class="pre">http_error_302</span></code></a>(url,&nbsp;fp,&nbsp;errcode,&nbsp;errmsg,&nbsp;headers)</td>
+<td>Error 302 &#8211; relocated (temporarily).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.http_error_303.html#urllib.FancyURLopener.http_error_303" title="urllib.FancyURLopener.http_error_303"><code class="xref py py-obj docutils literal"><span class="pre">http_error_303</span></code></a>(url,&nbsp;fp,&nbsp;errcode,&nbsp;errmsg,&nbsp;headers)</td>
+<td>Error 303 &#8211; also relocated (essentially identical to 302).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.http_error_307.html#urllib.FancyURLopener.http_error_307" title="urllib.FancyURLopener.http_error_307"><code class="xref py py-obj docutils literal"><span class="pre">http_error_307</span></code></a>(url,&nbsp;fp,&nbsp;errcode,&nbsp;errmsg,&nbsp;headers)</td>
+<td>Error 307 &#8211; relocated, but turn POST into error.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.http_error_401.html#urllib.FancyURLopener.http_error_401" title="urllib.FancyURLopener.http_error_401"><code class="xref py py-obj docutils literal"><span class="pre">http_error_401</span></code></a>(url,&nbsp;fp,&nbsp;errcode,&nbsp;errmsg,&nbsp;headers)</td>
+<td>Error 401 &#8211; authentication required.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.http_error_407.html#urllib.FancyURLopener.http_error_407" title="urllib.FancyURLopener.http_error_407"><code class="xref py py-obj docutils literal"><span class="pre">http_error_407</span></code></a>(url,&nbsp;fp,&nbsp;errcode,&nbsp;errmsg,&nbsp;headers)</td>
+<td>Error 407 &#8211; proxy authentication required.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.http_error_default.html#urllib.FancyURLopener.http_error_default" title="urllib.FancyURLopener.http_error_default"><code class="xref py py-obj docutils literal"><span class="pre">http_error_default</span></code></a>(url,&nbsp;fp,&nbsp;errcode,&nbsp;errmsg,&nbsp;...)</td>
+<td>Default error handling &#8211; don&#8217;t raise an exception.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.open.html#urllib.FancyURLopener.open" title="urllib.FancyURLopener.open"><code class="xref py py-obj docutils literal"><span class="pre">open</span></code></a>(fullurl[,&nbsp;data])</td>
+<td>Use URLopener().open(file) instead of open(file, &#8216;r&#8217;).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.open_data.html#urllib.FancyURLopener.open_data" title="urllib.FancyURLopener.open_data"><code class="xref py py-obj docutils literal"><span class="pre">open_data</span></code></a>(url[,&nbsp;data])</td>
+<td>Use &#8220;data&#8221; URL.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.open_file.html#urllib.FancyURLopener.open_file" title="urllib.FancyURLopener.open_file"><code class="xref py py-obj docutils literal"><span class="pre">open_file</span></code></a>(url)</td>
+<td>Use local file or FTP depending on form of URL.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.open_ftp.html#urllib.FancyURLopener.open_ftp" title="urllib.FancyURLopener.open_ftp"><code class="xref py py-obj docutils literal"><span class="pre">open_ftp</span></code></a>(url)</td>
+<td>Use FTP protocol.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.open_http.html#urllib.FancyURLopener.open_http" title="urllib.FancyURLopener.open_http"><code class="xref py py-obj docutils literal"><span class="pre">open_http</span></code></a>(url[,&nbsp;data])</td>
+<td>Use HTTP protocol.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.open_https.html#urllib.FancyURLopener.open_https" title="urllib.FancyURLopener.open_https"><code class="xref py py-obj docutils literal"><span class="pre">open_https</span></code></a>(url[,&nbsp;data])</td>
+<td>Use HTTPS protocol.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.open_local_file.html#urllib.FancyURLopener.open_local_file" title="urllib.FancyURLopener.open_local_file"><code class="xref py py-obj docutils literal"><span class="pre">open_local_file</span></code></a>(url)</td>
+<td>Use local file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.open_unknown.html#urllib.FancyURLopener.open_unknown" title="urllib.FancyURLopener.open_unknown"><code class="xref py py-obj docutils literal"><span class="pre">open_unknown</span></code></a>(fullurl[,&nbsp;data])</td>
+<td>Overridable interface to open unknown URL type.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.open_unknown_proxy.html#urllib.FancyURLopener.open_unknown_proxy" title="urllib.FancyURLopener.open_unknown_proxy"><code class="xref py py-obj docutils literal"><span class="pre">open_unknown_proxy</span></code></a>(proxy,&nbsp;fullurl[,&nbsp;data])</td>
+<td>Overridable interface to open unknown URL type.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.prompt_user_passwd.html#urllib.FancyURLopener.prompt_user_passwd" title="urllib.FancyURLopener.prompt_user_passwd"><code class="xref py py-obj docutils literal"><span class="pre">prompt_user_passwd</span></code></a>(host,&nbsp;realm)</td>
+<td>Override this in a GUI environment!</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.redirect_internal.html#urllib.FancyURLopener.redirect_internal" title="urllib.FancyURLopener.redirect_internal"><code class="xref py py-obj docutils literal"><span class="pre">redirect_internal</span></code></a>(url,&nbsp;fp,&nbsp;errcode,&nbsp;errmsg,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.retrieve.html#urllib.FancyURLopener.retrieve" title="urllib.FancyURLopener.retrieve"><code class="xref py py-obj docutils literal"><span class="pre">retrieve</span></code></a>(url[,&nbsp;filename,&nbsp;reporthook,&nbsp;data])</td>
+<td>retrieve(url) returns (filename, headers) for a local object</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.retry_http_basic_auth.html#urllib.FancyURLopener.retry_http_basic_auth" title="urllib.FancyURLopener.retry_http_basic_auth"><code class="xref py py-obj docutils literal"><span class="pre">retry_http_basic_auth</span></code></a>(url,&nbsp;realm[,&nbsp;data])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.retry_https_basic_auth.html#urllib.FancyURLopener.retry_https_basic_auth" title="urllib.FancyURLopener.retry_https_basic_auth"><code class="xref py py-obj docutils literal"><span class="pre">retry_https_basic_auth</span></code></a>(url,&nbsp;realm[,&nbsp;data])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib.FancyURLopener.retry_proxy_http_basic_auth.html#urllib.FancyURLopener.retry_proxy_http_basic_auth" title="urllib.FancyURLopener.retry_proxy_http_basic_auth"><code class="xref py py-obj docutils literal"><span class="pre">retry_proxy_http_basic_auth</span></code></a>(url,&nbsp;realm[,&nbsp;data])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib.FancyURLopener.retry_proxy_https_basic_auth.html#urllib.FancyURLopener.retry_proxy_https_basic_auth" title="urllib.FancyURLopener.retry_proxy_https_basic_auth"><code class="xref py py-obj docutils literal"><span class="pre">retry_proxy_https_basic_auth</span></code></a>(url,&nbsp;realm[,&nbsp;data])</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="urllib.FancyURLopener.addheader.html" class="btn btn-neutral float-right" title="3.3.10.2.1.1. urllib.FancyURLopener.addheader" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../urllib.urlretrieve.html" class="btn btn-neutral" title="3.3.10.1.33. urllib.urlretrieve" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

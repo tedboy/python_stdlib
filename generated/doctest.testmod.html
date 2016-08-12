@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.4.2.1.13. doctest.testmod &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="3.4.2. doctest" href="doctest.html"/>
+        <link rel="next" title="3.4.2.1.14. doctest.testsource" href="doctest.testsource.html"/>
+        <link rel="prev" title="3.4.2.1.12. doctest.testfile" href="doctest.testfile.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pydoc.html">3.4.1. pydoc</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="doctest.html">3.4.2. doctest</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="doctest.html#functions">3.4.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="doctest.html#classes">3.4.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="doctest.html#exceptions">3.4.2.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unittest.html">3.4.3. unittest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trace.html">3.4.4. trace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="distutils.html">3.4.5. distutils</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+          <li><a href="doctest.html">3.4.2. doctest</a> &raquo;</li>
+        
+      <li>3.4.2.1.13. doctest.testmod</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/doctest.testmod.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="doctest-testmod">
+<h1>3.4.2.1.13. doctest.testmod<a class="headerlink" href="#doctest-testmod" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="doctest.testmod">
+<code class="descclassname">doctest.</code><code class="descname">testmod</code><span class="sig-paren">(</span><em>m=None</em>, <em>name=None</em>, <em>globs=None</em>, <em>verbose=None</em>, <em>report=True</em>, <em>optionflags=0</em>, <em>extraglobs=None</em>, <em>raise_on_error=False</em>, <em>exclude_empty=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doctest.html#testmod"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#doctest.testmod" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>m=None, name=None, globs=None, verbose=None, report=True,</dt>
+<dd>optionflags=0, extraglobs=None, raise_on_error=False,
+exclude_empty=False</dd>
+</dl>
+<p>Test examples in docstrings in functions and classes reachable
+from module m (or the current module if m is not supplied), starting
+with m.__doc__.</p>
+<p>Also test examples reachable from dict m.__test__ if it exists and is
+not None.  m.__test__ maps names to functions, classes and strings;
+function and class docstrings are tested even if the name is private;
+strings are tested directly, as if they were docstrings.</p>
+<p>Return (#failures, #tests).</p>
+<p>See help(doctest) for an overview.</p>
+<p>Optional keyword arg &#8220;name&#8221; gives the name of the module; by default
+use m.__name__.</p>
+<p>Optional keyword arg &#8220;globs&#8221; gives a dict to be used as the globals
+when executing examples; by default, use m.__dict__.  A copy of this
+dict is actually used for each docstring, so that each docstring&#8217;s
+examples start with a clean slate.</p>
+<p>Optional keyword arg &#8220;extraglobs&#8221; gives a dictionary that should be
+merged into the globals that are used to execute examples.  By
+default, no extra globals are used.  This is new in 2.4.</p>
+<p>Optional keyword arg &#8220;verbose&#8221; prints lots of stuff if true, prints
+only failures if false; by default, it&#8217;s true iff &#8220;-v&#8221; is in sys.argv.</p>
+<p>Optional keyword arg &#8220;report&#8221; prints a summary at the end when true,
+else prints nothing at the end.  In verbose mode, the summary is
+detailed, else very brief (in fact, empty if all tests passed).</p>
+<p>Optional keyword arg &#8220;optionflags&#8221; or&#8217;s together module constants,
+and defaults to 0.  This is new in 2.3.  Possible values (see the
+docs for details):</p>
+<blockquote>
+<div>DONT_ACCEPT_TRUE_FOR_1
+DONT_ACCEPT_BLANKLINE
+NORMALIZE_WHITESPACE
+ELLIPSIS
+SKIP
+IGNORE_EXCEPTION_DETAIL
+REPORT_UDIFF
+REPORT_CDIFF
+REPORT_NDIFF
+REPORT_ONLY_FIRST_FAILURE</div></blockquote>
+<p>Optional keyword arg &#8220;raise_on_error&#8221; raises an exception on the
+first unexpected exception or failure. This allows failures to be
+post-mortem debugged.</p>
+<p>Advanced tomfoolery:  testmod runs methods of a local instance of
+class doctest.Tester, then merges the results into (or creates)
+global Tester instance doctest.master.  Methods of doctest.master
+can be called directly too, if you want to do something unusual.
+Passing report=0 to testmod is especially useful then, to delay
+displaying a summary.  Invoke doctest.master.summarize(verbose)
+when you&#8217;re done fiddling.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="doctest.testsource.html" class="btn btn-neutral float-right" title="3.4.2.1.14. doctest.testsource" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="doctest.testfile.html" class="btn btn-neutral" title="3.4.2.1.12. doctest.testfile" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

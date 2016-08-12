@@ -1,0 +1,6 @@
+cgi.valid_boundary
+==================
+
+.. currentmodule:: cgi
+
+.. autofunction:: valid_boundary

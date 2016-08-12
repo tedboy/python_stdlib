@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.2.9.2.2.17. tarfile.TarFile.makedev &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="3.2.9.2.2. tarfile.TarFile" href="tarfile.TarFile.html"/>
+        <link rel="next" title="3.2.9.2.2.18. tarfile.TarFile.makedir" href="tarfile.TarFile.makedir.html"/>
+        <link rel="prev" title="3.2.9.2.2.16. tarfile.TarFile.list" href="tarfile.TarFile.list.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pickle.html">3.2.2. pickle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cPickle.html">3.2.3. cPickle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../csv.html">3.2.4. csv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../zlib.html">3.2.5. zlib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gzip.html">3.2.6. gzip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../bz2.html">3.2.7. bz2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../zipfile.html">3.2.8. zipfile</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../tarfile.html">3.2.9. tarfile</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../tarfile.html#functions">3.2.9.1. Functions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../tarfile.html#classes">3.2.9.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tarfile.html#exceptions">3.2.9.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+          <li><a href="../tarfile.html">3.2.9. tarfile</a> &raquo;</li>
+        
+          <li><a href="tarfile.TarFile.html">3.2.9.2.2. tarfile.TarFile</a> &raquo;</li>
+        
+      <li>3.2.9.2.2.17. tarfile.TarFile.makedev</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/tarfile.TarFile.makedev.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tarfile-tarfile-makedev">
+<h1>3.2.9.2.2.17. tarfile.TarFile.makedev<a class="headerlink" href="#tarfile-tarfile-makedev" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="tarfile.TarFile.makedev">
+<code class="descclassname">TarFile.</code><code class="descname">makedev</code><span class="sig-paren">(</span><em>tarinfo</em>, <em>targetpath</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/tarfile.html#TarFile.makedev"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tarfile.TarFile.makedev" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make a character or block device called targetpath.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tarfile.TarFile.makedir.html" class="btn btn-neutral float-right" title="3.2.9.2.2.18. tarfile.TarFile.makedir" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tarfile.TarFile.list.html" class="btn btn-neutral" title="3.2.9.2.2.16. tarfile.TarFile.list" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

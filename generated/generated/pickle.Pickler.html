@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.2.2.2.29. pickle.Pickler &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="3.2.2. pickle" href="../pickle.html"/>
+        <link rel="next" title="3.2.2.2.29.1. pickle.Pickler.clear_memo" href="pickle.Pickler.clear_memo.html"/>
+        <link rel="prev" title="3.2.2.2.28. pickle.ObjectType" href="pickle.ObjectType.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../pickle.html">3.2.2. pickle</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../pickle.html#functions">3.2.2.1. Functions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../pickle.html#classes">3.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pickle.html#exceptions">3.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cPickle.html">3.2.3. cPickle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../csv.html">3.2.4. csv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../zlib.html">3.2.5. zlib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gzip.html">3.2.6. gzip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../bz2.html">3.2.7. bz2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../zipfile.html">3.2.8. zipfile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tarfile.html">3.2.9. tarfile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+          <li><a href="../pickle.html">3.2.2. pickle</a> &raquo;</li>
+        
+      <li>3.2.2.2.29. pickle.Pickler</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/pickle.Pickler.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pickle-pickler">
+<h1>3.2.2.2.29. pickle.Pickler<a class="headerlink" href="#pickle-pickler" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="pickle.Pickler.__init__.html#pickle.Pickler.__init__" title="pickle.Pickler.__init__"><code class="xref py py-func docutils literal"><span class="pre">Pickler.__init__()</span></code></a></p>
+<dl class="class">
+<dt id="pickle.Pickler">
+<em class="property">class </em><code class="descclassname">pickle.</code><code class="descname">Pickler</code><span class="sig-paren">(</span><em>file</em>, <em>protocol=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pickle.html#Pickler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pickle.Pickler" title="Permalink to this definition">¶</a></dt>
+<dd><p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="pickle.Pickler.clear_memo.html#pickle.Pickler.clear_memo" title="pickle.Pickler.clear_memo"><code class="xref py py-obj docutils literal"><span class="pre">clear_memo</span></code></a>()</td>
+<td>Clears the pickler&#8217;s &#8220;memo&#8221;.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.Pickler.dump.html#pickle.Pickler.dump" title="pickle.Pickler.dump"><code class="xref py py-obj docutils literal"><span class="pre">dump</span></code></a>(obj)</td>
+<td>Write a pickled representation of obj to the open file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.Pickler.get.html#pickle.Pickler.get" title="pickle.Pickler.get"><code class="xref py py-obj docutils literal"><span class="pre">get</span></code></a>(i[,&nbsp;pack])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.Pickler.memoize.html#pickle.Pickler.memoize" title="pickle.Pickler.memoize"><code class="xref py py-obj docutils literal"><span class="pre">memoize</span></code></a>(obj)</td>
+<td>Store an object in the memo.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.Pickler.persistent_id.html#pickle.Pickler.persistent_id" title="pickle.Pickler.persistent_id"><code class="xref py py-obj docutils literal"><span class="pre">persistent_id</span></code></a>(obj)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.Pickler.put.html#pickle.Pickler.put" title="pickle.Pickler.put"><code class="xref py py-obj docutils literal"><span class="pre">put</span></code></a>(i[,&nbsp;pack])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.Pickler.save.html#pickle.Pickler.save" title="pickle.Pickler.save"><code class="xref py py-obj docutils literal"><span class="pre">save</span></code></a>(obj)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.Pickler.save_bool.html#pickle.Pickler.save_bool" title="pickle.Pickler.save_bool"><code class="xref py py-obj docutils literal"><span class="pre">save_bool</span></code></a>(obj)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.Pickler.save_dict.html#pickle.Pickler.save_dict" title="pickle.Pickler.save_dict"><code class="xref py py-obj docutils literal"><span class="pre">save_dict</span></code></a>(obj)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.Pickler.save_empty_tuple.html#pickle.Pickler.save_empty_tuple" title="pickle.Pickler.save_empty_tuple"><code class="xref py py-obj docutils literal"><span class="pre">save_empty_tuple</span></code></a>(obj)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.Pickler.save_float.html#pickle.Pickler.save_float" title="pickle.Pickler.save_float"><code class="xref py py-obj docutils literal"><span class="pre">save_float</span></code></a>(obj[,&nbsp;pack])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.Pickler.save_global.html#pickle.Pickler.save_global" title="pickle.Pickler.save_global"><code class="xref py py-obj docutils literal"><span class="pre">save_global</span></code></a>(obj[,&nbsp;name,&nbsp;pack])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.Pickler.save_inst.html#pickle.Pickler.save_inst" title="pickle.Pickler.save_inst"><code class="xref py py-obj docutils literal"><span class="pre">save_inst</span></code></a>(obj)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.Pickler.save_int.html#pickle.Pickler.save_int" title="pickle.Pickler.save_int"><code class="xref py py-obj docutils literal"><span class="pre">save_int</span></code></a>(obj[,&nbsp;pack])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.Pickler.save_list.html#pickle.Pickler.save_list" title="pickle.Pickler.save_list"><code class="xref py py-obj docutils literal"><span class="pre">save_list</span></code></a>(obj)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.Pickler.save_long.html#pickle.Pickler.save_long" title="pickle.Pickler.save_long"><code class="xref py py-obj docutils literal"><span class="pre">save_long</span></code></a>(obj[,&nbsp;pack])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.Pickler.save_none.html#pickle.Pickler.save_none" title="pickle.Pickler.save_none"><code class="xref py py-obj docutils literal"><span class="pre">save_none</span></code></a>(obj)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.Pickler.save_pers.html#pickle.Pickler.save_pers" title="pickle.Pickler.save_pers"><code class="xref py py-obj docutils literal"><span class="pre">save_pers</span></code></a>(pid)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.Pickler.save_reduce.html#pickle.Pickler.save_reduce" title="pickle.Pickler.save_reduce"><code class="xref py py-obj docutils literal"><span class="pre">save_reduce</span></code></a>(func,&nbsp;args[,&nbsp;state,&nbsp;listitems,&nbsp;...])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.Pickler.save_string.html#pickle.Pickler.save_string" title="pickle.Pickler.save_string"><code class="xref py py-obj docutils literal"><span class="pre">save_string</span></code></a>(obj[,&nbsp;pack])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.Pickler.save_tuple.html#pickle.Pickler.save_tuple" title="pickle.Pickler.save_tuple"><code class="xref py py-obj docutils literal"><span class="pre">save_tuple</span></code></a>(obj)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.Pickler.save_unicode.html#pickle.Pickler.save_unicode" title="pickle.Pickler.save_unicode"><code class="xref py py-obj docutils literal"><span class="pre">save_unicode</span></code></a>(obj[,&nbsp;pack])</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pickle.Pickler.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>file</em>, <em>protocol=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pickle.html#Pickler.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pickle.Pickler.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>This takes a file-like object for writing a pickle data stream.</p>
+<p>The optional protocol argument tells the pickler to use the
+given protocol; supported protocols are 0, 1, 2.  The default
+protocol is 0, to be backwards compatible.  (Protocol 0 is the
+only protocol that can be written to a file opened in text
+mode and read back successfully.  When using a protocol higher
+than 0, make sure the file is opened in binary mode, both when
+pickling and unpickling.)</p>
+<p>Protocol 1 is more efficient than protocol 0; protocol 2 is
+more efficient than protocol 1.</p>
+<p>Specifying a negative protocol version selects the highest
+protocol version supported.  The higher the protocol used, the
+more recent the version of Python needed to read the pickle
+produced.</p>
+<p>The file parameter must have a write() method that accepts a single
+string argument.  It can thus be an open file object, a StringIO
+object, or any other custom object that meets this interface.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pickle.Pickler.clear_memo.html" class="btn btn-neutral float-right" title="3.2.2.2.29.1. pickle.Pickler.clear_memo" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pickle.ObjectType.html" class="btn btn-neutral" title="3.2.2.2.28. pickle.ObjectType" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

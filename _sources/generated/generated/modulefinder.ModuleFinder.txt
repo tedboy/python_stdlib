@@ -1,0 +1,45 @@
+modulefinder.ModuleFinder
+=========================
+
+.. currentmodule:: modulefinder
+
+:func:`ModuleFinder.__init__`
+
+.. autoclass:: ModuleFinder
+    :members: __init__
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~ModuleFinder.__init__
+   ~ModuleFinder.add_module
+   ~ModuleFinder.any_missing
+   ~ModuleFinder.any_missing_maybe
+   ~ModuleFinder.determine_parent
+   ~ModuleFinder.ensure_fromlist
+   ~ModuleFinder.find_all_submodules
+   ~ModuleFinder.find_head_package
+   ~ModuleFinder.find_module
+   ~ModuleFinder.import_hook
+   ~ModuleFinder.import_module
+   ~ModuleFinder.load_file
+   ~ModuleFinder.load_module
+   ~ModuleFinder.load_package
+   ~ModuleFinder.load_tail
+   ~ModuleFinder.msg
+   ~ModuleFinder.msgin
+   ~ModuleFinder.msgout
+   ~ModuleFinder.replace_paths_in_code
+   ~ModuleFinder.report
+   ~ModuleFinder.run_script
+   ~ModuleFinder.scan_code
+   ~ModuleFinder.scan_opcodes
+   ~ModuleFinder.scan_opcodes_25
+
+
+
+
+

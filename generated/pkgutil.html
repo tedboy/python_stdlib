@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.5.10. pkgutil &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="3. Misc package I may use in the future" href="../maybe_future.html"/>
+        <link rel="next" title="3.5.10.1.1. pkgutil.extend_path" href="pkgutil.extend_path.html"/>
+        <link rel="prev" title="3.5.9.2.1.1. imp.NullImporter.find_module" href="generated/imp.NullImporter.find_module.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sysconfig.html">3.5.1. sysconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="__future__.html">3.5.2. __future__</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contextlib.html">3.5.3. contextlib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="abc.html">3.5.4. abc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="traceback.html">3.5.5. traceback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gc.html">3.5.6. gc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="site.html">3.5.7. site</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user.html">3.5.8. user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="imp.html">3.5.9. imp</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.5.10. pkgutil</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">3.5.10.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">3.5.10.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modulefinder.html">3.5.11. modulefinder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+      <li>3.5.10. pkgutil</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/pkgutil.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pkgutil">
+<span id="pkgutil"></span><h1>3.5.10. pkgutil<a class="headerlink" href="#module-pkgutil" title="Permalink to this headline">¶</a></h1>
+<p>Utilities to support packages.</p>
+<div class="section" id="functions">
+<h2>3.5.10.1. Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="pkgutil.extend_path.html#pkgutil.extend_path" title="pkgutil.extend_path"><code class="xref py py-obj docutils literal"><span class="pre">extend_path</span></code></a>(path,&nbsp;name)</td>
+<td>Extend a package&#8217;s path.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pkgutil.find_loader.html#pkgutil.find_loader" title="pkgutil.find_loader"><code class="xref py py-obj docutils literal"><span class="pre">find_loader</span></code></a>(fullname)</td>
+<td>Find a PEP 302 &#8220;loader&#8221; object for fullname</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pkgutil.get_data.html#pkgutil.get_data" title="pkgutil.get_data"><code class="xref py py-obj docutils literal"><span class="pre">get_data</span></code></a>(package,&nbsp;resource)</td>
+<td>Get a resource from a package.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pkgutil.get_importer.html#pkgutil.get_importer" title="pkgutil.get_importer"><code class="xref py py-obj docutils literal"><span class="pre">get_importer</span></code></a>(path_item)</td>
+<td>Retrieve a PEP 302 importer for the given path item</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pkgutil.get_loader.html#pkgutil.get_loader" title="pkgutil.get_loader"><code class="xref py py-obj docutils literal"><span class="pre">get_loader</span></code></a>(module_or_name)</td>
+<td>Get a PEP 302 &#8220;loader&#8221; object for module_or_name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pkgutil.iter_importer_modules.html#pkgutil.iter_importer_modules" title="pkgutil.iter_importer_modules"><code class="xref py py-obj docutils literal"><span class="pre">iter_importer_modules</span></code></a>(*args,&nbsp;**kw)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pkgutil.iter_importers.html#pkgutil.iter_importers" title="pkgutil.iter_importers"><code class="xref py py-obj docutils literal"><span class="pre">iter_importers</span></code></a>([fullname])</td>
+<td>Yield PEP 302 importers for the given module name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pkgutil.iter_modules.html#pkgutil.iter_modules" title="pkgutil.iter_modules"><code class="xref py py-obj docutils literal"><span class="pre">iter_modules</span></code></a>([path,&nbsp;prefix])</td>
+<td>Yields (module_loader, name, ispkg) for all submodules on path, or, if path is None, all top-level modules on sys.path.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pkgutil.iter_zipimport_modules.html#pkgutil.iter_zipimport_modules" title="pkgutil.iter_zipimport_modules"><code class="xref py py-obj docutils literal"><span class="pre">iter_zipimport_modules</span></code></a>(importer[,&nbsp;prefix])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pkgutil.read_code.html#pkgutil.read_code" title="pkgutil.read_code"><code class="xref py py-obj docutils literal"><span class="pre">read_code</span></code></a>(stream)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pkgutil.simplegeneric.html#pkgutil.simplegeneric" title="pkgutil.simplegeneric"><code class="xref py py-obj docutils literal"><span class="pre">simplegeneric</span></code></a>(func)</td>
+<td>Make a trivial single-dispatch generic function</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pkgutil.walk_packages.html#pkgutil.walk_packages" title="pkgutil.walk_packages"><code class="xref py py-obj docutils literal"><span class="pre">walk_packages</span></code></a>([path,&nbsp;prefix,&nbsp;onerror])</td>
+<td>Yields (module_loader, name, ispkg) for all modules recursively on path, or, if path is None, all accessible modules.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="classes">
+<h2>3.5.10.2. Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/pkgutil.ImpImporter.html#pkgutil.ImpImporter" title="pkgutil.ImpImporter"><code class="xref py py-obj docutils literal"><span class="pre">ImpImporter</span></code></a>([path])</td>
+<td>PEP 302 Importer that wraps Python&#8217;s &#8220;classic&#8221; import algorithm</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pkgutil.ImpLoader.html#pkgutil.ImpLoader" title="pkgutil.ImpLoader"><code class="xref py py-obj docutils literal"><span class="pre">ImpLoader</span></code></a>(fullname,&nbsp;file,&nbsp;filename,&nbsp;etc)</td>
+<td>PEP 302 Loader that wraps Python&#8217;s &#8220;classic&#8221; import algorithm</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pkgutil.ModuleType.html#pkgutil.ModuleType" title="pkgutil.ModuleType"><code class="xref py py-obj docutils literal"><span class="pre">ModuleType</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">module</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pkgutil.zipimporter.html#pkgutil.zipimporter" title="pkgutil.zipimporter"><code class="xref py py-obj docutils literal"><span class="pre">zipimporter</span></code></a></td>
+<td>Create a new zipimporter instance.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pkgutil.extend_path.html" class="btn btn-neutral float-right" title="3.5.10.1.1. pkgutil.extend_path" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="generated/imp.NullImporter.find_module.html" class="btn btn-neutral" title="3.5.9.2.1.1. imp.NullImporter.find_module" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

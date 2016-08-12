@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.5.4.2.2. abc.WeakSet &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="3.5.4. abc" href="../abc.html"/>
+        <link rel="next" title="3.5.4.2.2.1. abc.WeakSet.add" href="abc.WeakSet.add.html"/>
+        <link rel="prev" title="3.5.4.2.1.2. abc.ABCMeta.register" href="abc.ABCMeta.register.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../sysconfig.html">3.5.1. sysconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../__future__.html">3.5.2. __future__</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contextlib.html">3.5.3. contextlib</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../abc.html">3.5.4. abc</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../abc.html#functions">3.5.4.1. Functions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../abc.html#classes">3.5.4.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../traceback.html">3.5.5. traceback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gc.html">3.5.6. gc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../site.html">3.5.7. site</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user.html">3.5.8. user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../imp.html">3.5.9. imp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pkgutil.html">3.5.10. pkgutil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modulefinder.html">3.5.11. modulefinder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+          <li><a href="../abc.html">3.5.4. abc</a> &raquo;</li>
+        
+      <li>3.5.4.2.2. abc.WeakSet</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/abc.WeakSet.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="abc-weakset">
+<h1>3.5.4.2.2. abc.WeakSet<a class="headerlink" href="#abc-weakset" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="abc.WeakSet.__init__.html#abc.WeakSet.__init__" title="abc.WeakSet.__init__"><code class="xref py py-func docutils literal"><span class="pre">WeakSet.__init__()</span></code></a></p>
+<dl class="class">
+<dt id="abc.WeakSet">
+<em class="property">class </em><code class="descclassname">abc.</code><code class="descname">WeakSet</code><span class="sig-paren">(</span><em>data=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/_weakrefset.html#WeakSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#abc.WeakSet" title="Permalink to this definition">¶</a></dt>
+<dd><p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.add.html#abc.WeakSet.add" title="abc.WeakSet.add"><code class="xref py py-obj docutils literal"><span class="pre">add</span></code></a>(item)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.clear.html#abc.WeakSet.clear" title="abc.WeakSet.clear"><code class="xref py py-obj docutils literal"><span class="pre">clear</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.copy.html#abc.WeakSet.copy" title="abc.WeakSet.copy"><code class="xref py py-obj docutils literal"><span class="pre">copy</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.difference.html#abc.WeakSet.difference" title="abc.WeakSet.difference"><code class="xref py py-obj docutils literal"><span class="pre">difference</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.difference_update.html#abc.WeakSet.difference_update" title="abc.WeakSet.difference_update"><code class="xref py py-obj docutils literal"><span class="pre">difference_update</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.discard.html#abc.WeakSet.discard" title="abc.WeakSet.discard"><code class="xref py py-obj docutils literal"><span class="pre">discard</span></code></a>(item)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.intersection.html#abc.WeakSet.intersection" title="abc.WeakSet.intersection"><code class="xref py py-obj docutils literal"><span class="pre">intersection</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.intersection_update.html#abc.WeakSet.intersection_update" title="abc.WeakSet.intersection_update"><code class="xref py py-obj docutils literal"><span class="pre">intersection_update</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.isdisjoint.html#abc.WeakSet.isdisjoint" title="abc.WeakSet.isdisjoint"><code class="xref py py-obj docutils literal"><span class="pre">isdisjoint</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.issubset.html#abc.WeakSet.issubset" title="abc.WeakSet.issubset"><code class="xref py py-obj docutils literal"><span class="pre">issubset</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.issuperset.html#abc.WeakSet.issuperset" title="abc.WeakSet.issuperset"><code class="xref py py-obj docutils literal"><span class="pre">issuperset</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.pop.html#abc.WeakSet.pop" title="abc.WeakSet.pop"><code class="xref py py-obj docutils literal"><span class="pre">pop</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.remove.html#abc.WeakSet.remove" title="abc.WeakSet.remove"><code class="xref py py-obj docutils literal"><span class="pre">remove</span></code></a>(item)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.symmetric_difference.html#abc.WeakSet.symmetric_difference" title="abc.WeakSet.symmetric_difference"><code class="xref py py-obj docutils literal"><span class="pre">symmetric_difference</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.symmetric_difference_update.html#abc.WeakSet.symmetric_difference_update" title="abc.WeakSet.symmetric_difference_update"><code class="xref py py-obj docutils literal"><span class="pre">symmetric_difference_update</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.union.html#abc.WeakSet.union" title="abc.WeakSet.union"><code class="xref py py-obj docutils literal"><span class="pre">union</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.update.html#abc.WeakSet.update" title="abc.WeakSet.update"><code class="xref py py-obj docutils literal"><span class="pre">update</span></code></a>(other)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="abc.WeakSet.add.html" class="btn btn-neutral float-right" title="3.5.4.2.2.1. abc.WeakSet.add" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="abc.ABCMeta.register.html" class="btn btn-neutral" title="3.5.4.2.1.2. abc.ABCMeta.register" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

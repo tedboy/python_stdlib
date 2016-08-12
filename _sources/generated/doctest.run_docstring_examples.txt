@@ -1,0 +1,6 @@
+doctest.run_docstring_examples
+==============================
+
+.. currentmodule:: doctest
+
+.. autofunction:: run_docstring_examples

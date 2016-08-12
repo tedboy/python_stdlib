@@ -1,0 +1,52 @@
+trace
+=====
+
+.. automodule:: trace
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      find_executable_linenos
+      find_lines
+      find_lines_from_code
+      find_strings
+      fullmodname
+      main
+      modname
+      usage
+   
+   
+
+   
+   
+   Classes
+   ---------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_custom.rst
+
+   
+      CoverageResults
+      Ignore
+      Trace
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/trace.CoverageResults
+       generated/trace.Ignore
+       generated/trace.Trace
+
+   
+   
+
+   
+   
+   

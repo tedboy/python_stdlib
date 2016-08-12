@@ -1,0 +1,42 @@
+urlparse.ParseResult
+====================
+
+.. currentmodule:: urlparse
+
+:func:`ParseResult.__init__`
+
+.. autoclass:: ParseResult
+    :members: __init__
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~ParseResult.count
+   ~ParseResult.geturl
+   ~ParseResult.index
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~ParseResult.fragment
+   ~ParseResult.hostname
+   ~ParseResult.netloc
+   ~ParseResult.params
+   ~ParseResult.password
+   ~ParseResult.path
+   ~ParseResult.port
+   ~ParseResult.query
+   ~ParseResult.scheme
+   ~ParseResult.username
+

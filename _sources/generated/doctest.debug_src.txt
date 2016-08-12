@@ -1,0 +1,6 @@
+doctest.debug_src
+=================
+
+.. currentmodule:: doctest
+
+.. autofunction:: debug_src

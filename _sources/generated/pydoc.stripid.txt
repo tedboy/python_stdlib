@@ -1,0 +1,6 @@
+pydoc.stripid
+=============
+
+.. currentmodule:: pydoc
+
+.. autofunction:: stripid

@@ -1,0 +1,557 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. Misc package I may use in the future &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="index.html"/>
+        <link rel="next" title="3.1.1. textwrap" href="generated/textwrap.html"/>
+        <link rel="prev" title="2.14.1.36. types.XRangeType" href="generated/generated/types.XRangeType.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Misc package I may use in the future</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#string-services">3.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/textwrap.html">3.1.1. textwrap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/unicodedata.html">3.1.2. unicodedata</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-persistence-and-compression">3.2. Data persistence and compression</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/shutil.html">3.2.1. shutil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pickle.html">3.2.2. pickle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/cPickle.html">3.2.3. cPickle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/csv.html">3.2.4. csv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/zlib.html">3.2.5. zlib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/gzip.html">3.2.6. gzip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/bz2.html">3.2.7. bz2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/zipfile.html">3.2.8. zipfile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/tarfile.html">3.2.9. tarfile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#networks-and-internet">3.3. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/popen2.html">3.3.1. popen2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/socket.html">3.3.2. socket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/email.html">3.3.3. email</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/json.html">3.3.4. json</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/HTMLParser.html">3.3.5. HTMLParser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xml.dom.html">3.3.6. xml.dom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/webbrowser.html">3.3.7. webbrowser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/cgi.html">3.3.8. cgi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/wsgiref.html">3.3.9. wsgiref</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/urllib.html">3.3.10. urllib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/urllib2.html">3.3.11. urllib2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/urlparse.html">3.3.12. urlparse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/SimpleHTTPServer.html">3.3.13. SimpleHTTPServer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#development-tools-and-debugging">3.4. Development tools and Debugging</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pydoc.html">3.4.1. pydoc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/doctest.html">3.4.2. doctest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/unittest.html">3.4.3. unittest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/trace.html">3.4.4. trace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/distutils.html">3.4.5. distutils</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#python-runtime-services">3.5. Python Runtime Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/sysconfig.html">3.5.1. sysconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/__future__.html">3.5.2. __future__</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/contextlib.html">3.5.3. contextlib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/abc.html">3.5.4. abc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/traceback.html">3.5.5. traceback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/gc.html">3.5.6. gc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/site.html">3.5.7. site</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/user.html">3.5.8. user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/imp.html">3.5.9. imp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pkgutil.html">3.5.10. pkgutil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/modulefinder.html">3.5.11. modulefinder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>3. Misc package I may use in the future</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/maybe_future.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="misc-package-i-may-use-in-the-future">
+<h1>3. Misc package I may use in the future<a class="headerlink" href="#misc-package-i-may-use-in-the-future" title="Permalink to this headline">¶</a></h1>
+<p>Some main modules of interest</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generated/__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/string.html">1.2. string</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/re.html">1.3. re</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/os.html">1.4. os</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/os.path.html">1.5. os.path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/sys.html">1.6. sys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/inspect.html">1.7. inspect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/warnings.html">1.8. warnings</a></li>
+</ul>
+</div>
+<div class="section" id="string-services">
+<h2>3.1. String Services<a class="headerlink" href="#string-services" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="7">
+<li>String Services - <a class="reference external" href="https://docs.python.org/2/library/strings.html">https://docs.python.org/2/library/strings.html</a></li>
+</ol>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generated/textwrap.html">3.1.1. textwrap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/unicodedata.html">3.1.2. unicodedata</a></li>
+</ul>
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/textwrap.html#module-textwrap" title="textwrap"><code class="xref py py-obj docutils literal"><span class="pre">textwrap</span></code></a></td>
+<td>Text wrapping and filling.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/unicodedata.html#module-unicodedata" title="unicodedata"><code class="xref py py-obj docutils literal"><span class="pre">unicodedata</span></code></a></td>
+<td>This module provides access to the Unicode Character Database which defines character properties for all Unicode characters.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="data-persistence-and-compression">
+<h2>3.2. Data persistence and compression<a class="headerlink" href="#data-persistence-and-compression" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="11">
+<li>Data Persistence - <a class="reference external" href="https://docs.python.org/2/library/persistence.html">https://docs.python.org/2/library/persistence.html</a></li>
+<li>Data Compression and Archiving - <a class="reference external" href="https://docs.python.org/2/library/archiving.html">https://docs.python.org/2/library/archiving.html</a></li>
+</ol>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generated/shutil.html">3.2.1. shutil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/pickle.html">3.2.2. pickle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/cPickle.html">3.2.3. cPickle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/csv.html">3.2.4. csv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/zlib.html">3.2.5. zlib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/gzip.html">3.2.6. gzip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/bz2.html">3.2.7. bz2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/zipfile.html">3.2.8. zipfile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/tarfile.html">3.2.9. tarfile</a></li>
+</ul>
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/shutil.html#module-shutil" title="shutil"><code class="xref py py-obj docutils literal"><span class="pre">shutil</span></code></a></td>
+<td>Utility functions for copying and archiving files and directory trees.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.html#module-pickle" title="pickle"><code class="xref py py-obj docutils literal"><span class="pre">pickle</span></code></a></td>
+<td>Create portable serialized representations of Python objects.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cPickle.html#module-cPickle" title="cPickle"><code class="xref py py-obj docutils literal"><span class="pre">cPickle</span></code></a></td>
+<td>C implementation and optimization of the Python pickle module.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/csv.html#module-csv" title="csv"><code class="xref py py-obj docutils literal"><span class="pre">csv</span></code></a></td>
+<td>CSV parsing and writing.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/zlib.html#module-zlib" title="zlib"><code class="xref py py-obj docutils literal"><span class="pre">zlib</span></code></a></td>
+<td>The functions in this module allow compression and decompression using the zlib library, which is based on GNU zip.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/gzip.html#module-gzip" title="gzip"><code class="xref py py-obj docutils literal"><span class="pre">gzip</span></code></a></td>
+<td>Functions that read and write gzipped files.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/bz2.html#module-bz2" title="bz2"><code class="xref py py-obj docutils literal"><span class="pre">bz2</span></code></a></td>
+<td>The python bz2 module provides a comprehensive interface for the bz2 compression library.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/zipfile.html#module-zipfile" title="zipfile"><code class="xref py py-obj docutils literal"><span class="pre">zipfile</span></code></a></td>
+<td>Read and write ZIP files.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/tarfile.html#module-tarfile" title="tarfile"><code class="xref py py-obj docutils literal"><span class="pre">tarfile</span></code></a></td>
+<td>Read from and write to tar format archives.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="networks-and-internet">
+<h2>3.3. Networks and Internet<a class="headerlink" href="#networks-and-internet" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="17">
+<li>Interprocess Communication and Networking - <a class="reference external" href="https://docs.python.org/2/library/ipc.html">https://docs.python.org/2/library/ipc.html</a></li>
+<li>Internet Data Handling - <a class="reference external" href="https://docs.python.org/2/library/netdata.html">https://docs.python.org/2/library/netdata.html</a></li>
+<li>Structured Markup Processing Tools - <a class="reference external" href="https://docs.python.org/2/library/markup.html">https://docs.python.org/2/library/markup.html</a></li>
+<li>Internet Protocols and Support - <a class="reference external" href="https://docs.python.org/2/library/internet.html">https://docs.python.org/2/library/internet.html</a></li>
+</ol>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generated/popen2.html">3.3.1. popen2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/socket.html">3.3.2. socket</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/email.html">3.3.3. email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/json.html">3.3.4. json</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/HTMLParser.html">3.3.5. HTMLParser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/xml.dom.html">3.3.6. xml.dom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/webbrowser.html">3.3.7. webbrowser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/cgi.html">3.3.8. cgi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/wsgiref.html">3.3.9. wsgiref</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/urllib.html">3.3.10. urllib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/urllib2.html">3.3.11. urllib2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/urlparse.html">3.3.12. urlparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/SimpleHTTPServer.html">3.3.13. SimpleHTTPServer</a></li>
+</ul>
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/popen2.html#module-popen2" title="popen2"><code class="xref py py-obj docutils literal"><span class="pre">popen2</span></code></a></td>
+<td>Spawn a command with pipes to its stdin, stdout, and optionally stderr.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.html#module-socket" title="socket"><code class="xref py py-obj docutils literal"><span class="pre">socket</span></code></a></td>
+<td>This module provides socket operations and some related functions.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/email.html#module-email" title="email"><code class="xref py py-obj docutils literal"><span class="pre">email</span></code></a></td>
+<td>A package for parsing, handling, and generating email messages.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/json.html#module-json" title="json"><code class="xref py py-obj docutils literal"><span class="pre">json</span></code></a></td>
+<td>JSON (JavaScript Object Notation) &lt;<a class="reference external" href="http://json.org">http://json.org</a>&gt; is a subset of JavaScript syntax (ECMA-262 3rd edition) used as a lightweight data interchange format.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/HTMLParser.html#module-HTMLParser" title="HTMLParser"><code class="xref py py-obj docutils literal"><span class="pre">HTMLParser</span></code></a></td>
+<td>A parser for HTML and XHTML.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/xml.dom.html#module-xml.dom" title="xml.dom"><code class="xref py py-obj docutils literal"><span class="pre">xml.dom</span></code></a></td>
+<td>W3C Document Object Model implementation for Python.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/webbrowser.html#module-webbrowser" title="webbrowser"><code class="xref py py-obj docutils literal"><span class="pre">webbrowser</span></code></a></td>
+<td>Interfaces for launching and remotely controlling Web browsers.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.html#module-cgi" title="cgi"><code class="xref py py-obj docutils literal"><span class="pre">cgi</span></code></a></td>
+<td>Support module for CGI (Common Gateway Interface) scripts.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/wsgiref.html#module-wsgiref" title="wsgiref"><code class="xref py py-obj docutils literal"><span class="pre">wsgiref</span></code></a></td>
+<td>wsgiref &#8211; a WSGI (PEP 333) Reference Library</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/urllib.html#module-urllib" title="urllib"><code class="xref py py-obj docutils literal"><span class="pre">urllib</span></code></a></td>
+<td>Open an arbitrary URL.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.html#module-urllib2" title="urllib2"><code class="xref py py-obj docutils literal"><span class="pre">urllib2</span></code></a></td>
+<td>An extensible library for opening URLs using a variety of protocols</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/urlparse.html#module-urlparse" title="urlparse"><code class="xref py py-obj docutils literal"><span class="pre">urlparse</span></code></a></td>
+<td>Parse (absolute and relative) URLs.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/SimpleHTTPServer.html#module-SimpleHTTPServer" title="SimpleHTTPServer"><code class="xref py py-obj docutils literal"><span class="pre">SimpleHTTPServer</span></code></a></td>
+<td>Simple HTTP Server.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="development-tools-and-debugging">
+<h2>3.4. Development tools and Debugging<a class="headerlink" href="#development-tools-and-debugging" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="25">
+<li>Development Tools <a class="reference external" href="https://docs.python.org/2/library/development.html">https://docs.python.org/2/library/development.html</a></li>
+<li>Debugging and Profiling <a class="reference external" href="https://docs.python.org/2/library/debug.html">https://docs.python.org/2/library/debug.html</a></li>
+<li>Software Packaging and Distribution <a class="reference external" href="https://docs.python.org/2/library/distribution.html">https://docs.python.org/2/library/distribution.html</a></li>
+</ol>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generated/pydoc.html">3.4.1. pydoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/doctest.html">3.4.2. doctest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/unittest.html">3.4.3. unittest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/trace.html">3.4.4. trace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/distutils.html">3.4.5. distutils</a></li>
+</ul>
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/pydoc.html#module-pydoc" title="pydoc"><code class="xref py py-obj docutils literal"><span class="pre">pydoc</span></code></a></td>
+<td>Generate Python documentation in HTML or text for interactive use.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/doctest.html#module-doctest" title="doctest"><code class="xref py py-obj docutils literal"><span class="pre">doctest</span></code></a></td>
+<td>Module doctest &#8211; a framework for running examples in docstrings.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/unittest.html#module-unittest" title="unittest"><code class="xref py py-obj docutils literal"><span class="pre">unittest</span></code></a></td>
+<td>Python unit testing framework, based on Erich Gamma&#8217;s JUnit and Kent Beck&#8217;s Smalltalk testing framework.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/trace.html#module-trace" title="trace"><code class="xref py py-obj docutils literal"><span class="pre">trace</span></code></a></td>
+<td>program/module to trace Python program or function execution</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/distutils.html#module-distutils" title="distutils"><code class="xref py py-obj docutils literal"><span class="pre">distutils</span></code></a></td>
+<td>distutils</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-runtime-services">
+<h2>3.5. Python Runtime Services<a class="headerlink" href="#python-runtime-services" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>28 Python Runtime Services <a class="reference external" href="https://docs.python.org/2/library/python.html">https://docs.python.org/2/library/python.html</a></li>
+<li>31 Importing Modules <a class="reference external" href="https://docs.python.org/2/library/modules.html">https://docs.python.org/2/library/modules.html</a></li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generated/sysconfig.html">3.5.1. sysconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/__future__.html">3.5.2. __future__</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/contextlib.html">3.5.3. contextlib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/abc.html">3.5.4. abc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/traceback.html">3.5.5. traceback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/gc.html">3.5.6. gc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/site.html">3.5.7. site</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/user.html">3.5.8. user</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/imp.html">3.5.9. imp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/pkgutil.html">3.5.10. pkgutil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/modulefinder.html">3.5.11. modulefinder</a></li>
+</ul>
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/sysconfig.html#module-sysconfig" title="sysconfig"><code class="xref py py-obj docutils literal"><span class="pre">sysconfig</span></code></a></td>
+<td>Provide access to Python&#8217;s configuration information.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/__future__.html#module-__future__" title="__future__"><code class="xref py py-obj docutils literal"><span class="pre">__future__</span></code></a></td>
+<td>Record of phased-in incompatible language changes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/contextlib.html#module-contextlib" title="contextlib"><code class="xref py py-obj docutils literal"><span class="pre">contextlib</span></code></a></td>
+<td>Utilities for with-statement contexts.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/abc.html#module-abc" title="abc"><code class="xref py py-obj docutils literal"><span class="pre">abc</span></code></a></td>
+<td>Abstract Base Classes (ABCs) according to PEP 3119.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/traceback.html#module-traceback" title="traceback"><code class="xref py py-obj docutils literal"><span class="pre">traceback</span></code></a></td>
+<td>Extract, format and print information about Python stack traces.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/gc.html#module-gc" title="gc"><code class="xref py py-obj docutils literal"><span class="pre">gc</span></code></a></td>
+<td>This module provides access to the garbage collector for reference cycles.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/site.html#module-site" title="site"><code class="xref py py-obj docutils literal"><span class="pre">site</span></code></a></td>
+<td>Append module search paths for third-party packages to sys.path.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/user.html#module-user" title="user"><code class="xref py py-obj docutils literal"><span class="pre">user</span></code></a></td>
+<td>Hook to allow user-specified customization code to run.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/imp.html#module-imp" title="imp"><code class="xref py py-obj docutils literal"><span class="pre">imp</span></code></a></td>
+<td>This module provides the components needed to build your own __import__ function.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pkgutil.html#module-pkgutil" title="pkgutil"><code class="xref py py-obj docutils literal"><span class="pre">pkgutil</span></code></a></td>
+<td>Utilities to support packages.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/modulefinder.html#module-modulefinder" title="modulefinder"><code class="xref py py-obj docutils literal"><span class="pre">modulefinder</span></code></a></td>
+<td>Find modules used by a script, using introspection.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="generated/textwrap.html" class="btn btn-neutral float-right" title="3.1.1. textwrap" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="generated/generated/types.XRangeType.html" class="btn btn-neutral" title="2.14.1.36. types.XRangeType" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

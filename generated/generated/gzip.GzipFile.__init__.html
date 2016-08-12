@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>gzip.GzipFile.__init__ &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>gzip.GzipFile.__init__</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/gzip.GzipFile.__init__.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gzip-gzipfile-init">
+<h1>gzip.GzipFile.__init__<a class="headerlink" href="#gzip-gzipfile-init" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="gzip.GzipFile.__init__">
+<code class="descclassname">GzipFile.</code><code class="descname">__init__</code><span class="sig-paren">(</span><em>filename=None</em>, <em>mode=None</em>, <em>compresslevel=9</em>, <em>fileobj=None</em>, <em>mtime=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/gzip.html#GzipFile.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gzip.GzipFile.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructor for the GzipFile class.</p>
+<p>At least one of fileobj and filename must be given a
+non-trivial value.</p>
+<p>The new class instance is based on fileobj, which can be a regular
+file, a StringIO object, or any other object which simulates a file.
+It defaults to None, in which case filename is opened to provide
+a file object.</p>
+<p>When fileobj is not None, the filename argument is only used to be
+included in the gzip file header, which may includes the original
+filename of the uncompressed file.  It defaults to the filename of
+fileobj, if discernible; otherwise, it defaults to the empty string,
+and in this case the original filename is not included in the header.</p>
+<p>The mode argument can be any of &#8216;r&#8217;, &#8216;rb&#8217;, &#8216;a&#8217;, &#8216;ab&#8217;, &#8216;w&#8217;, or &#8216;wb&#8217;,
+depending on whether the file will be read or written.  The default
+is the mode of fileobj if discernible; otherwise, the default is &#8216;rb&#8217;.
+Be aware that only the &#8216;rb&#8217;, &#8216;ab&#8217;, and &#8216;wb&#8217; values should be used
+for cross-platform portability.</p>
+<p>The compresslevel argument is an integer from 0 to 9 controlling the
+level of compression; 1 is fastest and produces the least compression,
+and 9 is slowest and produces the most compression. 0 is no compression
+at all. The default is 9.</p>
+<p>The mtime argument is an optional numeric timestamp to be written
+to the stream when compressing.  All gzip compressed streams
+are required to contain a timestamp.  If omitted or None, the
+current time is used.  This module ignores the timestamp when
+decompressing; however, some programs, such as gunzip, make use
+of it.  The format of the timestamp is the same as that of the
+return value of time.time() and of the st_mtime member of the
+object returned by os.stat().</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

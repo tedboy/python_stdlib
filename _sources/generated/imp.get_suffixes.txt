@@ -1,0 +1,6 @@
+imp.get_suffixes
+================
+
+.. currentmodule:: imp
+
+.. autofunction:: get_suffixes

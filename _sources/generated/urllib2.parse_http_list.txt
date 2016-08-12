@@ -1,0 +1,6 @@
+urllib2.parse_http_list
+=======================
+
+.. currentmodule:: urllib2
+
+.. autofunction:: parse_http_list

@@ -1,0 +1,92 @@
+doctest.SkipDocTestCase
+=======================
+
+.. currentmodule:: doctest
+
+:func:`SkipDocTestCase.__init__`
+
+.. autoclass:: SkipDocTestCase
+    :members: __init__
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~SkipDocTestCase.__init__
+   ~SkipDocTestCase.addCleanup
+   ~SkipDocTestCase.addTypeEqualityFunc
+   ~SkipDocTestCase.assertAlmostEqual
+   ~SkipDocTestCase.assertAlmostEquals
+   ~SkipDocTestCase.assertDictContainsSubset
+   ~SkipDocTestCase.assertDictEqual
+   ~SkipDocTestCase.assertEqual
+   ~SkipDocTestCase.assertEquals
+   ~SkipDocTestCase.assertFalse
+   ~SkipDocTestCase.assertGreater
+   ~SkipDocTestCase.assertGreaterEqual
+   ~SkipDocTestCase.assertIn
+   ~SkipDocTestCase.assertIs
+   ~SkipDocTestCase.assertIsInstance
+   ~SkipDocTestCase.assertIsNone
+   ~SkipDocTestCase.assertIsNot
+   ~SkipDocTestCase.assertIsNotNone
+   ~SkipDocTestCase.assertItemsEqual
+   ~SkipDocTestCase.assertLess
+   ~SkipDocTestCase.assertLessEqual
+   ~SkipDocTestCase.assertListEqual
+   ~SkipDocTestCase.assertMultiLineEqual
+   ~SkipDocTestCase.assertNotAlmostEqual
+   ~SkipDocTestCase.assertNotAlmostEquals
+   ~SkipDocTestCase.assertNotEqual
+   ~SkipDocTestCase.assertNotEquals
+   ~SkipDocTestCase.assertNotIn
+   ~SkipDocTestCase.assertNotIsInstance
+   ~SkipDocTestCase.assertNotRegexpMatches
+   ~SkipDocTestCase.assertRaises
+   ~SkipDocTestCase.assertRaisesRegexp
+   ~SkipDocTestCase.assertRegexpMatches
+   ~SkipDocTestCase.assertSequenceEqual
+   ~SkipDocTestCase.assertSetEqual
+   ~SkipDocTestCase.assertTrue
+   ~SkipDocTestCase.assertTupleEqual
+   ~SkipDocTestCase.assert_
+   ~SkipDocTestCase.countTestCases
+   ~SkipDocTestCase.debug
+   ~SkipDocTestCase.defaultTestResult
+   ~SkipDocTestCase.doCleanups
+   ~SkipDocTestCase.fail
+   ~SkipDocTestCase.failIf
+   ~SkipDocTestCase.failIfAlmostEqual
+   ~SkipDocTestCase.failIfEqual
+   ~SkipDocTestCase.failUnless
+   ~SkipDocTestCase.failUnlessAlmostEqual
+   ~SkipDocTestCase.failUnlessEqual
+   ~SkipDocTestCase.failUnlessRaises
+   ~SkipDocTestCase.format_failure
+   ~SkipDocTestCase.id
+   ~SkipDocTestCase.run
+   ~SkipDocTestCase.runTest
+   ~SkipDocTestCase.setUp
+   ~SkipDocTestCase.setUpClass
+   ~SkipDocTestCase.shortDescription
+   ~SkipDocTestCase.skipTest
+   ~SkipDocTestCase.tearDown
+   ~SkipDocTestCase.tearDownClass
+   ~SkipDocTestCase.test_skip
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~SkipDocTestCase.longMessage
+   ~SkipDocTestCase.maxDiff
+

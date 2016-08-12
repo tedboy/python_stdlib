@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.2.2.2.3. socket.partial &mdash; Python Standard Library</title>
+  <title>3.3.2.2.3. socket.partial &mdash; Python Standard Library</title>
   
 
   
@@ -31,8 +31,8 @@
 
   
     <link rel="top" title="Python Standard Library" href="../../index.html"/>
-        <link rel="up" title="2.2.2. socket" href="../socket.html"/>
-        <link rel="prev" title="2.2.2.2.2. socket.SocketType" href="socket.SocketType.html"/> 
+        <link rel="up" title="3.3.2. socket" href="../socket.html"/>
+        <link rel="prev" title="3.3.2.2.2. socket.SocketType" href="socket.SocketType.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -84,37 +84,45 @@
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">1. Official page TOC</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../misc/index.html">2. misc package I may use in future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../misc/string_services.html">2.1. String Services</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../textwrap.html">2.1.1. textwrap</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../textwrap.html#functions">2.1.1.1. Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../textwrap.html#classes">2.1.1.2. Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../popen2.html">3.3.1. popen2</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../socket.html">3.3.2. socket</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../socket.html#functions">3.3.2.1. Functions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../socket.html#classes">3.3.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../socket.html#exceptions">3.3.2.3. Exceptions</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../unicodedata.html">2.1.2. unicodedata</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../unicodedata.html#functions">2.1.2.1. Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../unicodedata.html#classes">2.1.2.2. Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../email.html">3.3.3. email</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../json.html">3.3.4. json</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../HTMLParser.html">3.3.5. HTMLParser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../xml.dom.html">3.3.6. xml.dom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../webbrowser.html">3.3.7. webbrowser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cgi.html">3.3.8. cgi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wsgiref.html">3.3.9. wsgiref</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../urllib.html">3.3.10. urllib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../urllib2.html">3.3.11. urllib2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../urlparse.html">3.3.12. urlparse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../SimpleHTTPServer.html">3.3.13. SimpleHTTPServer</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../misc/networks_internet.html">2.2. Networks and Internet</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../popen2.html">2.2.1. popen2</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../popen2.html#functions">2.2.1.1. Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../popen2.html#classes">2.2.1.2. Classes</a></li>
-</ul>
-</li>
-<li class="toctree-l3 current"><a class="reference internal" href="../socket.html">2.2.2. socket</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../socket.html#functions">2.2.2.1. Functions</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../socket.html#classes">2.2.2.2. Classes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../socket.html#exceptions">2.2.2.3. Exceptions</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
 </ul>
 
             
@@ -156,13 +164,11 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../misc/index.html">2. misc package I may use in future</a> &raquo;</li>
+          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
         
-          <li><a href="../../misc/networks_internet.html">2.2. Networks and Internet</a> &raquo;</li>
+          <li><a href="../socket.html">3.3.2. socket</a> &raquo;</li>
         
-          <li><a href="../socket.html">2.2.2. socket</a> &raquo;</li>
-        
-      <li>2.2.2.2.3. socket.partial</li>
+      <li>3.3.2.2.3. socket.partial</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -180,7 +186,8 @@
            <div itemprop="articleBody">
             
   <div class="section" id="socket-partial">
-<h1>2.2.2.2.3. socket.partial<a class="headerlink" href="#socket-partial" title="Permalink to this headline">¶</a></h1>
+<h1>3.3.2.2.3. socket.partial<a class="headerlink" href="#socket-partial" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="#socket.partial.__init__" title="socket.partial.__init__"><code class="xref py py-func docutils literal"><span class="pre">partial.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="socket.partial">
 <em class="property">class </em><code class="descclassname">socket.</code><code class="descname">partial</code><a class="headerlink" href="#socket.partial" title="Permalink to this definition">¶</a></dt>
@@ -198,6 +205,12 @@ of the given arguments and keywords.</p>
 </tr>
 </tbody>
 </table>
+<dl class="attribute">
+<dt id="socket.partial.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#socket.partial.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -210,7 +223,7 @@ of the given arguments and keywords.</p>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="socket.SocketType.html" class="btn btn-neutral" title="2.2.2.2.2. socket.SocketType" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="socket.SocketType.html" class="btn btn-neutral" title="3.3.2.2.2. socket.SocketType" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

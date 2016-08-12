@@ -1,0 +1,6 @@
+cgi.parse_qsl
+=============
+
+.. currentmodule:: cgi
+
+.. autofunction:: parse_qsl

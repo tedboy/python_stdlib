@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.5.1. sysconfig &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="3. Misc package I may use in the future" href="../maybe_future.html"/>
+        <link rel="next" title="3.5.1.1.1. sysconfig.get_config_h_filename" href="sysconfig.get_config_h_filename.html"/>
+        <link rel="prev" title="3.4.5. distutils" href="distutils.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.5.1. sysconfig</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">3.5.1.1. Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="__future__.html">3.5.2. __future__</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contextlib.html">3.5.3. contextlib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="abc.html">3.5.4. abc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="traceback.html">3.5.5. traceback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gc.html">3.5.6. gc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="site.html">3.5.7. site</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user.html">3.5.8. user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="imp.html">3.5.9. imp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pkgutil.html">3.5.10. pkgutil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modulefinder.html">3.5.11. modulefinder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+      <li>3.5.1. sysconfig</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/sysconfig.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-sysconfig">
+<span id="sysconfig"></span><h1>3.5.1. sysconfig<a class="headerlink" href="#module-sysconfig" title="Permalink to this headline">¶</a></h1>
+<p>Provide access to Python&#8217;s configuration information.</p>
+<div class="section" id="functions">
+<h2>3.5.1.1. Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="sysconfig.get_config_h_filename.html#sysconfig.get_config_h_filename" title="sysconfig.get_config_h_filename"><code class="xref py py-obj docutils literal"><span class="pre">get_config_h_filename</span></code></a>()</td>
+<td>Returns the path of pyconfig.h.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sysconfig.get_config_var.html#sysconfig.get_config_var" title="sysconfig.get_config_var"><code class="xref py py-obj docutils literal"><span class="pre">get_config_var</span></code></a>(name)</td>
+<td>Return the value of a single variable using the dictionary returned by &#8216;get_config_vars()&#8217;.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sysconfig.get_config_vars.html#sysconfig.get_config_vars" title="sysconfig.get_config_vars"><code class="xref py py-obj docutils literal"><span class="pre">get_config_vars</span></code></a>(*args)</td>
+<td>With no arguments, return a dictionary of all configuration variables relevant for the current platform.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sysconfig.get_makefile_filename.html#sysconfig.get_makefile_filename" title="sysconfig.get_makefile_filename"><code class="xref py py-obj docutils literal"><span class="pre">get_makefile_filename</span></code></a>()</td>
+<td>Return the path of the Makefile.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sysconfig.get_path.html#sysconfig.get_path" title="sysconfig.get_path"><code class="xref py py-obj docutils literal"><span class="pre">get_path</span></code></a>(name[,&nbsp;scheme,&nbsp;vars,&nbsp;expand])</td>
+<td>Returns a path corresponding to the scheme.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sysconfig.get_path_names.html#sysconfig.get_path_names" title="sysconfig.get_path_names"><code class="xref py py-obj docutils literal"><span class="pre">get_path_names</span></code></a>()</td>
+<td>Returns a tuple containing the paths names.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sysconfig.get_paths.html#sysconfig.get_paths" title="sysconfig.get_paths"><code class="xref py py-obj docutils literal"><span class="pre">get_paths</span></code></a>([scheme,&nbsp;vars,&nbsp;expand])</td>
+<td>Returns a mapping containing an install scheme.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sysconfig.get_platform.html#sysconfig.get_platform" title="sysconfig.get_platform"><code class="xref py py-obj docutils literal"><span class="pre">get_platform</span></code></a>()</td>
+<td>Return a string that identifies the current platform.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sysconfig.get_python_version.html#sysconfig.get_python_version" title="sysconfig.get_python_version"><code class="xref py py-obj docutils literal"><span class="pre">get_python_version</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sysconfig.get_scheme_names.html#sysconfig.get_scheme_names" title="sysconfig.get_scheme_names"><code class="xref py py-obj docutils literal"><span class="pre">get_scheme_names</span></code></a>()</td>
+<td>Returns a tuple containing the schemes names.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sysconfig.is_python_build.html#sysconfig.is_python_build" title="sysconfig.is_python_build"><code class="xref py py-obj docutils literal"><span class="pre">is_python_build</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sysconfig.parse_config_h.html#sysconfig.parse_config_h" title="sysconfig.parse_config_h"><code class="xref py py-obj docutils literal"><span class="pre">parse_config_h</span></code></a>(fp[,&nbsp;vars])</td>
+<td>Parse a config.h-style file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sysconfig.realpath.html#sysconfig.realpath" title="sysconfig.realpath"><code class="xref py py-obj docutils literal"><span class="pre">realpath</span></code></a>(filename)</td>
+<td>Return the canonical path of the specified filename, eliminating any symbolic links encountered in the path.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="sysconfig.get_config_h_filename.html" class="btn btn-neutral float-right" title="3.5.1.1.1. sysconfig.get_config_h_filename" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="distutils.html" class="btn btn-neutral" title="3.4.5. distutils" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

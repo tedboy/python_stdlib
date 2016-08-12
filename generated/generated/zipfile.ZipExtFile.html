@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.2.8.2.2. zipfile.ZipExtFile &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="3.2.8. zipfile" href="../zipfile.html"/>
+        <link rel="next" title="3.2.8.2.2.1. zipfile.ZipExtFile.closed" href="zipfile.ZipExtFile.closed.html"/>
+        <link rel="prev" title="3.2.8.2.1.15. zipfile.PyZipFile.writestr" href="zipfile.PyZipFile.writestr.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pickle.html">3.2.2. pickle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cPickle.html">3.2.3. cPickle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../csv.html">3.2.4. csv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../zlib.html">3.2.5. zlib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gzip.html">3.2.6. gzip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../bz2.html">3.2.7. bz2</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../zipfile.html">3.2.8. zipfile</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../zipfile.html#functions">3.2.8.1. Functions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../zipfile.html#classes">3.2.8.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../zipfile.html#exceptions">3.2.8.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tarfile.html">3.2.9. tarfile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+          <li><a href="../zipfile.html">3.2.8. zipfile</a> &raquo;</li>
+        
+      <li>3.2.8.2.2. zipfile.ZipExtFile</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/zipfile.ZipExtFile.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="zipfile-zipextfile">
+<h1>3.2.8.2.2. zipfile.ZipExtFile<a class="headerlink" href="#zipfile-zipextfile" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="zipfile.ZipExtFile.__init__.html#zipfile.ZipExtFile.__init__" title="zipfile.ZipExtFile.__init__"><code class="xref py py-func docutils literal"><span class="pre">ZipExtFile.__init__()</span></code></a></p>
+<dl class="class">
+<dt id="zipfile.ZipExtFile">
+<em class="property">class </em><code class="descclassname">zipfile.</code><code class="descname">ZipExtFile</code><span class="sig-paren">(</span><em>fileobj</em>, <em>mode</em>, <em>zipinfo</em>, <em>decrypter=None</em>, <em>close_fileobj=False</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/zipfile.html#ZipExtFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zipfile.ZipExtFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>File-like object for reading an archive member.
+Is returned by ZipFile.open().</p>
+<p class="rubric">Attributes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipExtFile.closed.html#zipfile.ZipExtFile.closed" title="zipfile.ZipExtFile.closed"><code class="xref py py-obj docutils literal"><span class="pre">closed</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipExtFile.close.html#zipfile.ZipExtFile.close" title="zipfile.ZipExtFile.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipExtFile.detach.html#zipfile.ZipExtFile.detach" title="zipfile.ZipExtFile.detach"><code class="xref py py-obj docutils literal"><span class="pre">detach</span></code></a></td>
+<td>Disconnect this buffer from its underlying raw stream and return it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipExtFile.fileno.html#zipfile.ZipExtFile.fileno" title="zipfile.ZipExtFile.fileno"><code class="xref py py-obj docutils literal"><span class="pre">fileno</span></code></a></td>
+<td>Returns underlying file descriptor if one exists.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipExtFile.flush.html#zipfile.ZipExtFile.flush" title="zipfile.ZipExtFile.flush"><code class="xref py py-obj docutils literal"><span class="pre">flush</span></code></a></td>
+<td>Flush write buffers, if applicable.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipExtFile.isatty.html#zipfile.ZipExtFile.isatty" title="zipfile.ZipExtFile.isatty"><code class="xref py py-obj docutils literal"><span class="pre">isatty</span></code></a></td>
+<td>Return whether this is an &#8216;interactive&#8217; stream.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipExtFile.next.html#zipfile.ZipExtFile.next" title="zipfile.ZipExtFile.next"><code class="xref py py-obj docutils literal"><span class="pre">next</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipExtFile.peek.html#zipfile.ZipExtFile.peek" title="zipfile.ZipExtFile.peek"><code class="xref py py-obj docutils literal"><span class="pre">peek</span></code></a>([n])</td>
+<td>Returns buffered bytes without advancing the position.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipExtFile.read.html#zipfile.ZipExtFile.read" title="zipfile.ZipExtFile.read"><code class="xref py py-obj docutils literal"><span class="pre">read</span></code></a>([n])</td>
+<td>Read and return up to n bytes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipExtFile.read1.html#zipfile.ZipExtFile.read1" title="zipfile.ZipExtFile.read1"><code class="xref py py-obj docutils literal"><span class="pre">read1</span></code></a>(n)</td>
+<td>Read up to n bytes with at most one read() system call.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipExtFile.readable.html#zipfile.ZipExtFile.readable" title="zipfile.ZipExtFile.readable"><code class="xref py py-obj docutils literal"><span class="pre">readable</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipExtFile.readinto.html#zipfile.ZipExtFile.readinto" title="zipfile.ZipExtFile.readinto"><code class="xref py py-obj docutils literal"><span class="pre">readinto</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipExtFile.readline.html#zipfile.ZipExtFile.readline" title="zipfile.ZipExtFile.readline"><code class="xref py py-obj docutils literal"><span class="pre">readline</span></code></a>([limit])</td>
+<td>Read and return a line from the stream.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipExtFile.readlines.html#zipfile.ZipExtFile.readlines" title="zipfile.ZipExtFile.readlines"><code class="xref py py-obj docutils literal"><span class="pre">readlines</span></code></a></td>
+<td>Return a list of lines from the stream.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipExtFile.seek.html#zipfile.ZipExtFile.seek" title="zipfile.ZipExtFile.seek"><code class="xref py py-obj docutils literal"><span class="pre">seek</span></code></a></td>
+<td>Change stream position.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipExtFile.seekable.html#zipfile.ZipExtFile.seekable" title="zipfile.ZipExtFile.seekable"><code class="xref py py-obj docutils literal"><span class="pre">seekable</span></code></a></td>
+<td>Return whether object supports random access.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipExtFile.tell.html#zipfile.ZipExtFile.tell" title="zipfile.ZipExtFile.tell"><code class="xref py py-obj docutils literal"><span class="pre">tell</span></code></a></td>
+<td>Return current stream position.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipExtFile.truncate.html#zipfile.ZipExtFile.truncate" title="zipfile.ZipExtFile.truncate"><code class="xref py py-obj docutils literal"><span class="pre">truncate</span></code></a></td>
+<td>Truncate file to size bytes.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipExtFile.writable.html#zipfile.ZipExtFile.writable" title="zipfile.ZipExtFile.writable"><code class="xref py py-obj docutils literal"><span class="pre">writable</span></code></a></td>
+<td>Return whether object was opened for writing.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipExtFile.write.html#zipfile.ZipExtFile.write" title="zipfile.ZipExtFile.write"><code class="xref py py-obj docutils literal"><span class="pre">write</span></code></a></td>
+<td>Write the given buffer to the IO stream.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipExtFile.writelines.html#zipfile.ZipExtFile.writelines" title="zipfile.ZipExtFile.writelines"><code class="xref py py-obj docutils literal"><span class="pre">writelines</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="zipfile.ZipExtFile.closed.html" class="btn btn-neutral float-right" title="3.2.8.2.2.1. zipfile.ZipExtFile.closed" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="zipfile.PyZipFile.writestr.html" class="btn btn-neutral" title="3.2.8.2.1.15. zipfile.PyZipFile.writestr" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

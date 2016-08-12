@@ -1,0 +1,269 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.3.8.1.19. cgi.test &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="3.3.8. cgi" href="cgi.html"/>
+        <link rel="next" title="3.3.8.1.20. cgi.valid_boundary" href="cgi.valid_boundary.html"/>
+        <link rel="prev" title="3.3.8.1.18. cgi.print_form" href="cgi.print_form.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="popen2.html">3.3.1. popen2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="socket.html">3.3.2. socket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="email.html">3.3.3. email</a></li>
+<li class="toctree-l3"><a class="reference internal" href="json.html">3.3.4. json</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HTMLParser.html">3.3.5. HTMLParser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xml.dom.html">3.3.6. xml.dom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="webbrowser.html">3.3.7. webbrowser</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="cgi.html">3.3.8. cgi</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="cgi.html#functions">3.3.8.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cgi.html#classes">3.3.8.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsgiref.html">3.3.9. wsgiref</a></li>
+<li class="toctree-l3"><a class="reference internal" href="urllib.html">3.3.10. urllib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="urllib2.html">3.3.11. urllib2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="urlparse.html">3.3.12. urlparse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SimpleHTTPServer.html">3.3.13. SimpleHTTPServer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+          <li><a href="cgi.html">3.3.8. cgi</a> &raquo;</li>
+        
+      <li>3.3.8.1.19. cgi.test</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/cgi.test.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cgi-test">
+<h1>3.3.8.1.19. cgi.test<a class="headerlink" href="#cgi-test" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="cgi.test">
+<code class="descclassname">cgi.</code><code class="descname">test</code><span class="sig-paren">(</span><em>environ={'USER': 'takanori'</em>, <em>'LC_NUMERIC': 'en_US.UTF-8'</em>, <em>'MDMSESSION': 'default'</em>, <em>'CUDA_ROOT': '/usr/local/cuda-6.5'</em>, <em>'LESS': '-R'</em>, <em>'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated'</em>, <em>'GJS_DEBUG_OUTPUT': 'stderr'</em>, <em>'LC_MEASUREMENT': 'en_US.UTF-8'</em>, <em>'WINDOWPATH': '8'</em>, <em>'XDG_CURRENT_DESKTOP': 'X-Cinnamon'</em>, <em>'LC_PAPER': 'en_US.UTF-8'</em>, <em>'MDM_LANG': 'en_US.UTF-8'</em>, <em>'LOGNAME': 'takanori'</em>, <em>'WINDOWID': '33554439'</em>, <em>'HOME': '/home/takanori'</em>, <em>'XDG_VTNR': '8'</em>, <em>'PATH': '/home/takanori/anaconda2/bin:/usr/local/bin/protoc:/usr/local/cuda-6.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/takanori/Dropbox/git/configs_master/bin:/home/takanori/mybin/itksnap-3.2.0-20141023-Linux-x86_64/bin/:/usr/local/MATLAB/R2013a/bin:/home/takanori/abin:/usr/local/cuda-6.5/bin:/home/takanori/mybin/Slicer-4.4.0-linux-amd64:/home/takanori/mybin/ImageJ:/home/takanori/mybin/spark-2.0.0-bin-hadoop2.7/bin'</em>, <em>'DISPLAY': ':0'</em>, <em>'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring-mLXYOi'</em>, <em>'SSH_AGENT_PID': '2090'</em>, <em>'XDG_SESSION_DESKTOP': 'default'</em>, <em>'GLPATH': '/usr/lib'</em>, <em>'SHELL': '/bin/bash'</em>, <em>'XAUTHORITY': '/home/takanori/.Xauthority'</em>, <em>'SESSION_MANAGER': 'local/sbia-pc125:&#64;/tmp/.ICE-unix/2019</em>, <em>unix/sbia-pc125:/tmp/.ICE-unix/2019'</em>, <em>'XDG_DATA_DIRS': '/usr/share/default:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'</em>, <em>'MANDATORY_PATH': '/usr/share/gconf/default.mandatory.path'</em>, <em>'LD_LIBRARY_PATH': '/usr/local/cuda-6.5/lib64::/usr/local/cuda-6.5/lib64:/usr/local/lib/:/home/takanori/work-local/external-python-modules/deepnet/cudamat'</em>, <em>'QT4_IM_MODULE': 'ibus'</em>, <em>'CLUTTER_IM_MODULE': 'ibus'</em>, <em>'TEXTDOMAIN': 'im-config'</em>, <em>'MAKEFLAGS': ''</em>, <em>'XMODIFIERS': '&#64;im=ibus'</em>, <em>'GPG_AGENT_INFO': '/run/user/1000/keyring-mLXYOi/gpg:0:1'</em>, <em>'MFLAGS': ''</em>, <em>'BLAS': '/usr/local/lib/libopenblas.a'</em>, <em>'LC_MONETARY': 'en_US.UTF-8'</em>, <em>'USERNAME': 'takanori'</em>, <em>'LANG': 'en_US.UTF-8'</em>, <em>'MAKELEVEL': '1'</em>, <em>'GDM_XSERVER_LOCATION': 'local'</em>, <em>'XDG_RUNTIME_DIR': '/run/user/1000'</em>, <em>'LC_IDENTIFICATION': 'en_US.UTF-8'</em>, <em>'LC_ADDRESS': 'en_US.UTF-8'</em>, <em>'PYTHONPATH': '/home/takanori/Dropbox/work/external-pymodules:/home/takanori/Dropbox/work/sbia_work/python/modules:/home/takanori/work-local/external-python-modules/deepnet:/home/takanori/mybin/spark-2.0.0-bin-hadoop2.7/python/:/home/takanori/mybin/spark-2.0.0-bin-hadoop2.7/python/pyspark'</em>, <em>'SSH_AUTH_SOCK': '/run/user/1000/keyring-mLXYOi/ssh'</em>, <em>'CINNAMON_VERSION': '2.4.8'</em>, <em>'VTE_VERSION': '3409'</em>, <em>'LAPACK': '/usr/local/lib/libopenblas.a'</em>, <em>'GDMSESSION': 'default'</em>, <em>'EDITOR': 'emacs'</em>, <em>'DEFAULTS_PATH': '/usr/share/gconf/default.default.path'</em>, <em>'TEXTDOMAINDIR': '/usr/share/locale/'</em>, <em>'CUDA_LIB': '/usr/local/cuda-6.5/lib64'</em>, <em>'XDG_SESSION_ID': 'c1'</em>, <em>'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-14YDMPgcuL</em>, <em>guid=d6c988f7f807b3d763602b6457ae1923'</em>, <em>'_': '/usr/bin/make'</em>, <em>'XDG_SESSION_COOKIE': '847450ed610f378d43494f74556f7791-1471027491.141308-1505998725'</em>, <em>'GTK_IM_MODULE': 'ibus'</em>, <em>'DESKTOP_SESSION': 'default'</em>, <em>'XDG_CONFIG_DIRS': '/etc/xdg/xdg-default:/etc/xdg'</em>, <em>'GNOME_KEYRING_PID': '1943'</em>, <em>'TERM': 'xterm'</em>, <em>'MDM_XSERVER_LOCATION': 'local'</em>, <em>'PAPERSIZE': 'letter'</em>, <em>'SHLVL': '2'</em>, <em>'PWD': '/home/takanori/git_local/python_stl'</em>, <em>'QT_IM_MODULE': 'ibus'</em>, <em>'COLORTERM': 'gnome-terminal'</em>, <em>'CUDA_BIN': '/usr/local/cuda-6.5/bin'</em>, <em>'LC_NAME': 'en_US.UTF-8'</em>, <em>'LC_TELEPHONE': 'en_US.UTF-8'</em>, <em>'LC_TIME': 'en_US.UTF-8'</em>, <em>'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'</em>, <em>'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG'</em>, <em>'XDG_SEAT': 'seat0'}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgi.html#test"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgi.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Robust test CGI script, usable as main program.</p>
+<p>Write minimal HTTP headers and dump all information provided to
+the script in HTML form.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cgi.valid_boundary.html" class="btn btn-neutral float-right" title="3.3.8.1.20. cgi.valid_boundary" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cgi.print_form.html" class="btn btn-neutral" title="3.3.8.1.18. cgi.print_form" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

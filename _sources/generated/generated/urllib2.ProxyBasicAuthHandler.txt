@@ -1,0 +1,38 @@
+urllib2.ProxyBasicAuthHandler
+=============================
+
+.. currentmodule:: urllib2
+
+:func:`ProxyBasicAuthHandler.__init__`
+
+.. autoclass:: ProxyBasicAuthHandler
+    :members: __init__
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~ProxyBasicAuthHandler.__init__
+   ~ProxyBasicAuthHandler.add_parent
+   ~ProxyBasicAuthHandler.close
+   ~ProxyBasicAuthHandler.http_error_407
+   ~ProxyBasicAuthHandler.http_error_auth_reqed
+   ~ProxyBasicAuthHandler.retry_http_basic_auth
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~ProxyBasicAuthHandler.auth_header
+   ~ProxyBasicAuthHandler.handler_order
+   ~ProxyBasicAuthHandler.rx
+

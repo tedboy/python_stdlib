@@ -1,0 +1,38 @@
+urllib2.HTTPHandler
+===================
+
+.. currentmodule:: urllib2
+
+:func:`HTTPHandler.__init__`
+
+.. autoclass:: HTTPHandler
+    :members: __init__
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~HTTPHandler.__init__
+   ~HTTPHandler.add_parent
+   ~HTTPHandler.close
+   ~HTTPHandler.do_open
+   ~HTTPHandler.do_request_
+   ~HTTPHandler.http_open
+   ~HTTPHandler.http_request
+   ~HTTPHandler.set_http_debuglevel
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~HTTPHandler.handler_order
+

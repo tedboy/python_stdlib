@@ -1,0 +1,6 @@
+pickle.encode_long
+==================
+
+.. currentmodule:: pickle
+
+.. autofunction:: encode_long

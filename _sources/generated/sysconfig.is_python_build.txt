@@ -1,0 +1,6 @@
+sysconfig.is_python_build
+=========================
+
+.. currentmodule:: sysconfig
+
+.. autofunction:: is_python_build

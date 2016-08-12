@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.3.11.2.22. urllib2.Request &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="3.3.11. urllib2" href="../urllib2.html"/>
+        <link rel="next" title="3.3.11.2.22.1. urllib2.Request.add_data" href="urllib2.Request.add_data.html"/>
+        <link rel="prev" title="3.3.11.2.21.3. urllib2.ProxyHandler.proxy_open" href="urllib2.ProxyHandler.proxy_open.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../popen2.html">3.3.1. popen2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../socket.html">3.3.2. socket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../email.html">3.3.3. email</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../json.html">3.3.4. json</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../HTMLParser.html">3.3.5. HTMLParser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../xml.dom.html">3.3.6. xml.dom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../webbrowser.html">3.3.7. webbrowser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cgi.html">3.3.8. cgi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wsgiref.html">3.3.9. wsgiref</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../urllib.html">3.3.10. urllib</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../urllib2.html">3.3.11. urllib2</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../urllib2.html#functions">3.3.11.1. Functions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../urllib2.html#classes">3.3.11.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../urllib2.html#exceptions">3.3.11.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../urlparse.html">3.3.12. urlparse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../SimpleHTTPServer.html">3.3.13. SimpleHTTPServer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+          <li><a href="../urllib2.html">3.3.11. urllib2</a> &raquo;</li>
+        
+      <li>3.3.11.2.22. urllib2.Request</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/urllib2.Request.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="urllib2-request">
+<h1>3.3.11.2.22. urllib2.Request<a class="headerlink" href="#urllib2-request" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="urllib2.Request.__init__.html#urllib2.Request.__init__" title="urllib2.Request.__init__"><code class="xref py py-func docutils literal"><span class="pre">Request.__init__()</span></code></a></p>
+<dl class="class">
+<dt id="urllib2.Request">
+<em class="property">class </em><code class="descclassname">urllib2.</code><code class="descname">Request</code><span class="sig-paren">(</span><em>url</em>, <em>data=None</em>, <em>headers={}</em>, <em>origin_req_host=None</em>, <em>unverifiable=False</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/urllib2.html#Request"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#urllib2.Request" title="Permalink to this definition">¶</a></dt>
+<dd><p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.Request.add_data.html#urllib2.Request.add_data" title="urllib2.Request.add_data"><code class="xref py py-obj docutils literal"><span class="pre">add_data</span></code></a>(data)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib2.Request.add_header.html#urllib2.Request.add_header" title="urllib2.Request.add_header"><code class="xref py py-obj docutils literal"><span class="pre">add_header</span></code></a>(key,&nbsp;val)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.Request.add_unredirected_header.html#urllib2.Request.add_unredirected_header" title="urllib2.Request.add_unredirected_header"><code class="xref py py-obj docutils literal"><span class="pre">add_unredirected_header</span></code></a>(key,&nbsp;val)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib2.Request.get_data.html#urllib2.Request.get_data" title="urllib2.Request.get_data"><code class="xref py py-obj docutils literal"><span class="pre">get_data</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.Request.get_full_url.html#urllib2.Request.get_full_url" title="urllib2.Request.get_full_url"><code class="xref py py-obj docutils literal"><span class="pre">get_full_url</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib2.Request.get_header.html#urllib2.Request.get_header" title="urllib2.Request.get_header"><code class="xref py py-obj docutils literal"><span class="pre">get_header</span></code></a>(header_name[,&nbsp;default])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.Request.get_host.html#urllib2.Request.get_host" title="urllib2.Request.get_host"><code class="xref py py-obj docutils literal"><span class="pre">get_host</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib2.Request.get_method.html#urllib2.Request.get_method" title="urllib2.Request.get_method"><code class="xref py py-obj docutils literal"><span class="pre">get_method</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.Request.get_origin_req_host.html#urllib2.Request.get_origin_req_host" title="urllib2.Request.get_origin_req_host"><code class="xref py py-obj docutils literal"><span class="pre">get_origin_req_host</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib2.Request.get_selector.html#urllib2.Request.get_selector" title="urllib2.Request.get_selector"><code class="xref py py-obj docutils literal"><span class="pre">get_selector</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.Request.get_type.html#urllib2.Request.get_type" title="urllib2.Request.get_type"><code class="xref py py-obj docutils literal"><span class="pre">get_type</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib2.Request.has_data.html#urllib2.Request.has_data" title="urllib2.Request.has_data"><code class="xref py py-obj docutils literal"><span class="pre">has_data</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.Request.has_header.html#urllib2.Request.has_header" title="urllib2.Request.has_header"><code class="xref py py-obj docutils literal"><span class="pre">has_header</span></code></a>(header_name)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib2.Request.has_proxy.html#urllib2.Request.has_proxy" title="urllib2.Request.has_proxy"><code class="xref py py-obj docutils literal"><span class="pre">has_proxy</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.Request.header_items.html#urllib2.Request.header_items" title="urllib2.Request.header_items"><code class="xref py py-obj docutils literal"><span class="pre">header_items</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="urllib2.Request.is_unverifiable.html#urllib2.Request.is_unverifiable" title="urllib2.Request.is_unverifiable"><code class="xref py py-obj docutils literal"><span class="pre">is_unverifiable</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.Request.set_proxy.html#urllib2.Request.set_proxy" title="urllib2.Request.set_proxy"><code class="xref py py-obj docutils literal"><span class="pre">set_proxy</span></code></a>(host,&nbsp;type)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="urllib2.Request.add_data.html" class="btn btn-neutral float-right" title="3.3.11.2.22.1. urllib2.Request.add_data" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="urllib2.ProxyHandler.proxy_open.html" class="btn btn-neutral" title="3.3.11.2.21.3. urllib2.ProxyHandler.proxy_open" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

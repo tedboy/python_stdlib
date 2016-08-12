@@ -1,0 +1,38 @@
+pkgutil.ImpLoader
+=================
+
+.. currentmodule:: pkgutil
+
+:func:`ImpLoader.__init__`
+
+.. autoclass:: ImpLoader
+    :members: __init__
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~ImpLoader.__init__
+   ~ImpLoader.get_code
+   ~ImpLoader.get_data
+   ~ImpLoader.get_filename
+   ~ImpLoader.get_source
+   ~ImpLoader.is_package
+   ~ImpLoader.load_module
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~ImpLoader.code
+   ~ImpLoader.source
+

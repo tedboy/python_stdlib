@@ -1,0 +1,53 @@
+pickle.Pickler
+==============
+
+.. currentmodule:: pickle
+
+:func:`Pickler.__init__`
+
+.. autoclass:: Pickler
+    :members: __init__
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~Pickler.__init__
+   ~Pickler.clear_memo
+   ~Pickler.dump
+   ~Pickler.get
+   ~Pickler.memoize
+   ~Pickler.persistent_id
+   ~Pickler.put
+   ~Pickler.save
+   ~Pickler.save_bool
+   ~Pickler.save_dict
+   ~Pickler.save_empty_tuple
+   ~Pickler.save_float
+   ~Pickler.save_global
+   ~Pickler.save_inst
+   ~Pickler.save_int
+   ~Pickler.save_list
+   ~Pickler.save_long
+   ~Pickler.save_none
+   ~Pickler.save_pers
+   ~Pickler.save_reduce
+   ~Pickler.save_string
+   ~Pickler.save_tuple
+   ~Pickler.save_unicode
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~Pickler.dispatch
+

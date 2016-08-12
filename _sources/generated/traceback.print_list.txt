@@ -1,0 +1,6 @@
+traceback.print_list
+====================
+
+.. currentmodule:: traceback
+
+.. autofunction:: print_list

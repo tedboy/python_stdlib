@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.2.9.2.2. tarfile.TarFile &mdash; Python Standard Library</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="3.2.9. tarfile" href="../tarfile.html"/>
+        <link rel="next" title="3.2.9.2.2.1. tarfile.TarFile.posix" href="tarfile.TarFile.posix.html"/>
+        <link rel="prev" title="3.2.9.2.1.6. tarfile.ExFileObject.tell" href="tarfile.ExFileObject.tell.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pickle.html">3.2.2. pickle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cPickle.html">3.2.3. cPickle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../csv.html">3.2.4. csv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../zlib.html">3.2.5. zlib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gzip.html">3.2.6. gzip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../bz2.html">3.2.7. bz2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../zipfile.html">3.2.8. zipfile</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../tarfile.html">3.2.9. tarfile</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../tarfile.html#functions">3.2.9.1. Functions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../tarfile.html#classes">3.2.9.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tarfile.html#exceptions">3.2.9.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+          <li><a href="../tarfile.html">3.2.9. tarfile</a> &raquo;</li>
+        
+      <li>3.2.9.2.2. tarfile.TarFile</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/tarfile.TarFile.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tarfile-tarfile">
+<h1>3.2.9.2.2. tarfile.TarFile<a class="headerlink" href="#tarfile-tarfile" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="tarfile.TarFile.__init__.html#tarfile.TarFile.__init__" title="tarfile.TarFile.__init__"><code class="xref py py-func docutils literal"><span class="pre">TarFile.__init__()</span></code></a></p>
+<dl class="class">
+<dt id="tarfile.TarFile">
+<em class="property">class </em><code class="descclassname">tarfile.</code><code class="descname">TarFile</code><span class="sig-paren">(</span><em>name=None</em>, <em>mode='r'</em>, <em>fileobj=None</em>, <em>format=None</em>, <em>tarinfo=None</em>, <em>dereference=None</em>, <em>ignore_zeros=None</em>, <em>encoding=None</em>, <em>errors=None</em>, <em>pax_headers=None</em>, <em>debug=None</em>, <em>errorlevel=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/tarfile.html#TarFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tarfile.TarFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>The TarFile Class provides an interface to tar archives.</p>
+<p class="rubric">Attributes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.posix.html#tarfile.TarFile.posix" title="tarfile.TarFile.posix"><code class="xref py py-obj docutils literal"><span class="pre">posix</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="63%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>errors</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.add.html#tarfile.TarFile.add" title="tarfile.TarFile.add"><code class="xref py py-obj docutils literal"><span class="pre">add</span></code></a>(name[,&nbsp;arcname,&nbsp;recursive,&nbsp;exclude,&nbsp;filter])</td>
+<td>Add the file <a href="#id1"><span class="problematic" id="id2">`</span></a>name&#8217; to the archive.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.addfile.html#tarfile.TarFile.addfile" title="tarfile.TarFile.addfile"><code class="xref py py-obj docutils literal"><span class="pre">addfile</span></code></a>(tarinfo[,&nbsp;fileobj])</td>
+<td>Add the TarInfo object <a href="#id3"><span class="problematic" id="id4">`</span></a>tarinfo&#8217; to the archive.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.bz2open.html#tarfile.TarFile.bz2open" title="tarfile.TarFile.bz2open"><code class="xref py py-obj docutils literal"><span class="pre">bz2open</span></code></a>(name[,&nbsp;mode,&nbsp;fileobj,&nbsp;compresslevel])</td>
+<td>Open bzip2 compressed tar archive name for reading or writing.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.chmod.html#tarfile.TarFile.chmod" title="tarfile.TarFile.chmod"><code class="xref py py-obj docutils literal"><span class="pre">chmod</span></code></a>(tarinfo,&nbsp;targetpath)</td>
+<td>Set file permissions of targetpath according to tarinfo.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.chown.html#tarfile.TarFile.chown" title="tarfile.TarFile.chown"><code class="xref py py-obj docutils literal"><span class="pre">chown</span></code></a>(tarinfo,&nbsp;targetpath)</td>
+<td>Set owner of targetpath according to tarinfo.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.close.html#tarfile.TarFile.close" title="tarfile.TarFile.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>()</td>
+<td>Close the TarFile.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.extract.html#tarfile.TarFile.extract" title="tarfile.TarFile.extract"><code class="xref py py-obj docutils literal"><span class="pre">extract</span></code></a>(member[,&nbsp;path])</td>
+<td>Extract a member from the archive to the current working directory, using its full name.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.extractall.html#tarfile.TarFile.extractall" title="tarfile.TarFile.extractall"><code class="xref py py-obj docutils literal"><span class="pre">extractall</span></code></a>([path,&nbsp;members])</td>
+<td>Extract all members from the archive to the current working directory and set owner, modification time and permissions on directories afterwards.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.extractfile.html#tarfile.TarFile.extractfile" title="tarfile.TarFile.extractfile"><code class="xref py py-obj docutils literal"><span class="pre">extractfile</span></code></a>(member)</td>
+<td>Extract a member from the archive as a file object.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">fileobject</span></code></td>
+<td>alias of <a class="reference internal" href="tarfile.ExFileObject.html#tarfile.ExFileObject" title="tarfile.ExFileObject"><code class="xref py py-class docutils literal"><span class="pre">ExFileObject</span></code></a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.getmember.html#tarfile.TarFile.getmember" title="tarfile.TarFile.getmember"><code class="xref py py-obj docutils literal"><span class="pre">getmember</span></code></a>(name)</td>
+<td>Return a TarInfo object for member <a href="#id5"><span class="problematic" id="id6">`</span></a>name&#8217;.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.getmembers.html#tarfile.TarFile.getmembers" title="tarfile.TarFile.getmembers"><code class="xref py py-obj docutils literal"><span class="pre">getmembers</span></code></a>()</td>
+<td>Return the members of the archive as a list of TarInfo objects.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.getnames.html#tarfile.TarFile.getnames" title="tarfile.TarFile.getnames"><code class="xref py py-obj docutils literal"><span class="pre">getnames</span></code></a>()</td>
+<td>Return the members of the archive as a list of their names.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.gettarinfo.html#tarfile.TarFile.gettarinfo" title="tarfile.TarFile.gettarinfo"><code class="xref py py-obj docutils literal"><span class="pre">gettarinfo</span></code></a>([name,&nbsp;arcname,&nbsp;fileobj])</td>
+<td>Create a TarInfo object for either the file <a href="#id7"><span class="problematic" id="id8">`</span></a>name&#8217; or the file object <a href="#id9"><span class="problematic" id="id10">`</span></a>fileobj&#8217; (using os.fstat on its file descriptor).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.gzopen.html#tarfile.TarFile.gzopen" title="tarfile.TarFile.gzopen"><code class="xref py py-obj docutils literal"><span class="pre">gzopen</span></code></a>(name[,&nbsp;mode,&nbsp;fileobj,&nbsp;compresslevel])</td>
+<td>Open gzip compressed tar archive name for reading or writing.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.list.html#tarfile.TarFile.list" title="tarfile.TarFile.list"><code class="xref py py-obj docutils literal"><span class="pre">list</span></code></a>([verbose])</td>
+<td>Print a table of contents to sys.stdout.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.makedev.html#tarfile.TarFile.makedev" title="tarfile.TarFile.makedev"><code class="xref py py-obj docutils literal"><span class="pre">makedev</span></code></a>(tarinfo,&nbsp;targetpath)</td>
+<td>Make a character or block device called targetpath.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.makedir.html#tarfile.TarFile.makedir" title="tarfile.TarFile.makedir"><code class="xref py py-obj docutils literal"><span class="pre">makedir</span></code></a>(tarinfo,&nbsp;targetpath)</td>
+<td>Make a directory called targetpath.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.makefifo.html#tarfile.TarFile.makefifo" title="tarfile.TarFile.makefifo"><code class="xref py py-obj docutils literal"><span class="pre">makefifo</span></code></a>(tarinfo,&nbsp;targetpath)</td>
+<td>Make a fifo called targetpath.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.makefile.html#tarfile.TarFile.makefile" title="tarfile.TarFile.makefile"><code class="xref py py-obj docutils literal"><span class="pre">makefile</span></code></a>(tarinfo,&nbsp;targetpath)</td>
+<td>Make a file called targetpath.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.makelink.html#tarfile.TarFile.makelink" title="tarfile.TarFile.makelink"><code class="xref py py-obj docutils literal"><span class="pre">makelink</span></code></a>(tarinfo,&nbsp;targetpath)</td>
+<td>Make a (symbolic) link called targetpath.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.makeunknown.html#tarfile.TarFile.makeunknown" title="tarfile.TarFile.makeunknown"><code class="xref py py-obj docutils literal"><span class="pre">makeunknown</span></code></a>(tarinfo,&nbsp;targetpath)</td>
+<td>Make a file from a TarInfo object with an unknown type at targetpath.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.next.html#tarfile.TarFile.next" title="tarfile.TarFile.next"><code class="xref py py-obj docutils literal"><span class="pre">next</span></code></a>()</td>
+<td>Return the next member of the archive as a TarInfo object, when TarFile is opened for reading.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.open.html#tarfile.TarFile.open" title="tarfile.TarFile.open"><code class="xref py py-obj docutils literal"><span class="pre">open</span></code></a>([name,&nbsp;mode,&nbsp;fileobj,&nbsp;bufsize])</td>
+<td>Open a tar archive for reading, writing or appending.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">tarinfo</span></code></td>
+<td>alias of <a class="reference internal" href="tarfile.TarInfo.html#tarfile.TarInfo" title="tarfile.TarInfo"><code class="xref py py-class docutils literal"><span class="pre">TarInfo</span></code></a></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarFile.taropen.html#tarfile.TarFile.taropen" title="tarfile.TarFile.taropen"><code class="xref py py-obj docutils literal"><span class="pre">taropen</span></code></a>(name[,&nbsp;mode,&nbsp;fileobj])</td>
+<td>Open uncompressed tar archive name for reading or writing.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarFile.utime.html#tarfile.TarFile.utime" title="tarfile.TarFile.utime"><code class="xref py py-obj docutils literal"><span class="pre">utime</span></code></a>(tarinfo,&nbsp;targetpath)</td>
+<td>Set modification time of targetpath according to tarinfo.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="tarfile.TarFile.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>name=None</em>, <em>mode='r'</em>, <em>fileobj=None</em>, <em>format=None</em>, <em>tarinfo=None</em>, <em>dereference=None</em>, <em>ignore_zeros=None</em>, <em>encoding=None</em>, <em>errors=None</em>, <em>pax_headers=None</em>, <em>debug=None</em>, <em>errorlevel=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/tarfile.html#TarFile.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tarfile.TarFile.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open an (uncompressed) tar archive <a href="#id11"><span class="problematic" id="id12">`</span></a>name&#8217;. <a href="#id13"><span class="problematic" id="id14">`</span></a>mode&#8217; is either &#8216;r&#8217; to
+read from an existing archive, &#8216;a&#8217; to append data to an existing
+file or &#8216;w&#8217; to create a new file overwriting an existing one. <a href="#id15"><span class="problematic" id="id16">`</span></a>mode&#8217;
+defaults to &#8216;r&#8217;.
+If <a href="#id17"><span class="problematic" id="id18">`</span></a>fileobj&#8217; is given, it is used for reading or writing data. If it
+can be determined, <a href="#id19"><span class="problematic" id="id20">`</span></a>mode&#8217; is overridden by <a href="#id21"><span class="problematic" id="id22">`</span></a>fileobj&#8217;s mode.
+<a href="#id23"><span class="problematic" id="id24">`</span></a>fileobj&#8217; is not closed, when TarFile is closed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tarfile.TarFile.posix.html" class="btn btn-neutral float-right" title="3.2.9.2.2.1. tarfile.TarFile.posix" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tarfile.ExFileObject.tell.html" class="btn btn-neutral" title="3.2.9.2.1.6. tarfile.ExFileObject.tell" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

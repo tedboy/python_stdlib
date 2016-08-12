@@ -1,0 +1,6 @@
+imp.init_builtin
+================
+
+.. currentmodule:: imp
+
+.. autofunction:: init_builtin

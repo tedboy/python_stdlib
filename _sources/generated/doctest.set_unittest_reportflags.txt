@@ -1,0 +1,6 @@
+doctest.set_unittest_reportflags
+================================
+
+.. currentmodule:: doctest
+
+.. autofunction:: set_unittest_reportflags

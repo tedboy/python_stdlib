@@ -1,0 +1,6 @@
+pickle.decode_long
+==================
+
+.. currentmodule:: pickle
+
+.. autofunction:: decode_long

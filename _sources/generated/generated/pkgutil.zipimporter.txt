@@ -1,0 +1,38 @@
+pkgutil.zipimporter
+===================
+
+.. currentmodule:: pkgutil
+
+:func:`zipimporter.__init__`
+
+.. autoclass:: zipimporter
+    :members: __init__
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~zipimporter.find_module
+   ~zipimporter.get_code
+   ~zipimporter.get_data
+   ~zipimporter.get_filename
+   ~zipimporter.get_source
+   ~zipimporter.is_package
+   ~zipimporter.load_module
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~zipimporter.archive
+   ~zipimporter.prefix
+

@@ -1,0 +1,87 @@
+doctest
+=======
+
+.. automodule:: doctest
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      DocFileSuite
+      DocFileTest
+      DocTestSuite
+      debug
+      debug_script
+      debug_src
+      namedtuple
+      register_optionflag
+      run_docstring_examples
+      script_from_examples
+      set_unittest_reportflags
+      testfile
+      testmod
+      testsource
+   
+   
+
+   
+   
+   Classes
+   ---------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_custom.rst
+
+   
+      DebugRunner
+      DocFileCase
+      DocTest
+      DocTestCase
+      DocTestFinder
+      DocTestParser
+      DocTestRunner
+      Example
+      OutputChecker
+      SkipDocTestCase
+      StringIO
+      TestResults
+      Tester
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/doctest.DebugRunner
+       generated/doctest.DocFileCase
+       generated/doctest.DocTest
+       generated/doctest.DocTestCase
+       generated/doctest.DocTestFinder
+       generated/doctest.DocTestParser
+       generated/doctest.DocTestRunner
+       generated/doctest.Example
+       generated/doctest.OutputChecker
+       generated/doctest.SkipDocTestCase
+       generated/doctest.StringIO
+       generated/doctest.TestResults
+       generated/doctest.Tester
+
+   
+   
+
+   
+   
+   Exceptions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      DocTestFailure
+      UnexpectedException
+   
+   

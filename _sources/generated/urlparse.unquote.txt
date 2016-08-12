@@ -1,0 +1,6 @@
+urlparse.unquote
+================
+
+.. currentmodule:: urlparse
+
+.. autofunction:: unquote

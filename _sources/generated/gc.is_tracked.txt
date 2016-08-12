@@ -1,0 +1,6 @@
+gc.is_tracked
+=============
+
+.. currentmodule:: gc
+
+.. autofunction:: is_tracked

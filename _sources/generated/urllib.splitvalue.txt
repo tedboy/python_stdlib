@@ -1,0 +1,6 @@
+urllib.splitvalue
+=================
+
+.. currentmodule:: urllib
+
+.. autofunction:: splitvalue

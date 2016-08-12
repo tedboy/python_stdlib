@@ -1,0 +1,6 @@
+urllib2.splitattr
+=================
+
+.. currentmodule:: urllib2
+
+.. autofunction:: splitattr

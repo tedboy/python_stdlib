@@ -1,0 +1,6 @@
+urllib.quote
+============
+
+.. currentmodule:: urllib
+
+.. autofunction:: quote
