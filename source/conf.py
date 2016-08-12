@@ -59,7 +59,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'PROJECT_NAME'
+project = u'Python Standard Library'
 copyright = u'2016'
 author = u''
 
@@ -92,8 +92,12 @@ language = None
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
 exclude_patterns = [
-'autosummary.rst',
-'test3.rst',
+# 'misc.rst',
+# 'file_io.rst',
+# 'numerics_and_math.rst',
+# 'dev_and_debug.rst',
+# 'network.rst',
+# 'runtime_service.rst',
 #'templates',
 # 'autosummary/pyspark.sql.*',
 # 'autosummary/pyspark.ml.*',
@@ -254,7 +258,7 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'PROJECT_NAME'
+htmlhelp_basename = 'Python Standard Library'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -280,7 +284,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'PROJECT_NAME.tex', u'PROJECT_NAME Documentation',
+    (master_doc, 'Python Standard Library .tex', u'Python Standard Library  Documentation',
      u'WWW', 'manual'),
 ]
 
@@ -322,7 +326,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'PROJECT_NAME', u'PROJECT_NAME Documentation',
+    (master_doc, 'Python Standard Library ', u'Python Standard Library  Documentation',
      [author], 1)
 ]
 
@@ -337,8 +341,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'PROJECT_NAME', u'PROJECT_NAME Documentation',
-     author, 'PROJECT_NAME', 'One line description of project.',
+    (master_doc, 'Python Standard Library ', u'Python Standard Library  Documentation',
+     author, 'Python Standard Library ', 'One line description of project.',
      'Miscellaneous'),
 ]
 

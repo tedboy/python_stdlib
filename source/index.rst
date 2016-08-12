@@ -3,13 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-PROJECT_NAME
-=============
-Skeleton for creating my doc. Use of sphinx ``autosummary`` saved my life.
+Python Standard Library 
+=======================
+Relevant stuffs from https://docs.python.org/2/library/
 
 .. toctree::
    :maxdepth: 2
    :numbered:
    :caption: Table of Contents
 
-   file1
+   main
+   string
+   misc
+   file_io
+   dev_and_debug
+   runtime_service
