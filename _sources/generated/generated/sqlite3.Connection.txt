@@ -1,0 +1,57 @@
+sqlite3.Connection
+==================
+
+.. currentmodule:: sqlite3
+
+.. autoclass:: Connection
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~Connection.close
+   ~Connection.commit
+   ~Connection.create_aggregate
+   ~Connection.create_collation
+   ~Connection.create_function
+   ~Connection.cursor
+   ~Connection.execute
+   ~Connection.executemany
+   ~Connection.executescript
+   ~Connection.interrupt
+   ~Connection.iterdump
+   ~Connection.rollback
+   ~Connection.set_authorizer
+   ~Connection.set_progress_handler
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~Connection.DataError
+   ~Connection.DatabaseError
+   ~Connection.Error
+   ~Connection.IntegrityError
+   ~Connection.InterfaceError
+   ~Connection.InternalError
+   ~Connection.NotSupportedError
+   ~Connection.OperationalError
+   ~Connection.ProgrammingError
+   ~Connection.Warning
+   ~Connection.isolation_level
+   ~Connection.row_factory
+   ~Connection.text_factory
+   ~Connection.total_changes
+

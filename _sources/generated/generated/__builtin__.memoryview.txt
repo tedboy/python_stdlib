@@ -1,0 +1,38 @@
+__builtin__.memoryview
+======================
+
+.. currentmodule:: __builtin__
+
+.. autoclass:: memoryview
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~memoryview.tobytes
+   ~memoryview.tolist
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~memoryview.format
+   ~memoryview.itemsize
+   ~memoryview.ndim
+   ~memoryview.readonly
+   ~memoryview.shape
+   ~memoryview.strides
+   ~memoryview.suboffsets
+

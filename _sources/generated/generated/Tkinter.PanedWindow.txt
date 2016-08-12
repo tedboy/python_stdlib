@@ -1,0 +1,189 @@
+Tkinter.PanedWindow
+===================
+
+.. currentmodule:: Tkinter
+
+.. autoclass:: PanedWindow
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~PanedWindow.__init__
+   ~PanedWindow.add
+   ~PanedWindow.after
+   ~PanedWindow.after_cancel
+   ~PanedWindow.after_idle
+   ~PanedWindow.bbox
+   ~PanedWindow.bell
+   ~PanedWindow.bind
+   ~PanedWindow.bind_all
+   ~PanedWindow.bind_class
+   ~PanedWindow.bindtags
+   ~PanedWindow.cget
+   ~PanedWindow.clipboard_append
+   ~PanedWindow.clipboard_clear
+   ~PanedWindow.clipboard_get
+   ~PanedWindow.colormodel
+   ~PanedWindow.columnconfigure
+   ~PanedWindow.config
+   ~PanedWindow.configure
+   ~PanedWindow.deletecommand
+   ~PanedWindow.destroy
+   ~PanedWindow.event_add
+   ~PanedWindow.event_delete
+   ~PanedWindow.event_generate
+   ~PanedWindow.event_info
+   ~PanedWindow.focus
+   ~PanedWindow.focus_displayof
+   ~PanedWindow.focus_force
+   ~PanedWindow.focus_get
+   ~PanedWindow.focus_lastfor
+   ~PanedWindow.focus_set
+   ~PanedWindow.forget
+   ~PanedWindow.getboolean
+   ~PanedWindow.getvar
+   ~PanedWindow.grab_current
+   ~PanedWindow.grab_release
+   ~PanedWindow.grab_set
+   ~PanedWindow.grab_set_global
+   ~PanedWindow.grab_status
+   ~PanedWindow.grid
+   ~PanedWindow.grid_bbox
+   ~PanedWindow.grid_columnconfigure
+   ~PanedWindow.grid_configure
+   ~PanedWindow.grid_forget
+   ~PanedWindow.grid_info
+   ~PanedWindow.grid_location
+   ~PanedWindow.grid_propagate
+   ~PanedWindow.grid_remove
+   ~PanedWindow.grid_rowconfigure
+   ~PanedWindow.grid_size
+   ~PanedWindow.grid_slaves
+   ~PanedWindow.identify
+   ~PanedWindow.image_names
+   ~PanedWindow.image_types
+   ~PanedWindow.info
+   ~PanedWindow.keys
+   ~PanedWindow.lift
+   ~PanedWindow.location
+   ~PanedWindow.lower
+   ~PanedWindow.mainloop
+   ~PanedWindow.nametowidget
+   ~PanedWindow.option_add
+   ~PanedWindow.option_clear
+   ~PanedWindow.option_get
+   ~PanedWindow.option_readfile
+   ~PanedWindow.pack
+   ~PanedWindow.pack_configure
+   ~PanedWindow.pack_forget
+   ~PanedWindow.pack_info
+   ~PanedWindow.pack_propagate
+   ~PanedWindow.pack_slaves
+   ~PanedWindow.panecget
+   ~PanedWindow.paneconfig
+   ~PanedWindow.paneconfigure
+   ~PanedWindow.panes
+   ~PanedWindow.place
+   ~PanedWindow.place_configure
+   ~PanedWindow.place_forget
+   ~PanedWindow.place_info
+   ~PanedWindow.place_slaves
+   ~PanedWindow.propagate
+   ~PanedWindow.proxy
+   ~PanedWindow.proxy_coord
+   ~PanedWindow.proxy_forget
+   ~PanedWindow.proxy_place
+   ~PanedWindow.quit
+   ~PanedWindow.register
+   ~PanedWindow.remove
+   ~PanedWindow.rowconfigure
+   ~PanedWindow.sash
+   ~PanedWindow.sash_coord
+   ~PanedWindow.sash_mark
+   ~PanedWindow.sash_place
+   ~PanedWindow.selection_clear
+   ~PanedWindow.selection_get
+   ~PanedWindow.selection_handle
+   ~PanedWindow.selection_own
+   ~PanedWindow.selection_own_get
+   ~PanedWindow.send
+   ~PanedWindow.setvar
+   ~PanedWindow.size
+   ~PanedWindow.slaves
+   ~PanedWindow.tk_bisque
+   ~PanedWindow.tk_focusFollowsMouse
+   ~PanedWindow.tk_focusNext
+   ~PanedWindow.tk_focusPrev
+   ~PanedWindow.tk_menuBar
+   ~PanedWindow.tk_setPalette
+   ~PanedWindow.tk_strictMotif
+   ~PanedWindow.tkraise
+   ~PanedWindow.unbind
+   ~PanedWindow.unbind_all
+   ~PanedWindow.unbind_class
+   ~PanedWindow.update
+   ~PanedWindow.update_idletasks
+   ~PanedWindow.wait_variable
+   ~PanedWindow.wait_visibility
+   ~PanedWindow.wait_window
+   ~PanedWindow.waitvar
+   ~PanedWindow.winfo_atom
+   ~PanedWindow.winfo_atomname
+   ~PanedWindow.winfo_cells
+   ~PanedWindow.winfo_children
+   ~PanedWindow.winfo_class
+   ~PanedWindow.winfo_colormapfull
+   ~PanedWindow.winfo_containing
+   ~PanedWindow.winfo_depth
+   ~PanedWindow.winfo_exists
+   ~PanedWindow.winfo_fpixels
+   ~PanedWindow.winfo_geometry
+   ~PanedWindow.winfo_height
+   ~PanedWindow.winfo_id
+   ~PanedWindow.winfo_interps
+   ~PanedWindow.winfo_ismapped
+   ~PanedWindow.winfo_manager
+   ~PanedWindow.winfo_name
+   ~PanedWindow.winfo_parent
+   ~PanedWindow.winfo_pathname
+   ~PanedWindow.winfo_pixels
+   ~PanedWindow.winfo_pointerx
+   ~PanedWindow.winfo_pointerxy
+   ~PanedWindow.winfo_pointery
+   ~PanedWindow.winfo_reqheight
+   ~PanedWindow.winfo_reqwidth
+   ~PanedWindow.winfo_rgb
+   ~PanedWindow.winfo_rootx
+   ~PanedWindow.winfo_rooty
+   ~PanedWindow.winfo_screen
+   ~PanedWindow.winfo_screencells
+   ~PanedWindow.winfo_screendepth
+   ~PanedWindow.winfo_screenheight
+   ~PanedWindow.winfo_screenmmheight
+   ~PanedWindow.winfo_screenmmwidth
+   ~PanedWindow.winfo_screenvisual
+   ~PanedWindow.winfo_screenwidth
+   ~PanedWindow.winfo_server
+   ~PanedWindow.winfo_toplevel
+   ~PanedWindow.winfo_viewable
+   ~PanedWindow.winfo_visual
+   ~PanedWindow.winfo_visualid
+   ~PanedWindow.winfo_visualsavailable
+   ~PanedWindow.winfo_vrootheight
+   ~PanedWindow.winfo_vrootwidth
+   ~PanedWindow.winfo_vrootx
+   ~PanedWindow.winfo_vrooty
+   ~PanedWindow.winfo_width
+   ~PanedWindow.winfo_x
+   ~PanedWindow.winfo_y
+
+
+
+
+

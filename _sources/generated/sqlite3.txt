@@ -1,0 +1,87 @@
+sqlite3
+=======
+
+.. automodule:: sqlite3
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      DateFromTicks
+      TimeFromTicks
+      TimestampFromTicks
+      adapt
+      complete_statement
+      connect
+      enable_callback_tracebacks
+      enable_shared_cache
+      register_adapter
+      register_converter
+   
+   
+
+   
+   
+   Classes
+   ---------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_custom.rst
+
+   
+      Binary
+      Cache
+      Connection
+      Cursor
+      Date
+      OptimizedUnicode
+      PrepareProtocol
+      Row
+      Statement
+      Time
+      Timestamp
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/sqlite3.Binary
+       generated/sqlite3.Cache
+       generated/sqlite3.Connection
+       generated/sqlite3.Cursor
+       generated/sqlite3.Date
+       generated/sqlite3.OptimizedUnicode
+       generated/sqlite3.PrepareProtocol
+       generated/sqlite3.Row
+       generated/sqlite3.Statement
+       generated/sqlite3.Time
+       generated/sqlite3.Timestamp
+
+   
+   
+
+   
+   
+   Exceptions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      DataError
+      DatabaseError
+      Error
+      IntegrityError
+      InterfaceError
+      InternalError
+      NotSupportedError
+      OperationalError
+      ProgrammingError
+      Warning
+   
+   

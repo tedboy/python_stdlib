@@ -1,0 +1,61 @@
+pdb
+===
+
+.. automodule:: pdb
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      find_function
+      help
+      main
+      pm
+      post_mortem
+      run
+      runcall
+      runctx
+      runeval
+      set_trace
+      test
+   
+   
+
+   
+   
+   Classes
+   ---------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_custom.rst
+
+   
+      Pdb
+      Repr
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pdb.Pdb
+       generated/pdb.Repr
+
+   
+   
+
+   
+   
+   Exceptions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      Restart
+   
+   

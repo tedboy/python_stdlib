@@ -1,0 +1,45 @@
+sqlite3.Cursor
+==============
+
+.. currentmodule:: sqlite3
+
+.. autoclass:: Cursor
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~Cursor.close
+   ~Cursor.execute
+   ~Cursor.executemany
+   ~Cursor.executescript
+   ~Cursor.fetchall
+   ~Cursor.fetchmany
+   ~Cursor.fetchone
+   ~Cursor.setinputsizes
+   ~Cursor.setoutputsize
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~Cursor.arraysize
+   ~Cursor.connection
+   ~Cursor.description
+   ~Cursor.lastrowid
+   ~Cursor.next
+   ~Cursor.row_factory
+   ~Cursor.rowcount
+

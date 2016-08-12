@@ -1,0 +1,113 @@
+inspect
+=======
+
+.. automodule:: inspect
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      classify_class_attrs
+      cleandoc
+      currentframe
+      findsource
+      formatargspec
+      formatargvalues
+      getabsfile
+      getargs
+      getargspec
+      getargvalues
+      getblock
+      getcallargs
+      getclasstree
+      getcomments
+      getdoc
+      getfile
+      getframeinfo
+      getinnerframes
+      getlineno
+      getmembers
+      getmodule
+      getmoduleinfo
+      getmodulename
+      getmro
+      getouterframes
+      getsource
+      getsourcefile
+      getsourcelines
+      indentsize
+      isabstract
+      isbuiltin
+      isclass
+      iscode
+      isdatadescriptor
+      isframe
+      isfunction
+      isgenerator
+      isgeneratorfunction
+      isgetsetdescriptor
+      ismemberdescriptor
+      ismethod
+      ismethoddescriptor
+      ismodule
+      isroutine
+      istraceback
+      joinseq
+      namedtuple
+      stack
+      strseq
+      trace
+      walktree
+   
+   
+
+   
+   
+   Classes
+   ---------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_custom.rst
+
+   
+      ArgInfo
+      ArgSpec
+      Arguments
+      Attribute
+      BlockFinder
+      ModuleInfo
+      Traceback
+      attrgetter
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/inspect.ArgInfo
+       generated/inspect.ArgSpec
+       generated/inspect.Arguments
+       generated/inspect.Attribute
+       generated/inspect.BlockFinder
+       generated/inspect.ModuleInfo
+       generated/inspect.Traceback
+       generated/inspect.attrgetter
+
+   
+   
+
+   
+   
+   Exceptions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      EndOfBlock
+   
+   

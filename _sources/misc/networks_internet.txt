@@ -9,12 +9,34 @@ Networks and Internet
 .. toctree::
     :maxdepth: 1
 
-    ../generated/popen2
-    ../generated/socket
-    
+    generated/popen2
+    generated/socket
+    generated/email
+    generated/json
+    generated/HTMLParser
+    generated/xml.dom
+    generated/webbrowser
+    generated/cgi
+    generated/wsgiref
+    generated/urllib
+    generated/urllib2
+    generated/urlparse
+    generated/SimpleHTTPServer
+
 .. autosummary::
-   :toctree:../generated/
+   :toctree:generated/
    :template:module_custom.rst
 
     popen2
     socket
+    email
+    json
+    HTMLParser
+    xml.dom
+    webbrowser
+    cgi
+    wsgiref
+    urllib
+    urllib2
+    urlparse
+    SimpleHTTPServer

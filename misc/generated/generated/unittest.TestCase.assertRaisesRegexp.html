@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>unittest.TestCase.assertRaisesRegexp &mdash; Python Standard Library</title>
+  <title>3.4.3.2.3.31. unittest.TestCase.assertRaisesRegexp &mdash; Python Standard Library</title>
   
 
   
@@ -30,7 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../../index.html"/> 
+    <link rel="top" title="Python Standard Library" href="../../../index.html"/>
+        <link rel="up" title="3.4.3.2.3. unittest.TestCase" href="unittest.TestCase.html"/>
+        <link rel="next" title="3.4.3.2.3.32. unittest.TestCase.assertRegexpMatches" href="unittest.TestCase.assertRegexpMatches.html"/>
+        <link rel="prev" title="3.4.3.2.3.30. unittest.TestCase.assertRaises" href="unittest.TestCase.assertRaises.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -81,38 +84,1173 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../official_page.html">1. Official page TOC</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">2. misc package I may use in future</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../string_services.html">2.1. String Services</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../generated/textwrap.html">2.1.1. textwrap</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#functions">2.1.1.1. Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../generated/textwrap.html#classes">2.1.1.2. Classes</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../main1.html">1. Frequently used</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/__builtin__.html">1.1. __builtin__</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/__builtin__.html#functions">1.1.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.abs.html">1.1.1.1. __builtin__.abs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.all.html">1.1.1.2. __builtin__.all</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.any.html">1.1.1.3. __builtin__.any</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.apply.html">1.1.1.4. __builtin__.apply</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.bin.html">1.1.1.5. __builtin__.bin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.callable.html">1.1.1.6. __builtin__.callable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.chr.html">1.1.1.7. __builtin__.chr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.cmp.html">1.1.1.8. __builtin__.cmp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.coerce.html">1.1.1.9. __builtin__.coerce</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.compile.html">1.1.1.10. __builtin__.compile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.delattr.html">1.1.1.11. __builtin__.delattr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.dir.html">1.1.1.12. __builtin__.dir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.divmod.html">1.1.1.13. __builtin__.divmod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.eval.html">1.1.1.14. __builtin__.eval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.execfile.html">1.1.1.15. __builtin__.execfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.filter.html">1.1.1.16. __builtin__.filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.format.html">1.1.1.17. __builtin__.format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.getattr.html">1.1.1.18. __builtin__.getattr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.globals.html">1.1.1.19. __builtin__.globals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.hasattr.html">1.1.1.20. __builtin__.hasattr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.hash.html">1.1.1.21. __builtin__.hash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.hex.html">1.1.1.22. __builtin__.hex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.id.html">1.1.1.23. __builtin__.id</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.input.html">1.1.1.24. __builtin__.input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.intern.html">1.1.1.25. __builtin__.intern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.isinstance.html">1.1.1.26. __builtin__.isinstance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.issubclass.html">1.1.1.27. __builtin__.issubclass</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.iter.html">1.1.1.28. __builtin__.iter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.len.html">1.1.1.29. __builtin__.len</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.locals.html">1.1.1.30. __builtin__.locals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.map.html">1.1.1.31. __builtin__.map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.max.html">1.1.1.32. __builtin__.max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.min.html">1.1.1.33. __builtin__.min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.next.html">1.1.1.34. __builtin__.next</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.oct.html">1.1.1.35. __builtin__.oct</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.open.html">1.1.1.36. __builtin__.open</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.ord.html">1.1.1.37. __builtin__.ord</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.pow.html">1.1.1.38. __builtin__.pow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.print.html">1.1.1.39. __builtin__.print</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.range.html">1.1.1.40. __builtin__.range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.raw_input.html">1.1.1.41. __builtin__.raw_input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.reduce.html">1.1.1.42. __builtin__.reduce</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.reload.html">1.1.1.43. __builtin__.reload</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.repr.html">1.1.1.44. __builtin__.repr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.round.html">1.1.1.45. __builtin__.round</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.setattr.html">1.1.1.46. __builtin__.setattr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.sorted.html">1.1.1.47. __builtin__.sorted</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.sum.html">1.1.1.48. __builtin__.sum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.unichr.html">1.1.1.49. __builtin__.unichr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.vars.html">1.1.1.50. __builtin__.vars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.zip.html">1.1.1.51. __builtin__.zip</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../generated/unicodedata.html">2.1.2. unicodedata</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#functions">2.1.2.1. Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../generated/unicodedata.html#classes">2.1.2.2. Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/__builtin__.html#classes">1.1.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.basestring.html">1.1.2.1. __builtin__.basestring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.bool.html">1.1.2.2. __builtin__.bool</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.buffer.html">1.1.2.3. __builtin__.buffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.bytearray.html">1.1.2.4. __builtin__.bytearray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.bytes.html">1.1.2.5. __builtin__.bytes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.classmethod.html">1.1.2.6. __builtin__.classmethod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.complex.html">1.1.2.7. __builtin__.complex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.dict.html">1.1.2.8. __builtin__.dict</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.enumerate.html">1.1.2.9. __builtin__.enumerate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.file.html">1.1.2.10. __builtin__.file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.float.html">1.1.2.11. __builtin__.float</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.frozenset.html">1.1.2.12. __builtin__.frozenset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.int.html">1.1.2.13. __builtin__.int</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.list.html">1.1.2.14. __builtin__.list</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.long.html">1.1.2.15. __builtin__.long</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.memoryview.html">1.1.2.16. __builtin__.memoryview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.object.html">1.1.2.17. __builtin__.object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.property.html">1.1.2.18. __builtin__.property</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.reversed.html">1.1.2.19. __builtin__.reversed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.set.html">1.1.2.20. __builtin__.set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.slice.html">1.1.2.21. __builtin__.slice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.staticmethod.html">1.1.2.22. __builtin__.staticmethod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.str.html">1.1.2.23. __builtin__.str</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.super.html">1.1.2.24. __builtin__.super</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.tuple.html">1.1.2.25. __builtin__.tuple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.type.html">1.1.2.26. __builtin__.type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.unicode.html">1.1.2.27. __builtin__.unicode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/__builtin__.xrange.html">1.1.2.28. __builtin__.xrange</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/__builtin__.html#exceptions">1.1.3. Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.ArithmeticError.html">1.1.3.1. __builtin__.ArithmeticError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.AssertionError.html">1.1.3.2. __builtin__.AssertionError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.AttributeError.html">1.1.3.3. __builtin__.AttributeError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.BaseException.html">1.1.3.4. __builtin__.BaseException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.BufferError.html">1.1.3.5. __builtin__.BufferError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.BytesWarning.html">1.1.3.6. __builtin__.BytesWarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.DeprecationWarning.html">1.1.3.7. __builtin__.DeprecationWarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.EOFError.html">1.1.3.8. __builtin__.EOFError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.EnvironmentError.html">1.1.3.9. __builtin__.EnvironmentError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.Exception.html">1.1.3.10. __builtin__.Exception</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.FloatingPointError.html">1.1.3.11. __builtin__.FloatingPointError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.FutureWarning.html">1.1.3.12. __builtin__.FutureWarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.GeneratorExit.html">1.1.3.13. __builtin__.GeneratorExit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.IOError.html">1.1.3.14. __builtin__.IOError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.ImportError.html">1.1.3.15. __builtin__.ImportError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.ImportWarning.html">1.1.3.16. __builtin__.ImportWarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.IndentationError.html">1.1.3.17. __builtin__.IndentationError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.IndexError.html">1.1.3.18. __builtin__.IndexError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.KeyError.html">1.1.3.19. __builtin__.KeyError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.KeyboardInterrupt.html">1.1.3.20. __builtin__.KeyboardInterrupt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.LookupError.html">1.1.3.21. __builtin__.LookupError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.MemoryError.html">1.1.3.22. __builtin__.MemoryError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.NameError.html">1.1.3.23. __builtin__.NameError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.NotImplementedError.html">1.1.3.24. __builtin__.NotImplementedError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.OSError.html">1.1.3.25. __builtin__.OSError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.OverflowError.html">1.1.3.26. __builtin__.OverflowError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.PendingDeprecationWarning.html">1.1.3.27. __builtin__.PendingDeprecationWarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.ReferenceError.html">1.1.3.28. __builtin__.ReferenceError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.RuntimeError.html">1.1.3.29. __builtin__.RuntimeError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.RuntimeWarning.html">1.1.3.30. __builtin__.RuntimeWarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.StandardError.html">1.1.3.31. __builtin__.StandardError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.StopIteration.html">1.1.3.32. __builtin__.StopIteration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.SyntaxError.html">1.1.3.33. __builtin__.SyntaxError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.SyntaxWarning.html">1.1.3.34. __builtin__.SyntaxWarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.SystemError.html">1.1.3.35. __builtin__.SystemError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.SystemExit.html">1.1.3.36. __builtin__.SystemExit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.TabError.html">1.1.3.37. __builtin__.TabError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.TypeError.html">1.1.3.38. __builtin__.TypeError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.UnboundLocalError.html">1.1.3.39. __builtin__.UnboundLocalError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.UnicodeDecodeError.html">1.1.3.40. __builtin__.UnicodeDecodeError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.UnicodeEncodeError.html">1.1.3.41. __builtin__.UnicodeEncodeError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.UnicodeError.html">1.1.3.42. __builtin__.UnicodeError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.UnicodeTranslateError.html">1.1.3.43. __builtin__.UnicodeTranslateError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.UnicodeWarning.html">1.1.3.44. __builtin__.UnicodeWarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.UserWarning.html">1.1.3.45. __builtin__.UserWarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.ValueError.html">1.1.3.46. __builtin__.ValueError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.Warning.html">1.1.3.47. __builtin__.Warning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/__builtin__.ZeroDivisionError.html">1.1.3.48. __builtin__.ZeroDivisionError</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../networks_internet.html">2.2. Networks and Internet</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../generated/popen2.html">2.2.1. popen2</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#functions">2.2.1.1. Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../generated/popen2.html#classes">2.2.1.2. Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/string.html">1.2. string</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/string.html#functions">1.2.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.atof.html">1.2.1.1. string.atof</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.atoi.html">1.2.1.2. string.atoi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.atol.html">1.2.1.3. string.atol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.capitalize.html">1.2.1.4. string.capitalize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.capwords.html">1.2.1.5. string.capwords</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.center.html">1.2.1.6. string.center</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.count.html">1.2.1.7. string.count</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.expandtabs.html">1.2.1.8. string.expandtabs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.find.html">1.2.1.9. string.find</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.index.html">1.2.1.10. string.index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.join.html">1.2.1.11. string.join</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.joinfields.html">1.2.1.12. string.joinfields</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.ljust.html">1.2.1.13. string.ljust</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.lower.html">1.2.1.14. string.lower</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.lstrip.html">1.2.1.15. string.lstrip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.maketrans.html">1.2.1.16. string.maketrans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.replace.html">1.2.1.17. string.replace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.rfind.html">1.2.1.18. string.rfind</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.rindex.html">1.2.1.19. string.rindex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.rjust.html">1.2.1.20. string.rjust</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.rsplit.html">1.2.1.21. string.rsplit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.rstrip.html">1.2.1.22. string.rstrip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.split.html">1.2.1.23. string.split</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.splitfields.html">1.2.1.24. string.splitfields</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.strip.html">1.2.1.25. string.strip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.swapcase.html">1.2.1.26. string.swapcase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.translate.html">1.2.1.27. string.translate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.upper.html">1.2.1.28. string.upper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.zfill.html">1.2.1.29. string.zfill</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../generated/socket.html">2.2.2. socket</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#functions">2.2.2.1. Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#classes">2.2.2.2. Classes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../generated/socket.html#exceptions">2.2.2.3. Exceptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/string.html#classes">1.2.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/string.Formatter.html">1.2.2.1. string.Formatter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/string.Template.html">1.2.2.2. string.Template</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/string.html#exceptions">1.2.3. Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.atof_error.html">1.2.3.1. string.atof_error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.atoi_error.html">1.2.3.2. string.atoi_error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.atol_error.html">1.2.3.3. string.atol_error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/string.index_error.html">1.2.3.4. string.index_error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/re.html">1.3. re</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/re.html#functions">1.3.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.compile.html">1.3.1.1. re.compile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.escape.html">1.3.1.2. re.escape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.findall.html">1.3.1.3. re.findall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.finditer.html">1.3.1.4. re.finditer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.match.html">1.3.1.5. re.match</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.purge.html">1.3.1.6. re.purge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.search.html">1.3.1.7. re.search</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.split.html">1.3.1.8. re.split</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.sub.html">1.3.1.9. re.sub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.subn.html">1.3.1.10. re.subn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.template.html">1.3.1.11. re.template</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/re.html#classes">1.3.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/re.Scanner.html">1.3.2.1. re.Scanner</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/re.html#exceptions">1.3.3. Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/re.error.html">1.3.3.1. re.error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/os.html">1.4. os</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/os.html#functions">1.4.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.WCOREDUMP.html">1.4.1.1. os.WCOREDUMP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.WEXITSTATUS.html">1.4.1.2. os.WEXITSTATUS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.WIFCONTINUED.html">1.4.1.3. os.WIFCONTINUED</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.WIFEXITED.html">1.4.1.4. os.WIFEXITED</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.WIFSIGNALED.html">1.4.1.5. os.WIFSIGNALED</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.WIFSTOPPED.html">1.4.1.6. os.WIFSTOPPED</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.WSTOPSIG.html">1.4.1.7. os.WSTOPSIG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.WTERMSIG.html">1.4.1.8. os.WTERMSIG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.abort.html">1.4.1.9. os.abort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.access.html">1.4.1.10. os.access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.chdir.html">1.4.1.11. os.chdir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.chmod.html">1.4.1.12. os.chmod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.chown.html">1.4.1.13. os.chown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.chroot.html">1.4.1.14. os.chroot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.close.html">1.4.1.15. os.close</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.closerange.html">1.4.1.16. os.closerange</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.confstr.html">1.4.1.17. os.confstr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.ctermid.html">1.4.1.18. os.ctermid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.dup.html">1.4.1.19. os.dup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.dup2.html">1.4.1.20. os.dup2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.execl.html">1.4.1.21. os.execl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.execle.html">1.4.1.22. os.execle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.execlp.html">1.4.1.23. os.execlp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.execlpe.html">1.4.1.24. os.execlpe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.execv.html">1.4.1.25. os.execv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.execve.html">1.4.1.26. os.execve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.execvp.html">1.4.1.27. os.execvp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.execvpe.html">1.4.1.28. os.execvpe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.fchdir.html">1.4.1.29. os.fchdir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.fchmod.html">1.4.1.30. os.fchmod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.fchown.html">1.4.1.31. os.fchown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.fdatasync.html">1.4.1.32. os.fdatasync</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.fdopen.html">1.4.1.33. os.fdopen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.fork.html">1.4.1.34. os.fork</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.forkpty.html">1.4.1.35. os.forkpty</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.fpathconf.html">1.4.1.36. os.fpathconf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.fstat.html">1.4.1.37. os.fstat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.fstatvfs.html">1.4.1.38. os.fstatvfs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.fsync.html">1.4.1.39. os.fsync</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.ftruncate.html">1.4.1.40. os.ftruncate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getcwd.html">1.4.1.41. os.getcwd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getcwdu.html">1.4.1.42. os.getcwdu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getegid.html">1.4.1.43. os.getegid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getenv.html">1.4.1.44. os.getenv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.geteuid.html">1.4.1.45. os.geteuid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getgid.html">1.4.1.46. os.getgid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getgroups.html">1.4.1.47. os.getgroups</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getloadavg.html">1.4.1.48. os.getloadavg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getlogin.html">1.4.1.49. os.getlogin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getpgid.html">1.4.1.50. os.getpgid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getpgrp.html">1.4.1.51. os.getpgrp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getpid.html">1.4.1.52. os.getpid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getppid.html">1.4.1.53. os.getppid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getresgid.html">1.4.1.54. os.getresgid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getresuid.html">1.4.1.55. os.getresuid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getsid.html">1.4.1.56. os.getsid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.getuid.html">1.4.1.57. os.getuid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.initgroups.html">1.4.1.58. os.initgroups</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.isatty.html">1.4.1.59. os.isatty</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.kill.html">1.4.1.60. os.kill</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.killpg.html">1.4.1.61. os.killpg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.lchown.html">1.4.1.62. os.lchown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.link.html">1.4.1.63. os.link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.listdir.html">1.4.1.64. os.listdir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.lseek.html">1.4.1.65. os.lseek</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.lstat.html">1.4.1.66. os.lstat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.major.html">1.4.1.67. os.major</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.makedev.html">1.4.1.68. os.makedev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.makedirs.html">1.4.1.69. os.makedirs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.minor.html">1.4.1.70. os.minor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.mkdir.html">1.4.1.71. os.mkdir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.mkfifo.html">1.4.1.72. os.mkfifo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.mknod.html">1.4.1.73. os.mknod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.nice.html">1.4.1.74. os.nice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.open.html">1.4.1.75. os.open</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.openpty.html">1.4.1.76. os.openpty</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.pathconf.html">1.4.1.77. os.pathconf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.pipe.html">1.4.1.78. os.pipe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.popen.html">1.4.1.79. os.popen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.popen2.html">1.4.1.80. os.popen2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.popen3.html">1.4.1.81. os.popen3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.popen4.html">1.4.1.82. os.popen4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.putenv.html">1.4.1.83. os.putenv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.read.html">1.4.1.84. os.read</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.readlink.html">1.4.1.85. os.readlink</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.remove.html">1.4.1.86. os.remove</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.removedirs.html">1.4.1.87. os.removedirs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.rename.html">1.4.1.88. os.rename</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.renames.html">1.4.1.89. os.renames</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.rmdir.html">1.4.1.90. os.rmdir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.setegid.html">1.4.1.91. os.setegid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.seteuid.html">1.4.1.92. os.seteuid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.setgid.html">1.4.1.93. os.setgid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.setgroups.html">1.4.1.94. os.setgroups</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.setpgid.html">1.4.1.95. os.setpgid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.setpgrp.html">1.4.1.96. os.setpgrp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.setregid.html">1.4.1.97. os.setregid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.setresgid.html">1.4.1.98. os.setresgid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.setresuid.html">1.4.1.99. os.setresuid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.setreuid.html">1.4.1.100. os.setreuid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.setsid.html">1.4.1.101. os.setsid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.setuid.html">1.4.1.102. os.setuid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.spawnl.html">1.4.1.103. os.spawnl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.spawnle.html">1.4.1.104. os.spawnle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.spawnlp.html">1.4.1.105. os.spawnlp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.spawnlpe.html">1.4.1.106. os.spawnlpe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.spawnv.html">1.4.1.107. os.spawnv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.spawnve.html">1.4.1.108. os.spawnve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.spawnvp.html">1.4.1.109. os.spawnvp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.spawnvpe.html">1.4.1.110. os.spawnvpe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.stat.html">1.4.1.111. os.stat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.stat_float_times.html">1.4.1.112. os.stat_float_times</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.statvfs.html">1.4.1.113. os.statvfs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.strerror.html">1.4.1.114. os.strerror</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.symlink.html">1.4.1.115. os.symlink</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.sysconf.html">1.4.1.116. os.sysconf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.system.html">1.4.1.117. os.system</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.tcgetpgrp.html">1.4.1.118. os.tcgetpgrp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.tcsetpgrp.html">1.4.1.119. os.tcsetpgrp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.tempnam.html">1.4.1.120. os.tempnam</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.times.html">1.4.1.121. os.times</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.tmpfile.html">1.4.1.122. os.tmpfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.tmpnam.html">1.4.1.123. os.tmpnam</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.ttyname.html">1.4.1.124. os.ttyname</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.umask.html">1.4.1.125. os.umask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.uname.html">1.4.1.126. os.uname</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.unlink.html">1.4.1.127. os.unlink</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.unsetenv.html">1.4.1.128. os.unsetenv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.urandom.html">1.4.1.129. os.urandom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.utime.html">1.4.1.130. os.utime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.wait.html">1.4.1.131. os.wait</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.wait3.html">1.4.1.132. os.wait3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.wait4.html">1.4.1.133. os.wait4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.waitpid.html">1.4.1.134. os.waitpid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.walk.html">1.4.1.135. os.walk</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.write.html">1.4.1.136. os.write</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/os.html#classes">1.4.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/os.stat_result.html">1.4.2.1. os.stat_result</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/os.statvfs_result.html">1.4.2.2. os.statvfs_result</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/os.html#exceptions">1.4.3. Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.error.html">1.4.3.1. os.error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/os.path.html">1.5. os.path</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/os.path.html#functions">1.5.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.abspath.html">1.5.1.1. os.path.abspath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.basename.html">1.5.1.2. os.path.basename</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.commonprefix.html">1.5.1.3. os.path.commonprefix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.dirname.html">1.5.1.4. os.path.dirname</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.exists.html">1.5.1.5. os.path.exists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.expanduser.html">1.5.1.6. os.path.expanduser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.expandvars.html">1.5.1.7. os.path.expandvars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.getatime.html">1.5.1.8. os.path.getatime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.getctime.html">1.5.1.9. os.path.getctime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.getmtime.html">1.5.1.10. os.path.getmtime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.getsize.html">1.5.1.11. os.path.getsize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.isabs.html">1.5.1.12. os.path.isabs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.isdir.html">1.5.1.13. os.path.isdir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.isfile.html">1.5.1.14. os.path.isfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.islink.html">1.5.1.15. os.path.islink</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.ismount.html">1.5.1.16. os.path.ismount</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.join.html">1.5.1.17. os.path.join</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.lexists.html">1.5.1.18. os.path.lexists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.normcase.html">1.5.1.19. os.path.normcase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.normpath.html">1.5.1.20. os.path.normpath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.realpath.html">1.5.1.21. os.path.realpath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.relpath.html">1.5.1.22. os.path.relpath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.samefile.html">1.5.1.23. os.path.samefile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.sameopenfile.html">1.5.1.24. os.path.sameopenfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.samestat.html">1.5.1.25. os.path.samestat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.split.html">1.5.1.26. os.path.split</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.splitdrive.html">1.5.1.27. os.path.splitdrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.splitext.html">1.5.1.28. os.path.splitext</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/os.path.walk.html">1.5.1.29. os.path.walk</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/sys.html">1.6. sys</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/sys.html#functions">1.6.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.call_tracing.html">1.6.1.1. sys.call_tracing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.callstats.html">1.6.1.2. sys.callstats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.displayhook.html">1.6.1.3. sys.displayhook</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.exc_clear.html">1.6.1.4. sys.exc_clear</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.exc_info.html">1.6.1.5. sys.exc_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.excepthook.html">1.6.1.6. sys.excepthook</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.exit.html">1.6.1.7. sys.exit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.exitfunc.html">1.6.1.8. sys.exitfunc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.getcheckinterval.html">1.6.1.9. sys.getcheckinterval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.getdefaultencoding.html">1.6.1.10. sys.getdefaultencoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.getdlopenflags.html">1.6.1.11. sys.getdlopenflags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.getfilesystemencoding.html">1.6.1.12. sys.getfilesystemencoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.getprofile.html">1.6.1.13. sys.getprofile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.getrecursionlimit.html">1.6.1.14. sys.getrecursionlimit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.getrefcount.html">1.6.1.15. sys.getrefcount</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.getsizeof.html">1.6.1.16. sys.getsizeof</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.gettrace.html">1.6.1.17. sys.gettrace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.setcheckinterval.html">1.6.1.18. sys.setcheckinterval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.setdlopenflags.html">1.6.1.19. sys.setdlopenflags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.setprofile.html">1.6.1.20. sys.setprofile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.setrecursionlimit.html">1.6.1.21. sys.setrecursionlimit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.settrace.html">1.6.1.22. sys.settrace</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/sys.html#exceptions">1.6.2. Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sys.exc_type.html">1.6.2.1. sys.exc_type</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/inspect.html">1.7. inspect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/inspect.html#functions">1.7.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.classify_class_attrs.html">1.7.1.1. inspect.classify_class_attrs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.cleandoc.html">1.7.1.2. inspect.cleandoc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.currentframe.html">1.7.1.3. inspect.currentframe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.findsource.html">1.7.1.4. inspect.findsource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.formatargspec.html">1.7.1.5. inspect.formatargspec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.formatargvalues.html">1.7.1.6. inspect.formatargvalues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getabsfile.html">1.7.1.7. inspect.getabsfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getargs.html">1.7.1.8. inspect.getargs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getargspec.html">1.7.1.9. inspect.getargspec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getargvalues.html">1.7.1.10. inspect.getargvalues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getblock.html">1.7.1.11. inspect.getblock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getcallargs.html">1.7.1.12. inspect.getcallargs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getclasstree.html">1.7.1.13. inspect.getclasstree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getcomments.html">1.7.1.14. inspect.getcomments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getdoc.html">1.7.1.15. inspect.getdoc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getfile.html">1.7.1.16. inspect.getfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getframeinfo.html">1.7.1.17. inspect.getframeinfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getinnerframes.html">1.7.1.18. inspect.getinnerframes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getlineno.html">1.7.1.19. inspect.getlineno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getmembers.html">1.7.1.20. inspect.getmembers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getmodule.html">1.7.1.21. inspect.getmodule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getmoduleinfo.html">1.7.1.22. inspect.getmoduleinfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getmodulename.html">1.7.1.23. inspect.getmodulename</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getmro.html">1.7.1.24. inspect.getmro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getouterframes.html">1.7.1.25. inspect.getouterframes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getsource.html">1.7.1.26. inspect.getsource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getsourcefile.html">1.7.1.27. inspect.getsourcefile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.getsourcelines.html">1.7.1.28. inspect.getsourcelines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.indentsize.html">1.7.1.29. inspect.indentsize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.isabstract.html">1.7.1.30. inspect.isabstract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.isbuiltin.html">1.7.1.31. inspect.isbuiltin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.isclass.html">1.7.1.32. inspect.isclass</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.iscode.html">1.7.1.33. inspect.iscode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.isdatadescriptor.html">1.7.1.34. inspect.isdatadescriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.isframe.html">1.7.1.35. inspect.isframe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.isfunction.html">1.7.1.36. inspect.isfunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.isgenerator.html">1.7.1.37. inspect.isgenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.isgeneratorfunction.html">1.7.1.38. inspect.isgeneratorfunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.isgetsetdescriptor.html">1.7.1.39. inspect.isgetsetdescriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.ismemberdescriptor.html">1.7.1.40. inspect.ismemberdescriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.ismethod.html">1.7.1.41. inspect.ismethod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.ismethoddescriptor.html">1.7.1.42. inspect.ismethoddescriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.ismodule.html">1.7.1.43. inspect.ismodule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.isroutine.html">1.7.1.44. inspect.isroutine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.istraceback.html">1.7.1.45. inspect.istraceback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.joinseq.html">1.7.1.46. inspect.joinseq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.namedtuple.html">1.7.1.47. inspect.namedtuple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.stack.html">1.7.1.48. inspect.stack</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.strseq.html">1.7.1.49. inspect.strseq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.trace.html">1.7.1.50. inspect.trace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.walktree.html">1.7.1.51. inspect.walktree</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/inspect.html#classes">1.7.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/inspect.ArgInfo.html">1.7.2.1. inspect.ArgInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/inspect.ArgSpec.html">1.7.2.2. inspect.ArgSpec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/inspect.Arguments.html">1.7.2.3. inspect.Arguments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/inspect.Attribute.html">1.7.2.4. inspect.Attribute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/inspect.BlockFinder.html">1.7.2.5. inspect.BlockFinder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/inspect.ModuleInfo.html">1.7.2.6. inspect.ModuleInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/inspect.Traceback.html">1.7.2.7. inspect.Traceback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/inspect.attrgetter.html">1.7.2.8. inspect.attrgetter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/inspect.html#exceptions">1.7.3. Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/inspect.EndOfBlock.html">1.7.3.1. inspect.EndOfBlock</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/warnings.html">1.8. warnings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/warnings.html#functions">1.8.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/warnings.filterwarnings.html">1.8.1.1. warnings.filterwarnings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/warnings.formatwarning.html">1.8.1.2. warnings.formatwarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/warnings.resetwarnings.html">1.8.1.3. warnings.resetwarnings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/warnings.showwarning.html">1.8.1.4. warnings.showwarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/warnings.simplefilter.html">1.8.1.5. warnings.simplefilter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/warnings.warn.html">1.8.1.6. warnings.warn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/warnings.warn_explicit.html">1.8.1.7. warnings.warn_explicit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/warnings.warnpy3k.html">1.8.1.8. warnings.warnpy3k</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/warnings.html#classes">1.8.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/warnings.WarningMessage.html">1.8.2.1. warnings.WarningMessage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/warnings.catch_warnings.html">1.8.2.2. warnings.catch_warnings</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../main2.html">2. Somewhat frequently used</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/collections.html">2.1. collections</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/collections.html#functions">2.1.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/collections.namedtuple.html">2.1.1.1. collections.namedtuple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/collections.html#classes">2.1.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.Callable.html">2.1.2.1. collections.Callable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.Container.html">2.1.2.2. collections.Container</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.Counter.html">2.1.2.3. collections.Counter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.Hashable.html">2.1.2.4. collections.Hashable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.ItemsView.html">2.1.2.5. collections.ItemsView</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.Iterable.html">2.1.2.6. collections.Iterable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.Iterator.html">2.1.2.7. collections.Iterator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.KeysView.html">2.1.2.8. collections.KeysView</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.Mapping.html">2.1.2.9. collections.Mapping</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.MappingView.html">2.1.2.10. collections.MappingView</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.MutableMapping.html">2.1.2.11. collections.MutableMapping</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.MutableSequence.html">2.1.2.12. collections.MutableSequence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.MutableSet.html">2.1.2.13. collections.MutableSet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.OrderedDict.html">2.1.2.14. collections.OrderedDict</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.Sequence.html">2.1.2.15. collections.Sequence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.Set.html">2.1.2.16. collections.Set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.Sized.html">2.1.2.17. collections.Sized</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.ValuesView.html">2.1.2.18. collections.ValuesView</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.defaultdict.html">2.1.2.19. collections.defaultdict</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/collections.deque.html">2.1.2.20. collections.deque</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/datetime.html">2.2. datetime</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/datetime.html#classes">2.2.1. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/datetime.date.html">2.2.1.1. datetime.date</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/datetime.datetime.html">2.2.1.2. datetime.datetime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/datetime.time.html">2.2.1.3. datetime.time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/datetime.timedelta.html">2.2.1.4. datetime.timedelta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/datetime.tzinfo.html">2.2.1.5. datetime.tzinfo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/glob.html">2.3. glob</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/glob.html#functions">2.3.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/glob.glob.html">2.3.1.1. glob.glob</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/glob.glob0.html">2.3.1.2. glob.glob0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/glob.glob1.html">2.3.1.3. glob.glob1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/glob.has_magic.html">2.3.1.4. glob.has_magic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/glob.iglob.html">2.3.1.5. glob.iglob</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/itertools.html">2.4. itertools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/itertools.html#functions">2.4.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/itertools.tee.html">2.4.1.1. itertools.tee</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/itertools.html#classes">2.4.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.chain.html">2.4.2.1. itertools.chain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.combinations.html">2.4.2.2. itertools.combinations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.combinations_with_replacement.html">2.4.2.3. itertools.combinations_with_replacement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.compress.html">2.4.2.4. itertools.compress</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.count.html">2.4.2.5. itertools.count</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.cycle.html">2.4.2.6. itertools.cycle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.dropwhile.html">2.4.2.7. itertools.dropwhile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.groupby.html">2.4.2.8. itertools.groupby</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.ifilter.html">2.4.2.9. itertools.ifilter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.ifilterfalse.html">2.4.2.10. itertools.ifilterfalse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.imap.html">2.4.2.11. itertools.imap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.islice.html">2.4.2.12. itertools.islice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.izip.html">2.4.2.13. itertools.izip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.izip_longest.html">2.4.2.14. itertools.izip_longest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.permutations.html">2.4.2.15. itertools.permutations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.product.html">2.4.2.16. itertools.product</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.repeat.html">2.4.2.17. itertools.repeat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.starmap.html">2.4.2.18. itertools.starmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/itertools.takewhile.html">2.4.2.19. itertools.takewhile</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/math.html">2.5. math</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/math.html#functions">2.5.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.acos.html">2.5.1.1. math.acos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.acosh.html">2.5.1.2. math.acosh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.asin.html">2.5.1.3. math.asin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.asinh.html">2.5.1.4. math.asinh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.atan.html">2.5.1.5. math.atan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.atan2.html">2.5.1.6. math.atan2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.atanh.html">2.5.1.7. math.atanh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.ceil.html">2.5.1.8. math.ceil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.copysign.html">2.5.1.9. math.copysign</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.cos.html">2.5.1.10. math.cos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.cosh.html">2.5.1.11. math.cosh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.degrees.html">2.5.1.12. math.degrees</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.erf.html">2.5.1.13. math.erf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.erfc.html">2.5.1.14. math.erfc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.exp.html">2.5.1.15. math.exp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.expm1.html">2.5.1.16. math.expm1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.fabs.html">2.5.1.17. math.fabs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.factorial.html">2.5.1.18. math.factorial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.floor.html">2.5.1.19. math.floor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.fmod.html">2.5.1.20. math.fmod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.frexp.html">2.5.1.21. math.frexp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.fsum.html">2.5.1.22. math.fsum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.gamma.html">2.5.1.23. math.gamma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.hypot.html">2.5.1.24. math.hypot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.isinf.html">2.5.1.25. math.isinf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.isnan.html">2.5.1.26. math.isnan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.ldexp.html">2.5.1.27. math.ldexp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.lgamma.html">2.5.1.28. math.lgamma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.log.html">2.5.1.29. math.log</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.log10.html">2.5.1.30. math.log10</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.log1p.html">2.5.1.31. math.log1p</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.modf.html">2.5.1.32. math.modf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.pow.html">2.5.1.33. math.pow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.radians.html">2.5.1.34. math.radians</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.sin.html">2.5.1.35. math.sin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.sinh.html">2.5.1.36. math.sinh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.sqrt.html">2.5.1.37. math.sqrt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.tan.html">2.5.1.38. math.tan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.tanh.html">2.5.1.39. math.tanh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/math.trunc.html">2.5.1.40. math.trunc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/pdb.html">2.6. pdb</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/pdb.html#functions">2.6.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.find_function.html">2.6.1.1. pdb.find_function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.help.html">2.6.1.2. pdb.help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.main.html">2.6.1.3. pdb.main</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.pm.html">2.6.1.4. pdb.pm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.post_mortem.html">2.6.1.5. pdb.post_mortem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.run.html">2.6.1.6. pdb.run</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.runcall.html">2.6.1.7. pdb.runcall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.runctx.html">2.6.1.8. pdb.runctx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.runeval.html">2.6.1.9. pdb.runeval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.set_trace.html">2.6.1.10. pdb.set_trace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.test.html">2.6.1.11. pdb.test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/pdb.html#classes">2.6.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/pdb.Pdb.html">2.6.2.1. pdb.Pdb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/pdb.Repr.html">2.6.2.2. pdb.Repr</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/pdb.html#exceptions">2.6.3. Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pdb.Restart.html">2.6.3.1. pdb.Restart</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/pprint.html">2.7. pprint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/pprint.html#classes">2.7.1. Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/pprint.html#functions">2.7.2. Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/pprint.html#id1">2.7.3. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pprint.isreadable.html">2.7.3.1. pprint.isreadable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pprint.isrecursive.html">2.7.3.2. pprint.isrecursive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pprint.pformat.html">2.7.3.3. pprint.pformat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pprint.pprint.html">2.7.3.4. pprint.pprint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/pprint.saferepr.html">2.7.3.5. pprint.saferepr</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/pprint.html#id2">2.7.4. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/pprint.PrettyPrinter.html">2.7.4.1. pprint.PrettyPrinter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/random.html">2.8. random</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/random.html#functions">2.8.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/random.getrandbits.html">2.8.1.1. random.getrandbits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/random.random.html">2.8.1.2. random.random</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/random.html#classes">2.8.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/random.Random.html">2.8.2.1. random.Random</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/random.SystemRandom.html">2.8.2.2. random.SystemRandom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/random.WichmannHill.html">2.8.2.3. random.WichmannHill</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/sqlite3.html">2.9. sqlite3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/sqlite3.html#functions">2.9.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.DateFromTicks.html">2.9.1.1. sqlite3.DateFromTicks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.TimeFromTicks.html">2.9.1.2. sqlite3.TimeFromTicks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.TimestampFromTicks.html">2.9.1.3. sqlite3.TimestampFromTicks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.adapt.html">2.9.1.4. sqlite3.adapt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.complete_statement.html">2.9.1.5. sqlite3.complete_statement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.connect.html">2.9.1.6. sqlite3.connect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.enable_callback_tracebacks.html">2.9.1.7. sqlite3.enable_callback_tracebacks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.enable_shared_cache.html">2.9.1.8. sqlite3.enable_shared_cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.register_adapter.html">2.9.1.9. sqlite3.register_adapter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.register_converter.html">2.9.1.10. sqlite3.register_converter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/sqlite3.html#classes">2.9.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/sqlite3.Binary.html">2.9.2.1. sqlite3.Binary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/sqlite3.Cache.html">2.9.2.2. sqlite3.Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/sqlite3.Connection.html">2.9.2.3. sqlite3.Connection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/sqlite3.Cursor.html">2.9.2.4. sqlite3.Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/sqlite3.Date.html">2.9.2.5. sqlite3.Date</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/sqlite3.OptimizedUnicode.html">2.9.2.6. sqlite3.OptimizedUnicode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/sqlite3.PrepareProtocol.html">2.9.2.7. sqlite3.PrepareProtocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/sqlite3.Row.html">2.9.2.8. sqlite3.Row</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/sqlite3.Statement.html">2.9.2.9. sqlite3.Statement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/sqlite3.Time.html">2.9.2.10. sqlite3.Time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/sqlite3.Timestamp.html">2.9.2.11. sqlite3.Timestamp</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/sqlite3.html#exceptions">2.9.3. Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.DataError.html">2.9.3.1. sqlite3.DataError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.DatabaseError.html">2.9.3.2. sqlite3.DatabaseError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.Error.html">2.9.3.3. sqlite3.Error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.IntegrityError.html">2.9.3.4. sqlite3.IntegrityError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.InterfaceError.html">2.9.3.5. sqlite3.InterfaceError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.InternalError.html">2.9.3.6. sqlite3.InternalError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.NotSupportedError.html">2.9.3.7. sqlite3.NotSupportedError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.OperationalError.html">2.9.3.8. sqlite3.OperationalError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.ProgrammingError.html">2.9.3.9. sqlite3.ProgrammingError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/sqlite3.Warning.html">2.9.3.10. sqlite3.Warning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/subprocess.html">2.10. subprocess</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/subprocess.html#using-the-subprocess-module">2.10.1. Using the subprocess module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/subprocess.html#exceptions">2.10.1.1. Exceptions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/subprocess.html#security">2.10.1.2. Security</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/subprocess.html#popen-objects">2.10.2. Popen objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/subprocess.html#replacing-older-functions-with-the-subprocess-module">2.10.3. Replacing older functions with the subprocess module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/subprocess.html#replacing-bin-sh-shell-backquote">2.10.3.1. Replacing /bin/sh shell backquote</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/subprocess.html#replacing-shell-pipe-line">2.10.3.2. Replacing shell pipe line</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/subprocess.html#replacing-os-system">2.10.3.3. Replacing os.system()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/subprocess.html#replacing-os-spawn">2.10.3.4. Replacing os.spawn*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/subprocess.html#replacing-os-popen">2.10.3.5. Replacing os.popen*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/subprocess.html#replacing-popen2">2.10.3.6. Replacing popen2.*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/subprocess.html#functions">2.10.3.7. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/subprocess.html#classes">2.10.3.8. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/subprocess.html#id15">2.10.3.9. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/time.html">2.11. time</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/time.html#functions">2.11.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/time.asctime.html">2.11.1.1. time.asctime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/time.clock.html">2.11.1.2. time.clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/time.ctime.html">2.11.1.3. time.ctime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/time.gmtime.html">2.11.1.4. time.gmtime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/time.localtime.html">2.11.1.5. time.localtime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/time.mktime.html">2.11.1.6. time.mktime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/time.sleep.html">2.11.1.7. time.sleep</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/time.strftime.html">2.11.1.8. time.strftime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/time.strptime.html">2.11.1.9. time.strptime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/time.time.html">2.11.1.10. time.time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/time.tzset.html">2.11.1.11. time.tzset</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/time.html#classes">2.11.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/time.struct_time.html">2.11.2.1. time.struct_time</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/timeit.html">2.12. timeit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/timeit.html#functions">2.12.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/timeit.default_timer.html">2.12.1.1. timeit.default_timer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/timeit.main.html">2.12.1.2. timeit.main</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/timeit.reindent.html">2.12.1.3. timeit.reindent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/timeit.repeat.html">2.12.1.4. timeit.repeat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/timeit.timeit.html">2.12.1.5. timeit.timeit</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/timeit.html#classes">2.12.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/timeit.Timer.html">2.12.2.1. timeit.Timer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/Tkinter.html">2.13. Tkinter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/Tkinter.html#functions">2.13.1. Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.At.html">2.13.1.1. Tkinter.At</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.AtEnd.html">2.13.1.2. Tkinter.AtEnd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.AtInsert.html">2.13.1.3. Tkinter.AtInsert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.AtSelFirst.html">2.13.1.4. Tkinter.AtSelFirst</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.AtSelLast.html">2.13.1.5. Tkinter.AtSelLast</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.NoDefaultRoot.html">2.13.1.6. Tkinter.NoDefaultRoot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.Tcl.html">2.13.1.7. Tkinter.Tcl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.getboolean.html">2.13.1.8. Tkinter.getboolean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.image_names.html">2.13.1.9. Tkinter.image_names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.image_types.html">2.13.1.10. Tkinter.image_types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.mainloop.html">2.13.1.11. Tkinter.mainloop</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/Tkinter.html#classes">2.13.2. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.BaseWidget.html">2.13.2.1. Tkinter.BaseWidget</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.BitmapImage.html">2.13.2.2. Tkinter.BitmapImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.BooleanType.html">2.13.2.3. Tkinter.BooleanType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.BooleanVar.html">2.13.2.4. Tkinter.BooleanVar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.BufferType.html">2.13.2.5. Tkinter.BufferType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.BuiltinFunctionType.html">2.13.2.6. Tkinter.BuiltinFunctionType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.BuiltinMethodType.html">2.13.2.7. Tkinter.BuiltinMethodType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Button.html">2.13.2.8. Tkinter.Button</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.CallWrapper.html">2.13.2.9. Tkinter.CallWrapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Canvas.html">2.13.2.10. Tkinter.Canvas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Checkbutton.html">2.13.2.11. Tkinter.Checkbutton</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.ClassType.html">2.13.2.12. Tkinter.ClassType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.CodeType.html">2.13.2.13. Tkinter.CodeType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.ComplexType.html">2.13.2.14. Tkinter.ComplexType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.DictProxyType.html">2.13.2.15. Tkinter.DictProxyType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.DictType.html">2.13.2.16. Tkinter.DictType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.DictionaryType.html">2.13.2.17. Tkinter.DictionaryType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.DoubleVar.html">2.13.2.18. Tkinter.DoubleVar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.EllipsisType.html">2.13.2.19. Tkinter.EllipsisType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Entry.html">2.13.2.20. Tkinter.Entry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Event.html">2.13.2.21. Tkinter.Event</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.FileType.html">2.13.2.22. Tkinter.FileType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.FloatType.html">2.13.2.23. Tkinter.FloatType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Frame.html">2.13.2.24. Tkinter.Frame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.FrameType.html">2.13.2.25. Tkinter.FrameType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.FunctionType.html">2.13.2.26. Tkinter.FunctionType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.GeneratorType.html">2.13.2.27. Tkinter.GeneratorType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.GetSetDescriptorType.html">2.13.2.28. Tkinter.GetSetDescriptorType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Grid.html">2.13.2.29. Tkinter.Grid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Image.html">2.13.2.30. Tkinter.Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.InstanceType.html">2.13.2.31. Tkinter.InstanceType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.IntType.html">2.13.2.32. Tkinter.IntType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.IntVar.html">2.13.2.33. Tkinter.IntVar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Label.html">2.13.2.34. Tkinter.Label</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.LabelFrame.html">2.13.2.35. Tkinter.LabelFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.LambdaType.html">2.13.2.36. Tkinter.LambdaType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.ListType.html">2.13.2.37. Tkinter.ListType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Listbox.html">2.13.2.38. Tkinter.Listbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.LongType.html">2.13.2.39. Tkinter.LongType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.MemberDescriptorType.html">2.13.2.40. Tkinter.MemberDescriptorType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Menu.html">2.13.2.41. Tkinter.Menu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Menubutton.html">2.13.2.42. Tkinter.Menubutton</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Message.html">2.13.2.43. Tkinter.Message</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.MethodType.html">2.13.2.44. Tkinter.MethodType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Misc.html">2.13.2.45. Tkinter.Misc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.ModuleType.html">2.13.2.46. Tkinter.ModuleType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.NoneType.html">2.13.2.47. Tkinter.NoneType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.NotImplementedType.html">2.13.2.48. Tkinter.NotImplementedType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.ObjectType.html">2.13.2.49. Tkinter.ObjectType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.OptionMenu.html">2.13.2.50. Tkinter.OptionMenu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Pack.html">2.13.2.51. Tkinter.Pack</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.PanedWindow.html">2.13.2.52. Tkinter.PanedWindow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.PhotoImage.html">2.13.2.53. Tkinter.PhotoImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Place.html">2.13.2.54. Tkinter.Place</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Radiobutton.html">2.13.2.55. Tkinter.Radiobutton</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Scale.html">2.13.2.56. Tkinter.Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Scrollbar.html">2.13.2.57. Tkinter.Scrollbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.SliceType.html">2.13.2.58. Tkinter.SliceType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Spinbox.html">2.13.2.59. Tkinter.Spinbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.StringType.html">2.13.2.60. Tkinter.StringType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.StringVar.html">2.13.2.61. Tkinter.StringVar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Studbutton.html">2.13.2.62. Tkinter.Studbutton</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Text.html">2.13.2.63. Tkinter.Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Tk.html">2.13.2.64. Tkinter.Tk</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Toplevel.html">2.13.2.65. Tkinter.Toplevel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.TracebackType.html">2.13.2.66. Tkinter.TracebackType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Tributton.html">2.13.2.67. Tkinter.Tributton</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.TupleType.html">2.13.2.68. Tkinter.TupleType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.TypeType.html">2.13.2.69. Tkinter.TypeType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.UnboundMethodType.html">2.13.2.70. Tkinter.UnboundMethodType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.UnicodeType.html">2.13.2.71. Tkinter.UnicodeType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Variable.html">2.13.2.72. Tkinter.Variable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Widget.html">2.13.2.73. Tkinter.Widget</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.Wm.html">2.13.2.74. Tkinter.Wm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.XRangeType.html">2.13.2.75. Tkinter.XRangeType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.XView.html">2.13.2.76. Tkinter.XView</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.YView.html">2.13.2.77. Tkinter.YView</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.getdouble.html">2.13.2.78. Tkinter.getdouble</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/Tkinter.getint.html">2.13.2.79. Tkinter.getint</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/Tkinter.html#exceptions">2.13.3. Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/Tkinter.TclError.html">2.13.3.1. Tkinter.TclError</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../generated/types.html">2.14. types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../generated/types.html#classes">2.14.1. Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.BooleanType.html">2.14.1.1. types.BooleanType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.BufferType.html">2.14.1.2. types.BufferType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.BuiltinFunctionType.html">2.14.1.3. types.BuiltinFunctionType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.BuiltinMethodType.html">2.14.1.4. types.BuiltinMethodType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.ClassType.html">2.14.1.5. types.ClassType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.CodeType.html">2.14.1.6. types.CodeType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.ComplexType.html">2.14.1.7. types.ComplexType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.DictProxyType.html">2.14.1.8. types.DictProxyType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.DictType.html">2.14.1.9. types.DictType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.DictionaryType.html">2.14.1.10. types.DictionaryType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.EllipsisType.html">2.14.1.11. types.EllipsisType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.FileType.html">2.14.1.12. types.FileType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.FloatType.html">2.14.1.13. types.FloatType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.FrameType.html">2.14.1.14. types.FrameType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.FunctionType.html">2.14.1.15. types.FunctionType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.GeneratorType.html">2.14.1.16. types.GeneratorType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.GetSetDescriptorType.html">2.14.1.17. types.GetSetDescriptorType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.InstanceType.html">2.14.1.18. types.InstanceType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.IntType.html">2.14.1.19. types.IntType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.LambdaType.html">2.14.1.20. types.LambdaType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.ListType.html">2.14.1.21. types.ListType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.LongType.html">2.14.1.22. types.LongType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.MemberDescriptorType.html">2.14.1.23. types.MemberDescriptorType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.MethodType.html">2.14.1.24. types.MethodType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.ModuleType.html">2.14.1.25. types.ModuleType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.NoneType.html">2.14.1.26. types.NoneType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.NotImplementedType.html">2.14.1.27. types.NotImplementedType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.ObjectType.html">2.14.1.28. types.ObjectType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.SliceType.html">2.14.1.29. types.SliceType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.StringType.html">2.14.1.30. types.StringType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.TracebackType.html">2.14.1.31. types.TracebackType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.TupleType.html">2.14.1.32. types.TupleType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.TypeType.html">2.14.1.33. types.TypeType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.UnboundMethodType.html">2.14.1.34. types.UnboundMethodType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.UnicodeType.html">2.14.1.35. types.UnicodeType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../generated/generated/types.XRangeType.html">2.14.1.36. types.XRangeType</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">3. misc package I may use in future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../string_services.html">3.1. String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../textwrap.html">3.1.1. textwrap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../textwrap.html#functions">3.1.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../textwrap.html#classes">3.1.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../unicodedata.html">3.1.2. unicodedata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../unicodedata.html#functions">3.1.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../unicodedata.html#classes">3.1.2.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../data_pers_compr.html">3.2. Data persistence and compression</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../shutil.html#functions">3.2.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../shutil.html#exceptions">3.2.1.2. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pickle.html">3.2.2. pickle</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pickle.html#functions">3.2.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pickle.html#classes">3.2.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pickle.html#exceptions">3.2.2.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cPickle.html">3.2.3. cPickle</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cPickle.html#functions">3.2.3.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cPickle.html#exceptions">3.2.3.2. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../csv.html">3.2.4. csv</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../csv.html#functions">3.2.4.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../csv.html#classes">3.2.4.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../csv.html#exceptions">3.2.4.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../zlib.html">3.2.5. zlib</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../zlib.html#functions">3.2.5.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../zlib.html#exceptions">3.2.5.2. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../gzip.html">3.2.6. gzip</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../gzip.html#functions">3.2.6.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../gzip.html#classes">3.2.6.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../bz2.html">3.2.7. bz2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../bz2.html#functions">3.2.7.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../bz2.html#classes">3.2.7.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../zipfile.html">3.2.8. zipfile</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../zipfile.html#functions">3.2.8.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../zipfile.html#classes">3.2.8.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../zipfile.html#exceptions">3.2.8.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tarfile.html">3.2.9. tarfile</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tarfile.html#functions">3.2.9.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tarfile.html#classes">3.2.9.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tarfile.html#exceptions">3.2.9.3. Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../networks_internet.html">3.3. Networks and Internet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../popen2.html">3.3.1. popen2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../popen2.html#functions">3.3.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../popen2.html#classes">3.3.1.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../socket.html">3.3.2. socket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../socket.html#functions">3.3.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../socket.html#classes">3.3.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../socket.html#exceptions">3.3.2.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../email.html">3.3.3. email</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../email.html#functions">3.3.3.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../email.html#classes">3.3.3.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../json.html">3.3.4. json</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../json.html#functions">3.3.4.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../json.html#classes">3.3.4.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../HTMLParser.html">3.3.5. HTMLParser</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../HTMLParser.html#classes">3.3.5.1. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../HTMLParser.html#exceptions">3.3.5.2. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../xml.dom.html">3.3.6. xml.dom</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../xml.dom.html#functions">3.3.6.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../xml.dom.html#classes">3.3.6.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../xml.dom.html#exceptions">3.3.6.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../webbrowser.html">3.3.7. webbrowser</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../webbrowser.html#functions">3.3.7.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../webbrowser.html#classes">3.3.7.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../webbrowser.html#exceptions">3.3.7.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cgi.html">3.3.8. cgi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cgi.html#functions">3.3.8.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cgi.html#classes">3.3.8.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../wsgiref.html">3.3.9. wsgiref</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../urllib.html">3.3.10. urllib</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../urllib.html#functions">3.3.10.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../urllib.html#classes">3.3.10.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../urllib.html#exceptions">3.3.10.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../urllib2.html">3.3.11. urllib2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../urllib2.html#functions">3.3.11.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../urllib2.html#classes">3.3.11.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../urllib2.html#exceptions">3.3.11.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../urlparse.html">3.3.12. urlparse</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../urlparse.html#functions">3.3.12.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../urlparse.html#classes">3.3.12.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../SimpleHTTPServer.html">3.3.13. SimpleHTTPServer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../SimpleHTTPServer.html#functions">3.3.13.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../SimpleHTTPServer.html#classes">3.3.13.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../devtools_debugging.html">3.4. Development tools and Debugging</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../pydoc.html">3.4.1. pydoc</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pydoc.html#functions">3.4.1.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pydoc.html#classes">3.4.1.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pydoc.html#exceptions">3.4.1.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../doctest.html">3.4.2. doctest</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../doctest.html#functions">3.4.2.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../doctest.html#classes">3.4.2.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../doctest.html#exceptions">3.4.2.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="../unittest.html">3.4.3. unittest</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../unittest.html#functions">3.4.3.1. Functions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../unittest.html#classes">3.4.3.2. Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../unittest.html#exceptions">3.4.3.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../trace.html">3.4.4. trace</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../trace.html#functions">3.4.4.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../trace.html#classes">3.4.4.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../distutils.html">3.4.5. distutils</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_runtime_services.html">3.5. Python Runtime Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sysconfig.html">3.5.1. sysconfig</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sysconfig.html#functions">3.5.1.1. Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__future__.html">3.5.2. __future__</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contextlib.html">3.5.3. contextlib</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../contextlib.html#functions">3.5.3.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../contextlib.html#classes">3.5.3.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../abc.html">3.5.4. abc</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../abc.html#functions">3.5.4.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../abc.html#classes">3.5.4.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../traceback.html">3.5.5. traceback</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../traceback.html#functions">3.5.5.1. Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../gc.html">3.5.6. gc</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../gc.html#functions">3.5.6.1. Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../site.html">3.5.7. site</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../site.html#this-module-is-automatically-imported-during-initialization">3.5.7.1. * This module is automatically imported during initialization. *</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user.html">3.5.8. user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../imp.html">3.5.9. imp</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../imp.html#functions">3.5.9.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../imp.html#classes">3.5.9.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pkgutil.html">3.5.10. pkgutil</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pkgutil.html#functions">3.5.10.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pkgutil.html#classes">3.5.10.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modulefinder.html">3.5.11. modulefinder</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modulefinder.html#functions">3.5.11.1. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modulefinder.html#classes">3.5.11.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../official_page.html">4. Official page TOC</a></li>
 </ul>
 
             
@@ -154,7 +1292,15 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-      <li>unittest.TestCase.assertRaisesRegexp</li>
+          <li><a href="../../index.html">3. misc package I may use in future</a> &raquo;</li>
+        
+          <li><a href="../../devtools_debugging.html">3.4. Development tools and Debugging</a> &raquo;</li>
+        
+          <li><a href="../unittest.html">3.4.3. unittest</a> &raquo;</li>
+        
+          <li><a href="unittest.TestCase.html">3.4.3.2.3. unittest.TestCase</a> &raquo;</li>
+        
+      <li>3.4.3.2.3.31. unittest.TestCase.assertRaisesRegexp</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -172,7 +1318,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="unittest-testcase-assertraisesregexp">
-<h1>unittest.TestCase.assertRaisesRegexp<a class="headerlink" href="#unittest-testcase-assertraisesregexp" title="Permalink to this headline">¶</a></h1>
+<h1>3.4.3.2.3.31. unittest.TestCase.assertRaisesRegexp<a class="headerlink" href="#unittest-testcase-assertraisesregexp" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
 <dt id="unittest.TestCase.assertRaisesRegexp">
 <code class="descclassname">TestCase.</code><code class="descname">assertRaisesRegexp</code><span class="sig-paren">(</span><em>expected_exception</em>, <em>expected_regexp</em>, <em>callable_obj=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/unittest/case.html#TestCase.assertRaisesRegexp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#unittest.TestCase.assertRaisesRegexp" title="Permalink to this definition">¶</a></dt>
@@ -196,6 +1342,15 @@ kwargs: Extra kwargs.</p>
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="unittest.TestCase.assertRegexpMatches.html" class="btn btn-neutral float-right" title="3.4.3.2.3.32. unittest.TestCase.assertRegexpMatches" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="unittest.TestCase.assertRaises.html" class="btn btn-neutral" title="3.4.3.2.3.30. unittest.TestCase.assertRaises" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

@@ -1,0 +1,179 @@
+Tkinter.Checkbutton
+===================
+
+.. currentmodule:: Tkinter
+
+.. autoclass:: Checkbutton
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~Checkbutton.__init__
+   ~Checkbutton.after
+   ~Checkbutton.after_cancel
+   ~Checkbutton.after_idle
+   ~Checkbutton.bbox
+   ~Checkbutton.bell
+   ~Checkbutton.bind
+   ~Checkbutton.bind_all
+   ~Checkbutton.bind_class
+   ~Checkbutton.bindtags
+   ~Checkbutton.cget
+   ~Checkbutton.clipboard_append
+   ~Checkbutton.clipboard_clear
+   ~Checkbutton.clipboard_get
+   ~Checkbutton.colormodel
+   ~Checkbutton.columnconfigure
+   ~Checkbutton.config
+   ~Checkbutton.configure
+   ~Checkbutton.deletecommand
+   ~Checkbutton.deselect
+   ~Checkbutton.destroy
+   ~Checkbutton.event_add
+   ~Checkbutton.event_delete
+   ~Checkbutton.event_generate
+   ~Checkbutton.event_info
+   ~Checkbutton.flash
+   ~Checkbutton.focus
+   ~Checkbutton.focus_displayof
+   ~Checkbutton.focus_force
+   ~Checkbutton.focus_get
+   ~Checkbutton.focus_lastfor
+   ~Checkbutton.focus_set
+   ~Checkbutton.forget
+   ~Checkbutton.getboolean
+   ~Checkbutton.getvar
+   ~Checkbutton.grab_current
+   ~Checkbutton.grab_release
+   ~Checkbutton.grab_set
+   ~Checkbutton.grab_set_global
+   ~Checkbutton.grab_status
+   ~Checkbutton.grid
+   ~Checkbutton.grid_bbox
+   ~Checkbutton.grid_columnconfigure
+   ~Checkbutton.grid_configure
+   ~Checkbutton.grid_forget
+   ~Checkbutton.grid_info
+   ~Checkbutton.grid_location
+   ~Checkbutton.grid_propagate
+   ~Checkbutton.grid_remove
+   ~Checkbutton.grid_rowconfigure
+   ~Checkbutton.grid_size
+   ~Checkbutton.grid_slaves
+   ~Checkbutton.image_names
+   ~Checkbutton.image_types
+   ~Checkbutton.info
+   ~Checkbutton.invoke
+   ~Checkbutton.keys
+   ~Checkbutton.lift
+   ~Checkbutton.location
+   ~Checkbutton.lower
+   ~Checkbutton.mainloop
+   ~Checkbutton.nametowidget
+   ~Checkbutton.option_add
+   ~Checkbutton.option_clear
+   ~Checkbutton.option_get
+   ~Checkbutton.option_readfile
+   ~Checkbutton.pack
+   ~Checkbutton.pack_configure
+   ~Checkbutton.pack_forget
+   ~Checkbutton.pack_info
+   ~Checkbutton.pack_propagate
+   ~Checkbutton.pack_slaves
+   ~Checkbutton.place
+   ~Checkbutton.place_configure
+   ~Checkbutton.place_forget
+   ~Checkbutton.place_info
+   ~Checkbutton.place_slaves
+   ~Checkbutton.propagate
+   ~Checkbutton.quit
+   ~Checkbutton.register
+   ~Checkbutton.rowconfigure
+   ~Checkbutton.select
+   ~Checkbutton.selection_clear
+   ~Checkbutton.selection_get
+   ~Checkbutton.selection_handle
+   ~Checkbutton.selection_own
+   ~Checkbutton.selection_own_get
+   ~Checkbutton.send
+   ~Checkbutton.setvar
+   ~Checkbutton.size
+   ~Checkbutton.slaves
+   ~Checkbutton.tk_bisque
+   ~Checkbutton.tk_focusFollowsMouse
+   ~Checkbutton.tk_focusNext
+   ~Checkbutton.tk_focusPrev
+   ~Checkbutton.tk_menuBar
+   ~Checkbutton.tk_setPalette
+   ~Checkbutton.tk_strictMotif
+   ~Checkbutton.tkraise
+   ~Checkbutton.toggle
+   ~Checkbutton.unbind
+   ~Checkbutton.unbind_all
+   ~Checkbutton.unbind_class
+   ~Checkbutton.update
+   ~Checkbutton.update_idletasks
+   ~Checkbutton.wait_variable
+   ~Checkbutton.wait_visibility
+   ~Checkbutton.wait_window
+   ~Checkbutton.waitvar
+   ~Checkbutton.winfo_atom
+   ~Checkbutton.winfo_atomname
+   ~Checkbutton.winfo_cells
+   ~Checkbutton.winfo_children
+   ~Checkbutton.winfo_class
+   ~Checkbutton.winfo_colormapfull
+   ~Checkbutton.winfo_containing
+   ~Checkbutton.winfo_depth
+   ~Checkbutton.winfo_exists
+   ~Checkbutton.winfo_fpixels
+   ~Checkbutton.winfo_geometry
+   ~Checkbutton.winfo_height
+   ~Checkbutton.winfo_id
+   ~Checkbutton.winfo_interps
+   ~Checkbutton.winfo_ismapped
+   ~Checkbutton.winfo_manager
+   ~Checkbutton.winfo_name
+   ~Checkbutton.winfo_parent
+   ~Checkbutton.winfo_pathname
+   ~Checkbutton.winfo_pixels
+   ~Checkbutton.winfo_pointerx
+   ~Checkbutton.winfo_pointerxy
+   ~Checkbutton.winfo_pointery
+   ~Checkbutton.winfo_reqheight
+   ~Checkbutton.winfo_reqwidth
+   ~Checkbutton.winfo_rgb
+   ~Checkbutton.winfo_rootx
+   ~Checkbutton.winfo_rooty
+   ~Checkbutton.winfo_screen
+   ~Checkbutton.winfo_screencells
+   ~Checkbutton.winfo_screendepth
+   ~Checkbutton.winfo_screenheight
+   ~Checkbutton.winfo_screenmmheight
+   ~Checkbutton.winfo_screenmmwidth
+   ~Checkbutton.winfo_screenvisual
+   ~Checkbutton.winfo_screenwidth
+   ~Checkbutton.winfo_server
+   ~Checkbutton.winfo_toplevel
+   ~Checkbutton.winfo_viewable
+   ~Checkbutton.winfo_visual
+   ~Checkbutton.winfo_visualid
+   ~Checkbutton.winfo_visualsavailable
+   ~Checkbutton.winfo_vrootheight
+   ~Checkbutton.winfo_vrootwidth
+   ~Checkbutton.winfo_vrootx
+   ~Checkbutton.winfo_vrooty
+   ~Checkbutton.winfo_width
+   ~Checkbutton.winfo_x
+   ~Checkbutton.winfo_y
+
+
+
+
+

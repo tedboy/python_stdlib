@@ -1,0 +1,208 @@
+pdb.Pdb
+=======
+
+.. currentmodule:: pdb
+
+.. autoclass:: Pdb
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~Pdb.__init__
+   ~Pdb.bp_commands
+   ~Pdb.break_anywhere
+   ~Pdb.break_here
+   ~Pdb.canonic
+   ~Pdb.checkline
+   ~Pdb.clear_all_breaks
+   ~Pdb.clear_all_file_breaks
+   ~Pdb.clear_bpbynumber
+   ~Pdb.clear_break
+   ~Pdb.cmdloop
+   ~Pdb.columnize
+   ~Pdb.complete
+   ~Pdb.complete_help
+   ~Pdb.completedefault
+   ~Pdb.completenames
+   ~Pdb.default
+   ~Pdb.defaultFile
+   ~Pdb.dispatch_call
+   ~Pdb.dispatch_exception
+   ~Pdb.dispatch_line
+   ~Pdb.dispatch_return
+   ~Pdb.displayhook
+   ~Pdb.do_EOF
+   ~Pdb.do_a
+   ~Pdb.do_alias
+   ~Pdb.do_args
+   ~Pdb.do_b
+   ~Pdb.do_break
+   ~Pdb.do_bt
+   ~Pdb.do_c
+   ~Pdb.do_cl
+   ~Pdb.do_clear
+   ~Pdb.do_commands
+   ~Pdb.do_condition
+   ~Pdb.do_cont
+   ~Pdb.do_continue
+   ~Pdb.do_d
+   ~Pdb.do_debug
+   ~Pdb.do_disable
+   ~Pdb.do_down
+   ~Pdb.do_enable
+   ~Pdb.do_exit
+   ~Pdb.do_h
+   ~Pdb.do_help
+   ~Pdb.do_ignore
+   ~Pdb.do_j
+   ~Pdb.do_jump
+   ~Pdb.do_l
+   ~Pdb.do_list
+   ~Pdb.do_n
+   ~Pdb.do_next
+   ~Pdb.do_p
+   ~Pdb.do_pp
+   ~Pdb.do_q
+   ~Pdb.do_quit
+   ~Pdb.do_r
+   ~Pdb.do_restart
+   ~Pdb.do_return
+   ~Pdb.do_retval
+   ~Pdb.do_run
+   ~Pdb.do_rv
+   ~Pdb.do_s
+   ~Pdb.do_step
+   ~Pdb.do_tbreak
+   ~Pdb.do_u
+   ~Pdb.do_unalias
+   ~Pdb.do_unt
+   ~Pdb.do_until
+   ~Pdb.do_up
+   ~Pdb.do_w
+   ~Pdb.do_whatis
+   ~Pdb.do_where
+   ~Pdb.emptyline
+   ~Pdb.execRcLines
+   ~Pdb.forget
+   ~Pdb.format_stack_entry
+   ~Pdb.get_all_breaks
+   ~Pdb.get_break
+   ~Pdb.get_breaks
+   ~Pdb.get_file_breaks
+   ~Pdb.get_names
+   ~Pdb.get_stack
+   ~Pdb.handle_command_def
+   ~Pdb.help_EOF
+   ~Pdb.help_a
+   ~Pdb.help_alias
+   ~Pdb.help_args
+   ~Pdb.help_b
+   ~Pdb.help_break
+   ~Pdb.help_bt
+   ~Pdb.help_c
+   ~Pdb.help_cl
+   ~Pdb.help_clear
+   ~Pdb.help_commands
+   ~Pdb.help_condition
+   ~Pdb.help_cont
+   ~Pdb.help_continue
+   ~Pdb.help_d
+   ~Pdb.help_debug
+   ~Pdb.help_disable
+   ~Pdb.help_down
+   ~Pdb.help_enable
+   ~Pdb.help_exec
+   ~Pdb.help_exit
+   ~Pdb.help_h
+   ~Pdb.help_help
+   ~Pdb.help_ignore
+   ~Pdb.help_j
+   ~Pdb.help_jump
+   ~Pdb.help_l
+   ~Pdb.help_list
+   ~Pdb.help_n
+   ~Pdb.help_next
+   ~Pdb.help_p
+   ~Pdb.help_pdb
+   ~Pdb.help_pp
+   ~Pdb.help_q
+   ~Pdb.help_quit
+   ~Pdb.help_r
+   ~Pdb.help_restart
+   ~Pdb.help_return
+   ~Pdb.help_run
+   ~Pdb.help_s
+   ~Pdb.help_step
+   ~Pdb.help_tbreak
+   ~Pdb.help_u
+   ~Pdb.help_unalias
+   ~Pdb.help_unt
+   ~Pdb.help_until
+   ~Pdb.help_up
+   ~Pdb.help_w
+   ~Pdb.help_whatis
+   ~Pdb.help_where
+   ~Pdb.interaction
+   ~Pdb.is_skipped_module
+   ~Pdb.lineinfo
+   ~Pdb.lookupmodule
+   ~Pdb.onecmd
+   ~Pdb.parseline
+   ~Pdb.postcmd
+   ~Pdb.postloop
+   ~Pdb.precmd
+   ~Pdb.preloop
+   ~Pdb.print_stack_entry
+   ~Pdb.print_stack_trace
+   ~Pdb.print_topics
+   ~Pdb.reset
+   ~Pdb.run
+   ~Pdb.runcall
+   ~Pdb.runctx
+   ~Pdb.runeval
+   ~Pdb.set_break
+   ~Pdb.set_continue
+   ~Pdb.set_next
+   ~Pdb.set_quit
+   ~Pdb.set_return
+   ~Pdb.set_step
+   ~Pdb.set_trace
+   ~Pdb.set_until
+   ~Pdb.setup
+   ~Pdb.stop_here
+   ~Pdb.trace_dispatch
+   ~Pdb.user_call
+   ~Pdb.user_exception
+   ~Pdb.user_line
+   ~Pdb.user_return
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~Pdb.commands_resuming
+   ~Pdb.doc_header
+   ~Pdb.doc_leader
+   ~Pdb.identchars
+   ~Pdb.intro
+   ~Pdb.lastcmd
+   ~Pdb.misc_header
+   ~Pdb.nohelp
+   ~Pdb.prompt
+   ~Pdb.ruler
+   ~Pdb.undoc_header
+   ~Pdb.use_rawinput
+
