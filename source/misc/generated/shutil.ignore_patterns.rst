@@ -1,0 +1,6 @@
+shutil.ignore_patterns
+======================
+
+.. currentmodule:: shutil
+
+.. autofunction:: ignore_patterns

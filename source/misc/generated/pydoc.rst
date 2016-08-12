@@ -1,0 +1,110 @@
+pydoc
+=====
+
+.. automodule:: pydoc
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      allmethods
+      apropos
+      classify_class_attrs
+      classname
+      cli
+      cram
+      describe
+      doc
+      expandtabs
+      extract_tb
+      find
+      getdoc
+      getpager
+      gui
+      importfile
+      isdata
+      ispackage
+      ispath
+      join
+      locate
+      lower
+      pager
+      pathdirs
+      pipepager
+      plain
+      plainpager
+      render_doc
+      replace
+      resolve
+      rfind
+      rstrip
+      safeimport
+      serve
+      source_synopsis
+      split
+      splitdoc
+      strip
+      stripid
+      synopsis
+      tempfilepager
+      ttypager
+      visiblename
+      writedoc
+      writedocs
+   
+   
+
+   
+   
+   Classes
+   ---------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_custom.rst
+
+   
+      Doc
+      HTMLDoc
+      HTMLRepr
+      Helper
+      ModuleScanner
+      Repr
+      Scanner
+      TextDoc
+      TextRepr
+      deque
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pydoc.Doc
+       generated/pydoc.HTMLDoc
+       generated/pydoc.HTMLRepr
+       generated/pydoc.Helper
+       generated/pydoc.ModuleScanner
+       generated/pydoc.Repr
+       generated/pydoc.Scanner
+       generated/pydoc.TextDoc
+       generated/pydoc.TextRepr
+       generated/pydoc.deque
+
+   
+   
+
+   
+   
+   Exceptions
+   ---------
+   .. autosummary::
+      :toctree:
+
+   
+      ErrorDuringImport
+   
+   

@@ -1,0 +1,6 @@
+unittest.removeResult
+=====================
+
+.. currentmodule:: unittest
+
+.. autofunction:: removeResult

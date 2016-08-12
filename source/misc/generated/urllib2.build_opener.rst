@@ -1,0 +1,6 @@
+urllib2.build_opener
+====================
+
+.. currentmodule:: urllib2
+
+.. autofunction:: build_opener

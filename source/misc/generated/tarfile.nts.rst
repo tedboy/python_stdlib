@@ -1,0 +1,6 @@
+tarfile.nts
+===========
+
+.. currentmodule:: tarfile
+
+.. autofunction:: nts

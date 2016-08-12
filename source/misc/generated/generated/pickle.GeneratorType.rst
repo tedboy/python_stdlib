@@ -1,0 +1,36 @@
+pickle.GeneratorType
+====================
+
+.. currentmodule:: pickle
+
+.. autoclass:: GeneratorType
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~GeneratorType.close
+   ~GeneratorType.send
+   ~GeneratorType.throw
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~GeneratorType.gi_code
+   ~GeneratorType.gi_frame
+   ~GeneratorType.gi_running
+   ~GeneratorType.next
+

@@ -1,0 +1,62 @@
+HTMLParser.HTMLParser
+=====================
+
+.. currentmodule:: HTMLParser
+
+.. autoclass:: HTMLParser
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~HTMLParser.__init__
+   ~HTMLParser.check_for_whole_start_tag
+   ~HTMLParser.clear_cdata_mode
+   ~HTMLParser.close
+   ~HTMLParser.error
+   ~HTMLParser.feed
+   ~HTMLParser.get_starttag_text
+   ~HTMLParser.getpos
+   ~HTMLParser.goahead
+   ~HTMLParser.handle_charref
+   ~HTMLParser.handle_comment
+   ~HTMLParser.handle_data
+   ~HTMLParser.handle_decl
+   ~HTMLParser.handle_endtag
+   ~HTMLParser.handle_entityref
+   ~HTMLParser.handle_pi
+   ~HTMLParser.handle_startendtag
+   ~HTMLParser.handle_starttag
+   ~HTMLParser.parse_bogus_comment
+   ~HTMLParser.parse_comment
+   ~HTMLParser.parse_declaration
+   ~HTMLParser.parse_endtag
+   ~HTMLParser.parse_html_declaration
+   ~HTMLParser.parse_marked_section
+   ~HTMLParser.parse_pi
+   ~HTMLParser.parse_starttag
+   ~HTMLParser.reset
+   ~HTMLParser.set_cdata_mode
+   ~HTMLParser.unescape
+   ~HTMLParser.unknown_decl
+   ~HTMLParser.updatepos
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~HTMLParser.CDATA_CONTENT_ELEMENTS
+   ~HTMLParser.entitydefs
+

@@ -1,0 +1,6 @@
+socket.meth
+===========
+
+.. currentmodule:: socket
+
+.. autofunction:: meth

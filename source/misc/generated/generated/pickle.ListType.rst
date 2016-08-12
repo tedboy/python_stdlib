@@ -1,0 +1,30 @@
+pickle.ListType
+===============
+
+.. currentmodule:: pickle
+
+.. autoclass:: ListType
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~ListType.append
+   ~ListType.count
+   ~ListType.extend
+   ~ListType.index
+   ~ListType.insert
+   ~ListType.pop
+   ~ListType.remove
+   ~ListType.reverse
+   ~ListType.sort
+
+
+
+
+

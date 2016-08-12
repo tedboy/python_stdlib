@@ -1,0 +1,26 @@
+urllib2.HTTPPasswordMgrWithDefaultRealm
+=======================================
+
+.. currentmodule:: urllib2
+
+.. autoclass:: HTTPPasswordMgrWithDefaultRealm
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~HTTPPasswordMgrWithDefaultRealm.__init__
+   ~HTTPPasswordMgrWithDefaultRealm.add_password
+   ~HTTPPasswordMgrWithDefaultRealm.find_user_password
+   ~HTTPPasswordMgrWithDefaultRealm.is_suburi
+   ~HTTPPasswordMgrWithDefaultRealm.reduce_uri
+
+
+
+
+

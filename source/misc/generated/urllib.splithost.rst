@@ -1,0 +1,6 @@
+urllib.splithost
+================
+
+.. currentmodule:: urllib
+
+.. autofunction:: splithost

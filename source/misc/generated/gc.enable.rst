@@ -1,0 +1,6 @@
+gc.enable
+=========
+
+.. currentmodule:: gc
+
+.. autofunction:: enable

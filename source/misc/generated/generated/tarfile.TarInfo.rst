@@ -1,0 +1,50 @@
+tarfile.TarInfo
+===============
+
+.. currentmodule:: tarfile
+
+.. autoclass:: TarInfo
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~TarInfo.__init__
+   ~TarInfo.create_gnu_header
+   ~TarInfo.create_pax_global_header
+   ~TarInfo.create_pax_header
+   ~TarInfo.create_ustar_header
+   ~TarInfo.frombuf
+   ~TarInfo.fromtarfile
+   ~TarInfo.get_info
+   ~TarInfo.isblk
+   ~TarInfo.ischr
+   ~TarInfo.isdev
+   ~TarInfo.isdir
+   ~TarInfo.isfifo
+   ~TarInfo.isfile
+   ~TarInfo.islnk
+   ~TarInfo.isreg
+   ~TarInfo.issparse
+   ~TarInfo.issym
+   ~TarInfo.tobuf
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~TarInfo.linkpath
+   ~TarInfo.path
+

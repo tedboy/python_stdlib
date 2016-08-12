@@ -1,0 +1,6 @@
+bz2.compress
+============
+
+.. currentmodule:: bz2
+
+.. autofunction:: compress

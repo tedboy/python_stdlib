@@ -1,0 +1,67 @@
+SimpleHTTPServer.SimpleHTTPRequestHandler
+=========================================
+
+.. currentmodule:: SimpleHTTPServer
+
+.. autoclass:: SimpleHTTPRequestHandler
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~SimpleHTTPRequestHandler.__init__
+   ~SimpleHTTPRequestHandler.address_string
+   ~SimpleHTTPRequestHandler.copyfile
+   ~SimpleHTTPRequestHandler.date_time_string
+   ~SimpleHTTPRequestHandler.do_GET
+   ~SimpleHTTPRequestHandler.do_HEAD
+   ~SimpleHTTPRequestHandler.end_headers
+   ~SimpleHTTPRequestHandler.finish
+   ~SimpleHTTPRequestHandler.guess_type
+   ~SimpleHTTPRequestHandler.handle
+   ~SimpleHTTPRequestHandler.handle_one_request
+   ~SimpleHTTPRequestHandler.list_directory
+   ~SimpleHTTPRequestHandler.log_date_time_string
+   ~SimpleHTTPRequestHandler.log_error
+   ~SimpleHTTPRequestHandler.log_message
+   ~SimpleHTTPRequestHandler.log_request
+   ~SimpleHTTPRequestHandler.parse_request
+   ~SimpleHTTPRequestHandler.send_error
+   ~SimpleHTTPRequestHandler.send_head
+   ~SimpleHTTPRequestHandler.send_header
+   ~SimpleHTTPRequestHandler.send_response
+   ~SimpleHTTPRequestHandler.setup
+   ~SimpleHTTPRequestHandler.translate_path
+   ~SimpleHTTPRequestHandler.version_string
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~SimpleHTTPRequestHandler.default_request_version
+   ~SimpleHTTPRequestHandler.disable_nagle_algorithm
+   ~SimpleHTTPRequestHandler.error_content_type
+   ~SimpleHTTPRequestHandler.error_message_format
+   ~SimpleHTTPRequestHandler.extensions_map
+   ~SimpleHTTPRequestHandler.monthname
+   ~SimpleHTTPRequestHandler.protocol_version
+   ~SimpleHTTPRequestHandler.rbufsize
+   ~SimpleHTTPRequestHandler.responses
+   ~SimpleHTTPRequestHandler.server_version
+   ~SimpleHTTPRequestHandler.sys_version
+   ~SimpleHTTPRequestHandler.timeout
+   ~SimpleHTTPRequestHandler.wbufsize
+   ~SimpleHTTPRequestHandler.weekdayname
+

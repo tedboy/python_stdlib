@@ -1,0 +1,6 @@
+shutil.rmtree
+=============
+
+.. currentmodule:: shutil
+
+.. autofunction:: rmtree

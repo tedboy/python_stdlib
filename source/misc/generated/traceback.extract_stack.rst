@@ -1,0 +1,6 @@
+traceback.extract_stack
+=======================
+
+.. currentmodule:: traceback
+
+.. autofunction:: extract_stack

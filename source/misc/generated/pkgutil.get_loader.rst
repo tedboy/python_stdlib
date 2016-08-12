@@ -1,0 +1,6 @@
+pkgutil.get_loader
+==================
+
+.. currentmodule:: pkgutil
+
+.. autofunction:: get_loader

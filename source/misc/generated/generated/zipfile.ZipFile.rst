@@ -1,0 +1,45 @@
+zipfile.ZipFile
+===============
+
+.. currentmodule:: zipfile
+
+.. autoclass:: ZipFile
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~ZipFile.__init__
+   ~ZipFile.close
+   ~ZipFile.extract
+   ~ZipFile.extractall
+   ~ZipFile.getinfo
+   ~ZipFile.infolist
+   ~ZipFile.namelist
+   ~ZipFile.open
+   ~ZipFile.printdir
+   ~ZipFile.read
+   ~ZipFile.setpassword
+   ~ZipFile.testzip
+   ~ZipFile.write
+   ~ZipFile.writestr
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~ZipFile.comment
+   ~ZipFile.fp
+

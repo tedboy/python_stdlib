@@ -1,0 +1,35 @@
+pickle.IntType
+==============
+
+.. currentmodule:: pickle
+
+.. autoclass:: IntType
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~IntType.bit_length
+   ~IntType.conjugate
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~IntType.denominator
+   ~IntType.imag
+   ~IntType.numerator
+   ~IntType.real
+

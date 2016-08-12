@@ -12,9 +12,7 @@ Relevant stuffs from https://docs.python.org/2/library/
    :numbered:
    :caption: Table of Contents
 
-   main
-   string
-   misc
-   file_io
-   dev_and_debug
-   runtime_service
+   main1
+   main2
+   misc/index.rst
+   official_page

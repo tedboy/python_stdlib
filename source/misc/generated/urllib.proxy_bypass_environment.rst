@@ -1,0 +1,6 @@
+urllib.proxy_bypass_environment
+===============================
+
+.. currentmodule:: urllib
+
+.. autofunction:: proxy_bypass_environment

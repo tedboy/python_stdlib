@@ -1,0 +1,64 @@
+tarfile.TarFile
+===============
+
+.. currentmodule:: tarfile
+
+.. autoclass:: TarFile
+
+
+
+
+
+.. autosummary::
+   :toctree:
+   :hidden:
+
+
+   ~TarFile.__init__
+   ~TarFile.add
+   ~TarFile.addfile
+   ~TarFile.bz2open
+   ~TarFile.chmod
+   ~TarFile.chown
+   ~TarFile.close
+   ~TarFile.extract
+   ~TarFile.extractall
+   ~TarFile.extractfile
+   ~TarFile.getmember
+   ~TarFile.getmembers
+   ~TarFile.getnames
+   ~TarFile.gettarinfo
+   ~TarFile.gzopen
+   ~TarFile.list
+   ~TarFile.makedev
+   ~TarFile.makedir
+   ~TarFile.makefifo
+   ~TarFile.makefile
+   ~TarFile.makelink
+   ~TarFile.makeunknown
+   ~TarFile.next
+   ~TarFile.open
+   ~TarFile.taropen
+   ~TarFile.utime
+
+
+
+
+
+
+
+.. autosummary::
+  :toctree:
+  :hidden:
+
+
+   ~TarFile.OPEN_METH
+   ~TarFile.debug
+   ~TarFile.dereference
+   ~TarFile.encoding
+   ~TarFile.errorlevel
+   ~TarFile.errors
+   ~TarFile.format
+   ~TarFile.ignore_zeros
+   ~TarFile.posix
+
