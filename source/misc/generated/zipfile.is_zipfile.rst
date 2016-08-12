@@ -1,6 +1,0 @@
-zipfile.is_zipfile
-==================
-
-.. currentmodule:: zipfile
-
-.. autofunction:: is_zipfile

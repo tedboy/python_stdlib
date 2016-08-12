@@ -1,6 +1,0 @@
-webbrowser.main
-===============
-
-.. currentmodule:: webbrowser
-
-.. autofunction:: main

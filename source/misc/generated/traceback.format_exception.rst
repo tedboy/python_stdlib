@@ -1,6 +1,0 @@
-traceback.format_exception
-==========================
-
-.. currentmodule:: traceback
-
-.. autofunction:: format_exception

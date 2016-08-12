@@ -1,6 +1,0 @@
-pydoc.classify_class_attrs
-==========================
-
-.. currentmodule:: pydoc
-
-.. autofunction:: classify_class_attrs

@@ -1,6 +1,0 @@
-pydoc.join
-==========
-
-.. currentmodule:: pydoc
-
-.. autofunction:: join

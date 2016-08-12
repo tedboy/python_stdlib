@@ -1,6 +1,0 @@
-traceback.format_exc
-====================
-
-.. currentmodule:: traceback
-
-.. autofunction:: format_exc

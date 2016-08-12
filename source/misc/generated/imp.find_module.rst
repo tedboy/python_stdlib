@@ -1,6 +1,0 @@
-imp.find_module
-===============
-
-.. currentmodule:: imp
-
-.. autofunction:: find_module

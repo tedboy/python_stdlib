@@ -14,5 +14,5 @@ Relevant stuffs from https://docs.python.org/2/library/
 
    main1
    main2
-   misc/index.rst
+   maybe_future
    official_page

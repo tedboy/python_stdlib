@@ -1,6 +1,0 @@
-imp.get_magic
-=============
-
-.. currentmodule:: imp
-
-.. autofunction:: get_magic

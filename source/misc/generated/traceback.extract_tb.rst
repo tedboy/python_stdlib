@@ -1,6 +1,0 @@
-traceback.extract_tb
-====================
-
-.. currentmodule:: traceback
-
-.. autofunction:: extract_tb

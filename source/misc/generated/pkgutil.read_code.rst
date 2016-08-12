@@ -1,6 +1,0 @@
-pkgutil.read_code
-=================
-
-.. currentmodule:: pkgutil
-
-.. autofunction:: read_code

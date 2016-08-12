@@ -1,6 +1,0 @@
-site.addpackage
-===============
-
-.. currentmodule:: site
-
-.. autofunction:: addpackage

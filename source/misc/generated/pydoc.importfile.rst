@@ -1,6 +1,0 @@
-pydoc.importfile
-================
-
-.. currentmodule:: pydoc
-
-.. autofunction:: importfile

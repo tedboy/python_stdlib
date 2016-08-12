@@ -1,6 +1,0 @@
-pickle.StringIO
-===============
-
-.. currentmodule:: pickle
-
-.. autofunction:: StringIO

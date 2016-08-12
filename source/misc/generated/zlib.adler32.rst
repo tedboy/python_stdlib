@@ -1,6 +1,0 @@
-zlib.adler32
-============
-
-.. currentmodule:: zlib
-
-.. autofunction:: adler32

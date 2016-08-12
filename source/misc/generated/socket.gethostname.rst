@@ -1,6 +1,0 @@
-socket.gethostname
-==================
-
-.. currentmodule:: socket
-
-.. autofunction:: gethostname

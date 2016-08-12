@@ -1,6 +1,0 @@
-doctest.testsource
-==================
-
-.. currentmodule:: doctest
-
-.. autofunction:: testsource

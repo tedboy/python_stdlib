@@ -1,6 +1,0 @@
-trace.find_executable_linenos
-=============================
-
-.. currentmodule:: trace
-
-.. autofunction:: find_executable_linenos

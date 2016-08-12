@@ -1,6 +1,0 @@
-socket.create_connection
-========================
-
-.. currentmodule:: socket
-
-.. autofunction:: create_connection

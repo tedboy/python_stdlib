@@ -1,6 +1,0 @@
-unicodedata.combining
-=====================
-
-.. currentmodule:: unicodedata
-
-.. autofunction:: combining

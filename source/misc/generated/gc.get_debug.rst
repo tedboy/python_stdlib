@@ -1,6 +1,0 @@
-gc.get_debug
-============
-
-.. currentmodule:: gc
-
-.. autofunction:: get_debug

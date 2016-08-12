@@ -1,6 +1,0 @@
-json.dump
-=========
-
-.. currentmodule:: json
-
-.. autofunction:: dump

@@ -1,6 +1,0 @@
-pkgutil.iter_importer_modules
-=============================
-
-.. currentmodule:: pkgutil
-
-.. autofunction:: iter_importer_modules

@@ -1,6 +1,0 @@
-cgi.print_environ
-=================
-
-.. currentmodule:: cgi
-
-.. autofunction:: print_environ

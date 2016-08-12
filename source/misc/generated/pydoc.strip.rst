@@ -1,6 +1,0 @@
-pydoc.strip
-===========
-
-.. currentmodule:: pydoc
-
-.. autofunction:: strip

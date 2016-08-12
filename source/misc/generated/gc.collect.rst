@@ -1,6 +1,0 @@
-gc.collect
-==========
-
-.. currentmodule:: gc
-
-.. autofunction:: collect

@@ -1,6 +1,0 @@
-traceback.print_stack
-=====================
-
-.. currentmodule:: traceback
-
-.. autofunction:: print_stack

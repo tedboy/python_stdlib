@@ -1,6 +1,0 @@
-popen2.popen4
-=============
-
-.. currentmodule:: popen2
-
-.. autofunction:: popen4

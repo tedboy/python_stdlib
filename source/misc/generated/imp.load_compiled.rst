@@ -1,6 +1,0 @@
-imp.load_compiled
-=================
-
-.. currentmodule:: imp
-
-.. autofunction:: load_compiled

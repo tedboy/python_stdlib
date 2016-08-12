@@ -1,6 +1,0 @@
-pydoc.serve
-===========
-
-.. currentmodule:: pydoc
-
-.. autofunction:: serve

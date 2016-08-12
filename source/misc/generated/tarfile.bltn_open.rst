@@ -1,6 +1,0 @@
-tarfile.bltn_open
-=================
-
-.. currentmodule:: tarfile
-
-.. autofunction:: bltn_open

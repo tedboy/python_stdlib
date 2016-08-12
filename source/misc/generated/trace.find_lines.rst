@@ -1,6 +1,0 @@
-trace.find_lines
-================
-
-.. currentmodule:: trace
-
-.. autofunction:: find_lines

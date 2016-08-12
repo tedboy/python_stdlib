@@ -1,6 +1,0 @@
-socket.inet_aton
-================
-
-.. currentmodule:: socket
-
-.. autofunction:: inet_aton

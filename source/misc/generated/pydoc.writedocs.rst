@@ -1,6 +1,0 @@
-pydoc.writedocs
-===============
-
-.. currentmodule:: pydoc
-
-.. autofunction:: writedocs

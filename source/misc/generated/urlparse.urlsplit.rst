@@ -1,6 +1,0 @@
-urlparse.urlsplit
-=================
-
-.. currentmodule:: urlparse
-
-.. autofunction:: urlsplit

@@ -1,6 +1,0 @@
-urllib2.unquote
-===============
-
-.. currentmodule:: urllib2
-
-.. autofunction:: unquote

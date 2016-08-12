@@ -1,6 +1,0 @@
-imp.is_frozen
-=============
-
-.. currentmodule:: imp
-
-.. autofunction:: is_frozen

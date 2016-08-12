@@ -1,6 +1,0 @@
-bz2.decompress
-==============
-
-.. currentmodule:: bz2
-
-.. autofunction:: decompress

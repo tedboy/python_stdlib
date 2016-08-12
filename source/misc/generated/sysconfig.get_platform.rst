@@ -1,6 +1,0 @@
-sysconfig.get_platform
-======================
-
-.. currentmodule:: sysconfig
-
-.. autofunction:: get_platform

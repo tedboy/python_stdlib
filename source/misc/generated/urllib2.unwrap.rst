@@ -1,6 +1,0 @@
-urllib2.unwrap
-==============
-
-.. currentmodule:: urllib2
-
-.. autofunction:: unwrap

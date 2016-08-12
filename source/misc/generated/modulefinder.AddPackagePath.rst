@@ -1,6 +1,0 @@
-modulefinder.AddPackagePath
-===========================
-
-.. currentmodule:: modulefinder
-
-.. autofunction:: AddPackagePath

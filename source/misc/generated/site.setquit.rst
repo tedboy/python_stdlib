@@ -1,6 +1,0 @@
-site.setquit
-============
-
-.. currentmodule:: site
-
-.. autofunction:: setquit

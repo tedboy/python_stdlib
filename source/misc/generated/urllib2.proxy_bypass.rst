@@ -1,6 +1,0 @@
-urllib2.proxy_bypass
-====================
-
-.. currentmodule:: urllib2
-
-.. autofunction:: proxy_bypass

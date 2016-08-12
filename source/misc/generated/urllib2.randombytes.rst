@@ -1,6 +1,0 @@
-urllib2.randombytes
-===================
-
-.. currentmodule:: urllib2
-
-.. autofunction:: randombytes

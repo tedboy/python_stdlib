@@ -1,6 +1,0 @@
-traceback.print_exc
-===================
-
-.. currentmodule:: traceback
-
-.. autofunction:: print_exc

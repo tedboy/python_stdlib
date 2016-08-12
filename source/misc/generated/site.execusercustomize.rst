@@ -1,6 +1,0 @@
-site.execusercustomize
-======================
-
-.. currentmodule:: site
-
-.. autofunction:: execusercustomize

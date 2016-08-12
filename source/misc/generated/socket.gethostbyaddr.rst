@@ -1,6 +1,0 @@
-socket.gethostbyaddr
-====================
-
-.. currentmodule:: socket
-
-.. autofunction:: gethostbyaddr

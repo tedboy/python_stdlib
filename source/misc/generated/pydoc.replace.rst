@@ -1,6 +1,0 @@
-pydoc.replace
-=============
-
-.. currentmodule:: pydoc
-
-.. autofunction:: replace

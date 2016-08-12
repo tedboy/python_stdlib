@@ -1,6 +1,0 @@
-sysconfig.get_makefile_filename
-===============================
-
-.. currentmodule:: sysconfig
-
-.. autofunction:: get_makefile_filename

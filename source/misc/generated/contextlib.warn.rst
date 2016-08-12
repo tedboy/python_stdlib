@@ -1,6 +1,0 @@
-contextlib.warn
-===============
-
-.. currentmodule:: contextlib
-
-.. autofunction:: warn

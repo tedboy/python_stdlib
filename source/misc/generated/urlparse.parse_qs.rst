@@ -1,6 +1,0 @@
-urlparse.parse_qs
-=================
-
-.. currentmodule:: urlparse
-
-.. autofunction:: parse_qs

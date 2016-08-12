@@ -1,6 +1,0 @@
-imp.load_package
-================
-
-.. currentmodule:: imp
-
-.. autofunction:: load_package

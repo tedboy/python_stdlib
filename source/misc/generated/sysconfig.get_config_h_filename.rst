@@ -1,6 +1,0 @@
-sysconfig.get_config_h_filename
-===============================
-
-.. currentmodule:: sysconfig
-
-.. autofunction:: get_config_h_filename

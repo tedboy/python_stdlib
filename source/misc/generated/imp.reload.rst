@@ -1,6 +1,0 @@
-imp.reload
-==========
-
-.. currentmodule:: imp
-
-.. autofunction:: reload

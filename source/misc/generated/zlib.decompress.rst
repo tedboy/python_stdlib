@@ -1,6 +1,0 @@
-zlib.decompress
-===============
-
-.. currentmodule:: zlib
-
-.. autofunction:: decompress

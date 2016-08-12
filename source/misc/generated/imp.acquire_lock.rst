@@ -1,6 +1,0 @@
-imp.acquire_lock
-================
-
-.. currentmodule:: imp
-
-.. autofunction:: acquire_lock

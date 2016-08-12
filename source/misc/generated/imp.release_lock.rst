@@ -1,6 +1,0 @@
-imp.release_lock
-================
-
-.. currentmodule:: imp
-
-.. autofunction:: release_lock

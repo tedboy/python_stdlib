@@ -1,6 +1,0 @@
-doctest.debug
-=============
-
-.. currentmodule:: doctest
-
-.. autofunction:: debug

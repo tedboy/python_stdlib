@@ -1,6 +1,0 @@
-socket.inet_ntop
-================
-
-.. currentmodule:: socket
-
-.. autofunction:: inet_ntop

@@ -1,6 +1,0 @@
-gc.get_objects
-==============
-
-.. currentmodule:: gc
-
-.. autofunction:: get_objects

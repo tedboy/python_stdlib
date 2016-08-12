@@ -1,6 +1,0 @@
-urllib2.toBytes
-===============
-
-.. currentmodule:: urllib2
-
-.. autofunction:: toBytes
