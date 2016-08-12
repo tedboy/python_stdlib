@@ -15,6 +15,18 @@ for file in "./build/html/*.html"; do
     sed -i 's/_modules\//modules\//' $file
 done
 
+DIRECTORY="./build/html/misc"
+if [ -d "$DIRECTORY" ]; then
+    for file in "${DIRECTORY}/*.html"; do
+        #echo $file
+        sed -i 's/_static\//static\//' $file
+        sed -i 's/_sources\//sources\//' $file
+        sed -i 's/_modules\//modules\//' $file
+    done
+else
+    echo "NO DIR. DO NOTHING"
+fi
+
 DIRECTORY="./build/html/generated"
 if [ -d "$DIRECTORY" ]; then
     for file in "${DIRECTORY}/*.html"; do

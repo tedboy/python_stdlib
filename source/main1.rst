@@ -1,22 +1,10 @@
 .. main modules of interest
 
-Some main modules of interest
-
-.. toctree::
-    :maxdepth: 1
-
-    generated/__builtin__
-    generated/string
-    generated/re
-    generated/os
-    generated/os.path
-    generated/sys
-    generated/inspect
-    generated/warnings
-
 ###############
 Frequently used
 ###############
+Some main modules of interest
+
 .. toctree::
     :maxdepth: 1
        

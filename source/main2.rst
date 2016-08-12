@@ -3,6 +3,7 @@
 ########################
 Somewhat frequently used
 ########################
+Other modules I occasionally use
 
 .. toctree::
     :maxdepth: 1
