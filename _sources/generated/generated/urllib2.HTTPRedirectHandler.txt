@@ -2,16 +2,15 @@ urllib2.HTTPRedirectHandler
 ===========================
 
 .. currentmodule:: urllib2
-
-:func:`HTTPRedirectHandler.__init__`
-
 .. autoclass:: HTTPRedirectHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~HTTPRedirectHandler.add_parent
@@ -26,11 +25,10 @@ urllib2.HTTPRedirectHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~HTTPRedirectHandler.handler_order

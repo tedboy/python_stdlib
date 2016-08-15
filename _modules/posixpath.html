@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>posixpath &mdash; Python Standard Library</title>
+  <title>posixpath &mdash; My Project v1</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="Module code" href="index.html"/> 
 
   
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -101,7 +101,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -503,7 +503,7 @@
     <span class="k">return</span> <span class="n">path</span> <span class="ow">or</span> <span class="n">dot</span></div>
 
 
-<div class="viewcode-block" id="abspath"><a class="viewcode-back" href="../generated/shutil.abspath.html#os.path.abspath">[docs]</a><span class="k">def</span> <span class="nf">abspath</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="abspath"><a class="viewcode-back" href="../generated/os.path.abspath.html#os.path.abspath">[docs]</a><span class="k">def</span> <span class="nf">abspath</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return an absolute path.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">isabs</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">_unicode</span><span class="p">):</span>
@@ -517,7 +517,7 @@
 <span class="c1"># Return a canonical path (i.e. the absolute location of a file on the</span>
 <span class="c1"># filesystem).</span>
 
-<div class="viewcode-block" id="realpath"><a class="viewcode-back" href="../generated/sysconfig.realpath.html#os.path.realpath">[docs]</a><span class="k">def</span> <span class="nf">realpath</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<div class="viewcode-block" id="realpath"><a class="viewcode-back" href="../generated/os.path.realpath.html#os.path.realpath">[docs]</a><span class="k">def</span> <span class="nf">realpath</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the canonical path of the specified filename, eliminating any</span>
 <span class="sd">symbolic links encountered in the path.&quot;&quot;&quot;</span>
     <span class="n">path</span><span class="p">,</span> <span class="n">ok</span> <span class="o">=</span> <span class="n">_joinrealpath</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="p">{})</span>

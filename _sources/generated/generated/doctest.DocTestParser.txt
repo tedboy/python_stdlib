@@ -2,16 +2,15 @@ doctest.DocTestParser
 =====================
 
 .. currentmodule:: doctest
-
-:func:`DocTestParser.__init__`
-
 .. autoclass:: DocTestParser
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~DocTestParser.get_doctest

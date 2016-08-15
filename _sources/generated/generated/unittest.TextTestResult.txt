@@ -2,16 +2,15 @@ unittest.TextTestResult
 =======================
 
 .. currentmodule:: unittest
-
-:func:`TextTestResult.__init__`
-
 .. autoclass:: TextTestResult
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~TextTestResult.__init__
@@ -35,11 +34,10 @@ unittest.TextTestResult
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~TextTestResult.separator1

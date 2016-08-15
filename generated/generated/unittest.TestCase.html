@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.4.3.2.3. unittest.TestCase &mdash; Python Standard Library</title>
+  <title>3.4.3.2.3. unittest.TestCase &mdash; My Project v1</title>
   
 
   
@@ -30,9 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.4.3. unittest" href="../unittest.html"/>
-        <link rel="prev" title="3.4.3.2.2.58. unittest.FunctionTestCase.tearDownClass" href="unittest.FunctionTestCase.tearDownClass.html"/> 
+        <link rel="next" title="3.4.3.2.3.1.1. unittest.TestCase.__init__" href="unittest.TestCase.__init__.html"/>
+        <link rel="prev" title="3.4.3.2.2.2.2. unittest.FunctionTestCase.maxDiff" href="unittest.FunctionTestCase.maxDiff.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -51,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -87,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
@@ -129,7 +122,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -179,7 +172,6 @@
             
   <div class="section" id="unittest-testcase">
 <h1>3.4.3.2.3. unittest.TestCase<a class="headerlink" href="#unittest-testcase" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="unittest.TestCase.__init__.html#unittest.TestCase.__init__" title="unittest.TestCase.__init__"><code class="xref py py-func docutils literal"><span class="pre">TestCase.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="unittest.TestCase">
 <em class="property">class </em><code class="descclassname">unittest.</code><code class="descname">TestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/unittest/case.html#TestCase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#unittest.TestCase" title="Permalink to this definition">¶</a></dt>
@@ -219,15 +211,26 @@ attribute so can be configured by individual tests if required.</p>
 </dl>
 </li>
 </ul>
-<p class="rubric">Methods</p>
+<dl class="method">
+<dt id="unittest.TestCase.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/unittest/case.html#TestCase.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#unittest.TestCase.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an instance of the class that will use the named test
+method when executed. Raises a ValueError if the instance does
+not have a method with the specified name.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>3.4.3.2.3.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">__call__</span></code>(*args,&nbsp;**kwds)</td>
-<td></td>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.__init__.html#unittest.TestCase.__init__" title="unittest.TestCase.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([methodName])</td>
+<td>Create an instance of the class that will use the named test method when executed.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.addCleanup.html#unittest.TestCase.addCleanup" title="unittest.TestCase.addCleanup"><code class="xref py py-obj docutils literal"><span class="pre">addCleanup</span></code></a>(function,&nbsp;*args,&nbsp;**kwargs)</td>
 <td>Add a function, with arguments, to be called when the test is completed.</td>
@@ -376,45 +379,50 @@ attribute so can be configured by individual tests if required.</p>
 <tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.failUnlessRaises.html#unittest.TestCase.failUnlessRaises" title="unittest.TestCase.failUnlessRaises"><code class="xref py py-obj docutils literal"><span class="pre">failUnlessRaises</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">failureException</span></code></td>
-<td>alias of <code class="xref py py-class docutils literal"><span class="pre">AssertionError</span></code></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.id.html#unittest.TestCase.id" title="unittest.TestCase.id"><code class="xref py py-obj docutils literal"><span class="pre">id</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.id.html#unittest.TestCase.id" title="unittest.TestCase.id"><code class="xref py py-obj docutils literal"><span class="pre">id</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.run.html#unittest.TestCase.run" title="unittest.TestCase.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>([result])</td>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.run.html#unittest.TestCase.run" title="unittest.TestCase.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>([result])</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.setUp.html#unittest.TestCase.setUp" title="unittest.TestCase.setUp"><code class="xref py py-obj docutils literal"><span class="pre">setUp</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.setUp.html#unittest.TestCase.setUp" title="unittest.TestCase.setUp"><code class="xref py py-obj docutils literal"><span class="pre">setUp</span></code></a>()</td>
 <td>Hook method for setting up the test fixture before exercising it.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.setUpClass.html#unittest.TestCase.setUpClass" title="unittest.TestCase.setUpClass"><code class="xref py py-obj docutils literal"><span class="pre">setUpClass</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.setUpClass.html#unittest.TestCase.setUpClass" title="unittest.TestCase.setUpClass"><code class="xref py py-obj docutils literal"><span class="pre">setUpClass</span></code></a>()</td>
 <td>Hook method for setting up class fixture before running tests in the class.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.shortDescription.html#unittest.TestCase.shortDescription" title="unittest.TestCase.shortDescription"><code class="xref py py-obj docutils literal"><span class="pre">shortDescription</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.shortDescription.html#unittest.TestCase.shortDescription" title="unittest.TestCase.shortDescription"><code class="xref py py-obj docutils literal"><span class="pre">shortDescription</span></code></a>()</td>
 <td>Returns a one-line description of the test, or None if no description has been provided.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.skipTest.html#unittest.TestCase.skipTest" title="unittest.TestCase.skipTest"><code class="xref py py-obj docutils literal"><span class="pre">skipTest</span></code></a>(reason)</td>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.skipTest.html#unittest.TestCase.skipTest" title="unittest.TestCase.skipTest"><code class="xref py py-obj docutils literal"><span class="pre">skipTest</span></code></a>(reason)</td>
 <td>Skip this test.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.tearDown.html#unittest.TestCase.tearDown" title="unittest.TestCase.tearDown"><code class="xref py py-obj docutils literal"><span class="pre">tearDown</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.tearDown.html#unittest.TestCase.tearDown" title="unittest.TestCase.tearDown"><code class="xref py py-obj docutils literal"><span class="pre">tearDown</span></code></a>()</td>
 <td>Hook method for deconstructing the test fixture after testing it.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.tearDownClass.html#unittest.TestCase.tearDownClass" title="unittest.TestCase.tearDownClass"><code class="xref py py-obj docutils literal"><span class="pre">tearDownClass</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.tearDownClass.html#unittest.TestCase.tearDownClass" title="unittest.TestCase.tearDownClass"><code class="xref py py-obj docutils literal"><span class="pre">tearDownClass</span></code></a>()</td>
 <td>Hook method for deconstructing the class fixture after running all tests in the class.</td>
 </tr>
 </tbody>
 </table>
-<dl class="method">
-<dt id="unittest.TestCase.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/unittest/case.html#TestCase.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#unittest.TestCase.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create an instance of the class that will use the named test
-method when executed. Raises a ValueError if the instance does
-not have a method with the specified name.</p>
-</dd></dl>
-
-</dd></dl>
-
+</div>
+<div class="section" id="attributes">
+<h2>3.4.3.2.3.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="unittest.TestCase.longMessage.html#unittest.TestCase.longMessage" title="unittest.TestCase.longMessage"><code class="xref py py-obj docutils literal"><span class="pre">longMessage</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="unittest.TestCase.maxDiff.html#unittest.TestCase.maxDiff" title="unittest.TestCase.maxDiff"><code class="xref py py-obj docutils literal"><span class="pre">maxDiff</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -424,8 +432,10 @@ not have a method with the specified name.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="unittest.TestCase.__init__.html" class="btn btn-neutral float-right" title="3.4.3.2.3.1.1. unittest.TestCase.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="unittest.FunctionTestCase.tearDownClass.html" class="btn btn-neutral" title="3.4.3.2.2.58. unittest.FunctionTestCase.tearDownClass" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="unittest.FunctionTestCase.maxDiff.html" class="btn btn-neutral" title="3.4.3.2.2.2.2. unittest.FunctionTestCase.maxDiff" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

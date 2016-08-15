@@ -2,16 +2,15 @@ __builtin__.bool
 ================
 
 .. currentmodule:: __builtin__
-
-:func:`bool.__init__`
-
 .. autoclass:: bool
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~bool.bit_length
@@ -21,11 +20,10 @@ __builtin__.bool
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~bool.denominator

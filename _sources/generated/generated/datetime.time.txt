@@ -2,16 +2,15 @@ datetime.time
 =============
 
 .. currentmodule:: datetime
-
-:func:`time.__init__`
-
 .. autoclass:: time
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~time.dst
@@ -25,11 +24,10 @@ datetime.time
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~time.hour

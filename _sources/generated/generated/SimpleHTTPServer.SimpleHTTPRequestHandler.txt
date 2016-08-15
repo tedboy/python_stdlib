@@ -2,16 +2,15 @@ SimpleHTTPServer.SimpleHTTPRequestHandler
 =========================================
 
 .. currentmodule:: SimpleHTTPServer
-
-:func:`SimpleHTTPRequestHandler.__init__`
-
 .. autoclass:: SimpleHTTPRequestHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~SimpleHTTPRequestHandler.__init__
@@ -43,11 +42,10 @@ SimpleHTTPServer.SimpleHTTPRequestHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~SimpleHTTPRequestHandler.default_request_version

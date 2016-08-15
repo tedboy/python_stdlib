@@ -2,16 +2,15 @@ random.Random
 =============
 
 .. currentmodule:: random
-
-:func:`Random.__init__`
-
 .. autoclass:: Random
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Random.__init__
@@ -42,11 +41,10 @@ random.Random
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Random.VERSION

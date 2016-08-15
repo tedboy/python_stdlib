@@ -2,16 +2,15 @@ urllib2.ProxyDigestAuthHandler
 ==============================
 
 .. currentmodule:: urllib2
-
-:func:`ProxyDigestAuthHandler.__init__`
-
 .. autoclass:: ProxyDigestAuthHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~ProxyDigestAuthHandler.__init__
@@ -30,11 +29,10 @@ urllib2.ProxyDigestAuthHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~ProxyDigestAuthHandler.auth_header

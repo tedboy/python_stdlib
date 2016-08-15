@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.11.2.1. time.struct_time &mdash; Python Standard Library</title>
+  <title>2.11.2.1. time.struct_time &mdash; My Project v1</title>
   
 
   
@@ -30,9 +30,9 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="2.11. time" href="../time.html"/>
-        <link rel="next" title="2.12. timeit" href="../timeit.html"/>
+        <link rel="next" title="2.11.2.1.1.1. time.struct_time.n_fields" href="time.struct_time.n_fields.html"/>
         <link rel="prev" title="2.11.1.11. time.tzset" href="../time.tzset.html"/> 
 
   
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -126,7 +126,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -176,7 +176,6 @@
             
   <div class="section" id="time-struct-time">
 <h1>2.11.2.1. time.struct_time<a class="headerlink" href="#time-struct-time" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="#time.struct_time.__init__" title="time.struct_time.__init__"><code class="xref py py-func docutils literal"><span class="pre">struct_time.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="time.struct_time">
 <em class="property">class </em><code class="descclassname">time.</code><code class="descname">struct_time</code><a class="headerlink" href="#time.struct_time" title="Permalink to this definition">¶</a></dt>
@@ -195,6 +194,53 @@ fields&#8217; descriptions for details.</p>
 
 </dd></dl>
 
+<div class="section" id="attributes">
+<h2>2.11.2.1.1. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="time.struct_time.n_fields.html#time.struct_time.n_fields" title="time.struct_time.n_fields"><code class="xref py py-obj docutils literal"><span class="pre">n_fields</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="time.struct_time.n_sequence_fields.html#time.struct_time.n_sequence_fields" title="time.struct_time.n_sequence_fields"><code class="xref py py-obj docutils literal"><span class="pre">n_sequence_fields</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="time.struct_time.n_unnamed_fields.html#time.struct_time.n_unnamed_fields" title="time.struct_time.n_unnamed_fields"><code class="xref py py-obj docutils literal"><span class="pre">n_unnamed_fields</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="time.struct_time.tm_hour.html#time.struct_time.tm_hour" title="time.struct_time.tm_hour"><code class="xref py py-obj docutils literal"><span class="pre">tm_hour</span></code></a></td>
+<td>hours, range [0, 23]</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="time.struct_time.tm_isdst.html#time.struct_time.tm_isdst" title="time.struct_time.tm_isdst"><code class="xref py py-obj docutils literal"><span class="pre">tm_isdst</span></code></a></td>
+<td>1 if summer time is in effect, 0 if not, and -1 if unknown</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="time.struct_time.tm_mday.html#time.struct_time.tm_mday" title="time.struct_time.tm_mday"><code class="xref py py-obj docutils literal"><span class="pre">tm_mday</span></code></a></td>
+<td>day of month, range [1, 31]</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="time.struct_time.tm_min.html#time.struct_time.tm_min" title="time.struct_time.tm_min"><code class="xref py py-obj docutils literal"><span class="pre">tm_min</span></code></a></td>
+<td>minutes, range [0, 59]</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="time.struct_time.tm_mon.html#time.struct_time.tm_mon" title="time.struct_time.tm_mon"><code class="xref py py-obj docutils literal"><span class="pre">tm_mon</span></code></a></td>
+<td>month of year, range [1, 12]</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="time.struct_time.tm_sec.html#time.struct_time.tm_sec" title="time.struct_time.tm_sec"><code class="xref py py-obj docutils literal"><span class="pre">tm_sec</span></code></a></td>
+<td>seconds, range [0, 61])</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="time.struct_time.tm_wday.html#time.struct_time.tm_wday" title="time.struct_time.tm_wday"><code class="xref py py-obj docutils literal"><span class="pre">tm_wday</span></code></a></td>
+<td>day of week, range [0, 6], Monday is 0</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="time.struct_time.tm_yday.html#time.struct_time.tm_yday" title="time.struct_time.tm_yday"><code class="xref py py-obj docutils literal"><span class="pre">tm_yday</span></code></a></td>
+<td>day of year, range [1, 366]</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="time.struct_time.tm_year.html#time.struct_time.tm_year" title="time.struct_time.tm_year"><code class="xref py py-obj docutils literal"><span class="pre">tm_year</span></code></a></td>
+<td>year, for example, 1993</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -204,7 +250,7 @@ fields&#8217; descriptions for details.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../timeit.html" class="btn btn-neutral float-right" title="2.12. timeit" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="time.struct_time.n_fields.html" class="btn btn-neutral float-right" title="2.11.2.1.1.1. time.struct_time.n_fields" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../time.tzset.html" class="btn btn-neutral" title="2.11.1.11. time.tzset" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.7.4.1. pprint.PrettyPrinter &mdash; Python Standard Library</title>
+  <title>2.7.4.1. pprint.PrettyPrinter &mdash; My Project v1</title>
   
 
   
@@ -30,9 +30,9 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="2.7. pprint" href="../pprint.html"/>
-        <link rel="next" title="2.7.4.1.1. pprint.PrettyPrinter.format" href="pprint.PrettyPrinter.format.html"/>
+        <link rel="next" title="2.7.4.1.1.1. pprint.PrettyPrinter.__init__" href="pprint.PrettyPrinter.__init__.html"/>
         <link rel="prev" title="2.7.3.5. pprint.saferepr" href="../pprint.saferepr.html"/> 
 
   
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -128,7 +128,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -178,35 +178,10 @@
             
   <div class="section" id="pprint-prettyprinter">
 <h1>2.7.4.1. pprint.PrettyPrinter<a class="headerlink" href="#pprint-prettyprinter" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="pprint.PrettyPrinter.__init__.html#pprint.PrettyPrinter.__init__" title="pprint.PrettyPrinter.__init__"><code class="xref py py-func docutils literal"><span class="pre">PrettyPrinter.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="pprint.PrettyPrinter">
 <em class="property">class </em><code class="descclassname">pprint.</code><code class="descname">PrettyPrinter</code><span class="sig-paren">(</span><em>indent=1</em>, <em>width=80</em>, <em>depth=None</em>, <em>stream=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pprint.html#PrettyPrinter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pprint.PrettyPrinter" title="Permalink to this definition">¶</a></dt>
-<dd><p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="pprint.PrettyPrinter.format.html#pprint.PrettyPrinter.format" title="pprint.PrettyPrinter.format"><code class="xref py py-obj docutils literal"><span class="pre">format</span></code></a>(object,&nbsp;context,&nbsp;maxlevels,&nbsp;level)</td>
-<td>Format object for a specific context, returning a string and flags indicating whether the representation is &#8216;readable&#8217; and whether the object represents a recursive construct.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="pprint.PrettyPrinter.isreadable.html#pprint.PrettyPrinter.isreadable" title="pprint.PrettyPrinter.isreadable"><code class="xref py py-obj docutils literal"><span class="pre">isreadable</span></code></a>(object)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="pprint.PrettyPrinter.isrecursive.html#pprint.PrettyPrinter.isrecursive" title="pprint.PrettyPrinter.isrecursive"><code class="xref py py-obj docutils literal"><span class="pre">isrecursive</span></code></a>(object)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="pprint.PrettyPrinter.pformat.html#pprint.PrettyPrinter.pformat" title="pprint.PrettyPrinter.pformat"><code class="xref py py-obj docutils literal"><span class="pre">pformat</span></code></a>(object)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="pprint.PrettyPrinter.pprint.html#pprint.PrettyPrinter.pprint" title="pprint.PrettyPrinter.pprint"><code class="xref py py-obj docutils literal"><span class="pre">pprint</span></code></a>(object)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<dl class="method">
+<dd><dl class="method">
 <dt id="pprint.PrettyPrinter.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>indent=1</em>, <em>width=80</em>, <em>depth=None</em>, <em>stream=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pprint.html#PrettyPrinter.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pprint.PrettyPrinter.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Handle pretty printing operations onto a stream using a set of
@@ -226,6 +201,35 @@ output stream available at construction will be used.</dd>
 
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>2.7.4.1.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="pprint.PrettyPrinter.__init__.html#pprint.PrettyPrinter.__init__" title="pprint.PrettyPrinter.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([indent,&nbsp;width,&nbsp;depth,&nbsp;stream])</td>
+<td>Handle pretty printing operations onto a stream using a set of configured parameters.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pprint.PrettyPrinter.format.html#pprint.PrettyPrinter.format" title="pprint.PrettyPrinter.format"><code class="xref py py-obj docutils literal"><span class="pre">format</span></code></a>(object,&nbsp;context,&nbsp;maxlevels,&nbsp;level)</td>
+<td>Format object for a specific context, returning a string and flags indicating whether the representation is &#8216;readable&#8217; and whether the object represents a recursive construct.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pprint.PrettyPrinter.isreadable.html#pprint.PrettyPrinter.isreadable" title="pprint.PrettyPrinter.isreadable"><code class="xref py py-obj docutils literal"><span class="pre">isreadable</span></code></a>(object)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pprint.PrettyPrinter.isrecursive.html#pprint.PrettyPrinter.isrecursive" title="pprint.PrettyPrinter.isrecursive"><code class="xref py py-obj docutils literal"><span class="pre">isrecursive</span></code></a>(object)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pprint.PrettyPrinter.pformat.html#pprint.PrettyPrinter.pformat" title="pprint.PrettyPrinter.pformat"><code class="xref py py-obj docutils literal"><span class="pre">pformat</span></code></a>(object)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pprint.PrettyPrinter.pprint.html#pprint.PrettyPrinter.pprint" title="pprint.PrettyPrinter.pprint"><code class="xref py py-obj docutils literal"><span class="pre">pprint</span></code></a>(object)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -235,7 +239,7 @@ output stream available at construction will be used.</dd>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pprint.PrettyPrinter.format.html" class="btn btn-neutral float-right" title="2.7.4.1.1. pprint.PrettyPrinter.format" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pprint.PrettyPrinter.__init__.html" class="btn btn-neutral float-right" title="2.7.4.1.1.1. pprint.PrettyPrinter.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../pprint.saferepr.html" class="btn btn-neutral" title="2.7.3.5. pprint.saferepr" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

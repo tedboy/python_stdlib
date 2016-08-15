@@ -2,16 +2,15 @@ urlparse.ParseResult
 ====================
 
 .. currentmodule:: urlparse
-
-:func:`ParseResult.__init__`
-
 .. autoclass:: ParseResult
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~ParseResult.count
@@ -22,11 +21,10 @@ urlparse.ParseResult
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~ParseResult.fragment

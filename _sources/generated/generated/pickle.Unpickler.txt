@@ -2,16 +2,15 @@ pickle.Unpickler
 ================
 
 .. currentmodule:: pickle
-
-:func:`Unpickler.__init__`
-
 .. autoclass:: Unpickler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Unpickler.__init__
@@ -78,11 +77,10 @@ pickle.Unpickler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Unpickler.dispatch

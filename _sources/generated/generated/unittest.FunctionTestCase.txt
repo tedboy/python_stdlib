@@ -2,16 +2,15 @@ unittest.FunctionTestCase
 =========================
 
 .. currentmodule:: unittest
-
-:func:`FunctionTestCase.__init__`
-
 .. autoclass:: FunctionTestCase
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~FunctionTestCase.__init__
@@ -78,11 +77,10 @@ unittest.FunctionTestCase
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~FunctionTestCase.longMessage

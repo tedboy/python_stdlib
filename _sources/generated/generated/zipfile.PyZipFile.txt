@@ -2,16 +2,15 @@ zipfile.PyZipFile
 =================
 
 .. currentmodule:: zipfile
-
-:func:`PyZipFile.__init__`
-
 .. autoclass:: PyZipFile
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~PyZipFile.__init__
@@ -34,11 +33,10 @@ zipfile.PyZipFile
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~PyZipFile.comment

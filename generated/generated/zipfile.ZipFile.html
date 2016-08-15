@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.2.8.2.3. zipfile.ZipFile &mdash; Python Standard Library</title>
+  <title>3.2.8.2.3. zipfile.ZipFile &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.2.8. zipfile" href="../zipfile.html"/>
-        <link rel="next" title="3.2.8.2.3.1. zipfile.ZipFile.comment" href="zipfile.ZipFile.comment.html"/>
-        <link rel="prev" title="3.2.8.2.2.21. zipfile.ZipExtFile.writelines" href="zipfile.ZipExtFile.writelines.html"/> 
+        <link rel="next" title="3.2.8.2.3.1.1. zipfile.ZipFile.__init__" href="zipfile.ZipFile.__init__.html"/>
+        <link rel="prev" title="3.2.8.2.2.2.5. zipfile.ZipExtFile.next" href="zipfile.ZipExtFile.next.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
@@ -134,7 +126,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -184,7 +176,6 @@
             
   <div class="section" id="zipfile-zipfile">
 <h1>3.2.8.2.3. zipfile.ZipFile<a class="headerlink" href="#zipfile-zipfile" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="zipfile.ZipFile.__init__.html#zipfile.ZipFile.__init__" title="zipfile.ZipFile.__init__"><code class="xref py py-func docutils literal"><span class="pre">ZipFile.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="zipfile.ZipFile">
 <em class="property">class </em><code class="descclassname">zipfile.</code><code class="descname">ZipFile</code><span class="sig-paren">(</span><em>file</em>, <em>mode='r'</em>, <em>compression=0</em>, <em>allowZip64=False</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/zipfile.html#ZipFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zipfile.ZipFile" title="Permalink to this definition">¶</a></dt>
@@ -200,7 +191,69 @@ allowZip64: if True ZipFile will create files with ZIP64 extensions when</p>
 <blockquote>
 <div>needed, otherwise it will raise an exception when this would
 be necessary.</div></blockquote>
-<p class="rubric">Attributes</p>
+<dl class="method">
+<dt id="zipfile.ZipFile.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>file</em>, <em>mode='r'</em>, <em>compression=0</em>, <em>allowZip64=False</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/zipfile.html#ZipFile.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zipfile.ZipFile.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the ZIP file with mode read &#8220;r&#8221;, write &#8220;w&#8221; or append &#8220;a&#8221;.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>3.2.8.2.3.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.__init__.html#zipfile.ZipFile.__init__" title="zipfile.ZipFile.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>(file[,&nbsp;mode,&nbsp;compression,&nbsp;allowZip64])</td>
+<td>Open the ZIP file with mode read &#8220;r&#8221;, write &#8220;w&#8221; or append &#8220;a&#8221;.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.close.html#zipfile.ZipFile.close" title="zipfile.ZipFile.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>()</td>
+<td>Close the file, and for mode &#8220;w&#8221; and &#8220;a&#8221; write the ending records.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.extract.html#zipfile.ZipFile.extract" title="zipfile.ZipFile.extract"><code class="xref py py-obj docutils literal"><span class="pre">extract</span></code></a>(member[,&nbsp;path,&nbsp;pwd])</td>
+<td>Extract a member from the archive to the current working directory, using its full name.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.extractall.html#zipfile.ZipFile.extractall" title="zipfile.ZipFile.extractall"><code class="xref py py-obj docutils literal"><span class="pre">extractall</span></code></a>([path,&nbsp;members,&nbsp;pwd])</td>
+<td>Extract all members from the archive to the current working directory.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.getinfo.html#zipfile.ZipFile.getinfo" title="zipfile.ZipFile.getinfo"><code class="xref py py-obj docutils literal"><span class="pre">getinfo</span></code></a>(name)</td>
+<td>Return the instance of ZipInfo given &#8216;name&#8217;.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.infolist.html#zipfile.ZipFile.infolist" title="zipfile.ZipFile.infolist"><code class="xref py py-obj docutils literal"><span class="pre">infolist</span></code></a>()</td>
+<td>Return a list of class ZipInfo instances for files in the archive.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.namelist.html#zipfile.ZipFile.namelist" title="zipfile.ZipFile.namelist"><code class="xref py py-obj docutils literal"><span class="pre">namelist</span></code></a>()</td>
+<td>Return a list of file names in the archive.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.open.html#zipfile.ZipFile.open" title="zipfile.ZipFile.open"><code class="xref py py-obj docutils literal"><span class="pre">open</span></code></a>(name[,&nbsp;mode,&nbsp;pwd])</td>
+<td>Return file-like object for &#8216;name&#8217;.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.printdir.html#zipfile.ZipFile.printdir" title="zipfile.ZipFile.printdir"><code class="xref py py-obj docutils literal"><span class="pre">printdir</span></code></a>()</td>
+<td>Print a table of contents for the zip file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.read.html#zipfile.ZipFile.read" title="zipfile.ZipFile.read"><code class="xref py py-obj docutils literal"><span class="pre">read</span></code></a>(name[,&nbsp;pwd])</td>
+<td>Return file bytes (as a string) for name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.setpassword.html#zipfile.ZipFile.setpassword" title="zipfile.ZipFile.setpassword"><code class="xref py py-obj docutils literal"><span class="pre">setpassword</span></code></a>(pwd)</td>
+<td>Set default password for encrypted files.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.testzip.html#zipfile.ZipFile.testzip" title="zipfile.ZipFile.testzip"><code class="xref py py-obj docutils literal"><span class="pre">testzip</span></code></a>()</td>
+<td>Read all the files and check the CRC.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.write.html#zipfile.ZipFile.write" title="zipfile.ZipFile.write"><code class="xref py py-obj docutils literal"><span class="pre">write</span></code></a>(filename[,&nbsp;arcname,&nbsp;compress_type])</td>
+<td>Put the bytes from filename into the archive under the name arcname.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.writestr.html#zipfile.ZipFile.writestr" title="zipfile.ZipFile.writestr"><code class="xref py py-obj docutils literal"><span class="pre">writestr</span></code></a>(zinfo_or_arcname,&nbsp;bytes[,&nbsp;...])</td>
+<td>Write a file into the archive.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="attributes">
+<h2>3.2.8.2.3.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -210,75 +263,12 @@ be necessary.</div></blockquote>
 <tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.comment.html#zipfile.ZipFile.comment" title="zipfile.ZipFile.comment"><code class="xref py py-obj docutils literal"><span class="pre">comment</span></code></a></td>
 <td>The comment text associated with the ZIP file.</td>
 </tr>
-</tbody>
-</table>
-<table border="1" class="docutils">
-<colgroup>
-<col width="23%" />
-<col width="77%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>fp</td>
-<td>&nbsp;</td>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.fp.html#zipfile.ZipFile.fp" title="zipfile.ZipFile.fp"><code class="xref py py-obj docutils literal"><span class="pre">fp</span></code></a></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.close.html#zipfile.ZipFile.close" title="zipfile.ZipFile.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>()</td>
-<td>Close the file, and for mode &#8220;w&#8221; and &#8220;a&#8221; write the ending records.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.extract.html#zipfile.ZipFile.extract" title="zipfile.ZipFile.extract"><code class="xref py py-obj docutils literal"><span class="pre">extract</span></code></a>(member[,&nbsp;path,&nbsp;pwd])</td>
-<td>Extract a member from the archive to the current working directory, using its full name.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.extractall.html#zipfile.ZipFile.extractall" title="zipfile.ZipFile.extractall"><code class="xref py py-obj docutils literal"><span class="pre">extractall</span></code></a>([path,&nbsp;members,&nbsp;pwd])</td>
-<td>Extract all members from the archive to the current working directory.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.getinfo.html#zipfile.ZipFile.getinfo" title="zipfile.ZipFile.getinfo"><code class="xref py py-obj docutils literal"><span class="pre">getinfo</span></code></a>(name)</td>
-<td>Return the instance of ZipInfo given &#8216;name&#8217;.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.infolist.html#zipfile.ZipFile.infolist" title="zipfile.ZipFile.infolist"><code class="xref py py-obj docutils literal"><span class="pre">infolist</span></code></a>()</td>
-<td>Return a list of class ZipInfo instances for files in the archive.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.namelist.html#zipfile.ZipFile.namelist" title="zipfile.ZipFile.namelist"><code class="xref py py-obj docutils literal"><span class="pre">namelist</span></code></a>()</td>
-<td>Return a list of file names in the archive.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.open.html#zipfile.ZipFile.open" title="zipfile.ZipFile.open"><code class="xref py py-obj docutils literal"><span class="pre">open</span></code></a>(name[,&nbsp;mode,&nbsp;pwd])</td>
-<td>Return file-like object for &#8216;name&#8217;.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.printdir.html#zipfile.ZipFile.printdir" title="zipfile.ZipFile.printdir"><code class="xref py py-obj docutils literal"><span class="pre">printdir</span></code></a>()</td>
-<td>Print a table of contents for the zip file.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.read.html#zipfile.ZipFile.read" title="zipfile.ZipFile.read"><code class="xref py py-obj docutils literal"><span class="pre">read</span></code></a>(name[,&nbsp;pwd])</td>
-<td>Return file bytes (as a string) for name.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.setpassword.html#zipfile.ZipFile.setpassword" title="zipfile.ZipFile.setpassword"><code class="xref py py-obj docutils literal"><span class="pre">setpassword</span></code></a>(pwd)</td>
-<td>Set default password for encrypted files.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.testzip.html#zipfile.ZipFile.testzip" title="zipfile.ZipFile.testzip"><code class="xref py py-obj docutils literal"><span class="pre">testzip</span></code></a>()</td>
-<td>Read all the files and check the CRC.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipFile.write.html#zipfile.ZipFile.write" title="zipfile.ZipFile.write"><code class="xref py py-obj docutils literal"><span class="pre">write</span></code></a>(filename[,&nbsp;arcname,&nbsp;compress_type])</td>
-<td>Put the bytes from filename into the archive under the name arcname.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipFile.writestr.html#zipfile.ZipFile.writestr" title="zipfile.ZipFile.writestr"><code class="xref py py-obj docutils literal"><span class="pre">writestr</span></code></a>(zinfo_or_arcname,&nbsp;bytes[,&nbsp;...])</td>
-<td>Write a file into the archive.</td>
-</tr>
-</tbody>
-</table>
-<dl class="method">
-<dt id="zipfile.ZipFile.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>file</em>, <em>mode='r'</em>, <em>compression=0</em>, <em>allowZip64=False</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/zipfile.html#ZipFile.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zipfile.ZipFile.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Open the ZIP file with mode read &#8220;r&#8221;, write &#8220;w&#8221; or append &#8220;a&#8221;.</p>
-</dd></dl>
-
-</dd></dl>
-
+</div>
 </div>
 
 
@@ -288,10 +278,10 @@ be necessary.</div></blockquote>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="zipfile.ZipFile.comment.html" class="btn btn-neutral float-right" title="3.2.8.2.3.1. zipfile.ZipFile.comment" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="zipfile.ZipFile.__init__.html" class="btn btn-neutral float-right" title="3.2.8.2.3.1.1. zipfile.ZipFile.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="zipfile.ZipExtFile.writelines.html" class="btn btn-neutral" title="3.2.8.2.2.21. zipfile.ZipExtFile.writelines" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="zipfile.ZipExtFile.next.html" class="btn btn-neutral" title="3.2.8.2.2.2.5. zipfile.ZipExtFile.next" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

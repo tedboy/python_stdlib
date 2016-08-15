@@ -2,16 +2,15 @@ urllib2.HTTPBasicAuthHandler
 ============================
 
 .. currentmodule:: urllib2
-
-:func:`HTTPBasicAuthHandler.__init__`
-
 .. autoclass:: HTTPBasicAuthHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~HTTPBasicAuthHandler.__init__
@@ -25,11 +24,10 @@ urllib2.HTTPBasicAuthHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~HTTPBasicAuthHandler.auth_header

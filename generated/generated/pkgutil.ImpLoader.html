@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.5.10.2.2. pkgutil.ImpLoader &mdash; Python Standard Library</title>
+  <title>3.5.10.2.2. pkgutil.ImpLoader &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.5.10. pkgutil" href="../pkgutil.html"/>
-        <link rel="next" title="3.5.10.2.2.1. pkgutil.ImpLoader.get_code" href="pkgutil.ImpLoader.get_code.html"/>
-        <link rel="prev" title="3.5.10.2.1.2. pkgutil.ImpImporter.iter_modules" href="pkgutil.ImpImporter.iter_modules.html"/> 
+        <link rel="next" title="3.5.10.2.2.1.1. pkgutil.ImpLoader.__init__" href="pkgutil.ImpLoader.__init__.html"/>
+        <link rel="prev" title="3.5.10.2.1.1.3. pkgutil.ImpImporter.iter_modules" href="pkgutil.ImpImporter.iter_modules.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
@@ -135,7 +127,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -185,55 +177,66 @@
             
   <div class="section" id="pkgutil-imploader">
 <h1>3.5.10.2.2. pkgutil.ImpLoader<a class="headerlink" href="#pkgutil-imploader" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="pkgutil.ImpLoader.__init__.html#pkgutil.ImpLoader.__init__" title="pkgutil.ImpLoader.__init__"><code class="xref py py-func docutils literal"><span class="pre">ImpLoader.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="pkgutil.ImpLoader">
 <em class="property">class </em><code class="descclassname">pkgutil.</code><code class="descname">ImpLoader</code><span class="sig-paren">(</span><em>fullname</em>, <em>file</em>, <em>filename</em>, <em>etc</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pkgutil.html#ImpLoader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pkgutil.ImpLoader" title="Permalink to this definition">¶</a></dt>
 <dd><p>PEP 302 Loader that wraps Python&#8217;s &#8220;classic&#8221; import algorithm</p>
-<p class="rubric">Attributes</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="38%" />
-<col width="63%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>code</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>source</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Methods</p>
+<dl class="method">
+<dt id="pkgutil.ImpLoader.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>fullname</em>, <em>file</em>, <em>filename</em>, <em>etc</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pkgutil.html#ImpLoader.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pkgutil.ImpLoader.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>3.5.10.2.2.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="pkgutil.ImpLoader.get_code.html#pkgutil.ImpLoader.get_code" title="pkgutil.ImpLoader.get_code"><code class="xref py py-obj docutils literal"><span class="pre">get_code</span></code></a>([fullname])</td>
+<tr class="row-odd"><td><a class="reference internal" href="pkgutil.ImpLoader.__init__.html#pkgutil.ImpLoader.__init__" title="pkgutil.ImpLoader.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>(fullname,&nbsp;file,&nbsp;filename,&nbsp;etc)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pkgutil.ImpLoader.get_data.html#pkgutil.ImpLoader.get_data" title="pkgutil.ImpLoader.get_data"><code class="xref py py-obj docutils literal"><span class="pre">get_data</span></code></a>(pathname)</td>
+<tr class="row-even"><td><a class="reference internal" href="pkgutil.ImpLoader.get_code.html#pkgutil.ImpLoader.get_code" title="pkgutil.ImpLoader.get_code"><code class="xref py py-obj docutils literal"><span class="pre">get_code</span></code></a>([fullname])</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pkgutil.ImpLoader.get_filename.html#pkgutil.ImpLoader.get_filename" title="pkgutil.ImpLoader.get_filename"><code class="xref py py-obj docutils literal"><span class="pre">get_filename</span></code></a>([fullname])</td>
+<tr class="row-odd"><td><a class="reference internal" href="pkgutil.ImpLoader.get_data.html#pkgutil.ImpLoader.get_data" title="pkgutil.ImpLoader.get_data"><code class="xref py py-obj docutils literal"><span class="pre">get_data</span></code></a>(pathname)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pkgutil.ImpLoader.get_source.html#pkgutil.ImpLoader.get_source" title="pkgutil.ImpLoader.get_source"><code class="xref py py-obj docutils literal"><span class="pre">get_source</span></code></a>([fullname])</td>
+<tr class="row-even"><td><a class="reference internal" href="pkgutil.ImpLoader.get_filename.html#pkgutil.ImpLoader.get_filename" title="pkgutil.ImpLoader.get_filename"><code class="xref py py-obj docutils literal"><span class="pre">get_filename</span></code></a>([fullname])</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pkgutil.ImpLoader.is_package.html#pkgutil.ImpLoader.is_package" title="pkgutil.ImpLoader.is_package"><code class="xref py py-obj docutils literal"><span class="pre">is_package</span></code></a>(fullname)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pkgutil.ImpLoader.get_source.html#pkgutil.ImpLoader.get_source" title="pkgutil.ImpLoader.get_source"><code class="xref py py-obj docutils literal"><span class="pre">get_source</span></code></a>([fullname])</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pkgutil.ImpLoader.load_module.html#pkgutil.ImpLoader.load_module" title="pkgutil.ImpLoader.load_module"><code class="xref py py-obj docutils literal"><span class="pre">load_module</span></code></a>(fullname)</td>
+<tr class="row-even"><td><a class="reference internal" href="pkgutil.ImpLoader.is_package.html#pkgutil.ImpLoader.is_package" title="pkgutil.ImpLoader.is_package"><code class="xref py py-obj docutils literal"><span class="pre">is_package</span></code></a>(fullname)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pkgutil.ImpLoader.load_module.html#pkgutil.ImpLoader.load_module" title="pkgutil.ImpLoader.load_module"><code class="xref py py-obj docutils literal"><span class="pre">load_module</span></code></a>(fullname)</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-</dd></dl>
-
+</div>
+<div class="section" id="attributes">
+<h2>3.5.10.2.2.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="pkgutil.ImpLoader.code.html#pkgutil.ImpLoader.code" title="pkgutil.ImpLoader.code"><code class="xref py py-obj docutils literal"><span class="pre">code</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pkgutil.ImpLoader.source.html#pkgutil.ImpLoader.source" title="pkgutil.ImpLoader.source"><code class="xref py py-obj docutils literal"><span class="pre">source</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -243,10 +246,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pkgutil.ImpLoader.get_code.html" class="btn btn-neutral float-right" title="3.5.10.2.2.1. pkgutil.ImpLoader.get_code" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pkgutil.ImpLoader.__init__.html" class="btn btn-neutral float-right" title="3.5.10.2.2.1.1. pkgutil.ImpLoader.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pkgutil.ImpImporter.iter_modules.html" class="btn btn-neutral" title="3.5.10.2.1.2. pkgutil.ImpImporter.iter_modules" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="pkgutil.ImpImporter.iter_modules.html" class="btn btn-neutral" title="3.5.10.2.1.1.3. pkgutil.ImpImporter.iter_modules" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

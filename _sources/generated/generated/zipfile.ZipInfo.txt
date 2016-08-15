@@ -2,16 +2,15 @@ zipfile.ZipInfo
 ===============
 
 .. currentmodule:: zipfile
-
-:func:`ZipInfo.__init__`
-
 .. autoclass:: ZipInfo
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~ZipInfo.FileHeader
@@ -21,11 +20,10 @@ zipfile.ZipInfo
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~ZipInfo.CRC

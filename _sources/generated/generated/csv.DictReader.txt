@@ -2,16 +2,15 @@ csv.DictReader
 ==============
 
 .. currentmodule:: csv
-
-:func:`DictReader.__init__`
-
 .. autoclass:: DictReader
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~DictReader.__init__
@@ -21,11 +20,10 @@ csv.DictReader
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~DictReader.fieldnames

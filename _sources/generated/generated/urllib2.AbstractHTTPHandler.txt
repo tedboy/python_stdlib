@@ -2,16 +2,15 @@ urllib2.AbstractHTTPHandler
 ===========================
 
 .. currentmodule:: urllib2
-
-:func:`AbstractHTTPHandler.__init__`
-
 .. autoclass:: AbstractHTTPHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~AbstractHTTPHandler.__init__
@@ -25,11 +24,10 @@ urllib2.AbstractHTTPHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~AbstractHTTPHandler.handler_order

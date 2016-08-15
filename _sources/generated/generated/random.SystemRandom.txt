@@ -2,16 +2,15 @@ random.SystemRandom
 ===================
 
 .. currentmodule:: random
-
-:func:`SystemRandom.__init__`
-
 .. autoclass:: SystemRandom
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~SystemRandom.__init__
@@ -42,11 +41,10 @@ random.SystemRandom
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~SystemRandom.VERSION

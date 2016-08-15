@@ -2,16 +2,15 @@ socket.SocketType
 =================
 
 .. currentmodule:: socket
-
-:func:`SocketType.__init__`
-
 .. autoclass:: SocketType
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~SocketType.__init__
@@ -38,11 +37,10 @@ socket.SocketType
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~SocketType.family

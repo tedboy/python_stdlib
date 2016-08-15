@@ -2,16 +2,15 @@ collections.defaultdict
 =======================
 
 .. currentmodule:: collections
-
-:func:`defaultdict.__init__`
-
 .. autoclass:: defaultdict
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~defaultdict.clear
@@ -37,11 +36,10 @@ collections.defaultdict
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~defaultdict.default_factory

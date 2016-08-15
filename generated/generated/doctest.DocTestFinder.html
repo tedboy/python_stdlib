@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.4.2.2.5. doctest.DocTestFinder &mdash; Python Standard Library</title>
+  <title>3.4.2.2.5. doctest.DocTestFinder &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.4.2. doctest" href="../doctest.html"/>
-        <link rel="next" title="3.4.2.2.5.1. doctest.DocTestFinder.find" href="doctest.DocTestFinder.find.html"/>
-        <link rel="prev" title="3.4.2.2.4.59. doctest.DocTestCase.tearDownClass" href="doctest.DocTestCase.tearDownClass.html"/> 
+        <link rel="next" title="3.4.2.2.5.1.1. doctest.DocTestFinder.__init__" href="doctest.DocTestFinder.__init__.html"/>
+        <link rel="prev" title="3.4.2.2.4.2.2. doctest.DocTestCase.maxDiff" href="doctest.DocTestCase.maxDiff.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
@@ -130,7 +122,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -180,7 +172,6 @@
             
   <div class="section" id="doctest-doctestfinder">
 <h1>3.4.2.2.5. doctest.DocTestFinder<a class="headerlink" href="#doctest-doctestfinder" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="doctest.DocTestFinder.__init__.html#doctest.DocTestFinder.__init__" title="doctest.DocTestFinder.__init__"><code class="xref py py-func docutils literal"><span class="pre">DocTestFinder.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="doctest.DocTestFinder">
 <em class="property">class </em><code class="descclassname">doctest.</code><code class="descname">DocTestFinder</code><span class="sig-paren">(</span><em>verbose=False</em>, <em>parser=&lt;doctest.DocTestParser instance&gt;</em>, <em>recurse=True</em>, <em>exclude_empty=True</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/doctest.html#DocTestFinder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#doctest.DocTestFinder" title="Permalink to this definition">¶</a></dt>
@@ -189,18 +180,6 @@ object, from its docstring and the docstrings of its contained
 objects.  Doctests can currently be extracted from the following
 object types: modules, functions, classes, methods, staticmethods,
 classmethods, and properties.</p>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestFinder.find.html#doctest.DocTestFinder.find" title="doctest.DocTestFinder.find"><code class="xref py py-obj docutils literal"><span class="pre">find</span></code></a>(obj[,&nbsp;name,&nbsp;module,&nbsp;globs,&nbsp;extraglobs])</td>
-<td>Return a list of the DocTests that are defined by the given object&#8217;s docstring, or by any of its contained objects&#8217; docstrings.</td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="doctest.DocTestFinder.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>verbose=False</em>, <em>parser=&lt;doctest.DocTestParser instance&gt;</em>, <em>recurse=True</em>, <em>exclude_empty=True</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/doctest.html#DocTestFinder.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#doctest.DocTestFinder.__init__" title="Permalink to this definition">¶</a></dt>
@@ -218,6 +197,23 @@ will include tests for objects with empty docstrings.</p>
 
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>3.4.2.2.5.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestFinder.__init__.html#doctest.DocTestFinder.__init__" title="doctest.DocTestFinder.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([verbose,&nbsp;parser,&nbsp;recurse,&nbsp;...])</td>
+<td>Create a new doctest finder.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.DocTestFinder.find.html#doctest.DocTestFinder.find" title="doctest.DocTestFinder.find"><code class="xref py py-obj docutils literal"><span class="pre">find</span></code></a>(obj[,&nbsp;name,&nbsp;module,&nbsp;globs,&nbsp;extraglobs])</td>
+<td>Return a list of the DocTests that are defined by the given object&#8217;s docstring, or by any of its contained objects&#8217; docstrings.</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -227,10 +223,10 @@ will include tests for objects with empty docstrings.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="doctest.DocTestFinder.find.html" class="btn btn-neutral float-right" title="3.4.2.2.5.1. doctest.DocTestFinder.find" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="doctest.DocTestFinder.__init__.html" class="btn btn-neutral float-right" title="3.4.2.2.5.1.1. doctest.DocTestFinder.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="doctest.DocTestCase.tearDownClass.html" class="btn btn-neutral" title="3.4.2.2.4.59. doctest.DocTestCase.tearDownClass" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="doctest.DocTestCase.maxDiff.html" class="btn btn-neutral" title="3.4.2.2.4.2.2. doctest.DocTestCase.maxDiff" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>warnings &mdash; Python Standard Library</title>
+  <title>warnings &mdash; My Project v1</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="Module code" href="index.html"/> 
 
   
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -101,7 +101,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -160,7 +160,7 @@
            <span class="s2">&quot;resetwarnings&quot;</span><span class="p">,</span> <span class="s2">&quot;catch_warnings&quot;</span><span class="p">]</span>
 
 
-<div class="viewcode-block" id="warnpy3k"><a class="viewcode-back" href="../generated/warnings.warnpy3k.html#cgi.warnpy3k">[docs]</a><span class="k">def</span> <span class="nf">warnpy3k</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="warnpy3k"><a class="viewcode-back" href="../generated/warnings.warnpy3k.html#warnings.warnpy3k">[docs]</a><span class="k">def</span> <span class="nf">warnpy3k</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Issue a deprecation warning for Python 3.x related changes.</span>
 
 <span class="sd">    Warnings are omitted unless Python is started with the -3 option.</span>
@@ -185,7 +185,7 @@
 <span class="c1"># triggered.</span>
 <span class="n">showwarning</span> <span class="o">=</span> <span class="n">_show_warning</span>
 
-<div class="viewcode-block" id="formatwarning"><a class="viewcode-back" href="../generated/warnings.formatwarning.html#cgi.formatwarning">[docs]</a><span class="k">def</span> <span class="nf">formatwarning</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="formatwarning"><a class="viewcode-back" href="../generated/warnings.formatwarning.html#warnings.formatwarning">[docs]</a><span class="k">def</span> <span class="nf">formatwarning</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Function to format a warning the standard way.&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">unicodetype</span> <span class="o">=</span> <span class="n">unicode</span>
@@ -212,7 +212,7 @@
     <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">:</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">s</span></div>
 
-<div class="viewcode-block" id="filterwarnings"><a class="viewcode-back" href="../generated/warnings.filterwarnings.html#cgi.filterwarnings">[docs]</a><span class="k">def</span> <span class="nf">filterwarnings</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">Warning</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+<div class="viewcode-block" id="filterwarnings"><a class="viewcode-back" href="../generated/warnings.filterwarnings.html#warnings.filterwarnings">[docs]</a><span class="k">def</span> <span class="nf">filterwarnings</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">Warning</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
                    <span class="n">append</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Insert an entry into the list of warnings filters (at the front).</span>
 
@@ -241,7 +241,7 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="n">filters</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="simplefilter"><a class="viewcode-back" href="../generated/warnings.simplefilter.html#cgi.simplefilter">[docs]</a><span class="k">def</span> <span class="nf">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">Warning</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="simplefilter"><a class="viewcode-back" href="../generated/warnings.simplefilter.html#warnings.simplefilter">[docs]</a><span class="k">def</span> <span class="nf">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">Warning</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Insert a simple entry into the list of warnings filters (at the front).</span>
 
 <span class="sd">    A simple filter matches all modules and messages.</span>
@@ -261,7 +261,7 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="n">filters</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="resetwarnings"><a class="viewcode-back" href="../generated/warnings.resetwarnings.html#cgi.resetwarnings">[docs]</a><span class="k">def</span> <span class="nf">resetwarnings</span><span class="p">():</span>
+<div class="viewcode-block" id="resetwarnings"><a class="viewcode-back" href="../generated/warnings.resetwarnings.html#warnings.resetwarnings">[docs]</a><span class="k">def</span> <span class="nf">resetwarnings</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Clear the list of warning filters, so that no filters are active.&quot;&quot;&quot;</span>
     <span class="n">filters</span><span class="p">[:]</span> <span class="o">=</span> <span class="p">[]</span></div>
 
@@ -448,14 +448,14 @@
     <span class="n">showwarning</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="WarningMessage"><a class="viewcode-back" href="../generated/generated/warnings.WarningMessage.html#cgi.WarningMessage">[docs]</a><span class="k">class</span> <span class="nc">WarningMessage</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="WarningMessage"><a class="viewcode-back" href="../generated/generated/warnings.WarningMessage.html#warnings.WarningMessage">[docs]</a><span class="k">class</span> <span class="nc">WarningMessage</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot;Holds the result of a single showwarning() call.&quot;&quot;&quot;</span>
 
     <span class="n">_WARNING_DETAILS</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;message&quot;</span><span class="p">,</span> <span class="s2">&quot;category&quot;</span><span class="p">,</span> <span class="s2">&quot;filename&quot;</span><span class="p">,</span> <span class="s2">&quot;lineno&quot;</span><span class="p">,</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span>
                         <span class="s2">&quot;line&quot;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="WarningMessage.__init__"><a class="viewcode-back" href="../generated/generated/warnings.WarningMessage.__init__.html#cgi.WarningMessage.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<div class="viewcode-block" id="WarningMessage.__init__"><a class="viewcode-back" href="../generated/generated/warnings.WarningMessage.__init__.html#warnings.WarningMessage.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                     <span class="n">line</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="n">local_values</span> <span class="o">=</span> <span class="nb">locals</span><span class="p">()</span>
         <span class="k">for</span> <span class="n">attr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_WARNING_DETAILS</span><span class="p">:</span>
@@ -468,7 +468,7 @@
                                     <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">lineno</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">line</span><span class="p">))</span></div>
 
 
-<div class="viewcode-block" id="catch_warnings"><a class="viewcode-back" href="../generated/generated/warnings.catch_warnings.html#cgi.catch_warnings">[docs]</a><span class="k">class</span> <span class="nc">catch_warnings</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="catch_warnings"><a class="viewcode-back" href="../generated/generated/warnings.catch_warnings.html#warnings.catch_warnings">[docs]</a><span class="k">class</span> <span class="nc">catch_warnings</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot;A context manager that copies and restores the warnings filter upon</span>
 <span class="sd">    exiting the context.</span>
@@ -485,7 +485,7 @@
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="catch_warnings.__init__"><a class="viewcode-back" href="../generated/generated/warnings.catch_warnings.__init__.html#cgi.catch_warnings.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="catch_warnings.__init__"><a class="viewcode-back" href="../generated/generated/warnings.catch_warnings.__init__.html#warnings.catch_warnings.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Specify whether to record warnings and if an alternative module</span>
 <span class="sd">        should be used other than sys.modules[&#39;warnings&#39;].</span>
 

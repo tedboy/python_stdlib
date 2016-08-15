@@ -2,16 +2,15 @@ inspect.Arguments
 =================
 
 .. currentmodule:: inspect
-
-:func:`Arguments.__init__`
-
 .. autoclass:: Arguments
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Arguments.count
@@ -21,11 +20,10 @@ inspect.Arguments
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Arguments.args

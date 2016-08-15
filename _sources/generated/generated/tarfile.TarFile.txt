@@ -2,16 +2,15 @@ tarfile.TarFile
 ===============
 
 .. currentmodule:: tarfile
-
-:func:`TarFile.__init__`
-
 .. autoclass:: TarFile
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~TarFile.__init__
@@ -45,11 +44,10 @@ tarfile.TarFile
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~TarFile.OPEN_METH

@@ -2,16 +2,15 @@ gzip.GzipFile
 =============
 
 .. currentmodule:: gzip
-
-:func:`GzipFile.__init__`
-
 .. autoclass:: GzipFile
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~GzipFile.__init__
@@ -39,11 +38,10 @@ gzip.GzipFile
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~GzipFile.closed

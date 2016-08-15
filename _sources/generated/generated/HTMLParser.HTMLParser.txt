@@ -2,16 +2,15 @@ HTMLParser.HTMLParser
 =====================
 
 .. currentmodule:: HTMLParser
-
-:func:`HTMLParser.__init__`
-
 .. autoclass:: HTMLParser
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~HTMLParser.__init__
@@ -50,11 +49,10 @@ HTMLParser.HTMLParser
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~HTMLParser.CDATA_CONTENT_ELEMENTS

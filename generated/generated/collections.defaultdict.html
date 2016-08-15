@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.1.2.19. collections.defaultdict &mdash; Python Standard Library</title>
+  <title>2.1.2.3. collections.defaultdict &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="2.1. collections" href="../collections.html"/>
-        <link rel="next" title="2.1.2.19.1. collections.defaultdict.clear" href="collections.defaultdict.clear.html"/>
-        <link rel="prev" title="2.1.2.18. collections.ValuesView" href="collections.ValuesView.html"/> 
+        <link rel="next" title="2.1.2.3.1.1. collections.defaultdict.clear" href="collections.defaultdict.clear.html"/>
+        <link rel="prev" title="2.1.2.2.1.19. collections.OrderedDict.viewvalues" href="collections.OrderedDict.viewvalues.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -90,26 +90,10 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../collections.html">2.1. collections</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../collections.html#functions">2.1.1. Functions</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../collections.html#classes">2.1.2. Classes</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="collections.Callable.html">2.1.2.1. collections.Callable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Container.html">2.1.2.2. collections.Container</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Counter.html">2.1.2.3. collections.Counter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Hashable.html">2.1.2.4. collections.Hashable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.ItemsView.html">2.1.2.5. collections.ItemsView</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Iterable.html">2.1.2.6. collections.Iterable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Iterator.html">2.1.2.7. collections.Iterator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.KeysView.html">2.1.2.8. collections.KeysView</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Mapping.html">2.1.2.9. collections.Mapping</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.MappingView.html">2.1.2.10. collections.MappingView</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.MutableMapping.html">2.1.2.11. collections.MutableMapping</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.MutableSequence.html">2.1.2.12. collections.MutableSequence</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.MutableSet.html">2.1.2.13. collections.MutableSet</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.OrderedDict.html">2.1.2.14. collections.OrderedDict</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Sequence.html">2.1.2.15. collections.Sequence</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Set.html">2.1.2.16. collections.Set</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Sized.html">2.1.2.17. collections.Sized</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.ValuesView.html">2.1.2.18. collections.ValuesView</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">2.1.2.19. collections.defaultdict</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.deque.html">2.1.2.20. collections.deque</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collections.Counter.html">2.1.2.1. collections.Counter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collections.OrderedDict.html">2.1.2.2. collections.OrderedDict</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">2.1.2.3. collections.defaultdict</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collections.deque.html">2.1.2.4. collections.deque</a></li>
 </ul>
 </li>
 </ul>
@@ -145,7 +129,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -176,7 +160,7 @@
         
           <li><a href="../collections.html">2.1. collections</a> &raquo;</li>
         
-      <li>2.1.2.19. collections.defaultdict</li>
+      <li>2.1.2.3. collections.defaultdict</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -194,8 +178,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="collections-defaultdict">
-<h1>2.1.2.19. collections.defaultdict<a class="headerlink" href="#collections-defaultdict" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="#collections.defaultdict.__init__" title="collections.defaultdict.__init__"><code class="xref py py-func docutils literal"><span class="pre">defaultdict.__init__()</span></code></a></p>
+<h1>2.1.2.3. collections.defaultdict<a class="headerlink" href="#collections-defaultdict" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="collections.defaultdict">
 <em class="property">class </em><code class="descclassname">collections.</code><code class="descname">defaultdict</code><a class="headerlink" href="#collections.defaultdict" title="Permalink to this definition">¶</a></dt>
@@ -205,7 +188,16 @@ a new value when a key is not present, in __getitem__ only.
 A defaultdict compares equal to a dict with the same items.
 All remaining arguments are treated the same as if they were
 passed to the dict constructor, including keyword arguments.</p>
-<p class="rubric">Methods</p>
+<dl class="attribute">
+<dt id="collections.defaultdict.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#collections.defaultdict.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>2.1.2.3.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -268,14 +260,21 @@ passed to the dict constructor, including keyword arguments.</p>
 </tr>
 </tbody>
 </table>
-<dl class="attribute">
-<dt id="collections.defaultdict.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#collections.defaultdict.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
-</dd></dl>
-
-</dd></dl>
-
+</div>
+<div class="section" id="attributes">
+<h2>2.1.2.3.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="collections.defaultdict.default_factory.html#collections.defaultdict.default_factory" title="collections.defaultdict.default_factory"><code class="xref py py-obj docutils literal"><span class="pre">default_factory</span></code></a></td>
+<td>Factory for default value called by __missing__().</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -285,10 +284,10 @@ passed to the dict constructor, including keyword arguments.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="collections.defaultdict.clear.html" class="btn btn-neutral float-right" title="2.1.2.19.1. collections.defaultdict.clear" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="collections.defaultdict.clear.html" class="btn btn-neutral float-right" title="2.1.2.3.1.1. collections.defaultdict.clear" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="collections.ValuesView.html" class="btn btn-neutral" title="2.1.2.18. collections.ValuesView" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="collections.OrderedDict.viewvalues.html" class="btn btn-neutral" title="2.1.2.2.1.19. collections.OrderedDict.viewvalues" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

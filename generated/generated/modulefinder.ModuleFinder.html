@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.5.11.2.2. modulefinder.ModuleFinder &mdash; Python Standard Library</title>
+  <title>3.5.11.2.2. modulefinder.ModuleFinder &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.5.11. modulefinder" href="../modulefinder.html"/>
-        <link rel="next" title="3.5.11.2.2.1. modulefinder.ModuleFinder.add_module" href="modulefinder.ModuleFinder.add_module.html"/>
-        <link rel="prev" title="3.5.11.2.1. modulefinder.Module" href="modulefinder.Module.html"/> 
+        <link rel="next" title="3.5.11.2.2.1.1. modulefinder.ModuleFinder.__init__" href="modulefinder.ModuleFinder.__init__.html"/>
+        <link rel="prev" title="3.5.11.2.1.1.1. modulefinder.Module.__init__" href="modulefinder.Module.__init__.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
@@ -135,7 +127,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -185,90 +177,99 @@
             
   <div class="section" id="modulefinder-modulefinder">
 <h1>3.5.11.2.2. modulefinder.ModuleFinder<a class="headerlink" href="#modulefinder-modulefinder" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="modulefinder.ModuleFinder.__init__.html#modulefinder.ModuleFinder.__init__" title="modulefinder.ModuleFinder.__init__"><code class="xref py py-func docutils literal"><span class="pre">ModuleFinder.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="modulefinder.ModuleFinder">
 <em class="property">class </em><code class="descclassname">modulefinder.</code><code class="descname">ModuleFinder</code><span class="sig-paren">(</span><em>path=None</em>, <em>debug=0</em>, <em>excludes=[]</em>, <em>replace_paths=[]</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/modulefinder.html#ModuleFinder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#modulefinder.ModuleFinder" title="Permalink to this definition">¶</a></dt>
-<dd><p class="rubric">Methods</p>
+<dd><dl class="method">
+<dt id="modulefinder.ModuleFinder.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>path=None</em>, <em>debug=0</em>, <em>excludes=[]</em>, <em>replace_paths=[]</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/modulefinder.html#ModuleFinder.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#modulefinder.ModuleFinder.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>3.5.11.2.2.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.add_module.html#modulefinder.ModuleFinder.add_module" title="modulefinder.ModuleFinder.add_module"><code class="xref py py-obj docutils literal"><span class="pre">add_module</span></code></a>(fqname)</td>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.__init__.html#modulefinder.ModuleFinder.__init__" title="modulefinder.ModuleFinder.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([path,&nbsp;debug,&nbsp;excludes,&nbsp;replace_paths])</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.any_missing.html#modulefinder.ModuleFinder.any_missing" title="modulefinder.ModuleFinder.any_missing"><code class="xref py py-obj docutils literal"><span class="pre">any_missing</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.add_module.html#modulefinder.ModuleFinder.add_module" title="modulefinder.ModuleFinder.add_module"><code class="xref py py-obj docutils literal"><span class="pre">add_module</span></code></a>(fqname)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.any_missing.html#modulefinder.ModuleFinder.any_missing" title="modulefinder.ModuleFinder.any_missing"><code class="xref py py-obj docutils literal"><span class="pre">any_missing</span></code></a>()</td>
 <td>Return a list of modules that appear to be missing.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.any_missing_maybe.html#modulefinder.ModuleFinder.any_missing_maybe" title="modulefinder.ModuleFinder.any_missing_maybe"><code class="xref py py-obj docutils literal"><span class="pre">any_missing_maybe</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.any_missing_maybe.html#modulefinder.ModuleFinder.any_missing_maybe" title="modulefinder.ModuleFinder.any_missing_maybe"><code class="xref py py-obj docutils literal"><span class="pre">any_missing_maybe</span></code></a>()</td>
 <td>Return two lists, one with modules that are certainly missing and one with modules that <em>may</em> be missing.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.determine_parent.html#modulefinder.ModuleFinder.determine_parent" title="modulefinder.ModuleFinder.determine_parent"><code class="xref py py-obj docutils literal"><span class="pre">determine_parent</span></code></a>(caller[,&nbsp;level])</td>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.determine_parent.html#modulefinder.ModuleFinder.determine_parent" title="modulefinder.ModuleFinder.determine_parent"><code class="xref py py-obj docutils literal"><span class="pre">determine_parent</span></code></a>(caller[,&nbsp;level])</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.ensure_fromlist.html#modulefinder.ModuleFinder.ensure_fromlist" title="modulefinder.ModuleFinder.ensure_fromlist"><code class="xref py py-obj docutils literal"><span class="pre">ensure_fromlist</span></code></a>(m,&nbsp;fromlist[,&nbsp;recursive])</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.ensure_fromlist.html#modulefinder.ModuleFinder.ensure_fromlist" title="modulefinder.ModuleFinder.ensure_fromlist"><code class="xref py py-obj docutils literal"><span class="pre">ensure_fromlist</span></code></a>(m,&nbsp;fromlist[,&nbsp;recursive])</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.find_all_submodules.html#modulefinder.ModuleFinder.find_all_submodules" title="modulefinder.ModuleFinder.find_all_submodules"><code class="xref py py-obj docutils literal"><span class="pre">find_all_submodules</span></code></a>(m)</td>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.find_all_submodules.html#modulefinder.ModuleFinder.find_all_submodules" title="modulefinder.ModuleFinder.find_all_submodules"><code class="xref py py-obj docutils literal"><span class="pre">find_all_submodules</span></code></a>(m)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.find_head_package.html#modulefinder.ModuleFinder.find_head_package" title="modulefinder.ModuleFinder.find_head_package"><code class="xref py py-obj docutils literal"><span class="pre">find_head_package</span></code></a>(parent,&nbsp;name)</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.find_head_package.html#modulefinder.ModuleFinder.find_head_package" title="modulefinder.ModuleFinder.find_head_package"><code class="xref py py-obj docutils literal"><span class="pre">find_head_package</span></code></a>(parent,&nbsp;name)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.find_module.html#modulefinder.ModuleFinder.find_module" title="modulefinder.ModuleFinder.find_module"><code class="xref py py-obj docutils literal"><span class="pre">find_module</span></code></a>(name,&nbsp;path[,&nbsp;parent])</td>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.find_module.html#modulefinder.ModuleFinder.find_module" title="modulefinder.ModuleFinder.find_module"><code class="xref py py-obj docutils literal"><span class="pre">find_module</span></code></a>(name,&nbsp;path[,&nbsp;parent])</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.import_hook.html#modulefinder.ModuleFinder.import_hook" title="modulefinder.ModuleFinder.import_hook"><code class="xref py py-obj docutils literal"><span class="pre">import_hook</span></code></a>(name[,&nbsp;caller,&nbsp;fromlist,&nbsp;level])</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.import_hook.html#modulefinder.ModuleFinder.import_hook" title="modulefinder.ModuleFinder.import_hook"><code class="xref py py-obj docutils literal"><span class="pre">import_hook</span></code></a>(name[,&nbsp;caller,&nbsp;fromlist,&nbsp;level])</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.import_module.html#modulefinder.ModuleFinder.import_module" title="modulefinder.ModuleFinder.import_module"><code class="xref py py-obj docutils literal"><span class="pre">import_module</span></code></a>(partname,&nbsp;fqname,&nbsp;parent)</td>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.import_module.html#modulefinder.ModuleFinder.import_module" title="modulefinder.ModuleFinder.import_module"><code class="xref py py-obj docutils literal"><span class="pre">import_module</span></code></a>(partname,&nbsp;fqname,&nbsp;parent)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.load_file.html#modulefinder.ModuleFinder.load_file" title="modulefinder.ModuleFinder.load_file"><code class="xref py py-obj docutils literal"><span class="pre">load_file</span></code></a>(pathname)</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.load_file.html#modulefinder.ModuleFinder.load_file" title="modulefinder.ModuleFinder.load_file"><code class="xref py py-obj docutils literal"><span class="pre">load_file</span></code></a>(pathname)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.load_module.html#modulefinder.ModuleFinder.load_module" title="modulefinder.ModuleFinder.load_module"><code class="xref py py-obj docutils literal"><span class="pre">load_module</span></code></a>(fqname,&nbsp;fp,&nbsp;pathname,&nbsp;file_info)</td>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.load_module.html#modulefinder.ModuleFinder.load_module" title="modulefinder.ModuleFinder.load_module"><code class="xref py py-obj docutils literal"><span class="pre">load_module</span></code></a>(fqname,&nbsp;fp,&nbsp;pathname,&nbsp;file_info)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.load_package.html#modulefinder.ModuleFinder.load_package" title="modulefinder.ModuleFinder.load_package"><code class="xref py py-obj docutils literal"><span class="pre">load_package</span></code></a>(fqname,&nbsp;pathname)</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.load_package.html#modulefinder.ModuleFinder.load_package" title="modulefinder.ModuleFinder.load_package"><code class="xref py py-obj docutils literal"><span class="pre">load_package</span></code></a>(fqname,&nbsp;pathname)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.load_tail.html#modulefinder.ModuleFinder.load_tail" title="modulefinder.ModuleFinder.load_tail"><code class="xref py py-obj docutils literal"><span class="pre">load_tail</span></code></a>(q,&nbsp;tail)</td>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.load_tail.html#modulefinder.ModuleFinder.load_tail" title="modulefinder.ModuleFinder.load_tail"><code class="xref py py-obj docutils literal"><span class="pre">load_tail</span></code></a>(q,&nbsp;tail)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.msg.html#modulefinder.ModuleFinder.msg" title="modulefinder.ModuleFinder.msg"><code class="xref py py-obj docutils literal"><span class="pre">msg</span></code></a>(level,&nbsp;str,&nbsp;*args)</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.msg.html#modulefinder.ModuleFinder.msg" title="modulefinder.ModuleFinder.msg"><code class="xref py py-obj docutils literal"><span class="pre">msg</span></code></a>(level,&nbsp;str,&nbsp;*args)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.msgin.html#modulefinder.ModuleFinder.msgin" title="modulefinder.ModuleFinder.msgin"><code class="xref py py-obj docutils literal"><span class="pre">msgin</span></code></a>(*args)</td>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.msgin.html#modulefinder.ModuleFinder.msgin" title="modulefinder.ModuleFinder.msgin"><code class="xref py py-obj docutils literal"><span class="pre">msgin</span></code></a>(*args)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.msgout.html#modulefinder.ModuleFinder.msgout" title="modulefinder.ModuleFinder.msgout"><code class="xref py py-obj docutils literal"><span class="pre">msgout</span></code></a>(*args)</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.msgout.html#modulefinder.ModuleFinder.msgout" title="modulefinder.ModuleFinder.msgout"><code class="xref py py-obj docutils literal"><span class="pre">msgout</span></code></a>(*args)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.replace_paths_in_code.html#modulefinder.ModuleFinder.replace_paths_in_code" title="modulefinder.ModuleFinder.replace_paths_in_code"><code class="xref py py-obj docutils literal"><span class="pre">replace_paths_in_code</span></code></a>(co)</td>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.replace_paths_in_code.html#modulefinder.ModuleFinder.replace_paths_in_code" title="modulefinder.ModuleFinder.replace_paths_in_code"><code class="xref py py-obj docutils literal"><span class="pre">replace_paths_in_code</span></code></a>(co)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.report.html#modulefinder.ModuleFinder.report" title="modulefinder.ModuleFinder.report"><code class="xref py py-obj docutils literal"><span class="pre">report</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.report.html#modulefinder.ModuleFinder.report" title="modulefinder.ModuleFinder.report"><code class="xref py py-obj docutils literal"><span class="pre">report</span></code></a>()</td>
 <td>Print a report to stdout, listing the found modules with their paths, as well as modules that are missing, or seem to be missing.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.run_script.html#modulefinder.ModuleFinder.run_script" title="modulefinder.ModuleFinder.run_script"><code class="xref py py-obj docutils literal"><span class="pre">run_script</span></code></a>(pathname)</td>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.run_script.html#modulefinder.ModuleFinder.run_script" title="modulefinder.ModuleFinder.run_script"><code class="xref py py-obj docutils literal"><span class="pre">run_script</span></code></a>(pathname)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.scan_code.html#modulefinder.ModuleFinder.scan_code" title="modulefinder.ModuleFinder.scan_code"><code class="xref py py-obj docutils literal"><span class="pre">scan_code</span></code></a>(co,&nbsp;m)</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.scan_code.html#modulefinder.ModuleFinder.scan_code" title="modulefinder.ModuleFinder.scan_code"><code class="xref py py-obj docutils literal"><span class="pre">scan_code</span></code></a>(co,&nbsp;m)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.scan_opcodes.html#modulefinder.ModuleFinder.scan_opcodes" title="modulefinder.ModuleFinder.scan_opcodes"><code class="xref py py-obj docutils literal"><span class="pre">scan_opcodes</span></code></a>(co[,&nbsp;unpack])</td>
+<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.scan_opcodes.html#modulefinder.ModuleFinder.scan_opcodes" title="modulefinder.ModuleFinder.scan_opcodes"><code class="xref py py-obj docutils literal"><span class="pre">scan_opcodes</span></code></a>(co[,&nbsp;unpack])</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="modulefinder.ModuleFinder.scan_opcodes_25.html#modulefinder.ModuleFinder.scan_opcodes_25" title="modulefinder.ModuleFinder.scan_opcodes_25"><code class="xref py py-obj docutils literal"><span class="pre">scan_opcodes_25</span></code></a>(co[,&nbsp;unpack])</td>
+<tr class="row-even"><td><a class="reference internal" href="modulefinder.ModuleFinder.scan_opcodes_25.html#modulefinder.ModuleFinder.scan_opcodes_25" title="modulefinder.ModuleFinder.scan_opcodes_25"><code class="xref py py-obj docutils literal"><span class="pre">scan_opcodes_25</span></code></a>(co[,&nbsp;unpack])</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-</dd></dl>
-
+</div>
 </div>
 
 
@@ -278,10 +279,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="modulefinder.ModuleFinder.add_module.html" class="btn btn-neutral float-right" title="3.5.11.2.2.1. modulefinder.ModuleFinder.add_module" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="modulefinder.ModuleFinder.__init__.html" class="btn btn-neutral float-right" title="3.5.11.2.2.1.1. modulefinder.ModuleFinder.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="modulefinder.Module.html" class="btn btn-neutral" title="3.5.11.2.1. modulefinder.Module" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="modulefinder.Module.__init__.html" class="btn btn-neutral" title="3.5.11.2.1.1.1. modulefinder.Module.__init__" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

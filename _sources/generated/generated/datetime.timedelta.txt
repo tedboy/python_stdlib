@@ -2,16 +2,15 @@ datetime.timedelta
 ==================
 
 .. currentmodule:: datetime
-
-:func:`timedelta.__init__`
-
 .. autoclass:: timedelta
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~timedelta.total_seconds
@@ -20,11 +19,10 @@ datetime.timedelta
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~timedelta.days

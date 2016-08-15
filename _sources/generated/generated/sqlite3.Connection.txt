@@ -2,16 +2,15 @@ sqlite3.Connection
 ==================
 
 .. currentmodule:: sqlite3
-
-:func:`Connection.__init__`
-
 .. autoclass:: Connection
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Connection.close
@@ -33,11 +32,10 @@ sqlite3.Connection
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Connection.DataError

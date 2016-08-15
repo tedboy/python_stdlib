@@ -2,16 +2,15 @@ urllib2.UnknownHandler
 ======================
 
 .. currentmodule:: urllib2
-
-:func:`UnknownHandler.__init__`
-
 .. autoclass:: UnknownHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~UnknownHandler.add_parent
@@ -22,11 +21,10 @@ urllib2.UnknownHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~UnknownHandler.handler_order

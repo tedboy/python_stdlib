@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.8.2.2. random.SystemRandom &mdash; Python Standard Library</title>
+  <title>2.8.1.2. random.SystemRandom &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="2.8. random" href="../random.html"/>
-        <link rel="next" title="2.8.2.2.1. random.SystemRandom.betavariate" href="random.SystemRandom.betavariate.html"/>
-        <link rel="prev" title="2.8.2.1.22. random.Random.weibullvariate" href="random.Random.weibullvariate.html"/> 
+        <link rel="next" title="2.8.1.2.1.1. random.SystemRandom.__init__" href="random.SystemRandom.__init__.html"/>
+        <link rel="prev" title="2.8.1.1.2.1. random.Random.VERSION" href="random.Random.VERSION.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -95,11 +95,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../pdb.html">2.6. pdb</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pprint.html">2.7. pprint</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../random.html">2.8. random</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../random.html#functions">2.8.1. Functions</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../random.html#classes">2.8.2. Classes</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="random.Random.html">2.8.2.1. random.Random</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">2.8.2.2. random.SystemRandom</a></li>
-<li class="toctree-l4"><a class="reference internal" href="random.WichmannHill.html">2.8.2.3. random.WichmannHill</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../random.html#classes">2.8.1. Classes</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="random.Random.html">2.8.1.1. random.Random</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">2.8.1.2. random.SystemRandom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="random.WichmannHill.html">2.8.1.3. random.WichmannHill</a></li>
 </ul>
 </li>
 </ul>
@@ -128,7 +127,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -159,7 +158,7 @@
         
           <li><a href="../random.html">2.8. random</a> &raquo;</li>
         
-      <li>2.8.2.2. random.SystemRandom</li>
+      <li>2.8.1.2. random.SystemRandom</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -177,8 +176,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="random-systemrandom">
-<h1>2.8.2.2. random.SystemRandom<a class="headerlink" href="#random-systemrandom" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="random.SystemRandom.__init__.html#random.SystemRandom.__init__" title="random.SystemRandom.__init__"><code class="xref py py-func docutils literal"><span class="pre">SystemRandom.__init__()</span></code></a></p>
+<h1>2.8.1.2. random.SystemRandom<a class="headerlink" href="#random-systemrandom" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="random.SystemRandom">
 <em class="property">class </em><code class="descclassname">random.</code><code class="descname">SystemRandom</code><span class="sig-paren">(</span><em>x=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/random.html#SystemRandom"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#random.SystemRandom" title="Permalink to this definition">¶</a></dt>
@@ -187,81 +185,6 @@ by the operating system (such as /dev/urandom on Unix or
 CryptGenRandom on Windows).</p>
 <blockquote>
 <div>Not available on all systems (see os.urandom() for details).</div></blockquote>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.betavariate.html#random.SystemRandom.betavariate" title="random.SystemRandom.betavariate"><code class="xref py py-obj docutils literal"><span class="pre">betavariate</span></code></a>(alpha,&nbsp;beta)</td>
-<td>Beta distribution.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.choice.html#random.SystemRandom.choice" title="random.SystemRandom.choice"><code class="xref py py-obj docutils literal"><span class="pre">choice</span></code></a>(seq)</td>
-<td>Choose a random element from a non-empty sequence.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.expovariate.html#random.SystemRandom.expovariate" title="random.SystemRandom.expovariate"><code class="xref py py-obj docutils literal"><span class="pre">expovariate</span></code></a>(lambd)</td>
-<td>Exponential distribution.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.gammavariate.html#random.SystemRandom.gammavariate" title="random.SystemRandom.gammavariate"><code class="xref py py-obj docutils literal"><span class="pre">gammavariate</span></code></a>(alpha,&nbsp;beta)</td>
-<td>Gamma distribution.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.gauss.html#random.SystemRandom.gauss" title="random.SystemRandom.gauss"><code class="xref py py-obj docutils literal"><span class="pre">gauss</span></code></a>(mu,&nbsp;sigma)</td>
-<td>Gaussian distribution.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.getrandbits.html#random.SystemRandom.getrandbits" title="random.SystemRandom.getrandbits"><code class="xref py py-obj docutils literal"><span class="pre">getrandbits</span></code></a>(...)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.getstate.html#random.SystemRandom.getstate" title="random.SystemRandom.getstate"><code class="xref py py-obj docutils literal"><span class="pre">getstate</span></code></a>(*args,&nbsp;**kwds)</td>
-<td>Method should not be called for a system random number generator.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.jumpahead.html#random.SystemRandom.jumpahead" title="random.SystemRandom.jumpahead"><code class="xref py py-obj docutils literal"><span class="pre">jumpahead</span></code></a>(*args,&nbsp;**kwds)</td>
-<td>Stub method.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.lognormvariate.html#random.SystemRandom.lognormvariate" title="random.SystemRandom.lognormvariate"><code class="xref py py-obj docutils literal"><span class="pre">lognormvariate</span></code></a>(mu,&nbsp;sigma)</td>
-<td>Log normal distribution.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.normalvariate.html#random.SystemRandom.normalvariate" title="random.SystemRandom.normalvariate"><code class="xref py py-obj docutils literal"><span class="pre">normalvariate</span></code></a>(mu,&nbsp;sigma)</td>
-<td>Normal distribution.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.paretovariate.html#random.SystemRandom.paretovariate" title="random.SystemRandom.paretovariate"><code class="xref py py-obj docutils literal"><span class="pre">paretovariate</span></code></a>(alpha)</td>
-<td>Pareto distribution.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.randint.html#random.SystemRandom.randint" title="random.SystemRandom.randint"><code class="xref py py-obj docutils literal"><span class="pre">randint</span></code></a>(a,&nbsp;b)</td>
-<td>Return random integer in range [a, b], including both end points.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.random.html#random.SystemRandom.random" title="random.SystemRandom.random"><code class="xref py py-obj docutils literal"><span class="pre">random</span></code></a>()</td>
-<td>Get the next random number in the range [0.0, 1.0).</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.randrange.html#random.SystemRandom.randrange" title="random.SystemRandom.randrange"><code class="xref py py-obj docutils literal"><span class="pre">randrange</span></code></a>(start[,&nbsp;stop,&nbsp;step,&nbsp;_int,&nbsp;_maxwidth])</td>
-<td>Choose a random item from range(start, stop[, step]).</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.sample.html#random.SystemRandom.sample" title="random.SystemRandom.sample"><code class="xref py py-obj docutils literal"><span class="pre">sample</span></code></a>(population,&nbsp;k)</td>
-<td>Chooses k unique random elements from a population sequence.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.seed.html#random.SystemRandom.seed" title="random.SystemRandom.seed"><code class="xref py py-obj docutils literal"><span class="pre">seed</span></code></a>(*args,&nbsp;**kwds)</td>
-<td>Stub method.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.setstate.html#random.SystemRandom.setstate" title="random.SystemRandom.setstate"><code class="xref py py-obj docutils literal"><span class="pre">setstate</span></code></a>(*args,&nbsp;**kwds)</td>
-<td>Method should not be called for a system random number generator.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.shuffle.html#random.SystemRandom.shuffle" title="random.SystemRandom.shuffle"><code class="xref py py-obj docutils literal"><span class="pre">shuffle</span></code></a>(x[,&nbsp;random])</td>
-<td>x, random=random.random -&gt; shuffle list x in place; return None.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.triangular.html#random.SystemRandom.triangular" title="random.SystemRandom.triangular"><code class="xref py py-obj docutils literal"><span class="pre">triangular</span></code></a>([low,&nbsp;high,&nbsp;mode])</td>
-<td>Triangular distribution.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.uniform.html#random.SystemRandom.uniform" title="random.SystemRandom.uniform"><code class="xref py py-obj docutils literal"><span class="pre">uniform</span></code></a>(a,&nbsp;b)</td>
-<td>Get a random number in the range [a, b) or [a, b] depending on rounding.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.vonmisesvariate.html#random.SystemRandom.vonmisesvariate" title="random.SystemRandom.vonmisesvariate"><code class="xref py py-obj docutils literal"><span class="pre">vonmisesvariate</span></code></a>(mu,&nbsp;kappa)</td>
-<td>Circular data distribution.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.weibullvariate.html#random.SystemRandom.weibullvariate" title="random.SystemRandom.weibullvariate"><code class="xref py py-obj docutils literal"><span class="pre">weibullvariate</span></code></a>(alpha,&nbsp;beta)</td>
-<td>Weibull distribution.</td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="random.SystemRandom.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>x=None</em><span class="sig-paren">)</span><a class="headerlink" href="#random.SystemRandom.__init__" title="Permalink to this definition">¶</a></dt>
@@ -271,6 +194,100 @@ CryptGenRandom on Windows).</p>
 
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>2.8.1.2.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.__init__.html#random.SystemRandom.__init__" title="random.SystemRandom.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([x])</td>
+<td>Initialize an instance.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.betavariate.html#random.SystemRandom.betavariate" title="random.SystemRandom.betavariate"><code class="xref py py-obj docutils literal"><span class="pre">betavariate</span></code></a>(alpha,&nbsp;beta)</td>
+<td>Beta distribution.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.choice.html#random.SystemRandom.choice" title="random.SystemRandom.choice"><code class="xref py py-obj docutils literal"><span class="pre">choice</span></code></a>(seq)</td>
+<td>Choose a random element from a non-empty sequence.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.expovariate.html#random.SystemRandom.expovariate" title="random.SystemRandom.expovariate"><code class="xref py py-obj docutils literal"><span class="pre">expovariate</span></code></a>(lambd)</td>
+<td>Exponential distribution.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.gammavariate.html#random.SystemRandom.gammavariate" title="random.SystemRandom.gammavariate"><code class="xref py py-obj docutils literal"><span class="pre">gammavariate</span></code></a>(alpha,&nbsp;beta)</td>
+<td>Gamma distribution.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.gauss.html#random.SystemRandom.gauss" title="random.SystemRandom.gauss"><code class="xref py py-obj docutils literal"><span class="pre">gauss</span></code></a>(mu,&nbsp;sigma)</td>
+<td>Gaussian distribution.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.getrandbits.html#random.SystemRandom.getrandbits" title="random.SystemRandom.getrandbits"><code class="xref py py-obj docutils literal"><span class="pre">getrandbits</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.getstate.html#random.SystemRandom.getstate" title="random.SystemRandom.getstate"><code class="xref py py-obj docutils literal"><span class="pre">getstate</span></code></a>(*args,&nbsp;**kwds)</td>
+<td>Method should not be called for a system random number generator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.jumpahead.html#random.SystemRandom.jumpahead" title="random.SystemRandom.jumpahead"><code class="xref py py-obj docutils literal"><span class="pre">jumpahead</span></code></a>(*args,&nbsp;**kwds)</td>
+<td>Stub method.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.lognormvariate.html#random.SystemRandom.lognormvariate" title="random.SystemRandom.lognormvariate"><code class="xref py py-obj docutils literal"><span class="pre">lognormvariate</span></code></a>(mu,&nbsp;sigma)</td>
+<td>Log normal distribution.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.normalvariate.html#random.SystemRandom.normalvariate" title="random.SystemRandom.normalvariate"><code class="xref py py-obj docutils literal"><span class="pre">normalvariate</span></code></a>(mu,&nbsp;sigma)</td>
+<td>Normal distribution.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.paretovariate.html#random.SystemRandom.paretovariate" title="random.SystemRandom.paretovariate"><code class="xref py py-obj docutils literal"><span class="pre">paretovariate</span></code></a>(alpha)</td>
+<td>Pareto distribution.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.randint.html#random.SystemRandom.randint" title="random.SystemRandom.randint"><code class="xref py py-obj docutils literal"><span class="pre">randint</span></code></a>(a,&nbsp;b)</td>
+<td>Return random integer in range [a, b], including both end points.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.random.html#random.SystemRandom.random" title="random.SystemRandom.random"><code class="xref py py-obj docutils literal"><span class="pre">random</span></code></a>()</td>
+<td>Get the next random number in the range [0.0, 1.0).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.randrange.html#random.SystemRandom.randrange" title="random.SystemRandom.randrange"><code class="xref py py-obj docutils literal"><span class="pre">randrange</span></code></a>(start[,&nbsp;stop,&nbsp;step,&nbsp;_int,&nbsp;_maxwidth])</td>
+<td>Choose a random item from range(start, stop[, step]).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.sample.html#random.SystemRandom.sample" title="random.SystemRandom.sample"><code class="xref py py-obj docutils literal"><span class="pre">sample</span></code></a>(population,&nbsp;k)</td>
+<td>Chooses k unique random elements from a population sequence.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.seed.html#random.SystemRandom.seed" title="random.SystemRandom.seed"><code class="xref py py-obj docutils literal"><span class="pre">seed</span></code></a>(*args,&nbsp;**kwds)</td>
+<td>Stub method.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.setstate.html#random.SystemRandom.setstate" title="random.SystemRandom.setstate"><code class="xref py py-obj docutils literal"><span class="pre">setstate</span></code></a>(*args,&nbsp;**kwds)</td>
+<td>Method should not be called for a system random number generator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.shuffle.html#random.SystemRandom.shuffle" title="random.SystemRandom.shuffle"><code class="xref py py-obj docutils literal"><span class="pre">shuffle</span></code></a>(x[,&nbsp;random])</td>
+<td>x, random=random.random -&gt; shuffle list x in place; return None.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.triangular.html#random.SystemRandom.triangular" title="random.SystemRandom.triangular"><code class="xref py py-obj docutils literal"><span class="pre">triangular</span></code></a>([low,&nbsp;high,&nbsp;mode])</td>
+<td>Triangular distribution.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.uniform.html#random.SystemRandom.uniform" title="random.SystemRandom.uniform"><code class="xref py py-obj docutils literal"><span class="pre">uniform</span></code></a>(a,&nbsp;b)</td>
+<td>Get a random number in the range [a, b) or [a, b] depending on rounding.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="random.SystemRandom.vonmisesvariate.html#random.SystemRandom.vonmisesvariate" title="random.SystemRandom.vonmisesvariate"><code class="xref py py-obj docutils literal"><span class="pre">vonmisesvariate</span></code></a>(mu,&nbsp;kappa)</td>
+<td>Circular data distribution.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.weibullvariate.html#random.SystemRandom.weibullvariate" title="random.SystemRandom.weibullvariate"><code class="xref py py-obj docutils literal"><span class="pre">weibullvariate</span></code></a>(alpha,&nbsp;beta)</td>
+<td>Weibull distribution.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="attributes">
+<h2>2.8.1.2.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="random.SystemRandom.VERSION.html#random.SystemRandom.VERSION" title="random.SystemRandom.VERSION"><code class="xref py py-obj docutils literal"><span class="pre">VERSION</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -280,10 +297,10 @@ CryptGenRandom on Windows).</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="random.SystemRandom.betavariate.html" class="btn btn-neutral float-right" title="2.8.2.2.1. random.SystemRandom.betavariate" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="random.SystemRandom.__init__.html" class="btn btn-neutral float-right" title="2.8.1.2.1.1. random.SystemRandom.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="random.Random.weibullvariate.html" class="btn btn-neutral" title="2.8.2.1.22. random.Random.weibullvariate" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="random.Random.VERSION.html" class="btn btn-neutral" title="2.8.1.1.2.1. random.Random.VERSION" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

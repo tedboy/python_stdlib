@@ -2,16 +2,15 @@ unittest.main
 =============
 
 .. currentmodule:: unittest
-
-:func:`main.__init__`
-
 .. autoclass:: main
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~main.__init__
@@ -24,11 +23,10 @@ unittest.main
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~main.USAGE

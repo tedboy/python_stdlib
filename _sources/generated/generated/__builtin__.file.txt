@@ -2,16 +2,15 @@ __builtin__.file
 ================
 
 .. currentmodule:: __builtin__
-
-:func:`file.__init__`
-
 .. autoclass:: file
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~file.close
@@ -33,11 +32,10 @@ __builtin__.file
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~file.closed

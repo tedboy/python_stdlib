@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>repr &mdash; Python Standard Library</title>
+  <title>repr &mdash; My Project v1</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="Module code" href="index.html"/> 
 
   
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -101,7 +101,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -153,9 +153,9 @@
 <span class="kn">import</span> <span class="nn">__builtin__</span>
 <span class="kn">from</span> <span class="nn">itertools</span> <span class="k">import</span> <span class="n">islice</span>
 
-<div class="viewcode-block" id="Repr"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.html#pdb.Repr">[docs]</a><span class="k">class</span> <span class="nc">Repr</span><span class="p">:</span>
+<span class="k">class</span> <span class="nc">Repr</span><span class="p">:</span>
 
-<div class="viewcode-block" id="Repr.__init__"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.__init__.html#pdb.Repr.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">maxlevel</span> <span class="o">=</span> <span class="mi">6</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">maxtuple</span> <span class="o">=</span> <span class="mi">6</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">maxlist</span> <span class="o">=</span> <span class="mi">6</span>
@@ -166,12 +166,12 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">maxdeque</span> <span class="o">=</span> <span class="mi">6</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">maxstring</span> <span class="o">=</span> <span class="mi">30</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">maxlong</span> <span class="o">=</span> <span class="mi">40</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">maxother</span> <span class="o">=</span> <span class="mi">20</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">maxother</span> <span class="o">=</span> <span class="mi">20</span>
 
-<div class="viewcode-block" id="Repr.repr"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr.html#pdb.Repr.repr">[docs]</a>    <span class="k">def</span> <span class="nf">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">repr1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxlevel</span><span class="p">)</span></div>
+    <span class="k">def</span> <span class="nf">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">repr1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxlevel</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Repr.repr1"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr1.html#pdb.Repr.repr1">[docs]</a>    <span class="k">def</span> <span class="nf">repr1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">repr1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
         <span class="n">typename</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
         <span class="k">if</span> <span class="s1">&#39; &#39;</span> <span class="ow">in</span> <span class="n">typename</span><span class="p">:</span>
             <span class="n">parts</span> <span class="o">=</span> <span class="n">typename</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
@@ -184,7 +184,7 @@
                 <span class="n">i</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">maxother</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
                 <span class="n">j</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxother</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="n">i</span><span class="p">)</span>
                 <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;...&#39;</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="n">j</span><span class="p">:]</span>
-            <span class="k">return</span> <span class="n">s</span></div>
+            <span class="k">return</span> <span class="n">s</span>
 
     <span class="k">def</span> <span class="nf">_repr_iterable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">maxiter</span><span class="p">,</span> <span class="n">trail</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
         <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -199,29 +199,29 @@
             <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">trail</span><span class="p">:</span>  <span class="n">right</span> <span class="o">=</span> <span class="n">trail</span> <span class="o">+</span> <span class="n">right</span>
         <span class="k">return</span> <span class="s1">&#39;</span><span class="si">%s%s%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Repr.repr_tuple"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr_tuple.html#pdb.Repr.repr_tuple">[docs]</a>    <span class="k">def</span> <span class="nf">repr_tuple</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr_iterable</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="s1">&#39;)&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxtuple</span><span class="p">,</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span></div>
+    <span class="k">def</span> <span class="nf">repr_tuple</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr_iterable</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="s1">&#39;)&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxtuple</span><span class="p">,</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Repr.repr_list"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr_list.html#pdb.Repr.repr_list">[docs]</a>    <span class="k">def</span> <span class="nf">repr_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr_iterable</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="s1">&#39;[&#39;</span><span class="p">,</span> <span class="s1">&#39;]&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxlist</span><span class="p">)</span></div>
+    <span class="k">def</span> <span class="nf">repr_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr_iterable</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="s1">&#39;[&#39;</span><span class="p">,</span> <span class="s1">&#39;]&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxlist</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Repr.repr_array"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr_array.html#pdb.Repr.repr_array">[docs]</a>    <span class="k">def</span> <span class="nf">repr_array</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">repr_array</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
         <span class="n">header</span> <span class="o">=</span> <span class="s2">&quot;array(&#39;</span><span class="si">%s</span><span class="s2">&#39;, [&quot;</span> <span class="o">%</span> <span class="n">x</span><span class="o">.</span><span class="n">typecode</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr_iterable</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">header</span><span class="p">,</span> <span class="s1">&#39;])&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxarray</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr_iterable</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">header</span><span class="p">,</span> <span class="s1">&#39;])&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxarray</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Repr.repr_set"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr_set.html#pdb.Repr.repr_set">[docs]</a>    <span class="k">def</span> <span class="nf">repr_set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">repr_set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">_possibly_sorted</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr_iterable</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="s1">&#39;set([&#39;</span><span class="p">,</span> <span class="s1">&#39;])&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxset</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr_iterable</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="s1">&#39;set([&#39;</span><span class="p">,</span> <span class="s1">&#39;])&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxset</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Repr.repr_frozenset"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr_frozenset.html#pdb.Repr.repr_frozenset">[docs]</a>    <span class="k">def</span> <span class="nf">repr_frozenset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">repr_frozenset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">_possibly_sorted</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr_iterable</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="s1">&#39;frozenset([&#39;</span><span class="p">,</span> <span class="s1">&#39;])&#39;</span><span class="p">,</span>
-                                   <span class="bp">self</span><span class="o">.</span><span class="n">maxfrozenset</span><span class="p">)</span></div>
+                                   <span class="bp">self</span><span class="o">.</span><span class="n">maxfrozenset</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Repr.repr_deque"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr_deque.html#pdb.Repr.repr_deque">[docs]</a>    <span class="k">def</span> <span class="nf">repr_deque</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr_iterable</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="s1">&#39;deque([&#39;</span><span class="p">,</span> <span class="s1">&#39;])&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxdeque</span><span class="p">)</span></div>
+    <span class="k">def</span> <span class="nf">repr_deque</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repr_iterable</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="s1">&#39;deque([&#39;</span><span class="p">,</span> <span class="s1">&#39;])&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxdeque</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Repr.repr_dict"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr_dict.html#pdb.Repr.repr_dict">[docs]</a>    <span class="k">def</span> <span class="nf">repr_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">repr_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
         <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span>
         <span class="k">if</span> <span class="n">level</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="s1">&#39;{...}&#39;</span>
@@ -234,26 +234,26 @@
             <span class="n">pieces</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">keyrepr</span><span class="p">,</span> <span class="n">valrepr</span><span class="p">))</span>
         <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxdict</span><span class="p">:</span> <span class="n">pieces</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;...&#39;</span><span class="p">)</span>
         <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pieces</span><span class="p">)</span>
-        <span class="k">return</span> <span class="s1">&#39;{</span><span class="si">%s</span><span class="s1">}&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">s</span><span class="p">,)</span></div>
+        <span class="k">return</span> <span class="s1">&#39;{</span><span class="si">%s</span><span class="s1">}&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">s</span><span class="p">,)</span>
 
-<div class="viewcode-block" id="Repr.repr_str"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr_str.html#pdb.Repr.repr_str">[docs]</a>    <span class="k">def</span> <span class="nf">repr_str</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">repr_str</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
         <span class="n">s</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">repr</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="bp">self</span><span class="o">.</span><span class="n">maxstring</span><span class="p">])</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxstring</span><span class="p">:</span>
             <span class="n">i</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">maxstring</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
             <span class="n">j</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxstring</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="n">i</span><span class="p">)</span>
             <span class="n">s</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">repr</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="n">j</span><span class="p">:])</span>
             <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;...&#39;</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="n">j</span><span class="p">:]</span>
-        <span class="k">return</span> <span class="n">s</span></div>
+        <span class="k">return</span> <span class="n">s</span>
 
-<div class="viewcode-block" id="Repr.repr_long"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr_long.html#pdb.Repr.repr_long">[docs]</a>    <span class="k">def</span> <span class="nf">repr_long</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">repr_long</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
         <span class="n">s</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">repr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># XXX Hope this isn&#39;t too slow...</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxlong</span><span class="p">:</span>
             <span class="n">i</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">maxlong</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
             <span class="n">j</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxlong</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="n">i</span><span class="p">)</span>
             <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;...&#39;</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="n">j</span><span class="p">:]</span>
-        <span class="k">return</span> <span class="n">s</span></div>
+        <span class="k">return</span> <span class="n">s</span>
 
-<div class="viewcode-block" id="Repr.repr_instance"><a class="viewcode-back" href="../generated/generated/pydoc.Repr.repr_instance.html#pdb.Repr.repr_instance">[docs]</a>    <span class="k">def</span> <span class="nf">repr_instance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">repr_instance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="n">s</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">repr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
             <span class="c1"># Bugs in x.__repr__() can cause arbitrary</span>
@@ -264,7 +264,7 @@
             <span class="n">i</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">maxstring</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
             <span class="n">j</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxstring</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="n">i</span><span class="p">)</span>
             <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;...&#39;</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="n">j</span><span class="p">:]</span>
-        <span class="k">return</span> <span class="n">s</span></div></div>
+        <span class="k">return</span> <span class="n">s</span>
 
 
 <span class="k">def</span> <span class="nf">_possibly_sorted</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>

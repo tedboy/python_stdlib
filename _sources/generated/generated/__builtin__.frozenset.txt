@@ -2,16 +2,15 @@ __builtin__.frozenset
 =====================
 
 .. currentmodule:: __builtin__
-
-:func:`frozenset.__init__`
-
 .. autoclass:: frozenset
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~frozenset.copy

@@ -2,16 +2,15 @@ urllib2.FTPHandler
 ==================
 
 .. currentmodule:: urllib2
-
-:func:`FTPHandler.__init__`
-
 .. autoclass:: FTPHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~FTPHandler.add_parent
@@ -23,11 +22,10 @@ urllib2.FTPHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~FTPHandler.handler_order

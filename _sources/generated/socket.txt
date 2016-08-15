@@ -11,34 +11,9 @@ socket
       :toctree:
 
    
-      RAND_add
-      RAND_egd
-      RAND_status
-      StringIO
       create_connection
-      fromfd
-      getaddrinfo
-      getdefaulttimeout
       getfqdn
-      gethostbyaddr
-      gethostbyname
-      gethostbyname_ex
-      gethostname
-      getnameinfo
-      getprotobyname
-      getservbyname
-      getservbyport
-      htonl
-      htons
-      inet_aton
-      inet_ntoa
-      inet_ntop
-      inet_pton
       meth
-      ntohl
-      ntohs
-      setdefaulttimeout
-      socketpair
       ssl
    
    
@@ -52,9 +27,7 @@ socket
       :template:class_custom.rst
 
    
-      MethodType
       SocketType
-      partial
       socket
 
    .. toctree::
@@ -62,9 +35,7 @@ socket
        :hidden:
 
    
-       generated/socket.MethodType
        generated/socket.SocketType
-       generated/socket.partial
        generated/socket.socket
 
    
@@ -81,7 +52,6 @@ socket
       error
       gaierror
       herror
-      sslerror
       timeout
    
    

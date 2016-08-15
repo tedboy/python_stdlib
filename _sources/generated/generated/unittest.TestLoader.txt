@@ -2,16 +2,15 @@ unittest.TestLoader
 ===================
 
 .. currentmodule:: unittest
-
-:func:`TestLoader.__init__`
-
 .. autoclass:: TestLoader
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~TestLoader.discover
@@ -26,11 +25,10 @@ unittest.TestLoader
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~TestLoader.testMethodPrefix

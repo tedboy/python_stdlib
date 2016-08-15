@@ -2,16 +2,15 @@ __builtin__.property
 ====================
 
 .. currentmodule:: __builtin__
-
-:func:`property.__init__`
-
 .. autoclass:: property
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~property.deleter
@@ -22,11 +21,10 @@ __builtin__.property
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~property.fdel

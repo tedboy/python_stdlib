@@ -2,16 +2,15 @@ tarfile.TarInfo
 ===============
 
 .. currentmodule:: tarfile
-
-:func:`TarInfo.__init__`
-
 .. autoclass:: TarInfo
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~TarInfo.__init__
@@ -38,11 +37,10 @@ tarfile.TarInfo
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~TarInfo.linkpath

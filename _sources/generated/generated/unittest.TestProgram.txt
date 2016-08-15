@@ -2,16 +2,15 @@ unittest.TestProgram
 ====================
 
 .. currentmodule:: unittest
-
-:func:`TestProgram.__init__`
-
 .. autoclass:: TestProgram
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~TestProgram.__init__
@@ -24,11 +23,10 @@ unittest.TestProgram
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~TestProgram.USAGE

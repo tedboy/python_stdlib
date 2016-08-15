@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.2.9. tarfile &mdash; Python Standard Library</title>
+  <title>3.2.9. tarfile &mdash; My Project v1</title>
   
 
   
@@ -30,9 +30,9 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="3. Misc package I may use in the future" href="../maybe_future.html"/>
-        <link rel="next" title="3.2.9.1.1. tarfile.bltn_open" href="tarfile.bltn_open.html"/>
+        <link rel="next" title="3.2.9.1.1. tarfile.calc_chksums" href="tarfile.calc_chksums.html"/>
         <link rel="prev" title="3.2.8.3.3. zipfile.error" href="zipfile.error.html"/> 
 
   
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="shutil.html">3.2.1. shutil</a></li>
@@ -134,7 +126,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -191,34 +183,31 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.bltn_open.html#tarfile.bltn_open" title="tarfile.bltn_open"><code class="xref py py-obj docutils literal"><span class="pre">bltn_open</span></code></a></td>
-<td>open(name[, mode[, buffering]]) -&gt; file object</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.calc_chksums.html#tarfile.calc_chksums" title="tarfile.calc_chksums"><code class="xref py py-obj docutils literal"><span class="pre">calc_chksums</span></code></a>(buf)</td>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.calc_chksums.html#tarfile.calc_chksums" title="tarfile.calc_chksums"><code class="xref py py-obj docutils literal"><span class="pre">calc_chksums</span></code></a>(buf)</td>
 <td>Calculate the checksum for a member&#8217;s header by summing up all characters except for the chksum field which is treated as if it was filled with spaces.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.copyfileobj.html#tarfile.copyfileobj" title="tarfile.copyfileobj"><code class="xref py py-obj docutils literal"><span class="pre">copyfileobj</span></code></a>(src,&nbsp;dst[,&nbsp;length])</td>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.copyfileobj.html#tarfile.copyfileobj" title="tarfile.copyfileobj"><code class="xref py py-obj docutils literal"><span class="pre">copyfileobj</span></code></a>(src,&nbsp;dst[,&nbsp;length])</td>
 <td>Copy length bytes from fileobj src to fileobj dst.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.filemode.html#tarfile.filemode" title="tarfile.filemode"><code class="xref py py-obj docutils literal"><span class="pre">filemode</span></code></a>(mode)</td>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.filemode.html#tarfile.filemode" title="tarfile.filemode"><code class="xref py py-obj docutils literal"><span class="pre">filemode</span></code></a>(mode)</td>
 <td>Convert a file&#8217;s mode to a string of the form -rwxrwxrwx.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.is_tarfile.html#tarfile.is_tarfile" title="tarfile.is_tarfile"><code class="xref py py-obj docutils literal"><span class="pre">is_tarfile</span></code></a>(name)</td>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.is_tarfile.html#tarfile.is_tarfile" title="tarfile.is_tarfile"><code class="xref py py-obj docutils literal"><span class="pre">is_tarfile</span></code></a>(name)</td>
 <td>Return True if name points to a tar archive that we are able to handle, else return False.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.itn.html#tarfile.itn" title="tarfile.itn"><code class="xref py py-obj docutils literal"><span class="pre">itn</span></code></a>(n[,&nbsp;digits,&nbsp;format])</td>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.itn.html#tarfile.itn" title="tarfile.itn"><code class="xref py py-obj docutils literal"><span class="pre">itn</span></code></a>(n[,&nbsp;digits,&nbsp;format])</td>
 <td>Convert a python number to a number field.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.nti.html#tarfile.nti" title="tarfile.nti"><code class="xref py py-obj docutils literal"><span class="pre">nti</span></code></a>(s)</td>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.nti.html#tarfile.nti" title="tarfile.nti"><code class="xref py py-obj docutils literal"><span class="pre">nti</span></code></a>(s)</td>
 <td>Convert a number field to a python number.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.nts.html#tarfile.nts" title="tarfile.nts"><code class="xref py py-obj docutils literal"><span class="pre">nts</span></code></a>(s)</td>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.nts.html#tarfile.nts" title="tarfile.nts"><code class="xref py py-obj docutils literal"><span class="pre">nts</span></code></a>(s)</td>
 <td>Convert a null-terminated string field to a python string.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.stn.html#tarfile.stn" title="tarfile.stn"><code class="xref py py-obj docutils literal"><span class="pre">stn</span></code></a>(s,&nbsp;length)</td>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.stn.html#tarfile.stn" title="tarfile.stn"><code class="xref py py-obj docutils literal"><span class="pre">stn</span></code></a>(s,&nbsp;length)</td>
 <td>Convert a python string to a null-terminated string buffer.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.uts.html#tarfile.uts" title="tarfile.uts"><code class="xref py py-obj docutils literal"><span class="pre">uts</span></code></a>(s,&nbsp;encoding,&nbsp;errors)</td>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.uts.html#tarfile.uts" title="tarfile.uts"><code class="xref py py-obj docutils literal"><span class="pre">uts</span></code></a>(s,&nbsp;encoding,&nbsp;errors)</td>
 <td>Convert a unicode object to a string.</td>
 </tr>
 </tbody>
@@ -305,7 +294,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="tarfile.bltn_open.html" class="btn btn-neutral float-right" title="3.2.9.1.1. tarfile.bltn_open" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="tarfile.calc_chksums.html" class="btn btn-neutral float-right" title="3.2.9.1.1. tarfile.calc_chksums" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="zipfile.error.html" class="btn btn-neutral" title="3.2.8.3.3. zipfile.error" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

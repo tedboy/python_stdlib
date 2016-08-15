@@ -2,16 +2,15 @@ urllib2.HTTPSHandler
 ====================
 
 .. currentmodule:: urllib2
-
-:func:`HTTPSHandler.__init__`
-
 .. autoclass:: HTTPSHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~HTTPSHandler.__init__
@@ -27,11 +26,10 @@ urllib2.HTTPSHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~HTTPSHandler.handler_order

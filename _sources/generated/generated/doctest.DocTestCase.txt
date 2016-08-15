@@ -2,16 +2,15 @@ doctest.DocTestCase
 ===================
 
 .. currentmodule:: doctest
-
-:func:`DocTestCase.__init__`
-
 .. autoclass:: DocTestCase
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~DocTestCase.__init__
@@ -79,11 +78,10 @@ doctest.DocTestCase
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~DocTestCase.longMessage

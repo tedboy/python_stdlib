@@ -2,16 +2,15 @@ doctest.TestResults
 ===================
 
 .. currentmodule:: doctest
-
-:func:`TestResults.__init__`
-
 .. autoclass:: TestResults
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~TestResults.count
@@ -21,11 +20,10 @@ doctest.TestResults
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~TestResults.attempted

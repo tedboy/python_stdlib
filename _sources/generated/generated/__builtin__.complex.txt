@@ -2,16 +2,15 @@ __builtin__.complex
 ===================
 
 .. currentmodule:: __builtin__
-
-:func:`complex.__init__`
-
 .. autoclass:: complex
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~complex.conjugate
@@ -20,11 +19,10 @@ __builtin__.complex
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~complex.imag

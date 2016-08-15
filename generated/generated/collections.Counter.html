@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.1.2.3. collections.Counter &mdash; Python Standard Library</title>
+  <title>2.1.2.1. collections.Counter &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="2.1. collections" href="../collections.html"/>
-        <link rel="next" title="2.1.2.3.1. collections.Counter.clear" href="collections.Counter.clear.html"/>
-        <link rel="prev" title="2.1.2.2. collections.Container" href="collections.Container.html"/> 
+        <link rel="next" title="2.1.2.1.1.1. collections.Counter.__init__" href="collections.Counter.__init__.html"/>
+        <link rel="prev" title="2.1.1.1. collections.namedtuple" href="../collections.namedtuple.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -90,26 +90,10 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../collections.html">2.1. collections</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../collections.html#functions">2.1.1. Functions</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../collections.html#classes">2.1.2. Classes</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="collections.Callable.html">2.1.2.1. collections.Callable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Container.html">2.1.2.2. collections.Container</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">2.1.2.3. collections.Counter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Hashable.html">2.1.2.4. collections.Hashable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.ItemsView.html">2.1.2.5. collections.ItemsView</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Iterable.html">2.1.2.6. collections.Iterable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Iterator.html">2.1.2.7. collections.Iterator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.KeysView.html">2.1.2.8. collections.KeysView</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Mapping.html">2.1.2.9. collections.Mapping</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.MappingView.html">2.1.2.10. collections.MappingView</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.MutableMapping.html">2.1.2.11. collections.MutableMapping</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.MutableSequence.html">2.1.2.12. collections.MutableSequence</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.MutableSet.html">2.1.2.13. collections.MutableSet</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.OrderedDict.html">2.1.2.14. collections.OrderedDict</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Sequence.html">2.1.2.15. collections.Sequence</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Set.html">2.1.2.16. collections.Set</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.Sized.html">2.1.2.17. collections.Sized</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.ValuesView.html">2.1.2.18. collections.ValuesView</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.defaultdict.html">2.1.2.19. collections.defaultdict</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collections.deque.html">2.1.2.20. collections.deque</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">2.1.2.1. collections.Counter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collections.OrderedDict.html">2.1.2.2. collections.OrderedDict</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collections.defaultdict.html">2.1.2.3. collections.defaultdict</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collections.deque.html">2.1.2.4. collections.deque</a></li>
 </ul>
 </li>
 </ul>
@@ -145,7 +129,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -176,7 +160,7 @@
         
           <li><a href="../collections.html">2.1. collections</a> &raquo;</li>
         
-      <li>2.1.2.3. collections.Counter</li>
+      <li>2.1.2.1. collections.Counter</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -194,8 +178,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="collections-counter">
-<h1>2.1.2.3. collections.Counter<a class="headerlink" href="#collections-counter" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="collections.Counter.__init__.html#collections.Counter.__init__" title="collections.Counter.__init__"><code class="xref py py-func docutils literal"><span class="pre">Counter.__init__()</span></code></a></p>
+<h1>2.1.2.1. collections.Counter<a class="headerlink" href="#collections-counter" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="collections.Counter">
 <em class="property">class </em><code class="descclassname">collections.</code><code class="descname">Counter</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/collections.html#Counter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#collections.Counter" title="Permalink to this definition">¶</a></dt>
@@ -245,78 +228,6 @@ in the counter until the entry is deleted or the counter is cleared:</p>
 <span class="go">[(&#39;a&#39;, 3), (&#39;c&#39;, 1), (&#39;b&#39;, 0)]</span>
 </pre></div>
 </div>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.clear.html#collections.Counter.clear" title="collections.Counter.clear"><code class="xref py py-obj docutils literal"><span class="pre">clear</span></code></a>(()&nbsp;-&gt;&nbsp;None.&nbsp;&nbsp;Remove&nbsp;all&nbsp;items&nbsp;from&nbsp;D.)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="collections.Counter.copy.html#collections.Counter.copy" title="collections.Counter.copy"><code class="xref py py-obj docutils literal"><span class="pre">copy</span></code></a>()</td>
-<td>Return a shallow copy.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.elements.html#collections.Counter.elements" title="collections.Counter.elements"><code class="xref py py-obj docutils literal"><span class="pre">elements</span></code></a>()</td>
-<td>Iterator over elements repeating each as many times as its count.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="collections.Counter.fromkeys.html#collections.Counter.fromkeys" title="collections.Counter.fromkeys"><code class="xref py py-obj docutils literal"><span class="pre">fromkeys</span></code></a>(iterable[,&nbsp;v])</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.get.html#collections.Counter.get" title="collections.Counter.get"><code class="xref py py-obj docutils literal"><span class="pre">get</span></code></a>((k[,d])&nbsp;-&gt;&nbsp;D[k]&nbsp;if&nbsp;k&nbsp;in&nbsp;D,&nbsp;...)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="collections.Counter.has_key.html#collections.Counter.has_key" title="collections.Counter.has_key"><code class="xref py py-obj docutils literal"><span class="pre">has_key</span></code></a>((k)&nbsp;-&gt;&nbsp;True&nbsp;if&nbsp;D&nbsp;has&nbsp;a&nbsp;key&nbsp;k,&nbsp;else&nbsp;False)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.items.html#collections.Counter.items" title="collections.Counter.items"><code class="xref py py-obj docutils literal"><span class="pre">items</span></code></a>(()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;D&#8217;s&nbsp;(key,&nbsp;value)&nbsp;pairs,&nbsp;...)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="collections.Counter.iteritems.html#collections.Counter.iteritems" title="collections.Counter.iteritems"><code class="xref py py-obj docutils literal"><span class="pre">iteritems</span></code></a>(()&nbsp;-&gt;&nbsp;an&nbsp;iterator&nbsp;over&nbsp;the&nbsp;(key,&nbsp;...)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.iterkeys.html#collections.Counter.iterkeys" title="collections.Counter.iterkeys"><code class="xref py py-obj docutils literal"><span class="pre">iterkeys</span></code></a>(()&nbsp;-&gt;&nbsp;an&nbsp;iterator&nbsp;over&nbsp;the&nbsp;keys&nbsp;of&nbsp;D)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="collections.Counter.itervalues.html#collections.Counter.itervalues" title="collections.Counter.itervalues"><code class="xref py py-obj docutils literal"><span class="pre">itervalues</span></code></a>(...)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.keys.html#collections.Counter.keys" title="collections.Counter.keys"><code class="xref py py-obj docutils literal"><span class="pre">keys</span></code></a>(()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;D&#8217;s&nbsp;keys)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="collections.Counter.most_common.html#collections.Counter.most_common" title="collections.Counter.most_common"><code class="xref py py-obj docutils literal"><span class="pre">most_common</span></code></a>([n])</td>
-<td>List the n most common elements and their counts from the most common to the least.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.pop.html#collections.Counter.pop" title="collections.Counter.pop"><code class="xref py py-obj docutils literal"><span class="pre">pop</span></code></a>((k[,d])&nbsp;-&gt;&nbsp;v,&nbsp;...)</td>
-<td>If key is not found, d is returned if given, otherwise KeyError is raised</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="collections.Counter.popitem.html#collections.Counter.popitem" title="collections.Counter.popitem"><code class="xref py py-obj docutils literal"><span class="pre">popitem</span></code></a>(()&nbsp;-&gt;&nbsp;(k,&nbsp;v),&nbsp;...)</td>
-<td>2-tuple; but raise KeyError if D is empty.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.setdefault.html#collections.Counter.setdefault" title="collections.Counter.setdefault"><code class="xref py py-obj docutils literal"><span class="pre">setdefault</span></code></a>((k[,d])&nbsp;-&gt;&nbsp;D.get(k,d),&nbsp;...)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="collections.Counter.subtract.html#collections.Counter.subtract" title="collections.Counter.subtract"><code class="xref py py-obj docutils literal"><span class="pre">subtract</span></code></a>(*args,&nbsp;**kwds)</td>
-<td>Like dict.update() but subtracts counts instead of replacing them.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.update.html#collections.Counter.update" title="collections.Counter.update"><code class="xref py py-obj docutils literal"><span class="pre">update</span></code></a>(*args,&nbsp;**kwds)</td>
-<td>Like dict.update() but add counts instead of replacing them.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="collections.Counter.values.html#collections.Counter.values" title="collections.Counter.values"><code class="xref py py-obj docutils literal"><span class="pre">values</span></code></a>(()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;D&#8217;s&nbsp;values)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.viewitems.html#collections.Counter.viewitems" title="collections.Counter.viewitems"><code class="xref py py-obj docutils literal"><span class="pre">viewitems</span></code></a>(...)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="collections.Counter.viewkeys.html#collections.Counter.viewkeys" title="collections.Counter.viewkeys"><code class="xref py py-obj docutils literal"><span class="pre">viewkeys</span></code></a>(...)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.viewvalues.html#collections.Counter.viewvalues" title="collections.Counter.viewvalues"><code class="xref py py-obj docutils literal"><span class="pre">viewvalues</span></code></a>(...)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="collections.Counter.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/collections.html#Counter.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#collections.Counter.__init__" title="Permalink to this definition">¶</a></dt>
@@ -333,6 +244,83 @@ of elements to their counts.</p>
 
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>2.1.2.1.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.__init__.html#collections.Counter.__init__" title="collections.Counter.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>(*args,&nbsp;**kwds)</td>
+<td>Create a new, empty Counter object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="collections.Counter.clear.html#collections.Counter.clear" title="collections.Counter.clear"><code class="xref py py-obj docutils literal"><span class="pre">clear</span></code></a>(()&nbsp;-&gt;&nbsp;None.&nbsp;&nbsp;Remove&nbsp;all&nbsp;items&nbsp;from&nbsp;D.)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.copy.html#collections.Counter.copy" title="collections.Counter.copy"><code class="xref py py-obj docutils literal"><span class="pre">copy</span></code></a>()</td>
+<td>Return a shallow copy.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="collections.Counter.elements.html#collections.Counter.elements" title="collections.Counter.elements"><code class="xref py py-obj docutils literal"><span class="pre">elements</span></code></a>()</td>
+<td>Iterator over elements repeating each as many times as its count.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.fromkeys.html#collections.Counter.fromkeys" title="collections.Counter.fromkeys"><code class="xref py py-obj docutils literal"><span class="pre">fromkeys</span></code></a>(iterable[,&nbsp;v])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="collections.Counter.get.html#collections.Counter.get" title="collections.Counter.get"><code class="xref py py-obj docutils literal"><span class="pre">get</span></code></a>((k[,d])&nbsp;-&gt;&nbsp;D[k]&nbsp;if&nbsp;k&nbsp;in&nbsp;D,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.has_key.html#collections.Counter.has_key" title="collections.Counter.has_key"><code class="xref py py-obj docutils literal"><span class="pre">has_key</span></code></a>((k)&nbsp;-&gt;&nbsp;True&nbsp;if&nbsp;D&nbsp;has&nbsp;a&nbsp;key&nbsp;k,&nbsp;else&nbsp;False)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="collections.Counter.items.html#collections.Counter.items" title="collections.Counter.items"><code class="xref py py-obj docutils literal"><span class="pre">items</span></code></a>(()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;D&#8217;s&nbsp;(key,&nbsp;value)&nbsp;pairs,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.iteritems.html#collections.Counter.iteritems" title="collections.Counter.iteritems"><code class="xref py py-obj docutils literal"><span class="pre">iteritems</span></code></a>(()&nbsp;-&gt;&nbsp;an&nbsp;iterator&nbsp;over&nbsp;the&nbsp;(key,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="collections.Counter.iterkeys.html#collections.Counter.iterkeys" title="collections.Counter.iterkeys"><code class="xref py py-obj docutils literal"><span class="pre">iterkeys</span></code></a>(()&nbsp;-&gt;&nbsp;an&nbsp;iterator&nbsp;over&nbsp;the&nbsp;keys&nbsp;of&nbsp;D)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.itervalues.html#collections.Counter.itervalues" title="collections.Counter.itervalues"><code class="xref py py-obj docutils literal"><span class="pre">itervalues</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="collections.Counter.keys.html#collections.Counter.keys" title="collections.Counter.keys"><code class="xref py py-obj docutils literal"><span class="pre">keys</span></code></a>(()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;D&#8217;s&nbsp;keys)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.most_common.html#collections.Counter.most_common" title="collections.Counter.most_common"><code class="xref py py-obj docutils literal"><span class="pre">most_common</span></code></a>([n])</td>
+<td>List the n most common elements and their counts from the most common to the least.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="collections.Counter.pop.html#collections.Counter.pop" title="collections.Counter.pop"><code class="xref py py-obj docutils literal"><span class="pre">pop</span></code></a>((k[,d])&nbsp;-&gt;&nbsp;v,&nbsp;...)</td>
+<td>If key is not found, d is returned if given, otherwise KeyError is raised</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.popitem.html#collections.Counter.popitem" title="collections.Counter.popitem"><code class="xref py py-obj docutils literal"><span class="pre">popitem</span></code></a>(()&nbsp;-&gt;&nbsp;(k,&nbsp;v),&nbsp;...)</td>
+<td>2-tuple; but raise KeyError if D is empty.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="collections.Counter.setdefault.html#collections.Counter.setdefault" title="collections.Counter.setdefault"><code class="xref py py-obj docutils literal"><span class="pre">setdefault</span></code></a>((k[,d])&nbsp;-&gt;&nbsp;D.get(k,d),&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.subtract.html#collections.Counter.subtract" title="collections.Counter.subtract"><code class="xref py py-obj docutils literal"><span class="pre">subtract</span></code></a>(*args,&nbsp;**kwds)</td>
+<td>Like dict.update() but subtracts counts instead of replacing them.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="collections.Counter.update.html#collections.Counter.update" title="collections.Counter.update"><code class="xref py py-obj docutils literal"><span class="pre">update</span></code></a>(*args,&nbsp;**kwds)</td>
+<td>Like dict.update() but add counts instead of replacing them.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.values.html#collections.Counter.values" title="collections.Counter.values"><code class="xref py py-obj docutils literal"><span class="pre">values</span></code></a>(()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;D&#8217;s&nbsp;values)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="collections.Counter.viewitems.html#collections.Counter.viewitems" title="collections.Counter.viewitems"><code class="xref py py-obj docutils literal"><span class="pre">viewitems</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="collections.Counter.viewkeys.html#collections.Counter.viewkeys" title="collections.Counter.viewkeys"><code class="xref py py-obj docutils literal"><span class="pre">viewkeys</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="collections.Counter.viewvalues.html#collections.Counter.viewvalues" title="collections.Counter.viewvalues"><code class="xref py py-obj docutils literal"><span class="pre">viewvalues</span></code></a>(...)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -342,10 +330,10 @@ of elements to their counts.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="collections.Counter.clear.html" class="btn btn-neutral float-right" title="2.1.2.3.1. collections.Counter.clear" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="collections.Counter.__init__.html" class="btn btn-neutral float-right" title="2.1.2.1.1.1. collections.Counter.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="collections.Container.html" class="btn btn-neutral" title="2.1.2.2. collections.Container" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../collections.namedtuple.html" class="btn btn-neutral" title="2.1.1.1. collections.namedtuple" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

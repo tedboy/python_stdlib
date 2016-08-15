@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.6.2.1. pdb.Pdb &mdash; Python Standard Library</title>
+  <title>2.6.2.1. pdb.Pdb &mdash; My Project v1</title>
   
 
   
@@ -30,9 +30,9 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="2.6. pdb" href="../pdb.html"/>
-        <link rel="next" title="2.6.2.1.1. pdb.Pdb.bp_commands" href="pdb.Pdb.bp_commands.html"/>
+        <link rel="next" title="2.6.2.1.1.1. pdb.Pdb.__init__" href="pdb.Pdb.__init__.html"/>
         <link rel="prev" title="2.6.1.11. pdb.test" href="../pdb.test.html"/> 
 
   
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -96,7 +96,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../pdb.html#functions">2.6.1. Functions</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../pdb.html#classes">2.6.2. Classes</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">2.6.2.1. pdb.Pdb</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pdb.Repr.html">2.6.2.2. pdb.Repr</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../pdb.html#exceptions">2.6.3. Exceptions</a></li>
@@ -128,7 +127,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -178,531 +177,575 @@
             
   <div class="section" id="pdb-pdb">
 <h1>2.6.2.1. pdb.Pdb<a class="headerlink" href="#pdb-pdb" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="pdb.Pdb.__init__.html#pdb.Pdb.__init__" title="pdb.Pdb.__init__"><code class="xref py py-func docutils literal"><span class="pre">Pdb.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="pdb.Pdb">
 <em class="property">class </em><code class="descclassname">pdb.</code><code class="descname">Pdb</code><span class="sig-paren">(</span><em>completekey='tab'</em>, <em>stdin=None</em>, <em>stdout=None</em>, <em>skip=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pdb.html#Pdb"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pdb.Pdb" title="Permalink to this definition">¶</a></dt>
-<dd><p class="rubric">Attributes</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="33%" />
-<col width="67%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>intro</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Methods</p>
+<dd><dl class="method">
+<dt id="pdb.Pdb.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>completekey='tab'</em>, <em>stdin=None</em>, <em>stdout=None</em>, <em>skip=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pdb.html#Pdb.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pdb.Pdb.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>2.6.2.1.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.bp_commands.html#pdb.Pdb.bp_commands" title="pdb.Pdb.bp_commands"><code class="xref py py-obj docutils literal"><span class="pre">bp_commands</span></code></a>(frame)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.__init__.html#pdb.Pdb.__init__" title="pdb.Pdb.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([completekey,&nbsp;stdin,&nbsp;stdout,&nbsp;skip])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.bp_commands.html#pdb.Pdb.bp_commands" title="pdb.Pdb.bp_commands"><code class="xref py py-obj docutils literal"><span class="pre">bp_commands</span></code></a>(frame)</td>
 <td>Call every command that was set for the current active breakpoint (if there is one).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.break_anywhere.html#pdb.Pdb.break_anywhere" title="pdb.Pdb.break_anywhere"><code class="xref py py-obj docutils literal"><span class="pre">break_anywhere</span></code></a>(frame)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.break_anywhere.html#pdb.Pdb.break_anywhere" title="pdb.Pdb.break_anywhere"><code class="xref py py-obj docutils literal"><span class="pre">break_anywhere</span></code></a>(frame)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.break_here.html#pdb.Pdb.break_here" title="pdb.Pdb.break_here"><code class="xref py py-obj docutils literal"><span class="pre">break_here</span></code></a>(frame)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.break_here.html#pdb.Pdb.break_here" title="pdb.Pdb.break_here"><code class="xref py py-obj docutils literal"><span class="pre">break_here</span></code></a>(frame)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.canonic.html#pdb.Pdb.canonic" title="pdb.Pdb.canonic"><code class="xref py py-obj docutils literal"><span class="pre">canonic</span></code></a>(filename)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.canonic.html#pdb.Pdb.canonic" title="pdb.Pdb.canonic"><code class="xref py py-obj docutils literal"><span class="pre">canonic</span></code></a>(filename)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.checkline.html#pdb.Pdb.checkline" title="pdb.Pdb.checkline"><code class="xref py py-obj docutils literal"><span class="pre">checkline</span></code></a>(filename,&nbsp;lineno)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.checkline.html#pdb.Pdb.checkline" title="pdb.Pdb.checkline"><code class="xref py py-obj docutils literal"><span class="pre">checkline</span></code></a>(filename,&nbsp;lineno)</td>
 <td>Check whether specified line seems to be executable.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.clear_all_breaks.html#pdb.Pdb.clear_all_breaks" title="pdb.Pdb.clear_all_breaks"><code class="xref py py-obj docutils literal"><span class="pre">clear_all_breaks</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.clear_all_breaks.html#pdb.Pdb.clear_all_breaks" title="pdb.Pdb.clear_all_breaks"><code class="xref py py-obj docutils literal"><span class="pre">clear_all_breaks</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.clear_all_file_breaks.html#pdb.Pdb.clear_all_file_breaks" title="pdb.Pdb.clear_all_file_breaks"><code class="xref py py-obj docutils literal"><span class="pre">clear_all_file_breaks</span></code></a>(filename)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.clear_all_file_breaks.html#pdb.Pdb.clear_all_file_breaks" title="pdb.Pdb.clear_all_file_breaks"><code class="xref py py-obj docutils literal"><span class="pre">clear_all_file_breaks</span></code></a>(filename)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.clear_bpbynumber.html#pdb.Pdb.clear_bpbynumber" title="pdb.Pdb.clear_bpbynumber"><code class="xref py py-obj docutils literal"><span class="pre">clear_bpbynumber</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.clear_bpbynumber.html#pdb.Pdb.clear_bpbynumber" title="pdb.Pdb.clear_bpbynumber"><code class="xref py py-obj docutils literal"><span class="pre">clear_bpbynumber</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.clear_break.html#pdb.Pdb.clear_break" title="pdb.Pdb.clear_break"><code class="xref py py-obj docutils literal"><span class="pre">clear_break</span></code></a>(filename,&nbsp;lineno)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.clear_break.html#pdb.Pdb.clear_break" title="pdb.Pdb.clear_break"><code class="xref py py-obj docutils literal"><span class="pre">clear_break</span></code></a>(filename,&nbsp;lineno)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.cmdloop.html#pdb.Pdb.cmdloop" title="pdb.Pdb.cmdloop"><code class="xref py py-obj docutils literal"><span class="pre">cmdloop</span></code></a>([intro])</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.cmdloop.html#pdb.Pdb.cmdloop" title="pdb.Pdb.cmdloop"><code class="xref py py-obj docutils literal"><span class="pre">cmdloop</span></code></a>([intro])</td>
 <td>Repeatedly issue a prompt, accept input, parse an initial prefix off the received input, and dispatch to action methods, passing them the remainder of the line as argument.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.columnize.html#pdb.Pdb.columnize" title="pdb.Pdb.columnize"><code class="xref py py-obj docutils literal"><span class="pre">columnize</span></code></a>(list[,&nbsp;displaywidth])</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.columnize.html#pdb.Pdb.columnize" title="pdb.Pdb.columnize"><code class="xref py py-obj docutils literal"><span class="pre">columnize</span></code></a>(list[,&nbsp;displaywidth])</td>
 <td>Display a list of strings as a compact set of columns.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.complete.html#pdb.Pdb.complete" title="pdb.Pdb.complete"><code class="xref py py-obj docutils literal"><span class="pre">complete</span></code></a>(text,&nbsp;state)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.complete.html#pdb.Pdb.complete" title="pdb.Pdb.complete"><code class="xref py py-obj docutils literal"><span class="pre">complete</span></code></a>(text,&nbsp;state)</td>
 <td>Return the next possible completion for &#8216;text&#8217;.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.complete_help.html#pdb.Pdb.complete_help" title="pdb.Pdb.complete_help"><code class="xref py py-obj docutils literal"><span class="pre">complete_help</span></code></a>(*args)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.complete_help.html#pdb.Pdb.complete_help" title="pdb.Pdb.complete_help"><code class="xref py py-obj docutils literal"><span class="pre">complete_help</span></code></a>(*args)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.completedefault.html#pdb.Pdb.completedefault" title="pdb.Pdb.completedefault"><code class="xref py py-obj docutils literal"><span class="pre">completedefault</span></code></a>(*ignored)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.completedefault.html#pdb.Pdb.completedefault" title="pdb.Pdb.completedefault"><code class="xref py py-obj docutils literal"><span class="pre">completedefault</span></code></a>(*ignored)</td>
 <td>Method called to complete an input line when no command-specific complete_*() method is available.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.completenames.html#pdb.Pdb.completenames" title="pdb.Pdb.completenames"><code class="xref py py-obj docutils literal"><span class="pre">completenames</span></code></a>(text,&nbsp;*ignored)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.completenames.html#pdb.Pdb.completenames" title="pdb.Pdb.completenames"><code class="xref py py-obj docutils literal"><span class="pre">completenames</span></code></a>(text,&nbsp;*ignored)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.default.html#pdb.Pdb.default" title="pdb.Pdb.default"><code class="xref py py-obj docutils literal"><span class="pre">default</span></code></a>(line)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.default.html#pdb.Pdb.default" title="pdb.Pdb.default"><code class="xref py py-obj docutils literal"><span class="pre">default</span></code></a>(line)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.defaultFile.html#pdb.Pdb.defaultFile" title="pdb.Pdb.defaultFile"><code class="xref py py-obj docutils literal"><span class="pre">defaultFile</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.defaultFile.html#pdb.Pdb.defaultFile" title="pdb.Pdb.defaultFile"><code class="xref py py-obj docutils literal"><span class="pre">defaultFile</span></code></a>()</td>
 <td>Produce a reasonable default.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.dispatch_call.html#pdb.Pdb.dispatch_call" title="pdb.Pdb.dispatch_call"><code class="xref py py-obj docutils literal"><span class="pre">dispatch_call</span></code></a>(frame,&nbsp;arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.dispatch_call.html#pdb.Pdb.dispatch_call" title="pdb.Pdb.dispatch_call"><code class="xref py py-obj docutils literal"><span class="pre">dispatch_call</span></code></a>(frame,&nbsp;arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.dispatch_exception.html#pdb.Pdb.dispatch_exception" title="pdb.Pdb.dispatch_exception"><code class="xref py py-obj docutils literal"><span class="pre">dispatch_exception</span></code></a>(frame,&nbsp;arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.dispatch_exception.html#pdb.Pdb.dispatch_exception" title="pdb.Pdb.dispatch_exception"><code class="xref py py-obj docutils literal"><span class="pre">dispatch_exception</span></code></a>(frame,&nbsp;arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.dispatch_line.html#pdb.Pdb.dispatch_line" title="pdb.Pdb.dispatch_line"><code class="xref py py-obj docutils literal"><span class="pre">dispatch_line</span></code></a>(frame)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.dispatch_line.html#pdb.Pdb.dispatch_line" title="pdb.Pdb.dispatch_line"><code class="xref py py-obj docutils literal"><span class="pre">dispatch_line</span></code></a>(frame)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.dispatch_return.html#pdb.Pdb.dispatch_return" title="pdb.Pdb.dispatch_return"><code class="xref py py-obj docutils literal"><span class="pre">dispatch_return</span></code></a>(frame,&nbsp;arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.dispatch_return.html#pdb.Pdb.dispatch_return" title="pdb.Pdb.dispatch_return"><code class="xref py py-obj docutils literal"><span class="pre">dispatch_return</span></code></a>(frame,&nbsp;arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.displayhook.html#pdb.Pdb.displayhook" title="pdb.Pdb.displayhook"><code class="xref py py-obj docutils literal"><span class="pre">displayhook</span></code></a>(obj)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.displayhook.html#pdb.Pdb.displayhook" title="pdb.Pdb.displayhook"><code class="xref py py-obj docutils literal"><span class="pre">displayhook</span></code></a>(obj)</td>
 <td>Custom displayhook for the exec in default(), which prevents assignment of the _ variable in the builtins.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_EOF.html#pdb.Pdb.do_EOF" title="pdb.Pdb.do_EOF"><code class="xref py py-obj docutils literal"><span class="pre">do_EOF</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_EOF.html#pdb.Pdb.do_EOF" title="pdb.Pdb.do_EOF"><code class="xref py py-obj docutils literal"><span class="pre">do_EOF</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_a.html#pdb.Pdb.do_a" title="pdb.Pdb.do_a"><code class="xref py py-obj docutils literal"><span class="pre">do_a</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_a.html#pdb.Pdb.do_a" title="pdb.Pdb.do_a"><code class="xref py py-obj docutils literal"><span class="pre">do_a</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_alias.html#pdb.Pdb.do_alias" title="pdb.Pdb.do_alias"><code class="xref py py-obj docutils literal"><span class="pre">do_alias</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_alias.html#pdb.Pdb.do_alias" title="pdb.Pdb.do_alias"><code class="xref py py-obj docutils literal"><span class="pre">do_alias</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_args.html#pdb.Pdb.do_args" title="pdb.Pdb.do_args"><code class="xref py py-obj docutils literal"><span class="pre">do_args</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_args.html#pdb.Pdb.do_args" title="pdb.Pdb.do_args"><code class="xref py py-obj docutils literal"><span class="pre">do_args</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_b.html#pdb.Pdb.do_b" title="pdb.Pdb.do_b"><code class="xref py py-obj docutils literal"><span class="pre">do_b</span></code></a>(arg[,&nbsp;temporary])</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_b.html#pdb.Pdb.do_b" title="pdb.Pdb.do_b"><code class="xref py py-obj docutils literal"><span class="pre">do_b</span></code></a>(arg[,&nbsp;temporary])</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_break.html#pdb.Pdb.do_break" title="pdb.Pdb.do_break"><code class="xref py py-obj docutils literal"><span class="pre">do_break</span></code></a>(arg[,&nbsp;temporary])</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_break.html#pdb.Pdb.do_break" title="pdb.Pdb.do_break"><code class="xref py py-obj docutils literal"><span class="pre">do_break</span></code></a>(arg[,&nbsp;temporary])</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_bt.html#pdb.Pdb.do_bt" title="pdb.Pdb.do_bt"><code class="xref py py-obj docutils literal"><span class="pre">do_bt</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_bt.html#pdb.Pdb.do_bt" title="pdb.Pdb.do_bt"><code class="xref py py-obj docutils literal"><span class="pre">do_bt</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_c.html#pdb.Pdb.do_c" title="pdb.Pdb.do_c"><code class="xref py py-obj docutils literal"><span class="pre">do_c</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_c.html#pdb.Pdb.do_c" title="pdb.Pdb.do_c"><code class="xref py py-obj docutils literal"><span class="pre">do_c</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_cl.html#pdb.Pdb.do_cl" title="pdb.Pdb.do_cl"><code class="xref py py-obj docutils literal"><span class="pre">do_cl</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_cl.html#pdb.Pdb.do_cl" title="pdb.Pdb.do_cl"><code class="xref py py-obj docutils literal"><span class="pre">do_cl</span></code></a>(arg)</td>
 <td>Three possibilities, tried in this order: clear -&gt; clear all breaks, ask for confirmation clear <a class="reference external" href="file:lineno">file:lineno</a> -&gt; clear all breaks at <a class="reference external" href="file:lineno">file:lineno</a> clear bpno bpno ...</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_clear.html#pdb.Pdb.do_clear" title="pdb.Pdb.do_clear"><code class="xref py py-obj docutils literal"><span class="pre">do_clear</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_clear.html#pdb.Pdb.do_clear" title="pdb.Pdb.do_clear"><code class="xref py py-obj docutils literal"><span class="pre">do_clear</span></code></a>(arg)</td>
 <td>Three possibilities, tried in this order: clear -&gt; clear all breaks, ask for confirmation clear <a class="reference external" href="file:lineno">file:lineno</a> -&gt; clear all breaks at <a class="reference external" href="file:lineno">file:lineno</a> clear bpno bpno ...</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_commands.html#pdb.Pdb.do_commands" title="pdb.Pdb.do_commands"><code class="xref py py-obj docutils literal"><span class="pre">do_commands</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_commands.html#pdb.Pdb.do_commands" title="pdb.Pdb.do_commands"><code class="xref py py-obj docutils literal"><span class="pre">do_commands</span></code></a>(arg)</td>
 <td>Defines a list of commands associated to a breakpoint.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_condition.html#pdb.Pdb.do_condition" title="pdb.Pdb.do_condition"><code class="xref py py-obj docutils literal"><span class="pre">do_condition</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_condition.html#pdb.Pdb.do_condition" title="pdb.Pdb.do_condition"><code class="xref py py-obj docutils literal"><span class="pre">do_condition</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_cont.html#pdb.Pdb.do_cont" title="pdb.Pdb.do_cont"><code class="xref py py-obj docutils literal"><span class="pre">do_cont</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_cont.html#pdb.Pdb.do_cont" title="pdb.Pdb.do_cont"><code class="xref py py-obj docutils literal"><span class="pre">do_cont</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_continue.html#pdb.Pdb.do_continue" title="pdb.Pdb.do_continue"><code class="xref py py-obj docutils literal"><span class="pre">do_continue</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_continue.html#pdb.Pdb.do_continue" title="pdb.Pdb.do_continue"><code class="xref py py-obj docutils literal"><span class="pre">do_continue</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_d.html#pdb.Pdb.do_d" title="pdb.Pdb.do_d"><code class="xref py py-obj docutils literal"><span class="pre">do_d</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_d.html#pdb.Pdb.do_d" title="pdb.Pdb.do_d"><code class="xref py py-obj docutils literal"><span class="pre">do_d</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_debug.html#pdb.Pdb.do_debug" title="pdb.Pdb.do_debug"><code class="xref py py-obj docutils literal"><span class="pre">do_debug</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_debug.html#pdb.Pdb.do_debug" title="pdb.Pdb.do_debug"><code class="xref py py-obj docutils literal"><span class="pre">do_debug</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_disable.html#pdb.Pdb.do_disable" title="pdb.Pdb.do_disable"><code class="xref py py-obj docutils literal"><span class="pre">do_disable</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_disable.html#pdb.Pdb.do_disable" title="pdb.Pdb.do_disable"><code class="xref py py-obj docutils literal"><span class="pre">do_disable</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_down.html#pdb.Pdb.do_down" title="pdb.Pdb.do_down"><code class="xref py py-obj docutils literal"><span class="pre">do_down</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_down.html#pdb.Pdb.do_down" title="pdb.Pdb.do_down"><code class="xref py py-obj docutils literal"><span class="pre">do_down</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_enable.html#pdb.Pdb.do_enable" title="pdb.Pdb.do_enable"><code class="xref py py-obj docutils literal"><span class="pre">do_enable</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_enable.html#pdb.Pdb.do_enable" title="pdb.Pdb.do_enable"><code class="xref py py-obj docutils literal"><span class="pre">do_enable</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_exit.html#pdb.Pdb.do_exit" title="pdb.Pdb.do_exit"><code class="xref py py-obj docutils literal"><span class="pre">do_exit</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_exit.html#pdb.Pdb.do_exit" title="pdb.Pdb.do_exit"><code class="xref py py-obj docutils literal"><span class="pre">do_exit</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_h.html#pdb.Pdb.do_h" title="pdb.Pdb.do_h"><code class="xref py py-obj docutils literal"><span class="pre">do_h</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_h.html#pdb.Pdb.do_h" title="pdb.Pdb.do_h"><code class="xref py py-obj docutils literal"><span class="pre">do_h</span></code></a>(arg)</td>
 <td>List available commands with &#8220;help&#8221; or detailed help with &#8220;help cmd&#8221;.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_help.html#pdb.Pdb.do_help" title="pdb.Pdb.do_help"><code class="xref py py-obj docutils literal"><span class="pre">do_help</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_help.html#pdb.Pdb.do_help" title="pdb.Pdb.do_help"><code class="xref py py-obj docutils literal"><span class="pre">do_help</span></code></a>(arg)</td>
 <td>List available commands with &#8220;help&#8221; or detailed help with &#8220;help cmd&#8221;.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_ignore.html#pdb.Pdb.do_ignore" title="pdb.Pdb.do_ignore"><code class="xref py py-obj docutils literal"><span class="pre">do_ignore</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_ignore.html#pdb.Pdb.do_ignore" title="pdb.Pdb.do_ignore"><code class="xref py py-obj docutils literal"><span class="pre">do_ignore</span></code></a>(arg)</td>
 <td>arg is bp number followed by ignore count.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_j.html#pdb.Pdb.do_j" title="pdb.Pdb.do_j"><code class="xref py py-obj docutils literal"><span class="pre">do_j</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_j.html#pdb.Pdb.do_j" title="pdb.Pdb.do_j"><code class="xref py py-obj docutils literal"><span class="pre">do_j</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_jump.html#pdb.Pdb.do_jump" title="pdb.Pdb.do_jump"><code class="xref py py-obj docutils literal"><span class="pre">do_jump</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_jump.html#pdb.Pdb.do_jump" title="pdb.Pdb.do_jump"><code class="xref py py-obj docutils literal"><span class="pre">do_jump</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_l.html#pdb.Pdb.do_l" title="pdb.Pdb.do_l"><code class="xref py py-obj docutils literal"><span class="pre">do_l</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_l.html#pdb.Pdb.do_l" title="pdb.Pdb.do_l"><code class="xref py py-obj docutils literal"><span class="pre">do_l</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_list.html#pdb.Pdb.do_list" title="pdb.Pdb.do_list"><code class="xref py py-obj docutils literal"><span class="pre">do_list</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_list.html#pdb.Pdb.do_list" title="pdb.Pdb.do_list"><code class="xref py py-obj docutils literal"><span class="pre">do_list</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_n.html#pdb.Pdb.do_n" title="pdb.Pdb.do_n"><code class="xref py py-obj docutils literal"><span class="pre">do_n</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_n.html#pdb.Pdb.do_n" title="pdb.Pdb.do_n"><code class="xref py py-obj docutils literal"><span class="pre">do_n</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_next.html#pdb.Pdb.do_next" title="pdb.Pdb.do_next"><code class="xref py py-obj docutils literal"><span class="pre">do_next</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_next.html#pdb.Pdb.do_next" title="pdb.Pdb.do_next"><code class="xref py py-obj docutils literal"><span class="pre">do_next</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_p.html#pdb.Pdb.do_p" title="pdb.Pdb.do_p"><code class="xref py py-obj docutils literal"><span class="pre">do_p</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_p.html#pdb.Pdb.do_p" title="pdb.Pdb.do_p"><code class="xref py py-obj docutils literal"><span class="pre">do_p</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_pp.html#pdb.Pdb.do_pp" title="pdb.Pdb.do_pp"><code class="xref py py-obj docutils literal"><span class="pre">do_pp</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_pp.html#pdb.Pdb.do_pp" title="pdb.Pdb.do_pp"><code class="xref py py-obj docutils literal"><span class="pre">do_pp</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_q.html#pdb.Pdb.do_q" title="pdb.Pdb.do_q"><code class="xref py py-obj docutils literal"><span class="pre">do_q</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_q.html#pdb.Pdb.do_q" title="pdb.Pdb.do_q"><code class="xref py py-obj docutils literal"><span class="pre">do_q</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_quit.html#pdb.Pdb.do_quit" title="pdb.Pdb.do_quit"><code class="xref py py-obj docutils literal"><span class="pre">do_quit</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_quit.html#pdb.Pdb.do_quit" title="pdb.Pdb.do_quit"><code class="xref py py-obj docutils literal"><span class="pre">do_quit</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_r.html#pdb.Pdb.do_r" title="pdb.Pdb.do_r"><code class="xref py py-obj docutils literal"><span class="pre">do_r</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_r.html#pdb.Pdb.do_r" title="pdb.Pdb.do_r"><code class="xref py py-obj docutils literal"><span class="pre">do_r</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_restart.html#pdb.Pdb.do_restart" title="pdb.Pdb.do_restart"><code class="xref py py-obj docutils literal"><span class="pre">do_restart</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_restart.html#pdb.Pdb.do_restart" title="pdb.Pdb.do_restart"><code class="xref py py-obj docutils literal"><span class="pre">do_restart</span></code></a>(arg)</td>
 <td>Restart program by raising an exception to be caught in the main debugger loop.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_return.html#pdb.Pdb.do_return" title="pdb.Pdb.do_return"><code class="xref py py-obj docutils literal"><span class="pre">do_return</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_return.html#pdb.Pdb.do_return" title="pdb.Pdb.do_return"><code class="xref py py-obj docutils literal"><span class="pre">do_return</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_retval.html#pdb.Pdb.do_retval" title="pdb.Pdb.do_retval"><code class="xref py py-obj docutils literal"><span class="pre">do_retval</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_retval.html#pdb.Pdb.do_retval" title="pdb.Pdb.do_retval"><code class="xref py py-obj docutils literal"><span class="pre">do_retval</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_run.html#pdb.Pdb.do_run" title="pdb.Pdb.do_run"><code class="xref py py-obj docutils literal"><span class="pre">do_run</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_run.html#pdb.Pdb.do_run" title="pdb.Pdb.do_run"><code class="xref py py-obj docutils literal"><span class="pre">do_run</span></code></a>(arg)</td>
 <td>Restart program by raising an exception to be caught in the main debugger loop.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_rv.html#pdb.Pdb.do_rv" title="pdb.Pdb.do_rv"><code class="xref py py-obj docutils literal"><span class="pre">do_rv</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_rv.html#pdb.Pdb.do_rv" title="pdb.Pdb.do_rv"><code class="xref py py-obj docutils literal"><span class="pre">do_rv</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_s.html#pdb.Pdb.do_s" title="pdb.Pdb.do_s"><code class="xref py py-obj docutils literal"><span class="pre">do_s</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_s.html#pdb.Pdb.do_s" title="pdb.Pdb.do_s"><code class="xref py py-obj docutils literal"><span class="pre">do_s</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_step.html#pdb.Pdb.do_step" title="pdb.Pdb.do_step"><code class="xref py py-obj docutils literal"><span class="pre">do_step</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_step.html#pdb.Pdb.do_step" title="pdb.Pdb.do_step"><code class="xref py py-obj docutils literal"><span class="pre">do_step</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_tbreak.html#pdb.Pdb.do_tbreak" title="pdb.Pdb.do_tbreak"><code class="xref py py-obj docutils literal"><span class="pre">do_tbreak</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_tbreak.html#pdb.Pdb.do_tbreak" title="pdb.Pdb.do_tbreak"><code class="xref py py-obj docutils literal"><span class="pre">do_tbreak</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_u.html#pdb.Pdb.do_u" title="pdb.Pdb.do_u"><code class="xref py py-obj docutils literal"><span class="pre">do_u</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_u.html#pdb.Pdb.do_u" title="pdb.Pdb.do_u"><code class="xref py py-obj docutils literal"><span class="pre">do_u</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_unalias.html#pdb.Pdb.do_unalias" title="pdb.Pdb.do_unalias"><code class="xref py py-obj docutils literal"><span class="pre">do_unalias</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_unalias.html#pdb.Pdb.do_unalias" title="pdb.Pdb.do_unalias"><code class="xref py py-obj docutils literal"><span class="pre">do_unalias</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_unt.html#pdb.Pdb.do_unt" title="pdb.Pdb.do_unt"><code class="xref py py-obj docutils literal"><span class="pre">do_unt</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_unt.html#pdb.Pdb.do_unt" title="pdb.Pdb.do_unt"><code class="xref py py-obj docutils literal"><span class="pre">do_unt</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_until.html#pdb.Pdb.do_until" title="pdb.Pdb.do_until"><code class="xref py py-obj docutils literal"><span class="pre">do_until</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_until.html#pdb.Pdb.do_until" title="pdb.Pdb.do_until"><code class="xref py py-obj docutils literal"><span class="pre">do_until</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_up.html#pdb.Pdb.do_up" title="pdb.Pdb.do_up"><code class="xref py py-obj docutils literal"><span class="pre">do_up</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_up.html#pdb.Pdb.do_up" title="pdb.Pdb.do_up"><code class="xref py py-obj docutils literal"><span class="pre">do_up</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_w.html#pdb.Pdb.do_w" title="pdb.Pdb.do_w"><code class="xref py py-obj docutils literal"><span class="pre">do_w</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_w.html#pdb.Pdb.do_w" title="pdb.Pdb.do_w"><code class="xref py py-obj docutils literal"><span class="pre">do_w</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_whatis.html#pdb.Pdb.do_whatis" title="pdb.Pdb.do_whatis"><code class="xref py py-obj docutils literal"><span class="pre">do_whatis</span></code></a>(arg)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_whatis.html#pdb.Pdb.do_whatis" title="pdb.Pdb.do_whatis"><code class="xref py py-obj docutils literal"><span class="pre">do_whatis</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.do_where.html#pdb.Pdb.do_where" title="pdb.Pdb.do_where"><code class="xref py py-obj docutils literal"><span class="pre">do_where</span></code></a>(arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.do_where.html#pdb.Pdb.do_where" title="pdb.Pdb.do_where"><code class="xref py py-obj docutils literal"><span class="pre">do_where</span></code></a>(arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.emptyline.html#pdb.Pdb.emptyline" title="pdb.Pdb.emptyline"><code class="xref py py-obj docutils literal"><span class="pre">emptyline</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.emptyline.html#pdb.Pdb.emptyline" title="pdb.Pdb.emptyline"><code class="xref py py-obj docutils literal"><span class="pre">emptyline</span></code></a>()</td>
 <td>Called when an empty line is entered in response to the prompt.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.execRcLines.html#pdb.Pdb.execRcLines" title="pdb.Pdb.execRcLines"><code class="xref py py-obj docutils literal"><span class="pre">execRcLines</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.execRcLines.html#pdb.Pdb.execRcLines" title="pdb.Pdb.execRcLines"><code class="xref py py-obj docutils literal"><span class="pre">execRcLines</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.forget.html#pdb.Pdb.forget" title="pdb.Pdb.forget"><code class="xref py py-obj docutils literal"><span class="pre">forget</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.forget.html#pdb.Pdb.forget" title="pdb.Pdb.forget"><code class="xref py py-obj docutils literal"><span class="pre">forget</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.format_stack_entry.html#pdb.Pdb.format_stack_entry" title="pdb.Pdb.format_stack_entry"><code class="xref py py-obj docutils literal"><span class="pre">format_stack_entry</span></code></a>(frame_lineno[,&nbsp;lprefix])</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.format_stack_entry.html#pdb.Pdb.format_stack_entry" title="pdb.Pdb.format_stack_entry"><code class="xref py py-obj docutils literal"><span class="pre">format_stack_entry</span></code></a>(frame_lineno[,&nbsp;lprefix])</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.get_all_breaks.html#pdb.Pdb.get_all_breaks" title="pdb.Pdb.get_all_breaks"><code class="xref py py-obj docutils literal"><span class="pre">get_all_breaks</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.get_all_breaks.html#pdb.Pdb.get_all_breaks" title="pdb.Pdb.get_all_breaks"><code class="xref py py-obj docutils literal"><span class="pre">get_all_breaks</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.get_break.html#pdb.Pdb.get_break" title="pdb.Pdb.get_break"><code class="xref py py-obj docutils literal"><span class="pre">get_break</span></code></a>(filename,&nbsp;lineno)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.get_break.html#pdb.Pdb.get_break" title="pdb.Pdb.get_break"><code class="xref py py-obj docutils literal"><span class="pre">get_break</span></code></a>(filename,&nbsp;lineno)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.get_breaks.html#pdb.Pdb.get_breaks" title="pdb.Pdb.get_breaks"><code class="xref py py-obj docutils literal"><span class="pre">get_breaks</span></code></a>(filename,&nbsp;lineno)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.get_breaks.html#pdb.Pdb.get_breaks" title="pdb.Pdb.get_breaks"><code class="xref py py-obj docutils literal"><span class="pre">get_breaks</span></code></a>(filename,&nbsp;lineno)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.get_file_breaks.html#pdb.Pdb.get_file_breaks" title="pdb.Pdb.get_file_breaks"><code class="xref py py-obj docutils literal"><span class="pre">get_file_breaks</span></code></a>(filename)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.get_file_breaks.html#pdb.Pdb.get_file_breaks" title="pdb.Pdb.get_file_breaks"><code class="xref py py-obj docutils literal"><span class="pre">get_file_breaks</span></code></a>(filename)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.get_names.html#pdb.Pdb.get_names" title="pdb.Pdb.get_names"><code class="xref py py-obj docutils literal"><span class="pre">get_names</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.get_names.html#pdb.Pdb.get_names" title="pdb.Pdb.get_names"><code class="xref py py-obj docutils literal"><span class="pre">get_names</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.get_stack.html#pdb.Pdb.get_stack" title="pdb.Pdb.get_stack"><code class="xref py py-obj docutils literal"><span class="pre">get_stack</span></code></a>(f,&nbsp;t)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.get_stack.html#pdb.Pdb.get_stack" title="pdb.Pdb.get_stack"><code class="xref py py-obj docutils literal"><span class="pre">get_stack</span></code></a>(f,&nbsp;t)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.handle_command_def.html#pdb.Pdb.handle_command_def" title="pdb.Pdb.handle_command_def"><code class="xref py py-obj docutils literal"><span class="pre">handle_command_def</span></code></a>(line)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.handle_command_def.html#pdb.Pdb.handle_command_def" title="pdb.Pdb.handle_command_def"><code class="xref py py-obj docutils literal"><span class="pre">handle_command_def</span></code></a>(line)</td>
 <td>Handles one command line during command list definition.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_EOF.html#pdb.Pdb.help_EOF" title="pdb.Pdb.help_EOF"><code class="xref py py-obj docutils literal"><span class="pre">help_EOF</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_EOF.html#pdb.Pdb.help_EOF" title="pdb.Pdb.help_EOF"><code class="xref py py-obj docutils literal"><span class="pre">help_EOF</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_a.html#pdb.Pdb.help_a" title="pdb.Pdb.help_a"><code class="xref py py-obj docutils literal"><span class="pre">help_a</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_a.html#pdb.Pdb.help_a" title="pdb.Pdb.help_a"><code class="xref py py-obj docutils literal"><span class="pre">help_a</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_alias.html#pdb.Pdb.help_alias" title="pdb.Pdb.help_alias"><code class="xref py py-obj docutils literal"><span class="pre">help_alias</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_alias.html#pdb.Pdb.help_alias" title="pdb.Pdb.help_alias"><code class="xref py py-obj docutils literal"><span class="pre">help_alias</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_args.html#pdb.Pdb.help_args" title="pdb.Pdb.help_args"><code class="xref py py-obj docutils literal"><span class="pre">help_args</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_args.html#pdb.Pdb.help_args" title="pdb.Pdb.help_args"><code class="xref py py-obj docutils literal"><span class="pre">help_args</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_b.html#pdb.Pdb.help_b" title="pdb.Pdb.help_b"><code class="xref py py-obj docutils literal"><span class="pre">help_b</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_b.html#pdb.Pdb.help_b" title="pdb.Pdb.help_b"><code class="xref py py-obj docutils literal"><span class="pre">help_b</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_break.html#pdb.Pdb.help_break" title="pdb.Pdb.help_break"><code class="xref py py-obj docutils literal"><span class="pre">help_break</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_break.html#pdb.Pdb.help_break" title="pdb.Pdb.help_break"><code class="xref py py-obj docutils literal"><span class="pre">help_break</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_bt.html#pdb.Pdb.help_bt" title="pdb.Pdb.help_bt"><code class="xref py py-obj docutils literal"><span class="pre">help_bt</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_bt.html#pdb.Pdb.help_bt" title="pdb.Pdb.help_bt"><code class="xref py py-obj docutils literal"><span class="pre">help_bt</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_c.html#pdb.Pdb.help_c" title="pdb.Pdb.help_c"><code class="xref py py-obj docutils literal"><span class="pre">help_c</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_c.html#pdb.Pdb.help_c" title="pdb.Pdb.help_c"><code class="xref py py-obj docutils literal"><span class="pre">help_c</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_cl.html#pdb.Pdb.help_cl" title="pdb.Pdb.help_cl"><code class="xref py py-obj docutils literal"><span class="pre">help_cl</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_cl.html#pdb.Pdb.help_cl" title="pdb.Pdb.help_cl"><code class="xref py py-obj docutils literal"><span class="pre">help_cl</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_clear.html#pdb.Pdb.help_clear" title="pdb.Pdb.help_clear"><code class="xref py py-obj docutils literal"><span class="pre">help_clear</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_clear.html#pdb.Pdb.help_clear" title="pdb.Pdb.help_clear"><code class="xref py py-obj docutils literal"><span class="pre">help_clear</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_commands.html#pdb.Pdb.help_commands" title="pdb.Pdb.help_commands"><code class="xref py py-obj docutils literal"><span class="pre">help_commands</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_commands.html#pdb.Pdb.help_commands" title="pdb.Pdb.help_commands"><code class="xref py py-obj docutils literal"><span class="pre">help_commands</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_condition.html#pdb.Pdb.help_condition" title="pdb.Pdb.help_condition"><code class="xref py py-obj docutils literal"><span class="pre">help_condition</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_condition.html#pdb.Pdb.help_condition" title="pdb.Pdb.help_condition"><code class="xref py py-obj docutils literal"><span class="pre">help_condition</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_cont.html#pdb.Pdb.help_cont" title="pdb.Pdb.help_cont"><code class="xref py py-obj docutils literal"><span class="pre">help_cont</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_cont.html#pdb.Pdb.help_cont" title="pdb.Pdb.help_cont"><code class="xref py py-obj docutils literal"><span class="pre">help_cont</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_continue.html#pdb.Pdb.help_continue" title="pdb.Pdb.help_continue"><code class="xref py py-obj docutils literal"><span class="pre">help_continue</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_continue.html#pdb.Pdb.help_continue" title="pdb.Pdb.help_continue"><code class="xref py py-obj docutils literal"><span class="pre">help_continue</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_d.html#pdb.Pdb.help_d" title="pdb.Pdb.help_d"><code class="xref py py-obj docutils literal"><span class="pre">help_d</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_d.html#pdb.Pdb.help_d" title="pdb.Pdb.help_d"><code class="xref py py-obj docutils literal"><span class="pre">help_d</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_debug.html#pdb.Pdb.help_debug" title="pdb.Pdb.help_debug"><code class="xref py py-obj docutils literal"><span class="pre">help_debug</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_debug.html#pdb.Pdb.help_debug" title="pdb.Pdb.help_debug"><code class="xref py py-obj docutils literal"><span class="pre">help_debug</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_disable.html#pdb.Pdb.help_disable" title="pdb.Pdb.help_disable"><code class="xref py py-obj docutils literal"><span class="pre">help_disable</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_disable.html#pdb.Pdb.help_disable" title="pdb.Pdb.help_disable"><code class="xref py py-obj docutils literal"><span class="pre">help_disable</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_down.html#pdb.Pdb.help_down" title="pdb.Pdb.help_down"><code class="xref py py-obj docutils literal"><span class="pre">help_down</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_down.html#pdb.Pdb.help_down" title="pdb.Pdb.help_down"><code class="xref py py-obj docutils literal"><span class="pre">help_down</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_enable.html#pdb.Pdb.help_enable" title="pdb.Pdb.help_enable"><code class="xref py py-obj docutils literal"><span class="pre">help_enable</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_enable.html#pdb.Pdb.help_enable" title="pdb.Pdb.help_enable"><code class="xref py py-obj docutils literal"><span class="pre">help_enable</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_exec.html#pdb.Pdb.help_exec" title="pdb.Pdb.help_exec"><code class="xref py py-obj docutils literal"><span class="pre">help_exec</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_exec.html#pdb.Pdb.help_exec" title="pdb.Pdb.help_exec"><code class="xref py py-obj docutils literal"><span class="pre">help_exec</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_exit.html#pdb.Pdb.help_exit" title="pdb.Pdb.help_exit"><code class="xref py py-obj docutils literal"><span class="pre">help_exit</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_exit.html#pdb.Pdb.help_exit" title="pdb.Pdb.help_exit"><code class="xref py py-obj docutils literal"><span class="pre">help_exit</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_h.html#pdb.Pdb.help_h" title="pdb.Pdb.help_h"><code class="xref py py-obj docutils literal"><span class="pre">help_h</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_h.html#pdb.Pdb.help_h" title="pdb.Pdb.help_h"><code class="xref py py-obj docutils literal"><span class="pre">help_h</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_help.html#pdb.Pdb.help_help" title="pdb.Pdb.help_help"><code class="xref py py-obj docutils literal"><span class="pre">help_help</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_help.html#pdb.Pdb.help_help" title="pdb.Pdb.help_help"><code class="xref py py-obj docutils literal"><span class="pre">help_help</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_ignore.html#pdb.Pdb.help_ignore" title="pdb.Pdb.help_ignore"><code class="xref py py-obj docutils literal"><span class="pre">help_ignore</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_ignore.html#pdb.Pdb.help_ignore" title="pdb.Pdb.help_ignore"><code class="xref py py-obj docutils literal"><span class="pre">help_ignore</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_j.html#pdb.Pdb.help_j" title="pdb.Pdb.help_j"><code class="xref py py-obj docutils literal"><span class="pre">help_j</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_j.html#pdb.Pdb.help_j" title="pdb.Pdb.help_j"><code class="xref py py-obj docutils literal"><span class="pre">help_j</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_jump.html#pdb.Pdb.help_jump" title="pdb.Pdb.help_jump"><code class="xref py py-obj docutils literal"><span class="pre">help_jump</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_jump.html#pdb.Pdb.help_jump" title="pdb.Pdb.help_jump"><code class="xref py py-obj docutils literal"><span class="pre">help_jump</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_l.html#pdb.Pdb.help_l" title="pdb.Pdb.help_l"><code class="xref py py-obj docutils literal"><span class="pre">help_l</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_l.html#pdb.Pdb.help_l" title="pdb.Pdb.help_l"><code class="xref py py-obj docutils literal"><span class="pre">help_l</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_list.html#pdb.Pdb.help_list" title="pdb.Pdb.help_list"><code class="xref py py-obj docutils literal"><span class="pre">help_list</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_list.html#pdb.Pdb.help_list" title="pdb.Pdb.help_list"><code class="xref py py-obj docutils literal"><span class="pre">help_list</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_n.html#pdb.Pdb.help_n" title="pdb.Pdb.help_n"><code class="xref py py-obj docutils literal"><span class="pre">help_n</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_n.html#pdb.Pdb.help_n" title="pdb.Pdb.help_n"><code class="xref py py-obj docutils literal"><span class="pre">help_n</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_next.html#pdb.Pdb.help_next" title="pdb.Pdb.help_next"><code class="xref py py-obj docutils literal"><span class="pre">help_next</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_next.html#pdb.Pdb.help_next" title="pdb.Pdb.help_next"><code class="xref py py-obj docutils literal"><span class="pre">help_next</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_p.html#pdb.Pdb.help_p" title="pdb.Pdb.help_p"><code class="xref py py-obj docutils literal"><span class="pre">help_p</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_p.html#pdb.Pdb.help_p" title="pdb.Pdb.help_p"><code class="xref py py-obj docutils literal"><span class="pre">help_p</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_pdb.html#pdb.Pdb.help_pdb" title="pdb.Pdb.help_pdb"><code class="xref py py-obj docutils literal"><span class="pre">help_pdb</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_pdb.html#pdb.Pdb.help_pdb" title="pdb.Pdb.help_pdb"><code class="xref py py-obj docutils literal"><span class="pre">help_pdb</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_pp.html#pdb.Pdb.help_pp" title="pdb.Pdb.help_pp"><code class="xref py py-obj docutils literal"><span class="pre">help_pp</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_pp.html#pdb.Pdb.help_pp" title="pdb.Pdb.help_pp"><code class="xref py py-obj docutils literal"><span class="pre">help_pp</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_q.html#pdb.Pdb.help_q" title="pdb.Pdb.help_q"><code class="xref py py-obj docutils literal"><span class="pre">help_q</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_q.html#pdb.Pdb.help_q" title="pdb.Pdb.help_q"><code class="xref py py-obj docutils literal"><span class="pre">help_q</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_quit.html#pdb.Pdb.help_quit" title="pdb.Pdb.help_quit"><code class="xref py py-obj docutils literal"><span class="pre">help_quit</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_quit.html#pdb.Pdb.help_quit" title="pdb.Pdb.help_quit"><code class="xref py py-obj docutils literal"><span class="pre">help_quit</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_r.html#pdb.Pdb.help_r" title="pdb.Pdb.help_r"><code class="xref py py-obj docutils literal"><span class="pre">help_r</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_r.html#pdb.Pdb.help_r" title="pdb.Pdb.help_r"><code class="xref py py-obj docutils literal"><span class="pre">help_r</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_restart.html#pdb.Pdb.help_restart" title="pdb.Pdb.help_restart"><code class="xref py py-obj docutils literal"><span class="pre">help_restart</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_restart.html#pdb.Pdb.help_restart" title="pdb.Pdb.help_restart"><code class="xref py py-obj docutils literal"><span class="pre">help_restart</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_return.html#pdb.Pdb.help_return" title="pdb.Pdb.help_return"><code class="xref py py-obj docutils literal"><span class="pre">help_return</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_return.html#pdb.Pdb.help_return" title="pdb.Pdb.help_return"><code class="xref py py-obj docutils literal"><span class="pre">help_return</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_run.html#pdb.Pdb.help_run" title="pdb.Pdb.help_run"><code class="xref py py-obj docutils literal"><span class="pre">help_run</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_run.html#pdb.Pdb.help_run" title="pdb.Pdb.help_run"><code class="xref py py-obj docutils literal"><span class="pre">help_run</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_s.html#pdb.Pdb.help_s" title="pdb.Pdb.help_s"><code class="xref py py-obj docutils literal"><span class="pre">help_s</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_s.html#pdb.Pdb.help_s" title="pdb.Pdb.help_s"><code class="xref py py-obj docutils literal"><span class="pre">help_s</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_step.html#pdb.Pdb.help_step" title="pdb.Pdb.help_step"><code class="xref py py-obj docutils literal"><span class="pre">help_step</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_step.html#pdb.Pdb.help_step" title="pdb.Pdb.help_step"><code class="xref py py-obj docutils literal"><span class="pre">help_step</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_tbreak.html#pdb.Pdb.help_tbreak" title="pdb.Pdb.help_tbreak"><code class="xref py py-obj docutils literal"><span class="pre">help_tbreak</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_tbreak.html#pdb.Pdb.help_tbreak" title="pdb.Pdb.help_tbreak"><code class="xref py py-obj docutils literal"><span class="pre">help_tbreak</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_u.html#pdb.Pdb.help_u" title="pdb.Pdb.help_u"><code class="xref py py-obj docutils literal"><span class="pre">help_u</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_u.html#pdb.Pdb.help_u" title="pdb.Pdb.help_u"><code class="xref py py-obj docutils literal"><span class="pre">help_u</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_unalias.html#pdb.Pdb.help_unalias" title="pdb.Pdb.help_unalias"><code class="xref py py-obj docutils literal"><span class="pre">help_unalias</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_unalias.html#pdb.Pdb.help_unalias" title="pdb.Pdb.help_unalias"><code class="xref py py-obj docutils literal"><span class="pre">help_unalias</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_unt.html#pdb.Pdb.help_unt" title="pdb.Pdb.help_unt"><code class="xref py py-obj docutils literal"><span class="pre">help_unt</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_unt.html#pdb.Pdb.help_unt" title="pdb.Pdb.help_unt"><code class="xref py py-obj docutils literal"><span class="pre">help_unt</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_until.html#pdb.Pdb.help_until" title="pdb.Pdb.help_until"><code class="xref py py-obj docutils literal"><span class="pre">help_until</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_until.html#pdb.Pdb.help_until" title="pdb.Pdb.help_until"><code class="xref py py-obj docutils literal"><span class="pre">help_until</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_up.html#pdb.Pdb.help_up" title="pdb.Pdb.help_up"><code class="xref py py-obj docutils literal"><span class="pre">help_up</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_up.html#pdb.Pdb.help_up" title="pdb.Pdb.help_up"><code class="xref py py-obj docutils literal"><span class="pre">help_up</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_w.html#pdb.Pdb.help_w" title="pdb.Pdb.help_w"><code class="xref py py-obj docutils literal"><span class="pre">help_w</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_w.html#pdb.Pdb.help_w" title="pdb.Pdb.help_w"><code class="xref py py-obj docutils literal"><span class="pre">help_w</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_whatis.html#pdb.Pdb.help_whatis" title="pdb.Pdb.help_whatis"><code class="xref py py-obj docutils literal"><span class="pre">help_whatis</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_whatis.html#pdb.Pdb.help_whatis" title="pdb.Pdb.help_whatis"><code class="xref py py-obj docutils literal"><span class="pre">help_whatis</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.help_where.html#pdb.Pdb.help_where" title="pdb.Pdb.help_where"><code class="xref py py-obj docutils literal"><span class="pre">help_where</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.help_where.html#pdb.Pdb.help_where" title="pdb.Pdb.help_where"><code class="xref py py-obj docutils literal"><span class="pre">help_where</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.interaction.html#pdb.Pdb.interaction" title="pdb.Pdb.interaction"><code class="xref py py-obj docutils literal"><span class="pre">interaction</span></code></a>(frame,&nbsp;traceback)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.interaction.html#pdb.Pdb.interaction" title="pdb.Pdb.interaction"><code class="xref py py-obj docutils literal"><span class="pre">interaction</span></code></a>(frame,&nbsp;traceback)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.is_skipped_module.html#pdb.Pdb.is_skipped_module" title="pdb.Pdb.is_skipped_module"><code class="xref py py-obj docutils literal"><span class="pre">is_skipped_module</span></code></a>(module_name)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.is_skipped_module.html#pdb.Pdb.is_skipped_module" title="pdb.Pdb.is_skipped_module"><code class="xref py py-obj docutils literal"><span class="pre">is_skipped_module</span></code></a>(module_name)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.lineinfo.html#pdb.Pdb.lineinfo" title="pdb.Pdb.lineinfo"><code class="xref py py-obj docutils literal"><span class="pre">lineinfo</span></code></a>(identifier)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.lineinfo.html#pdb.Pdb.lineinfo" title="pdb.Pdb.lineinfo"><code class="xref py py-obj docutils literal"><span class="pre">lineinfo</span></code></a>(identifier)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.lookupmodule.html#pdb.Pdb.lookupmodule" title="pdb.Pdb.lookupmodule"><code class="xref py py-obj docutils literal"><span class="pre">lookupmodule</span></code></a>(filename)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.lookupmodule.html#pdb.Pdb.lookupmodule" title="pdb.Pdb.lookupmodule"><code class="xref py py-obj docutils literal"><span class="pre">lookupmodule</span></code></a>(filename)</td>
 <td>Helper function for break/clear parsing &#8211; may be overridden.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.onecmd.html#pdb.Pdb.onecmd" title="pdb.Pdb.onecmd"><code class="xref py py-obj docutils literal"><span class="pre">onecmd</span></code></a>(line)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.onecmd.html#pdb.Pdb.onecmd" title="pdb.Pdb.onecmd"><code class="xref py py-obj docutils literal"><span class="pre">onecmd</span></code></a>(line)</td>
 <td>Interpret the argument as though it had been typed in response to the prompt.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.parseline.html#pdb.Pdb.parseline" title="pdb.Pdb.parseline"><code class="xref py py-obj docutils literal"><span class="pre">parseline</span></code></a>(line)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.parseline.html#pdb.Pdb.parseline" title="pdb.Pdb.parseline"><code class="xref py py-obj docutils literal"><span class="pre">parseline</span></code></a>(line)</td>
 <td>Parse the line into a command name and a string containing the arguments.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.postcmd.html#pdb.Pdb.postcmd" title="pdb.Pdb.postcmd"><code class="xref py py-obj docutils literal"><span class="pre">postcmd</span></code></a>(stop,&nbsp;line)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.postcmd.html#pdb.Pdb.postcmd" title="pdb.Pdb.postcmd"><code class="xref py py-obj docutils literal"><span class="pre">postcmd</span></code></a>(stop,&nbsp;line)</td>
 <td>Hook method executed just after a command dispatch is finished.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.postloop.html#pdb.Pdb.postloop" title="pdb.Pdb.postloop"><code class="xref py py-obj docutils literal"><span class="pre">postloop</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.postloop.html#pdb.Pdb.postloop" title="pdb.Pdb.postloop"><code class="xref py py-obj docutils literal"><span class="pre">postloop</span></code></a>()</td>
 <td>Hook method executed once when the cmdloop() method is about to return.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.precmd.html#pdb.Pdb.precmd" title="pdb.Pdb.precmd"><code class="xref py py-obj docutils literal"><span class="pre">precmd</span></code></a>(line)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.precmd.html#pdb.Pdb.precmd" title="pdb.Pdb.precmd"><code class="xref py py-obj docutils literal"><span class="pre">precmd</span></code></a>(line)</td>
 <td>Handle alias expansion and &#8216;;;&#8217; separator.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.preloop.html#pdb.Pdb.preloop" title="pdb.Pdb.preloop"><code class="xref py py-obj docutils literal"><span class="pre">preloop</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.preloop.html#pdb.Pdb.preloop" title="pdb.Pdb.preloop"><code class="xref py py-obj docutils literal"><span class="pre">preloop</span></code></a>()</td>
 <td>Hook method executed once when the cmdloop() method is called.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.print_stack_entry.html#pdb.Pdb.print_stack_entry" title="pdb.Pdb.print_stack_entry"><code class="xref py py-obj docutils literal"><span class="pre">print_stack_entry</span></code></a>(frame_lineno[,&nbsp;prompt_prefix])</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.print_stack_entry.html#pdb.Pdb.print_stack_entry" title="pdb.Pdb.print_stack_entry"><code class="xref py py-obj docutils literal"><span class="pre">print_stack_entry</span></code></a>(frame_lineno[,&nbsp;prompt_prefix])</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.print_stack_trace.html#pdb.Pdb.print_stack_trace" title="pdb.Pdb.print_stack_trace"><code class="xref py py-obj docutils literal"><span class="pre">print_stack_trace</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.print_stack_trace.html#pdb.Pdb.print_stack_trace" title="pdb.Pdb.print_stack_trace"><code class="xref py py-obj docutils literal"><span class="pre">print_stack_trace</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.print_topics.html#pdb.Pdb.print_topics" title="pdb.Pdb.print_topics"><code class="xref py py-obj docutils literal"><span class="pre">print_topics</span></code></a>(header,&nbsp;cmds,&nbsp;cmdlen,&nbsp;maxcol)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.print_topics.html#pdb.Pdb.print_topics" title="pdb.Pdb.print_topics"><code class="xref py py-obj docutils literal"><span class="pre">print_topics</span></code></a>(header,&nbsp;cmds,&nbsp;cmdlen,&nbsp;maxcol)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.reset.html#pdb.Pdb.reset" title="pdb.Pdb.reset"><code class="xref py py-obj docutils literal"><span class="pre">reset</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.reset.html#pdb.Pdb.reset" title="pdb.Pdb.reset"><code class="xref py py-obj docutils literal"><span class="pre">reset</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.run.html#pdb.Pdb.run" title="pdb.Pdb.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>(cmd[,&nbsp;globals,&nbsp;locals])</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.run.html#pdb.Pdb.run" title="pdb.Pdb.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>(cmd[,&nbsp;globals,&nbsp;locals])</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.runcall.html#pdb.Pdb.runcall" title="pdb.Pdb.runcall"><code class="xref py py-obj docutils literal"><span class="pre">runcall</span></code></a>(func,&nbsp;*args,&nbsp;**kwds)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.runcall.html#pdb.Pdb.runcall" title="pdb.Pdb.runcall"><code class="xref py py-obj docutils literal"><span class="pre">runcall</span></code></a>(func,&nbsp;*args,&nbsp;**kwds)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.runctx.html#pdb.Pdb.runctx" title="pdb.Pdb.runctx"><code class="xref py py-obj docutils literal"><span class="pre">runctx</span></code></a>(cmd,&nbsp;globals,&nbsp;locals)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.runctx.html#pdb.Pdb.runctx" title="pdb.Pdb.runctx"><code class="xref py py-obj docutils literal"><span class="pre">runctx</span></code></a>(cmd,&nbsp;globals,&nbsp;locals)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.runeval.html#pdb.Pdb.runeval" title="pdb.Pdb.runeval"><code class="xref py py-obj docutils literal"><span class="pre">runeval</span></code></a>(expr[,&nbsp;globals,&nbsp;locals])</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.runeval.html#pdb.Pdb.runeval" title="pdb.Pdb.runeval"><code class="xref py py-obj docutils literal"><span class="pre">runeval</span></code></a>(expr[,&nbsp;globals,&nbsp;locals])</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.set_break.html#pdb.Pdb.set_break" title="pdb.Pdb.set_break"><code class="xref py py-obj docutils literal"><span class="pre">set_break</span></code></a>(filename,&nbsp;lineno[,&nbsp;temporary,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.set_break.html#pdb.Pdb.set_break" title="pdb.Pdb.set_break"><code class="xref py py-obj docutils literal"><span class="pre">set_break</span></code></a>(filename,&nbsp;lineno[,&nbsp;temporary,&nbsp;...])</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.set_continue.html#pdb.Pdb.set_continue" title="pdb.Pdb.set_continue"><code class="xref py py-obj docutils literal"><span class="pre">set_continue</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.set_continue.html#pdb.Pdb.set_continue" title="pdb.Pdb.set_continue"><code class="xref py py-obj docutils literal"><span class="pre">set_continue</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.set_next.html#pdb.Pdb.set_next" title="pdb.Pdb.set_next"><code class="xref py py-obj docutils literal"><span class="pre">set_next</span></code></a>(frame)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.set_next.html#pdb.Pdb.set_next" title="pdb.Pdb.set_next"><code class="xref py py-obj docutils literal"><span class="pre">set_next</span></code></a>(frame)</td>
 <td>Stop on the next line in or below the given frame.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.set_quit.html#pdb.Pdb.set_quit" title="pdb.Pdb.set_quit"><code class="xref py py-obj docutils literal"><span class="pre">set_quit</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.set_quit.html#pdb.Pdb.set_quit" title="pdb.Pdb.set_quit"><code class="xref py py-obj docutils literal"><span class="pre">set_quit</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.set_return.html#pdb.Pdb.set_return" title="pdb.Pdb.set_return"><code class="xref py py-obj docutils literal"><span class="pre">set_return</span></code></a>(frame)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.set_return.html#pdb.Pdb.set_return" title="pdb.Pdb.set_return"><code class="xref py py-obj docutils literal"><span class="pre">set_return</span></code></a>(frame)</td>
 <td>Stop when returning from the given frame.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.set_step.html#pdb.Pdb.set_step" title="pdb.Pdb.set_step"><code class="xref py py-obj docutils literal"><span class="pre">set_step</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.set_step.html#pdb.Pdb.set_step" title="pdb.Pdb.set_step"><code class="xref py py-obj docutils literal"><span class="pre">set_step</span></code></a>()</td>
 <td>Stop after one line of code.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.set_trace.html#pdb.Pdb.set_trace" title="pdb.Pdb.set_trace"><code class="xref py py-obj docutils literal"><span class="pre">set_trace</span></code></a>([frame])</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.set_trace.html#pdb.Pdb.set_trace" title="pdb.Pdb.set_trace"><code class="xref py py-obj docutils literal"><span class="pre">set_trace</span></code></a>([frame])</td>
 <td>Start debugging from <cite>frame</cite>.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.set_until.html#pdb.Pdb.set_until" title="pdb.Pdb.set_until"><code class="xref py py-obj docutils literal"><span class="pre">set_until</span></code></a>(frame)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.set_until.html#pdb.Pdb.set_until" title="pdb.Pdb.set_until"><code class="xref py py-obj docutils literal"><span class="pre">set_until</span></code></a>(frame)</td>
 <td>Stop when the line with the line no greater than the current one is</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.setup.html#pdb.Pdb.setup" title="pdb.Pdb.setup"><code class="xref py py-obj docutils literal"><span class="pre">setup</span></code></a>(f,&nbsp;t)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.setup.html#pdb.Pdb.setup" title="pdb.Pdb.setup"><code class="xref py py-obj docutils literal"><span class="pre">setup</span></code></a>(f,&nbsp;t)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.stop_here.html#pdb.Pdb.stop_here" title="pdb.Pdb.stop_here"><code class="xref py py-obj docutils literal"><span class="pre">stop_here</span></code></a>(frame)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.stop_here.html#pdb.Pdb.stop_here" title="pdb.Pdb.stop_here"><code class="xref py py-obj docutils literal"><span class="pre">stop_here</span></code></a>(frame)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.trace_dispatch.html#pdb.Pdb.trace_dispatch" title="pdb.Pdb.trace_dispatch"><code class="xref py py-obj docutils literal"><span class="pre">trace_dispatch</span></code></a>(frame,&nbsp;event,&nbsp;arg)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.trace_dispatch.html#pdb.Pdb.trace_dispatch" title="pdb.Pdb.trace_dispatch"><code class="xref py py-obj docutils literal"><span class="pre">trace_dispatch</span></code></a>(frame,&nbsp;event,&nbsp;arg)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.user_call.html#pdb.Pdb.user_call" title="pdb.Pdb.user_call"><code class="xref py py-obj docutils literal"><span class="pre">user_call</span></code></a>(frame,&nbsp;argument_list)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.user_call.html#pdb.Pdb.user_call" title="pdb.Pdb.user_call"><code class="xref py py-obj docutils literal"><span class="pre">user_call</span></code></a>(frame,&nbsp;argument_list)</td>
 <td>This method is called when there is the remote possibility that we ever need to stop in this function.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.user_exception.html#pdb.Pdb.user_exception" title="pdb.Pdb.user_exception"><code class="xref py py-obj docutils literal"><span class="pre">user_exception</span></code></a>(frame,&nbsp;exc_info)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.user_exception.html#pdb.Pdb.user_exception" title="pdb.Pdb.user_exception"><code class="xref py py-obj docutils literal"><span class="pre">user_exception</span></code></a>(frame,&nbsp;exc_info)</td>
 <td>This function is called if an exception occurs, but only if we are to stop at or just below this level.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.user_line.html#pdb.Pdb.user_line" title="pdb.Pdb.user_line"><code class="xref py py-obj docutils literal"><span class="pre">user_line</span></code></a>(frame)</td>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.user_line.html#pdb.Pdb.user_line" title="pdb.Pdb.user_line"><code class="xref py py-obj docutils literal"><span class="pre">user_line</span></code></a>(frame)</td>
 <td>This function is called when we stop or break at this line.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.user_return.html#pdb.Pdb.user_return" title="pdb.Pdb.user_return"><code class="xref py py-obj docutils literal"><span class="pre">user_return</span></code></a>(frame,&nbsp;return_value)</td>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.user_return.html#pdb.Pdb.user_return" title="pdb.Pdb.user_return"><code class="xref py py-obj docutils literal"><span class="pre">user_return</span></code></a>(frame,&nbsp;return_value)</td>
 <td>This function is called when a return trap is set here.</td>
 </tr>
 </tbody>
 </table>
-</dd></dl>
-
+</div>
+<div class="section" id="attributes">
+<h2>2.6.2.1.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.commands_resuming.html#pdb.Pdb.commands_resuming" title="pdb.Pdb.commands_resuming"><code class="xref py py-obj docutils literal"><span class="pre">commands_resuming</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.doc_header.html#pdb.Pdb.doc_header" title="pdb.Pdb.doc_header"><code class="xref py py-obj docutils literal"><span class="pre">doc_header</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.doc_leader.html#pdb.Pdb.doc_leader" title="pdb.Pdb.doc_leader"><code class="xref py py-obj docutils literal"><span class="pre">doc_leader</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.identchars.html#pdb.Pdb.identchars" title="pdb.Pdb.identchars"><code class="xref py py-obj docutils literal"><span class="pre">identchars</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.intro.html#pdb.Pdb.intro" title="pdb.Pdb.intro"><code class="xref py py-obj docutils literal"><span class="pre">intro</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.lastcmd.html#pdb.Pdb.lastcmd" title="pdb.Pdb.lastcmd"><code class="xref py py-obj docutils literal"><span class="pre">lastcmd</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.misc_header.html#pdb.Pdb.misc_header" title="pdb.Pdb.misc_header"><code class="xref py py-obj docutils literal"><span class="pre">misc_header</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.nohelp.html#pdb.Pdb.nohelp" title="pdb.Pdb.nohelp"><code class="xref py py-obj docutils literal"><span class="pre">nohelp</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.prompt.html#pdb.Pdb.prompt" title="pdb.Pdb.prompt"><code class="xref py py-obj docutils literal"><span class="pre">prompt</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.ruler.html#pdb.Pdb.ruler" title="pdb.Pdb.ruler"><code class="xref py py-obj docutils literal"><span class="pre">ruler</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pdb.Pdb.undoc_header.html#pdb.Pdb.undoc_header" title="pdb.Pdb.undoc_header"><code class="xref py py-obj docutils literal"><span class="pre">undoc_header</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pdb.Pdb.use_rawinput.html#pdb.Pdb.use_rawinput" title="pdb.Pdb.use_rawinput"><code class="xref py py-obj docutils literal"><span class="pre">use_rawinput</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -712,7 +755,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pdb.Pdb.bp_commands.html" class="btn btn-neutral float-right" title="2.6.2.1.1. pdb.Pdb.bp_commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pdb.Pdb.__init__.html" class="btn btn-neutral float-right" title="2.6.2.1.1.1. pdb.Pdb.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../pdb.test.html" class="btn btn-neutral" title="2.6.1.11. pdb.test" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

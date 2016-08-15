@@ -2,16 +2,15 @@ urllib2.HTTPDefaultErrorHandler
 ===============================
 
 .. currentmodule:: urllib2
-
-:func:`HTTPDefaultErrorHandler.__init__`
-
 .. autoclass:: HTTPDefaultErrorHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~HTTPDefaultErrorHandler.add_parent
@@ -22,11 +21,10 @@ urllib2.HTTPDefaultErrorHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~HTTPDefaultErrorHandler.handler_order

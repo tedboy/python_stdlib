@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.9.2.8. sqlite3.Row &mdash; Python Standard Library</title>
+  <title>2.9.2.5. sqlite3.Row &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="2.9. sqlite3" href="../sqlite3.html"/>
-        <link rel="next" title="2.9.2.8.1. sqlite3.Row.keys" href="sqlite3.Row.keys.html"/>
-        <link rel="prev" title="2.9.2.7. sqlite3.PrepareProtocol" href="sqlite3.PrepareProtocol.html"/> 
+        <link rel="next" title="2.9.2.5.1.1. sqlite3.Row.keys" href="sqlite3.Row.keys.html"/>
+        <link rel="prev" title="2.9.2.4. sqlite3.PrepareProtocol" href="sqlite3.PrepareProtocol.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -98,17 +98,12 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../sqlite3.html">2.9. sqlite3</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../sqlite3.html#functions">2.9.1. Functions</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../sqlite3.html#classes">2.9.2. Classes</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Binary.html">2.9.2.1. sqlite3.Binary</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cache.html">2.9.2.2. sqlite3.Cache</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Connection.html">2.9.2.3. sqlite3.Connection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cursor.html">2.9.2.4. sqlite3.Cursor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Date.html">2.9.2.5. sqlite3.Date</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.OptimizedUnicode.html">2.9.2.6. sqlite3.OptimizedUnicode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.PrepareProtocol.html">2.9.2.7. sqlite3.PrepareProtocol</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">2.9.2.8. sqlite3.Row</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Statement.html">2.9.2.9. sqlite3.Statement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Time.html">2.9.2.10. sqlite3.Time</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Timestamp.html">2.9.2.11. sqlite3.Timestamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cache.html">2.9.2.1. sqlite3.Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Connection.html">2.9.2.2. sqlite3.Connection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cursor.html">2.9.2.3. sqlite3.Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.PrepareProtocol.html">2.9.2.4. sqlite3.PrepareProtocol</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">2.9.2.5. sqlite3.Row</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Statement.html">2.9.2.6. sqlite3.Statement</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../sqlite3.html#exceptions">2.9.3. Exceptions</a></li>
@@ -137,7 +132,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -168,7 +163,7 @@
         
           <li><a href="../sqlite3.html">2.9. sqlite3</a> &raquo;</li>
         
-      <li>2.9.2.8. sqlite3.Row</li>
+      <li>2.9.2.5. sqlite3.Row</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -186,12 +181,20 @@
            <div itemprop="articleBody">
             
   <div class="section" id="sqlite3-row">
-<h1>2.9.2.8. sqlite3.Row<a class="headerlink" href="#sqlite3-row" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="#sqlite3.Row.__init__" title="sqlite3.Row.__init__"><code class="xref py py-func docutils literal"><span class="pre">Row.__init__()</span></code></a></p>
+<h1>2.9.2.5. sqlite3.Row<a class="headerlink" href="#sqlite3-row" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sqlite3.Row">
 <em class="property">class </em><code class="descclassname">sqlite3.</code><code class="descname">Row</code><a class="headerlink" href="#sqlite3.Row" title="Permalink to this definition">¶</a></dt>
-<dd><p class="rubric">Methods</p>
+<dd><dl class="attribute">
+<dt id="sqlite3.Row.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sqlite3.Row.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>2.9.2.5.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -203,14 +206,7 @@
 </tr>
 </tbody>
 </table>
-<dl class="attribute">
-<dt id="sqlite3.Row.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sqlite3.Row.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
-</dd></dl>
-
-</dd></dl>
-
+</div>
 </div>
 
 
@@ -220,10 +216,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="sqlite3.Row.keys.html" class="btn btn-neutral float-right" title="2.9.2.8.1. sqlite3.Row.keys" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sqlite3.Row.keys.html" class="btn btn-neutral float-right" title="2.9.2.5.1.1. sqlite3.Row.keys" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="sqlite3.PrepareProtocol.html" class="btn btn-neutral" title="2.9.2.7. sqlite3.PrepareProtocol" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="sqlite3.PrepareProtocol.html" class="btn btn-neutral" title="2.9.2.4. sqlite3.PrepareProtocol" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

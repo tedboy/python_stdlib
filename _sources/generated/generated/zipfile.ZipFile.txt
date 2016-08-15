@@ -2,16 +2,15 @@ zipfile.ZipFile
 ===============
 
 .. currentmodule:: zipfile
-
-:func:`ZipFile.__init__`
-
 .. autoclass:: ZipFile
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~ZipFile.__init__
@@ -33,11 +32,10 @@ zipfile.ZipFile
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~ZipFile.comment

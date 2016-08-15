@@ -2,16 +2,15 @@ imp.NullImporter
 ================
 
 .. currentmodule:: imp
-
-:func:`NullImporter.__init__`
-
 .. autoclass:: NullImporter
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~NullImporter.find_module

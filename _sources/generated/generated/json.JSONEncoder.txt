@@ -2,16 +2,15 @@ json.JSONEncoder
 ================
 
 .. currentmodule:: json
-
-:func:`JSONEncoder.__init__`
-
 .. autoclass:: JSONEncoder
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~JSONEncoder.__init__
@@ -23,11 +22,10 @@ json.JSONEncoder
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~JSONEncoder.item_separator

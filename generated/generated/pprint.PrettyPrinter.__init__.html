@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pprint.PrettyPrinter.__init__ &mdash; Python Standard Library</title>
+  <title>2.7.4.1.1.1. pprint.PrettyPrinter.__init__ &mdash; My Project v1</title>
   
 
   
@@ -30,7 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/> 
+    <link rel="top" title="My Project v1" href="../../index.html"/>
+        <link rel="up" title="2.7.4.1. pprint.PrettyPrinter" href="pprint.PrettyPrinter.html"/>
+        <link rel="next" title="2.7.4.1.1.2. pprint.PrettyPrinter.format" href="pprint.PrettyPrinter.format.html"/>
+        <link rel="prev" title="2.7.4.1. pprint.PrettyPrinter" href="pprint.PrettyPrinter.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -49,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -81,9 +84,34 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../collections.html">2.1. collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../datetime.html">2.2. datetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glob.html">2.3. glob</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../itertools.html">2.4. itertools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math.html">2.5. math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pdb.html">2.6. pdb</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../pprint.html">2.7. pprint</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../pprint.html#classes">2.7.1. Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pprint.html#functions">2.7.2. Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pprint.html#id1">2.7.3. Functions</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../pprint.html#id2">2.7.4. Classes</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="pprint.PrettyPrinter.html">2.7.4.1. pprint.PrettyPrinter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../random.html">2.8. random</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sqlite3.html">2.9. sqlite3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../subprocess.html">2.10. subprocess</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">2.11. time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../timeit.html">2.12. timeit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Tkinter.html">2.13. Tkinter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types.html">2.14. types</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
 </ul>
@@ -100,7 +128,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -127,7 +155,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>pprint.PrettyPrinter.__init__</li>
+          <li><a href="../../main2.html">2. Somewhat frequently used</a> &raquo;</li>
+        
+          <li><a href="../pprint.html">2.7. pprint</a> &raquo;</li>
+        
+          <li><a href="pprint.PrettyPrinter.html">2.7.4.1. pprint.PrettyPrinter</a> &raquo;</li>
+        
+      <li>2.7.4.1.1.1. pprint.PrettyPrinter.__init__</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -145,7 +179,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="pprint-prettyprinter-init">
-<h1>pprint.PrettyPrinter.__init__<a class="headerlink" href="#pprint-prettyprinter-init" title="Permalink to this headline">¶</a></h1>
+<h1>2.7.4.1.1.1. pprint.PrettyPrinter.__init__<a class="headerlink" href="#pprint-prettyprinter-init" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
 <dt id="pprint.PrettyPrinter.__init__">
 <code class="descclassname">PrettyPrinter.</code><code class="descname">__init__</code><span class="sig-paren">(</span><em>indent=1</em>, <em>width=80</em>, <em>depth=None</em>, <em>stream=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pprint.html#PrettyPrinter.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pprint.PrettyPrinter.__init__" title="Permalink to this definition">¶</a></dt>
@@ -170,6 +204,15 @@ output stream available at construction will be used.</dd>
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pprint.PrettyPrinter.format.html" class="btn btn-neutral float-right" title="2.7.4.1.1.2. pprint.PrettyPrinter.format" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pprint.PrettyPrinter.html" class="btn btn-neutral" title="2.7.4.1. pprint.PrettyPrinter" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

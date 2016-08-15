@@ -2,16 +2,15 @@ urllib2.HTTPCookieProcessor
 ===========================
 
 .. currentmodule:: urllib2
-
-:func:`HTTPCookieProcessor.__init__`
-
 .. autoclass:: HTTPCookieProcessor
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~HTTPCookieProcessor.__init__
@@ -26,11 +25,10 @@ urllib2.HTTPCookieProcessor
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~HTTPCookieProcessor.handler_order

@@ -2,16 +2,15 @@ string.Template
 ===============
 
 .. currentmodule:: string
-
-:func:`Template.__init__`
-
 .. autoclass:: Template
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Template.__init__
@@ -22,11 +21,10 @@ string.Template
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Template.delimiter

@@ -2,16 +2,15 @@ urllib2.ProxyBasicAuthHandler
 =============================
 
 .. currentmodule:: urllib2
-
-:func:`ProxyBasicAuthHandler.__init__`
-
 .. autoclass:: ProxyBasicAuthHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~ProxyBasicAuthHandler.__init__
@@ -25,11 +24,10 @@ urllib2.ProxyBasicAuthHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~ProxyBasicAuthHandler.auth_header

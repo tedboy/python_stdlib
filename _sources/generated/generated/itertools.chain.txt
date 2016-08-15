@@ -2,16 +2,15 @@ itertools.chain
 ===============
 
 .. currentmodule:: itertools
-
-:func:`chain.__init__`
-
 .. autoclass:: chain
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~chain.from_iterable
@@ -20,11 +19,10 @@ itertools.chain
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~chain.next

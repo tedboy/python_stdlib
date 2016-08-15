@@ -2,16 +2,15 @@ __builtin__.memoryview
 ======================
 
 .. currentmodule:: __builtin__
-
-:func:`memoryview.__init__`
-
 .. autoclass:: memoryview
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~memoryview.tobytes
@@ -21,11 +20,10 @@ __builtin__.memoryview
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~memoryview.format

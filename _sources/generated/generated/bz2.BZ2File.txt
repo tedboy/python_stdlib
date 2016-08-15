@@ -2,16 +2,15 @@ bz2.BZ2File
 ===========
 
 .. currentmodule:: bz2
-
-:func:`BZ2File.__init__`
-
 .. autoclass:: BZ2File
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~BZ2File.close
@@ -28,11 +27,10 @@ bz2.BZ2File
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~BZ2File.closed

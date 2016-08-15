@@ -2,16 +2,15 @@ popen2.Popen3
 =============
 
 .. currentmodule:: popen2
-
-:func:`Popen3.__init__`
-
 .. autoclass:: Popen3
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Popen3.__init__
@@ -22,11 +21,10 @@ popen2.Popen3
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Popen3.sts

@@ -2,16 +2,15 @@ inspect.ArgInfo
 ===============
 
 .. currentmodule:: inspect
-
-:func:`ArgInfo.__init__`
-
 .. autoclass:: ArgInfo
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~ArgInfo.count
@@ -21,11 +20,10 @@ inspect.ArgInfo
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~ArgInfo.args

@@ -2,16 +2,15 @@ bz2.BZ2Decompressor
 ===================
 
 .. currentmodule:: bz2
-
-:func:`BZ2Decompressor.__init__`
-
 .. autoclass:: BZ2Decompressor
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~BZ2Decompressor.decompress
@@ -20,11 +19,10 @@ bz2.BZ2Decompressor
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~BZ2Decompressor.unused_data

@@ -2,16 +2,15 @@ unicodedata.UCD
 ===============
 
 .. currentmodule:: unicodedata
-
-:func:`UCD.__init__`
-
 .. autoclass:: UCD
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~UCD.bidirectional
@@ -31,11 +30,10 @@ unicodedata.UCD
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~UCD.unidata_version

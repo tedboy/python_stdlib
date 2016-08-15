@@ -2,16 +2,15 @@ inspect.Traceback
 =================
 
 .. currentmodule:: inspect
-
-:func:`Traceback.__init__`
-
 .. autoclass:: Traceback
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Traceback.count
@@ -20,11 +19,10 @@ inspect.Traceback
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Traceback.code_context

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.9.2.3. sqlite3.Connection &mdash; Python Standard Library</title>
+  <title>2.9.2.2. sqlite3.Connection &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="2.9. sqlite3" href="../sqlite3.html"/>
-        <link rel="next" title="2.9.2.3.1. sqlite3.Connection.isolation_level" href="sqlite3.Connection.isolation_level.html"/>
-        <link rel="prev" title="2.9.2.2.2. sqlite3.Cache.get" href="sqlite3.Cache.get.html"/> 
+        <link rel="next" title="2.9.2.2.1.1. sqlite3.Connection.close" href="sqlite3.Connection.close.html"/>
+        <link rel="prev" title="2.9.2.1.1.2. sqlite3.Cache.get" href="sqlite3.Cache.get.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -98,17 +98,12 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../sqlite3.html">2.9. sqlite3</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../sqlite3.html#functions">2.9.1. Functions</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../sqlite3.html#classes">2.9.2. Classes</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Binary.html">2.9.2.1. sqlite3.Binary</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cache.html">2.9.2.2. sqlite3.Cache</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">2.9.2.3. sqlite3.Connection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cursor.html">2.9.2.4. sqlite3.Cursor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Date.html">2.9.2.5. sqlite3.Date</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.OptimizedUnicode.html">2.9.2.6. sqlite3.OptimizedUnicode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.PrepareProtocol.html">2.9.2.7. sqlite3.PrepareProtocol</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Row.html">2.9.2.8. sqlite3.Row</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Statement.html">2.9.2.9. sqlite3.Statement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Time.html">2.9.2.10. sqlite3.Time</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Timestamp.html">2.9.2.11. sqlite3.Timestamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cache.html">2.9.2.1. sqlite3.Cache</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">2.9.2.2. sqlite3.Connection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cursor.html">2.9.2.3. sqlite3.Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.PrepareProtocol.html">2.9.2.4. sqlite3.PrepareProtocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Row.html">2.9.2.5. sqlite3.Row</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Statement.html">2.9.2.6. sqlite3.Statement</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../sqlite3.html#exceptions">2.9.3. Exceptions</a></li>
@@ -137,7 +132,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -168,7 +163,7 @@
         
           <li><a href="../sqlite3.html">2.9. sqlite3</a> &raquo;</li>
         
-      <li>2.9.2.3. sqlite3.Connection</li>
+      <li>2.9.2.2. sqlite3.Connection</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -186,81 +181,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="sqlite3-connection">
-<h1>2.9.2.3. sqlite3.Connection<a class="headerlink" href="#sqlite3-connection" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="#sqlite3.Connection.__init__" title="sqlite3.Connection.__init__"><code class="xref py py-func docutils literal"><span class="pre">Connection.__init__()</span></code></a></p>
+<h1>2.9.2.2. sqlite3.Connection<a class="headerlink" href="#sqlite3-connection" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sqlite3.Connection">
 <em class="property">class </em><code class="descclassname">sqlite3.</code><code class="descname">Connection</code><a class="headerlink" href="#sqlite3.Connection" title="Permalink to this definition">¶</a></dt>
 <dd><p>SQLite database connection object.</p>
-<p class="rubric">Attributes</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.isolation_level.html#sqlite3.Connection.isolation_level" title="sqlite3.Connection.isolation_level"><code class="xref py py-obj docutils literal"><span class="pre">isolation_level</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.total_changes.html#sqlite3.Connection.total_changes" title="sqlite3.Connection.total_changes"><code class="xref py py-obj docutils literal"><span class="pre">total_changes</span></code></a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">__call__</span></code>(...)&nbsp;&lt;==&gt;&nbsp;x(...)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.close.html#sqlite3.Connection.close" title="sqlite3.Connection.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a></td>
-<td>Closes the connection.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.commit.html#sqlite3.Connection.commit" title="sqlite3.Connection.commit"><code class="xref py py-obj docutils literal"><span class="pre">commit</span></code></a></td>
-<td>Commit the current transaction.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.create_aggregate.html#sqlite3.Connection.create_aggregate" title="sqlite3.Connection.create_aggregate"><code class="xref py py-obj docutils literal"><span class="pre">create_aggregate</span></code></a></td>
-<td>Creates a new aggregate.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.create_collation.html#sqlite3.Connection.create_collation" title="sqlite3.Connection.create_collation"><code class="xref py py-obj docutils literal"><span class="pre">create_collation</span></code></a></td>
-<td>Creates a collation function.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.create_function.html#sqlite3.Connection.create_function" title="sqlite3.Connection.create_function"><code class="xref py py-obj docutils literal"><span class="pre">create_function</span></code></a></td>
-<td>Creates a new function.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.cursor.html#sqlite3.Connection.cursor" title="sqlite3.Connection.cursor"><code class="xref py py-obj docutils literal"><span class="pre">cursor</span></code></a></td>
-<td>Return a cursor for the connection.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.execute.html#sqlite3.Connection.execute" title="sqlite3.Connection.execute"><code class="xref py py-obj docutils literal"><span class="pre">execute</span></code></a></td>
-<td>Executes a SQL statement.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.executemany.html#sqlite3.Connection.executemany" title="sqlite3.Connection.executemany"><code class="xref py py-obj docutils literal"><span class="pre">executemany</span></code></a></td>
-<td>Repeatedly executes a SQL statement.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.executescript.html#sqlite3.Connection.executescript" title="sqlite3.Connection.executescript"><code class="xref py py-obj docutils literal"><span class="pre">executescript</span></code></a></td>
-<td>Executes a multiple SQL statements at once.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.interrupt.html#sqlite3.Connection.interrupt" title="sqlite3.Connection.interrupt"><code class="xref py py-obj docutils literal"><span class="pre">interrupt</span></code></a></td>
-<td>Abort any pending database operation.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.iterdump.html#sqlite3.Connection.iterdump" title="sqlite3.Connection.iterdump"><code class="xref py py-obj docutils literal"><span class="pre">iterdump</span></code></a></td>
-<td>Returns iterator to the dump of the database in an SQL text format.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.rollback.html#sqlite3.Connection.rollback" title="sqlite3.Connection.rollback"><code class="xref py py-obj docutils literal"><span class="pre">rollback</span></code></a></td>
-<td>Roll back the current transaction.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.set_authorizer.html#sqlite3.Connection.set_authorizer" title="sqlite3.Connection.set_authorizer"><code class="xref py py-obj docutils literal"><span class="pre">set_authorizer</span></code></a></td>
-<td>Sets authorizer callback.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.set_progress_handler.html#sqlite3.Connection.set_progress_handler" title="sqlite3.Connection.set_progress_handler"><code class="xref py py-obj docutils literal"><span class="pre">set_progress_handler</span></code></a></td>
-<td>Sets progress handler callback.</td>
-</tr>
-</tbody>
-</table>
 <dl class="attribute">
 <dt id="sqlite3.Connection.__init__">
 <code class="descname">__init__</code><a class="headerlink" href="#sqlite3.Connection.__init__" title="Permalink to this definition">¶</a></dt>
@@ -269,6 +194,112 @@
 
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>2.9.2.2.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.close.html#sqlite3.Connection.close" title="sqlite3.Connection.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a></td>
+<td>Closes the connection.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.commit.html#sqlite3.Connection.commit" title="sqlite3.Connection.commit"><code class="xref py py-obj docutils literal"><span class="pre">commit</span></code></a></td>
+<td>Commit the current transaction.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.create_aggregate.html#sqlite3.Connection.create_aggregate" title="sqlite3.Connection.create_aggregate"><code class="xref py py-obj docutils literal"><span class="pre">create_aggregate</span></code></a></td>
+<td>Creates a new aggregate.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.create_collation.html#sqlite3.Connection.create_collation" title="sqlite3.Connection.create_collation"><code class="xref py py-obj docutils literal"><span class="pre">create_collation</span></code></a></td>
+<td>Creates a collation function.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.create_function.html#sqlite3.Connection.create_function" title="sqlite3.Connection.create_function"><code class="xref py py-obj docutils literal"><span class="pre">create_function</span></code></a></td>
+<td>Creates a new function.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.cursor.html#sqlite3.Connection.cursor" title="sqlite3.Connection.cursor"><code class="xref py py-obj docutils literal"><span class="pre">cursor</span></code></a></td>
+<td>Return a cursor for the connection.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.execute.html#sqlite3.Connection.execute" title="sqlite3.Connection.execute"><code class="xref py py-obj docutils literal"><span class="pre">execute</span></code></a></td>
+<td>Executes a SQL statement.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.executemany.html#sqlite3.Connection.executemany" title="sqlite3.Connection.executemany"><code class="xref py py-obj docutils literal"><span class="pre">executemany</span></code></a></td>
+<td>Repeatedly executes a SQL statement.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.executescript.html#sqlite3.Connection.executescript" title="sqlite3.Connection.executescript"><code class="xref py py-obj docutils literal"><span class="pre">executescript</span></code></a></td>
+<td>Executes a multiple SQL statements at once.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.interrupt.html#sqlite3.Connection.interrupt" title="sqlite3.Connection.interrupt"><code class="xref py py-obj docutils literal"><span class="pre">interrupt</span></code></a></td>
+<td>Abort any pending database operation.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.iterdump.html#sqlite3.Connection.iterdump" title="sqlite3.Connection.iterdump"><code class="xref py py-obj docutils literal"><span class="pre">iterdump</span></code></a></td>
+<td>Returns iterator to the dump of the database in an SQL text format.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.rollback.html#sqlite3.Connection.rollback" title="sqlite3.Connection.rollback"><code class="xref py py-obj docutils literal"><span class="pre">rollback</span></code></a></td>
+<td>Roll back the current transaction.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.set_authorizer.html#sqlite3.Connection.set_authorizer" title="sqlite3.Connection.set_authorizer"><code class="xref py py-obj docutils literal"><span class="pre">set_authorizer</span></code></a></td>
+<td>Sets authorizer callback.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.set_progress_handler.html#sqlite3.Connection.set_progress_handler" title="sqlite3.Connection.set_progress_handler"><code class="xref py py-obj docutils literal"><span class="pre">set_progress_handler</span></code></a></td>
+<td>Sets progress handler callback.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="attributes">
+<h2>2.9.2.2.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.DataError.html#sqlite3.Connection.DataError" title="sqlite3.Connection.DataError"><code class="xref py py-obj docutils literal"><span class="pre">DataError</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.DatabaseError.html#sqlite3.Connection.DatabaseError" title="sqlite3.Connection.DatabaseError"><code class="xref py py-obj docutils literal"><span class="pre">DatabaseError</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.Error.html#sqlite3.Connection.Error" title="sqlite3.Connection.Error"><code class="xref py py-obj docutils literal"><span class="pre">Error</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.IntegrityError.html#sqlite3.Connection.IntegrityError" title="sqlite3.Connection.IntegrityError"><code class="xref py py-obj docutils literal"><span class="pre">IntegrityError</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.InterfaceError.html#sqlite3.Connection.InterfaceError" title="sqlite3.Connection.InterfaceError"><code class="xref py py-obj docutils literal"><span class="pre">InterfaceError</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.InternalError.html#sqlite3.Connection.InternalError" title="sqlite3.Connection.InternalError"><code class="xref py py-obj docutils literal"><span class="pre">InternalError</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.NotSupportedError.html#sqlite3.Connection.NotSupportedError" title="sqlite3.Connection.NotSupportedError"><code class="xref py py-obj docutils literal"><span class="pre">NotSupportedError</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.OperationalError.html#sqlite3.Connection.OperationalError" title="sqlite3.Connection.OperationalError"><code class="xref py py-obj docutils literal"><span class="pre">OperationalError</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.ProgrammingError.html#sqlite3.Connection.ProgrammingError" title="sqlite3.Connection.ProgrammingError"><code class="xref py py-obj docutils literal"><span class="pre">ProgrammingError</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.Warning.html#sqlite3.Connection.Warning" title="sqlite3.Connection.Warning"><code class="xref py py-obj docutils literal"><span class="pre">Warning</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.isolation_level.html#sqlite3.Connection.isolation_level" title="sqlite3.Connection.isolation_level"><code class="xref py py-obj docutils literal"><span class="pre">isolation_level</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.row_factory.html#sqlite3.Connection.row_factory" title="sqlite3.Connection.row_factory"><code class="xref py py-obj docutils literal"><span class="pre">row_factory</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.text_factory.html#sqlite3.Connection.text_factory" title="sqlite3.Connection.text_factory"><code class="xref py py-obj docutils literal"><span class="pre">text_factory</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.total_changes.html#sqlite3.Connection.total_changes" title="sqlite3.Connection.total_changes"><code class="xref py py-obj docutils literal"><span class="pre">total_changes</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -278,10 +309,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="sqlite3.Connection.isolation_level.html" class="btn btn-neutral float-right" title="2.9.2.3.1. sqlite3.Connection.isolation_level" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sqlite3.Connection.close.html" class="btn btn-neutral float-right" title="2.9.2.2.1.1. sqlite3.Connection.close" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="sqlite3.Cache.get.html" class="btn btn-neutral" title="2.9.2.2.2. sqlite3.Cache.get" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="sqlite3.Cache.get.html" class="btn btn-neutral" title="2.9.2.1.1.2. sqlite3.Cache.get" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

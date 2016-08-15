@@ -2,16 +2,15 @@ inspect.Attribute
 =================
 
 .. currentmodule:: inspect
-
-:func:`Attribute.__init__`
-
 .. autoclass:: Attribute
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Attribute.count
@@ -21,11 +20,10 @@ inspect.Attribute
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Attribute.defining_class

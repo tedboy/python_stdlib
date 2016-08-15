@@ -2,16 +2,15 @@ webbrowser.BaseBrowser
 ======================
 
 .. currentmodule:: webbrowser
-
-:func:`BaseBrowser.__init__`
-
 .. autoclass:: BaseBrowser
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~BaseBrowser.__init__
@@ -23,11 +22,10 @@ webbrowser.BaseBrowser
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~BaseBrowser.args

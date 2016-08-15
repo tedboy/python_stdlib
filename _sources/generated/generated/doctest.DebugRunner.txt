@@ -2,16 +2,15 @@ doctest.DebugRunner
 ===================
 
 .. currentmodule:: doctest
-
-:func:`DebugRunner.__init__`
-
 .. autoclass:: DebugRunner
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~DebugRunner.__init__
@@ -27,11 +26,10 @@ doctest.DebugRunner
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~DebugRunner.DIVIDER

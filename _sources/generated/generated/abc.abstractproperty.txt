@@ -2,16 +2,15 @@ abc.abstractproperty
 ====================
 
 .. currentmodule:: abc
-
-:func:`abstractproperty.__init__`
-
 .. autoclass:: abstractproperty
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~abstractproperty.deleter
@@ -22,11 +21,10 @@ abc.abstractproperty
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~abstractproperty.fdel

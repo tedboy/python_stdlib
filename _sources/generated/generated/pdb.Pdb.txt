@@ -2,16 +2,15 @@ pdb.Pdb
 =======
 
 .. currentmodule:: pdb
-
-:func:`Pdb.__init__`
-
 .. autoclass:: Pdb
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Pdb.__init__
@@ -186,11 +185,10 @@ pdb.Pdb
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Pdb.commands_resuming

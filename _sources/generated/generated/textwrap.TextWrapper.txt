@@ -2,16 +2,15 @@ textwrap.TextWrapper
 ====================
 
 .. currentmodule:: textwrap
-
-:func:`TextWrapper.__init__`
-
 .. autoclass:: TextWrapper
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~TextWrapper.__init__
@@ -22,11 +21,10 @@ textwrap.TextWrapper
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~TextWrapper.sentence_end_re

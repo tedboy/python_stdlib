@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.7.1.35. inspect.isframe &mdash; Python Standard Library</title>
+  <title>1.7.1.34. inspect.isframe &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="1.7. inspect" href="inspect.html"/>
-        <link rel="next" title="1.7.1.36. inspect.isfunction" href="inspect.isfunction.html"/>
-        <link rel="prev" title="1.7.1.34. inspect.isdatadescriptor" href="inspect.isdatadescriptor.html"/> 
+        <link rel="next" title="1.7.1.35. inspect.isfunction" href="inspect.isfunction.html"/>
+        <link rel="prev" title="1.7.1.33. inspect.isdatadescriptor" href="inspect.isdatadescriptor.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -85,9 +85,7 @@
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../main1.html">1. Frequently used</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
 <li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
 <li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
@@ -98,55 +96,53 @@
 <li class="toctree-l3 current"><a class="reference internal" href="inspect.html#functions">1.7.1. Functions</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="inspect.classify_class_attrs.html">1.7.1.1. inspect.classify_class_attrs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="inspect.cleandoc.html">1.7.1.2. inspect.cleandoc</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.currentframe.html">1.7.1.3. inspect.currentframe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.findsource.html">1.7.1.4. inspect.findsource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.formatargspec.html">1.7.1.5. inspect.formatargspec</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.formatargvalues.html">1.7.1.6. inspect.formatargvalues</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getabsfile.html">1.7.1.7. inspect.getabsfile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getargs.html">1.7.1.8. inspect.getargs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getargspec.html">1.7.1.9. inspect.getargspec</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getargvalues.html">1.7.1.10. inspect.getargvalues</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getblock.html">1.7.1.11. inspect.getblock</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getcallargs.html">1.7.1.12. inspect.getcallargs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getclasstree.html">1.7.1.13. inspect.getclasstree</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getcomments.html">1.7.1.14. inspect.getcomments</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getdoc.html">1.7.1.15. inspect.getdoc</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getfile.html">1.7.1.16. inspect.getfile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getframeinfo.html">1.7.1.17. inspect.getframeinfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getinnerframes.html">1.7.1.18. inspect.getinnerframes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getlineno.html">1.7.1.19. inspect.getlineno</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmembers.html">1.7.1.20. inspect.getmembers</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmodule.html">1.7.1.21. inspect.getmodule</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmoduleinfo.html">1.7.1.22. inspect.getmoduleinfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmodulename.html">1.7.1.23. inspect.getmodulename</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmro.html">1.7.1.24. inspect.getmro</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getouterframes.html">1.7.1.25. inspect.getouterframes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getsource.html">1.7.1.26. inspect.getsource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getsourcefile.html">1.7.1.27. inspect.getsourcefile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getsourcelines.html">1.7.1.28. inspect.getsourcelines</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.indentsize.html">1.7.1.29. inspect.indentsize</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isabstract.html">1.7.1.30. inspect.isabstract</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isbuiltin.html">1.7.1.31. inspect.isbuiltin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isclass.html">1.7.1.32. inspect.isclass</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.iscode.html">1.7.1.33. inspect.iscode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isdatadescriptor.html">1.7.1.34. inspect.isdatadescriptor</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">1.7.1.35. inspect.isframe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isfunction.html">1.7.1.36. inspect.isfunction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isgenerator.html">1.7.1.37. inspect.isgenerator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isgeneratorfunction.html">1.7.1.38. inspect.isgeneratorfunction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isgetsetdescriptor.html">1.7.1.39. inspect.isgetsetdescriptor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismemberdescriptor.html">1.7.1.40. inspect.ismemberdescriptor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismethod.html">1.7.1.41. inspect.ismethod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismethoddescriptor.html">1.7.1.42. inspect.ismethoddescriptor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismodule.html">1.7.1.43. inspect.ismodule</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isroutine.html">1.7.1.44. inspect.isroutine</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.istraceback.html">1.7.1.45. inspect.istraceback</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.joinseq.html">1.7.1.46. inspect.joinseq</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.namedtuple.html">1.7.1.47. inspect.namedtuple</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.stack.html">1.7.1.48. inspect.stack</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.strseq.html">1.7.1.49. inspect.strseq</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.trace.html">1.7.1.50. inspect.trace</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.walktree.html">1.7.1.51. inspect.walktree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.findsource.html">1.7.1.3. inspect.findsource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.formatargspec.html">1.7.1.4. inspect.formatargspec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.formatargvalues.html">1.7.1.5. inspect.formatargvalues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getabsfile.html">1.7.1.6. inspect.getabsfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getargs.html">1.7.1.7. inspect.getargs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getargspec.html">1.7.1.8. inspect.getargspec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getargvalues.html">1.7.1.9. inspect.getargvalues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getblock.html">1.7.1.10. inspect.getblock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getcallargs.html">1.7.1.11. inspect.getcallargs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getclasstree.html">1.7.1.12. inspect.getclasstree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getcomments.html">1.7.1.13. inspect.getcomments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getdoc.html">1.7.1.14. inspect.getdoc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getfile.html">1.7.1.15. inspect.getfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getframeinfo.html">1.7.1.16. inspect.getframeinfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getinnerframes.html">1.7.1.17. inspect.getinnerframes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getlineno.html">1.7.1.18. inspect.getlineno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getmembers.html">1.7.1.19. inspect.getmembers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getmodule.html">1.7.1.20. inspect.getmodule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getmoduleinfo.html">1.7.1.21. inspect.getmoduleinfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getmodulename.html">1.7.1.22. inspect.getmodulename</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getmro.html">1.7.1.23. inspect.getmro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getouterframes.html">1.7.1.24. inspect.getouterframes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getsource.html">1.7.1.25. inspect.getsource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getsourcefile.html">1.7.1.26. inspect.getsourcefile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getsourcelines.html">1.7.1.27. inspect.getsourcelines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.indentsize.html">1.7.1.28. inspect.indentsize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isabstract.html">1.7.1.29. inspect.isabstract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isbuiltin.html">1.7.1.30. inspect.isbuiltin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isclass.html">1.7.1.31. inspect.isclass</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.iscode.html">1.7.1.32. inspect.iscode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isdatadescriptor.html">1.7.1.33. inspect.isdatadescriptor</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">1.7.1.34. inspect.isframe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isfunction.html">1.7.1.35. inspect.isfunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isgenerator.html">1.7.1.36. inspect.isgenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isgeneratorfunction.html">1.7.1.37. inspect.isgeneratorfunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isgetsetdescriptor.html">1.7.1.38. inspect.isgetsetdescriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.ismemberdescriptor.html">1.7.1.39. inspect.ismemberdescriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.ismethod.html">1.7.1.40. inspect.ismethod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.ismethoddescriptor.html">1.7.1.41. inspect.ismethoddescriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.ismodule.html">1.7.1.42. inspect.ismodule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isroutine.html">1.7.1.43. inspect.isroutine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.istraceback.html">1.7.1.44. inspect.istraceback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.joinseq.html">1.7.1.45. inspect.joinseq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.stack.html">1.7.1.46. inspect.stack</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.strseq.html">1.7.1.47. inspect.strseq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.trace.html">1.7.1.48. inspect.trace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.walktree.html">1.7.1.49. inspect.walktree</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="inspect.html#classes">1.7.2. Classes</a></li>
@@ -154,13 +150,10 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#string-services">3.1. String Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../official_page.html">4. Official page TOC</a></li>
 </ul>
 
@@ -176,7 +169,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -207,7 +200,7 @@
         
           <li><a href="inspect.html">1.7. inspect</a> &raquo;</li>
         
-      <li>1.7.1.35. inspect.isframe</li>
+      <li>1.7.1.34. inspect.isframe</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -225,7 +218,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="inspect-isframe">
-<h1>1.7.1.35. inspect.isframe<a class="headerlink" href="#inspect-isframe" title="Permalink to this headline">¶</a></h1>
+<h1>1.7.1.34. inspect.isframe<a class="headerlink" href="#inspect-isframe" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="inspect.isframe">
 <code class="descclassname">inspect.</code><code class="descname">isframe</code><span class="sig-paren">(</span><em>object</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/inspect.html#isframe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#inspect.isframe" title="Permalink to this definition">¶</a></dt>
@@ -256,10 +249,10 @@ f_trace         tracing function for this frame, or None</dd>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="inspect.isfunction.html" class="btn btn-neutral float-right" title="1.7.1.36. inspect.isfunction" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="inspect.isfunction.html" class="btn btn-neutral float-right" title="1.7.1.35. inspect.isfunction" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="inspect.isdatadescriptor.html" class="btn btn-neutral" title="1.7.1.34. inspect.isdatadescriptor" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="inspect.isdatadescriptor.html" class="btn btn-neutral" title="1.7.1.33. inspect.isdatadescriptor" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

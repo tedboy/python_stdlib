@@ -2,16 +2,15 @@ unittest.TestCase
 =================
 
 .. currentmodule:: unittest
-
-:func:`TestCase.__init__`
-
 .. autoclass:: TestCase
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~TestCase.__init__
@@ -77,11 +76,10 @@ unittest.TestCase
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~TestCase.longMessage

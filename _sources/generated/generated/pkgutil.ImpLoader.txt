@@ -2,16 +2,15 @@ pkgutil.ImpLoader
 =================
 
 .. currentmodule:: pkgutil
-
-:func:`ImpLoader.__init__`
-
 .. autoclass:: ImpLoader
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~ImpLoader.__init__
@@ -26,11 +25,10 @@ pkgutil.ImpLoader
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~ImpLoader.code

@@ -2,16 +2,15 @@ doctest.OutputChecker
 =====================
 
 .. currentmodule:: doctest
-
-:func:`OutputChecker.__init__`
-
 .. autoclass:: OutputChecker
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~OutputChecker.check_output

@@ -2,16 +2,15 @@ cgi.FieldStorage
 ================
 
 .. currentmodule:: cgi
-
-:func:`FieldStorage.__init__`
-
 .. autoclass:: FieldStorage
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~FieldStorage.__init__
@@ -34,11 +33,10 @@ cgi.FieldStorage
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~FieldStorage.FieldStorageClass

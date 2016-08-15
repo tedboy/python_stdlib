@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.2.4. csv &mdash; Python Standard Library</title>
+  <title>3.2.4. csv &mdash; My Project v1</title>
   
 
   
@@ -30,9 +30,9 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="3. Misc package I may use in the future" href="../maybe_future.html"/>
-        <link rel="next" title="3.2.4.1.1. csv.StringIO" href="csv.StringIO.html"/>
+        <link rel="next" title="3.2.4.1.1. csv.Dialect" href="generated/csv.Dialect.html"/>
         <link rel="prev" title="3.2.3.2.5. cPickle.UnpicklingError" href="cPickle.UnpicklingError.html"/> 
 
   
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,23 +88,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="shutil.html">3.2.1. shutil</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pickle.html">3.2.2. pickle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cPickle.html">3.2.3. cPickle</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">3.2.4. csv</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#functions">3.2.4.1. Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#classes">3.2.4.2. Classes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#exceptions">3.2.4.3. Exceptions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">3.2.4.1. Classes</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="zlib.html">3.2.5. zlib</a></li>
@@ -134,7 +124,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -271,46 +261,8 @@ written as two quotes</p>
 </li>
 </ul>
 </div></blockquote>
-<div class="section" id="functions">
-<h2>3.2.4.1. Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="csv.StringIO.html#csv.StringIO" title="csv.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
-<td>StringIO([s]) &#8211; Return a StringIO-like stream for reading or writing</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="csv.field_size_limit.html#csv.field_size_limit" title="csv.field_size_limit"><code class="xref py py-obj docutils literal"><span class="pre">field_size_limit</span></code></a></td>
-<td>Sets an upper limit on parsed fields.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="csv.get_dialect.html#csv.get_dialect" title="csv.get_dialect"><code class="xref py py-obj docutils literal"><span class="pre">get_dialect</span></code></a>(name)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="csv.list_dialects.html#csv.list_dialects" title="csv.list_dialects"><code class="xref py py-obj docutils literal"><span class="pre">list_dialects</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="csv.reader.html#csv.reader" title="csv.reader"><code class="xref py py-obj docutils literal"><span class="pre">reader</span></code></a>(iterable&nbsp;[[,&nbsp;dialect])</td>
-<td>The &#8220;iterable&#8221; argument can be any object that returns a line of input for each iteration, such as a file object or a list.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="csv.reduce.html#csv.reduce" title="csv.reduce"><code class="xref py py-obj docutils literal"><span class="pre">reduce</span></code></a>((function,&nbsp;sequence[,&nbsp;initial])&nbsp;-&gt;&nbsp;value)</td>
-<td>Apply a function of two arguments cumulatively to the items of a sequence, from left to right, so as to reduce the sequence to a single value.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="csv.register_dialect.html#csv.register_dialect" title="csv.register_dialect"><code class="xref py py-obj docutils literal"><span class="pre">register_dialect</span></code></a>(name,&nbsp;dialect)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="csv.unregister_dialect.html#csv.unregister_dialect" title="csv.unregister_dialect"><code class="xref py py-obj docutils literal"><span class="pre">unregister_dialect</span></code></a></td>
-<td>Delete the name/dialect mapping associated with a string name.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="csv.writer.html#csv.writer" title="csv.writer"><code class="xref py py-obj docutils literal"><span class="pre">writer</span></code></a>(fileobj&nbsp;[[,&nbsp;dialect])</td>
-<td>[or]</td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="section" id="classes">
-<h2>3.2.4.2. Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<h2>3.2.4.1. Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -321,12 +273,10 @@ written as two quotes</p>
 <td>Describe an Excel dialect.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/csv.DictReader.html#csv.DictReader" title="csv.DictReader"><code class="xref py py-obj docutils literal"><span class="pre">DictReader</span></code></a>(f[,&nbsp;fieldnames,&nbsp;restkey,&nbsp;...])</td>
-<td><p class="rubric">Attributes</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/csv.DictWriter.html#csv.DictWriter" title="csv.DictWriter"><code class="xref py py-obj docutils literal"><span class="pre">DictWriter</span></code></a>(f,&nbsp;fieldnames[,&nbsp;restval,&nbsp;...])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/csv.Sniffer.html#csv.Sniffer" title="csv.Sniffer"><code class="xref py py-obj docutils literal"><span class="pre">Sniffer</span></code></a>()</td>
 <td>&#8220;Sniffs&#8221; the format of a CSV file (i.e. delimiter, quotechar)</td>
@@ -342,20 +292,6 @@ written as two quotes</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
-<div class="section" id="exceptions">
-<h2>3.2.4.3. Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="csv.Error.html#csv.Error" title="csv.Error"><code class="xref py py-obj docutils literal"><span class="pre">Error</span></code></a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 
 
@@ -365,7 +301,7 @@ written as two quotes</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="csv.StringIO.html" class="btn btn-neutral float-right" title="3.2.4.1.1. csv.StringIO" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/csv.Dialect.html" class="btn btn-neutral float-right" title="3.2.4.1.1. csv.Dialect" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="cPickle.UnpicklingError.html" class="btn btn-neutral" title="3.2.3.2.5. cPickle.UnpicklingError" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

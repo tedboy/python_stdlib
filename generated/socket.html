@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.3.2. socket &mdash; Python Standard Library</title>
+  <title>3.3.2. socket &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="3. Misc package I may use in the future" href="../maybe_future.html"/>
-        <link rel="next" title="3.3.2.1.1. socket.RAND_add" href="socket.RAND_add.html"/>
-        <link rel="prev" title="3.3.1.2.2.2. popen2.Popen4.wait" href="generated/popen2.Popen4.wait.html"/> 
+        <link rel="next" title="3.3.2.1.1. socket.create_connection" href="socket.create_connection.html"/>
+        <link rel="prev" title="3.3.1.2.2.2.2. popen2.Popen4.sts" href="generated/popen2.Popen4.sts.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a><ul class="current">
@@ -138,7 +130,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -229,91 +221,16 @@ the setsockopt() and getsockopt() methods.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="socket.RAND_add.html#socket.RAND_add" title="socket.RAND_add"><code class="xref py py-obj docutils literal"><span class="pre">RAND_add</span></code></a>(string,&nbsp;entropy)</td>
-<td>Mix string into the OpenSSL PRNG state.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.RAND_egd.html#socket.RAND_egd" title="socket.RAND_egd"><code class="xref py py-obj docutils literal"><span class="pre">RAND_egd</span></code></a>((path)&nbsp;-&gt;&nbsp;bytes)</td>
-<td>Queries the entropy gather daemon (EGD) on the socket named by &#8216;path&#8217;.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.RAND_status.html#socket.RAND_status" title="socket.RAND_status"><code class="xref py py-obj docutils literal"><span class="pre">RAND_status</span></code></a>(()&nbsp;-&gt;&nbsp;0&nbsp;or&nbsp;1)</td>
-<td>Returns 1 if the OpenSSL PRNG has been seeded with enough data and 0 if not.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.StringIO.html#socket.StringIO" title="socket.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
-<td>StringIO([s]) &#8211; Return a StringIO-like stream for reading or writing</td>
-</tr>
 <tr class="row-odd"><td><a class="reference internal" href="socket.create_connection.html#socket.create_connection" title="socket.create_connection"><code class="xref py py-obj docutils literal"><span class="pre">create_connection</span></code></a>(address[,&nbsp;timeout,&nbsp;...])</td>
 <td>Connect to <em>address</em> and return the socket object.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.fromfd.html#socket.fromfd" title="socket.fromfd"><code class="xref py py-obj docutils literal"><span class="pre">fromfd</span></code></a>((fd,&nbsp;family,&nbsp;type[,&nbsp;...)</td>
-<td>Create a socket object from a duplicate of the given file descriptor.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.getaddrinfo.html#socket.getaddrinfo" title="socket.getaddrinfo"><code class="xref py py-obj docutils literal"><span class="pre">getaddrinfo</span></code></a>(host,&nbsp;port&nbsp;[,&nbsp;family,&nbsp;socktype,&nbsp;...)</td>
-<td>-&gt; list of (family, socktype, proto, canonname, sockaddr)</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.getdefaulttimeout.html#socket.getdefaulttimeout" title="socket.getdefaulttimeout"><code class="xref py py-obj docutils literal"><span class="pre">getdefaulttimeout</span></code></a>(()&nbsp;-&gt;&nbsp;timeout)</td>
-<td>Returns the default timeout in seconds (float) for new socket objects.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.getfqdn.html#socket.getfqdn" title="socket.getfqdn"><code class="xref py py-obj docutils literal"><span class="pre">getfqdn</span></code></a>([name])</td>
+<tr class="row-even"><td><a class="reference internal" href="socket.getfqdn.html#socket.getfqdn" title="socket.getfqdn"><code class="xref py py-obj docutils literal"><span class="pre">getfqdn</span></code></a>([name])</td>
 <td>Get fully qualified domain name from name.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.gethostbyaddr.html#socket.gethostbyaddr" title="socket.gethostbyaddr"><code class="xref py py-obj docutils literal"><span class="pre">gethostbyaddr</span></code></a>(host)&nbsp;-&gt;&nbsp;(name,&nbsp;aliaslist,&nbsp;...)</td>
-<td>Return the true host name, a list of aliases, and a list of IP addresses, for a host.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.gethostbyname.html#socket.gethostbyname" title="socket.gethostbyname"><code class="xref py py-obj docutils literal"><span class="pre">gethostbyname</span></code></a>((host)&nbsp;-&gt;&nbsp;address)</td>
-<td>Return the IP address (a string of the form &#8216;255.255.255.255&#8217;) for a host.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.gethostbyname_ex.html#socket.gethostbyname_ex" title="socket.gethostbyname_ex"><code class="xref py py-obj docutils literal"><span class="pre">gethostbyname_ex</span></code></a>(host)&nbsp;-&gt;&nbsp;(name,&nbsp;aliaslist,&nbsp;...)</td>
-<td>Return the true host name, a list of aliases, and a list of IP addresses, for a host.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.gethostname.html#socket.gethostname" title="socket.gethostname"><code class="xref py py-obj docutils literal"><span class="pre">gethostname</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
-<td>Return the current host name.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.getnameinfo.html#socket.getnameinfo" title="socket.getnameinfo"><code class="xref py py-obj docutils literal"><span class="pre">getnameinfo</span></code></a>(sockaddr,&nbsp;flags)&nbsp;&#8211;&gt;&nbsp;(host,&nbsp;port)</td>
-<td>Get host and port for a sockaddr.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.getprotobyname.html#socket.getprotobyname" title="socket.getprotobyname"><code class="xref py py-obj docutils literal"><span class="pre">getprotobyname</span></code></a>((name)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Return the protocol number for the named protocol.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.getservbyname.html#socket.getservbyname" title="socket.getservbyname"><code class="xref py py-obj docutils literal"><span class="pre">getservbyname</span></code></a>((servicename[,&nbsp;...)</td>
-<td>Return a port number from a service name and protocol name.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.getservbyport.html#socket.getservbyport" title="socket.getservbyport"><code class="xref py py-obj docutils literal"><span class="pre">getservbyport</span></code></a>((port[,&nbsp;protocolname])&nbsp;-&gt;&nbsp;string)</td>
-<td>Return the service name from a port number and protocol name.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.htonl.html#socket.htonl" title="socket.htonl"><code class="xref py py-obj docutils literal"><span class="pre">htonl</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Convert a 32-bit integer from host to network byte order.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.htons.html#socket.htons" title="socket.htons"><code class="xref py py-obj docutils literal"><span class="pre">htons</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Convert a 16-bit integer from host to network byte order.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.inet_aton.html#socket.inet_aton" title="socket.inet_aton"><code class="xref py py-obj docutils literal"><span class="pre">inet_aton</span></code></a>(...)</td>
-<td>Convert an IP address in string format (123.45.67.89) to the 32-bit packed binary format used in low-level network functions.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.inet_ntoa.html#socket.inet_ntoa" title="socket.inet_ntoa"><code class="xref py py-obj docutils literal"><span class="pre">inet_ntoa</span></code></a>((packed_ip)&nbsp;-&gt;&nbsp;ip_address_string)</td>
-<td>Convert an IP address from 32-bit packed binary format to string format</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.inet_ntop.html#socket.inet_ntop" title="socket.inet_ntop"><code class="xref py py-obj docutils literal"><span class="pre">inet_ntop</span></code></a>((af,&nbsp;...)</td>
-<td>Convert a packed IP address of the given family to string format.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.inet_pton.html#socket.inet_pton" title="socket.inet_pton"><code class="xref py py-obj docutils literal"><span class="pre">inet_pton</span></code></a>((af,&nbsp;ip)&nbsp;-&gt;&nbsp;packed&nbsp;IP&nbsp;address&nbsp;string)</td>
-<td>Convert an IP address from string format to a packed string suitable for use with low-level network functions.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.meth.html#socket.meth" title="socket.meth"><code class="xref py py-obj docutils literal"><span class="pre">meth</span></code></a>(name,&nbsp;self,&nbsp;*args)</td>
+<tr class="row-odd"><td><a class="reference internal" href="socket.meth.html#socket.meth" title="socket.meth"><code class="xref py py-obj docutils literal"><span class="pre">meth</span></code></a>(name,&nbsp;self,&nbsp;*args)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.ntohl.html#socket.ntohl" title="socket.ntohl"><code class="xref py py-obj docutils literal"><span class="pre">ntohl</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Convert a 32-bit integer from network to host byte order.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.ntohs.html#socket.ntohs" title="socket.ntohs"><code class="xref py py-obj docutils literal"><span class="pre">ntohs</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Convert a 16-bit integer from network to host byte order.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.setdefaulttimeout.html#socket.setdefaulttimeout" title="socket.setdefaulttimeout"><code class="xref py py-obj docutils literal"><span class="pre">setdefaulttimeout</span></code></a>(timeout)</td>
-<td>Set the default timeout in seconds (float) for new socket objects.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.socketpair.html#socket.socketpair" title="socket.socketpair"><code class="xref py py-obj docutils literal"><span class="pre">socketpair</span></code></a>([family[,&nbsp;type[,&nbsp;...)</td>
-<td>Create a pair of socket objects from the sockets returned by the platform socketpair() function.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.ssl.html#socket.ssl" title="socket.ssl"><code class="xref py py-obj docutils literal"><span class="pre">ssl</span></code></a>(sock[,&nbsp;keyfile,&nbsp;certfile])</td>
+<tr class="row-even"><td><a class="reference internal" href="socket.ssl.html#socket.ssl" title="socket.ssl"><code class="xref py py-obj docutils literal"><span class="pre">ssl</span></code></a>(sock[,&nbsp;keyfile,&nbsp;certfile])</td>
 <td></td>
 </tr>
 </tbody>
@@ -327,14 +244,8 @@ the setsockopt() and getsockopt() methods.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="generated/socket.MethodType.html#socket.MethodType" title="socket.MethodType"><code class="xref py py-obj docutils literal"><span class="pre">MethodType</span></code></a></td>
-<td>alias of <code class="xref py py-class docutils literal"><span class="pre">instancemethod</span></code></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/socket.SocketType.html#socket.SocketType" title="socket.SocketType"><code class="xref py py-obj docutils literal"><span class="pre">SocketType</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.SocketType.html#socket.SocketType" title="socket.SocketType"><code class="xref py py-obj docutils literal"><span class="pre">SocketType</span></code></a></td>
 <td>alias of <code class="xref py py-class docutils literal"><span class="pre">_socketobject</span></code></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/socket.partial.html#socket.partial" title="socket.partial"><code class="xref py py-obj docutils literal"><span class="pre">partial</span></code></a></td>
-<td>partial(func, <a href="#id1"><span class="problematic" id="id2">*</span></a>args, <a href="#id3"><span class="problematic" id="id4">**</span></a>keywords) - new function with partial application</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/socket.socket.html#socket.socket" title="socket.socket"><code class="xref py py-obj docutils literal"><span class="pre">socket</span></code></a></td>
 <td>alias of <code class="xref py py-class docutils literal"><span class="pre">_socketobject</span></code></td>
@@ -361,10 +272,7 @@ the setsockopt() and getsockopt() methods.</p>
 <tr class="row-odd"><td><a class="reference internal" href="socket.herror.html#socket.herror" title="socket.herror"><code class="xref py py-obj docutils literal"><span class="pre">herror</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="socket.sslerror.html#socket.sslerror" title="socket.sslerror"><code class="xref py py-obj docutils literal"><span class="pre">sslerror</span></code></a></td>
-<td>alias of <code class="xref py py-class docutils literal"><span class="pre">SSLError</span></code></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="socket.timeout.html#socket.timeout" title="socket.timeout"><code class="xref py py-obj docutils literal"><span class="pre">timeout</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="socket.timeout.html#socket.timeout" title="socket.timeout"><code class="xref py py-obj docutils literal"><span class="pre">timeout</span></code></a></td>
 <td></td>
 </tr>
 </tbody>
@@ -379,10 +287,10 @@ the setsockopt() and getsockopt() methods.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="socket.RAND_add.html" class="btn btn-neutral float-right" title="3.3.2.1.1. socket.RAND_add" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="socket.create_connection.html" class="btn btn-neutral float-right" title="3.3.2.1.1. socket.create_connection" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="generated/popen2.Popen4.wait.html" class="btn btn-neutral" title="3.3.1.2.2.2. popen2.Popen4.wait" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="generated/popen2.Popen4.sts.html" class="btn btn-neutral" title="3.3.1.2.2.2.2. popen2.Popen4.sts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

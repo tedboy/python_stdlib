@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.2.8.2.4. zipfile.ZipInfo &mdash; Python Standard Library</title>
+  <title>3.2.8.2.4. zipfile.ZipInfo &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.2.8. zipfile" href="../zipfile.html"/>
-        <link rel="next" title="3.2.8.2.4.1. zipfile.ZipInfo.FileHeader" href="zipfile.ZipInfo.FileHeader.html"/>
-        <link rel="prev" title="3.2.8.2.3.14. zipfile.ZipFile.writestr" href="zipfile.ZipFile.writestr.html"/> 
+        <link rel="next" title="3.2.8.2.4.1.1. zipfile.ZipInfo.FileHeader" href="zipfile.ZipInfo.FileHeader.html"/>
+        <link rel="prev" title="3.2.8.2.3.2.2. zipfile.ZipFile.fp" href="zipfile.ZipFile.fp.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
@@ -134,7 +126,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -184,12 +176,19 @@
             
   <div class="section" id="zipfile-zipinfo">
 <h1>3.2.8.2.4. zipfile.ZipInfo<a class="headerlink" href="#zipfile-zipinfo" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="zipfile.ZipInfo.__init__.html#zipfile.ZipInfo.__init__" title="zipfile.ZipInfo.__init__"><code class="xref py py-func docutils literal"><span class="pre">ZipInfo.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="zipfile.ZipInfo">
 <em class="property">class </em><code class="descclassname">zipfile.</code><code class="descname">ZipInfo</code><span class="sig-paren">(</span><em>filename='NoName'</em>, <em>date_time=(1980</em>, <em>1</em>, <em>1</em>, <em>0</em>, <em>0</em>, <em>0)</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/zipfile.html#ZipInfo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zipfile.ZipInfo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class with attributes describing each file in the ZIP archive.</p>
-<p class="rubric">Methods</p>
+<dl class="method">
+<dt id="zipfile.ZipInfo.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>filename='NoName'</em>, <em>date_time=(1980</em>, <em>1</em>, <em>1</em>, <em>0</em>, <em>0</em>, <em>0)</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/zipfile.html#ZipInfo.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zipfile.ZipInfo.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>3.2.8.2.4.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -199,10 +198,77 @@
 <tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipInfo.FileHeader.html#zipfile.ZipInfo.FileHeader" title="zipfile.ZipInfo.FileHeader"><code class="xref py py-obj docutils literal"><span class="pre">FileHeader</span></code></a>([zip64])</td>
 <td>Return the per-file header as a string.</td>
 </tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipInfo.__init__.html#zipfile.ZipInfo.__init__" title="zipfile.ZipInfo.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([filename,&nbsp;date_time])</td>
+<td></td>
+</tr>
 </tbody>
 </table>
-</dd></dl>
-
+</div>
+<div class="section" id="attributes">
+<h2>3.2.8.2.4.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipInfo.CRC.html#zipfile.ZipInfo.CRC" title="zipfile.ZipInfo.CRC"><code class="xref py py-obj docutils literal"><span class="pre">CRC</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipInfo.comment.html#zipfile.ZipInfo.comment" title="zipfile.ZipInfo.comment"><code class="xref py py-obj docutils literal"><span class="pre">comment</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipInfo.compress_size.html#zipfile.ZipInfo.compress_size" title="zipfile.ZipInfo.compress_size"><code class="xref py py-obj docutils literal"><span class="pre">compress_size</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipInfo.compress_type.html#zipfile.ZipInfo.compress_type" title="zipfile.ZipInfo.compress_type"><code class="xref py py-obj docutils literal"><span class="pre">compress_type</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipInfo.create_system.html#zipfile.ZipInfo.create_system" title="zipfile.ZipInfo.create_system"><code class="xref py py-obj docutils literal"><span class="pre">create_system</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipInfo.create_version.html#zipfile.ZipInfo.create_version" title="zipfile.ZipInfo.create_version"><code class="xref py py-obj docutils literal"><span class="pre">create_version</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipInfo.date_time.html#zipfile.ZipInfo.date_time" title="zipfile.ZipInfo.date_time"><code class="xref py py-obj docutils literal"><span class="pre">date_time</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipInfo.external_attr.html#zipfile.ZipInfo.external_attr" title="zipfile.ZipInfo.external_attr"><code class="xref py py-obj docutils literal"><span class="pre">external_attr</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipInfo.extra.html#zipfile.ZipInfo.extra" title="zipfile.ZipInfo.extra"><code class="xref py py-obj docutils literal"><span class="pre">extra</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipInfo.extract_version.html#zipfile.ZipInfo.extract_version" title="zipfile.ZipInfo.extract_version"><code class="xref py py-obj docutils literal"><span class="pre">extract_version</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipInfo.file_size.html#zipfile.ZipInfo.file_size" title="zipfile.ZipInfo.file_size"><code class="xref py py-obj docutils literal"><span class="pre">file_size</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipInfo.filename.html#zipfile.ZipInfo.filename" title="zipfile.ZipInfo.filename"><code class="xref py py-obj docutils literal"><span class="pre">filename</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipInfo.flag_bits.html#zipfile.ZipInfo.flag_bits" title="zipfile.ZipInfo.flag_bits"><code class="xref py py-obj docutils literal"><span class="pre">flag_bits</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipInfo.header_offset.html#zipfile.ZipInfo.header_offset" title="zipfile.ZipInfo.header_offset"><code class="xref py py-obj docutils literal"><span class="pre">header_offset</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipInfo.internal_attr.html#zipfile.ZipInfo.internal_attr" title="zipfile.ZipInfo.internal_attr"><code class="xref py py-obj docutils literal"><span class="pre">internal_attr</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipInfo.orig_filename.html#zipfile.ZipInfo.orig_filename" title="zipfile.ZipInfo.orig_filename"><code class="xref py py-obj docutils literal"><span class="pre">orig_filename</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="zipfile.ZipInfo.reserved.html#zipfile.ZipInfo.reserved" title="zipfile.ZipInfo.reserved"><code class="xref py py-obj docutils literal"><span class="pre">reserved</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="zipfile.ZipInfo.volume.html#zipfile.ZipInfo.volume" title="zipfile.ZipInfo.volume"><code class="xref py py-obj docutils literal"><span class="pre">volume</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -212,10 +278,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="zipfile.ZipInfo.FileHeader.html" class="btn btn-neutral float-right" title="3.2.8.2.4.1. zipfile.ZipInfo.FileHeader" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="zipfile.ZipInfo.FileHeader.html" class="btn btn-neutral float-right" title="3.2.8.2.4.1.1. zipfile.ZipInfo.FileHeader" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="zipfile.ZipFile.writestr.html" class="btn btn-neutral" title="3.2.8.2.3.14. zipfile.ZipFile.writestr" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="zipfile.ZipFile.fp.html" class="btn btn-neutral" title="3.2.8.2.3.2.2. zipfile.ZipFile.fp" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

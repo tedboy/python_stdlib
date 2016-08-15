@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.12.2.1. timeit.Timer &mdash; Python Standard Library</title>
+  <title>2.12.2.1. timeit.Timer &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="2.12. timeit" href="../timeit.html"/>
-        <link rel="next" title="2.12.2.1.1. timeit.Timer.print_exc" href="timeit.Timer.print_exc.html"/>
-        <link rel="prev" title="2.12.1.5. timeit.timeit" href="../timeit.timeit.html"/> 
+        <link rel="next" title="2.12.2.1.1.1. timeit.Timer.__init__" href="timeit.Timer.__init__.html"/>
+        <link rel="prev" title="2.12.1.4. timeit.timeit" href="../timeit.timeit.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -126,7 +126,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -176,7 +176,6 @@
             
   <div class="section" id="timeit-timer">
 <h1>2.12.2.1. timeit.Timer<a class="headerlink" href="#timeit-timer" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="timeit.Timer.__init__.html#timeit.Timer.__init__" title="timeit.Timer.__init__"><code class="xref py py-func docutils literal"><span class="pre">Timer.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="timeit.Timer">
 <em class="property">class </em><code class="descclassname">timeit.</code><code class="descname">Timer</code><span class="sig-paren">(</span><em>stmt='pass'</em>, <em>setup='pass'</em>, <em>timer=&lt;built-in function time&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/timeit.html#Timer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#timeit.Timer" title="Permalink to this definition">¶</a></dt>
@@ -190,24 +189,6 @@ timeit() method.  The repeat() method is a convenience to call
 timeit() multiple times and return a list of results.</p>
 <p>The statements may contain newlines, as long as they don&#8217;t contain
 multi-line string literals.</p>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="timeit.Timer.print_exc.html#timeit.Timer.print_exc" title="timeit.Timer.print_exc"><code class="xref py py-obj docutils literal"><span class="pre">print_exc</span></code></a>([file])</td>
-<td>Helper to print a traceback from the timed code.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="timeit.Timer.repeat.html#timeit.Timer.repeat" title="timeit.Timer.repeat"><code class="xref py py-obj docutils literal"><span class="pre">repeat</span></code></a>([repeat,&nbsp;number])</td>
-<td>Call timeit() a few times.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="timeit.Timer.timeit.html#timeit.Timer.timeit" title="timeit.Timer.timeit"><code class="xref py py-obj docutils literal"><span class="pre">timeit</span></code></a>([number])</td>
-<td>Time &#8216;number&#8217; executions of the main statement.</td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="timeit.Timer.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>stmt='pass'</em>, <em>setup='pass'</em>, <em>timer=&lt;built-in function time&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/timeit.html#Timer.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#timeit.Timer.__init__" title="Permalink to this definition">¶</a></dt>
@@ -216,6 +197,29 @@ multi-line string literals.</p>
 
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>2.12.2.1.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="timeit.Timer.__init__.html#timeit.Timer.__init__" title="timeit.Timer.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([stmt,&nbsp;setup,&nbsp;timer])</td>
+<td>Constructor.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="timeit.Timer.print_exc.html#timeit.Timer.print_exc" title="timeit.Timer.print_exc"><code class="xref py py-obj docutils literal"><span class="pre">print_exc</span></code></a>([file])</td>
+<td>Helper to print a traceback from the timed code.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="timeit.Timer.repeat.html#timeit.Timer.repeat" title="timeit.Timer.repeat"><code class="xref py py-obj docutils literal"><span class="pre">repeat</span></code></a>([repeat,&nbsp;number])</td>
+<td>Call timeit() a few times.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="timeit.Timer.timeit.html#timeit.Timer.timeit" title="timeit.Timer.timeit"><code class="xref py py-obj docutils literal"><span class="pre">timeit</span></code></a>([number])</td>
+<td>Time &#8216;number&#8217; executions of the main statement.</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -225,10 +229,10 @@ multi-line string literals.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="timeit.Timer.print_exc.html" class="btn btn-neutral float-right" title="2.12.2.1.1. timeit.Timer.print_exc" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="timeit.Timer.__init__.html" class="btn btn-neutral float-right" title="2.12.2.1.1.1. timeit.Timer.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../timeit.timeit.html" class="btn btn-neutral" title="2.12.1.5. timeit.timeit" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../timeit.timeit.html" class="btn btn-neutral" title="2.12.1.4. timeit.timeit" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

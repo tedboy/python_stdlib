@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>urllib &mdash; Python Standard Library</title>
+  <title>urllib &mdash; My Project v1</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="Module code" href="index.html"/> 
 
   
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -101,7 +101,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -198,7 +198,7 @@
 <span class="k">elif</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;riscos&#39;</span><span class="p">:</span>
     <span class="kn">from</span> <span class="nn">rourl2path</span> <span class="k">import</span> <span class="n">url2pathname</span><span class="p">,</span> <span class="n">pathname2url</span>
 <span class="k">else</span><span class="p">:</span>
-<div class="viewcode-block" id="url2pathname"><a class="viewcode-back" href="../generated/urllib2.url2pathname.html#urllib.url2pathname">[docs]</a>    <span class="k">def</span> <span class="nf">url2pathname</span><span class="p">(</span><span class="n">pathname</span><span class="p">):</span>
+<div class="viewcode-block" id="url2pathname"><a class="viewcode-back" href="../generated/urllib.url2pathname.html#urllib.url2pathname">[docs]</a>    <span class="k">def</span> <span class="nf">url2pathname</span><span class="p">(</span><span class="n">pathname</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;OS-specific conversion from a relative URL of the &#39;file&#39; scheme</span>
 <span class="sd">        to a file system path; not recommended for general use.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">unquote</span><span class="p">(</span><span class="n">pathname</span><span class="p">)</span></div>
@@ -961,7 +961,7 @@
 <span class="c1"># Utility functions</span>
 
 <span class="n">_localhost</span> <span class="o">=</span> <span class="kc">None</span>
-<div class="viewcode-block" id="localhost"><a class="viewcode-back" href="../generated/urllib2.localhost.html#urllib.localhost">[docs]</a><span class="k">def</span> <span class="nf">localhost</span><span class="p">():</span>
+<div class="viewcode-block" id="localhost"><a class="viewcode-back" href="../generated/urllib.localhost.html#urllib.localhost">[docs]</a><span class="k">def</span> <span class="nf">localhost</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return the IP address of the magic hostname &#39;localhost&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_localhost</span>
     <span class="k">if</span> <span class="n">_localhost</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -1005,10 +1005,10 @@
 
 <span class="c1"># Utility classes</span>
 
-<div class="viewcode-block" id="ftpwrapper"><a class="viewcode-back" href="../generated/generated/urllib2.ftpwrapper.html#urllib.ftpwrapper">[docs]</a><span class="k">class</span> <span class="nc">ftpwrapper</span><span class="p">:</span>
+<div class="viewcode-block" id="ftpwrapper"><a class="viewcode-back" href="../generated/generated/urllib.ftpwrapper.html#urllib.ftpwrapper">[docs]</a><span class="k">class</span> <span class="nc">ftpwrapper</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Class used by open_ftp() for cache of open FTP connections.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="ftpwrapper.__init__"><a class="viewcode-back" href="../generated/generated/urllib2.ftpwrapper.__init__.html#urllib.ftpwrapper.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user</span><span class="p">,</span> <span class="n">passwd</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span>
+<div class="viewcode-block" id="ftpwrapper.__init__"><a class="viewcode-back" href="../generated/generated/urllib.ftpwrapper.__init__.html#urllib.ftpwrapper.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user</span><span class="p">,</span> <span class="n">passwd</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span>
                  <span class="n">timeout</span><span class="o">=</span><span class="n">socket</span><span class="o">.</span><span class="n">_GLOBAL_DEFAULT_TIMEOUT</span><span class="p">,</span>
                  <span class="n">persistent</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">user</span> <span class="o">=</span> <span class="n">user</span>
@@ -1025,7 +1025,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
             <span class="k">raise</span></div>
 
-<div class="viewcode-block" id="ftpwrapper.init"><a class="viewcode-back" href="../generated/generated/urllib2.ftpwrapper.init.html#urllib.ftpwrapper.init">[docs]</a>    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ftpwrapper.init"><a class="viewcode-back" href="../generated/generated/urllib.ftpwrapper.init.html#urllib.ftpwrapper.init">[docs]</a>    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="kn">import</span> <span class="nn">ftplib</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">busy</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">ftp</span> <span class="o">=</span> <span class="n">ftplib</span><span class="o">.</span><span class="n">FTP</span><span class="p">()</span>
@@ -1034,7 +1034,7 @@
         <span class="n">_target</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dirs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">ftp</span><span class="o">.</span><span class="n">cwd</span><span class="p">(</span><span class="n">_target</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="ftpwrapper.retrfile"><a class="viewcode-back" href="../generated/generated/urllib2.ftpwrapper.retrfile.html#urllib.ftpwrapper.retrfile">[docs]</a>    <span class="k">def</span> <span class="nf">retrfile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file</span><span class="p">,</span> <span class="nb">type</span><span class="p">):</span>
+<div class="viewcode-block" id="ftpwrapper.retrfile"><a class="viewcode-back" href="../generated/generated/urllib.ftpwrapper.retrfile.html#urllib.ftpwrapper.retrfile">[docs]</a>    <span class="k">def</span> <span class="nf">retrfile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file</span><span class="p">,</span> <span class="nb">type</span><span class="p">):</span>
         <span class="kn">import</span> <span class="nn">ftplib</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">endtransfer</span><span class="p">()</span>
         <span class="k">if</span> <span class="nb">type</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">):</span> <span class="n">cmd</span> <span class="o">=</span> <span class="s1">&#39;TYPE A&#39;</span><span class="p">;</span> <span class="n">isdir</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1077,7 +1077,7 @@
         <span class="c1"># Pass back both a suitably decorated object and a retrieval length</span>
         <span class="k">return</span> <span class="p">(</span><span class="n">ftpobj</span><span class="p">,</span> <span class="n">retrlen</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="ftpwrapper.endtransfer"><a class="viewcode-back" href="../generated/generated/urllib2.ftpwrapper.endtransfer.html#urllib.ftpwrapper.endtransfer">[docs]</a>    <span class="k">def</span> <span class="nf">endtransfer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ftpwrapper.endtransfer"><a class="viewcode-back" href="../generated/generated/urllib.ftpwrapper.endtransfer.html#urllib.ftpwrapper.endtransfer">[docs]</a>    <span class="k">def</span> <span class="nf">endtransfer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">busy</span><span class="p">:</span>
             <span class="k">return</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">busy</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1086,18 +1086,18 @@
         <span class="k">except</span> <span class="n">ftperrors</span><span class="p">():</span>
             <span class="k">pass</span></div>
 
-<div class="viewcode-block" id="ftpwrapper.close"><a class="viewcode-back" href="../generated/generated/urllib2.ftpwrapper.close.html#urllib.ftpwrapper.close">[docs]</a>    <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ftpwrapper.close"><a class="viewcode-back" href="../generated/generated/urllib.ftpwrapper.close.html#urllib.ftpwrapper.close">[docs]</a>    <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">keepalive</span> <span class="o">=</span> <span class="kc">False</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">refcount</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">real_close</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="ftpwrapper.file_close"><a class="viewcode-back" href="../generated/generated/urllib2.ftpwrapper.file_close.html#urllib.ftpwrapper.file_close">[docs]</a>    <span class="k">def</span> <span class="nf">file_close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ftpwrapper.file_close"><a class="viewcode-back" href="../generated/generated/urllib.ftpwrapper.file_close.html#urllib.ftpwrapper.file_close">[docs]</a>    <span class="k">def</span> <span class="nf">file_close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">endtransfer</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">refcount</span> <span class="o">-=</span> <span class="mi">1</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">refcount</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">keepalive</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">real_close</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="ftpwrapper.real_close"><a class="viewcode-back" href="../generated/generated/urllib2.ftpwrapper.real_close.html#urllib.ftpwrapper.real_close">[docs]</a>    <span class="k">def</span> <span class="nf">real_close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ftpwrapper.real_close"><a class="viewcode-back" href="../generated/generated/urllib.ftpwrapper.real_close.html#urllib.ftpwrapper.real_close">[docs]</a>    <span class="k">def</span> <span class="nf">real_close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">endtransfer</span><span class="p">()</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">ftp</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -1163,22 +1163,22 @@
 <div class="viewcode-block" id="addinfo.info"><a class="viewcode-back" href="../generated/generated/urllib.addinfo.info.html#urllib.addinfo.info">[docs]</a>    <span class="k">def</span> <span class="nf">info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">headers</span></div></div>
 
-<div class="viewcode-block" id="addinfourl"><a class="viewcode-back" href="../generated/generated/urllib2.addinfourl.html#urllib.addinfourl">[docs]</a><span class="k">class</span> <span class="nc">addinfourl</span><span class="p">(</span><span class="n">addbase</span><span class="p">):</span>
+<div class="viewcode-block" id="addinfourl"><a class="viewcode-back" href="../generated/generated/urllib.addinfourl.html#urllib.addinfourl">[docs]</a><span class="k">class</span> <span class="nc">addinfourl</span><span class="p">(</span><span class="n">addbase</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;class to add info() and geturl() methods to an open file.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="addinfourl.__init__"><a class="viewcode-back" href="../generated/generated/urllib2.addinfourl.__init__.html#urllib.addinfourl.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fp</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">code</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="addinfourl.__init__"><a class="viewcode-back" href="../generated/generated/urllib.addinfourl.__init__.html#urllib.addinfourl.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fp</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">code</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="n">addbase</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fp</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">=</span> <span class="n">url</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">code</span></div>
 
-<div class="viewcode-block" id="addinfourl.info"><a class="viewcode-back" href="../generated/generated/urllib2.addinfourl.info.html#urllib.addinfourl.info">[docs]</a>    <span class="k">def</span> <span class="nf">info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="addinfourl.info"><a class="viewcode-back" href="../generated/generated/urllib.addinfourl.info.html#urllib.addinfourl.info">[docs]</a>    <span class="k">def</span> <span class="nf">info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">headers</span></div>
 
-<div class="viewcode-block" id="addinfourl.getcode"><a class="viewcode-back" href="../generated/generated/urllib2.addinfourl.getcode.html#urllib.addinfourl.getcode">[docs]</a>    <span class="k">def</span> <span class="nf">getcode</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="addinfourl.getcode"><a class="viewcode-back" href="../generated/generated/urllib.addinfourl.getcode.html#urllib.addinfourl.getcode">[docs]</a>    <span class="k">def</span> <span class="nf">getcode</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">code</span></div>
 
-<div class="viewcode-block" id="addinfourl.geturl"><a class="viewcode-back" href="../generated/generated/urllib2.addinfourl.geturl.html#urllib.addinfourl.geturl">[docs]</a>    <span class="k">def</span> <span class="nf">geturl</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="addinfourl.geturl"><a class="viewcode-back" href="../generated/generated/urllib.addinfourl.geturl.html#urllib.addinfourl.geturl">[docs]</a>    <span class="k">def</span> <span class="nf">geturl</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">url</span></div></div>
 
 
@@ -1206,7 +1206,7 @@
     <span class="k">def</span> <span class="nf">_is_unicode</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">unicode</span><span class="p">)</span>
 
-<div class="viewcode-block" id="toBytes"><a class="viewcode-back" href="../generated/urllib2.toBytes.html#urllib.toBytes">[docs]</a><span class="k">def</span> <span class="nf">toBytes</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="toBytes"><a class="viewcode-back" href="../generated/urllib.toBytes.html#urllib.toBytes">[docs]</a><span class="k">def</span> <span class="nf">toBytes</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;toBytes(u&quot;URL&quot;) --&gt; &#39;URL&#39;.&quot;&quot;&quot;</span>
     <span class="c1"># Most URL schemes require ASCII. If that changes, the conversion</span>
     <span class="c1"># can be relaxed</span>
@@ -1218,7 +1218,7 @@
                                <span class="s2">&quot; contains non-ASCII characters&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">url</span></div>
 
-<div class="viewcode-block" id="unwrap"><a class="viewcode-back" href="../generated/urllib2.unwrap.html#urllib.unwrap">[docs]</a><span class="k">def</span> <span class="nf">unwrap</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="unwrap"><a class="viewcode-back" href="../generated/urllib.unwrap.html#urllib.unwrap">[docs]</a><span class="k">def</span> <span class="nf">unwrap</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;unwrap(&#39;&lt;URL:type://host/path&gt;&#39;) --&gt; &#39;type://host/path&#39;.&quot;&quot;&quot;</span>
     <span class="n">url</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">url</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&lt;&#39;</span> <span class="ow">and</span> <span class="n">url</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:]</span> <span class="o">==</span> <span class="s1">&#39;&gt;&#39;</span><span class="p">:</span>
@@ -1227,7 +1227,7 @@
     <span class="k">return</span> <span class="n">url</span></div>
 
 <span class="n">_typeprog</span> <span class="o">=</span> <span class="kc">None</span>
-<div class="viewcode-block" id="splittype"><a class="viewcode-back" href="../generated/urllib2.splittype.html#urllib.splittype">[docs]</a><span class="k">def</span> <span class="nf">splittype</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="splittype"><a class="viewcode-back" href="../generated/urllib.splittype.html#urllib.splittype">[docs]</a><span class="k">def</span> <span class="nf">splittype</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splittype(&#39;type:opaquestring&#39;) --&gt; &#39;type&#39;, &#39;opaquestring&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_typeprog</span>
     <span class="k">if</span> <span class="n">_typeprog</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -1241,7 +1241,7 @@
     <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="n">url</span></div>
 
 <span class="n">_hostprog</span> <span class="o">=</span> <span class="kc">None</span>
-<div class="viewcode-block" id="splithost"><a class="viewcode-back" href="../generated/urllib2.splithost.html#urllib.splithost">[docs]</a><span class="k">def</span> <span class="nf">splithost</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="splithost"><a class="viewcode-back" href="../generated/urllib.splithost.html#urllib.splithost">[docs]</a><span class="k">def</span> <span class="nf">splithost</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splithost(&#39;//host[:port]/path&#39;) --&gt; &#39;host[:port]&#39;, &#39;/path&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_hostprog</span>
     <span class="k">if</span> <span class="n">_hostprog</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -1258,7 +1258,7 @@
     <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="n">url</span></div>
 
 <span class="n">_userprog</span> <span class="o">=</span> <span class="kc">None</span>
-<div class="viewcode-block" id="splituser"><a class="viewcode-back" href="../generated/urllib2.splituser.html#urllib.splituser">[docs]</a><span class="k">def</span> <span class="nf">splituser</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
+<div class="viewcode-block" id="splituser"><a class="viewcode-back" href="../generated/urllib.splituser.html#urllib.splituser">[docs]</a><span class="k">def</span> <span class="nf">splituser</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splituser(&#39;user[:passwd]@host[:port]&#39;) --&gt; &#39;user[:passwd]&#39;, &#39;host[:port]&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_userprog</span>
     <span class="k">if</span> <span class="n">_userprog</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -1270,7 +1270,7 @@
     <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="n">host</span></div>
 
 <span class="n">_passwdprog</span> <span class="o">=</span> <span class="kc">None</span>
-<div class="viewcode-block" id="splitpasswd"><a class="viewcode-back" href="../generated/urllib2.splitpasswd.html#urllib.splitpasswd">[docs]</a><span class="k">def</span> <span class="nf">splitpasswd</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+<div class="viewcode-block" id="splitpasswd"><a class="viewcode-back" href="../generated/urllib.splitpasswd.html#urllib.splitpasswd">[docs]</a><span class="k">def</span> <span class="nf">splitpasswd</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splitpasswd(&#39;user:passwd&#39;) -&gt; &#39;user&#39;, &#39;passwd&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_passwdprog</span>
     <span class="k">if</span> <span class="n">_passwdprog</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -1283,7 +1283,7 @@
 
 <span class="c1"># splittag(&#39;/path#tag&#39;) --&gt; &#39;/path&#39;, &#39;tag&#39;</span>
 <span class="n">_portprog</span> <span class="o">=</span> <span class="kc">None</span>
-<div class="viewcode-block" id="splitport"><a class="viewcode-back" href="../generated/urllib2.splitport.html#urllib.splitport">[docs]</a><span class="k">def</span> <span class="nf">splitport</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
+<div class="viewcode-block" id="splitport"><a class="viewcode-back" href="../generated/urllib.splitport.html#urllib.splitport">[docs]</a><span class="k">def</span> <span class="nf">splitport</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splitport(&#39;host:port&#39;) --&gt; &#39;host&#39;, &#39;port&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_portprog</span>
     <span class="k">if</span> <span class="n">_portprog</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -1332,7 +1332,7 @@
     <span class="k">return</span> <span class="n">url</span><span class="p">,</span> <span class="kc">None</span></div>
 
 <span class="n">_tagprog</span> <span class="o">=</span> <span class="kc">None</span>
-<div class="viewcode-block" id="splittag"><a class="viewcode-back" href="../generated/urllib2.splittag.html#urllib.splittag">[docs]</a><span class="k">def</span> <span class="nf">splittag</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="splittag"><a class="viewcode-back" href="../generated/urllib.splittag.html#urllib.splittag">[docs]</a><span class="k">def</span> <span class="nf">splittag</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splittag(&#39;/path#tag&#39;) --&gt; &#39;/path&#39;, &#39;tag&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_tagprog</span>
     <span class="k">if</span> <span class="n">_tagprog</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -1343,14 +1343,14 @@
     <span class="k">if</span> <span class="n">match</span><span class="p">:</span> <span class="k">return</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">url</span><span class="p">,</span> <span class="kc">None</span></div>
 
-<div class="viewcode-block" id="splitattr"><a class="viewcode-back" href="../generated/urllib2.splitattr.html#urllib.splitattr">[docs]</a><span class="k">def</span> <span class="nf">splitattr</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="splitattr"><a class="viewcode-back" href="../generated/urllib.splitattr.html#urllib.splitattr">[docs]</a><span class="k">def</span> <span class="nf">splitattr</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splitattr(&#39;/path;attr1=value1;attr2=value2;...&#39;) -&gt;</span>
 <span class="sd">        &#39;/path&#39;, [&#39;attr1=value1&#39;, &#39;attr2=value2&#39;, ...].&quot;&quot;&quot;</span>
     <span class="n">words</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">words</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">words</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span></div>
 
 <span class="n">_valueprog</span> <span class="o">=</span> <span class="kc">None</span>
-<div class="viewcode-block" id="splitvalue"><a class="viewcode-back" href="../generated/urllib2.splitvalue.html#urllib.splitvalue">[docs]</a><span class="k">def</span> <span class="nf">splitvalue</span><span class="p">(</span><span class="n">attr</span><span class="p">):</span>
+<div class="viewcode-block" id="splitvalue"><a class="viewcode-back" href="../generated/urllib.splitvalue.html#urllib.splitvalue">[docs]</a><span class="k">def</span> <span class="nf">splitvalue</span><span class="p">(</span><span class="n">attr</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splitvalue(&#39;attr=value&#39;) --&gt; &#39;attr&#39;, &#39;value&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_valueprog</span>
     <span class="k">if</span> <span class="n">_valueprog</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -1370,7 +1370,7 @@
                  <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">_hexdig</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">_hexdig</span><span class="p">)</span>
 <span class="n">_asciire</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;([</span><span class="se">\x00</span><span class="s1">-</span><span class="se">\x7f</span><span class="s1">]+)&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="unquote"><a class="viewcode-back" href="../generated/urllib2.unquote.html#urllib.unquote">[docs]</a><span class="k">def</span> <span class="nf">unquote</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="unquote"><a class="viewcode-back" href="../generated/urllib.unquote.html#urllib.unquote">[docs]</a><span class="k">def</span> <span class="nf">unquote</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;unquote(&#39;abc%20def&#39;) -&gt; &#39;abc def&#39;.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">_is_unicode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
         <span class="k">if</span> <span class="s1">&#39;%&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
@@ -1411,7 +1411,7 @@
     <span class="n">_safe_map</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span> <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">128</span> <span class="ow">and</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">always_safe</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;%</span><span class="si">{:02X}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="n">_safe_quoters</span> <span class="o">=</span> <span class="p">{}</span>
 
-<div class="viewcode-block" id="quote"><a class="viewcode-back" href="../generated/urllib2.quote.html#urllib.quote">[docs]</a><span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s1">&#39;/&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="quote"><a class="viewcode-back" href="../generated/urllib.quote.html#urllib.quote">[docs]</a><span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s1">&#39;/&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;quote(&#39;abc def&#39;) -&gt; &#39;abc%20def&#39;</span>
 
 <span class="sd">    Each part of a URL, e.g. the path info, the query, etc., has a</span>
@@ -1684,7 +1684,7 @@
             <span class="k">pass</span>
         <span class="k">return</span> <span class="n">proxies</span>
 
-<div class="viewcode-block" id="getproxies"><a class="viewcode-back" href="../generated/urllib2.getproxies.html#urllib.getproxies">[docs]</a>    <span class="k">def</span> <span class="nf">getproxies</span><span class="p">():</span>
+<div class="viewcode-block" id="getproxies"><a class="viewcode-back" href="../generated/urllib.getproxies.html#urllib.getproxies">[docs]</a>    <span class="k">def</span> <span class="nf">getproxies</span><span class="p">():</span>
         <span class="sd">&quot;&quot;&quot;Return a dictionary of scheme -&gt; proxy server URL mappings.</span>
 
 <span class="sd">        Returns settings gathered from the environment, if specified,</span>
@@ -1745,7 +1745,7 @@
                     <span class="k">return</span> <span class="mi">1</span>
         <span class="k">return</span> <span class="mi">0</span>
 
-<div class="viewcode-block" id="proxy_bypass"><a class="viewcode-back" href="../generated/urllib2.proxy_bypass.html#urllib.proxy_bypass">[docs]</a>    <span class="k">def</span> <span class="nf">proxy_bypass</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
+<div class="viewcode-block" id="proxy_bypass"><a class="viewcode-back" href="../generated/urllib.proxy_bypass.html#urllib.proxy_bypass">[docs]</a>    <span class="k">def</span> <span class="nf">proxy_bypass</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return a dictionary of scheme -&gt; proxy server URL mappings.</span>
 
 <span class="sd">        Returns settings gathered from the environment, if specified,</span>

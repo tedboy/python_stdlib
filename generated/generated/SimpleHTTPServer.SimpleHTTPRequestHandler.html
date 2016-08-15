@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.3.13.2.1. SimpleHTTPServer.SimpleHTTPRequestHandler &mdash; Python Standard Library</title>
+  <title>3.3.13.2.1. SimpleHTTPServer.SimpleHTTPRequestHandler &mdash; My Project v1</title>
   
 
   
@@ -30,9 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.3.13. SimpleHTTPServer" href="../SimpleHTTPServer.html"/>
-        <link rel="prev" title="3.3.13.1.2. SimpleHTTPServer.test" href="../SimpleHTTPServer.test.html"/> 
+        <link rel="next" title="3.3.13.2.1.1.1. SimpleHTTPServer.SimpleHTTPRequestHandler.__init__" href="SimpleHTTPServer.SimpleHTTPRequestHandler.__init__.html"/>
+        <link rel="prev" title="3.3.13.1.1. SimpleHTTPServer.test" href="../SimpleHTTPServer.test.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -51,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -87,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a><ul class="current">
@@ -136,7 +129,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -186,7 +179,6 @@
             
   <div class="section" id="simplehttpserver-simplehttprequesthandler">
 <h1>3.3.13.2.1. SimpleHTTPServer.SimpleHTTPRequestHandler<a class="headerlink" href="#simplehttpserver-simplehttprequesthandler" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.__init__.html#SimpleHTTPServer.SimpleHTTPRequestHandler.__init__" title="SimpleHTTPServer.SimpleHTTPRequestHandler.__init__"><code class="xref py py-func docutils literal"><span class="pre">SimpleHTTPRequestHandler.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="SimpleHTTPServer.SimpleHTTPRequestHandler">
 <em class="property">class </em><code class="descclassname">SimpleHTTPServer.</code><code class="descname">SimpleHTTPRequestHandler</code><span class="sig-paren">(</span><em>request</em>, <em>client_address</em>, <em>server</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/SimpleHTTPServer.html#SimpleHTTPRequestHandler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#SimpleHTTPServer.SimpleHTTPRequestHandler" title="Permalink to this definition">¶</a></dt>
@@ -196,27 +188,23 @@ subdirectories.  The MIME type for files is determined by
 calling the .guess_type() method.</p>
 <p>The GET and HEAD requests are identical except that the HEAD
 request omits the actual contents of the file.</p>
-<p class="rubric">Attributes</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="41%" />
-<col width="59%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>timeout</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Methods</p>
+<dl class="method">
+<dt id="SimpleHTTPServer.SimpleHTTPRequestHandler.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>request</em>, <em>client_address</em>, <em>server</em><span class="sig-paren">)</span><a class="headerlink" href="#SimpleHTTPServer.SimpleHTTPRequestHandler.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>3.3.13.2.1.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">MessageClass</span></code></td>
-<td>alias of <code class="xref py py-class docutils literal"><span class="pre">Message</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.__init__.html#SimpleHTTPServer.SimpleHTTPRequestHandler.__init__" title="SimpleHTTPServer.SimpleHTTPRequestHandler.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>(request,&nbsp;client_address,&nbsp;server)</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.address_string.html#SimpleHTTPServer.SimpleHTTPRequestHandler.address_string" title="SimpleHTTPServer.SimpleHTTPRequestHandler.address_string"><code class="xref py py-obj docutils literal"><span class="pre">address_string</span></code></a>()</td>
 <td>Return the client address formatted for logging.</td>
@@ -289,8 +277,60 @@ request omits the actual contents of the file.</p>
 </tr>
 </tbody>
 </table>
-</dd></dl>
-
+</div>
+<div class="section" id="attributes">
+<h2>3.3.13.2.1.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.default_request_version.html#SimpleHTTPServer.SimpleHTTPRequestHandler.default_request_version" title="SimpleHTTPServer.SimpleHTTPRequestHandler.default_request_version"><code class="xref py py-obj docutils literal"><span class="pre">default_request_version</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.disable_nagle_algorithm.html#SimpleHTTPServer.SimpleHTTPRequestHandler.disable_nagle_algorithm" title="SimpleHTTPServer.SimpleHTTPRequestHandler.disable_nagle_algorithm"><code class="xref py py-obj docutils literal"><span class="pre">disable_nagle_algorithm</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.error_content_type.html#SimpleHTTPServer.SimpleHTTPRequestHandler.error_content_type" title="SimpleHTTPServer.SimpleHTTPRequestHandler.error_content_type"><code class="xref py py-obj docutils literal"><span class="pre">error_content_type</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.error_message_format.html#SimpleHTTPServer.SimpleHTTPRequestHandler.error_message_format" title="SimpleHTTPServer.SimpleHTTPRequestHandler.error_message_format"><code class="xref py py-obj docutils literal"><span class="pre">error_message_format</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map.html#SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map" title="SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map"><code class="xref py py-obj docutils literal"><span class="pre">extensions_map</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.monthname.html#SimpleHTTPServer.SimpleHTTPRequestHandler.monthname" title="SimpleHTTPServer.SimpleHTTPRequestHandler.monthname"><code class="xref py py-obj docutils literal"><span class="pre">monthname</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.protocol_version.html#SimpleHTTPServer.SimpleHTTPRequestHandler.protocol_version" title="SimpleHTTPServer.SimpleHTTPRequestHandler.protocol_version"><code class="xref py py-obj docutils literal"><span class="pre">protocol_version</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.rbufsize.html#SimpleHTTPServer.SimpleHTTPRequestHandler.rbufsize" title="SimpleHTTPServer.SimpleHTTPRequestHandler.rbufsize"><code class="xref py py-obj docutils literal"><span class="pre">rbufsize</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.responses.html#SimpleHTTPServer.SimpleHTTPRequestHandler.responses" title="SimpleHTTPServer.SimpleHTTPRequestHandler.responses"><code class="xref py py-obj docutils literal"><span class="pre">responses</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.server_version.html#SimpleHTTPServer.SimpleHTTPRequestHandler.server_version" title="SimpleHTTPServer.SimpleHTTPRequestHandler.server_version"><code class="xref py py-obj docutils literal"><span class="pre">server_version</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.sys_version.html#SimpleHTTPServer.SimpleHTTPRequestHandler.sys_version" title="SimpleHTTPServer.SimpleHTTPRequestHandler.sys_version"><code class="xref py py-obj docutils literal"><span class="pre">sys_version</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.timeout.html#SimpleHTTPServer.SimpleHTTPRequestHandler.timeout" title="SimpleHTTPServer.SimpleHTTPRequestHandler.timeout"><code class="xref py py-obj docutils literal"><span class="pre">timeout</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.wbufsize.html#SimpleHTTPServer.SimpleHTTPRequestHandler.wbufsize" title="SimpleHTTPServer.SimpleHTTPRequestHandler.wbufsize"><code class="xref py py-obj docutils literal"><span class="pre">wbufsize</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="SimpleHTTPServer.SimpleHTTPRequestHandler.weekdayname.html#SimpleHTTPServer.SimpleHTTPRequestHandler.weekdayname" title="SimpleHTTPServer.SimpleHTTPRequestHandler.weekdayname"><code class="xref py py-obj docutils literal"><span class="pre">weekdayname</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -300,8 +340,10 @@ request omits the actual contents of the file.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="SimpleHTTPServer.SimpleHTTPRequestHandler.__init__.html" class="btn btn-neutral float-right" title="3.3.13.2.1.1.1. SimpleHTTPServer.SimpleHTTPRequestHandler.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="../SimpleHTTPServer.test.html" class="btn btn-neutral" title="3.3.13.1.2. SimpleHTTPServer.test" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="../SimpleHTTPServer.test.html" class="btn btn-neutral" title="3.3.13.1.1. SimpleHTTPServer.test" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

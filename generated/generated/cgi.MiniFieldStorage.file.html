@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>cgi.MiniFieldStorage.file &mdash; Python Standard Library</title>
+  <title>3.3.8.2.5.2.3. cgi.MiniFieldStorage.file &mdash; My Project v1</title>
   
 
   
@@ -30,7 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/> 
+    <link rel="top" title="My Project v1" href="../../index.html"/>
+        <link rel="up" title="3.3.8.2.5. cgi.MiniFieldStorage" href="cgi.MiniFieldStorage.html"/>
+        <link rel="next" title="3.3.8.2.5.2.4. cgi.MiniFieldStorage.filename" href="cgi.MiniFieldStorage.filename.html"/>
+        <link rel="prev" title="3.3.8.2.5.2.2. cgi.MiniFieldStorage.disposition_options" href="cgi.MiniFieldStorage.disposition_options.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -49,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -81,10 +84,36 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../popen2.html">3.3.1. popen2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../socket.html">3.3.2. socket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../email.html">3.3.3. email</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../json.html">3.3.4. json</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../HTMLParser.html">3.3.5. HTMLParser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../xml.dom.html">3.3.6. xml.dom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../webbrowser.html">3.3.7. webbrowser</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../cgi.html">3.3.8. cgi</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../cgi.html#functions">3.3.8.1. Functions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../cgi.html#classes">3.3.8.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../wsgiref.html">3.3.9. wsgiref</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../urllib.html">3.3.10. urllib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../urllib2.html">3.3.11. urllib2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../urlparse.html">3.3.12. urlparse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../SimpleHTTPServer.html">3.3.13. SimpleHTTPServer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
 </ul>
 
@@ -100,7 +129,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -127,7 +156,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>cgi.MiniFieldStorage.file</li>
+          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+          <li><a href="../cgi.html">3.3.8. cgi</a> &raquo;</li>
+        
+          <li><a href="cgi.MiniFieldStorage.html">3.3.8.2.5. cgi.MiniFieldStorage</a> &raquo;</li>
+        
+      <li>3.3.8.2.5.2.3. cgi.MiniFieldStorage.file</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -145,7 +180,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="cgi-minifieldstorage-file">
-<h1>cgi.MiniFieldStorage.file<a class="headerlink" href="#cgi-minifieldstorage-file" title="Permalink to this headline">¶</a></h1>
+<h1>3.3.8.2.5.2.3. cgi.MiniFieldStorage.file<a class="headerlink" href="#cgi-minifieldstorage-file" title="Permalink to this headline">¶</a></h1>
 <dl class="attribute">
 <dt id="cgi.MiniFieldStorage.file">
 <code class="descclassname">MiniFieldStorage.</code><code class="descname">file</code><em class="property"> = None</em><a class="headerlink" href="#cgi.MiniFieldStorage.file" title="Permalink to this definition">¶</a></dt>
@@ -157,6 +192,15 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cgi.MiniFieldStorage.filename.html" class="btn btn-neutral float-right" title="3.3.8.2.5.2.4. cgi.MiniFieldStorage.filename" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cgi.MiniFieldStorage.disposition_options.html" class="btn btn-neutral" title="3.3.8.2.5.2.2. cgi.MiniFieldStorage.disposition_options" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

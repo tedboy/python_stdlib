@@ -2,16 +2,15 @@ __builtin__.long
 ================
 
 .. currentmodule:: __builtin__
-
-:func:`long.__init__`
-
 .. autoclass:: long
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~long.bit_length
@@ -21,11 +20,10 @@ __builtin__.long
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~long.denominator

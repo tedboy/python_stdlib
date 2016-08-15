@@ -2,16 +2,15 @@ urllib2.ProxyHandler
 ====================
 
 .. currentmodule:: urllib2
-
-:func:`ProxyHandler.__init__`
-
 .. autoclass:: ProxyHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~ProxyHandler.__init__
@@ -23,11 +22,10 @@ urllib2.ProxyHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~ProxyHandler.handler_order

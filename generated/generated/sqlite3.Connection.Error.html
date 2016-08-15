@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>sqlite3.Connection.Error &mdash; Python Standard Library</title>
+  <title>2.9.2.2.2.3. sqlite3.Connection.Error &mdash; My Project v1</title>
   
 
   
@@ -30,7 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/> 
+    <link rel="top" title="My Project v1" href="../../index.html"/>
+        <link rel="up" title="2.9.2.2. sqlite3.Connection" href="sqlite3.Connection.html"/>
+        <link rel="next" title="2.9.2.2.2.4. sqlite3.Connection.IntegrityError" href="sqlite3.Connection.IntegrityError.html"/>
+        <link rel="prev" title="2.9.2.2.2.2. sqlite3.Connection.DatabaseError" href="sqlite3.Connection.DatabaseError.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -49,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -81,9 +84,38 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../collections.html">2.1. collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../datetime.html">2.2. datetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glob.html">2.3. glob</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../itertools.html">2.4. itertools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math.html">2.5. math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pdb.html">2.6. pdb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pprint.html">2.7. pprint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../random.html">2.8. random</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../sqlite3.html">2.9. sqlite3</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../sqlite3.html#functions">2.9.1. Functions</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../sqlite3.html#classes">2.9.2. Classes</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cache.html">2.9.2.1. sqlite3.Cache</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="sqlite3.Connection.html">2.9.2.2. sqlite3.Connection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cursor.html">2.9.2.3. sqlite3.Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.PrepareProtocol.html">2.9.2.4. sqlite3.PrepareProtocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Row.html">2.9.2.5. sqlite3.Row</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sqlite3.Statement.html">2.9.2.6. sqlite3.Statement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sqlite3.html#exceptions">2.9.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../subprocess.html">2.10. subprocess</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">2.11. time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../timeit.html">2.12. timeit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Tkinter.html">2.13. Tkinter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types.html">2.14. types</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
 </ul>
@@ -100,7 +132,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -127,7 +159,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>sqlite3.Connection.Error</li>
+          <li><a href="../../main2.html">2. Somewhat frequently used</a> &raquo;</li>
+        
+          <li><a href="../sqlite3.html">2.9. sqlite3</a> &raquo;</li>
+        
+          <li><a href="sqlite3.Connection.html">2.9.2.2. sqlite3.Connection</a> &raquo;</li>
+        
+      <li>2.9.2.2.2.3. sqlite3.Connection.Error</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -145,7 +183,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="sqlite3-connection-error">
-<h1>sqlite3.Connection.Error<a class="headerlink" href="#sqlite3-connection-error" title="Permalink to this headline">¶</a></h1>
+<h1>2.9.2.2.2.3. sqlite3.Connection.Error<a class="headerlink" href="#sqlite3-connection-error" title="Permalink to this headline">¶</a></h1>
 <dl class="attribute">
 <dt id="sqlite3.Connection.Error">
 <code class="descclassname">Connection.</code><code class="descname">Error</code><a class="headerlink" href="#sqlite3.Connection.Error" title="Permalink to this definition">¶</a></dt>
@@ -157,6 +195,15 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="sqlite3.Connection.IntegrityError.html" class="btn btn-neutral float-right" title="2.9.2.2.2.4. sqlite3.Connection.IntegrityError" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="sqlite3.Connection.DatabaseError.html" class="btn btn-neutral" title="2.9.2.2.2.2. sqlite3.Connection.DatabaseError" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

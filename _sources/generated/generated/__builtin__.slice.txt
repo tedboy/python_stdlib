@@ -2,16 +2,15 @@ __builtin__.slice
 =================
 
 .. currentmodule:: __builtin__
-
-:func:`slice.__init__`
-
 .. autoclass:: slice
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~slice.indices
@@ -20,11 +19,10 @@ __builtin__.slice
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~slice.start

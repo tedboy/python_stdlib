@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.1.2.10. __builtin__.file &mdash; Python Standard Library</title>
+  <title>1.1.2.10. __builtin__.file &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="1.1. __builtin__" href="../__builtin__.html"/>
-        <link rel="next" title="1.1.2.10.1. __builtin__.file.closed" href="__builtin__.file.closed.html"/>
-        <link rel="prev" title="1.1.2.9.1. __builtin__.enumerate.next" href="__builtin__.enumerate.next.html"/> 
+        <link rel="next" title="1.1.2.10.1.1. __builtin__.file.close" href="__builtin__.file.close.html"/>
+        <link rel="prev" title="1.1.2.9.1.1. __builtin__.enumerate.next" href="__builtin__.enumerate.next.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -85,9 +85,7 @@
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../main1.html">1. Frequently used</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../__builtin__.html#functions">1.1.1. Functions</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../__builtin__.html#classes">1.1.2. Classes</a><ul class="current">
@@ -121,7 +119,6 @@
 <li class="toctree-l4"><a class="reference internal" href="__builtin__.xrange.html">1.1.2.28. __builtin__.xrange</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../__builtin__.html#exceptions">1.1.3. Exceptions</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
@@ -131,13 +128,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
 </ul>
 
@@ -153,7 +147,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -203,7 +197,6 @@
             
   <div class="section" id="builtin-file">
 <h1>1.1.2.10. __builtin__.file<a class="headerlink" href="#builtin-file" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="#__builtin__.file.__init__" title="__builtin__.file.__init__"><code class="xref py py-func docutils literal"><span class="pre">file.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="__builtin__.file">
 <em class="property">class </em><code class="descclassname">__builtin__.</code><code class="descname">file</code><a class="headerlink" href="#__builtin__.file" title="Permalink to this definition">¶</a></dt>
@@ -221,25 +214,16 @@ in Python.  Also, a file so opened gains the attribute &#8216;newlines&#8217;;
 the value for this attribute is one of None (no newline read yet),
 &#8216;r&#8217;, &#8216;n&#8217;, &#8216;rn&#8217; or a tuple containing all the newline types seen.</p>
 <p>&#8216;U&#8217; cannot be combined with &#8216;w&#8217; or &#8216;+&#8217; mode.</p>
-<p class="rubric">Attributes</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.closed.html#__builtin__.file.closed" title="__builtin__.file.closed"><code class="xref py py-obj docutils literal"><span class="pre">closed</span></code></a></td>
-<td>True if the file is closed</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.newlines.html#__builtin__.file.newlines" title="__builtin__.file.newlines"><code class="xref py py-obj docutils literal"><span class="pre">newlines</span></code></a></td>
-<td>end-of-line convention used in this file</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.softspace.html#__builtin__.file.softspace" title="__builtin__.file.softspace"><code class="xref py py-obj docutils literal"><span class="pre">softspace</span></code></a></td>
-<td>flag indicating that a space needs to be printed; used by print</td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Methods</p>
+<dl class="attribute">
+<dt id="__builtin__.file.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#__builtin__.file.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>1.1.2.10.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -258,49 +242,74 @@ the value for this attribute is one of None (no newline read yet),
 <tr class="row-even"><td><a class="reference internal" href="__builtin__.file.isatty.html#__builtin__.file.isatty" title="__builtin__.file.isatty"><code class="xref py py-obj docutils literal"><span class="pre">isatty</span></code></a>(...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.next.html#__builtin__.file.next" title="__builtin__.file.next"><code class="xref py py-obj docutils literal"><span class="pre">next</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.read.html#__builtin__.file.read" title="__builtin__.file.read"><code class="xref py py-obj docutils literal"><span class="pre">read</span></code></a>(([size])&nbsp;-&gt;&nbsp;read&nbsp;at&nbsp;most&nbsp;size&nbsp;bytes,&nbsp;...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.read.html#__builtin__.file.read" title="__builtin__.file.read"><code class="xref py py-obj docutils literal"><span class="pre">read</span></code></a>(([size])&nbsp;-&gt;&nbsp;read&nbsp;at&nbsp;most&nbsp;size&nbsp;bytes,&nbsp;...)</td>
 <td>If the size argument is negative or omitted, read until EOF is reached.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.readinto.html#__builtin__.file.readinto" title="__builtin__.file.readinto"><code class="xref py py-obj docutils literal"><span class="pre">readinto</span></code></a>(...)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.readinto.html#__builtin__.file.readinto" title="__builtin__.file.readinto"><code class="xref py py-obj docutils literal"><span class="pre">readinto</span></code></a>(...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.readline.html#__builtin__.file.readline" title="__builtin__.file.readline"><code class="xref py py-obj docutils literal"><span class="pre">readline</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.readline.html#__builtin__.file.readline" title="__builtin__.file.readline"><code class="xref py py-obj docutils literal"><span class="pre">readline</span></code></a>(...)</td>
 <td>Retain newline.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.readlines.html#__builtin__.file.readlines" title="__builtin__.file.readlines"><code class="xref py py-obj docutils literal"><span class="pre">readlines</span></code></a>(([size])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings,&nbsp;...)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.readlines.html#__builtin__.file.readlines" title="__builtin__.file.readlines"><code class="xref py py-obj docutils literal"><span class="pre">readlines</span></code></a>(([size])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings,&nbsp;...)</td>
 <td>Call readline() repeatedly and return a list of the lines so read.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.seek.html#__builtin__.file.seek" title="__builtin__.file.seek"><code class="xref py py-obj docutils literal"><span class="pre">seek</span></code></a>((offset[,&nbsp;...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.seek.html#__builtin__.file.seek" title="__builtin__.file.seek"><code class="xref py py-obj docutils literal"><span class="pre">seek</span></code></a>((offset[,&nbsp;...)</td>
 <td>Argument offset is a byte count.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.tell.html#__builtin__.file.tell" title="__builtin__.file.tell"><code class="xref py py-obj docutils literal"><span class="pre">tell</span></code></a>(()&nbsp;-&gt;&nbsp;current&nbsp;file&nbsp;position,&nbsp;...)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.tell.html#__builtin__.file.tell" title="__builtin__.file.tell"><code class="xref py py-obj docutils literal"><span class="pre">tell</span></code></a>(()&nbsp;-&gt;&nbsp;current&nbsp;file&nbsp;position,&nbsp;...)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.truncate.html#__builtin__.file.truncate" title="__builtin__.file.truncate"><code class="xref py py-obj docutils literal"><span class="pre">truncate</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.truncate.html#__builtin__.file.truncate" title="__builtin__.file.truncate"><code class="xref py py-obj docutils literal"><span class="pre">truncate</span></code></a>(...)</td>
 <td>Size defaults to the current file position, as returned by tell().</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.write.html#__builtin__.file.write" title="__builtin__.file.write"><code class="xref py py-obj docutils literal"><span class="pre">write</span></code></a>((str)&nbsp;-&gt;&nbsp;None.&nbsp;&nbsp;Write&nbsp;string&nbsp;str&nbsp;to&nbsp;file.)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.write.html#__builtin__.file.write" title="__builtin__.file.write"><code class="xref py py-obj docutils literal"><span class="pre">write</span></code></a>((str)&nbsp;-&gt;&nbsp;None.&nbsp;&nbsp;Write&nbsp;string&nbsp;str&nbsp;to&nbsp;file.)</td>
 <td>Note that due to buffering, flush() or close() may be needed before the file on disk reflects the data written.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.writelines.html#__builtin__.file.writelines" title="__builtin__.file.writelines"><code class="xref py py-obj docutils literal"><span class="pre">writelines</span></code></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.writelines.html#__builtin__.file.writelines" title="__builtin__.file.writelines"><code class="xref py py-obj docutils literal"><span class="pre">writelines</span></code></a>(...)</td>
 <td>Note that newlines are not added.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.xreadlines.html#__builtin__.file.xreadlines" title="__builtin__.file.xreadlines"><code class="xref py py-obj docutils literal"><span class="pre">xreadlines</span></code></a>(()&nbsp;-&gt;&nbsp;returns&nbsp;self.)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.xreadlines.html#__builtin__.file.xreadlines" title="__builtin__.file.xreadlines"><code class="xref py py-obj docutils literal"><span class="pre">xreadlines</span></code></a>(()&nbsp;-&gt;&nbsp;returns&nbsp;self.)</td>
 <td>For backward compatibility.</td>
 </tr>
 </tbody>
 </table>
-<dl class="attribute">
-<dt id="__builtin__.file.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#__builtin__.file.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
-</dd></dl>
-
-</dd></dl>
-
+</div>
+<div class="section" id="attributes">
+<h2>1.1.2.10.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.closed.html#__builtin__.file.closed" title="__builtin__.file.closed"><code class="xref py py-obj docutils literal"><span class="pre">closed</span></code></a></td>
+<td>True if the file is closed</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.encoding.html#__builtin__.file.encoding" title="__builtin__.file.encoding"><code class="xref py py-obj docutils literal"><span class="pre">encoding</span></code></a></td>
+<td>file encoding</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.errors.html#__builtin__.file.errors" title="__builtin__.file.errors"><code class="xref py py-obj docutils literal"><span class="pre">errors</span></code></a></td>
+<td>Unicode error handler</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.mode.html#__builtin__.file.mode" title="__builtin__.file.mode"><code class="xref py py-obj docutils literal"><span class="pre">mode</span></code></a></td>
+<td>file mode (&#8216;r&#8217;, &#8216;U&#8217;, &#8216;w&#8217;, &#8216;a&#8217;, possibly with &#8216;b&#8217; or &#8216;+&#8217; added)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.name.html#__builtin__.file.name" title="__builtin__.file.name"><code class="xref py py-obj docutils literal"><span class="pre">name</span></code></a></td>
+<td>file name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.newlines.html#__builtin__.file.newlines" title="__builtin__.file.newlines"><code class="xref py py-obj docutils literal"><span class="pre">newlines</span></code></a></td>
+<td>end-of-line convention used in this file</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.file.next.html#__builtin__.file.next" title="__builtin__.file.next"><code class="xref py py-obj docutils literal"><span class="pre">next</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.file.softspace.html#__builtin__.file.softspace" title="__builtin__.file.softspace"><code class="xref py py-obj docutils literal"><span class="pre">softspace</span></code></a></td>
+<td>flag indicating that a space needs to be printed; used by print</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -310,10 +319,10 @@ the value for this attribute is one of None (no newline read yet),
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="__builtin__.file.closed.html" class="btn btn-neutral float-right" title="1.1.2.10.1. __builtin__.file.closed" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="__builtin__.file.close.html" class="btn btn-neutral float-right" title="1.1.2.10.1.1. __builtin__.file.close" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="__builtin__.enumerate.next.html" class="btn btn-neutral" title="1.1.2.9.1. __builtin__.enumerate.next" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="__builtin__.enumerate.next.html" class="btn btn-neutral" title="1.1.2.9.1.1. __builtin__.enumerate.next" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

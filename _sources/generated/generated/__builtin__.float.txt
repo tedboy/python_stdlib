@@ -2,16 +2,15 @@ __builtin__.float
 =================
 
 .. currentmodule:: __builtin__
-
-:func:`float.__init__`
-
 .. autoclass:: float
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~float.as_integer_ratio
@@ -24,11 +23,10 @@ __builtin__.float
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~float.imag

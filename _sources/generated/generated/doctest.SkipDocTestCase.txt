@@ -2,16 +2,15 @@ doctest.SkipDocTestCase
 =======================
 
 .. currentmodule:: doctest
-
-:func:`SkipDocTestCase.__init__`
-
 .. autoclass:: SkipDocTestCase
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~SkipDocTestCase.__init__
@@ -80,11 +79,10 @@ doctest.SkipDocTestCase
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~SkipDocTestCase.longMessage

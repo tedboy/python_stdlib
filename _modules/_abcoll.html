@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>_abcoll &mdash; Python Standard Library</title>
+  <title>_abcoll &mdash; My Project v1</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="Module code" href="index.html"/> 
 
   
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -101,7 +101,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -177,7 +177,7 @@
         <span class="k">return</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="Hashable"><a class="viewcode-back" href="../generated/generated/collections.Hashable.html#collections.Hashable">[docs]</a><span class="k">class</span> <span class="nc">Hashable</span><span class="p">:</span>
+<span class="k">class</span> <span class="nc">Hashable</span><span class="p">:</span>
     <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">ABCMeta</span>
 
     <span class="nd">@abstractmethod</span>
@@ -197,10 +197,10 @@
                 <span class="c1"># Old-style class</span>
                 <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="s2">&quot;__hash__&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
                     <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">return</span> <span class="bp">NotImplemented</span></div>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
 
 
-<div class="viewcode-block" id="Iterable"><a class="viewcode-back" href="../generated/generated/collections.Iterable.html#collections.Iterable">[docs]</a><span class="k">class</span> <span class="nc">Iterable</span><span class="p">:</span>
+<span class="k">class</span> <span class="nc">Iterable</span><span class="p">:</span>
     <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">ABCMeta</span>
 
     <span class="nd">@abstractmethod</span>
@@ -213,17 +213,17 @@
         <span class="k">if</span> <span class="n">cls</span> <span class="ow">is</span> <span class="n">Iterable</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">_hasattr</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="s2">&quot;__iter__&quot;</span><span class="p">):</span>
                 <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">return</span> <span class="bp">NotImplemented</span></div>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
 
 <span class="n">Iterable</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="Iterator"><a class="viewcode-back" href="../generated/generated/collections.Iterator.html#collections.Iterator">[docs]</a><span class="k">class</span> <span class="nc">Iterator</span><span class="p">(</span><span class="n">Iterable</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">Iterator</span><span class="p">(</span><span class="n">Iterable</span><span class="p">):</span>
 
     <span class="nd">@abstractmethod</span>
-<div class="viewcode-block" id="Iterator.next"><a class="viewcode-back" href="../generated/generated/collections.Iterator.next.html#collections.Iterator.next">[docs]</a>    <span class="k">def</span> <span class="nf">next</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">next</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="s1">&#39;Return the next item from the iterator. When exhausted, raise StopIteration&#39;</span>
-        <span class="k">raise</span> <span class="ne">StopIteration</span></div>
+        <span class="k">raise</span> <span class="ne">StopIteration</span>
 
     <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span>
@@ -233,10 +233,10 @@
         <span class="k">if</span> <span class="n">cls</span> <span class="ow">is</span> <span class="n">Iterator</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">_hasattr</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="s2">&quot;next&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">_hasattr</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="s2">&quot;__iter__&quot;</span><span class="p">):</span>
                 <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">return</span> <span class="bp">NotImplemented</span></div>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
 
 
-<div class="viewcode-block" id="Sized"><a class="viewcode-back" href="../generated/generated/collections.Sized.html#collections.Sized">[docs]</a><span class="k">class</span> <span class="nc">Sized</span><span class="p">:</span>
+<span class="k">class</span> <span class="nc">Sized</span><span class="p">:</span>
     <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">ABCMeta</span>
 
     <span class="nd">@abstractmethod</span>
@@ -248,10 +248,10 @@
         <span class="k">if</span> <span class="n">cls</span> <span class="ow">is</span> <span class="n">Sized</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">_hasattr</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="s2">&quot;__len__&quot;</span><span class="p">):</span>
                 <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">return</span> <span class="bp">NotImplemented</span></div>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
 
 
-<div class="viewcode-block" id="Container"><a class="viewcode-back" href="../generated/generated/collections.Container.html#collections.Container">[docs]</a><span class="k">class</span> <span class="nc">Container</span><span class="p">:</span>
+<span class="k">class</span> <span class="nc">Container</span><span class="p">:</span>
     <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">ABCMeta</span>
 
     <span class="nd">@abstractmethod</span>
@@ -263,10 +263,10 @@
         <span class="k">if</span> <span class="n">cls</span> <span class="ow">is</span> <span class="n">Container</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">_hasattr</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="s2">&quot;__contains__&quot;</span><span class="p">):</span>
                 <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">return</span> <span class="bp">NotImplemented</span></div>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
 
 
-<div class="viewcode-block" id="Callable"><a class="viewcode-back" href="../generated/generated/collections.Callable.html#collections.Callable">[docs]</a><span class="k">class</span> <span class="nc">Callable</span><span class="p">:</span>
+<span class="k">class</span> <span class="nc">Callable</span><span class="p">:</span>
     <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">ABCMeta</span>
 
     <span class="nd">@abstractmethod</span>
@@ -278,13 +278,13 @@
         <span class="k">if</span> <span class="n">cls</span> <span class="ow">is</span> <span class="n">Callable</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">_hasattr</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="s2">&quot;__call__&quot;</span><span class="p">):</span>
                 <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">return</span> <span class="bp">NotImplemented</span></div>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
 
 
 <span class="c1">### SETS ###</span>
 
 
-<div class="viewcode-block" id="Set"><a class="viewcode-back" href="../generated/generated/collections.Set.html#collections.Set">[docs]</a><span class="k">class</span> <span class="nc">Set</span><span class="p">(</span><span class="n">Sized</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Container</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">Set</span><span class="p">(</span><span class="n">Sized</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Container</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A set is a finite, iterable container.</span>
 
 <span class="sd">    This class provides concrete generic implementations of all</span>
@@ -349,12 +349,12 @@
 
     <span class="n">__rand__</span> <span class="o">=</span> <span class="n">__and__</span>
 
-<div class="viewcode-block" id="Set.isdisjoint"><a class="viewcode-back" href="../generated/generated/collections.Set.isdisjoint.html#collections.Set.isdisjoint">[docs]</a>    <span class="k">def</span> <span class="nf">isdisjoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">isdisjoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="s1">&#39;Return True if two sets have a null intersection.&#39;</span>
         <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">other</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
                 <span class="k">return</span> <span class="kc">False</span>
-        <span class="k">return</span> <span class="kc">True</span></div>
+        <span class="k">return</span> <span class="kc">True</span>
 
     <span class="k">def</span> <span class="nf">__or__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">):</span>
@@ -422,12 +422,12 @@
             <span class="n">h</span> <span class="o">-=</span> <span class="n">MASK</span> <span class="o">+</span> <span class="mi">1</span>
         <span class="k">if</span> <span class="n">h</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
             <span class="n">h</span> <span class="o">=</span> <span class="mi">590923713</span>
-        <span class="k">return</span> <span class="n">h</span></div>
+        <span class="k">return</span> <span class="n">h</span>
 
 <span class="n">Set</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="nb">frozenset</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="MutableSet"><a class="viewcode-back" href="../generated/generated/collections.MutableSet.html#collections.MutableSet">[docs]</a><span class="k">class</span> <span class="nc">MutableSet</span><span class="p">(</span><span class="n">Set</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">MutableSet</span><span class="p">(</span><span class="n">Set</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A mutable set is a finite, iterable container.</span>
 
 <span class="sd">    This class provides concrete generic implementations of all</span>
@@ -440,22 +440,22 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="nd">@abstractmethod</span>
-<div class="viewcode-block" id="MutableSet.add"><a class="viewcode-back" href="../generated/generated/collections.MutableSet.add.html#collections.MutableSet.add">[docs]</a>    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Add an element.&quot;&quot;&quot;</span>
-        <span class="k">raise</span> <span class="ne">NotImplementedError</span></div>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span>
 
     <span class="nd">@abstractmethod</span>
-<div class="viewcode-block" id="MutableSet.discard"><a class="viewcode-back" href="../generated/generated/collections.MutableSet.discard.html#collections.MutableSet.discard">[docs]</a>    <span class="k">def</span> <span class="nf">discard</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">discard</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Remove an element.  Do not raise an exception if absent.&quot;&quot;&quot;</span>
-        <span class="k">raise</span> <span class="ne">NotImplementedError</span></div>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span>
 
-<div class="viewcode-block" id="MutableSet.remove"><a class="viewcode-back" href="../generated/generated/collections.MutableSet.remove.html#collections.MutableSet.remove">[docs]</a>    <span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Remove an element. If not a member, raise a KeyError.&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="n">value</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 
-<div class="viewcode-block" id="MutableSet.pop"><a class="viewcode-back" href="../generated/generated/collections.MutableSet.pop.html#collections.MutableSet.pop">[docs]</a>    <span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return the popped value.  Raise KeyError if empty.&quot;&quot;&quot;</span>
         <span class="n">it</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="k">try</span><span class="p">:</span>
@@ -463,15 +463,15 @@
         <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">KeyError</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">value</span></div>
+        <span class="k">return</span> <span class="n">value</span>
 
-<div class="viewcode-block" id="MutableSet.clear"><a class="viewcode-back" href="../generated/generated/collections.MutableSet.clear.html#collections.MutableSet.clear">[docs]</a>    <span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;This is slow (creates N new iterators!) but effective.&quot;&quot;&quot;</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
-            <span class="k">pass</span></div>
+            <span class="k">pass</span>
 
     <span class="k">def</span> <span class="nf">__ior__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">it</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">it</span><span class="p">:</span>
@@ -502,7 +502,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">it</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span></div>
+        <span class="k">return</span> <span class="bp">self</span>
 
 <span class="n">MutableSet</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="nb">set</span><span class="p">)</span>
 
@@ -510,7 +510,7 @@
 <span class="c1">### MAPPINGS ###</span>
 
 
-<div class="viewcode-block" id="Mapping"><a class="viewcode-back" href="../generated/generated/collections.Mapping.html#collections.Mapping">[docs]</a><span class="k">class</span> <span class="nc">Mapping</span><span class="p">(</span><span class="n">Sized</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Container</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">Mapping</span><span class="p">(</span><span class="n">Sized</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Container</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot;A Mapping is a generic container for associating key/value</span>
 <span class="sd">    pairs.</span>
@@ -524,12 +524,12 @@
     <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
         <span class="k">raise</span> <span class="ne">KeyError</span>
 
-<div class="viewcode-block" id="Mapping.get"><a class="viewcode-back" href="../generated/generated/collections.Mapping.get.html#collections.Mapping.get">[docs]</a>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="s1">&#39;D.get(k[,d]) -&gt; D[k] if k in D, else d.  d defaults to None.&#39;</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">default</span></div>
+            <span class="k">return</span> <span class="n">default</span>
 
     <span class="k">def</span> <span class="nf">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
         <span class="k">try</span><span class="p">:</span>
@@ -539,31 +539,31 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="kc">True</span>
 
-<div class="viewcode-block" id="Mapping.iterkeys"><a class="viewcode-back" href="../generated/generated/collections.Mapping.iterkeys.html#collections.Mapping.iterkeys">[docs]</a>    <span class="k">def</span> <span class="nf">iterkeys</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">iterkeys</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="s1">&#39;D.iterkeys() -&gt; an iterator over the keys of D&#39;</span>
-        <span class="k">return</span> <span class="nb">iter</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="nb">iter</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Mapping.itervalues"><a class="viewcode-back" href="../generated/generated/collections.Mapping.itervalues.html#collections.Mapping.itervalues">[docs]</a>    <span class="k">def</span> <span class="nf">itervalues</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">itervalues</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="s1">&#39;D.itervalues() -&gt; an iterator over the values of D&#39;</span>
         <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
-            <span class="k">yield</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span></div>
+            <span class="k">yield</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
 
-<div class="viewcode-block" id="Mapping.iteritems"><a class="viewcode-back" href="../generated/generated/collections.Mapping.iteritems.html#collections.Mapping.iteritems">[docs]</a>    <span class="k">def</span> <span class="nf">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="s1">&#39;D.iteritems() -&gt; an iterator over the (key, value) items of D&#39;</span>
         <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
-            <span class="k">yield</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">])</span></div>
+            <span class="k">yield</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
 
-<div class="viewcode-block" id="Mapping.keys"><a class="viewcode-back" href="../generated/generated/collections.Mapping.keys.html#collections.Mapping.keys">[docs]</a>    <span class="k">def</span> <span class="nf">keys</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">keys</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="s2">&quot;D.keys() -&gt; list of D&#39;s keys&quot;</span>
-        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Mapping.items"><a class="viewcode-back" href="../generated/generated/collections.Mapping.items.html#collections.Mapping.items">[docs]</a>    <span class="k">def</span> <span class="nf">items</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">items</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="s2">&quot;D.items() -&gt; list of D&#39;s (key, value) pairs, as 2-tuples&quot;</span>
-        <span class="k">return</span> <span class="p">[(</span><span class="n">key</span><span class="p">,</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">])</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">]</span></div>
+        <span class="k">return</span> <span class="p">[(</span><span class="n">key</span><span class="p">,</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">])</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">]</span>
 
-<div class="viewcode-block" id="Mapping.values"><a class="viewcode-back" href="../generated/generated/collections.Mapping.values.html#collections.Mapping.values">[docs]</a>    <span class="k">def</span> <span class="nf">values</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">values</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="s2">&quot;D.values() -&gt; list of D&#39;s values&quot;</span>
-        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">]</span></div>
+        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">]</span>
 
     <span class="c1"># Mappings are not hashable by default, but subclasses can change this</span>
     <span class="n">__hash__</span> <span class="o">=</span> <span class="kc">None</span>
@@ -574,21 +574,21 @@
         <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="p">())</span> <span class="o">==</span> <span class="nb">dict</span><span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
 
     <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
-        <span class="k">return</span> <span class="ow">not</span> <span class="p">(</span><span class="bp">self</span> <span class="o">==</span> <span class="n">other</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="ow">not</span> <span class="p">(</span><span class="bp">self</span> <span class="o">==</span> <span class="n">other</span><span class="p">)</span>
 
-<div class="viewcode-block" id="MappingView"><a class="viewcode-back" href="../generated/generated/collections.MappingView.html#collections.MappingView">[docs]</a><span class="k">class</span> <span class="nc">MappingView</span><span class="p">(</span><span class="n">Sized</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">MappingView</span><span class="p">(</span><span class="n">Sized</span><span class="p">):</span>
 
-<div class="viewcode-block" id="MappingView.__init__"><a class="viewcode-back" href="../generated/generated/collections.MappingView.__init__.html#collections.MappingView.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mapping</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_mapping</span> <span class="o">=</span> <span class="n">mapping</span></div>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mapping</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mapping</span> <span class="o">=</span> <span class="n">mapping</span>
 
     <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_mapping</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{0.__class__.__name__}</span><span class="s1">(</span><span class="si">{0._mapping!r}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{0.__class__.__name__}</span><span class="s1">(</span><span class="si">{0._mapping!r}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="KeysView"><a class="viewcode-back" href="../generated/generated/collections.KeysView.html#collections.KeysView">[docs]</a><span class="k">class</span> <span class="nc">KeysView</span><span class="p">(</span><span class="n">MappingView</span><span class="p">,</span> <span class="n">Set</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">KeysView</span><span class="p">(</span><span class="n">MappingView</span><span class="p">,</span> <span class="n">Set</span><span class="p">):</span>
 
     <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">_from_iterable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">it</span><span class="p">):</span>
@@ -599,11 +599,11 @@
 
     <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapping</span><span class="p">:</span>
-            <span class="k">yield</span> <span class="n">key</span></div>
+            <span class="k">yield</span> <span class="n">key</span>
 
 <span class="n">KeysView</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="nb">type</span><span class="p">({}</span><span class="o">.</span><span class="n">viewkeys</span><span class="p">()))</span>
 
-<div class="viewcode-block" id="ItemsView"><a class="viewcode-back" href="../generated/generated/collections.ItemsView.html#collections.ItemsView">[docs]</a><span class="k">class</span> <span class="nc">ItemsView</span><span class="p">(</span><span class="n">MappingView</span><span class="p">,</span> <span class="n">Set</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">ItemsView</span><span class="p">(</span><span class="n">MappingView</span><span class="p">,</span> <span class="n">Set</span><span class="p">):</span>
 
     <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">_from_iterable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">it</span><span class="p">):</span>
@@ -620,11 +620,11 @@
 
     <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapping</span><span class="p">:</span>
-            <span class="k">yield</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapping</span><span class="p">[</span><span class="n">key</span><span class="p">])</span></div>
+            <span class="k">yield</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapping</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
 
 <span class="n">ItemsView</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="nb">type</span><span class="p">({}</span><span class="o">.</span><span class="n">viewitems</span><span class="p">()))</span>
 
-<div class="viewcode-block" id="ValuesView"><a class="viewcode-back" href="../generated/generated/collections.ValuesView.html#collections.ValuesView">[docs]</a><span class="k">class</span> <span class="nc">ValuesView</span><span class="p">(</span><span class="n">MappingView</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">ValuesView</span><span class="p">(</span><span class="n">MappingView</span><span class="p">):</span>
 
     <span class="k">def</span> <span class="nf">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapping</span><span class="p">:</span>
@@ -634,11 +634,11 @@
 
     <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapping</span><span class="p">:</span>
-            <span class="k">yield</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapping</span><span class="p">[</span><span class="n">key</span><span class="p">]</span></div>
+            <span class="k">yield</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapping</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
 
 <span class="n">ValuesView</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="nb">type</span><span class="p">({}</span><span class="o">.</span><span class="n">viewvalues</span><span class="p">()))</span>
 
-<div class="viewcode-block" id="MutableMapping"><a class="viewcode-back" href="../generated/generated/collections.MutableMapping.html#collections.MutableMapping">[docs]</a><span class="k">class</span> <span class="nc">MutableMapping</span><span class="p">(</span><span class="n">Mapping</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">MutableMapping</span><span class="p">(</span><span class="n">Mapping</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot;A MutableMapping is a generic container for associating</span>
 <span class="sd">    key/value pairs.</span>
@@ -659,7 +659,7 @@
 
     <span class="n">__marker</span> <span class="o">=</span> <span class="nb">object</span><span class="p">()</span>
 
-<div class="viewcode-block" id="MutableMapping.pop"><a class="viewcode-back" href="../generated/generated/collections.MutableMapping.pop.html#collections.MutableMapping.pop">[docs]</a>    <span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">__marker</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">__marker</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;D.pop(k[,d]) -&gt; v, remove specified key and return the corresponding value.</span>
 <span class="sd">          If key is not found, d is returned if given, otherwise KeyError is raised.</span>
 <span class="sd">        &#39;&#39;&#39;</span>
@@ -671,9 +671,9 @@
             <span class="k">return</span> <span class="n">default</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">del</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
-            <span class="k">return</span> <span class="n">value</span></div>
+            <span class="k">return</span> <span class="n">value</span>
 
-<div class="viewcode-block" id="MutableMapping.popitem"><a class="viewcode-back" href="../generated/generated/collections.MutableMapping.popitem.html#collections.MutableMapping.popitem">[docs]</a>    <span class="k">def</span> <span class="nf">popitem</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">popitem</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;D.popitem() -&gt; (k, v), remove and return some (key, value) pair</span>
 <span class="sd">           as a 2-tuple; but raise KeyError if D is empty.</span>
 <span class="sd">        &#39;&#39;&#39;</span>
@@ -683,17 +683,17 @@
             <span class="k">raise</span> <span class="ne">KeyError</span>
         <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
         <span class="k">del</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
-        <span class="k">return</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span></div>
+        <span class="k">return</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span>
 
-<div class="viewcode-block" id="MutableMapping.clear"><a class="viewcode-back" href="../generated/generated/collections.MutableMapping.clear.html#collections.MutableMapping.clear">[docs]</a>    <span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="s1">&#39;D.clear() -&gt; None.  Remove all items from D.&#39;</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">popitem</span><span class="p">()</span>
         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
-            <span class="k">pass</span></div>
+            <span class="k">pass</span>
 
-<div class="viewcode-block" id="MutableMapping.update"><a class="viewcode-back" href="../generated/generated/collections.MutableMapping.update.html#collections.MutableMapping.update">[docs]</a>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39; D.update([E, ]**F) -&gt; None.  Update D from mapping/iterable E and F.</span>
 <span class="sd">            If E present and has a .keys() method, does:     for k in E: D[k] = E[k]</span>
 <span class="sd">            If E present and lacks .keys() method, does:     for (k, v) in E: D[k] = v</span>
@@ -719,15 +719,15 @@
                 <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">other</span><span class="p">:</span>
                     <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
         <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwds</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span></div>
+            <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
 
-<div class="viewcode-block" id="MutableMapping.setdefault"><a class="viewcode-back" href="../generated/generated/collections.MutableMapping.setdefault.html#collections.MutableMapping.setdefault">[docs]</a>    <span class="k">def</span> <span class="nf">setdefault</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">setdefault</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="s1">&#39;D.setdefault(k[,d]) -&gt; D.get(k,d), also set D[k]=d if k not in D&#39;</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
             <span class="bp">self</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">default</span>
-        <span class="k">return</span> <span class="n">default</span></div></div>
+        <span class="k">return</span> <span class="n">default</span>
 
 <span class="n">MutableMapping</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
 
@@ -735,7 +735,7 @@
 <span class="c1">### SEQUENCES ###</span>
 
 
-<div class="viewcode-block" id="Sequence"><a class="viewcode-back" href="../generated/generated/collections.Sequence.html#collections.Sequence">[docs]</a><span class="k">class</span> <span class="nc">Sequence</span><span class="p">(</span><span class="n">Sized</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Container</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">Sequence</span><span class="p">(</span><span class="n">Sized</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Container</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;All the operations on a read-only sequence.</span>
 
 <span class="sd">    Concrete subclasses must override __new__ or __init__,</span>
@@ -766,18 +766,18 @@
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">))):</span>
             <span class="k">yield</span> <span class="bp">self</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 
-<div class="viewcode-block" id="Sequence.index"><a class="viewcode-back" href="../generated/generated/collections.Sequence.index.html#collections.Sequence.index">[docs]</a>    <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;S.index(value) -&gt; integer -- return first index of value.</span>
 <span class="sd">           Raises ValueError if the value is not present.</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">v</span> <span class="o">==</span> <span class="n">value</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">i</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span></div>
+        <span class="k">raise</span> <span class="ne">ValueError</span>
 
-<div class="viewcode-block" id="Sequence.count"><a class="viewcode-back" href="../generated/generated/collections.Sequence.count.html#collections.Sequence.count">[docs]</a>    <span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="s1">&#39;S.count(value) -&gt; integer -- return number of occurrences of value&#39;</span>
-        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span> <span class="k">if</span> <span class="n">v</span> <span class="o">==</span> <span class="n">value</span><span class="p">)</span></div></div>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span> <span class="k">if</span> <span class="n">v</span> <span class="o">==</span> <span class="n">value</span><span class="p">)</span>
 
 <span class="n">Sequence</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="nb">tuple</span><span class="p">)</span>
 <span class="n">Sequence</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">basestring</span><span class="p">)</span>
@@ -785,7 +785,7 @@
 <span class="n">Sequence</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">xrange</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="MutableSequence"><a class="viewcode-back" href="../generated/generated/collections.MutableSequence.html#collections.MutableSequence">[docs]</a><span class="k">class</span> <span class="nc">MutableSequence</span><span class="p">(</span><span class="n">Sequence</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">MutableSequence</span><span class="p">(</span><span class="n">Sequence</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot;All the operations on a read-only sequence.</span>
 
@@ -803,42 +803,42 @@
         <span class="k">raise</span> <span class="ne">IndexError</span>
 
     <span class="nd">@abstractmethod</span>
-<div class="viewcode-block" id="MutableSequence.insert"><a class="viewcode-back" href="../generated/generated/collections.MutableSequence.insert.html#collections.MutableSequence.insert">[docs]</a>    <span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="s1">&#39;S.insert(index, object) -- insert object before index&#39;</span>
-        <span class="k">raise</span> <span class="ne">IndexError</span></div>
+        <span class="k">raise</span> <span class="ne">IndexError</span>
 
-<div class="viewcode-block" id="MutableSequence.append"><a class="viewcode-back" href="../generated/generated/collections.MutableSequence.append.html#collections.MutableSequence.append">[docs]</a>    <span class="k">def</span> <span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="s1">&#39;S.append(object) -- append object to the end of the sequence&#39;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="n">value</span><span class="p">)</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="n">value</span><span class="p">)</span>
 
-<div class="viewcode-block" id="MutableSequence.reverse"><a class="viewcode-back" href="../generated/generated/collections.MutableSequence.reverse.html#collections.MutableSequence.reverse">[docs]</a>    <span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="s1">&#39;S.reverse() -- reverse *IN PLACE*&#39;</span>
         <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">):</span>
-            <span class="bp">self</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="bp">self</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="p">[</span><span class="n">i</span><span class="p">]</span></div>
+            <span class="bp">self</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="bp">self</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 
-<div class="viewcode-block" id="MutableSequence.extend"><a class="viewcode-back" href="../generated/generated/collections.MutableSequence.extend.html#collections.MutableSequence.extend">[docs]</a>    <span class="k">def</span> <span class="nf">extend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">extend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
         <span class="s1">&#39;S.extend(iterable) -- extend sequence by appending elements from the iterable&#39;</span>
         <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span></div>
+            <span class="bp">self</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 
-<div class="viewcode-block" id="MutableSequence.pop"><a class="viewcode-back" href="../generated/generated/collections.MutableSequence.pop.html#collections.MutableSequence.pop">[docs]</a>    <span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;S.pop([index]) -&gt; item -- remove and return item at index (default last).</span>
 <span class="sd">           Raise IndexError if list is empty or index is out of range.</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">v</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
         <span class="k">del</span> <span class="bp">self</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-        <span class="k">return</span> <span class="n">v</span></div>
+        <span class="k">return</span> <span class="n">v</span>
 
-<div class="viewcode-block" id="MutableSequence.remove"><a class="viewcode-back" href="../generated/generated/collections.MutableSequence.remove.html#collections.MutableSequence.remove">[docs]</a>    <span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;S.remove(value) -- remove first occurrence of value.</span>
 <span class="sd">           Raise ValueError if the value is not present.</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">del</span> <span class="bp">self</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">value</span><span class="p">)]</span></div>
+        <span class="k">del</span> <span class="bp">self</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">value</span><span class="p">)]</span>
 
     <span class="k">def</span> <span class="nf">__iadd__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span></div>
+        <span class="k">return</span> <span class="bp">self</span>
 
 <span class="n">MutableSequence</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
 </pre></div>

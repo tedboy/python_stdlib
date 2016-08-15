@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.2.4.2.3. csv.DictWriter &mdash; Python Standard Library</title>
+  <title>3.2.4.1.3. csv.DictWriter &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.2.4. csv" href="../csv.html"/>
-        <link rel="next" title="3.2.4.2.3.1. csv.DictWriter.writeheader" href="csv.DictWriter.writeheader.html"/>
-        <link rel="prev" title="3.2.4.2.2.2. csv.DictReader.next" href="csv.DictReader.next.html"/> 
+        <link rel="next" title="3.2.4.1.3.1.1. csv.DictWriter.__init__" href="csv.DictWriter.__init__.html"/>
+        <link rel="prev" title="3.2.4.1.2.2.1. csv.DictReader.fieldnames" href="csv.DictReader.fieldnames.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,23 +88,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pickle.html">3.2.2. pickle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../cPickle.html">3.2.3. cPickle</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../csv.html">3.2.4. csv</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../csv.html#functions">3.2.4.1. Functions</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../csv.html#classes">3.2.4.2. Classes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../csv.html#exceptions">3.2.4.3. Exceptions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../csv.html#classes">3.2.4.1. Classes</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../zlib.html">3.2.5. zlib</a></li>
@@ -134,7 +124,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -165,7 +155,7 @@
         
           <li><a href="../csv.html">3.2.4. csv</a> &raquo;</li>
         
-      <li>3.2.4.2.3. csv.DictWriter</li>
+      <li>3.2.4.1.3. csv.DictWriter</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,31 +173,40 @@
            <div itemprop="articleBody">
             
   <div class="section" id="csv-dictwriter">
-<h1>3.2.4.2.3. csv.DictWriter<a class="headerlink" href="#csv-dictwriter" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="csv.DictWriter.__init__.html#csv.DictWriter.__init__" title="csv.DictWriter.__init__"><code class="xref py py-func docutils literal"><span class="pre">DictWriter.__init__()</span></code></a></p>
+<h1>3.2.4.1.3. csv.DictWriter<a class="headerlink" href="#csv-dictwriter" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="csv.DictWriter">
 <em class="property">class </em><code class="descclassname">csv.</code><code class="descname">DictWriter</code><span class="sig-paren">(</span><em>f</em>, <em>fieldnames</em>, <em>restval=''</em>, <em>extrasaction='raise'</em>, <em>dialect='excel'</em>, <em>*args</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/csv.html#DictWriter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#csv.DictWriter" title="Permalink to this definition">¶</a></dt>
-<dd><p class="rubric">Methods</p>
+<dd><dl class="method">
+<dt id="csv.DictWriter.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>f</em>, <em>fieldnames</em>, <em>restval=''</em>, <em>extrasaction='raise'</em>, <em>dialect='excel'</em>, <em>*args</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/csv.html#DictWriter.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#csv.DictWriter.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>3.2.4.1.3.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="csv.DictWriter.writeheader.html#csv.DictWriter.writeheader" title="csv.DictWriter.writeheader"><code class="xref py py-obj docutils literal"><span class="pre">writeheader</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="csv.DictWriter.__init__.html#csv.DictWriter.__init__" title="csv.DictWriter.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>(f,&nbsp;fieldnames[,&nbsp;restval,&nbsp;...])</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="csv.DictWriter.writerow.html#csv.DictWriter.writerow" title="csv.DictWriter.writerow"><code class="xref py py-obj docutils literal"><span class="pre">writerow</span></code></a>(rowdict)</td>
+<tr class="row-even"><td><a class="reference internal" href="csv.DictWriter.writeheader.html#csv.DictWriter.writeheader" title="csv.DictWriter.writeheader"><code class="xref py py-obj docutils literal"><span class="pre">writeheader</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="csv.DictWriter.writerows.html#csv.DictWriter.writerows" title="csv.DictWriter.writerows"><code class="xref py py-obj docutils literal"><span class="pre">writerows</span></code></a>(rowdicts)</td>
+<tr class="row-odd"><td><a class="reference internal" href="csv.DictWriter.writerow.html#csv.DictWriter.writerow" title="csv.DictWriter.writerow"><code class="xref py py-obj docutils literal"><span class="pre">writerow</span></code></a>(rowdict)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="csv.DictWriter.writerows.html#csv.DictWriter.writerows" title="csv.DictWriter.writerows"><code class="xref py py-obj docutils literal"><span class="pre">writerows</span></code></a>(rowdicts)</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-</dd></dl>
-
+</div>
 </div>
 
 
@@ -217,10 +216,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="csv.DictWriter.writeheader.html" class="btn btn-neutral float-right" title="3.2.4.2.3.1. csv.DictWriter.writeheader" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="csv.DictWriter.__init__.html" class="btn btn-neutral float-right" title="3.2.4.1.3.1.1. csv.DictWriter.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="csv.DictReader.next.html" class="btn btn-neutral" title="3.2.4.2.2.2. csv.DictReader.next" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="csv.DictReader.fieldnames.html" class="btn btn-neutral" title="3.2.4.1.2.2.1. csv.DictReader.fieldnames" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

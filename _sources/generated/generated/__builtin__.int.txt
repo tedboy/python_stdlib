@@ -2,16 +2,15 @@ __builtin__.int
 ===============
 
 .. currentmodule:: __builtin__
-
-:func:`int.__init__`
-
 .. autoclass:: int
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~int.bit_length
@@ -21,11 +20,10 @@ __builtin__.int
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~int.denominator

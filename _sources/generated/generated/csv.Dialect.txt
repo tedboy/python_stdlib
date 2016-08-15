@@ -2,16 +2,15 @@ csv.Dialect
 ===========
 
 .. currentmodule:: csv
-
-:func:`Dialect.__init__`
-
 .. autoclass:: Dialect
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Dialect.__init__
@@ -20,11 +19,10 @@ csv.Dialect
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Dialect.delimiter

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.7. inspect &mdash; Python Standard Library</title>
+  <title>1.7. inspect &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="1. Frequently used" href="../main1.html"/>
         <link rel="next" title="1.7.1.1. inspect.classify_class_attrs" href="inspect.classify_class_attrs.html"/>
-        <link rel="prev" title="1.6.1.22. sys.settrace" href="sys.settrace.html"/> 
+        <link rel="prev" title="1.6.1.21. sys.settrace" href="sys.settrace.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -85,9 +85,7 @@
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../main1.html">1. Frequently used</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
 <li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
 <li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
@@ -98,55 +96,53 @@
 <li class="toctree-l3"><a class="reference internal" href="#functions">1.7.1. Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="inspect.classify_class_attrs.html">1.7.1.1. inspect.classify_class_attrs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="inspect.cleandoc.html">1.7.1.2. inspect.cleandoc</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.currentframe.html">1.7.1.3. inspect.currentframe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.findsource.html">1.7.1.4. inspect.findsource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.formatargspec.html">1.7.1.5. inspect.formatargspec</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.formatargvalues.html">1.7.1.6. inspect.formatargvalues</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getabsfile.html">1.7.1.7. inspect.getabsfile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getargs.html">1.7.1.8. inspect.getargs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getargspec.html">1.7.1.9. inspect.getargspec</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getargvalues.html">1.7.1.10. inspect.getargvalues</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getblock.html">1.7.1.11. inspect.getblock</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getcallargs.html">1.7.1.12. inspect.getcallargs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getclasstree.html">1.7.1.13. inspect.getclasstree</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getcomments.html">1.7.1.14. inspect.getcomments</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getdoc.html">1.7.1.15. inspect.getdoc</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getfile.html">1.7.1.16. inspect.getfile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getframeinfo.html">1.7.1.17. inspect.getframeinfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getinnerframes.html">1.7.1.18. inspect.getinnerframes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getlineno.html">1.7.1.19. inspect.getlineno</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmembers.html">1.7.1.20. inspect.getmembers</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmodule.html">1.7.1.21. inspect.getmodule</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmoduleinfo.html">1.7.1.22. inspect.getmoduleinfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmodulename.html">1.7.1.23. inspect.getmodulename</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmro.html">1.7.1.24. inspect.getmro</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getouterframes.html">1.7.1.25. inspect.getouterframes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getsource.html">1.7.1.26. inspect.getsource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getsourcefile.html">1.7.1.27. inspect.getsourcefile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getsourcelines.html">1.7.1.28. inspect.getsourcelines</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.indentsize.html">1.7.1.29. inspect.indentsize</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isabstract.html">1.7.1.30. inspect.isabstract</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isbuiltin.html">1.7.1.31. inspect.isbuiltin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isclass.html">1.7.1.32. inspect.isclass</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.iscode.html">1.7.1.33. inspect.iscode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isdatadescriptor.html">1.7.1.34. inspect.isdatadescriptor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isframe.html">1.7.1.35. inspect.isframe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isfunction.html">1.7.1.36. inspect.isfunction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isgenerator.html">1.7.1.37. inspect.isgenerator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isgeneratorfunction.html">1.7.1.38. inspect.isgeneratorfunction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isgetsetdescriptor.html">1.7.1.39. inspect.isgetsetdescriptor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismemberdescriptor.html">1.7.1.40. inspect.ismemberdescriptor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismethod.html">1.7.1.41. inspect.ismethod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismethoddescriptor.html">1.7.1.42. inspect.ismethoddescriptor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismodule.html">1.7.1.43. inspect.ismodule</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isroutine.html">1.7.1.44. inspect.isroutine</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.istraceback.html">1.7.1.45. inspect.istraceback</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.joinseq.html">1.7.1.46. inspect.joinseq</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.namedtuple.html">1.7.1.47. inspect.namedtuple</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.stack.html">1.7.1.48. inspect.stack</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.strseq.html">1.7.1.49. inspect.strseq</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.trace.html">1.7.1.50. inspect.trace</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.walktree.html">1.7.1.51. inspect.walktree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.findsource.html">1.7.1.3. inspect.findsource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.formatargspec.html">1.7.1.4. inspect.formatargspec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.formatargvalues.html">1.7.1.5. inspect.formatargvalues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getabsfile.html">1.7.1.6. inspect.getabsfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getargs.html">1.7.1.7. inspect.getargs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getargspec.html">1.7.1.8. inspect.getargspec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getargvalues.html">1.7.1.9. inspect.getargvalues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getblock.html">1.7.1.10. inspect.getblock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getcallargs.html">1.7.1.11. inspect.getcallargs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getclasstree.html">1.7.1.12. inspect.getclasstree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getcomments.html">1.7.1.13. inspect.getcomments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getdoc.html">1.7.1.14. inspect.getdoc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getfile.html">1.7.1.15. inspect.getfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getframeinfo.html">1.7.1.16. inspect.getframeinfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getinnerframes.html">1.7.1.17. inspect.getinnerframes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getlineno.html">1.7.1.18. inspect.getlineno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getmembers.html">1.7.1.19. inspect.getmembers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getmodule.html">1.7.1.20. inspect.getmodule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getmoduleinfo.html">1.7.1.21. inspect.getmoduleinfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getmodulename.html">1.7.1.22. inspect.getmodulename</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getmro.html">1.7.1.23. inspect.getmro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getouterframes.html">1.7.1.24. inspect.getouterframes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getsource.html">1.7.1.25. inspect.getsource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getsourcefile.html">1.7.1.26. inspect.getsourcefile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.getsourcelines.html">1.7.1.27. inspect.getsourcelines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.indentsize.html">1.7.1.28. inspect.indentsize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isabstract.html">1.7.1.29. inspect.isabstract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isbuiltin.html">1.7.1.30. inspect.isbuiltin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isclass.html">1.7.1.31. inspect.isclass</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.iscode.html">1.7.1.32. inspect.iscode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isdatadescriptor.html">1.7.1.33. inspect.isdatadescriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isframe.html">1.7.1.34. inspect.isframe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isfunction.html">1.7.1.35. inspect.isfunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isgenerator.html">1.7.1.36. inspect.isgenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isgeneratorfunction.html">1.7.1.37. inspect.isgeneratorfunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isgetsetdescriptor.html">1.7.1.38. inspect.isgetsetdescriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.ismemberdescriptor.html">1.7.1.39. inspect.ismemberdescriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.ismethod.html">1.7.1.40. inspect.ismethod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.ismethoddescriptor.html">1.7.1.41. inspect.ismethoddescriptor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.ismodule.html">1.7.1.42. inspect.ismodule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.isroutine.html">1.7.1.43. inspect.isroutine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.istraceback.html">1.7.1.44. inspect.istraceback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.joinseq.html">1.7.1.45. inspect.joinseq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.stack.html">1.7.1.46. inspect.stack</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.strseq.html">1.7.1.47. inspect.strseq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.trace.html">1.7.1.48. inspect.trace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inspect.walktree.html">1.7.1.49. inspect.walktree</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#classes">1.7.2. Classes</a><ul>
@@ -157,7 +153,6 @@
 <li class="toctree-l4"><a class="reference internal" href="generated/inspect.BlockFinder.html">1.7.2.5. inspect.BlockFinder</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/inspect.ModuleInfo.html">1.7.2.6. inspect.ModuleInfo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/inspect.Traceback.html">1.7.2.7. inspect.Traceback</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/inspect.attrgetter.html">1.7.2.8. inspect.attrgetter</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#exceptions">1.7.3. Exceptions</a><ul>
@@ -167,13 +162,10 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#string-services">3.1. String Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../official_page.html">4. Official page TOC</a></li>
 </ul>
 
@@ -189,7 +181,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -273,140 +265,134 @@ stack(), trace() - get info about frames on the stack or in a traceback</p>
 <tr class="row-even"><td><a class="reference internal" href="inspect.cleandoc.html#inspect.cleandoc" title="inspect.cleandoc"><code class="xref py py-obj docutils literal"><span class="pre">cleandoc</span></code></a>(doc)</td>
 <td>Clean up indentation from docstrings.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.currentframe.html#inspect.currentframe" title="inspect.currentframe"><code class="xref py py-obj docutils literal"><span class="pre">currentframe</span></code></a></td>
-<td>_getframe([depth]) -&gt; frameobject</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.findsource.html#inspect.findsource" title="inspect.findsource"><code class="xref py py-obj docutils literal"><span class="pre">findsource</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.findsource.html#inspect.findsource" title="inspect.findsource"><code class="xref py py-obj docutils literal"><span class="pre">findsource</span></code></a>(object)</td>
 <td>Return the entire source file and starting line number for an object.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.formatargspec.html#inspect.formatargspec" title="inspect.formatargspec"><code class="xref py py-obj docutils literal"><span class="pre">formatargspec</span></code></a>(args[,&nbsp;varargs,&nbsp;varkw,&nbsp;...])</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.formatargspec.html#inspect.formatargspec" title="inspect.formatargspec"><code class="xref py py-obj docutils literal"><span class="pre">formatargspec</span></code></a>(args[,&nbsp;varargs,&nbsp;varkw,&nbsp;...])</td>
 <td>Format an argument spec from the 4 values returned by getargspec.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.formatargvalues.html#inspect.formatargvalues" title="inspect.formatargvalues"><code class="xref py py-obj docutils literal"><span class="pre">formatargvalues</span></code></a>(args,&nbsp;varargs,&nbsp;varkw,&nbsp;locals)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.formatargvalues.html#inspect.formatargvalues" title="inspect.formatargvalues"><code class="xref py py-obj docutils literal"><span class="pre">formatargvalues</span></code></a>(args,&nbsp;varargs,&nbsp;varkw,&nbsp;locals)</td>
 <td>Format an argument spec from the 4 values returned by getargvalues.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.getabsfile.html#inspect.getabsfile" title="inspect.getabsfile"><code class="xref py py-obj docutils literal"><span class="pre">getabsfile</span></code></a>(object[,&nbsp;_filename])</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.getabsfile.html#inspect.getabsfile" title="inspect.getabsfile"><code class="xref py py-obj docutils literal"><span class="pre">getabsfile</span></code></a>(object[,&nbsp;_filename])</td>
 <td>Return an absolute path to the source or compiled file for an object.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.getargs.html#inspect.getargs" title="inspect.getargs"><code class="xref py py-obj docutils literal"><span class="pre">getargs</span></code></a>(co)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.getargs.html#inspect.getargs" title="inspect.getargs"><code class="xref py py-obj docutils literal"><span class="pre">getargs</span></code></a>(co)</td>
 <td>Get information about the arguments accepted by a code object.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.getargspec.html#inspect.getargspec" title="inspect.getargspec"><code class="xref py py-obj docutils literal"><span class="pre">getargspec</span></code></a>(func)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.getargspec.html#inspect.getargspec" title="inspect.getargspec"><code class="xref py py-obj docutils literal"><span class="pre">getargspec</span></code></a>(func)</td>
 <td>Get the names and default values of a function&#8217;s arguments.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.getargvalues.html#inspect.getargvalues" title="inspect.getargvalues"><code class="xref py py-obj docutils literal"><span class="pre">getargvalues</span></code></a>(frame)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.getargvalues.html#inspect.getargvalues" title="inspect.getargvalues"><code class="xref py py-obj docutils literal"><span class="pre">getargvalues</span></code></a>(frame)</td>
 <td>Get information about arguments passed into a particular frame.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.getblock.html#inspect.getblock" title="inspect.getblock"><code class="xref py py-obj docutils literal"><span class="pre">getblock</span></code></a>(lines)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.getblock.html#inspect.getblock" title="inspect.getblock"><code class="xref py py-obj docutils literal"><span class="pre">getblock</span></code></a>(lines)</td>
 <td>Extract the block of code at the top of the given list of lines.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.getcallargs.html#inspect.getcallargs" title="inspect.getcallargs"><code class="xref py py-obj docutils literal"><span class="pre">getcallargs</span></code></a>(func,&nbsp;*positional,&nbsp;**named)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.getcallargs.html#inspect.getcallargs" title="inspect.getcallargs"><code class="xref py py-obj docutils literal"><span class="pre">getcallargs</span></code></a>(func,&nbsp;*positional,&nbsp;**named)</td>
 <td>Get the mapping of arguments to values.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.getclasstree.html#inspect.getclasstree" title="inspect.getclasstree"><code class="xref py py-obj docutils literal"><span class="pre">getclasstree</span></code></a>(classes[,&nbsp;unique])</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.getclasstree.html#inspect.getclasstree" title="inspect.getclasstree"><code class="xref py py-obj docutils literal"><span class="pre">getclasstree</span></code></a>(classes[,&nbsp;unique])</td>
 <td>Arrange the given list of classes into a hierarchy of nested lists.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.getcomments.html#inspect.getcomments" title="inspect.getcomments"><code class="xref py py-obj docutils literal"><span class="pre">getcomments</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.getcomments.html#inspect.getcomments" title="inspect.getcomments"><code class="xref py py-obj docutils literal"><span class="pre">getcomments</span></code></a>(object)</td>
 <td>Get lines of comments immediately preceding an object&#8217;s source code.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.getdoc.html#inspect.getdoc" title="inspect.getdoc"><code class="xref py py-obj docutils literal"><span class="pre">getdoc</span></code></a>(object)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.getdoc.html#inspect.getdoc" title="inspect.getdoc"><code class="xref py py-obj docutils literal"><span class="pre">getdoc</span></code></a>(object)</td>
 <td>Get the documentation string for an object.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.getfile.html#inspect.getfile" title="inspect.getfile"><code class="xref py py-obj docutils literal"><span class="pre">getfile</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.getfile.html#inspect.getfile" title="inspect.getfile"><code class="xref py py-obj docutils literal"><span class="pre">getfile</span></code></a>(object)</td>
 <td>Work out which source or compiled file an object was defined in.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.getframeinfo.html#inspect.getframeinfo" title="inspect.getframeinfo"><code class="xref py py-obj docutils literal"><span class="pre">getframeinfo</span></code></a>(frame[,&nbsp;context])</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.getframeinfo.html#inspect.getframeinfo" title="inspect.getframeinfo"><code class="xref py py-obj docutils literal"><span class="pre">getframeinfo</span></code></a>(frame[,&nbsp;context])</td>
 <td>Get information about a frame or traceback object.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.getinnerframes.html#inspect.getinnerframes" title="inspect.getinnerframes"><code class="xref py py-obj docutils literal"><span class="pre">getinnerframes</span></code></a>(tb[,&nbsp;context])</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.getinnerframes.html#inspect.getinnerframes" title="inspect.getinnerframes"><code class="xref py py-obj docutils literal"><span class="pre">getinnerframes</span></code></a>(tb[,&nbsp;context])</td>
 <td>Get a list of records for a traceback&#8217;s frame and all lower frames.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.getlineno.html#inspect.getlineno" title="inspect.getlineno"><code class="xref py py-obj docutils literal"><span class="pre">getlineno</span></code></a>(frame)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.getlineno.html#inspect.getlineno" title="inspect.getlineno"><code class="xref py py-obj docutils literal"><span class="pre">getlineno</span></code></a>(frame)</td>
 <td>Get the line number from a frame object, allowing for optimization.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.getmembers.html#inspect.getmembers" title="inspect.getmembers"><code class="xref py py-obj docutils literal"><span class="pre">getmembers</span></code></a>(object[,&nbsp;predicate])</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.getmembers.html#inspect.getmembers" title="inspect.getmembers"><code class="xref py py-obj docutils literal"><span class="pre">getmembers</span></code></a>(object[,&nbsp;predicate])</td>
 <td>Return all members of an object as (name, value) pairs sorted by name.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.getmodule.html#inspect.getmodule" title="inspect.getmodule"><code class="xref py py-obj docutils literal"><span class="pre">getmodule</span></code></a>(object[,&nbsp;_filename])</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.getmodule.html#inspect.getmodule" title="inspect.getmodule"><code class="xref py py-obj docutils literal"><span class="pre">getmodule</span></code></a>(object[,&nbsp;_filename])</td>
 <td>Return the module an object was defined in, or None if not found.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.getmoduleinfo.html#inspect.getmoduleinfo" title="inspect.getmoduleinfo"><code class="xref py py-obj docutils literal"><span class="pre">getmoduleinfo</span></code></a>(path)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.getmoduleinfo.html#inspect.getmoduleinfo" title="inspect.getmoduleinfo"><code class="xref py py-obj docutils literal"><span class="pre">getmoduleinfo</span></code></a>(path)</td>
 <td>Get the module name, suffix, mode, and module type for a given file.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.getmodulename.html#inspect.getmodulename" title="inspect.getmodulename"><code class="xref py py-obj docutils literal"><span class="pre">getmodulename</span></code></a>(path)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.getmodulename.html#inspect.getmodulename" title="inspect.getmodulename"><code class="xref py py-obj docutils literal"><span class="pre">getmodulename</span></code></a>(path)</td>
 <td>Return the module name for a given file, or None.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.getmro.html#inspect.getmro" title="inspect.getmro"><code class="xref py py-obj docutils literal"><span class="pre">getmro</span></code></a>(cls)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.getmro.html#inspect.getmro" title="inspect.getmro"><code class="xref py py-obj docutils literal"><span class="pre">getmro</span></code></a>(cls)</td>
 <td>Return tuple of base classes (including cls) in method resolution order.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.getouterframes.html#inspect.getouterframes" title="inspect.getouterframes"><code class="xref py py-obj docutils literal"><span class="pre">getouterframes</span></code></a>(frame[,&nbsp;context])</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.getouterframes.html#inspect.getouterframes" title="inspect.getouterframes"><code class="xref py py-obj docutils literal"><span class="pre">getouterframes</span></code></a>(frame[,&nbsp;context])</td>
 <td>Get a list of records for a frame and all higher (calling) frames.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.getsource.html#inspect.getsource" title="inspect.getsource"><code class="xref py py-obj docutils literal"><span class="pre">getsource</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.getsource.html#inspect.getsource" title="inspect.getsource"><code class="xref py py-obj docutils literal"><span class="pre">getsource</span></code></a>(object)</td>
 <td>Return the text of the source code for an object.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.getsourcefile.html#inspect.getsourcefile" title="inspect.getsourcefile"><code class="xref py py-obj docutils literal"><span class="pre">getsourcefile</span></code></a>(object)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.getsourcefile.html#inspect.getsourcefile" title="inspect.getsourcefile"><code class="xref py py-obj docutils literal"><span class="pre">getsourcefile</span></code></a>(object)</td>
 <td>Return the filename that can be used to locate an object&#8217;s source.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.getsourcelines.html#inspect.getsourcelines" title="inspect.getsourcelines"><code class="xref py py-obj docutils literal"><span class="pre">getsourcelines</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.getsourcelines.html#inspect.getsourcelines" title="inspect.getsourcelines"><code class="xref py py-obj docutils literal"><span class="pre">getsourcelines</span></code></a>(object)</td>
 <td>Return a list of source lines and starting line number for an object.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.indentsize.html#inspect.indentsize" title="inspect.indentsize"><code class="xref py py-obj docutils literal"><span class="pre">indentsize</span></code></a>(line)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.indentsize.html#inspect.indentsize" title="inspect.indentsize"><code class="xref py py-obj docutils literal"><span class="pre">indentsize</span></code></a>(line)</td>
 <td>Return the indent size, in spaces, at the start of a line of text.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.isabstract.html#inspect.isabstract" title="inspect.isabstract"><code class="xref py py-obj docutils literal"><span class="pre">isabstract</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.isabstract.html#inspect.isabstract" title="inspect.isabstract"><code class="xref py py-obj docutils literal"><span class="pre">isabstract</span></code></a>(object)</td>
 <td>Return true if the object is an abstract base class (ABC).</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.isbuiltin.html#inspect.isbuiltin" title="inspect.isbuiltin"><code class="xref py py-obj docutils literal"><span class="pre">isbuiltin</span></code></a>(object)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.isbuiltin.html#inspect.isbuiltin" title="inspect.isbuiltin"><code class="xref py py-obj docutils literal"><span class="pre">isbuiltin</span></code></a>(object)</td>
 <td>Return true if the object is a built-in function or method.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.isclass.html#inspect.isclass" title="inspect.isclass"><code class="xref py py-obj docutils literal"><span class="pre">isclass</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.isclass.html#inspect.isclass" title="inspect.isclass"><code class="xref py py-obj docutils literal"><span class="pre">isclass</span></code></a>(object)</td>
 <td>Return true if the object is a class.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.iscode.html#inspect.iscode" title="inspect.iscode"><code class="xref py py-obj docutils literal"><span class="pre">iscode</span></code></a>(object)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.iscode.html#inspect.iscode" title="inspect.iscode"><code class="xref py py-obj docutils literal"><span class="pre">iscode</span></code></a>(object)</td>
 <td>Return true if the object is a code object.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.isdatadescriptor.html#inspect.isdatadescriptor" title="inspect.isdatadescriptor"><code class="xref py py-obj docutils literal"><span class="pre">isdatadescriptor</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.isdatadescriptor.html#inspect.isdatadescriptor" title="inspect.isdatadescriptor"><code class="xref py py-obj docutils literal"><span class="pre">isdatadescriptor</span></code></a>(object)</td>
 <td>Return true if the object is a data descriptor.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.isframe.html#inspect.isframe" title="inspect.isframe"><code class="xref py py-obj docutils literal"><span class="pre">isframe</span></code></a>(object)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.isframe.html#inspect.isframe" title="inspect.isframe"><code class="xref py py-obj docutils literal"><span class="pre">isframe</span></code></a>(object)</td>
 <td>Return true if the object is a frame object.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.isfunction.html#inspect.isfunction" title="inspect.isfunction"><code class="xref py py-obj docutils literal"><span class="pre">isfunction</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.isfunction.html#inspect.isfunction" title="inspect.isfunction"><code class="xref py py-obj docutils literal"><span class="pre">isfunction</span></code></a>(object)</td>
 <td>Return true if the object is a user-defined function.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.isgenerator.html#inspect.isgenerator" title="inspect.isgenerator"><code class="xref py py-obj docutils literal"><span class="pre">isgenerator</span></code></a>(object)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.isgenerator.html#inspect.isgenerator" title="inspect.isgenerator"><code class="xref py py-obj docutils literal"><span class="pre">isgenerator</span></code></a>(object)</td>
 <td>Return true if the object is a generator.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.isgeneratorfunction.html#inspect.isgeneratorfunction" title="inspect.isgeneratorfunction"><code class="xref py py-obj docutils literal"><span class="pre">isgeneratorfunction</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.isgeneratorfunction.html#inspect.isgeneratorfunction" title="inspect.isgeneratorfunction"><code class="xref py py-obj docutils literal"><span class="pre">isgeneratorfunction</span></code></a>(object)</td>
 <td>Return true if the object is a user-defined generator function.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.isgetsetdescriptor.html#inspect.isgetsetdescriptor" title="inspect.isgetsetdescriptor"><code class="xref py py-obj docutils literal"><span class="pre">isgetsetdescriptor</span></code></a>(object)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.isgetsetdescriptor.html#inspect.isgetsetdescriptor" title="inspect.isgetsetdescriptor"><code class="xref py py-obj docutils literal"><span class="pre">isgetsetdescriptor</span></code></a>(object)</td>
 <td>Return true if the object is a getset descriptor.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.ismemberdescriptor.html#inspect.ismemberdescriptor" title="inspect.ismemberdescriptor"><code class="xref py py-obj docutils literal"><span class="pre">ismemberdescriptor</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.ismemberdescriptor.html#inspect.ismemberdescriptor" title="inspect.ismemberdescriptor"><code class="xref py py-obj docutils literal"><span class="pre">ismemberdescriptor</span></code></a>(object)</td>
 <td>Return true if the object is a member descriptor.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.ismethod.html#inspect.ismethod" title="inspect.ismethod"><code class="xref py py-obj docutils literal"><span class="pre">ismethod</span></code></a>(object)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.ismethod.html#inspect.ismethod" title="inspect.ismethod"><code class="xref py py-obj docutils literal"><span class="pre">ismethod</span></code></a>(object)</td>
 <td>Return true if the object is an instance method.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.ismethoddescriptor.html#inspect.ismethoddescriptor" title="inspect.ismethoddescriptor"><code class="xref py py-obj docutils literal"><span class="pre">ismethoddescriptor</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.ismethoddescriptor.html#inspect.ismethoddescriptor" title="inspect.ismethoddescriptor"><code class="xref py py-obj docutils literal"><span class="pre">ismethoddescriptor</span></code></a>(object)</td>
 <td>Return true if the object is a method descriptor.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.ismodule.html#inspect.ismodule" title="inspect.ismodule"><code class="xref py py-obj docutils literal"><span class="pre">ismodule</span></code></a>(object)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.ismodule.html#inspect.ismodule" title="inspect.ismodule"><code class="xref py py-obj docutils literal"><span class="pre">ismodule</span></code></a>(object)</td>
 <td>Return true if the object is a module.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.isroutine.html#inspect.isroutine" title="inspect.isroutine"><code class="xref py py-obj docutils literal"><span class="pre">isroutine</span></code></a>(object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.isroutine.html#inspect.isroutine" title="inspect.isroutine"><code class="xref py py-obj docutils literal"><span class="pre">isroutine</span></code></a>(object)</td>
 <td>Return true if the object is any kind of function or method.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.istraceback.html#inspect.istraceback" title="inspect.istraceback"><code class="xref py py-obj docutils literal"><span class="pre">istraceback</span></code></a>(object)</td>
+<tr class="row-even"><td><a class="reference internal" href="inspect.istraceback.html#inspect.istraceback" title="inspect.istraceback"><code class="xref py py-obj docutils literal"><span class="pre">istraceback</span></code></a>(object)</td>
 <td>Return true if the object is a traceback.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="inspect.joinseq.html#inspect.joinseq" title="inspect.joinseq"><code class="xref py py-obj docutils literal"><span class="pre">joinseq</span></code></a>(seq)</td>
+<tr class="row-odd"><td><a class="reference internal" href="inspect.joinseq.html#inspect.joinseq" title="inspect.joinseq"><code class="xref py py-obj docutils literal"><span class="pre">joinseq</span></code></a>(seq)</td>
 <td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="inspect.namedtuple.html#inspect.namedtuple" title="inspect.namedtuple"><code class="xref py py-obj docutils literal"><span class="pre">namedtuple</span></code></a>(typename,&nbsp;field_names[,&nbsp;verbose,&nbsp;...])</td>
-<td>Returns a new subclass of tuple with named fields.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="inspect.stack.html#inspect.stack" title="inspect.stack"><code class="xref py py-obj docutils literal"><span class="pre">stack</span></code></a>([context])</td>
 <td>Return a list of records for the stack above the caller&#8217;s frame.</td>
@@ -432,34 +418,25 @@ stack(), trace() - get info about frames on the stack or in a traceback</p>
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td><a class="reference internal" href="generated/inspect.ArgInfo.html#inspect.ArgInfo" title="inspect.ArgInfo"><code class="xref py py-obj docutils literal"><span class="pre">ArgInfo</span></code></a></td>
-<td><p class="rubric">Attributes</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/inspect.ArgSpec.html#inspect.ArgSpec" title="inspect.ArgSpec"><code class="xref py py-obj docutils literal"><span class="pre">ArgSpec</span></code></a></td>
-<td><p class="rubric">Attributes</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/inspect.Arguments.html#inspect.Arguments" title="inspect.Arguments"><code class="xref py py-obj docutils literal"><span class="pre">Arguments</span></code></a></td>
-<td><p class="rubric">Attributes</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/inspect.Attribute.html#inspect.Attribute" title="inspect.Attribute"><code class="xref py py-obj docutils literal"><span class="pre">Attribute</span></code></a></td>
-<td><p class="rubric">Attributes</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/inspect.BlockFinder.html#inspect.BlockFinder" title="inspect.BlockFinder"><code class="xref py py-obj docutils literal"><span class="pre">BlockFinder</span></code></a>()</td>
 <td>Provide a tokeneater() method to detect the end of a code block.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/inspect.ModuleInfo.html#inspect.ModuleInfo" title="inspect.ModuleInfo"><code class="xref py py-obj docutils literal"><span class="pre">ModuleInfo</span></code></a></td>
-<td><p class="rubric">Attributes</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/inspect.Traceback.html#inspect.Traceback" title="inspect.Traceback"><code class="xref py py-obj docutils literal"><span class="pre">Traceback</span></code></a></td>
-<td><p class="rubric">Attributes</p>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/inspect.attrgetter.html#inspect.attrgetter" title="inspect.attrgetter"><code class="xref py py-obj docutils literal"><span class="pre">attrgetter</span></code></a></td>
-<td>attrgetter(attr, ...) &#8211;&gt; attrgetter object</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -492,7 +469,7 @@ stack(), trace() - get info about frames on the stack or in a traceback</p>
         <a href="inspect.classify_class_attrs.html" class="btn btn-neutral float-right" title="1.7.1.1. inspect.classify_class_attrs" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="sys.settrace.html" class="btn btn-neutral" title="1.6.1.22. sys.settrace" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="sys.settrace.html" class="btn btn-neutral" title="1.6.1.21. sys.settrace" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

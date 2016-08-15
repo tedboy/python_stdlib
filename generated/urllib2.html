@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.3.11. urllib2 &mdash; Python Standard Library</title>
+  <title>3.3.11. urllib2 &mdash; My Project v1</title>
   
 
   
@@ -30,9 +30,9 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="3. Misc package I may use in the future" href="../maybe_future.html"/>
-        <link rel="next" title="3.3.11.1.1. urllib2.StringIO" href="urllib2.StringIO.html"/>
+        <link rel="next" title="3.3.11.1.1. urllib2.build_opener" href="urllib2.build_opener.html"/>
         <link rel="prev" title="3.3.10.3.1. urllib.ContentTooShortError" href="urllib.ContentTooShortError.html"/> 
 
   
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a><ul class="current">
@@ -138,7 +130,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -249,76 +241,25 @@ urllib2.install_opener(opener)</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.StringIO.html#urllib2.StringIO" title="urllib2.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
-<td>StringIO([s]) &#8211; Return a StringIO-like stream for reading or writing</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="urllib2.build_opener.html#urllib2.build_opener" title="urllib2.build_opener"><code class="xref py py-obj docutils literal"><span class="pre">build_opener</span></code></a>(*handlers)</td>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.build_opener.html#urllib2.build_opener" title="urllib2.build_opener"><code class="xref py py-obj docutils literal"><span class="pre">build_opener</span></code></a>(*handlers)</td>
 <td>Create an opener object from a list of handlers.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.getproxies.html#urllib2.getproxies" title="urllib2.getproxies"><code class="xref py py-obj docutils literal"><span class="pre">getproxies</span></code></a>()</td>
-<td>Return a dictionary of scheme -&gt; proxy server URL mappings.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="urllib2.install_opener.html#urllib2.install_opener" title="urllib2.install_opener"><code class="xref py py-obj docutils literal"><span class="pre">install_opener</span></code></a>(opener)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.localhost.html#urllib2.localhost" title="urllib2.localhost"><code class="xref py py-obj docutils literal"><span class="pre">localhost</span></code></a>()</td>
-<td>Return the IP address of the magic hostname &#8216;localhost&#8217;.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="urllib2.parse_http_list.html#urllib2.parse_http_list" title="urllib2.parse_http_list"><code class="xref py py-obj docutils literal"><span class="pre">parse_http_list</span></code></a>(s)</td>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.parse_http_list.html#urllib2.parse_http_list" title="urllib2.parse_http_list"><code class="xref py py-obj docutils literal"><span class="pre">parse_http_list</span></code></a>(s)</td>
 <td>Parse lists as described by RFC 2068 Section 2.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.parse_keqv_list.html#urllib2.parse_keqv_list" title="urllib2.parse_keqv_list"><code class="xref py py-obj docutils literal"><span class="pre">parse_keqv_list</span></code></a>(l)</td>
+<tr class="row-even"><td><a class="reference internal" href="urllib2.parse_keqv_list.html#urllib2.parse_keqv_list" title="urllib2.parse_keqv_list"><code class="xref py py-obj docutils literal"><span class="pre">parse_keqv_list</span></code></a>(l)</td>
 <td>Parse list of key=value strings where keys are not duplicated.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="urllib2.proxy_bypass.html#urllib2.proxy_bypass" title="urllib2.proxy_bypass"><code class="xref py py-obj docutils literal"><span class="pre">proxy_bypass</span></code></a>(host)</td>
-<td>Test if proxies should not be used for a particular host.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.quote.html#urllib2.quote" title="urllib2.quote"><code class="xref py py-obj docutils literal"><span class="pre">quote</span></code></a>(()&nbsp;-&gt;&nbsp;)</td>
-<td>Each part of a URL, e.g.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="urllib2.randombytes.html#urllib2.randombytes" title="urllib2.randombytes"><code class="xref py py-obj docutils literal"><span class="pre">randombytes</span></code></a>(n)</td>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.randombytes.html#urllib2.randombytes" title="urllib2.randombytes"><code class="xref py py-obj docutils literal"><span class="pre">randombytes</span></code></a>(n)</td>
 <td>Return n random bytes.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.request_host.html#urllib2.request_host" title="urllib2.request_host"><code class="xref py py-obj docutils literal"><span class="pre">request_host</span></code></a>(request)</td>
+<tr class="row-even"><td><a class="reference internal" href="urllib2.request_host.html#urllib2.request_host" title="urllib2.request_host"><code class="xref py py-obj docutils literal"><span class="pre">request_host</span></code></a>(request)</td>
 <td>Return request-host, as defined by RFC 2965.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="urllib2.splitattr.html#urllib2.splitattr" title="urllib2.splitattr"><code class="xref py py-obj docutils literal"><span class="pre">splitattr</span></code></a>()</td>
-<td>&#8216;/path&#8217;, [&#8216;attr1=value1&#8217;, &#8216;attr2=value2&#8217;, ...].</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.splithost.html#urllib2.splithost" title="urllib2.splithost"><code class="xref py py-obj docutils literal"><span class="pre">splithost</span></code></a>(url)</td>
-<td>splithost(&#8216;//host[:port]/path&#8217;) &#8211;&gt; &#8216;host[:port]&#8217;, &#8216;/path&#8217;.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="urllib2.splitpasswd.html#urllib2.splitpasswd" title="urllib2.splitpasswd"><code class="xref py py-obj docutils literal"><span class="pre">splitpasswd</span></code></a>(()&nbsp;-&gt;&nbsp;,&nbsp;.)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.splitport.html#urllib2.splitport" title="urllib2.splitport"><code class="xref py py-obj docutils literal"><span class="pre">splitport</span></code></a>(host)</td>
-<td>splitport(&#8216;host:port&#8217;) &#8211;&gt; &#8216;host&#8217;, &#8216;port&#8217;.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="urllib2.splittag.html#urllib2.splittag" title="urllib2.splittag"><code class="xref py py-obj docutils literal"><span class="pre">splittag</span></code></a>(url)</td>
-<td>splittag(&#8216;/path#tag&#8217;) &#8211;&gt; &#8216;/path&#8217;, &#8216;tag&#8217;.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.splittype.html#urllib2.splittype" title="urllib2.splittype"><code class="xref py py-obj docutils literal"><span class="pre">splittype</span></code></a>(url)</td>
-<td>splittype(&#8216;type:opaquestring&#8217;) &#8211;&gt; &#8216;type&#8217;, &#8216;opaquestring&#8217;.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="urllib2.splituser.html#urllib2.splituser" title="urllib2.splituser"><code class="xref py py-obj docutils literal"><span class="pre">splituser</span></code></a>(host)</td>
-<td>splituser(&#8216;user[:passwd]&#64;host[:port]&#8217;) &#8211;&gt; &#8216;user[:passwd]&#8217;, &#8216;host[:port]&#8217;.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.splitvalue.html#urllib2.splitvalue" title="urllib2.splitvalue"><code class="xref py py-obj docutils literal"><span class="pre">splitvalue</span></code></a>(attr)</td>
-<td>splitvalue(&#8216;attr=value&#8217;) &#8211;&gt; &#8216;attr&#8217;, &#8216;value&#8217;.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="urllib2.toBytes.html#urllib2.toBytes" title="urllib2.toBytes"><code class="xref py py-obj docutils literal"><span class="pre">toBytes</span></code></a>(url)</td>
-<td>toBytes(u&#8221;URL&#8221;) &#8211;&gt; &#8216;URL&#8217;.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.unquote.html#urllib2.unquote" title="urllib2.unquote"><code class="xref py py-obj docutils literal"><span class="pre">unquote</span></code></a>(()&nbsp;-&gt;&nbsp;.)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="urllib2.unwrap.html#urllib2.unwrap" title="urllib2.unwrap"><code class="xref py py-obj docutils literal"><span class="pre">unwrap</span></code></a>(url)</td>
-<td>unwrap(&#8216;&lt;URL:type://host/path&gt;&#8217;) &#8211;&gt; &#8216;type://host/path&#8217;.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="urllib2.url2pathname.html#urllib2.url2pathname" title="urllib2.url2pathname"><code class="xref py py-obj docutils literal"><span class="pre">url2pathname</span></code></a>(pathname)</td>
-<td>OS-specific conversion from a relative URL of the &#8216;file&#8217; scheme to a file system path; not recommended for general use.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-obj docutils literal"><span class="pre">urlopen</span></code></a>(url[,&nbsp;data,&nbsp;timeout,&nbsp;cafile,&nbsp;...])</td>
+<tr class="row-odd"><td><a class="reference internal" href="urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-obj docutils literal"><span class="pre">urlopen</span></code></a>(url[,&nbsp;data,&nbsp;timeout,&nbsp;cafile,&nbsp;...])</td>
 <td></td>
 </tr>
 </tbody>
@@ -333,44 +274,34 @@ urllib2.install_opener(opener)</p>
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.AbstractBasicAuthHandler.html#urllib2.AbstractBasicAuthHandler" title="urllib2.AbstractBasicAuthHandler"><code class="xref py py-obj docutils literal"><span class="pre">AbstractBasicAuthHandler</span></code></a>([password_mgr])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/urllib2.AbstractDigestAuthHandler.html#urllib2.AbstractDigestAuthHandler" title="urllib2.AbstractDigestAuthHandler"><code class="xref py py-obj docutils literal"><span class="pre">AbstractDigestAuthHandler</span></code></a>([passwd])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.AbstractHTTPHandler.html#urllib2.AbstractHTTPHandler" title="urllib2.AbstractHTTPHandler"><code class="xref py py-obj docutils literal"><span class="pre">AbstractHTTPHandler</span></code></a>([debuglevel])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/urllib2.BaseHandler.html#urllib2.BaseHandler" title="urllib2.BaseHandler"><code class="xref py py-obj docutils literal"><span class="pre">BaseHandler</span></code></a></td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.CacheFTPHandler.html#urllib2.CacheFTPHandler" title="urllib2.CacheFTPHandler"><code class="xref py py-obj docutils literal"><span class="pre">CacheFTPHandler</span></code></a>()</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/urllib2.FTPHandler.html#urllib2.FTPHandler" title="urllib2.FTPHandler"><code class="xref py py-obj docutils literal"><span class="pre">FTPHandler</span></code></a></td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.FileHandler.html#urllib2.FileHandler" title="urllib2.FileHandler"><code class="xref py py-obj docutils literal"><span class="pre">FileHandler</span></code></a></td>
-<td><p class="rubric">Attributes</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/urllib2.HTTPBasicAuthHandler.html#urllib2.HTTPBasicAuthHandler" title="urllib2.HTTPBasicAuthHandler"><code class="xref py py-obj docutils literal"><span class="pre">HTTPBasicAuthHandler</span></code></a>([password_mgr])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.HTTPCookieProcessor.html#urllib2.HTTPCookieProcessor" title="urllib2.HTTPCookieProcessor"><code class="xref py py-obj docutils literal"><span class="pre">HTTPCookieProcessor</span></code></a>([cookiejar])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/urllib2.HTTPDefaultErrorHandler.html#urllib2.HTTPDefaultErrorHandler" title="urllib2.HTTPDefaultErrorHandler"><code class="xref py py-obj docutils literal"><span class="pre">HTTPDefaultErrorHandler</span></code></a></td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.HTTPDigestAuthHandler.html#urllib2.HTTPDigestAuthHandler" title="urllib2.HTTPDigestAuthHandler"><code class="xref py py-obj docutils literal"><span class="pre">HTTPDigestAuthHandler</span></code></a>([passwd])</td>
 <td>An authentication protocol defined by RFC 2069</td>
@@ -379,54 +310,37 @@ urllib2.install_opener(opener)</p>
 <td>Process HTTP error responses.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.HTTPHandler.html#urllib2.HTTPHandler" title="urllib2.HTTPHandler"><code class="xref py py-obj docutils literal"><span class="pre">HTTPHandler</span></code></a>([debuglevel])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/urllib2.HTTPPasswordMgr.html#urllib2.HTTPPasswordMgr" title="urllib2.HTTPPasswordMgr"><code class="xref py py-obj docutils literal"><span class="pre">HTTPPasswordMgr</span></code></a>()</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.HTTPPasswordMgrWithDefaultRealm.html#urllib2.HTTPPasswordMgrWithDefaultRealm" title="urllib2.HTTPPasswordMgrWithDefaultRealm"><code class="xref py py-obj docutils literal"><span class="pre">HTTPPasswordMgrWithDefaultRealm</span></code></a>()</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/urllib2.HTTPRedirectHandler.html#urllib2.HTTPRedirectHandler" title="urllib2.HTTPRedirectHandler"><code class="xref py py-obj docutils literal"><span class="pre">HTTPRedirectHandler</span></code></a></td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.HTTPSHandler.html#urllib2.HTTPSHandler" title="urllib2.HTTPSHandler"><code class="xref py py-obj docutils literal"><span class="pre">HTTPSHandler</span></code></a>([debuglevel,&nbsp;context])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/urllib2.OpenerDirector.html#urllib2.OpenerDirector" title="urllib2.OpenerDirector"><code class="xref py py-obj docutils literal"><span class="pre">OpenerDirector</span></code></a>()</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.ProxyBasicAuthHandler.html#urllib2.ProxyBasicAuthHandler" title="urllib2.ProxyBasicAuthHandler"><code class="xref py py-obj docutils literal"><span class="pre">ProxyBasicAuthHandler</span></code></a>([password_mgr])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/urllib2.ProxyDigestAuthHandler.html#urllib2.ProxyDigestAuthHandler" title="urllib2.ProxyDigestAuthHandler"><code class="xref py py-obj docutils literal"><span class="pre">ProxyDigestAuthHandler</span></code></a>([passwd])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.ProxyHandler.html#urllib2.ProxyHandler" title="urllib2.ProxyHandler"><code class="xref py py-obj docutils literal"><span class="pre">ProxyHandler</span></code></a>([proxies])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/urllib2.Request.html#urllib2.Request" title="urllib2.Request"><code class="xref py py-obj docutils literal"><span class="pre">Request</span></code></a>(url[,&nbsp;data,&nbsp;headers,&nbsp;...])</td>
-<td><p class="rubric">Methods</p>
-</td>
+<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.UnknownHandler.html#urllib2.UnknownHandler" title="urllib2.UnknownHandler"><code class="xref py py-obj docutils literal"><span class="pre">UnknownHandler</span></code></a></td>
-<td><p class="rubric">Methods</p>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/urllib2.addinfourl.html#urllib2.addinfourl" title="urllib2.addinfourl"><code class="xref py py-obj docutils literal"><span class="pre">addinfourl</span></code></a>(fp,&nbsp;headers,&nbsp;url[,&nbsp;code])</td>
-<td>class to add info() and geturl() methods to an open file.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/urllib2.ftpwrapper.html#urllib2.ftpwrapper" title="urllib2.ftpwrapper"><code class="xref py py-obj docutils literal"><span class="pre">ftpwrapper</span></code></a>(user,&nbsp;passwd,&nbsp;host,&nbsp;port,&nbsp;dirs[,&nbsp;...])</td>
-<td>Class used by open_ftp() for cache of open FTP connections.</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -459,7 +373,7 @@ urllib2.install_opener(opener)</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="urllib2.StringIO.html" class="btn btn-neutral float-right" title="3.3.11.1.1. urllib2.StringIO" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="urllib2.build_opener.html" class="btn btn-neutral float-right" title="3.3.11.1.1. urllib2.build_opener" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="urllib.ContentTooShortError.html" class="btn btn-neutral" title="3.3.10.3.1. urllib.ContentTooShortError" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

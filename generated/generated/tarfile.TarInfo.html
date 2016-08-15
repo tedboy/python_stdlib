@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.2.9.2.4. tarfile.TarInfo &mdash; Python Standard Library</title>
+  <title>3.2.9.2.4. tarfile.TarInfo &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.2.9. tarfile" href="../tarfile.html"/>
-        <link rel="next" title="3.2.9.2.4.1. tarfile.TarInfo.linkpath" href="tarfile.TarInfo.linkpath.html"/>
-        <link rel="prev" title="3.2.9.2.3.9. tarfile.TarFileCompat.writestr" href="tarfile.TarFileCompat.writestr.html"/> 
+        <link rel="next" title="3.2.9.2.4.1.1. tarfile.TarInfo.__init__" href="tarfile.TarInfo.__init__.html"/>
+        <link rel="prev" title="3.2.9.2.3.1.10. tarfile.TarFileCompat.writestr" href="tarfile.TarFileCompat.writestr.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
@@ -134,7 +126,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -184,7 +176,6 @@
             
   <div class="section" id="tarfile-tarinfo">
 <h1>3.2.9.2.4. tarfile.TarInfo<a class="headerlink" href="#tarfile-tarinfo" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="tarfile.TarInfo.__init__.html#tarfile.TarInfo.__init__" title="tarfile.TarInfo.__init__"><code class="xref py py-func docutils literal"><span class="pre">TarInfo.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="tarfile.TarInfo">
 <em class="property">class </em><code class="descclassname">tarfile.</code><code class="descname">TarInfo</code><span class="sig-paren">(</span><em>name=''</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/tarfile.html#TarInfo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tarfile.TarInfo" title="Permalink to this definition">¶</a></dt>
@@ -193,7 +184,85 @@ archive member given by a tar header block.
 TarInfo objects are returned by TarFile.getmember(),
 TarFile.getmembers() and TarFile.gettarinfo() and are
 usually created internally.</p>
-<p class="rubric">Attributes</p>
+<dl class="method">
+<dt id="tarfile.TarInfo.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>name=''</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/tarfile.html#TarInfo.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tarfile.TarInfo.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct a TarInfo object. name is the optional name
+of the member.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>3.2.9.2.4.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.__init__.html#tarfile.TarInfo.__init__" title="tarfile.TarInfo.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([name])</td>
+<td>Construct a TarInfo object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.create_gnu_header.html#tarfile.TarInfo.create_gnu_header" title="tarfile.TarInfo.create_gnu_header"><code class="xref py py-obj docutils literal"><span class="pre">create_gnu_header</span></code></a>(info)</td>
+<td>Return the object as a GNU header block sequence.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.create_pax_global_header.html#tarfile.TarInfo.create_pax_global_header" title="tarfile.TarInfo.create_pax_global_header"><code class="xref py py-obj docutils literal"><span class="pre">create_pax_global_header</span></code></a>(pax_headers)</td>
+<td>Return the object as a pax global header block sequence.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.create_pax_header.html#tarfile.TarInfo.create_pax_header" title="tarfile.TarInfo.create_pax_header"><code class="xref py py-obj docutils literal"><span class="pre">create_pax_header</span></code></a>(info,&nbsp;encoding,&nbsp;errors)</td>
+<td>Return the object as a ustar header block.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.create_ustar_header.html#tarfile.TarInfo.create_ustar_header" title="tarfile.TarInfo.create_ustar_header"><code class="xref py py-obj docutils literal"><span class="pre">create_ustar_header</span></code></a>(info)</td>
+<td>Return the object as a ustar header block.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.frombuf.html#tarfile.TarInfo.frombuf" title="tarfile.TarInfo.frombuf"><code class="xref py py-obj docutils literal"><span class="pre">frombuf</span></code></a>(buf)</td>
+<td>Construct a TarInfo object from a 512 byte string buffer.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.fromtarfile.html#tarfile.TarInfo.fromtarfile" title="tarfile.TarInfo.fromtarfile"><code class="xref py py-obj docutils literal"><span class="pre">fromtarfile</span></code></a>(tarfile)</td>
+<td>Return the next TarInfo object from TarFile object tarfile.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.get_info.html#tarfile.TarInfo.get_info" title="tarfile.TarInfo.get_info"><code class="xref py py-obj docutils literal"><span class="pre">get_info</span></code></a>(encoding,&nbsp;errors)</td>
+<td>Return the TarInfo&#8217;s attributes as a dictionary.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.isblk.html#tarfile.TarInfo.isblk" title="tarfile.TarInfo.isblk"><code class="xref py py-obj docutils literal"><span class="pre">isblk</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.ischr.html#tarfile.TarInfo.ischr" title="tarfile.TarInfo.ischr"><code class="xref py py-obj docutils literal"><span class="pre">ischr</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.isdev.html#tarfile.TarInfo.isdev" title="tarfile.TarInfo.isdev"><code class="xref py py-obj docutils literal"><span class="pre">isdev</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.isdir.html#tarfile.TarInfo.isdir" title="tarfile.TarInfo.isdir"><code class="xref py py-obj docutils literal"><span class="pre">isdir</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.isfifo.html#tarfile.TarInfo.isfifo" title="tarfile.TarInfo.isfifo"><code class="xref py py-obj docutils literal"><span class="pre">isfifo</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.isfile.html#tarfile.TarInfo.isfile" title="tarfile.TarInfo.isfile"><code class="xref py py-obj docutils literal"><span class="pre">isfile</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.islnk.html#tarfile.TarInfo.islnk" title="tarfile.TarInfo.islnk"><code class="xref py py-obj docutils literal"><span class="pre">islnk</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.isreg.html#tarfile.TarInfo.isreg" title="tarfile.TarInfo.isreg"><code class="xref py py-obj docutils literal"><span class="pre">isreg</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.issparse.html#tarfile.TarInfo.issparse" title="tarfile.TarInfo.issparse"><code class="xref py py-obj docutils literal"><span class="pre">issparse</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.issym.html#tarfile.TarInfo.issym" title="tarfile.TarInfo.issym"><code class="xref py py-obj docutils literal"><span class="pre">issym</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.tobuf.html#tarfile.TarInfo.tobuf" title="tarfile.TarInfo.tobuf"><code class="xref py py-obj docutils literal"><span class="pre">tobuf</span></code></a>([format,&nbsp;encoding,&nbsp;errors])</td>
+<td>Return a tar header as a string of 512 byte blocks.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="attributes">
+<h2>3.2.9.2.4.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -208,78 +277,7 @@ usually created internally.</p>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.create_gnu_header.html#tarfile.TarInfo.create_gnu_header" title="tarfile.TarInfo.create_gnu_header"><code class="xref py py-obj docutils literal"><span class="pre">create_gnu_header</span></code></a>(info)</td>
-<td>Return the object as a GNU header block sequence.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.create_pax_global_header.html#tarfile.TarInfo.create_pax_global_header" title="tarfile.TarInfo.create_pax_global_header"><code class="xref py py-obj docutils literal"><span class="pre">create_pax_global_header</span></code></a>(pax_headers)</td>
-<td>Return the object as a pax global header block sequence.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.create_pax_header.html#tarfile.TarInfo.create_pax_header" title="tarfile.TarInfo.create_pax_header"><code class="xref py py-obj docutils literal"><span class="pre">create_pax_header</span></code></a>(info,&nbsp;encoding,&nbsp;errors)</td>
-<td>Return the object as a ustar header block.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.create_ustar_header.html#tarfile.TarInfo.create_ustar_header" title="tarfile.TarInfo.create_ustar_header"><code class="xref py py-obj docutils literal"><span class="pre">create_ustar_header</span></code></a>(info)</td>
-<td>Return the object as a ustar header block.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.frombuf.html#tarfile.TarInfo.frombuf" title="tarfile.TarInfo.frombuf"><code class="xref py py-obj docutils literal"><span class="pre">frombuf</span></code></a>(buf)</td>
-<td>Construct a TarInfo object from a 512 byte string buffer.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.fromtarfile.html#tarfile.TarInfo.fromtarfile" title="tarfile.TarInfo.fromtarfile"><code class="xref py py-obj docutils literal"><span class="pre">fromtarfile</span></code></a>(tarfile)</td>
-<td>Return the next TarInfo object from TarFile object tarfile.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.get_info.html#tarfile.TarInfo.get_info" title="tarfile.TarInfo.get_info"><code class="xref py py-obj docutils literal"><span class="pre">get_info</span></code></a>(encoding,&nbsp;errors)</td>
-<td>Return the TarInfo&#8217;s attributes as a dictionary.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.isblk.html#tarfile.TarInfo.isblk" title="tarfile.TarInfo.isblk"><code class="xref py py-obj docutils literal"><span class="pre">isblk</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.ischr.html#tarfile.TarInfo.ischr" title="tarfile.TarInfo.ischr"><code class="xref py py-obj docutils literal"><span class="pre">ischr</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.isdev.html#tarfile.TarInfo.isdev" title="tarfile.TarInfo.isdev"><code class="xref py py-obj docutils literal"><span class="pre">isdev</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.isdir.html#tarfile.TarInfo.isdir" title="tarfile.TarInfo.isdir"><code class="xref py py-obj docutils literal"><span class="pre">isdir</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.isfifo.html#tarfile.TarInfo.isfifo" title="tarfile.TarInfo.isfifo"><code class="xref py py-obj docutils literal"><span class="pre">isfifo</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.isfile.html#tarfile.TarInfo.isfile" title="tarfile.TarInfo.isfile"><code class="xref py py-obj docutils literal"><span class="pre">isfile</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.islnk.html#tarfile.TarInfo.islnk" title="tarfile.TarInfo.islnk"><code class="xref py py-obj docutils literal"><span class="pre">islnk</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.isreg.html#tarfile.TarInfo.isreg" title="tarfile.TarInfo.isreg"><code class="xref py py-obj docutils literal"><span class="pre">isreg</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.issparse.html#tarfile.TarInfo.issparse" title="tarfile.TarInfo.issparse"><code class="xref py py-obj docutils literal"><span class="pre">issparse</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="tarfile.TarInfo.issym.html#tarfile.TarInfo.issym" title="tarfile.TarInfo.issym"><code class="xref py py-obj docutils literal"><span class="pre">issym</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="tarfile.TarInfo.tobuf.html#tarfile.TarInfo.tobuf" title="tarfile.TarInfo.tobuf"><code class="xref py py-obj docutils literal"><span class="pre">tobuf</span></code></a>([format,&nbsp;encoding,&nbsp;errors])</td>
-<td>Return a tar header as a string of 512 byte blocks.</td>
-</tr>
-</tbody>
-</table>
-<dl class="method">
-<dt id="tarfile.TarInfo.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>name=''</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/tarfile.html#TarInfo.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tarfile.TarInfo.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Construct a TarInfo object. name is the optional name
-of the member.</p>
-</dd></dl>
-
-</dd></dl>
-
+</div>
 </div>
 
 
@@ -289,10 +287,10 @@ of the member.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="tarfile.TarInfo.linkpath.html" class="btn btn-neutral float-right" title="3.2.9.2.4.1. tarfile.TarInfo.linkpath" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="tarfile.TarInfo.__init__.html" class="btn btn-neutral float-right" title="3.2.9.2.4.1.1. tarfile.TarInfo.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="tarfile.TarFileCompat.writestr.html" class="btn btn-neutral" title="3.2.9.2.3.9. tarfile.TarFileCompat.writestr" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="tarfile.TarFileCompat.writestr.html" class="btn btn-neutral" title="3.2.9.2.3.1.10. tarfile.TarFileCompat.writestr" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

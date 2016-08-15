@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.4.4.2.3. trace.Trace &mdash; Python Standard Library</title>
+  <title>3.4.4.2.3. trace.Trace &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.4.4. trace" href="../trace.html"/>
-        <link rel="next" title="3.4.4.2.3.1. trace.Trace.file_module_function_of" href="trace.Trace.file_module_function_of.html"/>
-        <link rel="prev" title="3.4.4.2.2.1. trace.Ignore.names" href="trace.Ignore.names.html"/> 
+        <link rel="next" title="3.4.4.2.3.1.1. trace.Trace.__init__" href="trace.Trace.__init__.html"/>
+        <link rel="prev" title="3.4.4.2.2.1.2. trace.Ignore.names" href="trace.Ignore.names.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
@@ -129,7 +121,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -179,53 +171,10 @@
             
   <div class="section" id="trace-trace">
 <h1>3.4.4.2.3. trace.Trace<a class="headerlink" href="#trace-trace" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="trace.Trace.__init__.html#trace.Trace.__init__" title="trace.Trace.__init__"><code class="xref py py-func docutils literal"><span class="pre">Trace.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="trace.Trace">
 <em class="property">class </em><code class="descclassname">trace.</code><code class="descname">Trace</code><span class="sig-paren">(</span><em>count=1</em>, <em>trace=1</em>, <em>countfuncs=0</em>, <em>countcallers=0</em>, <em>ignoremods=()</em>, <em>ignoredirs=()</em>, <em>infile=None</em>, <em>outfile=None</em>, <em>timing=False</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/trace.html#Trace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trace.Trace" title="Permalink to this definition">¶</a></dt>
-<dd><p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.file_module_function_of.html#trace.Trace.file_module_function_of" title="trace.Trace.file_module_function_of"><code class="xref py py-obj docutils literal"><span class="pre">file_module_function_of</span></code></a>(frame)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="trace.Trace.globaltrace_countfuncs.html#trace.Trace.globaltrace_countfuncs" title="trace.Trace.globaltrace_countfuncs"><code class="xref py py-obj docutils literal"><span class="pre">globaltrace_countfuncs</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
-<td>Handler for call events.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.globaltrace_lt.html#trace.Trace.globaltrace_lt" title="trace.Trace.globaltrace_lt"><code class="xref py py-obj docutils literal"><span class="pre">globaltrace_lt</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
-<td>Handler for call events.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="trace.Trace.globaltrace_trackcallers.html#trace.Trace.globaltrace_trackcallers" title="trace.Trace.globaltrace_trackcallers"><code class="xref py py-obj docutils literal"><span class="pre">globaltrace_trackcallers</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
-<td>Handler for call events.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.localtrace_count.html#trace.Trace.localtrace_count" title="trace.Trace.localtrace_count"><code class="xref py py-obj docutils literal"><span class="pre">localtrace_count</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="trace.Trace.localtrace_trace.html#trace.Trace.localtrace_trace" title="trace.Trace.localtrace_trace"><code class="xref py py-obj docutils literal"><span class="pre">localtrace_trace</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.localtrace_trace_and_count.html#trace.Trace.localtrace_trace_and_count" title="trace.Trace.localtrace_trace_and_count"><code class="xref py py-obj docutils literal"><span class="pre">localtrace_trace_and_count</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="trace.Trace.results.html#trace.Trace.results" title="trace.Trace.results"><code class="xref py py-obj docutils literal"><span class="pre">results</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.run.html#trace.Trace.run" title="trace.Trace.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>(cmd)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="trace.Trace.runctx.html#trace.Trace.runctx" title="trace.Trace.runctx"><code class="xref py py-obj docutils literal"><span class="pre">runctx</span></code></a>(cmd[,&nbsp;globals,&nbsp;locals])</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.runfunc.html#trace.Trace.runfunc" title="trace.Trace.runfunc"><code class="xref py py-obj docutils literal"><span class="pre">runfunc</span></code></a>(func,&nbsp;*args,&nbsp;**kw)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<dl class="method">
+<dd><dl class="method">
 <dt id="trace.Trace.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>count=1</em>, <em>trace=1</em>, <em>countfuncs=0</em>, <em>countcallers=0</em>, <em>ignoremods=()</em>, <em>ignoredirs=()</em>, <em>infile=None</em>, <em>outfile=None</em>, <em>timing=False</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/trace.html#Trace.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trace.Trace.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
@@ -252,6 +201,53 @@ that were called at least once;  This overrides
 
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>3.4.4.2.3.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.__init__.html#trace.Trace.__init__" title="trace.Trace.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([count,&nbsp;trace,&nbsp;countfuncs,&nbsp;...])</td>
+<td>&#64;param count true iff it should count number of times each</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="trace.Trace.file_module_function_of.html#trace.Trace.file_module_function_of" title="trace.Trace.file_module_function_of"><code class="xref py py-obj docutils literal"><span class="pre">file_module_function_of</span></code></a>(frame)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.globaltrace_countfuncs.html#trace.Trace.globaltrace_countfuncs" title="trace.Trace.globaltrace_countfuncs"><code class="xref py py-obj docutils literal"><span class="pre">globaltrace_countfuncs</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
+<td>Handler for call events.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="trace.Trace.globaltrace_lt.html#trace.Trace.globaltrace_lt" title="trace.Trace.globaltrace_lt"><code class="xref py py-obj docutils literal"><span class="pre">globaltrace_lt</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
+<td>Handler for call events.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.globaltrace_trackcallers.html#trace.Trace.globaltrace_trackcallers" title="trace.Trace.globaltrace_trackcallers"><code class="xref py py-obj docutils literal"><span class="pre">globaltrace_trackcallers</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
+<td>Handler for call events.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="trace.Trace.localtrace_count.html#trace.Trace.localtrace_count" title="trace.Trace.localtrace_count"><code class="xref py py-obj docutils literal"><span class="pre">localtrace_count</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.localtrace_trace.html#trace.Trace.localtrace_trace" title="trace.Trace.localtrace_trace"><code class="xref py py-obj docutils literal"><span class="pre">localtrace_trace</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="trace.Trace.localtrace_trace_and_count.html#trace.Trace.localtrace_trace_and_count" title="trace.Trace.localtrace_trace_and_count"><code class="xref py py-obj docutils literal"><span class="pre">localtrace_trace_and_count</span></code></a>(frame,&nbsp;why,&nbsp;arg)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.results.html#trace.Trace.results" title="trace.Trace.results"><code class="xref py py-obj docutils literal"><span class="pre">results</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="trace.Trace.run.html#trace.Trace.run" title="trace.Trace.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>(cmd)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="trace.Trace.runctx.html#trace.Trace.runctx" title="trace.Trace.runctx"><code class="xref py py-obj docutils literal"><span class="pre">runctx</span></code></a>(cmd[,&nbsp;globals,&nbsp;locals])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="trace.Trace.runfunc.html#trace.Trace.runfunc" title="trace.Trace.runfunc"><code class="xref py py-obj docutils literal"><span class="pre">runfunc</span></code></a>(func,&nbsp;*args,&nbsp;**kw)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -261,10 +257,10 @@ that were called at least once;  This overrides
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="trace.Trace.file_module_function_of.html" class="btn btn-neutral float-right" title="3.4.4.2.3.1. trace.Trace.file_module_function_of" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="trace.Trace.__init__.html" class="btn btn-neutral float-right" title="3.4.4.2.3.1.1. trace.Trace.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="trace.Ignore.names.html" class="btn btn-neutral" title="3.4.4.2.2.1. trace.Ignore.names" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="trace.Ignore.names.html" class="btn btn-neutral" title="3.4.4.2.2.1.2. trace.Ignore.names" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

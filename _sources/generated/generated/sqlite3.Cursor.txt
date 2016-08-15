@@ -2,16 +2,15 @@ sqlite3.Cursor
 ==============
 
 .. currentmodule:: sqlite3
-
-:func:`Cursor.__init__`
-
 .. autoclass:: Cursor
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Cursor.close
@@ -28,11 +27,10 @@ sqlite3.Cursor
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Cursor.arraysize

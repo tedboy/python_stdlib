@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.2.6.2.1. gzip.GzipFile &mdash; Python Standard Library</title>
+  <title>3.2.6.2.1. gzip.GzipFile &mdash; My Project v1</title>
   
 
   
@@ -30,9 +30,9 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.2.6. gzip" href="../gzip.html"/>
-        <link rel="next" title="3.2.6.2.1.1. gzip.GzipFile.closed" href="gzip.GzipFile.closed.html"/>
+        <link rel="next" title="3.2.6.2.1.1.1. gzip.GzipFile.__init__" href="gzip.GzipFile.__init__.html"/>
         <link rel="prev" title="3.2.6.1.3. gzip.write32u" href="../gzip.write32u.html"/> 
 
   
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
@@ -133,7 +125,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -183,62 +175,72 @@
             
   <div class="section" id="gzip-gzipfile">
 <h1>3.2.6.2.1. gzip.GzipFile<a class="headerlink" href="#gzip-gzipfile" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="gzip.GzipFile.__init__.html#gzip.GzipFile.__init__" title="gzip.GzipFile.__init__"><code class="xref py py-func docutils literal"><span class="pre">GzipFile.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="gzip.GzipFile">
 <em class="property">class </em><code class="descclassname">gzip.</code><code class="descname">GzipFile</code><span class="sig-paren">(</span><em>filename=None</em>, <em>mode=None</em>, <em>compresslevel=9</em>, <em>fileobj=None</em>, <em>mtime=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/gzip.html#GzipFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gzip.GzipFile" title="Permalink to this definition">¶</a></dt>
 <dd><p>The GzipFile class simulates most of the methods of a file object with
 the exception of the readinto() and truncate() methods.</p>
-<p class="rubric">Attributes</p>
+<dl class="method">
+<dt id="gzip.GzipFile.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>filename=None</em>, <em>mode=None</em>, <em>compresslevel=9</em>, <em>fileobj=None</em>, <em>mtime=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/gzip.html#GzipFile.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gzip.GzipFile.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructor for the GzipFile class.</p>
+<p>At least one of fileobj and filename must be given a
+non-trivial value.</p>
+<p>The new class instance is based on fileobj, which can be a regular
+file, a StringIO object, or any other object which simulates a file.
+It defaults to None, in which case filename is opened to provide
+a file object.</p>
+<p>When fileobj is not None, the filename argument is only used to be
+included in the gzip file header, which may includes the original
+filename of the uncompressed file.  It defaults to the filename of
+fileobj, if discernible; otherwise, it defaults to the empty string,
+and in this case the original filename is not included in the header.</p>
+<p>The mode argument can be any of &#8216;r&#8217;, &#8216;rb&#8217;, &#8216;a&#8217;, &#8216;ab&#8217;, &#8216;w&#8217;, or &#8216;wb&#8217;,
+depending on whether the file will be read or written.  The default
+is the mode of fileobj if discernible; otherwise, the default is &#8216;rb&#8217;.
+Be aware that only the &#8216;rb&#8217;, &#8216;ab&#8217;, and &#8216;wb&#8217; values should be used
+for cross-platform portability.</p>
+<p>The compresslevel argument is an integer from 0 to 9 controlling the
+level of compression; 1 is fastest and produces the least compression,
+and 9 is slowest and produces the most compression. 0 is no compression
+at all. The default is 9.</p>
+<p>The mtime argument is an optional numeric timestamp to be written
+to the stream when compressing.  All gzip compressed streams
+are required to contain a timestamp.  If omitted or None, the
+current time is used.  This module ignores the timestamp when
+decompressing; however, some programs, such as gunzip, make use
+of it.  The format of the timestamp is the same as that of the
+return value of time.time() and of the st_mtime member of the
+object returned by os.stat().</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>3.2.6.2.1.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.closed.html#gzip.GzipFile.closed" title="gzip.GzipFile.closed"><code class="xref py py-obj docutils literal"><span class="pre">closed</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.__init__.html#gzip.GzipFile.__init__" title="gzip.GzipFile.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([filename,&nbsp;mode,&nbsp;compresslevel,&nbsp;...])</td>
+<td>Constructor for the GzipFile class.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.close.html#gzip.GzipFile.close" title="gzip.GzipFile.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.filename.html#gzip.GzipFile.filename" title="gzip.GzipFile.filename"><code class="xref py py-obj docutils literal"><span class="pre">filename</span></code></a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table border="1" class="docutils">
-<colgroup>
-<col width="47%" />
-<col width="53%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>myfileobj</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.close.html#gzip.GzipFile.close" title="gzip.GzipFile.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.detach.html#gzip.GzipFile.detach" title="gzip.GzipFile.detach"><code class="xref py py-obj docutils literal"><span class="pre">detach</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.detach.html#gzip.GzipFile.detach" title="gzip.GzipFile.detach"><code class="xref py py-obj docutils literal"><span class="pre">detach</span></code></a></td>
 <td>Disconnect this buffer from its underlying raw stream and return it.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.fileno.html#gzip.GzipFile.fileno" title="gzip.GzipFile.fileno"><code class="xref py py-obj docutils literal"><span class="pre">fileno</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.fileno.html#gzip.GzipFile.fileno" title="gzip.GzipFile.fileno"><code class="xref py py-obj docutils literal"><span class="pre">fileno</span></code></a>()</td>
 <td>Invoke the underlying file object&#8217;s fileno() method.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.flush.html#gzip.GzipFile.flush" title="gzip.GzipFile.flush"><code class="xref py py-obj docutils literal"><span class="pre">flush</span></code></a>([zlib_mode])</td>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.flush.html#gzip.GzipFile.flush" title="gzip.GzipFile.flush"><code class="xref py py-obj docutils literal"><span class="pre">flush</span></code></a>([zlib_mode])</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.isatty.html#gzip.GzipFile.isatty" title="gzip.GzipFile.isatty"><code class="xref py py-obj docutils literal"><span class="pre">isatty</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.isatty.html#gzip.GzipFile.isatty" title="gzip.GzipFile.isatty"><code class="xref py py-obj docutils literal"><span class="pre">isatty</span></code></a></td>
 <td>Return whether this is an &#8216;interactive&#8217; stream.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.next.html#gzip.GzipFile.next" title="gzip.GzipFile.next"><code class="xref py py-obj docutils literal"><span class="pre">next</span></code></a></td>
-<td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.read.html#gzip.GzipFile.read" title="gzip.GzipFile.read"><code class="xref py py-obj docutils literal"><span class="pre">read</span></code></a>([size])</td>
 <td></td>
@@ -284,42 +286,33 @@ the exception of the readinto() and truncate() methods.</p>
 </tr>
 </tbody>
 </table>
-<dl class="method">
-<dt id="gzip.GzipFile.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>filename=None</em>, <em>mode=None</em>, <em>compresslevel=9</em>, <em>fileobj=None</em>, <em>mtime=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/gzip.html#GzipFile.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gzip.GzipFile.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Constructor for the GzipFile class.</p>
-<p>At least one of fileobj and filename must be given a
-non-trivial value.</p>
-<p>The new class instance is based on fileobj, which can be a regular
-file, a StringIO object, or any other object which simulates a file.
-It defaults to None, in which case filename is opened to provide
-a file object.</p>
-<p>When fileobj is not None, the filename argument is only used to be
-included in the gzip file header, which may includes the original
-filename of the uncompressed file.  It defaults to the filename of
-fileobj, if discernible; otherwise, it defaults to the empty string,
-and in this case the original filename is not included in the header.</p>
-<p>The mode argument can be any of &#8216;r&#8217;, &#8216;rb&#8217;, &#8216;a&#8217;, &#8216;ab&#8217;, &#8216;w&#8217;, or &#8216;wb&#8217;,
-depending on whether the file will be read or written.  The default
-is the mode of fileobj if discernible; otherwise, the default is &#8216;rb&#8217;.
-Be aware that only the &#8216;rb&#8217;, &#8216;ab&#8217;, and &#8216;wb&#8217; values should be used
-for cross-platform portability.</p>
-<p>The compresslevel argument is an integer from 0 to 9 controlling the
-level of compression; 1 is fastest and produces the least compression,
-and 9 is slowest and produces the most compression. 0 is no compression
-at all. The default is 9.</p>
-<p>The mtime argument is an optional numeric timestamp to be written
-to the stream when compressing.  All gzip compressed streams
-are required to contain a timestamp.  If omitted or None, the
-current time is used.  This module ignores the timestamp when
-decompressing; however, some programs, such as gunzip, make use
-of it.  The format of the timestamp is the same as that of the
-return value of time.time() and of the st_mtime member of the
-object returned by os.stat().</p>
-</dd></dl>
-
-</dd></dl>
-
+</div>
+<div class="section" id="attributes">
+<h2>3.2.6.2.1.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.closed.html#gzip.GzipFile.closed" title="gzip.GzipFile.closed"><code class="xref py py-obj docutils literal"><span class="pre">closed</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.filename.html#gzip.GzipFile.filename" title="gzip.GzipFile.filename"><code class="xref py py-obj docutils literal"><span class="pre">filename</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.max_read_chunk.html#gzip.GzipFile.max_read_chunk" title="gzip.GzipFile.max_read_chunk"><code class="xref py py-obj docutils literal"><span class="pre">max_read_chunk</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="gzip.GzipFile.myfileobj.html#gzip.GzipFile.myfileobj" title="gzip.GzipFile.myfileobj"><code class="xref py py-obj docutils literal"><span class="pre">myfileobj</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="gzip.GzipFile.next.html#gzip.GzipFile.next" title="gzip.GzipFile.next"><code class="xref py py-obj docutils literal"><span class="pre">next</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -329,7 +322,7 @@ object returned by os.stat().</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="gzip.GzipFile.closed.html" class="btn btn-neutral float-right" title="3.2.6.2.1.1. gzip.GzipFile.closed" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="gzip.GzipFile.__init__.html" class="btn btn-neutral float-right" title="3.2.6.2.1.1.1. gzip.GzipFile.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../gzip.write32u.html" class="btn btn-neutral" title="3.2.6.1.3. gzip.write32u" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

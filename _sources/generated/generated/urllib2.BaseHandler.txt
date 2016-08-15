@@ -2,16 +2,15 @@ urllib2.BaseHandler
 ===================
 
 .. currentmodule:: urllib2
-
-:func:`BaseHandler.__init__`
-
 .. autoclass:: BaseHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~BaseHandler.add_parent
@@ -21,11 +20,10 @@ urllib2.BaseHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~BaseHandler.handler_order

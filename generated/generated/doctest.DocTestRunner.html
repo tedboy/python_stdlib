@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.4.2.2.7. doctest.DocTestRunner &mdash; Python Standard Library</title>
+  <title>3.4.2.2.7. doctest.DocTestRunner &mdash; My Project v1</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+    <link rel="top" title="My Project v1" href="../../index.html"/>
         <link rel="up" title="3.4.2. doctest" href="../doctest.html"/>
-        <link rel="next" title="3.4.2.2.7.1. doctest.DocTestRunner.merge" href="doctest.DocTestRunner.merge.html"/>
-        <link rel="prev" title="3.4.2.2.6.3. doctest.DocTestParser.parse" href="doctest.DocTestParser.parse.html"/> 
+        <link rel="next" title="3.4.2.2.7.1.1. doctest.DocTestRunner.__init__" href="doctest.DocTestRunner.__init__.html"/>
+        <link rel="prev" title="3.4.2.2.6.1.3. doctest.DocTestParser.parse" href="doctest.DocTestParser.parse.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -88,14 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
@@ -130,7 +122,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -180,7 +172,6 @@
             
   <div class="section" id="doctest-doctestrunner">
 <h1>3.4.2.2.7. doctest.DocTestRunner<a class="headerlink" href="#doctest-doctestrunner" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="doctest.DocTestRunner.__init__.html#doctest.DocTestRunner.__init__" title="doctest.DocTestRunner.__init__"><code class="xref py py-func docutils literal"><span class="pre">DocTestRunner.__init__()</span></code></a></p>
 <dl class="class">
 <dt id="doctest.DocTestRunner">
 <em class="property">class </em><code class="descclassname">doctest.</code><code class="descname">DocTestRunner</code><span class="sig-paren">(</span><em>checker=None</em>, <em>verbose=None</em>, <em>optionflags=0</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/doctest.html#DocTestRunner"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#doctest.DocTestRunner" title="Permalink to this definition">¶</a></dt>
@@ -236,36 +227,6 @@ capturing the output is not sufficient, then the display output
 can be also customized by subclassing DocTestRunner, and
 overriding the methods <cite>report_start</cite>, <cite>report_success</cite>,
 <cite>report_unexpected_exception</cite>, and <cite>report_failure</cite>.</p>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestRunner.merge.html#doctest.DocTestRunner.merge" title="doctest.DocTestRunner.merge"><code class="xref py py-obj docutils literal"><span class="pre">merge</span></code></a>(other)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="doctest.DocTestRunner.report_failure.html#doctest.DocTestRunner.report_failure" title="doctest.DocTestRunner.report_failure"><code class="xref py py-obj docutils literal"><span class="pre">report_failure</span></code></a>(out,&nbsp;test,&nbsp;example,&nbsp;got)</td>
-<td>Report that the given example failed.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestRunner.report_start.html#doctest.DocTestRunner.report_start" title="doctest.DocTestRunner.report_start"><code class="xref py py-obj docutils literal"><span class="pre">report_start</span></code></a>(out,&nbsp;test,&nbsp;example)</td>
-<td>Report that the test runner is about to process the given example.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="doctest.DocTestRunner.report_success.html#doctest.DocTestRunner.report_success" title="doctest.DocTestRunner.report_success"><code class="xref py py-obj docutils literal"><span class="pre">report_success</span></code></a>(out,&nbsp;test,&nbsp;example,&nbsp;got)</td>
-<td>Report that the given example ran successfully.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestRunner.report_unexpected_exception.html#doctest.DocTestRunner.report_unexpected_exception" title="doctest.DocTestRunner.report_unexpected_exception"><code class="xref py py-obj docutils literal"><span class="pre">report_unexpected_exception</span></code></a>(out,&nbsp;test,&nbsp;...)</td>
-<td>Report that the given example raised an unexpected exception.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="doctest.DocTestRunner.run.html#doctest.DocTestRunner.run" title="doctest.DocTestRunner.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>(test[,&nbsp;compileflags,&nbsp;out,&nbsp;clear_globs])</td>
-<td>Run the examples in <cite>test</cite>, and display the results using the writer function <cite>out</cite>.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestRunner.summarize.html#doctest.DocTestRunner.summarize" title="doctest.DocTestRunner.summarize"><code class="xref py py-obj docutils literal"><span class="pre">summarize</span></code></a>([verbose])</td>
-<td>Print a summary of all the test cases that have been run by this DocTestRunner, and return a tuple <cite>(f, t)</cite>, where <cite>f</cite> is the total number of failed examples, and <cite>t</cite> is the total number of tried examples.</td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="doctest.DocTestRunner.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>checker=None</em>, <em>verbose=None</em>, <em>optionflags=0</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/doctest.html#DocTestRunner.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#doctest.DocTestRunner.__init__" title="Permalink to this definition">¶</a></dt>
@@ -284,6 +245,55 @@ more information.</p>
 
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>3.4.2.2.7.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestRunner.__init__.html#doctest.DocTestRunner.__init__" title="doctest.DocTestRunner.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([checker,&nbsp;verbose,&nbsp;optionflags])</td>
+<td>Create a new test runner.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.DocTestRunner.merge.html#doctest.DocTestRunner.merge" title="doctest.DocTestRunner.merge"><code class="xref py py-obj docutils literal"><span class="pre">merge</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestRunner.report_failure.html#doctest.DocTestRunner.report_failure" title="doctest.DocTestRunner.report_failure"><code class="xref py py-obj docutils literal"><span class="pre">report_failure</span></code></a>(out,&nbsp;test,&nbsp;example,&nbsp;got)</td>
+<td>Report that the given example failed.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.DocTestRunner.report_start.html#doctest.DocTestRunner.report_start" title="doctest.DocTestRunner.report_start"><code class="xref py py-obj docutils literal"><span class="pre">report_start</span></code></a>(out,&nbsp;test,&nbsp;example)</td>
+<td>Report that the test runner is about to process the given example.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestRunner.report_success.html#doctest.DocTestRunner.report_success" title="doctest.DocTestRunner.report_success"><code class="xref py py-obj docutils literal"><span class="pre">report_success</span></code></a>(out,&nbsp;test,&nbsp;example,&nbsp;got)</td>
+<td>Report that the given example ran successfully.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.DocTestRunner.report_unexpected_exception.html#doctest.DocTestRunner.report_unexpected_exception" title="doctest.DocTestRunner.report_unexpected_exception"><code class="xref py py-obj docutils literal"><span class="pre">report_unexpected_exception</span></code></a>(out,&nbsp;test,&nbsp;...)</td>
+<td>Report that the given example raised an unexpected exception.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestRunner.run.html#doctest.DocTestRunner.run" title="doctest.DocTestRunner.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>(test[,&nbsp;compileflags,&nbsp;out,&nbsp;clear_globs])</td>
+<td>Run the examples in <cite>test</cite>, and display the results using the writer function <cite>out</cite>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="doctest.DocTestRunner.summarize.html#doctest.DocTestRunner.summarize" title="doctest.DocTestRunner.summarize"><code class="xref py py-obj docutils literal"><span class="pre">summarize</span></code></a>([verbose])</td>
+<td>Print a summary of all the test cases that have been run by this DocTestRunner, and return a tuple <cite>(f, t)</cite>, where <cite>f</cite> is the total number of failed examples, and <cite>t</cite> is the total number of tried examples.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="attributes">
+<h2>3.4.2.2.7.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="doctest.DocTestRunner.DIVIDER.html#doctest.DocTestRunner.DIVIDER" title="doctest.DocTestRunner.DIVIDER"><code class="xref py py-obj docutils literal"><span class="pre">DIVIDER</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -293,10 +303,10 @@ more information.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="doctest.DocTestRunner.merge.html" class="btn btn-neutral float-right" title="3.4.2.2.7.1. doctest.DocTestRunner.merge" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="doctest.DocTestRunner.__init__.html" class="btn btn-neutral float-right" title="3.4.2.2.7.1.1. doctest.DocTestRunner.__init__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="doctest.DocTestParser.parse.html" class="btn btn-neutral" title="3.4.2.2.6.3. doctest.DocTestParser.parse" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="doctest.DocTestParser.parse.html" class="btn btn-neutral" title="3.4.2.2.6.1.3. doctest.DocTestParser.parse" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -2,16 +2,15 @@ __builtin__.str
 ===============
 
 .. currentmodule:: __builtin__
-
-:func:`str.__init__`
-
 .. autoclass:: str
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~str.capitalize

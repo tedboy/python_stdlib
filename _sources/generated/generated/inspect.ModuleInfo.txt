@@ -2,16 +2,15 @@ inspect.ModuleInfo
 ==================
 
 .. currentmodule:: inspect
-
-:func:`ModuleInfo.__init__`
-
 .. autoclass:: ModuleInfo
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~ModuleInfo.count
@@ -21,11 +20,10 @@ inspect.ModuleInfo
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~ModuleInfo.mode

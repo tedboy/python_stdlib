@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>trace.Trace.__init__ &mdash; Python Standard Library</title>
+  <title>3.4.4.2.3.1.1. trace.Trace.__init__ &mdash; My Project v1</title>
   
 
   
@@ -30,7 +30,10 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../../index.html"/> 
+    <link rel="top" title="My Project v1" href="../../index.html"/>
+        <link rel="up" title="3.4.4.2.3. trace.Trace" href="trace.Trace.html"/>
+        <link rel="next" title="3.4.4.2.3.1.2. trace.Trace.file_module_function_of" href="trace.Trace.file_module_function_of.html"/>
+        <link rel="prev" title="3.4.4.2.3. trace.Trace" href="trace.Trace.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -49,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../../index.html" class="icon icon-home"> My Project
           
 
           
@@ -81,10 +84,28 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../pydoc.html">3.4.1. pydoc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doctest.html">3.4.2. doctest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../unittest.html">3.4.3. unittest</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../trace.html">3.4.4. trace</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../trace.html#functions">3.4.4.1. Functions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../trace.html#classes">3.4.4.2. Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../distutils.html">3.4.5. distutils</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
 </ul>
 
@@ -100,7 +121,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Python Standard Library</a>
+          <a href="../../index.html">My Project</a>
         
       </nav>
 
@@ -127,7 +148,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>trace.Trace.__init__</li>
+          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+        
+          <li><a href="../trace.html">3.4.4. trace</a> &raquo;</li>
+        
+          <li><a href="trace.Trace.html">3.4.4.2.3. trace.Trace</a> &raquo;</li>
+        
+      <li>3.4.4.2.3.1.1. trace.Trace.__init__</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -145,7 +172,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="trace-trace-init">
-<h1>trace.Trace.__init__<a class="headerlink" href="#trace-trace-init" title="Permalink to this headline">¶</a></h1>
+<h1>3.4.4.2.3.1.1. trace.Trace.__init__<a class="headerlink" href="#trace-trace-init" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
 <dt id="trace.Trace.__init__">
 <code class="descclassname">Trace.</code><code class="descname">__init__</code><span class="sig-paren">(</span><em>count=1</em>, <em>trace=1</em>, <em>countfuncs=0</em>, <em>countcallers=0</em>, <em>ignoremods=()</em>, <em>ignoredirs=()</em>, <em>infile=None</em>, <em>outfile=None</em>, <em>timing=False</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/trace.html#Trace.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trace.Trace.__init__" title="Permalink to this definition">¶</a></dt>
@@ -177,6 +204,15 @@ that were called at least once;  This overrides
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="trace.Trace.file_module_function_of.html" class="btn btn-neutral float-right" title="3.4.4.2.3.1.2. trace.Trace.file_module_function_of" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="trace.Trace.html" class="btn btn-neutral" title="3.4.4.2.3. trace.Trace" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

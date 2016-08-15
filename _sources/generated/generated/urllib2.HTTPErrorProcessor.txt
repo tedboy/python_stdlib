@@ -2,16 +2,15 @@ urllib2.HTTPErrorProcessor
 ==========================
 
 .. currentmodule:: urllib2
-
-:func:`HTTPErrorProcessor.__init__`
-
 .. autoclass:: HTTPErrorProcessor
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~HTTPErrorProcessor.add_parent
@@ -23,11 +22,10 @@ urllib2.HTTPErrorProcessor
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~HTTPErrorProcessor.handler_order

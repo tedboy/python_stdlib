@@ -2,16 +2,15 @@ urllib2.HTTPDigestAuthHandler
 =============================
 
 .. currentmodule:: urllib2
-
-:func:`HTTPDigestAuthHandler.__init__`
-
 .. autoclass:: HTTPDigestAuthHandler
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~HTTPDigestAuthHandler.__init__
@@ -30,11 +29,10 @@ urllib2.HTTPDigestAuthHandler
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~HTTPDigestAuthHandler.auth_header

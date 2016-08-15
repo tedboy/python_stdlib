@@ -2,16 +2,15 @@ zipfile.ZipExtFile
 ==================
 
 .. currentmodule:: zipfile
-
-:func:`ZipExtFile.__init__`
-
 .. autoclass:: ZipExtFile
-    :members: __init__
+   :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~ZipExtFile.__init__
@@ -39,11 +38,10 @@ zipfile.ZipExtFile
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~ZipExtFile.MAX_N

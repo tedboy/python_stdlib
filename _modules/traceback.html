@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>traceback &mdash; Python Standard Library</title>
+  <title>traceback &mdash; My Project v1</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="Python Standard Library" href="../index.html"/>
+    <link rel="top" title="My Project v1" href="../index.html"/>
         <link rel="up" title="Module code" href="index.html"/> 
 
   
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Python Standard Library
+            <a href="../index.html" class="icon icon-home"> My Project
           
 
           
@@ -101,7 +101,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Python Standard Library</a>
+          <a href="../index.html">My Project</a>
         
       </nav>
 
@@ -161,7 +161,7 @@
     <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="o">+</span><span class="n">terminator</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="print_list"><a class="viewcode-back" href="../generated/traceback.print_list.html#pydoc.print_list">[docs]</a><span class="k">def</span> <span class="nf">print_list</span><span class="p">(</span><span class="n">extracted_list</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="print_list"><a class="viewcode-back" href="../generated/traceback.print_list.html#traceback.print_list">[docs]</a><span class="k">def</span> <span class="nf">print_list</span><span class="p">(</span><span class="n">extracted_list</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Print the list of tuples as returned by extract_tb() or</span>
 <span class="sd">    extract_stack() as a formatted stack trace to the given file.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -172,7 +172,7 @@
         <span class="k">if</span> <span class="n">line</span><span class="p">:</span>
             <span class="n">_print</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s1">&#39;    </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span></div>
 
-<div class="viewcode-block" id="format_list"><a class="viewcode-back" href="../generated/traceback.format_list.html#pydoc.format_list">[docs]</a><span class="k">def</span> <span class="nf">format_list</span><span class="p">(</span><span class="n">extracted_list</span><span class="p">):</span>
+<div class="viewcode-block" id="format_list"><a class="viewcode-back" href="../generated/traceback.format_list.html#traceback.format_list">[docs]</a><span class="k">def</span> <span class="nf">format_list</span><span class="p">(</span><span class="n">extracted_list</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Format a list of traceback entry tuples for printing.</span>
 
 <span class="sd">    Given a list of tuples as returned by extract_tb() or</span>
@@ -191,7 +191,7 @@
     <span class="k">return</span> <span class="nb">list</span></div>
 
 
-<div class="viewcode-block" id="print_tb"><a class="viewcode-back" href="../generated/traceback.print_tb.html#pydoc.print_tb">[docs]</a><span class="k">def</span> <span class="nf">print_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="print_tb"><a class="viewcode-back" href="../generated/traceback.print_tb.html#traceback.print_tb">[docs]</a><span class="k">def</span> <span class="nf">print_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Print up to &#39;limit&#39; stack trace entries from the traceback &#39;tb&#39;.</span>
 
 <span class="sd">    If &#39;limit&#39; is omitted or None, all entries are printed.  If &#39;file&#39;</span>
@@ -219,11 +219,11 @@
         <span class="n">tb</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_next</span>
         <span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span></div>
 
-<div class="viewcode-block" id="format_tb"><a class="viewcode-back" href="../generated/traceback.format_tb.html#pydoc.format_tb">[docs]</a><span class="k">def</span> <span class="nf">format_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="format_tb"><a class="viewcode-back" href="../generated/traceback.format_tb.html#traceback.format_tb">[docs]</a><span class="k">def</span> <span class="nf">format_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A shorthand for &#39;format_list(extract_tb(tb, limit))&#39;.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">format_list</span><span class="p">(</span><span class="n">extract_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="extract_tb"><a class="viewcode-back" href="../generated/traceback.extract_tb.html#pydoc.extract_tb">[docs]</a><span class="k">def</span> <span class="nf">extract_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="extract_tb"><a class="viewcode-back" href="../generated/traceback.extract_tb.html#traceback.extract_tb">[docs]</a><span class="k">def</span> <span class="nf">extract_tb</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return list of up to limit pre-processed entries from traceback.</span>
 
 <span class="sd">    This is useful for alternate formatting of stack traces.  If</span>
@@ -255,7 +255,7 @@
     <span class="k">return</span> <span class="nb">list</span></div>
 
 
-<div class="viewcode-block" id="print_exception"><a class="viewcode-back" href="../generated/traceback.print_exception.html#pydoc.print_exception">[docs]</a><span class="k">def</span> <span class="nf">print_exception</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="print_exception"><a class="viewcode-back" href="../generated/traceback.print_exception.html#traceback.print_exception">[docs]</a><span class="k">def</span> <span class="nf">print_exception</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Print exception up to &#39;limit&#39; stack trace entries from &#39;tb&#39; to &#39;file&#39;.</span>
 
 <span class="sd">    This differs from print_tb() in the following ways: (1) if</span>
@@ -275,7 +275,7 @@
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
         <span class="n">_print</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">line</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="format_exception"><a class="viewcode-back" href="../generated/traceback.format_exception.html#pydoc.format_exception">[docs]</a><span class="k">def</span> <span class="nf">format_exception</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="format_exception"><a class="viewcode-back" href="../generated/traceback.format_exception.html#traceback.format_exception">[docs]</a><span class="k">def</span> <span class="nf">format_exception</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Format a stack trace and the exception information.</span>
 
 <span class="sd">    The arguments have the same meaning as the corresponding arguments</span>
@@ -292,7 +292,7 @@
     <span class="nb">list</span> <span class="o">=</span> <span class="nb">list</span> <span class="o">+</span> <span class="n">format_exception_only</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
     <span class="k">return</span> <span class="nb">list</span></div>
 
-<div class="viewcode-block" id="format_exception_only"><a class="viewcode-back" href="../generated/traceback.format_exception_only.html#pydoc.format_exception_only">[docs]</a><span class="k">def</span> <span class="nf">format_exception_only</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<div class="viewcode-block" id="format_exception_only"><a class="viewcode-back" href="../generated/traceback.format_exception_only.html#traceback.format_exception_only">[docs]</a><span class="k">def</span> <span class="nf">format_exception_only</span><span class="p">(</span><span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Format the exception part of a traceback.</span>
 
 <span class="sd">    The arguments are the exception type and value such as given by</span>
@@ -370,7 +370,7 @@
     <span class="k">return</span> <span class="s1">&#39;&lt;unprintable </span><span class="si">%s</span><span class="s1"> object&gt;&#39;</span> <span class="o">%</span> <span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span>
 
 
-<div class="viewcode-block" id="print_exc"><a class="viewcode-back" href="../generated/traceback.print_exc.html#pydoc.print_exc">[docs]</a><span class="k">def</span> <span class="nf">print_exc</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="print_exc"><a class="viewcode-back" href="../generated/traceback.print_exc.html#traceback.print_exc">[docs]</a><span class="k">def</span> <span class="nf">print_exc</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Shorthand for &#39;print_exception(sys.exc_type, sys.exc_value, sys.exc_traceback, limit, file)&#39;.</span>
 <span class="sd">    (In fact, it uses sys.exc_info() to retrieve the same information</span>
 <span class="sd">    in a thread-safe way.)&quot;&quot;&quot;</span>
@@ -383,7 +383,7 @@
         <span class="n">etype</span> <span class="o">=</span> <span class="n">value</span> <span class="o">=</span> <span class="n">tb</span> <span class="o">=</span> <span class="kc">None</span></div>
 
 
-<div class="viewcode-block" id="format_exc"><a class="viewcode-back" href="../generated/traceback.format_exc.html#pydoc.format_exc">[docs]</a><span class="k">def</span> <span class="nf">format_exc</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="format_exc"><a class="viewcode-back" href="../generated/traceback.format_exc.html#traceback.format_exc">[docs]</a><span class="k">def</span> <span class="nf">format_exc</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Like print_exc() but return a string.&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">etype</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
@@ -392,7 +392,7 @@
         <span class="n">etype</span> <span class="o">=</span> <span class="n">value</span> <span class="o">=</span> <span class="n">tb</span> <span class="o">=</span> <span class="kc">None</span></div>
 
 
-<div class="viewcode-block" id="print_last"><a class="viewcode-back" href="../generated/traceback.print_last.html#pydoc.print_last">[docs]</a><span class="k">def</span> <span class="nf">print_last</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="print_last"><a class="viewcode-back" href="../generated/traceback.print_last.html#traceback.print_last">[docs]</a><span class="k">def</span> <span class="nf">print_last</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;This is a shorthand for &#39;print_exception(sys.last_type,</span>
 <span class="sd">    sys.last_value, sys.last_traceback, limit, file)&#39;.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">sys</span><span class="p">,</span> <span class="s2">&quot;last_type&quot;</span><span class="p">):</span>
@@ -403,7 +403,7 @@
                     <span class="n">limit</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="print_stack"><a class="viewcode-back" href="../generated/traceback.print_stack.html#pydoc.print_stack">[docs]</a><span class="k">def</span> <span class="nf">print_stack</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="print_stack"><a class="viewcode-back" href="../generated/traceback.print_stack.html#traceback.print_stack">[docs]</a><span class="k">def</span> <span class="nf">print_stack</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Print a stack trace from its invocation point.</span>
 
 <span class="sd">    The optional &#39;f&#39; argument can be used to specify an alternate</span>
@@ -417,7 +417,7 @@
             <span class="n">f</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">tb_frame</span><span class="o">.</span><span class="n">f_back</span>
     <span class="n">print_list</span><span class="p">(</span><span class="n">extract_stack</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">limit</span><span class="p">),</span> <span class="n">file</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="format_stack"><a class="viewcode-back" href="../generated/traceback.format_stack.html#pydoc.format_stack">[docs]</a><span class="k">def</span> <span class="nf">format_stack</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="format_stack"><a class="viewcode-back" href="../generated/traceback.format_stack.html#traceback.format_stack">[docs]</a><span class="k">def</span> <span class="nf">format_stack</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Shorthand for &#39;format_list(extract_stack(f, limit))&#39;.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">f</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">try</span><span class="p">:</span>
@@ -426,7 +426,7 @@
             <span class="n">f</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">tb_frame</span><span class="o">.</span><span class="n">f_back</span>
     <span class="k">return</span> <span class="n">format_list</span><span class="p">(</span><span class="n">extract_stack</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">limit</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="extract_stack"><a class="viewcode-back" href="../generated/traceback.extract_stack.html#pydoc.extract_stack">[docs]</a><span class="k">def</span> <span class="nf">extract_stack</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="extract_stack"><a class="viewcode-back" href="../generated/traceback.extract_stack.html#traceback.extract_stack">[docs]</a><span class="k">def</span> <span class="nf">extract_stack</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Extract the raw traceback from the current stack frame.</span>
 
 <span class="sd">    The return value has the same format as for extract_tb().  The</span>
@@ -460,7 +460,7 @@
     <span class="nb">list</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
     <span class="k">return</span> <span class="nb">list</span></div>
 
-<div class="viewcode-block" id="tb_lineno"><a class="viewcode-back" href="../generated/traceback.tb_lineno.html#pydoc.tb_lineno">[docs]</a><span class="k">def</span> <span class="nf">tb_lineno</span><span class="p">(</span><span class="n">tb</span><span class="p">):</span>
+<div class="viewcode-block" id="tb_lineno"><a class="viewcode-back" href="../generated/traceback.tb_lineno.html#traceback.tb_lineno">[docs]</a><span class="k">def</span> <span class="nf">tb_lineno</span><span class="p">(</span><span class="n">tb</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Calculate correct line number of traceback given in tb.</span>
 
 <span class="sd">    Obsolete in 2.3.</span>
