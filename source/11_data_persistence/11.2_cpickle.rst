@@ -1,0 +1,40 @@
+:mod:`cPickle` --- A faster :mod:`pickle`
+=========================================
+
+.. module:: cPickle
+   :synopsis: Faster version of pickle, but not subclassable.
+.. moduleauthor:: Jim Fulton <jim@zope.com>
+.. sectionauthor:: Fred L. Drake, Jr. <fdrake@acm.org>
+
+
+.. index:: module: pickle
+
+The :mod:`cPickle` module supports serialization and de-serialization of Python
+objects, providing an interface and functionality nearly identical to the
+:mod:`pickle` module.  There are several differences, the most important being
+performance and subclassability.
+
+First, :mod:`cPickle` can be up to 1000 times faster than :mod:`pickle` because
+the former is implemented in C.  Second, in the :mod:`cPickle` module the
+callables :func:`Pickler` and :func:`Unpickler` are functions, not classes.
+This means that you cannot use them to derive custom pickling and unpickling
+subclasses.  Most applications have no need for this functionality and should
+benefit from the greatly improved performance of the :mod:`cPickle` module.
+
+The pickle data stream produced by :mod:`pickle` and :mod:`cPickle` are
+identical, so it is possible to use :mod:`pickle` and :mod:`cPickle`
+interchangeably with existing pickles. [#]_
+
+There are additional minor differences in API between :mod:`cPickle` and
+:mod:`pickle`, however for most applications, they are interchangeable.  More
+documentation is provided in the :mod:`pickle` module documentation, which
+includes a list of the documented differences.
+
+
+.. rubric:: Footnotes
+
+.. [#] Since the pickle data format is actually a tiny stack-oriented programming
+   language, and some freedom is taken in the encodings of certain objects, it is
+   possible that the two modules produce different data streams for the same input
+   objects.  However it is guaranteed that they will always be able to read each
+   other's data streams.
