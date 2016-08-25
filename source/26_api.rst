@@ -7,6 +7,8 @@ API
 
     generated/bdb
     generated/pdb    
+    generated/profile    
+    generated/cProfile    
     generated/hotshot
     generated/timeit
     generated/trace
@@ -17,6 +19,8 @@ API
 
     bdb
     pdb
+    profile
+    cProfile
     hotshot
     timeit
-    trace    
+    trace

@@ -9,4 +9,4 @@ All modules for which code is available (`link <./_modules/index.html>`_)
    :caption: Table of Contents
 
    official_page
-   26_debugging_and_profiling.rst
+   26_debugging_and_profiling/26.rst
