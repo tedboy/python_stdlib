@@ -65,7 +65,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'My Project'
+project = u'Python Standard Library'
 copyright = u'2016'
 author = u''
 
@@ -98,6 +98,9 @@ language = None
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
 exclude_patterns = [
+'main1.rst,'
+'main2.rst',
+'maybe_future.rst',
 # 'demo_automodule.rst',
 # 'test3.rst',
 #'templates',
@@ -161,7 +164,7 @@ html_theme_options = {
 # "<project> v<release> documentation" by default.
 #
 # html_title = u'PROJECT_NAME v1'
-html_title = project+u' v1'
+html_title = project
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -176,7 +179,7 @@ html_title = project+u' v1'
 # the docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
 #
-# html_favicon = None
+html_favicon = '_static/py.png'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -372,3 +375,7 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #
 # texinfo_no_detailmenu = False
+
+def setup(app):
+    # to hide/show the prompt in code examples:
+    app.add_javascript('copybutton.js')
