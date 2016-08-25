@@ -101,8 +101,9 @@ exclude_patterns = [
 'main1.rst,'
 'main2.rst',
 'maybe_future.rst',
-# '11*',
-# '26*',
+'11*',
+'26*',
+'36*',
 # 'demo_automodule.rst',
 # 'test3.rst',
 #'templates',
