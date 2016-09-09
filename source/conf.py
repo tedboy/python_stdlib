@@ -98,36 +98,40 @@ language = None
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
 exclude_patterns = [
+# # 'api_all.rst',
 'api_tree.rst',
-'toc_expanded.rst',
-################## api by chapters ##################
-'06_api*','07_api*',
-'08_api*','09_api*','10_api*',
-'11_api*',
-'12_api*','13_api*','14_api*','15_api*',
-'16_api*','17_api*','18_api*','19_api*','20_api*',
-'21_api*','22_api*','23_api*','24_api*','25_api*',
-'26_api*','27_api*','28_api*','29_api*','30_api*',
-'31_api*','32_api*','33_api*','34_api*','35_api*',
-'36_api*',
-'37_api*',
-################## api section ##################
-# 'api_*to*.rst',
-'api_06to10.rst',
-'api_11to15.rst',
-'api_16to20.rst',
-'api_21to25.rst',
-'api_26to30.rst',
-'api_31to37.rst',
-################## by chapter ####################
-# '05*/*',
-'06*/*','07*/*','08*/*','09*/*','10*/*',
-'11_data*','12*/*','13*/*','14*/*','15*/*',
-'16*/*','17*/*','18*/*','19*/*','20*/*',
-'21_multi*','22*/*','23*/*','24*/*','25*/*',
-'26*/*','27*/*','28*/*','29*/*','30*/*',
-'31_modules*','32*/*','33*/*','34*/*','35*/*',
-# # '36*',
+'toc_expanded.rst', # <- messes up the on the sidebar if ``collapse_navigation`` option is set to True (learned this the hard way)
+# ################## api by chapters ##################
+# # '06_api*',
+# '07_api*',
+# '08_api*','09_api*','10_api*',
+# # '11_api*',
+# '12_api*','13_api*','14_api*','15_api*',
+# '16_api*','17_api*','18_api*','19_api*','20_api*',
+# '21_api*','22_api*','23_api*','24_api*','25_api*',
+# '26_api*','27_api*','28_api*','29_api*','30_api*',
+# '31_api*','32_api*','33_api*','34_api*','35_api*',
+# '36_api*',
+# '37_api*',
+# ################## api section ##################
+# # 'api_*to*.rst',
+# 'api_06to10.rst',
+# 'api_11to15.rst',
+# 'api_16to20.rst',
+# 'api_21to25.rst',
+# 'api_26to30.rst',
+# 'api_31to37.rst',
+# ################## by chapter ####################
+# # '05*/*',
+# '01*/*','02*/*','03*/*','04*/*','05*/*',
+# # '06*/*','07*/*','08*/*','09*/*','10*/*',
+# '11_data*','12*/*','13*/*','14*/*','15*/*',
+# '16*/*','17*/*','18*/*','19*/*','20*/*',
+# '21_multi*','22*/*','23*/*','24*/*','25*/*',
+# '26*/*','27*/*','28*/*','29*/*','30*/*',
+# '31_modules*','32*/*','33*/*','34*/*','35*/*',
+# '36*/*','37*/*',
+# # # '36*',
 ]
 
 # The reST default role (used for this markup: `text`) to use for all
@@ -175,7 +179,7 @@ html_theme = 'sphinx_rtd_theme'
 #
 html_theme_options = {
     'collapse_navigation': True,
-    'navigation_depth': 4,
+    # 'navigation_depth': 4,
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
