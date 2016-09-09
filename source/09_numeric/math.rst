@@ -1,6 +1,12 @@
 
 :mod:`math` --- Mathematical functions
 ======================================
+.. contents:: `Contents`
+   :depth: 2
+   :local:
+
+----------------
+
 
 .. module:: math
    :synopsis: Mathematical functions (sin() etc.).

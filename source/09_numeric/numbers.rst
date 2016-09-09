@@ -1,11 +1,16 @@
 :mod:`numbers` --- Numeric abstract base classes
 ================================================
 
+.. contents:: `Contents`
+   :depth: 2
+   :local:
+
 .. module:: numbers
    :synopsis: Numeric abstract base classes (Complex, Real, Integral, etc.).
 
 .. versionadded:: 2.6
 
+-------------------
 
 The :mod:`numbers` module (:pep:`3141`) defines a hierarchy of numeric
 :term:`abstract base classes <abstract base class>` which progressively define

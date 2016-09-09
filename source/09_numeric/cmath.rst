@@ -1,5 +1,11 @@
 :mod:`cmath` --- Mathematical functions for complex numbers
 ===========================================================
+.. contents:: `Contents`
+   :depth: 2
+   :local:
+
+----------------
+
 
 .. module:: cmath
    :synopsis: Mathematical functions for complex numbers.

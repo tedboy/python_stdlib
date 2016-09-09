@@ -1,5 +1,11 @@
 :mod:`operator` --- Standard operators as functions
 ===================================================
+.. contents:: `Contents`
+   :depth: 2
+   :local:
+
+----------------
+
 
 .. module:: operator
    :synopsis: Functions corresponding to the standard operators.

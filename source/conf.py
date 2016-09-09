@@ -102,7 +102,17 @@ exclude_patterns = [
 'main1.rst,'
 'main2.rst',
 'maybe_future.rst',
-'*_api.rst',
+# apis
+# '*_api.rst',
+# api by chapters
+'07_api*',
+'08_api*',
+'09_api*',
+'11_api*',
+'26_api*',
+'34_api*',
+'36_api*',
+# by chapter
 '07*',
 '08*',
 '11*',

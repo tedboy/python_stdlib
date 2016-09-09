@@ -1,5 +1,11 @@
 :mod:`functools` --- Higher-order functions and operations on callable objects
 ==============================================================================
+.. contents:: `Contents`
+   :depth: 2
+   :local:
+
+----------------
+
 
 .. module:: functools
    :synopsis: Higher-order functions and operations on callable objects.

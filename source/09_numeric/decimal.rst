@@ -1,6 +1,12 @@
 
 :mod:`decimal` --- Decimal fixed point and floating point arithmetic
 ====================================================================
+.. contents:: `Contents`
+   :depth: 2
+   :local:
+
+----------------
+
 
 .. module:: decimal
    :synopsis: Implementation of the General Decimal Arithmetic  Specification.

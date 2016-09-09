@@ -1,9 +1,9 @@
 
 .. _numeric:
 
-********************************
-Numeric and Mathematical Modules
-********************************
+***********************************
+09 Numeric and Mathematical Modules
+***********************************
 
 The modules described in this chapter provide numeric and math-related functions
 and data types. The :mod:`numbers` module defines an abstract hierarchy of
@@ -16,13 +16,15 @@ The following modules are documented in this chapter:
 
 
 .. toctree::
+   :maxdepth: 1
+   :numbered:
 
-   numbers.rst
-   math.rst
-   cmath.rst
-   decimal.rst
-   fractions.rst
-   random.rst
-   itertools.rst
-   functools.rst
-   operator.rst
+   numbers
+   math
+   cmath
+   decimal
+   fractions
+   random
+   itertools
+   functools
+   operator

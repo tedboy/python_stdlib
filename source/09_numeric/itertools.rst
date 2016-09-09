@@ -1,6 +1,12 @@
 
 :mod:`itertools` --- Functions creating iterators for efficient looping
 =======================================================================
+.. contents:: `Contents`
+   :depth: 2
+   :local:
+
+----------------
+
 
 .. module:: itertools
    :synopsis: Functions creating iterators for efficient looping.
