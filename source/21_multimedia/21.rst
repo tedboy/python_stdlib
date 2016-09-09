@@ -1,0 +1,26 @@
+
+.. _mmedia:
+
+**********************
+21 Multimedia Services
+**********************
+
+The modules described in this chapter implement various algorithms or interfaces
+that are mainly useful for multimedia applications.  They are available at the
+discretion of the installation.  Here's an overview:
+
+
+.. toctree::
+   :maxdepth: 1
+   :numbered:
+   
+   audioop
+   imageop
+   aifc
+   sunau
+   wave
+   chunk
+   colorsys
+   imghdr
+   sndhdr
+   ossaudiodev
