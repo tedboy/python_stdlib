@@ -110,6 +110,10 @@ exclude_patterns = [
 '16_api*','17_api*','18_api*','19_api*','20_api*',
 '21_api*','22_api*','23_api*','24_api*','25_api*',
 '26_api*',
+'27_api*',
+'28_api*',
+'29_api*',
+'30_api*',
 '34_api*',
 '36_api*',
 # api section
@@ -125,6 +129,7 @@ exclude_patterns = [
 '22*',
 '23*',
 '24*',
+'25*',
 '26*',
 '34*',
 '36*',
