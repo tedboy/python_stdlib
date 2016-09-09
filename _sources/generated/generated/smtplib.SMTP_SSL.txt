@@ -1,0 +1,58 @@
+:class:`smtplib.SMTP_SSL`
+=========================
+.. currentmodule:: smtplib
+.. autoclass:: SMTP_SSL
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SMTP_SSL.__init__
+   ~SMTP_SSL._get_socket
+   ~SMTP_SSL.close
+   ~SMTP_SSL.connect
+   ~SMTP_SSL.data
+   ~SMTP_SSL.docmd
+   ~SMTP_SSL.ehlo
+   ~SMTP_SSL.ehlo_or_helo_if_needed
+   ~SMTP_SSL.expn
+   ~SMTP_SSL.getreply
+   ~SMTP_SSL.has_extn
+   ~SMTP_SSL.helo
+   ~SMTP_SSL.help
+   ~SMTP_SSL.login
+   ~SMTP_SSL.mail
+   ~SMTP_SSL.noop
+   ~SMTP_SSL.putcmd
+   ~SMTP_SSL.quit
+   ~SMTP_SSL.rcpt
+   ~SMTP_SSL.rset
+   ~SMTP_SSL.send
+   ~SMTP_SSL.sendmail
+   ~SMTP_SSL.set_debuglevel
+   ~SMTP_SSL.starttls
+   ~SMTP_SSL.verify
+   ~SMTP_SSL.vrfy
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SMTP_SSL.debuglevel
+   ~SMTP_SSL.default_port
+   ~SMTP_SSL.does_esmtp
+   ~SMTP_SSL.ehlo_msg
+   ~SMTP_SSL.ehlo_resp
+   ~SMTP_SSL.file
+   ~SMTP_SSL.helo_resp
+

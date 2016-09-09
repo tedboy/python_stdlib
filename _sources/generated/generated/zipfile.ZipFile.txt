@@ -1,9 +1,7 @@
-zipfile.ZipFile
-===============
-
+:class:`zipfile.ZipFile`
+========================
 .. currentmodule:: zipfile
 .. autoclass:: ZipFile
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,19 @@ Methods
    :toctree:
 
 
+   ~ZipFile._RealGetContents
+   ~ZipFile.__del__
+   ~ZipFile.__enter__
+   ~ZipFile.__exit__
+   ~ZipFile.__format__
    ~ZipFile.__init__
+   ~ZipFile.__new__
+   ~ZipFile.__reduce__
+   ~ZipFile.__reduce_ex__
+   ~ZipFile.__sizeof__
+   ~ZipFile.__subclasshook__
+   ~ZipFile._extract_member
+   ~ZipFile._writecheck
    ~ZipFile.close
    ~ZipFile.extract
    ~ZipFile.extractall

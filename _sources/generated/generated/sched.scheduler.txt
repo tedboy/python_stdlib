@@ -1,0 +1,32 @@
+:class:`sched.scheduler`
+========================
+.. currentmodule:: sched
+.. autoclass:: scheduler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~scheduler.__init__
+   ~scheduler.cancel
+   ~scheduler.empty
+   ~scheduler.enter
+   ~scheduler.enterabs
+   ~scheduler.run
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~scheduler.queue
+

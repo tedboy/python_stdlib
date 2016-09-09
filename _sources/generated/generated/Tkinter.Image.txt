@@ -1,9 +1,7 @@
-Tkinter.Image
-=============
-
+:class:`Tkinter.Image`
+======================
 .. currentmodule:: Tkinter
 .. autoclass:: Image
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,11 @@ Methods
    :toctree:
 
 
+   ~Image.__del__
+   ~Image.__getitem__
    ~Image.__init__
+   ~Image.__setitem__
+   ~Image.__str__
    ~Image.config
    ~Image.configure
    ~Image.height

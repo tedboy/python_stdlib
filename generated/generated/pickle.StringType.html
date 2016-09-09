@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.2.2.2.31. pickle.StringType &mdash; Python Standard Library</title>
+  <title>pickle.StringType &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
   
 
   
@@ -31,9 +33,9 @@
 
   
     <link rel="top" title="Python Standard Library" href="../../index.html"/>
-        <link rel="up" title="3.2.2. pickle" href="../pickle.html"/>
-        <link rel="next" title="3.2.2.2.32. pickle.TracebackType" href="pickle.TracebackType.html"/>
-        <link rel="prev" title="3.2.2.2.30. pickle.SliceType" href="pickle.SliceType.html"/> 
+        <link rel="up" title="pickle" href="../pickle.html"/>
+        <link rel="next" title="pickle.StringType.__format__" href="pickle.StringType.__format__.html"/>
+        <link rel="prev" title="pickle.SliceType.stop" href="pickle.SliceType.stop.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -61,10 +63,6 @@
           
             
             
-              <div class="version">
-                1
-              </div>
-            
           
 
           
@@ -84,42 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../pickle.html">3.2.2. pickle</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../pickle.html#functions">3.2.2.1. Functions</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../pickle.html#classes">3.2.2.2. Classes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pickle.html#exceptions">3.2.2.3. Exceptions</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../cPickle.html">3.2.3. cPickle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../csv.html">3.2.4. csv</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../zlib.html">3.2.5. zlib</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../gzip.html">3.2.6. gzip</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../bz2.html">3.2.7. bz2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../zipfile.html">3.2.8. zipfile</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../tarfile.html">3.2.9. tarfile</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -161,11 +137,11 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+          <li><a href="../../api_11to15.html">API: 11 - 15</a> &raquo;</li>
         
-          <li><a href="../pickle.html">3.2.2. pickle</a> &raquo;</li>
+          <li><a href="../pickle.html"><code class="docutils literal"><span class="pre">pickle</span></code></a> &raquo;</li>
         
-      <li>3.2.2.2.31. pickle.StringType</li>
+      <li><code class="docutils literal"><span class="pre">pickle.StringType</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,14 +159,165 @@
            <div itemprop="articleBody">
             
   <div class="section" id="pickle-stringtype">
-<h1>3.2.2.2.31. pickle.StringType<a class="headerlink" href="#pickle-stringtype" title="Permalink to this headline">¶</a></h1>
-<p><code class="xref py py-func docutils literal"><span class="pre">StringType.__init__()</span></code></p>
+<h1><a class="reference internal" href="#pickle.StringType" title="pickle.StringType"><code class="xref py py-class docutils literal"><span class="pre">pickle.StringType</span></code></a><a class="headerlink" href="#pickle-stringtype" title="Permalink to this headline">¶</a></h1>
 <dl class="attribute">
 <dt id="pickle.StringType">
 <code class="descclassname">pickle.</code><code class="descname">StringType</code><a class="headerlink" href="#pickle.StringType" title="Permalink to this definition">¶</a></dt>
-<dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">str</span></code></p>
+<dd><p>alias of <a class="reference internal" href="../../02_builtin_functions/02.html#str" title="str"><code class="xref py py-class docutils literal"><span class="pre">str</span></code></a></p>
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.__format__.html#pickle.StringType.__format__" title="pickle.StringType.__format__"><code class="xref py py-obj docutils literal"><span class="pre">__format__</span></code></a>((format_spec)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a formatted version of S as described by format_spec.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.__getnewargs__.html#pickle.StringType.__getnewargs__" title="pickle.StringType.__getnewargs__"><code class="xref py py-obj docutils literal"><span class="pre">__getnewargs__</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.__new__.html#pickle.StringType.__new__" title="pickle.StringType.__new__"><code class="xref py py-obj docutils literal"><span class="pre">__new__</span></code></a>((S,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.__reduce__.html#pickle.StringType.__reduce__" title="pickle.StringType.__reduce__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.__reduce_ex__.html#pickle.StringType.__reduce_ex__" title="pickle.StringType.__reduce_ex__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce_ex__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.__sizeof__.html#pickle.StringType.__sizeof__" title="pickle.StringType.__sizeof__"><code class="xref py py-obj docutils literal"><span class="pre">__sizeof__</span></code></a>(()&nbsp;-&gt;&nbsp;size&nbsp;of&nbsp;S&nbsp;in&nbsp;memory,&nbsp;in&nbsp;bytes)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.__subclasshook__.html#pickle.StringType.__subclasshook__" title="pickle.StringType.__subclasshook__"><code class="xref py py-obj docutils literal"><span class="pre">__subclasshook__</span></code></a></td>
+<td>Abstract classes can override this to customize issubclass().</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType._formatter_field_name_split.html#pickle.StringType._formatter_field_name_split" title="pickle.StringType._formatter_field_name_split"><code class="xref py py-obj docutils literal"><span class="pre">_formatter_field_name_split</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType._formatter_parser.html#pickle.StringType._formatter_parser" title="pickle.StringType._formatter_parser"><code class="xref py py-obj docutils literal"><span class="pre">_formatter_parser</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.capitalize.html#pickle.StringType.capitalize" title="pickle.StringType.capitalize"><code class="xref py py-obj docutils literal"><span class="pre">capitalize</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string S with only its first character capitalized.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.center.html#pickle.StringType.center" title="pickle.StringType.center"><code class="xref py py-obj docutils literal"><span class="pre">center</span></code></a>((width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return S centered in a string of length width.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.count.html#pickle.StringType.count" title="pickle.StringType.count"><code class="xref py py-obj docutils literal"><span class="pre">count</span></code></a>((sub[,&nbsp;start[,&nbsp;end]])&nbsp;-&gt;&nbsp;int)</td>
+<td>Return the number of non-overlapping occurrences of substring sub in string S[start:end].</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.decode.html#pickle.StringType.decode" title="pickle.StringType.decode"><code class="xref py py-obj docutils literal"><span class="pre">decode</span></code></a>(([encoding[,errors]])&nbsp;-&gt;&nbsp;object)</td>
+<td>Decodes S using the codec registered for encoding.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.encode.html#pickle.StringType.encode" title="pickle.StringType.encode"><code class="xref py py-obj docutils literal"><span class="pre">encode</span></code></a>(([encoding[,errors]])&nbsp;-&gt;&nbsp;object)</td>
+<td>Encodes S using the codec registered for encoding.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.endswith.html#pickle.StringType.endswith" title="pickle.StringType.endswith"><code class="xref py py-obj docutils literal"><span class="pre">endswith</span></code></a>((suffix[,&nbsp;start[,&nbsp;end]])&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if S ends with the specified suffix, False otherwise.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.expandtabs.html#pickle.StringType.expandtabs" title="pickle.StringType.expandtabs"><code class="xref py py-obj docutils literal"><span class="pre">expandtabs</span></code></a>(([tabsize])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of S where all tab characters are expanded using spaces.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.find.html#pickle.StringType.find" title="pickle.StringType.find"><code class="xref py py-obj docutils literal"><span class="pre">find</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<td>Return the lowest index in S where substring sub is found, such that sub is contained within S[start:end].</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.format.html#pickle.StringType.format" title="pickle.StringType.format"><code class="xref py py-obj docutils literal"><span class="pre">format</span></code></a>((*args,&nbsp;**kwargs)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a formatted version of S, using substitutions from args and kwargs.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.index.html#pickle.StringType.index" title="pickle.StringType.index"><code class="xref py py-obj docutils literal"><span class="pre">index</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<td>Like S.find() but raise ValueError when the substring is not found.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.isalnum.html#pickle.StringType.isalnum" title="pickle.StringType.isalnum"><code class="xref py py-obj docutils literal"><span class="pre">isalnum</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if all characters in S are alphanumeric and there is at least one character in S, False otherwise.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.isalpha.html#pickle.StringType.isalpha" title="pickle.StringType.isalpha"><code class="xref py py-obj docutils literal"><span class="pre">isalpha</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if all characters in S are alphabetic and there is at least one character in S, False otherwise.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.isdigit.html#pickle.StringType.isdigit" title="pickle.StringType.isdigit"><code class="xref py py-obj docutils literal"><span class="pre">isdigit</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if all characters in S are digits and there is at least one character in S, False otherwise.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.islower.html#pickle.StringType.islower" title="pickle.StringType.islower"><code class="xref py py-obj docutils literal"><span class="pre">islower</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if all cased characters in S are lowercase and there is at least one cased character in S, False otherwise.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.isspace.html#pickle.StringType.isspace" title="pickle.StringType.isspace"><code class="xref py py-obj docutils literal"><span class="pre">isspace</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if all characters in S are whitespace and there is at least one character in S, False otherwise.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.istitle.html#pickle.StringType.istitle" title="pickle.StringType.istitle"><code class="xref py py-obj docutils literal"><span class="pre">istitle</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if S is a titlecased string and there is at least one character in S, i.e.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.isupper.html#pickle.StringType.isupper" title="pickle.StringType.isupper"><code class="xref py py-obj docutils literal"><span class="pre">isupper</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if all cased characters in S are uppercase and there is at least one cased character in S, False otherwise.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.join.html#pickle.StringType.join" title="pickle.StringType.join"><code class="xref py py-obj docutils literal"><span class="pre">join</span></code></a>((iterable)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a string which is the concatenation of the strings in the iterable.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.ljust.html#pickle.StringType.ljust" title="pickle.StringType.ljust"><code class="xref py py-obj docutils literal"><span class="pre">ljust</span></code></a>((width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return S left-justified in a string of length width.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.lower.html#pickle.StringType.lower" title="pickle.StringType.lower"><code class="xref py py-obj docutils literal"><span class="pre">lower</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string S converted to lowercase.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.lstrip.html#pickle.StringType.lstrip" title="pickle.StringType.lstrip"><code class="xref py py-obj docutils literal"><span class="pre">lstrip</span></code></a>(([chars])&nbsp;-&gt;&nbsp;string&nbsp;or&nbsp;unicode)</td>
+<td>Return a copy of the string S with leading whitespace removed.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.partition.html#pickle.StringType.partition" title="pickle.StringType.partition"><code class="xref py py-obj docutils literal"><span class="pre">partition</span></code></a>(sep)&nbsp;-&gt;&nbsp;(head,&nbsp;sep,&nbsp;tail)</td>
+<td>Search for the separator sep in S, and return the part before it, the separator itself, and the part after it.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.replace.html#pickle.StringType.replace" title="pickle.StringType.replace"><code class="xref py py-obj docutils literal"><span class="pre">replace</span></code></a>((old,&nbsp;new[,&nbsp;count])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of string S with all occurrences of substring old replaced by new.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.rfind.html#pickle.StringType.rfind" title="pickle.StringType.rfind"><code class="xref py py-obj docutils literal"><span class="pre">rfind</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<td>Return the highest index in S where substring sub is found, such that sub is contained within S[start:end].</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.rindex.html#pickle.StringType.rindex" title="pickle.StringType.rindex"><code class="xref py py-obj docutils literal"><span class="pre">rindex</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<td>Like S.rfind() but raise ValueError when the substring is not found.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.rjust.html#pickle.StringType.rjust" title="pickle.StringType.rjust"><code class="xref py py-obj docutils literal"><span class="pre">rjust</span></code></a>((width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return S right-justified in a string of length width.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.rpartition.html#pickle.StringType.rpartition" title="pickle.StringType.rpartition"><code class="xref py py-obj docutils literal"><span class="pre">rpartition</span></code></a>(sep)&nbsp;-&gt;&nbsp;(head,&nbsp;sep,&nbsp;tail)</td>
+<td>Search for the separator sep in S, starting at the end of S, and return the part before it, the separator itself, and the part after it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.rsplit.html#pickle.StringType.rsplit" title="pickle.StringType.rsplit"><code class="xref py py-obj docutils literal"><span class="pre">rsplit</span></code></a>(([sep&nbsp;[,maxsplit]])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
+<td>Return a list of the words in the string S, using sep as the delimiter string, starting at the end of the string and working to the front.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.rstrip.html#pickle.StringType.rstrip" title="pickle.StringType.rstrip"><code class="xref py py-obj docutils literal"><span class="pre">rstrip</span></code></a>(([chars])&nbsp;-&gt;&nbsp;string&nbsp;or&nbsp;unicode)</td>
+<td>Return a copy of the string S with trailing whitespace removed.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.split.html#pickle.StringType.split" title="pickle.StringType.split"><code class="xref py py-obj docutils literal"><span class="pre">split</span></code></a>(([sep&nbsp;[,maxsplit]])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
+<td>Return a list of the words in the string S, using sep as the delimiter string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.splitlines.html#pickle.StringType.splitlines" title="pickle.StringType.splitlines"><code class="xref py py-obj docutils literal"><span class="pre">splitlines</span></code></a>((keepends=False)&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
+<td>Return a list of the lines in S, breaking at line boundaries.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.startswith.html#pickle.StringType.startswith" title="pickle.StringType.startswith"><code class="xref py py-obj docutils literal"><span class="pre">startswith</span></code></a>((prefix[,&nbsp;start[,&nbsp;end]])&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if S starts with the specified prefix, False otherwise.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.strip.html#pickle.StringType.strip" title="pickle.StringType.strip"><code class="xref py py-obj docutils literal"><span class="pre">strip</span></code></a>(([chars])&nbsp;-&gt;&nbsp;string&nbsp;or&nbsp;unicode)</td>
+<td>Return a copy of the string S with leading and trailing whitespace removed.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.swapcase.html#pickle.StringType.swapcase" title="pickle.StringType.swapcase"><code class="xref py py-obj docutils literal"><span class="pre">swapcase</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string S with uppercase characters converted to lowercase and vice versa.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.title.html#pickle.StringType.title" title="pickle.StringType.title"><code class="xref py py-obj docutils literal"><span class="pre">title</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a titlecased version of S, i.e.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.translate.html#pickle.StringType.translate" title="pickle.StringType.translate"><code class="xref py py-obj docutils literal"><span class="pre">translate</span></code></a>((table&nbsp;[,deletechars])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string S, where all characters occurring in the optional argument deletechars are removed, and the remaining characters have been mapped through the given translation table, which must be a string of length 256 or None.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.StringType.upper.html#pickle.StringType.upper" title="pickle.StringType.upper"><code class="xref py py-obj docutils literal"><span class="pre">upper</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string S converted to uppercase.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.StringType.zfill.html#pickle.StringType.zfill" title="pickle.StringType.zfill"><code class="xref py py-obj docutils literal"><span class="pre">zfill</span></code></a>((width)&nbsp;-&gt;&nbsp;string)</td>
+<td>Pad a numeric string S with zeros on the left, to fill a field of the specified width.</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -200,10 +327,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pickle.TracebackType.html" class="btn btn-neutral float-right" title="3.2.2.2.32. pickle.TracebackType" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pickle.StringType.__format__.html" class="btn btn-neutral float-right" title="pickle.StringType.__format__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pickle.SliceType.html" class="btn btn-neutral" title="3.2.2.2.30. pickle.SliceType" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="pickle.SliceType.stop.html" class="btn btn-neutral" title="pickle.SliceType.stop" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -234,7 +361,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -243,6 +370,7 @@
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

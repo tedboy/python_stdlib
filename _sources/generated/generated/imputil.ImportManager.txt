@@ -1,0 +1,34 @@
+:class:`imputil.ImportManager`
+==============================
+.. currentmodule:: imputil
+.. autoclass:: ImportManager
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~ImportManager.__init__
+   ~ImportManager._determine_import_context
+   ~ImportManager._import_hook
+   ~ImportManager._import_top_module
+   ~ImportManager._reload_hook
+   ~ImportManager.add_suffix
+   ~ImportManager.install
+   ~ImportManager.uninstall
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~ImportManager.clsFilesystemImporter
+

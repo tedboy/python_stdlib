@@ -1,9 +1,7 @@
-unittest.TestSuite
-==================
-
+:class:`unittest.TestSuite`
+===========================
 .. currentmodule:: unittest
 .. autoclass:: TestSuite
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,24 @@ Methods
    :toctree:
 
 
+   ~TestSuite.__call__
+   ~TestSuite.__eq__
+   ~TestSuite.__format__
    ~TestSuite.__init__
+   ~TestSuite.__iter__
+   ~TestSuite.__ne__
+   ~TestSuite.__new__
+   ~TestSuite.__reduce__
+   ~TestSuite.__reduce_ex__
+   ~TestSuite.__repr__
+   ~TestSuite.__sizeof__
+   ~TestSuite.__subclasshook__
+   ~TestSuite._addClassOrModuleLevelException
+   ~TestSuite._get_previous_module
+   ~TestSuite._handleClassSetUp
+   ~TestSuite._handleModuleFixture
+   ~TestSuite._handleModuleTearDown
+   ~TestSuite._tearDownPreviousClass
    ~TestSuite.addTest
    ~TestSuite.addTests
    ~TestSuite.countTestCases

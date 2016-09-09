@@ -1,0 +1,67 @@
+:class:`xml.dom.minidom.Node`
+=============================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: Node
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Node.__nonzero__
+   ~Node._call_user_data_handler
+   ~Node._get_childNodes
+   ~Node._get_firstChild
+   ~Node._get_lastChild
+   ~Node._get_localName
+   ~Node.appendChild
+   ~Node.cloneNode
+   ~Node.getInterface
+   ~Node.getUserData
+   ~Node.hasChildNodes
+   ~Node.insertBefore
+   ~Node.isSameNode
+   ~Node.isSupported
+   ~Node.normalize
+   ~Node.removeChild
+   ~Node.replaceChild
+   ~Node.setUserData
+   ~Node.toprettyxml
+   ~Node.toxml
+   ~Node.unlink
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Node.ATTRIBUTE_NODE
+   ~Node.CDATA_SECTION_NODE
+   ~Node.COMMENT_NODE
+   ~Node.DOCUMENT_FRAGMENT_NODE
+   ~Node.DOCUMENT_NODE
+   ~Node.DOCUMENT_TYPE_NODE
+   ~Node.ELEMENT_NODE
+   ~Node.ENTITY_NODE
+   ~Node.ENTITY_REFERENCE_NODE
+   ~Node.NOTATION_NODE
+   ~Node.PROCESSING_INSTRUCTION_NODE
+   ~Node.TEXT_NODE
+   ~Node.firstChild
+   ~Node.lastChild
+   ~Node.localName
+   ~Node.namespaceURI
+   ~Node.nextSibling
+   ~Node.ownerDocument
+   ~Node.parentNode
+   ~Node.prefix
+   ~Node.previousSibling
+

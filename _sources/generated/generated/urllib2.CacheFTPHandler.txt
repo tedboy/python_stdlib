@@ -1,9 +1,7 @@
-urllib2.CacheFTPHandler
-=======================
-
+:class:`urllib2.CacheFTPHandler`
+================================
 .. currentmodule:: urllib2
 .. autoclass:: CacheFTPHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~CacheFTPHandler.__init__
+   ~CacheFTPHandler.__lt__
    ~CacheFTPHandler.add_parent
    ~CacheFTPHandler.check_cache
    ~CacheFTPHandler.clear_cache

@@ -1,19 +1,22 @@
-sqlite3.Timestamp
-=================
-
+:class:`sqlite3.Timestamp`
+==========================
 .. currentmodule:: sqlite3
-
-:func:`Timestamp.__init__`
-
 .. autoclass:: Timestamp
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~Timestamp.__format__
+   ~Timestamp.__new__
+   ~Timestamp.__reduce__
+   ~Timestamp.__reduce_ex__
+   ~Timestamp.__sizeof__
+   ~Timestamp.__subclasshook__
    ~Timestamp.astimezone
    ~Timestamp.combine
    ~Timestamp.ctime
@@ -44,11 +47,10 @@ sqlite3.Timestamp
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Timestamp.day

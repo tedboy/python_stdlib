@@ -1,9 +1,7 @@
-pickle.Unpickler
-================
-
+:class:`pickle.Unpickler`
+=========================
 .. currentmodule:: pickle
 .. autoclass:: Unpickler
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~Unpickler.__init__
+   ~Unpickler._instantiate
    ~Unpickler.find_class
    ~Unpickler.get_extension
    ~Unpickler.load

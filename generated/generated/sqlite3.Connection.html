@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.9.2.2. sqlite3.Connection &mdash; My Project v1</title>
+  <title>sqlite3.Connection &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
   
 
   
@@ -30,10 +32,10 @@
   
 
   
-    <link rel="top" title="My Project v1" href="../../index.html"/>
-        <link rel="up" title="2.9. sqlite3" href="../sqlite3.html"/>
-        <link rel="next" title="2.9.2.2.1.1. sqlite3.Connection.close" href="sqlite3.Connection.close.html"/>
-        <link rel="prev" title="2.9.2.1.1.2. sqlite3.Cache.get" href="sqlite3.Cache.get.html"/> 
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="sqlite3" href="../sqlite3.html"/>
+        <link rel="next" title="sqlite3.Connection.__enter__" href="sqlite3.Connection.__enter__.html"/>
+        <link rel="prev" title="sqlite3.Cache.get" href="sqlite3.Cache.get.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +54,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> My Project
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
           
 
           
@@ -60,10 +62,6 @@
 
           
             
-            
-              <div class="version">
-                1
-              </div>
             
           
 
@@ -84,40 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../collections.html">2.1. collections</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../datetime.html">2.2. datetime</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../glob.html">2.3. glob</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../itertools.html">2.4. itertools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../math.html">2.5. math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pdb.html">2.6. pdb</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pprint.html">2.7. pprint</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../random.html">2.8. random</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../sqlite3.html">2.9. sqlite3</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../sqlite3.html#functions">2.9.1. Functions</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../sqlite3.html#classes">2.9.2. Classes</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cache.html">2.9.2.1. sqlite3.Cache</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">2.9.2.2. sqlite3.Connection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cursor.html">2.9.2.3. sqlite3.Cursor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.PrepareProtocol.html">2.9.2.4. sqlite3.PrepareProtocol</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Row.html">2.9.2.5. sqlite3.Row</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Statement.html">2.9.2.6. sqlite3.Statement</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../sqlite3.html#exceptions">2.9.3. Exceptions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../subprocess.html">2.10. subprocess</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../time.html">2.11. time</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../timeit.html">2.12. timeit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Tkinter.html">2.13. Tkinter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../types.html">2.14. types</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -132,7 +110,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">My Project</a>
+          <a href="../../index.html">Python Standard Library</a>
         
       </nav>
 
@@ -159,11 +137,11 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../main2.html">2. Somewhat frequently used</a> &raquo;</li>
+          <li><a href="../../api_11to15.html">API: 11 - 15</a> &raquo;</li>
         
-          <li><a href="../sqlite3.html">2.9. sqlite3</a> &raquo;</li>
+          <li><a href="../sqlite3.html"><code class="docutils literal"><span class="pre">sqlite3</span></code></a> &raquo;</li>
         
-      <li>2.9.2.2. sqlite3.Connection</li>
+      <li><code class="docutils literal"><span class="pre">sqlite3.Connection</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,27 +159,45 @@
            <div itemprop="articleBody">
             
   <div class="section" id="sqlite3-connection">
-<h1>2.9.2.2. sqlite3.Connection<a class="headerlink" href="#sqlite3-connection" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="#sqlite3.Connection" title="sqlite3.Connection"><code class="xref py py-class docutils literal"><span class="pre">sqlite3.Connection</span></code></a><a class="headerlink" href="#sqlite3-connection" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sqlite3.Connection">
 <em class="property">class </em><code class="descclassname">sqlite3.</code><code class="descname">Connection</code><a class="headerlink" href="#sqlite3.Connection" title="Permalink to this definition">¶</a></dt>
 <dd><p>SQLite database connection object.</p>
-<dl class="attribute">
-<dt id="sqlite3.Connection.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sqlite3.Connection.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
-</dd></dl>
-
 </dd></dl>
 
 <div class="section" id="methods">
-<h2>2.9.2.2.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.__enter__.html#sqlite3.Connection.__enter__" title="sqlite3.Connection.__enter__"><code class="xref py py-obj docutils literal"><span class="pre">__enter__</span></code></a></td>
+<td>For context manager.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.__exit__.html#sqlite3.Connection.__exit__" title="sqlite3.Connection.__exit__"><code class="xref py py-obj docutils literal"><span class="pre">__exit__</span></code></a></td>
+<td>For context manager.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.__format__.html#sqlite3.Connection.__format__" title="sqlite3.Connection.__format__"><code class="xref py py-obj docutils literal"><span class="pre">__format__</span></code></a></td>
+<td>default object formatter</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.__new__.html#sqlite3.Connection.__new__" title="sqlite3.Connection.__new__"><code class="xref py py-obj docutils literal"><span class="pre">__new__</span></code></a>((S,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.__reduce__.html#sqlite3.Connection.__reduce__" title="sqlite3.Connection.__reduce__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.__reduce_ex__.html#sqlite3.Connection.__reduce_ex__" title="sqlite3.Connection.__reduce_ex__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce_ex__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.__sizeof__.html#sqlite3.Connection.__sizeof__" title="sqlite3.Connection.__sizeof__"><code class="xref py py-obj docutils literal"><span class="pre">__sizeof__</span></code></a>(()&nbsp;-&gt;&nbsp;int)</td>
+<td>size of object in memory, in bytes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Connection.__subclasshook__.html#sqlite3.Connection.__subclasshook__" title="sqlite3.Connection.__subclasshook__"><code class="xref py py-obj docutils literal"><span class="pre">__subclasshook__</span></code></a></td>
+<td>Abstract classes can override this to customize issubclass().</td>
+</tr>
 <tr class="row-odd"><td><a class="reference internal" href="sqlite3.Connection.close.html#sqlite3.Connection.close" title="sqlite3.Connection.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a></td>
 <td>Closes the connection.</td>
 </tr>
@@ -248,7 +244,7 @@
 </table>
 </div>
 <div class="section" id="attributes">
-<h2>2.9.2.2.2. Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -309,10 +305,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="sqlite3.Connection.close.html" class="btn btn-neutral float-right" title="2.9.2.2.1.1. sqlite3.Connection.close" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sqlite3.Connection.__enter__.html" class="btn btn-neutral float-right" title="sqlite3.Connection.__enter__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="sqlite3.Cache.get.html" class="btn btn-neutral" title="2.9.2.1.1.2. sqlite3.Cache.get" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="sqlite3.Cache.get.html" class="btn btn-neutral" title="sqlite3.Cache.get" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -343,7 +339,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -352,6 +348,7 @@
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

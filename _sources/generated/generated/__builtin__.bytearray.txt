@@ -1,9 +1,7 @@
-__builtin__.bytearray
-=====================
-
+:class:`__builtin__.bytearray`
+==============================
 .. currentmodule:: __builtin__
 .. autoclass:: bytearray
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,13 @@ Methods
    :toctree:
 
 
+   ~bytearray.__alloc__
+   ~bytearray.__format__
+   ~bytearray.__new__
+   ~bytearray.__reduce__
+   ~bytearray.__reduce_ex__
+   ~bytearray.__sizeof__
+   ~bytearray.__subclasshook__
    ~bytearray.append
    ~bytearray.capitalize
    ~bytearray.center

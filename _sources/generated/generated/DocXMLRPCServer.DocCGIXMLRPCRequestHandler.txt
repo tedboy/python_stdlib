@@ -1,0 +1,36 @@
+:class:`DocXMLRPCServer.DocCGIXMLRPCRequestHandler`
+===================================================
+.. currentmodule:: DocXMLRPCServer
+.. autoclass:: DocCGIXMLRPCRequestHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~DocCGIXMLRPCRequestHandler.__init__
+   ~DocCGIXMLRPCRequestHandler._dispatch
+   ~DocCGIXMLRPCRequestHandler._marshaled_dispatch
+   ~DocCGIXMLRPCRequestHandler.generate_html_documentation
+   ~DocCGIXMLRPCRequestHandler.handle_get
+   ~DocCGIXMLRPCRequestHandler.handle_request
+   ~DocCGIXMLRPCRequestHandler.handle_xmlrpc
+   ~DocCGIXMLRPCRequestHandler.register_function
+   ~DocCGIXMLRPCRequestHandler.register_instance
+   ~DocCGIXMLRPCRequestHandler.register_introspection_functions
+   ~DocCGIXMLRPCRequestHandler.register_multicall_functions
+   ~DocCGIXMLRPCRequestHandler.set_server_documentation
+   ~DocCGIXMLRPCRequestHandler.set_server_name
+   ~DocCGIXMLRPCRequestHandler.set_server_title
+   ~DocCGIXMLRPCRequestHandler.system_listMethods
+   ~DocCGIXMLRPCRequestHandler.system_methodHelp
+   ~DocCGIXMLRPCRequestHandler.system_methodSignature
+   ~DocCGIXMLRPCRequestHandler.system_multicall
+
+
+
+
+

@@ -1,9 +1,7 @@
-Tkinter.Button
-==============
-
+:class:`Tkinter.Button`
+=======================
 .. currentmodule:: Tkinter
 .. autoclass:: Button
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Button._Misc__winfo_getint
+   ~Button._Misc__winfo_parseitem
+   ~Button.__contains__
+   ~Button.__getitem__
    ~Button.__init__
+   ~Button.__setitem__
+   ~Button.__str__
+   ~Button._bind
+   ~Button._configure
+   ~Button._displayof
+   ~Button._do
+   ~Button._getboolean
+   ~Button._getconfigure
+   ~Button._getconfigure1
+   ~Button._getdoubles
+   ~Button._getints
+   ~Button._grid_configure
+   ~Button._gridconvvalue
+   ~Button._nametowidget
+   ~Button._options
+   ~Button._register
+   ~Button._report_exception
+   ~Button._root
+   ~Button._setup
+   ~Button._substitute
    ~Button.after
    ~Button.after_cancel
    ~Button.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Button.bind_class
    ~Button.bindtags
    ~Button.cget
+   ~Button.check
    ~Button.clipboard_append
    ~Button.clipboard_clear
    ~Button.clipboard_get
@@ -45,6 +68,7 @@ Methods
    ~Button.focus_lastfor
    ~Button.focus_set
    ~Button.forget
+   ~Button.form
    ~Button.getboolean
    ~Button.getvar
    ~Button.grab_current

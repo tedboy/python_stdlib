@@ -1,0 +1,71 @@
+:class:`sgmllib.SGMLParser`
+===========================
+.. currentmodule:: sgmllib
+.. autoclass:: SGMLParser
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SGMLParser.__init__
+   ~SGMLParser._convert_ref
+   ~SGMLParser._parse_doctype_attlist
+   ~SGMLParser._parse_doctype_element
+   ~SGMLParser._parse_doctype_entity
+   ~SGMLParser._parse_doctype_notation
+   ~SGMLParser._parse_doctype_subset
+   ~SGMLParser._scan_name
+   ~SGMLParser.close
+   ~SGMLParser.convert_charref
+   ~SGMLParser.convert_codepoint
+   ~SGMLParser.convert_entityref
+   ~SGMLParser.error
+   ~SGMLParser.feed
+   ~SGMLParser.finish_endtag
+   ~SGMLParser.finish_shorttag
+   ~SGMLParser.finish_starttag
+   ~SGMLParser.get_starttag_text
+   ~SGMLParser.getpos
+   ~SGMLParser.goahead
+   ~SGMLParser.handle_charref
+   ~SGMLParser.handle_comment
+   ~SGMLParser.handle_data
+   ~SGMLParser.handle_decl
+   ~SGMLParser.handle_endtag
+   ~SGMLParser.handle_entityref
+   ~SGMLParser.handle_pi
+   ~SGMLParser.handle_starttag
+   ~SGMLParser.parse_comment
+   ~SGMLParser.parse_declaration
+   ~SGMLParser.parse_endtag
+   ~SGMLParser.parse_marked_section
+   ~SGMLParser.parse_pi
+   ~SGMLParser.parse_starttag
+   ~SGMLParser.report_unbalanced
+   ~SGMLParser.reset
+   ~SGMLParser.setliteral
+   ~SGMLParser.setnomoretags
+   ~SGMLParser.unknown_charref
+   ~SGMLParser.unknown_decl
+   ~SGMLParser.unknown_endtag
+   ~SGMLParser.unknown_entityref
+   ~SGMLParser.unknown_starttag
+   ~SGMLParser.updatepos
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SGMLParser.entity_or_charref
+   ~SGMLParser.entitydefs
+

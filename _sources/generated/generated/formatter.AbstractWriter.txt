@@ -1,0 +1,31 @@
+:class:`formatter.AbstractWriter`
+=================================
+.. currentmodule:: formatter
+.. autoclass:: AbstractWriter
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~AbstractWriter.__init__
+   ~AbstractWriter.flush
+   ~AbstractWriter.new_alignment
+   ~AbstractWriter.new_font
+   ~AbstractWriter.new_margin
+   ~AbstractWriter.new_spacing
+   ~AbstractWriter.new_styles
+   ~AbstractWriter.send_flowing_data
+   ~AbstractWriter.send_hor_rule
+   ~AbstractWriter.send_label_data
+   ~AbstractWriter.send_line_break
+   ~AbstractWriter.send_literal_data
+   ~AbstractWriter.send_paragraph
+
+
+
+
+

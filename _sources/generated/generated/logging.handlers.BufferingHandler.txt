@@ -1,0 +1,50 @@
+:class:`logging.handlers.BufferingHandler`
+==========================================
+.. currentmodule:: logging.handlers
+.. autoclass:: BufferingHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BufferingHandler.__format__
+   ~BufferingHandler.__init__
+   ~BufferingHandler.__new__
+   ~BufferingHandler.__reduce__
+   ~BufferingHandler.__reduce_ex__
+   ~BufferingHandler.__sizeof__
+   ~BufferingHandler.__subclasshook__
+   ~BufferingHandler.acquire
+   ~BufferingHandler.addFilter
+   ~BufferingHandler.close
+   ~BufferingHandler.createLock
+   ~BufferingHandler.emit
+   ~BufferingHandler.filter
+   ~BufferingHandler.flush
+   ~BufferingHandler.format
+   ~BufferingHandler.get_name
+   ~BufferingHandler.handle
+   ~BufferingHandler.handleError
+   ~BufferingHandler.release
+   ~BufferingHandler.removeFilter
+   ~BufferingHandler.setFormatter
+   ~BufferingHandler.setLevel
+   ~BufferingHandler.set_name
+   ~BufferingHandler.shouldFlush
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~BufferingHandler.name
+

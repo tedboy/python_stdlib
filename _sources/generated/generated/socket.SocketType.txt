@@ -1,9 +1,7 @@
-socket.SocketType
-=================
-
+:class:`socket.SocketType`
+==========================
 .. currentmodule:: socket
 .. autoclass:: SocketType
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,13 @@ Methods
    :toctree:
 
 
+   ~SocketType.__format__
    ~SocketType.__init__
+   ~SocketType.__new__
+   ~SocketType.__reduce__
+   ~SocketType.__reduce_ex__
+   ~SocketType.__sizeof__
+   ~SocketType.__subclasshook__
    ~SocketType.accept
    ~SocketType.bind
    ~SocketType.close

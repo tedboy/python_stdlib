@@ -1,0 +1,63 @@
+:class:`DocXMLRPCServer.SimpleXMLRPCRequestHandler`
+===================================================
+.. currentmodule:: DocXMLRPCServer
+.. autoclass:: SimpleXMLRPCRequestHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SimpleXMLRPCRequestHandler.__init__
+   ~SimpleXMLRPCRequestHandler.accept_encodings
+   ~SimpleXMLRPCRequestHandler.address_string
+   ~SimpleXMLRPCRequestHandler.date_time_string
+   ~SimpleXMLRPCRequestHandler.decode_request_content
+   ~SimpleXMLRPCRequestHandler.do_POST
+   ~SimpleXMLRPCRequestHandler.end_headers
+   ~SimpleXMLRPCRequestHandler.finish
+   ~SimpleXMLRPCRequestHandler.handle
+   ~SimpleXMLRPCRequestHandler.handle_one_request
+   ~SimpleXMLRPCRequestHandler.is_rpc_path_valid
+   ~SimpleXMLRPCRequestHandler.log_date_time_string
+   ~SimpleXMLRPCRequestHandler.log_error
+   ~SimpleXMLRPCRequestHandler.log_message
+   ~SimpleXMLRPCRequestHandler.log_request
+   ~SimpleXMLRPCRequestHandler.parse_request
+   ~SimpleXMLRPCRequestHandler.report_404
+   ~SimpleXMLRPCRequestHandler.send_error
+   ~SimpleXMLRPCRequestHandler.send_header
+   ~SimpleXMLRPCRequestHandler.send_response
+   ~SimpleXMLRPCRequestHandler.setup
+   ~SimpleXMLRPCRequestHandler.version_string
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SimpleXMLRPCRequestHandler.aepattern
+   ~SimpleXMLRPCRequestHandler.default_request_version
+   ~SimpleXMLRPCRequestHandler.disable_nagle_algorithm
+   ~SimpleXMLRPCRequestHandler.encode_threshold
+   ~SimpleXMLRPCRequestHandler.error_content_type
+   ~SimpleXMLRPCRequestHandler.error_message_format
+   ~SimpleXMLRPCRequestHandler.monthname
+   ~SimpleXMLRPCRequestHandler.protocol_version
+   ~SimpleXMLRPCRequestHandler.rbufsize
+   ~SimpleXMLRPCRequestHandler.responses
+   ~SimpleXMLRPCRequestHandler.rpc_paths
+   ~SimpleXMLRPCRequestHandler.server_version
+   ~SimpleXMLRPCRequestHandler.sys_version
+   ~SimpleXMLRPCRequestHandler.timeout
+   ~SimpleXMLRPCRequestHandler.wbufsize
+   ~SimpleXMLRPCRequestHandler.weekdayname
+

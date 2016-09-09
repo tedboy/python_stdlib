@@ -1,0 +1,48 @@
+:class:`SocketServer.UDPServer`
+===============================
+.. currentmodule:: SocketServer
+.. autoclass:: UDPServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~UDPServer.__init__
+   ~UDPServer._handle_request_noblock
+   ~UDPServer.close_request
+   ~UDPServer.fileno
+   ~UDPServer.finish_request
+   ~UDPServer.get_request
+   ~UDPServer.handle_error
+   ~UDPServer.handle_request
+   ~UDPServer.handle_timeout
+   ~UDPServer.process_request
+   ~UDPServer.serve_forever
+   ~UDPServer.server_activate
+   ~UDPServer.server_bind
+   ~UDPServer.server_close
+   ~UDPServer.shutdown
+   ~UDPServer.shutdown_request
+   ~UDPServer.verify_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~UDPServer.address_family
+   ~UDPServer.allow_reuse_address
+   ~UDPServer.max_packet_size
+   ~UDPServer.request_queue_size
+   ~UDPServer.socket_type
+   ~UDPServer.timeout
+

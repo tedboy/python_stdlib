@@ -1,9 +1,7 @@
-contextlib.GeneratorContextManager
-==================================
-
+:class:`contextlib.GeneratorContextManager`
+===========================================
 .. currentmodule:: contextlib
 .. autoclass:: GeneratorContextManager
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,15 @@ Methods
    :toctree:
 
 
+   ~GeneratorContextManager.__enter__
+   ~GeneratorContextManager.__exit__
+   ~GeneratorContextManager.__format__
    ~GeneratorContextManager.__init__
+   ~GeneratorContextManager.__new__
+   ~GeneratorContextManager.__reduce__
+   ~GeneratorContextManager.__reduce_ex__
+   ~GeneratorContextManager.__sizeof__
+   ~GeneratorContextManager.__subclasshook__
 
 
 

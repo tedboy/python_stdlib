@@ -1,9 +1,7 @@
-doctest.DocTestFinder
-=====================
-
+:class:`doctest.DocTestFinder`
+==============================
 .. currentmodule:: doctest
 .. autoclass:: DocTestFinder
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,10 @@ Methods
 
 
    ~DocTestFinder.__init__
+   ~DocTestFinder._find
+   ~DocTestFinder._find_lineno
+   ~DocTestFinder._from_module
+   ~DocTestFinder._get_test
    ~DocTestFinder.find
 
 

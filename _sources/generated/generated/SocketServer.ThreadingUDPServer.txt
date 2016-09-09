@@ -1,0 +1,50 @@
+:class:`SocketServer.ThreadingUDPServer`
+========================================
+.. currentmodule:: SocketServer
+.. autoclass:: ThreadingUDPServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~ThreadingUDPServer.__init__
+   ~ThreadingUDPServer._handle_request_noblock
+   ~ThreadingUDPServer.close_request
+   ~ThreadingUDPServer.fileno
+   ~ThreadingUDPServer.finish_request
+   ~ThreadingUDPServer.get_request
+   ~ThreadingUDPServer.handle_error
+   ~ThreadingUDPServer.handle_request
+   ~ThreadingUDPServer.handle_timeout
+   ~ThreadingUDPServer.process_request
+   ~ThreadingUDPServer.process_request_thread
+   ~ThreadingUDPServer.serve_forever
+   ~ThreadingUDPServer.server_activate
+   ~ThreadingUDPServer.server_bind
+   ~ThreadingUDPServer.server_close
+   ~ThreadingUDPServer.shutdown
+   ~ThreadingUDPServer.shutdown_request
+   ~ThreadingUDPServer.verify_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~ThreadingUDPServer.address_family
+   ~ThreadingUDPServer.allow_reuse_address
+   ~ThreadingUDPServer.daemon_threads
+   ~ThreadingUDPServer.max_packet_size
+   ~ThreadingUDPServer.request_queue_size
+   ~ThreadingUDPServer.socket_type
+   ~ThreadingUDPServer.timeout
+

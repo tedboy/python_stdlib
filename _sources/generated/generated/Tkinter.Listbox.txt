@@ -1,9 +1,7 @@
-Tkinter.Listbox
-===============
-
+:class:`Tkinter.Listbox`
+========================
 .. currentmodule:: Tkinter
 .. autoclass:: Listbox
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Listbox._Misc__winfo_getint
+   ~Listbox._Misc__winfo_parseitem
+   ~Listbox.__contains__
+   ~Listbox.__getitem__
    ~Listbox.__init__
+   ~Listbox.__setitem__
+   ~Listbox.__str__
+   ~Listbox._bind
+   ~Listbox._configure
+   ~Listbox._displayof
+   ~Listbox._do
+   ~Listbox._getboolean
+   ~Listbox._getconfigure
+   ~Listbox._getconfigure1
+   ~Listbox._getdoubles
+   ~Listbox._getints
+   ~Listbox._grid_configure
+   ~Listbox._gridconvvalue
+   ~Listbox._nametowidget
+   ~Listbox._options
+   ~Listbox._register
+   ~Listbox._report_exception
+   ~Listbox._root
+   ~Listbox._setup
+   ~Listbox._substitute
    ~Listbox.activate
    ~Listbox.after
    ~Listbox.after_cancel
@@ -25,6 +47,7 @@ Methods
    ~Listbox.bind_class
    ~Listbox.bindtags
    ~Listbox.cget
+   ~Listbox.check
    ~Listbox.clipboard_append
    ~Listbox.clipboard_clear
    ~Listbox.clipboard_get
@@ -47,6 +70,7 @@ Methods
    ~Listbox.focus_lastfor
    ~Listbox.focus_set
    ~Listbox.forget
+   ~Listbox.form
    ~Listbox.get
    ~Listbox.getboolean
    ~Listbox.getvar

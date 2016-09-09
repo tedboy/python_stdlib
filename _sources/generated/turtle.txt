@@ -1,0 +1,226 @@
+:mod:`turtle`
+=============
+
+.. automodule:: turtle
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      Screen
+      acos
+      acosh
+      addshape
+      asin
+      asinh
+      atan
+      atan2
+      atanh
+      back
+      backward
+      begin_fill
+      begin_poly
+      bgcolor
+      bgpic
+      bk
+      bye
+      ceil
+      circle
+      clear
+      clearscreen
+      clearstamp
+      clearstamps
+      clone
+      color
+      colormode
+      config_dict
+      copysign
+      cos
+      cosh
+      deepcopy
+      degrees
+      delay
+      distance
+      done
+      dot
+      down
+      end_fill
+      end_poly
+      erf
+      erfc
+      exitonclick
+      exp
+      expm1
+      fabs
+      factorial
+      fd
+      fill
+      fillcolor
+      floor
+      fmod
+      forward
+      frexp
+      fsum
+      gamma
+      get_poly
+      getcanvas
+      getmethparlist
+      getpen
+      getscreen
+      getshapes
+      getturtle
+      goto
+      heading
+      hideturtle
+      home
+      ht
+      hypot
+      isdown
+      isfile
+      isinf
+      isnan
+      isvisible
+      join
+      ldexp
+      left
+      lgamma
+      listen
+      log
+      log10
+      log1p
+      lt
+      mainloop
+      mode
+      modf
+      onclick
+      ondrag
+      onkey
+      onrelease
+      onscreenclick
+      ontimer
+      pd
+      pen
+      pencolor
+      pendown
+      pensize
+      penup
+      pos
+      position
+      pow
+      pu
+      radians
+      read_docstrings
+      readconfig
+      register_shape
+      reset
+      resetscreen
+      resizemode
+      right
+      rt
+      screensize
+      seth
+      setheading
+      setpos
+      setposition
+      settiltangle
+      setundobuffer
+      setup
+      setworldcoordinates
+      setx
+      sety
+      shape
+      shapesize
+      showturtle
+      sin
+      sinh
+      speed
+      split
+      sqrt
+      st
+      stamp
+      tan
+      tanh
+      tilt
+      tiltangle
+      title
+      towards
+      tracer
+      trunc
+      turtles
+      turtlesize
+      undo
+      undobufferentries
+      up
+      update
+      width
+      window_height
+      window_width
+      write
+      write_docstringdict
+      xcor
+      ycor
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Canvas
+      Pen
+      RawPen
+      RawTurtle
+      ScrolledCanvas
+      Shape
+      TNavigator
+      TPen
+      Tbuffer
+      Turtle
+      TurtleScreen
+      TurtleScreenBase
+      Vec2D
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/turtle.Canvas
+       generated/turtle.Pen
+       generated/turtle.RawPen
+       generated/turtle.RawTurtle
+       generated/turtle.ScrolledCanvas
+       generated/turtle.Shape
+       generated/turtle.TNavigator
+       generated/turtle.TPen
+       generated/turtle.Tbuffer
+       generated/turtle.Turtle
+       generated/turtle.TurtleScreen
+       generated/turtle.TurtleScreenBase
+       generated/turtle.Vec2D
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      Terminator
+      TurtleGraphicsError
+   
+   

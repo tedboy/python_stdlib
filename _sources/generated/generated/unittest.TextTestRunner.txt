@@ -1,9 +1,7 @@
-unittest.TextTestRunner
-=======================
-
+:class:`unittest.TextTestRunner`
+================================
 .. currentmodule:: unittest
 .. autoclass:: TextTestRunner
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~TextTestRunner.__format__
    ~TextTestRunner.__init__
+   ~TextTestRunner.__new__
+   ~TextTestRunner.__reduce__
+   ~TextTestRunner.__reduce_ex__
+   ~TextTestRunner.__sizeof__
+   ~TextTestRunner.__subclasshook__
+   ~TextTestRunner._makeResult
    ~TextTestRunner.run
 
 

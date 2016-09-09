@@ -1,0 +1,52 @@
+:class:`cookielib.CookieJar`
+============================
+.. currentmodule:: cookielib
+.. autoclass:: CookieJar
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~CookieJar.__init__
+   ~CookieJar.__iter__
+   ~CookieJar.__len__
+   ~CookieJar.__repr__
+   ~CookieJar.__str__
+   ~CookieJar._cookie_attrs
+   ~CookieJar._cookie_from_cookie_tuple
+   ~CookieJar._cookies_for_domain
+   ~CookieJar._cookies_for_request
+   ~CookieJar._cookies_from_attrs_set
+   ~CookieJar._normalized_cookie_tuples
+   ~CookieJar._process_rfc2109_cookies
+   ~CookieJar.add_cookie_header
+   ~CookieJar.clear
+   ~CookieJar.clear_expired_cookies
+   ~CookieJar.clear_session_cookies
+   ~CookieJar.extract_cookies
+   ~CookieJar.make_cookies
+   ~CookieJar.set_cookie
+   ~CookieJar.set_cookie_if_ok
+   ~CookieJar.set_policy
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~CookieJar.domain_re
+   ~CookieJar.dots_re
+   ~CookieJar.magic_re
+   ~CookieJar.non_word_re
+   ~CookieJar.quote_re
+   ~CookieJar.strict_domain_re
+

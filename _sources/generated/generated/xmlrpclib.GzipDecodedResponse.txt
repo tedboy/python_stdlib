@@ -1,0 +1,72 @@
+:class:`xmlrpclib.GzipDecodedResponse`
+======================================
+.. currentmodule:: xmlrpclib
+.. autoclass:: GzipDecodedResponse
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~GzipDecodedResponse.__enter__
+   ~GzipDecodedResponse.__exit__
+   ~GzipDecodedResponse.__format__
+   ~GzipDecodedResponse.__init__
+   ~GzipDecodedResponse.__new__
+   ~GzipDecodedResponse.__reduce__
+   ~GzipDecodedResponse.__reduce_ex__
+   ~GzipDecodedResponse.__repr__
+   ~GzipDecodedResponse.__sizeof__
+   ~GzipDecodedResponse.__subclasshook__
+   ~GzipDecodedResponse._add_read_data
+   ~GzipDecodedResponse._checkClosed
+   ~GzipDecodedResponse._checkReadable
+   ~GzipDecodedResponse._checkSeekable
+   ~GzipDecodedResponse._checkWritable
+   ~GzipDecodedResponse._check_closed
+   ~GzipDecodedResponse._init_read
+   ~GzipDecodedResponse._init_write
+   ~GzipDecodedResponse._read
+   ~GzipDecodedResponse._read_eof
+   ~GzipDecodedResponse._read_gzip_header
+   ~GzipDecodedResponse._unread
+   ~GzipDecodedResponse._write_gzip_header
+   ~GzipDecodedResponse.close
+   ~GzipDecodedResponse.detach
+   ~GzipDecodedResponse.fileno
+   ~GzipDecodedResponse.flush
+   ~GzipDecodedResponse.isatty
+   ~GzipDecodedResponse.read
+   ~GzipDecodedResponse.read1
+   ~GzipDecodedResponse.readable
+   ~GzipDecodedResponse.readinto
+   ~GzipDecodedResponse.readline
+   ~GzipDecodedResponse.readlines
+   ~GzipDecodedResponse.rewind
+   ~GzipDecodedResponse.seek
+   ~GzipDecodedResponse.seekable
+   ~GzipDecodedResponse.tell
+   ~GzipDecodedResponse.truncate
+   ~GzipDecodedResponse.writable
+   ~GzipDecodedResponse.write
+   ~GzipDecodedResponse.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~GzipDecodedResponse.closed
+   ~GzipDecodedResponse.filename
+   ~GzipDecodedResponse.max_read_chunk
+   ~GzipDecodedResponse.myfileobj
+   ~GzipDecodedResponse.next
+

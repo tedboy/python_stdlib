@@ -1,9 +1,7 @@
-Tkinter.Menu
-============
-
+:class:`Tkinter.Menu`
+=====================
 .. currentmodule:: Tkinter
 .. autoclass:: Menu
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Menu._Misc__winfo_getint
+   ~Menu._Misc__winfo_parseitem
+   ~Menu.__contains__
+   ~Menu.__getitem__
    ~Menu.__init__
+   ~Menu.__setitem__
+   ~Menu.__str__
+   ~Menu._bind
+   ~Menu._configure
+   ~Menu._displayof
+   ~Menu._do
+   ~Menu._getboolean
+   ~Menu._getconfigure
+   ~Menu._getconfigure1
+   ~Menu._getdoubles
+   ~Menu._getints
+   ~Menu._grid_configure
+   ~Menu._gridconvvalue
+   ~Menu._nametowidget
+   ~Menu._options
+   ~Menu._register
+   ~Menu._report_exception
+   ~Menu._root
+   ~Menu._setup
+   ~Menu._substitute
    ~Menu.activate
    ~Menu.add
    ~Menu.add_cascade
@@ -31,6 +53,7 @@ Methods
    ~Menu.bind_class
    ~Menu.bindtags
    ~Menu.cget
+   ~Menu.check
    ~Menu.clipboard_append
    ~Menu.clipboard_clear
    ~Menu.clipboard_get
@@ -55,6 +78,7 @@ Methods
    ~Menu.focus_lastfor
    ~Menu.focus_set
    ~Menu.forget
+   ~Menu.form
    ~Menu.getboolean
    ~Menu.getvar
    ~Menu.grab_current

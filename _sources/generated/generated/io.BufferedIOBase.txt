@@ -1,0 +1,57 @@
+:class:`io.BufferedIOBase`
+==========================
+.. currentmodule:: io
+.. autoclass:: BufferedIOBase
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BufferedIOBase.__enter__
+   ~BufferedIOBase.__exit__
+   ~BufferedIOBase.__format__
+   ~BufferedIOBase.__new__
+   ~BufferedIOBase.__reduce__
+   ~BufferedIOBase.__reduce_ex__
+   ~BufferedIOBase.__sizeof__
+   ~BufferedIOBase.__subclasshook__
+   ~BufferedIOBase._checkClosed
+   ~BufferedIOBase._checkReadable
+   ~BufferedIOBase._checkSeekable
+   ~BufferedIOBase._checkWritable
+   ~BufferedIOBase.close
+   ~BufferedIOBase.detach
+   ~BufferedIOBase.fileno
+   ~BufferedIOBase.flush
+   ~BufferedIOBase.isatty
+   ~BufferedIOBase.read
+   ~BufferedIOBase.read1
+   ~BufferedIOBase.readable
+   ~BufferedIOBase.readinto
+   ~BufferedIOBase.readline
+   ~BufferedIOBase.readlines
+   ~BufferedIOBase.seek
+   ~BufferedIOBase.seekable
+   ~BufferedIOBase.tell
+   ~BufferedIOBase.truncate
+   ~BufferedIOBase.writable
+   ~BufferedIOBase.write
+   ~BufferedIOBase.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~BufferedIOBase.closed
+   ~BufferedIOBase.next
+

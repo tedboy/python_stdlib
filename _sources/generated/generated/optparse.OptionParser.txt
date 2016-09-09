@@ -1,0 +1,75 @@
+:class:`optparse.OptionParser`
+==============================
+.. currentmodule:: optparse
+.. autoclass:: OptionParser
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~OptionParser.__init__
+   ~OptionParser._add_help_option
+   ~OptionParser._add_version_option
+   ~OptionParser._check_conflict
+   ~OptionParser._create_option_list
+   ~OptionParser._create_option_mappings
+   ~OptionParser._get_all_options
+   ~OptionParser._get_args
+   ~OptionParser._get_encoding
+   ~OptionParser._init_parsing_state
+   ~OptionParser._match_long_opt
+   ~OptionParser._populate_option_list
+   ~OptionParser._process_args
+   ~OptionParser._process_long_opt
+   ~OptionParser._process_short_opts
+   ~OptionParser._share_option_mappings
+   ~OptionParser.add_option
+   ~OptionParser.add_option_group
+   ~OptionParser.add_options
+   ~OptionParser.check_values
+   ~OptionParser.destroy
+   ~OptionParser.disable_interspersed_args
+   ~OptionParser.enable_interspersed_args
+   ~OptionParser.error
+   ~OptionParser.exit
+   ~OptionParser.expand_prog_name
+   ~OptionParser.format_description
+   ~OptionParser.format_epilog
+   ~OptionParser.format_help
+   ~OptionParser.format_option_help
+   ~OptionParser.get_default_values
+   ~OptionParser.get_description
+   ~OptionParser.get_option
+   ~OptionParser.get_option_group
+   ~OptionParser.get_prog_name
+   ~OptionParser.get_usage
+   ~OptionParser.get_version
+   ~OptionParser.has_option
+   ~OptionParser.parse_args
+   ~OptionParser.print_help
+   ~OptionParser.print_usage
+   ~OptionParser.print_version
+   ~OptionParser.remove_option
+   ~OptionParser.set_conflict_handler
+   ~OptionParser.set_default
+   ~OptionParser.set_defaults
+   ~OptionParser.set_description
+   ~OptionParser.set_process_default_values
+   ~OptionParser.set_usage
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~OptionParser.standard_option_list
+

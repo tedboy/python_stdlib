@@ -1,0 +1,72 @@
+:class:`xml.dom.minidom.DocumentFragment`
+=========================================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: DocumentFragment
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~DocumentFragment.__init__
+   ~DocumentFragment.__nonzero__
+   ~DocumentFragment._call_user_data_handler
+   ~DocumentFragment._get_childNodes
+   ~DocumentFragment._get_firstChild
+   ~DocumentFragment._get_lastChild
+   ~DocumentFragment._get_localName
+   ~DocumentFragment.appendChild
+   ~DocumentFragment.cloneNode
+   ~DocumentFragment.getInterface
+   ~DocumentFragment.getUserData
+   ~DocumentFragment.hasChildNodes
+   ~DocumentFragment.insertBefore
+   ~DocumentFragment.isSameNode
+   ~DocumentFragment.isSupported
+   ~DocumentFragment.normalize
+   ~DocumentFragment.removeChild
+   ~DocumentFragment.replaceChild
+   ~DocumentFragment.setUserData
+   ~DocumentFragment.toprettyxml
+   ~DocumentFragment.toxml
+   ~DocumentFragment.unlink
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~DocumentFragment.ATTRIBUTE_NODE
+   ~DocumentFragment.CDATA_SECTION_NODE
+   ~DocumentFragment.COMMENT_NODE
+   ~DocumentFragment.DOCUMENT_FRAGMENT_NODE
+   ~DocumentFragment.DOCUMENT_NODE
+   ~DocumentFragment.DOCUMENT_TYPE_NODE
+   ~DocumentFragment.ELEMENT_NODE
+   ~DocumentFragment.ENTITY_NODE
+   ~DocumentFragment.ENTITY_REFERENCE_NODE
+   ~DocumentFragment.NOTATION_NODE
+   ~DocumentFragment.PROCESSING_INSTRUCTION_NODE
+   ~DocumentFragment.TEXT_NODE
+   ~DocumentFragment.attributes
+   ~DocumentFragment.firstChild
+   ~DocumentFragment.lastChild
+   ~DocumentFragment.localName
+   ~DocumentFragment.namespaceURI
+   ~DocumentFragment.nextSibling
+   ~DocumentFragment.nodeName
+   ~DocumentFragment.nodeType
+   ~DocumentFragment.nodeValue
+   ~DocumentFragment.ownerDocument
+   ~DocumentFragment.parentNode
+   ~DocumentFragment.prefix
+   ~DocumentFragment.previousSibling
+

@@ -1,9 +1,7 @@
-pydoc.TextDoc
-=============
-
+:class:`pydoc.TextDoc`
+======================
 .. currentmodule:: pydoc
 .. autoclass:: TextDoc
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,7 @@ Methods
    :toctree:
 
 
+   ~TextDoc._docdescriptor
    ~TextDoc.bold
    ~TextDoc.docclass
    ~TextDoc.docdata

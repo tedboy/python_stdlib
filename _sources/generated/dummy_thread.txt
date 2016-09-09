@@ -1,0 +1,55 @@
+:mod:`dummy_thread`
+===================
+
+.. automodule:: dummy_thread
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      allocate_lock
+      exit
+      get_ident
+      interrupt_main
+      stack_size
+      start_new_thread
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      LockType
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/dummy_thread.LockType
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      error
+   
+   

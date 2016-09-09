@@ -1,0 +1,57 @@
+:class:`logging.Logger`
+=======================
+.. currentmodule:: logging
+.. autoclass:: Logger
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Logger.__format__
+   ~Logger.__init__
+   ~Logger.__new__
+   ~Logger.__reduce__
+   ~Logger.__reduce_ex__
+   ~Logger.__sizeof__
+   ~Logger.__subclasshook__
+   ~Logger._log
+   ~Logger.addFilter
+   ~Logger.addHandler
+   ~Logger.callHandlers
+   ~Logger.critical
+   ~Logger.debug
+   ~Logger.error
+   ~Logger.exception
+   ~Logger.fatal
+   ~Logger.filter
+   ~Logger.findCaller
+   ~Logger.getChild
+   ~Logger.getEffectiveLevel
+   ~Logger.handle
+   ~Logger.info
+   ~Logger.isEnabledFor
+   ~Logger.log
+   ~Logger.makeRecord
+   ~Logger.removeFilter
+   ~Logger.removeHandler
+   ~Logger.setLevel
+   ~Logger.warn
+   ~Logger.warning
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Logger.manager
+   ~Logger.root
+

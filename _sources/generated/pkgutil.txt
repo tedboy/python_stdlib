@@ -1,5 +1,5 @@
-pkgutil
-=======
+:mod:`pkgutil`
+==============
 
 .. automodule:: pkgutil
 
@@ -9,7 +9,8 @@ pkgutil
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       extend_path
       find_loader
@@ -29,14 +30,16 @@ pkgutil
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       ImpImporter
       ImpLoader
+      ModuleType
+      zipimporter
 
    .. toctree::
        :maxdepth: 1
@@ -45,6 +48,8 @@ pkgutil
    
        generated/pkgutil.ImpImporter
        generated/pkgutil.ImpLoader
+       generated/pkgutil.ModuleType
+       generated/pkgutil.zipimporter
 
    
    

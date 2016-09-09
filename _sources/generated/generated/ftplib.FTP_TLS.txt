@@ -1,0 +1,76 @@
+:class:`ftplib.FTP_TLS`
+=======================
+.. currentmodule:: ftplib
+.. autoclass:: FTP_TLS
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~FTP_TLS.__init__
+   ~FTP_TLS.abort
+   ~FTP_TLS.acct
+   ~FTP_TLS.auth
+   ~FTP_TLS.close
+   ~FTP_TLS.connect
+   ~FTP_TLS.cwd
+   ~FTP_TLS.debug
+   ~FTP_TLS.delete
+   ~FTP_TLS.dir
+   ~FTP_TLS.getline
+   ~FTP_TLS.getmultiline
+   ~FTP_TLS.getresp
+   ~FTP_TLS.getwelcome
+   ~FTP_TLS.login
+   ~FTP_TLS.makepasv
+   ~FTP_TLS.makeport
+   ~FTP_TLS.mkd
+   ~FTP_TLS.nlst
+   ~FTP_TLS.ntransfercmd
+   ~FTP_TLS.prot_c
+   ~FTP_TLS.prot_p
+   ~FTP_TLS.putcmd
+   ~FTP_TLS.putline
+   ~FTP_TLS.pwd
+   ~FTP_TLS.quit
+   ~FTP_TLS.rename
+   ~FTP_TLS.retrbinary
+   ~FTP_TLS.retrlines
+   ~FTP_TLS.rmd
+   ~FTP_TLS.sanitize
+   ~FTP_TLS.sendcmd
+   ~FTP_TLS.sendeprt
+   ~FTP_TLS.sendport
+   ~FTP_TLS.set_debuglevel
+   ~FTP_TLS.set_pasv
+   ~FTP_TLS.size
+   ~FTP_TLS.storbinary
+   ~FTP_TLS.storlines
+   ~FTP_TLS.transfercmd
+   ~FTP_TLS.voidcmd
+   ~FTP_TLS.voidresp
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~FTP_TLS.debugging
+   ~FTP_TLS.file
+   ~FTP_TLS.host
+   ~FTP_TLS.maxline
+   ~FTP_TLS.passiveserver
+   ~FTP_TLS.port
+   ~FTP_TLS.sock
+   ~FTP_TLS.ssl_version
+   ~FTP_TLS.welcome
+

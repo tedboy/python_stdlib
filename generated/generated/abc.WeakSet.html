@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.5.4.2.2. abc.WeakSet &mdash; Python Standard Library</title>
+  <title>abc.WeakSet &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
   
 
   
@@ -31,9 +33,9 @@
 
   
     <link rel="top" title="Python Standard Library" href="../../index.html"/>
-        <link rel="up" title="3.5.4. abc" href="../abc.html"/>
-        <link rel="next" title="3.5.4.2.2.1. abc.WeakSet.add" href="abc.WeakSet.add.html"/>
-        <link rel="prev" title="3.5.4.2.1.2. abc.ABCMeta.register" href="abc.ABCMeta.register.html"/> 
+        <link rel="up" title="abc" href="../abc.html"/>
+        <link rel="next" title="abc.WeakSet.__and__" href="abc.WeakSet.__and__.html"/>
+        <link rel="prev" title="abc.ABCMeta.register" href="abc.ABCMeta.register.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -61,10 +63,6 @@
           
             
             
-              <div class="version">
-                1
-              </div>
-            
           
 
           
@@ -84,43 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../sysconfig.html">3.5.1. sysconfig</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../__future__.html">3.5.2. __future__</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../contextlib.html">3.5.3. contextlib</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../abc.html">3.5.4. abc</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../abc.html#functions">3.5.4.1. Functions</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../abc.html#classes">3.5.4.2. Classes</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../traceback.html">3.5.5. traceback</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../gc.html">3.5.6. gc</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../site.html">3.5.7. site</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user.html">3.5.8. user</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../imp.html">3.5.9. imp</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pkgutil.html">3.5.10. pkgutil</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../modulefinder.html">3.5.11. modulefinder</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -162,11 +137,11 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+          <li><a href="../../api_26to30.html">API: 26 - 30</a> &raquo;</li>
         
-          <li><a href="../abc.html">3.5.4. abc</a> &raquo;</li>
+          <li><a href="../abc.html"><code class="docutils literal"><span class="pre">abc</span></code></a> &raquo;</li>
         
-      <li>3.5.4.2.2. abc.WeakSet</li>
+      <li><code class="docutils literal"><span class="pre">abc.WeakSet</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -184,73 +159,149 @@
            <div itemprop="articleBody">
             
   <div class="section" id="abc-weakset">
-<h1>3.5.4.2.2. abc.WeakSet<a class="headerlink" href="#abc-weakset" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="abc.WeakSet.__init__.html#abc.WeakSet.__init__" title="abc.WeakSet.__init__"><code class="xref py py-func docutils literal"><span class="pre">WeakSet.__init__()</span></code></a></p>
+<h1><a class="reference internal" href="#abc.WeakSet" title="abc.WeakSet"><code class="xref py py-class docutils literal"><span class="pre">abc.WeakSet</span></code></a><a class="headerlink" href="#abc-weakset" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="abc.WeakSet">
 <em class="property">class </em><code class="descclassname">abc.</code><code class="descname">WeakSet</code><span class="sig-paren">(</span><em>data=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/_weakrefset.html#WeakSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#abc.WeakSet" title="Permalink to this definition">¶</a></dt>
-<dd><p class="rubric">Methods</p>
+<dd></dd></dl>
+
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.add.html#abc.WeakSet.add" title="abc.WeakSet.add"><code class="xref py py-obj docutils literal"><span class="pre">add</span></code></a>(item)</td>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__and__.html#abc.WeakSet.__and__" title="abc.WeakSet.__and__"><code class="xref py py-obj docutils literal"><span class="pre">__and__</span></code></a>(other)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.clear.html#abc.WeakSet.clear" title="abc.WeakSet.clear"><code class="xref py py-obj docutils literal"><span class="pre">clear</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__contains__.html#abc.WeakSet.__contains__" title="abc.WeakSet.__contains__"><code class="xref py py-obj docutils literal"><span class="pre">__contains__</span></code></a>(item)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.copy.html#abc.WeakSet.copy" title="abc.WeakSet.copy"><code class="xref py py-obj docutils literal"><span class="pre">copy</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__eq__.html#abc.WeakSet.__eq__" title="abc.WeakSet.__eq__"><code class="xref py py-obj docutils literal"><span class="pre">__eq__</span></code></a>(other)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.difference.html#abc.WeakSet.difference" title="abc.WeakSet.difference"><code class="xref py py-obj docutils literal"><span class="pre">difference</span></code></a>(other)</td>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__format__.html#abc.WeakSet.__format__" title="abc.WeakSet.__format__"><code class="xref py py-obj docutils literal"><span class="pre">__format__</span></code></a></td>
+<td>default object formatter</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__ge__.html#abc.WeakSet.__ge__" title="abc.WeakSet.__ge__"><code class="xref py py-obj docutils literal"><span class="pre">__ge__</span></code></a>(other)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.difference_update.html#abc.WeakSet.difference_update" title="abc.WeakSet.difference_update"><code class="xref py py-obj docutils literal"><span class="pre">difference_update</span></code></a>(other)</td>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__gt__.html#abc.WeakSet.__gt__" title="abc.WeakSet.__gt__"><code class="xref py py-obj docutils literal"><span class="pre">__gt__</span></code></a>(other)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.discard.html#abc.WeakSet.discard" title="abc.WeakSet.discard"><code class="xref py py-obj docutils literal"><span class="pre">discard</span></code></a>(item)</td>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__iand__.html#abc.WeakSet.__iand__" title="abc.WeakSet.__iand__"><code class="xref py py-obj docutils literal"><span class="pre">__iand__</span></code></a>(other)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.intersection.html#abc.WeakSet.intersection" title="abc.WeakSet.intersection"><code class="xref py py-obj docutils literal"><span class="pre">intersection</span></code></a>(other)</td>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__init__.html#abc.WeakSet.__init__" title="abc.WeakSet.__init__"><code class="xref py py-obj docutils literal"><span class="pre">__init__</span></code></a>([data])</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.intersection_update.html#abc.WeakSet.intersection_update" title="abc.WeakSet.intersection_update"><code class="xref py py-obj docutils literal"><span class="pre">intersection_update</span></code></a>(other)</td>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__ior__.html#abc.WeakSet.__ior__" title="abc.WeakSet.__ior__"><code class="xref py py-obj docutils literal"><span class="pre">__ior__</span></code></a>(other)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.isdisjoint.html#abc.WeakSet.isdisjoint" title="abc.WeakSet.isdisjoint"><code class="xref py py-obj docutils literal"><span class="pre">isdisjoint</span></code></a>(other)</td>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__isub__.html#abc.WeakSet.__isub__" title="abc.WeakSet.__isub__"><code class="xref py py-obj docutils literal"><span class="pre">__isub__</span></code></a>(other)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.issubset.html#abc.WeakSet.issubset" title="abc.WeakSet.issubset"><code class="xref py py-obj docutils literal"><span class="pre">issubset</span></code></a>(other)</td>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__iter__.html#abc.WeakSet.__iter__" title="abc.WeakSet.__iter__"><code class="xref py py-obj docutils literal"><span class="pre">__iter__</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.issuperset.html#abc.WeakSet.issuperset" title="abc.WeakSet.issuperset"><code class="xref py py-obj docutils literal"><span class="pre">issuperset</span></code></a>(other)</td>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__ixor__.html#abc.WeakSet.__ixor__" title="abc.WeakSet.__ixor__"><code class="xref py py-obj docutils literal"><span class="pre">__ixor__</span></code></a>(other)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.pop.html#abc.WeakSet.pop" title="abc.WeakSet.pop"><code class="xref py py-obj docutils literal"><span class="pre">pop</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__le__.html#abc.WeakSet.__le__" title="abc.WeakSet.__le__"><code class="xref py py-obj docutils literal"><span class="pre">__le__</span></code></a>(other)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.remove.html#abc.WeakSet.remove" title="abc.WeakSet.remove"><code class="xref py py-obj docutils literal"><span class="pre">remove</span></code></a>(item)</td>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__len__.html#abc.WeakSet.__len__" title="abc.WeakSet.__len__"><code class="xref py py-obj docutils literal"><span class="pre">__len__</span></code></a>()</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.symmetric_difference.html#abc.WeakSet.symmetric_difference" title="abc.WeakSet.symmetric_difference"><code class="xref py py-obj docutils literal"><span class="pre">symmetric_difference</span></code></a>(other)</td>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__lt__.html#abc.WeakSet.__lt__" title="abc.WeakSet.__lt__"><code class="xref py py-obj docutils literal"><span class="pre">__lt__</span></code></a>(other)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.symmetric_difference_update.html#abc.WeakSet.symmetric_difference_update" title="abc.WeakSet.symmetric_difference_update"><code class="xref py py-obj docutils literal"><span class="pre">symmetric_difference_update</span></code></a>(other)</td>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__ne__.html#abc.WeakSet.__ne__" title="abc.WeakSet.__ne__"><code class="xref py py-obj docutils literal"><span class="pre">__ne__</span></code></a>(other)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.union.html#abc.WeakSet.union" title="abc.WeakSet.union"><code class="xref py py-obj docutils literal"><span class="pre">union</span></code></a>(other)</td>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__new__.html#abc.WeakSet.__new__" title="abc.WeakSet.__new__"><code class="xref py py-obj docutils literal"><span class="pre">__new__</span></code></a>((S,&nbsp;...)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.update.html#abc.WeakSet.update" title="abc.WeakSet.update"><code class="xref py py-obj docutils literal"><span class="pre">update</span></code></a>(other)</td>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__or__.html#abc.WeakSet.__or__" title="abc.WeakSet.__or__"><code class="xref py py-obj docutils literal"><span class="pre">__or__</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__reduce__.html#abc.WeakSet.__reduce__" title="abc.WeakSet.__reduce__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce__</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__reduce_ex__.html#abc.WeakSet.__reduce_ex__" title="abc.WeakSet.__reduce_ex__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce_ex__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__sizeof__.html#abc.WeakSet.__sizeof__" title="abc.WeakSet.__sizeof__"><code class="xref py py-obj docutils literal"><span class="pre">__sizeof__</span></code></a>(()&nbsp;-&gt;&nbsp;int)</td>
+<td>size of object in memory, in bytes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__sub__.html#abc.WeakSet.__sub__" title="abc.WeakSet.__sub__"><code class="xref py py-obj docutils literal"><span class="pre">__sub__</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.__subclasshook__.html#abc.WeakSet.__subclasshook__" title="abc.WeakSet.__subclasshook__"><code class="xref py py-obj docutils literal"><span class="pre">__subclasshook__</span></code></a></td>
+<td>Abstract classes can override this to customize issubclass().</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.__xor__.html#abc.WeakSet.__xor__" title="abc.WeakSet.__xor__"><code class="xref py py-obj docutils literal"><span class="pre">__xor__</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet._commit_removals.html#abc.WeakSet._commit_removals" title="abc.WeakSet._commit_removals"><code class="xref py py-obj docutils literal"><span class="pre">_commit_removals</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.add.html#abc.WeakSet.add" title="abc.WeakSet.add"><code class="xref py py-obj docutils literal"><span class="pre">add</span></code></a>(item)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.clear.html#abc.WeakSet.clear" title="abc.WeakSet.clear"><code class="xref py py-obj docutils literal"><span class="pre">clear</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.copy.html#abc.WeakSet.copy" title="abc.WeakSet.copy"><code class="xref py py-obj docutils literal"><span class="pre">copy</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.difference.html#abc.WeakSet.difference" title="abc.WeakSet.difference"><code class="xref py py-obj docutils literal"><span class="pre">difference</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.difference_update.html#abc.WeakSet.difference_update" title="abc.WeakSet.difference_update"><code class="xref py py-obj docutils literal"><span class="pre">difference_update</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.discard.html#abc.WeakSet.discard" title="abc.WeakSet.discard"><code class="xref py py-obj docutils literal"><span class="pre">discard</span></code></a>(item)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.intersection.html#abc.WeakSet.intersection" title="abc.WeakSet.intersection"><code class="xref py py-obj docutils literal"><span class="pre">intersection</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.intersection_update.html#abc.WeakSet.intersection_update" title="abc.WeakSet.intersection_update"><code class="xref py py-obj docutils literal"><span class="pre">intersection_update</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.isdisjoint.html#abc.WeakSet.isdisjoint" title="abc.WeakSet.isdisjoint"><code class="xref py py-obj docutils literal"><span class="pre">isdisjoint</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.issubset.html#abc.WeakSet.issubset" title="abc.WeakSet.issubset"><code class="xref py py-obj docutils literal"><span class="pre">issubset</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.issuperset.html#abc.WeakSet.issuperset" title="abc.WeakSet.issuperset"><code class="xref py py-obj docutils literal"><span class="pre">issuperset</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.pop.html#abc.WeakSet.pop" title="abc.WeakSet.pop"><code class="xref py py-obj docutils literal"><span class="pre">pop</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.remove.html#abc.WeakSet.remove" title="abc.WeakSet.remove"><code class="xref py py-obj docutils literal"><span class="pre">remove</span></code></a>(item)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.symmetric_difference.html#abc.WeakSet.symmetric_difference" title="abc.WeakSet.symmetric_difference"><code class="xref py py-obj docutils literal"><span class="pre">symmetric_difference</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.symmetric_difference_update.html#abc.WeakSet.symmetric_difference_update" title="abc.WeakSet.symmetric_difference_update"><code class="xref py py-obj docutils literal"><span class="pre">symmetric_difference_update</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="abc.WeakSet.union.html#abc.WeakSet.union" title="abc.WeakSet.union"><code class="xref py py-obj docutils literal"><span class="pre">union</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="abc.WeakSet.update.html#abc.WeakSet.update" title="abc.WeakSet.update"><code class="xref py py-obj docutils literal"><span class="pre">update</span></code></a>(other)</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-</dd></dl>
-
+</div>
 </div>
 
 
@@ -260,10 +311,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="abc.WeakSet.add.html" class="btn btn-neutral float-right" title="3.5.4.2.2.1. abc.WeakSet.add" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="abc.WeakSet.__and__.html" class="btn btn-neutral float-right" title="abc.WeakSet.__and__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="abc.ABCMeta.register.html" class="btn btn-neutral" title="3.5.4.2.1.2. abc.ABCMeta.register" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="abc.ABCMeta.register.html" class="btn btn-neutral" title="abc.ABCMeta.register" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -294,7 +345,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -303,6 +354,7 @@
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

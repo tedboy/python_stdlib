@@ -1,0 +1,66 @@
+:mod:`threading`
+================
+
+.. automodule:: threading
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      BoundedSemaphore
+      Condition
+      Event
+      Lock
+      RLock
+      Semaphore
+      Timer
+      activeCount
+      active_count
+      currentThread
+      current_thread
+      enumerate
+      setprofile
+      settrace
+      stack_size
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Thread
+      local
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/threading.Thread
+       generated/threading.local
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      ThreadError
+   
+   

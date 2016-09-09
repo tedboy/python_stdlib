@@ -1,9 +1,7 @@
-Tkinter.Entry
-=============
-
+:class:`Tkinter.Entry`
+======================
 .. currentmodule:: Tkinter
 .. autoclass:: Entry
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Entry._Misc__winfo_getint
+   ~Entry._Misc__winfo_parseitem
+   ~Entry.__contains__
+   ~Entry.__getitem__
    ~Entry.__init__
+   ~Entry.__setitem__
+   ~Entry.__str__
+   ~Entry._bind
+   ~Entry._configure
+   ~Entry._displayof
+   ~Entry._do
+   ~Entry._getboolean
+   ~Entry._getconfigure
+   ~Entry._getconfigure1
+   ~Entry._getdoubles
+   ~Entry._getints
+   ~Entry._grid_configure
+   ~Entry._gridconvvalue
+   ~Entry._nametowidget
+   ~Entry._options
+   ~Entry._register
+   ~Entry._report_exception
+   ~Entry._root
+   ~Entry._setup
+   ~Entry._substitute
    ~Entry.after
    ~Entry.after_cancel
    ~Entry.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Entry.bind_class
    ~Entry.bindtags
    ~Entry.cget
+   ~Entry.check
    ~Entry.clipboard_append
    ~Entry.clipboard_clear
    ~Entry.clipboard_get
@@ -45,6 +68,7 @@ Methods
    ~Entry.focus_lastfor
    ~Entry.focus_set
    ~Entry.forget
+   ~Entry.form
    ~Entry.get
    ~Entry.getboolean
    ~Entry.getvar

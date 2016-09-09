@@ -1,0 +1,52 @@
+:class:`io.IOBase`
+==================
+.. currentmodule:: io
+.. autoclass:: IOBase
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~IOBase.__enter__
+   ~IOBase.__exit__
+   ~IOBase.__format__
+   ~IOBase.__new__
+   ~IOBase.__reduce__
+   ~IOBase.__reduce_ex__
+   ~IOBase.__sizeof__
+   ~IOBase.__subclasshook__
+   ~IOBase._checkClosed
+   ~IOBase._checkReadable
+   ~IOBase._checkSeekable
+   ~IOBase._checkWritable
+   ~IOBase.close
+   ~IOBase.fileno
+   ~IOBase.flush
+   ~IOBase.isatty
+   ~IOBase.readable
+   ~IOBase.readline
+   ~IOBase.readlines
+   ~IOBase.seek
+   ~IOBase.seekable
+   ~IOBase.tell
+   ~IOBase.truncate
+   ~IOBase.writable
+   ~IOBase.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~IOBase.closed
+   ~IOBase.next
+

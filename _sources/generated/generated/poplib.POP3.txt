@@ -1,0 +1,49 @@
+:class:`poplib.POP3`
+====================
+.. currentmodule:: poplib
+.. autoclass:: POP3
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~POP3.__init__
+   ~POP3._getline
+   ~POP3._getlongresp
+   ~POP3._getresp
+   ~POP3._longcmd
+   ~POP3._putcmd
+   ~POP3._putline
+   ~POP3._shortcmd
+   ~POP3.apop
+   ~POP3.dele
+   ~POP3.getwelcome
+   ~POP3.list
+   ~POP3.noop
+   ~POP3.pass_
+   ~POP3.quit
+   ~POP3.retr
+   ~POP3.rpop
+   ~POP3.rset
+   ~POP3.set_debuglevel
+   ~POP3.stat
+   ~POP3.top
+   ~POP3.uidl
+   ~POP3.user
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~POP3.timestamp
+

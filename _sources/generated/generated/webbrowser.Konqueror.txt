@@ -1,9 +1,7 @@
-webbrowser.Konqueror
-====================
-
+:class:`webbrowser.Konqueror`
+=============================
 .. currentmodule:: webbrowser
 .. autoclass:: Konqueror
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,13 @@ Methods
    :toctree:
 
 
+   ~Konqueror.__format__
    ~Konqueror.__init__
+   ~Konqueror.__new__
+   ~Konqueror.__reduce__
+   ~Konqueror.__reduce_ex__
+   ~Konqueror.__sizeof__
+   ~Konqueror.__subclasshook__
    ~Konqueror.open
    ~Konqueror.open_new
    ~Konqueror.open_new_tab

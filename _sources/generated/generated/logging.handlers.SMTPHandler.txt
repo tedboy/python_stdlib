@@ -1,0 +1,50 @@
+:class:`logging.handlers.SMTPHandler`
+=====================================
+.. currentmodule:: logging.handlers
+.. autoclass:: SMTPHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SMTPHandler.__format__
+   ~SMTPHandler.__init__
+   ~SMTPHandler.__new__
+   ~SMTPHandler.__reduce__
+   ~SMTPHandler.__reduce_ex__
+   ~SMTPHandler.__sizeof__
+   ~SMTPHandler.__subclasshook__
+   ~SMTPHandler.acquire
+   ~SMTPHandler.addFilter
+   ~SMTPHandler.close
+   ~SMTPHandler.createLock
+   ~SMTPHandler.emit
+   ~SMTPHandler.filter
+   ~SMTPHandler.flush
+   ~SMTPHandler.format
+   ~SMTPHandler.getSubject
+   ~SMTPHandler.get_name
+   ~SMTPHandler.handle
+   ~SMTPHandler.handleError
+   ~SMTPHandler.release
+   ~SMTPHandler.removeFilter
+   ~SMTPHandler.setFormatter
+   ~SMTPHandler.setLevel
+   ~SMTPHandler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SMTPHandler.name
+

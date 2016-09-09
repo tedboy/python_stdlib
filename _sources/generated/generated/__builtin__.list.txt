@@ -1,9 +1,7 @@
-__builtin__.list
-================
-
+:class:`__builtin__.list`
+=========================
 .. currentmodule:: __builtin__
 .. autoclass:: list
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,14 @@ Methods
    :toctree:
 
 
+   ~list.__format__
+   ~list.__getitem__
+   ~list.__new__
+   ~list.__reduce__
+   ~list.__reduce_ex__
+   ~list.__reversed__
+   ~list.__sizeof__
+   ~list.__subclasshook__
    ~list.append
    ~list.count
    ~list.extend

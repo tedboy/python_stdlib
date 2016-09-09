@@ -1,0 +1,61 @@
+:class:`io.BufferedReader`
+==========================
+.. currentmodule:: io
+.. autoclass:: BufferedReader
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BufferedReader.__enter__
+   ~BufferedReader.__exit__
+   ~BufferedReader.__format__
+   ~BufferedReader.__new__
+   ~BufferedReader.__reduce__
+   ~BufferedReader.__reduce_ex__
+   ~BufferedReader.__sizeof__
+   ~BufferedReader.__subclasshook__
+   ~BufferedReader._checkClosed
+   ~BufferedReader._checkReadable
+   ~BufferedReader._checkSeekable
+   ~BufferedReader._checkWritable
+   ~BufferedReader.close
+   ~BufferedReader.detach
+   ~BufferedReader.fileno
+   ~BufferedReader.flush
+   ~BufferedReader.isatty
+   ~BufferedReader.peek
+   ~BufferedReader.read
+   ~BufferedReader.read1
+   ~BufferedReader.readable
+   ~BufferedReader.readinto
+   ~BufferedReader.readline
+   ~BufferedReader.readlines
+   ~BufferedReader.seek
+   ~BufferedReader.seekable
+   ~BufferedReader.tell
+   ~BufferedReader.truncate
+   ~BufferedReader.writable
+   ~BufferedReader.write
+   ~BufferedReader.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~BufferedReader.closed
+   ~BufferedReader.mode
+   ~BufferedReader.name
+   ~BufferedReader.next
+   ~BufferedReader.raw
+

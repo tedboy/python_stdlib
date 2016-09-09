@@ -1,9 +1,7 @@
-contextlib.closing
-==================
-
+:class:`contextlib.closing`
+===========================
 .. currentmodule:: contextlib
 .. autoclass:: closing
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,15 @@ Methods
    :toctree:
 
 
+   ~closing.__enter__
+   ~closing.__exit__
+   ~closing.__format__
    ~closing.__init__
+   ~closing.__new__
+   ~closing.__reduce__
+   ~closing.__reduce_ex__
+   ~closing.__sizeof__
+   ~closing.__subclasshook__
 
 
 

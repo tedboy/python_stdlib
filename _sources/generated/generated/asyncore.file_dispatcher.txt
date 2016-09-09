@@ -1,0 +1,64 @@
+:class:`asyncore.file_dispatcher`
+=================================
+.. currentmodule:: asyncore
+.. autoclass:: file_dispatcher
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~file_dispatcher.__getattr__
+   ~file_dispatcher.__init__
+   ~file_dispatcher.__repr__
+   ~file_dispatcher.__str__
+   ~file_dispatcher.accept
+   ~file_dispatcher.add_channel
+   ~file_dispatcher.bind
+   ~file_dispatcher.close
+   ~file_dispatcher.connect
+   ~file_dispatcher.create_socket
+   ~file_dispatcher.del_channel
+   ~file_dispatcher.handle_accept
+   ~file_dispatcher.handle_close
+   ~file_dispatcher.handle_connect
+   ~file_dispatcher.handle_connect_event
+   ~file_dispatcher.handle_error
+   ~file_dispatcher.handle_expt
+   ~file_dispatcher.handle_expt_event
+   ~file_dispatcher.handle_read
+   ~file_dispatcher.handle_read_event
+   ~file_dispatcher.handle_write
+   ~file_dispatcher.handle_write_event
+   ~file_dispatcher.listen
+   ~file_dispatcher.log
+   ~file_dispatcher.log_info
+   ~file_dispatcher.readable
+   ~file_dispatcher.recv
+   ~file_dispatcher.send
+   ~file_dispatcher.set_file
+   ~file_dispatcher.set_reuse_addr
+   ~file_dispatcher.set_socket
+   ~file_dispatcher.writable
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~file_dispatcher.accepting
+   ~file_dispatcher.addr
+   ~file_dispatcher.closing
+   ~file_dispatcher.connected
+   ~file_dispatcher.connecting
+   ~file_dispatcher.debug
+   ~file_dispatcher.ignore_log_types
+

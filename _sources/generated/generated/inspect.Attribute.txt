@@ -1,9 +1,7 @@
-inspect.Attribute
-=================
-
+:class:`inspect.Attribute`
+==========================
 .. currentmodule:: inspect
 .. autoclass:: Attribute
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,18 @@ Methods
    :toctree:
 
 
+   ~Attribute.__format__
+   ~Attribute.__getnewargs__
+   ~Attribute.__getstate__
+   ~Attribute.__new__
+   ~Attribute.__reduce__
+   ~Attribute.__reduce_ex__
+   ~Attribute.__repr__
+   ~Attribute.__sizeof__
+   ~Attribute.__subclasshook__
+   ~Attribute._asdict
+   ~Attribute._make
+   ~Attribute._replace
    ~Attribute.count
    ~Attribute.index
 

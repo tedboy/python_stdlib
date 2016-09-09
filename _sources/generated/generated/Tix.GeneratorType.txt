@@ -1,0 +1,38 @@
+:class:`Tix.GeneratorType`
+==========================
+.. currentmodule:: Tix
+.. autoclass:: GeneratorType
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~GeneratorType.__format__
+   ~GeneratorType.__new__
+   ~GeneratorType.__reduce__
+   ~GeneratorType.__reduce_ex__
+   ~GeneratorType.__sizeof__
+   ~GeneratorType.__subclasshook__
+   ~GeneratorType.close
+   ~GeneratorType.send
+   ~GeneratorType.throw
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~GeneratorType.gi_code
+   ~GeneratorType.gi_frame
+   ~GeneratorType.gi_running
+   ~GeneratorType.next
+

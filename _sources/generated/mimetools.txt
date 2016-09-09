@@ -1,0 +1,52 @@
+:mod:`mimetools`
+================
+
+.. automodule:: mimetools
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      choose_boundary
+      copybinary
+      copyliteral
+      decode
+      encode
+      filterwarnings
+      pipethrough
+      pipeto
+      warnpy3k
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Message
+      catch_warnings
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/mimetools.Message
+       generated/mimetools.catch_warnings
+
+   
+   
+
+   
+   
+   

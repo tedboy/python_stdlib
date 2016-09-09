@@ -1,9 +1,7 @@
-urllib2.HTTPDigestAuthHandler
-=============================
-
+:class:`urllib2.HTTPDigestAuthHandler`
+======================================
 .. currentmodule:: urllib2
 .. autoclass:: HTTPDigestAuthHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~HTTPDigestAuthHandler.__init__
+   ~HTTPDigestAuthHandler.__lt__
    ~HTTPDigestAuthHandler.add_parent
    ~HTTPDigestAuthHandler.close
    ~HTTPDigestAuthHandler.get_algorithm_impls

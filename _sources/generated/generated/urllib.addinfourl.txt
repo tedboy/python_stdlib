@@ -1,9 +1,7 @@
-urllib.addinfourl
-=================
-
+:class:`urllib.addinfourl`
+==========================
 .. currentmodule:: urllib
 .. autoclass:: addinfourl
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~addinfourl.__init__
+   ~addinfourl.__repr__
    ~addinfourl.close
    ~addinfourl.getcode
    ~addinfourl.geturl

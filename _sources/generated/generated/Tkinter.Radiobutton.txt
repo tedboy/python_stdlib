@@ -1,9 +1,7 @@
-Tkinter.Radiobutton
-===================
-
+:class:`Tkinter.Radiobutton`
+============================
 .. currentmodule:: Tkinter
 .. autoclass:: Radiobutton
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Radiobutton._Misc__winfo_getint
+   ~Radiobutton._Misc__winfo_parseitem
+   ~Radiobutton.__contains__
+   ~Radiobutton.__getitem__
    ~Radiobutton.__init__
+   ~Radiobutton.__setitem__
+   ~Radiobutton.__str__
+   ~Radiobutton._bind
+   ~Radiobutton._configure
+   ~Radiobutton._displayof
+   ~Radiobutton._do
+   ~Radiobutton._getboolean
+   ~Radiobutton._getconfigure
+   ~Radiobutton._getconfigure1
+   ~Radiobutton._getdoubles
+   ~Radiobutton._getints
+   ~Radiobutton._grid_configure
+   ~Radiobutton._gridconvvalue
+   ~Radiobutton._nametowidget
+   ~Radiobutton._options
+   ~Radiobutton._register
+   ~Radiobutton._report_exception
+   ~Radiobutton._root
+   ~Radiobutton._setup
+   ~Radiobutton._substitute
    ~Radiobutton.after
    ~Radiobutton.after_cancel
    ~Radiobutton.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Radiobutton.bind_class
    ~Radiobutton.bindtags
    ~Radiobutton.cget
+   ~Radiobutton.check
    ~Radiobutton.clipboard_append
    ~Radiobutton.clipboard_clear
    ~Radiobutton.clipboard_get
@@ -46,6 +69,7 @@ Methods
    ~Radiobutton.focus_lastfor
    ~Radiobutton.focus_set
    ~Radiobutton.forget
+   ~Radiobutton.form
    ~Radiobutton.getboolean
    ~Radiobutton.getvar
    ~Radiobutton.grab_current

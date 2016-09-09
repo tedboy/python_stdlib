@@ -1,0 +1,51 @@
+:class:`ConfigParser.ConfigParser`
+==================================
+.. currentmodule:: ConfigParser
+.. autoclass:: ConfigParser
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~ConfigParser.__init__
+   ~ConfigParser._get
+   ~ConfigParser._interpolate
+   ~ConfigParser._interpolation_replace
+   ~ConfigParser._read
+   ~ConfigParser.add_section
+   ~ConfigParser.defaults
+   ~ConfigParser.get
+   ~ConfigParser.getboolean
+   ~ConfigParser.getfloat
+   ~ConfigParser.getint
+   ~ConfigParser.has_option
+   ~ConfigParser.has_section
+   ~ConfigParser.items
+   ~ConfigParser.options
+   ~ConfigParser.optionxform
+   ~ConfigParser.read
+   ~ConfigParser.readfp
+   ~ConfigParser.remove_option
+   ~ConfigParser.remove_section
+   ~ConfigParser.sections
+   ~ConfigParser.set
+   ~ConfigParser.write
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~ConfigParser.OPTCRE
+   ~ConfigParser.OPTCRE_NV
+   ~ConfigParser.SECTCRE
+

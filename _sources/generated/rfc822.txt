@@ -1,0 +1,54 @@
+:mod:`rfc822`
+=============
+
+.. automodule:: rfc822
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      dump_address_pair
+      formatdate
+      mktime_tz
+      parseaddr
+      parsedate
+      parsedate_tz
+      quote
+      unquote
+      warnpy3k
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      AddressList
+      AddrlistClass
+      Message
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/rfc822.AddressList
+       generated/rfc822.AddrlistClass
+       generated/rfc822.Message
+
+   
+   
+
+   
+   
+   

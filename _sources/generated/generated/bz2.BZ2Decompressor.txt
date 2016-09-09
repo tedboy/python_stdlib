@@ -1,9 +1,7 @@
-bz2.BZ2Decompressor
-===================
-
+:class:`bz2.BZ2Decompressor`
+============================
 .. currentmodule:: bz2
 .. autoclass:: BZ2Decompressor
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~BZ2Decompressor.__format__
+   ~BZ2Decompressor.__new__
+   ~BZ2Decompressor.__reduce__
+   ~BZ2Decompressor.__reduce_ex__
+   ~BZ2Decompressor.__sizeof__
+   ~BZ2Decompressor.__subclasshook__
    ~BZ2Decompressor.decompress
 
 

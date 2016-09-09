@@ -1,9 +1,7 @@
-__builtin__.complex
-===================
-
+:class:`__builtin__.complex`
+============================
 .. currentmodule:: __builtin__
 .. autoclass:: complex
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,13 @@ Methods
    :toctree:
 
 
+   ~complex.__format__
+   ~complex.__getnewargs__
+   ~complex.__new__
+   ~complex.__reduce__
+   ~complex.__reduce_ex__
+   ~complex.__sizeof__
+   ~complex.__subclasshook__
    ~complex.conjugate
 
 

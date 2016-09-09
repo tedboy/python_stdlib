@@ -1,0 +1,66 @@
+:mod:`smtplib`
+==============
+
+.. automodule:: smtplib
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      encode_base64
+      quoteaddr
+      quotedata
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      LMTP
+      SMTP
+      SMTP_SSL
+      SSLFakeFile
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/smtplib.LMTP
+       generated/smtplib.SMTP
+       generated/smtplib.SMTP_SSL
+       generated/smtplib.SSLFakeFile
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      SMTPAuthenticationError
+      SMTPConnectError
+      SMTPDataError
+      SMTPException
+      SMTPHeloError
+      SMTPRecipientsRefused
+      SMTPResponseException
+      SMTPSenderRefused
+      SMTPServerDisconnected
+   
+   

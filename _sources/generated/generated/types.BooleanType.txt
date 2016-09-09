@@ -1,19 +1,24 @@
-types.BooleanType
-=================
-
+:class:`types.BooleanType`
+==========================
 .. currentmodule:: types
-
-:func:`BooleanType.__init__`
-
 .. autoclass:: BooleanType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~BooleanType.__format__
+   ~BooleanType.__getnewargs__
+   ~BooleanType.__new__
+   ~BooleanType.__reduce__
+   ~BooleanType.__reduce_ex__
+   ~BooleanType.__sizeof__
+   ~BooleanType.__subclasshook__
+   ~BooleanType.__trunc__
    ~BooleanType.bit_length
    ~BooleanType.conjugate
 
@@ -21,11 +26,10 @@ types.BooleanType
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~BooleanType.denominator

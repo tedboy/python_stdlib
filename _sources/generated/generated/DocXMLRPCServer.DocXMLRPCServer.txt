@@ -1,0 +1,61 @@
+:class:`DocXMLRPCServer.DocXMLRPCServer`
+========================================
+.. currentmodule:: DocXMLRPCServer
+.. autoclass:: DocXMLRPCServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~DocXMLRPCServer.__init__
+   ~DocXMLRPCServer._dispatch
+   ~DocXMLRPCServer._handle_request_noblock
+   ~DocXMLRPCServer._marshaled_dispatch
+   ~DocXMLRPCServer.close_request
+   ~DocXMLRPCServer.fileno
+   ~DocXMLRPCServer.finish_request
+   ~DocXMLRPCServer.generate_html_documentation
+   ~DocXMLRPCServer.get_request
+   ~DocXMLRPCServer.handle_error
+   ~DocXMLRPCServer.handle_request
+   ~DocXMLRPCServer.handle_timeout
+   ~DocXMLRPCServer.process_request
+   ~DocXMLRPCServer.register_function
+   ~DocXMLRPCServer.register_instance
+   ~DocXMLRPCServer.register_introspection_functions
+   ~DocXMLRPCServer.register_multicall_functions
+   ~DocXMLRPCServer.serve_forever
+   ~DocXMLRPCServer.server_activate
+   ~DocXMLRPCServer.server_bind
+   ~DocXMLRPCServer.server_close
+   ~DocXMLRPCServer.set_server_documentation
+   ~DocXMLRPCServer.set_server_name
+   ~DocXMLRPCServer.set_server_title
+   ~DocXMLRPCServer.shutdown
+   ~DocXMLRPCServer.shutdown_request
+   ~DocXMLRPCServer.system_listMethods
+   ~DocXMLRPCServer.system_methodHelp
+   ~DocXMLRPCServer.system_methodSignature
+   ~DocXMLRPCServer.system_multicall
+   ~DocXMLRPCServer.verify_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~DocXMLRPCServer.address_family
+   ~DocXMLRPCServer.allow_reuse_address
+   ~DocXMLRPCServer.request_queue_size
+   ~DocXMLRPCServer.socket_type
+   ~DocXMLRPCServer.timeout
+

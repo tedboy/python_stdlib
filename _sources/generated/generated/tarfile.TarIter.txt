@@ -1,9 +1,7 @@
-tarfile.TarIter
-===============
-
+:class:`tarfile.TarIter`
+========================
 .. currentmodule:: tarfile
 .. autoclass:: TarIter
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~TarIter.__init__
+   ~TarIter.__iter__
    ~TarIter.next
 
 

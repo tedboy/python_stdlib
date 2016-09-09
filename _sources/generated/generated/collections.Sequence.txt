@@ -1,19 +1,27 @@
-collections.Sequence
-====================
-
+:class:`collections.Sequence`
+=============================
 .. currentmodule:: collections
-
-:func:`Sequence.__init__`
-
 .. autoclass:: Sequence
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~Sequence.__contains__
+   ~Sequence.__format__
+   ~Sequence.__getitem__
+   ~Sequence.__iter__
+   ~Sequence.__len__
+   ~Sequence.__new__
+   ~Sequence.__reduce__
+   ~Sequence.__reduce_ex__
+   ~Sequence.__reversed__
+   ~Sequence.__sizeof__
+   ~Sequence.__subclasshook__
    ~Sequence.count
    ~Sequence.index
 

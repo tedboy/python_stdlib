@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.6. pdb &mdash; My Project v1</title>
+  <title>pdb &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../_static/py.png"/>
   
 
   
@@ -30,10 +32,10 @@
   
 
   
-    <link rel="top" title="My Project v1" href="../index.html"/>
-        <link rel="up" title="2. Somewhat frequently used" href="../main2.html"/>
-        <link rel="next" title="2.6.1.1. pdb.find_function" href="pdb.find_function.html"/>
-        <link rel="prev" title="2.5.1.40. math.trunc" href="math.trunc.html"/> 
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="API: 26 - 30" href="../api_26to30.html"/>
+        <link rel="next" title="pdb.Pdb" href="generated/pdb.Pdb.html"/>
+        <link rel="prev" title="bdb.BdbQuit" href="bdb.BdbQuit.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -52,7 +54,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> My Project
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
           
 
           
@@ -60,10 +62,6 @@
 
           
             
-            
-              <div class="version">
-                1
-              </div>
             
           
 
@@ -84,51 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="collections.html">2.1. collections</a></li>
-<li class="toctree-l2"><a class="reference internal" href="datetime.html">2.2. datetime</a></li>
-<li class="toctree-l2"><a class="reference internal" href="glob.html">2.3. glob</a></li>
-<li class="toctree-l2"><a class="reference internal" href="itertools.html">2.4. itertools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="math.html">2.5. math</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">2.6. pdb</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#functions">2.6.1. Functions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="pdb.find_function.html">2.6.1.1. pdb.find_function</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pdb.help.html">2.6.1.2. pdb.help</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pdb.main.html">2.6.1.3. pdb.main</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pdb.pm.html">2.6.1.4. pdb.pm</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pdb.post_mortem.html">2.6.1.5. pdb.post_mortem</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pdb.run.html">2.6.1.6. pdb.run</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pdb.runcall.html">2.6.1.7. pdb.runcall</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pdb.runctx.html">2.6.1.8. pdb.runctx</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pdb.runeval.html">2.6.1.9. pdb.runeval</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pdb.set_trace.html">2.6.1.10. pdb.set_trace</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pdb.test.html">2.6.1.11. pdb.test</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#classes">2.6.2. Classes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/pdb.Pdb.html">2.6.2.1. pdb.Pdb</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#exceptions">2.6.3. Exceptions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="pdb.Restart.html">2.6.3.1. pdb.Restart</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="pprint.html">2.7. pprint</a></li>
-<li class="toctree-l2"><a class="reference internal" href="random.html">2.8. random</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sqlite3.html">2.9. sqlite3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="subprocess.html">2.10. subprocess</a></li>
-<li class="toctree-l2"><a class="reference internal" href="time.html">2.11. time</a></li>
-<li class="toctree-l2"><a class="reference internal" href="timeit.html">2.12. timeit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Tkinter.html">2.13. Tkinter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="types.html">2.14. types</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -143,7 +110,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">My Project</a>
+          <a href="../index.html">Python Standard Library</a>
         
       </nav>
 
@@ -170,9 +137,9 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../main2.html">2. Somewhat frequently used</a> &raquo;</li>
+          <li><a href="../api_26to30.html">API: 26 - 30</a> &raquo;</li>
         
-      <li>2.6. pdb</li>
+      <li><code class="docutils literal"><span class="pre">pdb</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -190,54 +157,13 @@
            <div itemprop="articleBody">
             
   <div class="section" id="module-pdb">
-<span id="pdb"></span><h1>2.6. pdb<a class="headerlink" href="#module-pdb" title="Permalink to this headline">¶</a></h1>
+<span id="pdb"></span><h1><a class="reference internal" href="#module-pdb" title="pdb"><code class="xref py py-mod docutils literal"><span class="pre">pdb</span></code></a><a class="headerlink" href="#module-pdb" title="Permalink to this headline">¶</a></h1>
 <p>A Python debugger.</p>
 <div class="section" id="functions">
-<h2>2.6.1. Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="pdb.find_function.html#pdb.find_function" title="pdb.find_function"><code class="xref py py-obj docutils literal"><span class="pre">find_function</span></code></a>(funcname,&nbsp;filename)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.help.html#pdb.help" title="pdb.help"><code class="xref py py-obj docutils literal"><span class="pre">help</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.main.html#pdb.main" title="pdb.main"><code class="xref py py-obj docutils literal"><span class="pre">main</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.pm.html#pdb.pm" title="pdb.pm"><code class="xref py py-obj docutils literal"><span class="pre">pm</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.post_mortem.html#pdb.post_mortem" title="pdb.post_mortem"><code class="xref py py-obj docutils literal"><span class="pre">post_mortem</span></code></a>([t])</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.run.html#pdb.run" title="pdb.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>(statement[,&nbsp;globals,&nbsp;locals])</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.runcall.html#pdb.runcall" title="pdb.runcall"><code class="xref py py-obj docutils literal"><span class="pre">runcall</span></code></a>(*args,&nbsp;**kwds)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.runctx.html#pdb.runctx" title="pdb.runctx"><code class="xref py py-obj docutils literal"><span class="pre">runctx</span></code></a>(statement,&nbsp;globals,&nbsp;locals)</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.runeval.html#pdb.runeval" title="pdb.runeval"><code class="xref py py-obj docutils literal"><span class="pre">runeval</span></code></a>(expression[,&nbsp;globals,&nbsp;locals])</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="pdb.set_trace.html#pdb.set_trace" title="pdb.set_trace"><code class="xref py py-obj docutils literal"><span class="pre">set_trace</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="pdb.test.html#pdb.test" title="pdb.test"><code class="xref py py-obj docutils literal"><span class="pre">test</span></code></a>()</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="classes">
-<h2>2.6.2. Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -247,13 +173,16 @@
 <tr class="row-odd"><td><a class="reference internal" href="generated/pdb.Pdb.html#pdb.Pdb" title="pdb.Pdb"><code class="xref py py-obj docutils literal"><span class="pre">Pdb</span></code></a>([completekey,&nbsp;stdin,&nbsp;stdout,&nbsp;skip])</td>
 <td></td>
 </tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pdb.Repr.html#pdb.Repr" title="pdb.Repr"><code class="xref py py-obj docutils literal"><span class="pre">Repr</span></code></a>()</td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <div class="toctree-wrapper compound">
 </div>
 </div>
 <div class="section" id="exceptions">
-<h2>2.6.3. Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -275,10 +204,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pdb.find_function.html" class="btn btn-neutral float-right" title="2.6.1.1. pdb.find_function" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/pdb.Pdb.html" class="btn btn-neutral float-right" title="pdb.Pdb" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="math.trunc.html" class="btn btn-neutral" title="2.5.1.40. math.trunc" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="bdb.BdbQuit.html" class="btn btn-neutral" title="bdb.BdbQuit" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -309,7 +238,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -318,6 +247,7 @@
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

@@ -1,9 +1,7 @@
-pdb.Pdb
-=======
-
+:class:`pdb.Pdb`
+================
 .. currentmodule:: pdb
 .. autoclass:: Pdb
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,10 @@ Methods
 
 
    ~Pdb.__init__
+   ~Pdb._getval
+   ~Pdb._prune_breaks
+   ~Pdb._runscript
+   ~Pdb._set_stopinfo
    ~Pdb.bp_commands
    ~Pdb.break_anywhere
    ~Pdb.break_here

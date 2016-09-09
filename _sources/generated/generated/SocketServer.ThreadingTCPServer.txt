@@ -1,0 +1,49 @@
+:class:`SocketServer.ThreadingTCPServer`
+========================================
+.. currentmodule:: SocketServer
+.. autoclass:: ThreadingTCPServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~ThreadingTCPServer.__init__
+   ~ThreadingTCPServer._handle_request_noblock
+   ~ThreadingTCPServer.close_request
+   ~ThreadingTCPServer.fileno
+   ~ThreadingTCPServer.finish_request
+   ~ThreadingTCPServer.get_request
+   ~ThreadingTCPServer.handle_error
+   ~ThreadingTCPServer.handle_request
+   ~ThreadingTCPServer.handle_timeout
+   ~ThreadingTCPServer.process_request
+   ~ThreadingTCPServer.process_request_thread
+   ~ThreadingTCPServer.serve_forever
+   ~ThreadingTCPServer.server_activate
+   ~ThreadingTCPServer.server_bind
+   ~ThreadingTCPServer.server_close
+   ~ThreadingTCPServer.shutdown
+   ~ThreadingTCPServer.shutdown_request
+   ~ThreadingTCPServer.verify_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~ThreadingTCPServer.address_family
+   ~ThreadingTCPServer.allow_reuse_address
+   ~ThreadingTCPServer.daemon_threads
+   ~ThreadingTCPServer.request_queue_size
+   ~ThreadingTCPServer.socket_type
+   ~ThreadingTCPServer.timeout
+

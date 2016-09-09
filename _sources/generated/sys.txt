@@ -1,5 +1,5 @@
-sys
-===
+:mod:`sys`
+==========
 
 .. automodule:: sys
 
@@ -9,7 +9,8 @@ sys
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       call_tracing
       callstats
@@ -18,6 +19,7 @@ sys
       exc_info
       excepthook
       exit
+      exitfunc
       getcheckinterval
       getdefaultencoding
       getdlopenflags
@@ -40,5 +42,13 @@ sys
    
 
    
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      exc_type
    
    

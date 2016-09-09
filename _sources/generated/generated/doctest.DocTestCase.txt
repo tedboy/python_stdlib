@@ -1,9 +1,7 @@
-doctest.DocTestCase
-===================
-
+:class:`doctest.DocTestCase`
+============================
 .. currentmodule:: doctest
 .. autoclass:: DocTestCase
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,25 @@ Methods
    :toctree:
 
 
+   ~DocTestCase.__call__
+   ~DocTestCase.__eq__
+   ~DocTestCase.__format__
+   ~DocTestCase.__hash__
    ~DocTestCase.__init__
+   ~DocTestCase.__ne__
+   ~DocTestCase.__new__
+   ~DocTestCase.__reduce__
+   ~DocTestCase.__reduce_ex__
+   ~DocTestCase.__repr__
+   ~DocTestCase.__sizeof__
+   ~DocTestCase.__str__
+   ~DocTestCase.__subclasshook__
+   ~DocTestCase._addSkip
+   ~DocTestCase._baseAssertEqual
+   ~DocTestCase._deprecate
+   ~DocTestCase._formatMessage
+   ~DocTestCase._getAssertEqualityFunc
+   ~DocTestCase._truncateMessage
    ~DocTestCase.addCleanup
    ~DocTestCase.addTypeEqualityFunc
    ~DocTestCase.assertAlmostEqual

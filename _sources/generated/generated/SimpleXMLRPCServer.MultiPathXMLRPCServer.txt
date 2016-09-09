@@ -1,0 +1,59 @@
+:class:`SimpleXMLRPCServer.MultiPathXMLRPCServer`
+=================================================
+.. currentmodule:: SimpleXMLRPCServer
+.. autoclass:: MultiPathXMLRPCServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~MultiPathXMLRPCServer.__init__
+   ~MultiPathXMLRPCServer._dispatch
+   ~MultiPathXMLRPCServer._handle_request_noblock
+   ~MultiPathXMLRPCServer._marshaled_dispatch
+   ~MultiPathXMLRPCServer.add_dispatcher
+   ~MultiPathXMLRPCServer.close_request
+   ~MultiPathXMLRPCServer.fileno
+   ~MultiPathXMLRPCServer.finish_request
+   ~MultiPathXMLRPCServer.get_dispatcher
+   ~MultiPathXMLRPCServer.get_request
+   ~MultiPathXMLRPCServer.handle_error
+   ~MultiPathXMLRPCServer.handle_request
+   ~MultiPathXMLRPCServer.handle_timeout
+   ~MultiPathXMLRPCServer.process_request
+   ~MultiPathXMLRPCServer.register_function
+   ~MultiPathXMLRPCServer.register_instance
+   ~MultiPathXMLRPCServer.register_introspection_functions
+   ~MultiPathXMLRPCServer.register_multicall_functions
+   ~MultiPathXMLRPCServer.serve_forever
+   ~MultiPathXMLRPCServer.server_activate
+   ~MultiPathXMLRPCServer.server_bind
+   ~MultiPathXMLRPCServer.server_close
+   ~MultiPathXMLRPCServer.shutdown
+   ~MultiPathXMLRPCServer.shutdown_request
+   ~MultiPathXMLRPCServer.system_listMethods
+   ~MultiPathXMLRPCServer.system_methodHelp
+   ~MultiPathXMLRPCServer.system_methodSignature
+   ~MultiPathXMLRPCServer.system_multicall
+   ~MultiPathXMLRPCServer.verify_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~MultiPathXMLRPCServer.address_family
+   ~MultiPathXMLRPCServer.allow_reuse_address
+   ~MultiPathXMLRPCServer.request_queue_size
+   ~MultiPathXMLRPCServer.socket_type
+   ~MultiPathXMLRPCServer.timeout
+

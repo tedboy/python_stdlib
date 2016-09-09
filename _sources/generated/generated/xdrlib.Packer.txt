@@ -1,0 +1,38 @@
+:class:`xdrlib.Packer`
+======================
+.. currentmodule:: xdrlib
+.. autoclass:: Packer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Packer.__init__
+   ~Packer.get_buf
+   ~Packer.get_buffer
+   ~Packer.pack_array
+   ~Packer.pack_bool
+   ~Packer.pack_bytes
+   ~Packer.pack_double
+   ~Packer.pack_enum
+   ~Packer.pack_farray
+   ~Packer.pack_float
+   ~Packer.pack_fopaque
+   ~Packer.pack_fstring
+   ~Packer.pack_hyper
+   ~Packer.pack_int
+   ~Packer.pack_list
+   ~Packer.pack_opaque
+   ~Packer.pack_string
+   ~Packer.pack_uhyper
+   ~Packer.pack_uint
+   ~Packer.reset
+
+
+
+
+

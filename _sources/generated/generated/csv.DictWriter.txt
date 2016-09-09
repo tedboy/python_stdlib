@@ -1,9 +1,7 @@
-csv.DictWriter
-==============
-
+:class:`csv.DictWriter`
+=======================
 .. currentmodule:: csv
 .. autoclass:: DictWriter
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~DictWriter.__init__
+   ~DictWriter._dict_to_list
    ~DictWriter.writeheader
    ~DictWriter.writerow
    ~DictWriter.writerows

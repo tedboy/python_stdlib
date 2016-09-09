@@ -1,0 +1,52 @@
+:class:`logging.handlers.NTEventLogHandler`
+===========================================
+.. currentmodule:: logging.handlers
+.. autoclass:: NTEventLogHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~NTEventLogHandler.__format__
+   ~NTEventLogHandler.__init__
+   ~NTEventLogHandler.__new__
+   ~NTEventLogHandler.__reduce__
+   ~NTEventLogHandler.__reduce_ex__
+   ~NTEventLogHandler.__sizeof__
+   ~NTEventLogHandler.__subclasshook__
+   ~NTEventLogHandler.acquire
+   ~NTEventLogHandler.addFilter
+   ~NTEventLogHandler.close
+   ~NTEventLogHandler.createLock
+   ~NTEventLogHandler.emit
+   ~NTEventLogHandler.filter
+   ~NTEventLogHandler.flush
+   ~NTEventLogHandler.format
+   ~NTEventLogHandler.getEventCategory
+   ~NTEventLogHandler.getEventType
+   ~NTEventLogHandler.getMessageID
+   ~NTEventLogHandler.get_name
+   ~NTEventLogHandler.handle
+   ~NTEventLogHandler.handleError
+   ~NTEventLogHandler.release
+   ~NTEventLogHandler.removeFilter
+   ~NTEventLogHandler.setFormatter
+   ~NTEventLogHandler.setLevel
+   ~NTEventLogHandler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~NTEventLogHandler.name
+

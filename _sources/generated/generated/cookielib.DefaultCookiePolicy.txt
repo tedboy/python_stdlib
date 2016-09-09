@@ -1,0 +1,53 @@
+:class:`cookielib.DefaultCookiePolicy`
+======================================
+.. currentmodule:: cookielib
+.. autoclass:: DefaultCookiePolicy
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~DefaultCookiePolicy.__init__
+   ~DefaultCookiePolicy.allowed_domains
+   ~DefaultCookiePolicy.blocked_domains
+   ~DefaultCookiePolicy.domain_return_ok
+   ~DefaultCookiePolicy.is_blocked
+   ~DefaultCookiePolicy.is_not_allowed
+   ~DefaultCookiePolicy.path_return_ok
+   ~DefaultCookiePolicy.return_ok
+   ~DefaultCookiePolicy.return_ok_domain
+   ~DefaultCookiePolicy.return_ok_expires
+   ~DefaultCookiePolicy.return_ok_port
+   ~DefaultCookiePolicy.return_ok_secure
+   ~DefaultCookiePolicy.return_ok_verifiability
+   ~DefaultCookiePolicy.return_ok_version
+   ~DefaultCookiePolicy.set_allowed_domains
+   ~DefaultCookiePolicy.set_blocked_domains
+   ~DefaultCookiePolicy.set_ok
+   ~DefaultCookiePolicy.set_ok_domain
+   ~DefaultCookiePolicy.set_ok_name
+   ~DefaultCookiePolicy.set_ok_path
+   ~DefaultCookiePolicy.set_ok_port
+   ~DefaultCookiePolicy.set_ok_verifiability
+   ~DefaultCookiePolicy.set_ok_version
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~DefaultCookiePolicy.DomainLiberal
+   ~DefaultCookiePolicy.DomainRFC2965Match
+   ~DefaultCookiePolicy.DomainStrict
+   ~DefaultCookiePolicy.DomainStrictNoDots
+   ~DefaultCookiePolicy.DomainStrictNonDomain
+

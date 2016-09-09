@@ -1,0 +1,66 @@
+:mod:`macpath`
+==============
+
+.. automodule:: macpath
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      S_IFMT
+      S_IMODE
+      S_ISBLK
+      S_ISCHR
+      S_ISDIR
+      S_ISFIFO
+      S_ISLNK
+      S_ISREG
+      S_ISSOCK
+      abspath
+      basename
+      commonprefix
+      dirname
+      exists
+      expanduser
+      expandvars
+      getatime
+      getctime
+      getmtime
+      getsize
+      isabs
+      isdir
+      isfile
+      islink
+      ismount
+      join
+      lexists
+      normcase
+      normpath
+      realpath
+      split
+      splitdrive
+      splitext
+      walk
+   
+   
+
+   
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      norm_error
+   
+   

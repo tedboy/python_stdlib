@@ -1,0 +1,49 @@
+:class:`logging.NullHandler`
+============================
+.. currentmodule:: logging
+.. autoclass:: NullHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~NullHandler.__format__
+   ~NullHandler.__init__
+   ~NullHandler.__new__
+   ~NullHandler.__reduce__
+   ~NullHandler.__reduce_ex__
+   ~NullHandler.__sizeof__
+   ~NullHandler.__subclasshook__
+   ~NullHandler.acquire
+   ~NullHandler.addFilter
+   ~NullHandler.close
+   ~NullHandler.createLock
+   ~NullHandler.emit
+   ~NullHandler.filter
+   ~NullHandler.flush
+   ~NullHandler.format
+   ~NullHandler.get_name
+   ~NullHandler.handle
+   ~NullHandler.handleError
+   ~NullHandler.release
+   ~NullHandler.removeFilter
+   ~NullHandler.setFormatter
+   ~NullHandler.setLevel
+   ~NullHandler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~NullHandler.name
+

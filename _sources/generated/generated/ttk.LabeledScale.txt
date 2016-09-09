@@ -1,0 +1,217 @@
+:class:`ttk.LabeledScale`
+=========================
+.. currentmodule:: ttk
+.. autoclass:: LabeledScale
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~LabeledScale._Misc__winfo_getint
+   ~LabeledScale._Misc__winfo_parseitem
+   ~LabeledScale.__contains__
+   ~LabeledScale.__format__
+   ~LabeledScale.__getitem__
+   ~LabeledScale.__init__
+   ~LabeledScale.__new__
+   ~LabeledScale.__reduce__
+   ~LabeledScale.__reduce_ex__
+   ~LabeledScale.__setitem__
+   ~LabeledScale.__sizeof__
+   ~LabeledScale.__str__
+   ~LabeledScale.__subclasshook__
+   ~LabeledScale._adjust
+   ~LabeledScale._bind
+   ~LabeledScale._configure
+   ~LabeledScale._displayof
+   ~LabeledScale._do
+   ~LabeledScale._get_value
+   ~LabeledScale._getboolean
+   ~LabeledScale._getconfigure
+   ~LabeledScale._getconfigure1
+   ~LabeledScale._getdoubles
+   ~LabeledScale._getints
+   ~LabeledScale._grid_configure
+   ~LabeledScale._gridconvvalue
+   ~LabeledScale._nametowidget
+   ~LabeledScale._options
+   ~LabeledScale._register
+   ~LabeledScale._report_exception
+   ~LabeledScale._root
+   ~LabeledScale._set_value
+   ~LabeledScale._setup
+   ~LabeledScale._substitute
+   ~LabeledScale.after
+   ~LabeledScale.after_cancel
+   ~LabeledScale.after_idle
+   ~LabeledScale.bbox
+   ~LabeledScale.bell
+   ~LabeledScale.bind
+   ~LabeledScale.bind_all
+   ~LabeledScale.bind_class
+   ~LabeledScale.bindtags
+   ~LabeledScale.cget
+   ~LabeledScale.check
+   ~LabeledScale.clipboard_append
+   ~LabeledScale.clipboard_clear
+   ~LabeledScale.clipboard_get
+   ~LabeledScale.colormodel
+   ~LabeledScale.columnconfigure
+   ~LabeledScale.config
+   ~LabeledScale.configure
+   ~LabeledScale.deletecommand
+   ~LabeledScale.destroy
+   ~LabeledScale.event_add
+   ~LabeledScale.event_delete
+   ~LabeledScale.event_generate
+   ~LabeledScale.event_info
+   ~LabeledScale.focus
+   ~LabeledScale.focus_displayof
+   ~LabeledScale.focus_force
+   ~LabeledScale.focus_get
+   ~LabeledScale.focus_lastfor
+   ~LabeledScale.focus_set
+   ~LabeledScale.forget
+   ~LabeledScale.form
+   ~LabeledScale.getboolean
+   ~LabeledScale.getvar
+   ~LabeledScale.grab_current
+   ~LabeledScale.grab_release
+   ~LabeledScale.grab_set
+   ~LabeledScale.grab_set_global
+   ~LabeledScale.grab_status
+   ~LabeledScale.grid
+   ~LabeledScale.grid_bbox
+   ~LabeledScale.grid_columnconfigure
+   ~LabeledScale.grid_configure
+   ~LabeledScale.grid_forget
+   ~LabeledScale.grid_info
+   ~LabeledScale.grid_location
+   ~LabeledScale.grid_propagate
+   ~LabeledScale.grid_remove
+   ~LabeledScale.grid_rowconfigure
+   ~LabeledScale.grid_size
+   ~LabeledScale.grid_slaves
+   ~LabeledScale.identify
+   ~LabeledScale.image_names
+   ~LabeledScale.image_types
+   ~LabeledScale.info
+   ~LabeledScale.instate
+   ~LabeledScale.keys
+   ~LabeledScale.lift
+   ~LabeledScale.location
+   ~LabeledScale.lower
+   ~LabeledScale.mainloop
+   ~LabeledScale.nametowidget
+   ~LabeledScale.option_add
+   ~LabeledScale.option_clear
+   ~LabeledScale.option_get
+   ~LabeledScale.option_readfile
+   ~LabeledScale.pack
+   ~LabeledScale.pack_configure
+   ~LabeledScale.pack_forget
+   ~LabeledScale.pack_info
+   ~LabeledScale.pack_propagate
+   ~LabeledScale.pack_slaves
+   ~LabeledScale.place
+   ~LabeledScale.place_configure
+   ~LabeledScale.place_forget
+   ~LabeledScale.place_info
+   ~LabeledScale.place_slaves
+   ~LabeledScale.propagate
+   ~LabeledScale.quit
+   ~LabeledScale.register
+   ~LabeledScale.rowconfigure
+   ~LabeledScale.selection_clear
+   ~LabeledScale.selection_get
+   ~LabeledScale.selection_handle
+   ~LabeledScale.selection_own
+   ~LabeledScale.selection_own_get
+   ~LabeledScale.send
+   ~LabeledScale.setvar
+   ~LabeledScale.size
+   ~LabeledScale.slaves
+   ~LabeledScale.state
+   ~LabeledScale.tk_bisque
+   ~LabeledScale.tk_focusFollowsMouse
+   ~LabeledScale.tk_focusNext
+   ~LabeledScale.tk_focusPrev
+   ~LabeledScale.tk_menuBar
+   ~LabeledScale.tk_setPalette
+   ~LabeledScale.tk_strictMotif
+   ~LabeledScale.tkraise
+   ~LabeledScale.unbind
+   ~LabeledScale.unbind_all
+   ~LabeledScale.unbind_class
+   ~LabeledScale.update
+   ~LabeledScale.update_idletasks
+   ~LabeledScale.wait_variable
+   ~LabeledScale.wait_visibility
+   ~LabeledScale.wait_window
+   ~LabeledScale.waitvar
+   ~LabeledScale.winfo_atom
+   ~LabeledScale.winfo_atomname
+   ~LabeledScale.winfo_cells
+   ~LabeledScale.winfo_children
+   ~LabeledScale.winfo_class
+   ~LabeledScale.winfo_colormapfull
+   ~LabeledScale.winfo_containing
+   ~LabeledScale.winfo_depth
+   ~LabeledScale.winfo_exists
+   ~LabeledScale.winfo_fpixels
+   ~LabeledScale.winfo_geometry
+   ~LabeledScale.winfo_height
+   ~LabeledScale.winfo_id
+   ~LabeledScale.winfo_interps
+   ~LabeledScale.winfo_ismapped
+   ~LabeledScale.winfo_manager
+   ~LabeledScale.winfo_name
+   ~LabeledScale.winfo_parent
+   ~LabeledScale.winfo_pathname
+   ~LabeledScale.winfo_pixels
+   ~LabeledScale.winfo_pointerx
+   ~LabeledScale.winfo_pointerxy
+   ~LabeledScale.winfo_pointery
+   ~LabeledScale.winfo_reqheight
+   ~LabeledScale.winfo_reqwidth
+   ~LabeledScale.winfo_rgb
+   ~LabeledScale.winfo_rootx
+   ~LabeledScale.winfo_rooty
+   ~LabeledScale.winfo_screen
+   ~LabeledScale.winfo_screencells
+   ~LabeledScale.winfo_screendepth
+   ~LabeledScale.winfo_screenheight
+   ~LabeledScale.winfo_screenmmheight
+   ~LabeledScale.winfo_screenmmwidth
+   ~LabeledScale.winfo_screenvisual
+   ~LabeledScale.winfo_screenwidth
+   ~LabeledScale.winfo_server
+   ~LabeledScale.winfo_toplevel
+   ~LabeledScale.winfo_viewable
+   ~LabeledScale.winfo_visual
+   ~LabeledScale.winfo_visualid
+   ~LabeledScale.winfo_visualsavailable
+   ~LabeledScale.winfo_vrootheight
+   ~LabeledScale.winfo_vrootwidth
+   ~LabeledScale.winfo_vrootx
+   ~LabeledScale.winfo_vrooty
+   ~LabeledScale.winfo_width
+   ~LabeledScale.winfo_x
+   ~LabeledScale.winfo_y
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~LabeledScale.value
+

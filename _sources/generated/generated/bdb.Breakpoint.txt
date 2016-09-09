@@ -1,0 +1,33 @@
+:class:`bdb.Breakpoint`
+=======================
+.. currentmodule:: bdb
+.. autoclass:: Breakpoint
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Breakpoint.__init__
+   ~Breakpoint.bpprint
+   ~Breakpoint.deleteMe
+   ~Breakpoint.disable
+   ~Breakpoint.enable
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Breakpoint.bpbynumber
+   ~Breakpoint.bplist
+   ~Breakpoint.next
+

@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.5. os.path &mdash; My Project v1</title>
+  <title>os.path &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../_static/py.png"/>
   
 
   
@@ -30,10 +32,10 @@
   
 
   
-    <link rel="top" title="My Project v1" href="../index.html"/>
-        <link rel="up" title="1. Frequently used" href="../main1.html"/>
-        <link rel="next" title="1.5.1.1. os.path.abspath" href="os.path.abspath.html"/>
-        <link rel="prev" title="1.4.1.22. os.walk" href="os.walk.html"/> 
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="API: 06 - 10" href="../api_06to10.html"/>
+        <link rel="next" title="fileinput" href="fileinput.html"/>
+        <link rel="prev" title="operator.methodcaller" href="generated/operator.methodcaller.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -52,7 +54,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> My Project
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
           
 
           
@@ -60,10 +62,6 @@
 
           
             
-            
-              <div class="version">
-                1
-              </div>
             
           
 
@@ -84,47 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../main1.html">1. Frequently used</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.html">1.4. os</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.5. os.path</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#functions">1.5.1. Functions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="os.path.abspath.html">1.5.1.1. os.path.abspath</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.basename.html">1.5.1.2. os.path.basename</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.dirname.html">1.5.1.3. os.path.dirname</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.expanduser.html">1.5.1.4. os.path.expanduser</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.expandvars.html">1.5.1.5. os.path.expandvars</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.isabs.html">1.5.1.6. os.path.isabs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.islink.html">1.5.1.7. os.path.islink</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.ismount.html">1.5.1.8. os.path.ismount</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.join.html">1.5.1.9. os.path.join</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.lexists.html">1.5.1.10. os.path.lexists</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.normcase.html">1.5.1.11. os.path.normcase</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.normpath.html">1.5.1.12. os.path.normpath</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.realpath.html">1.5.1.13. os.path.realpath</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.relpath.html">1.5.1.14. os.path.relpath</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.samefile.html">1.5.1.15. os.path.samefile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.sameopenfile.html">1.5.1.16. os.path.sameopenfile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.samestat.html">1.5.1.17. os.path.samestat</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.split.html">1.5.1.18. os.path.split</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.splitdrive.html">1.5.1.19. os.path.splitdrive</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.splitext.html">1.5.1.20. os.path.splitext</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.path.walk.html">1.5.1.21. os.path.walk</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -139,7 +110,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">My Project</a>
+          <a href="../index.html">Python Standard Library</a>
         
       </nav>
 
@@ -166,9 +137,9 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../main1.html">1. Frequently used</a> &raquo;</li>
+          <li><a href="../api_06to10.html">API: 06 - 10</a> &raquo;</li>
         
-      <li>1.5. os.path</li>
+      <li><code class="docutils literal"><span class="pre">os.path</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -186,7 +157,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="module-os.path">
-<span id="os-path"></span><h1>1.5. os.path<a class="headerlink" href="#module-os.path" title="Permalink to this headline">¶</a></h1>
+<span id="os-path"></span><h1><a class="reference internal" href="#module-os.path" title="os.path"><code class="xref py py-mod docutils literal"><span class="pre">os.path</span></code></a><a class="headerlink" href="#module-os.path" title="Permalink to this headline">¶</a></h1>
 <p>Common operations on Posix pathnames.</p>
 <p>Instead of importing this module directly, import os and refer to
 this module as os.path.  The &#8220;os.path&#8221; name is an alias for this
@@ -196,78 +167,7 @@ platform, and is an alias to another module (e.g. macpath, ntpath).</p>
 <p>Some of this can actually be useful on non-Posix systems too, e.g.
 for manipulation of the pathname component of URLs.</p>
 <div class="section" id="functions">
-<h2>1.5.1. Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="os.path.abspath.html#os.path.abspath" title="os.path.abspath"><code class="xref py py-obj docutils literal"><span class="pre">abspath</span></code></a>(path)</td>
-<td>Return an absolute path.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.path.basename.html#os.path.basename" title="os.path.basename"><code class="xref py py-obj docutils literal"><span class="pre">basename</span></code></a>(p)</td>
-<td>Returns the final component of a pathname</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.path.dirname.html#os.path.dirname" title="os.path.dirname"><code class="xref py py-obj docutils literal"><span class="pre">dirname</span></code></a>(p)</td>
-<td>Returns the directory component of a pathname</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.path.expanduser.html#os.path.expanduser" title="os.path.expanduser"><code class="xref py py-obj docutils literal"><span class="pre">expanduser</span></code></a>(path)</td>
-<td>Expand ~ and ~user constructions.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.path.expandvars.html#os.path.expandvars" title="os.path.expandvars"><code class="xref py py-obj docutils literal"><span class="pre">expandvars</span></code></a>(path)</td>
-<td>Expand shell variables of form $var and ${var}.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.path.isabs.html#os.path.isabs" title="os.path.isabs"><code class="xref py py-obj docutils literal"><span class="pre">isabs</span></code></a>(s)</td>
-<td>Test whether a path is absolute</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.path.islink.html#os.path.islink" title="os.path.islink"><code class="xref py py-obj docutils literal"><span class="pre">islink</span></code></a>(path)</td>
-<td>Test whether a path is a symbolic link</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.path.ismount.html#os.path.ismount" title="os.path.ismount"><code class="xref py py-obj docutils literal"><span class="pre">ismount</span></code></a>(path)</td>
-<td>Test whether a path is a mount point</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.path.join.html#os.path.join" title="os.path.join"><code class="xref py py-obj docutils literal"><span class="pre">join</span></code></a>(a,&nbsp;*p)</td>
-<td>Join two or more pathname components, inserting &#8216;/&#8217; as needed.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.path.lexists.html#os.path.lexists" title="os.path.lexists"><code class="xref py py-obj docutils literal"><span class="pre">lexists</span></code></a>(path)</td>
-<td>Test whether a path exists.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.path.normcase.html#os.path.normcase" title="os.path.normcase"><code class="xref py py-obj docutils literal"><span class="pre">normcase</span></code></a>(s)</td>
-<td>Normalize case of pathname.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.path.normpath.html#os.path.normpath" title="os.path.normpath"><code class="xref py py-obj docutils literal"><span class="pre">normpath</span></code></a>(path)</td>
-<td>Normalize path, eliminating double slashes, etc.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.path.realpath.html#os.path.realpath" title="os.path.realpath"><code class="xref py py-obj docutils literal"><span class="pre">realpath</span></code></a>(filename)</td>
-<td>Return the canonical path of the specified filename, eliminating any symbolic links encountered in the path.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.path.relpath.html#os.path.relpath" title="os.path.relpath"><code class="xref py py-obj docutils literal"><span class="pre">relpath</span></code></a>(path[,&nbsp;start])</td>
-<td>Return a relative version of a path</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.path.samefile.html#os.path.samefile" title="os.path.samefile"><code class="xref py py-obj docutils literal"><span class="pre">samefile</span></code></a>(f1,&nbsp;f2)</td>
-<td>Test whether two pathnames reference the same actual file</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.path.sameopenfile.html#os.path.sameopenfile" title="os.path.sameopenfile"><code class="xref py py-obj docutils literal"><span class="pre">sameopenfile</span></code></a>(fp1,&nbsp;fp2)</td>
-<td>Test whether two open file objects reference the same file</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.path.samestat.html#os.path.samestat" title="os.path.samestat"><code class="xref py py-obj docutils literal"><span class="pre">samestat</span></code></a>(s1,&nbsp;s2)</td>
-<td>Test whether two stat buffers reference the same file</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.path.split.html#os.path.split" title="os.path.split"><code class="xref py py-obj docutils literal"><span class="pre">split</span></code></a>(p)</td>
-<td>Split a pathname.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.path.splitdrive.html#os.path.splitdrive" title="os.path.splitdrive"><code class="xref py py-obj docutils literal"><span class="pre">splitdrive</span></code></a>(p)</td>
-<td>Split a pathname into drive and path.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.path.splitext.html#os.path.splitext" title="os.path.splitext"><code class="xref py py-obj docutils literal"><span class="pre">splitext</span></code></a>(p)</td>
-<td>Split the extension from a pathname.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.path.walk.html#os.path.walk" title="os.path.walk"><code class="xref py py-obj docutils literal"><span class="pre">walk</span></code></a>(top,&nbsp;func,&nbsp;arg)</td>
-<td>Directory tree walk with callback function.</td>
-</tr>
-</tbody>
-</table>
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -278,10 +178,10 @@ for manipulation of the pathname component of URLs.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="os.path.abspath.html" class="btn btn-neutral float-right" title="1.5.1.1. os.path.abspath" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="fileinput.html" class="btn btn-neutral float-right" title="fileinput" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="os.walk.html" class="btn btn-neutral" title="1.4.1.22. os.walk" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="generated/operator.methodcaller.html" class="btn btn-neutral" title="operator.methodcaller" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -312,7 +212,7 @@ for manipulation of the pathname component of URLs.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -321,6 +221,7 @@ for manipulation of the pathname component of URLs.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

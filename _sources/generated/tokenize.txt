@@ -1,0 +1,64 @@
+:mod:`tokenize`
+===============
+
+.. automodule:: tokenize
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      ISEOF
+      ISNONTERMINAL
+      ISTERMINAL
+      any
+      generate_tokens
+      group
+      main
+      maybe
+      printtoken
+      tokenize
+      tokenize_loop
+      untokenize
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Untokenizer
+      chain
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/tokenize.Untokenizer
+       generated/tokenize.chain
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      StopTokenizing
+      TokenError
+   
+   

@@ -1,9 +1,7 @@
-collections.defaultdict
-=======================
-
+:class:`collections.defaultdict`
+================================
 .. currentmodule:: collections
 .. autoclass:: defaultdict
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,16 @@ Methods
    :toctree:
 
 
+   ~defaultdict.__contains__
+   ~defaultdict.__copy__
+   ~defaultdict.__format__
+   ~defaultdict.__getitem__
+   ~defaultdict.__missing__
+   ~defaultdict.__new__
+   ~defaultdict.__reduce__
+   ~defaultdict.__reduce_ex__
+   ~defaultdict.__sizeof__
+   ~defaultdict.__subclasshook__
    ~defaultdict.clear
    ~defaultdict.copy
    ~defaultdict.fromkeys

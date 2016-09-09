@@ -1,0 +1,66 @@
+:mod:`weakref`
+==============
+
+.. automodule:: weakref
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      getweakrefcount
+      getweakrefs
+      proxy
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      CallableProxyType
+      KeyedRef
+      ProxyType
+      ReferenceType
+      WeakKeyDictionary
+      WeakSet
+      WeakValueDictionary
+      ref
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/weakref.CallableProxyType
+       generated/weakref.KeyedRef
+       generated/weakref.ProxyType
+       generated/weakref.ReferenceType
+       generated/weakref.WeakKeyDictionary
+       generated/weakref.WeakSet
+       generated/weakref.WeakValueDictionary
+       generated/weakref.ref
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      ReferenceError
+   
+   

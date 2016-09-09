@@ -1,9 +1,7 @@
-json.JSONEncoder
-================
-
+:class:`json.JSONEncoder`
+=========================
 .. currentmodule:: json
 .. autoclass:: JSONEncoder
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,13 @@ Methods
    :toctree:
 
 
+   ~JSONEncoder.__format__
    ~JSONEncoder.__init__
+   ~JSONEncoder.__new__
+   ~JSONEncoder.__reduce__
+   ~JSONEncoder.__reduce_ex__
+   ~JSONEncoder.__sizeof__
+   ~JSONEncoder.__subclasshook__
    ~JSONEncoder.default
    ~JSONEncoder.encode
    ~JSONEncoder.iterencode

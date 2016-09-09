@@ -1,0 +1,58 @@
+:class:`io.TextIOBase`
+======================
+.. currentmodule:: io
+.. autoclass:: TextIOBase
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~TextIOBase.__enter__
+   ~TextIOBase.__exit__
+   ~TextIOBase.__format__
+   ~TextIOBase.__new__
+   ~TextIOBase.__reduce__
+   ~TextIOBase.__reduce_ex__
+   ~TextIOBase.__sizeof__
+   ~TextIOBase.__subclasshook__
+   ~TextIOBase._checkClosed
+   ~TextIOBase._checkReadable
+   ~TextIOBase._checkSeekable
+   ~TextIOBase._checkWritable
+   ~TextIOBase.close
+   ~TextIOBase.detach
+   ~TextIOBase.fileno
+   ~TextIOBase.flush
+   ~TextIOBase.isatty
+   ~TextIOBase.read
+   ~TextIOBase.readable
+   ~TextIOBase.readline
+   ~TextIOBase.readlines
+   ~TextIOBase.seek
+   ~TextIOBase.seekable
+   ~TextIOBase.tell
+   ~TextIOBase.truncate
+   ~TextIOBase.writable
+   ~TextIOBase.write
+   ~TextIOBase.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~TextIOBase.closed
+   ~TextIOBase.encoding
+   ~TextIOBase.errors
+   ~TextIOBase.newlines
+   ~TextIOBase.next
+

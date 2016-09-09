@@ -1,5 +1,5 @@
-time
-====
+:mod:`time`
+===========
 
 .. automodule:: time
 
@@ -9,7 +9,8 @@ time
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       asctime
       clock
@@ -28,10 +29,10 @@ time
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       struct_time

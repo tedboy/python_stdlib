@@ -1,0 +1,61 @@
+:class:`io.BufferedRandom`
+==========================
+.. currentmodule:: io
+.. autoclass:: BufferedRandom
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BufferedRandom.__enter__
+   ~BufferedRandom.__exit__
+   ~BufferedRandom.__format__
+   ~BufferedRandom.__new__
+   ~BufferedRandom.__reduce__
+   ~BufferedRandom.__reduce_ex__
+   ~BufferedRandom.__sizeof__
+   ~BufferedRandom.__subclasshook__
+   ~BufferedRandom._checkClosed
+   ~BufferedRandom._checkReadable
+   ~BufferedRandom._checkSeekable
+   ~BufferedRandom._checkWritable
+   ~BufferedRandom.close
+   ~BufferedRandom.detach
+   ~BufferedRandom.fileno
+   ~BufferedRandom.flush
+   ~BufferedRandom.isatty
+   ~BufferedRandom.peek
+   ~BufferedRandom.read
+   ~BufferedRandom.read1
+   ~BufferedRandom.readable
+   ~BufferedRandom.readinto
+   ~BufferedRandom.readline
+   ~BufferedRandom.readlines
+   ~BufferedRandom.seek
+   ~BufferedRandom.seekable
+   ~BufferedRandom.tell
+   ~BufferedRandom.truncate
+   ~BufferedRandom.writable
+   ~BufferedRandom.write
+   ~BufferedRandom.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~BufferedRandom.closed
+   ~BufferedRandom.mode
+   ~BufferedRandom.name
+   ~BufferedRandom.next
+   ~BufferedRandom.raw
+

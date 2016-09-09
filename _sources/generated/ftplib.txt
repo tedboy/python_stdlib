@@ -1,0 +1,64 @@
+:mod:`ftplib`
+=============
+
+.. automodule:: ftplib
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      ftpcp
+      parse150
+      parse227
+      parse229
+      parse257
+      print_line
+      test
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      FTP
+      FTP_TLS
+      Netrc
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/ftplib.FTP
+       generated/ftplib.FTP_TLS
+       generated/ftplib.Netrc
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      Error
+      error_perm
+      error_proto
+      error_reply
+      error_temp
+   
+   

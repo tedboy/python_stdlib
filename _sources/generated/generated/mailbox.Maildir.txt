@@ -1,0 +1,65 @@
+:class:`mailbox.Maildir`
+========================
+.. currentmodule:: mailbox
+.. autoclass:: Maildir
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Maildir.__contains__
+   ~Maildir.__delitem__
+   ~Maildir.__getitem__
+   ~Maildir.__init__
+   ~Maildir.__iter__
+   ~Maildir.__len__
+   ~Maildir.__setitem__
+   ~Maildir._create_tmp
+   ~Maildir._dump_message
+   ~Maildir._lookup
+   ~Maildir._refresh
+   ~Maildir.add
+   ~Maildir.add_folder
+   ~Maildir.clean
+   ~Maildir.clear
+   ~Maildir.close
+   ~Maildir.discard
+   ~Maildir.flush
+   ~Maildir.get
+   ~Maildir.get_file
+   ~Maildir.get_folder
+   ~Maildir.get_message
+   ~Maildir.get_string
+   ~Maildir.has_key
+   ~Maildir.items
+   ~Maildir.iteritems
+   ~Maildir.iterkeys
+   ~Maildir.itervalues
+   ~Maildir.keys
+   ~Maildir.list_folders
+   ~Maildir.lock
+   ~Maildir.next
+   ~Maildir.pop
+   ~Maildir.popitem
+   ~Maildir.remove
+   ~Maildir.remove_folder
+   ~Maildir.unlock
+   ~Maildir.update
+   ~Maildir.values
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Maildir.colon
+

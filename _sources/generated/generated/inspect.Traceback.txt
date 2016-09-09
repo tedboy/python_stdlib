@@ -1,9 +1,7 @@
-inspect.Traceback
-=================
-
+:class:`inspect.Traceback`
+==========================
 .. currentmodule:: inspect
 .. autoclass:: Traceback
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,18 @@ Methods
    :toctree:
 
 
+   ~Traceback.__format__
+   ~Traceback.__getnewargs__
+   ~Traceback.__getstate__
+   ~Traceback.__new__
+   ~Traceback.__reduce__
+   ~Traceback.__reduce_ex__
+   ~Traceback.__repr__
+   ~Traceback.__sizeof__
+   ~Traceback.__subclasshook__
+   ~Traceback._asdict
+   ~Traceback._make
+   ~Traceback._replace
    ~Traceback.count
 
 

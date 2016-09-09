@@ -1,9 +1,7 @@
-__builtin__.property
-====================
-
+:class:`__builtin__.property`
+=============================
 .. currentmodule:: __builtin__
 .. autoclass:: property
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~property.__format__
+   ~property.__new__
+   ~property.__reduce__
+   ~property.__reduce_ex__
+   ~property.__sizeof__
+   ~property.__subclasshook__
    ~property.deleter
    ~property.getter
    ~property.setter

@@ -1,0 +1,54 @@
+:class:`xml.sax.saxutils.XMLFilterBase`
+=======================================
+.. currentmodule:: xml.sax.saxutils
+.. autoclass:: XMLFilterBase
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~XMLFilterBase.__init__
+   ~XMLFilterBase.characters
+   ~XMLFilterBase.endDocument
+   ~XMLFilterBase.endElement
+   ~XMLFilterBase.endElementNS
+   ~XMLFilterBase.endPrefixMapping
+   ~XMLFilterBase.error
+   ~XMLFilterBase.fatalError
+   ~XMLFilterBase.getContentHandler
+   ~XMLFilterBase.getDTDHandler
+   ~XMLFilterBase.getEntityResolver
+   ~XMLFilterBase.getErrorHandler
+   ~XMLFilterBase.getFeature
+   ~XMLFilterBase.getParent
+   ~XMLFilterBase.getProperty
+   ~XMLFilterBase.ignorableWhitespace
+   ~XMLFilterBase.notationDecl
+   ~XMLFilterBase.parse
+   ~XMLFilterBase.processingInstruction
+   ~XMLFilterBase.resolveEntity
+   ~XMLFilterBase.setContentHandler
+   ~XMLFilterBase.setDTDHandler
+   ~XMLFilterBase.setDocumentLocator
+   ~XMLFilterBase.setEntityResolver
+   ~XMLFilterBase.setErrorHandler
+   ~XMLFilterBase.setFeature
+   ~XMLFilterBase.setLocale
+   ~XMLFilterBase.setParent
+   ~XMLFilterBase.setProperty
+   ~XMLFilterBase.skippedEntity
+   ~XMLFilterBase.startDocument
+   ~XMLFilterBase.startElement
+   ~XMLFilterBase.startElementNS
+   ~XMLFilterBase.startPrefixMapping
+   ~XMLFilterBase.unparsedEntityDecl
+   ~XMLFilterBase.warning
+
+
+
+
+

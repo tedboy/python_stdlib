@@ -1,19 +1,24 @@
-pickle.DictType
-===============
-
+:class:`pickle.DictType`
+========================
 .. currentmodule:: pickle
-
-:func:`DictType.__init__`
-
 .. autoclass:: DictType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~DictType.__contains__
+   ~DictType.__format__
+   ~DictType.__getitem__
+   ~DictType.__new__
+   ~DictType.__reduce__
+   ~DictType.__reduce_ex__
+   ~DictType.__sizeof__
+   ~DictType.__subclasshook__
    ~DictType.clear
    ~DictType.copy
    ~DictType.fromkeys

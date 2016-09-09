@@ -1,20 +1,18 @@
-urllib2.addinfourl
-==================
-
+:class:`urllib2.addinfourl`
+===========================
 .. currentmodule:: urllib2
-
-:func:`addinfourl.__init__`
-
 .. autoclass:: addinfourl
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~addinfourl.__init__
+   ~addinfourl.__repr__
    ~addinfourl.close
    ~addinfourl.getcode
    ~addinfourl.geturl

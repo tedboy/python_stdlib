@@ -1,0 +1,59 @@
+:class:`bdb.Bdb`
+================
+.. currentmodule:: bdb
+.. autoclass:: Bdb
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Bdb.__init__
+   ~Bdb._prune_breaks
+   ~Bdb._set_stopinfo
+   ~Bdb.break_anywhere
+   ~Bdb.break_here
+   ~Bdb.canonic
+   ~Bdb.clear_all_breaks
+   ~Bdb.clear_all_file_breaks
+   ~Bdb.clear_bpbynumber
+   ~Bdb.clear_break
+   ~Bdb.dispatch_call
+   ~Bdb.dispatch_exception
+   ~Bdb.dispatch_line
+   ~Bdb.dispatch_return
+   ~Bdb.do_clear
+   ~Bdb.format_stack_entry
+   ~Bdb.get_all_breaks
+   ~Bdb.get_break
+   ~Bdb.get_breaks
+   ~Bdb.get_file_breaks
+   ~Bdb.get_stack
+   ~Bdb.is_skipped_module
+   ~Bdb.reset
+   ~Bdb.run
+   ~Bdb.runcall
+   ~Bdb.runctx
+   ~Bdb.runeval
+   ~Bdb.set_break
+   ~Bdb.set_continue
+   ~Bdb.set_next
+   ~Bdb.set_quit
+   ~Bdb.set_return
+   ~Bdb.set_step
+   ~Bdb.set_trace
+   ~Bdb.set_until
+   ~Bdb.stop_here
+   ~Bdb.trace_dispatch
+   ~Bdb.user_call
+   ~Bdb.user_exception
+   ~Bdb.user_line
+   ~Bdb.user_return
+
+
+
+
+

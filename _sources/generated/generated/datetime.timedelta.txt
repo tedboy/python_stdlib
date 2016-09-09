@@ -1,9 +1,7 @@
-datetime.timedelta
-==================
-
+:class:`datetime.timedelta`
+===========================
 .. currentmodule:: datetime
 .. autoclass:: timedelta
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~timedelta.__format__
+   ~timedelta.__new__
+   ~timedelta.__reduce__
+   ~timedelta.__reduce_ex__
+   ~timedelta.__sizeof__
+   ~timedelta.__subclasshook__
    ~timedelta.total_seconds
 
 

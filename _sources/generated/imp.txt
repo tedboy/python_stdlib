@@ -1,5 +1,5 @@
-imp
-===
+:mod:`imp`
+==========
 
 .. automodule:: imp
 
@@ -9,7 +9,8 @@ imp
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       acquire_lock
       find_module
@@ -35,10 +36,10 @@ imp
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       NullImporter

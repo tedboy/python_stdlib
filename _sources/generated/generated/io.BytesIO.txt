@@ -1,0 +1,60 @@
+:class:`io.BytesIO`
+===================
+.. currentmodule:: io
+.. autoclass:: BytesIO
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BytesIO.__enter__
+   ~BytesIO.__exit__
+   ~BytesIO.__format__
+   ~BytesIO.__getstate__
+   ~BytesIO.__new__
+   ~BytesIO.__reduce__
+   ~BytesIO.__reduce_ex__
+   ~BytesIO.__setstate__
+   ~BytesIO.__sizeof__
+   ~BytesIO.__subclasshook__
+   ~BytesIO._checkClosed
+   ~BytesIO._checkReadable
+   ~BytesIO._checkSeekable
+   ~BytesIO._checkWritable
+   ~BytesIO.close
+   ~BytesIO.detach
+   ~BytesIO.fileno
+   ~BytesIO.flush
+   ~BytesIO.getvalue
+   ~BytesIO.isatty
+   ~BytesIO.read
+   ~BytesIO.read1
+   ~BytesIO.readable
+   ~BytesIO.readinto
+   ~BytesIO.readline
+   ~BytesIO.readlines
+   ~BytesIO.seek
+   ~BytesIO.seekable
+   ~BytesIO.tell
+   ~BytesIO.truncate
+   ~BytesIO.writable
+   ~BytesIO.write
+   ~BytesIO.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~BytesIO.closed
+   ~BytesIO.next
+

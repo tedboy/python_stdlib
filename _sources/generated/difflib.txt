@@ -1,0 +1,55 @@
+:mod:`difflib`
+==============
+
+.. automodule:: difflib
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      IS_CHARACTER_JUNK
+      IS_LINE_JUNK
+      context_diff
+      get_close_matches
+      ndiff
+      reduce
+      restore
+      unified_diff
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Differ
+      HtmlDiff
+      Match
+      SequenceMatcher
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/difflib.Differ
+       generated/difflib.HtmlDiff
+       generated/difflib.Match
+       generated/difflib.SequenceMatcher
+
+   
+   
+
+   
+   
+   

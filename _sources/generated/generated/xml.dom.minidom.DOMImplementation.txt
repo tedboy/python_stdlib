@@ -1,0 +1,35 @@
+:class:`xml.dom.minidom.DOMImplementation`
+==========================================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: DOMImplementation
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~DOMImplementation._create_document
+   ~DOMImplementation.createDOMBuilder
+   ~DOMImplementation.createDOMInputSource
+   ~DOMImplementation.createDOMWriter
+   ~DOMImplementation.createDocument
+   ~DOMImplementation.createDocumentType
+   ~DOMImplementation.getInterface
+   ~DOMImplementation.hasFeature
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~DOMImplementation.MODE_ASYNCHRONOUS
+   ~DOMImplementation.MODE_SYNCHRONOUS
+

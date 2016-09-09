@@ -1,9 +1,7 @@
-string.Template
-===============
-
+:class:`string.Template`
+========================
 .. currentmodule:: string
 .. autoclass:: Template
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~Template.__format__
    ~Template.__init__
+   ~Template.__new__
+   ~Template.__reduce__
+   ~Template.__reduce_ex__
+   ~Template.__sizeof__
+   ~Template.__subclasshook__
+   ~Template._invalid
    ~Template.safe_substitute
    ~Template.substitute
 

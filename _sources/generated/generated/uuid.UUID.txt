@@ -1,0 +1,68 @@
+:class:`uuid.UUID`
+==================
+.. currentmodule:: uuid
+.. autoclass:: UUID
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~UUID.__cmp__
+   ~UUID.__format__
+   ~UUID.__hash__
+   ~UUID.__init__
+   ~UUID.__int__
+   ~UUID.__new__
+   ~UUID.__reduce__
+   ~UUID.__reduce_ex__
+   ~UUID.__repr__
+   ~UUID.__setattr__
+   ~UUID.__sizeof__
+   ~UUID.__str__
+   ~UUID.__subclasshook__
+   ~UUID.get_bytes
+   ~UUID.get_bytes_le
+   ~UUID.get_clock_seq
+   ~UUID.get_clock_seq_hi_variant
+   ~UUID.get_clock_seq_low
+   ~UUID.get_fields
+   ~UUID.get_hex
+   ~UUID.get_node
+   ~UUID.get_time
+   ~UUID.get_time_hi_version
+   ~UUID.get_time_low
+   ~UUID.get_time_mid
+   ~UUID.get_urn
+   ~UUID.get_variant
+   ~UUID.get_version
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~UUID.bytes
+   ~UUID.bytes_le
+   ~UUID.clock_seq
+   ~UUID.clock_seq_hi_variant
+   ~UUID.clock_seq_low
+   ~UUID.fields
+   ~UUID.hex
+   ~UUID.node
+   ~UUID.time
+   ~UUID.time_hi_version
+   ~UUID.time_low
+   ~UUID.time_mid
+   ~UUID.urn
+   ~UUID.variant
+   ~UUID.version
+

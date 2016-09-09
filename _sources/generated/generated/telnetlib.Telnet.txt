@@ -1,0 +1,48 @@
+:class:`telnetlib.Telnet`
+=========================
+.. currentmodule:: telnetlib
+.. autoclass:: Telnet
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Telnet.__del__
+   ~Telnet.__init__
+   ~Telnet._expect_with_poll
+   ~Telnet._expect_with_select
+   ~Telnet._read_until_with_poll
+   ~Telnet._read_until_with_select
+   ~Telnet.close
+   ~Telnet.expect
+   ~Telnet.fileno
+   ~Telnet.fill_rawq
+   ~Telnet.get_socket
+   ~Telnet.interact
+   ~Telnet.listener
+   ~Telnet.msg
+   ~Telnet.mt_interact
+   ~Telnet.open
+   ~Telnet.process_rawq
+   ~Telnet.rawq_getchar
+   ~Telnet.read_all
+   ~Telnet.read_eager
+   ~Telnet.read_lazy
+   ~Telnet.read_sb_data
+   ~Telnet.read_some
+   ~Telnet.read_until
+   ~Telnet.read_very_eager
+   ~Telnet.read_very_lazy
+   ~Telnet.set_debuglevel
+   ~Telnet.set_option_negotiation_callback
+   ~Telnet.sock_avail
+   ~Telnet.write
+
+
+
+
+

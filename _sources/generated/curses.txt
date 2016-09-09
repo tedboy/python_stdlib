@@ -1,0 +1,105 @@
+:mod:`curses`
+=============
+
+.. automodule:: curses
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      baudrate
+      beep
+      can_change_color
+      cbreak
+      color_content
+      color_pair
+      curs_set
+      def_prog_mode
+      def_shell_mode
+      delay_output
+      doupdate
+      echo
+      endwin
+      erasechar
+      filter
+      flash
+      flushinp
+      getmouse
+      getsyx
+      getwin
+      halfdelay
+      has_colors
+      has_ic
+      has_il
+      has_key
+      init_color
+      init_pair
+      initscr
+      intrflush
+      is_term_resized
+      isendwin
+      keyname
+      killchar
+      longname
+      meta
+      mouseinterval
+      mousemask
+      napms
+      newpad
+      newwin
+      nl
+      nocbreak
+      noecho
+      nonl
+      noqiflush
+      noraw
+      pair_content
+      pair_number
+      putp
+      qiflush
+      raw
+      reset_prog_mode
+      reset_shell_mode
+      resetty
+      resize_term
+      resizeterm
+      savetty
+      setsyx
+      setupterm
+      start_color
+      termattrs
+      termname
+      tigetflag
+      tigetnum
+      tigetstr
+      tparm
+      typeahead
+      unctrl
+      ungetch
+      ungetmouse
+      use_default_colors
+      use_env
+      wrapper
+   
+   
+
+   
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      error
+   
+   

@@ -1,9 +1,7 @@
-doctest.Example
-===============
-
+:class:`doctest.Example`
+========================
 .. currentmodule:: doctest
 .. autoclass:: Example
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,10 @@ Methods
    :toctree:
 
 
+   ~Example.__eq__
+   ~Example.__hash__
    ~Example.__init__
+   ~Example.__ne__
 
 
 

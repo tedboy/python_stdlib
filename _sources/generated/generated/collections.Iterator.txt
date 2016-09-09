@@ -1,19 +1,23 @@
-collections.Iterator
-====================
-
+:class:`collections.Iterator`
+=============================
 .. currentmodule:: collections
-
-:func:`Iterator.__init__`
-
 .. autoclass:: Iterator
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~Iterator.__format__
+   ~Iterator.__iter__
+   ~Iterator.__new__
+   ~Iterator.__reduce__
+   ~Iterator.__reduce_ex__
+   ~Iterator.__sizeof__
+   ~Iterator.__subclasshook__
    ~Iterator.next
 
 

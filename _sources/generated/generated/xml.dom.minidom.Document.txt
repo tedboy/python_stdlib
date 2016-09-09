@@ -1,0 +1,116 @@
+:class:`xml.dom.minidom.Document`
+=================================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: Document
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Document.__init__
+   ~Document.__nonzero__
+   ~Document._call_user_data_handler
+   ~Document._create_entity
+   ~Document._create_notation
+   ~Document._get_actualEncoding
+   ~Document._get_async
+   ~Document._get_childNodes
+   ~Document._get_doctype
+   ~Document._get_documentElement
+   ~Document._get_documentURI
+   ~Document._get_elem_info
+   ~Document._get_encoding
+   ~Document._get_errorHandler
+   ~Document._get_firstChild
+   ~Document._get_lastChild
+   ~Document._get_localName
+   ~Document._get_standalone
+   ~Document._get_strictErrorChecking
+   ~Document._get_version
+   ~Document._set_async
+   ~Document.abort
+   ~Document.appendChild
+   ~Document.cloneNode
+   ~Document.createAttribute
+   ~Document.createAttributeNS
+   ~Document.createCDATASection
+   ~Document.createComment
+   ~Document.createDocumentFragment
+   ~Document.createElement
+   ~Document.createElementNS
+   ~Document.createProcessingInstruction
+   ~Document.createTextNode
+   ~Document.getElementById
+   ~Document.getElementsByTagName
+   ~Document.getElementsByTagNameNS
+   ~Document.getInterface
+   ~Document.getUserData
+   ~Document.hasChildNodes
+   ~Document.importNode
+   ~Document.insertBefore
+   ~Document.isSameNode
+   ~Document.isSupported
+   ~Document.load
+   ~Document.loadXML
+   ~Document.normalize
+   ~Document.removeChild
+   ~Document.renameNode
+   ~Document.replaceChild
+   ~Document.saveXML
+   ~Document.setUserData
+   ~Document.toprettyxml
+   ~Document.toxml
+   ~Document.unlink
+   ~Document.writexml
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Document.ATTRIBUTE_NODE
+   ~Document.CDATA_SECTION_NODE
+   ~Document.COMMENT_NODE
+   ~Document.DOCUMENT_FRAGMENT_NODE
+   ~Document.DOCUMENT_NODE
+   ~Document.DOCUMENT_TYPE_NODE
+   ~Document.ELEMENT_NODE
+   ~Document.ENTITY_NODE
+   ~Document.ENTITY_REFERENCE_NODE
+   ~Document.NOTATION_NODE
+   ~Document.PROCESSING_INSTRUCTION_NODE
+   ~Document.TEXT_NODE
+   ~Document.actualEncoding
+   ~Document.async
+   ~Document.attributes
+   ~Document.doctype
+   ~Document.documentElement
+   ~Document.documentURI
+   ~Document.encoding
+   ~Document.errorHandler
+   ~Document.firstChild
+   ~Document.implementation
+   ~Document.lastChild
+   ~Document.localName
+   ~Document.namespaceURI
+   ~Document.nextSibling
+   ~Document.nodeName
+   ~Document.nodeType
+   ~Document.nodeValue
+   ~Document.ownerDocument
+   ~Document.parentNode
+   ~Document.prefix
+   ~Document.previousSibling
+   ~Document.standalone
+   ~Document.strictErrorChecking
+   ~Document.version
+

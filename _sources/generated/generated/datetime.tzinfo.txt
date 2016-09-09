@@ -1,9 +1,7 @@
-datetime.tzinfo
-===============
-
+:class:`datetime.tzinfo`
+========================
 .. currentmodule:: datetime
 .. autoclass:: tzinfo
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~tzinfo.__format__
+   ~tzinfo.__new__
+   ~tzinfo.__reduce__
+   ~tzinfo.__reduce_ex__
+   ~tzinfo.__sizeof__
+   ~tzinfo.__subclasshook__
    ~tzinfo.dst
    ~tzinfo.fromutc
    ~tzinfo.tzname

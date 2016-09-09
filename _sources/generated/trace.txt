@@ -1,5 +1,5 @@
-trace
-=====
+:mod:`trace`
+============
 
 .. automodule:: trace
 
@@ -9,7 +9,8 @@ trace
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       find_executable_linenos
       find_lines
@@ -25,10 +26,10 @@ trace
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       CoverageResults

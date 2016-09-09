@@ -1,0 +1,39 @@
+:class:`codecs.StreamReaderWriter`
+==================================
+.. currentmodule:: codecs
+.. autoclass:: StreamReaderWriter
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~StreamReaderWriter.__enter__
+   ~StreamReaderWriter.__exit__
+   ~StreamReaderWriter.__getattr__
+   ~StreamReaderWriter.__init__
+   ~StreamReaderWriter.__iter__
+   ~StreamReaderWriter.next
+   ~StreamReaderWriter.read
+   ~StreamReaderWriter.readline
+   ~StreamReaderWriter.readlines
+   ~StreamReaderWriter.reset
+   ~StreamReaderWriter.seek
+   ~StreamReaderWriter.write
+   ~StreamReaderWriter.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~StreamReaderWriter.encoding
+

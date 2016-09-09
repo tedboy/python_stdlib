@@ -1,0 +1,86 @@
+:class:`smtpd.SMTPChannel`
+==========================
+.. currentmodule:: smtpd
+.. autoclass:: SMTPChannel
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SMTPChannel._SMTPChannel__getaddr
+   ~SMTPChannel.__getattr__
+   ~SMTPChannel.__init__
+   ~SMTPChannel.__repr__
+   ~SMTPChannel.__str__
+   ~SMTPChannel._collect_incoming_data
+   ~SMTPChannel._get_data
+   ~SMTPChannel.accept
+   ~SMTPChannel.add_channel
+   ~SMTPChannel.bind
+   ~SMTPChannel.close
+   ~SMTPChannel.close_when_done
+   ~SMTPChannel.collect_incoming_data
+   ~SMTPChannel.connect
+   ~SMTPChannel.create_socket
+   ~SMTPChannel.del_channel
+   ~SMTPChannel.discard_buffers
+   ~SMTPChannel.found_terminator
+   ~SMTPChannel.get_terminator
+   ~SMTPChannel.handle_accept
+   ~SMTPChannel.handle_close
+   ~SMTPChannel.handle_connect
+   ~SMTPChannel.handle_connect_event
+   ~SMTPChannel.handle_error
+   ~SMTPChannel.handle_expt
+   ~SMTPChannel.handle_expt_event
+   ~SMTPChannel.handle_read
+   ~SMTPChannel.handle_read_event
+   ~SMTPChannel.handle_write
+   ~SMTPChannel.handle_write_event
+   ~SMTPChannel.initiate_send
+   ~SMTPChannel.listen
+   ~SMTPChannel.log
+   ~SMTPChannel.log_info
+   ~SMTPChannel.push
+   ~SMTPChannel.push_with_producer
+   ~SMTPChannel.readable
+   ~SMTPChannel.recv
+   ~SMTPChannel.send
+   ~SMTPChannel.set_reuse_addr
+   ~SMTPChannel.set_socket
+   ~SMTPChannel.set_terminator
+   ~SMTPChannel.smtp_DATA
+   ~SMTPChannel.smtp_HELO
+   ~SMTPChannel.smtp_MAIL
+   ~SMTPChannel.smtp_NOOP
+   ~SMTPChannel.smtp_QUIT
+   ~SMTPChannel.smtp_RCPT
+   ~SMTPChannel.smtp_RSET
+   ~SMTPChannel.writable
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SMTPChannel.COMMAND
+   ~SMTPChannel.DATA
+   ~SMTPChannel.ac_in_buffer_size
+   ~SMTPChannel.ac_out_buffer_size
+   ~SMTPChannel.accepting
+   ~SMTPChannel.addr
+   ~SMTPChannel.closing
+   ~SMTPChannel.connected
+   ~SMTPChannel.connecting
+   ~SMTPChannel.debug
+   ~SMTPChannel.ignore_log_types
+

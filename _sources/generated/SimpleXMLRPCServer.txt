@@ -1,0 +1,60 @@
+:mod:`SimpleXMLRPCServer`
+=========================
+
+.. automodule:: SimpleXMLRPCServer
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      list_public_methods
+      remove_duplicates
+      resolve_dotted_attribute
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      CGIXMLRPCRequestHandler
+      MultiPathXMLRPCServer
+      SimpleXMLRPCDispatcher
+      SimpleXMLRPCRequestHandler
+      SimpleXMLRPCServer
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/SimpleXMLRPCServer.CGIXMLRPCRequestHandler
+       generated/SimpleXMLRPCServer.MultiPathXMLRPCServer
+       generated/SimpleXMLRPCServer.SimpleXMLRPCDispatcher
+       generated/SimpleXMLRPCServer.SimpleXMLRPCRequestHandler
+       generated/SimpleXMLRPCServer.SimpleXMLRPCServer
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      Fault
+   
+   

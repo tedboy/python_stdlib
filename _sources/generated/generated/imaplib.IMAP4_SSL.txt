@@ -1,0 +1,94 @@
+:class:`imaplib.IMAP4_SSL`
+==========================
+.. currentmodule:: imaplib
+.. autoclass:: IMAP4_SSL
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~IMAP4_SSL._CRAM_MD5_AUTH
+   ~IMAP4_SSL.__getattr__
+   ~IMAP4_SSL.__init__
+   ~IMAP4_SSL._append_untagged
+   ~IMAP4_SSL._check_bye
+   ~IMAP4_SSL._checkquote
+   ~IMAP4_SSL._command
+   ~IMAP4_SSL._command_complete
+   ~IMAP4_SSL._dump_ur
+   ~IMAP4_SSL._get_line
+   ~IMAP4_SSL._get_response
+   ~IMAP4_SSL._get_tagged_response
+   ~IMAP4_SSL._log
+   ~IMAP4_SSL._match
+   ~IMAP4_SSL._mesg
+   ~IMAP4_SSL._new_tag
+   ~IMAP4_SSL._quote
+   ~IMAP4_SSL._simple_command
+   ~IMAP4_SSL._untagged_response
+   ~IMAP4_SSL.append
+   ~IMAP4_SSL.authenticate
+   ~IMAP4_SSL.capability
+   ~IMAP4_SSL.check
+   ~IMAP4_SSL.close
+   ~IMAP4_SSL.copy
+   ~IMAP4_SSL.create
+   ~IMAP4_SSL.delete
+   ~IMAP4_SSL.deleteacl
+   ~IMAP4_SSL.expunge
+   ~IMAP4_SSL.fetch
+   ~IMAP4_SSL.getacl
+   ~IMAP4_SSL.getannotation
+   ~IMAP4_SSL.getquota
+   ~IMAP4_SSL.getquotaroot
+   ~IMAP4_SSL.list
+   ~IMAP4_SSL.login
+   ~IMAP4_SSL.login_cram_md5
+   ~IMAP4_SSL.logout
+   ~IMAP4_SSL.lsub
+   ~IMAP4_SSL.myrights
+   ~IMAP4_SSL.namespace
+   ~IMAP4_SSL.noop
+   ~IMAP4_SSL.open
+   ~IMAP4_SSL.partial
+   ~IMAP4_SSL.print_log
+   ~IMAP4_SSL.proxyauth
+   ~IMAP4_SSL.read
+   ~IMAP4_SSL.readline
+   ~IMAP4_SSL.recent
+   ~IMAP4_SSL.rename
+   ~IMAP4_SSL.response
+   ~IMAP4_SSL.search
+   ~IMAP4_SSL.select
+   ~IMAP4_SSL.send
+   ~IMAP4_SSL.setacl
+   ~IMAP4_SSL.setannotation
+   ~IMAP4_SSL.setquota
+   ~IMAP4_SSL.shutdown
+   ~IMAP4_SSL.socket
+   ~IMAP4_SSL.sort
+   ~IMAP4_SSL.ssl
+   ~IMAP4_SSL.status
+   ~IMAP4_SSL.store
+   ~IMAP4_SSL.subscribe
+   ~IMAP4_SSL.thread
+   ~IMAP4_SSL.uid
+   ~IMAP4_SSL.unsubscribe
+   ~IMAP4_SSL.xatom
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~IMAP4_SSL.mustquote
+

@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.5.4.2.2.6. abc.WeakSet.discard &mdash; Python Standard Library</title>
+  <title>abc.WeakSet.discard &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
   
 
   
@@ -31,9 +33,9 @@
 
   
     <link rel="top" title="Python Standard Library" href="../../index.html"/>
-        <link rel="up" title="3.5.4.2.2. abc.WeakSet" href="abc.WeakSet.html"/>
-        <link rel="next" title="3.5.4.2.2.7. abc.WeakSet.intersection" href="abc.WeakSet.intersection.html"/>
-        <link rel="prev" title="3.5.4.2.2.5. abc.WeakSet.difference_update" href="abc.WeakSet.difference_update.html"/> 
+        <link rel="up" title="abc.WeakSet" href="abc.WeakSet.html"/>
+        <link rel="next" title="abc.WeakSet.intersection" href="abc.WeakSet.intersection.html"/>
+        <link rel="prev" title="abc.WeakSet.difference_update" href="abc.WeakSet.difference_update.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -61,10 +63,6 @@
           
             
             
-              <div class="version">
-                1
-              </div>
-            
           
 
           
@@ -84,43 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../sysconfig.html">3.5.1. sysconfig</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../__future__.html">3.5.2. __future__</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../contextlib.html">3.5.3. contextlib</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../abc.html">3.5.4. abc</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../abc.html#functions">3.5.4.1. Functions</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../abc.html#classes">3.5.4.2. Classes</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../traceback.html">3.5.5. traceback</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../gc.html">3.5.6. gc</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../site.html">3.5.7. site</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user.html">3.5.8. user</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../imp.html">3.5.9. imp</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pkgutil.html">3.5.10. pkgutil</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../modulefinder.html">3.5.11. modulefinder</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -162,13 +137,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+          <li><a href="../../api_26to30.html">API: 26 - 30</a> &raquo;</li>
         
-          <li><a href="../abc.html">3.5.4. abc</a> &raquo;</li>
+          <li><a href="../abc.html"><code class="docutils literal"><span class="pre">abc</span></code></a> &raquo;</li>
         
-          <li><a href="abc.WeakSet.html">3.5.4.2.2. abc.WeakSet</a> &raquo;</li>
+          <li><a href="abc.WeakSet.html"><code class="docutils literal"><span class="pre">abc.WeakSet</span></code></a> &raquo;</li>
         
-      <li>3.5.4.2.2.6. abc.WeakSet.discard</li>
+      <li>abc.WeakSet.discard</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -186,7 +161,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="abc-weakset-discard">
-<h1>3.5.4.2.2.6. abc.WeakSet.discard<a class="headerlink" href="#abc-weakset-discard" title="Permalink to this headline">¶</a></h1>
+<h1>abc.WeakSet.discard<a class="headerlink" href="#abc-weakset-discard" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
 <dt id="abc.WeakSet.discard">
 <code class="descclassname">WeakSet.</code><code class="descname">discard</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/_weakrefset.html#WeakSet.discard"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#abc.WeakSet.discard" title="Permalink to this definition">¶</a></dt>
@@ -201,10 +176,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="abc.WeakSet.intersection.html" class="btn btn-neutral float-right" title="3.5.4.2.2.7. abc.WeakSet.intersection" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="abc.WeakSet.intersection.html" class="btn btn-neutral float-right" title="abc.WeakSet.intersection" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="abc.WeakSet.difference_update.html" class="btn btn-neutral" title="3.5.4.2.2.5. abc.WeakSet.difference_update" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="abc.WeakSet.difference_update.html" class="btn btn-neutral" title="abc.WeakSet.difference_update" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -235,7 +210,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -244,6 +219,7 @@
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

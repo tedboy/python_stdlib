@@ -1,0 +1,101 @@
+:class:`decimal.Context`
+========================
+.. currentmodule:: decimal
+.. autoclass:: Context
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Context.Etiny
+   ~Context.Etop
+   ~Context.__copy__
+   ~Context.__format__
+   ~Context.__init__
+   ~Context.__new__
+   ~Context.__reduce__
+   ~Context.__reduce_ex__
+   ~Context.__repr__
+   ~Context.__sizeof__
+   ~Context.__subclasshook__
+   ~Context._apply
+   ~Context._ignore_all_flags
+   ~Context._ignore_flags
+   ~Context._raise_error
+   ~Context._regard_flags
+   ~Context._set_rounding
+   ~Context._shallow_copy
+   ~Context.abs
+   ~Context.add
+   ~Context.canonical
+   ~Context.clear_flags
+   ~Context.compare
+   ~Context.compare_signal
+   ~Context.compare_total
+   ~Context.compare_total_mag
+   ~Context.copy
+   ~Context.copy_abs
+   ~Context.copy_decimal
+   ~Context.copy_negate
+   ~Context.copy_sign
+   ~Context.create_decimal
+   ~Context.create_decimal_from_float
+   ~Context.divide
+   ~Context.divide_int
+   ~Context.divmod
+   ~Context.exp
+   ~Context.fma
+   ~Context.is_canonical
+   ~Context.is_finite
+   ~Context.is_infinite
+   ~Context.is_nan
+   ~Context.is_normal
+   ~Context.is_qnan
+   ~Context.is_signed
+   ~Context.is_snan
+   ~Context.is_subnormal
+   ~Context.is_zero
+   ~Context.ln
+   ~Context.log10
+   ~Context.logb
+   ~Context.logical_and
+   ~Context.logical_invert
+   ~Context.logical_or
+   ~Context.logical_xor
+   ~Context.max
+   ~Context.max_mag
+   ~Context.min
+   ~Context.min_mag
+   ~Context.minus
+   ~Context.multiply
+   ~Context.next_minus
+   ~Context.next_plus
+   ~Context.next_toward
+   ~Context.normalize
+   ~Context.number_class
+   ~Context.plus
+   ~Context.power
+   ~Context.quantize
+   ~Context.radix
+   ~Context.remainder
+   ~Context.remainder_near
+   ~Context.rotate
+   ~Context.same_quantum
+   ~Context.scaleb
+   ~Context.shift
+   ~Context.sqrt
+   ~Context.subtract
+   ~Context.to_eng_string
+   ~Context.to_integral
+   ~Context.to_integral_exact
+   ~Context.to_integral_value
+   ~Context.to_sci_string
+
+
+
+
+

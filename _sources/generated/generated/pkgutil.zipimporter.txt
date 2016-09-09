@@ -1,19 +1,22 @@
-pkgutil.zipimporter
-===================
-
+:class:`pkgutil.zipimporter`
+============================
 .. currentmodule:: pkgutil
-
-:func:`zipimporter.__init__`
-
 .. autoclass:: zipimporter
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~zipimporter.__format__
+   ~zipimporter.__new__
+   ~zipimporter.__reduce__
+   ~zipimporter.__reduce_ex__
+   ~zipimporter.__sizeof__
+   ~zipimporter.__subclasshook__
    ~zipimporter.find_module
    ~zipimporter.get_code
    ~zipimporter.get_data
@@ -26,11 +29,10 @@ pkgutil.zipimporter
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~zipimporter.archive

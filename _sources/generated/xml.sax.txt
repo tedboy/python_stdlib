@@ -1,0 +1,60 @@
+:mod:`xml.sax`
+==============
+
+.. automodule:: xml.sax
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      make_parser
+      parse
+      parseString
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      ContentHandler
+      ErrorHandler
+      InputSource
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/xml.sax.ContentHandler
+       generated/xml.sax.ErrorHandler
+       generated/xml.sax.InputSource
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      SAXException
+      SAXNotRecognizedException
+      SAXNotSupportedException
+      SAXParseException
+      SAXReaderNotAvailable
+   
+   

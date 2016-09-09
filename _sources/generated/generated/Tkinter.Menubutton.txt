@@ -1,9 +1,7 @@
-Tkinter.Menubutton
-==================
-
+:class:`Tkinter.Menubutton`
+===========================
 .. currentmodule:: Tkinter
 .. autoclass:: Menubutton
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Menubutton._Misc__winfo_getint
+   ~Menubutton._Misc__winfo_parseitem
+   ~Menubutton.__contains__
+   ~Menubutton.__getitem__
    ~Menubutton.__init__
+   ~Menubutton.__setitem__
+   ~Menubutton.__str__
+   ~Menubutton._bind
+   ~Menubutton._configure
+   ~Menubutton._displayof
+   ~Menubutton._do
+   ~Menubutton._getboolean
+   ~Menubutton._getconfigure
+   ~Menubutton._getconfigure1
+   ~Menubutton._getdoubles
+   ~Menubutton._getints
+   ~Menubutton._grid_configure
+   ~Menubutton._gridconvvalue
+   ~Menubutton._nametowidget
+   ~Menubutton._options
+   ~Menubutton._register
+   ~Menubutton._report_exception
+   ~Menubutton._root
+   ~Menubutton._setup
+   ~Menubutton._substitute
    ~Menubutton.after
    ~Menubutton.after_cancel
    ~Menubutton.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Menubutton.bind_class
    ~Menubutton.bindtags
    ~Menubutton.cget
+   ~Menubutton.check
    ~Menubutton.clipboard_append
    ~Menubutton.clipboard_clear
    ~Menubutton.clipboard_get
@@ -44,6 +67,7 @@ Methods
    ~Menubutton.focus_lastfor
    ~Menubutton.focus_set
    ~Menubutton.forget
+   ~Menubutton.form
    ~Menubutton.getboolean
    ~Menubutton.getvar
    ~Menubutton.grab_current

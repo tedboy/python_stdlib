@@ -1,0 +1,53 @@
+:mod:`resource`
+===============
+
+.. automodule:: resource
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      getpagesize
+      getrlimit
+      getrusage
+      setrlimit
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      struct_rusage
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/resource.struct_rusage
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      error
+   
+   

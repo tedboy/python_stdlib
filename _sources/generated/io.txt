@@ -1,0 +1,76 @@
+:mod:`io`
+=========
+
+.. automodule:: io
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      OpenWrapper
+      open
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      BufferedIOBase
+      BufferedRWPair
+      BufferedRandom
+      BufferedReader
+      BufferedWriter
+      BytesIO
+      FileIO
+      IOBase
+      IncrementalNewlineDecoder
+      RawIOBase
+      StringIO
+      TextIOBase
+      TextIOWrapper
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/io.BufferedIOBase
+       generated/io.BufferedRWPair
+       generated/io.BufferedRandom
+       generated/io.BufferedReader
+       generated/io.BufferedWriter
+       generated/io.BytesIO
+       generated/io.FileIO
+       generated/io.IOBase
+       generated/io.IncrementalNewlineDecoder
+       generated/io.RawIOBase
+       generated/io.StringIO
+       generated/io.TextIOBase
+       generated/io.TextIOWrapper
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      BlockingIOError
+      UnsupportedOperation
+   
+   

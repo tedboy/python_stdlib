@@ -1,0 +1,46 @@
+:class:`httplib.HTTPConnection`
+===============================
+.. currentmodule:: httplib
+.. autoclass:: HTTPConnection
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~HTTPConnection.__init__
+   ~HTTPConnection._get_hostport
+   ~HTTPConnection._output
+   ~HTTPConnection._send_output
+   ~HTTPConnection._send_request
+   ~HTTPConnection._set_content_length
+   ~HTTPConnection._tunnel
+   ~HTTPConnection.close
+   ~HTTPConnection.connect
+   ~HTTPConnection.endheaders
+   ~HTTPConnection.getresponse
+   ~HTTPConnection.putheader
+   ~HTTPConnection.putrequest
+   ~HTTPConnection.request
+   ~HTTPConnection.send
+   ~HTTPConnection.set_debuglevel
+   ~HTTPConnection.set_tunnel
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~HTTPConnection.auto_open
+   ~HTTPConnection.debuglevel
+   ~HTTPConnection.default_port
+   ~HTTPConnection.strict
+

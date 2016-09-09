@@ -1,0 +1,46 @@
+:class:`httplib.HTTPSConnection`
+================================
+.. currentmodule:: httplib
+.. autoclass:: HTTPSConnection
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~HTTPSConnection.__init__
+   ~HTTPSConnection._get_hostport
+   ~HTTPSConnection._output
+   ~HTTPSConnection._send_output
+   ~HTTPSConnection._send_request
+   ~HTTPSConnection._set_content_length
+   ~HTTPSConnection._tunnel
+   ~HTTPSConnection.close
+   ~HTTPSConnection.connect
+   ~HTTPSConnection.endheaders
+   ~HTTPSConnection.getresponse
+   ~HTTPSConnection.putheader
+   ~HTTPSConnection.putrequest
+   ~HTTPSConnection.request
+   ~HTTPSConnection.send
+   ~HTTPSConnection.set_debuglevel
+   ~HTTPSConnection.set_tunnel
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~HTTPSConnection.auto_open
+   ~HTTPSConnection.debuglevel
+   ~HTTPSConnection.default_port
+   ~HTTPSConnection.strict
+

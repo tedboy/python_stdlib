@@ -1,9 +1,7 @@
-modulefinder.ModuleFinder
-=========================
-
+:class:`modulefinder.ModuleFinder`
+==================================
 .. currentmodule:: modulefinder
 .. autoclass:: ModuleFinder
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,8 @@ Methods
 
 
    ~ModuleFinder.__init__
+   ~ModuleFinder._add_badmodule
+   ~ModuleFinder._safe_import_hook
    ~ModuleFinder.add_module
    ~ModuleFinder.any_missing
    ~ModuleFinder.any_missing_maybe

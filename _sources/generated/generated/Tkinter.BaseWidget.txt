@@ -1,9 +1,7 @@
-Tkinter.BaseWidget
-==================
-
+:class:`Tkinter.BaseWidget`
+===========================
 .. currentmodule:: Tkinter
 .. autoclass:: BaseWidget
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~BaseWidget._Misc__winfo_getint
+   ~BaseWidget._Misc__winfo_parseitem
+   ~BaseWidget.__contains__
+   ~BaseWidget.__getitem__
    ~BaseWidget.__init__
+   ~BaseWidget.__setitem__
+   ~BaseWidget.__str__
+   ~BaseWidget._bind
+   ~BaseWidget._configure
+   ~BaseWidget._displayof
+   ~BaseWidget._do
+   ~BaseWidget._getboolean
+   ~BaseWidget._getconfigure
+   ~BaseWidget._getconfigure1
+   ~BaseWidget._getdoubles
+   ~BaseWidget._getints
+   ~BaseWidget._grid_configure
+   ~BaseWidget._gridconvvalue
+   ~BaseWidget._nametowidget
+   ~BaseWidget._options
+   ~BaseWidget._register
+   ~BaseWidget._report_exception
+   ~BaseWidget._root
+   ~BaseWidget._setup
+   ~BaseWidget._substitute
    ~BaseWidget.after
    ~BaseWidget.after_cancel
    ~BaseWidget.after_idle

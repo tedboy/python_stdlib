@@ -1,0 +1,40 @@
+:class:`SocketServer.BaseServer`
+================================
+.. currentmodule:: SocketServer
+.. autoclass:: BaseServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BaseServer.__init__
+   ~BaseServer._handle_request_noblock
+   ~BaseServer.close_request
+   ~BaseServer.finish_request
+   ~BaseServer.handle_error
+   ~BaseServer.handle_request
+   ~BaseServer.handle_timeout
+   ~BaseServer.process_request
+   ~BaseServer.serve_forever
+   ~BaseServer.server_activate
+   ~BaseServer.server_close
+   ~BaseServer.shutdown
+   ~BaseServer.shutdown_request
+   ~BaseServer.verify_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~BaseServer.timeout
+

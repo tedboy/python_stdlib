@@ -1,5 +1,5 @@
-sysconfig
-=========
+:mod:`sysconfig`
+================
 
 .. automodule:: sysconfig
 
@@ -9,7 +9,8 @@ sysconfig
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       get_config_h_filename
       get_config_var
@@ -23,6 +24,7 @@ sysconfig
       get_scheme_names
       is_python_build
       parse_config_h
+      realpath
    
    
 

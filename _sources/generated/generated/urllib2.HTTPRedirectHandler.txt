@@ -1,9 +1,7 @@
-urllib2.HTTPRedirectHandler
-===========================
-
+:class:`urllib2.HTTPRedirectHandler`
+====================================
 .. currentmodule:: urllib2
 .. autoclass:: HTTPRedirectHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,7 @@ Methods
    :toctree:
 
 
+   ~HTTPRedirectHandler.__lt__
    ~HTTPRedirectHandler.add_parent
    ~HTTPRedirectHandler.close
    ~HTTPRedirectHandler.http_error_301

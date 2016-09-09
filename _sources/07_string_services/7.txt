@@ -1,0 +1,31 @@
+.. _stringservices:
+
+******************
+7. String Services
+******************
+
+The modules described in this chapter provide a wide range of string
+manipulation operations.
+
+In addition, Python's built-in string classes support the sequence type
+methods described in the :ref:`typesseq` section, and also the
+string-specific methods described in the :ref:`string-methods` section.
+To output formatted strings use template strings or the ``%`` operator
+described in the :ref:`string-formatting` section. Also, see the
+:mod:`re` module for string functions based on regular expressions.
+
+.. toctree::
+    :maxdepth: 1
+    :numbered:
+
+    7.1.string
+    7.2.re
+    7.3.struct
+    7.4.difflib
+    7.5.stringio
+    7.6.cstringio
+    7.7.textwrap
+    7.8.codecs
+    7.9.unicodedata
+    7.10.stringprep
+    7.11.fpformat

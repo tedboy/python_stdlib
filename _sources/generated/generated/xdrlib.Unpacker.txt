@@ -1,0 +1,40 @@
+:class:`xdrlib.Unpacker`
+========================
+.. currentmodule:: xdrlib
+.. autoclass:: Unpacker
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Unpacker.__init__
+   ~Unpacker.done
+   ~Unpacker.get_buffer
+   ~Unpacker.get_position
+   ~Unpacker.reset
+   ~Unpacker.set_position
+   ~Unpacker.unpack_array
+   ~Unpacker.unpack_bool
+   ~Unpacker.unpack_bytes
+   ~Unpacker.unpack_double
+   ~Unpacker.unpack_enum
+   ~Unpacker.unpack_farray
+   ~Unpacker.unpack_float
+   ~Unpacker.unpack_fopaque
+   ~Unpacker.unpack_fstring
+   ~Unpacker.unpack_hyper
+   ~Unpacker.unpack_int
+   ~Unpacker.unpack_list
+   ~Unpacker.unpack_opaque
+   ~Unpacker.unpack_string
+   ~Unpacker.unpack_uhyper
+   ~Unpacker.unpack_uint
+
+
+
+
+

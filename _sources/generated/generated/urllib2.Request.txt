@@ -1,9 +1,7 @@
-urllib2.Request
-===============
-
+:class:`urllib2.Request`
+========================
 .. currentmodule:: urllib2
 .. autoclass:: Request
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,7 @@ Methods
    :toctree:
 
 
+   ~Request.__getattr__
    ~Request.__init__
    ~Request.add_data
    ~Request.add_header

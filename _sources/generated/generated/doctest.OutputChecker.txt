@@ -1,9 +1,7 @@
-doctest.OutputChecker
-=====================
-
+:class:`doctest.OutputChecker`
+==============================
 .. currentmodule:: doctest
 .. autoclass:: OutputChecker
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,7 @@ Methods
    :toctree:
 
 
+   ~OutputChecker._do_a_fancy_diff
    ~OutputChecker.check_output
    ~OutputChecker.output_difference
 

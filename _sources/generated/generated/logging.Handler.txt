@@ -1,0 +1,49 @@
+:class:`logging.Handler`
+========================
+.. currentmodule:: logging
+.. autoclass:: Handler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Handler.__format__
+   ~Handler.__init__
+   ~Handler.__new__
+   ~Handler.__reduce__
+   ~Handler.__reduce_ex__
+   ~Handler.__sizeof__
+   ~Handler.__subclasshook__
+   ~Handler.acquire
+   ~Handler.addFilter
+   ~Handler.close
+   ~Handler.createLock
+   ~Handler.emit
+   ~Handler.filter
+   ~Handler.flush
+   ~Handler.format
+   ~Handler.get_name
+   ~Handler.handle
+   ~Handler.handleError
+   ~Handler.release
+   ~Handler.removeFilter
+   ~Handler.setFormatter
+   ~Handler.setLevel
+   ~Handler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Handler.name
+

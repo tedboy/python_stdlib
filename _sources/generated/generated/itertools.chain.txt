@@ -1,9 +1,7 @@
-itertools.chain
-===============
-
+:class:`itertools.chain`
+========================
 .. currentmodule:: itertools
 .. autoclass:: chain
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~chain.__format__
+   ~chain.__new__
+   ~chain.__reduce__
+   ~chain.__reduce_ex__
+   ~chain.__sizeof__
+   ~chain.__subclasshook__
    ~chain.from_iterable
 
 

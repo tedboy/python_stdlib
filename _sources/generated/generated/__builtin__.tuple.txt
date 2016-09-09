@@ -1,9 +1,7 @@
-__builtin__.tuple
-=================
-
+:class:`__builtin__.tuple`
+==========================
 .. currentmodule:: __builtin__
 .. autoclass:: tuple
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,13 @@ Methods
    :toctree:
 
 
+   ~tuple.__format__
+   ~tuple.__getnewargs__
+   ~tuple.__new__
+   ~tuple.__reduce__
+   ~tuple.__reduce_ex__
+   ~tuple.__sizeof__
+   ~tuple.__subclasshook__
    ~tuple.count
    ~tuple.index
 

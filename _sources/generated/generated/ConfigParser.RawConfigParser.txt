@@ -1,0 +1,49 @@
+:class:`ConfigParser.RawConfigParser`
+=====================================
+.. currentmodule:: ConfigParser
+.. autoclass:: RawConfigParser
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~RawConfigParser.__init__
+   ~RawConfigParser._get
+   ~RawConfigParser._read
+   ~RawConfigParser.add_section
+   ~RawConfigParser.defaults
+   ~RawConfigParser.get
+   ~RawConfigParser.getboolean
+   ~RawConfigParser.getfloat
+   ~RawConfigParser.getint
+   ~RawConfigParser.has_option
+   ~RawConfigParser.has_section
+   ~RawConfigParser.items
+   ~RawConfigParser.options
+   ~RawConfigParser.optionxform
+   ~RawConfigParser.read
+   ~RawConfigParser.readfp
+   ~RawConfigParser.remove_option
+   ~RawConfigParser.remove_section
+   ~RawConfigParser.sections
+   ~RawConfigParser.set
+   ~RawConfigParser.write
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~RawConfigParser.OPTCRE
+   ~RawConfigParser.OPTCRE_NV
+   ~RawConfigParser.SECTCRE
+

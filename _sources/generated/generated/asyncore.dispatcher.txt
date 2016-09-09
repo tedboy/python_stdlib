@@ -1,0 +1,63 @@
+:class:`asyncore.dispatcher`
+============================
+.. currentmodule:: asyncore
+.. autoclass:: dispatcher
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~dispatcher.__getattr__
+   ~dispatcher.__init__
+   ~dispatcher.__repr__
+   ~dispatcher.__str__
+   ~dispatcher.accept
+   ~dispatcher.add_channel
+   ~dispatcher.bind
+   ~dispatcher.close
+   ~dispatcher.connect
+   ~dispatcher.create_socket
+   ~dispatcher.del_channel
+   ~dispatcher.handle_accept
+   ~dispatcher.handle_close
+   ~dispatcher.handle_connect
+   ~dispatcher.handle_connect_event
+   ~dispatcher.handle_error
+   ~dispatcher.handle_expt
+   ~dispatcher.handle_expt_event
+   ~dispatcher.handle_read
+   ~dispatcher.handle_read_event
+   ~dispatcher.handle_write
+   ~dispatcher.handle_write_event
+   ~dispatcher.listen
+   ~dispatcher.log
+   ~dispatcher.log_info
+   ~dispatcher.readable
+   ~dispatcher.recv
+   ~dispatcher.send
+   ~dispatcher.set_reuse_addr
+   ~dispatcher.set_socket
+   ~dispatcher.writable
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~dispatcher.accepting
+   ~dispatcher.addr
+   ~dispatcher.closing
+   ~dispatcher.connected
+   ~dispatcher.connecting
+   ~dispatcher.debug
+   ~dispatcher.ignore_log_types
+

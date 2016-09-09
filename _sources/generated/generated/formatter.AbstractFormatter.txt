@@ -1,0 +1,39 @@
+:class:`formatter.AbstractFormatter`
+====================================
+.. currentmodule:: formatter
+.. autoclass:: AbstractFormatter
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~AbstractFormatter.__init__
+   ~AbstractFormatter.add_flowing_data
+   ~AbstractFormatter.add_hor_rule
+   ~AbstractFormatter.add_label_data
+   ~AbstractFormatter.add_line_break
+   ~AbstractFormatter.add_literal_data
+   ~AbstractFormatter.assert_line_data
+   ~AbstractFormatter.end_paragraph
+   ~AbstractFormatter.flush_softspace
+   ~AbstractFormatter.format_counter
+   ~AbstractFormatter.format_letter
+   ~AbstractFormatter.format_roman
+   ~AbstractFormatter.pop_alignment
+   ~AbstractFormatter.pop_font
+   ~AbstractFormatter.pop_margin
+   ~AbstractFormatter.pop_style
+   ~AbstractFormatter.push_alignment
+   ~AbstractFormatter.push_font
+   ~AbstractFormatter.push_margin
+   ~AbstractFormatter.push_style
+   ~AbstractFormatter.set_spacing
+
+
+
+
+

@@ -1,9 +1,7 @@
-webbrowser.UnixBrowser
-======================
-
+:class:`webbrowser.UnixBrowser`
+===============================
 .. currentmodule:: webbrowser
 .. autoclass:: UnixBrowser
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~UnixBrowser.__format__
    ~UnixBrowser.__init__
+   ~UnixBrowser.__new__
+   ~UnixBrowser.__reduce__
+   ~UnixBrowser.__reduce_ex__
+   ~UnixBrowser.__sizeof__
+   ~UnixBrowser.__subclasshook__
+   ~UnixBrowser._invoke
    ~UnixBrowser.open
    ~UnixBrowser.open_new
    ~UnixBrowser.open_new_tab

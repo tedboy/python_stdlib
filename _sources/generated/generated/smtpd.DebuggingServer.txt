@@ -1,0 +1,64 @@
+:class:`smtpd.DebuggingServer`
+==============================
+.. currentmodule:: smtpd
+.. autoclass:: DebuggingServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~DebuggingServer.__getattr__
+   ~DebuggingServer.__init__
+   ~DebuggingServer.__repr__
+   ~DebuggingServer.__str__
+   ~DebuggingServer.accept
+   ~DebuggingServer.add_channel
+   ~DebuggingServer.bind
+   ~DebuggingServer.close
+   ~DebuggingServer.connect
+   ~DebuggingServer.create_socket
+   ~DebuggingServer.del_channel
+   ~DebuggingServer.handle_accept
+   ~DebuggingServer.handle_close
+   ~DebuggingServer.handle_connect
+   ~DebuggingServer.handle_connect_event
+   ~DebuggingServer.handle_error
+   ~DebuggingServer.handle_expt
+   ~DebuggingServer.handle_expt_event
+   ~DebuggingServer.handle_read
+   ~DebuggingServer.handle_read_event
+   ~DebuggingServer.handle_write
+   ~DebuggingServer.handle_write_event
+   ~DebuggingServer.listen
+   ~DebuggingServer.log
+   ~DebuggingServer.log_info
+   ~DebuggingServer.process_message
+   ~DebuggingServer.readable
+   ~DebuggingServer.recv
+   ~DebuggingServer.send
+   ~DebuggingServer.set_reuse_addr
+   ~DebuggingServer.set_socket
+   ~DebuggingServer.writable
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~DebuggingServer.accepting
+   ~DebuggingServer.addr
+   ~DebuggingServer.closing
+   ~DebuggingServer.connected
+   ~DebuggingServer.connecting
+   ~DebuggingServer.debug
+   ~DebuggingServer.ignore_log_types
+

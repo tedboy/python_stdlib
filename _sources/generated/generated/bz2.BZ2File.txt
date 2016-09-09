@@ -1,9 +1,7 @@
-bz2.BZ2File
-===========
-
+:class:`bz2.BZ2File`
+====================
 .. currentmodule:: bz2
 .. autoclass:: BZ2File
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,14 @@ Methods
    :toctree:
 
 
+   ~BZ2File.__enter__
+   ~BZ2File.__exit__
+   ~BZ2File.__format__
+   ~BZ2File.__new__
+   ~BZ2File.__reduce__
+   ~BZ2File.__reduce_ex__
+   ~BZ2File.__sizeof__
+   ~BZ2File.__subclasshook__
    ~BZ2File.close
    ~BZ2File.read
    ~BZ2File.readline

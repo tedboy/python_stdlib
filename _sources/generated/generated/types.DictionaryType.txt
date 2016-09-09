@@ -1,19 +1,24 @@
-types.DictionaryType
-====================
-
+:class:`types.DictionaryType`
+=============================
 .. currentmodule:: types
-
-:func:`DictionaryType.__init__`
-
 .. autoclass:: DictionaryType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~DictionaryType.__contains__
+   ~DictionaryType.__format__
+   ~DictionaryType.__getitem__
+   ~DictionaryType.__new__
+   ~DictionaryType.__reduce__
+   ~DictionaryType.__reduce_ex__
+   ~DictionaryType.__sizeof__
+   ~DictionaryType.__subclasshook__
    ~DictionaryType.clear
    ~DictionaryType.copy
    ~DictionaryType.fromkeys

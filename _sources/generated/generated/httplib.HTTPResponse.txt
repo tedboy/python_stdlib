@@ -1,0 +1,30 @@
+:class:`httplib.HTTPResponse`
+=============================
+.. currentmodule:: httplib
+.. autoclass:: HTTPResponse
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~HTTPResponse.__init__
+   ~HTTPResponse._check_close
+   ~HTTPResponse._read_chunked
+   ~HTTPResponse._read_status
+   ~HTTPResponse._safe_read
+   ~HTTPResponse.begin
+   ~HTTPResponse.close
+   ~HTTPResponse.fileno
+   ~HTTPResponse.getheader
+   ~HTTPResponse.getheaders
+   ~HTTPResponse.isclosed
+   ~HTTPResponse.read
+
+
+
+
+

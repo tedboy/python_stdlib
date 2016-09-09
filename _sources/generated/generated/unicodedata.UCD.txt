@@ -1,9 +1,7 @@
-unicodedata.UCD
-===============
-
+:class:`unicodedata.UCD`
+========================
 .. currentmodule:: unicodedata
 .. autoclass:: UCD
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~UCD.__format__
+   ~UCD.__new__
+   ~UCD.__reduce__
+   ~UCD.__reduce_ex__
+   ~UCD.__sizeof__
+   ~UCD.__subclasshook__
    ~UCD.bidirectional
    ~UCD.category
    ~UCD.combining

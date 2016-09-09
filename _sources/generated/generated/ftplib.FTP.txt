@@ -1,0 +1,72 @@
+:class:`ftplib.FTP`
+===================
+.. currentmodule:: ftplib
+.. autoclass:: FTP
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~FTP.__init__
+   ~FTP.abort
+   ~FTP.acct
+   ~FTP.close
+   ~FTP.connect
+   ~FTP.cwd
+   ~FTP.debug
+   ~FTP.delete
+   ~FTP.dir
+   ~FTP.getline
+   ~FTP.getmultiline
+   ~FTP.getresp
+   ~FTP.getwelcome
+   ~FTP.login
+   ~FTP.makepasv
+   ~FTP.makeport
+   ~FTP.mkd
+   ~FTP.nlst
+   ~FTP.ntransfercmd
+   ~FTP.putcmd
+   ~FTP.putline
+   ~FTP.pwd
+   ~FTP.quit
+   ~FTP.rename
+   ~FTP.retrbinary
+   ~FTP.retrlines
+   ~FTP.rmd
+   ~FTP.sanitize
+   ~FTP.sendcmd
+   ~FTP.sendeprt
+   ~FTP.sendport
+   ~FTP.set_debuglevel
+   ~FTP.set_pasv
+   ~FTP.size
+   ~FTP.storbinary
+   ~FTP.storlines
+   ~FTP.transfercmd
+   ~FTP.voidcmd
+   ~FTP.voidresp
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~FTP.debugging
+   ~FTP.file
+   ~FTP.host
+   ~FTP.maxline
+   ~FTP.passiveserver
+   ~FTP.port
+   ~FTP.sock
+   ~FTP.welcome
+

@@ -1,0 +1,55 @@
+:class:`ssl.SSLContext`
+=======================
+.. currentmodule:: ssl
+.. autoclass:: SSLContext
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SSLContext.__format__
+   ~SSLContext.__init__
+   ~SSLContext.__new__
+   ~SSLContext.__reduce__
+   ~SSLContext.__reduce_ex__
+   ~SSLContext.__sizeof__
+   ~SSLContext.__subclasshook__
+   ~SSLContext._load_windows_store_certs
+   ~SSLContext._set_alpn_protocols
+   ~SSLContext._set_npn_protocols
+   ~SSLContext._wrap_socket
+   ~SSLContext.cert_store_stats
+   ~SSLContext.get_ca_certs
+   ~SSLContext.load_cert_chain
+   ~SSLContext.load_default_certs
+   ~SSLContext.load_dh_params
+   ~SSLContext.load_verify_locations
+   ~SSLContext.session_stats
+   ~SSLContext.set_alpn_protocols
+   ~SSLContext.set_ciphers
+   ~SSLContext.set_default_verify_paths
+   ~SSLContext.set_ecdh_curve
+   ~SSLContext.set_npn_protocols
+   ~SSLContext.set_servername_callback
+   ~SSLContext.wrap_socket
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SSLContext.check_hostname
+   ~SSLContext.options
+   ~SSLContext.protocol
+   ~SSLContext.verify_flags
+   ~SSLContext.verify_mode
+

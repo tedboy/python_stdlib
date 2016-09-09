@@ -1,9 +1,7 @@
-webbrowser.Chrome
-=================
-
+:class:`webbrowser.Chrome`
+==========================
 .. currentmodule:: webbrowser
 .. autoclass:: Chrome
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~Chrome.__format__
    ~Chrome.__init__
+   ~Chrome.__new__
+   ~Chrome.__reduce__
+   ~Chrome.__reduce_ex__
+   ~Chrome.__sizeof__
+   ~Chrome.__subclasshook__
+   ~Chrome._invoke
    ~Chrome.open
    ~Chrome.open_new
    ~Chrome.open_new_tab

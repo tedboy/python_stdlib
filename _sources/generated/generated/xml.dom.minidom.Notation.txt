@@ -1,0 +1,75 @@
+:class:`xml.dom.minidom.Notation`
+=================================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: Notation
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Notation.__init__
+   ~Notation.__nonzero__
+   ~Notation._call_user_data_handler
+   ~Notation._get_childNodes
+   ~Notation._get_firstChild
+   ~Notation._get_lastChild
+   ~Notation._get_localName
+   ~Notation._get_publicId
+   ~Notation._get_systemId
+   ~Notation._identified_mixin_init
+   ~Notation.appendChild
+   ~Notation.cloneNode
+   ~Notation.getInterface
+   ~Notation.getUserData
+   ~Notation.hasChildNodes
+   ~Notation.insertBefore
+   ~Notation.isSameNode
+   ~Notation.isSupported
+   ~Notation.normalize
+   ~Notation.removeChild
+   ~Notation.replaceChild
+   ~Notation.setUserData
+   ~Notation.toprettyxml
+   ~Notation.toxml
+   ~Notation.unlink
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Notation.ATTRIBUTE_NODE
+   ~Notation.CDATA_SECTION_NODE
+   ~Notation.COMMENT_NODE
+   ~Notation.DOCUMENT_FRAGMENT_NODE
+   ~Notation.DOCUMENT_NODE
+   ~Notation.DOCUMENT_TYPE_NODE
+   ~Notation.ELEMENT_NODE
+   ~Notation.ENTITY_NODE
+   ~Notation.ENTITY_REFERENCE_NODE
+   ~Notation.NOTATION_NODE
+   ~Notation.PROCESSING_INSTRUCTION_NODE
+   ~Notation.TEXT_NODE
+   ~Notation.attributes
+   ~Notation.childNodes
+   ~Notation.firstChild
+   ~Notation.lastChild
+   ~Notation.localName
+   ~Notation.namespaceURI
+   ~Notation.nextSibling
+   ~Notation.nodeType
+   ~Notation.nodeValue
+   ~Notation.ownerDocument
+   ~Notation.parentNode
+   ~Notation.prefix
+   ~Notation.previousSibling
+

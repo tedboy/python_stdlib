@@ -1,0 +1,50 @@
+:class:`logging.FileHandler`
+============================
+.. currentmodule:: logging
+.. autoclass:: FileHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~FileHandler.__format__
+   ~FileHandler.__init__
+   ~FileHandler.__new__
+   ~FileHandler.__reduce__
+   ~FileHandler.__reduce_ex__
+   ~FileHandler.__sizeof__
+   ~FileHandler.__subclasshook__
+   ~FileHandler._open
+   ~FileHandler.acquire
+   ~FileHandler.addFilter
+   ~FileHandler.close
+   ~FileHandler.createLock
+   ~FileHandler.emit
+   ~FileHandler.filter
+   ~FileHandler.flush
+   ~FileHandler.format
+   ~FileHandler.get_name
+   ~FileHandler.handle
+   ~FileHandler.handleError
+   ~FileHandler.release
+   ~FileHandler.removeFilter
+   ~FileHandler.setFormatter
+   ~FileHandler.setLevel
+   ~FileHandler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~FileHandler.name
+

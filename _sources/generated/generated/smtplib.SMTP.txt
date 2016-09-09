@@ -1,0 +1,58 @@
+:class:`smtplib.SMTP`
+=====================
+.. currentmodule:: smtplib
+.. autoclass:: SMTP
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SMTP.__init__
+   ~SMTP._get_socket
+   ~SMTP.close
+   ~SMTP.connect
+   ~SMTP.data
+   ~SMTP.docmd
+   ~SMTP.ehlo
+   ~SMTP.ehlo_or_helo_if_needed
+   ~SMTP.expn
+   ~SMTP.getreply
+   ~SMTP.has_extn
+   ~SMTP.helo
+   ~SMTP.help
+   ~SMTP.login
+   ~SMTP.mail
+   ~SMTP.noop
+   ~SMTP.putcmd
+   ~SMTP.quit
+   ~SMTP.rcpt
+   ~SMTP.rset
+   ~SMTP.send
+   ~SMTP.sendmail
+   ~SMTP.set_debuglevel
+   ~SMTP.starttls
+   ~SMTP.verify
+   ~SMTP.vrfy
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SMTP.debuglevel
+   ~SMTP.default_port
+   ~SMTP.does_esmtp
+   ~SMTP.ehlo_msg
+   ~SMTP.ehlo_resp
+   ~SMTP.file
+   ~SMTP.helo_resp
+

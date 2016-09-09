@@ -1,0 +1,47 @@
+:class:`SocketServer.TCPServer`
+===============================
+.. currentmodule:: SocketServer
+.. autoclass:: TCPServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~TCPServer.__init__
+   ~TCPServer._handle_request_noblock
+   ~TCPServer.close_request
+   ~TCPServer.fileno
+   ~TCPServer.finish_request
+   ~TCPServer.get_request
+   ~TCPServer.handle_error
+   ~TCPServer.handle_request
+   ~TCPServer.handle_timeout
+   ~TCPServer.process_request
+   ~TCPServer.serve_forever
+   ~TCPServer.server_activate
+   ~TCPServer.server_bind
+   ~TCPServer.server_close
+   ~TCPServer.shutdown
+   ~TCPServer.shutdown_request
+   ~TCPServer.verify_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~TCPServer.address_family
+   ~TCPServer.allow_reuse_address
+   ~TCPServer.request_queue_size
+   ~TCPServer.socket_type
+   ~TCPServer.timeout
+

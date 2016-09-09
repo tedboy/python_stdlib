@@ -1,9 +1,7 @@
-__builtin__.memoryview
-======================
-
+:class:`__builtin__.memoryview`
+===============================
 .. currentmodule:: __builtin__
 .. autoclass:: memoryview
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~memoryview.__format__
+   ~memoryview.__new__
+   ~memoryview.__reduce__
+   ~memoryview.__reduce_ex__
+   ~memoryview.__sizeof__
+   ~memoryview.__subclasshook__
    ~memoryview.tobytes
    ~memoryview.tolist
 

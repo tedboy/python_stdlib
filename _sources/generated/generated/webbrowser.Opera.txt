@@ -1,9 +1,7 @@
-webbrowser.Opera
-================
-
+:class:`webbrowser.Opera`
+=========================
 .. currentmodule:: webbrowser
 .. autoclass:: Opera
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~Opera.__format__
    ~Opera.__init__
+   ~Opera.__new__
+   ~Opera.__reduce__
+   ~Opera.__reduce_ex__
+   ~Opera.__sizeof__
+   ~Opera.__subclasshook__
+   ~Opera._invoke
    ~Opera.open
    ~Opera.open_new
    ~Opera.open_new_tab

@@ -1,9 +1,7 @@
-urllib2.HTTPSHandler
-====================
-
+:class:`urllib2.HTTPSHandler`
+=============================
 .. currentmodule:: urllib2
 .. autoclass:: HTTPSHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~HTTPSHandler.__init__
+   ~HTTPSHandler.__lt__
    ~HTTPSHandler.add_parent
    ~HTTPSHandler.close
    ~HTTPSHandler.do_open

@@ -1,0 +1,74 @@
+:mod:`optparse`
+===============
+
+.. automodule:: optparse
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      check_builtin
+      check_choice
+      gettext
+      isbasestring
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      HelpFormatter
+      IndentedHelpFormatter
+      Option
+      OptionContainer
+      OptionGroup
+      OptionParser
+      TitledHelpFormatter
+      Values
+      make_option
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/optparse.HelpFormatter
+       generated/optparse.IndentedHelpFormatter
+       generated/optparse.Option
+       generated/optparse.OptionContainer
+       generated/optparse.OptionGroup
+       generated/optparse.OptionParser
+       generated/optparse.TitledHelpFormatter
+       generated/optparse.Values
+       generated/optparse.make_option
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      AmbiguousOptionError
+      BadOptionError
+      OptParseError
+      OptionConflictError
+      OptionError
+      OptionValueError
+   
+   

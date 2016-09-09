@@ -1,0 +1,53 @@
+:class:`logging.handlers.DatagramHandler`
+=========================================
+.. currentmodule:: logging.handlers
+.. autoclass:: DatagramHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~DatagramHandler.__format__
+   ~DatagramHandler.__init__
+   ~DatagramHandler.__new__
+   ~DatagramHandler.__reduce__
+   ~DatagramHandler.__reduce_ex__
+   ~DatagramHandler.__sizeof__
+   ~DatagramHandler.__subclasshook__
+   ~DatagramHandler.acquire
+   ~DatagramHandler.addFilter
+   ~DatagramHandler.close
+   ~DatagramHandler.createLock
+   ~DatagramHandler.createSocket
+   ~DatagramHandler.emit
+   ~DatagramHandler.filter
+   ~DatagramHandler.flush
+   ~DatagramHandler.format
+   ~DatagramHandler.get_name
+   ~DatagramHandler.handle
+   ~DatagramHandler.handleError
+   ~DatagramHandler.makePickle
+   ~DatagramHandler.makeSocket
+   ~DatagramHandler.release
+   ~DatagramHandler.removeFilter
+   ~DatagramHandler.send
+   ~DatagramHandler.setFormatter
+   ~DatagramHandler.setLevel
+   ~DatagramHandler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~DatagramHandler.name
+

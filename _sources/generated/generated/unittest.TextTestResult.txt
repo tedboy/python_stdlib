@@ -1,9 +1,7 @@
-unittest.TextTestResult
-=======================
-
+:class:`unittest.TextTestResult`
+================================
 .. currentmodule:: unittest
 .. autoclass:: TextTestResult
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,19 @@ Methods
    :toctree:
 
 
+   ~TextTestResult.__format__
    ~TextTestResult.__init__
+   ~TextTestResult.__new__
+   ~TextTestResult.__reduce__
+   ~TextTestResult.__reduce_ex__
+   ~TextTestResult.__repr__
+   ~TextTestResult.__sizeof__
+   ~TextTestResult.__subclasshook__
+   ~TextTestResult._count_relevant_tb_levels
+   ~TextTestResult._exc_info_to_string
+   ~TextTestResult._is_relevant_tb_level
+   ~TextTestResult._restoreStdout
+   ~TextTestResult._setupStdout
    ~TextTestResult.addError
    ~TextTestResult.addExpectedFailure
    ~TextTestResult.addFailure

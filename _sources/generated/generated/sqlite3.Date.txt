@@ -1,19 +1,22 @@
-sqlite3.Date
-============
-
+:class:`sqlite3.Date`
+=====================
 .. currentmodule:: sqlite3
-
-:func:`Date.__init__`
-
 .. autoclass:: Date
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~Date.__format__
+   ~Date.__new__
+   ~Date.__reduce__
+   ~Date.__reduce_ex__
+   ~Date.__sizeof__
+   ~Date.__subclasshook__
    ~Date.ctime
    ~Date.fromordinal
    ~Date.fromtimestamp
@@ -31,11 +34,10 @@ sqlite3.Date
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Date.day

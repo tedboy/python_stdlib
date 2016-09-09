@@ -1,9 +1,7 @@
-pydoc.HTMLDoc
-=============
-
+:class:`pydoc.HTMLDoc`
+======================
 .. currentmodule:: pydoc
 .. autoclass:: HTMLDoc
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,7 @@ Methods
    :toctree:
 
 
+   ~HTMLDoc._docdescriptor
    ~HTMLDoc.bigsection
    ~HTMLDoc.classlink
    ~HTMLDoc.docclass

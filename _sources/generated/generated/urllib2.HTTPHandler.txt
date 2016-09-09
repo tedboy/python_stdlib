@@ -1,9 +1,7 @@
-urllib2.HTTPHandler
-===================
-
+:class:`urllib2.HTTPHandler`
+============================
 .. currentmodule:: urllib2
 .. autoclass:: HTTPHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~HTTPHandler.__init__
+   ~HTTPHandler.__lt__
    ~HTTPHandler.add_parent
    ~HTTPHandler.close
    ~HTTPHandler.do_open

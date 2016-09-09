@@ -1,0 +1,38 @@
+:class:`multifile.MultiFile`
+============================
+.. currentmodule:: multifile
+.. autoclass:: MultiFile
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~MultiFile.__init__
+   ~MultiFile.end_marker
+   ~MultiFile.is_data
+   ~MultiFile.next
+   ~MultiFile.pop
+   ~MultiFile.push
+   ~MultiFile.read
+   ~MultiFile.readline
+   ~MultiFile.readlines
+   ~MultiFile.section_divider
+   ~MultiFile.seek
+   ~MultiFile.tell
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~MultiFile.seekable
+

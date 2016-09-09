@@ -1,9 +1,7 @@
-__builtin__.type
-================
-
+:class:`__builtin__.type`
+=========================
 .. currentmodule:: __builtin__
 .. autoclass:: type
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,15 @@ Methods
    :toctree:
 
 
+   ~type.__format__
+   ~type.__instancecheck__
+   ~type.__new__
+   ~type.__reduce__
+   ~type.__reduce_ex__
+   ~type.__sizeof__
+   ~type.__subclasscheck__
+   ~type.__subclasses__
+   ~type.__subclasshook__
    ~type.mro
 
 

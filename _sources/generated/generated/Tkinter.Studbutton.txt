@@ -1,9 +1,7 @@
-Tkinter.Studbutton
-==================
-
+:class:`Tkinter.Studbutton`
+===========================
 .. currentmodule:: Tkinter
 .. autoclass:: Studbutton
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Studbutton._Misc__winfo_getint
+   ~Studbutton._Misc__winfo_parseitem
+   ~Studbutton.__contains__
+   ~Studbutton.__getitem__
    ~Studbutton.__init__
+   ~Studbutton.__setitem__
+   ~Studbutton.__str__
+   ~Studbutton._bind
+   ~Studbutton._configure
+   ~Studbutton._displayof
+   ~Studbutton._do
+   ~Studbutton._getboolean
+   ~Studbutton._getconfigure
+   ~Studbutton._getconfigure1
+   ~Studbutton._getdoubles
+   ~Studbutton._getints
+   ~Studbutton._grid_configure
+   ~Studbutton._gridconvvalue
+   ~Studbutton._nametowidget
+   ~Studbutton._options
+   ~Studbutton._register
+   ~Studbutton._report_exception
+   ~Studbutton._root
+   ~Studbutton._setup
+   ~Studbutton._substitute
    ~Studbutton.after
    ~Studbutton.after_cancel
    ~Studbutton.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Studbutton.bind_class
    ~Studbutton.bindtags
    ~Studbutton.cget
+   ~Studbutton.check
    ~Studbutton.clipboard_append
    ~Studbutton.clipboard_clear
    ~Studbutton.clipboard_get
@@ -45,6 +68,7 @@ Methods
    ~Studbutton.focus_lastfor
    ~Studbutton.focus_set
    ~Studbutton.forget
+   ~Studbutton.form
    ~Studbutton.getboolean
    ~Studbutton.getvar
    ~Studbutton.grab_current

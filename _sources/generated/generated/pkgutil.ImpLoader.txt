@@ -1,9 +1,7 @@
-pkgutil.ImpLoader
-=================
-
+:class:`pkgutil.ImpLoader`
+==========================
 .. currentmodule:: pkgutil
 .. autoclass:: ImpLoader
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,9 @@ Methods
 
 
    ~ImpLoader.__init__
+   ~ImpLoader._fix_name
+   ~ImpLoader._get_delegate
+   ~ImpLoader._reopen
    ~ImpLoader.get_code
    ~ImpLoader.get_data
    ~ImpLoader.get_filename

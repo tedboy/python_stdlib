@@ -1,9 +1,7 @@
-inspect.ModuleInfo
-==================
-
+:class:`inspect.ModuleInfo`
+===========================
 .. currentmodule:: inspect
 .. autoclass:: ModuleInfo
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,18 @@ Methods
    :toctree:
 
 
+   ~ModuleInfo.__format__
+   ~ModuleInfo.__getnewargs__
+   ~ModuleInfo.__getstate__
+   ~ModuleInfo.__new__
+   ~ModuleInfo.__reduce__
+   ~ModuleInfo.__reduce_ex__
+   ~ModuleInfo.__repr__
+   ~ModuleInfo.__sizeof__
+   ~ModuleInfo.__subclasshook__
+   ~ModuleInfo._asdict
+   ~ModuleInfo._make
+   ~ModuleInfo._replace
    ~ModuleInfo.count
    ~ModuleInfo.index
 

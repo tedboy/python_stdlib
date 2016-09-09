@@ -1,0 +1,51 @@
+:class:`logging.handlers.WatchedFileHandler`
+============================================
+.. currentmodule:: logging.handlers
+.. autoclass:: WatchedFileHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~WatchedFileHandler.__format__
+   ~WatchedFileHandler.__init__
+   ~WatchedFileHandler.__new__
+   ~WatchedFileHandler.__reduce__
+   ~WatchedFileHandler.__reduce_ex__
+   ~WatchedFileHandler.__sizeof__
+   ~WatchedFileHandler.__subclasshook__
+   ~WatchedFileHandler._open
+   ~WatchedFileHandler._statstream
+   ~WatchedFileHandler.acquire
+   ~WatchedFileHandler.addFilter
+   ~WatchedFileHandler.close
+   ~WatchedFileHandler.createLock
+   ~WatchedFileHandler.emit
+   ~WatchedFileHandler.filter
+   ~WatchedFileHandler.flush
+   ~WatchedFileHandler.format
+   ~WatchedFileHandler.get_name
+   ~WatchedFileHandler.handle
+   ~WatchedFileHandler.handleError
+   ~WatchedFileHandler.release
+   ~WatchedFileHandler.removeFilter
+   ~WatchedFileHandler.setFormatter
+   ~WatchedFileHandler.setLevel
+   ~WatchedFileHandler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~WatchedFileHandler.name
+

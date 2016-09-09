@@ -1,5 +1,5 @@
-urllib2
-=======
+:mod:`urllib2`
+==============
 
 .. automodule:: urllib2
 
@@ -9,14 +9,32 @@ urllib2
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
+      StringIO
       build_opener
+      getproxies
       install_opener
+      localhost
       parse_http_list
       parse_keqv_list
+      proxy_bypass
+      quote
       randombytes
       request_host
+      splitattr
+      splithost
+      splitpasswd
+      splitport
+      splittag
+      splittype
+      splituser
+      splitvalue
+      toBytes
+      unquote
+      unwrap
+      url2pathname
       urlopen
    
    
@@ -24,10 +42,10 @@ urllib2
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       AbstractBasicAuthHandler
@@ -53,6 +71,8 @@ urllib2
       ProxyHandler
       Request
       UnknownHandler
+      addinfourl
+      ftpwrapper
 
    .. toctree::
        :maxdepth: 1
@@ -82,6 +102,8 @@ urllib2
        generated/urllib2.ProxyHandler
        generated/urllib2.Request
        generated/urllib2.UnknownHandler
+       generated/urllib2.addinfourl
+       generated/urllib2.ftpwrapper
 
    
    
@@ -89,7 +111,7 @@ urllib2
    
    
    Exceptions
-   ---------
+   ----------
    .. autosummary::
       :toctree:
 

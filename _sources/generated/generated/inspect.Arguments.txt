@@ -1,9 +1,7 @@
-inspect.Arguments
-=================
-
+:class:`inspect.Arguments`
+==========================
 .. currentmodule:: inspect
 .. autoclass:: Arguments
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,18 @@ Methods
    :toctree:
 
 
+   ~Arguments.__format__
+   ~Arguments.__getnewargs__
+   ~Arguments.__getstate__
+   ~Arguments.__new__
+   ~Arguments.__reduce__
+   ~Arguments.__reduce_ex__
+   ~Arguments.__repr__
+   ~Arguments.__sizeof__
+   ~Arguments.__subclasshook__
+   ~Arguments._asdict
+   ~Arguments._make
+   ~Arguments._replace
    ~Arguments.count
    ~Arguments.index
 

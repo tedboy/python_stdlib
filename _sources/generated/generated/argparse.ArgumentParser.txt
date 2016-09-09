@@ -1,0 +1,71 @@
+:class:`argparse.ArgumentParser`
+================================
+.. currentmodule:: argparse
+.. autoclass:: ArgumentParser
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~ArgumentParser.__format__
+   ~ArgumentParser.__init__
+   ~ArgumentParser.__new__
+   ~ArgumentParser.__reduce__
+   ~ArgumentParser.__reduce_ex__
+   ~ArgumentParser.__repr__
+   ~ArgumentParser.__sizeof__
+   ~ArgumentParser.__subclasshook__
+   ~ArgumentParser._add_action
+   ~ArgumentParser._add_container_actions
+   ~ArgumentParser._check_conflict
+   ~ArgumentParser._check_value
+   ~ArgumentParser._get_args
+   ~ArgumentParser._get_formatter
+   ~ArgumentParser._get_handler
+   ~ArgumentParser._get_kwargs
+   ~ArgumentParser._get_nargs_pattern
+   ~ArgumentParser._get_option_tuples
+   ~ArgumentParser._get_optional_actions
+   ~ArgumentParser._get_optional_kwargs
+   ~ArgumentParser._get_positional_actions
+   ~ArgumentParser._get_positional_kwargs
+   ~ArgumentParser._get_value
+   ~ArgumentParser._get_values
+   ~ArgumentParser._handle_conflict_error
+   ~ArgumentParser._handle_conflict_resolve
+   ~ArgumentParser._match_argument
+   ~ArgumentParser._match_arguments_partial
+   ~ArgumentParser._parse_known_args
+   ~ArgumentParser._parse_optional
+   ~ArgumentParser._pop_action_class
+   ~ArgumentParser._print_message
+   ~ArgumentParser._read_args_from_files
+   ~ArgumentParser._registry_get
+   ~ArgumentParser._remove_action
+   ~ArgumentParser.add_argument
+   ~ArgumentParser.add_argument_group
+   ~ArgumentParser.add_mutually_exclusive_group
+   ~ArgumentParser.add_subparsers
+   ~ArgumentParser.convert_arg_line_to_args
+   ~ArgumentParser.error
+   ~ArgumentParser.exit
+   ~ArgumentParser.format_help
+   ~ArgumentParser.format_usage
+   ~ArgumentParser.format_version
+   ~ArgumentParser.get_default
+   ~ArgumentParser.parse_args
+   ~ArgumentParser.parse_known_args
+   ~ArgumentParser.print_help
+   ~ArgumentParser.print_usage
+   ~ArgumentParser.print_version
+   ~ArgumentParser.register
+   ~ArgumentParser.set_defaults
+
+
+
+
+

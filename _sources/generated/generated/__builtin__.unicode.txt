@@ -1,9 +1,7 @@
-__builtin__.unicode
-===================
-
+:class:`__builtin__.unicode`
+============================
 .. currentmodule:: __builtin__
 .. autoclass:: unicode
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,15 @@ Methods
    :toctree:
 
 
+   ~unicode.__format__
+   ~unicode.__getnewargs__
+   ~unicode.__new__
+   ~unicode.__reduce__
+   ~unicode.__reduce_ex__
+   ~unicode.__sizeof__
+   ~unicode.__subclasshook__
+   ~unicode._formatter_field_name_split
+   ~unicode._formatter_parser
    ~unicode.capitalize
    ~unicode.center
    ~unicode.count

@@ -1,0 +1,50 @@
+:class:`logging.handlers.HTTPHandler`
+=====================================
+.. currentmodule:: logging.handlers
+.. autoclass:: HTTPHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~HTTPHandler.__format__
+   ~HTTPHandler.__init__
+   ~HTTPHandler.__new__
+   ~HTTPHandler.__reduce__
+   ~HTTPHandler.__reduce_ex__
+   ~HTTPHandler.__sizeof__
+   ~HTTPHandler.__subclasshook__
+   ~HTTPHandler.acquire
+   ~HTTPHandler.addFilter
+   ~HTTPHandler.close
+   ~HTTPHandler.createLock
+   ~HTTPHandler.emit
+   ~HTTPHandler.filter
+   ~HTTPHandler.flush
+   ~HTTPHandler.format
+   ~HTTPHandler.get_name
+   ~HTTPHandler.handle
+   ~HTTPHandler.handleError
+   ~HTTPHandler.mapLogRecord
+   ~HTTPHandler.release
+   ~HTTPHandler.removeFilter
+   ~HTTPHandler.setFormatter
+   ~HTTPHandler.setLevel
+   ~HTTPHandler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~HTTPHandler.name
+

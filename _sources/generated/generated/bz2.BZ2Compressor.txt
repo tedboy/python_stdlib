@@ -1,9 +1,7 @@
-bz2.BZ2Compressor
-=================
-
+:class:`bz2.BZ2Compressor`
+==========================
 .. currentmodule:: bz2
 .. autoclass:: BZ2Compressor
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~BZ2Compressor.__format__
+   ~BZ2Compressor.__new__
+   ~BZ2Compressor.__reduce__
+   ~BZ2Compressor.__reduce_ex__
+   ~BZ2Compressor.__sizeof__
+   ~BZ2Compressor.__subclasshook__
    ~BZ2Compressor.compress
    ~BZ2Compressor.flush
 

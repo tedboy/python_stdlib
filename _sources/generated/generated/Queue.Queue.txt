@@ -1,0 +1,32 @@
+:class:`Queue.Queue`
+====================
+.. currentmodule:: Queue
+.. autoclass:: Queue
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Queue.__init__
+   ~Queue._get
+   ~Queue._init
+   ~Queue._put
+   ~Queue._qsize
+   ~Queue.empty
+   ~Queue.full
+   ~Queue.get
+   ~Queue.get_nowait
+   ~Queue.join
+   ~Queue.put
+   ~Queue.put_nowait
+   ~Queue.qsize
+   ~Queue.task_done
+
+
+
+
+

@@ -1,0 +1,55 @@
+:mod:`wave`
+===========
+
+.. automodule:: wave
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      open
+      openfp
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Chunk
+      Wave_read
+      Wave_write
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/wave.Chunk
+       generated/wave.Wave_read
+       generated/wave.Wave_write
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      Error
+   
+   

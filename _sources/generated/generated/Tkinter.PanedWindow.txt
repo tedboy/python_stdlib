@@ -1,9 +1,7 @@
-Tkinter.PanedWindow
-===================
-
+:class:`Tkinter.PanedWindow`
+============================
 .. currentmodule:: Tkinter
 .. autoclass:: PanedWindow
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~PanedWindow._Misc__winfo_getint
+   ~PanedWindow._Misc__winfo_parseitem
+   ~PanedWindow.__contains__
+   ~PanedWindow.__getitem__
    ~PanedWindow.__init__
+   ~PanedWindow.__setitem__
+   ~PanedWindow.__str__
+   ~PanedWindow._bind
+   ~PanedWindow._configure
+   ~PanedWindow._displayof
+   ~PanedWindow._do
+   ~PanedWindow._getboolean
+   ~PanedWindow._getconfigure
+   ~PanedWindow._getconfigure1
+   ~PanedWindow._getdoubles
+   ~PanedWindow._getints
+   ~PanedWindow._grid_configure
+   ~PanedWindow._gridconvvalue
+   ~PanedWindow._nametowidget
+   ~PanedWindow._options
+   ~PanedWindow._register
+   ~PanedWindow._report_exception
+   ~PanedWindow._root
+   ~PanedWindow._setup
+   ~PanedWindow._substitute
    ~PanedWindow.add
    ~PanedWindow.after
    ~PanedWindow.after_cancel
@@ -25,6 +47,7 @@ Methods
    ~PanedWindow.bind_class
    ~PanedWindow.bindtags
    ~PanedWindow.cget
+   ~PanedWindow.check
    ~PanedWindow.clipboard_append
    ~PanedWindow.clipboard_clear
    ~PanedWindow.clipboard_get
@@ -45,6 +68,7 @@ Methods
    ~PanedWindow.focus_lastfor
    ~PanedWindow.focus_set
    ~PanedWindow.forget
+   ~PanedWindow.form
    ~PanedWindow.getboolean
    ~PanedWindow.getvar
    ~PanedWindow.grab_current

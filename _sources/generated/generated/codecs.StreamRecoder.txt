@@ -1,0 +1,39 @@
+:class:`codecs.StreamRecoder`
+=============================
+.. currentmodule:: codecs
+.. autoclass:: StreamRecoder
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~StreamRecoder.__enter__
+   ~StreamRecoder.__exit__
+   ~StreamRecoder.__getattr__
+   ~StreamRecoder.__init__
+   ~StreamRecoder.__iter__
+   ~StreamRecoder.next
+   ~StreamRecoder.read
+   ~StreamRecoder.readline
+   ~StreamRecoder.readlines
+   ~StreamRecoder.reset
+   ~StreamRecoder.write
+   ~StreamRecoder.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~StreamRecoder.data_encoding
+   ~StreamRecoder.file_encoding
+

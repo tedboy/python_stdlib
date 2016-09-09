@@ -1,0 +1,69 @@
+:class:`rexec.RExec`
+====================
+.. currentmodule:: rexec
+.. autoclass:: RExec
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~RExec.__init__
+   ~RExec.add_module
+   ~RExec.copy_except
+   ~RExec.copy_none
+   ~RExec.copy_only
+   ~RExec.get_suffixes
+   ~RExec.get_verbose
+   ~RExec.is_builtin
+   ~RExec.load_dynamic
+   ~RExec.make_builtin
+   ~RExec.make_delegate_files
+   ~RExec.make_initial_modules
+   ~RExec.make_main
+   ~RExec.make_osname
+   ~RExec.make_sys
+   ~RExec.message
+   ~RExec.note
+   ~RExec.r_eval
+   ~RExec.r_exc_info
+   ~RExec.r_exec
+   ~RExec.r_execfile
+   ~RExec.r_import
+   ~RExec.r_open
+   ~RExec.r_reload
+   ~RExec.r_unload
+   ~RExec.reset_files
+   ~RExec.restore_files
+   ~RExec.s_apply
+   ~RExec.s_eval
+   ~RExec.s_exec
+   ~RExec.s_execfile
+   ~RExec.s_import
+   ~RExec.s_reload
+   ~RExec.s_unload
+   ~RExec.save_files
+   ~RExec.set_files
+   ~RExec.set_trusted_path
+   ~RExec.set_verbose
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~RExec.nok_builtin_names
+   ~RExec.ok_builtin_modules
+   ~RExec.ok_file_types
+   ~RExec.ok_path
+   ~RExec.ok_posix_names
+   ~RExec.ok_sys_names
+

@@ -1,0 +1,61 @@
+:class:`mailbox.Message`
+========================
+.. currentmodule:: mailbox
+.. autoclass:: Message
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Message.__contains__
+   ~Message.__delitem__
+   ~Message.__getitem__
+   ~Message.__init__
+   ~Message.__len__
+   ~Message.__setitem__
+   ~Message.__str__
+   ~Message._become_message
+   ~Message._explain_to
+   ~Message._get_params_preserve
+   ~Message.add_header
+   ~Message.as_string
+   ~Message.attach
+   ~Message.del_param
+   ~Message.get
+   ~Message.get_all
+   ~Message.get_boundary
+   ~Message.get_charset
+   ~Message.get_charsets
+   ~Message.get_content_charset
+   ~Message.get_content_maintype
+   ~Message.get_content_subtype
+   ~Message.get_content_type
+   ~Message.get_default_type
+   ~Message.get_filename
+   ~Message.get_param
+   ~Message.get_params
+   ~Message.get_payload
+   ~Message.get_unixfrom
+   ~Message.has_key
+   ~Message.is_multipart
+   ~Message.items
+   ~Message.keys
+   ~Message.replace_header
+   ~Message.set_boundary
+   ~Message.set_charset
+   ~Message.set_default_type
+   ~Message.set_param
+   ~Message.set_payload
+   ~Message.set_type
+   ~Message.set_unixfrom
+   ~Message.values
+   ~Message.walk
+
+
+
+
+

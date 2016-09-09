@@ -1,0 +1,26 @@
+36. Unix Specific Services
+""""""""""""""""""""""""""
+https://docs.python.org/2/library/unix.html
+
+The modules described in this chapter provide interfaces to features that are unique to the Unix operating system, or in some cases to some or many variants of it. Here’s an overview:
+
+.. toctree::
+    :maxdepth: 1
+    :numbered:
+
+    36.1.posix.rst
+    36.2.pwd.rst
+    36.3.spwd.rst
+    36.4.grp.rst
+    36.5.crypt
+    36.6.dl
+    36.7.termios.rst
+    36.8.tty.rst
+    36.9.pty.rst
+    36.10.fcntl.rst
+    36.11.pipes.rst
+    36.12.posixfile.rst
+    36.13.resource.rst
+    36.14.nis.rst
+    36.15.syslog.rst
+    36.16.commands

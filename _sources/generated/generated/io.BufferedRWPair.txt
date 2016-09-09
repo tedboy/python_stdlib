@@ -1,0 +1,58 @@
+:class:`io.BufferedRWPair`
+==========================
+.. currentmodule:: io
+.. autoclass:: BufferedRWPair
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BufferedRWPair.__enter__
+   ~BufferedRWPair.__exit__
+   ~BufferedRWPair.__format__
+   ~BufferedRWPair.__new__
+   ~BufferedRWPair.__reduce__
+   ~BufferedRWPair.__reduce_ex__
+   ~BufferedRWPair.__sizeof__
+   ~BufferedRWPair.__subclasshook__
+   ~BufferedRWPair._checkClosed
+   ~BufferedRWPair._checkReadable
+   ~BufferedRWPair._checkSeekable
+   ~BufferedRWPair._checkWritable
+   ~BufferedRWPair.close
+   ~BufferedRWPair.detach
+   ~BufferedRWPair.fileno
+   ~BufferedRWPair.flush
+   ~BufferedRWPair.isatty
+   ~BufferedRWPair.peek
+   ~BufferedRWPair.read
+   ~BufferedRWPair.read1
+   ~BufferedRWPair.readable
+   ~BufferedRWPair.readinto
+   ~BufferedRWPair.readline
+   ~BufferedRWPair.readlines
+   ~BufferedRWPair.seek
+   ~BufferedRWPair.seekable
+   ~BufferedRWPair.tell
+   ~BufferedRWPair.truncate
+   ~BufferedRWPair.writable
+   ~BufferedRWPair.write
+   ~BufferedRWPair.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~BufferedRWPair.closed
+   ~BufferedRWPair.next
+

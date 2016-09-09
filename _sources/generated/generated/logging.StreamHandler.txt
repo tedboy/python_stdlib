@@ -1,0 +1,49 @@
+:class:`logging.StreamHandler`
+==============================
+.. currentmodule:: logging
+.. autoclass:: StreamHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~StreamHandler.__format__
+   ~StreamHandler.__init__
+   ~StreamHandler.__new__
+   ~StreamHandler.__reduce__
+   ~StreamHandler.__reduce_ex__
+   ~StreamHandler.__sizeof__
+   ~StreamHandler.__subclasshook__
+   ~StreamHandler.acquire
+   ~StreamHandler.addFilter
+   ~StreamHandler.close
+   ~StreamHandler.createLock
+   ~StreamHandler.emit
+   ~StreamHandler.filter
+   ~StreamHandler.flush
+   ~StreamHandler.format
+   ~StreamHandler.get_name
+   ~StreamHandler.handle
+   ~StreamHandler.handleError
+   ~StreamHandler.release
+   ~StreamHandler.removeFilter
+   ~StreamHandler.setFormatter
+   ~StreamHandler.setLevel
+   ~StreamHandler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~StreamHandler.name
+

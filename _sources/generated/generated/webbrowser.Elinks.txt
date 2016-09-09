@@ -1,9 +1,7 @@
-webbrowser.Elinks
-=================
-
+:class:`webbrowser.Elinks`
+==========================
 .. currentmodule:: webbrowser
 .. autoclass:: Elinks
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~Elinks.__format__
    ~Elinks.__init__
+   ~Elinks.__new__
+   ~Elinks.__reduce__
+   ~Elinks.__reduce_ex__
+   ~Elinks.__sizeof__
+   ~Elinks.__subclasshook__
+   ~Elinks._invoke
    ~Elinks.open
    ~Elinks.open_new
    ~Elinks.open_new_tab

@@ -1,0 +1,67 @@
+:class:`mailbox.mboxMessage`
+============================
+.. currentmodule:: mailbox
+.. autoclass:: mboxMessage
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~mboxMessage.__contains__
+   ~mboxMessage.__delitem__
+   ~mboxMessage.__getitem__
+   ~mboxMessage.__init__
+   ~mboxMessage.__len__
+   ~mboxMessage.__setitem__
+   ~mboxMessage.__str__
+   ~mboxMessage._become_message
+   ~mboxMessage._explain_to
+   ~mboxMessage._get_params_preserve
+   ~mboxMessage.add_flag
+   ~mboxMessage.add_header
+   ~mboxMessage.as_string
+   ~mboxMessage.attach
+   ~mboxMessage.del_param
+   ~mboxMessage.get
+   ~mboxMessage.get_all
+   ~mboxMessage.get_boundary
+   ~mboxMessage.get_charset
+   ~mboxMessage.get_charsets
+   ~mboxMessage.get_content_charset
+   ~mboxMessage.get_content_maintype
+   ~mboxMessage.get_content_subtype
+   ~mboxMessage.get_content_type
+   ~mboxMessage.get_default_type
+   ~mboxMessage.get_filename
+   ~mboxMessage.get_flags
+   ~mboxMessage.get_from
+   ~mboxMessage.get_param
+   ~mboxMessage.get_params
+   ~mboxMessage.get_payload
+   ~mboxMessage.get_unixfrom
+   ~mboxMessage.has_key
+   ~mboxMessage.is_multipart
+   ~mboxMessage.items
+   ~mboxMessage.keys
+   ~mboxMessage.remove_flag
+   ~mboxMessage.replace_header
+   ~mboxMessage.set_boundary
+   ~mboxMessage.set_charset
+   ~mboxMessage.set_default_type
+   ~mboxMessage.set_flags
+   ~mboxMessage.set_from
+   ~mboxMessage.set_param
+   ~mboxMessage.set_payload
+   ~mboxMessage.set_type
+   ~mboxMessage.set_unixfrom
+   ~mboxMessage.values
+   ~mboxMessage.walk
+
+
+
+
+

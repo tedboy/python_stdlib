@@ -1,0 +1,26 @@
+:class:`mailbox.UnixMailbox`
+============================
+.. currentmodule:: mailbox
+.. autoclass:: UnixMailbox
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~UnixMailbox.__init__
+   ~UnixMailbox.__iter__
+   ~UnixMailbox._isrealfromline
+   ~UnixMailbox._portable_isrealfromline
+   ~UnixMailbox._search_end
+   ~UnixMailbox._search_start
+   ~UnixMailbox._strict_isrealfromline
+   ~UnixMailbox.next
+
+
+
+
+

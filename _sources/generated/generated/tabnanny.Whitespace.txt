@@ -1,0 +1,34 @@
+:class:`tabnanny.Whitespace`
+============================
+.. currentmodule:: tabnanny
+.. autoclass:: Whitespace
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Whitespace.__init__
+   ~Whitespace.equal
+   ~Whitespace.indent_level
+   ~Whitespace.less
+   ~Whitespace.longest_run_of_spaces
+   ~Whitespace.not_equal_witness
+   ~Whitespace.not_less_witness
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Whitespace.S
+   ~Whitespace.T
+

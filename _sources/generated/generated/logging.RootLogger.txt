@@ -1,0 +1,57 @@
+:class:`logging.RootLogger`
+===========================
+.. currentmodule:: logging
+.. autoclass:: RootLogger
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~RootLogger.__format__
+   ~RootLogger.__init__
+   ~RootLogger.__new__
+   ~RootLogger.__reduce__
+   ~RootLogger.__reduce_ex__
+   ~RootLogger.__sizeof__
+   ~RootLogger.__subclasshook__
+   ~RootLogger._log
+   ~RootLogger.addFilter
+   ~RootLogger.addHandler
+   ~RootLogger.callHandlers
+   ~RootLogger.critical
+   ~RootLogger.debug
+   ~RootLogger.error
+   ~RootLogger.exception
+   ~RootLogger.fatal
+   ~RootLogger.filter
+   ~RootLogger.findCaller
+   ~RootLogger.getChild
+   ~RootLogger.getEffectiveLevel
+   ~RootLogger.handle
+   ~RootLogger.info
+   ~RootLogger.isEnabledFor
+   ~RootLogger.log
+   ~RootLogger.makeRecord
+   ~RootLogger.removeFilter
+   ~RootLogger.removeHandler
+   ~RootLogger.setLevel
+   ~RootLogger.warn
+   ~RootLogger.warning
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~RootLogger.manager
+   ~RootLogger.root
+

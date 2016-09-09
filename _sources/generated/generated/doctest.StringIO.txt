@@ -1,20 +1,18 @@
-doctest.StringIO
-================
-
+:class:`doctest.StringIO`
+=========================
 .. currentmodule:: doctest
-
-:func:`StringIO.__init__`
-
 .. autoclass:: StringIO
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~StringIO.__init__
+   ~StringIO.__iter__
    ~StringIO.close
    ~StringIO.flush
    ~StringIO.getvalue

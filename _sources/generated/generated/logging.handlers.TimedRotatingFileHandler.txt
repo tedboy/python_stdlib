@@ -1,0 +1,54 @@
+:class:`logging.handlers.TimedRotatingFileHandler`
+==================================================
+.. currentmodule:: logging.handlers
+.. autoclass:: TimedRotatingFileHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~TimedRotatingFileHandler.__format__
+   ~TimedRotatingFileHandler.__init__
+   ~TimedRotatingFileHandler.__new__
+   ~TimedRotatingFileHandler.__reduce__
+   ~TimedRotatingFileHandler.__reduce_ex__
+   ~TimedRotatingFileHandler.__sizeof__
+   ~TimedRotatingFileHandler.__subclasshook__
+   ~TimedRotatingFileHandler._open
+   ~TimedRotatingFileHandler.acquire
+   ~TimedRotatingFileHandler.addFilter
+   ~TimedRotatingFileHandler.close
+   ~TimedRotatingFileHandler.computeRollover
+   ~TimedRotatingFileHandler.createLock
+   ~TimedRotatingFileHandler.doRollover
+   ~TimedRotatingFileHandler.emit
+   ~TimedRotatingFileHandler.filter
+   ~TimedRotatingFileHandler.flush
+   ~TimedRotatingFileHandler.format
+   ~TimedRotatingFileHandler.getFilesToDelete
+   ~TimedRotatingFileHandler.get_name
+   ~TimedRotatingFileHandler.handle
+   ~TimedRotatingFileHandler.handleError
+   ~TimedRotatingFileHandler.release
+   ~TimedRotatingFileHandler.removeFilter
+   ~TimedRotatingFileHandler.setFormatter
+   ~TimedRotatingFileHandler.setLevel
+   ~TimedRotatingFileHandler.set_name
+   ~TimedRotatingFileHandler.shouldRollover
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~TimedRotatingFileHandler.name
+

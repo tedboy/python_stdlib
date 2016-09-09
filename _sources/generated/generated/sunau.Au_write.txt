@@ -1,0 +1,41 @@
+:class:`sunau.Au_write`
+=======================
+.. currentmodule:: sunau
+.. autoclass:: Au_write
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Au_write.__del__
+   ~Au_write.__init__
+   ~Au_write._ensure_header_written
+   ~Au_write._patchheader
+   ~Au_write._write_header
+   ~Au_write.close
+   ~Au_write.getcompname
+   ~Au_write.getcomptype
+   ~Au_write.getframerate
+   ~Au_write.getnchannels
+   ~Au_write.getnframes
+   ~Au_write.getparams
+   ~Au_write.getsampwidth
+   ~Au_write.initfp
+   ~Au_write.setcomptype
+   ~Au_write.setframerate
+   ~Au_write.setnchannels
+   ~Au_write.setnframes
+   ~Au_write.setparams
+   ~Au_write.setsampwidth
+   ~Au_write.tell
+   ~Au_write.writeframes
+   ~Au_write.writeframesraw
+
+
+
+
+

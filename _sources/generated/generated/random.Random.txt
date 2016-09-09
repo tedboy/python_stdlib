@@ -1,9 +1,7 @@
-random.Random
-=============
-
+:class:`random.Random`
+======================
 .. currentmodule:: random
 .. autoclass:: Random
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,16 @@ Methods
    :toctree:
 
 
+   ~Random.__format__
+   ~Random.__getstate__
    ~Random.__init__
+   ~Random.__new__
+   ~Random.__reduce__
+   ~Random.__reduce_ex__
+   ~Random.__setstate__
+   ~Random.__sizeof__
+   ~Random.__subclasshook__
+   ~Random._randbelow
    ~Random.betavariate
    ~Random.choice
    ~Random.expovariate

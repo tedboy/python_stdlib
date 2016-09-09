@@ -1,9 +1,7 @@
-urllib2.ProxyHandler
-====================
-
+:class:`urllib2.ProxyHandler`
+=============================
 .. currentmodule:: urllib2
 .. autoclass:: ProxyHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~ProxyHandler.__init__
+   ~ProxyHandler.__lt__
    ~ProxyHandler.add_parent
    ~ProxyHandler.close
    ~ProxyHandler.proxy_open

@@ -1,9 +1,7 @@
-urllib2.HTTPCookieProcessor
-===========================
-
+:class:`urllib2.HTTPCookieProcessor`
+====================================
 .. currentmodule:: urllib2
 .. autoclass:: HTTPCookieProcessor
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~HTTPCookieProcessor.__init__
+   ~HTTPCookieProcessor.__lt__
    ~HTTPCookieProcessor.add_parent
    ~HTTPCookieProcessor.close
    ~HTTPCookieProcessor.http_request

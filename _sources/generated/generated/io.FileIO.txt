@@ -1,0 +1,58 @@
+:class:`io.FileIO`
+==================
+.. currentmodule:: io
+.. autoclass:: FileIO
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~FileIO.__enter__
+   ~FileIO.__exit__
+   ~FileIO.__format__
+   ~FileIO.__new__
+   ~FileIO.__reduce__
+   ~FileIO.__reduce_ex__
+   ~FileIO.__sizeof__
+   ~FileIO.__subclasshook__
+   ~FileIO._checkClosed
+   ~FileIO._checkReadable
+   ~FileIO._checkSeekable
+   ~FileIO._checkWritable
+   ~FileIO.close
+   ~FileIO.fileno
+   ~FileIO.flush
+   ~FileIO.isatty
+   ~FileIO.read
+   ~FileIO.readable
+   ~FileIO.readall
+   ~FileIO.readinto
+   ~FileIO.readline
+   ~FileIO.readlines
+   ~FileIO.seek
+   ~FileIO.seekable
+   ~FileIO.tell
+   ~FileIO.truncate
+   ~FileIO.writable
+   ~FileIO.write
+   ~FileIO.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~FileIO.closed
+   ~FileIO.closefd
+   ~FileIO.mode
+   ~FileIO.next
+

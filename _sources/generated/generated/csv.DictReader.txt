@@ -1,9 +1,7 @@
-csv.DictReader
-==============
-
+:class:`csv.DictReader`
+=======================
 .. currentmodule:: csv
 .. autoclass:: DictReader
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~DictReader.__init__
+   ~DictReader.__iter__
    ~DictReader.next
 
 

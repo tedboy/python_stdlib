@@ -1,9 +1,7 @@
-Tkinter.LabelFrame
-==================
-
+:class:`Tkinter.LabelFrame`
+===========================
 .. currentmodule:: Tkinter
 .. autoclass:: LabelFrame
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~LabelFrame._Misc__winfo_getint
+   ~LabelFrame._Misc__winfo_parseitem
+   ~LabelFrame.__contains__
+   ~LabelFrame.__getitem__
    ~LabelFrame.__init__
+   ~LabelFrame.__setitem__
+   ~LabelFrame.__str__
+   ~LabelFrame._bind
+   ~LabelFrame._configure
+   ~LabelFrame._displayof
+   ~LabelFrame._do
+   ~LabelFrame._getboolean
+   ~LabelFrame._getconfigure
+   ~LabelFrame._getconfigure1
+   ~LabelFrame._getdoubles
+   ~LabelFrame._getints
+   ~LabelFrame._grid_configure
+   ~LabelFrame._gridconvvalue
+   ~LabelFrame._nametowidget
+   ~LabelFrame._options
+   ~LabelFrame._register
+   ~LabelFrame._report_exception
+   ~LabelFrame._root
+   ~LabelFrame._setup
+   ~LabelFrame._substitute
    ~LabelFrame.after
    ~LabelFrame.after_cancel
    ~LabelFrame.after_idle
@@ -24,6 +46,7 @@ Methods
    ~LabelFrame.bind_class
    ~LabelFrame.bindtags
    ~LabelFrame.cget
+   ~LabelFrame.check
    ~LabelFrame.clipboard_append
    ~LabelFrame.clipboard_clear
    ~LabelFrame.clipboard_get
@@ -44,6 +67,7 @@ Methods
    ~LabelFrame.focus_lastfor
    ~LabelFrame.focus_set
    ~LabelFrame.forget
+   ~LabelFrame.form
    ~LabelFrame.getboolean
    ~LabelFrame.getvar
    ~LabelFrame.grab_current

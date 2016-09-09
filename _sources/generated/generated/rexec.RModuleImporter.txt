@@ -1,0 +1,37 @@
+:class:`rexec.RModuleImporter`
+==============================
+.. currentmodule:: rexec
+.. autoclass:: RModuleImporter
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~RModuleImporter.__init__
+   ~RModuleImporter.determine_parent
+   ~RModuleImporter.ensure_fromlist
+   ~RModuleImporter.find_head_package
+   ~RModuleImporter.get_hooks
+   ~RModuleImporter.get_loader
+   ~RModuleImporter.get_verbose
+   ~RModuleImporter.import_it
+   ~RModuleImporter.import_module
+   ~RModuleImporter.install
+   ~RModuleImporter.load_tail
+   ~RModuleImporter.message
+   ~RModuleImporter.note
+   ~RModuleImporter.reload
+   ~RModuleImporter.set_hooks
+   ~RModuleImporter.set_loader
+   ~RModuleImporter.set_verbose
+   ~RModuleImporter.uninstall
+   ~RModuleImporter.unload
+
+
+
+
+

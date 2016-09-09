@@ -1,0 +1,40 @@
+:class:`aifc.Aifc_read`
+=======================
+.. currentmodule:: aifc
+.. autoclass:: Aifc_read
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Aifc_read.__init__
+   ~Aifc_read._adpcm2lin
+   ~Aifc_read._decomp_data
+   ~Aifc_read._read_comm_chunk
+   ~Aifc_read._readmark
+   ~Aifc_read._ulaw2lin
+   ~Aifc_read.close
+   ~Aifc_read.getcompname
+   ~Aifc_read.getcomptype
+   ~Aifc_read.getfp
+   ~Aifc_read.getframerate
+   ~Aifc_read.getmark
+   ~Aifc_read.getmarkers
+   ~Aifc_read.getnchannels
+   ~Aifc_read.getnframes
+   ~Aifc_read.getparams
+   ~Aifc_read.getsampwidth
+   ~Aifc_read.initfp
+   ~Aifc_read.readframes
+   ~Aifc_read.rewind
+   ~Aifc_read.setpos
+   ~Aifc_read.tell
+
+
+
+
+

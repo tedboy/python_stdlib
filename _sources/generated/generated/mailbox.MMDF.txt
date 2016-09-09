@@ -1,0 +1,55 @@
+:class:`mailbox.MMDF`
+=====================
+.. currentmodule:: mailbox
+.. autoclass:: MMDF
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~MMDF.__contains__
+   ~MMDF.__delitem__
+   ~MMDF.__getitem__
+   ~MMDF.__init__
+   ~MMDF.__iter__
+   ~MMDF.__len__
+   ~MMDF.__setitem__
+   ~MMDF._append_message
+   ~MMDF._dump_message
+   ~MMDF._generate_toc
+   ~MMDF._install_message
+   ~MMDF._lookup
+   ~MMDF._post_message_hook
+   ~MMDF._pre_mailbox_hook
+   ~MMDF._pre_message_hook
+   ~MMDF.add
+   ~MMDF.clear
+   ~MMDF.close
+   ~MMDF.discard
+   ~MMDF.flush
+   ~MMDF.get
+   ~MMDF.get_file
+   ~MMDF.get_message
+   ~MMDF.get_string
+   ~MMDF.has_key
+   ~MMDF.items
+   ~MMDF.iteritems
+   ~MMDF.iterkeys
+   ~MMDF.itervalues
+   ~MMDF.keys
+   ~MMDF.lock
+   ~MMDF.pop
+   ~MMDF.popitem
+   ~MMDF.remove
+   ~MMDF.unlock
+   ~MMDF.update
+   ~MMDF.values
+
+
+
+
+

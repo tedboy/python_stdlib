@@ -1,0 +1,57 @@
+:class:`cookielib.LWPCookieJar`
+===============================
+.. currentmodule:: cookielib
+.. autoclass:: LWPCookieJar
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~LWPCookieJar.__init__
+   ~LWPCookieJar.__iter__
+   ~LWPCookieJar.__len__
+   ~LWPCookieJar.__repr__
+   ~LWPCookieJar.__str__
+   ~LWPCookieJar._cookie_attrs
+   ~LWPCookieJar._cookie_from_cookie_tuple
+   ~LWPCookieJar._cookies_for_domain
+   ~LWPCookieJar._cookies_for_request
+   ~LWPCookieJar._cookies_from_attrs_set
+   ~LWPCookieJar._normalized_cookie_tuples
+   ~LWPCookieJar._process_rfc2109_cookies
+   ~LWPCookieJar._really_load
+   ~LWPCookieJar.add_cookie_header
+   ~LWPCookieJar.as_lwp_str
+   ~LWPCookieJar.clear
+   ~LWPCookieJar.clear_expired_cookies
+   ~LWPCookieJar.clear_session_cookies
+   ~LWPCookieJar.extract_cookies
+   ~LWPCookieJar.load
+   ~LWPCookieJar.make_cookies
+   ~LWPCookieJar.revert
+   ~LWPCookieJar.save
+   ~LWPCookieJar.set_cookie
+   ~LWPCookieJar.set_cookie_if_ok
+   ~LWPCookieJar.set_policy
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~LWPCookieJar.domain_re
+   ~LWPCookieJar.dots_re
+   ~LWPCookieJar.magic_re
+   ~LWPCookieJar.non_word_re
+   ~LWPCookieJar.quote_re
+   ~LWPCookieJar.strict_domain_re
+

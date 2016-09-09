@@ -1,0 +1,61 @@
+:class:`xml.etree.ElementTree.Element`
+======================================
+.. currentmodule:: xml.etree.ElementTree
+.. autoclass:: Element
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Element.__delitem__
+   ~Element.__format__
+   ~Element.__getitem__
+   ~Element.__init__
+   ~Element.__len__
+   ~Element.__new__
+   ~Element.__nonzero__
+   ~Element.__reduce__
+   ~Element.__reduce_ex__
+   ~Element.__repr__
+   ~Element.__setitem__
+   ~Element.__sizeof__
+   ~Element.__subclasshook__
+   ~Element.append
+   ~Element.clear
+   ~Element.copy
+   ~Element.extend
+   ~Element.find
+   ~Element.findall
+   ~Element.findtext
+   ~Element.get
+   ~Element.getchildren
+   ~Element.getiterator
+   ~Element.insert
+   ~Element.items
+   ~Element.iter
+   ~Element.iterfind
+   ~Element.itertext
+   ~Element.keys
+   ~Element.makeelement
+   ~Element.remove
+   ~Element.set
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Element.attrib
+   ~Element.tag
+   ~Element.tail
+   ~Element.text
+

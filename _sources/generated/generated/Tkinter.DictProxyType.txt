@@ -1,19 +1,22 @@
-Tkinter.DictProxyType
-=====================
-
+:class:`Tkinter.DictProxyType`
+==============================
 .. currentmodule:: Tkinter
-
-:func:`DictProxyType.__init__`
-
 .. autoclass:: DictProxyType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~DictProxyType.__format__
+   ~DictProxyType.__new__
+   ~DictProxyType.__reduce__
+   ~DictProxyType.__reduce_ex__
+   ~DictProxyType.__sizeof__
+   ~DictProxyType.__subclasshook__
    ~DictProxyType.copy
    ~DictProxyType.get
    ~DictProxyType.has_key

@@ -1,5 +1,5 @@
-inspect
-=======
+:mod:`inspect`
+==============
 
 .. automodule:: inspect
 
@@ -9,10 +9,12 @@ inspect
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       classify_class_attrs
       cleandoc
+      currentframe
       findsource
       formatargspec
       formatargvalues
@@ -56,6 +58,7 @@ inspect
       isroutine
       istraceback
       joinseq
+      namedtuple
       stack
       strseq
       trace
@@ -66,10 +69,10 @@ inspect
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       ArgInfo
@@ -79,6 +82,7 @@ inspect
       BlockFinder
       ModuleInfo
       Traceback
+      attrgetter
 
    .. toctree::
        :maxdepth: 1
@@ -92,6 +96,7 @@ inspect
        generated/inspect.BlockFinder
        generated/inspect.ModuleInfo
        generated/inspect.Traceback
+       generated/inspect.attrgetter
 
    
    
@@ -99,7 +104,7 @@ inspect
    
    
    Exceptions
-   ---------
+   ----------
    .. autosummary::
       :toctree:
 

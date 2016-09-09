@@ -1,9 +1,7 @@
-zipfile.ZipInfo
-===============
-
+:class:`zipfile.ZipInfo`
+========================
 .. currentmodule:: zipfile
 .. autoclass:: ZipInfo
-   :members: __init__
    :undoc-members:
 
 
@@ -14,7 +12,16 @@ Methods
 
 
    ~ZipInfo.FileHeader
+   ~ZipInfo.__format__
    ~ZipInfo.__init__
+   ~ZipInfo.__new__
+   ~ZipInfo.__reduce__
+   ~ZipInfo.__reduce_ex__
+   ~ZipInfo.__sizeof__
+   ~ZipInfo.__subclasshook__
+   ~ZipInfo._decodeExtra
+   ~ZipInfo._decodeFilename
+   ~ZipInfo._encodeFilenameFlags
 
 
 

@@ -1,9 +1,7 @@
-Tkinter.IntVar
-==============
-
+:class:`Tkinter.IntVar`
+=======================
 .. currentmodule:: Tkinter
 .. autoclass:: IntVar
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,10 @@ Methods
    :toctree:
 
 
+   ~IntVar.__del__
+   ~IntVar.__eq__
    ~IntVar.__init__
+   ~IntVar.__str__
    ~IntVar.get
    ~IntVar.set
    ~IntVar.trace

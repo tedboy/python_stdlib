@@ -1,0 +1,39 @@
+:class:`pickletools.OpcodeInfo`
+===============================
+.. currentmodule:: pickletools
+.. autoclass:: OpcodeInfo
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~OpcodeInfo.__format__
+   ~OpcodeInfo.__init__
+   ~OpcodeInfo.__new__
+   ~OpcodeInfo.__reduce__
+   ~OpcodeInfo.__reduce_ex__
+   ~OpcodeInfo.__sizeof__
+   ~OpcodeInfo.__subclasshook__
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~OpcodeInfo.arg
+   ~OpcodeInfo.code
+   ~OpcodeInfo.doc
+   ~OpcodeInfo.name
+   ~OpcodeInfo.proto
+   ~OpcodeInfo.stack_after
+   ~OpcodeInfo.stack_before
+

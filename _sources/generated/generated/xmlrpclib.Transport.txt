@@ -1,0 +1,40 @@
+:class:`xmlrpclib.Transport`
+============================
+.. currentmodule:: xmlrpclib
+.. autoclass:: Transport
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Transport.__init__
+   ~Transport.close
+   ~Transport.get_host_info
+   ~Transport.getparser
+   ~Transport.make_connection
+   ~Transport.parse_response
+   ~Transport.request
+   ~Transport.send_content
+   ~Transport.send_host
+   ~Transport.send_request
+   ~Transport.send_user_agent
+   ~Transport.single_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Transport.accept_gzip_encoding
+   ~Transport.encode_threshold
+   ~Transport.user_agent
+

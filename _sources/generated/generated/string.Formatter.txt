@@ -1,9 +1,7 @@
-string.Formatter
-================
-
+:class:`string.Formatter`
+=========================
 .. currentmodule:: string
 .. autoclass:: Formatter
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,13 @@ Methods
    :toctree:
 
 
+   ~Formatter.__format__
+   ~Formatter.__new__
+   ~Formatter.__reduce__
+   ~Formatter.__reduce_ex__
+   ~Formatter.__sizeof__
+   ~Formatter.__subclasshook__
+   ~Formatter._vformat
    ~Formatter.check_unused_args
    ~Formatter.convert_field
    ~Formatter.format

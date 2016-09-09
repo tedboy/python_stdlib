@@ -1,0 +1,39 @@
+:class:`select.epoll`
+=====================
+.. currentmodule:: select
+.. autoclass:: epoll
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~epoll.__format__
+   ~epoll.__new__
+   ~epoll.__reduce__
+   ~epoll.__reduce_ex__
+   ~epoll.__sizeof__
+   ~epoll.__subclasshook__
+   ~epoll.close
+   ~epoll.fileno
+   ~epoll.fromfd
+   ~epoll.modify
+   ~epoll.poll
+   ~epoll.register
+   ~epoll.unregister
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~epoll.closed
+

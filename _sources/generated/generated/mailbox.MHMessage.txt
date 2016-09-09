@@ -1,0 +1,65 @@
+:class:`mailbox.MHMessage`
+==========================
+.. currentmodule:: mailbox
+.. autoclass:: MHMessage
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~MHMessage.__contains__
+   ~MHMessage.__delitem__
+   ~MHMessage.__getitem__
+   ~MHMessage.__init__
+   ~MHMessage.__len__
+   ~MHMessage.__setitem__
+   ~MHMessage.__str__
+   ~MHMessage._become_message
+   ~MHMessage._explain_to
+   ~MHMessage._get_params_preserve
+   ~MHMessage.add_header
+   ~MHMessage.add_sequence
+   ~MHMessage.as_string
+   ~MHMessage.attach
+   ~MHMessage.del_param
+   ~MHMessage.get
+   ~MHMessage.get_all
+   ~MHMessage.get_boundary
+   ~MHMessage.get_charset
+   ~MHMessage.get_charsets
+   ~MHMessage.get_content_charset
+   ~MHMessage.get_content_maintype
+   ~MHMessage.get_content_subtype
+   ~MHMessage.get_content_type
+   ~MHMessage.get_default_type
+   ~MHMessage.get_filename
+   ~MHMessage.get_param
+   ~MHMessage.get_params
+   ~MHMessage.get_payload
+   ~MHMessage.get_sequences
+   ~MHMessage.get_unixfrom
+   ~MHMessage.has_key
+   ~MHMessage.is_multipart
+   ~MHMessage.items
+   ~MHMessage.keys
+   ~MHMessage.remove_sequence
+   ~MHMessage.replace_header
+   ~MHMessage.set_boundary
+   ~MHMessage.set_charset
+   ~MHMessage.set_default_type
+   ~MHMessage.set_param
+   ~MHMessage.set_payload
+   ~MHMessage.set_sequences
+   ~MHMessage.set_type
+   ~MHMessage.set_unixfrom
+   ~MHMessage.values
+   ~MHMessage.walk
+
+
+
+
+

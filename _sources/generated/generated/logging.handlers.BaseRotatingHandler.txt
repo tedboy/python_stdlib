@@ -1,0 +1,50 @@
+:class:`logging.handlers.BaseRotatingHandler`
+=============================================
+.. currentmodule:: logging.handlers
+.. autoclass:: BaseRotatingHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BaseRotatingHandler.__format__
+   ~BaseRotatingHandler.__init__
+   ~BaseRotatingHandler.__new__
+   ~BaseRotatingHandler.__reduce__
+   ~BaseRotatingHandler.__reduce_ex__
+   ~BaseRotatingHandler.__sizeof__
+   ~BaseRotatingHandler.__subclasshook__
+   ~BaseRotatingHandler._open
+   ~BaseRotatingHandler.acquire
+   ~BaseRotatingHandler.addFilter
+   ~BaseRotatingHandler.close
+   ~BaseRotatingHandler.createLock
+   ~BaseRotatingHandler.emit
+   ~BaseRotatingHandler.filter
+   ~BaseRotatingHandler.flush
+   ~BaseRotatingHandler.format
+   ~BaseRotatingHandler.get_name
+   ~BaseRotatingHandler.handle
+   ~BaseRotatingHandler.handleError
+   ~BaseRotatingHandler.release
+   ~BaseRotatingHandler.removeFilter
+   ~BaseRotatingHandler.setFormatter
+   ~BaseRotatingHandler.setLevel
+   ~BaseRotatingHandler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~BaseRotatingHandler.name
+

@@ -1,0 +1,48 @@
+:class:`SocketServer.UnixDatagramServer`
+========================================
+.. currentmodule:: SocketServer
+.. autoclass:: UnixDatagramServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~UnixDatagramServer.__init__
+   ~UnixDatagramServer._handle_request_noblock
+   ~UnixDatagramServer.close_request
+   ~UnixDatagramServer.fileno
+   ~UnixDatagramServer.finish_request
+   ~UnixDatagramServer.get_request
+   ~UnixDatagramServer.handle_error
+   ~UnixDatagramServer.handle_request
+   ~UnixDatagramServer.handle_timeout
+   ~UnixDatagramServer.process_request
+   ~UnixDatagramServer.serve_forever
+   ~UnixDatagramServer.server_activate
+   ~UnixDatagramServer.server_bind
+   ~UnixDatagramServer.server_close
+   ~UnixDatagramServer.shutdown
+   ~UnixDatagramServer.shutdown_request
+   ~UnixDatagramServer.verify_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~UnixDatagramServer.address_family
+   ~UnixDatagramServer.allow_reuse_address
+   ~UnixDatagramServer.max_packet_size
+   ~UnixDatagramServer.request_queue_size
+   ~UnixDatagramServer.socket_type
+   ~UnixDatagramServer.timeout
+

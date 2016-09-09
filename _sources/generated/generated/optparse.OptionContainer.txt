@@ -1,0 +1,34 @@
+:class:`optparse.OptionContainer`
+=================================
+.. currentmodule:: optparse
+.. autoclass:: OptionContainer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~OptionContainer.__init__
+   ~OptionContainer._check_conflict
+   ~OptionContainer._create_option_mappings
+   ~OptionContainer._share_option_mappings
+   ~OptionContainer.add_option
+   ~OptionContainer.add_options
+   ~OptionContainer.destroy
+   ~OptionContainer.format_description
+   ~OptionContainer.format_help
+   ~OptionContainer.format_option_help
+   ~OptionContainer.get_description
+   ~OptionContainer.get_option
+   ~OptionContainer.has_option
+   ~OptionContainer.remove_option
+   ~OptionContainer.set_conflict_handler
+   ~OptionContainer.set_description
+
+
+
+
+

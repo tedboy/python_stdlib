@@ -1,5 +1,5 @@
-abc
-===
+:mod:`abc`
+==========
 
 .. automodule:: abc
 
@@ -9,7 +9,8 @@ abc
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       abstractmethod
    
@@ -18,13 +19,14 @@ abc
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       ABCMeta
+      WeakSet
       abstractproperty
 
    .. toctree::
@@ -33,6 +35,7 @@ abc
 
    
        generated/abc.ABCMeta
+       generated/abc.WeakSet
        generated/abc.abstractproperty
 
    

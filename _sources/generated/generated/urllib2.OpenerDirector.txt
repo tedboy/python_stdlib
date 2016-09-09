@@ -1,9 +1,7 @@
-urllib2.OpenerDirector
-======================
-
+:class:`urllib2.OpenerDirector`
+===============================
 .. currentmodule:: urllib2
 .. autoclass:: OpenerDirector
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,8 @@ Methods
 
 
    ~OpenerDirector.__init__
+   ~OpenerDirector._call_chain
+   ~OpenerDirector._open
    ~OpenerDirector.add_handler
    ~OpenerDirector.close
    ~OpenerDirector.error

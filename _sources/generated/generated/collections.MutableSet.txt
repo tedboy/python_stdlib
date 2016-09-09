@@ -1,19 +1,45 @@
-collections.MutableSet
-======================
-
+:class:`collections.MutableSet`
+===============================
 .. currentmodule:: collections
-
-:func:`MutableSet.__init__`
-
 .. autoclass:: MutableSet
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~MutableSet.__and__
+   ~MutableSet.__contains__
+   ~MutableSet.__eq__
+   ~MutableSet.__format__
+   ~MutableSet.__ge__
+   ~MutableSet.__gt__
+   ~MutableSet.__iand__
+   ~MutableSet.__ior__
+   ~MutableSet.__isub__
+   ~MutableSet.__iter__
+   ~MutableSet.__ixor__
+   ~MutableSet.__le__
+   ~MutableSet.__len__
+   ~MutableSet.__lt__
+   ~MutableSet.__ne__
+   ~MutableSet.__new__
+   ~MutableSet.__or__
+   ~MutableSet.__rand__
+   ~MutableSet.__reduce__
+   ~MutableSet.__reduce_ex__
+   ~MutableSet.__ror__
+   ~MutableSet.__rsub__
+   ~MutableSet.__rxor__
+   ~MutableSet.__sizeof__
+   ~MutableSet.__sub__
+   ~MutableSet.__subclasshook__
+   ~MutableSet.__xor__
+   ~MutableSet._from_iterable
+   ~MutableSet._hash
    ~MutableSet.add
    ~MutableSet.clear
    ~MutableSet.discard

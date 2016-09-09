@@ -1,0 +1,56 @@
+:class:`robotparser.URLopener`
+==============================
+.. currentmodule:: robotparser
+.. autoclass:: URLopener
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~URLopener.__del__
+   ~URLopener.__init__
+   ~URLopener.addheader
+   ~URLopener.cleanup
+   ~URLopener.close
+   ~URLopener.get_user_passwd
+   ~URLopener.http_error
+   ~URLopener.http_error_301
+   ~URLopener.http_error_302
+   ~URLopener.http_error_303
+   ~URLopener.http_error_307
+   ~URLopener.http_error_401
+   ~URLopener.http_error_407
+   ~URLopener.http_error_default
+   ~URLopener.open
+   ~URLopener.open_data
+   ~URLopener.open_file
+   ~URLopener.open_ftp
+   ~URLopener.open_http
+   ~URLopener.open_https
+   ~URLopener.open_local_file
+   ~URLopener.open_unknown
+   ~URLopener.open_unknown_proxy
+   ~URLopener.prompt_user_passwd
+   ~URLopener.redirect_internal
+   ~URLopener.retrieve
+   ~URLopener.retry_http_basic_auth
+   ~URLopener.retry_https_basic_auth
+   ~URLopener.retry_proxy_http_basic_auth
+   ~URLopener.retry_proxy_https_basic_auth
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~URLopener.version
+

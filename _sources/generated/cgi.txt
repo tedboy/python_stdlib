@@ -1,5 +1,5 @@
-cgi
-===
+:mod:`cgi`
+==========
 
 .. automodule:: cgi
 
@@ -9,10 +9,13 @@ cgi
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
+      StringIO
       dolog
       escape
+      filterwarnings
       initlog
       log
       nolog
@@ -29,16 +32,17 @@ cgi
       print_form
       test
       valid_boundary
+      warn
    
    
 
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       FieldStorage
@@ -47,6 +51,8 @@ cgi
       InterpFormContentDict
       MiniFieldStorage
       SvFormContentDict
+      attrgetter
+      catch_warnings
 
    .. toctree::
        :maxdepth: 1
@@ -59,6 +65,8 @@ cgi
        generated/cgi.InterpFormContentDict
        generated/cgi.MiniFieldStorage
        generated/cgi.SvFormContentDict
+       generated/cgi.attrgetter
+       generated/cgi.catch_warnings
 
    
    

@@ -1,9 +1,7 @@
-tarfile.TarInfo
-===============
-
+:class:`tarfile.TarInfo`
+========================
 .. currentmodule:: tarfile
 .. autoclass:: TarInfo
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,30 @@ Methods
    :toctree:
 
 
+   ~TarInfo.__format__
    ~TarInfo.__init__
+   ~TarInfo.__new__
+   ~TarInfo.__reduce__
+   ~TarInfo.__reduce_ex__
+   ~TarInfo.__repr__
+   ~TarInfo.__sizeof__
+   ~TarInfo.__subclasshook__
+   ~TarInfo._apply_pax_info
+   ~TarInfo._block
+   ~TarInfo._create_gnu_long_header
+   ~TarInfo._create_header
+   ~TarInfo._create_pax_generic_header
+   ~TarInfo._create_payload
+   ~TarInfo._getlinkpath
+   ~TarInfo._getpath
+   ~TarInfo._posix_split_name
+   ~TarInfo._proc_builtin
+   ~TarInfo._proc_gnulong
+   ~TarInfo._proc_member
+   ~TarInfo._proc_pax
+   ~TarInfo._proc_sparse
+   ~TarInfo._setlinkpath
+   ~TarInfo._setpath
    ~TarInfo.create_gnu_header
    ~TarInfo.create_pax_global_header
    ~TarInfo.create_pax_header

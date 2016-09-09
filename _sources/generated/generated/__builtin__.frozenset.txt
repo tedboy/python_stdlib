@@ -1,9 +1,7 @@
-__builtin__.frozenset
-=====================
-
+:class:`__builtin__.frozenset`
+==============================
 .. currentmodule:: __builtin__
 .. autoclass:: frozenset
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,13 @@ Methods
    :toctree:
 
 
+   ~frozenset.__contains__
+   ~frozenset.__format__
+   ~frozenset.__new__
+   ~frozenset.__reduce__
+   ~frozenset.__reduce_ex__
+   ~frozenset.__sizeof__
+   ~frozenset.__subclasshook__
    ~frozenset.copy
    ~frozenset.difference
    ~frozenset.intersection

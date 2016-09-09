@@ -1,0 +1,65 @@
+:mod:`pickletools`
+==================
+
+.. automodule:: pickletools
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      decode_long
+      dis
+      genops
+      optimize
+      read_decimalnl_long
+      read_decimalnl_short
+      read_float8
+      read_floatnl
+      read_int4
+      read_long1
+      read_long4
+      read_string1
+      read_string4
+      read_stringnl
+      read_stringnl_noescape
+      read_stringnl_noescape_pair
+      read_uint1
+      read_uint2
+      read_unicodestring4
+      read_unicodestringnl
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      ArgumentDescriptor
+      OpcodeInfo
+      StackObject
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pickletools.ArgumentDescriptor
+       generated/pickletools.OpcodeInfo
+       generated/pickletools.StackObject
+
+   
+   
+
+   
+   
+   

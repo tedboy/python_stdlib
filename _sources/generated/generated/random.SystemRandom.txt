@@ -1,9 +1,7 @@
-random.SystemRandom
-===================
-
+:class:`random.SystemRandom`
+============================
 .. currentmodule:: random
 .. autoclass:: SystemRandom
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,18 @@ Methods
    :toctree:
 
 
+   ~SystemRandom.__format__
+   ~SystemRandom.__getstate__
    ~SystemRandom.__init__
+   ~SystemRandom.__new__
+   ~SystemRandom.__reduce__
+   ~SystemRandom.__reduce_ex__
+   ~SystemRandom.__setstate__
+   ~SystemRandom.__sizeof__
+   ~SystemRandom.__subclasshook__
+   ~SystemRandom._notimplemented
+   ~SystemRandom._randbelow
+   ~SystemRandom._stub
    ~SystemRandom.betavariate
    ~SystemRandom.choice
    ~SystemRandom.expovariate

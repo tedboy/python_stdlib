@@ -1,0 +1,37 @@
+:class:`resource.struct_rusage`
+===============================
+.. currentmodule:: resource
+.. autoclass:: struct_rusage
+   :undoc-members:
+
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~struct_rusage.n_fields
+   ~struct_rusage.n_sequence_fields
+   ~struct_rusage.n_unnamed_fields
+   ~struct_rusage.ru_idrss
+   ~struct_rusage.ru_inblock
+   ~struct_rusage.ru_isrss
+   ~struct_rusage.ru_ixrss
+   ~struct_rusage.ru_majflt
+   ~struct_rusage.ru_maxrss
+   ~struct_rusage.ru_minflt
+   ~struct_rusage.ru_msgrcv
+   ~struct_rusage.ru_msgsnd
+   ~struct_rusage.ru_nivcsw
+   ~struct_rusage.ru_nsignals
+   ~struct_rusage.ru_nswap
+   ~struct_rusage.ru_nvcsw
+   ~struct_rusage.ru_oublock
+   ~struct_rusage.ru_stime
+   ~struct_rusage.ru_utime
+

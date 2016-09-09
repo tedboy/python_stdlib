@@ -1,0 +1,92 @@
+:class:`xml.dom.minidom.Text`
+=============================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: Text
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Text.__len__
+   ~Text.__nonzero__
+   ~Text.__repr__
+   ~Text.__setattr__
+   ~Text._call_user_data_handler
+   ~Text._get_childNodes
+   ~Text._get_data
+   ~Text._get_firstChild
+   ~Text._get_isWhitespaceInElementContent
+   ~Text._get_lastChild
+   ~Text._get_length
+   ~Text._get_localName
+   ~Text._get_nodeValue
+   ~Text._get_wholeText
+   ~Text._set_data
+   ~Text._set_nodeValue
+   ~Text.appendChild
+   ~Text.appendData
+   ~Text.cloneNode
+   ~Text.deleteData
+   ~Text.getInterface
+   ~Text.getUserData
+   ~Text.hasChildNodes
+   ~Text.insertBefore
+   ~Text.insertData
+   ~Text.isSameNode
+   ~Text.isSupported
+   ~Text.normalize
+   ~Text.removeChild
+   ~Text.replaceChild
+   ~Text.replaceData
+   ~Text.replaceWholeText
+   ~Text.setUserData
+   ~Text.splitText
+   ~Text.substringData
+   ~Text.toprettyxml
+   ~Text.toxml
+   ~Text.unlink
+   ~Text.writexml
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Text.ATTRIBUTE_NODE
+   ~Text.CDATA_SECTION_NODE
+   ~Text.COMMENT_NODE
+   ~Text.DOCUMENT_FRAGMENT_NODE
+   ~Text.DOCUMENT_NODE
+   ~Text.DOCUMENT_TYPE_NODE
+   ~Text.ELEMENT_NODE
+   ~Text.ENTITY_NODE
+   ~Text.ENTITY_REFERENCE_NODE
+   ~Text.NOTATION_NODE
+   ~Text.PROCESSING_INSTRUCTION_NODE
+   ~Text.TEXT_NODE
+   ~Text.attributes
+   ~Text.childNodes
+   ~Text.firstChild
+   ~Text.isWhitespaceInElementContent
+   ~Text.lastChild
+   ~Text.length
+   ~Text.localName
+   ~Text.namespaceURI
+   ~Text.nextSibling
+   ~Text.nodeName
+   ~Text.nodeType
+   ~Text.ownerDocument
+   ~Text.parentNode
+   ~Text.prefix
+   ~Text.previousSibling
+   ~Text.wholeText
+

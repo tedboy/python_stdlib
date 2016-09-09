@@ -1,0 +1,60 @@
+:mod:`gettext`
+==============
+
+.. automodule:: gettext
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      Catalog
+      bind_textdomain_codeset
+      bindtextdomain
+      c2py
+      dgettext
+      dngettext
+      find
+      gettext
+      install
+      ldgettext
+      ldngettext
+      lgettext
+      lngettext
+      ngettext
+      test
+      textdomain
+      translation
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      GNUTranslations
+      NullTranslations
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/gettext.GNUTranslations
+       generated/gettext.NullTranslations
+
+   
+   
+
+   
+   
+   

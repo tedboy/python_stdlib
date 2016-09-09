@@ -1,9 +1,7 @@
-__builtin__.float
-=================
-
+:class:`__builtin__.float`
+==========================
 .. currentmodule:: __builtin__
 .. autoclass:: float
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,16 @@ Methods
    :toctree:
 
 
+   ~float.__format__
+   ~float.__getformat__
+   ~float.__getnewargs__
+   ~float.__new__
+   ~float.__reduce__
+   ~float.__reduce_ex__
+   ~float.__setformat__
+   ~float.__sizeof__
+   ~float.__subclasshook__
+   ~float.__trunc__
    ~float.as_integer_ratio
    ~float.conjugate
    ~float.fromhex

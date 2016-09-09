@@ -1,9 +1,7 @@
-__builtin__.set
-===============
-
+:class:`__builtin__.set`
+========================
 .. currentmodule:: __builtin__
 .. autoclass:: set
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,13 @@ Methods
    :toctree:
 
 
+   ~set.__contains__
+   ~set.__format__
+   ~set.__new__
+   ~set.__reduce__
+   ~set.__reduce_ex__
+   ~set.__sizeof__
+   ~set.__subclasshook__
    ~set.add
    ~set.clear
    ~set.copy

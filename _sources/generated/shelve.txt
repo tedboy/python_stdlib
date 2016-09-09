@@ -1,0 +1,49 @@
+:mod:`shelve`
+=============
+
+.. automodule:: shelve
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      Pickler
+      StringIO
+      Unpickler
+      open
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      BsdDbShelf
+      DbfilenameShelf
+      Shelf
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/shelve.BsdDbShelf
+       generated/shelve.DbfilenameShelf
+       generated/shelve.Shelf
+
+   
+   
+
+   
+   
+   

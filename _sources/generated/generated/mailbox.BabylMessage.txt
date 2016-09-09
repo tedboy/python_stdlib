@@ -1,0 +1,68 @@
+:class:`mailbox.BabylMessage`
+=============================
+.. currentmodule:: mailbox
+.. autoclass:: BabylMessage
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BabylMessage.__contains__
+   ~BabylMessage.__delitem__
+   ~BabylMessage.__getitem__
+   ~BabylMessage.__init__
+   ~BabylMessage.__len__
+   ~BabylMessage.__setitem__
+   ~BabylMessage.__str__
+   ~BabylMessage._become_message
+   ~BabylMessage._explain_to
+   ~BabylMessage._get_params_preserve
+   ~BabylMessage.add_header
+   ~BabylMessage.add_label
+   ~BabylMessage.as_string
+   ~BabylMessage.attach
+   ~BabylMessage.del_param
+   ~BabylMessage.get
+   ~BabylMessage.get_all
+   ~BabylMessage.get_boundary
+   ~BabylMessage.get_charset
+   ~BabylMessage.get_charsets
+   ~BabylMessage.get_content_charset
+   ~BabylMessage.get_content_maintype
+   ~BabylMessage.get_content_subtype
+   ~BabylMessage.get_content_type
+   ~BabylMessage.get_default_type
+   ~BabylMessage.get_filename
+   ~BabylMessage.get_labels
+   ~BabylMessage.get_param
+   ~BabylMessage.get_params
+   ~BabylMessage.get_payload
+   ~BabylMessage.get_unixfrom
+   ~BabylMessage.get_visible
+   ~BabylMessage.has_key
+   ~BabylMessage.is_multipart
+   ~BabylMessage.items
+   ~BabylMessage.keys
+   ~BabylMessage.remove_label
+   ~BabylMessage.replace_header
+   ~BabylMessage.set_boundary
+   ~BabylMessage.set_charset
+   ~BabylMessage.set_default_type
+   ~BabylMessage.set_labels
+   ~BabylMessage.set_param
+   ~BabylMessage.set_payload
+   ~BabylMessage.set_type
+   ~BabylMessage.set_unixfrom
+   ~BabylMessage.set_visible
+   ~BabylMessage.update_visible
+   ~BabylMessage.values
+   ~BabylMessage.walk
+
+
+
+
+

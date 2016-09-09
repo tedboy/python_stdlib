@@ -1,9 +1,7 @@
-cgi.FieldStorage
-================
-
+:class:`cgi.FieldStorage`
+=========================
 .. currentmodule:: cgi
 .. autoclass:: FieldStorage
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,15 @@ Methods
    :toctree:
 
 
+   ~FieldStorage._FieldStorage__write
+   ~FieldStorage.__contains__
+   ~FieldStorage.__getattr__
+   ~FieldStorage.__getitem__
    ~FieldStorage.__init__
+   ~FieldStorage.__iter__
+   ~FieldStorage.__len__
+   ~FieldStorage.__nonzero__
+   ~FieldStorage.__repr__
    ~FieldStorage.getfirst
    ~FieldStorage.getlist
    ~FieldStorage.getvalue

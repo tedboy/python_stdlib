@@ -1,19 +1,24 @@
-types.IntType
-=============
-
+:class:`types.IntType`
+======================
 .. currentmodule:: types
-
-:func:`IntType.__init__`
-
 .. autoclass:: IntType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~IntType.__format__
+   ~IntType.__getnewargs__
+   ~IntType.__new__
+   ~IntType.__reduce__
+   ~IntType.__reduce_ex__
+   ~IntType.__sizeof__
+   ~IntType.__subclasshook__
+   ~IntType.__trunc__
    ~IntType.bit_length
    ~IntType.conjugate
 
@@ -21,11 +26,10 @@ types.IntType
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~IntType.denominator

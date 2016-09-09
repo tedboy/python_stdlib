@@ -1,5 +1,5 @@
-bz2
-===
+:mod:`bz2`
+==========
 
 .. automodule:: bz2
 
@@ -9,7 +9,8 @@ bz2
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       compress
       decompress
@@ -19,10 +20,10 @@ bz2
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       BZ2Compressor

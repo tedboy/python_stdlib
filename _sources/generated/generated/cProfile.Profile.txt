@@ -1,0 +1,35 @@
+:class:`cProfile.Profile`
+=========================
+.. currentmodule:: cProfile
+.. autoclass:: Profile
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Profile.__format__
+   ~Profile.__new__
+   ~Profile.__reduce__
+   ~Profile.__reduce_ex__
+   ~Profile.__sizeof__
+   ~Profile.__subclasshook__
+   ~Profile.clear
+   ~Profile.create_stats
+   ~Profile.disable
+   ~Profile.dump_stats
+   ~Profile.enable
+   ~Profile.getstats
+   ~Profile.print_stats
+   ~Profile.run
+   ~Profile.runcall
+   ~Profile.runctx
+   ~Profile.snapshot_stats
+
+
+
+
+

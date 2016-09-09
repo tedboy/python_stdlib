@@ -1,9 +1,7 @@
-sqlite3.Cursor
-==============
-
+:class:`sqlite3.Cursor`
+=======================
 .. currentmodule:: sqlite3
 .. autoclass:: Cursor
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~Cursor.__format__
+   ~Cursor.__new__
+   ~Cursor.__reduce__
+   ~Cursor.__reduce_ex__
+   ~Cursor.__sizeof__
+   ~Cursor.__subclasshook__
    ~Cursor.close
    ~Cursor.execute
    ~Cursor.executemany

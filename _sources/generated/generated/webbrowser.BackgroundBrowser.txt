@@ -1,9 +1,7 @@
-webbrowser.BackgroundBrowser
-============================
-
+:class:`webbrowser.BackgroundBrowser`
+=====================================
 .. currentmodule:: webbrowser
 .. autoclass:: BackgroundBrowser
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,13 @@ Methods
    :toctree:
 
 
+   ~BackgroundBrowser.__format__
    ~BackgroundBrowser.__init__
+   ~BackgroundBrowser.__new__
+   ~BackgroundBrowser.__reduce__
+   ~BackgroundBrowser.__reduce_ex__
+   ~BackgroundBrowser.__sizeof__
+   ~BackgroundBrowser.__subclasshook__
    ~BackgroundBrowser.open
    ~BackgroundBrowser.open_new
    ~BackgroundBrowser.open_new_tab

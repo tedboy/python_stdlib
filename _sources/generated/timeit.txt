@@ -1,5 +1,5 @@
-timeit
-======
+:mod:`timeit`
+=============
 
 .. automodule:: timeit
 
@@ -9,8 +9,10 @@ timeit
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
+      default_timer
       main
       reindent
       repeat
@@ -21,10 +23,10 @@ timeit
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       Timer

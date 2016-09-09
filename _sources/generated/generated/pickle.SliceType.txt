@@ -1,30 +1,32 @@
-pickle.SliceType
-================
-
+:class:`pickle.SliceType`
+=========================
 .. currentmodule:: pickle
-
-:func:`SliceType.__init__`
-
 .. autoclass:: SliceType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~SliceType.__format__
+   ~SliceType.__new__
+   ~SliceType.__reduce__
+   ~SliceType.__reduce_ex__
+   ~SliceType.__sizeof__
+   ~SliceType.__subclasshook__
    ~SliceType.indices
 
 
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~SliceType.start

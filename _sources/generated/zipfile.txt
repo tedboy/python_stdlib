@@ -1,5 +1,5 @@
-zipfile
-=======
+:mod:`zipfile`
+==============
 
 .. automodule:: zipfile
 
@@ -9,8 +9,10 @@ zipfile
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
+      crc32
       is_zipfile
       main
    
@@ -19,10 +21,10 @@ zipfile
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       PyZipFile
@@ -46,7 +48,7 @@ zipfile
    
    
    Exceptions
-   ---------
+   ----------
    .. autosummary::
       :toctree:
 

@@ -1,0 +1,93 @@
+:class:`imaplib.IMAP4`
+======================
+.. currentmodule:: imaplib
+.. autoclass:: IMAP4
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~IMAP4._CRAM_MD5_AUTH
+   ~IMAP4.__getattr__
+   ~IMAP4.__init__
+   ~IMAP4._append_untagged
+   ~IMAP4._check_bye
+   ~IMAP4._checkquote
+   ~IMAP4._command
+   ~IMAP4._command_complete
+   ~IMAP4._dump_ur
+   ~IMAP4._get_line
+   ~IMAP4._get_response
+   ~IMAP4._get_tagged_response
+   ~IMAP4._log
+   ~IMAP4._match
+   ~IMAP4._mesg
+   ~IMAP4._new_tag
+   ~IMAP4._quote
+   ~IMAP4._simple_command
+   ~IMAP4._untagged_response
+   ~IMAP4.append
+   ~IMAP4.authenticate
+   ~IMAP4.capability
+   ~IMAP4.check
+   ~IMAP4.close
+   ~IMAP4.copy
+   ~IMAP4.create
+   ~IMAP4.delete
+   ~IMAP4.deleteacl
+   ~IMAP4.expunge
+   ~IMAP4.fetch
+   ~IMAP4.getacl
+   ~IMAP4.getannotation
+   ~IMAP4.getquota
+   ~IMAP4.getquotaroot
+   ~IMAP4.list
+   ~IMAP4.login
+   ~IMAP4.login_cram_md5
+   ~IMAP4.logout
+   ~IMAP4.lsub
+   ~IMAP4.myrights
+   ~IMAP4.namespace
+   ~IMAP4.noop
+   ~IMAP4.open
+   ~IMAP4.partial
+   ~IMAP4.print_log
+   ~IMAP4.proxyauth
+   ~IMAP4.read
+   ~IMAP4.readline
+   ~IMAP4.recent
+   ~IMAP4.rename
+   ~IMAP4.response
+   ~IMAP4.search
+   ~IMAP4.select
+   ~IMAP4.send
+   ~IMAP4.setacl
+   ~IMAP4.setannotation
+   ~IMAP4.setquota
+   ~IMAP4.shutdown
+   ~IMAP4.socket
+   ~IMAP4.sort
+   ~IMAP4.status
+   ~IMAP4.store
+   ~IMAP4.subscribe
+   ~IMAP4.thread
+   ~IMAP4.uid
+   ~IMAP4.unsubscribe
+   ~IMAP4.xatom
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~IMAP4.mustquote
+

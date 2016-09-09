@@ -1,9 +1,7 @@
-urllib2.FTPHandler
-==================
-
+:class:`urllib2.FTPHandler`
+===========================
 .. currentmodule:: urllib2
 .. autoclass:: FTPHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,7 @@ Methods
    :toctree:
 
 
+   ~FTPHandler.__lt__
    ~FTPHandler.add_parent
    ~FTPHandler.close
    ~FTPHandler.connect_ftp

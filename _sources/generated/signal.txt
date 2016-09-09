@@ -1,0 +1,41 @@
+:mod:`signal`
+=============
+
+.. automodule:: signal
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      alarm
+      default_int_handler
+      getitimer
+      getsignal
+      pause
+      set_wakeup_fd
+      setitimer
+      siginterrupt
+      signal
+   
+   
+
+   
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      ItimerError
+   
+   

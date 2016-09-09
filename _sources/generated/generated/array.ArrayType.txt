@@ -1,0 +1,55 @@
+:class:`array.ArrayType`
+========================
+.. currentmodule:: array
+.. autoclass:: ArrayType
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~ArrayType.__copy__
+   ~ArrayType.__deepcopy__
+   ~ArrayType.__format__
+   ~ArrayType.__new__
+   ~ArrayType.__reduce__
+   ~ArrayType.__reduce_ex__
+   ~ArrayType.__sizeof__
+   ~ArrayType.__subclasshook__
+   ~ArrayType.append
+   ~ArrayType.buffer_info
+   ~ArrayType.byteswap
+   ~ArrayType.count
+   ~ArrayType.extend
+   ~ArrayType.fromfile
+   ~ArrayType.fromlist
+   ~ArrayType.fromstring
+   ~ArrayType.fromunicode
+   ~ArrayType.index
+   ~ArrayType.insert
+   ~ArrayType.pop
+   ~ArrayType.read
+   ~ArrayType.remove
+   ~ArrayType.reverse
+   ~ArrayType.tofile
+   ~ArrayType.tolist
+   ~ArrayType.tostring
+   ~ArrayType.tounicode
+   ~ArrayType.write
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~ArrayType.itemsize
+   ~ArrayType.typecode
+

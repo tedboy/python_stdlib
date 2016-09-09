@@ -1,5 +1,5 @@
-warnings
-========
+:mod:`warnings`
+===============
 
 .. automodule:: warnings
 
@@ -9,13 +9,16 @@ warnings
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       filterwarnings
       formatwarning
       resetwarnings
       showwarning
       simplefilter
+      warn
+      warn_explicit
       warnpy3k
    
    
@@ -23,10 +26,10 @@ warnings
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       WarningMessage

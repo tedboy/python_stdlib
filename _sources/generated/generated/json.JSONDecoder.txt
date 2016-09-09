@@ -1,9 +1,7 @@
-json.JSONDecoder
-================
-
+:class:`json.JSONDecoder`
+=========================
 .. currentmodule:: json
 .. autoclass:: JSONDecoder
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,13 @@ Methods
    :toctree:
 
 
+   ~JSONDecoder.__format__
    ~JSONDecoder.__init__
+   ~JSONDecoder.__new__
+   ~JSONDecoder.__reduce__
+   ~JSONDecoder.__reduce_ex__
+   ~JSONDecoder.__sizeof__
+   ~JSONDecoder.__subclasshook__
    ~JSONDecoder.decode
    ~JSONDecoder.raw_decode
 

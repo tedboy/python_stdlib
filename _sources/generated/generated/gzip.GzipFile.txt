@@ -1,9 +1,7 @@
-gzip.GzipFile
-=============
-
+:class:`gzip.GzipFile`
+======================
 .. currentmodule:: gzip
 .. autoclass:: GzipFile
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,29 @@ Methods
    :toctree:
 
 
+   ~GzipFile.__enter__
+   ~GzipFile.__exit__
+   ~GzipFile.__format__
    ~GzipFile.__init__
+   ~GzipFile.__new__
+   ~GzipFile.__reduce__
+   ~GzipFile.__reduce_ex__
+   ~GzipFile.__repr__
+   ~GzipFile.__sizeof__
+   ~GzipFile.__subclasshook__
+   ~GzipFile._add_read_data
+   ~GzipFile._checkClosed
+   ~GzipFile._checkReadable
+   ~GzipFile._checkSeekable
+   ~GzipFile._checkWritable
+   ~GzipFile._check_closed
+   ~GzipFile._init_read
+   ~GzipFile._init_write
+   ~GzipFile._read
+   ~GzipFile._read_eof
+   ~GzipFile._read_gzip_header
+   ~GzipFile._unread
+   ~GzipFile._write_gzip_header
    ~GzipFile.close
    ~GzipFile.detach
    ~GzipFile.fileno

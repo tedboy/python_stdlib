@@ -1,0 +1,47 @@
+:class:`SocketServer.UnixStreamServer`
+======================================
+.. currentmodule:: SocketServer
+.. autoclass:: UnixStreamServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~UnixStreamServer.__init__
+   ~UnixStreamServer._handle_request_noblock
+   ~UnixStreamServer.close_request
+   ~UnixStreamServer.fileno
+   ~UnixStreamServer.finish_request
+   ~UnixStreamServer.get_request
+   ~UnixStreamServer.handle_error
+   ~UnixStreamServer.handle_request
+   ~UnixStreamServer.handle_timeout
+   ~UnixStreamServer.process_request
+   ~UnixStreamServer.serve_forever
+   ~UnixStreamServer.server_activate
+   ~UnixStreamServer.server_bind
+   ~UnixStreamServer.server_close
+   ~UnixStreamServer.shutdown
+   ~UnixStreamServer.shutdown_request
+   ~UnixStreamServer.verify_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~UnixStreamServer.address_family
+   ~UnixStreamServer.allow_reuse_address
+   ~UnixStreamServer.request_queue_size
+   ~UnixStreamServer.socket_type
+   ~UnixStreamServer.timeout
+

@@ -1,0 +1,77 @@
+:class:`xml.dom.minidom.ProcessingInstruction`
+==============================================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: ProcessingInstruction
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~ProcessingInstruction.__init__
+   ~ProcessingInstruction.__nonzero__
+   ~ProcessingInstruction.__setattr__
+   ~ProcessingInstruction._call_user_data_handler
+   ~ProcessingInstruction._get_childNodes
+   ~ProcessingInstruction._get_data
+   ~ProcessingInstruction._get_firstChild
+   ~ProcessingInstruction._get_lastChild
+   ~ProcessingInstruction._get_localName
+   ~ProcessingInstruction._get_target
+   ~ProcessingInstruction._set_data
+   ~ProcessingInstruction._set_target
+   ~ProcessingInstruction.appendChild
+   ~ProcessingInstruction.cloneNode
+   ~ProcessingInstruction.getInterface
+   ~ProcessingInstruction.getUserData
+   ~ProcessingInstruction.hasChildNodes
+   ~ProcessingInstruction.insertBefore
+   ~ProcessingInstruction.isSameNode
+   ~ProcessingInstruction.isSupported
+   ~ProcessingInstruction.normalize
+   ~ProcessingInstruction.removeChild
+   ~ProcessingInstruction.replaceChild
+   ~ProcessingInstruction.setUserData
+   ~ProcessingInstruction.toprettyxml
+   ~ProcessingInstruction.toxml
+   ~ProcessingInstruction.unlink
+   ~ProcessingInstruction.writexml
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~ProcessingInstruction.ATTRIBUTE_NODE
+   ~ProcessingInstruction.CDATA_SECTION_NODE
+   ~ProcessingInstruction.COMMENT_NODE
+   ~ProcessingInstruction.DOCUMENT_FRAGMENT_NODE
+   ~ProcessingInstruction.DOCUMENT_NODE
+   ~ProcessingInstruction.DOCUMENT_TYPE_NODE
+   ~ProcessingInstruction.ELEMENT_NODE
+   ~ProcessingInstruction.ENTITY_NODE
+   ~ProcessingInstruction.ENTITY_REFERENCE_NODE
+   ~ProcessingInstruction.NOTATION_NODE
+   ~ProcessingInstruction.PROCESSING_INSTRUCTION_NODE
+   ~ProcessingInstruction.TEXT_NODE
+   ~ProcessingInstruction.attributes
+   ~ProcessingInstruction.childNodes
+   ~ProcessingInstruction.firstChild
+   ~ProcessingInstruction.lastChild
+   ~ProcessingInstruction.localName
+   ~ProcessingInstruction.namespaceURI
+   ~ProcessingInstruction.nextSibling
+   ~ProcessingInstruction.nodeType
+   ~ProcessingInstruction.ownerDocument
+   ~ProcessingInstruction.parentNode
+   ~ProcessingInstruction.prefix
+   ~ProcessingInstruction.previousSibling
+

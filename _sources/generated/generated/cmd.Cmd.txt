@@ -1,0 +1,54 @@
+:class:`cmd.Cmd`
+================
+.. currentmodule:: cmd
+.. autoclass:: Cmd
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Cmd.__init__
+   ~Cmd.cmdloop
+   ~Cmd.columnize
+   ~Cmd.complete
+   ~Cmd.complete_help
+   ~Cmd.completedefault
+   ~Cmd.completenames
+   ~Cmd.default
+   ~Cmd.do_help
+   ~Cmd.emptyline
+   ~Cmd.get_names
+   ~Cmd.onecmd
+   ~Cmd.parseline
+   ~Cmd.postcmd
+   ~Cmd.postloop
+   ~Cmd.precmd
+   ~Cmd.preloop
+   ~Cmd.print_topics
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Cmd.doc_header
+   ~Cmd.doc_leader
+   ~Cmd.identchars
+   ~Cmd.intro
+   ~Cmd.lastcmd
+   ~Cmd.misc_header
+   ~Cmd.nohelp
+   ~Cmd.prompt
+   ~Cmd.ruler
+   ~Cmd.undoc_header
+   ~Cmd.use_rawinput
+

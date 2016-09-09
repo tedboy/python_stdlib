@@ -1,0 +1,41 @@
+:class:`rexec.FileDelegate`
+===========================
+.. currentmodule:: rexec
+.. autoclass:: FileDelegate
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~FileDelegate.__init__
+   ~FileDelegate.__iter__
+   ~FileDelegate.close
+   ~FileDelegate.fileno
+   ~FileDelegate.flush
+   ~FileDelegate.isatty
+   ~FileDelegate.read
+   ~FileDelegate.readline
+   ~FileDelegate.readlines
+   ~FileDelegate.seek
+   ~FileDelegate.tell
+   ~FileDelegate.write
+   ~FileDelegate.writelines
+   ~FileDelegate.xreadlines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~FileDelegate.m
+   ~FileDelegate.ok_file_methods
+

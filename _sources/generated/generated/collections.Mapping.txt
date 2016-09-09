@@ -1,19 +1,28 @@
-collections.Mapping
-===================
-
+:class:`collections.Mapping`
+============================
 .. currentmodule:: collections
-
-:func:`Mapping.__init__`
-
 .. autoclass:: Mapping
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~Mapping.__contains__
+   ~Mapping.__eq__
+   ~Mapping.__format__
+   ~Mapping.__getitem__
+   ~Mapping.__iter__
+   ~Mapping.__len__
+   ~Mapping.__ne__
+   ~Mapping.__new__
+   ~Mapping.__reduce__
+   ~Mapping.__reduce_ex__
+   ~Mapping.__sizeof__
+   ~Mapping.__subclasshook__
    ~Mapping.get
    ~Mapping.items
    ~Mapping.iteritems

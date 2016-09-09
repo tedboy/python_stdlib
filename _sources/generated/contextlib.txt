@@ -1,5 +1,5 @@
-contextlib
-==========
+:mod:`contextlib`
+=================
 
 .. automodule:: contextlib
 
@@ -9,20 +9,23 @@ contextlib
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       contextmanager
       nested
+      warn
+      wraps
    
    
 
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       GeneratorContextManager

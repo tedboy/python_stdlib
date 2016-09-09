@@ -1,0 +1,84 @@
+:class:`logging.handlers.SysLogHandler`
+=======================================
+.. currentmodule:: logging.handlers
+.. autoclass:: SysLogHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SysLogHandler.__format__
+   ~SysLogHandler.__init__
+   ~SysLogHandler.__new__
+   ~SysLogHandler.__reduce__
+   ~SysLogHandler.__reduce_ex__
+   ~SysLogHandler.__sizeof__
+   ~SysLogHandler.__subclasshook__
+   ~SysLogHandler._connect_unixsocket
+   ~SysLogHandler.acquire
+   ~SysLogHandler.addFilter
+   ~SysLogHandler.close
+   ~SysLogHandler.createLock
+   ~SysLogHandler.emit
+   ~SysLogHandler.encodePriority
+   ~SysLogHandler.filter
+   ~SysLogHandler.flush
+   ~SysLogHandler.format
+   ~SysLogHandler.get_name
+   ~SysLogHandler.handle
+   ~SysLogHandler.handleError
+   ~SysLogHandler.mapPriority
+   ~SysLogHandler.release
+   ~SysLogHandler.removeFilter
+   ~SysLogHandler.setFormatter
+   ~SysLogHandler.setLevel
+   ~SysLogHandler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SysLogHandler.LOG_ALERT
+   ~SysLogHandler.LOG_AUTH
+   ~SysLogHandler.LOG_AUTHPRIV
+   ~SysLogHandler.LOG_CRIT
+   ~SysLogHandler.LOG_CRON
+   ~SysLogHandler.LOG_DAEMON
+   ~SysLogHandler.LOG_DEBUG
+   ~SysLogHandler.LOG_EMERG
+   ~SysLogHandler.LOG_ERR
+   ~SysLogHandler.LOG_FTP
+   ~SysLogHandler.LOG_INFO
+   ~SysLogHandler.LOG_KERN
+   ~SysLogHandler.LOG_LOCAL0
+   ~SysLogHandler.LOG_LOCAL1
+   ~SysLogHandler.LOG_LOCAL2
+   ~SysLogHandler.LOG_LOCAL3
+   ~SysLogHandler.LOG_LOCAL4
+   ~SysLogHandler.LOG_LOCAL5
+   ~SysLogHandler.LOG_LOCAL6
+   ~SysLogHandler.LOG_LOCAL7
+   ~SysLogHandler.LOG_LPR
+   ~SysLogHandler.LOG_MAIL
+   ~SysLogHandler.LOG_NEWS
+   ~SysLogHandler.LOG_NOTICE
+   ~SysLogHandler.LOG_SYSLOG
+   ~SysLogHandler.LOG_USER
+   ~SysLogHandler.LOG_UUCP
+   ~SysLogHandler.LOG_WARNING
+   ~SysLogHandler.facility_names
+   ~SysLogHandler.log_format_string
+   ~SysLogHandler.name
+   ~SysLogHandler.priority_map
+   ~SysLogHandler.priority_names
+

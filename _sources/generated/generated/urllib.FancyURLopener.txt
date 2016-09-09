@@ -1,9 +1,7 @@
-urllib.FancyURLopener
-=====================
-
+:class:`urllib.FancyURLopener`
+==============================
 .. currentmodule:: urllib
 .. autoclass:: FancyURLopener
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,7 @@ Methods
    :toctree:
 
 
+   ~FancyURLopener.__del__
    ~FancyURLopener.__init__
    ~FancyURLopener.addheader
    ~FancyURLopener.cleanup

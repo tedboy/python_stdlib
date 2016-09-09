@@ -1,9 +1,7 @@
-tarfile.TarFile
-===============
-
+:class:`tarfile.TarFile`
+========================
 .. currentmodule:: tarfile
 .. autoclass:: TarFile
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,24 @@ Methods
    :toctree:
 
 
+   ~TarFile.__enter__
+   ~TarFile.__exit__
+   ~TarFile.__format__
    ~TarFile.__init__
+   ~TarFile.__iter__
+   ~TarFile.__new__
+   ~TarFile.__reduce__
+   ~TarFile.__reduce_ex__
+   ~TarFile.__sizeof__
+   ~TarFile.__subclasshook__
+   ~TarFile._check
+   ~TarFile._dbg
+   ~TarFile._extract_member
+   ~TarFile._find_link_target
+   ~TarFile._getmember
+   ~TarFile._getposix
+   ~TarFile._load
+   ~TarFile._setposix
    ~TarFile.add
    ~TarFile.addfile
    ~TarFile.bz2open

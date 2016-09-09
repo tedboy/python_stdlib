@@ -1,0 +1,53 @@
+:class:`logging.handlers.SocketHandler`
+=======================================
+.. currentmodule:: logging.handlers
+.. autoclass:: SocketHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SocketHandler.__format__
+   ~SocketHandler.__init__
+   ~SocketHandler.__new__
+   ~SocketHandler.__reduce__
+   ~SocketHandler.__reduce_ex__
+   ~SocketHandler.__sizeof__
+   ~SocketHandler.__subclasshook__
+   ~SocketHandler.acquire
+   ~SocketHandler.addFilter
+   ~SocketHandler.close
+   ~SocketHandler.createLock
+   ~SocketHandler.createSocket
+   ~SocketHandler.emit
+   ~SocketHandler.filter
+   ~SocketHandler.flush
+   ~SocketHandler.format
+   ~SocketHandler.get_name
+   ~SocketHandler.handle
+   ~SocketHandler.handleError
+   ~SocketHandler.makePickle
+   ~SocketHandler.makeSocket
+   ~SocketHandler.release
+   ~SocketHandler.removeFilter
+   ~SocketHandler.send
+   ~SocketHandler.setFormatter
+   ~SocketHandler.setLevel
+   ~SocketHandler.set_name
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SocketHandler.name
+

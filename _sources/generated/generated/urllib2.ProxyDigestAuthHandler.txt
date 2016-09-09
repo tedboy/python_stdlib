@@ -1,9 +1,7 @@
-urllib2.ProxyDigestAuthHandler
-==============================
-
+:class:`urllib2.ProxyDigestAuthHandler`
+=======================================
 .. currentmodule:: urllib2
 .. autoclass:: ProxyDigestAuthHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~ProxyDigestAuthHandler.__init__
+   ~ProxyDigestAuthHandler.__lt__
    ~ProxyDigestAuthHandler.add_parent
    ~ProxyDigestAuthHandler.close
    ~ProxyDigestAuthHandler.get_algorithm_impls

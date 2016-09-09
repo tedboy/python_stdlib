@@ -1,0 +1,40 @@
+:class:`xmlrpclib.Marshaller`
+=============================
+.. currentmodule:: xmlrpclib
+.. autoclass:: Marshaller
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Marshaller._Marshaller__dump
+   ~Marshaller.__init__
+   ~Marshaller.dump_array
+   ~Marshaller.dump_bool
+   ~Marshaller.dump_datetime
+   ~Marshaller.dump_double
+   ~Marshaller.dump_instance
+   ~Marshaller.dump_int
+   ~Marshaller.dump_long
+   ~Marshaller.dump_nil
+   ~Marshaller.dump_string
+   ~Marshaller.dump_struct
+   ~Marshaller.dump_unicode
+   ~Marshaller.dumps
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Marshaller.dispatch
+

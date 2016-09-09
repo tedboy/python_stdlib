@@ -1,0 +1,165 @@
+:mod:`posix`
+============
+
+.. automodule:: posix
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      WCOREDUMP
+      WEXITSTATUS
+      WIFCONTINUED
+      WIFEXITED
+      WIFSIGNALED
+      WIFSTOPPED
+      WSTOPSIG
+      WTERMSIG
+      abort
+      access
+      chdir
+      chmod
+      chown
+      chroot
+      close
+      closerange
+      confstr
+      ctermid
+      dup
+      dup2
+      execv
+      execve
+      fchdir
+      fchmod
+      fchown
+      fdatasync
+      fdopen
+      fork
+      forkpty
+      fpathconf
+      fstat
+      fstatvfs
+      fsync
+      ftruncate
+      getcwd
+      getcwdu
+      getegid
+      geteuid
+      getgid
+      getgroups
+      getloadavg
+      getlogin
+      getpgid
+      getpgrp
+      getpid
+      getppid
+      getresgid
+      getresuid
+      getsid
+      getuid
+      initgroups
+      isatty
+      kill
+      killpg
+      lchown
+      link
+      listdir
+      lseek
+      lstat
+      major
+      makedev
+      minor
+      mkdir
+      mkfifo
+      mknod
+      nice
+      open
+      openpty
+      pathconf
+      pipe
+      popen
+      putenv
+      read
+      readlink
+      remove
+      rename
+      rmdir
+      setegid
+      seteuid
+      setgid
+      setgroups
+      setpgid
+      setpgrp
+      setregid
+      setresgid
+      setresuid
+      setreuid
+      setsid
+      setuid
+      stat
+      stat_float_times
+      statvfs
+      strerror
+      symlink
+      sysconf
+      system
+      tcgetpgrp
+      tcsetpgrp
+      tempnam
+      times
+      tmpfile
+      tmpnam
+      ttyname
+      umask
+      uname
+      unlink
+      unsetenv
+      urandom
+      utime
+      wait
+      wait3
+      wait4
+      waitpid
+      write
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      stat_result
+      statvfs_result
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/posix.stat_result
+       generated/posix.statvfs_result
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      error
+   
+   

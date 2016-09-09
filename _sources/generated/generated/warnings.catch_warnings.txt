@@ -1,9 +1,7 @@
-warnings.catch_warnings
-=======================
-
+:class:`warnings.catch_warnings`
+================================
 .. currentmodule:: warnings
 .. autoclass:: catch_warnings
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,16 @@ Methods
    :toctree:
 
 
+   ~catch_warnings.__enter__
+   ~catch_warnings.__exit__
+   ~catch_warnings.__format__
    ~catch_warnings.__init__
+   ~catch_warnings.__new__
+   ~catch_warnings.__reduce__
+   ~catch_warnings.__reduce_ex__
+   ~catch_warnings.__repr__
+   ~catch_warnings.__sizeof__
+   ~catch_warnings.__subclasshook__
 
 
 

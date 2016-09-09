@@ -1,0 +1,55 @@
+:class:`BaseHTTPServer.BaseHTTPRequestHandler`
+==============================================
+.. currentmodule:: BaseHTTPServer
+.. autoclass:: BaseHTTPRequestHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BaseHTTPRequestHandler.__init__
+   ~BaseHTTPRequestHandler.address_string
+   ~BaseHTTPRequestHandler.date_time_string
+   ~BaseHTTPRequestHandler.end_headers
+   ~BaseHTTPRequestHandler.finish
+   ~BaseHTTPRequestHandler.handle
+   ~BaseHTTPRequestHandler.handle_one_request
+   ~BaseHTTPRequestHandler.log_date_time_string
+   ~BaseHTTPRequestHandler.log_error
+   ~BaseHTTPRequestHandler.log_message
+   ~BaseHTTPRequestHandler.log_request
+   ~BaseHTTPRequestHandler.parse_request
+   ~BaseHTTPRequestHandler.send_error
+   ~BaseHTTPRequestHandler.send_header
+   ~BaseHTTPRequestHandler.send_response
+   ~BaseHTTPRequestHandler.setup
+   ~BaseHTTPRequestHandler.version_string
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~BaseHTTPRequestHandler.default_request_version
+   ~BaseHTTPRequestHandler.disable_nagle_algorithm
+   ~BaseHTTPRequestHandler.error_content_type
+   ~BaseHTTPRequestHandler.error_message_format
+   ~BaseHTTPRequestHandler.monthname
+   ~BaseHTTPRequestHandler.protocol_version
+   ~BaseHTTPRequestHandler.rbufsize
+   ~BaseHTTPRequestHandler.responses
+   ~BaseHTTPRequestHandler.server_version
+   ~BaseHTTPRequestHandler.sys_version
+   ~BaseHTTPRequestHandler.timeout
+   ~BaseHTTPRequestHandler.wbufsize
+   ~BaseHTTPRequestHandler.weekdayname
+

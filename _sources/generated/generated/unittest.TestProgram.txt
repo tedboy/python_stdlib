@@ -1,9 +1,7 @@
-unittest.TestProgram
-====================
-
+:class:`unittest.TestProgram`
+=============================
 .. currentmodule:: unittest
 .. autoclass:: TestProgram
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~TestProgram.__format__
    ~TestProgram.__init__
+   ~TestProgram.__new__
+   ~TestProgram.__reduce__
+   ~TestProgram.__reduce_ex__
+   ~TestProgram.__sizeof__
+   ~TestProgram.__subclasshook__
+   ~TestProgram._do_discovery
    ~TestProgram.createTests
    ~TestProgram.parseArgs
    ~TestProgram.runTests

@@ -1,0 +1,74 @@
+:mod:`xml.etree.ElementTree`
+============================
+
+.. automodule:: xml.etree.ElementTree
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      Comment
+      PI
+      ProcessingInstruction
+      SubElement
+      XML
+      XMLID
+      dump
+      fromstring
+      fromstringlist
+      iselement
+      iterparse
+      parse
+      register_namespace
+      tostring
+      tostringlist
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Element
+      ElementTree
+      QName
+      TreeBuilder
+      XMLParser
+      XMLTreeBuilder
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/xml.etree.ElementTree.Element
+       generated/xml.etree.ElementTree.ElementTree
+       generated/xml.etree.ElementTree.QName
+       generated/xml.etree.ElementTree.TreeBuilder
+       generated/xml.etree.ElementTree.XMLParser
+       generated/xml.etree.ElementTree.XMLTreeBuilder
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      ParseError
+   
+   

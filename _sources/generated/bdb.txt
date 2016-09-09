@@ -1,0 +1,59 @@
+:mod:`bdb`
+==========
+
+.. automodule:: bdb
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      bar
+      checkfuncname
+      effective
+      foo
+      set_trace
+      test
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Bdb
+      Breakpoint
+      Tdb
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/bdb.Bdb
+       generated/bdb.Breakpoint
+       generated/bdb.Tdb
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      BdbQuit
+   
+   

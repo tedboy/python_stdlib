@@ -1,9 +1,7 @@
-abc.abstractproperty
-====================
-
+:class:`abc.abstractproperty`
+=============================
 .. currentmodule:: abc
 .. autoclass:: abstractproperty
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~abstractproperty.__format__
+   ~abstractproperty.__new__
+   ~abstractproperty.__reduce__
+   ~abstractproperty.__reduce_ex__
+   ~abstractproperty.__sizeof__
+   ~abstractproperty.__subclasshook__
    ~abstractproperty.deleter
    ~abstractproperty.getter
    ~abstractproperty.setter

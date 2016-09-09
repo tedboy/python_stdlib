@@ -1,19 +1,36 @@
-csv
-===
+:mod:`csv`
+==========
 
 .. automodule:: csv
 
    
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      StringIO
+      field_size_limit
+      get_dialect
+      list_dialects
+      reader
+      reduce
+      register_dialect
+      unregister_dialect
+      writer
    
    
 
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       Dialect
@@ -39,5 +56,13 @@ csv
    
 
    
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      Error
    
    

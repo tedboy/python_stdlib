@@ -1,0 +1,60 @@
+:class:`io.BufferedWriter`
+==========================
+.. currentmodule:: io
+.. autoclass:: BufferedWriter
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BufferedWriter.__enter__
+   ~BufferedWriter.__exit__
+   ~BufferedWriter.__format__
+   ~BufferedWriter.__new__
+   ~BufferedWriter.__reduce__
+   ~BufferedWriter.__reduce_ex__
+   ~BufferedWriter.__sizeof__
+   ~BufferedWriter.__subclasshook__
+   ~BufferedWriter._checkClosed
+   ~BufferedWriter._checkReadable
+   ~BufferedWriter._checkSeekable
+   ~BufferedWriter._checkWritable
+   ~BufferedWriter.close
+   ~BufferedWriter.detach
+   ~BufferedWriter.fileno
+   ~BufferedWriter.flush
+   ~BufferedWriter.isatty
+   ~BufferedWriter.read
+   ~BufferedWriter.read1
+   ~BufferedWriter.readable
+   ~BufferedWriter.readinto
+   ~BufferedWriter.readline
+   ~BufferedWriter.readlines
+   ~BufferedWriter.seek
+   ~BufferedWriter.seekable
+   ~BufferedWriter.tell
+   ~BufferedWriter.truncate
+   ~BufferedWriter.writable
+   ~BufferedWriter.write
+   ~BufferedWriter.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~BufferedWriter.closed
+   ~BufferedWriter.mode
+   ~BufferedWriter.name
+   ~BufferedWriter.next
+   ~BufferedWriter.raw
+

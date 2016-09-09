@@ -1,0 +1,67 @@
+:class:`mailbox.MMDFMessage`
+============================
+.. currentmodule:: mailbox
+.. autoclass:: MMDFMessage
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~MMDFMessage.__contains__
+   ~MMDFMessage.__delitem__
+   ~MMDFMessage.__getitem__
+   ~MMDFMessage.__init__
+   ~MMDFMessage.__len__
+   ~MMDFMessage.__setitem__
+   ~MMDFMessage.__str__
+   ~MMDFMessage._become_message
+   ~MMDFMessage._explain_to
+   ~MMDFMessage._get_params_preserve
+   ~MMDFMessage.add_flag
+   ~MMDFMessage.add_header
+   ~MMDFMessage.as_string
+   ~MMDFMessage.attach
+   ~MMDFMessage.del_param
+   ~MMDFMessage.get
+   ~MMDFMessage.get_all
+   ~MMDFMessage.get_boundary
+   ~MMDFMessage.get_charset
+   ~MMDFMessage.get_charsets
+   ~MMDFMessage.get_content_charset
+   ~MMDFMessage.get_content_maintype
+   ~MMDFMessage.get_content_subtype
+   ~MMDFMessage.get_content_type
+   ~MMDFMessage.get_default_type
+   ~MMDFMessage.get_filename
+   ~MMDFMessage.get_flags
+   ~MMDFMessage.get_from
+   ~MMDFMessage.get_param
+   ~MMDFMessage.get_params
+   ~MMDFMessage.get_payload
+   ~MMDFMessage.get_unixfrom
+   ~MMDFMessage.has_key
+   ~MMDFMessage.is_multipart
+   ~MMDFMessage.items
+   ~MMDFMessage.keys
+   ~MMDFMessage.remove_flag
+   ~MMDFMessage.replace_header
+   ~MMDFMessage.set_boundary
+   ~MMDFMessage.set_charset
+   ~MMDFMessage.set_default_type
+   ~MMDFMessage.set_flags
+   ~MMDFMessage.set_from
+   ~MMDFMessage.set_param
+   ~MMDFMessage.set_payload
+   ~MMDFMessage.set_type
+   ~MMDFMessage.set_unixfrom
+   ~MMDFMessage.values
+   ~MMDFMessage.walk
+
+
+
+
+

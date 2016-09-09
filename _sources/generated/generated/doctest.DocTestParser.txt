@@ -1,9 +1,7 @@
-doctest.DocTestParser
-=====================
-
+:class:`doctest.DocTestParser`
+==============================
 .. currentmodule:: doctest
 .. autoclass:: DocTestParser
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~DocTestParser._IS_BLANK_OR_COMMENT
+   ~DocTestParser._check_prefix
+   ~DocTestParser._check_prompt_blank
+   ~DocTestParser._find_options
+   ~DocTestParser._min_indent
+   ~DocTestParser._parse_example
    ~DocTestParser.get_doctest
    ~DocTestParser.get_examples
    ~DocTestParser.parse

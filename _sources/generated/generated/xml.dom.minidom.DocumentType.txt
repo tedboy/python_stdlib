@@ -1,0 +1,81 @@
+:class:`xml.dom.minidom.DocumentType`
+=====================================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: DocumentType
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~DocumentType.__init__
+   ~DocumentType.__nonzero__
+   ~DocumentType._call_user_data_handler
+   ~DocumentType._get_childNodes
+   ~DocumentType._get_firstChild
+   ~DocumentType._get_internalSubset
+   ~DocumentType._get_lastChild
+   ~DocumentType._get_localName
+   ~DocumentType._get_publicId
+   ~DocumentType._get_systemId
+   ~DocumentType._identified_mixin_init
+   ~DocumentType.appendChild
+   ~DocumentType.cloneNode
+   ~DocumentType.getInterface
+   ~DocumentType.getUserData
+   ~DocumentType.hasChildNodes
+   ~DocumentType.insertBefore
+   ~DocumentType.isSameNode
+   ~DocumentType.isSupported
+   ~DocumentType.normalize
+   ~DocumentType.removeChild
+   ~DocumentType.replaceChild
+   ~DocumentType.setUserData
+   ~DocumentType.toprettyxml
+   ~DocumentType.toxml
+   ~DocumentType.unlink
+   ~DocumentType.writexml
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~DocumentType.ATTRIBUTE_NODE
+   ~DocumentType.CDATA_SECTION_NODE
+   ~DocumentType.COMMENT_NODE
+   ~DocumentType.DOCUMENT_FRAGMENT_NODE
+   ~DocumentType.DOCUMENT_NODE
+   ~DocumentType.DOCUMENT_TYPE_NODE
+   ~DocumentType.ELEMENT_NODE
+   ~DocumentType.ENTITY_NODE
+   ~DocumentType.ENTITY_REFERENCE_NODE
+   ~DocumentType.NOTATION_NODE
+   ~DocumentType.PROCESSING_INSTRUCTION_NODE
+   ~DocumentType.TEXT_NODE
+   ~DocumentType.attributes
+   ~DocumentType.childNodes
+   ~DocumentType.firstChild
+   ~DocumentType.internalSubset
+   ~DocumentType.lastChild
+   ~DocumentType.localName
+   ~DocumentType.name
+   ~DocumentType.namespaceURI
+   ~DocumentType.nextSibling
+   ~DocumentType.nodeType
+   ~DocumentType.nodeValue
+   ~DocumentType.ownerDocument
+   ~DocumentType.parentNode
+   ~DocumentType.prefix
+   ~DocumentType.previousSibling
+   ~DocumentType.publicId
+   ~DocumentType.systemId
+

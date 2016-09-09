@@ -1,0 +1,58 @@
+:mod:`thread`
+=============
+
+.. automodule:: thread
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      allocate
+      allocate_lock
+      exit
+      exit_thread
+      get_ident
+      interrupt_main
+      stack_size
+      start_new
+      start_new_thread
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      LockType
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/thread.LockType
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      error
+   
+   

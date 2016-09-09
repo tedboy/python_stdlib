@@ -1,19 +1,30 @@
-collections.MutableMapping
-==========================
-
+:class:`collections.MutableMapping`
+===================================
 .. currentmodule:: collections
-
-:func:`MutableMapping.__init__`
-
 .. autoclass:: MutableMapping
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~MutableMapping.__contains__
+   ~MutableMapping.__delitem__
+   ~MutableMapping.__eq__
+   ~MutableMapping.__format__
+   ~MutableMapping.__getitem__
+   ~MutableMapping.__iter__
+   ~MutableMapping.__len__
+   ~MutableMapping.__ne__
+   ~MutableMapping.__new__
+   ~MutableMapping.__reduce__
+   ~MutableMapping.__reduce_ex__
+   ~MutableMapping.__setitem__
+   ~MutableMapping.__sizeof__
+   ~MutableMapping.__subclasshook__
    ~MutableMapping.clear
    ~MutableMapping.get
    ~MutableMapping.items

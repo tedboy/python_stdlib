@@ -1,9 +1,7 @@
-doctest.DocTest
-===============
-
+:class:`doctest.DocTest`
+========================
 .. currentmodule:: doctest
 .. autoclass:: DocTest
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,12 @@ Methods
    :toctree:
 
 
+   ~DocTest.__cmp__
+   ~DocTest.__eq__
+   ~DocTest.__hash__
    ~DocTest.__init__
+   ~DocTest.__ne__
+   ~DocTest.__repr__
 
 
 

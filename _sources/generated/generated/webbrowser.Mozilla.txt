@@ -1,9 +1,7 @@
-webbrowser.Mozilla
-==================
-
+:class:`webbrowser.Mozilla`
+===========================
 .. currentmodule:: webbrowser
 .. autoclass:: Mozilla
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~Mozilla.__format__
    ~Mozilla.__init__
+   ~Mozilla.__new__
+   ~Mozilla.__reduce__
+   ~Mozilla.__reduce_ex__
+   ~Mozilla.__sizeof__
+   ~Mozilla.__subclasshook__
+   ~Mozilla._invoke
    ~Mozilla.open
    ~Mozilla.open_new
    ~Mozilla.open_new_tab

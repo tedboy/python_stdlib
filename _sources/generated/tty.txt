@@ -1,0 +1,40 @@
+:mod:`tty`
+==========
+
+.. automodule:: tty
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      setcbreak
+      setraw
+      tcdrain
+      tcflow
+      tcflush
+      tcgetattr
+      tcsendbreak
+      tcsetattr
+   
+   
+
+   
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      error
+   
+   

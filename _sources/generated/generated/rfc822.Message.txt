@@ -1,0 +1,46 @@
+:class:`rfc822.Message`
+=======================
+.. currentmodule:: rfc822
+.. autoclass:: Message
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Message.__contains__
+   ~Message.__delitem__
+   ~Message.__getitem__
+   ~Message.__init__
+   ~Message.__iter__
+   ~Message.__len__
+   ~Message.__setitem__
+   ~Message.__str__
+   ~Message.get
+   ~Message.getaddr
+   ~Message.getaddrlist
+   ~Message.getallmatchingheaders
+   ~Message.getdate
+   ~Message.getdate_tz
+   ~Message.getfirstmatchingheader
+   ~Message.getheader
+   ~Message.getheaders
+   ~Message.getrawheader
+   ~Message.has_key
+   ~Message.iscomment
+   ~Message.isheader
+   ~Message.islast
+   ~Message.items
+   ~Message.keys
+   ~Message.readheaders
+   ~Message.rewindbody
+   ~Message.setdefault
+   ~Message.values
+
+
+
+
+

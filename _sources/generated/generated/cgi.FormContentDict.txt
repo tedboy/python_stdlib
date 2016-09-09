@@ -1,9 +1,7 @@
-cgi.FormContentDict
-===================
-
+:class:`cgi.FormContentDict`
+============================
 .. currentmodule:: cgi
 .. autoclass:: FormContentDict
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~FormContentDict.__cmp__
+   ~FormContentDict.__contains__
+   ~FormContentDict.__delitem__
+   ~FormContentDict.__getitem__
    ~FormContentDict.__init__
+   ~FormContentDict.__len__
+   ~FormContentDict.__repr__
+   ~FormContentDict.__setitem__
    ~FormContentDict.clear
    ~FormContentDict.copy
    ~FormContentDict.fromkeys

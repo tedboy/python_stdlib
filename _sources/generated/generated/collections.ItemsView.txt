@@ -1,20 +1,43 @@
-collections.ItemsView
-=====================
-
+:class:`collections.ItemsView`
+==============================
 .. currentmodule:: collections
-
-:func:`ItemsView.__init__`
-
 .. autoclass:: ItemsView
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~ItemsView.__and__
+   ~ItemsView.__contains__
+   ~ItemsView.__eq__
+   ~ItemsView.__format__
+   ~ItemsView.__ge__
+   ~ItemsView.__gt__
    ~ItemsView.__init__
+   ~ItemsView.__iter__
+   ~ItemsView.__le__
+   ~ItemsView.__len__
+   ~ItemsView.__lt__
+   ~ItemsView.__ne__
+   ~ItemsView.__new__
+   ~ItemsView.__or__
+   ~ItemsView.__rand__
+   ~ItemsView.__reduce__
+   ~ItemsView.__reduce_ex__
+   ~ItemsView.__repr__
+   ~ItemsView.__ror__
+   ~ItemsView.__rsub__
+   ~ItemsView.__rxor__
+   ~ItemsView.__sizeof__
+   ~ItemsView.__sub__
+   ~ItemsView.__subclasshook__
+   ~ItemsView.__xor__
+   ~ItemsView._from_iterable
+   ~ItemsView._hash
    ~ItemsView.isdisjoint
 
 

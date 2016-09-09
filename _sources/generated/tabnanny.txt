@@ -1,0 +1,54 @@
+:mod:`tabnanny`
+===============
+
+.. automodule:: tabnanny
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      check
+      errprint
+      format_witnesses
+      main
+      process_tokens
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Whitespace
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/tabnanny.Whitespace
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      NannyNag
+   
+   

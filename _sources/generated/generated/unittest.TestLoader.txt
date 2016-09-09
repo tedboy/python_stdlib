@@ -1,9 +1,7 @@
-unittest.TestLoader
-===================
-
+:class:`unittest.TestLoader`
+============================
 .. currentmodule:: unittest
 .. autoclass:: TestLoader
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,17 @@ Methods
    :toctree:
 
 
+   ~TestLoader.__format__
+   ~TestLoader.__new__
+   ~TestLoader.__reduce__
+   ~TestLoader.__reduce_ex__
+   ~TestLoader.__sizeof__
+   ~TestLoader.__subclasshook__
+   ~TestLoader._find_tests
+   ~TestLoader._get_directory_containing_module
+   ~TestLoader._get_module_from_name
+   ~TestLoader._get_name_from_path
+   ~TestLoader._match_path
    ~TestLoader.discover
    ~TestLoader.getTestCaseNames
    ~TestLoader.loadTestsFromModule

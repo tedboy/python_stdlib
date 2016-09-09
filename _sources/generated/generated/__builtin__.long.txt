@@ -1,9 +1,7 @@
-__builtin__.long
-================
-
+:class:`__builtin__.long`
+=========================
 .. currentmodule:: __builtin__
 .. autoclass:: long
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,14 @@ Methods
    :toctree:
 
 
+   ~long.__format__
+   ~long.__getnewargs__
+   ~long.__new__
+   ~long.__reduce__
+   ~long.__reduce_ex__
+   ~long.__sizeof__
+   ~long.__subclasshook__
+   ~long.__trunc__
    ~long.bit_length
    ~long.conjugate
 

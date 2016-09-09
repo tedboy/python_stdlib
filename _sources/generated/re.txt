@@ -1,5 +1,5 @@
-re
-==
+:mod:`re`
+=========
 
 .. automodule:: re
 
@@ -9,7 +9,8 @@ re
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       compile
       escape
@@ -28,10 +29,10 @@ re
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       Scanner
@@ -47,5 +48,13 @@ re
    
 
    
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      error
    
    

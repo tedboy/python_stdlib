@@ -1,5 +1,5 @@
-tarfile
-=======
+:mod:`tarfile`
+==============
 
 .. automodule:: tarfile
 
@@ -9,8 +9,10 @@ tarfile
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
+      bltn_open
       calc_chksums
       copyfileobj
       filemode
@@ -26,10 +28,10 @@ tarfile
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       ExFileObject
@@ -55,7 +57,7 @@ tarfile
    
    
    Exceptions
-   ---------
+   ----------
    .. autosummary::
       :toctree:
 

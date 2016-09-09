@@ -1,0 +1,32 @@
+:class:`httplib.HTTP`
+=====================
+.. currentmodule:: httplib
+.. autoclass:: HTTP
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~HTTP.__init__
+   ~HTTP._setup
+   ~HTTP.close
+   ~HTTP.connect
+   ~HTTP.getfile
+   ~HTTP.getreply
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~HTTP.debuglevel
+

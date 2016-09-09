@@ -1,9 +1,7 @@
-imp.NullImporter
-================
-
+:class:`imp.NullImporter`
+=========================
 .. currentmodule:: imp
 .. autoclass:: NullImporter
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~NullImporter.__format__
+   ~NullImporter.__new__
+   ~NullImporter.__reduce__
+   ~NullImporter.__reduce_ex__
+   ~NullImporter.__sizeof__
+   ~NullImporter.__subclasshook__
    ~NullImporter.find_module
 
 

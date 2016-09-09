@@ -1,9 +1,7 @@
-cgi.SvFormContentDict
-=====================
-
+:class:`cgi.SvFormContentDict`
+==============================
 .. currentmodule:: cgi
 .. autoclass:: SvFormContentDict
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~SvFormContentDict.__cmp__
+   ~SvFormContentDict.__contains__
+   ~SvFormContentDict.__delitem__
+   ~SvFormContentDict.__getitem__
    ~SvFormContentDict.__init__
+   ~SvFormContentDict.__len__
+   ~SvFormContentDict.__repr__
+   ~SvFormContentDict.__setitem__
    ~SvFormContentDict.clear
    ~SvFormContentDict.copy
    ~SvFormContentDict.fromkeys

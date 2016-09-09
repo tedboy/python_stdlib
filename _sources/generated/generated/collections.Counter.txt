@@ -1,9 +1,7 @@
-collections.Counter
-===================
-
+:class:`collections.Counter`
+============================
 .. currentmodule:: collections
 .. autoclass:: Counter
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,22 @@ Methods
    :toctree:
 
 
+   ~Counter.__add__
+   ~Counter.__and__
+   ~Counter.__contains__
+   ~Counter.__delitem__
+   ~Counter.__format__
+   ~Counter.__getitem__
    ~Counter.__init__
+   ~Counter.__missing__
+   ~Counter.__new__
+   ~Counter.__or__
+   ~Counter.__reduce__
+   ~Counter.__reduce_ex__
+   ~Counter.__repr__
+   ~Counter.__sizeof__
+   ~Counter.__sub__
+   ~Counter.__subclasshook__
    ~Counter.clear
    ~Counter.copy
    ~Counter.elements

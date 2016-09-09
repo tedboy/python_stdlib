@@ -1,5 +1,5 @@
-pprint
-======
+:mod:`pprint`
+=============
 
 .. automodule:: pprint
 
@@ -9,7 +9,8 @@ pprint
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       isreadable
       isrecursive
@@ -22,10 +23,10 @@ pprint
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       PrettyPrinter

@@ -1,9 +1,7 @@
-unittest.FunctionTestCase
-=========================
-
+:class:`unittest.FunctionTestCase`
+==================================
 .. currentmodule:: unittest
 .. autoclass:: FunctionTestCase
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,25 @@ Methods
    :toctree:
 
 
+   ~FunctionTestCase.__call__
+   ~FunctionTestCase.__eq__
+   ~FunctionTestCase.__format__
+   ~FunctionTestCase.__hash__
    ~FunctionTestCase.__init__
+   ~FunctionTestCase.__ne__
+   ~FunctionTestCase.__new__
+   ~FunctionTestCase.__reduce__
+   ~FunctionTestCase.__reduce_ex__
+   ~FunctionTestCase.__repr__
+   ~FunctionTestCase.__sizeof__
+   ~FunctionTestCase.__str__
+   ~FunctionTestCase.__subclasshook__
+   ~FunctionTestCase._addSkip
+   ~FunctionTestCase._baseAssertEqual
+   ~FunctionTestCase._deprecate
+   ~FunctionTestCase._formatMessage
+   ~FunctionTestCase._getAssertEqualityFunc
+   ~FunctionTestCase._truncateMessage
    ~FunctionTestCase.addCleanup
    ~FunctionTestCase.addTypeEqualityFunc
    ~FunctionTestCase.assertAlmostEqual

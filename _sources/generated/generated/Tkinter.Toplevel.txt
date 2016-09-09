@@ -1,9 +1,7 @@
-Tkinter.Toplevel
-================
-
+:class:`Tkinter.Toplevel`
+=========================
 .. currentmodule:: Tkinter
 .. autoclass:: Toplevel
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Toplevel._Misc__winfo_getint
+   ~Toplevel._Misc__winfo_parseitem
+   ~Toplevel.__contains__
+   ~Toplevel.__getitem__
    ~Toplevel.__init__
+   ~Toplevel.__setitem__
+   ~Toplevel.__str__
+   ~Toplevel._bind
+   ~Toplevel._configure
+   ~Toplevel._displayof
+   ~Toplevel._do
+   ~Toplevel._getboolean
+   ~Toplevel._getconfigure
+   ~Toplevel._getconfigure1
+   ~Toplevel._getdoubles
+   ~Toplevel._getints
+   ~Toplevel._grid_configure
+   ~Toplevel._gridconvvalue
+   ~Toplevel._nametowidget
+   ~Toplevel._options
+   ~Toplevel._register
+   ~Toplevel._report_exception
+   ~Toplevel._root
+   ~Toplevel._setup
+   ~Toplevel._substitute
    ~Toplevel.after
    ~Toplevel.after_cancel
    ~Toplevel.after_idle

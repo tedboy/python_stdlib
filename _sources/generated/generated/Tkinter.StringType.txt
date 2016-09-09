@@ -1,19 +1,25 @@
-Tkinter.StringType
-==================
-
+:class:`Tkinter.StringType`
+===========================
 .. currentmodule:: Tkinter
-
-:func:`StringType.__init__`
-
 .. autoclass:: StringType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~StringType.__format__
+   ~StringType.__getnewargs__
+   ~StringType.__new__
+   ~StringType.__reduce__
+   ~StringType.__reduce_ex__
+   ~StringType.__sizeof__
+   ~StringType.__subclasshook__
+   ~StringType._formatter_field_name_split
+   ~StringType._formatter_parser
    ~StringType.capitalize
    ~StringType.center
    ~StringType.count

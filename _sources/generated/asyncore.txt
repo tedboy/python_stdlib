@@ -1,0 +1,64 @@
+:mod:`asyncore`
+===============
+
+.. automodule:: asyncore
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      close_all
+      compact_traceback
+      loop
+      poll
+      poll2
+      poll3
+      read
+      readwrite
+      write
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      dispatcher
+      dispatcher_with_send
+      file_dispatcher
+      file_wrapper
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/asyncore.dispatcher
+       generated/asyncore.dispatcher_with_send
+       generated/asyncore.file_dispatcher
+       generated/asyncore.file_wrapper
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      ExitNow
+   
+   

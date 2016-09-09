@@ -1,0 +1,259 @@
+:mod:`ast`
+==========
+
+.. automodule:: ast
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      copy_location
+      dump
+      fix_missing_locations
+      get_docstring
+      increment_lineno
+      iter_child_nodes
+      iter_fields
+      literal_eval
+      parse
+      walk
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      AST
+      Add
+      And
+      Assert
+      Assign
+      Attribute
+      AugAssign
+      AugLoad
+      AugStore
+      BinOp
+      BitAnd
+      BitOr
+      BitXor
+      BoolOp
+      Break
+      Call
+      ClassDef
+      Compare
+      Continue
+      Del
+      Delete
+      Dict
+      DictComp
+      Div
+      Ellipsis
+      Eq
+      ExceptHandler
+      Exec
+      Expr
+      Expression
+      ExtSlice
+      FloorDiv
+      For
+      FunctionDef
+      GeneratorExp
+      Global
+      Gt
+      GtE
+      If
+      IfExp
+      Import
+      ImportFrom
+      In
+      Index
+      Interactive
+      Invert
+      Is
+      IsNot
+      LShift
+      Lambda
+      List
+      ListComp
+      Load
+      Lt
+      LtE
+      Mod
+      Module
+      Mult
+      Name
+      NodeTransformer
+      NodeVisitor
+      Not
+      NotEq
+      NotIn
+      Num
+      Or
+      Param
+      Pass
+      Pow
+      Print
+      RShift
+      Raise
+      Repr
+      Return
+      Set
+      SetComp
+      Slice
+      Store
+      Str
+      Sub
+      Subscript
+      Suite
+      TryExcept
+      TryFinally
+      Tuple
+      UAdd
+      USub
+      UnaryOp
+      While
+      With
+      Yield
+      alias
+      arguments
+      boolop
+      cmpop
+      comprehension
+      excepthandler
+      expr
+      expr_context
+      keyword
+      mod
+      operator
+      slice
+      stmt
+      unaryop
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/ast.AST
+       generated/ast.Add
+       generated/ast.And
+       generated/ast.Assert
+       generated/ast.Assign
+       generated/ast.Attribute
+       generated/ast.AugAssign
+       generated/ast.AugLoad
+       generated/ast.AugStore
+       generated/ast.BinOp
+       generated/ast.BitAnd
+       generated/ast.BitOr
+       generated/ast.BitXor
+       generated/ast.BoolOp
+       generated/ast.Break
+       generated/ast.Call
+       generated/ast.ClassDef
+       generated/ast.Compare
+       generated/ast.Continue
+       generated/ast.Del
+       generated/ast.Delete
+       generated/ast.Dict
+       generated/ast.DictComp
+       generated/ast.Div
+       generated/ast.Ellipsis
+       generated/ast.Eq
+       generated/ast.ExceptHandler
+       generated/ast.Exec
+       generated/ast.Expr
+       generated/ast.Expression
+       generated/ast.ExtSlice
+       generated/ast.FloorDiv
+       generated/ast.For
+       generated/ast.FunctionDef
+       generated/ast.GeneratorExp
+       generated/ast.Global
+       generated/ast.Gt
+       generated/ast.GtE
+       generated/ast.If
+       generated/ast.IfExp
+       generated/ast.Import
+       generated/ast.ImportFrom
+       generated/ast.In
+       generated/ast.Index
+       generated/ast.Interactive
+       generated/ast.Invert
+       generated/ast.Is
+       generated/ast.IsNot
+       generated/ast.LShift
+       generated/ast.Lambda
+       generated/ast.List
+       generated/ast.ListComp
+       generated/ast.Load
+       generated/ast.Lt
+       generated/ast.LtE
+       generated/ast.Mod
+       generated/ast.Module
+       generated/ast.Mult
+       generated/ast.Name
+       generated/ast.NodeTransformer
+       generated/ast.NodeVisitor
+       generated/ast.Not
+       generated/ast.NotEq
+       generated/ast.NotIn
+       generated/ast.Num
+       generated/ast.Or
+       generated/ast.Param
+       generated/ast.Pass
+       generated/ast.Pow
+       generated/ast.Print
+       generated/ast.RShift
+       generated/ast.Raise
+       generated/ast.Repr
+       generated/ast.Return
+       generated/ast.Set
+       generated/ast.SetComp
+       generated/ast.Slice
+       generated/ast.Store
+       generated/ast.Str
+       generated/ast.Sub
+       generated/ast.Subscript
+       generated/ast.Suite
+       generated/ast.TryExcept
+       generated/ast.TryFinally
+       generated/ast.Tuple
+       generated/ast.UAdd
+       generated/ast.USub
+       generated/ast.UnaryOp
+       generated/ast.While
+       generated/ast.With
+       generated/ast.Yield
+       generated/ast.alias
+       generated/ast.arguments
+       generated/ast.boolop
+       generated/ast.cmpop
+       generated/ast.comprehension
+       generated/ast.excepthandler
+       generated/ast.expr
+       generated/ast.expr_context
+       generated/ast.keyword
+       generated/ast.mod
+       generated/ast.operator
+       generated/ast.slice
+       generated/ast.stmt
+       generated/ast.unaryop
+
+   
+   
+
+   
+   
+   

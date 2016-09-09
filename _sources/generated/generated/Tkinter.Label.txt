@@ -1,9 +1,7 @@
-Tkinter.Label
-=============
-
+:class:`Tkinter.Label`
+======================
 .. currentmodule:: Tkinter
 .. autoclass:: Label
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Label._Misc__winfo_getint
+   ~Label._Misc__winfo_parseitem
+   ~Label.__contains__
+   ~Label.__getitem__
    ~Label.__init__
+   ~Label.__setitem__
+   ~Label.__str__
+   ~Label._bind
+   ~Label._configure
+   ~Label._displayof
+   ~Label._do
+   ~Label._getboolean
+   ~Label._getconfigure
+   ~Label._getconfigure1
+   ~Label._getdoubles
+   ~Label._getints
+   ~Label._grid_configure
+   ~Label._gridconvvalue
+   ~Label._nametowidget
+   ~Label._options
+   ~Label._register
+   ~Label._report_exception
+   ~Label._root
+   ~Label._setup
+   ~Label._substitute
    ~Label.after
    ~Label.after_cancel
    ~Label.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Label.bind_class
    ~Label.bindtags
    ~Label.cget
+   ~Label.check
    ~Label.clipboard_append
    ~Label.clipboard_clear
    ~Label.clipboard_get
@@ -44,6 +67,7 @@ Methods
    ~Label.focus_lastfor
    ~Label.focus_set
    ~Label.forget
+   ~Label.form
    ~Label.getboolean
    ~Label.getvar
    ~Label.grab_current

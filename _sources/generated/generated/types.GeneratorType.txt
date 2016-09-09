@@ -1,19 +1,22 @@
-types.GeneratorType
-===================
-
+:class:`types.GeneratorType`
+============================
 .. currentmodule:: types
-
-:func:`GeneratorType.__init__`
-
 .. autoclass:: GeneratorType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~GeneratorType.__format__
+   ~GeneratorType.__new__
+   ~GeneratorType.__reduce__
+   ~GeneratorType.__reduce_ex__
+   ~GeneratorType.__sizeof__
+   ~GeneratorType.__subclasshook__
    ~GeneratorType.close
    ~GeneratorType.send
    ~GeneratorType.throw
@@ -22,11 +25,10 @@ types.GeneratorType
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~GeneratorType.gi_code

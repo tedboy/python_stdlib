@@ -1,9 +1,7 @@
-webbrowser.BaseBrowser
-======================
-
+:class:`webbrowser.BaseBrowser`
+===============================
 .. currentmodule:: webbrowser
 .. autoclass:: BaseBrowser
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,13 @@ Methods
    :toctree:
 
 
+   ~BaseBrowser.__format__
    ~BaseBrowser.__init__
+   ~BaseBrowser.__new__
+   ~BaseBrowser.__reduce__
+   ~BaseBrowser.__reduce_ex__
+   ~BaseBrowser.__sizeof__
+   ~BaseBrowser.__subclasshook__
    ~BaseBrowser.open
    ~BaseBrowser.open_new
    ~BaseBrowser.open_new_tab

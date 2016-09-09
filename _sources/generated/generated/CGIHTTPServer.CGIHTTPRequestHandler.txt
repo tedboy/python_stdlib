@@ -1,0 +1,72 @@
+:class:`CGIHTTPServer.CGIHTTPRequestHandler`
+============================================
+.. currentmodule:: CGIHTTPServer
+.. autoclass:: CGIHTTPRequestHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~CGIHTTPRequestHandler.__init__
+   ~CGIHTTPRequestHandler.address_string
+   ~CGIHTTPRequestHandler.copyfile
+   ~CGIHTTPRequestHandler.date_time_string
+   ~CGIHTTPRequestHandler.do_GET
+   ~CGIHTTPRequestHandler.do_HEAD
+   ~CGIHTTPRequestHandler.do_POST
+   ~CGIHTTPRequestHandler.end_headers
+   ~CGIHTTPRequestHandler.finish
+   ~CGIHTTPRequestHandler.guess_type
+   ~CGIHTTPRequestHandler.handle
+   ~CGIHTTPRequestHandler.handle_one_request
+   ~CGIHTTPRequestHandler.is_cgi
+   ~CGIHTTPRequestHandler.is_executable
+   ~CGIHTTPRequestHandler.is_python
+   ~CGIHTTPRequestHandler.list_directory
+   ~CGIHTTPRequestHandler.log_date_time_string
+   ~CGIHTTPRequestHandler.log_error
+   ~CGIHTTPRequestHandler.log_message
+   ~CGIHTTPRequestHandler.log_request
+   ~CGIHTTPRequestHandler.parse_request
+   ~CGIHTTPRequestHandler.run_cgi
+   ~CGIHTTPRequestHandler.send_error
+   ~CGIHTTPRequestHandler.send_head
+   ~CGIHTTPRequestHandler.send_header
+   ~CGIHTTPRequestHandler.send_response
+   ~CGIHTTPRequestHandler.setup
+   ~CGIHTTPRequestHandler.translate_path
+   ~CGIHTTPRequestHandler.version_string
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~CGIHTTPRequestHandler.cgi_directories
+   ~CGIHTTPRequestHandler.default_request_version
+   ~CGIHTTPRequestHandler.disable_nagle_algorithm
+   ~CGIHTTPRequestHandler.error_content_type
+   ~CGIHTTPRequestHandler.error_message_format
+   ~CGIHTTPRequestHandler.extensions_map
+   ~CGIHTTPRequestHandler.have_fork
+   ~CGIHTTPRequestHandler.have_popen2
+   ~CGIHTTPRequestHandler.have_popen3
+   ~CGIHTTPRequestHandler.monthname
+   ~CGIHTTPRequestHandler.protocol_version
+   ~CGIHTTPRequestHandler.rbufsize
+   ~CGIHTTPRequestHandler.responses
+   ~CGIHTTPRequestHandler.server_version
+   ~CGIHTTPRequestHandler.sys_version
+   ~CGIHTTPRequestHandler.timeout
+   ~CGIHTTPRequestHandler.wbufsize
+   ~CGIHTTPRequestHandler.weekdayname
+

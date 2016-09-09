@@ -1,0 +1,117 @@
+:mod:`codecs`
+=============
+
+.. automodule:: codecs
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      EncodedFile
+      ascii_decode
+      ascii_encode
+      backslashreplace_errors
+      charbuffer_encode
+      charmap_build
+      charmap_decode
+      charmap_encode
+      decode
+      encode
+      escape_decode
+      escape_encode
+      getdecoder
+      getencoder
+      getincrementaldecoder
+      getincrementalencoder
+      getreader
+      getwriter
+      ignore_errors
+      iterdecode
+      iterencode
+      latin_1_decode
+      latin_1_encode
+      lookup
+      lookup_error
+      make_encoding_map
+      make_identity_dict
+      open
+      raw_unicode_escape_decode
+      raw_unicode_escape_encode
+      readbuffer_encode
+      register
+      register_error
+      replace_errors
+      strict_errors
+      unicode_escape_decode
+      unicode_escape_encode
+      unicode_internal_decode
+      unicode_internal_encode
+      utf_16_be_decode
+      utf_16_be_encode
+      utf_16_decode
+      utf_16_encode
+      utf_16_ex_decode
+      utf_16_le_decode
+      utf_16_le_encode
+      utf_32_be_decode
+      utf_32_be_encode
+      utf_32_decode
+      utf_32_encode
+      utf_32_ex_decode
+      utf_32_le_decode
+      utf_32_le_encode
+      utf_7_decode
+      utf_7_encode
+      utf_8_decode
+      utf_8_encode
+      xmlcharrefreplace_errors
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      BufferedIncrementalDecoder
+      BufferedIncrementalEncoder
+      Codec
+      CodecInfo
+      IncrementalDecoder
+      IncrementalEncoder
+      StreamReader
+      StreamReaderWriter
+      StreamRecoder
+      StreamWriter
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/codecs.BufferedIncrementalDecoder
+       generated/codecs.BufferedIncrementalEncoder
+       generated/codecs.Codec
+       generated/codecs.CodecInfo
+       generated/codecs.IncrementalDecoder
+       generated/codecs.IncrementalEncoder
+       generated/codecs.StreamReader
+       generated/codecs.StreamReaderWriter
+       generated/codecs.StreamRecoder
+       generated/codecs.StreamWriter
+
+   
+   
+
+   
+   
+   

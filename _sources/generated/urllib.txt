@@ -1,5 +1,5 @@
-urllib
-======
+:mod:`urllib`
+=============
 
 .. automodule:: urllib
 
@@ -9,8 +9,10 @@ urllib
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
+      basejoin
       ftperrors
       getproxies
       getproxies_environment
@@ -49,10 +51,10 @@ urllib
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       FancyURLopener
@@ -82,7 +84,7 @@ urllib
    
    
    Exceptions
-   ---------
+   ----------
    .. autosummary::
       :toctree:
 

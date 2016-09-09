@@ -1,0 +1,152 @@
+:class:`htmllib.HTMLParser`
+===========================
+.. currentmodule:: htmllib
+.. autoclass:: HTMLParser
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~HTMLParser.__init__
+   ~HTMLParser._convert_ref
+   ~HTMLParser._parse_doctype_attlist
+   ~HTMLParser._parse_doctype_element
+   ~HTMLParser._parse_doctype_entity
+   ~HTMLParser._parse_doctype_notation
+   ~HTMLParser._parse_doctype_subset
+   ~HTMLParser._scan_name
+   ~HTMLParser.anchor_bgn
+   ~HTMLParser.anchor_end
+   ~HTMLParser.close
+   ~HTMLParser.convert_charref
+   ~HTMLParser.convert_codepoint
+   ~HTMLParser.convert_entityref
+   ~HTMLParser.ddpop
+   ~HTMLParser.do_base
+   ~HTMLParser.do_br
+   ~HTMLParser.do_dd
+   ~HTMLParser.do_dt
+   ~HTMLParser.do_hr
+   ~HTMLParser.do_img
+   ~HTMLParser.do_isindex
+   ~HTMLParser.do_li
+   ~HTMLParser.do_link
+   ~HTMLParser.do_meta
+   ~HTMLParser.do_nextid
+   ~HTMLParser.do_p
+   ~HTMLParser.do_plaintext
+   ~HTMLParser.end_a
+   ~HTMLParser.end_address
+   ~HTMLParser.end_b
+   ~HTMLParser.end_blockquote
+   ~HTMLParser.end_body
+   ~HTMLParser.end_cite
+   ~HTMLParser.end_code
+   ~HTMLParser.end_dir
+   ~HTMLParser.end_dl
+   ~HTMLParser.end_em
+   ~HTMLParser.end_h1
+   ~HTMLParser.end_h2
+   ~HTMLParser.end_h3
+   ~HTMLParser.end_h4
+   ~HTMLParser.end_h5
+   ~HTMLParser.end_h6
+   ~HTMLParser.end_head
+   ~HTMLParser.end_html
+   ~HTMLParser.end_i
+   ~HTMLParser.end_kbd
+   ~HTMLParser.end_listing
+   ~HTMLParser.end_menu
+   ~HTMLParser.end_ol
+   ~HTMLParser.end_pre
+   ~HTMLParser.end_samp
+   ~HTMLParser.end_strong
+   ~HTMLParser.end_title
+   ~HTMLParser.end_tt
+   ~HTMLParser.end_ul
+   ~HTMLParser.end_var
+   ~HTMLParser.end_xmp
+   ~HTMLParser.error
+   ~HTMLParser.feed
+   ~HTMLParser.finish_endtag
+   ~HTMLParser.finish_shorttag
+   ~HTMLParser.finish_starttag
+   ~HTMLParser.get_starttag_text
+   ~HTMLParser.getpos
+   ~HTMLParser.goahead
+   ~HTMLParser.handle_charref
+   ~HTMLParser.handle_comment
+   ~HTMLParser.handle_data
+   ~HTMLParser.handle_decl
+   ~HTMLParser.handle_endtag
+   ~HTMLParser.handle_entityref
+   ~HTMLParser.handle_image
+   ~HTMLParser.handle_pi
+   ~HTMLParser.handle_starttag
+   ~HTMLParser.parse_comment
+   ~HTMLParser.parse_declaration
+   ~HTMLParser.parse_endtag
+   ~HTMLParser.parse_marked_section
+   ~HTMLParser.parse_pi
+   ~HTMLParser.parse_starttag
+   ~HTMLParser.report_unbalanced
+   ~HTMLParser.reset
+   ~HTMLParser.save_bgn
+   ~HTMLParser.save_end
+   ~HTMLParser.setliteral
+   ~HTMLParser.setnomoretags
+   ~HTMLParser.start_a
+   ~HTMLParser.start_address
+   ~HTMLParser.start_b
+   ~HTMLParser.start_blockquote
+   ~HTMLParser.start_body
+   ~HTMLParser.start_cite
+   ~HTMLParser.start_code
+   ~HTMLParser.start_dir
+   ~HTMLParser.start_dl
+   ~HTMLParser.start_em
+   ~HTMLParser.start_h1
+   ~HTMLParser.start_h2
+   ~HTMLParser.start_h3
+   ~HTMLParser.start_h4
+   ~HTMLParser.start_h5
+   ~HTMLParser.start_h6
+   ~HTMLParser.start_head
+   ~HTMLParser.start_html
+   ~HTMLParser.start_i
+   ~HTMLParser.start_kbd
+   ~HTMLParser.start_listing
+   ~HTMLParser.start_menu
+   ~HTMLParser.start_ol
+   ~HTMLParser.start_pre
+   ~HTMLParser.start_samp
+   ~HTMLParser.start_strong
+   ~HTMLParser.start_title
+   ~HTMLParser.start_tt
+   ~HTMLParser.start_ul
+   ~HTMLParser.start_var
+   ~HTMLParser.start_xmp
+   ~HTMLParser.unknown_charref
+   ~HTMLParser.unknown_decl
+   ~HTMLParser.unknown_endtag
+   ~HTMLParser.unknown_entityref
+   ~HTMLParser.unknown_starttag
+   ~HTMLParser.updatepos
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~HTMLParser.entity_or_charref
+   ~HTMLParser.entitydefs
+

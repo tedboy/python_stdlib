@@ -1,9 +1,7 @@
-__builtin__.int
-===============
-
+:class:`__builtin__.int`
+========================
 .. currentmodule:: __builtin__
 .. autoclass:: int
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,14 @@ Methods
    :toctree:
 
 
+   ~int.__format__
+   ~int.__getnewargs__
+   ~int.__new__
+   ~int.__reduce__
+   ~int.__reduce_ex__
+   ~int.__sizeof__
+   ~int.__subclasshook__
+   ~int.__trunc__
    ~int.bit_length
    ~int.conjugate
 

@@ -1,0 +1,83 @@
+:class:`xml.dom.minidom.CharacterData`
+======================================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: CharacterData
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~CharacterData.__len__
+   ~CharacterData.__nonzero__
+   ~CharacterData.__repr__
+   ~CharacterData.__setattr__
+   ~CharacterData._call_user_data_handler
+   ~CharacterData._get_childNodes
+   ~CharacterData._get_data
+   ~CharacterData._get_firstChild
+   ~CharacterData._get_lastChild
+   ~CharacterData._get_length
+   ~CharacterData._get_localName
+   ~CharacterData._get_nodeValue
+   ~CharacterData._set_data
+   ~CharacterData._set_nodeValue
+   ~CharacterData.appendChild
+   ~CharacterData.appendData
+   ~CharacterData.cloneNode
+   ~CharacterData.deleteData
+   ~CharacterData.getInterface
+   ~CharacterData.getUserData
+   ~CharacterData.hasChildNodes
+   ~CharacterData.insertBefore
+   ~CharacterData.insertData
+   ~CharacterData.isSameNode
+   ~CharacterData.isSupported
+   ~CharacterData.normalize
+   ~CharacterData.removeChild
+   ~CharacterData.replaceChild
+   ~CharacterData.replaceData
+   ~CharacterData.setUserData
+   ~CharacterData.substringData
+   ~CharacterData.toprettyxml
+   ~CharacterData.toxml
+   ~CharacterData.unlink
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~CharacterData.ATTRIBUTE_NODE
+   ~CharacterData.CDATA_SECTION_NODE
+   ~CharacterData.COMMENT_NODE
+   ~CharacterData.DOCUMENT_FRAGMENT_NODE
+   ~CharacterData.DOCUMENT_NODE
+   ~CharacterData.DOCUMENT_TYPE_NODE
+   ~CharacterData.ELEMENT_NODE
+   ~CharacterData.ENTITY_NODE
+   ~CharacterData.ENTITY_REFERENCE_NODE
+   ~CharacterData.NOTATION_NODE
+   ~CharacterData.PROCESSING_INSTRUCTION_NODE
+   ~CharacterData.TEXT_NODE
+   ~CharacterData.attributes
+   ~CharacterData.childNodes
+   ~CharacterData.firstChild
+   ~CharacterData.lastChild
+   ~CharacterData.length
+   ~CharacterData.localName
+   ~CharacterData.namespaceURI
+   ~CharacterData.nextSibling
+   ~CharacterData.ownerDocument
+   ~CharacterData.parentNode
+   ~CharacterData.prefix
+   ~CharacterData.previousSibling
+

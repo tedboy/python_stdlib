@@ -1,9 +1,7 @@
-textwrap.TextWrapper
-====================
-
+:class:`textwrap.TextWrapper`
+=============================
 .. currentmodule:: textwrap
 .. autoclass:: TextWrapper
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,11 @@ Methods
 
 
    ~TextWrapper.__init__
+   ~TextWrapper._fix_sentence_endings
+   ~TextWrapper._handle_long_word
+   ~TextWrapper._munge_whitespace
+   ~TextWrapper._split
+   ~TextWrapper._wrap_chunks
    ~TextWrapper.fill
    ~TextWrapper.wrap
 

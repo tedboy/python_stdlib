@@ -1,0 +1,57 @@
+:class:`httplib.HTTPMessage`
+============================
+.. currentmodule:: httplib
+.. autoclass:: HTTPMessage
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~HTTPMessage.__contains__
+   ~HTTPMessage.__delitem__
+   ~HTTPMessage.__getitem__
+   ~HTTPMessage.__init__
+   ~HTTPMessage.__iter__
+   ~HTTPMessage.__len__
+   ~HTTPMessage.__setitem__
+   ~HTTPMessage.__str__
+   ~HTTPMessage.addcontinue
+   ~HTTPMessage.addheader
+   ~HTTPMessage.get
+   ~HTTPMessage.getaddr
+   ~HTTPMessage.getaddrlist
+   ~HTTPMessage.getallmatchingheaders
+   ~HTTPMessage.getdate
+   ~HTTPMessage.getdate_tz
+   ~HTTPMessage.getencoding
+   ~HTTPMessage.getfirstmatchingheader
+   ~HTTPMessage.getheader
+   ~HTTPMessage.getheaders
+   ~HTTPMessage.getmaintype
+   ~HTTPMessage.getparam
+   ~HTTPMessage.getparamnames
+   ~HTTPMessage.getplist
+   ~HTTPMessage.getrawheader
+   ~HTTPMessage.getsubtype
+   ~HTTPMessage.gettype
+   ~HTTPMessage.has_key
+   ~HTTPMessage.iscomment
+   ~HTTPMessage.isheader
+   ~HTTPMessage.islast
+   ~HTTPMessage.items
+   ~HTTPMessage.keys
+   ~HTTPMessage.parseplist
+   ~HTTPMessage.parsetype
+   ~HTTPMessage.readheaders
+   ~HTTPMessage.rewindbody
+   ~HTTPMessage.setdefault
+   ~HTTPMessage.values
+
+
+
+
+

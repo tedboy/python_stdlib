@@ -1,0 +1,45 @@
+:class:`multiprocessing.Process`
+================================
+.. currentmodule:: multiprocessing
+.. autoclass:: Process
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Process.__format__
+   ~Process.__init__
+   ~Process.__new__
+   ~Process.__reduce__
+   ~Process.__reduce_ex__
+   ~Process.__repr__
+   ~Process.__sizeof__
+   ~Process.__subclasshook__
+   ~Process._bootstrap
+   ~Process.is_alive
+   ~Process.join
+   ~Process.run
+   ~Process.start
+   ~Process.terminate
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Process.authkey
+   ~Process.daemon
+   ~Process.exitcode
+   ~Process.ident
+   ~Process.name
+   ~Process.pid
+

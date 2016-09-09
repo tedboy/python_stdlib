@@ -1,5 +1,5 @@
-xml.dom
-=======
+:mod:`xml.dom`
+==============
 
 .. automodule:: xml.dom
 
@@ -9,7 +9,8 @@ xml.dom
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       getDOMImplementation
       registerDOMImplementation
@@ -19,10 +20,10 @@ xml.dom
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       Node
@@ -42,7 +43,7 @@ xml.dom
    
    
    Exceptions
-   ---------
+   ----------
    .. autosummary::
       :toctree:
 

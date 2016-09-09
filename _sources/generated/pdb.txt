@@ -1,5 +1,5 @@
-pdb
-===
+:mod:`pdb`
+==========
 
 .. automodule:: pdb
 
@@ -9,7 +9,8 @@ pdb
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       find_function
       help
@@ -28,13 +29,14 @@ pdb
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       Pdb
+      Repr
 
    .. toctree::
        :maxdepth: 1
@@ -42,6 +44,7 @@ pdb
 
    
        generated/pdb.Pdb
+       generated/pdb.Repr
 
    
    
@@ -49,7 +52,7 @@ pdb
    
    
    Exceptions
-   ---------
+   ----------
    .. autosummary::
       :toctree:
 

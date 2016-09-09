@@ -1,0 +1,55 @@
+:class:`dummy_threading.Thread`
+===============================
+.. currentmodule:: dummy_threading
+.. autoclass:: Thread
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Thread._Thread__bootstrap
+   ~Thread._Thread__bootstrap_inner
+   ~Thread._Thread__delete
+   ~Thread._Thread__exc_clear
+   ~Thread._Thread__exc_info
+   ~Thread._Thread__stop
+   ~Thread.__format__
+   ~Thread.__init__
+   ~Thread.__new__
+   ~Thread.__reduce__
+   ~Thread.__reduce_ex__
+   ~Thread.__repr__
+   ~Thread.__sizeof__
+   ~Thread.__subclasshook__
+   ~Thread._note
+   ~Thread._reset_internal_locks
+   ~Thread._set_daemon
+   ~Thread._set_ident
+   ~Thread.getName
+   ~Thread.isAlive
+   ~Thread.isDaemon
+   ~Thread.is_alive
+   ~Thread.join
+   ~Thread.run
+   ~Thread.setDaemon
+   ~Thread.setName
+   ~Thread.start
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Thread.daemon
+   ~Thread.ident
+   ~Thread.name
+

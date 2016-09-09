@@ -1,9 +1,7 @@
-tarfile.ExFileObject
-====================
-
+:class:`tarfile.ExFileObject`
+=============================
 .. currentmodule:: tarfile
 .. autoclass:: ExFileObject
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~ExFileObject.__format__
    ~ExFileObject.__init__
+   ~ExFileObject.__iter__
+   ~ExFileObject.__new__
+   ~ExFileObject.__reduce__
+   ~ExFileObject.__reduce_ex__
+   ~ExFileObject.__sizeof__
+   ~ExFileObject.__subclasshook__
    ~ExFileObject.close
    ~ExFileObject.read
    ~ExFileObject.readline

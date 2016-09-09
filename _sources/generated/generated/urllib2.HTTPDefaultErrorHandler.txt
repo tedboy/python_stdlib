@@ -1,9 +1,7 @@
-urllib2.HTTPDefaultErrorHandler
-===============================
-
+:class:`urllib2.HTTPDefaultErrorHandler`
+========================================
 .. currentmodule:: urllib2
 .. autoclass:: HTTPDefaultErrorHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,7 @@ Methods
    :toctree:
 
 
+   ~HTTPDefaultErrorHandler.__lt__
    ~HTTPDefaultErrorHandler.add_parent
    ~HTTPDefaultErrorHandler.close
    ~HTTPDefaultErrorHandler.http_error_default

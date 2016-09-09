@@ -1,9 +1,7 @@
-doctest.SkipDocTestCase
-=======================
-
+:class:`doctest.SkipDocTestCase`
+================================
 .. currentmodule:: doctest
 .. autoclass:: SkipDocTestCase
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,25 @@ Methods
    :toctree:
 
 
+   ~SkipDocTestCase.__call__
+   ~SkipDocTestCase.__eq__
+   ~SkipDocTestCase.__format__
+   ~SkipDocTestCase.__hash__
    ~SkipDocTestCase.__init__
+   ~SkipDocTestCase.__ne__
+   ~SkipDocTestCase.__new__
+   ~SkipDocTestCase.__reduce__
+   ~SkipDocTestCase.__reduce_ex__
+   ~SkipDocTestCase.__repr__
+   ~SkipDocTestCase.__sizeof__
+   ~SkipDocTestCase.__str__
+   ~SkipDocTestCase.__subclasshook__
+   ~SkipDocTestCase._addSkip
+   ~SkipDocTestCase._baseAssertEqual
+   ~SkipDocTestCase._deprecate
+   ~SkipDocTestCase._formatMessage
+   ~SkipDocTestCase._getAssertEqualityFunc
+   ~SkipDocTestCase._truncateMessage
    ~SkipDocTestCase.addCleanup
    ~SkipDocTestCase.addTypeEqualityFunc
    ~SkipDocTestCase.assertAlmostEqual

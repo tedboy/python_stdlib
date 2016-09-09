@@ -1,9 +1,7 @@
-urllib2.AbstractHTTPHandler
-===========================
-
+:class:`urllib2.AbstractHTTPHandler`
+====================================
 .. currentmodule:: urllib2
 .. autoclass:: AbstractHTTPHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~AbstractHTTPHandler.__init__
+   ~AbstractHTTPHandler.__lt__
    ~AbstractHTTPHandler.add_parent
    ~AbstractHTTPHandler.close
    ~AbstractHTTPHandler.do_open

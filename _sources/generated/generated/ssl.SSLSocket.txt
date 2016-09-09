@@ -1,0 +1,76 @@
+:class:`ssl.SSLSocket`
+======================
+.. currentmodule:: ssl
+.. autoclass:: SSLSocket
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SSLSocket.__format__
+   ~SSLSocket.__init__
+   ~SSLSocket.__new__
+   ~SSLSocket.__reduce__
+   ~SSLSocket.__reduce_ex__
+   ~SSLSocket.__sizeof__
+   ~SSLSocket.__subclasshook__
+   ~SSLSocket._checkClosed
+   ~SSLSocket._check_connected
+   ~SSLSocket._real_close
+   ~SSLSocket._real_connect
+   ~SSLSocket.accept
+   ~SSLSocket.bind
+   ~SSLSocket.cipher
+   ~SSLSocket.close
+   ~SSLSocket.compression
+   ~SSLSocket.connect
+   ~SSLSocket.connect_ex
+   ~SSLSocket.do_handshake
+   ~SSLSocket.dup
+   ~SSLSocket.fileno
+   ~SSLSocket.get_channel_binding
+   ~SSLSocket.getpeercert
+   ~SSLSocket.getpeername
+   ~SSLSocket.getsockname
+   ~SSLSocket.getsockopt
+   ~SSLSocket.gettimeout
+   ~SSLSocket.listen
+   ~SSLSocket.makefile
+   ~SSLSocket.pending
+   ~SSLSocket.read
+   ~SSLSocket.recv
+   ~SSLSocket.recv_into
+   ~SSLSocket.recvfrom
+   ~SSLSocket.recvfrom_into
+   ~SSLSocket.selected_alpn_protocol
+   ~SSLSocket.selected_npn_protocol
+   ~SSLSocket.send
+   ~SSLSocket.sendall
+   ~SSLSocket.sendto
+   ~SSLSocket.setblocking
+   ~SSLSocket.setsockopt
+   ~SSLSocket.settimeout
+   ~SSLSocket.shutdown
+   ~SSLSocket.unwrap
+   ~SSLSocket.version
+   ~SSLSocket.write
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SSLSocket.context
+   ~SSLSocket.family
+   ~SSLSocket.proto
+   ~SSLSocket.type
+

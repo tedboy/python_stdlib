@@ -1,9 +1,7 @@
-random.WichmannHill
-===================
-
+:class:`random.WichmannHill`
+============================
 .. currentmodule:: random
 .. autoclass:: WichmannHill
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,17 @@ Methods
    :toctree:
 
 
+   ~WichmannHill._WichmannHill__whseed
+   ~WichmannHill.__format__
+   ~WichmannHill.__getstate__
    ~WichmannHill.__init__
+   ~WichmannHill.__new__
+   ~WichmannHill.__reduce__
+   ~WichmannHill.__reduce_ex__
+   ~WichmannHill.__setstate__
+   ~WichmannHill.__sizeof__
+   ~WichmannHill.__subclasshook__
+   ~WichmannHill._randbelow
    ~WichmannHill.betavariate
    ~WichmannHill.choice
    ~WichmannHill.expovariate

@@ -1,0 +1,64 @@
+:class:`smtpd.SMTPServer`
+=========================
+.. currentmodule:: smtpd
+.. autoclass:: SMTPServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SMTPServer.__getattr__
+   ~SMTPServer.__init__
+   ~SMTPServer.__repr__
+   ~SMTPServer.__str__
+   ~SMTPServer.accept
+   ~SMTPServer.add_channel
+   ~SMTPServer.bind
+   ~SMTPServer.close
+   ~SMTPServer.connect
+   ~SMTPServer.create_socket
+   ~SMTPServer.del_channel
+   ~SMTPServer.handle_accept
+   ~SMTPServer.handle_close
+   ~SMTPServer.handle_connect
+   ~SMTPServer.handle_connect_event
+   ~SMTPServer.handle_error
+   ~SMTPServer.handle_expt
+   ~SMTPServer.handle_expt_event
+   ~SMTPServer.handle_read
+   ~SMTPServer.handle_read_event
+   ~SMTPServer.handle_write
+   ~SMTPServer.handle_write_event
+   ~SMTPServer.listen
+   ~SMTPServer.log
+   ~SMTPServer.log_info
+   ~SMTPServer.process_message
+   ~SMTPServer.readable
+   ~SMTPServer.recv
+   ~SMTPServer.send
+   ~SMTPServer.set_reuse_addr
+   ~SMTPServer.set_socket
+   ~SMTPServer.writable
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SMTPServer.accepting
+   ~SMTPServer.addr
+   ~SMTPServer.closing
+   ~SMTPServer.connected
+   ~SMTPServer.connecting
+   ~SMTPServer.debug
+   ~SMTPServer.ignore_log_types
+

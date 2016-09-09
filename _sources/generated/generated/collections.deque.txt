@@ -1,9 +1,7 @@
-collections.deque
-=================
-
+:class:`collections.deque`
+==========================
 .. currentmodule:: collections
 .. autoclass:: deque
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,14 @@ Methods
    :toctree:
 
 
+   ~deque.__copy__
+   ~deque.__format__
+   ~deque.__new__
+   ~deque.__reduce__
+   ~deque.__reduce_ex__
+   ~deque.__reversed__
+   ~deque.__sizeof__
+   ~deque.__subclasshook__
    ~deque.append
    ~deque.appendleft
    ~deque.clear

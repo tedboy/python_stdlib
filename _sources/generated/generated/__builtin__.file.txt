@@ -1,9 +1,7 @@
-__builtin__.file
-================
-
+:class:`__builtin__.file`
+=========================
 .. currentmodule:: __builtin__
 .. autoclass:: file
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,14 @@ Methods
    :toctree:
 
 
+   ~file.__enter__
+   ~file.__exit__
+   ~file.__format__
+   ~file.__new__
+   ~file.__reduce__
+   ~file.__reduce_ex__
+   ~file.__sizeof__
+   ~file.__subclasshook__
    ~file.close
    ~file.fileno
    ~file.flush

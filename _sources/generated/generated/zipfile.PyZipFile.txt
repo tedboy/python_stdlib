@@ -1,9 +1,7 @@
-zipfile.PyZipFile
-=================
-
+:class:`zipfile.PyZipFile`
+==========================
 .. currentmodule:: zipfile
 .. autoclass:: PyZipFile
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,20 @@ Methods
    :toctree:
 
 
+   ~PyZipFile._RealGetContents
+   ~PyZipFile.__del__
+   ~PyZipFile.__enter__
+   ~PyZipFile.__exit__
+   ~PyZipFile.__format__
    ~PyZipFile.__init__
+   ~PyZipFile.__new__
+   ~PyZipFile.__reduce__
+   ~PyZipFile.__reduce_ex__
+   ~PyZipFile.__sizeof__
+   ~PyZipFile.__subclasshook__
+   ~PyZipFile._extract_member
+   ~PyZipFile._get_codename
+   ~PyZipFile._writecheck
    ~PyZipFile.close
    ~PyZipFile.extract
    ~PyZipFile.extractall

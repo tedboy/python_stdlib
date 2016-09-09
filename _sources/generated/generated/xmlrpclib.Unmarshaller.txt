@@ -1,0 +1,47 @@
+:class:`xmlrpclib.Unmarshaller`
+===============================
+.. currentmodule:: xmlrpclib
+.. autoclass:: Unmarshaller
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Unmarshaller.__init__
+   ~Unmarshaller.close
+   ~Unmarshaller.data
+   ~Unmarshaller.end
+   ~Unmarshaller.end_array
+   ~Unmarshaller.end_base64
+   ~Unmarshaller.end_boolean
+   ~Unmarshaller.end_dateTime
+   ~Unmarshaller.end_dispatch
+   ~Unmarshaller.end_double
+   ~Unmarshaller.end_fault
+   ~Unmarshaller.end_int
+   ~Unmarshaller.end_methodName
+   ~Unmarshaller.end_nil
+   ~Unmarshaller.end_params
+   ~Unmarshaller.end_string
+   ~Unmarshaller.end_struct
+   ~Unmarshaller.end_value
+   ~Unmarshaller.getmethodname
+   ~Unmarshaller.start
+   ~Unmarshaller.xml
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Unmarshaller.dispatch
+

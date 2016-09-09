@@ -1,0 +1,43 @@
+:class:`mhlib.Folder`
+=====================
+.. currentmodule:: mhlib
+.. autoclass:: Folder
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Folder.__init__
+   ~Folder.__repr__
+   ~Folder._copysequences
+   ~Folder._parseindex
+   ~Folder.copymessage
+   ~Folder.createmessage
+   ~Folder.error
+   ~Folder.getcurrent
+   ~Folder.getfullname
+   ~Folder.getlast
+   ~Folder.getmessagefilename
+   ~Folder.getsequences
+   ~Folder.getsequencesfilename
+   ~Folder.listallsubfolders
+   ~Folder.listmessages
+   ~Folder.listsubfolders
+   ~Folder.movemessage
+   ~Folder.openmessage
+   ~Folder.parsesequence
+   ~Folder.putsequences
+   ~Folder.refilemessages
+   ~Folder.removefromallsequences
+   ~Folder.removemessages
+   ~Folder.setcurrent
+   ~Folder.setlast
+
+
+
+
+

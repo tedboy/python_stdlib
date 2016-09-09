@@ -1,9 +1,7 @@
-warnings.WarningMessage
-=======================
-
+:class:`warnings.WarningMessage`
+================================
 .. currentmodule:: warnings
 .. autoclass:: WarningMessage
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~WarningMessage.__format__
    ~WarningMessage.__init__
+   ~WarningMessage.__new__
+   ~WarningMessage.__reduce__
+   ~WarningMessage.__reduce_ex__
+   ~WarningMessage.__sizeof__
+   ~WarningMessage.__str__
+   ~WarningMessage.__subclasshook__
 
 
 

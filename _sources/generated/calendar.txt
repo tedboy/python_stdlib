@@ -1,0 +1,70 @@
+:mod:`calendar`
+===============
+
+.. automodule:: calendar
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      format
+      formatstring
+      isleap
+      leapdays
+      main
+      monthrange
+      setfirstweekday
+      timegm
+      weekday
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Calendar
+      HTMLCalendar
+      LocaleHTMLCalendar
+      LocaleTextCalendar
+      TextCalendar
+      TimeEncoding
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/calendar.Calendar
+       generated/calendar.HTMLCalendar
+       generated/calendar.LocaleHTMLCalendar
+       generated/calendar.LocaleTextCalendar
+       generated/calendar.TextCalendar
+       generated/calendar.TimeEncoding
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      IllegalMonthError
+      IllegalWeekdayError
+      error
+   
+   

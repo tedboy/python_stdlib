@@ -1,9 +1,7 @@
-Tkinter.Frame
-=============
-
+:class:`Tkinter.Frame`
+======================
 .. currentmodule:: Tkinter
 .. autoclass:: Frame
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Frame._Misc__winfo_getint
+   ~Frame._Misc__winfo_parseitem
+   ~Frame.__contains__
+   ~Frame.__getitem__
    ~Frame.__init__
+   ~Frame.__setitem__
+   ~Frame.__str__
+   ~Frame._bind
+   ~Frame._configure
+   ~Frame._displayof
+   ~Frame._do
+   ~Frame._getboolean
+   ~Frame._getconfigure
+   ~Frame._getconfigure1
+   ~Frame._getdoubles
+   ~Frame._getints
+   ~Frame._grid_configure
+   ~Frame._gridconvvalue
+   ~Frame._nametowidget
+   ~Frame._options
+   ~Frame._register
+   ~Frame._report_exception
+   ~Frame._root
+   ~Frame._setup
+   ~Frame._substitute
    ~Frame.after
    ~Frame.after_cancel
    ~Frame.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Frame.bind_class
    ~Frame.bindtags
    ~Frame.cget
+   ~Frame.check
    ~Frame.clipboard_append
    ~Frame.clipboard_clear
    ~Frame.clipboard_get
@@ -44,6 +67,7 @@ Methods
    ~Frame.focus_lastfor
    ~Frame.focus_set
    ~Frame.forget
+   ~Frame.form
    ~Frame.getboolean
    ~Frame.getvar
    ~Frame.grab_current

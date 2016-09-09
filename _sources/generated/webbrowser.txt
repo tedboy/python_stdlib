@@ -1,5 +1,5 @@
-webbrowser
-==========
+:mod:`webbrowser`
+=================
 
 .. automodule:: webbrowser
 
@@ -9,7 +9,8 @@ webbrowser
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       get
       main
@@ -24,10 +25,10 @@ webbrowser
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       BackgroundBrowser
@@ -69,7 +70,7 @@ webbrowser
    
    
    Exceptions
-   ---------
+   ----------
    .. autosummary::
       :toctree:
 

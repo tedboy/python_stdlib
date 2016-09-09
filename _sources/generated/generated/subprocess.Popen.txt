@@ -1,9 +1,7 @@
-subprocess.Popen
-================
-
+:class:`subprocess.Popen`
+=========================
 .. currentmodule:: subprocess
 .. autoclass:: Popen
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,24 @@ Methods
    :toctree:
 
 
+   ~Popen.__del__
+   ~Popen.__format__
    ~Popen.__init__
+   ~Popen.__new__
+   ~Popen.__reduce__
+   ~Popen.__reduce_ex__
+   ~Popen.__sizeof__
+   ~Popen.__subclasshook__
+   ~Popen._close_fds
+   ~Popen._communicate
+   ~Popen._communicate_with_poll
+   ~Popen._communicate_with_select
+   ~Popen._execute_child
+   ~Popen._get_handles
+   ~Popen._handle_exitstatus
+   ~Popen._internal_poll
+   ~Popen._set_cloexec_flag
+   ~Popen._translate_newlines
    ~Popen.communicate
    ~Popen.kill
    ~Popen.pipe_cloexec

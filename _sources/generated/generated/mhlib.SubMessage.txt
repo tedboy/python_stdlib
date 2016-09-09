@@ -1,0 +1,60 @@
+:class:`mhlib.SubMessage`
+=========================
+.. currentmodule:: mhlib
+.. autoclass:: SubMessage
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SubMessage.__contains__
+   ~SubMessage.__delitem__
+   ~SubMessage.__getitem__
+   ~SubMessage.__init__
+   ~SubMessage.__iter__
+   ~SubMessage.__len__
+   ~SubMessage.__repr__
+   ~SubMessage.__setitem__
+   ~SubMessage.__str__
+   ~SubMessage.get
+   ~SubMessage.getaddr
+   ~SubMessage.getaddrlist
+   ~SubMessage.getallmatchingheaders
+   ~SubMessage.getbody
+   ~SubMessage.getbodyparts
+   ~SubMessage.getbodytext
+   ~SubMessage.getdate
+   ~SubMessage.getdate_tz
+   ~SubMessage.getencoding
+   ~SubMessage.getfirstmatchingheader
+   ~SubMessage.getheader
+   ~SubMessage.getheaders
+   ~SubMessage.getheadertext
+   ~SubMessage.getmaintype
+   ~SubMessage.getparam
+   ~SubMessage.getparamnames
+   ~SubMessage.getplist
+   ~SubMessage.getrawheader
+   ~SubMessage.getsubtype
+   ~SubMessage.gettype
+   ~SubMessage.has_key
+   ~SubMessage.iscomment
+   ~SubMessage.isheader
+   ~SubMessage.islast
+   ~SubMessage.items
+   ~SubMessage.keys
+   ~SubMessage.parseplist
+   ~SubMessage.parsetype
+   ~SubMessage.readheaders
+   ~SubMessage.rewindbody
+   ~SubMessage.setdefault
+   ~SubMessage.values
+
+
+
+
+

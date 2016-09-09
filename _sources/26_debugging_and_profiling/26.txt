@@ -1,0 +1,18 @@
+26. Debugging and Profiling
+"""""""""""""""""""""""""""
+https://docs.python.org/2/library/debug.html
+
+These libraries help you with Python development: the debugger enables you to step through code, analyze stack frames and set breakpoints etc., and the profilers run code and give you a detailed breakdown of execution times, allowing you to identify bottlenecks in your programs.
+
+.. toctree::
+    :maxdepth: 2
+    :numbered:
+
+    26.1_bdb.rst
+    26.23_pdb.rst
+    26.3.debugger_commands.rst
+    26.4.python_profiler.rst
+    26.5_hotshot
+    26.6_timeit.rst
+    26.7_trace.rst
+

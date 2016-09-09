@@ -1,9 +1,7 @@
-doctest.DocTestRunner
-=====================
-
+:class:`doctest.DocTestRunner`
+==============================
 .. currentmodule:: doctest
 .. autoclass:: DocTestRunner
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,11 @@ Methods
    :toctree:
 
 
+   ~DocTestRunner._DocTestRunner__patched_linecache_getlines
+   ~DocTestRunner._DocTestRunner__record_outcome
+   ~DocTestRunner._DocTestRunner__run
    ~DocTestRunner.__init__
+   ~DocTestRunner._failure_header
    ~DocTestRunner.merge
    ~DocTestRunner.report_failure
    ~DocTestRunner.report_start

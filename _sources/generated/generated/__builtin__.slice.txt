@@ -1,9 +1,7 @@
-__builtin__.slice
-=================
-
+:class:`__builtin__.slice`
+==========================
 .. currentmodule:: __builtin__
 .. autoclass:: slice
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~slice.__format__
+   ~slice.__new__
+   ~slice.__reduce__
+   ~slice.__reduce_ex__
+   ~slice.__sizeof__
+   ~slice.__subclasshook__
    ~slice.indices
 
 

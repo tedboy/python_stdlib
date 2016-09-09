@@ -1,9 +1,7 @@
-urlparse.ParseResult
-====================
-
+:class:`urlparse.ParseResult`
+=============================
 .. currentmodule:: urlparse
 .. autoclass:: ParseResult
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,18 @@ Methods
    :toctree:
 
 
+   ~ParseResult.__format__
+   ~ParseResult.__getnewargs__
+   ~ParseResult.__getstate__
+   ~ParseResult.__new__
+   ~ParseResult.__reduce__
+   ~ParseResult.__reduce_ex__
+   ~ParseResult.__repr__
+   ~ParseResult.__sizeof__
+   ~ParseResult.__subclasshook__
+   ~ParseResult._asdict
+   ~ParseResult._make
+   ~ParseResult._replace
    ~ParseResult.count
    ~ParseResult.geturl
    ~ParseResult.index

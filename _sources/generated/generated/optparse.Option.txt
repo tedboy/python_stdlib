@@ -1,0 +1,53 @@
+:class:`optparse.Option`
+========================
+.. currentmodule:: optparse
+.. autoclass:: Option
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Option.__init__
+   ~Option.__repr__
+   ~Option.__str__
+   ~Option._check_action
+   ~Option._check_callback
+   ~Option._check_choice
+   ~Option._check_const
+   ~Option._check_dest
+   ~Option._check_nargs
+   ~Option._check_opt_strings
+   ~Option._check_type
+   ~Option._set_attrs
+   ~Option._set_opt_strings
+   ~Option.check_value
+   ~Option.convert_value
+   ~Option.get_opt_string
+   ~Option.process
+   ~Option.take_action
+   ~Option.takes_value
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Option.ACTIONS
+   ~Option.ALWAYS_TYPED_ACTIONS
+   ~Option.ATTRS
+   ~Option.CHECK_METHODS
+   ~Option.CONST_ACTIONS
+   ~Option.STORE_ACTIONS
+   ~Option.TYPED_ACTIONS
+   ~Option.TYPES
+   ~Option.TYPE_CHECKER
+

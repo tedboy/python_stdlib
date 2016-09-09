@@ -1,9 +1,7 @@
-pickle.Pickler
-==============
-
+:class:`pickle.Pickler`
+=======================
 .. currentmodule:: pickle
 .. autoclass:: Pickler
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,8 @@ Methods
 
 
    ~Pickler.__init__
+   ~Pickler._batch_appends
+   ~Pickler._batch_setitems
    ~Pickler.clear_memo
    ~Pickler.dump
    ~Pickler.get

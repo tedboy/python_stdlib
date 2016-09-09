@@ -1,5 +1,5 @@
-itertools
-=========
+:mod:`itertools`
+================
 
 .. automodule:: itertools
 
@@ -9,7 +9,8 @@ itertools
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       tee
    
@@ -18,10 +19,10 @@ itertools
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       chain

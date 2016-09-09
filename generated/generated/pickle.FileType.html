@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.2.2.2.12. pickle.FileType &mdash; Python Standard Library</title>
+  <title>pickle.FileType &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
   
 
   
@@ -31,9 +33,9 @@
 
   
     <link rel="top" title="Python Standard Library" href="../../index.html"/>
-        <link rel="up" title="3.2.2. pickle" href="../pickle.html"/>
-        <link rel="next" title="3.2.2.2.13. pickle.FloatType" href="pickle.FloatType.html"/>
-        <link rel="prev" title="3.2.2.2.11. pickle.EllipsisType" href="pickle.EllipsisType.html"/> 
+        <link rel="up" title="pickle" href="../pickle.html"/>
+        <link rel="next" title="pickle.FileType.__enter__" href="pickle.FileType.__enter__.html"/>
+        <link rel="prev" title="pickle.EllipsisType" href="pickle.EllipsisType.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -61,10 +63,6 @@
           
             
             
-              <div class="version">
-                1
-              </div>
-            
           
 
           
@@ -84,42 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../pickle.html">3.2.2. pickle</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../pickle.html#functions">3.2.2.1. Functions</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../pickle.html#classes">3.2.2.2. Classes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pickle.html#exceptions">3.2.2.3. Exceptions</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../cPickle.html">3.2.3. cPickle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../csv.html">3.2.4. csv</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../zlib.html">3.2.5. zlib</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../gzip.html">3.2.6. gzip</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../bz2.html">3.2.7. bz2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../zipfile.html">3.2.8. zipfile</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../tarfile.html">3.2.9. tarfile</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -161,11 +137,11 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+          <li><a href="../../api_11to15.html">API: 11 - 15</a> &raquo;</li>
         
-          <li><a href="../pickle.html">3.2.2. pickle</a> &raquo;</li>
+          <li><a href="../pickle.html"><code class="docutils literal"><span class="pre">pickle</span></code></a> &raquo;</li>
         
-      <li>3.2.2.2.12. pickle.FileType</li>
+      <li><code class="docutils literal"><span class="pre">pickle.FileType</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,14 +159,125 @@
            <div itemprop="articleBody">
             
   <div class="section" id="pickle-filetype">
-<h1>3.2.2.2.12. pickle.FileType<a class="headerlink" href="#pickle-filetype" title="Permalink to this headline">¶</a></h1>
-<p><code class="xref py py-func docutils literal"><span class="pre">FileType.__init__()</span></code></p>
+<h1><a class="reference internal" href="#pickle.FileType" title="pickle.FileType"><code class="xref py py-class docutils literal"><span class="pre">pickle.FileType</span></code></a><a class="headerlink" href="#pickle-filetype" title="Permalink to this headline">¶</a></h1>
 <dl class="attribute">
 <dt id="pickle.FileType">
 <code class="descclassname">pickle.</code><code class="descname">FileType</code><a class="headerlink" href="#pickle.FileType" title="Permalink to this definition">¶</a></dt>
-<dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">file</span></code></p>
+<dd><p>alias of <a class="reference internal" href="../../02_builtin_functions/02.html#file" title="file"><code class="xref py py-class docutils literal"><span class="pre">file</span></code></a></p>
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.__enter__.html#pickle.FileType.__enter__" title="pickle.FileType.__enter__"><code class="xref py py-obj docutils literal"><span class="pre">__enter__</span></code></a>(()&nbsp;-&gt;&nbsp;self.)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.__exit__.html#pickle.FileType.__exit__" title="pickle.FileType.__exit__"><code class="xref py py-obj docutils literal"><span class="pre">__exit__</span></code></a>((*excinfo)&nbsp;-&gt;&nbsp;None.&nbsp;&nbsp;Closes&nbsp;the&nbsp;file.)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.__format__.html#pickle.FileType.__format__" title="pickle.FileType.__format__"><code class="xref py py-obj docutils literal"><span class="pre">__format__</span></code></a></td>
+<td>default object formatter</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.__new__.html#pickle.FileType.__new__" title="pickle.FileType.__new__"><code class="xref py py-obj docutils literal"><span class="pre">__new__</span></code></a>((S,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.__reduce__.html#pickle.FileType.__reduce__" title="pickle.FileType.__reduce__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.__reduce_ex__.html#pickle.FileType.__reduce_ex__" title="pickle.FileType.__reduce_ex__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce_ex__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.__sizeof__.html#pickle.FileType.__sizeof__" title="pickle.FileType.__sizeof__"><code class="xref py py-obj docutils literal"><span class="pre">__sizeof__</span></code></a>(()&nbsp;-&gt;&nbsp;int)</td>
+<td>size of object in memory, in bytes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.__subclasshook__.html#pickle.FileType.__subclasshook__" title="pickle.FileType.__subclasshook__"><code class="xref py py-obj docutils literal"><span class="pre">__subclasshook__</span></code></a></td>
+<td>Abstract classes can override this to customize issubclass().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.close.html#pickle.FileType.close" title="pickle.FileType.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>(...)</td>
+<td>Sets data attribute .closed to True.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.fileno.html#pickle.FileType.fileno" title="pickle.FileType.fileno"><code class="xref py py-obj docutils literal"><span class="pre">fileno</span></code></a>(()&nbsp;-&gt;&nbsp;integer&nbsp;&#8220;file&nbsp;descriptor&#8221;.)</td>
+<td>This is needed for lower-level file interfaces, such os.read().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.flush.html#pickle.FileType.flush" title="pickle.FileType.flush"><code class="xref py py-obj docutils literal"><span class="pre">flush</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.isatty.html#pickle.FileType.isatty" title="pickle.FileType.isatty"><code class="xref py py-obj docutils literal"><span class="pre">isatty</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.read.html#pickle.FileType.read" title="pickle.FileType.read"><code class="xref py py-obj docutils literal"><span class="pre">read</span></code></a>(([size])&nbsp;-&gt;&nbsp;read&nbsp;at&nbsp;most&nbsp;size&nbsp;bytes,&nbsp;...)</td>
+<td>If the size argument is negative or omitted, read until EOF is reached.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.readinto.html#pickle.FileType.readinto" title="pickle.FileType.readinto"><code class="xref py py-obj docutils literal"><span class="pre">readinto</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.readline.html#pickle.FileType.readline" title="pickle.FileType.readline"><code class="xref py py-obj docutils literal"><span class="pre">readline</span></code></a>(...)</td>
+<td>Retain newline.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.readlines.html#pickle.FileType.readlines" title="pickle.FileType.readlines"><code class="xref py py-obj docutils literal"><span class="pre">readlines</span></code></a>(([size])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings,&nbsp;...)</td>
+<td>Call readline() repeatedly and return a list of the lines so read.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.seek.html#pickle.FileType.seek" title="pickle.FileType.seek"><code class="xref py py-obj docutils literal"><span class="pre">seek</span></code></a>((offset[,&nbsp;...)</td>
+<td>Argument offset is a byte count.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.tell.html#pickle.FileType.tell" title="pickle.FileType.tell"><code class="xref py py-obj docutils literal"><span class="pre">tell</span></code></a>(()&nbsp;-&gt;&nbsp;current&nbsp;file&nbsp;position,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.truncate.html#pickle.FileType.truncate" title="pickle.FileType.truncate"><code class="xref py py-obj docutils literal"><span class="pre">truncate</span></code></a>(...)</td>
+<td>Size defaults to the current file position, as returned by tell().</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.write.html#pickle.FileType.write" title="pickle.FileType.write"><code class="xref py py-obj docutils literal"><span class="pre">write</span></code></a>((str)&nbsp;-&gt;&nbsp;None.&nbsp;&nbsp;Write&nbsp;string&nbsp;str&nbsp;to&nbsp;file.)</td>
+<td>Note that due to buffering, flush() or close() may be needed before the file on disk reflects the data written.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.writelines.html#pickle.FileType.writelines" title="pickle.FileType.writelines"><code class="xref py py-obj docutils literal"><span class="pre">writelines</span></code></a>(...)</td>
+<td>Note that newlines are not added.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.xreadlines.html#pickle.FileType.xreadlines" title="pickle.FileType.xreadlines"><code class="xref py py-obj docutils literal"><span class="pre">xreadlines</span></code></a>(()&nbsp;-&gt;&nbsp;returns&nbsp;self.)</td>
+<td>For backward compatibility.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.closed.html#pickle.FileType.closed" title="pickle.FileType.closed"><code class="xref py py-obj docutils literal"><span class="pre">closed</span></code></a></td>
+<td>True if the file is closed</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.encoding.html#pickle.FileType.encoding" title="pickle.FileType.encoding"><code class="xref py py-obj docutils literal"><span class="pre">encoding</span></code></a></td>
+<td>file encoding</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.errors.html#pickle.FileType.errors" title="pickle.FileType.errors"><code class="xref py py-obj docutils literal"><span class="pre">errors</span></code></a></td>
+<td>Unicode error handler</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.mode.html#pickle.FileType.mode" title="pickle.FileType.mode"><code class="xref py py-obj docutils literal"><span class="pre">mode</span></code></a></td>
+<td>file mode (&#8216;r&#8217;, &#8216;U&#8217;, &#8216;w&#8217;, &#8216;a&#8217;, possibly with &#8216;b&#8217; or &#8216;+&#8217; added)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.name.html#pickle.FileType.name" title="pickle.FileType.name"><code class="xref py py-obj docutils literal"><span class="pre">name</span></code></a></td>
+<td>file name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.newlines.html#pickle.FileType.newlines" title="pickle.FileType.newlines"><code class="xref py py-obj docutils literal"><span class="pre">newlines</span></code></a></td>
+<td>end-of-line convention used in this file</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.FileType.next.html#pickle.FileType.next" title="pickle.FileType.next"><code class="xref py py-obj docutils literal"><span class="pre">next</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.FileType.softspace.html#pickle.FileType.softspace" title="pickle.FileType.softspace"><code class="xref py py-obj docutils literal"><span class="pre">softspace</span></code></a></td>
+<td>flag indicating that a space needs to be printed; used by print</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -200,10 +287,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pickle.FloatType.html" class="btn btn-neutral float-right" title="3.2.2.2.13. pickle.FloatType" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pickle.FileType.__enter__.html" class="btn btn-neutral float-right" title="pickle.FileType.__enter__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pickle.EllipsisType.html" class="btn btn-neutral" title="3.2.2.2.11. pickle.EllipsisType" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="pickle.EllipsisType.html" class="btn btn-neutral" title="pickle.EllipsisType" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -234,7 +321,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -243,6 +330,7 @@
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

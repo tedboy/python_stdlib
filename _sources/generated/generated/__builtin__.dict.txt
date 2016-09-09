@@ -1,9 +1,7 @@
-__builtin__.dict
-================
-
+:class:`__builtin__.dict`
+=========================
 .. currentmodule:: __builtin__
 .. autoclass:: dict
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,14 @@ Methods
    :toctree:
 
 
+   ~dict.__contains__
+   ~dict.__format__
+   ~dict.__getitem__
+   ~dict.__new__
+   ~dict.__reduce__
+   ~dict.__reduce_ex__
+   ~dict.__sizeof__
+   ~dict.__subclasshook__
    ~dict.clear
    ~dict.copy
    ~dict.fromkeys

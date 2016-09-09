@@ -1,9 +1,7 @@
-urlparse.SplitResult
-====================
-
+:class:`urlparse.SplitResult`
+=============================
 .. currentmodule:: urlparse
 .. autoclass:: SplitResult
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,18 @@ Methods
    :toctree:
 
 
+   ~SplitResult.__format__
+   ~SplitResult.__getnewargs__
+   ~SplitResult.__getstate__
+   ~SplitResult.__new__
+   ~SplitResult.__reduce__
+   ~SplitResult.__reduce_ex__
+   ~SplitResult.__repr__
+   ~SplitResult.__sizeof__
+   ~SplitResult.__subclasshook__
+   ~SplitResult._asdict
+   ~SplitResult._make
+   ~SplitResult._replace
    ~SplitResult.count
    ~SplitResult.geturl
    ~SplitResult.index

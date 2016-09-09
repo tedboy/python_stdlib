@@ -1,9 +1,7 @@
-webbrowser.Grail
-================
-
+:class:`webbrowser.Grail`
+=========================
 .. currentmodule:: webbrowser
 .. autoclass:: Grail
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,15 @@ Methods
    :toctree:
 
 
+   ~Grail.__format__
    ~Grail.__init__
+   ~Grail.__new__
+   ~Grail.__reduce__
+   ~Grail.__reduce_ex__
+   ~Grail.__sizeof__
+   ~Grail.__subclasshook__
+   ~Grail._find_grail_rc
+   ~Grail._remote
    ~Grail.open
    ~Grail.open_new
    ~Grail.open_new_tab

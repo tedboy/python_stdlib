@@ -1,0 +1,64 @@
+:class:`asyncore.dispatcher_with_send`
+======================================
+.. currentmodule:: asyncore
+.. autoclass:: dispatcher_with_send
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~dispatcher_with_send.__getattr__
+   ~dispatcher_with_send.__init__
+   ~dispatcher_with_send.__repr__
+   ~dispatcher_with_send.__str__
+   ~dispatcher_with_send.accept
+   ~dispatcher_with_send.add_channel
+   ~dispatcher_with_send.bind
+   ~dispatcher_with_send.close
+   ~dispatcher_with_send.connect
+   ~dispatcher_with_send.create_socket
+   ~dispatcher_with_send.del_channel
+   ~dispatcher_with_send.handle_accept
+   ~dispatcher_with_send.handle_close
+   ~dispatcher_with_send.handle_connect
+   ~dispatcher_with_send.handle_connect_event
+   ~dispatcher_with_send.handle_error
+   ~dispatcher_with_send.handle_expt
+   ~dispatcher_with_send.handle_expt_event
+   ~dispatcher_with_send.handle_read
+   ~dispatcher_with_send.handle_read_event
+   ~dispatcher_with_send.handle_write
+   ~dispatcher_with_send.handle_write_event
+   ~dispatcher_with_send.initiate_send
+   ~dispatcher_with_send.listen
+   ~dispatcher_with_send.log
+   ~dispatcher_with_send.log_info
+   ~dispatcher_with_send.readable
+   ~dispatcher_with_send.recv
+   ~dispatcher_with_send.send
+   ~dispatcher_with_send.set_reuse_addr
+   ~dispatcher_with_send.set_socket
+   ~dispatcher_with_send.writable
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~dispatcher_with_send.accepting
+   ~dispatcher_with_send.addr
+   ~dispatcher_with_send.closing
+   ~dispatcher_with_send.connected
+   ~dispatcher_with_send.connecting
+   ~dispatcher_with_send.debug
+   ~dispatcher_with_send.ignore_log_types
+

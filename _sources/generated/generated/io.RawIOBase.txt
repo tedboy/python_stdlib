@@ -1,0 +1,54 @@
+:class:`io.RawIOBase`
+=====================
+.. currentmodule:: io
+.. autoclass:: RawIOBase
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~RawIOBase.__enter__
+   ~RawIOBase.__exit__
+   ~RawIOBase.__format__
+   ~RawIOBase.__new__
+   ~RawIOBase.__reduce__
+   ~RawIOBase.__reduce_ex__
+   ~RawIOBase.__sizeof__
+   ~RawIOBase.__subclasshook__
+   ~RawIOBase._checkClosed
+   ~RawIOBase._checkReadable
+   ~RawIOBase._checkSeekable
+   ~RawIOBase._checkWritable
+   ~RawIOBase.close
+   ~RawIOBase.fileno
+   ~RawIOBase.flush
+   ~RawIOBase.isatty
+   ~RawIOBase.read
+   ~RawIOBase.readable
+   ~RawIOBase.readall
+   ~RawIOBase.readline
+   ~RawIOBase.readlines
+   ~RawIOBase.seek
+   ~RawIOBase.seekable
+   ~RawIOBase.tell
+   ~RawIOBase.truncate
+   ~RawIOBase.writable
+   ~RawIOBase.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~RawIOBase.closed
+   ~RawIOBase.next
+

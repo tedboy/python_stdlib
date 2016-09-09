@@ -1,0 +1,55 @@
+:class:`cookielib.FileCookieJar`
+================================
+.. currentmodule:: cookielib
+.. autoclass:: FileCookieJar
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~FileCookieJar.__init__
+   ~FileCookieJar.__iter__
+   ~FileCookieJar.__len__
+   ~FileCookieJar.__repr__
+   ~FileCookieJar.__str__
+   ~FileCookieJar._cookie_attrs
+   ~FileCookieJar._cookie_from_cookie_tuple
+   ~FileCookieJar._cookies_for_domain
+   ~FileCookieJar._cookies_for_request
+   ~FileCookieJar._cookies_from_attrs_set
+   ~FileCookieJar._normalized_cookie_tuples
+   ~FileCookieJar._process_rfc2109_cookies
+   ~FileCookieJar.add_cookie_header
+   ~FileCookieJar.clear
+   ~FileCookieJar.clear_expired_cookies
+   ~FileCookieJar.clear_session_cookies
+   ~FileCookieJar.extract_cookies
+   ~FileCookieJar.load
+   ~FileCookieJar.make_cookies
+   ~FileCookieJar.revert
+   ~FileCookieJar.save
+   ~FileCookieJar.set_cookie
+   ~FileCookieJar.set_cookie_if_ok
+   ~FileCookieJar.set_policy
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~FileCookieJar.domain_re
+   ~FileCookieJar.dots_re
+   ~FileCookieJar.magic_re
+   ~FileCookieJar.non_word_re
+   ~FileCookieJar.quote_re
+   ~FileCookieJar.strict_domain_re
+

@@ -1,0 +1,58 @@
+:class:`smtplib.LMTP`
+=====================
+.. currentmodule:: smtplib
+.. autoclass:: LMTP
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~LMTP.__init__
+   ~LMTP._get_socket
+   ~LMTP.close
+   ~LMTP.connect
+   ~LMTP.data
+   ~LMTP.docmd
+   ~LMTP.ehlo
+   ~LMTP.ehlo_or_helo_if_needed
+   ~LMTP.expn
+   ~LMTP.getreply
+   ~LMTP.has_extn
+   ~LMTP.helo
+   ~LMTP.help
+   ~LMTP.login
+   ~LMTP.mail
+   ~LMTP.noop
+   ~LMTP.putcmd
+   ~LMTP.quit
+   ~LMTP.rcpt
+   ~LMTP.rset
+   ~LMTP.send
+   ~LMTP.sendmail
+   ~LMTP.set_debuglevel
+   ~LMTP.starttls
+   ~LMTP.verify
+   ~LMTP.vrfy
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~LMTP.debuglevel
+   ~LMTP.default_port
+   ~LMTP.does_esmtp
+   ~LMTP.ehlo_msg
+   ~LMTP.ehlo_resp
+   ~LMTP.file
+   ~LMTP.helo_resp
+

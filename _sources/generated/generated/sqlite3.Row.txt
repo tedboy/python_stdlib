@@ -1,9 +1,7 @@
-sqlite3.Row
-===========
-
+:class:`sqlite3.Row`
+====================
 .. currentmodule:: sqlite3
 .. autoclass:: Row
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~Row.__format__
+   ~Row.__new__
+   ~Row.__reduce__
+   ~Row.__reduce_ex__
+   ~Row.__sizeof__
+   ~Row.__subclasshook__
    ~Row.keys
 
 

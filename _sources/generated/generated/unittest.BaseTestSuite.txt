@@ -1,9 +1,7 @@
-unittest.BaseTestSuite
-======================
-
+:class:`unittest.BaseTestSuite`
+===============================
 .. currentmodule:: unittest
 .. autoclass:: BaseTestSuite
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,18 @@ Methods
    :toctree:
 
 
+   ~BaseTestSuite.__call__
+   ~BaseTestSuite.__eq__
+   ~BaseTestSuite.__format__
    ~BaseTestSuite.__init__
+   ~BaseTestSuite.__iter__
+   ~BaseTestSuite.__ne__
+   ~BaseTestSuite.__new__
+   ~BaseTestSuite.__reduce__
+   ~BaseTestSuite.__reduce_ex__
+   ~BaseTestSuite.__repr__
+   ~BaseTestSuite.__sizeof__
+   ~BaseTestSuite.__subclasshook__
    ~BaseTestSuite.addTest
    ~BaseTestSuite.addTests
    ~BaseTestSuite.countTestCases

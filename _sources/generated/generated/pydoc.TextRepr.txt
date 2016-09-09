@@ -1,9 +1,7 @@
-pydoc.TextRepr
-==============
-
+:class:`pydoc.TextRepr`
+=======================
 .. currentmodule:: pydoc
 .. autoclass:: TextRepr
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~TextRepr.__init__
+   ~TextRepr._repr_iterable
    ~TextRepr.repr
    ~TextRepr.repr1
    ~TextRepr.repr_array

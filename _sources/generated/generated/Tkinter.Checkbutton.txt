@@ -1,9 +1,7 @@
-Tkinter.Checkbutton
-===================
-
+:class:`Tkinter.Checkbutton`
+============================
 .. currentmodule:: Tkinter
 .. autoclass:: Checkbutton
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Checkbutton._Misc__winfo_getint
+   ~Checkbutton._Misc__winfo_parseitem
+   ~Checkbutton.__contains__
+   ~Checkbutton.__getitem__
    ~Checkbutton.__init__
+   ~Checkbutton.__setitem__
+   ~Checkbutton.__str__
+   ~Checkbutton._bind
+   ~Checkbutton._configure
+   ~Checkbutton._displayof
+   ~Checkbutton._do
+   ~Checkbutton._getboolean
+   ~Checkbutton._getconfigure
+   ~Checkbutton._getconfigure1
+   ~Checkbutton._getdoubles
+   ~Checkbutton._getints
+   ~Checkbutton._grid_configure
+   ~Checkbutton._gridconvvalue
+   ~Checkbutton._nametowidget
+   ~Checkbutton._options
+   ~Checkbutton._register
+   ~Checkbutton._report_exception
+   ~Checkbutton._root
+   ~Checkbutton._setup
+   ~Checkbutton._substitute
    ~Checkbutton.after
    ~Checkbutton.after_cancel
    ~Checkbutton.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Checkbutton.bind_class
    ~Checkbutton.bindtags
    ~Checkbutton.cget
+   ~Checkbutton.check
    ~Checkbutton.clipboard_append
    ~Checkbutton.clipboard_clear
    ~Checkbutton.clipboard_get
@@ -46,6 +69,7 @@ Methods
    ~Checkbutton.focus_lastfor
    ~Checkbutton.focus_set
    ~Checkbutton.forget
+   ~Checkbutton.form
    ~Checkbutton.getboolean
    ~Checkbutton.getvar
    ~Checkbutton.grab_current

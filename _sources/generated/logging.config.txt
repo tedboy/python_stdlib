@@ -1,0 +1,62 @@
+:mod:`logging.config`
+=====================
+
+.. automodule:: logging.config
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      dictConfig
+      fileConfig
+      listen
+      stopListening
+      valid_ident
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      BaseConfigurator
+      ConvertingDict
+      ConvertingList
+      ConvertingMixin
+      ConvertingTuple
+      DictConfigurator
+      StreamRequestHandler
+      ThreadingTCPServer
+      dictConfigClass
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/logging.config.BaseConfigurator
+       generated/logging.config.ConvertingDict
+       generated/logging.config.ConvertingList
+       generated/logging.config.ConvertingMixin
+       generated/logging.config.ConvertingTuple
+       generated/logging.config.DictConfigurator
+       generated/logging.config.StreamRequestHandler
+       generated/logging.config.ThreadingTCPServer
+       generated/logging.config.dictConfigClass
+
+   
+   
+
+   
+   
+   

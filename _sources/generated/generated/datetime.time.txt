@@ -1,9 +1,7 @@
-datetime.time
-=============
-
+:class:`datetime.time`
+======================
 .. currentmodule:: datetime
 .. autoclass:: time
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~time.__format__
+   ~time.__new__
+   ~time.__reduce__
+   ~time.__reduce_ex__
+   ~time.__sizeof__
+   ~time.__subclasshook__
    ~time.dst
    ~time.isoformat
    ~time.replace

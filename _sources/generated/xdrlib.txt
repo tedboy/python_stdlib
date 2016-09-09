@@ -1,0 +1,54 @@
+:mod:`xdrlib`
+=============
+
+.. automodule:: xdrlib
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      raise_conversion_error
+      wraps
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Packer
+      Unpacker
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/xdrlib.Packer
+       generated/xdrlib.Unpacker
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      ConversionError
+      Error
+   
+   

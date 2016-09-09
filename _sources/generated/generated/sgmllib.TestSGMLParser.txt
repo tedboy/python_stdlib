@@ -1,0 +1,72 @@
+:class:`sgmllib.TestSGMLParser`
+===============================
+.. currentmodule:: sgmllib
+.. autoclass:: TestSGMLParser
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~TestSGMLParser.__init__
+   ~TestSGMLParser._convert_ref
+   ~TestSGMLParser._parse_doctype_attlist
+   ~TestSGMLParser._parse_doctype_element
+   ~TestSGMLParser._parse_doctype_entity
+   ~TestSGMLParser._parse_doctype_notation
+   ~TestSGMLParser._parse_doctype_subset
+   ~TestSGMLParser._scan_name
+   ~TestSGMLParser.close
+   ~TestSGMLParser.convert_charref
+   ~TestSGMLParser.convert_codepoint
+   ~TestSGMLParser.convert_entityref
+   ~TestSGMLParser.error
+   ~TestSGMLParser.feed
+   ~TestSGMLParser.finish_endtag
+   ~TestSGMLParser.finish_shorttag
+   ~TestSGMLParser.finish_starttag
+   ~TestSGMLParser.flush
+   ~TestSGMLParser.get_starttag_text
+   ~TestSGMLParser.getpos
+   ~TestSGMLParser.goahead
+   ~TestSGMLParser.handle_charref
+   ~TestSGMLParser.handle_comment
+   ~TestSGMLParser.handle_data
+   ~TestSGMLParser.handle_decl
+   ~TestSGMLParser.handle_endtag
+   ~TestSGMLParser.handle_entityref
+   ~TestSGMLParser.handle_pi
+   ~TestSGMLParser.handle_starttag
+   ~TestSGMLParser.parse_comment
+   ~TestSGMLParser.parse_declaration
+   ~TestSGMLParser.parse_endtag
+   ~TestSGMLParser.parse_marked_section
+   ~TestSGMLParser.parse_pi
+   ~TestSGMLParser.parse_starttag
+   ~TestSGMLParser.report_unbalanced
+   ~TestSGMLParser.reset
+   ~TestSGMLParser.setliteral
+   ~TestSGMLParser.setnomoretags
+   ~TestSGMLParser.unknown_charref
+   ~TestSGMLParser.unknown_decl
+   ~TestSGMLParser.unknown_endtag
+   ~TestSGMLParser.unknown_entityref
+   ~TestSGMLParser.unknown_starttag
+   ~TestSGMLParser.updatepos
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~TestSGMLParser.entity_or_charref
+   ~TestSGMLParser.entitydefs
+

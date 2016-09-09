@@ -1,9 +1,7 @@
-unittest.TestCase
-=================
-
+:class:`unittest.TestCase`
+==========================
 .. currentmodule:: unittest
 .. autoclass:: TestCase
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,25 @@ Methods
    :toctree:
 
 
+   ~TestCase.__call__
+   ~TestCase.__eq__
+   ~TestCase.__format__
+   ~TestCase.__hash__
    ~TestCase.__init__
+   ~TestCase.__ne__
+   ~TestCase.__new__
+   ~TestCase.__reduce__
+   ~TestCase.__reduce_ex__
+   ~TestCase.__repr__
+   ~TestCase.__sizeof__
+   ~TestCase.__str__
+   ~TestCase.__subclasshook__
+   ~TestCase._addSkip
+   ~TestCase._baseAssertEqual
+   ~TestCase._deprecate
+   ~TestCase._formatMessage
+   ~TestCase._getAssertEqualityFunc
+   ~TestCase._truncateMessage
    ~TestCase.addCleanup
    ~TestCase.addTypeEqualityFunc
    ~TestCase.assertAlmostEqual

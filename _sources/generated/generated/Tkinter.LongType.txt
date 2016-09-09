@@ -1,19 +1,24 @@
-Tkinter.LongType
-================
-
+:class:`Tkinter.LongType`
+=========================
 .. currentmodule:: Tkinter
-
-:func:`LongType.__init__`
-
 .. autoclass:: LongType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~LongType.__format__
+   ~LongType.__getnewargs__
+   ~LongType.__new__
+   ~LongType.__reduce__
+   ~LongType.__reduce_ex__
+   ~LongType.__sizeof__
+   ~LongType.__subclasshook__
+   ~LongType.__trunc__
    ~LongType.bit_length
    ~LongType.conjugate
 
@@ -21,11 +26,10 @@ Tkinter.LongType
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~LongType.denominator

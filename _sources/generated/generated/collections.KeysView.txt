@@ -1,20 +1,43 @@
-collections.KeysView
-====================
-
+:class:`collections.KeysView`
+=============================
 .. currentmodule:: collections
-
-:func:`KeysView.__init__`
-
 .. autoclass:: KeysView
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~KeysView.__and__
+   ~KeysView.__contains__
+   ~KeysView.__eq__
+   ~KeysView.__format__
+   ~KeysView.__ge__
+   ~KeysView.__gt__
    ~KeysView.__init__
+   ~KeysView.__iter__
+   ~KeysView.__le__
+   ~KeysView.__len__
+   ~KeysView.__lt__
+   ~KeysView.__ne__
+   ~KeysView.__new__
+   ~KeysView.__or__
+   ~KeysView.__rand__
+   ~KeysView.__reduce__
+   ~KeysView.__reduce_ex__
+   ~KeysView.__repr__
+   ~KeysView.__ror__
+   ~KeysView.__rsub__
+   ~KeysView.__rxor__
+   ~KeysView.__sizeof__
+   ~KeysView.__sub__
+   ~KeysView.__subclasshook__
+   ~KeysView.__xor__
+   ~KeysView._from_iterable
+   ~KeysView._hash
    ~KeysView.isdisjoint
 
 

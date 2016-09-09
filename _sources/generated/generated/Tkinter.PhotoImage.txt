@@ -1,9 +1,7 @@
-Tkinter.PhotoImage
-==================
-
+:class:`Tkinter.PhotoImage`
+===========================
 .. currentmodule:: Tkinter
 .. autoclass:: PhotoImage
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,11 @@ Methods
    :toctree:
 
 
+   ~PhotoImage.__del__
+   ~PhotoImage.__getitem__
    ~PhotoImage.__init__
+   ~PhotoImage.__setitem__
+   ~PhotoImage.__str__
    ~PhotoImage.blank
    ~PhotoImage.cget
    ~PhotoImage.config

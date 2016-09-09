@@ -1,9 +1,7 @@
-unittest.TestResult
-===================
-
+:class:`unittest.TestResult`
+============================
 .. currentmodule:: unittest
 .. autoclass:: TestResult
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,19 @@ Methods
    :toctree:
 
 
+   ~TestResult.__format__
    ~TestResult.__init__
+   ~TestResult.__new__
+   ~TestResult.__reduce__
+   ~TestResult.__reduce_ex__
+   ~TestResult.__repr__
+   ~TestResult.__sizeof__
+   ~TestResult.__subclasshook__
+   ~TestResult._count_relevant_tb_levels
+   ~TestResult._exc_info_to_string
+   ~TestResult._is_relevant_tb_level
+   ~TestResult._restoreStdout
+   ~TestResult._setupStdout
    ~TestResult.addError
    ~TestResult.addExpectedFailure
    ~TestResult.addFailure

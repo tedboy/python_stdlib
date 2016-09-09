@@ -1,9 +1,7 @@
-Tkinter.Tk
-==========
-
+:class:`Tkinter.Tk`
+===================
 .. currentmodule:: Tkinter
 .. autoclass:: Tk
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Tk._Misc__winfo_getint
+   ~Tk._Misc__winfo_parseitem
+   ~Tk.__contains__
+   ~Tk.__getattr__
+   ~Tk.__getitem__
    ~Tk.__init__
+   ~Tk.__setitem__
+   ~Tk.__str__
+   ~Tk._bind
+   ~Tk._configure
+   ~Tk._displayof
+   ~Tk._getboolean
+   ~Tk._getconfigure
+   ~Tk._getconfigure1
+   ~Tk._getdoubles
+   ~Tk._getints
+   ~Tk._grid_configure
+   ~Tk._gridconvvalue
+   ~Tk._loadtk
+   ~Tk._nametowidget
+   ~Tk._options
+   ~Tk._register
+   ~Tk._report_exception
+   ~Tk._root
+   ~Tk._substitute
    ~Tk.after
    ~Tk.after_cancel
    ~Tk.after_idle

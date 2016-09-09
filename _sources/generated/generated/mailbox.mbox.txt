@@ -1,0 +1,55 @@
+:class:`mailbox.mbox`
+=====================
+.. currentmodule:: mailbox
+.. autoclass:: mbox
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~mbox.__contains__
+   ~mbox.__delitem__
+   ~mbox.__getitem__
+   ~mbox.__init__
+   ~mbox.__iter__
+   ~mbox.__len__
+   ~mbox.__setitem__
+   ~mbox._append_message
+   ~mbox._dump_message
+   ~mbox._generate_toc
+   ~mbox._install_message
+   ~mbox._lookup
+   ~mbox._post_message_hook
+   ~mbox._pre_mailbox_hook
+   ~mbox._pre_message_hook
+   ~mbox.add
+   ~mbox.clear
+   ~mbox.close
+   ~mbox.discard
+   ~mbox.flush
+   ~mbox.get
+   ~mbox.get_file
+   ~mbox.get_message
+   ~mbox.get_string
+   ~mbox.has_key
+   ~mbox.items
+   ~mbox.iteritems
+   ~mbox.iterkeys
+   ~mbox.itervalues
+   ~mbox.keys
+   ~mbox.lock
+   ~mbox.pop
+   ~mbox.popitem
+   ~mbox.remove
+   ~mbox.unlock
+   ~mbox.update
+   ~mbox.values
+
+
+
+
+

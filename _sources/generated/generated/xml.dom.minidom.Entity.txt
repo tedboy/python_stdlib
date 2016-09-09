@@ -1,0 +1,80 @@
+:class:`xml.dom.minidom.Entity`
+===============================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: Entity
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Entity.__init__
+   ~Entity.__nonzero__
+   ~Entity._call_user_data_handler
+   ~Entity._get_actualEncoding
+   ~Entity._get_childNodes
+   ~Entity._get_encoding
+   ~Entity._get_firstChild
+   ~Entity._get_lastChild
+   ~Entity._get_localName
+   ~Entity._get_publicId
+   ~Entity._get_systemId
+   ~Entity._get_version
+   ~Entity._identified_mixin_init
+   ~Entity.appendChild
+   ~Entity.cloneNode
+   ~Entity.getInterface
+   ~Entity.getUserData
+   ~Entity.hasChildNodes
+   ~Entity.insertBefore
+   ~Entity.isSameNode
+   ~Entity.isSupported
+   ~Entity.normalize
+   ~Entity.removeChild
+   ~Entity.replaceChild
+   ~Entity.setUserData
+   ~Entity.toprettyxml
+   ~Entity.toxml
+   ~Entity.unlink
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Entity.ATTRIBUTE_NODE
+   ~Entity.CDATA_SECTION_NODE
+   ~Entity.COMMENT_NODE
+   ~Entity.DOCUMENT_FRAGMENT_NODE
+   ~Entity.DOCUMENT_NODE
+   ~Entity.DOCUMENT_TYPE_NODE
+   ~Entity.ELEMENT_NODE
+   ~Entity.ENTITY_NODE
+   ~Entity.ENTITY_REFERENCE_NODE
+   ~Entity.NOTATION_NODE
+   ~Entity.PROCESSING_INSTRUCTION_NODE
+   ~Entity.TEXT_NODE
+   ~Entity.actualEncoding
+   ~Entity.attributes
+   ~Entity.encoding
+   ~Entity.firstChild
+   ~Entity.lastChild
+   ~Entity.localName
+   ~Entity.namespaceURI
+   ~Entity.nextSibling
+   ~Entity.nodeType
+   ~Entity.nodeValue
+   ~Entity.ownerDocument
+   ~Entity.parentNode
+   ~Entity.prefix
+   ~Entity.previousSibling
+   ~Entity.version
+

@@ -1,19 +1,26 @@
-pickle.FloatType
-================
-
+:class:`pickle.FloatType`
+=========================
 .. currentmodule:: pickle
-
-:func:`FloatType.__init__`
-
 .. autoclass:: FloatType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~FloatType.__format__
+   ~FloatType.__getformat__
+   ~FloatType.__getnewargs__
+   ~FloatType.__new__
+   ~FloatType.__reduce__
+   ~FloatType.__reduce_ex__
+   ~FloatType.__setformat__
+   ~FloatType.__sizeof__
+   ~FloatType.__subclasshook__
+   ~FloatType.__trunc__
    ~FloatType.as_integer_ratio
    ~FloatType.conjugate
    ~FloatType.fromhex
@@ -24,11 +31,10 @@ pickle.FloatType
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~FloatType.imag

@@ -1,9 +1,7 @@
-HTMLParser.HTMLParser
-=====================
-
+:class:`HTMLParser.HTMLParser`
+==============================
 .. currentmodule:: HTMLParser
 .. autoclass:: HTMLParser
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,12 @@ Methods
 
 
    ~HTMLParser.__init__
+   ~HTMLParser._parse_doctype_attlist
+   ~HTMLParser._parse_doctype_element
+   ~HTMLParser._parse_doctype_entity
+   ~HTMLParser._parse_doctype_notation
+   ~HTMLParser._parse_doctype_subset
+   ~HTMLParser._scan_name
    ~HTMLParser.check_for_whole_start_tag
    ~HTMLParser.clear_cdata_mode
    ~HTMLParser.close

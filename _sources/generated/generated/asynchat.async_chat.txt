@@ -1,0 +1,76 @@
+:class:`asynchat.async_chat`
+============================
+.. currentmodule:: asynchat
+.. autoclass:: async_chat
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~async_chat.__getattr__
+   ~async_chat.__init__
+   ~async_chat.__repr__
+   ~async_chat.__str__
+   ~async_chat._collect_incoming_data
+   ~async_chat._get_data
+   ~async_chat.accept
+   ~async_chat.add_channel
+   ~async_chat.bind
+   ~async_chat.close
+   ~async_chat.close_when_done
+   ~async_chat.collect_incoming_data
+   ~async_chat.connect
+   ~async_chat.create_socket
+   ~async_chat.del_channel
+   ~async_chat.discard_buffers
+   ~async_chat.found_terminator
+   ~async_chat.get_terminator
+   ~async_chat.handle_accept
+   ~async_chat.handle_close
+   ~async_chat.handle_connect
+   ~async_chat.handle_connect_event
+   ~async_chat.handle_error
+   ~async_chat.handle_expt
+   ~async_chat.handle_expt_event
+   ~async_chat.handle_read
+   ~async_chat.handle_read_event
+   ~async_chat.handle_write
+   ~async_chat.handle_write_event
+   ~async_chat.initiate_send
+   ~async_chat.listen
+   ~async_chat.log
+   ~async_chat.log_info
+   ~async_chat.push
+   ~async_chat.push_with_producer
+   ~async_chat.readable
+   ~async_chat.recv
+   ~async_chat.send
+   ~async_chat.set_reuse_addr
+   ~async_chat.set_socket
+   ~async_chat.set_terminator
+   ~async_chat.writable
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~async_chat.ac_in_buffer_size
+   ~async_chat.ac_out_buffer_size
+   ~async_chat.accepting
+   ~async_chat.addr
+   ~async_chat.closing
+   ~async_chat.connected
+   ~async_chat.connecting
+   ~async_chat.debug
+   ~async_chat.ignore_log_types
+

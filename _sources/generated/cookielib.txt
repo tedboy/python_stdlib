@@ -1,0 +1,88 @@
+:mod:`cookielib`
+================
+
+.. automodule:: cookielib
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      deepvalues
+      domain_match
+      eff_request_host
+      escape_path
+      http2time
+      is_HDN
+      is_third_party
+      iso2time
+      join_header_words
+      liberal_is_HDN
+      lwp_cookie_str
+      offset_from_tz_string
+      parse_ns_headers
+      reach
+      request_host
+      request_path
+      request_port
+      split_header_words
+      time2isoz
+      time2netscape
+      timegm
+      unmatched
+      uppercase_escaped_char
+      user_domain_match
+      vals_sorted_by_key
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Absent
+      Cookie
+      CookieJar
+      CookiePolicy
+      DefaultCookiePolicy
+      FileCookieJar
+      LWPCookieJar
+      MozillaCookieJar
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/cookielib.Absent
+       generated/cookielib.Cookie
+       generated/cookielib.CookieJar
+       generated/cookielib.CookiePolicy
+       generated/cookielib.DefaultCookiePolicy
+       generated/cookielib.FileCookieJar
+       generated/cookielib.LWPCookieJar
+       generated/cookielib.MozillaCookieJar
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      LoadError
+   
+   

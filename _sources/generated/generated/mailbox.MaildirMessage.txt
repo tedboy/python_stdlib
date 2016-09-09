@@ -1,0 +1,71 @@
+:class:`mailbox.MaildirMessage`
+===============================
+.. currentmodule:: mailbox
+.. autoclass:: MaildirMessage
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~MaildirMessage.__contains__
+   ~MaildirMessage.__delitem__
+   ~MaildirMessage.__getitem__
+   ~MaildirMessage.__init__
+   ~MaildirMessage.__len__
+   ~MaildirMessage.__setitem__
+   ~MaildirMessage.__str__
+   ~MaildirMessage._become_message
+   ~MaildirMessage._explain_to
+   ~MaildirMessage._get_params_preserve
+   ~MaildirMessage.add_flag
+   ~MaildirMessage.add_header
+   ~MaildirMessage.as_string
+   ~MaildirMessage.attach
+   ~MaildirMessage.del_param
+   ~MaildirMessage.get
+   ~MaildirMessage.get_all
+   ~MaildirMessage.get_boundary
+   ~MaildirMessage.get_charset
+   ~MaildirMessage.get_charsets
+   ~MaildirMessage.get_content_charset
+   ~MaildirMessage.get_content_maintype
+   ~MaildirMessage.get_content_subtype
+   ~MaildirMessage.get_content_type
+   ~MaildirMessage.get_date
+   ~MaildirMessage.get_default_type
+   ~MaildirMessage.get_filename
+   ~MaildirMessage.get_flags
+   ~MaildirMessage.get_info
+   ~MaildirMessage.get_param
+   ~MaildirMessage.get_params
+   ~MaildirMessage.get_payload
+   ~MaildirMessage.get_subdir
+   ~MaildirMessage.get_unixfrom
+   ~MaildirMessage.has_key
+   ~MaildirMessage.is_multipart
+   ~MaildirMessage.items
+   ~MaildirMessage.keys
+   ~MaildirMessage.remove_flag
+   ~MaildirMessage.replace_header
+   ~MaildirMessage.set_boundary
+   ~MaildirMessage.set_charset
+   ~MaildirMessage.set_date
+   ~MaildirMessage.set_default_type
+   ~MaildirMessage.set_flags
+   ~MaildirMessage.set_info
+   ~MaildirMessage.set_param
+   ~MaildirMessage.set_payload
+   ~MaildirMessage.set_subdir
+   ~MaildirMessage.set_type
+   ~MaildirMessage.set_unixfrom
+   ~MaildirMessage.values
+   ~MaildirMessage.walk
+
+
+
+
+

@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.4. os &mdash; My Project v1</title>
+  <title>os &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../_static/py.png"/>
   
 
   
@@ -30,10 +32,10 @@
   
 
   
-    <link rel="top" title="My Project v1" href="../index.html"/>
-        <link rel="up" title="1. Frequently used" href="../main1.html"/>
-        <link rel="next" title="1.4.1.1. os.execl" href="os.execl.html"/>
-        <link rel="prev" title="1.3.2.1.1.2. re.Scanner.scan" href="generated/re.Scanner.scan.html"/> 
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="API: 11 - 15" href="../api_11to15.html"/>
+        <link rel="next" title="os.stat_result" href="generated/os.stat_result.html"/>
+        <link rel="prev" title="sha" href="sha.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -52,7 +54,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> My Project
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
           
 
           
@@ -60,10 +62,6 @@
 
           
             
-            
-              <div class="version">
-                1
-              </div>
             
           
 
@@ -84,48 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../main1.html">1. Frequently used</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.4. os</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#functions">1.4.1. Functions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="os.execl.html">1.4.1.1. os.execl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.execle.html">1.4.1.2. os.execle</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.execlp.html">1.4.1.3. os.execlp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.execlpe.html">1.4.1.4. os.execlpe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.execvp.html">1.4.1.5. os.execvp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.execvpe.html">1.4.1.6. os.execvpe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.getenv.html">1.4.1.7. os.getenv</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.makedirs.html">1.4.1.8. os.makedirs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.popen2.html">1.4.1.9. os.popen2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.popen3.html">1.4.1.10. os.popen3</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.popen4.html">1.4.1.11. os.popen4</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.removedirs.html">1.4.1.12. os.removedirs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.renames.html">1.4.1.13. os.renames</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.spawnl.html">1.4.1.14. os.spawnl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.spawnle.html">1.4.1.15. os.spawnle</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.spawnlp.html">1.4.1.16. os.spawnlp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.spawnlpe.html">1.4.1.17. os.spawnlpe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.spawnv.html">1.4.1.18. os.spawnv</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.spawnve.html">1.4.1.19. os.spawnve</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.spawnvp.html">1.4.1.20. os.spawnvp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.spawnvpe.html">1.4.1.21. os.spawnvpe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="os.walk.html">1.4.1.22. os.walk</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -140,7 +110,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">My Project</a>
+          <a href="../index.html">Python Standard Library</a>
         
       </nav>
 
@@ -167,9 +137,9 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../main1.html">1. Frequently used</a> &raquo;</li>
+          <li><a href="../api_11to15.html">API: 11 - 15</a> &raquo;</li>
         
-      <li>1.4. os</li>
+      <li><code class="docutils literal"><span class="pre">os</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -187,7 +157,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="module-os">
-<span id="os"></span><h1>1.4. os<a class="headerlink" href="#module-os" title="Permalink to this headline">¶</a></h1>
+<span id="os"></span><h1><a class="reference internal" href="#module-os" title="os"><code class="xref py py-mod docutils literal"><span class="pre">os</span></code></a><a class="headerlink" href="#module-os" title="Permalink to this headline">¶</a></h1>
 <p>OS routines for NT or Posix depending on what system we&#8217;re on.</p>
 <dl class="docutils">
 <dt>This exports:</dt>
@@ -213,78 +183,37 @@ only use functions that are defined by all platforms (e.g., unlink
 and opendir), and leave all pathname manipulation to os.path
 (e.g., split and join).</p>
 <div class="section" id="functions">
-<h2>1.4.1. Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="os.execl.html#os.execl" title="os.execl"><code class="xref py py-obj docutils literal"><span class="pre">execl</span></code></a>(file,&nbsp;*args)</td>
-<td>Execute the executable file with argument list args, replacing the current process.</td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.stat_result.html#os.stat_result" title="os.stat_result"><code class="xref py py-obj docutils literal"><span class="pre">stat_result</span></code></a></td>
+<td>stat_result: Result from stat or lstat.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="os.execle.html#os.execle" title="os.execle"><code class="xref py py-obj docutils literal"><span class="pre">execle</span></code></a>(file,&nbsp;*args,&nbsp;env)</td>
-<td>Execute the executable file with argument list args and environment env, replacing the current process.</td>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.statvfs_result.html#os.statvfs_result" title="os.statvfs_result"><code class="xref py py-obj docutils literal"><span class="pre">statvfs_result</span></code></a></td>
+<td>statvfs_result: Result from statvfs or fstatvfs.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.execlp.html#os.execlp" title="os.execlp"><code class="xref py py-obj docutils literal"><span class="pre">execlp</span></code></a>(file,&nbsp;*args)</td>
-<td>Execute the executable file (which is searched for along $PATH) with argument list args, replacing the current process.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.execlpe.html#os.execlpe" title="os.execlpe"><code class="xref py py-obj docutils literal"><span class="pre">execlpe</span></code></a>(file,&nbsp;*args,&nbsp;env)</td>
-<td>Execute the executable file (which is searched for along $PATH) with argument list args and environment env, replacing the current process.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.execvp.html#os.execvp" title="os.execvp"><code class="xref py py-obj docutils literal"><span class="pre">execvp</span></code></a>(file,&nbsp;args)</td>
-<td>Execute the executable file (which is searched for along $PATH) with argument list args, replacing the current process.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.execvpe.html#os.execvpe" title="os.execvpe"><code class="xref py py-obj docutils literal"><span class="pre">execvpe</span></code></a>(file,&nbsp;args,&nbsp;env)</td>
-<td>Execute the executable file (which is searched for along $PATH) with argument list args and environment env , replacing the current process.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.getenv.html#os.getenv" title="os.getenv"><code class="xref py py-obj docutils literal"><span class="pre">getenv</span></code></a>(key[,&nbsp;default])</td>
-<td>Get an environment variable, return None if it doesn&#8217;t exist.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.makedirs.html#os.makedirs" title="os.makedirs"><code class="xref py py-obj docutils literal"><span class="pre">makedirs</span></code></a>(path&nbsp;[[,&nbsp;mode])</td>
-<td>Super-mkdir; create a leaf directory and all intermediate ones.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.popen2.html#os.popen2" title="os.popen2"><code class="xref py py-obj docutils literal"><span class="pre">popen2</span></code></a>(cmd[,&nbsp;mode,&nbsp;bufsize])</td>
-<td>Execute the shell command &#8216;cmd&#8217; in a sub-process.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.popen3.html#os.popen3" title="os.popen3"><code class="xref py py-obj docutils literal"><span class="pre">popen3</span></code></a>(cmd[,&nbsp;mode,&nbsp;bufsize])</td>
-<td>Execute the shell command &#8216;cmd&#8217; in a sub-process.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.popen4.html#os.popen4" title="os.popen4"><code class="xref py py-obj docutils literal"><span class="pre">popen4</span></code></a>(cmd[,&nbsp;mode,&nbsp;bufsize])</td>
-<td>Execute the shell command &#8216;cmd&#8217; in a sub-process.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.removedirs.html#os.removedirs" title="os.removedirs"><code class="xref py py-obj docutils literal"><span class="pre">removedirs</span></code></a>(path)</td>
-<td>Super-rmdir; remove a leaf directory and all empty intermediate ones.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.renames.html#os.renames" title="os.renames"><code class="xref py py-obj docutils literal"><span class="pre">renames</span></code></a>(old,&nbsp;new)</td>
-<td>Super-rename; create directories as necessary and delete any left empty.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-obj docutils literal"><span class="pre">spawnl</span></code></a>((mode,&nbsp;file,&nbsp;*args)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Execute file with arguments from args in a subprocess.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.spawnle.html#os.spawnle" title="os.spawnle"><code class="xref py py-obj docutils literal"><span class="pre">spawnle</span></code></a>((mode,&nbsp;file,&nbsp;*args,&nbsp;env)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Execute file with arguments from args in a subprocess with the supplied environment.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.spawnlp.html#os.spawnlp" title="os.spawnlp"><code class="xref py py-obj docutils literal"><span class="pre">spawnlp</span></code></a>((mode,&nbsp;file,&nbsp;*args)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Execute file (which is looked for along $PATH) with arguments from args in a subprocess with the supplied environment.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.spawnlpe.html#os.spawnlpe" title="os.spawnlpe"><code class="xref py py-obj docutils literal"><span class="pre">spawnlpe</span></code></a>((mode,&nbsp;file,&nbsp;*args,&nbsp;env)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Execute file (which is looked for along $PATH) with arguments from args in a subprocess with the supplied environment.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.spawnv.html#os.spawnv" title="os.spawnv"><code class="xref py py-obj docutils literal"><span class="pre">spawnv</span></code></a>((mode,&nbsp;file,&nbsp;args)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Execute file with arguments from args in a subprocess.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.spawnve.html#os.spawnve" title="os.spawnve"><code class="xref py py-obj docutils literal"><span class="pre">spawnve</span></code></a>((mode,&nbsp;file,&nbsp;args,&nbsp;env)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Execute file with arguments from args in a subprocess with the specified environment.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.spawnvp.html#os.spawnvp" title="os.spawnvp"><code class="xref py py-obj docutils literal"><span class="pre">spawnvp</span></code></a>((mode,&nbsp;file,&nbsp;args)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Execute file (which is looked for along $PATH) with arguments from args in a subprocess.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="os.spawnvpe.html#os.spawnvpe" title="os.spawnvpe"><code class="xref py py-obj docutils literal"><span class="pre">spawnvpe</span></code></a>((mode,&nbsp;file,&nbsp;args,&nbsp;env)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Execute file (which is looked for along $PATH) with arguments from args in a subprocess with the supplied environment.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="os.walk.html#os.walk" title="os.walk"><code class="xref py py-obj docutils literal"><span class="pre">walk</span></code></a>(top[,&nbsp;topdown,&nbsp;onerror,&nbsp;followlinks])</td>
-<td>Directory tree generator.</td>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="os.error.html#os.error" title="os.error"><code class="xref py py-obj docutils literal"><span class="pre">error</span></code></a></td>
+<td>alias of <code class="xref py py-class docutils literal"><span class="pre">OSError</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -298,10 +227,10 @@ and opendir), and leave all pathname manipulation to os.path
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="os.execl.html" class="btn btn-neutral float-right" title="1.4.1.1. os.execl" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/os.stat_result.html" class="btn btn-neutral float-right" title="os.stat_result" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="generated/re.Scanner.scan.html" class="btn btn-neutral" title="1.3.2.1.1.2. re.Scanner.scan" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="sha.html" class="btn btn-neutral" title="sha" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -332,7 +261,7 @@ and opendir), and leave all pathname manipulation to os.path
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -341,6 +270,7 @@ and opendir), and leave all pathname manipulation to os.path
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

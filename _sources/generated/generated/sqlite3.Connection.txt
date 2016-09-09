@@ -1,9 +1,7 @@
-sqlite3.Connection
-==================
-
+:class:`sqlite3.Connection`
+===========================
 .. currentmodule:: sqlite3
 .. autoclass:: Connection
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,14 @@ Methods
    :toctree:
 
 
+   ~Connection.__enter__
+   ~Connection.__exit__
+   ~Connection.__format__
+   ~Connection.__new__
+   ~Connection.__reduce__
+   ~Connection.__reduce_ex__
+   ~Connection.__sizeof__
+   ~Connection.__subclasshook__
    ~Connection.close
    ~Connection.commit
    ~Connection.create_aggregate

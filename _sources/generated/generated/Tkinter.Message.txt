@@ -1,9 +1,7 @@
-Tkinter.Message
-===============
-
+:class:`Tkinter.Message`
+========================
 .. currentmodule:: Tkinter
 .. autoclass:: Message
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Message._Misc__winfo_getint
+   ~Message._Misc__winfo_parseitem
+   ~Message.__contains__
+   ~Message.__getitem__
    ~Message.__init__
+   ~Message.__setitem__
+   ~Message.__str__
+   ~Message._bind
+   ~Message._configure
+   ~Message._displayof
+   ~Message._do
+   ~Message._getboolean
+   ~Message._getconfigure
+   ~Message._getconfigure1
+   ~Message._getdoubles
+   ~Message._getints
+   ~Message._grid_configure
+   ~Message._gridconvvalue
+   ~Message._nametowidget
+   ~Message._options
+   ~Message._register
+   ~Message._report_exception
+   ~Message._root
+   ~Message._setup
+   ~Message._substitute
    ~Message.after
    ~Message.after_cancel
    ~Message.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Message.bind_class
    ~Message.bindtags
    ~Message.cget
+   ~Message.check
    ~Message.clipboard_append
    ~Message.clipboard_clear
    ~Message.clipboard_get
@@ -44,6 +67,7 @@ Methods
    ~Message.focus_lastfor
    ~Message.focus_set
    ~Message.forget
+   ~Message.form
    ~Message.getboolean
    ~Message.getvar
    ~Message.grab_current

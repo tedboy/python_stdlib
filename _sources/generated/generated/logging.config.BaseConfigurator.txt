@@ -1,0 +1,45 @@
+:class:`logging.config.BaseConfigurator`
+========================================
+.. currentmodule:: logging.config
+.. autoclass:: BaseConfigurator
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~BaseConfigurator.__format__
+   ~BaseConfigurator.__init__
+   ~BaseConfigurator.__new__
+   ~BaseConfigurator.__reduce__
+   ~BaseConfigurator.__reduce_ex__
+   ~BaseConfigurator.__sizeof__
+   ~BaseConfigurator.__subclasshook__
+   ~BaseConfigurator.as_tuple
+   ~BaseConfigurator.cfg_convert
+   ~BaseConfigurator.configure_custom
+   ~BaseConfigurator.convert
+   ~BaseConfigurator.ext_convert
+   ~BaseConfigurator.importer
+   ~BaseConfigurator.resolve
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~BaseConfigurator.CONVERT_PATTERN
+   ~BaseConfigurator.DIGIT_PATTERN
+   ~BaseConfigurator.DOT_PATTERN
+   ~BaseConfigurator.INDEX_PATTERN
+   ~BaseConfigurator.WORD_PATTERN
+   ~BaseConfigurator.value_converters
+

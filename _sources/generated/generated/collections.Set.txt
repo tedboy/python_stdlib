@@ -1,19 +1,41 @@
-collections.Set
-===============
-
+:class:`collections.Set`
+========================
 .. currentmodule:: collections
-
-:func:`Set.__init__`
-
 .. autoclass:: Set
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~Set.__and__
+   ~Set.__contains__
+   ~Set.__eq__
+   ~Set.__format__
+   ~Set.__ge__
+   ~Set.__gt__
+   ~Set.__iter__
+   ~Set.__le__
+   ~Set.__len__
+   ~Set.__lt__
+   ~Set.__ne__
+   ~Set.__new__
+   ~Set.__or__
+   ~Set.__rand__
+   ~Set.__reduce__
+   ~Set.__reduce_ex__
+   ~Set.__ror__
+   ~Set.__rsub__
+   ~Set.__rxor__
+   ~Set.__sizeof__
+   ~Set.__sub__
+   ~Set.__subclasshook__
+   ~Set.__xor__
+   ~Set._from_iterable
+   ~Set._hash
    ~Set.isdisjoint
 
 

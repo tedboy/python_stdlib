@@ -1,9 +1,7 @@
-cgi.InterpFormContentDict
-=========================
-
+:class:`cgi.InterpFormContentDict`
+==================================
 .. currentmodule:: cgi
 .. autoclass:: InterpFormContentDict
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~InterpFormContentDict.__cmp__
+   ~InterpFormContentDict.__contains__
+   ~InterpFormContentDict.__delitem__
+   ~InterpFormContentDict.__getitem__
    ~InterpFormContentDict.__init__
+   ~InterpFormContentDict.__len__
+   ~InterpFormContentDict.__repr__
+   ~InterpFormContentDict.__setitem__
    ~InterpFormContentDict.clear
    ~InterpFormContentDict.copy
    ~InterpFormContentDict.fromkeys

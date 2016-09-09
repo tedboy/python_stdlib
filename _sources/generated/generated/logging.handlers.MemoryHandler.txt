@@ -1,0 +1,51 @@
+:class:`logging.handlers.MemoryHandler`
+=======================================
+.. currentmodule:: logging.handlers
+.. autoclass:: MemoryHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~MemoryHandler.__format__
+   ~MemoryHandler.__init__
+   ~MemoryHandler.__new__
+   ~MemoryHandler.__reduce__
+   ~MemoryHandler.__reduce_ex__
+   ~MemoryHandler.__sizeof__
+   ~MemoryHandler.__subclasshook__
+   ~MemoryHandler.acquire
+   ~MemoryHandler.addFilter
+   ~MemoryHandler.close
+   ~MemoryHandler.createLock
+   ~MemoryHandler.emit
+   ~MemoryHandler.filter
+   ~MemoryHandler.flush
+   ~MemoryHandler.format
+   ~MemoryHandler.get_name
+   ~MemoryHandler.handle
+   ~MemoryHandler.handleError
+   ~MemoryHandler.release
+   ~MemoryHandler.removeFilter
+   ~MemoryHandler.setFormatter
+   ~MemoryHandler.setLevel
+   ~MemoryHandler.setTarget
+   ~MemoryHandler.set_name
+   ~MemoryHandler.shouldFlush
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~MemoryHandler.name
+

@@ -1,9 +1,7 @@
-zipfile.ZipExtFile
-==================
-
+:class:`zipfile.ZipExtFile`
+===========================
 .. currentmodule:: zipfile
 .. autoclass:: ZipExtFile
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,20 @@ Methods
    :toctree:
 
 
+   ~ZipExtFile.__enter__
+   ~ZipExtFile.__exit__
+   ~ZipExtFile.__format__
    ~ZipExtFile.__init__
+   ~ZipExtFile.__new__
+   ~ZipExtFile.__reduce__
+   ~ZipExtFile.__reduce_ex__
+   ~ZipExtFile.__sizeof__
+   ~ZipExtFile.__subclasshook__
+   ~ZipExtFile._checkClosed
+   ~ZipExtFile._checkReadable
+   ~ZipExtFile._checkSeekable
+   ~ZipExtFile._checkWritable
+   ~ZipExtFile._update_crc
    ~ZipExtFile.close
    ~ZipExtFile.detach
    ~ZipExtFile.fileno

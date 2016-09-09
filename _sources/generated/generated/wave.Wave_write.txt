@@ -1,0 +1,44 @@
+:class:`wave.Wave_write`
+========================
+.. currentmodule:: wave
+.. autoclass:: Wave_write
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Wave_write.__del__
+   ~Wave_write.__init__
+   ~Wave_write._ensure_header_written
+   ~Wave_write._patchheader
+   ~Wave_write._write_header
+   ~Wave_write.close
+   ~Wave_write.getcompname
+   ~Wave_write.getcomptype
+   ~Wave_write.getframerate
+   ~Wave_write.getmark
+   ~Wave_write.getmarkers
+   ~Wave_write.getnchannels
+   ~Wave_write.getnframes
+   ~Wave_write.getparams
+   ~Wave_write.getsampwidth
+   ~Wave_write.initfp
+   ~Wave_write.setcomptype
+   ~Wave_write.setframerate
+   ~Wave_write.setmark
+   ~Wave_write.setnchannels
+   ~Wave_write.setnframes
+   ~Wave_write.setparams
+   ~Wave_write.setsampwidth
+   ~Wave_write.tell
+   ~Wave_write.writeframes
+   ~Wave_write.writeframesraw
+
+
+
+
+

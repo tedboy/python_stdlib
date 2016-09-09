@@ -1,5 +1,5 @@
-subprocess
-==========
+:mod:`subprocess`
+=================
 
 .. automodule:: subprocess
 
@@ -9,7 +9,8 @@ subprocess
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       call
       check_call
@@ -21,10 +22,10 @@ subprocess
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       Popen
@@ -42,7 +43,7 @@ subprocess
    
    
    Exceptions
-   ---------
+   ----------
    .. autosummary::
       :toctree:
 

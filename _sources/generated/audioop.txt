@@ -1,0 +1,57 @@
+:mod:`audioop`
+==============
+
+.. automodule:: audioop
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      add
+      adpcm2lin
+      alaw2lin
+      avg
+      avgpp
+      bias
+      cross
+      findfactor
+      findfit
+      findmax
+      getsample
+      lin2adpcm
+      lin2alaw
+      lin2lin
+      lin2ulaw
+      max
+      maxpp
+      minmax
+      mul
+      ratecv
+      reverse
+      rms
+      tomono
+      tostereo
+      ulaw2lin
+   
+   
+
+   
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      error
+   
+   

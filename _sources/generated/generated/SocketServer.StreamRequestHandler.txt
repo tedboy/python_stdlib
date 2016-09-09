@@ -1,0 +1,33 @@
+:class:`SocketServer.StreamRequestHandler`
+==========================================
+.. currentmodule:: SocketServer
+.. autoclass:: StreamRequestHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~StreamRequestHandler.__init__
+   ~StreamRequestHandler.finish
+   ~StreamRequestHandler.handle
+   ~StreamRequestHandler.setup
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~StreamRequestHandler.disable_nagle_algorithm
+   ~StreamRequestHandler.rbufsize
+   ~StreamRequestHandler.timeout
+   ~StreamRequestHandler.wbufsize
+

@@ -1,0 +1,31 @@
+:class:`rexec.RModuleLoader`
+============================
+.. currentmodule:: rexec
+.. autoclass:: RModuleLoader
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~RModuleLoader.__init__
+   ~RModuleLoader.default_path
+   ~RModuleLoader.find_builtin_module
+   ~RModuleLoader.find_module
+   ~RModuleLoader.find_module_in_dir
+   ~RModuleLoader.get_hooks
+   ~RModuleLoader.get_verbose
+   ~RModuleLoader.load_module
+   ~RModuleLoader.message
+   ~RModuleLoader.modules_dict
+   ~RModuleLoader.note
+   ~RModuleLoader.set_hooks
+   ~RModuleLoader.set_verbose
+
+
+
+
+

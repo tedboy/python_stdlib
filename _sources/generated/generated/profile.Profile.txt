@@ -1,0 +1,48 @@
+:class:`profile.Profile`
+========================
+.. currentmodule:: profile
+.. autoclass:: Profile
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Profile.__init__
+   ~Profile._calibrate_inner
+   ~Profile.calibrate
+   ~Profile.create_stats
+   ~Profile.dump_stats
+   ~Profile.print_stats
+   ~Profile.run
+   ~Profile.runcall
+   ~Profile.runctx
+   ~Profile.set_cmd
+   ~Profile.simulate_call
+   ~Profile.simulate_cmd_complete
+   ~Profile.snapshot_stats
+   ~Profile.trace_dispatch
+   ~Profile.trace_dispatch_c_call
+   ~Profile.trace_dispatch_call
+   ~Profile.trace_dispatch_exception
+   ~Profile.trace_dispatch_i
+   ~Profile.trace_dispatch_l
+   ~Profile.trace_dispatch_mac
+   ~Profile.trace_dispatch_return
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Profile.bias
+   ~Profile.dispatch
+

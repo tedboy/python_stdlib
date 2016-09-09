@@ -1,19 +1,24 @@
-pickle.FileType
-===============
-
+:class:`pickle.FileType`
+========================
 .. currentmodule:: pickle
-
-:func:`FileType.__init__`
-
 .. autoclass:: FileType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~FileType.__enter__
+   ~FileType.__exit__
+   ~FileType.__format__
+   ~FileType.__new__
+   ~FileType.__reduce__
+   ~FileType.__reduce_ex__
+   ~FileType.__sizeof__
+   ~FileType.__subclasshook__
    ~FileType.close
    ~FileType.fileno
    ~FileType.flush
@@ -33,11 +38,10 @@ pickle.FileType
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~FileType.closed

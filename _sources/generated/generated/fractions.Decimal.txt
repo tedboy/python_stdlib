@@ -1,0 +1,149 @@
+:class:`fractions.Decimal`
+==========================
+.. currentmodule:: fractions
+.. autoclass:: Decimal
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Decimal.__abs__
+   ~Decimal.__add__
+   ~Decimal.__complex__
+   ~Decimal.__copy__
+   ~Decimal.__deepcopy__
+   ~Decimal.__div__
+   ~Decimal.__divmod__
+   ~Decimal.__eq__
+   ~Decimal.__float__
+   ~Decimal.__floordiv__
+   ~Decimal.__format__
+   ~Decimal.__ge__
+   ~Decimal.__gt__
+   ~Decimal.__hash__
+   ~Decimal.__int__
+   ~Decimal.__le__
+   ~Decimal.__long__
+   ~Decimal.__lt__
+   ~Decimal.__mod__
+   ~Decimal.__mul__
+   ~Decimal.__ne__
+   ~Decimal.__neg__
+   ~Decimal.__new__
+   ~Decimal.__nonzero__
+   ~Decimal.__pos__
+   ~Decimal.__pow__
+   ~Decimal.__radd__
+   ~Decimal.__rdiv__
+   ~Decimal.__rdivmod__
+   ~Decimal.__reduce__
+   ~Decimal.__reduce_ex__
+   ~Decimal.__repr__
+   ~Decimal.__rfloordiv__
+   ~Decimal.__rmod__
+   ~Decimal.__rmul__
+   ~Decimal.__rpow__
+   ~Decimal.__rsub__
+   ~Decimal.__rtruediv__
+   ~Decimal.__sizeof__
+   ~Decimal.__str__
+   ~Decimal.__sub__
+   ~Decimal.__subclasshook__
+   ~Decimal.__truediv__
+   ~Decimal.__trunc__
+   ~Decimal._check_nans
+   ~Decimal._cmp
+   ~Decimal._compare_check_nans
+   ~Decimal._divide
+   ~Decimal._fill_logical
+   ~Decimal._fix
+   ~Decimal._fix_nan
+   ~Decimal._iseven
+   ~Decimal._isinfinity
+   ~Decimal._isinteger
+   ~Decimal._islogical
+   ~Decimal._isnan
+   ~Decimal._ln_exp_bound
+   ~Decimal._log10_exp_bound
+   ~Decimal._power_exact
+   ~Decimal._power_modulo
+   ~Decimal._rescale
+   ~Decimal._round
+   ~Decimal._round_05up
+   ~Decimal._round_ceiling
+   ~Decimal._round_down
+   ~Decimal._round_floor
+   ~Decimal._round_half_down
+   ~Decimal._round_half_even
+   ~Decimal._round_half_up
+   ~Decimal._round_up
+   ~Decimal.adjusted
+   ~Decimal.as_tuple
+   ~Decimal.canonical
+   ~Decimal.compare
+   ~Decimal.compare_signal
+   ~Decimal.compare_total
+   ~Decimal.compare_total_mag
+   ~Decimal.conjugate
+   ~Decimal.copy_abs
+   ~Decimal.copy_negate
+   ~Decimal.copy_sign
+   ~Decimal.exp
+   ~Decimal.fma
+   ~Decimal.from_float
+   ~Decimal.is_canonical
+   ~Decimal.is_finite
+   ~Decimal.is_infinite
+   ~Decimal.is_nan
+   ~Decimal.is_normal
+   ~Decimal.is_qnan
+   ~Decimal.is_signed
+   ~Decimal.is_snan
+   ~Decimal.is_subnormal
+   ~Decimal.is_zero
+   ~Decimal.ln
+   ~Decimal.log10
+   ~Decimal.logb
+   ~Decimal.logical_and
+   ~Decimal.logical_invert
+   ~Decimal.logical_or
+   ~Decimal.logical_xor
+   ~Decimal.max
+   ~Decimal.max_mag
+   ~Decimal.min
+   ~Decimal.min_mag
+   ~Decimal.next_minus
+   ~Decimal.next_plus
+   ~Decimal.next_toward
+   ~Decimal.normalize
+   ~Decimal.number_class
+   ~Decimal.quantize
+   ~Decimal.radix
+   ~Decimal.remainder_near
+   ~Decimal.rotate
+   ~Decimal.same_quantum
+   ~Decimal.scaleb
+   ~Decimal.shift
+   ~Decimal.sqrt
+   ~Decimal.to_eng_string
+   ~Decimal.to_integral
+   ~Decimal.to_integral_exact
+   ~Decimal.to_integral_value
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Decimal.imag
+   ~Decimal.real
+

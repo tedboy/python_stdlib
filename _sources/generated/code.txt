@@ -1,0 +1,48 @@
+:mod:`code`
+===========
+
+.. automodule:: code
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      compile_command
+      interact
+      softspace
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      CommandCompiler
+      InteractiveConsole
+      InteractiveInterpreter
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/code.CommandCompiler
+       generated/code.InteractiveConsole
+       generated/code.InteractiveInterpreter
+
+   
+   
+
+   
+   
+   

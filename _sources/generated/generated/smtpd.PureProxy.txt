@@ -1,0 +1,65 @@
+:class:`smtpd.PureProxy`
+========================
+.. currentmodule:: smtpd
+.. autoclass:: PureProxy
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~PureProxy.__getattr__
+   ~PureProxy.__init__
+   ~PureProxy.__repr__
+   ~PureProxy.__str__
+   ~PureProxy._deliver
+   ~PureProxy.accept
+   ~PureProxy.add_channel
+   ~PureProxy.bind
+   ~PureProxy.close
+   ~PureProxy.connect
+   ~PureProxy.create_socket
+   ~PureProxy.del_channel
+   ~PureProxy.handle_accept
+   ~PureProxy.handle_close
+   ~PureProxy.handle_connect
+   ~PureProxy.handle_connect_event
+   ~PureProxy.handle_error
+   ~PureProxy.handle_expt
+   ~PureProxy.handle_expt_event
+   ~PureProxy.handle_read
+   ~PureProxy.handle_read_event
+   ~PureProxy.handle_write
+   ~PureProxy.handle_write_event
+   ~PureProxy.listen
+   ~PureProxy.log
+   ~PureProxy.log_info
+   ~PureProxy.process_message
+   ~PureProxy.readable
+   ~PureProxy.recv
+   ~PureProxy.send
+   ~PureProxy.set_reuse_addr
+   ~PureProxy.set_socket
+   ~PureProxy.writable
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~PureProxy.accepting
+   ~PureProxy.addr
+   ~PureProxy.closing
+   ~PureProxy.connected
+   ~PureProxy.connecting
+   ~PureProxy.debug
+   ~PureProxy.ignore_log_types
+

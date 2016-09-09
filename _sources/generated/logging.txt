@@ -1,0 +1,87 @@
+:mod:`logging`
+==============
+
+.. automodule:: logging
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      addLevelName
+      basicConfig
+      captureWarnings
+      critical
+      currentframe
+      debug
+      disable
+      error
+      exception
+      fatal
+      getLevelName
+      getLogger
+      getLoggerClass
+      info
+      log
+      makeLogRecord
+      setLoggerClass
+      shutdown
+      warn
+      warning
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      BufferingFormatter
+      FileHandler
+      Filter
+      Filterer
+      Formatter
+      Handler
+      LogRecord
+      Logger
+      LoggerAdapter
+      Manager
+      NullHandler
+      PlaceHolder
+      RootLogger
+      StreamHandler
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/logging.BufferingFormatter
+       generated/logging.FileHandler
+       generated/logging.Filter
+       generated/logging.Filterer
+       generated/logging.Formatter
+       generated/logging.Handler
+       generated/logging.LogRecord
+       generated/logging.Logger
+       generated/logging.LoggerAdapter
+       generated/logging.Manager
+       generated/logging.NullHandler
+       generated/logging.PlaceHolder
+       generated/logging.RootLogger
+       generated/logging.StreamHandler
+
+   
+   
+
+   
+   
+   

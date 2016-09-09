@@ -1,0 +1,58 @@
+:mod:`plistlib`
+===============
+
+.. automodule:: plistlib
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      StringIO
+      readPlist
+      readPlistFromResource
+      readPlistFromString
+      writePlist
+      writePlistToResource
+      writePlistToString
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Data
+      Dict
+      DumbXMLWriter
+      Plist
+      PlistParser
+      PlistWriter
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/plistlib.Data
+       generated/plistlib.Dict
+       generated/plistlib.DumbXMLWriter
+       generated/plistlib.Plist
+       generated/plistlib.PlistParser
+       generated/plistlib.PlistWriter
+
+   
+   
+
+   
+   
+   

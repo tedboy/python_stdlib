@@ -1,0 +1,61 @@
+:class:`io.TextIOWrapper`
+=========================
+.. currentmodule:: io
+.. autoclass:: TextIOWrapper
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~TextIOWrapper.__enter__
+   ~TextIOWrapper.__exit__
+   ~TextIOWrapper.__format__
+   ~TextIOWrapper.__new__
+   ~TextIOWrapper.__reduce__
+   ~TextIOWrapper.__reduce_ex__
+   ~TextIOWrapper.__sizeof__
+   ~TextIOWrapper.__subclasshook__
+   ~TextIOWrapper._checkClosed
+   ~TextIOWrapper._checkReadable
+   ~TextIOWrapper._checkSeekable
+   ~TextIOWrapper._checkWritable
+   ~TextIOWrapper.close
+   ~TextIOWrapper.detach
+   ~TextIOWrapper.fileno
+   ~TextIOWrapper.flush
+   ~TextIOWrapper.isatty
+   ~TextIOWrapper.read
+   ~TextIOWrapper.readable
+   ~TextIOWrapper.readline
+   ~TextIOWrapper.readlines
+   ~TextIOWrapper.seek
+   ~TextIOWrapper.seekable
+   ~TextIOWrapper.tell
+   ~TextIOWrapper.truncate
+   ~TextIOWrapper.writable
+   ~TextIOWrapper.write
+   ~TextIOWrapper.writelines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~TextIOWrapper.buffer
+   ~TextIOWrapper.closed
+   ~TextIOWrapper.encoding
+   ~TextIOWrapper.errors
+   ~TextIOWrapper.line_buffering
+   ~TextIOWrapper.name
+   ~TextIOWrapper.newlines
+   ~TextIOWrapper.next
+

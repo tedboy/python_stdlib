@@ -1,0 +1,54 @@
+:class:`logging.config.DictConfigurator`
+========================================
+.. currentmodule:: logging.config
+.. autoclass:: DictConfigurator
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~DictConfigurator.__format__
+   ~DictConfigurator.__init__
+   ~DictConfigurator.__new__
+   ~DictConfigurator.__reduce__
+   ~DictConfigurator.__reduce_ex__
+   ~DictConfigurator.__sizeof__
+   ~DictConfigurator.__subclasshook__
+   ~DictConfigurator.add_filters
+   ~DictConfigurator.add_handlers
+   ~DictConfigurator.as_tuple
+   ~DictConfigurator.cfg_convert
+   ~DictConfigurator.common_logger_config
+   ~DictConfigurator.configure
+   ~DictConfigurator.configure_custom
+   ~DictConfigurator.configure_filter
+   ~DictConfigurator.configure_formatter
+   ~DictConfigurator.configure_handler
+   ~DictConfigurator.configure_logger
+   ~DictConfigurator.configure_root
+   ~DictConfigurator.convert
+   ~DictConfigurator.ext_convert
+   ~DictConfigurator.importer
+   ~DictConfigurator.resolve
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~DictConfigurator.CONVERT_PATTERN
+   ~DictConfigurator.DIGIT_PATTERN
+   ~DictConfigurator.DOT_PATTERN
+   ~DictConfigurator.INDEX_PATTERN
+   ~DictConfigurator.WORD_PATTERN
+   ~DictConfigurator.value_converters
+

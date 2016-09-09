@@ -1,0 +1,40 @@
+:class:`xmlrpclib.SafeTransport`
+================================
+.. currentmodule:: xmlrpclib
+.. autoclass:: SafeTransport
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SafeTransport.__init__
+   ~SafeTransport.close
+   ~SafeTransport.get_host_info
+   ~SafeTransport.getparser
+   ~SafeTransport.make_connection
+   ~SafeTransport.parse_response
+   ~SafeTransport.request
+   ~SafeTransport.send_content
+   ~SafeTransport.send_host
+   ~SafeTransport.send_request
+   ~SafeTransport.send_user_agent
+   ~SafeTransport.single_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SafeTransport.accept_gzip_encoding
+   ~SafeTransport.encode_threshold
+   ~SafeTransport.user_agent
+

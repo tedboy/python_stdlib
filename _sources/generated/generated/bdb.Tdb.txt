@@ -1,0 +1,59 @@
+:class:`bdb.Tdb`
+================
+.. currentmodule:: bdb
+.. autoclass:: Tdb
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Tdb.__init__
+   ~Tdb._prune_breaks
+   ~Tdb._set_stopinfo
+   ~Tdb.break_anywhere
+   ~Tdb.break_here
+   ~Tdb.canonic
+   ~Tdb.clear_all_breaks
+   ~Tdb.clear_all_file_breaks
+   ~Tdb.clear_bpbynumber
+   ~Tdb.clear_break
+   ~Tdb.dispatch_call
+   ~Tdb.dispatch_exception
+   ~Tdb.dispatch_line
+   ~Tdb.dispatch_return
+   ~Tdb.do_clear
+   ~Tdb.format_stack_entry
+   ~Tdb.get_all_breaks
+   ~Tdb.get_break
+   ~Tdb.get_breaks
+   ~Tdb.get_file_breaks
+   ~Tdb.get_stack
+   ~Tdb.is_skipped_module
+   ~Tdb.reset
+   ~Tdb.run
+   ~Tdb.runcall
+   ~Tdb.runctx
+   ~Tdb.runeval
+   ~Tdb.set_break
+   ~Tdb.set_continue
+   ~Tdb.set_next
+   ~Tdb.set_quit
+   ~Tdb.set_return
+   ~Tdb.set_step
+   ~Tdb.set_trace
+   ~Tdb.set_until
+   ~Tdb.stop_here
+   ~Tdb.trace_dispatch
+   ~Tdb.user_call
+   ~Tdb.user_exception
+   ~Tdb.user_line
+   ~Tdb.user_return
+
+
+
+
+

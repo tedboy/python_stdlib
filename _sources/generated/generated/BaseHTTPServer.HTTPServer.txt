@@ -1,0 +1,47 @@
+:class:`BaseHTTPServer.HTTPServer`
+==================================
+.. currentmodule:: BaseHTTPServer
+.. autoclass:: HTTPServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~HTTPServer.__init__
+   ~HTTPServer._handle_request_noblock
+   ~HTTPServer.close_request
+   ~HTTPServer.fileno
+   ~HTTPServer.finish_request
+   ~HTTPServer.get_request
+   ~HTTPServer.handle_error
+   ~HTTPServer.handle_request
+   ~HTTPServer.handle_timeout
+   ~HTTPServer.process_request
+   ~HTTPServer.serve_forever
+   ~HTTPServer.server_activate
+   ~HTTPServer.server_bind
+   ~HTTPServer.server_close
+   ~HTTPServer.shutdown
+   ~HTTPServer.shutdown_request
+   ~HTTPServer.verify_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~HTTPServer.address_family
+   ~HTTPServer.allow_reuse_address
+   ~HTTPServer.request_queue_size
+   ~HTTPServer.socket_type
+   ~HTTPServer.timeout
+

@@ -1,0 +1,43 @@
+:class:`sched.Event`
+====================
+.. currentmodule:: sched
+.. autoclass:: Event
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Event.__format__
+   ~Event.__getnewargs__
+   ~Event.__getstate__
+   ~Event.__new__
+   ~Event.__reduce__
+   ~Event.__reduce_ex__
+   ~Event.__repr__
+   ~Event.__sizeof__
+   ~Event.__subclasshook__
+   ~Event._asdict
+   ~Event._make
+   ~Event._replace
+   ~Event.count
+   ~Event.index
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Event.action
+   ~Event.argument
+   ~Event.priority
+   ~Event.time
+

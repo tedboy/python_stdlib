@@ -1,9 +1,7 @@
-Tkinter.OptionMenu
-==================
-
+:class:`Tkinter.OptionMenu`
+===========================
 .. currentmodule:: Tkinter
 .. autoclass:: OptionMenu
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~OptionMenu._Misc__winfo_getint
+   ~OptionMenu._Misc__winfo_parseitem
+   ~OptionMenu.__contains__
+   ~OptionMenu.__getitem__
    ~OptionMenu.__init__
+   ~OptionMenu.__setitem__
+   ~OptionMenu.__str__
+   ~OptionMenu._bind
+   ~OptionMenu._configure
+   ~OptionMenu._displayof
+   ~OptionMenu._do
+   ~OptionMenu._getboolean
+   ~OptionMenu._getconfigure
+   ~OptionMenu._getconfigure1
+   ~OptionMenu._getdoubles
+   ~OptionMenu._getints
+   ~OptionMenu._grid_configure
+   ~OptionMenu._gridconvvalue
+   ~OptionMenu._nametowidget
+   ~OptionMenu._options
+   ~OptionMenu._register
+   ~OptionMenu._report_exception
+   ~OptionMenu._root
+   ~OptionMenu._setup
+   ~OptionMenu._substitute
    ~OptionMenu.after
    ~OptionMenu.after_cancel
    ~OptionMenu.after_idle
@@ -24,6 +46,7 @@ Methods
    ~OptionMenu.bind_class
    ~OptionMenu.bindtags
    ~OptionMenu.cget
+   ~OptionMenu.check
    ~OptionMenu.clipboard_append
    ~OptionMenu.clipboard_clear
    ~OptionMenu.clipboard_get
@@ -44,6 +67,7 @@ Methods
    ~OptionMenu.focus_lastfor
    ~OptionMenu.focus_set
    ~OptionMenu.forget
+   ~OptionMenu.form
    ~OptionMenu.getboolean
    ~OptionMenu.getvar
    ~OptionMenu.grab_current

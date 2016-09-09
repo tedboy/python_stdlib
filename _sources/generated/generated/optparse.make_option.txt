@@ -1,0 +1,53 @@
+:class:`optparse.make_option`
+=============================
+.. currentmodule:: optparse
+.. autoclass:: make_option
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~make_option.__init__
+   ~make_option.__repr__
+   ~make_option.__str__
+   ~make_option._check_action
+   ~make_option._check_callback
+   ~make_option._check_choice
+   ~make_option._check_const
+   ~make_option._check_dest
+   ~make_option._check_nargs
+   ~make_option._check_opt_strings
+   ~make_option._check_type
+   ~make_option._set_attrs
+   ~make_option._set_opt_strings
+   ~make_option.check_value
+   ~make_option.convert_value
+   ~make_option.get_opt_string
+   ~make_option.process
+   ~make_option.take_action
+   ~make_option.takes_value
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~make_option.ACTIONS
+   ~make_option.ALWAYS_TYPED_ACTIONS
+   ~make_option.ATTRS
+   ~make_option.CHECK_METHODS
+   ~make_option.CONST_ACTIONS
+   ~make_option.STORE_ACTIONS
+   ~make_option.TYPED_ACTIONS
+   ~make_option.TYPES
+   ~make_option.TYPE_CHECKER
+

@@ -1,9 +1,7 @@
-webbrowser.GenericBrowser
-=========================
-
+:class:`webbrowser.GenericBrowser`
+==================================
 .. currentmodule:: webbrowser
 .. autoclass:: GenericBrowser
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,13 @@ Methods
    :toctree:
 
 
+   ~GenericBrowser.__format__
    ~GenericBrowser.__init__
+   ~GenericBrowser.__new__
+   ~GenericBrowser.__reduce__
+   ~GenericBrowser.__reduce_ex__
+   ~GenericBrowser.__sizeof__
+   ~GenericBrowser.__subclasshook__
    ~GenericBrowser.open
    ~GenericBrowser.open_new
    ~GenericBrowser.open_new_tab

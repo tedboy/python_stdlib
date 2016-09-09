@@ -1,9 +1,7 @@
-urllib.addclosehook
-===================
-
+:class:`urllib.addclosehook`
+============================
 .. currentmodule:: urllib
 .. autoclass:: addclosehook
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~addclosehook.__init__
+   ~addclosehook.__repr__
    ~addclosehook.close
 
 

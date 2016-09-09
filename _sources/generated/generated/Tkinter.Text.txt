@@ -1,9 +1,7 @@
-Tkinter.Text
-============
-
+:class:`Tkinter.Text`
+=====================
 .. currentmodule:: Tkinter
 .. autoclass:: Text
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Text._Misc__winfo_getint
+   ~Text._Misc__winfo_parseitem
+   ~Text.__contains__
+   ~Text.__getitem__
    ~Text.__init__
+   ~Text.__setitem__
+   ~Text.__str__
+   ~Text._bind
+   ~Text._configure
+   ~Text._displayof
+   ~Text._do
+   ~Text._getboolean
+   ~Text._getconfigure
+   ~Text._getconfigure1
+   ~Text._getdoubles
+   ~Text._getints
+   ~Text._grid_configure
+   ~Text._gridconvvalue
+   ~Text._nametowidget
+   ~Text._options
+   ~Text._register
+   ~Text._report_exception
+   ~Text._root
+   ~Text._setup
+   ~Text._substitute
    ~Text.after
    ~Text.after_cancel
    ~Text.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Text.bind_class
    ~Text.bindtags
    ~Text.cget
+   ~Text.check
    ~Text.clipboard_append
    ~Text.clipboard_clear
    ~Text.clipboard_get
@@ -55,6 +78,7 @@ Methods
    ~Text.focus_lastfor
    ~Text.focus_set
    ~Text.forget
+   ~Text.form
    ~Text.get
    ~Text.getboolean
    ~Text.getvar

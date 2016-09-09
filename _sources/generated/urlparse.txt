@@ -1,5 +1,5 @@
-urlparse
-========
+:mod:`urlparse`
+===============
 
 .. automodule:: urlparse
 
@@ -9,9 +9,11 @@ urlparse
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       clear_cache
+      namedtuple
       parse_qs
       parse_qsl
       unquote
@@ -27,10 +29,10 @@ urlparse
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       ParseResult

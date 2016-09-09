@@ -1,0 +1,31 @@
+:class:`SocketServer.ForkingMixIn`
+==================================
+.. currentmodule:: SocketServer
+.. autoclass:: ForkingMixIn
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~ForkingMixIn.collect_children
+   ~ForkingMixIn.handle_timeout
+   ~ForkingMixIn.process_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~ForkingMixIn.active_children
+   ~ForkingMixIn.max_children
+   ~ForkingMixIn.timeout
+

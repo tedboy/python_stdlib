@@ -1,0 +1,65 @@
+:mod:`parser`
+=============
+
+.. automodule:: parser
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      ast2list
+      ast2tuple
+      compileast
+      compilest
+      expr
+      isexpr
+      issuite
+      sequence2ast
+      sequence2st
+      st2list
+      st2tuple
+      suite
+      tuple2ast
+      tuple2st
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      ASTType
+      STType
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/parser.ASTType
+       generated/parser.STType
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      ParserError
+   
+   

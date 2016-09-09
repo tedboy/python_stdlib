@@ -1,0 +1,81 @@
+:mod:`ssl`
+==========
+
+.. automodule:: ssl
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      DER_cert_to_PEM_cert
+      PEM_cert_to_DER_cert
+      RAND_add
+      RAND_egd
+      RAND_status
+      cert_time_to_seconds
+      create_connection
+      create_default_context
+      get_default_verify_paths
+      get_protocol_name
+      get_server_certificate
+      match_hostname
+      namedtuple
+      sslwrap_simple
+      wrap_socket
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      DefaultVerifyPaths
+      Purpose
+      SSLContext
+      SSLSocket
+      closing
+      socket
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/ssl.DefaultVerifyPaths
+       generated/ssl.Purpose
+       generated/ssl.SSLContext
+       generated/ssl.SSLSocket
+       generated/ssl.closing
+       generated/ssl.socket
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      CertificateError
+      SSLEOFError
+      SSLError
+      SSLSyscallError
+      SSLWantReadError
+      SSLWantWriteError
+      SSLZeroReturnError
+      socket_error
+   
+   

@@ -1,9 +1,7 @@
-Tkinter.BitmapImage
-===================
-
+:class:`Tkinter.BitmapImage`
+============================
 .. currentmodule:: Tkinter
 .. autoclass:: BitmapImage
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,11 @@ Methods
    :toctree:
 
 
+   ~BitmapImage.__del__
+   ~BitmapImage.__getitem__
    ~BitmapImage.__init__
+   ~BitmapImage.__setitem__
+   ~BitmapImage.__str__
    ~BitmapImage.config
    ~BitmapImage.configure
    ~BitmapImage.height

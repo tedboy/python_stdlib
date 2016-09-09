@@ -1,9 +1,7 @@
-popen2.Popen3
-=============
-
+:class:`popen2.Popen3`
+======================
 .. currentmodule:: popen2
 .. autoclass:: Popen3
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,9 @@ Methods
    :toctree:
 
 
+   ~Popen3.__del__
    ~Popen3.__init__
+   ~Popen3._run_child
    ~Popen3.poll
    ~Popen3.wait
 

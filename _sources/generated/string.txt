@@ -1,5 +1,5 @@
-string
-======
+:mod:`string`
+=============
 
 .. automodule:: string
 
@@ -9,7 +9,8 @@ string
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       atof
       atoi
@@ -26,6 +27,7 @@ string
       ljust
       lower
       lstrip
+      maketrans
       replace
       rfind
       rindex
@@ -45,10 +47,10 @@ string
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       Formatter
@@ -66,5 +68,16 @@ string
    
 
    
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      atof_error
+      atoi_error
+      atol_error
+      index_error
    
    

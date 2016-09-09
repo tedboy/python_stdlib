@@ -1,0 +1,54 @@
+:mod:`ConfigParser`
+===================
+
+.. automodule:: ConfigParser
+
+   
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      ConfigParser
+      RawConfigParser
+      SafeConfigParser
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/ConfigParser.ConfigParser
+       generated/ConfigParser.RawConfigParser
+       generated/ConfigParser.SafeConfigParser
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      DuplicateSectionError
+      Error
+      InterpolationDepthError
+      InterpolationError
+      InterpolationMissingOptionError
+      InterpolationSyntaxError
+      MissingSectionHeaderError
+      NoOptionError
+      NoSectionError
+      ParsingError
+   
+   

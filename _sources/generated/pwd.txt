@@ -1,0 +1,46 @@
+:mod:`pwd`
+==========
+
+.. automodule:: pwd
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      getpwall
+      getpwnam
+      getpwuid
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      struct_passwd
+      struct_pwent
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pwd.struct_passwd
+       generated/pwd.struct_pwent
+
+   
+   
+
+   
+   
+   

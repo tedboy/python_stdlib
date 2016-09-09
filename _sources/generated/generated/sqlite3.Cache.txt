@@ -1,9 +1,7 @@
-sqlite3.Cache
-=============
-
+:class:`sqlite3.Cache`
+======================
 .. currentmodule:: sqlite3
 .. autoclass:: Cache
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,12 @@ Methods
    :toctree:
 
 
+   ~Cache.__format__
+   ~Cache.__new__
+   ~Cache.__reduce__
+   ~Cache.__reduce_ex__
+   ~Cache.__sizeof__
+   ~Cache.__subclasshook__
    ~Cache.display
    ~Cache.get
 

@@ -1,0 +1,47 @@
+:class:`rexec.RHooks`
+=====================
+.. currentmodule:: rexec
+.. autoclass:: RHooks
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~RHooks.__init__
+   ~RHooks.add_module
+   ~RHooks.default_path
+   ~RHooks.get_frozen_object
+   ~RHooks.get_suffixes
+   ~RHooks.get_verbose
+   ~RHooks.init_builtin
+   ~RHooks.init_frozen
+   ~RHooks.is_builtin
+   ~RHooks.is_frozen
+   ~RHooks.listdir
+   ~RHooks.load_compiled
+   ~RHooks.load_dynamic
+   ~RHooks.load_package
+   ~RHooks.load_source
+   ~RHooks.message
+   ~RHooks.modules_dict
+   ~RHooks.new_module
+   ~RHooks.note
+   ~RHooks.openfile
+   ~RHooks.path_exists
+   ~RHooks.path_isabs
+   ~RHooks.path_isdir
+   ~RHooks.path_isfile
+   ~RHooks.path_islink
+   ~RHooks.path_join
+   ~RHooks.path_split
+   ~RHooks.set_rexec
+   ~RHooks.set_verbose
+
+
+
+
+

@@ -1,20 +1,18 @@
-pydoc.Repr
-==========
-
+:class:`pydoc.Repr`
+===================
 .. currentmodule:: pydoc
-
-:func:`Repr.__init__`
-
 .. autoclass:: Repr
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
    ~Repr.__init__
+   ~Repr._repr_iterable
    ~Repr.repr
    ~Repr.repr1
    ~Repr.repr_array

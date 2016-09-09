@@ -1,0 +1,93 @@
+:class:`imaplib.IMAP4_stream`
+=============================
+.. currentmodule:: imaplib
+.. autoclass:: IMAP4_stream
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~IMAP4_stream._CRAM_MD5_AUTH
+   ~IMAP4_stream.__getattr__
+   ~IMAP4_stream.__init__
+   ~IMAP4_stream._append_untagged
+   ~IMAP4_stream._check_bye
+   ~IMAP4_stream._checkquote
+   ~IMAP4_stream._command
+   ~IMAP4_stream._command_complete
+   ~IMAP4_stream._dump_ur
+   ~IMAP4_stream._get_line
+   ~IMAP4_stream._get_response
+   ~IMAP4_stream._get_tagged_response
+   ~IMAP4_stream._log
+   ~IMAP4_stream._match
+   ~IMAP4_stream._mesg
+   ~IMAP4_stream._new_tag
+   ~IMAP4_stream._quote
+   ~IMAP4_stream._simple_command
+   ~IMAP4_stream._untagged_response
+   ~IMAP4_stream.append
+   ~IMAP4_stream.authenticate
+   ~IMAP4_stream.capability
+   ~IMAP4_stream.check
+   ~IMAP4_stream.close
+   ~IMAP4_stream.copy
+   ~IMAP4_stream.create
+   ~IMAP4_stream.delete
+   ~IMAP4_stream.deleteacl
+   ~IMAP4_stream.expunge
+   ~IMAP4_stream.fetch
+   ~IMAP4_stream.getacl
+   ~IMAP4_stream.getannotation
+   ~IMAP4_stream.getquota
+   ~IMAP4_stream.getquotaroot
+   ~IMAP4_stream.list
+   ~IMAP4_stream.login
+   ~IMAP4_stream.login_cram_md5
+   ~IMAP4_stream.logout
+   ~IMAP4_stream.lsub
+   ~IMAP4_stream.myrights
+   ~IMAP4_stream.namespace
+   ~IMAP4_stream.noop
+   ~IMAP4_stream.open
+   ~IMAP4_stream.partial
+   ~IMAP4_stream.print_log
+   ~IMAP4_stream.proxyauth
+   ~IMAP4_stream.read
+   ~IMAP4_stream.readline
+   ~IMAP4_stream.recent
+   ~IMAP4_stream.rename
+   ~IMAP4_stream.response
+   ~IMAP4_stream.search
+   ~IMAP4_stream.select
+   ~IMAP4_stream.send
+   ~IMAP4_stream.setacl
+   ~IMAP4_stream.setannotation
+   ~IMAP4_stream.setquota
+   ~IMAP4_stream.shutdown
+   ~IMAP4_stream.socket
+   ~IMAP4_stream.sort
+   ~IMAP4_stream.status
+   ~IMAP4_stream.store
+   ~IMAP4_stream.subscribe
+   ~IMAP4_stream.thread
+   ~IMAP4_stream.uid
+   ~IMAP4_stream.unsubscribe
+   ~IMAP4_stream.xatom
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~IMAP4_stream.mustquote
+

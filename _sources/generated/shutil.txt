@@ -1,5 +1,5 @@
-shutil
-======
+:mod:`shutil`
+=============
 
 .. automodule:: shutil
 
@@ -9,8 +9,10 @@ shutil
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
+      abspath
       copy
       copy2
       copyfile
@@ -19,6 +21,8 @@ shutil
       copystat
       copytree
       get_archive_formats
+      getgrnam
+      getpwnam
       ignore_patterns
       make_archive
       move
@@ -35,7 +39,7 @@ shutil
    
    
    Exceptions
-   ---------
+   ----------
    .. autosummary::
       :toctree:
 

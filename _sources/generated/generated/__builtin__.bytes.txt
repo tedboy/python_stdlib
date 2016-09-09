@@ -1,9 +1,7 @@
-__builtin__.bytes
-=================
-
+:class:`__builtin__.bytes`
+==========================
 .. currentmodule:: __builtin__
 .. autoclass:: bytes
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,15 @@ Methods
    :toctree:
 
 
+   ~bytes.__format__
+   ~bytes.__getnewargs__
+   ~bytes.__new__
+   ~bytes.__reduce__
+   ~bytes.__reduce_ex__
+   ~bytes.__sizeof__
+   ~bytes.__subclasshook__
+   ~bytes._formatter_field_name_split
+   ~bytes._formatter_parser
    ~bytes.capitalize
    ~bytes.center
    ~bytes.count

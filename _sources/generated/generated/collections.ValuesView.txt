@@ -1,20 +1,27 @@
-collections.ValuesView
-======================
-
+:class:`collections.ValuesView`
+===============================
 .. currentmodule:: collections
-
-:func:`ValuesView.__init__`
-
 .. autoclass:: ValuesView
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~ValuesView.__contains__
+   ~ValuesView.__format__
    ~ValuesView.__init__
+   ~ValuesView.__iter__
+   ~ValuesView.__len__
+   ~ValuesView.__new__
+   ~ValuesView.__reduce__
+   ~ValuesView.__reduce_ex__
+   ~ValuesView.__repr__
+   ~ValuesView.__sizeof__
+   ~ValuesView.__subclasshook__
 
 
 

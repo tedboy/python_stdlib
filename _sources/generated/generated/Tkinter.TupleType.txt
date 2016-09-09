@@ -1,19 +1,23 @@
-Tkinter.TupleType
-=================
-
+:class:`Tkinter.TupleType`
+==========================
 .. currentmodule:: Tkinter
-
-:func:`TupleType.__init__`
-
 .. autoclass:: TupleType
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~TupleType.__format__
+   ~TupleType.__getnewargs__
+   ~TupleType.__new__
+   ~TupleType.__reduce__
+   ~TupleType.__reduce_ex__
+   ~TupleType.__sizeof__
+   ~TupleType.__subclasshook__
    ~TupleType.count
    ~TupleType.index
 

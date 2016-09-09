@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.2.2.2.8. pickle.DictProxyType &mdash; Python Standard Library</title>
+  <title>pickle.DictProxyType &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
   
 
   
@@ -31,9 +33,9 @@
 
   
     <link rel="top" title="Python Standard Library" href="../../index.html"/>
-        <link rel="up" title="3.2.2. pickle" href="../pickle.html"/>
-        <link rel="next" title="3.2.2.2.9. pickle.DictType" href="pickle.DictType.html"/>
-        <link rel="prev" title="3.2.2.2.7. pickle.ComplexType" href="pickle.ComplexType.html"/> 
+        <link rel="up" title="pickle" href="../pickle.html"/>
+        <link rel="next" title="pickle.DictProxyType.__format__" href="pickle.DictProxyType.__format__.html"/>
+        <link rel="prev" title="pickle.ComplexType.real" href="pickle.ComplexType.real.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -61,10 +63,6 @@
           
             
             
-              <div class="version">
-                1
-              </div>
-            
           
 
           
@@ -84,42 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#string-services">3.1. String Services</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../maybe_future.html#data-persistence-and-compression">3.2. Data persistence and compression</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../shutil.html">3.2.1. shutil</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../pickle.html">3.2.2. pickle</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../pickle.html#functions">3.2.2.1. Functions</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../pickle.html#classes">3.2.2.2. Classes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pickle.html#exceptions">3.2.2.3. Exceptions</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../cPickle.html">3.2.3. cPickle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../csv.html">3.2.4. csv</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../zlib.html">3.2.5. zlib</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../gzip.html">3.2.6. gzip</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../bz2.html">3.2.7. bz2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../zipfile.html">3.2.8. zipfile</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../tarfile.html">3.2.9. tarfile</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#networks-and-internet">3.3. Networks and Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#development-tools-and-debugging">3.4. Development tools and Debugging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../maybe_future.html#python-runtime-services">3.5. Python Runtime Services</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -161,11 +137,11 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../maybe_future.html">3. Misc package I may use in the future</a> &raquo;</li>
+          <li><a href="../../api_11to15.html">API: 11 - 15</a> &raquo;</li>
         
-          <li><a href="../pickle.html">3.2.2. pickle</a> &raquo;</li>
+          <li><a href="../pickle.html"><code class="docutils literal"><span class="pre">pickle</span></code></a> &raquo;</li>
         
-      <li>3.2.2.2.8. pickle.DictProxyType</li>
+      <li><code class="docutils literal"><span class="pre">pickle.DictProxyType</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,14 +159,69 @@
            <div itemprop="articleBody">
             
   <div class="section" id="pickle-dictproxytype">
-<h1>3.2.2.2.8. pickle.DictProxyType<a class="headerlink" href="#pickle-dictproxytype" title="Permalink to this headline">¶</a></h1>
-<p><code class="xref py py-func docutils literal"><span class="pre">DictProxyType.__init__()</span></code></p>
+<h1><a class="reference internal" href="#pickle.DictProxyType" title="pickle.DictProxyType"><code class="xref py py-class docutils literal"><span class="pre">pickle.DictProxyType</span></code></a><a class="headerlink" href="#pickle-dictproxytype" title="Permalink to this headline">¶</a></h1>
 <dl class="attribute">
 <dt id="pickle.DictProxyType">
 <code class="descclassname">pickle.</code><code class="descname">DictProxyType</code><a class="headerlink" href="#pickle.DictProxyType" title="Permalink to this definition">¶</a></dt>
 <dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">dictproxy</span></code></p>
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="pickle.DictProxyType.__format__.html#pickle.DictProxyType.__format__" title="pickle.DictProxyType.__format__"><code class="xref py py-obj docutils literal"><span class="pre">__format__</span></code></a></td>
+<td>default object formatter</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.DictProxyType.__new__.html#pickle.DictProxyType.__new__" title="pickle.DictProxyType.__new__"><code class="xref py py-obj docutils literal"><span class="pre">__new__</span></code></a>((S,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.DictProxyType.__reduce__.html#pickle.DictProxyType.__reduce__" title="pickle.DictProxyType.__reduce__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.DictProxyType.__reduce_ex__.html#pickle.DictProxyType.__reduce_ex__" title="pickle.DictProxyType.__reduce_ex__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce_ex__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.DictProxyType.__sizeof__.html#pickle.DictProxyType.__sizeof__" title="pickle.DictProxyType.__sizeof__"><code class="xref py py-obj docutils literal"><span class="pre">__sizeof__</span></code></a>(()&nbsp;-&gt;&nbsp;int)</td>
+<td>size of object in memory, in bytes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.DictProxyType.__subclasshook__.html#pickle.DictProxyType.__subclasshook__" title="pickle.DictProxyType.__subclasshook__"><code class="xref py py-obj docutils literal"><span class="pre">__subclasshook__</span></code></a></td>
+<td>Abstract classes can override this to customize issubclass().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.DictProxyType.copy.html#pickle.DictProxyType.copy" title="pickle.DictProxyType.copy"><code class="xref py py-obj docutils literal"><span class="pre">copy</span></code></a>(()&nbsp;-&gt;&nbsp;a&nbsp;shallow&nbsp;copy&nbsp;of&nbsp;D)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.DictProxyType.get.html#pickle.DictProxyType.get" title="pickle.DictProxyType.get"><code class="xref py py-obj docutils literal"><span class="pre">get</span></code></a>((k[,d])&nbsp;-&gt;&nbsp;D[k]&nbsp;if&nbsp;D.has_key(k),&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.DictProxyType.has_key.html#pickle.DictProxyType.has_key" title="pickle.DictProxyType.has_key"><code class="xref py py-obj docutils literal"><span class="pre">has_key</span></code></a>((k)&nbsp;-&gt;&nbsp;True&nbsp;if&nbsp;D&nbsp;has&nbsp;a&nbsp;key&nbsp;k,&nbsp;else&nbsp;False)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.DictProxyType.items.html#pickle.DictProxyType.items" title="pickle.DictProxyType.items"><code class="xref py py-obj docutils literal"><span class="pre">items</span></code></a>(()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;D&#8217;s&nbsp;(key,&nbsp;value)&nbsp;pairs,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.DictProxyType.iteritems.html#pickle.DictProxyType.iteritems" title="pickle.DictProxyType.iteritems"><code class="xref py py-obj docutils literal"><span class="pre">iteritems</span></code></a>(()&nbsp;-&gt;&nbsp;an&nbsp;iterator&nbsp;over&nbsp;the&nbsp;(key,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.DictProxyType.iterkeys.html#pickle.DictProxyType.iterkeys" title="pickle.DictProxyType.iterkeys"><code class="xref py py-obj docutils literal"><span class="pre">iterkeys</span></code></a>(()&nbsp;-&gt;&nbsp;an&nbsp;iterator&nbsp;over&nbsp;the&nbsp;keys&nbsp;of&nbsp;D)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.DictProxyType.itervalues.html#pickle.DictProxyType.itervalues" title="pickle.DictProxyType.itervalues"><code class="xref py py-obj docutils literal"><span class="pre">itervalues</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="pickle.DictProxyType.keys.html#pickle.DictProxyType.keys" title="pickle.DictProxyType.keys"><code class="xref py py-obj docutils literal"><span class="pre">keys</span></code></a>(()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;D&#8217;s&nbsp;keys)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="pickle.DictProxyType.values.html#pickle.DictProxyType.values" title="pickle.DictProxyType.values"><code class="xref py py-obj docutils literal"><span class="pre">values</span></code></a>(()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;D&#8217;s&nbsp;values)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -200,10 +231,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pickle.DictType.html" class="btn btn-neutral float-right" title="3.2.2.2.9. pickle.DictType" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pickle.DictProxyType.__format__.html" class="btn btn-neutral float-right" title="pickle.DictProxyType.__format__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pickle.ComplexType.html" class="btn btn-neutral" title="3.2.2.2.7. pickle.ComplexType" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="pickle.ComplexType.real.html" class="btn btn-neutral" title="pickle.ComplexType.real" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -234,7 +265,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -243,6 +274,7 @@
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

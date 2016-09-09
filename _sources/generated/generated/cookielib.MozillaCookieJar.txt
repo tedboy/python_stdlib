@@ -1,0 +1,57 @@
+:class:`cookielib.MozillaCookieJar`
+===================================
+.. currentmodule:: cookielib
+.. autoclass:: MozillaCookieJar
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~MozillaCookieJar.__init__
+   ~MozillaCookieJar.__iter__
+   ~MozillaCookieJar.__len__
+   ~MozillaCookieJar.__repr__
+   ~MozillaCookieJar.__str__
+   ~MozillaCookieJar._cookie_attrs
+   ~MozillaCookieJar._cookie_from_cookie_tuple
+   ~MozillaCookieJar._cookies_for_domain
+   ~MozillaCookieJar._cookies_for_request
+   ~MozillaCookieJar._cookies_from_attrs_set
+   ~MozillaCookieJar._normalized_cookie_tuples
+   ~MozillaCookieJar._process_rfc2109_cookies
+   ~MozillaCookieJar._really_load
+   ~MozillaCookieJar.add_cookie_header
+   ~MozillaCookieJar.clear
+   ~MozillaCookieJar.clear_expired_cookies
+   ~MozillaCookieJar.clear_session_cookies
+   ~MozillaCookieJar.extract_cookies
+   ~MozillaCookieJar.load
+   ~MozillaCookieJar.make_cookies
+   ~MozillaCookieJar.revert
+   ~MozillaCookieJar.save
+   ~MozillaCookieJar.set_cookie
+   ~MozillaCookieJar.set_cookie_if_ok
+   ~MozillaCookieJar.set_policy
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~MozillaCookieJar.domain_re
+   ~MozillaCookieJar.dots_re
+   ~MozillaCookieJar.header
+   ~MozillaCookieJar.magic_re
+   ~MozillaCookieJar.non_word_re
+   ~MozillaCookieJar.quote_re
+   ~MozillaCookieJar.strict_domain_re
+

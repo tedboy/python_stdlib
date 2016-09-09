@@ -1,0 +1,79 @@
+:mod:`httplib`
+==============
+
+.. automodule:: httplib
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      FakeSocket
+      StringIO
+      urlsplit
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      HTTP
+      HTTPConnection
+      HTTPMessage
+      HTTPResponse
+      HTTPS
+      HTTPSConnection
+      LineAndFileWrapper
+      array
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/httplib.HTTP
+       generated/httplib.HTTPConnection
+       generated/httplib.HTTPMessage
+       generated/httplib.HTTPResponse
+       generated/httplib.HTTPS
+       generated/httplib.HTTPSConnection
+       generated/httplib.LineAndFileWrapper
+       generated/httplib.array
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      BadStatusLine
+      CannotSendHeader
+      CannotSendRequest
+      HTTPException
+      ImproperConnectionState
+      IncompleteRead
+      InvalidURL
+      LineTooLong
+      NotConnected
+      ResponseNotReady
+      UnimplementedFileMode
+      UnknownProtocol
+      UnknownTransferEncoding
+      error
+   
+   

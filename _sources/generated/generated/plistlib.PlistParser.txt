@@ -1,0 +1,37 @@
+:class:`plistlib.PlistParser`
+=============================
+.. currentmodule:: plistlib
+.. autoclass:: PlistParser
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~PlistParser.__init__
+   ~PlistParser.addObject
+   ~PlistParser.begin_array
+   ~PlistParser.begin_dict
+   ~PlistParser.end_array
+   ~PlistParser.end_data
+   ~PlistParser.end_date
+   ~PlistParser.end_dict
+   ~PlistParser.end_false
+   ~PlistParser.end_integer
+   ~PlistParser.end_key
+   ~PlistParser.end_real
+   ~PlistParser.end_string
+   ~PlistParser.end_true
+   ~PlistParser.getData
+   ~PlistParser.handleBeginElement
+   ~PlistParser.handleData
+   ~PlistParser.handleEndElement
+   ~PlistParser.parse
+
+
+
+
+

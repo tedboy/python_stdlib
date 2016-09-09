@@ -1,0 +1,52 @@
+:class:`aifc.Aifc_write`
+========================
+.. currentmodule:: aifc
+.. autoclass:: Aifc_write
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Aifc_write.__del__
+   ~Aifc_write.__init__
+   ~Aifc_write._comp_data
+   ~Aifc_write._ensure_header_written
+   ~Aifc_write._init_compression
+   ~Aifc_write._lin2adpcm
+   ~Aifc_write._lin2ulaw
+   ~Aifc_write._patchheader
+   ~Aifc_write._write_form_length
+   ~Aifc_write._write_header
+   ~Aifc_write._writemarkers
+   ~Aifc_write.aifc
+   ~Aifc_write.aiff
+   ~Aifc_write.close
+   ~Aifc_write.getcompname
+   ~Aifc_write.getcomptype
+   ~Aifc_write.getframerate
+   ~Aifc_write.getmark
+   ~Aifc_write.getmarkers
+   ~Aifc_write.getnchannels
+   ~Aifc_write.getnframes
+   ~Aifc_write.getparams
+   ~Aifc_write.getsampwidth
+   ~Aifc_write.initfp
+   ~Aifc_write.setcomptype
+   ~Aifc_write.setframerate
+   ~Aifc_write.setmark
+   ~Aifc_write.setnchannels
+   ~Aifc_write.setnframes
+   ~Aifc_write.setparams
+   ~Aifc_write.setsampwidth
+   ~Aifc_write.tell
+   ~Aifc_write.writeframes
+   ~Aifc_write.writeframesraw
+
+
+
+
+

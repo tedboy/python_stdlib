@@ -1,9 +1,7 @@
-webbrowser.Galeon
-=================
-
+:class:`webbrowser.Galeon`
+==========================
 .. currentmodule:: webbrowser
 .. autoclass:: Galeon
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~Galeon.__format__
    ~Galeon.__init__
+   ~Galeon.__new__
+   ~Galeon.__reduce__
+   ~Galeon.__reduce_ex__
+   ~Galeon.__sizeof__
+   ~Galeon.__subclasshook__
+   ~Galeon._invoke
    ~Galeon.open
    ~Galeon.open_new
    ~Galeon.open_new_tab

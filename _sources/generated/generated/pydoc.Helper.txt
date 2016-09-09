@@ -1,9 +1,7 @@
-pydoc.Helper
-============
-
+:class:`pydoc.Helper`
+=====================
 .. currentmodule:: pydoc
 .. autoclass:: Helper
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,9 @@ Methods
    :toctree:
 
 
+   ~Helper.__call__
    ~Helper.__init__
+   ~Helper.__repr__
    ~Helper.getline
    ~Helper.help
    ~Helper.interact

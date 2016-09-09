@@ -1,0 +1,49 @@
+:class:`tempfile.SpooledTemporaryFile`
+======================================
+.. currentmodule:: tempfile
+.. autoclass:: SpooledTemporaryFile
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SpooledTemporaryFile.__enter__
+   ~SpooledTemporaryFile.__exit__
+   ~SpooledTemporaryFile.__init__
+   ~SpooledTemporaryFile.__iter__
+   ~SpooledTemporaryFile._check
+   ~SpooledTemporaryFile.close
+   ~SpooledTemporaryFile.fileno
+   ~SpooledTemporaryFile.flush
+   ~SpooledTemporaryFile.isatty
+   ~SpooledTemporaryFile.next
+   ~SpooledTemporaryFile.read
+   ~SpooledTemporaryFile.readline
+   ~SpooledTemporaryFile.readlines
+   ~SpooledTemporaryFile.rollover
+   ~SpooledTemporaryFile.seek
+   ~SpooledTemporaryFile.tell
+   ~SpooledTemporaryFile.truncate
+   ~SpooledTemporaryFile.write
+   ~SpooledTemporaryFile.writelines
+   ~SpooledTemporaryFile.xreadlines
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SpooledTemporaryFile.closed
+   ~SpooledTemporaryFile.mode
+   ~SpooledTemporaryFile.name
+   ~SpooledTemporaryFile.softspace
+

@@ -1,0 +1,65 @@
+:class:`smtpd.MailmanProxy`
+===========================
+.. currentmodule:: smtpd
+.. autoclass:: MailmanProxy
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~MailmanProxy.__getattr__
+   ~MailmanProxy.__init__
+   ~MailmanProxy.__repr__
+   ~MailmanProxy.__str__
+   ~MailmanProxy._deliver
+   ~MailmanProxy.accept
+   ~MailmanProxy.add_channel
+   ~MailmanProxy.bind
+   ~MailmanProxy.close
+   ~MailmanProxy.connect
+   ~MailmanProxy.create_socket
+   ~MailmanProxy.del_channel
+   ~MailmanProxy.handle_accept
+   ~MailmanProxy.handle_close
+   ~MailmanProxy.handle_connect
+   ~MailmanProxy.handle_connect_event
+   ~MailmanProxy.handle_error
+   ~MailmanProxy.handle_expt
+   ~MailmanProxy.handle_expt_event
+   ~MailmanProxy.handle_read
+   ~MailmanProxy.handle_read_event
+   ~MailmanProxy.handle_write
+   ~MailmanProxy.handle_write_event
+   ~MailmanProxy.listen
+   ~MailmanProxy.log
+   ~MailmanProxy.log_info
+   ~MailmanProxy.process_message
+   ~MailmanProxy.readable
+   ~MailmanProxy.recv
+   ~MailmanProxy.send
+   ~MailmanProxy.set_reuse_addr
+   ~MailmanProxy.set_socket
+   ~MailmanProxy.writable
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~MailmanProxy.accepting
+   ~MailmanProxy.addr
+   ~MailmanProxy.closing
+   ~MailmanProxy.connected
+   ~MailmanProxy.connecting
+   ~MailmanProxy.debug
+   ~MailmanProxy.ignore_log_types
+

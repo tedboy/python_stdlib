@@ -1,9 +1,7 @@
-urllib.URLopener
-================
-
+:class:`urllib.URLopener`
+=========================
 .. currentmodule:: urllib
 .. autoclass:: URLopener
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,7 @@ Methods
    :toctree:
 
 
+   ~URLopener.__del__
    ~URLopener.__init__
    ~URLopener.addheader
    ~URLopener.cleanup

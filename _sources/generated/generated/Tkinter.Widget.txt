@@ -1,9 +1,7 @@
-Tkinter.Widget
-==============
-
+:class:`Tkinter.Widget`
+=======================
 .. currentmodule:: Tkinter
 .. autoclass:: Widget
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Widget._Misc__winfo_getint
+   ~Widget._Misc__winfo_parseitem
+   ~Widget.__contains__
+   ~Widget.__getitem__
    ~Widget.__init__
+   ~Widget.__setitem__
+   ~Widget.__str__
+   ~Widget._bind
+   ~Widget._configure
+   ~Widget._displayof
+   ~Widget._do
+   ~Widget._getboolean
+   ~Widget._getconfigure
+   ~Widget._getconfigure1
+   ~Widget._getdoubles
+   ~Widget._getints
+   ~Widget._grid_configure
+   ~Widget._gridconvvalue
+   ~Widget._nametowidget
+   ~Widget._options
+   ~Widget._register
+   ~Widget._report_exception
+   ~Widget._root
+   ~Widget._setup
+   ~Widget._substitute
    ~Widget.after
    ~Widget.after_cancel
    ~Widget.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Widget.bind_class
    ~Widget.bindtags
    ~Widget.cget
+   ~Widget.check
    ~Widget.clipboard_append
    ~Widget.clipboard_clear
    ~Widget.clipboard_get
@@ -44,6 +67,7 @@ Methods
    ~Widget.focus_lastfor
    ~Widget.focus_set
    ~Widget.forget
+   ~Widget.form
    ~Widget.getboolean
    ~Widget.getvar
    ~Widget.grab_current

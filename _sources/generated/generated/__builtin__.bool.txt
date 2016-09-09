@@ -1,9 +1,7 @@
-__builtin__.bool
-================
-
+:class:`__builtin__.bool`
+=========================
 .. currentmodule:: __builtin__
 .. autoclass:: bool
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,14 @@ Methods
    :toctree:
 
 
+   ~bool.__format__
+   ~bool.__getnewargs__
+   ~bool.__new__
+   ~bool.__reduce__
+   ~bool.__reduce_ex__
+   ~bool.__sizeof__
+   ~bool.__subclasshook__
+   ~bool.__trunc__
    ~bool.bit_length
    ~bool.conjugate
 

@@ -1,20 +1,41 @@
-abc.WeakSet
-===========
-
+:class:`abc.WeakSet`
+====================
 .. currentmodule:: abc
-
-:func:`WeakSet.__init__`
-
 .. autoclass:: WeakSet
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~WeakSet.__and__
+   ~WeakSet.__contains__
+   ~WeakSet.__eq__
+   ~WeakSet.__format__
+   ~WeakSet.__ge__
+   ~WeakSet.__gt__
+   ~WeakSet.__iand__
    ~WeakSet.__init__
+   ~WeakSet.__ior__
+   ~WeakSet.__isub__
+   ~WeakSet.__iter__
+   ~WeakSet.__ixor__
+   ~WeakSet.__le__
+   ~WeakSet.__len__
+   ~WeakSet.__lt__
+   ~WeakSet.__ne__
+   ~WeakSet.__new__
+   ~WeakSet.__or__
+   ~WeakSet.__reduce__
+   ~WeakSet.__reduce_ex__
+   ~WeakSet.__sizeof__
+   ~WeakSet.__sub__
+   ~WeakSet.__subclasshook__
+   ~WeakSet.__xor__
+   ~WeakSet._commit_removals
    ~WeakSet.add
    ~WeakSet.clear
    ~WeakSet.copy

@@ -1,0 +1,68 @@
+:mod:`decimal`
+==============
+
+.. automodule:: decimal
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      getcontext
+      localcontext
+      setcontext
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Context
+      Decimal
+      DecimalTuple
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/decimal.Context
+       generated/decimal.Decimal
+       generated/decimal.DecimalTuple
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      Clamped
+      ConversionSyntax
+      DecimalException
+      DivisionByZero
+      DivisionImpossible
+      DivisionUndefined
+      Inexact
+      InvalidContext
+      InvalidOperation
+      Overflow
+      Rounded
+      Subnormal
+      Underflow
+   
+   

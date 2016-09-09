@@ -1,0 +1,52 @@
+:class:`ConfigParser.SafeConfigParser`
+======================================
+.. currentmodule:: ConfigParser
+.. autoclass:: SafeConfigParser
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SafeConfigParser.__init__
+   ~SafeConfigParser._get
+   ~SafeConfigParser._interpolate
+   ~SafeConfigParser._interpolate_some
+   ~SafeConfigParser._interpolation_replace
+   ~SafeConfigParser._read
+   ~SafeConfigParser.add_section
+   ~SafeConfigParser.defaults
+   ~SafeConfigParser.get
+   ~SafeConfigParser.getboolean
+   ~SafeConfigParser.getfloat
+   ~SafeConfigParser.getint
+   ~SafeConfigParser.has_option
+   ~SafeConfigParser.has_section
+   ~SafeConfigParser.items
+   ~SafeConfigParser.options
+   ~SafeConfigParser.optionxform
+   ~SafeConfigParser.read
+   ~SafeConfigParser.readfp
+   ~SafeConfigParser.remove_option
+   ~SafeConfigParser.remove_section
+   ~SafeConfigParser.sections
+   ~SafeConfigParser.set
+   ~SafeConfigParser.write
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SafeConfigParser.OPTCRE
+   ~SafeConfigParser.OPTCRE_NV
+   ~SafeConfigParser.SECTCRE
+

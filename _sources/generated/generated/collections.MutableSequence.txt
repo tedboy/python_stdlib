@@ -1,19 +1,30 @@
-collections.MutableSequence
-===========================
-
+:class:`collections.MutableSequence`
+====================================
 .. currentmodule:: collections
-
-:func:`MutableSequence.__init__`
-
 .. autoclass:: MutableSequence
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~MutableSequence.__contains__
+   ~MutableSequence.__delitem__
+   ~MutableSequence.__format__
+   ~MutableSequence.__getitem__
+   ~MutableSequence.__iadd__
+   ~MutableSequence.__iter__
+   ~MutableSequence.__len__
+   ~MutableSequence.__new__
+   ~MutableSequence.__reduce__
+   ~MutableSequence.__reduce_ex__
+   ~MutableSequence.__reversed__
+   ~MutableSequence.__setitem__
+   ~MutableSequence.__sizeof__
+   ~MutableSequence.__subclasshook__
    ~MutableSequence.append
    ~MutableSequence.count
    ~MutableSequence.extend

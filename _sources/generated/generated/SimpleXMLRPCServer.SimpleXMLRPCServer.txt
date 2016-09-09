@@ -1,0 +1,57 @@
+:class:`SimpleXMLRPCServer.SimpleXMLRPCServer`
+==============================================
+.. currentmodule:: SimpleXMLRPCServer
+.. autoclass:: SimpleXMLRPCServer
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SimpleXMLRPCServer.__init__
+   ~SimpleXMLRPCServer._dispatch
+   ~SimpleXMLRPCServer._handle_request_noblock
+   ~SimpleXMLRPCServer._marshaled_dispatch
+   ~SimpleXMLRPCServer.close_request
+   ~SimpleXMLRPCServer.fileno
+   ~SimpleXMLRPCServer.finish_request
+   ~SimpleXMLRPCServer.get_request
+   ~SimpleXMLRPCServer.handle_error
+   ~SimpleXMLRPCServer.handle_request
+   ~SimpleXMLRPCServer.handle_timeout
+   ~SimpleXMLRPCServer.process_request
+   ~SimpleXMLRPCServer.register_function
+   ~SimpleXMLRPCServer.register_instance
+   ~SimpleXMLRPCServer.register_introspection_functions
+   ~SimpleXMLRPCServer.register_multicall_functions
+   ~SimpleXMLRPCServer.serve_forever
+   ~SimpleXMLRPCServer.server_activate
+   ~SimpleXMLRPCServer.server_bind
+   ~SimpleXMLRPCServer.server_close
+   ~SimpleXMLRPCServer.shutdown
+   ~SimpleXMLRPCServer.shutdown_request
+   ~SimpleXMLRPCServer.system_listMethods
+   ~SimpleXMLRPCServer.system_methodHelp
+   ~SimpleXMLRPCServer.system_methodSignature
+   ~SimpleXMLRPCServer.system_multicall
+   ~SimpleXMLRPCServer.verify_request
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~SimpleXMLRPCServer.address_family
+   ~SimpleXMLRPCServer.allow_reuse_address
+   ~SimpleXMLRPCServer.request_queue_size
+   ~SimpleXMLRPCServer.socket_type
+   ~SimpleXMLRPCServer.timeout
+

@@ -1,0 +1,31 @@
+
+.. _language:
+
+***************************
+32 Python Language Services
+***************************
+
+Python provides a number of modules to assist in working with the Python
+language.  These modules support tokenizing, parsing, syntax analysis, bytecode
+disassembly, and various other facilities.
+
+These modules include:
+
+
+.. toctree::
+   :maxdepth: 1
+   :numbered:
+
+   parser
+   ast
+   symtable
+   symbol
+   token
+   keyword
+   tokenize
+   tabnanny
+   pyclbr
+   py_compile
+   compileall
+   dis
+   pickletools

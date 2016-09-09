@@ -1,9 +1,7 @@
-Tkinter.Canvas
-==============
-
+:class:`Tkinter.Canvas`
+=======================
 .. currentmodule:: Tkinter
 .. autoclass:: Canvas
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,32 @@ Methods
    :toctree:
 
 
+   ~Canvas._Misc__winfo_getint
+   ~Canvas._Misc__winfo_parseitem
+   ~Canvas.__contains__
+   ~Canvas.__getitem__
    ~Canvas.__init__
+   ~Canvas.__setitem__
+   ~Canvas.__str__
+   ~Canvas._bind
+   ~Canvas._configure
+   ~Canvas._create
+   ~Canvas._displayof
+   ~Canvas._do
+   ~Canvas._getboolean
+   ~Canvas._getconfigure
+   ~Canvas._getconfigure1
+   ~Canvas._getdoubles
+   ~Canvas._getints
+   ~Canvas._grid_configure
+   ~Canvas._gridconvvalue
+   ~Canvas._nametowidget
+   ~Canvas._options
+   ~Canvas._register
+   ~Canvas._report_exception
+   ~Canvas._root
+   ~Canvas._setup
+   ~Canvas._substitute
    ~Canvas.addtag
    ~Canvas.addtag_above
    ~Canvas.addtag_all
@@ -34,6 +57,7 @@ Methods
    ~Canvas.canvasx
    ~Canvas.canvasy
    ~Canvas.cget
+   ~Canvas.check
    ~Canvas.clipboard_append
    ~Canvas.clipboard_clear
    ~Canvas.clipboard_get
@@ -75,6 +99,7 @@ Methods
    ~Canvas.focus_lastfor
    ~Canvas.focus_set
    ~Canvas.forget
+   ~Canvas.form
    ~Canvas.getboolean
    ~Canvas.gettags
    ~Canvas.getvar

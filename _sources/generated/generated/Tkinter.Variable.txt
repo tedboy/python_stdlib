@@ -1,9 +1,7 @@
-Tkinter.Variable
-================
-
+:class:`Tkinter.Variable`
+=========================
 .. currentmodule:: Tkinter
 .. autoclass:: Variable
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,10 @@ Methods
    :toctree:
 
 
+   ~Variable.__del__
+   ~Variable.__eq__
    ~Variable.__init__
+   ~Variable.__str__
    ~Variable.get
    ~Variable.set
    ~Variable.trace

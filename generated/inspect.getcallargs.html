@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.7.1.11. inspect.getcallargs &mdash; My Project v1</title>
+  <title>inspect.getcallargs() &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../_static/py.png"/>
   
 
   
@@ -30,10 +32,7 @@
   
 
   
-    <link rel="top" title="My Project v1" href="../index.html"/>
-        <link rel="up" title="1.7. inspect" href="inspect.html"/>
-        <link rel="next" title="1.7.1.12. inspect.getclasstree" href="inspect.getclasstree.html"/>
-        <link rel="prev" title="1.7.1.10. inspect.getblock" href="inspect.getblock.html"/> 
+    <link rel="top" title="Python Standard Library" href="../index.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -52,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> My Project
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
           
 
           
@@ -60,10 +59,6 @@
 
           
             
-            
-              <div class="version">
-                1
-              </div>
             
           
 
@@ -84,77 +79,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../main1.html">1. Frequently used</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="__builtin__.html">1.1. __builtin__</a></li>
-<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="inspect.html">1.7. inspect</a><ul class="current">
-<li class="toctree-l3 current"><a class="reference internal" href="inspect.html#functions">1.7.1. Functions</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="inspect.classify_class_attrs.html">1.7.1.1. inspect.classify_class_attrs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.cleandoc.html">1.7.1.2. inspect.cleandoc</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.findsource.html">1.7.1.3. inspect.findsource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.formatargspec.html">1.7.1.4. inspect.formatargspec</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.formatargvalues.html">1.7.1.5. inspect.formatargvalues</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getabsfile.html">1.7.1.6. inspect.getabsfile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getargs.html">1.7.1.7. inspect.getargs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getargspec.html">1.7.1.8. inspect.getargspec</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getargvalues.html">1.7.1.9. inspect.getargvalues</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getblock.html">1.7.1.10. inspect.getblock</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">1.7.1.11. inspect.getcallargs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getclasstree.html">1.7.1.12. inspect.getclasstree</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getcomments.html">1.7.1.13. inspect.getcomments</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getdoc.html">1.7.1.14. inspect.getdoc</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getfile.html">1.7.1.15. inspect.getfile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getframeinfo.html">1.7.1.16. inspect.getframeinfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getinnerframes.html">1.7.1.17. inspect.getinnerframes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getlineno.html">1.7.1.18. inspect.getlineno</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmembers.html">1.7.1.19. inspect.getmembers</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmodule.html">1.7.1.20. inspect.getmodule</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmoduleinfo.html">1.7.1.21. inspect.getmoduleinfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmodulename.html">1.7.1.22. inspect.getmodulename</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getmro.html">1.7.1.23. inspect.getmro</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getouterframes.html">1.7.1.24. inspect.getouterframes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getsource.html">1.7.1.25. inspect.getsource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getsourcefile.html">1.7.1.26. inspect.getsourcefile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.getsourcelines.html">1.7.1.27. inspect.getsourcelines</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.indentsize.html">1.7.1.28. inspect.indentsize</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isabstract.html">1.7.1.29. inspect.isabstract</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isbuiltin.html">1.7.1.30. inspect.isbuiltin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isclass.html">1.7.1.31. inspect.isclass</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.iscode.html">1.7.1.32. inspect.iscode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isdatadescriptor.html">1.7.1.33. inspect.isdatadescriptor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isframe.html">1.7.1.34. inspect.isframe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isfunction.html">1.7.1.35. inspect.isfunction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isgenerator.html">1.7.1.36. inspect.isgenerator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isgeneratorfunction.html">1.7.1.37. inspect.isgeneratorfunction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isgetsetdescriptor.html">1.7.1.38. inspect.isgetsetdescriptor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismemberdescriptor.html">1.7.1.39. inspect.ismemberdescriptor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismethod.html">1.7.1.40. inspect.ismethod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismethoddescriptor.html">1.7.1.41. inspect.ismethoddescriptor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.ismodule.html">1.7.1.42. inspect.ismodule</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.isroutine.html">1.7.1.43. inspect.isroutine</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.istraceback.html">1.7.1.44. inspect.istraceback</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.joinseq.html">1.7.1.45. inspect.joinseq</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.stack.html">1.7.1.46. inspect.stack</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.strseq.html">1.7.1.47. inspect.strseq</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.trace.html">1.7.1.48. inspect.trace</a></li>
-<li class="toctree-l4"><a class="reference internal" href="inspect.walktree.html">1.7.1.49. inspect.walktree</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="inspect.html#classes">1.7.2. Classes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="inspect.html#exceptions">1.7.3. Exceptions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -169,7 +107,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">My Project</a>
+          <a href="../index.html">Python Standard Library</a>
         
       </nav>
 
@@ -196,11 +134,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../main1.html">1. Frequently used</a> &raquo;</li>
-        
-          <li><a href="inspect.html">1.7. inspect</a> &raquo;</li>
-        
-      <li>1.7.1.11. inspect.getcallargs</li>
+      <li><code class="docutils literal"><span class="pre">inspect.getcallargs()</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -218,7 +152,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="inspect-getcallargs">
-<h1>1.7.1.11. inspect.getcallargs<a class="headerlink" href="#inspect-getcallargs" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="#inspect.getcallargs" title="inspect.getcallargs"><code class="xref py py-func docutils literal"><span class="pre">inspect.getcallargs()</span></code></a><a class="headerlink" href="#inspect-getcallargs" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="inspect.getcallargs">
 <code class="descclassname">inspect.</code><code class="descname">getcallargs</code><span class="sig-paren">(</span><em>func</em>, <em>*positional</em>, <em>**named</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/inspect.html#getcallargs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#inspect.getcallargs" title="Permalink to this definition">¶</a></dt>
@@ -234,15 +168,6 @@ values from &#8216;positional&#8217; and &#8216;named&#8217;.</p>
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="inspect.getclasstree.html" class="btn btn-neutral float-right" title="1.7.1.12. inspect.getclasstree" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="inspect.getblock.html" class="btn btn-neutral" title="1.7.1.10. inspect.getblock" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -271,7 +196,7 @@ values from &#8216;positional&#8217; and &#8216;named&#8217;.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -280,6 +205,7 @@ values from &#8216;positional&#8217; and &#8216;named&#8217;.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

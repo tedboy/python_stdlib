@@ -1,9 +1,7 @@
-urllib2.BaseHandler
-===================
-
+:class:`urllib2.BaseHandler`
+============================
 .. currentmodule:: urllib2
 .. autoclass:: BaseHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,7 @@ Methods
    :toctree:
 
 
+   ~BaseHandler.__lt__
    ~BaseHandler.add_parent
    ~BaseHandler.close
 

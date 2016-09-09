@@ -1,0 +1,55 @@
+:class:`mimetools.Message`
+==========================
+.. currentmodule:: mimetools
+.. autoclass:: Message
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Message.__contains__
+   ~Message.__delitem__
+   ~Message.__getitem__
+   ~Message.__init__
+   ~Message.__iter__
+   ~Message.__len__
+   ~Message.__setitem__
+   ~Message.__str__
+   ~Message.get
+   ~Message.getaddr
+   ~Message.getaddrlist
+   ~Message.getallmatchingheaders
+   ~Message.getdate
+   ~Message.getdate_tz
+   ~Message.getencoding
+   ~Message.getfirstmatchingheader
+   ~Message.getheader
+   ~Message.getheaders
+   ~Message.getmaintype
+   ~Message.getparam
+   ~Message.getparamnames
+   ~Message.getplist
+   ~Message.getrawheader
+   ~Message.getsubtype
+   ~Message.gettype
+   ~Message.has_key
+   ~Message.iscomment
+   ~Message.isheader
+   ~Message.islast
+   ~Message.items
+   ~Message.keys
+   ~Message.parseplist
+   ~Message.parsetype
+   ~Message.readheaders
+   ~Message.rewindbody
+   ~Message.setdefault
+   ~Message.values
+
+
+
+
+

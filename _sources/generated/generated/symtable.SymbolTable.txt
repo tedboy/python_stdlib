@@ -1,0 +1,40 @@
+:class:`symtable.SymbolTable`
+=============================
+.. currentmodule:: symtable
+.. autoclass:: SymbolTable
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~SymbolTable._SymbolTable__check_children
+   ~SymbolTable.__format__
+   ~SymbolTable.__init__
+   ~SymbolTable.__new__
+   ~SymbolTable.__reduce__
+   ~SymbolTable.__reduce_ex__
+   ~SymbolTable.__repr__
+   ~SymbolTable.__sizeof__
+   ~SymbolTable.__subclasshook__
+   ~SymbolTable.get_children
+   ~SymbolTable.get_id
+   ~SymbolTable.get_identifiers
+   ~SymbolTable.get_lineno
+   ~SymbolTable.get_name
+   ~SymbolTable.get_symbols
+   ~SymbolTable.get_type
+   ~SymbolTable.has_children
+   ~SymbolTable.has_exec
+   ~SymbolTable.has_import_star
+   ~SymbolTable.is_nested
+   ~SymbolTable.is_optimized
+   ~SymbolTable.lookup
+
+
+
+
+

@@ -1,0 +1,92 @@
+:class:`xml.dom.minidom.CDATASection`
+=====================================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: CDATASection
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~CDATASection.__len__
+   ~CDATASection.__nonzero__
+   ~CDATASection.__repr__
+   ~CDATASection.__setattr__
+   ~CDATASection._call_user_data_handler
+   ~CDATASection._get_childNodes
+   ~CDATASection._get_data
+   ~CDATASection._get_firstChild
+   ~CDATASection._get_isWhitespaceInElementContent
+   ~CDATASection._get_lastChild
+   ~CDATASection._get_length
+   ~CDATASection._get_localName
+   ~CDATASection._get_nodeValue
+   ~CDATASection._get_wholeText
+   ~CDATASection._set_data
+   ~CDATASection._set_nodeValue
+   ~CDATASection.appendChild
+   ~CDATASection.appendData
+   ~CDATASection.cloneNode
+   ~CDATASection.deleteData
+   ~CDATASection.getInterface
+   ~CDATASection.getUserData
+   ~CDATASection.hasChildNodes
+   ~CDATASection.insertBefore
+   ~CDATASection.insertData
+   ~CDATASection.isSameNode
+   ~CDATASection.isSupported
+   ~CDATASection.normalize
+   ~CDATASection.removeChild
+   ~CDATASection.replaceChild
+   ~CDATASection.replaceData
+   ~CDATASection.replaceWholeText
+   ~CDATASection.setUserData
+   ~CDATASection.splitText
+   ~CDATASection.substringData
+   ~CDATASection.toprettyxml
+   ~CDATASection.toxml
+   ~CDATASection.unlink
+   ~CDATASection.writexml
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~CDATASection.ATTRIBUTE_NODE
+   ~CDATASection.CDATA_SECTION_NODE
+   ~CDATASection.COMMENT_NODE
+   ~CDATASection.DOCUMENT_FRAGMENT_NODE
+   ~CDATASection.DOCUMENT_NODE
+   ~CDATASection.DOCUMENT_TYPE_NODE
+   ~CDATASection.ELEMENT_NODE
+   ~CDATASection.ENTITY_NODE
+   ~CDATASection.ENTITY_REFERENCE_NODE
+   ~CDATASection.NOTATION_NODE
+   ~CDATASection.PROCESSING_INSTRUCTION_NODE
+   ~CDATASection.TEXT_NODE
+   ~CDATASection.attributes
+   ~CDATASection.childNodes
+   ~CDATASection.firstChild
+   ~CDATASection.isWhitespaceInElementContent
+   ~CDATASection.lastChild
+   ~CDATASection.length
+   ~CDATASection.localName
+   ~CDATASection.namespaceURI
+   ~CDATASection.nextSibling
+   ~CDATASection.nodeName
+   ~CDATASection.nodeType
+   ~CDATASection.ownerDocument
+   ~CDATASection.parentNode
+   ~CDATASection.prefix
+   ~CDATASection.previousSibling
+   ~CDATASection.wholeText
+

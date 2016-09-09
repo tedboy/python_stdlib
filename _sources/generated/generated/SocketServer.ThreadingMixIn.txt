@@ -1,0 +1,28 @@
+:class:`SocketServer.ThreadingMixIn`
+====================================
+.. currentmodule:: SocketServer
+.. autoclass:: ThreadingMixIn
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~ThreadingMixIn.process_request
+   ~ThreadingMixIn.process_request_thread
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~ThreadingMixIn.daemon_threads
+

@@ -1,20 +1,25 @@
-collections.MappingView
-=======================
-
+:class:`collections.MappingView`
+================================
 .. currentmodule:: collections
-
-:func:`MappingView.__init__`
-
 .. autoclass:: MappingView
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~MappingView.__format__
    ~MappingView.__init__
+   ~MappingView.__len__
+   ~MappingView.__new__
+   ~MappingView.__reduce__
+   ~MappingView.__reduce_ex__
+   ~MappingView.__repr__
+   ~MappingView.__sizeof__
+   ~MappingView.__subclasshook__
 
 
 

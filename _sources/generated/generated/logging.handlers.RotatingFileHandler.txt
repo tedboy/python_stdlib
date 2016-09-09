@@ -1,0 +1,52 @@
+:class:`logging.handlers.RotatingFileHandler`
+=============================================
+.. currentmodule:: logging.handlers
+.. autoclass:: RotatingFileHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~RotatingFileHandler.__format__
+   ~RotatingFileHandler.__init__
+   ~RotatingFileHandler.__new__
+   ~RotatingFileHandler.__reduce__
+   ~RotatingFileHandler.__reduce_ex__
+   ~RotatingFileHandler.__sizeof__
+   ~RotatingFileHandler.__subclasshook__
+   ~RotatingFileHandler._open
+   ~RotatingFileHandler.acquire
+   ~RotatingFileHandler.addFilter
+   ~RotatingFileHandler.close
+   ~RotatingFileHandler.createLock
+   ~RotatingFileHandler.doRollover
+   ~RotatingFileHandler.emit
+   ~RotatingFileHandler.filter
+   ~RotatingFileHandler.flush
+   ~RotatingFileHandler.format
+   ~RotatingFileHandler.get_name
+   ~RotatingFileHandler.handle
+   ~RotatingFileHandler.handleError
+   ~RotatingFileHandler.release
+   ~RotatingFileHandler.removeFilter
+   ~RotatingFileHandler.setFormatter
+   ~RotatingFileHandler.setLevel
+   ~RotatingFileHandler.set_name
+   ~RotatingFileHandler.shouldRollover
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~RotatingFileHandler.name
+

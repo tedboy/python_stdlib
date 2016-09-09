@@ -1,19 +1,22 @@
-sqlite3.Time
-============
-
+:class:`sqlite3.Time`
+=====================
 .. currentmodule:: sqlite3
-
-:func:`Time.__init__`
-
 .. autoclass:: Time
-    :members: __init__
+   :undoc-members:
 
 
+Methods
+-------
 .. autosummary::
    :toctree:
-   :hidden:
 
 
+   ~Time.__format__
+   ~Time.__new__
+   ~Time.__reduce__
+   ~Time.__reduce_ex__
+   ~Time.__sizeof__
+   ~Time.__subclasshook__
    ~Time.dst
    ~Time.isoformat
    ~Time.replace
@@ -25,11 +28,10 @@ sqlite3.Time
 
 
 
-
-
+Attributes
+----------
 .. autosummary::
   :toctree:
-  :hidden:
 
 
    ~Time.hour

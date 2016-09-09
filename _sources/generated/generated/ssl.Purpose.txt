@@ -1,0 +1,47 @@
+:class:`ssl.Purpose`
+====================
+.. currentmodule:: ssl
+.. autoclass:: Purpose
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Purpose.__format__
+   ~Purpose.__getnewargs__
+   ~Purpose.__getstate__
+   ~Purpose.__new__
+   ~Purpose.__reduce__
+   ~Purpose.__reduce_ex__
+   ~Purpose.__repr__
+   ~Purpose.__sizeof__
+   ~Purpose.__subclasshook__
+   ~Purpose._asdict
+   ~Purpose._make
+   ~Purpose._replace
+   ~Purpose.count
+   ~Purpose.fromname
+   ~Purpose.fromnid
+   ~Purpose.index
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Purpose.CLIENT_AUTH
+   ~Purpose.SERVER_AUTH
+   ~Purpose.longname
+   ~Purpose.nid
+   ~Purpose.oid
+   ~Purpose.shortname
+

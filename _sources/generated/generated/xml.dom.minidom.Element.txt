@@ -1,0 +1,96 @@
+:class:`xml.dom.minidom.Element`
+================================
+.. currentmodule:: xml.dom.minidom
+.. autoclass:: Element
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~Element.__init__
+   ~Element.__nonzero__
+   ~Element.__repr__
+   ~Element._call_user_data_handler
+   ~Element._get_attributes
+   ~Element._get_childNodes
+   ~Element._get_firstChild
+   ~Element._get_lastChild
+   ~Element._get_localName
+   ~Element._get_tagName
+   ~Element.appendChild
+   ~Element.cloneNode
+   ~Element.getAttribute
+   ~Element.getAttributeNS
+   ~Element.getAttributeNode
+   ~Element.getAttributeNodeNS
+   ~Element.getElementsByTagName
+   ~Element.getElementsByTagNameNS
+   ~Element.getInterface
+   ~Element.getUserData
+   ~Element.hasAttribute
+   ~Element.hasAttributeNS
+   ~Element.hasAttributes
+   ~Element.hasChildNodes
+   ~Element.insertBefore
+   ~Element.isSameNode
+   ~Element.isSupported
+   ~Element.normalize
+   ~Element.removeAttribute
+   ~Element.removeAttributeNS
+   ~Element.removeAttributeNode
+   ~Element.removeAttributeNodeNS
+   ~Element.removeChild
+   ~Element.replaceChild
+   ~Element.setAttribute
+   ~Element.setAttributeNS
+   ~Element.setAttributeNode
+   ~Element.setAttributeNodeNS
+   ~Element.setIdAttribute
+   ~Element.setIdAttributeNS
+   ~Element.setIdAttributeNode
+   ~Element.setUserData
+   ~Element.toprettyxml
+   ~Element.toxml
+   ~Element.unlink
+   ~Element.writexml
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~Element.ATTRIBUTE_NODE
+   ~Element.CDATA_SECTION_NODE
+   ~Element.COMMENT_NODE
+   ~Element.DOCUMENT_FRAGMENT_NODE
+   ~Element.DOCUMENT_NODE
+   ~Element.DOCUMENT_TYPE_NODE
+   ~Element.ELEMENT_NODE
+   ~Element.ENTITY_NODE
+   ~Element.ENTITY_REFERENCE_NODE
+   ~Element.NOTATION_NODE
+   ~Element.PROCESSING_INSTRUCTION_NODE
+   ~Element.TEXT_NODE
+   ~Element.attributes
+   ~Element.firstChild
+   ~Element.lastChild
+   ~Element.localName
+   ~Element.namespaceURI
+   ~Element.nextSibling
+   ~Element.nodeType
+   ~Element.nodeValue
+   ~Element.ownerDocument
+   ~Element.parentNode
+   ~Element.prefix
+   ~Element.previousSibling
+   ~Element.schemaType
+

@@ -1,0 +1,64 @@
+:class:`DocXMLRPCServer.DocXMLRPCRequestHandler`
+================================================
+.. currentmodule:: DocXMLRPCServer
+.. autoclass:: DocXMLRPCRequestHandler
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~DocXMLRPCRequestHandler.__init__
+   ~DocXMLRPCRequestHandler.accept_encodings
+   ~DocXMLRPCRequestHandler.address_string
+   ~DocXMLRPCRequestHandler.date_time_string
+   ~DocXMLRPCRequestHandler.decode_request_content
+   ~DocXMLRPCRequestHandler.do_GET
+   ~DocXMLRPCRequestHandler.do_POST
+   ~DocXMLRPCRequestHandler.end_headers
+   ~DocXMLRPCRequestHandler.finish
+   ~DocXMLRPCRequestHandler.handle
+   ~DocXMLRPCRequestHandler.handle_one_request
+   ~DocXMLRPCRequestHandler.is_rpc_path_valid
+   ~DocXMLRPCRequestHandler.log_date_time_string
+   ~DocXMLRPCRequestHandler.log_error
+   ~DocXMLRPCRequestHandler.log_message
+   ~DocXMLRPCRequestHandler.log_request
+   ~DocXMLRPCRequestHandler.parse_request
+   ~DocXMLRPCRequestHandler.report_404
+   ~DocXMLRPCRequestHandler.send_error
+   ~DocXMLRPCRequestHandler.send_header
+   ~DocXMLRPCRequestHandler.send_response
+   ~DocXMLRPCRequestHandler.setup
+   ~DocXMLRPCRequestHandler.version_string
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~DocXMLRPCRequestHandler.aepattern
+   ~DocXMLRPCRequestHandler.default_request_version
+   ~DocXMLRPCRequestHandler.disable_nagle_algorithm
+   ~DocXMLRPCRequestHandler.encode_threshold
+   ~DocXMLRPCRequestHandler.error_content_type
+   ~DocXMLRPCRequestHandler.error_message_format
+   ~DocXMLRPCRequestHandler.monthname
+   ~DocXMLRPCRequestHandler.protocol_version
+   ~DocXMLRPCRequestHandler.rbufsize
+   ~DocXMLRPCRequestHandler.responses
+   ~DocXMLRPCRequestHandler.rpc_paths
+   ~DocXMLRPCRequestHandler.server_version
+   ~DocXMLRPCRequestHandler.sys_version
+   ~DocXMLRPCRequestHandler.timeout
+   ~DocXMLRPCRequestHandler.wbufsize
+   ~DocXMLRPCRequestHandler.weekdayname
+

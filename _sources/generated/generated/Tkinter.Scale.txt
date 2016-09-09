@@ -1,9 +1,7 @@
-Tkinter.Scale
-=============
-
+:class:`Tkinter.Scale`
+======================
 .. currentmodule:: Tkinter
 .. autoclass:: Scale
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,31 @@ Methods
    :toctree:
 
 
+   ~Scale._Misc__winfo_getint
+   ~Scale._Misc__winfo_parseitem
+   ~Scale.__contains__
+   ~Scale.__getitem__
    ~Scale.__init__
+   ~Scale.__setitem__
+   ~Scale.__str__
+   ~Scale._bind
+   ~Scale._configure
+   ~Scale._displayof
+   ~Scale._do
+   ~Scale._getboolean
+   ~Scale._getconfigure
+   ~Scale._getconfigure1
+   ~Scale._getdoubles
+   ~Scale._getints
+   ~Scale._grid_configure
+   ~Scale._gridconvvalue
+   ~Scale._nametowidget
+   ~Scale._options
+   ~Scale._register
+   ~Scale._report_exception
+   ~Scale._root
+   ~Scale._setup
+   ~Scale._substitute
    ~Scale.after
    ~Scale.after_cancel
    ~Scale.after_idle
@@ -24,6 +46,7 @@ Methods
    ~Scale.bind_class
    ~Scale.bindtags
    ~Scale.cget
+   ~Scale.check
    ~Scale.clipboard_append
    ~Scale.clipboard_clear
    ~Scale.clipboard_get
@@ -45,6 +68,7 @@ Methods
    ~Scale.focus_lastfor
    ~Scale.focus_set
    ~Scale.forget
+   ~Scale.form
    ~Scale.get
    ~Scale.getboolean
    ~Scale.getvar

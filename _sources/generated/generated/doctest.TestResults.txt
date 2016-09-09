@@ -1,9 +1,7 @@
-doctest.TestResults
-===================
-
+:class:`doctest.TestResults`
+============================
 .. currentmodule:: doctest
 .. autoclass:: TestResults
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,18 @@ Methods
    :toctree:
 
 
+   ~TestResults.__format__
+   ~TestResults.__getnewargs__
+   ~TestResults.__getstate__
+   ~TestResults.__new__
+   ~TestResults.__reduce__
+   ~TestResults.__reduce_ex__
+   ~TestResults.__repr__
+   ~TestResults.__sizeof__
+   ~TestResults.__subclasshook__
+   ~TestResults._asdict
+   ~TestResults._make
+   ~TestResults._replace
    ~TestResults.count
    ~TestResults.index
 

@@ -1,9 +1,7 @@
-urllib2.HTTPBasicAuthHandler
-============================
-
+:class:`urllib2.HTTPBasicAuthHandler`
+=====================================
 .. currentmodule:: urllib2
 .. autoclass:: HTTPBasicAuthHandler
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~HTTPBasicAuthHandler.__init__
+   ~HTTPBasicAuthHandler.__lt__
    ~HTTPBasicAuthHandler.add_parent
    ~HTTPBasicAuthHandler.close
    ~HTTPBasicAuthHandler.http_error_401

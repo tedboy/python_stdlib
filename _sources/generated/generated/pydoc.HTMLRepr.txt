@@ -1,9 +1,7 @@
-pydoc.HTMLRepr
-==============
-
+:class:`pydoc.HTMLRepr`
+=======================
 .. currentmodule:: pydoc
 .. autoclass:: HTMLRepr
-   :members: __init__
    :undoc-members:
 
 
@@ -14,6 +12,7 @@ Methods
 
 
    ~HTMLRepr.__init__
+   ~HTMLRepr._repr_iterable
    ~HTMLRepr.escape
    ~HTMLRepr.repr
    ~HTMLRepr.repr1

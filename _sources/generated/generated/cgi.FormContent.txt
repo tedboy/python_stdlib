@@ -1,9 +1,7 @@
-cgi.FormContent
-===============
-
+:class:`cgi.FormContent`
+========================
 .. currentmodule:: cgi
 .. autoclass:: FormContent
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~FormContent.__cmp__
+   ~FormContent.__contains__
+   ~FormContent.__delitem__
+   ~FormContent.__getitem__
    ~FormContent.__init__
+   ~FormContent.__len__
+   ~FormContent.__repr__
+   ~FormContent.__setitem__
    ~FormContent.clear
    ~FormContent.copy
    ~FormContent.fromkeys

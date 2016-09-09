@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2.9.2.10. sqlite3.Time &mdash; Python Standard Library</title>
+  <title>sqlite3.Time &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
   
 
   
@@ -31,9 +33,9 @@
 
   
     <link rel="top" title="Python Standard Library" href="../../index.html"/>
-        <link rel="up" title="2.9. sqlite3" href="../sqlite3.html"/>
-        <link rel="next" title="2.9.2.11. sqlite3.Timestamp" href="sqlite3.Timestamp.html"/>
-        <link rel="prev" title="2.9.2.9. sqlite3.Statement" href="sqlite3.Statement.html"/> 
+        <link rel="up" title="sqlite3" href="../sqlite3.html"/>
+        <link rel="next" title="sqlite3.Time.__format__" href="sqlite3.Time.__format__.html"/>
+        <link rel="prev" title="sqlite3.Statement" href="sqlite3.Statement.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -61,10 +63,6 @@
           
             
             
-              <div class="version">
-                1
-              </div>
-            
           
 
           
@@ -84,45 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../main1.html">1. Frequently used</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../collections.html">2.1. collections</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../datetime.html">2.2. datetime</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../glob.html">2.3. glob</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../itertools.html">2.4. itertools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../math.html">2.5. math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pdb.html">2.6. pdb</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pprint.html">2.7. pprint</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../random.html">2.8. random</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../sqlite3.html">2.9. sqlite3</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../sqlite3.html#functions">2.9.1. Functions</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../sqlite3.html#classes">2.9.2. Classes</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Binary.html">2.9.2.1. sqlite3.Binary</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cache.html">2.9.2.2. sqlite3.Cache</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Connection.html">2.9.2.3. sqlite3.Connection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Cursor.html">2.9.2.4. sqlite3.Cursor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Date.html">2.9.2.5. sqlite3.Date</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.OptimizedUnicode.html">2.9.2.6. sqlite3.OptimizedUnicode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.PrepareProtocol.html">2.9.2.7. sqlite3.PrepareProtocol</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Row.html">2.9.2.8. sqlite3.Row</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Statement.html">2.9.2.9. sqlite3.Statement</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">2.9.2.10. sqlite3.Time</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sqlite3.Timestamp.html">2.9.2.11. sqlite3.Timestamp</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../sqlite3.html#exceptions">2.9.3. Exceptions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../subprocess.html">2.10. subprocess</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../time.html">2.11. time</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../timeit.html">2.12. timeit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Tkinter.html">2.13. Tkinter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../types.html">2.14. types</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -164,11 +137,11 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../main2.html">2. Somewhat frequently used</a> &raquo;</li>
+          <li><a href="../../api_11to15.html">API: 11 - 15</a> &raquo;</li>
         
-          <li><a href="../sqlite3.html">2.9. sqlite3</a> &raquo;</li>
+          <li><a href="../sqlite3.html"><code class="docutils literal"><span class="pre">sqlite3</span></code></a> &raquo;</li>
         
-      <li>2.9.2.10. sqlite3.Time</li>
+      <li><code class="docutils literal"><span class="pre">sqlite3.Time</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -186,14 +159,95 @@
            <div itemprop="articleBody">
             
   <div class="section" id="sqlite3-time">
-<h1>2.9.2.10. sqlite3.Time<a class="headerlink" href="#sqlite3-time" title="Permalink to this headline">¶</a></h1>
-<p><code class="xref py py-func docutils literal"><span class="pre">Time.__init__()</span></code></p>
+<h1><a class="reference internal" href="#sqlite3.Time" title="sqlite3.Time"><code class="xref py py-class docutils literal"><span class="pre">sqlite3.Time</span></code></a><a class="headerlink" href="#sqlite3-time" title="Permalink to this headline">¶</a></h1>
 <dl class="attribute">
 <dt id="sqlite3.Time">
 <code class="descclassname">sqlite3.</code><code class="descname">Time</code><a class="headerlink" href="#sqlite3.Time" title="Permalink to this definition">¶</a></dt>
 <dd><p>alias of <a class="reference internal" href="../time.html#module-time" title="time"><code class="xref py py-class docutils literal"><span class="pre">time</span></code></a></p>
 </dd></dl>
 
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Time.__format__.html#sqlite3.Time.__format__" title="sqlite3.Time.__format__"><code class="xref py py-obj docutils literal"><span class="pre">__format__</span></code></a></td>
+<td>Formats self with strftime.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Time.__new__.html#sqlite3.Time.__new__" title="sqlite3.Time.__new__"><code class="xref py py-obj docutils literal"><span class="pre">__new__</span></code></a>((S,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Time.__reduce__.html#sqlite3.Time.__reduce__" title="sqlite3.Time.__reduce__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce__</span></code></a>()&nbsp;-&gt;&nbsp;(cls,&nbsp;state)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Time.__reduce_ex__.html#sqlite3.Time.__reduce_ex__" title="sqlite3.Time.__reduce_ex__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce_ex__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Time.__sizeof__.html#sqlite3.Time.__sizeof__" title="sqlite3.Time.__sizeof__"><code class="xref py py-obj docutils literal"><span class="pre">__sizeof__</span></code></a>(()&nbsp;-&gt;&nbsp;int)</td>
+<td>size of object in memory, in bytes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Time.__subclasshook__.html#sqlite3.Time.__subclasshook__" title="sqlite3.Time.__subclasshook__"><code class="xref py py-obj docutils literal"><span class="pre">__subclasshook__</span></code></a></td>
+<td>Abstract classes can override this to customize issubclass().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Time.dst.html#sqlite3.Time.dst" title="sqlite3.Time.dst"><code class="xref py py-obj docutils literal"><span class="pre">dst</span></code></a></td>
+<td>Return self.tzinfo.dst(self).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Time.isoformat.html#sqlite3.Time.isoformat" title="sqlite3.Time.isoformat"><code class="xref py py-obj docutils literal"><span class="pre">isoformat</span></code></a></td>
+<td>Return string in ISO 8601 format, HH:MM:SS[.mmmmmm][+HH:MM].</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Time.replace.html#sqlite3.Time.replace" title="sqlite3.Time.replace"><code class="xref py py-obj docutils literal"><span class="pre">replace</span></code></a></td>
+<td>Return time with new specified fields.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Time.strftime.html#sqlite3.Time.strftime" title="sqlite3.Time.strftime"><code class="xref py py-obj docutils literal"><span class="pre">strftime</span></code></a></td>
+<td>format -&gt; strftime() style string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Time.tzname.html#sqlite3.Time.tzname" title="sqlite3.Time.tzname"><code class="xref py py-obj docutils literal"><span class="pre">tzname</span></code></a></td>
+<td>Return self.tzinfo.tzname(self).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Time.utcoffset.html#sqlite3.Time.utcoffset" title="sqlite3.Time.utcoffset"><code class="xref py py-obj docutils literal"><span class="pre">utcoffset</span></code></a></td>
+<td>Return self.tzinfo.utcoffset(self).</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Time.hour.html#sqlite3.Time.hour" title="sqlite3.Time.hour"><code class="xref py py-obj docutils literal"><span class="pre">hour</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Time.max.html#sqlite3.Time.max" title="sqlite3.Time.max"><code class="xref py py-obj docutils literal"><span class="pre">max</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Time.microsecond.html#sqlite3.Time.microsecond" title="sqlite3.Time.microsecond"><code class="xref py py-obj docutils literal"><span class="pre">microsecond</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Time.min.html#sqlite3.Time.min" title="sqlite3.Time.min"><code class="xref py py-obj docutils literal"><span class="pre">min</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Time.minute.html#sqlite3.Time.minute" title="sqlite3.Time.minute"><code class="xref py py-obj docutils literal"><span class="pre">minute</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Time.resolution.html#sqlite3.Time.resolution" title="sqlite3.Time.resolution"><code class="xref py py-obj docutils literal"><span class="pre">resolution</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="sqlite3.Time.second.html#sqlite3.Time.second" title="sqlite3.Time.second"><code class="xref py py-obj docutils literal"><span class="pre">second</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="sqlite3.Time.tzinfo.html#sqlite3.Time.tzinfo" title="sqlite3.Time.tzinfo"><code class="xref py py-obj docutils literal"><span class="pre">tzinfo</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -203,10 +257,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="sqlite3.Timestamp.html" class="btn btn-neutral float-right" title="2.9.2.11. sqlite3.Timestamp" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sqlite3.Time.__format__.html" class="btn btn-neutral float-right" title="sqlite3.Time.__format__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="sqlite3.Statement.html" class="btn btn-neutral" title="2.9.2.9. sqlite3.Statement" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="sqlite3.Statement.html" class="btn btn-neutral" title="sqlite3.Statement" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -237,7 +291,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -246,6 +300,7 @@
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

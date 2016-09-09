@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.1.2.5. __builtin__.bytes &mdash; My Project v1</title>
+  <title>__builtin__.bytes &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
   
 
   
@@ -30,10 +32,10 @@
   
 
   
-    <link rel="top" title="My Project v1" href="../../index.html"/>
-        <link rel="up" title="1.1. __builtin__" href="../__builtin__.html"/>
-        <link rel="next" title="1.1.2.5.1.1. __builtin__.bytes.capitalize" href="__builtin__.bytes.capitalize.html"/>
-        <link rel="prev" title="1.1.2.4.1.43. __builtin__.bytearray.zfill" href="__builtin__.bytearray.zfill.html"/> 
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="__builtin__" href="../__builtin__.html"/>
+        <link rel="next" title="__builtin__.bytes.__format__" href="__builtin__.bytes.__format__.html"/>
+        <link rel="prev" title="__builtin__.bytearray.zfill" href="__builtin__.bytearray.zfill.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -52,7 +54,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> My Project
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
           
 
           
@@ -60,10 +62,6 @@
 
           
             
-            
-              <div class="version">
-                1
-              </div>
             
           
 
@@ -84,55 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../main1.html">1. Frequently used</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../__builtin__.html">1.1. __builtin__</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../__builtin__.html#functions">1.1.1. Functions</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../__builtin__.html#classes">1.1.2. Classes</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.basestring.html">1.1.2.1. __builtin__.basestring</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.bool.html">1.1.2.2. __builtin__.bool</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.buffer.html">1.1.2.3. __builtin__.buffer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.bytearray.html">1.1.2.4. __builtin__.bytearray</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">1.1.2.5. __builtin__.bytes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.classmethod.html">1.1.2.6. __builtin__.classmethod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.complex.html">1.1.2.7. __builtin__.complex</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.dict.html">1.1.2.8. __builtin__.dict</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.enumerate.html">1.1.2.9. __builtin__.enumerate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.file.html">1.1.2.10. __builtin__.file</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.float.html">1.1.2.11. __builtin__.float</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.frozenset.html">1.1.2.12. __builtin__.frozenset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.int.html">1.1.2.13. __builtin__.int</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.list.html">1.1.2.14. __builtin__.list</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.long.html">1.1.2.15. __builtin__.long</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.memoryview.html">1.1.2.16. __builtin__.memoryview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.object.html">1.1.2.17. __builtin__.object</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.property.html">1.1.2.18. __builtin__.property</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.reversed.html">1.1.2.19. __builtin__.reversed</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.set.html">1.1.2.20. __builtin__.set</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.slice.html">1.1.2.21. __builtin__.slice</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.staticmethod.html">1.1.2.22. __builtin__.staticmethod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.str.html">1.1.2.23. __builtin__.str</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.super.html">1.1.2.24. __builtin__.super</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.tuple.html">1.1.2.25. __builtin__.tuple</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.type.html">1.1.2.26. __builtin__.type</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.unicode.html">1.1.2.27. __builtin__.unicode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.xrange.html">1.1.2.28. __builtin__.xrange</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../warnings.html">1.8. warnings</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../maybe_future.html">3. Misc package I may use in the future</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -147,7 +110,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">My Project</a>
+          <a href="../../index.html">Python Standard Library</a>
         
       </nav>
 
@@ -174,11 +137,11 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../main1.html">1. Frequently used</a> &raquo;</li>
+          <li><a href="../../api_26to30.html">API: 26 - 30</a> &raquo;</li>
         
-          <li><a href="../__builtin__.html">1.1. __builtin__</a> &raquo;</li>
+          <li><a href="../__builtin__.html"><code class="docutils literal"><span class="pre">__builtin__</span></code></a> &raquo;</li>
         
-      <li>1.1.2.5. __builtin__.bytes</li>
+      <li><code class="docutils literal"><span class="pre">__builtin__.bytes</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -196,133 +159,160 @@
            <div itemprop="articleBody">
             
   <div class="section" id="builtin-bytes">
-<h1>1.1.2.5. __builtin__.bytes<a class="headerlink" href="#builtin-bytes" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="#__builtin__.bytes" title="__builtin__.bytes"><code class="xref py py-class docutils literal"><span class="pre">__builtin__.bytes</span></code></a><a class="headerlink" href="#builtin-bytes" title="Permalink to this headline">¶</a></h1>
 <dl class="attribute">
 <dt id="__builtin__.bytes">
 <code class="descclassname">__builtin__.</code><code class="descname">bytes</code><a class="headerlink" href="#__builtin__.bytes" title="Permalink to this definition">¶</a></dt>
-<dd><p>alias of <a class="reference internal" href="__builtin__.str.html#__builtin__.str" title="__builtin__.str"><code class="xref py py-class docutils literal"><span class="pre">str</span></code></a></p>
+<dd><p>alias of <a class="reference internal" href="../../02_builtin_functions/02.html#str" title="str"><code class="xref py py-class docutils literal"><span class="pre">str</span></code></a></p>
 </dd></dl>
 
 <div class="section" id="methods">
-<h2>1.1.2.5.1. Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.capitalize.html#__builtin__.bytes.capitalize" title="__builtin__.bytes.capitalize"><code class="xref py py-obj docutils literal"><span class="pre">capitalize</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.__format__.html#__builtin__.bytes.__format__" title="__builtin__.bytes.__format__"><code class="xref py py-obj docutils literal"><span class="pre">__format__</span></code></a>((format_spec)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a formatted version of S as described by format_spec.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.__getnewargs__.html#__builtin__.bytes.__getnewargs__" title="__builtin__.bytes.__getnewargs__"><code class="xref py py-obj docutils literal"><span class="pre">__getnewargs__</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.__new__.html#__builtin__.bytes.__new__" title="__builtin__.bytes.__new__"><code class="xref py py-obj docutils literal"><span class="pre">__new__</span></code></a>((S,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.__reduce__.html#__builtin__.bytes.__reduce__" title="__builtin__.bytes.__reduce__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.__reduce_ex__.html#__builtin__.bytes.__reduce_ex__" title="__builtin__.bytes.__reduce_ex__"><code class="xref py py-obj docutils literal"><span class="pre">__reduce_ex__</span></code></a></td>
+<td>helper for pickle</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.__sizeof__.html#__builtin__.bytes.__sizeof__" title="__builtin__.bytes.__sizeof__"><code class="xref py py-obj docutils literal"><span class="pre">__sizeof__</span></code></a>(()&nbsp;-&gt;&nbsp;size&nbsp;of&nbsp;S&nbsp;in&nbsp;memory,&nbsp;in&nbsp;bytes)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.__subclasshook__.html#__builtin__.bytes.__subclasshook__" title="__builtin__.bytes.__subclasshook__"><code class="xref py py-obj docutils literal"><span class="pre">__subclasshook__</span></code></a></td>
+<td>Abstract classes can override this to customize issubclass().</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes._formatter_field_name_split.html#__builtin__.bytes._formatter_field_name_split" title="__builtin__.bytes._formatter_field_name_split"><code class="xref py py-obj docutils literal"><span class="pre">_formatter_field_name_split</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes._formatter_parser.html#__builtin__.bytes._formatter_parser" title="__builtin__.bytes._formatter_parser"><code class="xref py py-obj docutils literal"><span class="pre">_formatter_parser</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.capitalize.html#__builtin__.bytes.capitalize" title="__builtin__.bytes.capitalize"><code class="xref py py-obj docutils literal"><span class="pre">capitalize</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
 <td>Return a copy of the string S with only its first character capitalized.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.center.html#__builtin__.bytes.center" title="__builtin__.bytes.center"><code class="xref py py-obj docutils literal"><span class="pre">center</span></code></a>((width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.center.html#__builtin__.bytes.center" title="__builtin__.bytes.center"><code class="xref py py-obj docutils literal"><span class="pre">center</span></code></a>((width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
 <td>Return S centered in a string of length width.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.count.html#__builtin__.bytes.count" title="__builtin__.bytes.count"><code class="xref py py-obj docutils literal"><span class="pre">count</span></code></a>((sub[,&nbsp;start[,&nbsp;end]])&nbsp;-&gt;&nbsp;int)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.count.html#__builtin__.bytes.count" title="__builtin__.bytes.count"><code class="xref py py-obj docutils literal"><span class="pre">count</span></code></a>((sub[,&nbsp;start[,&nbsp;end]])&nbsp;-&gt;&nbsp;int)</td>
 <td>Return the number of non-overlapping occurrences of substring sub in string S[start:end].</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.decode.html#__builtin__.bytes.decode" title="__builtin__.bytes.decode"><code class="xref py py-obj docutils literal"><span class="pre">decode</span></code></a>(([encoding[,errors]])&nbsp;-&gt;&nbsp;object)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.decode.html#__builtin__.bytes.decode" title="__builtin__.bytes.decode"><code class="xref py py-obj docutils literal"><span class="pre">decode</span></code></a>(([encoding[,errors]])&nbsp;-&gt;&nbsp;object)</td>
 <td>Decodes S using the codec registered for encoding.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.encode.html#__builtin__.bytes.encode" title="__builtin__.bytes.encode"><code class="xref py py-obj docutils literal"><span class="pre">encode</span></code></a>(([encoding[,errors]])&nbsp;-&gt;&nbsp;object)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.encode.html#__builtin__.bytes.encode" title="__builtin__.bytes.encode"><code class="xref py py-obj docutils literal"><span class="pre">encode</span></code></a>(([encoding[,errors]])&nbsp;-&gt;&nbsp;object)</td>
 <td>Encodes S using the codec registered for encoding.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.endswith.html#__builtin__.bytes.endswith" title="__builtin__.bytes.endswith"><code class="xref py py-obj docutils literal"><span class="pre">endswith</span></code></a>((suffix[,&nbsp;start[,&nbsp;end]])&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.endswith.html#__builtin__.bytes.endswith" title="__builtin__.bytes.endswith"><code class="xref py py-obj docutils literal"><span class="pre">endswith</span></code></a>((suffix[,&nbsp;start[,&nbsp;end]])&nbsp;-&gt;&nbsp;bool)</td>
 <td>Return True if S ends with the specified suffix, False otherwise.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.expandtabs.html#__builtin__.bytes.expandtabs" title="__builtin__.bytes.expandtabs"><code class="xref py py-obj docutils literal"><span class="pre">expandtabs</span></code></a>(([tabsize])&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.expandtabs.html#__builtin__.bytes.expandtabs" title="__builtin__.bytes.expandtabs"><code class="xref py py-obj docutils literal"><span class="pre">expandtabs</span></code></a>(([tabsize])&nbsp;-&gt;&nbsp;string)</td>
 <td>Return a copy of S where all tab characters are expanded using spaces.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.find.html#__builtin__.bytes.find" title="__builtin__.bytes.find"><code class="xref py py-obj docutils literal"><span class="pre">find</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.find.html#__builtin__.bytes.find" title="__builtin__.bytes.find"><code class="xref py py-obj docutils literal"><span class="pre">find</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
 <td>Return the lowest index in S where substring sub is found, such that sub is contained within S[start:end].</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.format.html#__builtin__.bytes.format" title="__builtin__.bytes.format"><code class="xref py py-obj docutils literal"><span class="pre">format</span></code></a>((*args,&nbsp;**kwargs)&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.format.html#__builtin__.bytes.format" title="__builtin__.bytes.format"><code class="xref py py-obj docutils literal"><span class="pre">format</span></code></a>((*args,&nbsp;**kwargs)&nbsp;-&gt;&nbsp;string)</td>
 <td>Return a formatted version of S, using substitutions from args and kwargs.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.index.html#__builtin__.bytes.index" title="__builtin__.bytes.index"><code class="xref py py-obj docutils literal"><span class="pre">index</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.index.html#__builtin__.bytes.index" title="__builtin__.bytes.index"><code class="xref py py-obj docutils literal"><span class="pre">index</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
 <td>Like S.find() but raise ValueError when the substring is not found.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.isalnum.html#__builtin__.bytes.isalnum" title="__builtin__.bytes.isalnum"><code class="xref py py-obj docutils literal"><span class="pre">isalnum</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.isalnum.html#__builtin__.bytes.isalnum" title="__builtin__.bytes.isalnum"><code class="xref py py-obj docutils literal"><span class="pre">isalnum</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
 <td>Return True if all characters in S are alphanumeric and there is at least one character in S, False otherwise.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.isalpha.html#__builtin__.bytes.isalpha" title="__builtin__.bytes.isalpha"><code class="xref py py-obj docutils literal"><span class="pre">isalpha</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.isalpha.html#__builtin__.bytes.isalpha" title="__builtin__.bytes.isalpha"><code class="xref py py-obj docutils literal"><span class="pre">isalpha</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
 <td>Return True if all characters in S are alphabetic and there is at least one character in S, False otherwise.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.isdigit.html#__builtin__.bytes.isdigit" title="__builtin__.bytes.isdigit"><code class="xref py py-obj docutils literal"><span class="pre">isdigit</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.isdigit.html#__builtin__.bytes.isdigit" title="__builtin__.bytes.isdigit"><code class="xref py py-obj docutils literal"><span class="pre">isdigit</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
 <td>Return True if all characters in S are digits and there is at least one character in S, False otherwise.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.islower.html#__builtin__.bytes.islower" title="__builtin__.bytes.islower"><code class="xref py py-obj docutils literal"><span class="pre">islower</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.islower.html#__builtin__.bytes.islower" title="__builtin__.bytes.islower"><code class="xref py py-obj docutils literal"><span class="pre">islower</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
 <td>Return True if all cased characters in S are lowercase and there is at least one cased character in S, False otherwise.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.isspace.html#__builtin__.bytes.isspace" title="__builtin__.bytes.isspace"><code class="xref py py-obj docutils literal"><span class="pre">isspace</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.isspace.html#__builtin__.bytes.isspace" title="__builtin__.bytes.isspace"><code class="xref py py-obj docutils literal"><span class="pre">isspace</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
 <td>Return True if all characters in S are whitespace and there is at least one character in S, False otherwise.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.istitle.html#__builtin__.bytes.istitle" title="__builtin__.bytes.istitle"><code class="xref py py-obj docutils literal"><span class="pre">istitle</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.istitle.html#__builtin__.bytes.istitle" title="__builtin__.bytes.istitle"><code class="xref py py-obj docutils literal"><span class="pre">istitle</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
 <td>Return True if S is a titlecased string and there is at least one character in S, i.e.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.isupper.html#__builtin__.bytes.isupper" title="__builtin__.bytes.isupper"><code class="xref py py-obj docutils literal"><span class="pre">isupper</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.isupper.html#__builtin__.bytes.isupper" title="__builtin__.bytes.isupper"><code class="xref py py-obj docutils literal"><span class="pre">isupper</span></code></a>(()&nbsp;-&gt;&nbsp;bool)</td>
 <td>Return True if all cased characters in S are uppercase and there is at least one cased character in S, False otherwise.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.join.html#__builtin__.bytes.join" title="__builtin__.bytes.join"><code class="xref py py-obj docutils literal"><span class="pre">join</span></code></a>((iterable)&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.join.html#__builtin__.bytes.join" title="__builtin__.bytes.join"><code class="xref py py-obj docutils literal"><span class="pre">join</span></code></a>((iterable)&nbsp;-&gt;&nbsp;string)</td>
 <td>Return a string which is the concatenation of the strings in the iterable.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.ljust.html#__builtin__.bytes.ljust" title="__builtin__.bytes.ljust"><code class="xref py py-obj docutils literal"><span class="pre">ljust</span></code></a>((width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.ljust.html#__builtin__.bytes.ljust" title="__builtin__.bytes.ljust"><code class="xref py py-obj docutils literal"><span class="pre">ljust</span></code></a>((width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
 <td>Return S left-justified in a string of length width.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.lower.html#__builtin__.bytes.lower" title="__builtin__.bytes.lower"><code class="xref py py-obj docutils literal"><span class="pre">lower</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.lower.html#__builtin__.bytes.lower" title="__builtin__.bytes.lower"><code class="xref py py-obj docutils literal"><span class="pre">lower</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
 <td>Return a copy of the string S converted to lowercase.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.lstrip.html#__builtin__.bytes.lstrip" title="__builtin__.bytes.lstrip"><code class="xref py py-obj docutils literal"><span class="pre">lstrip</span></code></a>(([chars])&nbsp;-&gt;&nbsp;string&nbsp;or&nbsp;unicode)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.lstrip.html#__builtin__.bytes.lstrip" title="__builtin__.bytes.lstrip"><code class="xref py py-obj docutils literal"><span class="pre">lstrip</span></code></a>(([chars])&nbsp;-&gt;&nbsp;string&nbsp;or&nbsp;unicode)</td>
 <td>Return a copy of the string S with leading whitespace removed.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.partition.html#__builtin__.bytes.partition" title="__builtin__.bytes.partition"><code class="xref py py-obj docutils literal"><span class="pre">partition</span></code></a>(sep)&nbsp;-&gt;&nbsp;(head,&nbsp;sep,&nbsp;tail)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.partition.html#__builtin__.bytes.partition" title="__builtin__.bytes.partition"><code class="xref py py-obj docutils literal"><span class="pre">partition</span></code></a>(sep)&nbsp;-&gt;&nbsp;(head,&nbsp;sep,&nbsp;tail)</td>
 <td>Search for the separator sep in S, and return the part before it, the separator itself, and the part after it.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.replace.html#__builtin__.bytes.replace" title="__builtin__.bytes.replace"><code class="xref py py-obj docutils literal"><span class="pre">replace</span></code></a>((old,&nbsp;new[,&nbsp;count])&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.replace.html#__builtin__.bytes.replace" title="__builtin__.bytes.replace"><code class="xref py py-obj docutils literal"><span class="pre">replace</span></code></a>((old,&nbsp;new[,&nbsp;count])&nbsp;-&gt;&nbsp;string)</td>
 <td>Return a copy of string S with all occurrences of substring old replaced by new.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.rfind.html#__builtin__.bytes.rfind" title="__builtin__.bytes.rfind"><code class="xref py py-obj docutils literal"><span class="pre">rfind</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.rfind.html#__builtin__.bytes.rfind" title="__builtin__.bytes.rfind"><code class="xref py py-obj docutils literal"><span class="pre">rfind</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
 <td>Return the highest index in S where substring sub is found, such that sub is contained within S[start:end].</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.rindex.html#__builtin__.bytes.rindex" title="__builtin__.bytes.rindex"><code class="xref py py-obj docutils literal"><span class="pre">rindex</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.rindex.html#__builtin__.bytes.rindex" title="__builtin__.bytes.rindex"><code class="xref py py-obj docutils literal"><span class="pre">rindex</span></code></a>((sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
 <td>Like S.rfind() but raise ValueError when the substring is not found.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.rjust.html#__builtin__.bytes.rjust" title="__builtin__.bytes.rjust"><code class="xref py py-obj docutils literal"><span class="pre">rjust</span></code></a>((width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.rjust.html#__builtin__.bytes.rjust" title="__builtin__.bytes.rjust"><code class="xref py py-obj docutils literal"><span class="pre">rjust</span></code></a>((width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
 <td>Return S right-justified in a string of length width.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.rpartition.html#__builtin__.bytes.rpartition" title="__builtin__.bytes.rpartition"><code class="xref py py-obj docutils literal"><span class="pre">rpartition</span></code></a>(sep)&nbsp;-&gt;&nbsp;(head,&nbsp;sep,&nbsp;tail)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.rpartition.html#__builtin__.bytes.rpartition" title="__builtin__.bytes.rpartition"><code class="xref py py-obj docutils literal"><span class="pre">rpartition</span></code></a>(sep)&nbsp;-&gt;&nbsp;(head,&nbsp;sep,&nbsp;tail)</td>
 <td>Search for the separator sep in S, starting at the end of S, and return the part before it, the separator itself, and the part after it.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.rsplit.html#__builtin__.bytes.rsplit" title="__builtin__.bytes.rsplit"><code class="xref py py-obj docutils literal"><span class="pre">rsplit</span></code></a>(([sep&nbsp;[,maxsplit]])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.rsplit.html#__builtin__.bytes.rsplit" title="__builtin__.bytes.rsplit"><code class="xref py py-obj docutils literal"><span class="pre">rsplit</span></code></a>(([sep&nbsp;[,maxsplit]])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
 <td>Return a list of the words in the string S, using sep as the delimiter string, starting at the end of the string and working to the front.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.rstrip.html#__builtin__.bytes.rstrip" title="__builtin__.bytes.rstrip"><code class="xref py py-obj docutils literal"><span class="pre">rstrip</span></code></a>(([chars])&nbsp;-&gt;&nbsp;string&nbsp;or&nbsp;unicode)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.rstrip.html#__builtin__.bytes.rstrip" title="__builtin__.bytes.rstrip"><code class="xref py py-obj docutils literal"><span class="pre">rstrip</span></code></a>(([chars])&nbsp;-&gt;&nbsp;string&nbsp;or&nbsp;unicode)</td>
 <td>Return a copy of the string S with trailing whitespace removed.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.split.html#__builtin__.bytes.split" title="__builtin__.bytes.split"><code class="xref py py-obj docutils literal"><span class="pre">split</span></code></a>(([sep&nbsp;[,maxsplit]])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.split.html#__builtin__.bytes.split" title="__builtin__.bytes.split"><code class="xref py py-obj docutils literal"><span class="pre">split</span></code></a>(([sep&nbsp;[,maxsplit]])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
 <td>Return a list of the words in the string S, using sep as the delimiter string.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.splitlines.html#__builtin__.bytes.splitlines" title="__builtin__.bytes.splitlines"><code class="xref py py-obj docutils literal"><span class="pre">splitlines</span></code></a>((keepends=False)&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.splitlines.html#__builtin__.bytes.splitlines" title="__builtin__.bytes.splitlines"><code class="xref py py-obj docutils literal"><span class="pre">splitlines</span></code></a>((keepends=False)&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
 <td>Return a list of the lines in S, breaking at line boundaries.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.startswith.html#__builtin__.bytes.startswith" title="__builtin__.bytes.startswith"><code class="xref py py-obj docutils literal"><span class="pre">startswith</span></code></a>((prefix[,&nbsp;start[,&nbsp;end]])&nbsp;-&gt;&nbsp;bool)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.startswith.html#__builtin__.bytes.startswith" title="__builtin__.bytes.startswith"><code class="xref py py-obj docutils literal"><span class="pre">startswith</span></code></a>((prefix[,&nbsp;start[,&nbsp;end]])&nbsp;-&gt;&nbsp;bool)</td>
 <td>Return True if S starts with the specified prefix, False otherwise.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.strip.html#__builtin__.bytes.strip" title="__builtin__.bytes.strip"><code class="xref py py-obj docutils literal"><span class="pre">strip</span></code></a>(([chars])&nbsp;-&gt;&nbsp;string&nbsp;or&nbsp;unicode)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.strip.html#__builtin__.bytes.strip" title="__builtin__.bytes.strip"><code class="xref py py-obj docutils literal"><span class="pre">strip</span></code></a>(([chars])&nbsp;-&gt;&nbsp;string&nbsp;or&nbsp;unicode)</td>
 <td>Return a copy of the string S with leading and trailing whitespace removed.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.swapcase.html#__builtin__.bytes.swapcase" title="__builtin__.bytes.swapcase"><code class="xref py py-obj docutils literal"><span class="pre">swapcase</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.swapcase.html#__builtin__.bytes.swapcase" title="__builtin__.bytes.swapcase"><code class="xref py py-obj docutils literal"><span class="pre">swapcase</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
 <td>Return a copy of the string S with uppercase characters converted to lowercase and vice versa.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.title.html#__builtin__.bytes.title" title="__builtin__.bytes.title"><code class="xref py py-obj docutils literal"><span class="pre">title</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.title.html#__builtin__.bytes.title" title="__builtin__.bytes.title"><code class="xref py py-obj docutils literal"><span class="pre">title</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
 <td>Return a titlecased version of S, i.e.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.translate.html#__builtin__.bytes.translate" title="__builtin__.bytes.translate"><code class="xref py py-obj docutils literal"><span class="pre">translate</span></code></a>((table&nbsp;[,deletechars])&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.translate.html#__builtin__.bytes.translate" title="__builtin__.bytes.translate"><code class="xref py py-obj docutils literal"><span class="pre">translate</span></code></a>((table&nbsp;[,deletechars])&nbsp;-&gt;&nbsp;string)</td>
 <td>Return a copy of the string S, where all characters occurring in the optional argument deletechars are removed, and the remaining characters have been mapped through the given translation table, which must be a string of length 256 or None.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.upper.html#__builtin__.bytes.upper" title="__builtin__.bytes.upper"><code class="xref py py-obj docutils literal"><span class="pre">upper</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.upper.html#__builtin__.bytes.upper" title="__builtin__.bytes.upper"><code class="xref py py-obj docutils literal"><span class="pre">upper</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
 <td>Return a copy of the string S converted to uppercase.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.bytes.zfill.html#__builtin__.bytes.zfill" title="__builtin__.bytes.zfill"><code class="xref py py-obj docutils literal"><span class="pre">zfill</span></code></a>((width)&nbsp;-&gt;&nbsp;string)</td>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bytes.zfill.html#__builtin__.bytes.zfill" title="__builtin__.bytes.zfill"><code class="xref py py-obj docutils literal"><span class="pre">zfill</span></code></a>((width)&nbsp;-&gt;&nbsp;string)</td>
 <td>Pad a numeric string S with zeros on the left, to fill a field of the specified width.</td>
 </tr>
 </tbody>
@@ -337,10 +327,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="__builtin__.bytes.capitalize.html" class="btn btn-neutral float-right" title="1.1.2.5.1.1. __builtin__.bytes.capitalize" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="__builtin__.bytes.__format__.html" class="btn btn-neutral float-right" title="__builtin__.bytes.__format__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="__builtin__.bytearray.zfill.html" class="btn btn-neutral" title="1.1.2.4.1.43. __builtin__.bytearray.zfill" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="__builtin__.bytearray.zfill.html" class="btn btn-neutral" title="__builtin__.bytearray.zfill" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -371,7 +361,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -380,6 +370,7 @@
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

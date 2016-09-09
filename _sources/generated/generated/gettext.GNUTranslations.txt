@@ -1,0 +1,41 @@
+:class:`gettext.GNUTranslations`
+================================
+.. currentmodule:: gettext
+.. autoclass:: GNUTranslations
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~GNUTranslations.__init__
+   ~GNUTranslations._parse
+   ~GNUTranslations.add_fallback
+   ~GNUTranslations.charset
+   ~GNUTranslations.gettext
+   ~GNUTranslations.info
+   ~GNUTranslations.install
+   ~GNUTranslations.lgettext
+   ~GNUTranslations.lngettext
+   ~GNUTranslations.ngettext
+   ~GNUTranslations.output_charset
+   ~GNUTranslations.set_output_charset
+   ~GNUTranslations.ugettext
+   ~GNUTranslations.ungettext
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~GNUTranslations.BE_MAGIC
+   ~GNUTranslations.LE_MAGIC
+

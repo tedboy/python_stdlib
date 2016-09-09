@@ -1,9 +1,7 @@
-inspect.ArgSpec
-===============
-
+:class:`inspect.ArgSpec`
+========================
 .. currentmodule:: inspect
 .. autoclass:: ArgSpec
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,18 @@ Methods
    :toctree:
 
 
+   ~ArgSpec.__format__
+   ~ArgSpec.__getnewargs__
+   ~ArgSpec.__getstate__
+   ~ArgSpec.__new__
+   ~ArgSpec.__reduce__
+   ~ArgSpec.__reduce_ex__
+   ~ArgSpec.__repr__
+   ~ArgSpec.__sizeof__
+   ~ArgSpec.__subclasshook__
+   ~ArgSpec._asdict
+   ~ArgSpec._make
+   ~ArgSpec._replace
    ~ArgSpec.count
    ~ArgSpec.index
 

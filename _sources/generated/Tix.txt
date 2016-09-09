@@ -1,0 +1,300 @@
+:mod:`Tix`
+==========
+
+.. automodule:: Tix
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      At
+      AtEnd
+      AtInsert
+      AtSelFirst
+      AtSelLast
+      FileTypeList
+      NoDefaultRoot
+      OptionName
+      Tcl
+      getboolean
+      image_names
+      image_types
+      mainloop
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      Balloon
+      BaseWidget
+      BitmapImage
+      BooleanType
+      BooleanVar
+      BufferType
+      BuiltinFunctionType
+      BuiltinMethodType
+      Button
+      ButtonBox
+      CObjView
+      CallWrapper
+      Canvas
+      CheckList
+      Checkbutton
+      ClassType
+      CodeType
+      ComboBox
+      ComplexType
+      Control
+      DialogShell
+      DictProxyType
+      DictType
+      DictionaryType
+      DirList
+      DirSelectBox
+      DirSelectDialog
+      DirTree
+      DisplayStyle
+      DoubleVar
+      EllipsisType
+      Entry
+      Event
+      ExFileSelectBox
+      ExFileSelectDialog
+      FileEntry
+      FileSelectBox
+      FileSelectDialog
+      FileType
+      FloatType
+      Form
+      Frame
+      FrameType
+      FunctionType
+      GeneratorType
+      GetSetDescriptorType
+      Grid
+      HList
+      Image
+      InputOnly
+      InstanceType
+      IntType
+      IntVar
+      Label
+      LabelEntry
+      LabelFrame
+      LambdaType
+      ListNoteBook
+      ListType
+      Listbox
+      LongType
+      MemberDescriptorType
+      Menu
+      Menubutton
+      Message
+      Meter
+      MethodType
+      Misc
+      ModuleType
+      NoneType
+      NotImplementedType
+      NoteBook
+      NoteBookFrame
+      ObjectType
+      OptionMenu
+      Pack
+      PanedWindow
+      PhotoImage
+      Place
+      PopupMenu
+      Radiobutton
+      ResizeHandle
+      Scale
+      Scrollbar
+      ScrolledGrid
+      ScrolledHList
+      ScrolledListBox
+      ScrolledTList
+      ScrolledText
+      ScrolledWindow
+      Select
+      Shell
+      SliceType
+      Spinbox
+      StdButtonBox
+      StringType
+      StringVar
+      Studbutton
+      TList
+      Text
+      TixSubWidget
+      TixWidget
+      Tk
+      Toplevel
+      TracebackType
+      Tree
+      Tributton
+      TupleType
+      TypeType
+      UnboundMethodType
+      UnicodeType
+      Variable
+      Widget
+      Wm
+      XRangeType
+      XView
+      YView
+      getdouble
+      getint
+      tixCommand
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/Tix.Balloon
+       generated/Tix.BaseWidget
+       generated/Tix.BitmapImage
+       generated/Tix.BooleanType
+       generated/Tix.BooleanVar
+       generated/Tix.BufferType
+       generated/Tix.BuiltinFunctionType
+       generated/Tix.BuiltinMethodType
+       generated/Tix.Button
+       generated/Tix.ButtonBox
+       generated/Tix.CObjView
+       generated/Tix.CallWrapper
+       generated/Tix.Canvas
+       generated/Tix.CheckList
+       generated/Tix.Checkbutton
+       generated/Tix.ClassType
+       generated/Tix.CodeType
+       generated/Tix.ComboBox
+       generated/Tix.ComplexType
+       generated/Tix.Control
+       generated/Tix.DialogShell
+       generated/Tix.DictProxyType
+       generated/Tix.DictType
+       generated/Tix.DictionaryType
+       generated/Tix.DirList
+       generated/Tix.DirSelectBox
+       generated/Tix.DirSelectDialog
+       generated/Tix.DirTree
+       generated/Tix.DisplayStyle
+       generated/Tix.DoubleVar
+       generated/Tix.EllipsisType
+       generated/Tix.Entry
+       generated/Tix.Event
+       generated/Tix.ExFileSelectBox
+       generated/Tix.ExFileSelectDialog
+       generated/Tix.FileEntry
+       generated/Tix.FileSelectBox
+       generated/Tix.FileSelectDialog
+       generated/Tix.FileType
+       generated/Tix.FloatType
+       generated/Tix.Form
+       generated/Tix.Frame
+       generated/Tix.FrameType
+       generated/Tix.FunctionType
+       generated/Tix.GeneratorType
+       generated/Tix.GetSetDescriptorType
+       generated/Tix.Grid
+       generated/Tix.HList
+       generated/Tix.Image
+       generated/Tix.InputOnly
+       generated/Tix.InstanceType
+       generated/Tix.IntType
+       generated/Tix.IntVar
+       generated/Tix.Label
+       generated/Tix.LabelEntry
+       generated/Tix.LabelFrame
+       generated/Tix.LambdaType
+       generated/Tix.ListNoteBook
+       generated/Tix.ListType
+       generated/Tix.Listbox
+       generated/Tix.LongType
+       generated/Tix.MemberDescriptorType
+       generated/Tix.Menu
+       generated/Tix.Menubutton
+       generated/Tix.Message
+       generated/Tix.Meter
+       generated/Tix.MethodType
+       generated/Tix.Misc
+       generated/Tix.ModuleType
+       generated/Tix.NoneType
+       generated/Tix.NotImplementedType
+       generated/Tix.NoteBook
+       generated/Tix.NoteBookFrame
+       generated/Tix.ObjectType
+       generated/Tix.OptionMenu
+       generated/Tix.Pack
+       generated/Tix.PanedWindow
+       generated/Tix.PhotoImage
+       generated/Tix.Place
+       generated/Tix.PopupMenu
+       generated/Tix.Radiobutton
+       generated/Tix.ResizeHandle
+       generated/Tix.Scale
+       generated/Tix.Scrollbar
+       generated/Tix.ScrolledGrid
+       generated/Tix.ScrolledHList
+       generated/Tix.ScrolledListBox
+       generated/Tix.ScrolledTList
+       generated/Tix.ScrolledText
+       generated/Tix.ScrolledWindow
+       generated/Tix.Select
+       generated/Tix.Shell
+       generated/Tix.SliceType
+       generated/Tix.Spinbox
+       generated/Tix.StdButtonBox
+       generated/Tix.StringType
+       generated/Tix.StringVar
+       generated/Tix.Studbutton
+       generated/Tix.TList
+       generated/Tix.Text
+       generated/Tix.TixSubWidget
+       generated/Tix.TixWidget
+       generated/Tix.Tk
+       generated/Tix.Toplevel
+       generated/Tix.TracebackType
+       generated/Tix.Tree
+       generated/Tix.Tributton
+       generated/Tix.TupleType
+       generated/Tix.TypeType
+       generated/Tix.UnboundMethodType
+       generated/Tix.UnicodeType
+       generated/Tix.Variable
+       generated/Tix.Widget
+       generated/Tix.Wm
+       generated/Tix.XRangeType
+       generated/Tix.XView
+       generated/Tix.YView
+       generated/Tix.getdouble
+       generated/Tix.getint
+       generated/Tix.tixCommand
+
+   
+   
+
+   
+   
+   Exceptions
+   ----------
+   .. autosummary::
+      :toctree:
+
+   
+      TclError
+   
+   

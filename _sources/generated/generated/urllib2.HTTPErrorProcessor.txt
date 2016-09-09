@@ -1,9 +1,7 @@
-urllib2.HTTPErrorProcessor
-==========================
-
+:class:`urllib2.HTTPErrorProcessor`
+===================================
 .. currentmodule:: urllib2
 .. autoclass:: HTTPErrorProcessor
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,7 @@ Methods
    :toctree:
 
 
+   ~HTTPErrorProcessor.__lt__
    ~HTTPErrorProcessor.add_parent
    ~HTTPErrorProcessor.close
    ~HTTPErrorProcessor.http_response

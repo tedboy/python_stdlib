@@ -1,9 +1,7 @@
-__builtin__.str
-===============
-
+:class:`__builtin__.str`
+========================
 .. currentmodule:: __builtin__
 .. autoclass:: str
-   :members: __init__
    :undoc-members:
 
 
@@ -13,6 +11,15 @@ Methods
    :toctree:
 
 
+   ~str.__format__
+   ~str.__getnewargs__
+   ~str.__new__
+   ~str.__reduce__
+   ~str.__reduce_ex__
+   ~str.__sizeof__
+   ~str.__subclasshook__
+   ~str._formatter_field_name_split
+   ~str._formatter_parser
    ~str.capitalize
    ~str.center
    ~str.count

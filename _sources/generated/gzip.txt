@@ -1,5 +1,5 @@
-gzip
-====
+:mod:`gzip`
+===========
 
 .. automodule:: gzip
 
@@ -9,7 +9,8 @@ gzip
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       open
       read32
@@ -20,10 +21,10 @@ gzip
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       GzipFile

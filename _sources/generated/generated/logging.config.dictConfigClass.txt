@@ -1,0 +1,54 @@
+:class:`logging.config.dictConfigClass`
+=======================================
+.. currentmodule:: logging.config
+.. autoclass:: dictConfigClass
+   :undoc-members:
+
+
+Methods
+-------
+.. autosummary::
+   :toctree:
+
+
+   ~dictConfigClass.__format__
+   ~dictConfigClass.__init__
+   ~dictConfigClass.__new__
+   ~dictConfigClass.__reduce__
+   ~dictConfigClass.__reduce_ex__
+   ~dictConfigClass.__sizeof__
+   ~dictConfigClass.__subclasshook__
+   ~dictConfigClass.add_filters
+   ~dictConfigClass.add_handlers
+   ~dictConfigClass.as_tuple
+   ~dictConfigClass.cfg_convert
+   ~dictConfigClass.common_logger_config
+   ~dictConfigClass.configure
+   ~dictConfigClass.configure_custom
+   ~dictConfigClass.configure_filter
+   ~dictConfigClass.configure_formatter
+   ~dictConfigClass.configure_handler
+   ~dictConfigClass.configure_logger
+   ~dictConfigClass.configure_root
+   ~dictConfigClass.convert
+   ~dictConfigClass.ext_convert
+   ~dictConfigClass.importer
+   ~dictConfigClass.resolve
+
+
+
+
+
+Attributes
+----------
+.. autosummary::
+  :toctree:
+
+
+   ~dictConfigClass.CONVERT_PATTERN
+   ~dictConfigClass.DIGIT_PATTERN
+   ~dictConfigClass.DOT_PATTERN
+   ~dictConfigClass.INDEX_PATTERN
+   ~dictConfigClass.WORD_PATTERN
+   ~dictConfigClass.value_converters
+

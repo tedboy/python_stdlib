@@ -1,5 +1,5 @@
-json
-====
+:mod:`json`
+===========
 
 .. automodule:: json
 
@@ -9,7 +9,8 @@ json
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    
       dump
       dumps
@@ -21,10 +22,10 @@ json
    
    
    Classes
-   ---------
+   -------
    .. autosummary::
       :toctree:generated/
-      :template:class_custom.rst
+      :template:class_all_methods.rst
 
    
       JSONDecoder

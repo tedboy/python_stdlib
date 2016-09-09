@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.1. __builtin__ &mdash; My Project v1</title>
+  <title>__builtin__ &mdash; Python Standard Library</title>
   
 
   
+  
+    <link rel="shortcut icon" href="../_static/py.png"/>
   
 
   
@@ -30,10 +32,10 @@
   
 
   
-    <link rel="top" title="My Project v1" href="../index.html"/>
-        <link rel="up" title="1. Frequently used" href="../main1.html"/>
-        <link rel="next" title="1.1.1.1. __builtin__.abs" href="__builtin__.abs.html"/>
-        <link rel="prev" title="1. Frequently used" href="../main1.html"/> 
+    <link rel="top" title="Python Standard Library" href="../index.html"/>
+        <link rel="up" title="API: 26 - 30" href="../api_26to30.html"/>
+        <link rel="next" title="__builtin__.basestring" href="generated/__builtin__.basestring.html"/>
+        <link rel="prev" title="sysconfig" href="sysconfig.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -52,7 +54,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> My Project
+            <a href="../index.html" class="icon icon-home"> Python Standard Library
           
 
           
@@ -60,10 +62,6 @@
 
           
             
-            
-              <div class="version">
-                1
-              </div>
             
           
 
@@ -84,108 +82,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../main1.html">1. Frequently used</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.1. __builtin__</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#functions">1.1.1. Functions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.abs.html">1.1.1.1. __builtin__.abs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.all.html">1.1.1.2. __builtin__.all</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.any.html">1.1.1.3. __builtin__.any</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.apply.html">1.1.1.4. __builtin__.apply</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.bin.html">1.1.1.5. __builtin__.bin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.callable.html">1.1.1.6. __builtin__.callable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.chr.html">1.1.1.7. __builtin__.chr</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.cmp.html">1.1.1.8. __builtin__.cmp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.coerce.html">1.1.1.9. __builtin__.coerce</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.compile.html">1.1.1.10. __builtin__.compile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.delattr.html">1.1.1.11. __builtin__.delattr</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.dir.html">1.1.1.12. __builtin__.dir</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.divmod.html">1.1.1.13. __builtin__.divmod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.eval.html">1.1.1.14. __builtin__.eval</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.execfile.html">1.1.1.15. __builtin__.execfile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.filter.html">1.1.1.16. __builtin__.filter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.format.html">1.1.1.17. __builtin__.format</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.getattr.html">1.1.1.18. __builtin__.getattr</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.globals.html">1.1.1.19. __builtin__.globals</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.hasattr.html">1.1.1.20. __builtin__.hasattr</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.hash.html">1.1.1.21. __builtin__.hash</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.hex.html">1.1.1.22. __builtin__.hex</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.id.html">1.1.1.23. __builtin__.id</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.input.html">1.1.1.24. __builtin__.input</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.intern.html">1.1.1.25. __builtin__.intern</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.isinstance.html">1.1.1.26. __builtin__.isinstance</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.issubclass.html">1.1.1.27. __builtin__.issubclass</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.iter.html">1.1.1.28. __builtin__.iter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.len.html">1.1.1.29. __builtin__.len</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.locals.html">1.1.1.30. __builtin__.locals</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.map.html">1.1.1.31. __builtin__.map</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.max.html">1.1.1.32. __builtin__.max</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.min.html">1.1.1.33. __builtin__.min</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.next.html">1.1.1.34. __builtin__.next</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.oct.html">1.1.1.35. __builtin__.oct</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.open.html">1.1.1.36. __builtin__.open</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.ord.html">1.1.1.37. __builtin__.ord</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.pow.html">1.1.1.38. __builtin__.pow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.print.html">1.1.1.39. __builtin__.print</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.range.html">1.1.1.40. __builtin__.range</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.raw_input.html">1.1.1.41. __builtin__.raw_input</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.reduce.html">1.1.1.42. __builtin__.reduce</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.reload.html">1.1.1.43. __builtin__.reload</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.repr.html">1.1.1.44. __builtin__.repr</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.round.html">1.1.1.45. __builtin__.round</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.setattr.html">1.1.1.46. __builtin__.setattr</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.sorted.html">1.1.1.47. __builtin__.sorted</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.sum.html">1.1.1.48. __builtin__.sum</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.unichr.html">1.1.1.49. __builtin__.unichr</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.vars.html">1.1.1.50. __builtin__.vars</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__builtin__.zip.html">1.1.1.51. __builtin__.zip</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#classes">1.1.2. Classes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.basestring.html">1.1.2.1. __builtin__.basestring</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.bool.html">1.1.2.2. __builtin__.bool</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.buffer.html">1.1.2.3. __builtin__.buffer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.bytearray.html">1.1.2.4. __builtin__.bytearray</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.bytes.html">1.1.2.5. __builtin__.bytes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.classmethod.html">1.1.2.6. __builtin__.classmethod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.complex.html">1.1.2.7. __builtin__.complex</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.dict.html">1.1.2.8. __builtin__.dict</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.enumerate.html">1.1.2.9. __builtin__.enumerate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.file.html">1.1.2.10. __builtin__.file</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.float.html">1.1.2.11. __builtin__.float</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.frozenset.html">1.1.2.12. __builtin__.frozenset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.int.html">1.1.2.13. __builtin__.int</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.list.html">1.1.2.14. __builtin__.list</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.long.html">1.1.2.15. __builtin__.long</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.memoryview.html">1.1.2.16. __builtin__.memoryview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.object.html">1.1.2.17. __builtin__.object</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.property.html">1.1.2.18. __builtin__.property</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.reversed.html">1.1.2.19. __builtin__.reversed</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.set.html">1.1.2.20. __builtin__.set</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.slice.html">1.1.2.21. __builtin__.slice</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.staticmethod.html">1.1.2.22. __builtin__.staticmethod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.str.html">1.1.2.23. __builtin__.str</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.super.html">1.1.2.24. __builtin__.super</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.tuple.html">1.1.2.25. __builtin__.tuple</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.type.html">1.1.2.26. __builtin__.type</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.unicode.html">1.1.2.27. __builtin__.unicode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/__builtin__.xrange.html">1.1.2.28. __builtin__.xrange</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="string.html">1.2. string</a></li>
-<li class="toctree-l2"><a class="reference internal" href="re.html">1.3. re</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.html">1.4. os</a></li>
-<li class="toctree-l2"><a class="reference internal" href="os.path.html">1.5. os.path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sys.html">1.6. sys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inspect.html">1.7. inspect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="warnings.html">1.8. warnings</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../main2.html">2. Somewhat frequently used</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../maybe_future.html">3. Misc package I may use in the future</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../official_page.html">4. Official page TOC</a></li>
+<p class="caption"><span class="caption-text">Autogenerated API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api_06to10.html">API: 06 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_11to15.html">API: 11 - 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_16to20.html">API: 16 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_21to25.html">API: 21 - 25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_26to30.html">API: 26 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_31to37.html">API: 31 - 37</a></li>
 </ul>
 
             
@@ -200,7 +110,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">My Project</a>
+          <a href="../index.html">Python Standard Library</a>
         
       </nav>
 
@@ -227,9 +137,9 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../main1.html">1. Frequently used</a> &raquo;</li>
+          <li><a href="../api_26to30.html">API: 26 - 30</a> &raquo;</li>
         
-      <li>1.1. __builtin__</li>
+      <li><code class="docutils literal"><span class="pre">__builtin__</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -247,175 +157,14 @@
            <div itemprop="articleBody">
             
   <div class="section" id="module-__builtin__">
-<span id="builtin"></span><h1>1.1. __builtin__<a class="headerlink" href="#module-__builtin__" title="Permalink to this headline">¶</a></h1>
+<span id="builtin"></span><h1><a class="reference internal" href="#module-__builtin__" title="__builtin__"><code class="xref py py-mod docutils literal"><span class="pre">__builtin__</span></code></a><a class="headerlink" href="#module-__builtin__" title="Permalink to this headline">¶</a></h1>
 <p>Built-in functions, exceptions, and other objects.</p>
 <p>Noteworthy: None is the <a href="#id1"><span class="problematic" id="id2">`</span></a>nil&#8217; object; Ellipsis represents <a href="#id3"><span class="problematic" id="id4">`</span></a>...&#8217; in slices.</p>
 <div class="section" id="functions">
-<h2>1.1.1. Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.abs.html#__builtin__.abs" title="__builtin__.abs"><code class="xref py py-obj docutils literal"><span class="pre">abs</span></code></a>((number)&nbsp;-&gt;&nbsp;number)</td>
-<td>Return the absolute value of the argument.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.all.html#__builtin__.all" title="__builtin__.all"><code class="xref py py-obj docutils literal"><span class="pre">all</span></code></a>((iterable)&nbsp;-&gt;&nbsp;bool)</td>
-<td>Return True if bool(x) is True for all values x in the iterable.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.any.html#__builtin__.any" title="__builtin__.any"><code class="xref py py-obj docutils literal"><span class="pre">any</span></code></a>((iterable)&nbsp;-&gt;&nbsp;bool)</td>
-<td>Return True if bool(x) is True for any x in the iterable.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.apply.html#__builtin__.apply" title="__builtin__.apply"><code class="xref py py-obj docutils literal"><span class="pre">apply</span></code></a>((object[,&nbsp;args[,&nbsp;kwargs]])&nbsp;-&gt;&nbsp;value)</td>
-<td>Call a callable object with positional arguments taken from the tuple args, and keyword arguments taken from the optional dictionary kwargs.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.bin.html#__builtin__.bin" title="__builtin__.bin"><code class="xref py py-obj docutils literal"><span class="pre">bin</span></code></a>((number)&nbsp;-&gt;&nbsp;string)</td>
-<td>Return the binary representation of an integer or long integer.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.callable.html#__builtin__.callable" title="__builtin__.callable"><code class="xref py py-obj docutils literal"><span class="pre">callable</span></code></a>((object)&nbsp;-&gt;&nbsp;bool)</td>
-<td>Return whether the object is callable (i.e., some kind of function).</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.chr.html#__builtin__.chr" title="__builtin__.chr"><code class="xref py py-obj docutils literal"><span class="pre">chr</span></code></a>((i)&nbsp;-&gt;&nbsp;character)</td>
-<td>Return a string of one character with ordinal i; 0 &lt;= i &lt; 256.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.cmp.html#__builtin__.cmp" title="__builtin__.cmp"><code class="xref py py-obj docutils literal"><span class="pre">cmp</span></code></a>((x,&nbsp;y)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Return negative if x&lt;y, zero if x==y, positive if x&gt;y.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.coerce.html#__builtin__.coerce" title="__builtin__.coerce"><code class="xref py py-obj docutils literal"><span class="pre">coerce</span></code></a>(x,&nbsp;y)&nbsp;-&gt;&nbsp;(x1,&nbsp;y1)</td>
-<td>Return a tuple consisting of the two numeric arguments converted to a common type, using the same rules as used by arithmetic operations.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.compile.html#__builtin__.compile" title="__builtin__.compile"><code class="xref py py-obj docutils literal"><span class="pre">compile</span></code></a>((source,&nbsp;filename,&nbsp;mode[,&nbsp;flags[,&nbsp;...)</td>
-<td>Compile the source string (a Python module, statement or expression) into a code object that can be executed by the exec statement or eval().</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.delattr.html#__builtin__.delattr" title="__builtin__.delattr"><code class="xref py py-obj docutils literal"><span class="pre">delattr</span></code></a>(object,&nbsp;name)</td>
-<td>Delete a named attribute on an object; delattr(x, &#8216;y&#8217;) is equivalent to <a href="#id5"><span class="problematic" id="id6">``</span></a>del x.y&#8217;&#8216;.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.dir.html#__builtin__.dir" title="__builtin__.dir"><code class="xref py py-obj docutils literal"><span class="pre">dir</span></code></a>(([object])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
-<td>If called without an argument, return the names in the current scope.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.divmod.html#__builtin__.divmod" title="__builtin__.divmod"><code class="xref py py-obj docutils literal"><span class="pre">divmod</span></code></a>(x,&nbsp;y)&nbsp;-&gt;&nbsp;(quotient,&nbsp;remainder)</td>
-<td>Return the tuple ((x-x%y)/y, x%y).</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.eval.html#__builtin__.eval" title="__builtin__.eval"><code class="xref py py-obj docutils literal"><span class="pre">eval</span></code></a>((source[,&nbsp;globals[,&nbsp;locals]])&nbsp;-&gt;&nbsp;value)</td>
-<td>Evaluate the source in the context of globals and locals.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.execfile.html#__builtin__.execfile" title="__builtin__.execfile"><code class="xref py py-obj docutils literal"><span class="pre">execfile</span></code></a>(filename[,&nbsp;globals[,&nbsp;locals]])</td>
-<td>Read and execute a Python script from a file.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.filter.html#__builtin__.filter" title="__builtin__.filter"><code class="xref py py-obj docutils literal"><span class="pre">filter</span></code></a>((function&nbsp;or&nbsp;None,&nbsp;sequence)&nbsp;-&gt;&nbsp;list,&nbsp;...)</td>
-<td>Return those items of sequence for which function(item) is true.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.format.html#__builtin__.format" title="__builtin__.format"><code class="xref py py-obj docutils literal"><span class="pre">format</span></code></a>((value[,&nbsp;format_spec])&nbsp;-&gt;&nbsp;string)</td>
-<td>Returns value.__format__(format_spec)</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.getattr.html#__builtin__.getattr" title="__builtin__.getattr"><code class="xref py py-obj docutils literal"><span class="pre">getattr</span></code></a>((object,&nbsp;name[,&nbsp;default])&nbsp;-&gt;&nbsp;value)</td>
-<td>Get a named attribute from an object; getattr(x, &#8216;y&#8217;) is equivalent to x.y.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.globals.html#__builtin__.globals" title="__builtin__.globals"><code class="xref py py-obj docutils literal"><span class="pre">globals</span></code></a>(()&nbsp;-&gt;&nbsp;dictionary)</td>
-<td>Return the dictionary containing the current scope&#8217;s global variables.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.hasattr.html#__builtin__.hasattr" title="__builtin__.hasattr"><code class="xref py py-obj docutils literal"><span class="pre">hasattr</span></code></a>((object,&nbsp;name)&nbsp;-&gt;&nbsp;bool)</td>
-<td>Return whether the object has an attribute with the given name.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.hash.html#__builtin__.hash" title="__builtin__.hash"><code class="xref py py-obj docutils literal"><span class="pre">hash</span></code></a>((object)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Return a hash value for the object.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.hex.html#__builtin__.hex" title="__builtin__.hex"><code class="xref py py-obj docutils literal"><span class="pre">hex</span></code></a>((number)&nbsp;-&gt;&nbsp;string)</td>
-<td>Return the hexadecimal representation of an integer or long integer.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.id.html#__builtin__.id" title="__builtin__.id"><code class="xref py py-obj docutils literal"><span class="pre">id</span></code></a>((object)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Return the identity of an object.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.input.html#__builtin__.input" title="__builtin__.input"><code class="xref py py-obj docutils literal"><span class="pre">input</span></code></a>(([prompt])&nbsp;-&gt;&nbsp;value)</td>
-<td>Equivalent to eval(raw_input(prompt)).</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.intern.html#__builtin__.intern" title="__builtin__.intern"><code class="xref py py-obj docutils literal"><span class="pre">intern</span></code></a>((string)&nbsp;-&gt;&nbsp;string)</td>
-<td><a href="#id7"><span class="problematic" id="id8">``</span></a>Intern&#8217;&#8217; the given string.  This enters the string in the (global)</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.isinstance.html#__builtin__.isinstance" title="__builtin__.isinstance"><code class="xref py py-obj docutils literal"><span class="pre">isinstance</span></code></a>((object,&nbsp;...)</td>
-<td>Return whether an object is an instance of a class or of a subclass thereof.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.issubclass.html#__builtin__.issubclass" title="__builtin__.issubclass"><code class="xref py py-obj docutils literal"><span class="pre">issubclass</span></code></a>((C,&nbsp;B)&nbsp;-&gt;&nbsp;bool)</td>
-<td>Return whether class C is a subclass (i.e., a derived class) of class B.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.iter.html#__builtin__.iter" title="__builtin__.iter"><code class="xref py py-obj docutils literal"><span class="pre">iter</span></code></a>((collection)&nbsp;-&gt;&nbsp;iterator)</td>
-<td>iter(callable, sentinel) -&gt; iterator</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.len.html#__builtin__.len" title="__builtin__.len"><code class="xref py py-obj docutils literal"><span class="pre">len</span></code></a>((object)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Return the number of items of a sequence or collection.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.locals.html#__builtin__.locals" title="__builtin__.locals"><code class="xref py py-obj docutils literal"><span class="pre">locals</span></code></a>(()&nbsp;-&gt;&nbsp;dictionary)</td>
-<td>Update and return a dictionary containing the current scope&#8217;s local variables.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.map.html#__builtin__.map" title="__builtin__.map"><code class="xref py py-obj docutils literal"><span class="pre">map</span></code></a>((function,&nbsp;sequence[,&nbsp;sequence,&nbsp;...)</td>
-<td>Return a list of the results of applying the function to the items of the argument sequence(s).</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.max.html#__builtin__.max" title="__builtin__.max"><code class="xref py py-obj docutils literal"><span class="pre">max</span></code></a>((iterable[[,&nbsp;key])</td>
-<td>max(a, b, c, ...[, key=func]) -&gt; value</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.min.html#__builtin__.min" title="__builtin__.min"><code class="xref py py-obj docutils literal"><span class="pre">min</span></code></a>((iterable[[,&nbsp;key])</td>
-<td>min(a, b, c, ...[, key=func]) -&gt; value</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.next.html#__builtin__.next" title="__builtin__.next"><code class="xref py py-obj docutils literal"><span class="pre">next</span></code></a>(iterator[,&nbsp;default])</td>
-<td>Return the next item from the iterator.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.oct.html#__builtin__.oct" title="__builtin__.oct"><code class="xref py py-obj docutils literal"><span class="pre">oct</span></code></a>((number)&nbsp;-&gt;&nbsp;string)</td>
-<td>Return the octal representation of an integer or long integer.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.open.html#__builtin__.open" title="__builtin__.open"><code class="xref py py-obj docutils literal"><span class="pre">open</span></code></a>((name[,&nbsp;mode[,&nbsp;buffering]])&nbsp;-&gt;&nbsp;file&nbsp;object)</td>
-<td>Open a file using the file() type, returns a file object.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.ord.html#__builtin__.ord" title="__builtin__.ord"><code class="xref py py-obj docutils literal"><span class="pre">ord</span></code></a>((c)&nbsp;-&gt;&nbsp;integer)</td>
-<td>Return the integer ordinal of a one-character string.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.pow.html#__builtin__.pow" title="__builtin__.pow"><code class="xref py py-obj docutils literal"><span class="pre">pow</span></code></a>((x,&nbsp;y[,&nbsp;z])&nbsp;-&gt;&nbsp;number)</td>
-<td>With two arguments, equivalent to x**y.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.print.html#__builtin__.print" title="__builtin__.print"><code class="xref py py-obj docutils literal"><span class="pre">print</span></code></a>(value,&nbsp;...[,&nbsp;sep,&nbsp;end,&nbsp;file])</td>
-<td>Prints the values to a stream, or to sys.stdout by default.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.range.html#__builtin__.range" title="__builtin__.range"><code class="xref py py-obj docutils literal"><span class="pre">range</span></code></a>((stop)&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;integers)</td>
-<td>range(start, stop[, step]) -&gt; list of integers</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.raw_input.html#__builtin__.raw_input" title="__builtin__.raw_input"><code class="xref py py-obj docutils literal"><span class="pre">raw_input</span></code></a>(([prompt])&nbsp;-&gt;&nbsp;string)</td>
-<td>Read a string from standard input.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.reduce.html#__builtin__.reduce" title="__builtin__.reduce"><code class="xref py py-obj docutils literal"><span class="pre">reduce</span></code></a>((function,&nbsp;sequence[,&nbsp;initial])&nbsp;-&gt;&nbsp;value)</td>
-<td>Apply a function of two arguments cumulatively to the items of a sequence, from left to right, so as to reduce the sequence to a single value.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.reload.html#__builtin__.reload" title="__builtin__.reload"><code class="xref py py-obj docutils literal"><span class="pre">reload</span></code></a>((module)&nbsp;-&gt;&nbsp;module)</td>
-<td>Reload the module.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.repr.html#__builtin__.repr" title="__builtin__.repr"><code class="xref py py-obj docutils literal"><span class="pre">repr</span></code></a>((object)&nbsp;-&gt;&nbsp;string)</td>
-<td>Return the canonical string representation of the object.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.round.html#__builtin__.round" title="__builtin__.round"><code class="xref py py-obj docutils literal"><span class="pre">round</span></code></a>((number[,&nbsp;...)</td>
-<td>Round a number to a given precision in decimal digits (default 0 digits).</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.setattr.html#__builtin__.setattr" title="__builtin__.setattr"><code class="xref py py-obj docutils literal"><span class="pre">setattr</span></code></a>(object,&nbsp;name,&nbsp;value)</td>
-<td>Set a named attribute on an object; setattr(x, &#8216;y&#8217;, v) is equivalent to <a href="#id9"><span class="problematic" id="id10">``</span></a>x.y = v&#8217;&#8216;.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.sorted.html#__builtin__.sorted" title="__builtin__.sorted"><code class="xref py py-obj docutils literal"><span class="pre">sorted</span></code></a></td>
-<td>sorted(iterable, cmp=None, key=None, reverse=False) &#8211;&gt; new sorted list</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.sum.html#__builtin__.sum" title="__builtin__.sum"><code class="xref py py-obj docutils literal"><span class="pre">sum</span></code></a>((sequence[,&nbsp;start])&nbsp;-&gt;&nbsp;value)</td>
-<td>Return the sum of a sequence of numbers (NOT strings) plus the value of parameter &#8216;start&#8217; (which defaults to 0).</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.unichr.html#__builtin__.unichr" title="__builtin__.unichr"><code class="xref py py-obj docutils literal"><span class="pre">unichr</span></code></a>((i)&nbsp;-&gt;&nbsp;Unicode&nbsp;character)</td>
-<td>Return a Unicode string of one character with ordinal i; 0 &lt;= i &lt;= 0x10ffff.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="__builtin__.vars.html#__builtin__.vars" title="__builtin__.vars"><code class="xref py py-obj docutils literal"><span class="pre">vars</span></code></a>(([object])&nbsp;-&gt;&nbsp;dictionary)</td>
-<td>Without arguments, equivalent to locals().</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="__builtin__.zip.html#__builtin__.zip" title="__builtin__.zip"><code class="xref py py-obj docutils literal"><span class="pre">zip</span></code></a>((seq1&nbsp;[,&nbsp;seq2&nbsp;[...]])&nbsp;-&gt;&nbsp;[(seq1[0],&nbsp;...)</td>
-<td>Return a list of tuples, where each tuple contains the i-th element from each of the argument sequences.</td>
-</tr>
-</tbody>
-</table>
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="classes">
-<h2>1.1.2. Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -435,7 +184,7 @@
 <td>bytearray(string, encoding[, errors]) -&gt; bytearray.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/__builtin__.bytes.html#__builtin__.bytes" title="__builtin__.bytes"><code class="xref py py-obj docutils literal"><span class="pre">bytes</span></code></a></td>
-<td>alias of <a class="reference internal" href="generated/__builtin__.str.html#__builtin__.str" title="__builtin__.str"><code class="xref py py-class docutils literal"><span class="pre">str</span></code></a></td>
+<td>alias of <a class="reference internal" href="../02_builtin_functions/02.html#str" title="str"><code class="xref py py-class docutils literal"><span class="pre">str</span></code></a></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/__builtin__.classmethod.html#__builtin__.classmethod" title="__builtin__.classmethod"><code class="xref py py-obj docutils literal"><span class="pre">classmethod</span></code></a></td>
 <td>Convert a function to be a class method.</td>
@@ -511,6 +260,161 @@
 <div class="toctree-wrapper compound">
 </div>
 </div>
+<div class="section" id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.ArithmeticError.html#__builtin__.ArithmeticError" title="__builtin__.ArithmeticError"><code class="xref py py-obj docutils literal"><span class="pre">ArithmeticError</span></code></a></td>
+<td>Base class for arithmetic errors.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.AssertionError.html#__builtin__.AssertionError" title="__builtin__.AssertionError"><code class="xref py py-obj docutils literal"><span class="pre">AssertionError</span></code></a></td>
+<td>Assertion failed.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.AttributeError.html#__builtin__.AttributeError" title="__builtin__.AttributeError"><code class="xref py py-obj docutils literal"><span class="pre">AttributeError</span></code></a></td>
+<td>Attribute not found.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.BaseException.html#__builtin__.BaseException" title="__builtin__.BaseException"><code class="xref py py-obj docutils literal"><span class="pre">BaseException</span></code></a></td>
+<td>Common base class for all exceptions</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.BufferError.html#__builtin__.BufferError" title="__builtin__.BufferError"><code class="xref py py-obj docutils literal"><span class="pre">BufferError</span></code></a></td>
+<td>Buffer error.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.BytesWarning.html#__builtin__.BytesWarning" title="__builtin__.BytesWarning"><code class="xref py py-obj docutils literal"><span class="pre">BytesWarning</span></code></a></td>
+<td>Base class for warnings about bytes and buffer related problems, mostly related to conversion from str or comparing to str.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.DeprecationWarning.html#__builtin__.DeprecationWarning" title="__builtin__.DeprecationWarning"><code class="xref py py-obj docutils literal"><span class="pre">DeprecationWarning</span></code></a></td>
+<td>Base class for warnings about deprecated features.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.EOFError.html#__builtin__.EOFError" title="__builtin__.EOFError"><code class="xref py py-obj docutils literal"><span class="pre">EOFError</span></code></a></td>
+<td>Read beyond end of file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.EnvironmentError.html#__builtin__.EnvironmentError" title="__builtin__.EnvironmentError"><code class="xref py py-obj docutils literal"><span class="pre">EnvironmentError</span></code></a></td>
+<td>Base class for I/O related errors.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.Exception.html#__builtin__.Exception" title="__builtin__.Exception"><code class="xref py py-obj docutils literal"><span class="pre">Exception</span></code></a></td>
+<td>Common base class for all non-exit exceptions.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.FloatingPointError.html#__builtin__.FloatingPointError" title="__builtin__.FloatingPointError"><code class="xref py py-obj docutils literal"><span class="pre">FloatingPointError</span></code></a></td>
+<td>Floating point operation failed.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.FutureWarning.html#__builtin__.FutureWarning" title="__builtin__.FutureWarning"><code class="xref py py-obj docutils literal"><span class="pre">FutureWarning</span></code></a></td>
+<td>Base class for warnings about constructs that will change semantically in the future.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.GeneratorExit.html#__builtin__.GeneratorExit" title="__builtin__.GeneratorExit"><code class="xref py py-obj docutils literal"><span class="pre">GeneratorExit</span></code></a></td>
+<td>Request that a generator exit.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.IOError.html#__builtin__.IOError" title="__builtin__.IOError"><code class="xref py py-obj docutils literal"><span class="pre">IOError</span></code></a></td>
+<td>I/O operation failed.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.ImportError.html#__builtin__.ImportError" title="__builtin__.ImportError"><code class="xref py py-obj docutils literal"><span class="pre">ImportError</span></code></a></td>
+<td>Import can&#8217;t find module, or can&#8217;t find name in module.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.ImportWarning.html#__builtin__.ImportWarning" title="__builtin__.ImportWarning"><code class="xref py py-obj docutils literal"><span class="pre">ImportWarning</span></code></a></td>
+<td>Base class for warnings about probable mistakes in module imports</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.IndentationError.html#__builtin__.IndentationError" title="__builtin__.IndentationError"><code class="xref py py-obj docutils literal"><span class="pre">IndentationError</span></code></a></td>
+<td>Improper indentation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.IndexError.html#__builtin__.IndexError" title="__builtin__.IndexError"><code class="xref py py-obj docutils literal"><span class="pre">IndexError</span></code></a></td>
+<td>Sequence index out of range.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.KeyError.html#__builtin__.KeyError" title="__builtin__.KeyError"><code class="xref py py-obj docutils literal"><span class="pre">KeyError</span></code></a></td>
+<td>Mapping key not found.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.KeyboardInterrupt.html#__builtin__.KeyboardInterrupt" title="__builtin__.KeyboardInterrupt"><code class="xref py py-obj docutils literal"><span class="pre">KeyboardInterrupt</span></code></a></td>
+<td>Program interrupted by user.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.LookupError.html#__builtin__.LookupError" title="__builtin__.LookupError"><code class="xref py py-obj docutils literal"><span class="pre">LookupError</span></code></a></td>
+<td>Base class for lookup errors.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.MemoryError.html#__builtin__.MemoryError" title="__builtin__.MemoryError"><code class="xref py py-obj docutils literal"><span class="pre">MemoryError</span></code></a></td>
+<td>Out of memory.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.NameError.html#__builtin__.NameError" title="__builtin__.NameError"><code class="xref py py-obj docutils literal"><span class="pre">NameError</span></code></a></td>
+<td>Name not found globally.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.NotImplementedError.html#__builtin__.NotImplementedError" title="__builtin__.NotImplementedError"><code class="xref py py-obj docutils literal"><span class="pre">NotImplementedError</span></code></a></td>
+<td>Method or function hasn&#8217;t been implemented yet.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.OSError.html#__builtin__.OSError" title="__builtin__.OSError"><code class="xref py py-obj docutils literal"><span class="pre">OSError</span></code></a></td>
+<td>OS system call failed.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.OverflowError.html#__builtin__.OverflowError" title="__builtin__.OverflowError"><code class="xref py py-obj docutils literal"><span class="pre">OverflowError</span></code></a></td>
+<td>Result too large to be represented.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.PendingDeprecationWarning.html#__builtin__.PendingDeprecationWarning" title="__builtin__.PendingDeprecationWarning"><code class="xref py py-obj docutils literal"><span class="pre">PendingDeprecationWarning</span></code></a></td>
+<td>Base class for warnings about features which will be deprecated in the future.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.ReferenceError.html#__builtin__.ReferenceError" title="__builtin__.ReferenceError"><code class="xref py py-obj docutils literal"><span class="pre">ReferenceError</span></code></a></td>
+<td>Weak ref proxy used after referent went away.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.RuntimeError.html#__builtin__.RuntimeError" title="__builtin__.RuntimeError"><code class="xref py py-obj docutils literal"><span class="pre">RuntimeError</span></code></a></td>
+<td>Unspecified run-time error.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.RuntimeWarning.html#__builtin__.RuntimeWarning" title="__builtin__.RuntimeWarning"><code class="xref py py-obj docutils literal"><span class="pre">RuntimeWarning</span></code></a></td>
+<td>Base class for warnings about dubious runtime behavior.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.StandardError.html#__builtin__.StandardError" title="__builtin__.StandardError"><code class="xref py py-obj docutils literal"><span class="pre">StandardError</span></code></a></td>
+<td>Base class for all standard Python exceptions that do not represent interpreter exiting.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.StopIteration.html#__builtin__.StopIteration" title="__builtin__.StopIteration"><code class="xref py py-obj docutils literal"><span class="pre">StopIteration</span></code></a></td>
+<td>Signal the end from iterator.next().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.SyntaxError.html#__builtin__.SyntaxError" title="__builtin__.SyntaxError"><code class="xref py py-obj docutils literal"><span class="pre">SyntaxError</span></code></a></td>
+<td>Invalid syntax.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.SyntaxWarning.html#__builtin__.SyntaxWarning" title="__builtin__.SyntaxWarning"><code class="xref py py-obj docutils literal"><span class="pre">SyntaxWarning</span></code></a></td>
+<td>Base class for warnings about dubious syntax.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.SystemError.html#__builtin__.SystemError" title="__builtin__.SystemError"><code class="xref py py-obj docutils literal"><span class="pre">SystemError</span></code></a></td>
+<td>Internal error in the Python interpreter.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.SystemExit.html#__builtin__.SystemExit" title="__builtin__.SystemExit"><code class="xref py py-obj docutils literal"><span class="pre">SystemExit</span></code></a></td>
+<td>Request to exit from the interpreter.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.TabError.html#__builtin__.TabError" title="__builtin__.TabError"><code class="xref py py-obj docutils literal"><span class="pre">TabError</span></code></a></td>
+<td>Improper mixture of spaces and tabs.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.TypeError.html#__builtin__.TypeError" title="__builtin__.TypeError"><code class="xref py py-obj docutils literal"><span class="pre">TypeError</span></code></a></td>
+<td>Inappropriate argument type.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.UnboundLocalError.html#__builtin__.UnboundLocalError" title="__builtin__.UnboundLocalError"><code class="xref py py-obj docutils literal"><span class="pre">UnboundLocalError</span></code></a></td>
+<td>Local name referenced but not bound to a value.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.UnicodeDecodeError.html#__builtin__.UnicodeDecodeError" title="__builtin__.UnicodeDecodeError"><code class="xref py py-obj docutils literal"><span class="pre">UnicodeDecodeError</span></code></a></td>
+<td>Unicode decoding error.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.UnicodeEncodeError.html#__builtin__.UnicodeEncodeError" title="__builtin__.UnicodeEncodeError"><code class="xref py py-obj docutils literal"><span class="pre">UnicodeEncodeError</span></code></a></td>
+<td>Unicode encoding error.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.UnicodeError.html#__builtin__.UnicodeError" title="__builtin__.UnicodeError"><code class="xref py py-obj docutils literal"><span class="pre">UnicodeError</span></code></a></td>
+<td>Unicode related error.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.UnicodeTranslateError.html#__builtin__.UnicodeTranslateError" title="__builtin__.UnicodeTranslateError"><code class="xref py py-obj docutils literal"><span class="pre">UnicodeTranslateError</span></code></a></td>
+<td>Unicode translation error.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.UnicodeWarning.html#__builtin__.UnicodeWarning" title="__builtin__.UnicodeWarning"><code class="xref py py-obj docutils literal"><span class="pre">UnicodeWarning</span></code></a></td>
+<td>Base class for warnings about Unicode related problems, mostly related to conversion problems.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.UserWarning.html#__builtin__.UserWarning" title="__builtin__.UserWarning"><code class="xref py py-obj docutils literal"><span class="pre">UserWarning</span></code></a></td>
+<td>Base class for warnings generated by user code.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.ValueError.html#__builtin__.ValueError" title="__builtin__.ValueError"><code class="xref py py-obj docutils literal"><span class="pre">ValueError</span></code></a></td>
+<td>Inappropriate argument value (of correct type).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="__builtin__.Warning.html#__builtin__.Warning" title="__builtin__.Warning"><code class="xref py py-obj docutils literal"><span class="pre">Warning</span></code></a></td>
+<td>Base class for warning categories.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="__builtin__.ZeroDivisionError.html#__builtin__.ZeroDivisionError" title="__builtin__.ZeroDivisionError"><code class="xref py py-obj docutils literal"><span class="pre">ZeroDivisionError</span></code></a></td>
+<td>Second argument to a division or modulo operation was zero.</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -520,10 +424,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="__builtin__.abs.html" class="btn btn-neutral float-right" title="1.1.1.1. __builtin__.abs" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/__builtin__.basestring.html" class="btn btn-neutral float-right" title="__builtin__.basestring" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../main1.html" class="btn btn-neutral" title="1. Frequently used" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="sysconfig.html" class="btn btn-neutral" title="sysconfig" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -554,7 +458,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'1',
+            VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -563,6 +467,7 @@
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/copybutton.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   

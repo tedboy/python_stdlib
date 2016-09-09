@@ -1,0 +1,55 @@
+:mod:`smtpd`
+============
+
+.. automodule:: smtpd
+
+   
+   
+   Functions
+   ---------
+   .. autosummary::
+      :toctree:
+      :template:function_custom.rst
+      
+   
+      parseargs
+      usage
+   
+   
+
+   
+   
+   Classes
+   -------
+   .. autosummary::
+      :toctree:generated/
+      :template:class_all_methods.rst
+
+   
+      DebuggingServer
+      Devnull
+      MailmanProxy
+      Options
+      PureProxy
+      SMTPChannel
+      SMTPServer
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/smtpd.DebuggingServer
+       generated/smtpd.Devnull
+       generated/smtpd.MailmanProxy
+       generated/smtpd.Options
+       generated/smtpd.PureProxy
+       generated/smtpd.SMTPChannel
+       generated/smtpd.SMTPServer
+
+   
+   
+
+   
+   
+   

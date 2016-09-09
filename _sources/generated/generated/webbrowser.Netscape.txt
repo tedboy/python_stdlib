@@ -1,9 +1,7 @@
-webbrowser.Netscape
-===================
-
+:class:`webbrowser.Netscape`
+============================
 .. currentmodule:: webbrowser
 .. autoclass:: Netscape
-   :members: __init__
    :undoc-members:
 
 
@@ -13,7 +11,14 @@ Methods
    :toctree:
 
 
+   ~Netscape.__format__
    ~Netscape.__init__
+   ~Netscape.__new__
+   ~Netscape.__reduce__
+   ~Netscape.__reduce_ex__
+   ~Netscape.__sizeof__
+   ~Netscape.__subclasshook__
+   ~Netscape._invoke
    ~Netscape.open
    ~Netscape.open_new
    ~Netscape.open_new_tab
