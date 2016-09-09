@@ -1,0 +1,1800 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>api &mdash; Python Standard Library</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/py.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="index.html"/>
+        <link rel="next" title="exceptions" href="generated/exceptions.html"/>
+        <link rel="prev" title="9. ColorPicker — Color selection dialog" href="37_mac_services/colorpicker.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="31to37.html">Ch 31 - 37</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">api</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#built-in-exceptions">06 Built-in Exceptions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/exceptions.html"><code class="docutils literal"><span class="pre">exceptions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#string-services">07 String Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/string.html"><code class="docutils literal"><span class="pre">string</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/re.html"><code class="docutils literal"><span class="pre">re</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/struct.html"><code class="docutils literal"><span class="pre">struct</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/difflib.html"><code class="docutils literal"><span class="pre">difflib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/StringIO.html"><code class="docutils literal"><span class="pre">StringIO</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/cStringIO.html"><code class="docutils literal"><span class="pre">cStringIO</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/textwrap.html"><code class="docutils literal"><span class="pre">textwrap</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/codecs.html"><code class="docutils literal"><span class="pre">codecs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/encodings.html"><code class="docutils literal"><span class="pre">encodings</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/encodings.idna.html"><code class="docutils literal"><span class="pre">encodings.idna</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/encodings.utf_8_sig.html"><code class="docutils literal"><span class="pre">encodings.utf_8_sig</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/unicodedata.html"><code class="docutils literal"><span class="pre">unicodedata</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/stringprep.html"><code class="docutils literal"><span class="pre">stringprep</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fpformat.html"><code class="docutils literal"><span class="pre">fpformat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-types">08 Data Types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/datetime.html"><code class="docutils literal"><span class="pre">datetime</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/calendar.html"><code class="docutils literal"><span class="pre">calendar</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/collections.html"><code class="docutils literal"><span class="pre">collections</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/heapq.html"><code class="docutils literal"><span class="pre">heapq</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/bisect.html"><code class="docutils literal"><span class="pre">bisect</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/array.html"><code class="docutils literal"><span class="pre">array</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/sets.html"><code class="docutils literal"><span class="pre">sets</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/sched.html"><code class="docutils literal"><span class="pre">sched</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/mutex.html"><code class="docutils literal"><span class="pre">mutex</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/Queue.html"><code class="docutils literal"><span class="pre">Queue</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/weakref.html"><code class="docutils literal"><span class="pre">weakref</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/UserDict.html"><code class="docutils literal"><span class="pre">UserDict</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/UserList.html"><code class="docutils literal"><span class="pre">UserList</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/UserString.html"><code class="docutils literal"><span class="pre">UserString</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/types.html"><code class="docutils literal"><span class="pre">types</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/new.html"><code class="docutils literal"><span class="pre">new</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/copy.html"><code class="docutils literal"><span class="pre">copy</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pprint.html"><code class="docutils literal"><span class="pre">pprint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/repr.html"><code class="docutils literal"><span class="pre">repr</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/numbers.html"><code class="docutils literal"><span class="pre">numbers</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/math.html"><code class="docutils literal"><span class="pre">math</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/cmath.html"><code class="docutils literal"><span class="pre">cmath</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/decimal.html"><code class="docutils literal"><span class="pre">decimal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fractions.html"><code class="docutils literal"><span class="pre">fractions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/random.html"><code class="docutils literal"><span class="pre">random</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/itertools.html"><code class="docutils literal"><span class="pre">itertools</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/functools.html"><code class="docutils literal"><span class="pre">functools</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/operator.html"><code class="docutils literal"><span class="pre">operator</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#file-and-directory-access">10 File and Directory Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/os.path.html"><code class="docutils literal"><span class="pre">os.path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fileinput.html"><code class="docutils literal"><span class="pre">fileinput</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/stat.html"><code class="docutils literal"><span class="pre">stat</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/statvfs.html"><code class="docutils literal"><span class="pre">statvfs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/filecmp.html"><code class="docutils literal"><span class="pre">filecmp</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/tempfile.html"><code class="docutils literal"><span class="pre">tempfile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/glob.html"><code class="docutils literal"><span class="pre">glob</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fnmatch.html"><code class="docutils literal"><span class="pre">fnmatch</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/linecache.html"><code class="docutils literal"><span class="pre">linecache</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/shutil.html"><code class="docutils literal"><span class="pre">shutil</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/dircache.html"><code class="docutils literal"><span class="pre">dircache</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/macpath.html"><code class="docutils literal"><span class="pre">macpath</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-persistence">11 Data Persistence</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pickle.html"><code class="docutils literal"><span class="pre">pickle</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/cPickle.html"><code class="docutils literal"><span class="pre">cPickle</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/copy_reg.html"><code class="docutils literal"><span class="pre">copy_reg</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/shelve.html"><code class="docutils literal"><span class="pre">shelve</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/marshal.html"><code class="docutils literal"><span class="pre">marshal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/anydbm.html"><code class="docutils literal"><span class="pre">anydbm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/whichdb.html"><code class="docutils literal"><span class="pre">whichdb</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/dumbdbm.html"><code class="docutils literal"><span class="pre">dumbdbm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/sqlite3.html"><code class="docutils literal"><span class="pre">sqlite3</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-compression-and-archiving">12 Data Compression and Archiving</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/zlib.html"><code class="docutils literal"><span class="pre">zlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/gzip.html"><code class="docutils literal"><span class="pre">gzip</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/bz2.html"><code class="docutils literal"><span class="pre">bz2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/zipfile.html"><code class="docutils literal"><span class="pre">zipfile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/tarfile.html"><code class="docutils literal"><span class="pre">tarfile</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#file-formats">13 File Formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/csv.html"><code class="docutils literal"><span class="pre">csv</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ConfigParser.html"><code class="docutils literal"><span class="pre">ConfigParser</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/robotparser.html"><code class="docutils literal"><span class="pre">robotparser</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/netrc.html"><code class="docutils literal"><span class="pre">netrc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xdrlib.html"><code class="docutils literal"><span class="pre">xdrlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/plistlib.html"><code class="docutils literal"><span class="pre">plistlib</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#cryptographic-services">14 Cryptographic Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/hashlib.html"><code class="docutils literal"><span class="pre">hashlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/hmac.html"><code class="docutils literal"><span class="pre">hmac</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/md5.html"><code class="docutils literal"><span class="pre">md5</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/sha.html"><code class="docutils literal"><span class="pre">sha</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#generic-operating-system-services">15 Generic Operating System Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/os.html"><code class="docutils literal"><span class="pre">os</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/io.html"><code class="docutils literal"><span class="pre">io</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/time.html"><code class="docutils literal"><span class="pre">time</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/argparse.html"><code class="docutils literal"><span class="pre">argparse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/optparse.html"><code class="docutils literal"><span class="pre">optparse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/getopt.html"><code class="docutils literal"><span class="pre">getopt</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/logging.html"><code class="docutils literal"><span class="pre">logging</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/logging.config.html"><code class="docutils literal"><span class="pre">logging.config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/logging.handlers.html"><code class="docutils literal"><span class="pre">logging.handlers</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/getpass.html"><code class="docutils literal"><span class="pre">getpass</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/curses.html"><code class="docutils literal"><span class="pre">curses</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/curses.ascii.html"><code class="docutils literal"><span class="pre">curses.ascii</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/curses.panel.html"><code class="docutils literal"><span class="pre">curses.panel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/platform.html"><code class="docutils literal"><span class="pre">platform</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/errno.html"><code class="docutils literal"><span class="pre">errno</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ctypes.html"><code class="docutils literal"><span class="pre">ctypes</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#optional-operating-system-services">16 Optional Operating System Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/select.html"><code class="docutils literal"><span class="pre">select</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/threading.html"><code class="docutils literal"><span class="pre">threading</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/thread.html"><code class="docutils literal"><span class="pre">thread</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/dummy_threading.html"><code class="docutils literal"><span class="pre">dummy_threading</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/dummy_thread.html"><code class="docutils literal"><span class="pre">dummy_thread</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/multiprocessing.html"><code class="docutils literal"><span class="pre">multiprocessing</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/mmap.html"><code class="docutils literal"><span class="pre">mmap</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/readline.html"><code class="docutils literal"><span class="pre">readline</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/rlcompleter.html"><code class="docutils literal"><span class="pre">rlcompleter</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/subprocess.html"><code class="docutils literal"><span class="pre">subprocess</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/socket.html"><code class="docutils literal"><span class="pre">socket</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ssl.html"><code class="docutils literal"><span class="pre">ssl</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/signal.html"><code class="docutils literal"><span class="pre">signal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/popen2.html"><code class="docutils literal"><span class="pre">popen2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/asyncore.html"><code class="docutils literal"><span class="pre">asyncore</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/asynchat.html"><code class="docutils literal"><span class="pre">asynchat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#internet-data-handling">18 Internet Data Handling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/email.html"><code class="docutils literal"><span class="pre">email</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/json.html"><code class="docutils literal"><span class="pre">json</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/mailcap.html"><code class="docutils literal"><span class="pre">mailcap</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/mailbox.html"><code class="docutils literal"><span class="pre">mailbox</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/mhlib.html"><code class="docutils literal"><span class="pre">mhlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/mimetools.html"><code class="docutils literal"><span class="pre">mimetools</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/mimetypes.html"><code class="docutils literal"><span class="pre">mimetypes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/MimeWriter.html"><code class="docutils literal"><span class="pre">MimeWriter</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/mimify.html"><code class="docutils literal"><span class="pre">mimify</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/multifile.html"><code class="docutils literal"><span class="pre">multifile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/rfc822.html"><code class="docutils literal"><span class="pre">rfc822</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/base64.html"><code class="docutils literal"><span class="pre">base64</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/binhex.html"><code class="docutils literal"><span class="pre">binhex</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/binascii.html"><code class="docutils literal"><span class="pre">binascii</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/quopri.html"><code class="docutils literal"><span class="pre">quopri</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/uu.html"><code class="docutils literal"><span class="pre">uu</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#structured-markup-processing-tools">19 Structured Markup Processing Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/HTMLParser.html"><code class="docutils literal"><span class="pre">HTMLParser</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/sgmllib.html"><code class="docutils literal"><span class="pre">sgmllib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/htmllib.html"><code class="docutils literal"><span class="pre">htmllib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xml.html"><code class="docutils literal"><span class="pre">xml</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xml.etree.ElementTree.html"><code class="docutils literal"><span class="pre">xml.etree.ElementTree</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xml.dom.html"><code class="docutils literal"><span class="pre">xml.dom</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xml.dom.minidom.html"><code class="docutils literal"><span class="pre">xml.dom.minidom</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xml.dom.pulldom.html"><code class="docutils literal"><span class="pre">xml.dom.pulldom</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xml.sax.html"><code class="docutils literal"><span class="pre">xml.sax</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xml.sax.handler.html"><code class="docutils literal"><span class="pre">xml.sax.handler</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xml.sax.saxutils.html"><code class="docutils literal"><span class="pre">xml.sax.saxutils</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xml.sax.xmlreader.html"><code class="docutils literal"><span class="pre">xml.sax.xmlreader</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pyexpat.html"><code class="docutils literal"><span class="pre">pyexpat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#internet-protocols-and-support">20 Internet Protocols and Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/webbrowser.html"><code class="docutils literal"><span class="pre">webbrowser</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/cgi.html"><code class="docutils literal"><span class="pre">cgi</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/cgitb.html"><code class="docutils literal"><span class="pre">cgitb</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/wsgiref.html"><code class="docutils literal"><span class="pre">wsgiref</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/urllib.html"><code class="docutils literal"><span class="pre">urllib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/urllib2.html"><code class="docutils literal"><span class="pre">urllib2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/httplib.html"><code class="docutils literal"><span class="pre">httplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ftplib.html"><code class="docutils literal"><span class="pre">ftplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/poplib.html"><code class="docutils literal"><span class="pre">poplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/imaplib.html"><code class="docutils literal"><span class="pre">imaplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/nntplib.html"><code class="docutils literal"><span class="pre">nntplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/smtplib.html"><code class="docutils literal"><span class="pre">smtplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/smtpd.html"><code class="docutils literal"><span class="pre">smtpd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/telnetlib.html"><code class="docutils literal"><span class="pre">telnetlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/uuid.html"><code class="docutils literal"><span class="pre">uuid</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/urlparse.html"><code class="docutils literal"><span class="pre">urlparse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/SocketServer.html"><code class="docutils literal"><span class="pre">SocketServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/BaseHTTPServer.html"><code class="docutils literal"><span class="pre">BaseHTTPServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/SimpleHTTPServer.html"><code class="docutils literal"><span class="pre">SimpleHTTPServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/CGIHTTPServer.html"><code class="docutils literal"><span class="pre">CGIHTTPServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/cookielib.html"><code class="docutils literal"><span class="pre">cookielib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/Cookie.html"><code class="docutils literal"><span class="pre">Cookie</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/xmlrpclib.html"><code class="docutils literal"><span class="pre">xmlrpclib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/SimpleXMLRPCServer.html"><code class="docutils literal"><span class="pre">SimpleXMLRPCServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/DocXMLRPCServer.html"><code class="docutils literal"><span class="pre">DocXMLRPCServer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#multimedia-services">21 Multimedia Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/audioop.html"><code class="docutils literal"><span class="pre">audioop</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/aifc.html"><code class="docutils literal"><span class="pre">aifc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/sunau.html"><code class="docutils literal"><span class="pre">sunau</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/wave.html"><code class="docutils literal"><span class="pre">wave</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/chunk.html"><code class="docutils literal"><span class="pre">chunk</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/colorsys.html"><code class="docutils literal"><span class="pre">colorsys</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/imghdr.html"><code class="docutils literal"><span class="pre">imghdr</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/sndhdr.html"><code class="docutils literal"><span class="pre">sndhdr</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ossaudiodev.html"><code class="docutils literal"><span class="pre">ossaudiodev</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#internationalization">22 Internationalization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/gettext.html"><code class="docutils literal"><span class="pre">gettext</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/locale.html"><code class="docutils literal"><span class="pre">locale</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#program-frameworks">23 Program Frameworks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/cmd.html"><code class="docutils literal"><span class="pre">cmd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/shlex.html"><code class="docutils literal"><span class="pre">shlex</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/Tkinter.html"><code class="docutils literal"><span class="pre">Tkinter</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ttk.html"><code class="docutils literal"><span class="pre">ttk</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/Tix.html"><code class="docutils literal"><span class="pre">Tix</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ScrolledText.html"><code class="docutils literal"><span class="pre">ScrolledText</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/turtle.html"><code class="docutils literal"><span class="pre">turtle</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#development-tools">25 Development Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pydoc.html"><code class="docutils literal"><span class="pre">pydoc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/doctest.html"><code class="docutils literal"><span class="pre">doctest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/unittest.html"><code class="docutils literal"><span class="pre">unittest</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/test.html"><code class="docutils literal"><span class="pre">test</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#debugging-and-profiling">26 Debugging and Profiling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/bdb.html"><code class="docutils literal"><span class="pre">bdb</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pdb.html"><code class="docutils literal"><span class="pre">pdb</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/profile.html"><code class="docutils literal"><span class="pre">profile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/cProfile.html"><code class="docutils literal"><span class="pre">cProfile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/hotshot.html"><code class="docutils literal"><span class="pre">hotshot</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/timeit.html"><code class="docutils literal"><span class="pre">timeit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/trace.html"><code class="docutils literal"><span class="pre">trace</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#software-packaging-and-distribution">27 Software Packaging and Distribution</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/distutils.html"><code class="docutils literal"><span class="pre">distutils</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#python-runtime-services">28 Python Runtime Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/sys.html"><code class="docutils literal"><span class="pre">sys</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/sysconfig.html"><code class="docutils literal"><span class="pre">sysconfig</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/__builtin__.html"><code class="docutils literal"><span class="pre">__builtin__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/future_builtins.html"><code class="docutils literal"><span class="pre">future_builtins</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/__main__.html"><code class="docutils literal"><span class="pre">__main__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/warnings.html"><code class="docutils literal"><span class="pre">warnings</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/contextlib.html"><code class="docutils literal"><span class="pre">contextlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/abc.html"><code class="docutils literal"><span class="pre">abc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/atexit.html"><code class="docutils literal"><span class="pre">atexit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/traceback.html"><code class="docutils literal"><span class="pre">traceback</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/__future__.html"><code class="docutils literal"><span class="pre">__future__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/gc.html"><code class="docutils literal"><span class="pre">gc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/inspect.html"><code class="docutils literal"><span class="pre">inspect</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/site.html"><code class="docutils literal"><span class="pre">site</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/user.html"><code class="docutils literal"><span class="pre">user</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-python-interpreters">29 Custom Python Interpreters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/code.html"><code class="docutils literal"><span class="pre">code</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/codeop.html"><code class="docutils literal"><span class="pre">codeop</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#restricted-execution">30 Restricted Execution</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/rexec.html"><code class="docutils literal"><span class="pre">rexec</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/Bastion.html"><code class="docutils literal"><span class="pre">Bastion</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#importing-modules">31 Importing Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/imp.html"><code class="docutils literal"><span class="pre">imp</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/importlib.html"><code class="docutils literal"><span class="pre">importlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/imputil.html"><code class="docutils literal"><span class="pre">imputil</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/zipimport.html"><code class="docutils literal"><span class="pre">zipimport</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pkgutil.html"><code class="docutils literal"><span class="pre">pkgutil</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/modulefinder.html"><code class="docutils literal"><span class="pre">modulefinder</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/runpy.html"><code class="docutils literal"><span class="pre">runpy</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#python-language-services">32 Python Language Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/parser.html"><code class="docutils literal"><span class="pre">parser</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ast.html"><code class="docutils literal"><span class="pre">ast</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/symtable.html"><code class="docutils literal"><span class="pre">symtable</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/symbol.html"><code class="docutils literal"><span class="pre">symbol</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/token.html"><code class="docutils literal"><span class="pre">token</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/keyword.html"><code class="docutils literal"><span class="pre">keyword</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/tokenize.html"><code class="docutils literal"><span class="pre">tokenize</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/tabnanny.html"><code class="docutils literal"><span class="pre">tabnanny</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pyclbr.html"><code class="docutils literal"><span class="pre">pyclbr</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/py_compile.html"><code class="docutils literal"><span class="pre">py_compile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/compileall.html"><code class="docutils literal"><span class="pre">compileall</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/dis.html"><code class="docutils literal"><span class="pre">dis</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pickletools.html"><code class="docutils literal"><span class="pre">pickletools</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#depr-python-compiler-package">33 (depr) Python compiler package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/compiler.html"><code class="docutils literal"><span class="pre">compiler</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#miscellaneous-services">34 Miscellaneous Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/formatter.html"><code class="docutils literal"><span class="pre">formatter</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ms-windows-specific-services">35 MS Windows Specific Services</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#unix-specific-services">36. Unix Specific Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/posix.html"><code class="docutils literal"><span class="pre">posix</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pwd.html"><code class="docutils literal"><span class="pre">pwd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/spwd.html"><code class="docutils literal"><span class="pre">spwd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/grp.html"><code class="docutils literal"><span class="pre">grp</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/crypt.html"><code class="docutils literal"><span class="pre">crypt</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/termios.html"><code class="docutils literal"><span class="pre">termios</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/tty.html"><code class="docutils literal"><span class="pre">tty</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pty.html"><code class="docutils literal"><span class="pre">pty</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/fcntl.html"><code class="docutils literal"><span class="pre">fcntl</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pipes.html"><code class="docutils literal"><span class="pre">pipes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/posixfile.html"><code class="docutils literal"><span class="pre">posixfile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/resource.html"><code class="docutils literal"><span class="pre">resource</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/nis.html"><code class="docutils literal"><span class="pre">nis</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/syslog.html"><code class="docutils literal"><span class="pre">syslog</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/commands.html"><code class="docutils literal"><span class="pre">commands</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#mac-os-x-specific-services">37 Mac OS X specific services</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>api</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api_all.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api">
+<h1>api<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="built-in-exceptions">
+<h2>06 Built-in Exceptions<a class="headerlink" href="#built-in-exceptions" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/exceptions.html#module-exceptions" title="exceptions"><code class="xref py py-obj docutils literal"><span class="pre">exceptions</span></code></a></td>
+<td>Python&#8217;s standard exception class hierarchy.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="string-services">
+<h2>07 String Services<a class="headerlink" href="#string-services" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.html#module-string" title="string"><code class="xref py py-obj docutils literal"><span class="pre">string</span></code></a></td>
+<td>A collection of string operations (most are no longer used).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/re.html#module-re" title="re"><code class="xref py py-obj docutils literal"><span class="pre">re</span></code></a></td>
+<td>Support for regular expressions (RE).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/struct.html#module-struct" title="struct"><code class="xref py py-obj docutils literal"><span class="pre">struct</span></code></a></td>
+<td>Functions to convert between Python values and C structs represented as Python strings.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/difflib.html#module-difflib" title="difflib"><code class="xref py py-obj docutils literal"><span class="pre">difflib</span></code></a></td>
+<td>Module difflib &#8211; helpers for computing deltas between objects.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/StringIO.html#module-StringIO" title="StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
+<td>File-like objects that read from or write to a string buffer.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cStringIO.html#module-cStringIO" title="cStringIO"><code class="xref py py-obj docutils literal"><span class="pre">cStringIO</span></code></a></td>
+<td>A simple fast partial StringIO replacement.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/textwrap.html#module-textwrap" title="textwrap"><code class="xref py py-obj docutils literal"><span class="pre">textwrap</span></code></a></td>
+<td>Text wrapping and filling.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.html#module-codecs" title="codecs"><code class="xref py py-obj docutils literal"><span class="pre">codecs</span></code></a></td>
+<td>codecs &#8211; Python Codec Registry, API and helpers.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/encodings.html#module-encodings" title="encodings"><code class="xref py py-obj docutils literal"><span class="pre">encodings</span></code></a></td>
+<td>Standard &#8220;encodings&#8221; Package</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/encodings.idna.html#module-encodings.idna" title="encodings.idna"><code class="xref py py-obj docutils literal"><span class="pre">encodings.idna</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/encodings.utf_8_sig.html#module-encodings.utf_8_sig" title="encodings.utf_8_sig"><code class="xref py py-obj docutils literal"><span class="pre">encodings.utf_8_sig</span></code></a></td>
+<td>Python &#8216;utf-8-sig&#8217; Codec</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/unicodedata.html#module-unicodedata" title="unicodedata"><code class="xref py py-obj docutils literal"><span class="pre">unicodedata</span></code></a></td>
+<td>This module provides access to the Unicode Character Database which defines character properties for all Unicode characters.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/stringprep.html#module-stringprep" title="stringprep"><code class="xref py py-obj docutils literal"><span class="pre">stringprep</span></code></a></td>
+<td>Library that exposes various tables found in the StringPrep RFC 3454.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/fpformat.html#module-fpformat" title="fpformat"><code class="xref py py-obj docutils literal"><span class="pre">fpformat</span></code></a></td>
+<td>General floating point formatting functions.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="data-types">
+<h2>08 Data Types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/datetime.html#module-datetime" title="datetime"><code class="xref py py-obj docutils literal"><span class="pre">datetime</span></code></a></td>
+<td>Fast implementation of the datetime type.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/calendar.html#module-calendar" title="calendar"><code class="xref py py-obj docutils literal"><span class="pre">calendar</span></code></a></td>
+<td>Calendar printing functions</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/collections.html#module-collections" title="collections"><code class="xref py py-obj docutils literal"><span class="pre">collections</span></code></a></td>
+<td>This module implements specialized container datatypes providing alternatives to Python&#8217;s general purpose built-in containers, dict, list, set, and tuple.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/heapq.html#module-heapq" title="heapq"><code class="xref py py-obj docutils literal"><span class="pre">heapq</span></code></a></td>
+<td>Heap queue algorithm (a.k.a.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/bisect.html#module-bisect" title="bisect"><code class="xref py py-obj docutils literal"><span class="pre">bisect</span></code></a></td>
+<td>Bisection algorithms.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/array.html#module-array" title="array"><code class="xref py py-obj docutils literal"><span class="pre">array</span></code></a></td>
+<td>This module defines an object type which can efficiently represent an array of basic values: characters, integers, floating point numbers.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sets.html#module-sets" title="sets"><code class="xref py py-obj docutils literal"><span class="pre">sets</span></code></a></td>
+<td>Classes to represent arbitrary sets (including sets of sets).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sched.html#module-sched" title="sched"><code class="xref py py-obj docutils literal"><span class="pre">sched</span></code></a></td>
+<td>A generally useful event scheduler class.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/mutex.html#module-mutex" title="mutex"><code class="xref py py-obj docutils literal"><span class="pre">mutex</span></code></a></td>
+<td>Mutual exclusion &#8211; for use with module sched</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/Queue.html#module-Queue" title="Queue"><code class="xref py py-obj docutils literal"><span class="pre">Queue</span></code></a></td>
+<td>A multi-producer, multi-consumer queue.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/weakref.html#module-weakref" title="weakref"><code class="xref py py-obj docutils literal"><span class="pre">weakref</span></code></a></td>
+<td>Weak reference support for Python.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/UserDict.html#module-UserDict" title="UserDict"><code class="xref py py-obj docutils literal"><span class="pre">UserDict</span></code></a></td>
+<td>A more or less complete user-defined wrapper around dictionary objects.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/UserList.html#module-UserList" title="UserList"><code class="xref py py-obj docutils literal"><span class="pre">UserList</span></code></a></td>
+<td>A more or less complete user-defined wrapper around list objects.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/UserString.html#module-UserString" title="UserString"><code class="xref py py-obj docutils literal"><span class="pre">UserString</span></code></a></td>
+<td>A user-defined wrapper around string objects</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/types.html#module-types" title="types"><code class="xref py py-obj docutils literal"><span class="pre">types</span></code></a></td>
+<td>Define names for all type symbols known in the standard interpreter.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/new.html#module-new" title="new"><code class="xref py py-obj docutils literal"><span class="pre">new</span></code></a></td>
+<td>Create new objects of various types.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/copy.html#module-copy" title="copy"><code class="xref py py-obj docutils literal"><span class="pre">copy</span></code></a></td>
+<td>Generic (shallow and deep) copying operations.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pprint.html#module-pprint" title="pprint"><code class="xref py py-obj docutils literal"><span class="pre">pprint</span></code></a></td>
+<td>Support to pretty-print lists, tuples, &amp; dictionaries recursively.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/repr.html#module-repr" title="repr"><code class="xref py py-obj docutils literal"><span class="pre">repr</span></code></a></td>
+<td>Redo the builtin repr() (representation) but with limits on most sizes.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="numeric-and-mathematical-methods">
+<h2>09 Numeric and Mathematical Methods<a class="headerlink" href="#numeric-and-mathematical-methods" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/numbers.html#module-numbers" title="numbers"><code class="xref py py-obj docutils literal"><span class="pre">numbers</span></code></a></td>
+<td>Abstract Base Classes (ABCs) for numbers, according to PEP 3141.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/math.html#module-math" title="math"><code class="xref py py-obj docutils literal"><span class="pre">math</span></code></a></td>
+<td>This module is always available.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cmath.html#module-cmath" title="cmath"><code class="xref py py-obj docutils literal"><span class="pre">cmath</span></code></a></td>
+<td>This module is always available.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/decimal.html#module-decimal" title="decimal"><code class="xref py py-obj docutils literal"><span class="pre">decimal</span></code></a></td>
+<td>This is a Py2.3 implementation of decimal floating point arithmetic based on</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/fractions.html#module-fractions" title="fractions"><code class="xref py py-obj docutils literal"><span class="pre">fractions</span></code></a></td>
+<td>Rational, infinite-precision, real numbers.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/random.html#module-random" title="random"><code class="xref py py-obj docutils literal"><span class="pre">random</span></code></a></td>
+<td>Random variable generators.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/itertools.html#module-itertools" title="itertools"><code class="xref py py-obj docutils literal"><span class="pre">itertools</span></code></a></td>
+<td>Functional tools for creating and using iterators.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/functools.html#module-functools" title="functools"><code class="xref py py-obj docutils literal"><span class="pre">functools</span></code></a></td>
+<td>functools.py - Tools for working with functions and callable objects</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/operator.html#module-operator" title="operator"><code class="xref py py-obj docutils literal"><span class="pre">operator</span></code></a></td>
+<td>Operator interface.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="file-and-directory-access">
+<h2>10 File and Directory Access<a class="headerlink" href="#file-and-directory-access" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.path.html#module-os.path" title="os.path"><code class="xref py py-obj docutils literal"><span class="pre">os.path</span></code></a></td>
+<td>Common operations on Posix pathnames.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/fileinput.html#module-fileinput" title="fileinput"><code class="xref py py-obj docutils literal"><span class="pre">fileinput</span></code></a></td>
+<td>Helper class to quickly write a loop over all standard input files.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/stat.html#module-stat" title="stat"><code class="xref py py-obj docutils literal"><span class="pre">stat</span></code></a></td>
+<td>Constants/functions for interpreting results of os.stat() and os.lstat().</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/statvfs.html#module-statvfs" title="statvfs"><code class="xref py py-obj docutils literal"><span class="pre">statvfs</span></code></a></td>
+<td>Constants for interpreting the results of os.statvfs() and os.fstatvfs().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/filecmp.html#module-filecmp" title="filecmp"><code class="xref py py-obj docutils literal"><span class="pre">filecmp</span></code></a></td>
+<td>Utilities for comparing files and directories.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/tempfile.html#module-tempfile" title="tempfile"><code class="xref py py-obj docutils literal"><span class="pre">tempfile</span></code></a></td>
+<td>Temporary files.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/glob.html#module-glob" title="glob"><code class="xref py py-obj docutils literal"><span class="pre">glob</span></code></a></td>
+<td>Filename globbing utility.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/fnmatch.html#module-fnmatch" title="fnmatch"><code class="xref py py-obj docutils literal"><span class="pre">fnmatch</span></code></a></td>
+<td>Filename matching with shell patterns.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/linecache.html#module-linecache" title="linecache"><code class="xref py py-obj docutils literal"><span class="pre">linecache</span></code></a></td>
+<td>Cache lines from files.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/shutil.html#module-shutil" title="shutil"><code class="xref py py-obj docutils literal"><span class="pre">shutil</span></code></a></td>
+<td>Utility functions for copying and archiving files and directory trees.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/dircache.html#module-dircache" title="dircache"><code class="xref py py-obj docutils literal"><span class="pre">dircache</span></code></a></td>
+<td>Read and cache directory listings.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.html#module-macpath" title="macpath"><code class="xref py py-obj docutils literal"><span class="pre">macpath</span></code></a></td>
+<td>Pathname and path-related operations for the Macintosh.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="data-persistence">
+<h2>11 Data Persistence<a class="headerlink" href="#data-persistence" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.html#module-pickle" title="pickle"><code class="xref py py-obj docutils literal"><span class="pre">pickle</span></code></a></td>
+<td>Create portable serialized representations of Python objects.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cPickle.html#module-cPickle" title="cPickle"><code class="xref py py-obj docutils literal"><span class="pre">cPickle</span></code></a></td>
+<td>C implementation and optimization of the Python pickle module.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/copy_reg.html#module-copy_reg" title="copy_reg"><code class="xref py py-obj docutils literal"><span class="pre">copy_reg</span></code></a></td>
+<td>Helper to provide extensibility for pickle/cPickle.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/shelve.html#module-shelve" title="shelve"><code class="xref py py-obj docutils literal"><span class="pre">shelve</span></code></a></td>
+<td>Manage shelves of pickled objects.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/marshal.html#module-marshal" title="marshal"><code class="xref py py-obj docutils literal"><span class="pre">marshal</span></code></a></td>
+<td>This module contains functions that can read and write Python values in a binary format.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/anydbm.html#module-anydbm" title="anydbm"><code class="xref py py-obj docutils literal"><span class="pre">anydbm</span></code></a></td>
+<td>Generic interface to all dbm clones.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/whichdb.html#module-whichdb" title="whichdb"><code class="xref py py-obj docutils literal"><span class="pre">whichdb</span></code></a></td>
+<td>Guess which db package to use to open a db file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="11_data_persistence/11.8_dbm.html#module-dbm" title="dbm: The standard &quot;database&quot; interface, based on ndbm. (Unix)"><code class="xref py py-obj docutils literal"><span class="pre">dbm</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="11_data_persistence/11.9_gdbm.html#module-gdbm" title="gdbm: GNU's reinterpretation of dbm. (Unix)"><code class="xref py py-obj docutils literal"><span class="pre">gdbm</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="11_data_persistence/11.10_dbhash.html#module-dbhash" title="dbhash: DBM-style interface to the BSD database library."><code class="xref py py-obj docutils literal"><span class="pre">dbhash</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="11_data_persistence/11.11_bsddb.html#module-bsddb" title="bsddb: Interface to Berkeley DB database library"><code class="xref py py-obj docutils literal"><span class="pre">bsddb</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/dumbdbm.html#module-dumbdbm" title="dumbdbm"><code class="xref py py-obj docutils literal"><span class="pre">dumbdbm</span></code></a></td>
+<td>A dumb and slow but simple dbm clone.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sqlite3.html#module-sqlite3" title="sqlite3"><code class="xref py py-obj docutils literal"><span class="pre">sqlite3</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="data-compression-and-archiving">
+<h2>12 Data Compression and Archiving<a class="headerlink" href="#data-compression-and-archiving" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/zlib.html#module-zlib" title="zlib"><code class="xref py py-obj docutils literal"><span class="pre">zlib</span></code></a></td>
+<td>The functions in this module allow compression and decompression using the zlib library, which is based on GNU zip.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/gzip.html#module-gzip" title="gzip"><code class="xref py py-obj docutils literal"><span class="pre">gzip</span></code></a></td>
+<td>Functions that read and write gzipped files.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/bz2.html#module-bz2" title="bz2"><code class="xref py py-obj docutils literal"><span class="pre">bz2</span></code></a></td>
+<td>The python bz2 module provides a comprehensive interface for the bz2 compression library.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/zipfile.html#module-zipfile" title="zipfile"><code class="xref py py-obj docutils literal"><span class="pre">zipfile</span></code></a></td>
+<td>Read and write ZIP files.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/tarfile.html#module-tarfile" title="tarfile"><code class="xref py py-obj docutils literal"><span class="pre">tarfile</span></code></a></td>
+<td>Read from and write to tar format archives.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="file-formats">
+<h2>13 File Formats<a class="headerlink" href="#file-formats" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/csv.html#module-csv" title="csv"><code class="xref py py-obj docutils literal"><span class="pre">csv</span></code></a></td>
+<td>CSV parsing and writing.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ConfigParser.html#module-ConfigParser" title="ConfigParser"><code class="xref py py-obj docutils literal"><span class="pre">ConfigParser</span></code></a></td>
+<td>Configuration file parser.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/robotparser.html#module-robotparser" title="robotparser"><code class="xref py py-obj docutils literal"><span class="pre">robotparser</span></code></a></td>
+<td>robotparser.py</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/netrc.html#module-netrc" title="netrc"><code class="xref py py-obj docutils literal"><span class="pre">netrc</span></code></a></td>
+<td>An object-oriented interface to .netrc files.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/xdrlib.html#module-xdrlib" title="xdrlib"><code class="xref py py-obj docutils literal"><span class="pre">xdrlib</span></code></a></td>
+<td>Implements (a subset of) Sun XDR &#8211; eXternal Data Representation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/plistlib.html#module-plistlib" title="plistlib"><code class="xref py py-obj docutils literal"><span class="pre">plistlib</span></code></a></td>
+<td>plistlib.py &#8211; a tool to generate and parse MacOSX .plist files.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="cryptographic-services">
+<h2>14 Cryptographic Services<a class="headerlink" href="#cryptographic-services" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/hashlib.html#module-hashlib" title="hashlib"><code class="xref py py-obj docutils literal"><span class="pre">hashlib</span></code></a></td>
+<td>hashlib module - A common interface to many hash functions.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/hmac.html#module-hmac" title="hmac"><code class="xref py py-obj docutils literal"><span class="pre">hmac</span></code></a></td>
+<td>HMAC (Keyed-Hashing for Message Authentication) Python module.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/md5.html#module-md5" title="md5"><code class="xref py py-obj docutils literal"><span class="pre">md5</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sha.html#module-sha" title="sha"><code class="xref py py-obj docutils literal"><span class="pre">sha</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="generic-operating-system-services">
+<h2>15 Generic Operating System Services<a class="headerlink" href="#generic-operating-system-services" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.html#module-os" title="os"><code class="xref py py-obj docutils literal"><span class="pre">os</span></code></a></td>
+<td>OS routines for NT or Posix depending on what system we&#8217;re on.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/io.html#module-io" title="io"><code class="xref py py-obj docutils literal"><span class="pre">io</span></code></a></td>
+<td>The io module provides the Python interfaces to stream handling.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/time.html#module-time" title="time"><code class="xref py py-obj docutils literal"><span class="pre">time</span></code></a></td>
+<td>This module provides various functions to manipulate time values.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/argparse.html#module-argparse" title="argparse"><code class="xref py py-obj docutils literal"><span class="pre">argparse</span></code></a></td>
+<td>Command-line parsing library</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/optparse.html#module-optparse" title="optparse"><code class="xref py py-obj docutils literal"><span class="pre">optparse</span></code></a></td>
+<td>A powerful, extensible, and easy-to-use option parser.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/getopt.html#module-getopt" title="getopt"><code class="xref py py-obj docutils literal"><span class="pre">getopt</span></code></a></td>
+<td>Parser for command line options.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.html#module-logging" title="logging"><code class="xref py py-obj docutils literal"><span class="pre">logging</span></code></a></td>
+<td>Logging package for Python.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/logging.config.html#module-logging.config" title="logging.config"><code class="xref py py-obj docutils literal"><span class="pre">logging.config</span></code></a></td>
+<td>Configuration functions for the logging package for Python.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.handlers.html#module-logging.handlers" title="logging.handlers"><code class="xref py py-obj docutils literal"><span class="pre">logging.handlers</span></code></a></td>
+<td>Additional handlers for the logging package for Python.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/getpass.html#module-getpass" title="getpass"><code class="xref py py-obj docutils literal"><span class="pre">getpass</span></code></a></td>
+<td>Utilities to get a password and/or the current user name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/curses.html#module-curses" title="curses"><code class="xref py py-obj docutils literal"><span class="pre">curses</span></code></a></td>
+<td>curses</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/curses.ascii.html#module-curses.ascii" title="curses.ascii"><code class="xref py py-obj docutils literal"><span class="pre">curses.ascii</span></code></a></td>
+<td>Constants and membership tests for ASCII characters</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/curses.panel.html#module-curses.panel" title="curses.panel"><code class="xref py py-obj docutils literal"><span class="pre">curses.panel</span></code></a></td>
+<td>curses.panel</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/platform.html#module-platform" title="platform"><code class="xref py py-obj docutils literal"><span class="pre">platform</span></code></a></td>
+<td>This module tries to retrieve as much platform-identifying data as possible.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/errno.html#module-errno" title="errno"><code class="xref py py-obj docutils literal"><span class="pre">errno</span></code></a></td>
+<td>This module makes available standard errno system symbols.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ctypes.html#module-ctypes" title="ctypes"><code class="xref py py-obj docutils literal"><span class="pre">ctypes</span></code></a></td>
+<td>create and manipulate C data types in Python</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="optional-operating-system-services">
+<h2>16 Optional Operating System Services<a class="headerlink" href="#optional-operating-system-services" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/select.html#module-select" title="select"><code class="xref py py-obj docutils literal"><span class="pre">select</span></code></a></td>
+<td>This module supports asynchronous I/O on multiple file descriptors.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/threading.html#module-threading" title="threading"><code class="xref py py-obj docutils literal"><span class="pre">threading</span></code></a></td>
+<td>Thread module emulating a subset of Java&#8217;s threading model.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/thread.html#module-thread" title="thread"><code class="xref py py-obj docutils literal"><span class="pre">thread</span></code></a></td>
+<td>This module provides primitive operations to write multi-threaded programs.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/dummy_threading.html#module-dummy_threading" title="dummy_threading"><code class="xref py py-obj docutils literal"><span class="pre">dummy_threading</span></code></a></td>
+<td>Faux <code class="docutils literal"><span class="pre">threading</span></code> version using <code class="docutils literal"><span class="pre">dummy_thread</span></code> instead of <code class="docutils literal"><span class="pre">thread</span></code>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/dummy_thread.html#module-dummy_thread" title="dummy_thread"><code class="xref py py-obj docutils literal"><span class="pre">dummy_thread</span></code></a></td>
+<td>Drop-in replacement for the thread module.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/multiprocessing.html#module-multiprocessing" title="multiprocessing"><code class="xref py py-obj docutils literal"><span class="pre">multiprocessing</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/mmap.html#module-mmap" title="mmap"><code class="xref py py-obj docutils literal"><span class="pre">mmap</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/readline.html#module-readline" title="readline"><code class="xref py py-obj docutils literal"><span class="pre">readline</span></code></a></td>
+<td>Importing this module enables command line editing using GNU readline.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/rlcompleter.html#module-rlcompleter" title="rlcompleter"><code class="xref py py-obj docutils literal"><span class="pre">rlcompleter</span></code></a></td>
+<td>Word completion for GNU readline.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="interprocess-communication-and-networking">
+<h2>17 Interprocess Communication and Networking<a class="headerlink" href="#interprocess-communication-and-networking" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/subprocess.html#module-subprocess" title="subprocess"><code class="xref py py-obj docutils literal"><span class="pre">subprocess</span></code></a></td>
+<td>subprocess - Subprocesses with accessible I/O streams</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.html#module-socket" title="socket"><code class="xref py py-obj docutils literal"><span class="pre">socket</span></code></a></td>
+<td>This module provides socket operations and some related functions.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ssl.html#module-ssl" title="ssl"><code class="xref py py-obj docutils literal"><span class="pre">ssl</span></code></a></td>
+<td>This module provides some more Pythonic support for SSL.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/signal.html#module-signal" title="signal"><code class="xref py py-obj docutils literal"><span class="pre">signal</span></code></a></td>
+<td>This module provides mechanisms to use signal handlers in Python.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/popen2.html#module-popen2" title="popen2"><code class="xref py py-obj docutils literal"><span class="pre">popen2</span></code></a></td>
+<td>Spawn a command with pipes to its stdin, stdout, and optionally stderr.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/asyncore.html#module-asyncore" title="asyncore"><code class="xref py py-obj docutils literal"><span class="pre">asyncore</span></code></a></td>
+<td>Basic infrastructure for asynchronous socket service clients and servers.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/asynchat.html#module-asynchat" title="asynchat"><code class="xref py py-obj docutils literal"><span class="pre">asynchat</span></code></a></td>
+<td>A class supporting chat-style (command/response) protocols.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="internet-data-handling">
+<h2>18 Internet Data Handling<a class="headerlink" href="#internet-data-handling" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/email.html#module-email" title="email"><code class="xref py py-obj docutils literal"><span class="pre">email</span></code></a></td>
+<td>A package for parsing, handling, and generating email messages.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/json.html#module-json" title="json"><code class="xref py py-obj docutils literal"><span class="pre">json</span></code></a></td>
+<td>JSON (JavaScript Object Notation) &lt;<a class="reference external" href="http://json.org">http://json.org</a>&gt; is a subset of JavaScript syntax (ECMA-262 3rd edition) used as a lightweight data interchange format.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/mailcap.html#module-mailcap" title="mailcap"><code class="xref py py-obj docutils literal"><span class="pre">mailcap</span></code></a></td>
+<td>Mailcap file handling.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/mailbox.html#module-mailbox" title="mailbox"><code class="xref py py-obj docutils literal"><span class="pre">mailbox</span></code></a></td>
+<td>Read/write support for Maildir, mbox, MH, Babyl, and MMDF mailboxes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/mhlib.html#module-mhlib" title="mhlib"><code class="xref py py-obj docutils literal"><span class="pre">mhlib</span></code></a></td>
+<td>MH interface &#8211; purely object-oriented (well, almost)</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/mimetools.html#module-mimetools" title="mimetools"><code class="xref py py-obj docutils literal"><span class="pre">mimetools</span></code></a></td>
+<td>Various tools used by MIME-reading or MIME-writing programs.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/mimetypes.html#module-mimetypes" title="mimetypes"><code class="xref py py-obj docutils literal"><span class="pre">mimetypes</span></code></a></td>
+<td>Guess the MIME type of a file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/MimeWriter.html#module-MimeWriter" title="MimeWriter"><code class="xref py py-obj docutils literal"><span class="pre">MimeWriter</span></code></a></td>
+<td>Generic MIME writer.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/mimify.html#module-mimify" title="mimify"><code class="xref py py-obj docutils literal"><span class="pre">mimify</span></code></a></td>
+<td>Mimification and unmimification of mail messages.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/multifile.html#module-multifile" title="multifile"><code class="xref py py-obj docutils literal"><span class="pre">multifile</span></code></a></td>
+<td>A readline()-style interface to the parts of a multipart message.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/rfc822.html#module-rfc822" title="rfc822"><code class="xref py py-obj docutils literal"><span class="pre">rfc822</span></code></a></td>
+<td>RFC 2822 message manipulation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/base64.html#module-base64" title="base64"><code class="xref py py-obj docutils literal"><span class="pre">base64</span></code></a></td>
+<td>RFC 3548: Base16, Base32, Base64 Data Encodings</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/binhex.html#module-binhex" title="binhex"><code class="xref py py-obj docutils literal"><span class="pre">binhex</span></code></a></td>
+<td>Macintosh binhex compression/decompression.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/binascii.html#module-binascii" title="binascii"><code class="xref py py-obj docutils literal"><span class="pre">binascii</span></code></a></td>
+<td>Conversion between binary data and ASCII</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/quopri.html#module-quopri" title="quopri"><code class="xref py py-obj docutils literal"><span class="pre">quopri</span></code></a></td>
+<td>Conversions to/from quoted-printable transport encoding as per RFC 1521.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/uu.html#module-uu" title="uu"><code class="xref py py-obj docutils literal"><span class="pre">uu</span></code></a></td>
+<td>Implementation of the UUencode and UUdecode functions.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="structured-markup-processing-tools">
+<h2>19 Structured Markup Processing Tools<a class="headerlink" href="#structured-markup-processing-tools" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/HTMLParser.html#module-HTMLParser" title="HTMLParser"><code class="xref py py-obj docutils literal"><span class="pre">HTMLParser</span></code></a></td>
+<td>A parser for HTML and XHTML.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sgmllib.html#module-sgmllib" title="sgmllib"><code class="xref py py-obj docutils literal"><span class="pre">sgmllib</span></code></a></td>
+<td>A parser for SGML, using the derived class as a static DTD.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/htmllib.html#module-htmllib" title="htmllib"><code class="xref py py-obj docutils literal"><span class="pre">htmllib</span></code></a></td>
+<td>HTML 2.0 parser.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/xml.html#module-xml" title="xml"><code class="xref py py-obj docutils literal"><span class="pre">xml</span></code></a></td>
+<td>Core XML support for Python.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/xml.etree.ElementTree.html#module-xml.etree.ElementTree" title="xml.etree.ElementTree"><code class="xref py py-obj docutils literal"><span class="pre">xml.etree.ElementTree</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/xml.dom.html#module-xml.dom" title="xml.dom"><code class="xref py py-obj docutils literal"><span class="pre">xml.dom</span></code></a></td>
+<td>W3C Document Object Model implementation for Python.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/xml.dom.minidom.html#module-xml.dom.minidom" title="xml.dom.minidom"><code class="xref py py-obj docutils literal"><span class="pre">xml.dom.minidom</span></code></a></td>
+<td>Simple implementation of the Level 1 DOM.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/xml.dom.pulldom.html#module-xml.dom.pulldom" title="xml.dom.pulldom"><code class="xref py py-obj docutils literal"><span class="pre">xml.dom.pulldom</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/xml.sax.html#module-xml.sax" title="xml.sax"><code class="xref py py-obj docutils literal"><span class="pre">xml.sax</span></code></a></td>
+<td>Simple API for XML (SAX) implementation for Python.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/xml.sax.handler.html#module-xml.sax.handler" title="xml.sax.handler"><code class="xref py py-obj docutils literal"><span class="pre">xml.sax.handler</span></code></a></td>
+<td>This module contains the core classes of version 2.0 of SAX for Python.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/xml.sax.saxutils.html#module-xml.sax.saxutils" title="xml.sax.saxutils"><code class="xref py py-obj docutils literal"><span class="pre">xml.sax.saxutils</span></code></a></td>
+<td>A library of useful helper classes to the SAX classes, for the convenience of application and driver writers.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/xml.sax.xmlreader.html#module-xml.sax.xmlreader" title="xml.sax.xmlreader"><code class="xref py py-obj docutils literal"><span class="pre">xml.sax.xmlreader</span></code></a></td>
+<td>An XML Reader is the SAX 2 name for an XML parser.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pyexpat.html#module-pyexpat" title="pyexpat"><code class="xref py py-obj docutils literal"><span class="pre">pyexpat</span></code></a></td>
+<td>Python wrapper for Expat parser.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="internet-protocols-and-support">
+<h2>20 Internet Protocols and Support<a class="headerlink" href="#internet-protocols-and-support" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/webbrowser.html#module-webbrowser" title="webbrowser"><code class="xref py py-obj docutils literal"><span class="pre">webbrowser</span></code></a></td>
+<td>Interfaces for launching and remotely controlling Web browsers.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.html#module-cgi" title="cgi"><code class="xref py py-obj docutils literal"><span class="pre">cgi</span></code></a></td>
+<td>Support module for CGI (Common Gateway Interface) scripts.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgitb.html#module-cgitb" title="cgitb"><code class="xref py py-obj docutils literal"><span class="pre">cgitb</span></code></a></td>
+<td>More comprehensive traceback formatting for Python scripts.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/wsgiref.html#module-wsgiref" title="wsgiref"><code class="xref py py-obj docutils literal"><span class="pre">wsgiref</span></code></a></td>
+<td>wsgiref &#8211; a WSGI (PEP 333) Reference Library</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/urllib.html#module-urllib" title="urllib"><code class="xref py py-obj docutils literal"><span class="pre">urllib</span></code></a></td>
+<td>Open an arbitrary URL.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/urllib2.html#module-urllib2" title="urllib2"><code class="xref py py-obj docutils literal"><span class="pre">urllib2</span></code></a></td>
+<td>An extensible library for opening URLs using a variety of protocols</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/httplib.html#module-httplib" title="httplib"><code class="xref py py-obj docutils literal"><span class="pre">httplib</span></code></a></td>
+<td>HTTP/1.1 client library</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ftplib.html#module-ftplib" title="ftplib"><code class="xref py py-obj docutils literal"><span class="pre">ftplib</span></code></a></td>
+<td>An FTP client class and some helper functions.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/poplib.html#module-poplib" title="poplib"><code class="xref py py-obj docutils literal"><span class="pre">poplib</span></code></a></td>
+<td>A POP3 client class.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/imaplib.html#module-imaplib" title="imaplib"><code class="xref py py-obj docutils literal"><span class="pre">imaplib</span></code></a></td>
+<td>IMAP4 client.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/nntplib.html#module-nntplib" title="nntplib"><code class="xref py py-obj docutils literal"><span class="pre">nntplib</span></code></a></td>
+<td>An NNTP client class based on RFC 977: Network News Transfer Protocol.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/smtplib.html#module-smtplib" title="smtplib"><code class="xref py py-obj docutils literal"><span class="pre">smtplib</span></code></a></td>
+<td>SMTP/ESMTP client class.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/smtpd.html#module-smtpd" title="smtpd"><code class="xref py py-obj docutils literal"><span class="pre">smtpd</span></code></a></td>
+<td>An RFC 2821 smtp proxy.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/telnetlib.html#module-telnetlib" title="telnetlib"><code class="xref py py-obj docutils literal"><span class="pre">telnetlib</span></code></a></td>
+<td>TELNET client class.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/uuid.html#module-uuid" title="uuid"><code class="xref py py-obj docutils literal"><span class="pre">uuid</span></code></a></td>
+<td>UUID objects (universally unique identifiers) according to RFC 4122.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/urlparse.html#module-urlparse" title="urlparse"><code class="xref py py-obj docutils literal"><span class="pre">urlparse</span></code></a></td>
+<td>Parse (absolute and relative) URLs.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/SocketServer.html#module-SocketServer" title="SocketServer"><code class="xref py py-obj docutils literal"><span class="pre">SocketServer</span></code></a></td>
+<td>Generic socket server classes.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/BaseHTTPServer.html#module-BaseHTTPServer" title="BaseHTTPServer"><code class="xref py py-obj docutils literal"><span class="pre">BaseHTTPServer</span></code></a></td>
+<td>HTTP server base class.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/SimpleHTTPServer.html#module-SimpleHTTPServer" title="SimpleHTTPServer"><code class="xref py py-obj docutils literal"><span class="pre">SimpleHTTPServer</span></code></a></td>
+<td>Simple HTTP Server.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/CGIHTTPServer.html#module-CGIHTTPServer" title="CGIHTTPServer"><code class="xref py py-obj docutils literal"><span class="pre">CGIHTTPServer</span></code></a></td>
+<td>CGI-savvy HTTP Server.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.html#module-cookielib" title="cookielib"><code class="xref py py-obj docutils literal"><span class="pre">cookielib</span></code></a></td>
+<td>HTTP cookie handling for web clients.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/Cookie.html#module-Cookie" title="Cookie"><code class="xref py py-obj docutils literal"><span class="pre">Cookie</span></code></a></td>
+<td>Here&#8217;s a sample session to show how to use this module.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/xmlrpclib.html#module-xmlrpclib" title="xmlrpclib"><code class="xref py py-obj docutils literal"><span class="pre">xmlrpclib</span></code></a></td>
+<td>An XML-RPC client interface for Python.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/SimpleXMLRPCServer.html#module-SimpleXMLRPCServer" title="SimpleXMLRPCServer"><code class="xref py py-obj docutils literal"><span class="pre">SimpleXMLRPCServer</span></code></a></td>
+<td>Simple XML-RPC Server.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/DocXMLRPCServer.html#module-DocXMLRPCServer" title="DocXMLRPCServer"><code class="xref py py-obj docutils literal"><span class="pre">DocXMLRPCServer</span></code></a></td>
+<td>Self documenting XML-RPC Server.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="multimedia-services">
+<h2>21 Multimedia Services<a class="headerlink" href="#multimedia-services" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/audioop.html#module-audioop" title="audioop"><code class="xref py py-obj docutils literal"><span class="pre">audioop</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="21_multimedia/imageop.html#module-imageop" title="imageop: Manipulate raw image data. (deprecated)"><code class="xref py py-obj docutils literal"><span class="pre">imageop</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/aifc.html#module-aifc" title="aifc"><code class="xref py py-obj docutils literal"><span class="pre">aifc</span></code></a></td>
+<td>Stuff to parse AIFF-C and AIFF files.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sunau.html#module-sunau" title="sunau"><code class="xref py py-obj docutils literal"><span class="pre">sunau</span></code></a></td>
+<td>Stuff to parse Sun and NeXT audio files.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/wave.html#module-wave" title="wave"><code class="xref py py-obj docutils literal"><span class="pre">wave</span></code></a></td>
+<td>Stuff to parse WAVE files.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/chunk.html#module-chunk" title="chunk"><code class="xref py py-obj docutils literal"><span class="pre">chunk</span></code></a></td>
+<td>Simple class to read IFF chunks.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/colorsys.html#module-colorsys" title="colorsys"><code class="xref py py-obj docutils literal"><span class="pre">colorsys</span></code></a></td>
+<td>Conversion functions between RGB and other color systems.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/imghdr.html#module-imghdr" title="imghdr"><code class="xref py py-obj docutils literal"><span class="pre">imghdr</span></code></a></td>
+<td>Recognize image file formats based on their first few bytes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sndhdr.html#module-sndhdr" title="sndhdr"><code class="xref py py-obj docutils literal"><span class="pre">sndhdr</span></code></a></td>
+<td>Routines to help recognizing sound files.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ossaudiodev.html#module-ossaudiodev" title="ossaudiodev"><code class="xref py py-obj docutils literal"><span class="pre">ossaudiodev</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="internationalization">
+<h2>22 Internationalization<a class="headerlink" href="#internationalization" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/gettext.html#module-gettext" title="gettext"><code class="xref py py-obj docutils literal"><span class="pre">gettext</span></code></a></td>
+<td>Internationalization and localization support.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/locale.html#module-locale" title="locale"><code class="xref py py-obj docutils literal"><span class="pre">locale</span></code></a></td>
+<td>Locale support module.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="program-frameworks">
+<h2>23 Program Frameworks<a class="headerlink" href="#program-frameworks" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/cmd.html#module-cmd" title="cmd"><code class="xref py py-obj docutils literal"><span class="pre">cmd</span></code></a></td>
+<td>A generic class to build line-oriented command interpreters.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/shlex.html#module-shlex" title="shlex"><code class="xref py py-obj docutils literal"><span class="pre">shlex</span></code></a></td>
+<td>A lexical analyzer class for simple shell-like syntaxes.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="graphical-user-interfaces-with-tk">
+<h2>24 Graphical User Interfaces with Tk<a class="headerlink" href="#graphical-user-interfaces-with-tk" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/Tkinter.html#module-Tkinter" title="Tkinter"><code class="xref py py-obj docutils literal"><span class="pre">Tkinter</span></code></a></td>
+<td>Wrapper functions for Tcl/Tk.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ttk.html#module-ttk" title="ttk"><code class="xref py py-obj docutils literal"><span class="pre">ttk</span></code></a></td>
+<td>Ttk wrapper.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/Tix.html#module-Tix" title="Tix"><code class="xref py py-obj docutils literal"><span class="pre">Tix</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ScrolledText.html#module-ScrolledText" title="ScrolledText"><code class="xref py py-obj docutils literal"><span class="pre">ScrolledText</span></code></a></td>
+<td>A ScrolledText widget feels like a text widget but also has a vertical scroll bar on its right.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/turtle.html#module-turtle" title="turtle"><code class="xref py py-obj docutils literal"><span class="pre">turtle</span></code></a></td>
+<td>Turtle graphics is a popular way for introducing programming to kids.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">IDLE</span></code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="development-tools">
+<h2>25 Development Tools<a class="headerlink" href="#development-tools" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/pydoc.html#module-pydoc" title="pydoc"><code class="xref py py-obj docutils literal"><span class="pre">pydoc</span></code></a></td>
+<td>Generate Python documentation in HTML or text for interactive use.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/doctest.html#module-doctest" title="doctest"><code class="xref py py-obj docutils literal"><span class="pre">doctest</span></code></a></td>
+<td>Module doctest &#8211; a framework for running examples in docstrings.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/unittest.html#module-unittest" title="unittest"><code class="xref py py-obj docutils literal"><span class="pre">unittest</span></code></a></td>
+<td>Python unit testing framework, based on Erich Gamma&#8217;s JUnit and Kent Beck&#8217;s Smalltalk testing framework.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/test.html#module-test" title="test"><code class="xref py py-obj docutils literal"><span class="pre">test</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="debugging-and-profiling">
+<h2>26 Debugging and Profiling<a class="headerlink" href="#debugging-and-profiling" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/bdb.html#module-bdb" title="bdb"><code class="xref py py-obj docutils literal"><span class="pre">bdb</span></code></a></td>
+<td>Debugger basics</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pdb.html#module-pdb" title="pdb"><code class="xref py py-obj docutils literal"><span class="pre">pdb</span></code></a></td>
+<td>A Python debugger.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/profile.html#module-profile" title="profile"><code class="xref py py-obj docutils literal"><span class="pre">profile</span></code></a></td>
+<td>Class for profiling Python code.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cProfile.html#module-cProfile" title="cProfile"><code class="xref py py-obj docutils literal"><span class="pre">cProfile</span></code></a></td>
+<td>Python interface for the &#8216;lsprof&#8217; profiler.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/hotshot.html#module-hotshot" title="hotshot"><code class="xref py py-obj docutils literal"><span class="pre">hotshot</span></code></a></td>
+<td>High-perfomance logging profiler, mostly written in C.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/timeit.html#module-timeit" title="timeit"><code class="xref py py-obj docutils literal"><span class="pre">timeit</span></code></a></td>
+<td>Tool for measuring execution time of small code snippets.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/trace.html#module-trace" title="trace"><code class="xref py py-obj docutils literal"><span class="pre">trace</span></code></a></td>
+<td>program/module to trace Python program or function execution</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="software-packaging-and-distribution">
+<h2>27 Software Packaging and Distribution<a class="headerlink" href="#software-packaging-and-distribution" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/distutils.html#module-distutils" title="distutils"><code class="xref py py-obj docutils literal"><span class="pre">distutils</span></code></a></td>
+<td>distutils</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-runtime-services">
+<h2>28 Python Runtime Services<a class="headerlink" href="#python-runtime-services" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.html#module-sys" title="sys"><code class="xref py py-obj docutils literal"><span class="pre">sys</span></code></a></td>
+<td>This module provides access to some objects used or maintained by the interpreter and to functions that interact strongly with the interpreter.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sysconfig.html#module-sysconfig" title="sysconfig"><code class="xref py py-obj docutils literal"><span class="pre">sysconfig</span></code></a></td>
+<td>Provide access to Python&#8217;s configuration information.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/__builtin__.html#module-__builtin__" title="__builtin__"><code class="xref py py-obj docutils literal"><span class="pre">__builtin__</span></code></a></td>
+<td>Built-in functions, exceptions, and other objects.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/future_builtins.html#module-future_builtins" title="future_builtins"><code class="xref py py-obj docutils literal"><span class="pre">future_builtins</span></code></a></td>
+<td>This module provides functions that will be builtins in Python 3.0, but that conflict with builtins that already exist in Python 2.x.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/__main__.html#module-__main__" title="__main__"><code class="xref py py-obj docutils literal"><span class="pre">__main__</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/warnings.html#module-warnings" title="warnings"><code class="xref py py-obj docutils literal"><span class="pre">warnings</span></code></a></td>
+<td>Python part of the warnings subsystem.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/contextlib.html#module-contextlib" title="contextlib"><code class="xref py py-obj docutils literal"><span class="pre">contextlib</span></code></a></td>
+<td>Utilities for with-statement contexts.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/abc.html#module-abc" title="abc"><code class="xref py py-obj docutils literal"><span class="pre">abc</span></code></a></td>
+<td>Abstract Base Classes (ABCs) according to PEP 3119.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/atexit.html#module-atexit" title="atexit"><code class="xref py py-obj docutils literal"><span class="pre">atexit</span></code></a></td>
+<td>atexit.py - allow programmer to define multiple exit functions to be executed</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/traceback.html#module-traceback" title="traceback"><code class="xref py py-obj docutils literal"><span class="pre">traceback</span></code></a></td>
+<td>Extract, format and print information about Python stack traces.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/__future__.html#module-__future__" title="__future__"><code class="xref py py-obj docutils literal"><span class="pre">__future__</span></code></a></td>
+<td>Record of phased-in incompatible language changes.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/gc.html#module-gc" title="gc"><code class="xref py py-obj docutils literal"><span class="pre">gc</span></code></a></td>
+<td>This module provides access to the garbage collector for reference cycles.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/inspect.html#module-inspect" title="inspect"><code class="xref py py-obj docutils literal"><span class="pre">inspect</span></code></a></td>
+<td>Get useful information from live Python objects.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/site.html#module-site" title="site"><code class="xref py py-obj docutils literal"><span class="pre">site</span></code></a></td>
+<td>Append module search paths for third-party packages to sys.path.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/user.html#module-user" title="user"><code class="xref py py-obj docutils literal"><span class="pre">user</span></code></a></td>
+<td>Hook to allow user-specified customization code to run.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="28_runtime_service/fpectl.html#module-fpectl" title="fpectl: Provide control for floating point exception handling. (Unix)"><code class="xref py py-obj docutils literal"><span class="pre">fpectl</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="custom-python-interpreters">
+<h2>29 Custom Python Interpreters<a class="headerlink" href="#custom-python-interpreters" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/code.html#module-code" title="code"><code class="xref py py-obj docutils literal"><span class="pre">code</span></code></a></td>
+<td>Utilities needed to emulate Python&#8217;s interactive interpreter.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codeop.html#module-codeop" title="codeop"><code class="xref py py-obj docutils literal"><span class="pre">codeop</span></code></a></td>
+<td>Utilities to compile possibly incomplete Python source code.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="restricted-execution">
+<h2>30 Restricted Execution<a class="headerlink" href="#restricted-execution" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/rexec.html#module-rexec" title="rexec"><code class="xref py py-obj docutils literal"><span class="pre">rexec</span></code></a></td>
+<td>Restricted execution facilities.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/Bastion.html#module-Bastion" title="Bastion"><code class="xref py py-obj docutils literal"><span class="pre">Bastion</span></code></a></td>
+<td>Bastionification utility.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="importing-modules">
+<h2>31 Importing Modules<a class="headerlink" href="#importing-modules" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/imp.html#module-imp" title="imp"><code class="xref py py-obj docutils literal"><span class="pre">imp</span></code></a></td>
+<td>This module provides the components needed to build your own __import__ function.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/importlib.html#module-importlib" title="importlib"><code class="xref py py-obj docutils literal"><span class="pre">importlib</span></code></a></td>
+<td>Backport of importlib.import_module from 3.x.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/imputil.html#module-imputil" title="imputil"><code class="xref py py-obj docutils literal"><span class="pre">imputil</span></code></a></td>
+<td>Import utilities</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/zipimport.html#module-zipimport" title="zipimport"><code class="xref py py-obj docutils literal"><span class="pre">zipimport</span></code></a></td>
+<td>zipimport provides support for importing Python modules from Zip archives.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pkgutil.html#module-pkgutil" title="pkgutil"><code class="xref py py-obj docutils literal"><span class="pre">pkgutil</span></code></a></td>
+<td>Utilities to support packages.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/modulefinder.html#module-modulefinder" title="modulefinder"><code class="xref py py-obj docutils literal"><span class="pre">modulefinder</span></code></a></td>
+<td>Find modules used by a script, using introspection.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/runpy.html#module-runpy" title="runpy"><code class="xref py py-obj docutils literal"><span class="pre">runpy</span></code></a></td>
+<td>runpy.py - locating and running Python code using the module namespace</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-language-services">
+<h2>32 Python Language Services<a class="headerlink" href="#python-language-services" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/parser.html#module-parser" title="parser"><code class="xref py py-obj docutils literal"><span class="pre">parser</span></code></a></td>
+<td>This is an interface to Python&#8217;s internal parser.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ast.html#module-ast" title="ast"><code class="xref py py-obj docutils literal"><span class="pre">ast</span></code></a></td>
+<td>ast</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/symtable.html#module-symtable" title="symtable"><code class="xref py py-obj docutils literal"><span class="pre">symtable</span></code></a></td>
+<td>Interface to the compiler&#8217;s internal symbol tables</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/symbol.html#module-symbol" title="symbol"><code class="xref py py-obj docutils literal"><span class="pre">symbol</span></code></a></td>
+<td>Non-terminal symbols of Python grammar (from &#8220;graminit.h&#8221;).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/token.html#module-token" title="token"><code class="xref py py-obj docutils literal"><span class="pre">token</span></code></a></td>
+<td>Token constants (from &#8220;token.h&#8221;).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/keyword.html#module-keyword" title="keyword"><code class="xref py py-obj docutils literal"><span class="pre">keyword</span></code></a></td>
+<td>Keywords (from &#8220;graminit.c&#8221;)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/tokenize.html#module-tokenize" title="tokenize"><code class="xref py py-obj docutils literal"><span class="pre">tokenize</span></code></a></td>
+<td>Tokenization help for Python programs.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/tabnanny.html#module-tabnanny" title="tabnanny"><code class="xref py py-obj docutils literal"><span class="pre">tabnanny</span></code></a></td>
+<td>The Tab Nanny despises ambiguous indentation.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pyclbr.html#module-pyclbr" title="pyclbr"><code class="xref py py-obj docutils literal"><span class="pre">pyclbr</span></code></a></td>
+<td>Parse a Python module and describe its classes and methods.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/py_compile.html#module-py_compile" title="py_compile"><code class="xref py py-obj docutils literal"><span class="pre">py_compile</span></code></a></td>
+<td>Routine to &#8220;compile&#8221; a .py file to a .pyc (or .pyo) file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/compileall.html#module-compileall" title="compileall"><code class="xref py py-obj docutils literal"><span class="pre">compileall</span></code></a></td>
+<td>Module/script to byte-compile all .py files to .pyc (or .pyo) files.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/dis.html#module-dis" title="dis"><code class="xref py py-obj docutils literal"><span class="pre">dis</span></code></a></td>
+<td>Disassembler of Python byte code into mnemonics.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickletools.html#module-pickletools" title="pickletools"><code class="xref py py-obj docutils literal"><span class="pre">pickletools</span></code></a></td>
+<td>&#8220;Executable documentation&#8221; for the pickle module.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="depr-python-compiler-package">
+<h2>33 (depr) Python compiler package<a class="headerlink" href="#depr-python-compiler-package" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/compiler.html#module-compiler" title="compiler"><code class="xref py py-obj docutils literal"><span class="pre">compiler</span></code></a></td>
+<td>Package for parsing and compiling Python source code</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="miscellaneous-services">
+<h2>34 Miscellaneous Services<a class="headerlink" href="#miscellaneous-services" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/formatter.html#module-formatter" title="formatter"><code class="xref py py-obj docutils literal"><span class="pre">formatter</span></code></a></td>
+<td>Generic output formatting.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ms-windows-specific-services">
+<h2>35 MS Windows Specific Services<a class="headerlink" href="#ms-windows-specific-services" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="35_windows_service/msilib.html#module-msilib" title="msilib: Creation of Microsoft Installer files, and CAB files. (Windows)"><code class="xref py py-obj docutils literal"><span class="pre">msilib</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="35_windows_service/msvcrt.html#module-msvcrt" title="msvcrt: Miscellaneous useful routines from the MS VC++ runtime. (Windows)"><code class="xref py py-obj docutils literal"><span class="pre">msvcrt</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="35_windows_service/_winreg.html#module-_winreg" title="_winreg: Routines and objects for manipulating the Windows registry. (Windows)"><code class="xref py py-obj docutils literal"><span class="pre">_winreg</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="35_windows_service/winsound.html#module-winsound" title="winsound: Access to the sound-playing machinery for Windows. (Windows)"><code class="xref py py-obj docutils literal"><span class="pre">winsound</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="unix-specific-services">
+<h2>36. Unix Specific Services<a class="headerlink" href="#unix-specific-services" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.html#module-posix" title="posix"><code class="xref py py-obj docutils literal"><span class="pre">posix</span></code></a></td>
+<td>This module provides access to operating system functionality that is standardized by the C Standard and the POSIX standard (a thinly disguised Unix interface).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pwd.html#module-pwd" title="pwd"><code class="xref py py-obj docutils literal"><span class="pre">pwd</span></code></a></td>
+<td>This module provides access to the Unix password database.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/spwd.html#module-spwd" title="spwd"><code class="xref py py-obj docutils literal"><span class="pre">spwd</span></code></a></td>
+<td>This module provides access to the Unix shadow password database.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/grp.html#module-grp" title="grp"><code class="xref py py-obj docutils literal"><span class="pre">grp</span></code></a></td>
+<td>Access to the Unix group database.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/crypt.html#module-crypt" title="crypt"><code class="xref py py-obj docutils literal"><span class="pre">crypt</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="36_unix_specific_services/36.6.dl.html#module-dl" title="dl: Call C functions in shared objects. (deprecated) (Unix)"><code class="xref py py-obj docutils literal"><span class="pre">dl</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/termios.html#module-termios" title="termios"><code class="xref py py-obj docutils literal"><span class="pre">termios</span></code></a></td>
+<td>This module provides an interface to the Posix calls for tty I/O control.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/tty.html#module-tty" title="tty"><code class="xref py py-obj docutils literal"><span class="pre">tty</span></code></a></td>
+<td>Terminal utilities.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pty.html#module-pty" title="pty"><code class="xref py py-obj docutils literal"><span class="pre">pty</span></code></a></td>
+<td>Pseudo terminal utilities.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/fcntl.html#module-fcntl" title="fcntl"><code class="xref py py-obj docutils literal"><span class="pre">fcntl</span></code></a></td>
+<td>This module performs file control and I/O control on file  descriptors.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pipes.html#module-pipes" title="pipes"><code class="xref py py-obj docutils literal"><span class="pre">pipes</span></code></a></td>
+<td>Conversion pipeline templates.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posixfile.html#module-posixfile" title="posixfile"><code class="xref py py-obj docutils literal"><span class="pre">posixfile</span></code></a></td>
+<td>Extended file operations available in POSIX.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/resource.html#module-resource" title="resource"><code class="xref py py-obj docutils literal"><span class="pre">resource</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/nis.html#module-nis" title="nis"><code class="xref py py-obj docutils literal"><span class="pre">nis</span></code></a></td>
+<td>This module contains functions for accessing NIS maps.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/syslog.html#module-syslog" title="syslog"><code class="xref py py-obj docutils literal"><span class="pre">syslog</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/commands.html#module-commands" title="commands"><code class="xref py py-obj docutils literal"><span class="pre">commands</span></code></a></td>
+<td>Execute shell commands via os.popen() and return status, output.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mac-os-x-specific-services">
+<h2>37 Mac OS X specific services<a class="headerlink" href="#mac-os-x-specific-services" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="37_mac_services/ic.html#module-ic" title="ic: Access to the Mac OS X Internet Config. (deprecated) (Mac)"><code class="xref py py-obj docutils literal"><span class="pre">ic</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="37_mac_services/macos.html#module-MacOS" title="MacOS: Access to Mac OS-specific interpreter features. (deprecated) (Mac)"><code class="xref py py-obj docutils literal"><span class="pre">MacOS</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="37_mac_services/macostools.html#module-macostools" title="macostools: Convenience routines for file manipulation. (deprecated) (Mac)"><code class="xref py py-obj docutils literal"><span class="pre">macostools</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="37_mac_services/easydialogs.html#module-EasyDialogs" title="EasyDialogs: Basic Macintosh dialogs. (deprecated) (Mac)"><code class="xref py py-obj docutils literal"><span class="pre">EasyDialogs</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="37_mac_services/framework.html#module-FrameWork" title="FrameWork: Interactive application framework. (deprecated) (Mac)"><code class="xref py py-obj docutils literal"><span class="pre">FrameWork</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="37_mac_services/autogil.html#module-autoGIL" title="autoGIL: Global Interpreter Lock handling in event loops. (deprecated) (Mac)"><code class="xref py py-obj docutils literal"><span class="pre">autoGIL</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">Carbon</span></code></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="37_mac_services/colorpicker.html#module-ColorPicker" title="ColorPicker: Interface to the standard color selection dialog. (deprecated) (Mac)"><code class="xref py py-obj docutils literal"><span class="pre">ColorPicker</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="generated/exceptions.html" class="btn btn-neutral float-right" title="exceptions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="37_mac_services/colorpicker.html" class="btn btn-neutral" title="9. ColorPicker — Color selection dialog" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

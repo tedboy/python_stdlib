@@ -82,20 +82,92 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../31_modules/31.html">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../32_python_lang_serv/32.html">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../33_compiler/33.html">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../34_formatter/34.html">34. Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../35_windows_service/35.html">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../36_unix_specific_services/36.html">36. Unix Specific Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="37.html">37 Mac OS X specific services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ic.html">1. <code class="docutils literal"><span class="pre">ic</span></code> &#8212; Access to the Mac OS X Internet Config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="macos.html">2. <code class="docutils literal"><span class="pre">MacOS</span></code> &#8212; Access to Mac OS interpreter features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="macostools.html">3. <code class="docutils literal"><span class="pre">macostools</span></code> &#8212; Convenience routines for file manipulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="macostools.html#module-findertools">4. <code class="docutils literal"><span class="pre">findertools</span></code> &#8212; The <strong class="program">finder</strong>&#8216;s Apple Events interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="easydialogs.html">5. <code class="docutils literal"><span class="pre">EasyDialogs</span></code> &#8212; Basic Macintosh dialogs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="framework.html">6. <code class="docutils literal"><span class="pre">FrameWork</span></code> &#8212; Interactive application framework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autogil.html">7. <code class="docutils literal"><span class="pre">autoGIL</span></code> &#8212; Global Interpreter Lock handling in event loops</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">8. Mac OS Toolbox Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.AE">8.1. <code class="docutils literal"><span class="pre">Carbon.AE</span></code> &#8212; Apple Events</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.AH">8.2. <code class="docutils literal"><span class="pre">Carbon.AH</span></code> &#8212; Apple Help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.App">8.3. <code class="docutils literal"><span class="pre">Carbon.App</span></code> &#8212; Appearance Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Appearance">8.4. <code class="docutils literal"><span class="pre">Carbon.Appearance</span></code> &#8212; Appearance Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.CF">8.5. <code class="docutils literal"><span class="pre">Carbon.CF</span></code> &#8212; Core Foundation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.CG">8.6. <code class="docutils literal"><span class="pre">Carbon.CG</span></code> &#8212; Core Graphics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.CarbonEvt">8.7. <code class="docutils literal"><span class="pre">Carbon.CarbonEvt</span></code> &#8212; Carbon Event Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.CarbonEvents">8.8. <code class="docutils literal"><span class="pre">Carbon.CarbonEvents</span></code> &#8212; Carbon Event Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Cm">8.9. <code class="docutils literal"><span class="pre">Carbon.Cm</span></code> &#8212; Component Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Components">8.10. <code class="docutils literal"><span class="pre">Carbon.Components</span></code> &#8212; Component Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.ControlAccessor">8.11. <code class="docutils literal"><span class="pre">Carbon.ControlAccessor</span></code> &#8212; Control Manager accssors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Controls">8.12. <code class="docutils literal"><span class="pre">Carbon.Controls</span></code> &#8212; Control Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.CoreFounation">8.13. <code class="docutils literal"><span class="pre">Carbon.CoreFounation</span></code> &#8212; CoreFounation constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.CoreGraphics">8.14. <code class="docutils literal"><span class="pre">Carbon.CoreGraphics</span></code> &#8212; CoreGraphics constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Ctl">8.15. <code class="docutils literal"><span class="pre">Carbon.Ctl</span></code> &#8212; Control Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Dialogs">8.16. <code class="docutils literal"><span class="pre">Carbon.Dialogs</span></code> &#8212; Dialog Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Dlg">8.17. <code class="docutils literal"><span class="pre">Carbon.Dlg</span></code> &#8212; Dialog Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Drag">8.18. <code class="docutils literal"><span class="pre">Carbon.Drag</span></code> &#8212; Drag and Drop Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Dragconst">8.19. <code class="docutils literal"><span class="pre">Carbon.Dragconst</span></code> &#8212; Drag and Drop Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Events">8.20. <code class="docutils literal"><span class="pre">Carbon.Events</span></code> &#8212; Event Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Evt">8.21. <code class="docutils literal"><span class="pre">Carbon.Evt</span></code> &#8212; Event Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.File">8.22. <code class="docutils literal"><span class="pre">Carbon.File</span></code> &#8212; File Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Files">8.23. <code class="docutils literal"><span class="pre">Carbon.Files</span></code> &#8212; File Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Fm">8.24. <code class="docutils literal"><span class="pre">Carbon.Fm</span></code> &#8212; Font Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Folder">8.25. <code class="docutils literal"><span class="pre">Carbon.Folder</span></code> &#8212; Folder Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Folders">8.26. <code class="docutils literal"><span class="pre">Carbon.Folders</span></code> &#8212; Folder Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Fonts">8.27. <code class="docutils literal"><span class="pre">Carbon.Fonts</span></code> &#8212; Font Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Help">8.28. <code class="docutils literal"><span class="pre">Carbon.Help</span></code> &#8212; Help Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.IBCarbon">8.29. <code class="docutils literal"><span class="pre">Carbon.IBCarbon</span></code> &#8212; Carbon InterfaceBuilder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.IBCarbonRuntime">8.30. <code class="docutils literal"><span class="pre">Carbon.IBCarbonRuntime</span></code> &#8212; Carbon InterfaceBuilder constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Icns">8.31. <code class="docutils literal"><span class="pre">Carbon.Icn</span></code> &#8212; Carbon Icon Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Icons">8.32. <code class="docutils literal"><span class="pre">Carbon.Icons</span></code> &#8212; Carbon Icon Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Launch">8.33. <code class="docutils literal"><span class="pre">Carbon.Launch</span></code> &#8212; Carbon Launch Services</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.LaunchServices">8.34. <code class="docutils literal"><span class="pre">Carbon.LaunchServices</span></code> &#8212; Carbon Launch Services constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.List">8.35. <code class="docutils literal"><span class="pre">Carbon.List</span></code> &#8212; List Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Lists">8.36. <code class="docutils literal"><span class="pre">Carbon.Lists</span></code> &#8212; List Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.MacHelp">8.37. <code class="docutils literal"><span class="pre">Carbon.MacHelp</span></code> &#8212; Help Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.MediaDescr">8.38. <code class="docutils literal"><span class="pre">Carbon.MediaDescr</span></code> &#8212; Parsers and generators for Quicktime Media descriptors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Menu">8.39. <code class="docutils literal"><span class="pre">Carbon.Menu</span></code> &#8212; Menu Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Menus">8.40. <code class="docutils literal"><span class="pre">Carbon.Menus</span></code> &#8212; Menu Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Mlte">8.41. <code class="docutils literal"><span class="pre">Carbon.Mlte</span></code> &#8212; MultiLingual Text Editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.OSA">8.42. <code class="docutils literal"><span class="pre">Carbon.OSA</span></code> &#8212; Carbon OSA Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.OSAconst">8.43. <code class="docutils literal"><span class="pre">Carbon.OSAconst</span></code> &#8212; Carbon OSA Interface constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.QDOffscreen">8.44. <code class="docutils literal"><span class="pre">Carbon.QDOffscreen</span></code> &#8212; QuickDraw Offscreen constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Qd">8.45. <code class="docutils literal"><span class="pre">Carbon.Qd</span></code> &#8212; QuickDraw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Qdoffs">8.46. <code class="docutils literal"><span class="pre">Carbon.Qdoffs</span></code> &#8212; QuickDraw Offscreen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Qt">8.47. <code class="docutils literal"><span class="pre">Carbon.Qt</span></code> &#8212; QuickTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.QuickDraw">8.48. <code class="docutils literal"><span class="pre">Carbon.QuickDraw</span></code> &#8212; QuickDraw constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.QuickTime">8.49. <code class="docutils literal"><span class="pre">Carbon.QuickTime</span></code> &#8212; QuickTime constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Res">8.50. <code class="docutils literal"><span class="pre">Carbon.Res</span></code> &#8212; Resource Manager and Handles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Resources">8.51. <code class="docutils literal"><span class="pre">Carbon.Resources</span></code> &#8212; Resource Manager and Handles constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Scrap">8.52. <code class="docutils literal"><span class="pre">Carbon.Scrap</span></code> &#8212; Scrap Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Snd">8.53. <code class="docutils literal"><span class="pre">Carbon.Snd</span></code> &#8212; Sound Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Sound">8.54. <code class="docutils literal"><span class="pre">Carbon.Sound</span></code> &#8212; Sound Manager constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.TE">8.55. <code class="docutils literal"><span class="pre">Carbon.TE</span></code> &#8212; TextEdit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.TextEdit">8.56. <code class="docutils literal"><span class="pre">Carbon.TextEdit</span></code> &#8212; TextEdit constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Win">8.57. <code class="docutils literal"><span class="pre">Carbon.Win</span></code> &#8212; Window Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Carbon.Windows">8.58. <code class="docutils literal"><span class="pre">Carbon.Windows</span></code> &#8212; Window Manager constants</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Autogenerated API</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../api_06to10.html">API: 06 - 10</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_11to15.html">API: 11 - 15</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_16to20.html">API: 16 - 20</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_21to25.html">API: 21 - 25</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_26to30.html">API: 26 - 30</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_31to37.html">API: 31 - 37</a></li>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="colorpicker.html">9. <code class="docutils literal"><span class="pre">ColorPicker</span></code> &#8212; Color selection dialog</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
 </ul>
 
             
