@@ -1,0 +1,22 @@
+
+.. _crypto:
+
+*************************
+14 Cryptographic Services
+*************************
+
+.. index:: single: cryptography
+
+The modules described in this chapter implement various algorithms of a
+cryptographic nature.  They are available at the discretion of the installation.
+Here's an overview:
+
+
+.. toctree::
+    :maxdepth: 1
+    :numbered:
+    
+    hashlib.rst
+    hmac.rst
+    md5.rst
+    sha.rst

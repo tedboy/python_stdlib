@@ -1,9 +1,9 @@
-API
-"""
-
+##########################
+36. Unix Specific Services
+##########################
 .. toctree::
     :maxdepth: 1
-    :numbered:
+    :hidden:
 
     generated/posix
     generated/pwd

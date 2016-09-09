@@ -4,6 +4,7 @@
 
 .. toctree::
     :maxdepth: 1
+    :hidden:
 
     generated/datetime
     generated/calendar

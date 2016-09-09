@@ -3,7 +3,7 @@
 ##########################
 .. toctree::
     :maxdepth: 1
-    :numbered:
+    :hidden:
 
     generated/bdb
     generated/pdb    

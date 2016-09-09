@@ -1,9 +1,9 @@
-API
-"""
-
+######################
+Miscellaneous Services
+######################
 .. toctree::
     :maxdepth: 1
-    :numbered:
+    :hidden:
 
     generated/formatter
 

@@ -1,6 +1,9 @@
+###################
+11 Data Persistence
+###################
 .. toctree::
     :maxdepth: 1
-    :numbered:
+    :hidden:
 
     generated/pickle
     generated/cPickle
