@@ -6,11 +6,9 @@
     :hidden:
 
     generated/distutils
-    generated/ensurepip
 
 .. autosummary::
    :toctree:generated/
    :template:module_all_methods.rst
 
     distutils
-    ensurepip

@@ -3,18 +3,18 @@ Python Standard Library
 Relevant stuffs from https://docs.python.org/2/library/
 
 - All modules for which code is available (`link <./_modules/index.html>`_)
-- `API Trees <./api.html>`__
+- `Expanded API Tree <./api_tree.html>`__
 - `Expanded Contents Tree <./toc_expanded.html>`__
+- `Official page's TOC <./official_page.html>`__
 
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents
 
-   official_page
    01to10
    11to20
    21to30
-   31to41
+   31to37
 
 .. toctree::
    :maxdepth: 2
@@ -25,5 +25,4 @@ Relevant stuffs from https://docs.python.org/2/library/
    api_16to20
    api_21to25
    api_26to30
-   api_31to35
-   api_36to41
+   api_31to37

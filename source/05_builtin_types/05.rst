@@ -1,0 +1,52 @@
+.. XXX: reference/datamodel and this have quite a few overlaps!
+
+
+.. _bltin-types:
+
+*****************
+05 Built-in Types
+*****************
+
+The following sections describe the standard types that are built into the
+interpreter.
+
+.. note::
+
+   Historically (until release 2.2), Python's built-in types have differed from
+   user-defined types because it was not possible to use the built-in types as the
+   basis for object-oriented inheritance. This limitation no longer
+   exists.
+
+.. index:: pair: built-in; types
+
+The principal built-in types are numerics, sequences, mappings, files, classes,
+instances and exceptions.
+
+.. index:: statement: print
+
+Some operations are supported by several object types; in particular,
+practically all objects can be compared, tested for truth value, and converted
+to a string (with the :ref:`repr() <func-repr>` function or the slightly different
+:func:`str` function).  The latter function is implicitly used when an object is
+written by the :func:`print` function.
+
+
+.. toctree::
+    :maxdepth: 2
+    :numbered:
+    :caption: Contents
+    :name: builtin-types
+
+    truth_value.rst
+    boolean.rst
+    comparison.rst
+    numeric_types.rst
+    iterator_types.rst
+    seq_types.rst
+    set_types.rst
+    mapping_types.rst
+    file_objects.rst
+    memory_view.rst
+    context_manager.rst
+    other_tyeps.rst
+    special_attr.rst

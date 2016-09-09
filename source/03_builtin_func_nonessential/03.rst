@@ -1,0 +1,75 @@
+.. _non-essential-built-in-funcs:
+
+03 Non-essential Built-in Functions
+===================================
+
+There are several built-in functions that are no longer essential to learn, know
+or use in modern Python programming.  They have been kept here to maintain
+backwards compatibility with programs written for older versions of Python.
+
+Python programmers, trainers, students and book writers should feel free to
+bypass these functions without concerns about missing something important.
+
+
+.. function:: apply(function, args[, keywords])
+
+   The *function* argument must be a callable object (a user-defined or built-in
+   function or method, or a class object) and the *args* argument must be a
+   sequence.  The *function* is called with *args* as the argument list; the number
+   of arguments is the length of the tuple. If the optional *keywords* argument is
+   present, it must be a dictionary whose keys are strings.  It specifies keyword
+   arguments to be added to the end of the argument list. Calling :func:`apply` is
+   different from just calling ``function(args)``, since in that case there is
+   always exactly one argument.  The use of :func:`apply` is equivalent to
+   ``function(*args, **keywords)``.
+
+   .. deprecated:: 2.3
+      Use ``function(*args, **keywords)`` instead of
+      ``apply(function, args, keywords)`` (see :ref:`tut-unpacking-arguments`).
+
+
+.. function:: buffer(object[, offset[, size]])
+
+   The *object* argument must be an object that supports the buffer call interface
+   (such as strings, arrays, and buffers).  A new buffer object will be created
+   which references the *object* argument. The buffer object will be a slice from
+   the beginning of *object* (or from the specified *offset*). The slice will
+   extend to the end of *object* (or will have a length given by the *size*
+   argument).
+
+
+.. function:: coerce(x, y)
+
+   Return a tuple consisting of the two numeric arguments converted to a common
+   type, using the same rules as used by arithmetic operations. If coercion is not
+   possible, raise :exc:`TypeError`.
+
+
+.. function:: intern(string)
+
+   Enter *string* in the table of "interned" strings and return the interned string
+   -- which is *string* itself or a copy. Interning strings is useful to gain a
+   little performance on dictionary lookup -- if the keys in a dictionary are
+   interned, and the lookup key is interned, the key comparisons (after hashing)
+   can be done by a pointer compare instead of a string compare.  Normally, the
+   names used in Python programs are automatically interned, and the dictionaries
+   used to hold module, class or instance attributes have interned keys.
+
+   .. versionchanged:: 2.3
+      Interned strings are not immortal (like they used to be in Python 2.2 and
+      before); you must keep a reference to the return value of :func:`intern` around
+      to benefit from it.
+
+.. rubric:: Footnotes
+
+.. [#] It is used relatively rarely so does not warrant being made into a statement.
+
+.. [#] Specifying a buffer size currently has no effect on systems that don't have
+   :c:func:`setvbuf`.  The interface to specify the buffer size is not done using a
+   method that calls :c:func:`setvbuf`, because that may dump core when called after
+   any I/O has been performed, and there's no reliable way to determine whether
+   this is the case.
+
+.. [#] In the current implementation, local variable bindings cannot normally be
+   affected this way, but variables retrieved from other scopes (such as modules)
+   can be.  This may change.
