@@ -1,5 +1,8 @@
 (deprecated) :mod:`dbhash` --- DBM-style interface to the BSD database library
 ==============================================================================
+.. contents:: `Contents`
+   :depth: 2
+   :local:
 
 .. module:: dbhash
    :synopsis: DBM-style interface to the BSD database library.
@@ -9,6 +12,11 @@
    The :mod:`dbhash` module has been removed in Python 3.
 
 .. index:: module: bsddb
+
+
+----------------
+
+
 
 The :mod:`dbhash` module provides a function to open databases using the BSD
 ``db`` library.  This module mirrors the interface of the other Python database

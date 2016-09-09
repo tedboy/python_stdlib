@@ -1,5 +1,5 @@
-{{ fullname }}
-{{ underline }}
+:mod:`{{ fullname }}`
+======={{ underline }}
 
 .. automodule:: {{ fullname }}
 
@@ -9,7 +9,8 @@
    ---------
    .. autosummary::
       :toctree:
-
+      :template:function_custom.rst
+      
    {% for item in functions %}
       {{ item }}
    {%- endfor %}

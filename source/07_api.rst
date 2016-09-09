@@ -1,9 +1,8 @@
-API --- 07 String Services
-""""""""""""""""""""""""""
-
+##################
+07 String Services
+##################
 .. toctree::
     :maxdepth: 1
-    :numbered:
 
     generated/string
     generated/re

@@ -2,6 +2,10 @@
 :mod:`hotshot` --- High performance logging profiler
 ====================================================
 
+.. contents:: `Contents`
+   :depth: 2
+   :local:
+
 .. module:: hotshot
    :synopsis: High performance logging profiler, mostly written in C.
 .. moduleauthor:: Fred L. Drake, Jr. <fdrake@acm.org>
@@ -9,6 +13,8 @@
 
 
 .. versionadded:: 2.2
+
+--------------
 
 This module provides a nicer interface to the :mod:`_hotshot` C module. Hotshot
 is a replacement for the existing :mod:`profile` module. As it's written mostly

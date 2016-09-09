@@ -1,5 +1,10 @@
 (deprecated) :mod:`bsddb` --- Interface to Berkeley DB library
 ==============================================================
+.. contents:: `Contents`
+   :depth: 2
+   :local:
+
+
 
 .. module:: bsddb
    :synopsis: Interface to Berkeley DB database library
@@ -8,6 +13,7 @@
 .. deprecated:: 2.6
     The :mod:`bsddb` module has been removed in Python 3.
 
+----------------
 
 The :mod:`bsddb` module provides an interface to the Berkeley DB library.  Users
 can create hash, btree or record based library files using the appropriate open

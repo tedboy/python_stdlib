@@ -1,5 +1,5 @@
-{{ fullname }}
-{{ underline }}
+:mod:`{{ fullname }}`
+======={{ underline }}
 
 .. automodule:: {{ fullname }}
 
@@ -8,18 +8,28 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
+      :template:function_custom.rst
 
    {% for item in functions %}
       {{ item }}
    {%- endfor %}
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   {% for item in functions %}
+       generated/{{ fullname }}.{{ item }}
+   {%- endfor %}
+      
    {% endif %}
    {% endblock %}
 
    {% block classes %}
    {% if classes %}
    Classes
-   -------
+   ---------
    .. autosummary::
       :toctree:generated/
       :template:class_custom.rst
@@ -42,7 +52,7 @@
    {% block exceptions %}
    {% if exceptions %}
    Exceptions
-   ----------
+   ---------
    .. autosummary::
       :toctree:
 

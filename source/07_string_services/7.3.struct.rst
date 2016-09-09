@@ -1,6 +1,10 @@
 
 :mod:`struct` --- Interpret strings as packed binary data
 =========================================================
+.. contents:: `Contents`
+   :depth: 2
+   :local:
+
 
 .. module:: struct
    :synopsis: Interpret strings as packed binary data.
@@ -8,6 +12,8 @@
 .. index::
    pair: C; structures
    triple: packing; binary; data
+
+----------------
 
 This module performs conversions between Python values and C structs represented
 as Python strings.  This can be used in handling binary data stored in files or
