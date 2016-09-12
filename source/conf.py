@@ -99,6 +99,7 @@ language = None
 # This patterns also effect to html_static_path and html_extra_path
 exclude_patterns = [
 # # 'api_all.rst',
+'ignore/*',
 'api_tree.rst',
 'toc_expanded.rst', # <- messes up the on the sidebar if ``collapse_navigation`` option is set to True (learned this the hard way)
 # ################## api by chapters ##################
