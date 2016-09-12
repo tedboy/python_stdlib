@@ -165,10 +165,10 @@
 
 <span class="c1"># Extract bits from the mode</span>
 
-<div class="viewcode-block" id="S_IMODE"><a class="viewcode-back" href="../generated/stat.S_IMODE.html#stat.S_IMODE">[docs]</a><span class="k">def</span> <span class="nf">S_IMODE</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
+<div class="viewcode-block" id="S_IMODE"><a class="viewcode-back" href="../generated/generated/stat.S_IMODE.html#stat.S_IMODE">[docs]</a><span class="k">def</span> <span class="nf">S_IMODE</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">mode</span> <span class="o">&amp;</span> <span class="mo">07777</span></div>
 
-<div class="viewcode-block" id="S_IFMT"><a class="viewcode-back" href="../generated/stat.S_IFMT.html#stat.S_IFMT">[docs]</a><span class="k">def</span> <span class="nf">S_IFMT</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
+<div class="viewcode-block" id="S_IFMT"><a class="viewcode-back" href="../generated/generated/stat.S_IFMT.html#stat.S_IFMT">[docs]</a><span class="k">def</span> <span class="nf">S_IFMT</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">mode</span> <span class="o">&amp;</span> <span class="mo">0170000</span></div>
 
 <span class="c1"># Constants used as S_IFMT() for various file types</span>
@@ -184,25 +184,25 @@
 
 <span class="c1"># Functions to test for each file type</span>
 
-<div class="viewcode-block" id="S_ISDIR"><a class="viewcode-back" href="../generated/stat.S_ISDIR.html#stat.S_ISDIR">[docs]</a><span class="k">def</span> <span class="nf">S_ISDIR</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
+<div class="viewcode-block" id="S_ISDIR"><a class="viewcode-back" href="../generated/generated/stat.S_ISDIR.html#stat.S_ISDIR">[docs]</a><span class="k">def</span> <span class="nf">S_ISDIR</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">S_IFMT</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span> <span class="o">==</span> <span class="n">S_IFDIR</span></div>
 
-<div class="viewcode-block" id="S_ISCHR"><a class="viewcode-back" href="../generated/stat.S_ISCHR.html#stat.S_ISCHR">[docs]</a><span class="k">def</span> <span class="nf">S_ISCHR</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
+<div class="viewcode-block" id="S_ISCHR"><a class="viewcode-back" href="../generated/generated/stat.S_ISCHR.html#stat.S_ISCHR">[docs]</a><span class="k">def</span> <span class="nf">S_ISCHR</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">S_IFMT</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span> <span class="o">==</span> <span class="n">S_IFCHR</span></div>
 
-<div class="viewcode-block" id="S_ISBLK"><a class="viewcode-back" href="../generated/stat.S_ISBLK.html#stat.S_ISBLK">[docs]</a><span class="k">def</span> <span class="nf">S_ISBLK</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
+<div class="viewcode-block" id="S_ISBLK"><a class="viewcode-back" href="../generated/generated/stat.S_ISBLK.html#stat.S_ISBLK">[docs]</a><span class="k">def</span> <span class="nf">S_ISBLK</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">S_IFMT</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span> <span class="o">==</span> <span class="n">S_IFBLK</span></div>
 
-<div class="viewcode-block" id="S_ISREG"><a class="viewcode-back" href="../generated/stat.S_ISREG.html#stat.S_ISREG">[docs]</a><span class="k">def</span> <span class="nf">S_ISREG</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
+<div class="viewcode-block" id="S_ISREG"><a class="viewcode-back" href="../generated/generated/stat.S_ISREG.html#stat.S_ISREG">[docs]</a><span class="k">def</span> <span class="nf">S_ISREG</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">S_IFMT</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span> <span class="o">==</span> <span class="n">S_IFREG</span></div>
 
-<div class="viewcode-block" id="S_ISFIFO"><a class="viewcode-back" href="../generated/stat.S_ISFIFO.html#stat.S_ISFIFO">[docs]</a><span class="k">def</span> <span class="nf">S_ISFIFO</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
+<div class="viewcode-block" id="S_ISFIFO"><a class="viewcode-back" href="../generated/generated/stat.S_ISFIFO.html#stat.S_ISFIFO">[docs]</a><span class="k">def</span> <span class="nf">S_ISFIFO</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">S_IFMT</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span> <span class="o">==</span> <span class="n">S_IFIFO</span></div>
 
-<div class="viewcode-block" id="S_ISLNK"><a class="viewcode-back" href="../generated/stat.S_ISLNK.html#stat.S_ISLNK">[docs]</a><span class="k">def</span> <span class="nf">S_ISLNK</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
+<div class="viewcode-block" id="S_ISLNK"><a class="viewcode-back" href="../generated/generated/stat.S_ISLNK.html#stat.S_ISLNK">[docs]</a><span class="k">def</span> <span class="nf">S_ISLNK</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">S_IFMT</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span> <span class="o">==</span> <span class="n">S_IFLNK</span></div>
 
-<div class="viewcode-block" id="S_ISSOCK"><a class="viewcode-back" href="../generated/stat.S_ISSOCK.html#stat.S_ISSOCK">[docs]</a><span class="k">def</span> <span class="nf">S_ISSOCK</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
+<div class="viewcode-block" id="S_ISSOCK"><a class="viewcode-back" href="../generated/generated/stat.S_ISSOCK.html#stat.S_ISSOCK">[docs]</a><span class="k">def</span> <span class="nf">S_ISSOCK</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">S_IFMT</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span> <span class="o">==</span> <span class="n">S_IFSOCK</span></div>
 
 <span class="c1"># Names for permission bits</span>

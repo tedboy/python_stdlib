@@ -268,7 +268,7 @@ information as possible.</p>
 may look different on different platforms and this is intended.</p>
 <p>If <em>aliased</em> is true, the function will use aliases for various platforms that
 report system names which differ from their common names, for example SunOS will
-be reported as Solaris.  The <a class="reference internal" href="../generated/platform.system_alias.html#platform.system_alias" title="platform.system_alias"><code class="xref py py-func docutils literal"><span class="pre">system_alias()</span></code></a> function is used to implement
+be reported as Solaris.  The <a class="reference internal" href="../generated/generated/platform.system_alias.html#platform.system_alias" title="platform.system_alias"><code class="xref py py-func docutils literal"><span class="pre">system_alias()</span></code></a> function is used to implement
 this.</p>
 <p>Setting <em>terse</em> to true causes the function to return only the absolute minimum
 information needed to identify the platform.</p>
@@ -280,7 +280,7 @@ information needed to identify the platform.</p>
 <dd><p>Returns the (real) processor name, e.g. <code class="docutils literal"><span class="pre">'amdk6'</span></code>.</p>
 <p>An empty string is returned if the value cannot be determined. Note that many
 platforms do not provide this information or simply return the same value as for
-<a class="reference internal" href="../generated/platform.machine.html#platform.machine" title="platform.machine"><code class="xref py py-func docutils literal"><span class="pre">machine()</span></code></a>.  NetBSD does this.</p>
+<a class="reference internal" href="../generated/generated/platform.machine.html#platform.machine" title="platform.machine"><code class="xref py py-func docutils literal"><span class="pre">machine()</span></code></a>.  NetBSD does this.</p>
 </dd></dl>
 
 <dl class="function">
@@ -374,7 +374,7 @@ returned if the value cannot be determined.</p>
 <code class="descclassname">platform.</code><code class="descname">uname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/platform.html#uname"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platform.uname" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fairly portable uname interface. Returns a tuple of strings <code class="docutils literal"><span class="pre">(system,</span> <span class="pre">node,</span>
 <span class="pre">release,</span> <span class="pre">version,</span> <span class="pre">machine,</span> <span class="pre">processor)</span></code> identifying the underlying platform.</p>
-<p>Note that unlike the <a class="reference internal" href="../generated/os.uname.html#os.uname" title="os.uname"><code class="xref py py-func docutils literal"><span class="pre">os.uname()</span></code></a> function this also returns possible
+<p>Note that unlike the <a class="reference internal" href="../generated/generated/os.uname.html#os.uname" title="os.uname"><code class="xref py py-func docutils literal"><span class="pre">os.uname()</span></code></a> function this also returns possible
 processor information as additional tuple entry.</p>
 <p>Entries which cannot be determined are set to <code class="docutils literal"><span class="pre">''</span></code>.</p>
 </dd></dl>
@@ -420,7 +420,7 @@ only runs on Win32 compatible platforms.</p>
 <dl class="function">
 <dt id="platform.popen">
 <code class="descclassname">platform.</code><code class="descname">popen</code><span class="sig-paren">(</span><em>cmd</em>, <em>mode='r'</em>, <em>bufsize=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/platform.html#popen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platform.popen" title="Permalink to this definition">¶</a></dt>
-<dd><p>Portable <a class="reference internal" href="../generated/platform.popen.html#platform.popen" title="platform.popen"><code class="xref py py-func docutils literal"><span class="pre">popen()</span></code></a> interface.  Find a working popen implementation
+<dd><p>Portable <a class="reference internal" href="../generated/generated/platform.popen.html#platform.popen" title="platform.popen"><code class="xref py py-func docutils literal"><span class="pre">popen()</span></code></a> interface.  Find a working popen implementation
 preferring <code class="xref py py-func docutils literal"><span class="pre">win32pipe.popen()</span></code>.  On Windows NT, <code class="xref py py-func docutils literal"><span class="pre">win32pipe.popen()</span></code>
 should work; on Windows 9x it hangs due to bugs in the MS C library.</p>
 </dd></dl>
@@ -446,8 +446,8 @@ strings.</p>
 <dt id="platform.dist">
 <code class="descclassname">platform.</code><code class="descname">dist</code><span class="sig-paren">(</span><em>distname=''</em>, <em>version=''</em>, <em>id=''</em>, <em>supported_dists=('SuSE'</em>, <em>'debian'</em>, <em>'redhat'</em>, <em>'mandrake'</em>, <em>...)</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/platform.html#dist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platform.dist" title="Permalink to this definition">¶</a></dt>
 <dd><p>This is an old version of the functionality now provided by
-<a class="reference internal" href="../generated/platform.linux_distribution.html#platform.linux_distribution" title="platform.linux_distribution"><code class="xref py py-func docutils literal"><span class="pre">linux_distribution()</span></code></a>. For new code, please use the
-<a class="reference internal" href="../generated/platform.linux_distribution.html#platform.linux_distribution" title="platform.linux_distribution"><code class="xref py py-func docutils literal"><span class="pre">linux_distribution()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/platform.linux_distribution.html#platform.linux_distribution" title="platform.linux_distribution"><code class="xref py py-func docutils literal"><span class="pre">linux_distribution()</span></code></a>. For new code, please use the
+<a class="reference internal" href="../generated/generated/platform.linux_distribution.html#platform.linux_distribution" title="platform.linux_distribution"><code class="xref py py-func docutils literal"><span class="pre">linux_distribution()</span></code></a>.</p>
 <p>The only difference between the two is that <code class="docutils literal"><span class="pre">dist()</span></code> always
 returns the short name of the distribution taken from the
 <code class="docutils literal"><span class="pre">supported_dists</span></code> parameter.</p>

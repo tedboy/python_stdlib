@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       Pickler
       StringIO
       Unpickler
       open
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/shelve.Pickler
+       generated/shelve.StringIO
+       generated/shelve.Unpickler
+       generated/shelve.open
+      
    
    
 

@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       contextmanager
       nested
       warn
       wraps
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/contextlib.contextmanager
+       generated/contextlib.nested
+       generated/contextlib.warn
+       generated/contextlib.wraps
+      
    
    
 

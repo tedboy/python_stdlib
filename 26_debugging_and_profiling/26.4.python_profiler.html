@@ -188,7 +188,7 @@
 <li><a class="reference internal" href="#introduction-to-the-profilers" id="id3">Introduction to the profilers</a></li>
 <li><a class="reference internal" href="#instant-user-s-manual" id="id4">Instant User&#8217;s Manual</a></li>
 <li><a class="reference internal" href="#module-cProfile" id="id5"><a class="reference internal" href="../generated/profile.html#module-profile" title="profile"><code class="xref py py-mod docutils literal"><span class="pre">profile</span></code></a> and <a class="reference internal" href="../generated/cProfile.html#module-cProfile" title="cProfile"><code class="xref py py-mod docutils literal"><span class="pre">cProfile</span></code></a> Module Reference</a></li>
-<li><a class="reference internal" href="#the-stats-class" id="id6">The <a class="reference internal" href="../generated/profile.Stats.html#profile.Stats" title="profile.Stats"><code class="xref py py-class docutils literal"><span class="pre">Stats</span></code></a> Class</a></li>
+<li><a class="reference internal" href="#the-stats-class" id="id6">The <a class="reference internal" href="../generated/generated/profile.Stats.html#profile.Stats" title="profile.Stats"><code class="xref py py-class docutils literal"><span class="pre">Stats</span></code></a> Class</a></li>
 <li><a class="reference internal" href="#what-is-deterministic-profiling" id="id7">What Is Deterministic Profiling?</a></li>
 <li><a class="reference internal" href="#limitations" id="id8">Limitations</a></li>
 <li><a class="reference internal" href="#calibration" id="id9">Calibration</a></li>
@@ -261,7 +261,7 @@ on an existing application.</p>
 </div>
 <p>(Use <a class="reference internal" href="../generated/profile.html#module-profile" title="profile"><code class="xref py py-mod docutils literal"><span class="pre">profile</span></code></a> instead of <a class="reference internal" href="../generated/cProfile.html#module-cProfile" title="cProfile"><code class="xref py py-mod docutils literal"><span class="pre">cProfile</span></code></a> if the latter is not available on
 your system.)</p>
-<p>The above action would run <a class="reference internal" href="../generated/re.compile.html#re.compile" title="re.compile"><code class="xref py py-func docutils literal"><span class="pre">re.compile()</span></code></a> and print profile results like
+<p>The above action would run <a class="reference internal" href="../generated/generated/re.compile.html#re.compile" title="re.compile"><code class="xref py py-func docutils literal"><span class="pre">re.compile()</span></code></a> and print profile results like
 the following:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>      197 function calls (192 primitive calls) in 0.002 seconds
 
@@ -403,20 +403,20 @@ results are sorted.</p>
 <dl class="function">
 <dt id="profile.runctx">
 <code class="descclassname">profile.</code><code class="descname">runctx</code><span class="sig-paren">(</span><em>command</em>, <em>globals</em>, <em>locals</em>, <em>filename=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile.html#runctx"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#profile.runctx" title="Permalink to this definition">¶</a></dt>
-<dd><p>This function is similar to <a class="reference internal" href="../generated/profile.run.html#profile.run" title="profile.run"><code class="xref py py-func docutils literal"><span class="pre">run()</span></code></a>, with added arguments to supply the
+<dd><p>This function is similar to <a class="reference internal" href="../generated/generated/profile.run.html#profile.run" title="profile.run"><code class="xref py py-func docutils literal"><span class="pre">run()</span></code></a>, with added arguments to supply the
 globals and locals dictionaries for the <em>command</em> string. This routine
 executes:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">exec</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="nb">globals</span><span class="p">,</span> <span class="nb">locals</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>and gathers profiling statistics as in the <a class="reference internal" href="../generated/profile.run.html#profile.run" title="profile.run"><code class="xref py py-func docutils literal"><span class="pre">run()</span></code></a> function above.</p>
+<p>and gathers profiling statistics as in the <a class="reference internal" href="../generated/generated/profile.run.html#profile.run" title="profile.run"><code class="xref py py-func docutils literal"><span class="pre">run()</span></code></a> function above.</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="profile.Profile">
 <em class="property">class </em><code class="descclassname">profile.</code><code class="descname">Profile</code><span class="sig-paren">(</span><em>timer=None</em>, <em>timeunit=0.0</em>, <em>subcalls=True</em>, <em>builtins=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile.html#Profile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#profile.Profile" title="Permalink to this definition">¶</a></dt>
 <dd><p>This class is normally only used if more precise control over profiling is
-needed than what the <a class="reference internal" href="../generated/cProfile.run.html#cProfile.run" title="cProfile.run"><code class="xref py py-func docutils literal"><span class="pre">cProfile.run()</span></code></a> function provides.</p>
+needed than what the <a class="reference internal" href="../generated/generated/cProfile.run.html#cProfile.run" title="cProfile.run"><code class="xref py py-func docutils literal"><span class="pre">cProfile.run()</span></code></a> function provides.</p>
 <p>A custom timer can be supplied for measuring how long code takes to run via
 the <em>timer</em> argument. This must be a function that returns a single number
 representing the current time. If the number is an integer, the <em>timeunit</em>
@@ -492,7 +492,7 @@ local environment.</p>
 
 </div>
 <div class="section" id="the-stats-class">
-<span id="profile-stats"></span><h2><a class="toc-backref" href="#id6">3.4. The <a class="reference internal" href="../generated/profile.Stats.html#profile.Stats" title="profile.Stats"><code class="xref py py-class docutils literal"><span class="pre">Stats</span></code></a> Class</a><a class="headerlink" href="#the-stats-class" title="Permalink to this headline">¶</a></h2>
+<span id="profile-stats"></span><h2><a class="toc-backref" href="#id6">3.4. The <a class="reference internal" href="../generated/generated/profile.Stats.html#profile.Stats" title="profile.Stats"><code class="xref py py-class docutils literal"><span class="pre">Stats</span></code></a> Class</a><a class="headerlink" href="#the-stats-class" title="Permalink to this headline">¶</a></h2>
 <p>Analysis of the profiler data is done using the <a class="reference internal" href="#pstats.Stats" title="pstats.Stats"><code class="xref py py-class docutils literal"><span class="pre">Stats</span></code></a> class.</p>
 <span class="target" id="module-pstats"></span><dl class="class">
 <dt id="pstats.Stats">
@@ -532,8 +532,8 @@ are accumulated into a single entry.</p>
 <code class="descname">add</code><span class="sig-paren">(</span><em>*filenames</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pstats.html#Stats.add"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pstats.Stats.add" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method of the <a class="reference internal" href="#pstats.Stats" title="pstats.Stats"><code class="xref py py-class docutils literal"><span class="pre">Stats</span></code></a> class accumulates additional profiling
 information into the current profiling object.  Its arguments should refer
-to filenames created by the corresponding version of <a class="reference internal" href="../generated/profile.run.html#profile.run" title="profile.run"><code class="xref py py-func docutils literal"><span class="pre">profile.run()</span></code></a>
-or <a class="reference internal" href="../generated/cProfile.run.html#cProfile.run" title="cProfile.run"><code class="xref py py-func docutils literal"><span class="pre">cProfile.run()</span></code></a>. Statistics for identically named (re: file, line,
+to filenames created by the corresponding version of <a class="reference internal" href="../generated/generated/profile.run.html#profile.run" title="profile.run"><code class="xref py py-func docutils literal"><span class="pre">profile.run()</span></code></a>
+or <a class="reference internal" href="../generated/generated/cProfile.run.html#cProfile.run" title="cProfile.run"><code class="xref py py-func docutils literal"><span class="pre">cProfile.run()</span></code></a>. Statistics for identically named (re: file, line,
 name) functions are automatically accumulated into single function
 statistics.</p>
 </dd></dl>
@@ -647,7 +647,7 @@ descending order is properly selected based on the sort key of choice.</p>
 <dt id="pstats.Stats.print_stats">
 <code class="descname">print_stats</code><span class="sig-paren">(</span><em>*restrictions</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pstats.html#Stats.print_stats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pstats.Stats.print_stats" title="Permalink to this definition">¶</a></dt>
 <dd><p>This method for the <a class="reference internal" href="#pstats.Stats" title="pstats.Stats"><code class="xref py py-class docutils literal"><span class="pre">Stats</span></code></a> class prints out a report as described
-in the <a class="reference internal" href="../generated/profile.run.html#profile.run" title="profile.run"><code class="xref py py-func docutils literal"><span class="pre">profile.run()</span></code></a> definition.</p>
+in the <a class="reference internal" href="../generated/generated/profile.run.html#profile.run" title="profile.run"><code class="xref py py-func docutils literal"><span class="pre">profile.run()</span></code></a> definition.</p>
 <p>The order of the printing is based on the last
 <a class="reference internal" href="#pstats.Stats.sort_stats" title="pstats.Stats.sort_stats"><code class="xref py py-meth docutils literal"><span class="pre">sort_stats()</span></code></a> operation done on the object (subject to
 caveats in <a class="reference internal" href="#pstats.Stats.add" title="pstats.Stats.add"><code class="xref py py-meth docutils literal"><span class="pre">add()</span></code></a> and
@@ -812,14 +812,14 @@ you are using <a class="reference internal" href="../generated/generated/profile
 <dl class="docutils">
 <dt><a class="reference internal" href="../generated/generated/profile.Profile.html#profile.Profile" title="profile.Profile"><code class="xref py py-class docutils literal"><span class="pre">profile.Profile</span></code></a></dt>
 <dd><p class="first"><code class="docutils literal"><span class="pre">your_time_func</span></code> should return a single number, or a list of numbers whose
-sum is the current time (like what <a class="reference internal" href="../generated/os.times.html#os.times" title="os.times"><code class="xref py py-func docutils literal"><span class="pre">os.times()</span></code></a> returns).  If the
+sum is the current time (like what <a class="reference internal" href="../generated/generated/os.times.html#os.times" title="os.times"><code class="xref py py-func docutils literal"><span class="pre">os.times()</span></code></a> returns).  If the
 function returns a single time number, or the list of returned numbers has
 length 2, then you will get an especially fast version of the dispatch
 routine.</p>
 <p class="last">Be warned that you should calibrate the profiler class for the timer function
 that you choose (see <a class="reference internal" href="#profile-calibration"><span>Calibration</span></a>).  For most machines, a timer
 that returns a lone integer value will provide the best results in terms of
-low overhead during profiling.  (<a class="reference internal" href="../generated/os.times.html#os.times" title="os.times"><code class="xref py py-func docutils literal"><span class="pre">os.times()</span></code></a> is <em>pretty</em> bad, as it
+low overhead during profiling.  (<a class="reference internal" href="../generated/generated/os.times.html#os.times" title="os.times"><code class="xref py py-func docutils literal"><span class="pre">os.times()</span></code></a> is <em>pretty</em> bad, as it
 returns a tuple of floating point values).  If you want to substitute a
 better timer in the cleanest fashion, derive a class and hardwire a
 replacement dispatch method that best handles your timer call, along with the

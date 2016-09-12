@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       bisect
       isnumeric
       pickline
       test
       updateline
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/mhlib.bisect
+       generated/mhlib.isnumeric
+       generated/mhlib.pickline
+       generated/mhlib.test
+       generated/mhlib.updateline
+      
    
    
 

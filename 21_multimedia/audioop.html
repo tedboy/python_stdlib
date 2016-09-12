@@ -204,7 +204,7 @@ fragments should have the same length.  Samples are truncated in case of overflo
 <dt id="audioop.adpcm2lin">
 <code class="descclassname">audioop.</code><code class="descname">adpcm2lin</code><span class="sig-paren">(</span><em>adpcmfragment</em>, <em>width</em>, <em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#audioop.adpcm2lin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Decode an Intel/DVI ADPCM coded fragment to a linear fragment.  See the
-description of <a class="reference internal" href="../generated/audioop.lin2adpcm.html#audioop.lin2adpcm" title="audioop.lin2adpcm"><code class="xref py py-func docutils literal"><span class="pre">lin2adpcm()</span></code></a> for details on ADPCM coding. Return a tuple
+description of <a class="reference internal" href="../generated/generated/audioop.lin2adpcm.html#audioop.lin2adpcm" title="audioop.lin2adpcm"><code class="xref py py-func docutils literal"><span class="pre">lin2adpcm()</span></code></a> for details on ADPCM coding. Return a tuple
 <code class="docutils literal"><span class="pre">(sample,</span> <span class="pre">newstate)</span></code> where the sample has the width specified in <em>width</em>.</p>
 </dd></dl>
 
@@ -260,11 +260,11 @@ contain 2-byte samples.</p>
 <code class="descclassname">audioop.</code><code class="descname">findfit</code><span class="sig-paren">(</span><em>fragment</em>, <em>reference</em><span class="sig-paren">)</span><a class="headerlink" href="#audioop.findfit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Try to match <em>reference</em> as well as possible to a portion of <em>fragment</em> (which
 should be the longer fragment).  This is (conceptually) done by taking slices
-out of <em>fragment</em>, using <a class="reference internal" href="../generated/audioop.findfactor.html#audioop.findfactor" title="audioop.findfactor"><code class="xref py py-func docutils literal"><span class="pre">findfactor()</span></code></a> to compute the best match, and
+out of <em>fragment</em>, using <a class="reference internal" href="../generated/generated/audioop.findfactor.html#audioop.findfactor" title="audioop.findfactor"><code class="xref py py-func docutils literal"><span class="pre">findfactor()</span></code></a> to compute the best match, and
 minimizing the result.  The fragments should both contain 2-byte samples.
 Return a tuple <code class="docutils literal"><span class="pre">(offset,</span> <span class="pre">factor)</span></code> where <em>offset</em> is the (integer) offset into
 <em>fragment</em> where the optimal match started and <em>factor</em> is the (floating-point)
-factor as per <a class="reference internal" href="../generated/audioop.findfactor.html#audioop.findfactor" title="audioop.findfactor"><code class="xref py py-func docutils literal"><span class="pre">findfactor()</span></code></a>.</p>
+factor as per <a class="reference internal" href="../generated/generated/audioop.findfactor.html#audioop.findfactor" title="audioop.findfactor"><code class="xref py py-func docutils literal"><span class="pre">findfactor()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -291,7 +291,7 @@ and the next, divided by a (varying) step.  The Intel/DVI ADPCM algorithm has
 been selected for use by the IMA, so it may well become a standard.</p>
 <p><em>state</em> is a tuple containing the state of the coder.  The coder returns a tuple
 <code class="docutils literal"><span class="pre">(adpcmfrag,</span> <span class="pre">newstate)</span></code>, and the <em>newstate</em> should be passed to the next call
-of <a class="reference internal" href="../generated/audioop.lin2adpcm.html#audioop.lin2adpcm" title="audioop.lin2adpcm"><code class="xref py py-func docutils literal"><span class="pre">lin2adpcm()</span></code></a>.  In the initial call, <code class="docutils literal"><span class="pre">None</span></code> can be passed as the state.
+of <a class="reference internal" href="../generated/generated/audioop.lin2adpcm.html#audioop.lin2adpcm" title="audioop.lin2adpcm"><code class="xref py py-func docutils literal"><span class="pre">lin2adpcm()</span></code></a>.  In the initial call, <code class="docutils literal"><span class="pre">None</span></code> can be passed as the state.
 <em>adpcmfrag</em> is the ADPCM coded fragment packed 2 4-bit values per byte.</p>
 </dd></dl>
 
@@ -366,7 +366,7 @@ the floating-point value <em>factor</em>.  Samples are truncated in case of over
 <dd><p>Convert the frame rate of the input fragment.</p>
 <p><em>state</em> is a tuple containing the state of the converter.  The converter returns
 a tuple <code class="docutils literal"><span class="pre">(newfragment,</span> <span class="pre">newstate)</span></code>, and <em>newstate</em> should be passed to the next
-call of <a class="reference internal" href="../generated/audioop.ratecv.html#audioop.ratecv" title="audioop.ratecv"><code class="xref py py-func docutils literal"><span class="pre">ratecv()</span></code></a>.  The initial call should pass <code class="docutils literal"><span class="pre">None</span></code> as the state.</p>
+call of <a class="reference internal" href="../generated/generated/audioop.ratecv.html#audioop.ratecv" title="audioop.ratecv"><code class="xref py py-func docutils literal"><span class="pre">ratecv()</span></code></a>.  The initial call should pass <code class="docutils literal"><span class="pre">None</span></code> as the state.</p>
 <p>The <em>weightA</em> and <em>weightB</em> arguments are parameters for a simple digital filter
 and default to <code class="docutils literal"><span class="pre">1</span></code> and <code class="docutils literal"><span class="pre">0</span></code> respectively.</p>
 </dd></dl>
@@ -408,7 +408,7 @@ u-LAW encoding always uses 8 bits samples, so <em>width</em> refers only to the 
 width of the output fragment here.</p>
 </dd></dl>
 
-<p>Note that operations such as <a class="reference internal" href="../generated/audioop.mul.html#audioop.mul" title="audioop.mul"><code class="xref py py-func docutils literal"><span class="pre">mul()</span></code></a> or <a class="reference internal" href="../generated/audioop.max.html#audioop.max" title="audioop.max"><code class="xref py py-func docutils literal"><span class="pre">max()</span></code></a> make no distinction
+<p>Note that operations such as <a class="reference internal" href="../generated/generated/audioop.mul.html#audioop.mul" title="audioop.mul"><code class="xref py py-func docutils literal"><span class="pre">mul()</span></code></a> or <a class="reference internal" href="../generated/generated/audioop.max.html#audioop.max" title="audioop.max"><code class="xref py py-func docutils literal"><span class="pre">max()</span></code></a> make no distinction
 between mono and stereo fragments, i.e. all samples are treated equal.  If this
 is a problem the stereo fragment should be split into two mono fragments first
 and recombined later.  Here is an example of how to do that:</p>
@@ -425,7 +425,7 @@ and recombined later.  Here is an example of how to do that:</p>
 <p>If you use the ADPCM coder to build network packets and you want your protocol
 to be stateless (i.e. to be able to tolerate packet loss) you should not only
 transmit the data but also the state.  Note that you should send the <em>initial</em>
-state (the one you passed to <a class="reference internal" href="../generated/audioop.lin2adpcm.html#audioop.lin2adpcm" title="audioop.lin2adpcm"><code class="xref py py-func docutils literal"><span class="pre">lin2adpcm()</span></code></a>) along to the decoder, not the
+state (the one you passed to <a class="reference internal" href="../generated/generated/audioop.lin2adpcm.html#audioop.lin2adpcm" title="audioop.lin2adpcm"><code class="xref py py-func docutils literal"><span class="pre">lin2adpcm()</span></code></a>) along to the decoder, not the
 final state (as returned by the coder).  If you want to use
 <a class="reference internal" href="../generated/generated/struct.Struct.html#struct.Struct" title="struct.Struct"><code class="xref py py-class docutils literal"><span class="pre">struct.Struct</span></code></a> to store the state in binary you can code the first
 element (the predicted value) in 16 bits and the second (the delta index) in 8.</p>

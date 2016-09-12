@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       Int2AP
       Internaldate2tuple
       ParseFlags
       Time2Internaldate
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/imaplib.Int2AP
+       generated/imaplib.Internaldate2tuple
+       generated/imaplib.ParseFlags
+       generated/imaplib.Time2Internaldate
+      
    
    
 

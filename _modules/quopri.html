@@ -165,7 +165,7 @@
     <span class="n">b2a_qp</span> <span class="o">=</span> <span class="bp">None</span>
 
 
-<div class="viewcode-block" id="needsquoting"><a class="viewcode-back" href="../generated/quopri.needsquoting.html#quopri.needsquoting">[docs]</a><span class="k">def</span> <span class="nf">needsquoting</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">quotetabs</span><span class="p">,</span> <span class="n">header</span><span class="p">):</span>
+<div class="viewcode-block" id="needsquoting"><a class="viewcode-back" href="../generated/generated/quopri.needsquoting.html#quopri.needsquoting">[docs]</a><span class="k">def</span> <span class="nf">needsquoting</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">quotetabs</span><span class="p">,</span> <span class="n">header</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decide whether a particular character needs to be quoted.</span>
 
 <span class="sd">    The &#39;quotetabs&#39; flag indicates whether embedded tabs and spaces should be</span>
@@ -179,14 +179,14 @@
         <span class="k">return</span> <span class="n">header</span>
     <span class="k">return</span> <span class="n">c</span> <span class="o">==</span> <span class="n">ESCAPE</span> <span class="ow">or</span> <span class="ow">not</span> <span class="p">(</span><span class="s1">&#39; &#39;</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s1">&#39;~&#39;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="quote"><a class="viewcode-back" href="../generated/quopri.quote.html#quopri.quote">[docs]</a><span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
+<div class="viewcode-block" id="quote"><a class="viewcode-back" href="../generated/generated/quopri.quote.html#quopri.quote">[docs]</a><span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Quote a single character.&quot;&quot;&quot;</span>
     <span class="n">i</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">ESCAPE</span> <span class="o">+</span> <span class="n">HEX</span><span class="p">[</span><span class="n">i</span><span class="o">//</span><span class="mi">16</span><span class="p">]</span> <span class="o">+</span> <span class="n">HEX</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="mi">16</span><span class="p">]</span></div>
 
 
 
-<div class="viewcode-block" id="encode"><a class="viewcode-back" href="../generated/quopri.encode.html#quopri.encode">[docs]</a><span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">quotetabs</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="encode"><a class="viewcode-back" href="../generated/generated/quopri.encode.html#quopri.encode">[docs]</a><span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">quotetabs</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Read &#39;input&#39;, apply quoted-printable encoding, and write to &#39;output&#39;.</span>
 
 <span class="sd">    &#39;input&#39; and &#39;output&#39; are files with readline() and write() methods.</span>
@@ -249,7 +249,7 @@
     <span class="k">if</span> <span class="n">prevline</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">write</span><span class="p">(</span><span class="n">prevline</span><span class="p">,</span> <span class="n">lineEnd</span><span class="o">=</span><span class="n">stripped</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="encodestring"><a class="viewcode-back" href="../generated/quopri.encodestring.html#quopri.encodestring">[docs]</a><span class="k">def</span> <span class="nf">encodestring</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">quotetabs</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="encodestring"><a class="viewcode-back" href="../generated/generated/quopri.encodestring.html#quopri.encodestring">[docs]</a><span class="k">def</span> <span class="nf">encodestring</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">quotetabs</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">b2a_qp</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">b2a_qp</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">quotetabs</span> <span class="o">=</span> <span class="n">quotetabs</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="n">header</span><span class="p">)</span>
     <span class="kn">from</span> <span class="nn">cStringIO</span> <span class="kn">import</span> <span class="n">StringIO</span>
@@ -260,7 +260,7 @@
 
 
 
-<div class="viewcode-block" id="decode"><a class="viewcode-back" href="../generated/quopri.decode.html#quopri.decode">[docs]</a><span class="k">def</span> <span class="nf">decode</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="decode"><a class="viewcode-back" href="../generated/generated/quopri.decode.html#quopri.decode">[docs]</a><span class="k">def</span> <span class="nf">decode</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Read &#39;input&#39;, apply quoted-printable decoding, and write to &#39;output&#39;.</span>
 <span class="sd">    &#39;input&#39; and &#39;output&#39; are files with readline() and write() methods.</span>
 <span class="sd">    If &#39;header&#39; is true, decode underscore as space (per RFC 1522).&quot;&quot;&quot;</span>
@@ -303,7 +303,7 @@
     <span class="k">if</span> <span class="n">new</span><span class="p">:</span>
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">new</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="decodestring"><a class="viewcode-back" href="../generated/quopri.decodestring.html#quopri.decodestring">[docs]</a><span class="k">def</span> <span class="nf">decodestring</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="decodestring"><a class="viewcode-back" href="../generated/generated/quopri.decodestring.html#quopri.decodestring">[docs]</a><span class="k">def</span> <span class="nf">decodestring</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">a2b_qp</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">a2b_qp</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="n">header</span><span class="p">)</span>
     <span class="kn">from</span> <span class="nn">cStringIO</span> <span class="kn">import</span> <span class="n">StringIO</span>
@@ -315,11 +315,11 @@
 
 
 <span class="c1"># Other helper functions</span>
-<div class="viewcode-block" id="ishex"><a class="viewcode-back" href="../generated/quopri.ishex.html#quopri.ishex">[docs]</a><span class="k">def</span> <span class="nf">ishex</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
+<div class="viewcode-block" id="ishex"><a class="viewcode-back" href="../generated/generated/quopri.ishex.html#quopri.ishex">[docs]</a><span class="k">def</span> <span class="nf">ishex</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the character &#39;c&#39; is a hexadecimal digit.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="s1">&#39;0&#39;</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s1">&#39;9&#39;</span> <span class="ow">or</span> <span class="s1">&#39;a&#39;</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s1">&#39;f&#39;</span> <span class="ow">or</span> <span class="s1">&#39;A&#39;</span> <span class="o">&lt;=</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="s1">&#39;F&#39;</span></div>
 
-<div class="viewcode-block" id="unhex"><a class="viewcode-back" href="../generated/quopri.unhex.html#quopri.unhex">[docs]</a><span class="k">def</span> <span class="nf">unhex</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="unhex"><a class="viewcode-back" href="../generated/generated/quopri.unhex.html#quopri.unhex">[docs]</a><span class="k">def</span> <span class="nf">unhex</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get the integer value of a hexadecimal number.&quot;&quot;&quot;</span>
     <span class="n">bits</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
@@ -336,7 +336,7 @@
 
 
 
-<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/quopri.main.html#quopri.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/generated/quopri.main.html#quopri.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="kn">import</span> <span class="nn">sys</span>
     <span class="kn">import</span> <span class="nn">getopt</span>
     <span class="k">try</span><span class="p">:</span>

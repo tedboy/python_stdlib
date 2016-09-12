@@ -312,12 +312,12 @@
 <span class="c1"># Some useful functions</span>
 <span class="c1">#---------------------------------------------------------</span>
 
-<div class="viewcode-block" id="stn"><a class="viewcode-back" href="../generated/tarfile.stn.html#tarfile.stn">[docs]</a><span class="k">def</span> <span class="nf">stn</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+<div class="viewcode-block" id="stn"><a class="viewcode-back" href="../generated/generated/tarfile.stn.html#tarfile.stn">[docs]</a><span class="k">def</span> <span class="nf">stn</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert a python string to a null-terminated string buffer.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">s</span><span class="p">[:</span><span class="n">length</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">length</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">))</span> <span class="o">*</span> <span class="n">NUL</span></div>
 
-<div class="viewcode-block" id="nts"><a class="viewcode-back" href="../generated/tarfile.nts.html#tarfile.nts">[docs]</a><span class="k">def</span> <span class="nf">nts</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="nts"><a class="viewcode-back" href="../generated/generated/tarfile.nts.html#tarfile.nts">[docs]</a><span class="k">def</span> <span class="nf">nts</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert a null-terminated string field to a python string.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># Use the string up to the first null char.</span>
@@ -326,7 +326,7 @@
         <span class="k">return</span> <span class="n">s</span>
     <span class="k">return</span> <span class="n">s</span><span class="p">[:</span><span class="n">p</span><span class="p">]</span></div>
 
-<div class="viewcode-block" id="nti"><a class="viewcode-back" href="../generated/tarfile.nti.html#tarfile.nti">[docs]</a><span class="k">def</span> <span class="nf">nti</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="nti"><a class="viewcode-back" href="../generated/generated/tarfile.nti.html#tarfile.nti">[docs]</a><span class="k">def</span> <span class="nf">nti</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert a number field to a python number.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># There are two possible encodings for a number field, see</span>
@@ -343,7 +343,7 @@
             <span class="n">n</span> <span class="o">+=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
     <span class="k">return</span> <span class="n">n</span></div>
 
-<div class="viewcode-block" id="itn"><a class="viewcode-back" href="../generated/tarfile.itn.html#tarfile.itn">[docs]</a><span class="k">def</span> <span class="nf">itn</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">digits</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="n">DEFAULT_FORMAT</span><span class="p">):</span>
+<div class="viewcode-block" id="itn"><a class="viewcode-back" href="../generated/generated/tarfile.itn.html#tarfile.itn">[docs]</a><span class="k">def</span> <span class="nf">itn</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">digits</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="n">DEFAULT_FORMAT</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert a python number to a number field.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># POSIX 1003.1-1988 requires numbers to be encoded as a string of</span>
@@ -370,7 +370,7 @@
         <span class="n">s</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mo">0200</span><span class="p">)</span> <span class="o">+</span> <span class="n">s</span>
     <span class="k">return</span> <span class="n">s</span></div>
 
-<div class="viewcode-block" id="uts"><a class="viewcode-back" href="../generated/tarfile.uts.html#tarfile.uts">[docs]</a><span class="k">def</span> <span class="nf">uts</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">encoding</span><span class="p">,</span> <span class="n">errors</span><span class="p">):</span>
+<div class="viewcode-block" id="uts"><a class="viewcode-back" href="../generated/generated/tarfile.uts.html#tarfile.uts">[docs]</a><span class="k">def</span> <span class="nf">uts</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">encoding</span><span class="p">,</span> <span class="n">errors</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert a unicode object to a string.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">errors</span> <span class="o">==</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">:</span>
@@ -390,7 +390,7 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">encoding</span><span class="p">,</span> <span class="n">errors</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="calc_chksums"><a class="viewcode-back" href="../generated/tarfile.calc_chksums.html#tarfile.calc_chksums">[docs]</a><span class="k">def</span> <span class="nf">calc_chksums</span><span class="p">(</span><span class="n">buf</span><span class="p">):</span>
+<div class="viewcode-block" id="calc_chksums"><a class="viewcode-back" href="../generated/generated/tarfile.calc_chksums.html#tarfile.calc_chksums">[docs]</a><span class="k">def</span> <span class="nf">calc_chksums</span><span class="p">(</span><span class="n">buf</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Calculate the checksum for a member&#39;s header by summing up all</span>
 <span class="sd">       characters except for the chksum field which is treated as if</span>
 <span class="sd">       it was filled with spaces. According to the GNU tar sources,</span>
@@ -403,7 +403,7 @@
     <span class="n">signed_chksum</span> <span class="o">=</span> <span class="mi">256</span> <span class="o">+</span> <span class="nb">sum</span><span class="p">(</span><span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">&quot;148b&quot;</span><span class="p">,</span> <span class="n">buf</span><span class="p">[:</span><span class="mi">148</span><span class="p">])</span> <span class="o">+</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">&quot;356b&quot;</span><span class="p">,</span> <span class="n">buf</span><span class="p">[</span><span class="mi">156</span><span class="p">:</span><span class="mi">512</span><span class="p">]))</span>
     <span class="k">return</span> <span class="n">unsigned_chksum</span><span class="p">,</span> <span class="n">signed_chksum</span></div>
 
-<div class="viewcode-block" id="copyfileobj"><a class="viewcode-back" href="../generated/tarfile.copyfileobj.html#tarfile.copyfileobj">[docs]</a><span class="k">def</span> <span class="nf">copyfileobj</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">dst</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="copyfileobj"><a class="viewcode-back" href="../generated/generated/tarfile.copyfileobj.html#tarfile.copyfileobj">[docs]</a><span class="k">def</span> <span class="nf">copyfileobj</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">dst</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Copy length bytes from fileobj src to fileobj dst.</span>
 <span class="sd">       If length is None, copy the entire content.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -455,7 +455,7 @@
      <span class="p">(</span><span class="n">TOEXEC</span><span class="p">,</span>       <span class="s2">&quot;x&quot;</span><span class="p">))</span>
 <span class="p">)</span>
 
-<div class="viewcode-block" id="filemode"><a class="viewcode-back" href="../generated/tarfile.filemode.html#tarfile.filemode">[docs]</a><span class="k">def</span> <span class="nf">filemode</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
+<div class="viewcode-block" id="filemode"><a class="viewcode-back" href="../generated/generated/tarfile.filemode.html#tarfile.filemode">[docs]</a><span class="k">def</span> <span class="nf">filemode</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert a file&#39;s mode to a string of the form</span>
 <span class="sd">       -rwxrwxrwx.</span>
 <span class="sd">       Used by TarFile.list()</span>
@@ -2761,7 +2761,7 @@
 <span class="c1">#--------------------</span>
 <span class="c1"># exported functions</span>
 <span class="c1">#--------------------</span>
-<div class="viewcode-block" id="is_tarfile"><a class="viewcode-back" href="../generated/tarfile.is_tarfile.html#tarfile.is_tarfile">[docs]</a><span class="k">def</span> <span class="nf">is_tarfile</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<div class="viewcode-block" id="is_tarfile"><a class="viewcode-back" href="../generated/generated/tarfile.is_tarfile.html#tarfile.is_tarfile">[docs]</a><span class="k">def</span> <span class="nf">is_tarfile</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return True if name points to a tar archive that we</span>
 <span class="sd">       are able to handle, else return False.</span>
 <span class="sd">    &quot;&quot;&quot;</span>

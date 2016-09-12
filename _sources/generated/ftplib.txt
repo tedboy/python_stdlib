@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       ftpcp
       parse150
@@ -19,6 +19,20 @@
       parse257
       print_line
       test
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/ftplib.ftpcp
+       generated/ftplib.parse150
+       generated/ftplib.parse227
+       generated/ftplib.parse229
+       generated/ftplib.parse257
+       generated/ftplib.print_line
+       generated/ftplib.test
+      
    
    
 

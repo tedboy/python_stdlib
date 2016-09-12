@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       expectedFailure
       findTestCases
@@ -23,6 +23,24 @@
       skip
       skipIf
       skipUnless
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/unittest.expectedFailure
+       generated/unittest.findTestCases
+       generated/unittest.getTestCaseNames
+       generated/unittest.installHandler
+       generated/unittest.makeSuite
+       generated/unittest.registerResult
+       generated/unittest.removeHandler
+       generated/unittest.removeResult
+       generated/unittest.skip
+       generated/unittest.skipIf
+       generated/unittest.skipUnless
+      
    
    
 

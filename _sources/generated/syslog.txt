@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       LOG_MASK
       LOG_UPTO
@@ -18,6 +18,19 @@
       openlog
       setlogmask
       syslog
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/syslog.LOG_MASK
+       generated/syslog.LOG_UPTO
+       generated/syslog.closelog
+       generated/syslog.openlog
+       generated/syslog.setlogmask
+       generated/syslog.syslog
+      
    
    
 

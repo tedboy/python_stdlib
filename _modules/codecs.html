@@ -1000,7 +1000,7 @@
 
 <span class="c1">### Shortcuts</span>
 
-<div class="viewcode-block" id="open"><a class="viewcode-back" href="../generated/codecs.open.html#codecs.open">[docs]</a><span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;rb&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;strict&#39;</span><span class="p">,</span> <span class="n">buffering</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="open"><a class="viewcode-back" href="../generated/generated/codecs.open.html#codecs.open">[docs]</a><span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;rb&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;strict&#39;</span><span class="p">,</span> <span class="n">buffering</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Open an encoded file using the given mode and return</span>
 <span class="sd">        a wrapped version providing transparent encoding/decoding.</span>
@@ -1049,7 +1049,7 @@
     <span class="n">srw</span><span class="o">.</span><span class="n">encoding</span> <span class="o">=</span> <span class="n">encoding</span>
     <span class="k">return</span> <span class="n">srw</span></div>
 
-<div class="viewcode-block" id="EncodedFile"><a class="viewcode-back" href="../generated/codecs.EncodedFile.html#codecs.EncodedFile">[docs]</a><span class="k">def</span> <span class="nf">EncodedFile</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">data_encoding</span><span class="p">,</span> <span class="n">file_encoding</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;strict&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="EncodedFile"><a class="viewcode-back" href="../generated/generated/codecs.EncodedFile.html#codecs.EncodedFile">[docs]</a><span class="k">def</span> <span class="nf">EncodedFile</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">data_encoding</span><span class="p">,</span> <span class="n">file_encoding</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;strict&#39;</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Return a wrapped version of file which provides transparent</span>
 <span class="sd">        encoding translation.</span>
@@ -1087,7 +1087,7 @@
 
 <span class="c1">### Helpers for codec lookup</span>
 
-<div class="viewcode-block" id="getencoder"><a class="viewcode-back" href="../generated/codecs.getencoder.html#codecs.getencoder">[docs]</a><span class="k">def</span> <span class="nf">getencoder</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
+<div class="viewcode-block" id="getencoder"><a class="viewcode-back" href="../generated/generated/codecs.getencoder.html#codecs.getencoder">[docs]</a><span class="k">def</span> <span class="nf">getencoder</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Lookup up the codec for the given encoding and return</span>
 <span class="sd">        its encoder function.</span>
@@ -1097,7 +1097,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">lookup</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span></div>
 
-<div class="viewcode-block" id="getdecoder"><a class="viewcode-back" href="../generated/codecs.getdecoder.html#codecs.getdecoder">[docs]</a><span class="k">def</span> <span class="nf">getdecoder</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
+<div class="viewcode-block" id="getdecoder"><a class="viewcode-back" href="../generated/generated/codecs.getdecoder.html#codecs.getdecoder">[docs]</a><span class="k">def</span> <span class="nf">getdecoder</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Lookup up the codec for the given encoding and return</span>
 <span class="sd">        its decoder function.</span>
@@ -1107,7 +1107,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">lookup</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span></div>
 
-<div class="viewcode-block" id="getincrementalencoder"><a class="viewcode-back" href="../generated/codecs.getincrementalencoder.html#codecs.getincrementalencoder">[docs]</a><span class="k">def</span> <span class="nf">getincrementalencoder</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
+<div class="viewcode-block" id="getincrementalencoder"><a class="viewcode-back" href="../generated/generated/codecs.getincrementalencoder.html#codecs.getincrementalencoder">[docs]</a><span class="k">def</span> <span class="nf">getincrementalencoder</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Lookup up the codec for the given encoding and return</span>
 <span class="sd">        its IncrementalEncoder class or factory function.</span>
@@ -1121,7 +1121,7 @@
         <span class="k">raise</span> <span class="ne">LookupError</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">encoder</span></div>
 
-<div class="viewcode-block" id="getincrementaldecoder"><a class="viewcode-back" href="../generated/codecs.getincrementaldecoder.html#codecs.getincrementaldecoder">[docs]</a><span class="k">def</span> <span class="nf">getincrementaldecoder</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
+<div class="viewcode-block" id="getincrementaldecoder"><a class="viewcode-back" href="../generated/generated/codecs.getincrementaldecoder.html#codecs.getincrementaldecoder">[docs]</a><span class="k">def</span> <span class="nf">getincrementaldecoder</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Lookup up the codec for the given encoding and return</span>
 <span class="sd">        its IncrementalDecoder class or factory function.</span>
@@ -1135,7 +1135,7 @@
         <span class="k">raise</span> <span class="ne">LookupError</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">decoder</span></div>
 
-<div class="viewcode-block" id="getreader"><a class="viewcode-back" href="../generated/codecs.getreader.html#codecs.getreader">[docs]</a><span class="k">def</span> <span class="nf">getreader</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
+<div class="viewcode-block" id="getreader"><a class="viewcode-back" href="../generated/generated/codecs.getreader.html#codecs.getreader">[docs]</a><span class="k">def</span> <span class="nf">getreader</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Lookup up the codec for the given encoding and return</span>
 <span class="sd">        its StreamReader class or factory function.</span>
@@ -1145,7 +1145,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">lookup</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span><span class="o">.</span><span class="n">streamreader</span></div>
 
-<div class="viewcode-block" id="getwriter"><a class="viewcode-back" href="../generated/codecs.getwriter.html#codecs.getwriter">[docs]</a><span class="k">def</span> <span class="nf">getwriter</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
+<div class="viewcode-block" id="getwriter"><a class="viewcode-back" href="../generated/generated/codecs.getwriter.html#codecs.getwriter">[docs]</a><span class="k">def</span> <span class="nf">getwriter</span><span class="p">(</span><span class="n">encoding</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Lookup up the codec for the given encoding and return</span>
 <span class="sd">        its StreamWriter class or factory function.</span>
@@ -1155,7 +1155,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">lookup</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span><span class="o">.</span><span class="n">streamwriter</span></div>
 
-<div class="viewcode-block" id="iterencode"><a class="viewcode-back" href="../generated/codecs.iterencode.html#codecs.iterencode">[docs]</a><span class="k">def</span> <span class="nf">iterencode</span><span class="p">(</span><span class="n">iterator</span><span class="p">,</span> <span class="n">encoding</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;strict&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="iterencode"><a class="viewcode-back" href="../generated/generated/codecs.iterencode.html#codecs.iterencode">[docs]</a><span class="k">def</span> <span class="nf">iterencode</span><span class="p">(</span><span class="n">iterator</span><span class="p">,</span> <span class="n">encoding</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;strict&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Encoding iterator.</span>
 
@@ -1173,7 +1173,7 @@
     <span class="k">if</span> <span class="n">output</span><span class="p">:</span>
         <span class="k">yield</span> <span class="n">output</span></div>
 
-<div class="viewcode-block" id="iterdecode"><a class="viewcode-back" href="../generated/codecs.iterdecode.html#codecs.iterdecode">[docs]</a><span class="k">def</span> <span class="nf">iterdecode</span><span class="p">(</span><span class="n">iterator</span><span class="p">,</span> <span class="n">encoding</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;strict&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="iterdecode"><a class="viewcode-back" href="../generated/generated/codecs.iterdecode.html#codecs.iterdecode">[docs]</a><span class="k">def</span> <span class="nf">iterdecode</span><span class="p">(</span><span class="n">iterator</span><span class="p">,</span> <span class="n">encoding</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;strict&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Decoding iterator.</span>
 
@@ -1193,7 +1193,7 @@
 
 <span class="c1">### Helpers for charmap-based codecs</span>
 
-<div class="viewcode-block" id="make_identity_dict"><a class="viewcode-back" href="../generated/codecs.make_identity_dict.html#codecs.make_identity_dict">[docs]</a><span class="k">def</span> <span class="nf">make_identity_dict</span><span class="p">(</span><span class="n">rng</span><span class="p">):</span>
+<div class="viewcode-block" id="make_identity_dict"><a class="viewcode-back" href="../generated/generated/codecs.make_identity_dict.html#codecs.make_identity_dict">[docs]</a><span class="k">def</span> <span class="nf">make_identity_dict</span><span class="p">(</span><span class="n">rng</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; make_identity_dict(rng) -&gt; dict</span>
 
@@ -1206,7 +1206,7 @@
         <span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">i</span>
     <span class="k">return</span> <span class="n">res</span></div>
 
-<div class="viewcode-block" id="make_encoding_map"><a class="viewcode-back" href="../generated/codecs.make_encoding_map.html#codecs.make_encoding_map">[docs]</a><span class="k">def</span> <span class="nf">make_encoding_map</span><span class="p">(</span><span class="n">decoding_map</span><span class="p">):</span>
+<div class="viewcode-block" id="make_encoding_map"><a class="viewcode-back" href="../generated/generated/codecs.make_encoding_map.html#codecs.make_encoding_map">[docs]</a><span class="k">def</span> <span class="nf">make_encoding_map</span><span class="p">(</span><span class="n">decoding_map</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Creates an encoding map from a decoding map.</span>
 

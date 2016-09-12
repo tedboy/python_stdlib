@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="csv.Dialect" href="generated/csv.Dialect.html"/>
+        <link rel="next" title="csv.StringIO()" href="generated/csv.StringIO.html"/>
         <link rel="prev" title="tarfile.TruncatedHeaderError" href="tarfile.TruncatedHeaderError.html"/> 
 
   
@@ -82,12 +82,81 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">csv</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.StringIO.html"><code class="docutils literal"><span class="pre">csv.StringIO()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.field_size_limit.html"><code class="docutils literal"><span class="pre">csv.field_size_limit()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.get_dialect.html"><code class="docutils literal"><span class="pre">csv.get_dialect()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.list_dialects.html"><code class="docutils literal"><span class="pre">csv.list_dialects()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.reader.html"><code class="docutils literal"><span class="pre">csv.reader()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.reduce.html"><code class="docutils literal"><span class="pre">csv.reduce()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.register_dialect.html"><code class="docutils literal"><span class="pre">csv.register_dialect()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.unregister_dialect.html"><code class="docutils literal"><span class="pre">csv.unregister_dialect()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.writer.html"><code class="docutils literal"><span class="pre">csv.writer()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.Dialect.html"><code class="docutils literal"><span class="pre">csv.Dialect</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.DictReader.html"><code class="docutils literal"><span class="pre">csv.DictReader</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.DictWriter.html"><code class="docutils literal"><span class="pre">csv.DictWriter</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.Sniffer.html"><code class="docutils literal"><span class="pre">csv.Sniffer</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.excel.html"><code class="docutils literal"><span class="pre">csv.excel</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/csv.excel_tab.html"><code class="docutils literal"><span class="pre">csv.excel_tab</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="csv.Error.html">csv.Error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ConfigParser.html"><code class="docutils literal"><span class="pre">ConfigParser</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="robotparser.html"><code class="docutils literal"><span class="pre">robotparser</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="netrc.html"><code class="docutils literal"><span class="pre">netrc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="xdrlib.html"><code class="docutils literal"><span class="pre">xdrlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="plistlib.html"><code class="docutils literal"><span class="pre">plistlib</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -241,6 +310,43 @@ written as two quotes</p>
 </div></blockquote>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/csv.StringIO.html#csv.StringIO" title="csv.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
+<td>StringIO([s]) &#8211; Return a StringIO-like stream for reading or writing</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/csv.field_size_limit.html#csv.field_size_limit" title="csv.field_size_limit"><code class="xref py py-obj docutils literal"><span class="pre">field_size_limit</span></code></a></td>
+<td>Sets an upper limit on parsed fields.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/csv.get_dialect.html#csv.get_dialect" title="csv.get_dialect"><code class="xref py py-obj docutils literal"><span class="pre">get_dialect</span></code></a>(name)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/csv.list_dialects.html#csv.list_dialects" title="csv.list_dialects"><code class="xref py py-obj docutils literal"><span class="pre">list_dialects</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/csv.reader.html#csv.reader" title="csv.reader"><code class="xref py py-obj docutils literal"><span class="pre">reader</span></code></a>(iterable&nbsp;[[,&nbsp;dialect])</td>
+<td>The &#8220;iterable&#8221; argument can be any object that returns a line of input for each iteration, such as a file object or a list.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/csv.reduce.html#csv.reduce" title="csv.reduce"><code class="xref py py-obj docutils literal"><span class="pre">reduce</span></code></a>((function,&nbsp;sequence[,&nbsp;initial])&nbsp;-&gt;&nbsp;value)</td>
+<td>Apply a function of two arguments cumulatively to the items of a sequence, from left to right, so as to reduce the sequence to a single value.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/csv.register_dialect.html#csv.register_dialect" title="csv.register_dialect"><code class="xref py py-obj docutils literal"><span class="pre">register_dialect</span></code></a>(name,&nbsp;dialect)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/csv.unregister_dialect.html#csv.unregister_dialect" title="csv.unregister_dialect"><code class="xref py py-obj docutils literal"><span class="pre">unregister_dialect</span></code></a></td>
+<td>Delete the name/dialect mapping associated with a string name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/csv.writer.html#csv.writer" title="csv.writer"><code class="xref py py-obj docutils literal"><span class="pre">writer</span></code></a>(fileobj&nbsp;[[,&nbsp;dialect])</td>
+<td>[or]</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -296,7 +402,7 @@ written as two quotes</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/csv.Dialect.html" class="btn btn-neutral float-right" title="csv.Dialect" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/csv.StringIO.html" class="btn btn-neutral float-right" title="csv.StringIO()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="tarfile.TruncatedHeaderError.html" class="btn btn-neutral" title="tarfile.TruncatedHeaderError" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

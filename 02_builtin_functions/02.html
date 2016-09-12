@@ -492,7 +492,7 @@ the <code class="xref py py-class docutils literal"><span class="pre">_Feature</
 <p>This function raises <a class="reference internal" href="../generated/exceptions.SyntaxError.html#exceptions.SyntaxError" title="exceptions.SyntaxError"><code class="xref py py-exc docutils literal"><span class="pre">SyntaxError</span></code></a> if the compiled source is invalid,
 and <a class="reference internal" href="../generated/exceptions.TypeError.html#exceptions.TypeError" title="exceptions.TypeError"><code class="xref py py-exc docutils literal"><span class="pre">TypeError</span></code></a> if the source contains null bytes.</p>
 <p>If you want to parse Python code into its AST representation, see
-<a class="reference internal" href="../generated/ast.parse.html#ast.parse" title="ast.parse"><code class="xref py py-func docutils literal"><span class="pre">ast.parse()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/ast.parse.html#ast.parse" title="ast.parse"><code class="xref py py-func docutils literal"><span class="pre">ast.parse()</span></code></a>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">When compiling a string with multi-line code in <code class="docutils literal"><span class="pre">'single'</span></code> or
@@ -688,7 +688,7 @@ statement.  Execution of statements from a file is supported by the
 <a class="reference internal" href="#execfile" title="execfile"><code class="xref py py-func docutils literal"><span class="pre">execfile()</span></code></a> function.  The <a class="reference internal" href="#globals" title="globals"><code class="xref py py-func docutils literal"><span class="pre">globals()</span></code></a> and <a class="reference internal" href="#locals" title="locals"><code class="xref py py-func docutils literal"><span class="pre">locals()</span></code></a> functions
 returns the current global and local dictionary, respectively, which may be
 useful to pass around for use by <a class="reference internal" href="#eval" title="eval"><code class="xref py py-func docutils literal"><span class="pre">eval()</span></code></a> or <a class="reference internal" href="#execfile" title="execfile"><code class="xref py py-func docutils literal"><span class="pre">execfile()</span></code></a>.</p>
-<p>See <a class="reference internal" href="../generated/ast.literal_eval.html#ast.literal_eval" title="ast.literal_eval"><code class="xref py py-func docutils literal"><span class="pre">ast.literal_eval()</span></code></a> for a function that can safely evaluate strings
+<p>See <a class="reference internal" href="../generated/generated/ast.literal_eval.html#ast.literal_eval" title="ast.literal_eval"><code class="xref py py-func docutils literal"><span class="pre">ast.literal_eval()</span></code></a> for a function that can safely evaluate strings
 with expressions containing only literals.</p>
 </dd></dl>
 
@@ -1517,7 +1517,7 @@ sorted as if each comparison were reversed.</p>
 <p>In general, the <em>key</em> and <em>reverse</em> conversion processes are much faster
 than specifying an equivalent <em>cmp</em> function.  This is because <em>cmp</em> is
 called multiple times for each list element while <em>key</em> and <em>reverse</em> touch
-each element only once.  Use <a class="reference internal" href="../generated/functools.cmp_to_key.html#functools.cmp_to_key" title="functools.cmp_to_key"><code class="xref py py-func docutils literal"><span class="pre">functools.cmp_to_key()</span></code></a> to convert an
+each element only once.  Use <a class="reference internal" href="../generated/generated/functools.cmp_to_key.html#functools.cmp_to_key" title="functools.cmp_to_key"><code class="xref py py-func docutils literal"><span class="pre">functools.cmp_to_key()</span></code></a> to convert an
 old-style <em>cmp</em> function to a <em>key</em> function.</p>
 <p>The built-in <a class="reference internal" href="#sorted" title="sorted"><code class="xref py py-func docutils literal"><span class="pre">sorted()</span></code></a> function is guaranteed to be stable. A sort is
 stable if it guarantees not to change the relative order of elements that
@@ -1583,7 +1583,7 @@ and the start value is not allowed to be a string.</p>
 <p>For some use cases, there are good alternatives to <a class="reference internal" href="#sum" title="sum"><code class="xref py py-func docutils literal"><span class="pre">sum()</span></code></a>.
 The preferred, fast way to concatenate a sequence of strings is by calling
 <code class="docutils literal"><span class="pre">''.join(sequence)</span></code>.  To add floating point values with extended precision,
-see <a class="reference internal" href="../generated/math.fsum.html#math.fsum" title="math.fsum"><code class="xref py py-func docutils literal"><span class="pre">math.fsum()</span></code></a>.  To concatenate a series of iterables, consider using
+see <a class="reference internal" href="../generated/generated/math.fsum.html#math.fsum" title="math.fsum"><code class="xref py py-func docutils literal"><span class="pre">math.fsum()</span></code></a>.  To concatenate a series of iterables, consider using
 <a class="reference internal" href="../generated/generated/itertools.chain.html#itertools.chain" title="itertools.chain"><code class="xref py py-func docutils literal"><span class="pre">itertools.chain()</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.3.</span></p>

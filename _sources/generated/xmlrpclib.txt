@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       dumps
       escape
@@ -18,6 +18,19 @@
       gzip_decode
       gzip_encode
       loads
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/xmlrpclib.dumps
+       generated/xmlrpclib.escape
+       generated/xmlrpclib.getparser
+       generated/xmlrpclib.gzip_decode
+       generated/xmlrpclib.gzip_encode
+       generated/xmlrpclib.loads
+      
    
    
 

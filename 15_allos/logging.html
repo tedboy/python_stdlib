@@ -249,7 +249,7 @@ to output.</li>
 <span id="logger"></span><h2><a class="toc-backref" href="#id3">6.1. Logger Objects</a><a class="headerlink" href="#logger-objects" title="Permalink to this headline">¶</a></h2>
 <p>Loggers have the following attributes and methods.  Note that Loggers are never
 instantiated directly, but always through the module-level function
-<code class="docutils literal"><span class="pre">logging.getLogger(name)</span></code>.  Multiple calls to <a class="reference internal" href="../generated/logging.getLogger.html#logging.getLogger" title="logging.getLogger"><code class="xref py py-func docutils literal"><span class="pre">getLogger()</span></code></a> with the same
+<code class="docutils literal"><span class="pre">logging.getLogger(name)</span></code>.  Multiple calls to <a class="reference internal" href="../generated/generated/logging.getLogger.html#logging.getLogger" title="logging.getLogger"><code class="xref py py-func docutils literal"><span class="pre">getLogger()</span></code></a> with the same
 name will always return a reference to the same Logger object.</p>
 <p>The <code class="docutils literal"><span class="pre">name</span></code> is potentially a period-separated hierarchical value, like
 <code class="docutils literal"><span class="pre">foo.bar.baz</span></code> (though it could also be just plain <code class="docutils literal"><span class="pre">foo</span></code>, for example).
@@ -352,7 +352,7 @@ use keywords in the format string, together with a single dictionary argument.)<
 <p>There are two keyword arguments in <em>kwargs</em> which are inspected: <em>exc_info</em>
 which, if it does not evaluate as false, causes exception information to be
 added to the logging message. If an exception tuple (in the format returned by
-<a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>) is provided, it is used; otherwise, <a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>
+<a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>) is provided, it is used; otherwise, <a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>
 is called to get the exception information.</p>
 <p>The second keyword argument is <em>extra</em> which can be used to pass a
 dictionary which is used to populate the __dict__ of the LogRecord created for
@@ -391,42 +391,42 @@ above example). In such circumstances, it is likely that specialized
 <dt id="logging.Logger.info">
 <code class="descclassname">Logger.</code><code class="descname">info</code><span class="sig-paren">(</span><em>msg</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#Logger.info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.Logger.info" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with level <code class="xref py py-const docutils literal"><span class="pre">INFO</span></code> on this logger. The arguments are
-interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>.</p>
+interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="logging.Logger.warning">
 <code class="descclassname">Logger.</code><code class="descname">warning</code><span class="sig-paren">(</span><em>msg</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#Logger.warning"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.Logger.warning" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with level <code class="xref py py-const docutils literal"><span class="pre">WARNING</span></code> on this logger. The arguments are
-interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>.</p>
+interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="logging.Logger.error">
 <code class="descclassname">Logger.</code><code class="descname">error</code><span class="sig-paren">(</span><em>msg</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#Logger.error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.Logger.error" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with level <code class="xref py py-const docutils literal"><span class="pre">ERROR</span></code> on this logger. The arguments are
-interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>.</p>
+interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="logging.Logger.critical">
 <code class="descclassname">Logger.</code><code class="descname">critical</code><span class="sig-paren">(</span><em>msg</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#Logger.critical"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.Logger.critical" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with level <code class="xref py py-const docutils literal"><span class="pre">CRITICAL</span></code> on this logger. The arguments are
-interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>.</p>
+interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="logging.Logger.log">
 <code class="descclassname">Logger.</code><code class="descname">log</code><span class="sig-paren">(</span><em>lvl</em>, <em>msg</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#Logger.log"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.Logger.log" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with integer level <em>lvl</em> on this logger. The other arguments are
-interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>.</p>
+interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="logging.Logger.exception">
 <code class="descclassname">Logger.</code><code class="descname">exception</code><span class="sig-paren">(</span><em>msg</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#Logger.exception"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.Logger.exception" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with level <code class="xref py py-const docutils literal"><span class="pre">ERROR</span></code> on this logger. The arguments are
-interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>, except that any passed <em>exc_info</em> is not
+interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>, except that any passed <em>exc_info</em> is not
 inspected. Exception info is always added to the logging message. This method
 should only be called from an exception handler.</p>
 </dd></dl>
@@ -617,7 +617,7 @@ intended to be implemented by subclasses.</p>
 <code class="descclassname">Handler.</code><code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#Handler.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.Handler.close" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tidy up any resources used by the handler. This version does no output but
 removes the handler from an internal list of handlers which is closed when
-<a class="reference internal" href="../generated/logging.shutdown.html#logging.shutdown" title="logging.shutdown"><code class="xref py py-func docutils literal"><span class="pre">shutdown()</span></code></a> is called. Subclasses should ensure that this gets called
+<a class="reference internal" href="../generated/generated/logging.shutdown.html#logging.shutdown" title="logging.shutdown"><code class="xref py py-func docutils literal"><span class="pre">shutdown()</span></code></a> is called. Subclasses should ensure that this gets called
 from overridden <a class="reference internal" href="../generated/generated/logging.Handler.close.html#logging.Handler.close" title="logging.Handler.close"><code class="xref py py-meth docutils literal"><span class="pre">close()</span></code></a> methods.</p>
 </dd></dl>
 
@@ -712,14 +712,14 @@ recalculates it afresh.</p>
 wants to make use of a formatted time. This method can be overridden in
 formatters to provide for any specific requirement, but the basic behavior
 is as follows: if <em>datefmt</em> (a string) is specified, it is used with
-<a class="reference internal" href="../generated/time.strftime.html#time.strftime" title="time.strftime"><code class="xref py py-func docutils literal"><span class="pre">time.strftime()</span></code></a> to format the creation time of the
+<a class="reference internal" href="../generated/generated/time.strftime.html#time.strftime" title="time.strftime"><code class="xref py py-func docutils literal"><span class="pre">time.strftime()</span></code></a> to format the creation time of the
 record. Otherwise, the ISO8601 format is used.  The resulting string is
 returned.</p>
 <p>This function uses a user-configurable function to convert the creation
-time to a tuple. By default, <a class="reference internal" href="../generated/time.localtime.html#time.localtime" title="time.localtime"><code class="xref py py-func docutils literal"><span class="pre">time.localtime()</span></code></a> is used; to change
+time to a tuple. By default, <a class="reference internal" href="../generated/generated/time.localtime.html#time.localtime" title="time.localtime"><code class="xref py py-func docutils literal"><span class="pre">time.localtime()</span></code></a> is used; to change
 this for a particular formatter instance, set the <code class="docutils literal"><span class="pre">converter</span></code> attribute
-to a function with the same signature as <a class="reference internal" href="../generated/time.localtime.html#time.localtime" title="time.localtime"><code class="xref py py-func docutils literal"><span class="pre">time.localtime()</span></code></a> or
-<a class="reference internal" href="../generated/time.gmtime.html#time.gmtime" title="time.gmtime"><code class="xref py py-func docutils literal"><span class="pre">time.gmtime()</span></code></a>. To change it for all formatters, for example if you
+to a function with the same signature as <a class="reference internal" href="../generated/generated/time.localtime.html#time.localtime" title="time.localtime"><code class="xref py py-func docutils literal"><span class="pre">time.localtime()</span></code></a> or
+<a class="reference internal" href="../generated/generated/time.gmtime.html#time.gmtime" title="time.gmtime"><code class="xref py py-func docutils literal"><span class="pre">time.gmtime()</span></code></a>. To change it for all formatters, for example if you
 want all logging times to be shown in GMT, set the <code class="docutils literal"><span class="pre">converter</span></code>
 attribute in the <code class="docutils literal"><span class="pre">Formatter</span></code> class.</p>
 </dd></dl>
@@ -728,8 +728,8 @@ attribute in the <code class="docutils literal"><span class="pre">Formatter</spa
 <dt id="logging.Formatter.formatException">
 <code class="descname">formatException</code><span class="sig-paren">(</span><em>exc_info</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#Formatter.formatException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.Formatter.formatException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Formats the specified exception information (a standard exception tuple as
-returned by <a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>) as a string. This default implementation
-just uses <a class="reference internal" href="../generated/traceback.print_exception.html#traceback.print_exception" title="traceback.print_exception"><code class="xref py py-func docutils literal"><span class="pre">traceback.print_exception()</span></code></a>. The resulting string is
+returned by <a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>) as a string. This default implementation
+just uses <a class="reference internal" href="../generated/generated/traceback.print_exception.html#traceback.print_exception" title="traceback.print_exception"><code class="xref py py-func docutils literal"><span class="pre">traceback.print_exception()</span></code></a>. The resulting string is
 returned.</p>
 </dd></dl>
 
@@ -762,7 +762,7 @@ method.</p>
 
 <p>Note that filters attached to handlers are consulted before an event is
 emitted by the handler, whereas filters attached to loggers are consulted
-whenever an event is logged (using <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>, <a class="reference internal" href="../generated/logging.info.html#logging.info" title="logging.info"><code class="xref py py-meth docutils literal"><span class="pre">info()</span></code></a>,
+whenever an event is logged (using <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a>, <a class="reference internal" href="../generated/generated/logging.info.html#logging.info" title="logging.info"><code class="xref py py-meth docutils literal"><span class="pre">info()</span></code></a>,
 etc.), before sending an event to handlers. This means that events which have
 been generated by descendant loggers will not be filtered by a logger&#8217;s filter
 setting, unless the filter has also been applied to those descendant loggers.</p>
@@ -781,7 +781,7 @@ into logs (see <span class="xref std std-ref">filters-contextual</span>).</p>
 <span id="log-record"></span><h2><a class="toc-backref" href="#id8">6.6. LogRecord Objects</a><a class="headerlink" href="#logrecord-objects" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="../generated/generated/logging.LogRecord.html#logging.LogRecord" title="logging.LogRecord"><code class="xref py py-class docutils literal"><span class="pre">LogRecord</span></code></a> instances are created automatically by the <a class="reference internal" href="../generated/generated/logging.Logger.html#logging.Logger" title="logging.Logger"><code class="xref py py-class docutils literal"><span class="pre">Logger</span></code></a>
 every time something is logged, and can be created manually via
-<a class="reference internal" href="../generated/logging.makeLogRecord.html#logging.makeLogRecord" title="logging.makeLogRecord"><code class="xref py py-func docutils literal"><span class="pre">makeLogRecord()</span></code></a> (for example, from a pickled event received over the
+<a class="reference internal" href="../generated/generated/logging.makeLogRecord.html#logging.makeLogRecord" title="logging.makeLogRecord"><code class="xref py py-func docutils literal"><span class="pre">makeLogRecord()</span></code></a> (for example, from a pickled event received over the
 wire).</p>
 <dl class="class">
 <dt id="logging.LogRecord">
@@ -878,7 +878,7 @@ portion of the time).</td>
 <tr class="row-even"><td>created</td>
 <td><code class="docutils literal"><span class="pre">%(created)f</span></code></td>
 <td>Time when the <a class="reference internal" href="../generated/generated/logging.LogRecord.html#logging.LogRecord" title="logging.LogRecord"><code class="xref py py-class docutils literal"><span class="pre">LogRecord</span></code></a> was created
-(as returned by <a class="reference internal" href="../generated/time.time.html#time.time" title="time.time"><code class="xref py py-func docutils literal"><span class="pre">time.time()</span></code></a>).</td>
+(as returned by <a class="reference internal" href="../generated/generated/time.time.html#time.time" title="time.time"><code class="xref py py-func docutils literal"><span class="pre">time.time()</span></code></a>).</td>
 </tr>
 <tr class="row-odd"><td>exc_info</td>
 <td>You shouldn&#8217;t need to
@@ -1042,7 +1042,7 @@ of an application.</p>
 <dt id="logging.getLoggerClass">
 <code class="descclassname">logging.</code><code class="descname">getLoggerClass</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#getLoggerClass"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.getLoggerClass" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return either the standard <a class="reference internal" href="../generated/generated/logging.Logger.html#logging.Logger" title="logging.Logger"><code class="xref py py-class docutils literal"><span class="pre">Logger</span></code></a> class, or the last class passed to
-<a class="reference internal" href="../generated/logging.setLoggerClass.html#logging.setLoggerClass" title="logging.setLoggerClass"><code class="xref py py-func docutils literal"><span class="pre">setLoggerClass()</span></code></a>. This function may be called from within a new class
+<a class="reference internal" href="../generated/generated/logging.setLoggerClass.html#logging.setLoggerClass" title="logging.setLoggerClass"><code class="xref py py-func docutils literal"><span class="pre">setLoggerClass()</span></code></a>. This function may be called from within a new class
 definition, to ensure that installing a customized <a class="reference internal" href="../generated/generated/logging.Logger.html#logging.Logger" title="logging.Logger"><code class="xref py py-class docutils literal"><span class="pre">Logger</span></code></a> class will
 not undo customizations already applied by other code. For example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>class MyLogger(logging.getLoggerClass()):
@@ -1061,7 +1061,7 @@ use keywords in the format string, together with a single dictionary argument.)<
 <p>There are two keyword arguments in <em>kwargs</em> which are inspected: <em>exc_info</em>
 which, if it does not evaluate as false, causes exception information to be
 added to the logging message. If an exception tuple (in the format returned by
-<a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>) is provided, it is used; otherwise, <a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>
+<a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>) is provided, it is used; otherwise, <a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>
 is called to get the exception information.</p>
 <p>The other optional keyword argument is <em>extra</em> which can be used to pass a
 dictionary which is used to populate the __dict__ of the LogRecord created for
@@ -1102,35 +1102,35 @@ above example). In such circumstances, it is likely that specialized
 <dt id="logging.info">
 <code class="descclassname">logging.</code><code class="descname">info</code><span class="sig-paren">(</span><em>msg</em><span class="optional">[</span>, <em>*args</em><span class="optional">[</span>, <em>**kwargs</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.info" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with level <code class="xref py py-const docutils literal"><span class="pre">INFO</span></code> on the root logger. The arguments are
-interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>.</p>
+interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="logging.warning">
 <code class="descclassname">logging.</code><code class="descname">warning</code><span class="sig-paren">(</span><em>msg</em><span class="optional">[</span>, <em>*args</em><span class="optional">[</span>, <em>**kwargs</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#warning"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.warning" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with level <code class="xref py py-const docutils literal"><span class="pre">WARNING</span></code> on the root logger. The arguments are
-interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>.</p>
+interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="logging.error">
 <code class="descclassname">logging.</code><code class="descname">error</code><span class="sig-paren">(</span><em>msg</em><span class="optional">[</span>, <em>*args</em><span class="optional">[</span>, <em>**kwargs</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.error" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with level <code class="xref py py-const docutils literal"><span class="pre">ERROR</span></code> on the root logger. The arguments are
-interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>.</p>
+interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="logging.critical">
 <code class="descclassname">logging.</code><code class="descname">critical</code><span class="sig-paren">(</span><em>msg</em><span class="optional">[</span>, <em>*args</em><span class="optional">[</span>, <em>**kwargs</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#critical"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.critical" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with level <code class="xref py py-const docutils literal"><span class="pre">CRITICAL</span></code> on the root logger. The arguments
-are interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>.</p>
+are interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="logging.exception">
 <code class="descclassname">logging.</code><code class="descname">exception</code><span class="sig-paren">(</span><em>msg</em><span class="optional">[</span>, <em>*args</em><span class="optional">[</span>, <em>**kwargs</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#exception"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.exception" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with level <code class="xref py py-const docutils literal"><span class="pre">ERROR</span></code> on the root logger. The arguments are
-interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>, except that any passed <em>exc_info</em> is not
+interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>, except that any passed <em>exc_info</em> is not
 inspected. Exception info is always added to the logging message. This
 function should only be called from an exception handler.</p>
 </dd></dl>
@@ -1139,16 +1139,16 @@ function should only be called from an exception handler.</p>
 <dt id="logging.log">
 <code class="descclassname">logging.</code><code class="descname">log</code><span class="sig-paren">(</span><em>level</em>, <em>msg</em><span class="optional">[</span>, <em>*args</em><span class="optional">[</span>, <em>**kwargs</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#log"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.log" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logs a message with level <em>level</em> on the root logger. The other arguments are
-interpreted as for <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>.</p>
+interpreted as for <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The above module-level convenience functions, which delegate to the
-root logger, call <a class="reference internal" href="../generated/logging.basicConfig.html#logging.basicConfig" title="logging.basicConfig"><code class="xref py py-func docutils literal"><span class="pre">basicConfig()</span></code></a> to ensure that at least one handler
+root logger, call <a class="reference internal" href="../generated/generated/logging.basicConfig.html#logging.basicConfig" title="logging.basicConfig"><code class="xref py py-func docutils literal"><span class="pre">basicConfig()</span></code></a> to ensure that at least one handler
 is available. Because of this, they should <em>not</em> be used in threads,
 in versions of Python earlier than 2.7.1 and 3.2, unless at least one
 handler has been added to the root logger <em>before</em> the threads are
 started. In earlier versions of Python, due to a thread safety shortcoming
-in <a class="reference internal" href="../generated/logging.basicConfig.html#logging.basicConfig" title="logging.basicConfig"><code class="xref py py-func docutils literal"><span class="pre">basicConfig()</span></code></a>, this can (under rare circumstances) lead to
+in <a class="reference internal" href="../generated/generated/logging.basicConfig.html#logging.basicConfig" title="logging.basicConfig"><code class="xref py py-func docutils literal"><span class="pre">basicConfig()</span></code></a>, this can (under rare circumstances) lead to
 handlers being added multiple times to the root logger, which can in turn
 lead to multiple messages for the same event.</p>
 </div>
@@ -1191,7 +1191,7 @@ section on <span class="xref std std-ref">custom-levels</span>.</p>
 <dd><p>Returns the textual representation of logging level <em>lvl</em>. If the level is one
 of the predefined levels <code class="xref py py-const docutils literal"><span class="pre">CRITICAL</span></code>, <code class="xref py py-const docutils literal"><span class="pre">ERROR</span></code>, <code class="xref py py-const docutils literal"><span class="pre">WARNING</span></code>,
 <code class="xref py py-const docutils literal"><span class="pre">INFO</span></code> or <code class="xref py py-const docutils literal"><span class="pre">DEBUG</span></code> then you get the corresponding string. If you
-have associated levels with names using <a class="reference internal" href="../generated/logging.addLevelName.html#logging.addLevelName" title="logging.addLevelName"><code class="xref py py-func docutils literal"><span class="pre">addLevelName()</span></code></a> then the name you
+have associated levels with names using <a class="reference internal" href="../generated/generated/logging.addLevelName.html#logging.addLevelName" title="logging.addLevelName"><code class="xref py py-func docutils literal"><span class="pre">addLevelName()</span></code></a> then the name you
 have associated with <em>lvl</em> is returned. If a numeric value corresponding to one
 of the defined levels is passed in, the corresponding string representation is
 returned. Otherwise, the string &#8220;Level %s&#8221; % lvl is returned.</p>
@@ -1219,13 +1219,13 @@ it as a <a class="reference internal" href="../generated/generated/logging.LogRe
 <code class="descclassname">logging.</code><code class="descname">basicConfig</code><span class="sig-paren">(</span><span class="optional">[</span><em>**kwargs</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/logging.html#basicConfig"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#logging.basicConfig" title="Permalink to this definition">¶</a></dt>
 <dd><p>Does basic configuration for the logging system by creating a
 <a class="reference internal" href="../generated/generated/logging.StreamHandler.html#logging.StreamHandler" title="logging.StreamHandler"><code class="xref py py-class docutils literal"><span class="pre">StreamHandler</span></code></a> with a default <a class="reference internal" href="../generated/generated/logging.Formatter.html#logging.Formatter" title="logging.Formatter"><code class="xref py py-class docutils literal"><span class="pre">Formatter</span></code></a> and adding it to the
-root logger. The functions <a class="reference internal" href="../generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>, <a class="reference internal" href="../generated/logging.info.html#logging.info" title="logging.info"><code class="xref py py-func docutils literal"><span class="pre">info()</span></code></a>, <a class="reference internal" href="../generated/logging.warning.html#logging.warning" title="logging.warning"><code class="xref py py-func docutils literal"><span class="pre">warning()</span></code></a>,
-<a class="reference internal" href="../generated/logging.error.html#logging.error" title="logging.error"><code class="xref py py-func docutils literal"><span class="pre">error()</span></code></a> and <a class="reference internal" href="../generated/logging.critical.html#logging.critical" title="logging.critical"><code class="xref py py-func docutils literal"><span class="pre">critical()</span></code></a> will call <a class="reference internal" href="../generated/logging.basicConfig.html#logging.basicConfig" title="logging.basicConfig"><code class="xref py py-func docutils literal"><span class="pre">basicConfig()</span></code></a> automatically
+root logger. The functions <a class="reference internal" href="../generated/generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a>, <a class="reference internal" href="../generated/generated/logging.info.html#logging.info" title="logging.info"><code class="xref py py-func docutils literal"><span class="pre">info()</span></code></a>, <a class="reference internal" href="../generated/generated/logging.warning.html#logging.warning" title="logging.warning"><code class="xref py py-func docutils literal"><span class="pre">warning()</span></code></a>,
+<a class="reference internal" href="../generated/generated/logging.error.html#logging.error" title="logging.error"><code class="xref py py-func docutils literal"><span class="pre">error()</span></code></a> and <a class="reference internal" href="../generated/generated/logging.critical.html#logging.critical" title="logging.critical"><code class="xref py py-func docutils literal"><span class="pre">critical()</span></code></a> will call <a class="reference internal" href="../generated/generated/logging.basicConfig.html#logging.basicConfig" title="logging.basicConfig"><code class="xref py py-func docutils literal"><span class="pre">basicConfig()</span></code></a> automatically
 if no handlers are defined for the root logger.</p>
 <p>This function does nothing if the root logger already has handlers
 configured for it.</p>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.4: </span>Formerly, <a class="reference internal" href="../generated/logging.basicConfig.html#logging.basicConfig" title="logging.basicConfig"><code class="xref py py-func docutils literal"><span class="pre">basicConfig()</span></code></a> did not take any keyword arguments.</p>
+<p><span class="versionmodified">Changed in version 2.4: </span>Formerly, <a class="reference internal" href="../generated/generated/logging.basicConfig.html#logging.basicConfig" title="logging.basicConfig"><code class="xref py py-func docutils literal"><span class="pre">basicConfig()</span></code></a> did not take any keyword arguments.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -1300,7 +1300,7 @@ which need to use custom logger behavior.</p>
 </div>
 <div class="section" id="integration-with-the-warnings-module">
 <h2><a class="toc-backref" href="#id13">6.11. Integration with the warnings module</a><a class="headerlink" href="#integration-with-the-warnings-module" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="../generated/logging.captureWarnings.html#logging.captureWarnings" title="logging.captureWarnings"><code class="xref py py-func docutils literal"><span class="pre">captureWarnings()</span></code></a> function can be used to integrate <a class="reference internal" href="../generated/logging.html#module-logging" title="logging"><code class="xref py py-mod docutils literal"><span class="pre">logging</span></code></a>
+<p>The <a class="reference internal" href="../generated/generated/logging.captureWarnings.html#logging.captureWarnings" title="logging.captureWarnings"><code class="xref py py-func docutils literal"><span class="pre">captureWarnings()</span></code></a> function can be used to integrate <a class="reference internal" href="../generated/logging.html#module-logging" title="logging"><code class="xref py py-mod docutils literal"><span class="pre">logging</span></code></a>
 with the <a class="reference internal" href="../generated/warnings.html#module-warnings" title="warnings"><code class="xref py py-mod docutils literal"><span class="pre">warnings</span></code></a> module.</p>
 <dl class="function">
 <dt id="logging.captureWarnings">
@@ -1309,7 +1309,7 @@ with the <a class="reference internal" href="../generated/warnings.html#module-w
 off.</p>
 <p>If <em>capture</em> is <code class="docutils literal"><span class="pre">True</span></code>, warnings issued by the <a class="reference internal" href="../generated/warnings.html#module-warnings" title="warnings"><code class="xref py py-mod docutils literal"><span class="pre">warnings</span></code></a> module will
 be redirected to the logging system. Specifically, a warning will be
-formatted using <a class="reference internal" href="../generated/warnings.formatwarning.html#warnings.formatwarning" title="warnings.formatwarning"><code class="xref py py-func docutils literal"><span class="pre">warnings.formatwarning()</span></code></a> and the resulting string
+formatted using <a class="reference internal" href="../generated/generated/warnings.formatwarning.html#warnings.formatwarning" title="warnings.formatwarning"><code class="xref py py-func docutils literal"><span class="pre">warnings.formatwarning()</span></code></a> and the resulting string
 logged to a logger named <code class="docutils literal"><span class="pre">'py.warnings'</span></code> with a severity of <code class="xref py py-const docutils literal"><span class="pre">WARNING</span></code>.</p>
 <p>If <em>capture</em> is <code class="docutils literal"><span class="pre">False</span></code>, the redirection of warnings to the logging system
 will stop, and warnings will be redirected to their original destinations

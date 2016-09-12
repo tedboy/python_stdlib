@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       compile_command
       interact
       softspace
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/code.compile_command
+       generated/code.interact
+       generated/code.softspace
+      
    
    
 

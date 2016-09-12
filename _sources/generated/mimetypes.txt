@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       add_type
       guess_all_extensions
@@ -18,6 +18,19 @@
       guess_type
       init
       read_mime_types
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/mimetypes.add_type
+       generated/mimetypes.guess_all_extensions
+       generated/mimetypes.guess_extension
+       generated/mimetypes.guess_type
+       generated/mimetypes.init
+       generated/mimetypes.read_mime_types
+      
    
    
 

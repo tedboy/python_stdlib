@@ -163,15 +163,15 @@
 
 <span class="n">READ</span><span class="p">,</span> <span class="n">WRITE</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
 
-<div class="viewcode-block" id="write32u"><a class="viewcode-back" href="../generated/gzip.write32u.html#gzip.write32u">[docs]</a><span class="k">def</span> <span class="nf">write32u</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<div class="viewcode-block" id="write32u"><a class="viewcode-back" href="../generated/generated/gzip.write32u.html#gzip.write32u">[docs]</a><span class="k">def</span> <span class="nf">write32u</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
     <span class="c1"># The L format writes the bit pattern correctly whether signed</span>
     <span class="c1"># or unsigned.</span>
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s2">&quot;&lt;L&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="read32"><a class="viewcode-back" href="../generated/gzip.read32.html#gzip.read32">[docs]</a><span class="k">def</span> <span class="nf">read32</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
+<div class="viewcode-block" id="read32"><a class="viewcode-back" href="../generated/generated/gzip.read32.html#gzip.read32">[docs]</a><span class="k">def</span> <span class="nf">read32</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">&quot;&lt;I&quot;</span><span class="p">,</span> <span class="nb">input</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">4</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span></div>
 
-<div class="viewcode-block" id="open"><a class="viewcode-back" href="../generated/gzip.open.html#gzip.open">[docs]</a><span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;rb&quot;</span><span class="p">,</span> <span class="n">compresslevel</span><span class="o">=</span><span class="mi">9</span><span class="p">):</span>
+<div class="viewcode-block" id="open"><a class="viewcode-back" href="../generated/generated/gzip.open.html#gzip.open">[docs]</a><span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;rb&quot;</span><span class="p">,</span> <span class="n">compresslevel</span><span class="o">=</span><span class="mi">9</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Shorthand for GzipFile(filename, mode, compresslevel).</span>
 
 <span class="sd">    The filename argument is required; mode defaults to &#39;rb&#39;</span>

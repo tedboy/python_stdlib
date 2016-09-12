@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       S_IFMT
       S_IMODE
@@ -21,6 +21,22 @@
       S_ISLNK
       S_ISREG
       S_ISSOCK
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/stat.S_IFMT
+       generated/stat.S_IMODE
+       generated/stat.S_ISBLK
+       generated/stat.S_ISCHR
+       generated/stat.S_ISDIR
+       generated/stat.S_ISFIFO
+       generated/stat.S_ISLNK
+       generated/stat.S_ISREG
+       generated/stat.S_ISSOCK
+      
    
    
 

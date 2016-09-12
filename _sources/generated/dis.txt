@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       dis
       disassemble
@@ -19,6 +19,20 @@
       distb
       findlabels
       findlinestarts
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/dis.dis
+       generated/dis.disassemble
+       generated/dis.disassemble_string
+       generated/dis.disco
+       generated/dis.distb
+       generated/dis.findlabels
+       generated/dis.findlinestarts
+      
    
    
 

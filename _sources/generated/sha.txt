@@ -8,12 +8,21 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       new
       sha
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/sha.new
+       generated/sha.sha
+      
    
    
 

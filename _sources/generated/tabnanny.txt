@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       check
       errprint
       format_witnesses
       main
       process_tokens
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/tabnanny.check
+       generated/tabnanny.errprint
+       generated/tabnanny.format_witnesses
+       generated/tabnanny.main
+       generated/tabnanny.process_tokens
+      
    
    
 

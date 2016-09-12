@@ -345,7 +345,7 @@
 
 <span class="kn">from</span> <span class="nn">struct</span> <span class="kn">import</span> <span class="n">unpack</span> <span class="k">as</span> <span class="n">_unpack</span>
 
-<div class="viewcode-block" id="read_uint1"><a class="viewcode-back" href="../generated/pickletools.read_uint1.html#pickletools.read_uint1">[docs]</a><span class="k">def</span> <span class="nf">read_uint1</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_uint1"><a class="viewcode-back" href="../generated/generated/pickletools.read_uint1.html#pickletools.read_uint1">[docs]</a><span class="k">def</span> <span class="nf">read_uint1</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_uint1(StringIO.StringIO(&#39;\xff&#39;))</span>
@@ -364,7 +364,7 @@
             <span class="n">doc</span><span class="o">=</span><span class="s2">&quot;One-byte unsigned integer.&quot;</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="read_uint2"><a class="viewcode-back" href="../generated/pickletools.read_uint2.html#pickletools.read_uint2">[docs]</a><span class="k">def</span> <span class="nf">read_uint2</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_uint2"><a class="viewcode-back" href="../generated/generated/pickletools.read_uint2.html#pickletools.read_uint2">[docs]</a><span class="k">def</span> <span class="nf">read_uint2</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_uint2(StringIO.StringIO(&#39;\xff\x00&#39;))</span>
@@ -385,7 +385,7 @@
             <span class="n">doc</span><span class="o">=</span><span class="s2">&quot;Two-byte unsigned integer, little-endian.&quot;</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="read_int4"><a class="viewcode-back" href="../generated/pickletools.read_int4.html#pickletools.read_int4">[docs]</a><span class="k">def</span> <span class="nf">read_int4</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_int4"><a class="viewcode-back" href="../generated/generated/pickletools.read_int4.html#pickletools.read_int4">[docs]</a><span class="k">def</span> <span class="nf">read_int4</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_int4(StringIO.StringIO(&#39;\xff\x00\x00\x00&#39;))</span>
@@ -406,7 +406,7 @@
            <span class="n">doc</span><span class="o">=</span><span class="s2">&quot;Four-byte signed integer, little-endian, 2&#39;s complement.&quot;</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="read_stringnl"><a class="viewcode-back" href="../generated/pickletools.read_stringnl.html#pickletools.read_stringnl">[docs]</a><span class="k">def</span> <span class="nf">read_stringnl</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">decode</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stripquotes</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+<div class="viewcode-block" id="read_stringnl"><a class="viewcode-back" href="../generated/generated/pickletools.read_stringnl.html#pickletools.read_stringnl">[docs]</a><span class="k">def</span> <span class="nf">read_stringnl</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">decode</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stripquotes</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_stringnl(StringIO.StringIO(&quot;&#39;abcd&#39;\nefg\n&quot;))</span>
@@ -465,7 +465,7 @@
 <span class="s2">                   bracketing quotes.</span>
 <span class="s2">                   &quot;&quot;&quot;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="read_stringnl_noescape"><a class="viewcode-back" href="../generated/pickletools.read_stringnl_noescape.html#pickletools.read_stringnl_noescape">[docs]</a><span class="k">def</span> <span class="nf">read_stringnl_noescape</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_stringnl_noescape"><a class="viewcode-back" href="../generated/generated/pickletools.read_stringnl_noescape.html#pickletools.read_stringnl_noescape">[docs]</a><span class="k">def</span> <span class="nf">read_stringnl_noescape</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">read_stringnl</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">decode</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">stripquotes</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span></div>
 
 <span class="n">stringnl_noescape</span> <span class="o">=</span> <span class="n">ArgumentDescriptor</span><span class="p">(</span>
@@ -479,7 +479,7 @@
 <span class="s2">                        printable ASCII characters.</span>
 <span class="s2">                        &quot;&quot;&quot;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="read_stringnl_noescape_pair"><a class="viewcode-back" href="../generated/pickletools.read_stringnl_noescape_pair.html#pickletools.read_stringnl_noescape_pair">[docs]</a><span class="k">def</span> <span class="nf">read_stringnl_noescape_pair</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_stringnl_noescape_pair"><a class="viewcode-back" href="../generated/generated/pickletools.read_stringnl_noescape_pair.html#pickletools.read_stringnl_noescape_pair">[docs]</a><span class="k">def</span> <span class="nf">read_stringnl_noescape_pair</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_stringnl_noescape_pair(StringIO.StringIO(&quot;Queue\nEmpty\njunk&quot;))</span>
@@ -501,7 +501,7 @@
 <span class="s2">                             a single blank separating the two strings.</span>
 <span class="s2">                             &quot;&quot;&quot;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="read_string4"><a class="viewcode-back" href="../generated/pickletools.read_string4.html#pickletools.read_string4">[docs]</a><span class="k">def</span> <span class="nf">read_string4</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_string4"><a class="viewcode-back" href="../generated/generated/pickletools.read_string4.html#pickletools.read_string4">[docs]</a><span class="k">def</span> <span class="nf">read_string4</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_string4(StringIO.StringIO(&quot;\x00\x00\x00\x00abc&quot;))</span>
@@ -535,7 +535,7 @@
 <span class="s2">              &quot;&quot;&quot;</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="read_string1"><a class="viewcode-back" href="../generated/pickletools.read_string1.html#pickletools.read_string1">[docs]</a><span class="k">def</span> <span class="nf">read_string1</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_string1"><a class="viewcode-back" href="../generated/generated/pickletools.read_string1.html#pickletools.read_string1">[docs]</a><span class="k">def</span> <span class="nf">read_string1</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_string1(StringIO.StringIO(&quot;\x00&quot;))</span>
@@ -564,7 +564,7 @@
 <span class="s2">              &quot;&quot;&quot;</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="read_unicodestringnl"><a class="viewcode-back" href="../generated/pickletools.read_unicodestringnl.html#pickletools.read_unicodestringnl">[docs]</a><span class="k">def</span> <span class="nf">read_unicodestringnl</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_unicodestringnl"><a class="viewcode-back" href="../generated/generated/pickletools.read_unicodestringnl.html#pickletools.read_unicodestringnl">[docs]</a><span class="k">def</span> <span class="nf">read_unicodestringnl</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_unicodestringnl(StringIO.StringIO(&quot;abc\uabcd\njunk&quot;))</span>
@@ -589,7 +589,7 @@
 <span class="s2">                      escape sequences.</span>
 <span class="s2">                      &quot;&quot;&quot;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="read_unicodestring4"><a class="viewcode-back" href="../generated/pickletools.read_unicodestring4.html#pickletools.read_unicodestring4">[docs]</a><span class="k">def</span> <span class="nf">read_unicodestring4</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_unicodestring4"><a class="viewcode-back" href="../generated/generated/pickletools.read_unicodestring4.html#pickletools.read_unicodestring4">[docs]</a><span class="k">def</span> <span class="nf">read_unicodestring4</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; s = u&#39;abcd\uabcd&#39;</span>
@@ -629,7 +629,7 @@
 <span class="s2">                    &quot;&quot;&quot;</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="read_decimalnl_short"><a class="viewcode-back" href="../generated/pickletools.read_decimalnl_short.html#pickletools.read_decimalnl_short">[docs]</a><span class="k">def</span> <span class="nf">read_decimalnl_short</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_decimalnl_short"><a class="viewcode-back" href="../generated/generated/pickletools.read_decimalnl_short.html#pickletools.read_decimalnl_short">[docs]</a><span class="k">def</span> <span class="nf">read_decimalnl_short</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_decimalnl_short(StringIO.StringIO(&quot;1234\n56&quot;))</span>
@@ -658,7 +658,7 @@
     <span class="k">except</span> <span class="ne">OverflowError</span><span class="p">:</span>
         <span class="k">return</span> <span class="nb">long</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="read_decimalnl_long"><a class="viewcode-back" href="../generated/pickletools.read_decimalnl_long.html#pickletools.read_decimalnl_long">[docs]</a><span class="k">def</span> <span class="nf">read_decimalnl_long</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_decimalnl_long"><a class="viewcode-back" href="../generated/generated/pickletools.read_decimalnl_long.html#pickletools.read_decimalnl_long">[docs]</a><span class="k">def</span> <span class="nf">read_decimalnl_long</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 
@@ -706,7 +706,7 @@
 <span class="s2">                         &quot;&quot;&quot;</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="read_floatnl"><a class="viewcode-back" href="../generated/pickletools.read_floatnl.html#pickletools.read_floatnl">[docs]</a><span class="k">def</span> <span class="nf">read_floatnl</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_floatnl"><a class="viewcode-back" href="../generated/generated/pickletools.read_floatnl.html#pickletools.read_floatnl">[docs]</a><span class="k">def</span> <span class="nf">read_floatnl</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_floatnl(StringIO.StringIO(&quot;-1.25\n6&quot;))</span>
@@ -728,7 +728,7 @@
 <span class="s2">              for infinities or NaNs).</span>
 <span class="s2">              &quot;&quot;&quot;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="read_float8"><a class="viewcode-back" href="../generated/pickletools.read_float8.html#pickletools.read_float8">[docs]</a><span class="k">def</span> <span class="nf">read_float8</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_float8"><a class="viewcode-back" href="../generated/generated/pickletools.read_float8.html#pickletools.read_float8">[docs]</a><span class="k">def</span> <span class="nf">read_float8</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO, struct</span>
 <span class="sd">    &gt;&gt;&gt; raw = struct.pack(&quot;&gt;d&quot;, -1.25)</span>
@@ -766,7 +766,7 @@
 
 <span class="kn">from</span> <span class="nn">pickle</span> <span class="kn">import</span> <span class="n">decode_long</span>
 
-<div class="viewcode-block" id="read_long1"><a class="viewcode-back" href="../generated/pickletools.read_long1.html#pickletools.read_long1">[docs]</a><span class="k">def</span> <span class="nf">read_long1</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_long1"><a class="viewcode-back" href="../generated/generated/pickletools.read_long1.html#pickletools.read_long1">[docs]</a><span class="k">def</span> <span class="nf">read_long1</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_long1(StringIO.StringIO(&quot;\x00&quot;))</span>
@@ -798,7 +798,7 @@
 <span class="s2">    If the size is 0, that&#39;s taken as a shortcut for the long 0L.</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="read_long4"><a class="viewcode-back" href="../generated/pickletools.read_long4.html#pickletools.read_long4">[docs]</a><span class="k">def</span> <span class="nf">read_long4</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="read_long4"><a class="viewcode-back" href="../generated/generated/pickletools.read_long4.html#pickletools.read_long4">[docs]</a><span class="k">def</span> <span class="nf">read_long4</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;</span>
 <span class="sd">    &gt;&gt;&gt; import StringIO</span>
 <span class="sd">    &gt;&gt;&gt; read_long4(StringIO.StringIO(&quot;\x02\x00\x00\x00\xff\x00&quot;))</span>
@@ -1951,7 +1951,7 @@
 <span class="c1">##############################################################################</span>
 <span class="c1"># A pickle opcode generator.</span>
 
-<div class="viewcode-block" id="genops"><a class="viewcode-back" href="../generated/pickletools.genops.html#pickletools.genops">[docs]</a><span class="k">def</span> <span class="nf">genops</span><span class="p">(</span><span class="n">pickle</span><span class="p">):</span>
+<div class="viewcode-block" id="genops"><a class="viewcode-back" href="../generated/generated/pickletools.genops.html#pickletools.genops">[docs]</a><span class="k">def</span> <span class="nf">genops</span><span class="p">(</span><span class="n">pickle</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Generate all the opcodes in a pickle.</span>
 
 <span class="sd">    &#39;pickle&#39; is a file-like object, or string, containing the pickle.</span>
@@ -2008,7 +2008,7 @@
 <span class="c1">##############################################################################</span>
 <span class="c1"># A pickle optimizer.</span>
 
-<div class="viewcode-block" id="optimize"><a class="viewcode-back" href="../generated/pickletools.optimize.html#pickletools.optimize">[docs]</a><span class="k">def</span> <span class="nf">optimize</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
+<div class="viewcode-block" id="optimize"><a class="viewcode-back" href="../generated/generated/pickletools.optimize.html#pickletools.optimize">[docs]</a><span class="k">def</span> <span class="nf">optimize</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
     <span class="s1">&#39;Optimize a pickle string by removing unused PUT opcodes&#39;</span>
     <span class="n">gets</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>            <span class="c1"># set of args used by a GET opcode</span>
     <span class="n">puts</span> <span class="o">=</span> <span class="p">[]</span>               <span class="c1"># (arg, startpos, stoppos) for the PUT opcodes</span>
@@ -2035,7 +2035,7 @@
 <span class="c1">##############################################################################</span>
 <span class="c1"># A symbolic pickle disassembler.</span>
 
-<div class="viewcode-block" id="dis"><a class="viewcode-back" href="../generated/pickletools.dis.html#pickletools.dis">[docs]</a><span class="k">def</span> <span class="nf">dis</span><span class="p">(</span><span class="n">pickle</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">memo</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">indentlevel</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
+<div class="viewcode-block" id="dis"><a class="viewcode-back" href="../generated/generated/pickletools.dis.html#pickletools.dis">[docs]</a><span class="k">def</span> <span class="nf">dis</span><span class="p">(</span><span class="n">pickle</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">memo</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">indentlevel</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Produce a symbolic disassembly of a pickle.</span>
 
 <span class="sd">    &#39;pickle&#39; is a file-like object, or string, containing a (at least one)</span>

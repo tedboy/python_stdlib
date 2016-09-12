@@ -198,7 +198,7 @@
 <span class="k">def</span> <span class="nf">_id</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">obj</span>
 
-<div class="viewcode-block" id="skip"><a class="viewcode-back" href="../../generated/unittest.skip.html#unittest.skip">[docs]</a><span class="k">def</span> <span class="nf">skip</span><span class="p">(</span><span class="n">reason</span><span class="p">):</span>
+<div class="viewcode-block" id="skip"><a class="viewcode-back" href="../../generated/generated/unittest.skip.html#unittest.skip">[docs]</a><span class="k">def</span> <span class="nf">skip</span><span class="p">(</span><span class="n">reason</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Unconditionally skip a test.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -214,7 +214,7 @@
         <span class="k">return</span> <span class="n">test_item</span>
     <span class="k">return</span> <span class="n">decorator</span></div>
 
-<div class="viewcode-block" id="skipIf"><a class="viewcode-back" href="../../generated/unittest.skipIf.html#unittest.skipIf">[docs]</a><span class="k">def</span> <span class="nf">skipIf</span><span class="p">(</span><span class="n">condition</span><span class="p">,</span> <span class="n">reason</span><span class="p">):</span>
+<div class="viewcode-block" id="skipIf"><a class="viewcode-back" href="../../generated/generated/unittest.skipIf.html#unittest.skipIf">[docs]</a><span class="k">def</span> <span class="nf">skipIf</span><span class="p">(</span><span class="n">condition</span><span class="p">,</span> <span class="n">reason</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Skip a test if the condition is true.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -222,7 +222,7 @@
         <span class="k">return</span> <span class="n">skip</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">_id</span></div>
 
-<div class="viewcode-block" id="skipUnless"><a class="viewcode-back" href="../../generated/unittest.skipUnless.html#unittest.skipUnless">[docs]</a><span class="k">def</span> <span class="nf">skipUnless</span><span class="p">(</span><span class="n">condition</span><span class="p">,</span> <span class="n">reason</span><span class="p">):</span>
+<div class="viewcode-block" id="skipUnless"><a class="viewcode-back" href="../../generated/generated/unittest.skipUnless.html#unittest.skipUnless">[docs]</a><span class="k">def</span> <span class="nf">skipUnless</span><span class="p">(</span><span class="n">condition</span><span class="p">,</span> <span class="n">reason</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Skip a test unless the condition is true.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -231,7 +231,7 @@
     <span class="k">return</span> <span class="n">_id</span></div>
 
 
-<div class="viewcode-block" id="expectedFailure"><a class="viewcode-back" href="../../generated/unittest.expectedFailure.html#unittest.expectedFailure">[docs]</a><span class="k">def</span> <span class="nf">expectedFailure</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+<div class="viewcode-block" id="expectedFailure"><a class="viewcode-back" href="../../generated/generated/unittest.expectedFailure.html#unittest.expectedFailure">[docs]</a><span class="k">def</span> <span class="nf">expectedFailure</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
     <span class="nd">@functools.wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">try</span><span class="p">:</span>

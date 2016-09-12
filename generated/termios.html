@@ -34,8 +34,8 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="termios.error" href="termios.error.html"/>
-        <link rel="prev" title="crypt" href="crypt.html"/> 
+        <link rel="next" title="termios.tcdrain()" href="generated/termios.tcdrain.html"/>
+        <link rel="prev" title="crypt.crypt()" href="generated/crypt.crypt.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -82,12 +82,78 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="posix.html"><code class="docutils literal"><span class="pre">posix</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pwd.html"><code class="docutils literal"><span class="pre">pwd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="spwd.html"><code class="docutils literal"><span class="pre">spwd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="grp.html"><code class="docutils literal"><span class="pre">grp</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crypt.html"><code class="docutils literal"><span class="pre">crypt</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">termios</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/termios.tcdrain.html"><code class="docutils literal"><span class="pre">termios.tcdrain()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/termios.tcflow.html"><code class="docutils literal"><span class="pre">termios.tcflow()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/termios.tcflush.html"><code class="docutils literal"><span class="pre">termios.tcflush()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/termios.tcgetattr.html"><code class="docutils literal"><span class="pre">termios.tcgetattr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/termios.tcsendbreak.html"><code class="docutils literal"><span class="pre">termios.tcsendbreak()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/termios.tcsetattr.html"><code class="docutils literal"><span class="pre">termios.tcsetattr()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="termios.error.html">termios.error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tty.html"><code class="docutils literal"><span class="pre">tty</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pty.html"><code class="docutils literal"><span class="pre">pty</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="fcntl.html"><code class="docutils literal"><span class="pre">fcntl</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html"><code class="docutils literal"><span class="pre">pipes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="posixfile.html"><code class="docutils literal"><span class="pre">posixfile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="resource.html"><code class="docutils literal"><span class="pre">resource</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="nis.html"><code class="docutils literal"><span class="pre">nis</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="syslog.html"><code class="docutils literal"><span class="pre">syslog</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="commands.html"><code class="docutils literal"><span class="pre">commands</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -159,6 +225,34 @@ argument. This can be an integer file descriptor, such as returned by
 sys.stdin.fileno(), or a file object, such as sys.stdin itself.</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/termios.tcdrain.html#termios.tcdrain" title="termios.tcdrain"><code class="xref py py-obj docutils literal"><span class="pre">tcdrain</span></code></a>((fd)&nbsp;-&gt;&nbsp;None)</td>
+<td>Wait until all output written to file descriptor fd has been transmitted.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/termios.tcflow.html#termios.tcflow" title="termios.tcflow"><code class="xref py py-obj docutils literal"><span class="pre">tcflow</span></code></a>((fd,&nbsp;action)&nbsp;-&gt;&nbsp;None)</td>
+<td>Suspend or resume input or output on file descriptor fd.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/termios.tcflush.html#termios.tcflush" title="termios.tcflush"><code class="xref py py-obj docutils literal"><span class="pre">tcflush</span></code></a>((fd,&nbsp;queue)&nbsp;-&gt;&nbsp;None)</td>
+<td>Discard queued data on file descriptor fd.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/termios.tcgetattr.html#termios.tcgetattr" title="termios.tcgetattr"><code class="xref py py-obj docutils literal"><span class="pre">tcgetattr</span></code></a>((fd)&nbsp;-&gt;&nbsp;list_of_attrs)</td>
+<td>Get the tty attributes for file descriptor fd, as follows: [iflag, oflag, cflag, lflag, ispeed, ospeed, cc] where cc is a list of the tty special characters (each a string of length 1, except the items with indices VMIN and VTIME, which are integers when these fields are defined).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/termios.tcsendbreak.html#termios.tcsendbreak" title="termios.tcsendbreak"><code class="xref py py-obj docutils literal"><span class="pre">tcsendbreak</span></code></a>((fd,&nbsp;duration)&nbsp;-&gt;&nbsp;None)</td>
+<td>Send a break on file descriptor fd.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/termios.tcsetattr.html#termios.tcsetattr" title="termios.tcsetattr"><code class="xref py py-obj docutils literal"><span class="pre">tcsetattr</span></code></a>((fd,&nbsp;when,&nbsp;attributes)&nbsp;-&gt;&nbsp;None)</td>
+<td>Set the tty attributes for file descriptor fd.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="exceptions">
 <h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
@@ -183,10 +277,10 @@ sys.stdin.fileno(), or a file object, such as sys.stdin itself.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="termios.error.html" class="btn btn-neutral float-right" title="termios.error" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/termios.tcdrain.html" class="btn btn-neutral float-right" title="termios.tcdrain()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="crypt.html" class="btn btn-neutral" title="crypt" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="generated/crypt.crypt.html" class="btn btn-neutral" title="crypt.crypt()" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

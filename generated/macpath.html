@@ -34,8 +34,8 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="macpath.norm_error" href="macpath.norm_error.html"/>
-        <link rel="prev" title="dircache" href="dircache.html"/> 
+        <link rel="next" title="macpath.S_IFMT()" href="generated/macpath.S_IFMT.html"/>
+        <link rel="prev" title="dircache.reset()" href="generated/dircache.reset.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -82,12 +82,103 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="os.path.html"><code class="docutils literal"><span class="pre">os.path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="fileinput.html"><code class="docutils literal"><span class="pre">fileinput</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="stat.html"><code class="docutils literal"><span class="pre">stat</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="statvfs.html"><code class="docutils literal"><span class="pre">statvfs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="filecmp.html"><code class="docutils literal"><span class="pre">filecmp</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tempfile.html"><code class="docutils literal"><span class="pre">tempfile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="glob.html"><code class="docutils literal"><span class="pre">glob</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="fnmatch.html"><code class="docutils literal"><span class="pre">fnmatch</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="linecache.html"><code class="docutils literal"><span class="pre">linecache</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shutil.html"><code class="docutils literal"><span class="pre">shutil</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="dircache.html"><code class="docutils literal"><span class="pre">dircache</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">macpath</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.S_IFMT.html"><code class="docutils literal"><span class="pre">macpath.S_IFMT()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.S_IMODE.html"><code class="docutils literal"><span class="pre">macpath.S_IMODE()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.S_ISBLK.html"><code class="docutils literal"><span class="pre">macpath.S_ISBLK()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.S_ISCHR.html"><code class="docutils literal"><span class="pre">macpath.S_ISCHR()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.S_ISDIR.html"><code class="docutils literal"><span class="pre">macpath.S_ISDIR()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.S_ISFIFO.html"><code class="docutils literal"><span class="pre">macpath.S_ISFIFO()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.S_ISLNK.html"><code class="docutils literal"><span class="pre">macpath.S_ISLNK()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.S_ISREG.html"><code class="docutils literal"><span class="pre">macpath.S_ISREG()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.S_ISSOCK.html"><code class="docutils literal"><span class="pre">macpath.S_ISSOCK()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.abspath.html"><code class="docutils literal"><span class="pre">macpath.abspath()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.basename.html"><code class="docutils literal"><span class="pre">macpath.basename()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.commonprefix.html"><code class="docutils literal"><span class="pre">macpath.commonprefix()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.dirname.html"><code class="docutils literal"><span class="pre">macpath.dirname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.exists.html"><code class="docutils literal"><span class="pre">macpath.exists()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.expanduser.html"><code class="docutils literal"><span class="pre">macpath.expanduser()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.expandvars.html"><code class="docutils literal"><span class="pre">macpath.expandvars()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.getatime.html"><code class="docutils literal"><span class="pre">macpath.getatime()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.getctime.html"><code class="docutils literal"><span class="pre">macpath.getctime()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.getmtime.html"><code class="docutils literal"><span class="pre">macpath.getmtime()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.getsize.html"><code class="docutils literal"><span class="pre">macpath.getsize()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.isabs.html"><code class="docutils literal"><span class="pre">macpath.isabs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.isdir.html"><code class="docutils literal"><span class="pre">macpath.isdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.isfile.html"><code class="docutils literal"><span class="pre">macpath.isfile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.islink.html"><code class="docutils literal"><span class="pre">macpath.islink()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.ismount.html"><code class="docutils literal"><span class="pre">macpath.ismount()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.join.html"><code class="docutils literal"><span class="pre">macpath.join()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.lexists.html"><code class="docutils literal"><span class="pre">macpath.lexists()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.normcase.html"><code class="docutils literal"><span class="pre">macpath.normcase()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.normpath.html"><code class="docutils literal"><span class="pre">macpath.normpath()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.realpath.html"><code class="docutils literal"><span class="pre">macpath.realpath()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.split.html"><code class="docutils literal"><span class="pre">macpath.split()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.splitdrive.html"><code class="docutils literal"><span class="pre">macpath.splitdrive()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.splitext.html"><code class="docutils literal"><span class="pre">macpath.splitext()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/macpath.walk.html"><code class="docutils literal"><span class="pre">macpath.walk()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="macpath.norm_error.html">macpath.norm_error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -153,6 +244,118 @@
 <p>Pathname and path-related operations for the Macintosh.</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.S_IFMT.html#macpath.S_IFMT" title="macpath.S_IFMT"><code class="xref py py-obj docutils literal"><span class="pre">S_IFMT</span></code></a>(mode)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.S_IMODE.html#macpath.S_IMODE" title="macpath.S_IMODE"><code class="xref py py-obj docutils literal"><span class="pre">S_IMODE</span></code></a>(mode)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.S_ISBLK.html#macpath.S_ISBLK" title="macpath.S_ISBLK"><code class="xref py py-obj docutils literal"><span class="pre">S_ISBLK</span></code></a>(mode)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.S_ISCHR.html#macpath.S_ISCHR" title="macpath.S_ISCHR"><code class="xref py py-obj docutils literal"><span class="pre">S_ISCHR</span></code></a>(mode)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.S_ISDIR.html#macpath.S_ISDIR" title="macpath.S_ISDIR"><code class="xref py py-obj docutils literal"><span class="pre">S_ISDIR</span></code></a>(mode)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.S_ISFIFO.html#macpath.S_ISFIFO" title="macpath.S_ISFIFO"><code class="xref py py-obj docutils literal"><span class="pre">S_ISFIFO</span></code></a>(mode)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.S_ISLNK.html#macpath.S_ISLNK" title="macpath.S_ISLNK"><code class="xref py py-obj docutils literal"><span class="pre">S_ISLNK</span></code></a>(mode)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.S_ISREG.html#macpath.S_ISREG" title="macpath.S_ISREG"><code class="xref py py-obj docutils literal"><span class="pre">S_ISREG</span></code></a>(mode)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.S_ISSOCK.html#macpath.S_ISSOCK" title="macpath.S_ISSOCK"><code class="xref py py-obj docutils literal"><span class="pre">S_ISSOCK</span></code></a>(mode)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.abspath.html#macpath.abspath" title="macpath.abspath"><code class="xref py py-obj docutils literal"><span class="pre">abspath</span></code></a>(path)</td>
+<td>Return an absolute path.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.basename.html#macpath.basename" title="macpath.basename"><code class="xref py py-obj docutils literal"><span class="pre">basename</span></code></a>(s)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.commonprefix.html#macpath.commonprefix" title="macpath.commonprefix"><code class="xref py py-obj docutils literal"><span class="pre">commonprefix</span></code></a>(m)</td>
+<td>Given a list of pathnames, returns the longest common leading component</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.dirname.html#macpath.dirname" title="macpath.dirname"><code class="xref py py-obj docutils literal"><span class="pre">dirname</span></code></a>(s)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.exists.html#macpath.exists" title="macpath.exists"><code class="xref py py-obj docutils literal"><span class="pre">exists</span></code></a>(path)</td>
+<td>Test whether a path exists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.expanduser.html#macpath.expanduser" title="macpath.expanduser"><code class="xref py py-obj docutils literal"><span class="pre">expanduser</span></code></a>(path)</td>
+<td>Dummy to retain interface-compatibility with other operating systems.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.expandvars.html#macpath.expandvars" title="macpath.expandvars"><code class="xref py py-obj docutils literal"><span class="pre">expandvars</span></code></a>(path)</td>
+<td>Dummy to retain interface-compatibility with other operating systems.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.getatime.html#macpath.getatime" title="macpath.getatime"><code class="xref py py-obj docutils literal"><span class="pre">getatime</span></code></a>(filename)</td>
+<td>Return the last access time of a file, reported by os.stat().</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.getctime.html#macpath.getctime" title="macpath.getctime"><code class="xref py py-obj docutils literal"><span class="pre">getctime</span></code></a>(filename)</td>
+<td>Return the metadata change time of a file, reported by os.stat().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.getmtime.html#macpath.getmtime" title="macpath.getmtime"><code class="xref py py-obj docutils literal"><span class="pre">getmtime</span></code></a>(filename)</td>
+<td>Return the last modification time of a file, reported by os.stat().</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.getsize.html#macpath.getsize" title="macpath.getsize"><code class="xref py py-obj docutils literal"><span class="pre">getsize</span></code></a>(filename)</td>
+<td>Return the size of a file, reported by os.stat().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.isabs.html#macpath.isabs" title="macpath.isabs"><code class="xref py py-obj docutils literal"><span class="pre">isabs</span></code></a>(s)</td>
+<td>Return true if a path is absolute.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.isdir.html#macpath.isdir" title="macpath.isdir"><code class="xref py py-obj docutils literal"><span class="pre">isdir</span></code></a>(s)</td>
+<td>Return true if the pathname refers to an existing directory.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.isfile.html#macpath.isfile" title="macpath.isfile"><code class="xref py py-obj docutils literal"><span class="pre">isfile</span></code></a>(path)</td>
+<td>Test whether a path is a regular file</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.islink.html#macpath.islink" title="macpath.islink"><code class="xref py py-obj docutils literal"><span class="pre">islink</span></code></a>(s)</td>
+<td>Return true if the pathname refers to a symbolic link.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.ismount.html#macpath.ismount" title="macpath.ismount"><code class="xref py py-obj docutils literal"><span class="pre">ismount</span></code></a>(s)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.join.html#macpath.join" title="macpath.join"><code class="xref py py-obj docutils literal"><span class="pre">join</span></code></a>(s,&nbsp;*p)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.lexists.html#macpath.lexists" title="macpath.lexists"><code class="xref py py-obj docutils literal"><span class="pre">lexists</span></code></a>(path)</td>
+<td>Test whether a path exists.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.normcase.html#macpath.normcase" title="macpath.normcase"><code class="xref py py-obj docutils literal"><span class="pre">normcase</span></code></a>(path)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.normpath.html#macpath.normpath" title="macpath.normpath"><code class="xref py py-obj docutils literal"><span class="pre">normpath</span></code></a>(s)</td>
+<td>Normalize a pathname.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.realpath.html#macpath.realpath" title="macpath.realpath"><code class="xref py py-obj docutils literal"><span class="pre">realpath</span></code></a>(path)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.split.html#macpath.split" title="macpath.split"><code class="xref py py-obj docutils literal"><span class="pre">split</span></code></a>(s)</td>
+<td>Split a pathname into two parts: the directory leading up to the final bit, and the basename (the filename, without colons, in that directory).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.splitdrive.html#macpath.splitdrive" title="macpath.splitdrive"><code class="xref py py-obj docutils literal"><span class="pre">splitdrive</span></code></a>(p)</td>
+<td>Split a pathname into a drive specification and the rest of the path.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/macpath.splitext.html#macpath.splitext" title="macpath.splitext"><code class="xref py py-obj docutils literal"><span class="pre">splitext</span></code></a>(p)</td>
+<td>Split the extension from a pathname.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/macpath.walk.html#macpath.walk" title="macpath.walk"><code class="xref py py-obj docutils literal"><span class="pre">walk</span></code></a>(top,&nbsp;func,&nbsp;arg)</td>
+<td>Directory tree walk with callback function.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="exceptions">
 <h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
@@ -177,10 +380,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="macpath.norm_error.html" class="btn btn-neutral float-right" title="macpath.norm_error" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/macpath.S_IFMT.html" class="btn btn-neutral float-right" title="macpath.S_IFMT()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="dircache.html" class="btn btn-neutral" title="dircache" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="generated/dircache.reset.html" class="btn btn-neutral" title="dircache.reset()" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

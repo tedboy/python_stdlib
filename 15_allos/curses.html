@@ -212,7 +212,7 @@ Linux and the BSD variants of Unix.</p>
 <p class="first admonition-title">Note</p>
 <p>Since version 5.4, the ncurses library decides how to interpret non-ASCII data
 using the <code class="docutils literal"><span class="pre">nl_langinfo</span></code> function.  That means that you have to call
-<a class="reference internal" href="../generated/locale.setlocale.html#locale.setlocale" title="locale.setlocale"><code class="xref py py-func docutils literal"><span class="pre">locale.setlocale()</span></code></a> in the application and encode Unicode strings
+<a class="reference internal" href="../generated/generated/locale.setlocale.html#locale.setlocale" title="locale.setlocale"><code class="xref py py-func docutils literal"><span class="pre">locale.setlocale()</span></code></a> in the application and encode Unicode strings
 using one of the system&#8217;s available encodings.  This example uses the
 system&#8217;s default encoding:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">locale</span>
@@ -283,7 +283,7 @@ displayed by the terminal.</p>
 line buffering is turned off and characters are available to be read one by one.
 However, unlike raw mode, special characters (interrupt, quit, suspend, and flow
 control) retain their effects on the tty driver and calling program.  Calling
-first <a class="reference internal" href="../generated/curses.raw.html#curses.raw" title="curses.raw"><code class="xref py py-func docutils literal"><span class="pre">raw()</span></code></a> then <a class="reference internal" href="../generated/curses.cbreak.html#curses.cbreak" title="curses.cbreak"><code class="xref py py-func docutils literal"><span class="pre">cbreak()</span></code></a> leaves the terminal in cbreak mode.</p>
+first <a class="reference internal" href="../generated/generated/curses.raw.html#curses.raw" title="curses.raw"><code class="xref py py-func docutils literal"><span class="pre">raw()</span></code></a> then <a class="reference internal" href="../generated/generated/curses.cbreak.html#curses.cbreak" title="curses.cbreak"><code class="xref py py-func docutils literal"><span class="pre">cbreak()</span></code></a> leaves the terminal in cbreak mode.</p>
 </dd></dl>
 
 <dl class="function">
@@ -300,7 +300,7 @@ returned, containing the R,G,B values for the given color, which will be between
 <code class="descclassname">curses.</code><code class="descname">color_pair</code><span class="sig-paren">(</span><em>color_number</em><span class="sig-paren">)</span><a class="headerlink" href="#curses.color_pair" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the attribute value for displaying text in the specified color.  This
 attribute value can be combined with <code class="xref py py-const docutils literal"><span class="pre">A_STANDOUT</span></code>, <code class="xref py py-const docutils literal"><span class="pre">A_REVERSE</span></code>,
-and the other <code class="xref py py-const docutils literal"><span class="pre">A_*</span></code> attributes.  <a class="reference internal" href="../generated/curses.pair_number.html#curses.pair_number" title="curses.pair_number"><code class="xref py py-func docutils literal"><span class="pre">pair_number()</span></code></a> is the counterpart
+and the other <code class="xref py py-const docutils literal"><span class="pre">A_*</span></code> attributes.  <a class="reference internal" href="../generated/generated/curses.pair_number.html#curses.pair_number" title="curses.pair_number"><code class="xref py py-func docutils literal"><span class="pre">pair_number()</span></code></a> is the counterpart
 to this function.</p>
 </dd></dl>
 
@@ -319,7 +319,7 @@ is a block cursor.</p>
 <code class="descclassname">curses.</code><code class="descname">def_prog_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.def_prog_mode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Save the current terminal mode as the &#8220;program&#8221; mode, the mode when the running
 program is using curses.  (Its counterpart is the &#8220;shell&#8221; mode, for when the
-program is not in curses.)  Subsequent calls to <a class="reference internal" href="../generated/curses.reset_prog_mode.html#curses.reset_prog_mode" title="curses.reset_prog_mode"><code class="xref py py-func docutils literal"><span class="pre">reset_prog_mode()</span></code></a> will
+program is not in curses.)  Subsequent calls to <a class="reference internal" href="../generated/generated/curses.reset_prog_mode.html#curses.reset_prog_mode" title="curses.reset_prog_mode"><code class="xref py py-func docutils literal"><span class="pre">reset_prog_mode()</span></code></a> will
 restore this mode.</p>
 </dd></dl>
 
@@ -329,7 +329,7 @@ restore this mode.</p>
 <dd><p>Save the current terminal mode as the &#8220;shell&#8221; mode, the mode when the running
 program is not using curses.  (Its counterpart is the &#8220;program&#8221; mode, when the
 program is using curses capabilities.) Subsequent calls to
-<a class="reference internal" href="../generated/curses.reset_shell_mode.html#curses.reset_shell_mode" title="curses.reset_shell_mode"><code class="xref py py-func docutils literal"><span class="pre">reset_shell_mode()</span></code></a> will restore this mode.</p>
+<a class="reference internal" href="../generated/generated/curses.reset_shell_mode.html#curses.reset_shell_mode" title="curses.reset_shell_mode"><code class="xref py py-func docutils literal"><span class="pre">reset_shell_mode()</span></code></a> will restore this mode.</p>
 </dd></dl>
 
 <dl class="function">
@@ -343,14 +343,14 @@ program is using curses capabilities.) Subsequent calls to
 <code class="descclassname">curses.</code><code class="descname">doupdate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.doupdate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update the physical screen.  The curses library keeps two data structures, one
 representing the current physical screen contents and a virtual screen
-representing the desired next state.  The <a class="reference internal" href="../generated/curses.doupdate.html#curses.doupdate" title="curses.doupdate"><code class="xref py py-func docutils literal"><span class="pre">doupdate()</span></code></a> ground updates the
+representing the desired next state.  The <a class="reference internal" href="../generated/generated/curses.doupdate.html#curses.doupdate" title="curses.doupdate"><code class="xref py py-func docutils literal"><span class="pre">doupdate()</span></code></a> ground updates the
 physical screen to match the virtual screen.</p>
 <p>The virtual screen may be updated by a <code class="xref py py-meth docutils literal"><span class="pre">noutrefresh()</span></code> call after write
 operations such as <code class="xref py py-meth docutils literal"><span class="pre">addstr()</span></code> have been performed on a window.  The normal
-<code class="xref py py-meth docutils literal"><span class="pre">refresh()</span></code> call is simply <code class="xref py py-meth docutils literal"><span class="pre">noutrefresh()</span></code> followed by <a class="reference internal" href="../generated/curses.doupdate.html#curses.doupdate" title="curses.doupdate"><code class="xref py py-func docutils literal"><span class="pre">doupdate()</span></code></a>;
+<code class="xref py py-meth docutils literal"><span class="pre">refresh()</span></code> call is simply <code class="xref py py-meth docutils literal"><span class="pre">noutrefresh()</span></code> followed by <a class="reference internal" href="../generated/generated/curses.doupdate.html#curses.doupdate" title="curses.doupdate"><code class="xref py py-func docutils literal"><span class="pre">doupdate()</span></code></a>;
 if you have to update multiple windows, you can speed performance and perhaps
 reduce screen flicker by issuing <code class="xref py py-meth docutils literal"><span class="pre">noutrefresh()</span></code> calls on all windows,
-followed by a single <a class="reference internal" href="../generated/curses.doupdate.html#curses.doupdate" title="curses.doupdate"><code class="xref py py-func docutils literal"><span class="pre">doupdate()</span></code></a>.</p>
+followed by a single <a class="reference internal" href="../generated/generated/curses.doupdate.html#curses.doupdate" title="curses.doupdate"><code class="xref py py-func docutils literal"><span class="pre">doupdate()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -377,7 +377,7 @@ the curses library itself.</p>
 <dl class="function">
 <dt id="curses.filter">
 <code class="descclassname">curses.</code><code class="descname">filter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.filter" title="Permalink to this definition">¶</a></dt>
-<dd><p>The <a class="reference internal" href="../generated/curses.filter.html#curses.filter" title="curses.filter"><code class="xref py py-func docutils literal"><span class="pre">filter()</span></code></a> routine, if used, must be called before <a class="reference internal" href="../generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a> is
+<dd><p>The <a class="reference internal" href="../generated/generated/curses.filter.html#curses.filter" title="curses.filter"><code class="xref py py-func docutils literal"><span class="pre">filter()</span></code></a> routine, if used, must be called before <a class="reference internal" href="../generated/generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a> is
 called.  The effect is that, during those calls, <span class="target" id="index-0"></span><code class="xref std std-envvar docutils literal"><span class="pre">LINES</span></code> is set to 1; the
 capabilities clear, cup, cud, cud1, cuu1, cuu, vpa are disabled; and the home
 string is set to the value of cr. The effect is that the cursor is confined to
@@ -390,7 +390,7 @@ character-at-a-time  line editing without touching the rest of the screen.</p>
 <code class="descclassname">curses.</code><code class="descname">flash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.flash" title="Permalink to this definition">¶</a></dt>
 <dd><p>Flash the screen.  That is, change it to reverse-video and then change it back
 in a short interval.  Some people prefer such as &#8216;visible bell&#8217; to the audible
-attention signal produced by <a class="reference internal" href="../generated/curses.beep.html#curses.beep" title="curses.beep"><code class="xref py py-func docutils literal"><span class="pre">beep()</span></code></a>.</p>
+attention signal produced by <a class="reference internal" href="../generated/generated/curses.beep.html#curses.beep" title="curses.beep"><code class="xref py py-func docutils literal"><span class="pre">beep()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -467,7 +467,7 @@ a key with that value.</p>
 typed by the user are immediately available to the program. However, after
 blocking for <em>tenths</em> tenths of seconds, an exception is raised if nothing has
 been typed.  The value of <em>tenths</em> must be a number between <code class="docutils literal"><span class="pre">1</span></code> and <code class="docutils literal"><span class="pre">255</span></code>.  Use
-<a class="reference internal" href="../generated/curses.nocbreak.html#curses.nocbreak" title="curses.nocbreak"><code class="xref py py-func docutils literal"><span class="pre">nocbreak()</span></code></a> to leave half-delay mode.</p>
+<a class="reference internal" href="../generated/generated/curses.nocbreak.html#curses.nocbreak" title="curses.nocbreak"><code class="xref py py-func docutils literal"><span class="pre">nocbreak()</span></code></a> to leave half-delay mode.</p>
 </dd></dl>
 
 <dl class="function">
@@ -477,9 +477,9 @@ been typed.  The value of <em>tenths</em> must be a number between <code class="
 followed by three RGB values (for the amounts of red, green, and blue
 components).  The value of <em>color_number</em> must be between <code class="docutils literal"><span class="pre">0</span></code> and
 <code class="xref py py-const docutils literal"><span class="pre">COLORS</span></code>.  Each of <em>r</em>, <em>g</em>, <em>b</em>, must be a value between <code class="docutils literal"><span class="pre">0</span></code> and
-<code class="docutils literal"><span class="pre">1000</span></code>.  When <a class="reference internal" href="../generated/curses.init_color.html#curses.init_color" title="curses.init_color"><code class="xref py py-func docutils literal"><span class="pre">init_color()</span></code></a> is used, all occurrences of that color on the
+<code class="docutils literal"><span class="pre">1000</span></code>.  When <a class="reference internal" href="../generated/generated/curses.init_color.html#curses.init_color" title="curses.init_color"><code class="xref py py-func docutils literal"><span class="pre">init_color()</span></code></a> is used, all occurrences of that color on the
 screen immediately change to the new definition.  This function is a no-op on
-most terminals; it is active only if <a class="reference internal" href="../generated/curses.can_change_color.html#curses.can_change_color" title="curses.can_change_color"><code class="xref py py-func docutils literal"><span class="pre">can_change_color()</span></code></a> returns <code class="docutils literal"><span class="pre">1</span></code>.</p>
+most terminals; it is active only if <a class="reference internal" href="../generated/generated/curses.can_change_color.html#curses.can_change_color" title="curses.can_change_color"><code class="xref py py-func docutils literal"><span class="pre">can_change_color()</span></code></a> returns <code class="docutils literal"><span class="pre">1</span></code>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -510,14 +510,14 @@ cause the interpreter to exit.</p>
 <dl class="function">
 <dt id="curses.is_term_resized">
 <code class="descclassname">curses.</code><code class="descname">is_term_resized</code><span class="sig-paren">(</span><em>nlines</em>, <em>ncols</em><span class="sig-paren">)</span><a class="headerlink" href="#curses.is_term_resized" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if <a class="reference internal" href="../generated/curses.resize_term.html#curses.resize_term" title="curses.resize_term"><code class="xref py py-func docutils literal"><span class="pre">resize_term()</span></code></a> would modify the window structure,
+<dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if <a class="reference internal" href="../generated/generated/curses.resize_term.html#curses.resize_term" title="curses.resize_term"><code class="xref py py-func docutils literal"><span class="pre">resize_term()</span></code></a> would modify the window structure,
 <code class="docutils literal"><span class="pre">False</span></code> otherwise.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="curses.isendwin">
 <code class="descclassname">curses.</code><code class="descname">isendwin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.isendwin" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if <a class="reference internal" href="../generated/curses.endwin.html#curses.endwin" title="curses.endwin"><code class="xref py py-func docutils literal"><span class="pre">endwin()</span></code></a> has been called (that is, the  curses library has
+<dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if <a class="reference internal" href="../generated/generated/curses.endwin.html#curses.endwin" title="curses.endwin"><code class="xref py py-func docutils literal"><span class="pre">endwin()</span></code></a> has been called (that is, the  curses library has
 been deinitialized).</p>
 </dd></dl>
 
@@ -545,7 +545,7 @@ by the curses library itself.</p>
 <code class="descclassname">curses.</code><code class="descname">longname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.longname" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a string containing the terminfo long name field describing the current
 terminal.  The maximum length of a verbose description is 128 characters.  It is
-defined only after the call to <a class="reference internal" href="../generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a>.</p>
+defined only after the call to <a class="reference internal" href="../generated/generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -642,9 +642,9 @@ able to detect the return key on input.</p>
 <dl class="function">
 <dt id="curses.noqiflush">
 <code class="descclassname">curses.</code><code class="descname">noqiflush</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.noqiflush" title="Permalink to this definition">¶</a></dt>
-<dd><p>When the <a class="reference internal" href="../generated/curses.noqiflush.html#curses.noqiflush" title="curses.noqiflush"><code class="xref py py-func docutils literal"><span class="pre">noqiflush()</span></code></a> routine is used, normal flush of input and output queues
+<dd><p>When the <a class="reference internal" href="../generated/generated/curses.noqiflush.html#curses.noqiflush" title="curses.noqiflush"><code class="xref py py-func docutils literal"><span class="pre">noqiflush()</span></code></a> routine is used, normal flush of input and output queues
 associated with the INTR, QUIT and SUSP characters will not be done.  You may
-want to call <a class="reference internal" href="../generated/curses.noqiflush.html#curses.noqiflush" title="curses.noqiflush"><code class="xref py py-func docutils literal"><span class="pre">noqiflush()</span></code></a> in a signal handler if you want output to
+want to call <a class="reference internal" href="../generated/generated/curses.noqiflush.html#curses.noqiflush" title="curses.noqiflush"><code class="xref py py-func docutils literal"><span class="pre">noqiflush()</span></code></a> in a signal handler if you want output to
 continue as though the interrupt had not occurred, after the handler exits.</p>
 </dd></dl>
 
@@ -665,21 +665,21 @@ The value of <em>pair_number</em> must be between <code class="docutils literal"
 <dt id="curses.pair_number">
 <code class="descclassname">curses.</code><code class="descname">pair_number</code><span class="sig-paren">(</span><em>attr</em><span class="sig-paren">)</span><a class="headerlink" href="#curses.pair_number" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the number of the color-pair set by the attribute value <em>attr</em>.
-<a class="reference internal" href="../generated/curses.color_pair.html#curses.color_pair" title="curses.color_pair"><code class="xref py py-func docutils literal"><span class="pre">color_pair()</span></code></a> is the counterpart to this function.</p>
+<a class="reference internal" href="../generated/generated/curses.color_pair.html#curses.color_pair" title="curses.color_pair"><code class="xref py py-func docutils literal"><span class="pre">color_pair()</span></code></a> is the counterpart to this function.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="curses.putp">
 <code class="descclassname">curses.</code><code class="descname">putp</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="headerlink" href="#curses.putp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Equivalent to <code class="docutils literal"><span class="pre">tputs(str,</span> <span class="pre">1,</span> <span class="pre">putchar)</span></code>; emit the value of a specified
-terminfo capability for the current terminal.  Note that the output of <a class="reference internal" href="../generated/curses.putp.html#curses.putp" title="curses.putp"><code class="xref py py-func docutils literal"><span class="pre">putp()</span></code></a>
+terminfo capability for the current terminal.  Note that the output of <a class="reference internal" href="../generated/generated/curses.putp.html#curses.putp" title="curses.putp"><code class="xref py py-func docutils literal"><span class="pre">putp()</span></code></a>
 always goes to standard output.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="curses.qiflush">
 <code class="descclassname">curses.</code><code class="descname">qiflush</code><span class="sig-paren">(</span><span class="optional">[</span><em>flag</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.qiflush" title="Permalink to this definition">¶</a></dt>
-<dd><p>If <em>flag</em> is <code class="docutils literal"><span class="pre">False</span></code>, the effect is the same as calling <a class="reference internal" href="../generated/curses.noqiflush.html#curses.noqiflush" title="curses.noqiflush"><code class="xref py py-func docutils literal"><span class="pre">noqiflush()</span></code></a>. If
+<dd><p>If <em>flag</em> is <code class="docutils literal"><span class="pre">False</span></code>, the effect is the same as calling <a class="reference internal" href="../generated/generated/curses.noqiflush.html#curses.noqiflush" title="curses.noqiflush"><code class="xref py py-func docutils literal"><span class="pre">noqiflush()</span></code></a>. If
 <em>flag</em> is <code class="docutils literal"><span class="pre">True</span></code>, or no argument is provided, the queues will be flushed when
 these control characters are read.</p>
 </dd></dl>
@@ -696,30 +696,30 @@ presented to curses input functions one by one.</p>
 <dt id="curses.reset_prog_mode">
 <code class="descclassname">curses.</code><code class="descname">reset_prog_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.reset_prog_mode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Restore the  terminal  to &#8220;program&#8221; mode, as previously saved  by
-<a class="reference internal" href="../generated/curses.def_prog_mode.html#curses.def_prog_mode" title="curses.def_prog_mode"><code class="xref py py-func docutils literal"><span class="pre">def_prog_mode()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/curses.def_prog_mode.html#curses.def_prog_mode" title="curses.def_prog_mode"><code class="xref py py-func docutils literal"><span class="pre">def_prog_mode()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="curses.reset_shell_mode">
 <code class="descclassname">curses.</code><code class="descname">reset_shell_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.reset_shell_mode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Restore the  terminal  to &#8220;shell&#8221; mode, as previously saved  by
-<a class="reference internal" href="../generated/curses.def_shell_mode.html#curses.def_shell_mode" title="curses.def_shell_mode"><code class="xref py py-func docutils literal"><span class="pre">def_shell_mode()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/curses.def_shell_mode.html#curses.def_shell_mode" title="curses.def_shell_mode"><code class="xref py py-func docutils literal"><span class="pre">def_shell_mode()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="curses.resetty">
 <code class="descclassname">curses.</code><code class="descname">resetty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.resetty" title="Permalink to this definition">¶</a></dt>
 <dd><p>Restore the state of the terminal modes to what it was at the last call to
-<a class="reference internal" href="../generated/curses.savetty.html#curses.savetty" title="curses.savetty"><code class="xref py py-func docutils literal"><span class="pre">savetty()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/curses.savetty.html#curses.savetty" title="curses.savetty"><code class="xref py py-func docutils literal"><span class="pre">savetty()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="curses.resize_term">
 <code class="descclassname">curses.</code><code class="descname">resize_term</code><span class="sig-paren">(</span><em>nlines</em>, <em>ncols</em><span class="sig-paren">)</span><a class="headerlink" href="#curses.resize_term" title="Permalink to this definition">¶</a></dt>
-<dd><p>Backend function used by <a class="reference internal" href="../generated/curses.resizeterm.html#curses.resizeterm" title="curses.resizeterm"><code class="xref py py-func docutils literal"><span class="pre">resizeterm()</span></code></a>, performing most of the work;
-when resizing the windows, <a class="reference internal" href="../generated/curses.resize_term.html#curses.resize_term" title="curses.resize_term"><code class="xref py py-func docutils literal"><span class="pre">resize_term()</span></code></a> blank-fills the areas that are
+<dd><p>Backend function used by <a class="reference internal" href="../generated/generated/curses.resizeterm.html#curses.resizeterm" title="curses.resizeterm"><code class="xref py py-func docutils literal"><span class="pre">resizeterm()</span></code></a>, performing most of the work;
+when resizing the windows, <a class="reference internal" href="../generated/generated/curses.resize_term.html#curses.resize_term" title="curses.resize_term"><code class="xref py py-func docutils literal"><span class="pre">resize_term()</span></code></a> blank-fills the areas that are
 extended.  The calling application should fill in these areas with
-appropriate data.  The <a class="reference internal" href="../generated/curses.resize_term.html#curses.resize_term" title="curses.resize_term"><code class="xref py py-func docutils literal"><span class="pre">resize_term()</span></code></a> function attempts to resize all
+appropriate data.  The <a class="reference internal" href="../generated/generated/curses.resize_term.html#curses.resize_term" title="curses.resize_term"><code class="xref py py-func docutils literal"><span class="pre">resize_term()</span></code></a> function attempts to resize all
 windows.  However, due to the calling convention of pads, it is not possible
 to resize these without additional interaction with the application.</p>
 </dd></dl>
@@ -736,7 +736,7 @@ window dimensions (in particular the SIGWINCH handler).</p>
 <dt id="curses.savetty">
 <code class="descclassname">curses.</code><code class="descname">savetty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.savetty" title="Permalink to this definition">¶</a></dt>
 <dd><p>Save the current state of the terminal modes in a buffer, usable by
-<a class="reference internal" href="../generated/curses.resetty.html#curses.resetty" title="curses.resetty"><code class="xref py py-func docutils literal"><span class="pre">resetty()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/curses.resetty.html#curses.resetty" title="curses.resetty"><code class="xref py py-func docutils literal"><span class="pre">resetty()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -760,8 +760,8 @@ supplied, the file descriptor for <code class="docutils literal"><span class="pr
 <code class="descclassname">curses.</code><code class="descname">start_color</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/curses.html#start_color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#curses.start_color" title="Permalink to this definition">¶</a></dt>
 <dd><p>Must be called if the programmer wants to use colors, and before any other color
 manipulation routine is called.  It is good practice to call this routine right
-after <a class="reference internal" href="../generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a>.</p>
-<p><a class="reference internal" href="../generated/curses.start_color.html#curses.start_color" title="curses.start_color"><code class="xref py py-func docutils literal"><span class="pre">start_color()</span></code></a> initializes eight basic colors (black, red,  green, yellow,
+after <a class="reference internal" href="../generated/generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a>.</p>
+<p><a class="reference internal" href="../generated/generated/curses.start_color.html#curses.start_color" title="curses.start_color"><code class="xref py py-func docutils literal"><span class="pre">start_color()</span></code></a> initializes eight basic colors (black, red,  green, yellow,
 blue, magenta, cyan, and white), and two global variables in the <a class="reference internal" href="../generated/curses.html#module-curses" title="curses"><code class="xref py py-mod docutils literal"><span class="pre">curses</span></code></a>
 module, <code class="xref py py-const docutils literal"><span class="pre">COLORS</span></code> and <code class="xref py py-const docutils literal"><span class="pre">COLOR_PAIRS</span></code>, containing the maximum number
 of colors and color-pairs the terminal can support.  It also restores the colors
@@ -857,7 +857,7 @@ state data with it.</p>
 <dl class="function">
 <dt id="curses.use_env">
 <code class="descclassname">curses.</code><code class="descname">use_env</code><span class="sig-paren">(</span><em>flag</em><span class="sig-paren">)</span><a class="headerlink" href="#curses.use_env" title="Permalink to this definition">¶</a></dt>
-<dd><p>If used, this function should be called before <a class="reference internal" href="../generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a> or newterm are
+<dd><p>If used, this function should be called before <a class="reference internal" href="../generated/generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a> or newterm are
 called.  When <em>flag</em> is <code class="docutils literal"><span class="pre">False</span></code>, the values of lines and columns specified in the
 terminfo database will be used, even if environment variables <span class="target" id="index-3"></span><code class="xref std std-envvar docutils literal"><span class="pre">LINES</span></code>
 and <span class="target" id="index-4"></span><code class="xref std std-envvar docutils literal"><span class="pre">COLUMNS</span></code> (used by default) are set, or if curses is running in a
@@ -883,7 +883,7 @@ rest of your curses-using application.  If the application raises an exception,
 this function will restore the terminal to a sane state before re-raising the
 exception and generating a traceback.  The callable object <em>func</em> is then passed
 the main window &#8216;stdscr&#8217; as its first argument, followed by any other arguments
-passed to <a class="reference internal" href="../generated/curses.wrapper.html#curses.wrapper" title="curses.wrapper"><code class="xref py py-func docutils literal"><span class="pre">wrapper()</span></code></a>.  Before calling <em>func</em>, <a class="reference internal" href="../generated/curses.wrapper.html#curses.wrapper" title="curses.wrapper"><code class="xref py py-func docutils literal"><span class="pre">wrapper()</span></code></a> turns on
+passed to <a class="reference internal" href="../generated/generated/curses.wrapper.html#curses.wrapper" title="curses.wrapper"><code class="xref py py-func docutils literal"><span class="pre">wrapper()</span></code></a>.  Before calling <em>func</em>, <a class="reference internal" href="../generated/generated/curses.wrapper.html#curses.wrapper" title="curses.wrapper"><code class="xref py py-func docutils literal"><span class="pre">wrapper()</span></code></a> turns on
 cbreak mode, turns off echo, enables the terminal keypad, and initializes colors
 if the terminal has color support.  On exit (whether normally or by exception)
 it restores cooked mode, turns on echo, and disables the terminal keypad.</p>
@@ -892,7 +892,7 @@ it restores cooked mode, turns on echo, and disables the terminal keypad.</p>
 </div>
 <div class="section" id="window-objects">
 <span id="curses-window-objects"></span><h2><a class="toc-backref" href="#id4">10.2. Window Objects</a><a class="headerlink" href="#window-objects" title="Permalink to this headline">¶</a></h2>
-<p>Window objects, as returned by <a class="reference internal" href="../generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a> and <a class="reference internal" href="../generated/curses.newwin.html#curses.newwin" title="curses.newwin"><code class="xref py py-func docutils literal"><span class="pre">newwin()</span></code></a> above, have
+<p>Window objects, as returned by <a class="reference internal" href="../generated/generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a> and <a class="reference internal" href="../generated/generated/curses.newwin.html#curses.newwin" title="curses.newwin"><code class="xref py py-func docutils literal"><span class="pre">newwin()</span></code></a> above, have
 the following methods:</p>
 <dl class="method">
 <dt id="curses.window.addch">
@@ -1368,7 +1368,7 @@ interpreted, and will be left in the input stream as is.</p>
 <code class="descclassname">window.</code><code class="descname">noutrefresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#curses.window.noutrefresh" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mark for refresh but wait.  This function updates the data structure
 representing the desired state of the window, but does not force an update of
-the physical screen.  To accomplish that, call  <a class="reference internal" href="../generated/curses.doupdate.html#curses.doupdate" title="curses.doupdate"><code class="xref py py-func docutils literal"><span class="pre">doupdate()</span></code></a>.</p>
+the physical screen.  To accomplish that, call  <a class="reference internal" href="../generated/generated/curses.doupdate.html#curses.doupdate" title="curses.doupdate"><code class="xref py py-func docutils literal"><span class="pre">doupdate()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1401,7 +1401,7 @@ destination window.</p>
 <dt id="curses.window.putwin">
 <code class="descclassname">window.</code><code class="descname">putwin</code><span class="sig-paren">(</span><em>file</em><span class="sig-paren">)</span><a class="headerlink" href="#curses.window.putwin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Write all data associated with the window into the provided file object.  This
-information can be later retrieved using the <a class="reference internal" href="../generated/curses.getwin.html#curses.getwin" title="curses.getwin"><code class="xref py py-func docutils literal"><span class="pre">getwin()</span></code></a> function.</p>
+information can be later retrieved using the <a class="reference internal" href="../generated/generated/curses.getwin.html#curses.getwin" title="curses.getwin"><code class="xref py py-func docutils literal"><span class="pre">getwin()</span></code></a> function.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1424,7 +1424,7 @@ should be completely redrawn on the next <a class="reference internal" href="#cu
 <dd><p>Update the display immediately (sync actual screen with previous
 drawing/deleting methods).</p>
 <p>The 6 optional arguments can only be specified when the window is a pad created
-with <a class="reference internal" href="../generated/curses.newpad.html#curses.newpad" title="curses.newpad"><code class="xref py py-func docutils literal"><span class="pre">newpad()</span></code></a>.  The additional parameters are needed to indicate what part
+with <a class="reference internal" href="../generated/generated/curses.newpad.html#curses.newpad" title="curses.newpad"><code class="xref py py-func docutils literal"><span class="pre">newpad()</span></code></a>.  The additional parameters are needed to indicate what part
 of the pad and screen are involved. <em>pminrow</em> and <em>pmincol</em> specify the upper
 left-hand corner of the rectangle to be displayed in the pad.  <em>sminrow</em>,
 <em>smincol</em>, <em>smaxrow</em>, and <em>smaxcol</em> specify the edges of the rectangle to be
@@ -1579,7 +1579,7 @@ character <em>ch</em>.</p>
 <dl class="data">
 <dt id="curses.OK">
 <code class="descclassname">curses.</code><code class="descname">OK</code><a class="headerlink" href="#curses.OK" title="Permalink to this definition">¶</a></dt>
-<dd><p>Some curses routines  that  return  an integer, such as  <a class="reference internal" href="../generated/curses.napms.html#curses.napms" title="curses.napms"><code class="xref py py-func docutils literal"><span class="pre">napms()</span></code></a>, return
+<dd><p>Some curses routines  that  return  an integer, such as  <a class="reference internal" href="../generated/generated/curses.napms.html#curses.napms" title="curses.napms"><code class="xref py py-func docutils literal"><span class="pre">napms()</span></code></a>, return
 <a class="reference internal" href="#curses.OK" title="curses.OK"><code class="xref py py-const docutils literal"><span class="pre">OK</span></code></a> upon success.</p>
 </dd></dl>
 
@@ -1971,7 +1971,7 @@ emulations such as X terminals.  When there is no graphic available, curses
 falls back on a crude printable ASCII approximation.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">These are available only after <a class="reference internal" href="../generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a> has  been called.</p>
+<p class="last">These are available only after <a class="reference internal" href="../generated/generated/curses.initscr.html#curses.initscr" title="curses.initscr"><code class="xref py py-func docutils literal"><span class="pre">initscr()</span></code></a> has  been called.</p>
 </div>
 <table border="1" class="docutils">
 <colgroup>

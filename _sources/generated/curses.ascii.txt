@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       alt
       ascii
@@ -31,6 +31,32 @@
       isupper
       isxdigit
       unctrl
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/curses.ascii.alt
+       generated/curses.ascii.ascii
+       generated/curses.ascii.ctrl
+       generated/curses.ascii.isalnum
+       generated/curses.ascii.isalpha
+       generated/curses.ascii.isascii
+       generated/curses.ascii.isblank
+       generated/curses.ascii.iscntrl
+       generated/curses.ascii.isctrl
+       generated/curses.ascii.isdigit
+       generated/curses.ascii.isgraph
+       generated/curses.ascii.islower
+       generated/curses.ascii.ismeta
+       generated/curses.ascii.isprint
+       generated/curses.ascii.ispunct
+       generated/curses.ascii.isspace
+       generated/curses.ascii.isupper
+       generated/curses.ascii.isxdigit
+       generated/curses.ascii.unctrl
+      
    
    
 

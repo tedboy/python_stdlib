@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       list_public_methods
       remove_duplicates
       resolve_dotted_attribute
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/SimpleXMLRPCServer.list_public_methods
+       generated/SimpleXMLRPCServer.remove_duplicates
+       generated/SimpleXMLRPCServer.resolve_dotted_attribute
+      
    
    
 

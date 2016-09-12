@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       dump
       dumps
       load
       loads
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/json.dump
+       generated/json.dumps
+       generated/json.load
+       generated/json.loads
+      
    
    
 

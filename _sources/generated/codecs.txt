@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       EncodedFile
       ascii_decode
@@ -70,6 +70,71 @@
       utf_8_decode
       utf_8_encode
       xmlcharrefreplace_errors
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/codecs.EncodedFile
+       generated/codecs.ascii_decode
+       generated/codecs.ascii_encode
+       generated/codecs.backslashreplace_errors
+       generated/codecs.charbuffer_encode
+       generated/codecs.charmap_build
+       generated/codecs.charmap_decode
+       generated/codecs.charmap_encode
+       generated/codecs.decode
+       generated/codecs.encode
+       generated/codecs.escape_decode
+       generated/codecs.escape_encode
+       generated/codecs.getdecoder
+       generated/codecs.getencoder
+       generated/codecs.getincrementaldecoder
+       generated/codecs.getincrementalencoder
+       generated/codecs.getreader
+       generated/codecs.getwriter
+       generated/codecs.ignore_errors
+       generated/codecs.iterdecode
+       generated/codecs.iterencode
+       generated/codecs.latin_1_decode
+       generated/codecs.latin_1_encode
+       generated/codecs.lookup
+       generated/codecs.lookup_error
+       generated/codecs.make_encoding_map
+       generated/codecs.make_identity_dict
+       generated/codecs.open
+       generated/codecs.raw_unicode_escape_decode
+       generated/codecs.raw_unicode_escape_encode
+       generated/codecs.readbuffer_encode
+       generated/codecs.register
+       generated/codecs.register_error
+       generated/codecs.replace_errors
+       generated/codecs.strict_errors
+       generated/codecs.unicode_escape_decode
+       generated/codecs.unicode_escape_encode
+       generated/codecs.unicode_internal_decode
+       generated/codecs.unicode_internal_encode
+       generated/codecs.utf_16_be_decode
+       generated/codecs.utf_16_be_encode
+       generated/codecs.utf_16_decode
+       generated/codecs.utf_16_encode
+       generated/codecs.utf_16_ex_decode
+       generated/codecs.utf_16_le_decode
+       generated/codecs.utf_16_le_encode
+       generated/codecs.utf_32_be_decode
+       generated/codecs.utf_32_be_encode
+       generated/codecs.utf_32_decode
+       generated/codecs.utf_32_encode
+       generated/codecs.utf_32_ex_decode
+       generated/codecs.utf_32_le_decode
+       generated/codecs.utf_32_le_encode
+       generated/codecs.utf_7_decode
+       generated/codecs.utf_7_encode
+       generated/codecs.utf_8_decode
+       generated/codecs.utf_8_encode
+       generated/codecs.xmlcharrefreplace_errors
+      
    
    
 

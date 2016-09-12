@@ -165,7 +165,7 @@
 
 <span class="n">CHILD</span> <span class="o">=</span> <span class="mi">0</span>
 
-<div class="viewcode-block" id="openpty"><a class="viewcode-back" href="../generated/pty.openpty.html#pty.openpty">[docs]</a><span class="k">def</span> <span class="nf">openpty</span><span class="p">():</span>
+<div class="viewcode-block" id="openpty"><a class="viewcode-back" href="../generated/generated/pty.openpty.html#pty.openpty">[docs]</a><span class="k">def</span> <span class="nf">openpty</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;openpty() -&gt; (master_fd, slave_fd)</span>
 <span class="sd">    Open a pty master/slave pair, using os.openpty() if possible.&quot;&quot;&quot;</span>
 
@@ -177,7 +177,7 @@
     <span class="n">slave_fd</span> <span class="o">=</span> <span class="n">slave_open</span><span class="p">(</span><span class="n">slave_name</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">master_fd</span><span class="p">,</span> <span class="n">slave_fd</span></div>
 
-<div class="viewcode-block" id="master_open"><a class="viewcode-back" href="../generated/pty.master_open.html#pty.master_open">[docs]</a><span class="k">def</span> <span class="nf">master_open</span><span class="p">():</span>
+<div class="viewcode-block" id="master_open"><a class="viewcode-back" href="../generated/generated/pty.master_open.html#pty.master_open">[docs]</a><span class="k">def</span> <span class="nf">master_open</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;master_open() -&gt; (master_fd, slave_name)</span>
 <span class="sd">    Open a pty master and return the fd, and the filename of the slave end.</span>
 <span class="sd">    Deprecated, use openpty() instead.&quot;&quot;&quot;</span>
@@ -216,7 +216,7 @@
             <span class="k">return</span> <span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="s1">&#39;/dev/tty&#39;</span> <span class="o">+</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
     <span class="k">raise</span> <span class="n">os</span><span class="o">.</span><span class="n">error</span><span class="p">,</span> <span class="s1">&#39;out of pty devices&#39;</span>
 
-<div class="viewcode-block" id="slave_open"><a class="viewcode-back" href="../generated/pty.slave_open.html#pty.slave_open">[docs]</a><span class="k">def</span> <span class="nf">slave_open</span><span class="p">(</span><span class="n">tty_name</span><span class="p">):</span>
+<div class="viewcode-block" id="slave_open"><a class="viewcode-back" href="../generated/generated/pty.slave_open.html#pty.slave_open">[docs]</a><span class="k">def</span> <span class="nf">slave_open</span><span class="p">(</span><span class="n">tty_name</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;slave_open(tty_name) -&gt; slave_fd</span>
 <span class="sd">    Open the pty slave and acquire the controlling terminal, returning</span>
 <span class="sd">    opened filedescriptor.</span>
@@ -234,7 +234,7 @@
         <span class="k">pass</span>
     <span class="k">return</span> <span class="n">result</span></div>
 
-<div class="viewcode-block" id="fork"><a class="viewcode-back" href="../generated/pty.fork.html#pty.fork">[docs]</a><span class="k">def</span> <span class="nf">fork</span><span class="p">():</span>
+<div class="viewcode-block" id="fork"><a class="viewcode-back" href="../generated/generated/pty.fork.html#pty.fork">[docs]</a><span class="k">def</span> <span class="nf">fork</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;fork() -&gt; (pid, master_fd)</span>
 <span class="sd">    Fork and make the child a session leader with a controlling terminal.&quot;&quot;&quot;</span>
 
@@ -305,7 +305,7 @@
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">_writen</span><span class="p">(</span><span class="n">master_fd</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 
-<div class="viewcode-block" id="spawn"><a class="viewcode-back" href="../generated/pty.spawn.html#pty.spawn">[docs]</a><span class="k">def</span> <span class="nf">spawn</span><span class="p">(</span><span class="n">argv</span><span class="p">,</span> <span class="n">master_read</span><span class="o">=</span><span class="n">_read</span><span class="p">,</span> <span class="n">stdin_read</span><span class="o">=</span><span class="n">_read</span><span class="p">):</span>
+<div class="viewcode-block" id="spawn"><a class="viewcode-back" href="../generated/generated/pty.spawn.html#pty.spawn">[docs]</a><span class="k">def</span> <span class="nf">spawn</span><span class="p">(</span><span class="n">argv</span><span class="p">,</span> <span class="n">master_read</span><span class="o">=</span><span class="n">_read</span><span class="p">,</span> <span class="n">stdin_read</span><span class="o">=</span><span class="n">_read</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Create a spawned process.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">argv</span><span class="p">)</span> <span class="o">==</span> <span class="nb">type</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
         <span class="n">argv</span> <span class="o">=</span> <span class="p">(</span><span class="n">argv</span><span class="p">,)</span>

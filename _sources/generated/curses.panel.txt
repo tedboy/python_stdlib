@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       bottom_panel
       new_panel
       top_panel
       update_panels
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/curses.panel.bottom_panel
+       generated/curses.panel.new_panel
+       generated/curses.panel.top_panel
+       generated/curses.panel.update_panels
+      
    
    
 

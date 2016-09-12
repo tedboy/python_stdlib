@@ -250,10 +250,10 @@ count and <em>number</em> executions.</p>
 <dt id="timeit.default_timer">
 <code class="descclassname">timeit.</code><code class="descname">default_timer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#timeit.default_timer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Define a default timer, in a platform-specific manner.  On Windows,
-<a class="reference internal" href="../generated/time.clock.html#time.clock" title="time.clock"><code class="xref py py-func docutils literal"><span class="pre">time.clock()</span></code></a> has microsecond granularity, but <a class="reference internal" href="../generated/time.time.html#time.time" title="time.time"><code class="xref py py-func docutils literal"><span class="pre">time.time()</span></code></a>&#8216;s
-granularity is 1/60th of a second.  On Unix, <a class="reference internal" href="../generated/time.clock.html#time.clock" title="time.clock"><code class="xref py py-func docutils literal"><span class="pre">time.clock()</span></code></a> has 1/100th of
-a second granularity, and <a class="reference internal" href="../generated/time.time.html#time.time" title="time.time"><code class="xref py py-func docutils literal"><span class="pre">time.time()</span></code></a> is much more precise.  On either
-platform, <a class="reference internal" href="../generated/timeit.default_timer.html#timeit.default_timer" title="timeit.default_timer"><code class="xref py py-func docutils literal"><span class="pre">default_timer()</span></code></a> measures wall clock time, not the CPU
+<a class="reference internal" href="../generated/generated/time.clock.html#time.clock" title="time.clock"><code class="xref py py-func docutils literal"><span class="pre">time.clock()</span></code></a> has microsecond granularity, but <a class="reference internal" href="../generated/generated/time.time.html#time.time" title="time.time"><code class="xref py py-func docutils literal"><span class="pre">time.time()</span></code></a>&#8216;s
+granularity is 1/60th of a second.  On Unix, <a class="reference internal" href="../generated/generated/time.clock.html#time.clock" title="time.clock"><code class="xref py py-func docutils literal"><span class="pre">time.clock()</span></code></a> has 1/100th of
+a second granularity, and <a class="reference internal" href="../generated/generated/time.time.html#time.time" title="time.time"><code class="xref py py-func docutils literal"><span class="pre">time.time()</span></code></a> is much more precise.  On either
+platform, <a class="reference internal" href="../generated/generated/timeit.default_timer.html#timeit.default_timer" title="timeit.default_timer"><code class="xref py py-func docutils literal"><span class="pre">default_timer()</span></code></a> measures wall clock time, not the CPU
 time.  This means that other processes running on the same computer may
 interfere with the timing.</p>
 </dd></dl>
@@ -370,13 +370,13 @@ where the traceback is sent; it defaults to <a class="reference internal" href="
 <dl class="cmdoption">
 <dt id="cmdoption-timeit-t">
 <span id="cmdoption-timeit--time"></span><code class="descname">-t</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--time</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-timeit-t" title="Permalink to this definition">¶</a></dt>
-<dd><p>use <a class="reference internal" href="../generated/time.time.html#time.time" title="time.time"><code class="xref py py-func docutils literal"><span class="pre">time.time()</span></code></a> (default on all platforms but Windows)</p>
+<dd><p>use <a class="reference internal" href="../generated/generated/time.time.html#time.time" title="time.time"><code class="xref py py-func docutils literal"><span class="pre">time.time()</span></code></a> (default on all platforms but Windows)</p>
 </dd></dl>
 
 <dl class="cmdoption">
 <dt id="cmdoption-timeit-c">
 <span id="cmdoption-timeit--clock"></span><code class="descname">-c</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--clock</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-timeit-c" title="Permalink to this definition">¶</a></dt>
-<dd><p>use <a class="reference internal" href="../generated/time.clock.html#time.clock" title="time.clock"><code class="xref py py-func docutils literal"><span class="pre">time.clock()</span></code></a> (default on Windows)</p>
+<dd><p>use <a class="reference internal" href="../generated/generated/time.clock.html#time.clock" title="time.clock"><code class="xref py py-func docutils literal"><span class="pre">time.clock()</span></code></a> (default on Windows)</p>
 </dd></dl>
 
 <dl class="cmdoption">
@@ -397,12 +397,12 @@ quotes and using leading spaces.  Multiple <a class="reference internal" href="#
 similarly.</p>
 <p>If <a class="reference internal" href="#cmdoption-timeit-n"><code class="xref std std-option docutils literal"><span class="pre">-n</span></code></a> is not given, a suitable number of loops is calculated by trying
 successive powers of 10 until the total time is at least 0.2 seconds.</p>
-<p><a class="reference internal" href="../generated/timeit.default_timer.html#timeit.default_timer" title="timeit.default_timer"><code class="xref py py-func docutils literal"><span class="pre">default_timer()</span></code></a> measurations can be affected by other programs running on
+<p><a class="reference internal" href="../generated/generated/timeit.default_timer.html#timeit.default_timer" title="timeit.default_timer"><code class="xref py py-func docutils literal"><span class="pre">default_timer()</span></code></a> measurations can be affected by other programs running on
 the same machine, so
 the best thing to do when accurate timing is necessary is to repeat
 the timing a few times and use the best time.  The <a class="reference internal" href="#cmdoption-timeit-r"><code class="xref std std-option docutils literal"><span class="pre">-r</span></code></a> option is good
 for this; the default of 3 repetitions is probably enough in most cases.  On
-Unix, you can use <a class="reference internal" href="../generated/time.clock.html#time.clock" title="time.clock"><code class="xref py py-func docutils literal"><span class="pre">time.clock()</span></code></a> to measure CPU time.</p>
+Unix, you can use <a class="reference internal" href="../generated/generated/time.clock.html#time.clock" title="time.clock"><code class="xref py py-func docutils literal"><span class="pre">time.clock()</span></code></a> to measure CPU time.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">There is a certain baseline overhead associated with executing a pass statement.

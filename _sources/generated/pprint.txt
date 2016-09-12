@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       isreadable
       isrecursive
       pformat
       pprint
       saferepr
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pprint.isreadable
+       generated/pprint.isrecursive
+       generated/pprint.pformat
+       generated/pprint.pprint
+       generated/pprint.saferepr
+      
    
    
 

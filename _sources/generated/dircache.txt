@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       annotate
       listdir
       opendir
       reset
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/dircache.annotate
+       generated/dircache.listdir
+       generated/dircache.opendir
+       generated/dircache.reset
+      
    
    
 

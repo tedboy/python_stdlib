@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       default_timer
       main
       reindent
       repeat
       timeit
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/timeit.default_timer
+       generated/timeit.main
+       generated/timeit.reindent
+       generated/timeit.repeat
+       generated/timeit.timeit
+      
    
    
 

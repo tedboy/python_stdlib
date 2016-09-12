@@ -219,9 +219,9 @@
 <li><a class="reference internal" href="#replacing-older-functions-with-the-subprocess-module" id="id10">Replacing Older Functions with the <a class="reference internal" href="../generated/subprocess.html#module-subprocess" title="subprocess"><code class="xref py py-mod docutils literal"><span class="pre">subprocess</span></code></a> Module</a><ul>
 <li><a class="reference internal" href="#replacing-bin-sh-shell-backquote" id="id11">Replacing /bin/sh shell backquote</a></li>
 <li><a class="reference internal" href="#replacing-shell-pipeline" id="id12">Replacing shell pipeline</a></li>
-<li><a class="reference internal" href="#replacing-os-system" id="id13">Replacing <a class="reference internal" href="../generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a></a></li>
-<li><a class="reference internal" href="#replacing-the-os-spawn-family" id="id14">Replacing the <a class="reference internal" href="../generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">os.spawn</span></code></a> family</a></li>
-<li><a class="reference internal" href="#replacing-os-popen-os-popen2-os-popen3" id="id15">Replacing <a class="reference internal" href="../generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">os.popen()</span></code></a>, <a class="reference internal" href="../generated/os.popen2.html#os.popen2" title="os.popen2"><code class="xref py py-func docutils literal"><span class="pre">os.popen2()</span></code></a>, <a class="reference internal" href="../generated/os.popen3.html#os.popen3" title="os.popen3"><code class="xref py py-func docutils literal"><span class="pre">os.popen3()</span></code></a></a></li>
+<li><a class="reference internal" href="#replacing-os-system" id="id13">Replacing <a class="reference internal" href="../generated/generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a></a></li>
+<li><a class="reference internal" href="#replacing-the-os-spawn-family" id="id14">Replacing the <a class="reference internal" href="../generated/generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">os.spawn</span></code></a> family</a></li>
+<li><a class="reference internal" href="#replacing-os-popen-os-popen2-os-popen3" id="id15">Replacing <a class="reference internal" href="../generated/generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">os.popen()</span></code></a>, <a class="reference internal" href="../generated/generated/os.popen2.html#os.popen2" title="os.popen2"><code class="xref py py-func docutils literal"><span class="pre">os.popen2()</span></code></a>, <a class="reference internal" href="../generated/generated/os.popen3.html#os.popen3" title="os.popen3"><code class="xref py py-func docutils literal"><span class="pre">os.popen3()</span></code></a></a></li>
 <li><a class="reference internal" href="#replacing-functions-from-the-popen2-module" id="id16">Replacing functions from the <a class="reference internal" href="../generated/popen2.html#module-popen2" title="popen2"><code class="xref py py-mod docutils literal"><span class="pre">popen2</span></code></a> module</a></li>
 </ul>
 </li>
@@ -399,8 +399,8 @@ output.</p>
 <dl class="exception">
 <dt id="subprocess.CalledProcessError">
 <em class="property">exception </em><code class="descclassname">subprocess.</code><code class="descname">CalledProcessError</code><a class="reference internal" href="../_modules/subprocess.html#CalledProcessError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#subprocess.CalledProcessError" title="Permalink to this definition">¶</a></dt>
-<dd><p>Exception raised when a process run by <a class="reference internal" href="../generated/subprocess.check_call.html#subprocess.check_call" title="subprocess.check_call"><code class="xref py py-func docutils literal"><span class="pre">check_call()</span></code></a> or
-<a class="reference internal" href="../generated/subprocess.check_output.html#subprocess.check_output" title="subprocess.check_output"><code class="xref py py-func docutils literal"><span class="pre">check_output()</span></code></a> returns a non-zero exit status.</p>
+<dd><p>Exception raised when a process run by <a class="reference internal" href="../generated/generated/subprocess.check_call.html#subprocess.check_call" title="subprocess.check_call"><code class="xref py py-func docutils literal"><span class="pre">check_call()</span></code></a> or
+<a class="reference internal" href="../generated/generated/subprocess.check_output.html#subprocess.check_output" title="subprocess.check_output"><code class="xref py py-func docutils literal"><span class="pre">check_output()</span></code></a> returns a non-zero exit status.</p>
 <dl class="attribute">
 <dt id="subprocess.CalledProcessError.returncode">
 <code class="descname">returncode</code><a class="headerlink" href="#subprocess.CalledProcessError.returncode" title="Permalink to this definition">¶</a></dt>
@@ -417,7 +417,7 @@ output.</p>
 <dt id="subprocess.CalledProcessError.output">
 <code class="descname">output</code><a class="headerlink" href="#subprocess.CalledProcessError.output" title="Permalink to this definition">¶</a></dt>
 <dd><p>Output of the child process if this exception is raised by
-<a class="reference internal" href="../generated/subprocess.check_output.html#subprocess.check_output" title="subprocess.check_output"><code class="xref py py-func docutils literal"><span class="pre">check_output()</span></code></a>.  Otherwise, <code class="docutils literal"><span class="pre">None</span></code>.</p>
+<a class="reference internal" href="../generated/generated/subprocess.check_output.html#subprocess.check_output" title="subprocess.check_output"><code class="xref py py-func docutils literal"><span class="pre">check_output()</span></code></a>.  Otherwise, <code class="docutils literal"><span class="pre">None</span></code>.</p>
 </dd></dl>
 
 </dd></dl>
@@ -455,8 +455,8 @@ convenient access to other shell features such as shell pipes, filename
 wildcards, environment variable expansion, and expansion of <code class="docutils literal"><span class="pre">~</span></code> to a
 user&#8217;s home directory.  However, note that Python itself offers
 implementations of many shell-like features (in particular, <a class="reference internal" href="../generated/glob.html#module-glob" title="glob"><code class="xref py py-mod docutils literal"><span class="pre">glob</span></code></a>,
-<a class="reference internal" href="../generated/fnmatch.html#module-fnmatch" title="fnmatch"><code class="xref py py-mod docutils literal"><span class="pre">fnmatch</span></code></a>, <a class="reference internal" href="../generated/os.walk.html#os.walk" title="os.walk"><code class="xref py py-func docutils literal"><span class="pre">os.walk()</span></code></a>, <a class="reference internal" href="../generated/os.path.expandvars.html#os.path.expandvars" title="os.path.expandvars"><code class="xref py py-func docutils literal"><span class="pre">os.path.expandvars()</span></code></a>,
-<a class="reference internal" href="../generated/os.path.expanduser.html#os.path.expanduser" title="os.path.expanduser"><code class="xref py py-func docutils literal"><span class="pre">os.path.expanduser()</span></code></a>, and <a class="reference internal" href="../generated/shutil.html#module-shutil" title="shutil"><code class="xref py py-mod docutils literal"><span class="pre">shutil</span></code></a>).</p>
+<a class="reference internal" href="../generated/fnmatch.html#module-fnmatch" title="fnmatch"><code class="xref py py-mod docutils literal"><span class="pre">fnmatch</span></code></a>, <a class="reference internal" href="../generated/generated/os.walk.html#os.walk" title="os.walk"><code class="xref py py-func docutils literal"><span class="pre">os.walk()</span></code></a>, <a class="reference internal" href="../generated/generated/os.path.expandvars.html#os.path.expandvars" title="os.path.expandvars"><code class="xref py py-func docutils literal"><span class="pre">os.path.expandvars()</span></code></a>,
+<a class="reference internal" href="../generated/generated/os.path.expanduser.html#os.path.expanduser" title="os.path.expanduser"><code class="xref py py-func docutils literal"><span class="pre">os.path.expanduser()</span></code></a>, and <a class="reference internal" href="../generated/shutil.html#module-shutil" title="shutil"><code class="xref py py-mod docutils literal"><span class="pre">shutil</span></code></a>).</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p>Executing shell commands that incorporate unsanitized input from an
@@ -474,7 +474,7 @@ in cases where the command string is constructed from external input:</p>
 <p><code class="docutils literal"><span class="pre">shell=False</span></code> disables all shell based features, but does not suffer
 from this vulnerability; see the Note in the <a class="reference internal" href="../generated/generated/subprocess.Popen.html#subprocess.Popen" title="subprocess.Popen"><code class="xref py py-class docutils literal"><span class="pre">Popen</span></code></a> constructor
 documentation for helpful hints in getting <code class="docutils literal"><span class="pre">shell=False</span></code> to work.</p>
-<p class="last">When using <code class="docutils literal"><span class="pre">shell=True</span></code>, <a class="reference internal" href="../generated/pipes.quote.html#pipes.quote" title="pipes.quote"><code class="xref py py-func docutils literal"><span class="pre">pipes.quote()</span></code></a> can be used to properly
+<p class="last">When using <code class="docutils literal"><span class="pre">shell=True</span></code>, <a class="reference internal" href="../generated/generated/pipes.quote.html#pipes.quote" title="pipes.quote"><code class="xref py py-func docutils literal"><span class="pre">pipes.quote()</span></code></a> can be used to properly
 escape whitespace and shell metacharacters in strings that are going to
 be used to construct shell commands.</p>
 </div>
@@ -492,7 +492,7 @@ functions.</p>
 <dt id="subprocess.Popen">
 <em class="property">class </em><code class="descclassname">subprocess.</code><code class="descname">Popen</code><span class="sig-paren">(</span><em>args</em>, <em>bufsize=0</em>, <em>executable=None</em>, <em>stdin=None</em>, <em>stdout=None</em>, <em>stderr=None</em>, <em>preexec_fn=None</em>, <em>close_fds=False</em>, <em>shell=False</em>, <em>cwd=None</em>, <em>env=None</em>, <em>universal_newlines=False</em>, <em>startupinfo=None</em>, <em>creationflags=0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/subprocess.html#Popen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#subprocess.Popen" title="Permalink to this definition">¶</a></dt>
 <dd><p>Execute a child program in a new process.  On Unix, the class uses
-<a class="reference internal" href="../generated/os.execvp.html#os.execvp" title="os.execvp"><code class="xref py py-meth docutils literal"><span class="pre">os.execvp()</span></code></a>-like behavior to execute the child program.  On Windows,
+<a class="reference internal" href="../generated/generated/os.execvp.html#os.execvp" title="os.execvp"><code class="xref py py-meth docutils literal"><span class="pre">os.execvp()</span></code></a>-like behavior to execute the child program.  On Windows,
 the class uses the Windows <code class="docutils literal"><span class="pre">CreateProcess()</span></code> function.  The arguments to
 <a class="reference internal" href="../generated/generated/subprocess.Popen.html#subprocess.Popen" title="subprocess.Popen"><code class="xref py py-class docutils literal"><span class="pre">Popen</span></code></a> are as follows.</p>
 <p><em>args</em> should be a sequence of program arguments or else a single string.
@@ -506,7 +506,7 @@ path of the program to execute.  However, this can only be done if not
 passing arguments to the program.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p><a class="reference internal" href="../generated/shlex.split.html#shlex.split" title="shlex.split"><code class="xref py py-meth docutils literal"><span class="pre">shlex.split()</span></code></a> can be useful when determining the correct
+<p><a class="reference internal" href="../generated/generated/shlex.split.html#shlex.split" title="shlex.split"><code class="xref py py-meth docutils literal"><span class="pre">shlex.split()</span></code></a> can be useful when determining the correct
 tokenization for <em>args</em>, especially in complex cases:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">shlex</span><span class="o">,</span> <span class="nn">subprocess</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">command_line</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">()</span>
@@ -631,7 +631,7 @@ when trying to execute a non-existent file.  Applications should prepare for
 <a class="reference internal" href="../generated/exceptions.OSError.html#exceptions.OSError" title="exceptions.OSError"><code class="xref py py-exc docutils literal"><span class="pre">OSError</span></code></a> exceptions.</p>
 <p>A <a class="reference internal" href="../generated/exceptions.ValueError.html#exceptions.ValueError" title="exceptions.ValueError"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code></a> will be raised if <a class="reference internal" href="../generated/generated/subprocess.Popen.html#subprocess.Popen" title="subprocess.Popen"><code class="xref py py-class docutils literal"><span class="pre">Popen</span></code></a> is called with invalid
 arguments.</p>
-<p><a class="reference internal" href="../generated/subprocess.check_call.html#subprocess.check_call" title="subprocess.check_call"><code class="xref py py-func docutils literal"><span class="pre">check_call()</span></code></a> and <a class="reference internal" href="../generated/subprocess.check_output.html#subprocess.check_output" title="subprocess.check_output"><code class="xref py py-func docutils literal"><span class="pre">check_output()</span></code></a> will raise
+<p><a class="reference internal" href="../generated/generated/subprocess.check_call.html#subprocess.check_call" title="subprocess.check_call"><code class="xref py py-func docutils literal"><span class="pre">check_call()</span></code></a> and <a class="reference internal" href="../generated/generated/subprocess.check_output.html#subprocess.check_output" title="subprocess.check_output"><code class="xref py py-func docutils literal"><span class="pre">check_output()</span></code></a> will raise
 <a class="reference internal" href="../generated/subprocess.CalledProcessError.html#subprocess.CalledProcessError" title="subprocess.CalledProcessError"><code class="xref py py-exc docutils literal"><span class="pre">CalledProcessError</span></code></a> if the called process returns a non-zero return
 code.</p>
 </div>
@@ -891,7 +891,7 @@ console (the default).</p>
 <dt id="subprocess.CREATE_NEW_PROCESS_GROUP">
 <code class="descclassname">subprocess.</code><code class="descname">CREATE_NEW_PROCESS_GROUP</code><a class="headerlink" href="#subprocess.CREATE_NEW_PROCESS_GROUP" title="Permalink to this definition">¶</a></dt>
 <dd><p>A <a class="reference internal" href="../generated/generated/subprocess.Popen.html#subprocess.Popen" title="subprocess.Popen"><code class="xref py py-class docutils literal"><span class="pre">Popen</span></code></a> <code class="docutils literal"><span class="pre">creationflags</span></code> parameter to specify that a new process
-group will be created. This flag is necessary for using <a class="reference internal" href="../generated/os.kill.html#os.kill" title="os.kill"><code class="xref py py-func docutils literal"><span class="pre">os.kill()</span></code></a>
+group will be created. This flag is necessary for using <a class="reference internal" href="../generated/generated/os.kill.html#os.kill" title="os.kill"><code class="xref py py-func docutils literal"><span class="pre">os.kill()</span></code></a>
 on the subprocess.</p>
 <p>This flag is ignored if <a class="reference internal" href="#subprocess.CREATE_NEW_CONSOLE" title="subprocess.CREATE_NEW_CONSOLE"><code class="xref py py-data docutils literal"><span class="pre">CREATE_NEW_CONSOLE</span></code></a> is specified.</p>
 </dd></dl>
@@ -906,7 +906,7 @@ on the subprocess.</p>
 <p>All &#8220;a&#8221; functions in this section fail (more or less) silently if the
 executed program cannot be found; the &#8220;b&#8221; replacements raise <a class="reference internal" href="../generated/exceptions.OSError.html#exceptions.OSError" title="exceptions.OSError"><code class="xref py py-exc docutils literal"><span class="pre">OSError</span></code></a>
 instead.</p>
-<p class="last">In addition, the replacements using <a class="reference internal" href="../generated/subprocess.check_output.html#subprocess.check_output" title="subprocess.check_output"><code class="xref py py-func docutils literal"><span class="pre">check_output()</span></code></a> will fail with a
+<p class="last">In addition, the replacements using <a class="reference internal" href="../generated/generated/subprocess.check_output.html#subprocess.check_output" title="subprocess.check_output"><code class="xref py py-func docutils literal"><span class="pre">check_output()</span></code></a> will fail with a
 <a class="reference internal" href="../generated/subprocess.CalledProcessError.html#subprocess.CalledProcessError" title="subprocess.CalledProcessError"><code class="xref py py-exc docutils literal"><span class="pre">CalledProcessError</span></code></a> if the requested operation produces a non-zero
 return code. The output is still available as the
 <a class="reference internal" href="#subprocess.CalledProcessError.output" title="subprocess.CalledProcessError.output"><code class="xref py py-attr docutils literal"><span class="pre">output</span></code></a> attribute of the raised exception.</p>
@@ -942,7 +942,7 @@ output=check_output(&quot;dmesg | grep hda&quot;, shell=True)
 </div>
 </div>
 <div class="section" id="replacing-os-system">
-<h3><a class="toc-backref" href="#id13">1.4.3. Replacing <a class="reference internal" href="../generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a></a><a class="headerlink" href="#replacing-os-system" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id13">1.4.3. Replacing <a class="reference internal" href="../generated/generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a></a><a class="headerlink" href="#replacing-os-system" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">status</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;mycmd&quot;</span> <span class="o">+</span> <span class="s2">&quot; myarg&quot;</span><span class="p">)</span>
 <span class="c1"># becomes</span>
 <span class="n">status</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s2">&quot;mycmd&quot;</span> <span class="o">+</span> <span class="s2">&quot; myarg&quot;</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -965,7 +965,7 @@ output=check_output(&quot;dmesg | grep hda&quot;, shell=True)
 </div>
 </div>
 <div class="section" id="replacing-the-os-spawn-family">
-<h3><a class="toc-backref" href="#id14">1.4.4. Replacing the <a class="reference internal" href="../generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">os.spawn</span></code></a> family</a><a class="headerlink" href="#replacing-the-os-spawn-family" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id14">1.4.4. Replacing the <a class="reference internal" href="../generated/generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">os.spawn</span></code></a> family</a><a class="headerlink" href="#replacing-the-os-spawn-family" title="Permalink to this headline">¶</a></h3>
 <p>P_NOWAIT example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>pid = os.spawnlp(os.P_NOWAIT, &quot;/bin/mycmd&quot;, &quot;mycmd&quot;, &quot;myarg&quot;)
 ==&gt;
@@ -992,7 +992,7 @@ Popen([&quot;/bin/mycmd&quot;, &quot;myarg&quot;], env={&quot;PATH&quot;: &quot;
 </div>
 </div>
 <div class="section" id="replacing-os-popen-os-popen2-os-popen3">
-<h3><a class="toc-backref" href="#id15">1.4.5. Replacing <a class="reference internal" href="../generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">os.popen()</span></code></a>, <a class="reference internal" href="../generated/os.popen2.html#os.popen2" title="os.popen2"><code class="xref py py-func docutils literal"><span class="pre">os.popen2()</span></code></a>, <a class="reference internal" href="../generated/os.popen3.html#os.popen3" title="os.popen3"><code class="xref py py-func docutils literal"><span class="pre">os.popen3()</span></code></a></a><a class="headerlink" href="#replacing-os-popen-os-popen2-os-popen3" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id15">1.4.5. Replacing <a class="reference internal" href="../generated/generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">os.popen()</span></code></a>, <a class="reference internal" href="../generated/generated/os.popen2.html#os.popen2" title="os.popen2"><code class="xref py py-func docutils literal"><span class="pre">os.popen2()</span></code></a>, <a class="reference internal" href="../generated/generated/os.popen3.html#os.popen3" title="os.popen3"><code class="xref py py-func docutils literal"><span class="pre">os.popen3()</span></code></a></a><a class="headerlink" href="#replacing-os-popen-os-popen2-os-popen3" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span></span>pipe = os.popen(&quot;cmd&quot;, &#39;r&#39;, bufsize)
 ==&gt;
 pipe = Popen(&quot;cmd&quot;, shell=True, bufsize=bufsize, stdout=PIPE).stdout

@@ -391,7 +391,7 @@ defaults to the default string encoding.  <em>errors</em> may be given to set a
 different error handling scheme.  The default is <code class="docutils literal"><span class="pre">'strict'</span></code>, meaning that
 encoding errors raise <a class="reference internal" href="../generated/exceptions.UnicodeError.html#exceptions.UnicodeError" title="exceptions.UnicodeError"><code class="xref py py-exc docutils literal"><span class="pre">UnicodeError</span></code></a>.  Other possible values are
 <code class="docutils literal"><span class="pre">'ignore'</span></code>, <code class="docutils literal"><span class="pre">'replace'</span></code> and any other name registered via
-<a class="reference internal" href="../generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">codecs.register_error()</span></code></a>, see section <a class="reference internal" href="../07_string_services/7.8.codecs.html#codec-base-classes"><span>Codec Base Classes</span></a>.</p>
+<a class="reference internal" href="../generated/generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">codecs.register_error()</span></code></a>, see section <a class="reference internal" href="../07_string_services/7.8.codecs.html#codec-base-classes"><span>Codec Base Classes</span></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.2.</span></p>
 </div>
@@ -411,7 +411,7 @@ default string encoding.  <em>errors</em> may be given to set a different error
 handling scheme.  The default for <em>errors</em> is <code class="docutils literal"><span class="pre">'strict'</span></code>, meaning that
 encoding errors raise a <a class="reference internal" href="../generated/exceptions.UnicodeError.html#exceptions.UnicodeError" title="exceptions.UnicodeError"><code class="xref py py-exc docutils literal"><span class="pre">UnicodeError</span></code></a>.  Other possible values are
 <code class="docutils literal"><span class="pre">'ignore'</span></code>, <code class="docutils literal"><span class="pre">'replace'</span></code>, <code class="docutils literal"><span class="pre">'xmlcharrefreplace'</span></code>, <code class="docutils literal"><span class="pre">'backslashreplace'</span></code> and
-any other name registered via <a class="reference internal" href="../generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">codecs.register_error()</span></code></a>, see section
+any other name registered via <a class="reference internal" href="../generated/generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">codecs.register_error()</span></code></a>, see section
 <a class="reference internal" href="../07_string_services/7.8.codecs.html#codec-base-classes"><span>Codec Base Classes</span></a>. For a list of possible encodings, see section
 <a class="reference internal" href="../07_string_services/7.8.codecs.html#standard-encodings"><span>Standard Encodings</span></a>.</p>
 <div class="versionadded">
@@ -888,7 +888,7 @@ boundaries, which may not be the desired result:</p>
 argument <em>deletechars</em> are removed, and the remaining characters have been
 mapped through the given translation table, which must be a string of length
 256.</p>
-<p>You can use the <a class="reference internal" href="../generated/string.maketrans.html#string.maketrans" title="string.maketrans"><code class="xref py py-func docutils literal"><span class="pre">maketrans()</span></code></a> helper function in the <a class="reference internal" href="../generated/string.html#module-string" title="string"><code class="xref py py-mod docutils literal"><span class="pre">string</span></code></a>
+<p>You can use the <a class="reference internal" href="../generated/generated/string.maketrans.html#string.maketrans" title="string.maketrans"><code class="xref py py-func docutils literal"><span class="pre">maketrans()</span></code></a> helper function in the <a class="reference internal" href="../generated/string.html#module-string" title="string"><code class="xref py py-mod docutils literal"><span class="pre">string</span></code></a>
 module to create a translation table. For string objects, set the <em>table</em>
 argument to <code class="docutils literal"><span class="pre">None</span></code> for translations that only delete characters:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;read this short text&#39;</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="s1">&#39;aeiou&#39;</span><span class="p">)</span>
@@ -1309,7 +1309,7 @@ sorted as if each comparison were reversed.</p>
 <p>In general, the <em>key</em> and <em>reverse</em> conversion processes are much faster than
 specifying an equivalent <em>cmp</em> function.  This is because <em>cmp</em> is called
 multiple times for each list element while <em>key</em> and <em>reverse</em> touch each
-element only once.  Use <a class="reference internal" href="../generated/functools.cmp_to_key.html#functools.cmp_to_key" title="functools.cmp_to_key"><code class="xref py py-func docutils literal"><span class="pre">functools.cmp_to_key()</span></code></a> to convert an
+element only once.  Use <a class="reference internal" href="../generated/generated/functools.cmp_to_key.html#functools.cmp_to_key" title="functools.cmp_to_key"><code class="xref py py-func docutils literal"><span class="pre">functools.cmp_to_key()</span></code></a> to convert an
 old-style <em>cmp</em> function to a <em>key</em> function.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.3: </span>Support for <code class="docutils literal"><span class="pre">None</span></code> as an equivalent to omitting <em>cmp</em> was added.</p>

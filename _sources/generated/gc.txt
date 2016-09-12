@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       collect
       disable
@@ -25,6 +25,26 @@
       isenabled
       set_debug
       set_threshold
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/gc.collect
+       generated/gc.disable
+       generated/gc.enable
+       generated/gc.get_count
+       generated/gc.get_debug
+       generated/gc.get_objects
+       generated/gc.get_referents
+       generated/gc.get_referrers
+       generated/gc.get_threshold
+       generated/gc.is_tracked
+       generated/gc.isenabled
+       generated/gc.set_debug
+       generated/gc.set_threshold
+      
    
    
 

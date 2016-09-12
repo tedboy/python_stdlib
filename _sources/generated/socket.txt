@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       RAND_add
       RAND_egd
@@ -41,6 +41,42 @@
       setdefaulttimeout
       socketpair
       ssl
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/socket.RAND_add
+       generated/socket.RAND_egd
+       generated/socket.RAND_status
+       generated/socket.StringIO
+       generated/socket.create_connection
+       generated/socket.fromfd
+       generated/socket.getaddrinfo
+       generated/socket.getdefaulttimeout
+       generated/socket.getfqdn
+       generated/socket.gethostbyaddr
+       generated/socket.gethostbyname
+       generated/socket.gethostbyname_ex
+       generated/socket.gethostname
+       generated/socket.getnameinfo
+       generated/socket.getprotobyname
+       generated/socket.getservbyname
+       generated/socket.getservbyport
+       generated/socket.htonl
+       generated/socket.htons
+       generated/socket.inet_aton
+       generated/socket.inet_ntoa
+       generated/socket.inet_ntop
+       generated/socket.inet_pton
+       generated/socket.meth
+       generated/socket.ntohl
+       generated/socket.ntohs
+       generated/socket.setdefaulttimeout
+       generated/socket.socketpair
+       generated/socket.ssl
+      
    
    
 

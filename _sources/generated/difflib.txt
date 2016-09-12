@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       IS_CHARACTER_JUNK
       IS_LINE_JUNK
@@ -20,6 +20,21 @@
       reduce
       restore
       unified_diff
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/difflib.IS_CHARACTER_JUNK
+       generated/difflib.IS_LINE_JUNK
+       generated/difflib.context_diff
+       generated/difflib.get_close_matches
+       generated/difflib.ndiff
+       generated/difflib.reduce
+       generated/difflib.restore
+       generated/difflib.unified_diff
+      
    
    
 

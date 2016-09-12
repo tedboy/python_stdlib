@@ -8,12 +8,21 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       compress
       decompress
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/bz2.compress
+       generated/bz2.decompress
+      
    
    
 

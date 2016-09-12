@@ -198,7 +198,7 @@
 <li><a class="reference internal" href="#rlock-objects" id="id10">RLock Objects</a></li>
 <li><a class="reference internal" href="#condition-objects" id="id11">Condition Objects</a></li>
 <li><a class="reference internal" href="#semaphore-objects" id="id12">Semaphore Objects</a><ul>
-<li><a class="reference internal" href="#semaphore-example" id="id13"><a class="reference internal" href="../generated/threading.Semaphore.html#threading.Semaphore" title="threading.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a> Example</a></li>
+<li><a class="reference internal" href="#semaphore-example" id="id13"><a class="reference internal" href="../generated/generated/threading.Semaphore.html#threading.Semaphore" title="threading.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a> Example</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#event-objects" id="id14">Event Objects</a></li>
@@ -234,7 +234,7 @@ instead of <a class="reference internal" href="../generated/exceptions.Assertion
 <dt id="threading.activeCount">
 <code class="descclassname">threading.</code><code class="descname">activeCount</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/threading.html#activeCount"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#threading.activeCount" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the number of <a class="reference internal" href="../generated/generated/threading.Thread.html#threading.Thread" title="threading.Thread"><code class="xref py py-class docutils literal"><span class="pre">Thread</span></code></a> objects currently alive.  The returned
-count is equal to the length of the list returned by <a class="reference internal" href="../generated/threading.enumerate.html#threading.enumerate" title="threading.enumerate"><code class="xref py py-func docutils literal"><span class="pre">enumerate()</span></code></a>.</p>
+count is equal to the length of the list returned by <a class="reference internal" href="../generated/generated/threading.enumerate.html#threading.enumerate" title="threading.enumerate"><code class="xref py py-func docutils literal"><span class="pre">enumerate()</span></code></a>.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6: </span>Added <code class="docutils literal"><span class="pre">active_count()</span></code> spelling.</p>
 </div>
@@ -268,7 +268,7 @@ returned.</p>
 <code class="descclassname">threading.</code><code class="descname">enumerate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/threading.html#enumerate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#threading.enumerate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a list of all <a class="reference internal" href="../generated/generated/threading.Thread.html#threading.Thread" title="threading.Thread"><code class="xref py py-class docutils literal"><span class="pre">Thread</span></code></a> objects currently alive.  The list
 includes daemonic threads, dummy thread objects created by
-<a class="reference internal" href="../generated/threading.current_thread.html#threading.current_thread" title="threading.current_thread"><code class="xref py py-func docutils literal"><span class="pre">current_thread()</span></code></a>, and the main thread.  It excludes terminated threads
+<a class="reference internal" href="../generated/generated/threading.current_thread.html#threading.current_thread" title="threading.current_thread"><code class="xref py py-func docutils literal"><span class="pre">current_thread()</span></code></a>, and the main thread.  It excludes terminated threads
 and threads that have not yet been started.</p>
 </dd></dl>
 
@@ -432,7 +432,7 @@ through the <code class="xref py py-attr docutils literal"><span class="pre">dae
 <p class="last">Daemon threads are abruptly stopped at shutdown.  Their resources (such
 as open files, database transactions, etc.) may not be released properly.
 If you want your threads to stop gracefully, make them non-daemonic and
-use a suitable signalling mechanism such as an <a class="reference internal" href="../generated/threading.Event.html#threading.Event" title="threading.Event"><code class="xref py py-class docutils literal"><span class="pre">Event</span></code></a>.</p>
+use a suitable signalling mechanism such as an <a class="reference internal" href="../generated/generated/threading.Event.html#threading.Event" title="threading.Event"><code class="xref py py-class docutils literal"><span class="pre">Event</span></code></a>.</p>
 </div>
 <p>There is a &#8220;main thread&#8221; object; this corresponds to the initial thread of
 control in the Python program.  It is not a daemon thread.</p>
@@ -523,7 +523,7 @@ the constructor.</p>
 <code class="descname">ident</code><a class="headerlink" href="#threading.Thread.ident" title="Permalink to this definition">¶</a></dt>
 <dd><p>The &#8216;thread identifier&#8217; of this thread or <code class="docutils literal"><span class="pre">None</span></code> if the thread has not
 been started.  This is a nonzero integer.  See the
-<a class="reference internal" href="../generated/thread.get_ident.html#thread.get_ident" title="thread.get_ident"><code class="xref py py-func docutils literal"><span class="pre">thread.get_ident()</span></code></a> function.  Thread identifiers may be recycled
+<a class="reference internal" href="../generated/generated/thread.get_ident.html#thread.get_ident" title="thread.get_ident"><code class="xref py py-func docutils literal"><span class="pre">thread.get_ident()</span></code></a> function.  Thread identifiers may be recycled
 when a thread exits and another thread is created.  The identifier is
 available even after the thread has exited.</p>
 <div class="versionadded">
@@ -539,7 +539,7 @@ available even after the thread has exited.</p>
 <dd><p>Return whether the thread is alive.</p>
 <p>This method returns <code class="docutils literal"><span class="pre">True</span></code> just before the <a class="reference internal" href="../generated/generated/threading.Thread.run.html#threading.Thread.run" title="threading.Thread.run"><code class="xref py py-meth docutils literal"><span class="pre">run()</span></code></a> method starts
 until just after the <a class="reference internal" href="../generated/generated/threading.Thread.run.html#threading.Thread.run" title="threading.Thread.run"><code class="xref py py-meth docutils literal"><span class="pre">run()</span></code></a> method terminates.  The module function
-<a class="reference internal" href="../generated/threading.enumerate.html#threading.enumerate" title="threading.enumerate"><code class="xref py py-func docutils literal"><span class="pre">enumerate()</span></code></a> returns a list of all alive threads.</p>
+<a class="reference internal" href="../generated/generated/threading.enumerate.html#threading.enumerate" title="threading.enumerate"><code class="xref py py-func docutils literal"><span class="pre">enumerate()</span></code></a> returns a list of all alive threads.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6: </span>Added <code class="docutils literal"><span class="pre">is_alive()</span></code> spelling.</p>
 </div>
@@ -709,9 +709,9 @@ needs to wake up one consumer thread.</p>
 <dl class="class">
 <dt id="threading.Condition">
 <em class="property">class </em><code class="descclassname">threading.</code><code class="descname">Condition</code><span class="sig-paren">(</span><span class="optional">[</span><em>lock</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/threading.html#Condition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#threading.Condition" title="Permalink to this definition">¶</a></dt>
-<dd><p>If the <em>lock</em> argument is given and not <code class="docutils literal"><span class="pre">None</span></code>, it must be a <a class="reference internal" href="../generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a>
-or <a class="reference internal" href="../generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object, and it is used as the underlying lock.  Otherwise,
-a new <a class="reference internal" href="../generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object is created and used as the underlying lock.</p>
+<dd><p>If the <em>lock</em> argument is given and not <code class="docutils literal"><span class="pre">None</span></code>, it must be a <a class="reference internal" href="../generated/generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a>
+or <a class="reference internal" href="../generated/generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object, and it is used as the underlying lock.  Otherwise,
+a new <a class="reference internal" href="../generated/generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object is created and used as the underlying lock.</p>
 <dl class="method">
 <dt id="threading.Condition.acquire">
 <code class="descname">acquire</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#threading.Condition.acquire" title="Permalink to this definition">¶</a></dt>
@@ -738,10 +738,10 @@ occurs.  Once awakened or timed out, it re-acquires the lock and returns.</p>
 <p>When the <em>timeout</em> argument is present and not <code class="docutils literal"><span class="pre">None</span></code>, it should be a
 floating point number specifying a timeout for the operation in seconds
 (or fractions thereof).</p>
-<p>When the underlying lock is an <a class="reference internal" href="../generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a>, it is not released using
+<p>When the underlying lock is an <a class="reference internal" href="../generated/generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a>, it is not released using
 its <a class="reference internal" href="#threading.Condition.release" title="threading.Condition.release"><code class="xref py py-meth docutils literal"><span class="pre">release()</span></code></a> method, since this may not actually unlock the lock
 when it was acquired multiple times recursively.  Instead, an internal
-interface of the <a class="reference internal" href="../generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> class is used, which really unlocks it
+interface of the <a class="reference internal" href="../generated/generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> class is used, which really unlocks it
 even when it has been recursively acquired several times. Another internal
 interface is then used to restore the recursion level when the lock is
 reacquired.</p>
@@ -826,7 +826,7 @@ than zero again, wake up that thread.</p>
 </dd></dl>
 
 <div class="section" id="semaphore-example">
-<span id="semaphore-examples"></span><h3><a class="toc-backref" href="#id13">2.5.1. <a class="reference internal" href="../generated/threading.Semaphore.html#threading.Semaphore" title="threading.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a> Example</a><a class="headerlink" href="#semaphore-example" title="Permalink to this headline">¶</a></h3>
+<span id="semaphore-examples"></span><h3><a class="toc-backref" href="#id13">2.5.1. <a class="reference internal" href="../generated/generated/threading.Semaphore.html#threading.Semaphore" title="threading.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a> Example</a><a class="headerlink" href="#semaphore-example" title="Permalink to this headline">¶</a></h3>
 <p>Semaphores are often used to guard resources with limited capacity, for example,
 a database server.  In any situation where the size of the resource is fixed,
 you should use a bounded semaphore.  Before spawning any worker threads, your
@@ -910,7 +910,7 @@ floating point number specifying a timeout for the operation in seconds
 <div class="section" id="timer-objects">
 <span id="id7"></span><h2><a class="toc-backref" href="#id15">2.7. Timer Objects</a><a class="headerlink" href="#timer-objects" title="Permalink to this headline">¶</a></h2>
 <p>This class represents an action that should be run only after a certain amount
-of time has passed &#8212; a timer.  <a class="reference internal" href="../generated/threading.Timer.html#threading.Timer" title="threading.Timer"><code class="xref py py-class docutils literal"><span class="pre">Timer</span></code></a> is a subclass of <a class="reference internal" href="../generated/generated/threading.Thread.html#threading.Thread" title="threading.Thread"><code class="xref py py-class docutils literal"><span class="pre">Thread</span></code></a>
+of time has passed &#8212; a timer.  <a class="reference internal" href="../generated/generated/threading.Timer.html#threading.Timer" title="threading.Timer"><code class="xref py py-class docutils literal"><span class="pre">Timer</span></code></a> is a subclass of <a class="reference internal" href="../generated/generated/threading.Thread.html#threading.Thread" title="threading.Thread"><code class="xref py py-class docutils literal"><span class="pre">Thread</span></code></a>
 and as such also functions as an example of creating custom threads.</p>
 <p>Timers are started, as with threads, by calling their <code class="xref py py-meth docutils literal"><span class="pre">start()</span></code>
 method.  The timer can be stopped (before its action has begun) by calling the
@@ -946,8 +946,8 @@ only work if the timer is still in its waiting stage.</p>
 <code class="xref py py-meth docutils literal"><span class="pre">release()</span></code> methods can be used as context managers for a <code class="xref std std-keyword docutils literal"><span class="pre">with</span></code>
 statement.  The <code class="xref py py-meth docutils literal"><span class="pre">acquire()</span></code> method will be called when the block is entered,
 and <code class="xref py py-meth docutils literal"><span class="pre">release()</span></code> will be called when the block is exited.</p>
-<p>Currently, <a class="reference internal" href="../generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a>, <a class="reference internal" href="../generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a>, <a class="reference internal" href="../generated/threading.Condition.html#threading.Condition" title="threading.Condition"><code class="xref py py-class docutils literal"><span class="pre">Condition</span></code></a>,
-<a class="reference internal" href="../generated/threading.Semaphore.html#threading.Semaphore" title="threading.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a>, and <a class="reference internal" href="../generated/threading.BoundedSemaphore.html#threading.BoundedSemaphore" title="threading.BoundedSemaphore"><code class="xref py py-class docutils literal"><span class="pre">BoundedSemaphore</span></code></a> objects may be used as
+<p>Currently, <a class="reference internal" href="../generated/generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a>, <a class="reference internal" href="../generated/generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a>, <a class="reference internal" href="../generated/generated/threading.Condition.html#threading.Condition" title="threading.Condition"><code class="xref py py-class docutils literal"><span class="pre">Condition</span></code></a>,
+<a class="reference internal" href="../generated/generated/threading.Semaphore.html#threading.Semaphore" title="threading.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a>, and <a class="reference internal" href="../generated/generated/threading.BoundedSemaphore.html#threading.BoundedSemaphore" title="threading.BoundedSemaphore"><code class="xref py py-class docutils literal"><span class="pre">BoundedSemaphore</span></code></a> objects may be used as
 <code class="xref std std-keyword docutils literal"><span class="pre">with</span></code> statement context managers.  For example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">threading</span>
 

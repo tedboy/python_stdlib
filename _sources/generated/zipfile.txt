@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       crc32
       is_zipfile
       main
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/zipfile.crc32
+       generated/zipfile.is_zipfile
+       generated/zipfile.main
+      
    
    
 

@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="__builtin__" href="__builtin__.html"/>
+        <link rel="next" title="sysconfig.get_config_h_filename()" href="generated/sysconfig.get_config_h_filename.html"/>
         <link rel="prev" title="sys.exc_type" href="sys.exc_type.html"/> 
 
   
@@ -82,12 +82,81 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sys.html"><code class="docutils literal"><span class="pre">sys</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">sysconfig</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.get_config_h_filename.html"><code class="docutils literal"><span class="pre">sysconfig.get_config_h_filename()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.get_config_var.html"><code class="docutils literal"><span class="pre">sysconfig.get_config_var()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.get_config_vars.html"><code class="docutils literal"><span class="pre">sysconfig.get_config_vars()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.get_makefile_filename.html"><code class="docutils literal"><span class="pre">sysconfig.get_makefile_filename()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.get_path.html"><code class="docutils literal"><span class="pre">sysconfig.get_path()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.get_path_names.html"><code class="docutils literal"><span class="pre">sysconfig.get_path_names()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.get_paths.html"><code class="docutils literal"><span class="pre">sysconfig.get_paths()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.get_platform.html"><code class="docutils literal"><span class="pre">sysconfig.get_platform()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.get_python_version.html"><code class="docutils literal"><span class="pre">sysconfig.get_python_version()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.get_scheme_names.html"><code class="docutils literal"><span class="pre">sysconfig.get_scheme_names()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.is_python_build.html"><code class="docutils literal"><span class="pre">sysconfig.is_python_build()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.parse_config_h.html"><code class="docutils literal"><span class="pre">sysconfig.parse_config_h()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sysconfig.realpath.html"><code class="docutils literal"><span class="pre">sysconfig.realpath()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="__builtin__.html"><code class="docutils literal"><span class="pre">__builtin__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="future_builtins.html"><code class="docutils literal"><span class="pre">future_builtins</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="__main__.html"><code class="docutils literal"><span class="pre">__main__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="warnings.html"><code class="docutils literal"><span class="pre">warnings</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="contextlib.html"><code class="docutils literal"><span class="pre">contextlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abc.html"><code class="docutils literal"><span class="pre">abc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="atexit.html"><code class="docutils literal"><span class="pre">atexit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="traceback.html"><code class="docutils literal"><span class="pre">traceback</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="__future__.html"><code class="docutils literal"><span class="pre">__future__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="gc.html"><code class="docutils literal"><span class="pre">gc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="inspect.html"><code class="docutils literal"><span class="pre">inspect</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="site.html"><code class="docutils literal"><span class="pre">site</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="user.html"><code class="docutils literal"><span class="pre">user</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -153,6 +222,55 @@
 <p>Provide access to Python&#8217;s configuration information.</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/sysconfig.get_config_h_filename.html#sysconfig.get_config_h_filename" title="sysconfig.get_config_h_filename"><code class="xref py py-obj docutils literal"><span class="pre">get_config_h_filename</span></code></a>()</td>
+<td>Returns the path of pyconfig.h.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sysconfig.get_config_var.html#sysconfig.get_config_var" title="sysconfig.get_config_var"><code class="xref py py-obj docutils literal"><span class="pre">get_config_var</span></code></a>(name)</td>
+<td>Return the value of a single variable using the dictionary returned by &#8216;get_config_vars()&#8217;.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sysconfig.get_config_vars.html#sysconfig.get_config_vars" title="sysconfig.get_config_vars"><code class="xref py py-obj docutils literal"><span class="pre">get_config_vars</span></code></a>(*args)</td>
+<td>With no arguments, return a dictionary of all configuration variables relevant for the current platform.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sysconfig.get_makefile_filename.html#sysconfig.get_makefile_filename" title="sysconfig.get_makefile_filename"><code class="xref py py-obj docutils literal"><span class="pre">get_makefile_filename</span></code></a>()</td>
+<td>Return the path of the Makefile.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sysconfig.get_path.html#sysconfig.get_path" title="sysconfig.get_path"><code class="xref py py-obj docutils literal"><span class="pre">get_path</span></code></a>(name[,&nbsp;scheme,&nbsp;vars,&nbsp;expand])</td>
+<td>Returns a path corresponding to the scheme.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sysconfig.get_path_names.html#sysconfig.get_path_names" title="sysconfig.get_path_names"><code class="xref py py-obj docutils literal"><span class="pre">get_path_names</span></code></a>()</td>
+<td>Returns a tuple containing the paths names.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sysconfig.get_paths.html#sysconfig.get_paths" title="sysconfig.get_paths"><code class="xref py py-obj docutils literal"><span class="pre">get_paths</span></code></a>([scheme,&nbsp;vars,&nbsp;expand])</td>
+<td>Returns a mapping containing an install scheme.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sysconfig.get_platform.html#sysconfig.get_platform" title="sysconfig.get_platform"><code class="xref py py-obj docutils literal"><span class="pre">get_platform</span></code></a>()</td>
+<td>Return a string that identifies the current platform.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sysconfig.get_python_version.html#sysconfig.get_python_version" title="sysconfig.get_python_version"><code class="xref py py-obj docutils literal"><span class="pre">get_python_version</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sysconfig.get_scheme_names.html#sysconfig.get_scheme_names" title="sysconfig.get_scheme_names"><code class="xref py py-obj docutils literal"><span class="pre">get_scheme_names</span></code></a>()</td>
+<td>Returns a tuple containing the schemes names.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sysconfig.is_python_build.html#sysconfig.is_python_build" title="sysconfig.is_python_build"><code class="xref py py-obj docutils literal"><span class="pre">is_python_build</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sysconfig.parse_config_h.html#sysconfig.parse_config_h" title="sysconfig.parse_config_h"><code class="xref py py-obj docutils literal"><span class="pre">parse_config_h</span></code></a>(fp[,&nbsp;vars])</td>
+<td>Parse a config.h-style file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sysconfig.realpath.html#sysconfig.realpath" title="sysconfig.realpath"><code class="xref py py-obj docutils literal"><span class="pre">realpath</span></code></a>(filename)</td>
+<td>Return the canonical path of the specified filename, eliminating any symbolic links encountered in the path.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
@@ -163,7 +281,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="__builtin__.html" class="btn btn-neutral float-right" title="__builtin__" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/sysconfig.get_config_h_filename.html" class="btn btn-neutral float-right" title="sysconfig.get_config_h_filename()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="sys.exc_type.html" class="btn btn-neutral" title="sys.exc_type" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

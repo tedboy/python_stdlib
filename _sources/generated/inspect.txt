@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       classify_class_attrs
       cleandoc
@@ -63,6 +63,64 @@
       strseq
       trace
       walktree
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/inspect.classify_class_attrs
+       generated/inspect.cleandoc
+       generated/inspect.currentframe
+       generated/inspect.findsource
+       generated/inspect.formatargspec
+       generated/inspect.formatargvalues
+       generated/inspect.getabsfile
+       generated/inspect.getargs
+       generated/inspect.getargspec
+       generated/inspect.getargvalues
+       generated/inspect.getblock
+       generated/inspect.getcallargs
+       generated/inspect.getclasstree
+       generated/inspect.getcomments
+       generated/inspect.getdoc
+       generated/inspect.getfile
+       generated/inspect.getframeinfo
+       generated/inspect.getinnerframes
+       generated/inspect.getlineno
+       generated/inspect.getmembers
+       generated/inspect.getmodule
+       generated/inspect.getmoduleinfo
+       generated/inspect.getmodulename
+       generated/inspect.getmro
+       generated/inspect.getouterframes
+       generated/inspect.getsource
+       generated/inspect.getsourcefile
+       generated/inspect.getsourcelines
+       generated/inspect.indentsize
+       generated/inspect.isabstract
+       generated/inspect.isbuiltin
+       generated/inspect.isclass
+       generated/inspect.iscode
+       generated/inspect.isdatadescriptor
+       generated/inspect.isframe
+       generated/inspect.isfunction
+       generated/inspect.isgenerator
+       generated/inspect.isgeneratorfunction
+       generated/inspect.isgetsetdescriptor
+       generated/inspect.ismemberdescriptor
+       generated/inspect.ismethod
+       generated/inspect.ismethoddescriptor
+       generated/inspect.ismodule
+       generated/inspect.isroutine
+       generated/inspect.istraceback
+       generated/inspect.joinseq
+       generated/inspect.namedtuple
+       generated/inspect.stack
+       generated/inspect.strseq
+       generated/inspect.trace
+       generated/inspect.walktree
+      
    
    
 

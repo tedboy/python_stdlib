@@ -249,7 +249,7 @@ will be used.</p>
 <dd><p>If a formatter is specified, it is used to format the record. The record
 is then written to the stream with a newline terminator. If exception
 information is present, it is formatted using
-<a class="reference internal" href="../generated/traceback.print_exception.html#traceback.print_exception" title="traceback.print_exception"><code class="xref py py-func docutils literal"><span class="pre">traceback.print_exception()</span></code></a> and appended to the stream.</p>
+<a class="reference internal" href="../generated/generated/traceback.print_exception.html#traceback.print_exception" title="traceback.print_exception"><code class="xref py py-func docutils literal"><span class="pre">traceback.print_exception()</span></code></a> and appended to the stream.</p>
 </dd></dl>
 
 <dl class="method">
@@ -347,7 +347,7 @@ new stream.</p>
 <p>This handler is not appropriate for use under Windows, because under Windows
 open log files cannot be moved or renamed - logging opens the files with
 exclusive locks - and so there is no need for such a handler. Furthermore,
-<em>ST_INO</em> is not supported under Windows; <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a> always returns zero
+<em>ST_INO</em> is not supported under Windows; <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a> always returns zero
 for this value.</p>
 <dl class="class">
 <dt id="logging.handlers.WatchedFileHandler">
@@ -515,7 +515,7 @@ communicate with a remote machine whose address is given by <em>host</em> and <e
 binary format. If there is an error with the socket, silently drops the
 packet. If the connection was previously lost, re-establishes the
 connection. To unpickle the record at the receiving end into a
-<a class="reference internal" href="../generated/generated/logging.LogRecord.html#logging.LogRecord" title="logging.LogRecord"><code class="xref py py-class docutils literal"><span class="pre">LogRecord</span></code></a>, use the <a class="reference internal" href="../generated/logging.makeLogRecord.html#logging.makeLogRecord" title="logging.makeLogRecord"><code class="xref py py-func docutils literal"><span class="pre">makeLogRecord()</span></code></a>
+<a class="reference internal" href="../generated/generated/logging.LogRecord.html#logging.LogRecord" title="logging.LogRecord"><code class="xref py py-class docutils literal"><span class="pre">LogRecord</span></code></a>, use the <a class="reference internal" href="../generated/generated/logging.makeLogRecord.html#logging.makeLogRecord" title="logging.makeLogRecord"><code class="xref py py-func docutils literal"><span class="pre">makeLogRecord()</span></code></a>
 function.</p>
 </dd></dl>
 
@@ -595,7 +595,7 @@ communicate with a remote machine whose address is given by <em>host</em> and <e
 <dd><p>Pickles the record&#8217;s attribute dictionary and writes it to the socket in
 binary format. If there is an error with the socket, silently drops the
 packet. To unpickle the record at the receiving end into a
-<a class="reference internal" href="../generated/generated/logging.LogRecord.html#logging.LogRecord" title="logging.LogRecord"><code class="xref py py-class docutils literal"><span class="pre">LogRecord</span></code></a>, use the <a class="reference internal" href="../generated/logging.makeLogRecord.html#logging.makeLogRecord" title="logging.makeLogRecord"><code class="xref py py-func docutils literal"><span class="pre">makeLogRecord()</span></code></a>
+<a class="reference internal" href="../generated/generated/logging.LogRecord.html#logging.LogRecord" title="logging.LogRecord"><code class="xref py py-class docutils literal"><span class="pre">LogRecord</span></code></a>, use the <a class="reference internal" href="../generated/generated/logging.makeLogRecord.html#logging.makeLogRecord" title="logging.makeLogRecord"><code class="xref py py-func docutils literal"><span class="pre">makeLogRecord()</span></code></a>
 function.</p>
 </dd></dl>
 
@@ -1014,7 +1014,7 @@ dictionary to be sent.</p>
 the same as a generic formatting operation, using <a class="reference internal" href="../generated/generated/logging.handlers.HTTPHandler.setFormatter.html#logging.handlers.HTTPHandler.setFormatter" title="logging.handlers.HTTPHandler.setFormatter"><code class="xref py py-meth docutils literal"><span class="pre">setFormatter()</span></code></a>
 to specify a <code class="xref py py-class docutils literal"><span class="pre">Formatter</span></code> for a <a class="reference internal" href="../generated/generated/logging.handlers.HTTPHandler.html#logging.handlers.HTTPHandler" title="logging.handlers.HTTPHandler"><code class="xref py py-class docutils literal"><span class="pre">HTTPHandler</span></code></a> has no effect.
 Instead of calling <a class="reference internal" href="../02_builtin_functions/02.html#format" title="format"><code class="xref py py-meth docutils literal"><span class="pre">format()</span></code></a>, this handler calls <a class="reference internal" href="../generated/generated/logging.handlers.HTTPHandler.mapLogRecord.html#logging.handlers.HTTPHandler.mapLogRecord" title="logging.handlers.HTTPHandler.mapLogRecord"><code class="xref py py-meth docutils literal"><span class="pre">mapLogRecord()</span></code></a>
-and then <a class="reference internal" href="../generated/urllib.urlencode.html#urllib.urlencode" title="urllib.urlencode"><code class="xref py py-func docutils literal"><span class="pre">urllib.urlencode()</span></code></a> to encode the dictionary in a form
+and then <a class="reference internal" href="../generated/generated/urllib.urlencode.html#urllib.urlencode" title="urllib.urlencode"><code class="xref py py-func docutils literal"><span class="pre">urllib.urlencode()</span></code></a> to encode the dictionary in a form
 suitable for sending to a Web server.</p>
 </div>
 </dd></dl>

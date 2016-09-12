@@ -383,7 +383,7 @@
     <span class="k">return</span> <span class="n">pat</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">hostname</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="match_hostname"><a class="viewcode-back" href="../generated/ssl.match_hostname.html#ssl.match_hostname">[docs]</a><span class="k">def</span> <span class="nf">match_hostname</span><span class="p">(</span><span class="n">cert</span><span class="p">,</span> <span class="n">hostname</span><span class="p">):</span>
+<div class="viewcode-block" id="match_hostname"><a class="viewcode-back" href="../generated/generated/ssl.match_hostname.html#ssl.match_hostname">[docs]</a><span class="k">def</span> <span class="nf">match_hostname</span><span class="p">(</span><span class="n">cert</span><span class="p">,</span> <span class="n">hostname</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Verify that *cert* (in decoded format as returned by</span>
 <span class="sd">    SSLSocket.getpeercert()) matches the *hostname*.  RFC 2818 and RFC 6125</span>
 <span class="sd">    rules are followed, but IP addresses are not accepted for *hostname*.</span>
@@ -430,7 +430,7 @@
     <span class="s2">&quot;cafile capath openssl_cafile_env openssl_cafile openssl_capath_env &quot;</span>
     <span class="s2">&quot;openssl_capath&quot;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="get_default_verify_paths"><a class="viewcode-back" href="../generated/ssl.get_default_verify_paths.html#ssl.get_default_verify_paths">[docs]</a><span class="k">def</span> <span class="nf">get_default_verify_paths</span><span class="p">():</span>
+<div class="viewcode-block" id="get_default_verify_paths"><a class="viewcode-back" href="../generated/generated/ssl.get_default_verify_paths.html#ssl.get_default_verify_paths">[docs]</a><span class="k">def</span> <span class="nf">get_default_verify_paths</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return paths to default cafile and capath.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">parts</span> <span class="o">=</span> <span class="n">_ssl</span><span class="o">.</span><span class="n">get_default_verify_paths</span><span class="p">()</span>
@@ -544,7 +544,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">set_default_verify_paths</span><span class="p">()</span></div></div>
 
 
-<div class="viewcode-block" id="create_default_context"><a class="viewcode-back" href="../generated/ssl.create_default_context.html#ssl.create_default_context">[docs]</a><span class="k">def</span> <span class="nf">create_default_context</span><span class="p">(</span><span class="n">purpose</span><span class="o">=</span><span class="n">Purpose</span><span class="o">.</span><span class="n">SERVER_AUTH</span><span class="p">,</span> <span class="n">cafile</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="create_default_context"><a class="viewcode-back" href="../generated/generated/ssl.create_default_context.html#ssl.create_default_context">[docs]</a><span class="k">def</span> <span class="nf">create_default_context</span><span class="p">(</span><span class="n">purpose</span><span class="o">=</span><span class="n">Purpose</span><span class="o">.</span><span class="n">SERVER_AUTH</span><span class="p">,</span> <span class="n">cafile</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                            <span class="n">capath</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">cadata</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Create a SSLContext object with default settings.</span>
 
@@ -1065,7 +1065,7 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sslobj</span><span class="o">.</span><span class="n">version</span><span class="p">()</span></div></div>
 
 
-<div class="viewcode-block" id="wrap_socket"><a class="viewcode-back" href="../generated/ssl.wrap_socket.html#ssl.wrap_socket">[docs]</a><span class="k">def</span> <span class="nf">wrap_socket</span><span class="p">(</span><span class="n">sock</span><span class="p">,</span> <span class="n">keyfile</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">certfile</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="wrap_socket"><a class="viewcode-back" href="../generated/generated/ssl.wrap_socket.html#ssl.wrap_socket">[docs]</a><span class="k">def</span> <span class="nf">wrap_socket</span><span class="p">(</span><span class="n">sock</span><span class="p">,</span> <span class="n">keyfile</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">certfile</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                 <span class="n">server_side</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">cert_reqs</span><span class="o">=</span><span class="n">CERT_NONE</span><span class="p">,</span>
                 <span class="n">ssl_version</span><span class="o">=</span><span class="n">PROTOCOL_SSLv23</span><span class="p">,</span> <span class="n">ca_certs</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                 <span class="n">do_handshake_on_connect</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
@@ -1081,7 +1081,7 @@
 
 <span class="c1"># some utility functions</span>
 
-<div class="viewcode-block" id="cert_time_to_seconds"><a class="viewcode-back" href="../generated/ssl.cert_time_to_seconds.html#ssl.cert_time_to_seconds">[docs]</a><span class="k">def</span> <span class="nf">cert_time_to_seconds</span><span class="p">(</span><span class="n">cert_time</span><span class="p">):</span>
+<div class="viewcode-block" id="cert_time_to_seconds"><a class="viewcode-back" href="../generated/generated/ssl.cert_time_to_seconds.html#ssl.cert_time_to_seconds">[docs]</a><span class="k">def</span> <span class="nf">cert_time_to_seconds</span><span class="p">(</span><span class="n">cert_time</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the time in seconds since the Epoch, given the timestring</span>
 <span class="sd">    representing the &quot;notBefore&quot; or &quot;notAfter&quot; date from a certificate</span>
 <span class="sd">    in ``&quot;%b %d %H:%M:%S %Y %Z&quot;`` strptime format (C locale).</span>
@@ -1114,7 +1114,7 @@
 <span class="n">PEM_HEADER</span> <span class="o">=</span> <span class="s2">&quot;-----BEGIN CERTIFICATE-----&quot;</span>
 <span class="n">PEM_FOOTER</span> <span class="o">=</span> <span class="s2">&quot;-----END CERTIFICATE-----&quot;</span>
 
-<div class="viewcode-block" id="DER_cert_to_PEM_cert"><a class="viewcode-back" href="../generated/ssl.DER_cert_to_PEM_cert.html#ssl.DER_cert_to_PEM_cert">[docs]</a><span class="k">def</span> <span class="nf">DER_cert_to_PEM_cert</span><span class="p">(</span><span class="n">der_cert_bytes</span><span class="p">):</span>
+<div class="viewcode-block" id="DER_cert_to_PEM_cert"><a class="viewcode-back" href="../generated/generated/ssl.DER_cert_to_PEM_cert.html#ssl.DER_cert_to_PEM_cert">[docs]</a><span class="k">def</span> <span class="nf">DER_cert_to_PEM_cert</span><span class="p">(</span><span class="n">der_cert_bytes</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Takes a certificate in binary DER format and returns the</span>
 <span class="sd">    PEM version of it as a string.&quot;&quot;&quot;</span>
 
@@ -1123,7 +1123,7 @@
             <span class="n">textwrap</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span>
             <span class="n">PEM_FOOTER</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="PEM_cert_to_DER_cert"><a class="viewcode-back" href="../generated/ssl.PEM_cert_to_DER_cert.html#ssl.PEM_cert_to_DER_cert">[docs]</a><span class="k">def</span> <span class="nf">PEM_cert_to_DER_cert</span><span class="p">(</span><span class="n">pem_cert_string</span><span class="p">):</span>
+<div class="viewcode-block" id="PEM_cert_to_DER_cert"><a class="viewcode-back" href="../generated/generated/ssl.PEM_cert_to_DER_cert.html#ssl.PEM_cert_to_DER_cert">[docs]</a><span class="k">def</span> <span class="nf">PEM_cert_to_DER_cert</span><span class="p">(</span><span class="n">pem_cert_string</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Takes a certificate in ASCII PEM format and returns the</span>
 <span class="sd">    DER-encoded version of it as a byte sequence&quot;&quot;&quot;</span>
 
@@ -1136,7 +1136,7 @@
     <span class="n">d</span> <span class="o">=</span> <span class="n">pem_cert_string</span><span class="o">.</span><span class="n">strip</span><span class="p">()[</span><span class="nb">len</span><span class="p">(</span><span class="n">PEM_HEADER</span><span class="p">):</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">PEM_FOOTER</span><span class="p">)]</span>
     <span class="k">return</span> <span class="n">base64</span><span class="o">.</span><span class="n">decodestring</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ASCII&#39;</span><span class="p">,</span> <span class="s1">&#39;strict&#39;</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="get_server_certificate"><a class="viewcode-back" href="../generated/ssl.get_server_certificate.html#ssl.get_server_certificate">[docs]</a><span class="k">def</span> <span class="nf">get_server_certificate</span><span class="p">(</span><span class="n">addr</span><span class="p">,</span> <span class="n">ssl_version</span><span class="o">=</span><span class="n">PROTOCOL_SSLv23</span><span class="p">,</span> <span class="n">ca_certs</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="get_server_certificate"><a class="viewcode-back" href="../generated/generated/ssl.get_server_certificate.html#ssl.get_server_certificate">[docs]</a><span class="k">def</span> <span class="nf">get_server_certificate</span><span class="p">(</span><span class="n">addr</span><span class="p">,</span> <span class="n">ssl_version</span><span class="o">=</span><span class="n">PROTOCOL_SSLv23</span><span class="p">,</span> <span class="n">ca_certs</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Retrieve the certificate from the server at the specified address,</span>
 <span class="sd">    and return it as a PEM-encoded string.</span>
 <span class="sd">    If &#39;ca_certs&#39; is specified, validate the server cert against it.</span>
@@ -1155,13 +1155,13 @@
             <span class="n">dercert</span> <span class="o">=</span> <span class="n">sslsock</span><span class="o">.</span><span class="n">getpeercert</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">DER_cert_to_PEM_cert</span><span class="p">(</span><span class="n">dercert</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="get_protocol_name"><a class="viewcode-back" href="../generated/ssl.get_protocol_name.html#ssl.get_protocol_name">[docs]</a><span class="k">def</span> <span class="nf">get_protocol_name</span><span class="p">(</span><span class="n">protocol_code</span><span class="p">):</span>
+<div class="viewcode-block" id="get_protocol_name"><a class="viewcode-back" href="../generated/generated/ssl.get_protocol_name.html#ssl.get_protocol_name">[docs]</a><span class="k">def</span> <span class="nf">get_protocol_name</span><span class="p">(</span><span class="n">protocol_code</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">_PROTOCOL_NAMES</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">protocol_code</span><span class="p">,</span> <span class="s1">&#39;&lt;unknown&gt;&#39;</span><span class="p">)</span></div>
 
 
 <span class="c1"># a replacement for the old socket.ssl function</span>
 
-<div class="viewcode-block" id="sslwrap_simple"><a class="viewcode-back" href="../generated/ssl.sslwrap_simple.html#ssl.sslwrap_simple">[docs]</a><span class="k">def</span> <span class="nf">sslwrap_simple</span><span class="p">(</span><span class="n">sock</span><span class="p">,</span> <span class="n">keyfile</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">certfile</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="sslwrap_simple"><a class="viewcode-back" href="../generated/generated/ssl.sslwrap_simple.html#ssl.sslwrap_simple">[docs]</a><span class="k">def</span> <span class="nf">sslwrap_simple</span><span class="p">(</span><span class="n">sock</span><span class="p">,</span> <span class="n">keyfile</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">certfile</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A replacement for the old socket.ssl function.  Designed</span>
 <span class="sd">    for compability with Python 2.5 and earlier.  Will disappear in</span>
 <span class="sd">    Python 3.0.&quot;&quot;&quot;</span>

@@ -160,7 +160,7 @@
 <span class="n">uace_prefix</span> <span class="o">=</span> <span class="nb">unicode</span><span class="p">(</span><span class="n">ace_prefix</span><span class="p">,</span> <span class="s2">&quot;ascii&quot;</span><span class="p">)</span>
 
 <span class="c1"># This assumes query strings, so AllowUnassigned is true</span>
-<div class="viewcode-block" id="nameprep"><a class="viewcode-back" href="../../generated/encodings.idna.nameprep.html#encodings.idna.nameprep">[docs]</a><span class="k">def</span> <span class="nf">nameprep</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
+<div class="viewcode-block" id="nameprep"><a class="viewcode-back" href="../../generated/generated/encodings.idna.nameprep.html#encodings.idna.nameprep">[docs]</a><span class="k">def</span> <span class="nf">nameprep</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
     <span class="c1"># Map</span>
     <span class="n">newlabel</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">label</span><span class="p">:</span>
@@ -208,7 +208,7 @@
 
     <span class="k">return</span> <span class="n">label</span></div>
 
-<div class="viewcode-block" id="ToASCII"><a class="viewcode-back" href="../../generated/encodings.idna.ToASCII.html#encodings.idna.ToASCII">[docs]</a><span class="k">def</span> <span class="nf">ToASCII</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
+<div class="viewcode-block" id="ToASCII"><a class="viewcode-back" href="../../generated/generated/encodings.idna.ToASCII.html#encodings.idna.ToASCII">[docs]</a><span class="k">def</span> <span class="nf">ToASCII</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># Step 1: try ASCII</span>
         <span class="n">label</span> <span class="o">=</span> <span class="n">label</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;ascii&quot;</span><span class="p">)</span>
@@ -251,7 +251,7 @@
         <span class="k">return</span> <span class="n">label</span>
     <span class="k">raise</span> <span class="ne">UnicodeError</span><span class="p">(</span><span class="s2">&quot;label empty or too long&quot;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="ToUnicode"><a class="viewcode-back" href="../../generated/encodings.idna.ToUnicode.html#encodings.idna.ToUnicode">[docs]</a><span class="k">def</span> <span class="nf">ToUnicode</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
+<div class="viewcode-block" id="ToUnicode"><a class="viewcode-back" href="../../generated/generated/encodings.idna.ToUnicode.html#encodings.idna.ToUnicode">[docs]</a><span class="k">def</span> <span class="nf">ToUnicode</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
     <span class="c1"># Step 1: Check for ASCII</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
         <span class="n">pure_ascii</span> <span class="o">=</span> <span class="bp">True</span>
@@ -425,7 +425,7 @@
 
 <span class="c1">### encodings module API</span>
 
-<div class="viewcode-block" id="getregentry"><a class="viewcode-back" href="../../generated/encodings.idna.getregentry.html#encodings.idna.getregentry">[docs]</a><span class="k">def</span> <span class="nf">getregentry</span><span class="p">():</span>
+<div class="viewcode-block" id="getregentry"><a class="viewcode-back" href="../../generated/generated/encodings.idna.getregentry.html#encodings.idna.getregentry">[docs]</a><span class="k">def</span> <span class="nf">getregentry</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">codecs</span><span class="o">.</span><span class="n">CodecInfo</span><span class="p">(</span>
         <span class="n">name</span><span class="o">=</span><span class="s1">&#39;idna&#39;</span><span class="p">,</span>
         <span class="n">encode</span><span class="o">=</span><span class="n">Codec</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">,</span>

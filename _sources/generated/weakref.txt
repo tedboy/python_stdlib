@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       getweakrefcount
       getweakrefs
       proxy
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/weakref.getweakrefcount
+       generated/weakref.getweakrefs
+       generated/weakref.proxy
+      
    
    
 

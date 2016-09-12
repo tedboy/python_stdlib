@@ -162,7 +162,7 @@
     <span class="s1">&#39;ImpImporter&#39;</span><span class="p">,</span> <span class="s1">&#39;ImpLoader&#39;</span><span class="p">,</span> <span class="s1">&#39;read_code&#39;</span><span class="p">,</span> <span class="s1">&#39;extend_path&#39;</span><span class="p">,</span>
 <span class="p">]</span>
 
-<div class="viewcode-block" id="read_code"><a class="viewcode-back" href="../generated/runpy.read_code.html#pkgutil.read_code">[docs]</a><span class="k">def</span> <span class="nf">read_code</span><span class="p">(</span><span class="n">stream</span><span class="p">):</span>
+<div class="viewcode-block" id="read_code"><a class="viewcode-back" href="../generated/generated/runpy.read_code.html#pkgutil.read_code">[docs]</a><span class="k">def</span> <span class="nf">read_code</span><span class="p">(</span><span class="n">stream</span><span class="p">):</span>
     <span class="c1"># This helper is needed in order for the PEP 302 emulation to</span>
     <span class="c1"># correctly handle compiled files</span>
     <span class="kn">import</span> <span class="nn">marshal</span>
@@ -175,7 +175,7 @@
     <span class="k">return</span> <span class="n">marshal</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="simplegeneric"><a class="viewcode-back" href="../generated/pkgutil.simplegeneric.html#pkgutil.simplegeneric">[docs]</a><span class="k">def</span> <span class="nf">simplegeneric</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+<div class="viewcode-block" id="simplegeneric"><a class="viewcode-back" href="../generated/generated/pkgutil.simplegeneric.html#pkgutil.simplegeneric">[docs]</a><span class="k">def</span> <span class="nf">simplegeneric</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Make a trivial single-dispatch generic function&quot;&quot;&quot;</span>
     <span class="n">registry</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
@@ -215,7 +215,7 @@
     <span class="k">return</span> <span class="n">wrapper</span></div>
 
 
-<div class="viewcode-block" id="walk_packages"><a class="viewcode-back" href="../generated/pkgutil.walk_packages.html#pkgutil.walk_packages">[docs]</a><span class="k">def</span> <span class="nf">walk_packages</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">onerror</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="walk_packages"><a class="viewcode-back" href="../generated/generated/pkgutil.walk_packages.html#pkgutil.walk_packages">[docs]</a><span class="k">def</span> <span class="nf">walk_packages</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">onerror</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Yields (module_loader, name, ispkg) for all modules recursively</span>
 <span class="sd">    on path, or, if path is None, all accessible modules.</span>
 
@@ -273,7 +273,7 @@
                     <span class="k">yield</span> <span class="n">item</span></div>
 
 
-<div class="viewcode-block" id="iter_modules"><a class="viewcode-back" href="../generated/pkgutil.iter_modules.html#pkgutil.iter_modules">[docs]</a><span class="k">def</span> <span class="nf">iter_modules</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="iter_modules"><a class="viewcode-back" href="../generated/generated/pkgutil.iter_modules.html#pkgutil.iter_modules">[docs]</a><span class="k">def</span> <span class="nf">iter_modules</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Yields (module_loader, name, ispkg) for all submodules on path,</span>
 <span class="sd">    or, if path is None, all top-level modules on sys.path.</span>
 
@@ -298,7 +298,7 @@
 
 
 <span class="c1">#@simplegeneric</span>
-<div class="viewcode-block" id="iter_importer_modules"><a class="viewcode-back" href="../generated/pkgutil.iter_importer_modules.html#pkgutil.iter_importer_modules">[docs]</a><span class="k">def</span> <span class="nf">iter_importer_modules</span><span class="p">(</span><span class="n">importer</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="iter_importer_modules"><a class="viewcode-back" href="../generated/generated/pkgutil.iter_importer_modules.html#pkgutil.iter_importer_modules">[docs]</a><span class="k">def</span> <span class="nf">iter_importer_modules</span><span class="p">(</span><span class="n">importer</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">importer</span><span class="p">,</span> <span class="s1">&#39;iter_modules&#39;</span><span class="p">):</span>
         <span class="k">return</span> <span class="p">[]</span>
     <span class="k">return</span> <span class="n">importer</span><span class="o">.</span><span class="n">iter_modules</span><span class="p">(</span><span class="n">prefix</span><span class="p">)</span></div>
@@ -475,7 +475,7 @@
     <span class="kn">import</span> <span class="nn">zipimport</span>
     <span class="kn">from</span> <span class="nn">zipimport</span> <span class="kn">import</span> <span class="n">zipimporter</span>
 
-<div class="viewcode-block" id="iter_zipimport_modules"><a class="viewcode-back" href="../generated/pkgutil.iter_zipimport_modules.html#pkgutil.iter_zipimport_modules">[docs]</a>    <span class="k">def</span> <span class="nf">iter_zipimport_modules</span><span class="p">(</span><span class="n">importer</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="iter_zipimport_modules"><a class="viewcode-back" href="../generated/generated/pkgutil.iter_zipimport_modules.html#pkgutil.iter_zipimport_modules">[docs]</a>    <span class="k">def</span> <span class="nf">iter_zipimport_modules</span><span class="p">(</span><span class="n">importer</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
         <span class="n">dirlist</span> <span class="o">=</span> <span class="n">zipimport</span><span class="o">.</span><span class="n">_zip_directory_cache</span><span class="p">[</span><span class="n">importer</span><span class="o">.</span><span class="n">archive</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
         <span class="n">dirlist</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
         <span class="n">_prefix</span> <span class="o">=</span> <span class="n">importer</span><span class="o">.</span><span class="n">prefix</span>
@@ -510,7 +510,7 @@
     <span class="k">pass</span>
 
 
-<div class="viewcode-block" id="get_importer"><a class="viewcode-back" href="../generated/pkgutil.get_importer.html#pkgutil.get_importer">[docs]</a><span class="k">def</span> <span class="nf">get_importer</span><span class="p">(</span><span class="n">path_item</span><span class="p">):</span>
+<div class="viewcode-block" id="get_importer"><a class="viewcode-back" href="../generated/generated/pkgutil.get_importer.html#pkgutil.get_importer">[docs]</a><span class="k">def</span> <span class="nf">get_importer</span><span class="p">(</span><span class="n">path_item</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Retrieve a PEP 302 importer for the given path item</span>
 
 <span class="sd">    The returned importer is cached in sys.path_importer_cache</span>
@@ -544,7 +544,7 @@
     <span class="k">return</span> <span class="n">importer</span></div>
 
 
-<div class="viewcode-block" id="iter_importers"><a class="viewcode-back" href="../generated/pkgutil.iter_importers.html#pkgutil.iter_importers">[docs]</a><span class="k">def</span> <span class="nf">iter_importers</span><span class="p">(</span><span class="n">fullname</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+<div class="viewcode-block" id="iter_importers"><a class="viewcode-back" href="../generated/generated/pkgutil.iter_importers.html#pkgutil.iter_importers">[docs]</a><span class="k">def</span> <span class="nf">iter_importers</span><span class="p">(</span><span class="n">fullname</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Yield PEP 302 importers for the given module name</span>
 
 <span class="sd">    If fullname contains a &#39;.&#39;, the importers will be for the package</span>
@@ -585,7 +585,7 @@
     <span class="k">if</span> <span class="s1">&#39;.&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">fullname</span><span class="p">:</span>
         <span class="k">yield</span> <span class="n">ImpImporter</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="get_loader"><a class="viewcode-back" href="../generated/runpy.get_loader.html#pkgutil.get_loader">[docs]</a><span class="k">def</span> <span class="nf">get_loader</span><span class="p">(</span><span class="n">module_or_name</span><span class="p">):</span>
+<div class="viewcode-block" id="get_loader"><a class="viewcode-back" href="../generated/generated/runpy.get_loader.html#pkgutil.get_loader">[docs]</a><span class="k">def</span> <span class="nf">get_loader</span><span class="p">(</span><span class="n">module_or_name</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get a PEP 302 &quot;loader&quot; object for module_or_name</span>
 
 <span class="sd">    If the module or package is accessible via the normal import</span>
@@ -610,7 +610,7 @@
         <span class="n">fullname</span> <span class="o">=</span> <span class="n">module_or_name</span>
     <span class="k">return</span> <span class="n">find_loader</span><span class="p">(</span><span class="n">fullname</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="find_loader"><a class="viewcode-back" href="../generated/pkgutil.find_loader.html#pkgutil.find_loader">[docs]</a><span class="k">def</span> <span class="nf">find_loader</span><span class="p">(</span><span class="n">fullname</span><span class="p">):</span>
+<div class="viewcode-block" id="find_loader"><a class="viewcode-back" href="../generated/generated/pkgutil.find_loader.html#pkgutil.find_loader">[docs]</a><span class="k">def</span> <span class="nf">find_loader</span><span class="p">(</span><span class="n">fullname</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Find a PEP 302 &quot;loader&quot; object for fullname</span>
 
 <span class="sd">    If fullname contains dots, path must be the containing package&#39;s __path__.</span>
@@ -626,7 +626,7 @@
     <span class="k">return</span> <span class="bp">None</span></div>
 
 
-<div class="viewcode-block" id="extend_path"><a class="viewcode-back" href="../generated/pkgutil.extend_path.html#pkgutil.extend_path">[docs]</a><span class="k">def</span> <span class="nf">extend_path</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<div class="viewcode-block" id="extend_path"><a class="viewcode-back" href="../generated/generated/pkgutil.extend_path.html#pkgutil.extend_path">[docs]</a><span class="k">def</span> <span class="nf">extend_path</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Extend a package&#39;s path.</span>
 
 <span class="sd">    Intended use is to place the following code in a package&#39;s __init__.py:</span>
@@ -700,7 +700,7 @@
 
     <span class="k">return</span> <span class="n">path</span></div>
 
-<div class="viewcode-block" id="get_data"><a class="viewcode-back" href="../generated/pkgutil.get_data.html#pkgutil.get_data">[docs]</a><span class="k">def</span> <span class="nf">get_data</span><span class="p">(</span><span class="n">package</span><span class="p">,</span> <span class="n">resource</span><span class="p">):</span>
+<div class="viewcode-block" id="get_data"><a class="viewcode-back" href="../generated/generated/pkgutil.get_data.html#pkgutil.get_data">[docs]</a><span class="k">def</span> <span class="nf">get_data</span><span class="p">(</span><span class="n">package</span><span class="p">,</span> <span class="n">resource</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get a resource from a package.</span>
 
 <span class="sd">    This is a wrapper round the PEP 302 loader get_data API. The package</span>

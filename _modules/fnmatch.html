@@ -168,7 +168,7 @@
     <span class="sd">&quot;&quot;&quot;Clear the pattern cache&quot;&quot;&quot;</span>
     <span class="n">_cache</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 
-<div class="viewcode-block" id="fnmatch"><a class="viewcode-back" href="../generated/fnmatch.fnmatch.html#fnmatch.fnmatch">[docs]</a><span class="k">def</span> <span class="nf">fnmatch</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">pat</span><span class="p">):</span>
+<div class="viewcode-block" id="fnmatch"><a class="viewcode-back" href="../generated/generated/fnmatch.fnmatch.html#fnmatch.fnmatch">[docs]</a><span class="k">def</span> <span class="nf">fnmatch</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">pat</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Test whether FILENAME matches PATTERN.</span>
 
 <span class="sd">    Patterns are Unix shell style:</span>
@@ -189,7 +189,7 @@
     <span class="n">pat</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normcase</span><span class="p">(</span><span class="n">pat</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">fnmatchcase</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">pat</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="filter"><a class="viewcode-back" href="../generated/fnmatch.filter.html#fnmatch.filter">[docs]</a><span class="k">def</span> <span class="nf">filter</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">pat</span><span class="p">):</span>
+<div class="viewcode-block" id="filter"><a class="viewcode-back" href="../generated/generated/fnmatch.filter.html#fnmatch.filter">[docs]</a><span class="k">def</span> <span class="nf">filter</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">pat</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the subset of the list NAMES that match PAT&quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span><span class="nn">posixpath</span>
     <span class="n">result</span><span class="o">=</span><span class="p">[]</span>
@@ -213,7 +213,7 @@
                 <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">result</span></div>
 
-<div class="viewcode-block" id="fnmatchcase"><a class="viewcode-back" href="../generated/fnmatch.fnmatchcase.html#fnmatch.fnmatchcase">[docs]</a><span class="k">def</span> <span class="nf">fnmatchcase</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">pat</span><span class="p">):</span>
+<div class="viewcode-block" id="fnmatchcase"><a class="viewcode-back" href="../generated/generated/fnmatch.fnmatchcase.html#fnmatch.fnmatchcase">[docs]</a><span class="k">def</span> <span class="nf">fnmatchcase</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">pat</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Test whether FILENAME matches PATTERN, including case.</span>
 
 <span class="sd">    This is a version of fnmatch() which doesn&#39;t case-normalize</span>
@@ -229,7 +229,7 @@
         <span class="n">_cache</span><span class="p">[</span><span class="n">pat</span><span class="p">]</span> <span class="o">=</span> <span class="n">re_pat</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">re_pat</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span></div>
 
-<div class="viewcode-block" id="translate"><a class="viewcode-back" href="../generated/fnmatch.translate.html#fnmatch.translate">[docs]</a><span class="k">def</span> <span class="nf">translate</span><span class="p">(</span><span class="n">pat</span><span class="p">):</span>
+<div class="viewcode-block" id="translate"><a class="viewcode-back" href="../generated/generated/fnmatch.translate.html#fnmatch.translate">[docs]</a><span class="k">def</span> <span class="nf">translate</span><span class="p">(</span><span class="n">pat</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Translate a shell PATTERN to a regular expression.</span>
 
 <span class="sd">    There is no way to quote meta-characters.</span>

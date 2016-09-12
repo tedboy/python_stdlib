@@ -188,7 +188,7 @@
 
 <span class="c1"># Base64 encoding/decoding uses binascii</span>
 
-<div class="viewcode-block" id="b64encode"><a class="viewcode-back" href="../generated/base64.b64encode.html#base64.b64encode">[docs]</a><span class="k">def</span> <span class="nf">b64encode</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">altchars</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="b64encode"><a class="viewcode-back" href="../generated/generated/base64.b64encode.html#base64.b64encode">[docs]</a><span class="k">def</span> <span class="nf">b64encode</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">altchars</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Encode a string using Base64.</span>
 
 <span class="sd">    s is the string to encode.  Optional altchars must be a string of at least</span>
@@ -205,7 +205,7 @@
     <span class="k">return</span> <span class="n">encoded</span></div>
 
 
-<div class="viewcode-block" id="b64decode"><a class="viewcode-back" href="../generated/base64.b64decode.html#base64.b64decode">[docs]</a><span class="k">def</span> <span class="nf">b64decode</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">altchars</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="b64decode"><a class="viewcode-back" href="../generated/generated/base64.b64decode.html#base64.b64decode">[docs]</a><span class="k">def</span> <span class="nf">b64decode</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">altchars</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decode a Base64 encoded string.</span>
 
 <span class="sd">    s is the string to decode.  Optional altchars must be a string of at least</span>
@@ -226,14 +226,14 @@
         <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="standard_b64encode"><a class="viewcode-back" href="../generated/base64.standard_b64encode.html#base64.standard_b64encode">[docs]</a><span class="k">def</span> <span class="nf">standard_b64encode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="standard_b64encode"><a class="viewcode-back" href="../generated/generated/base64.standard_b64encode.html#base64.standard_b64encode">[docs]</a><span class="k">def</span> <span class="nf">standard_b64encode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Encode a string using the standard Base64 alphabet.</span>
 
 <span class="sd">    s is the string to encode.  The encoded string is returned.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">b64encode</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="standard_b64decode"><a class="viewcode-back" href="../generated/base64.standard_b64decode.html#base64.standard_b64decode">[docs]</a><span class="k">def</span> <span class="nf">standard_b64decode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="standard_b64decode"><a class="viewcode-back" href="../generated/generated/base64.standard_b64decode.html#base64.standard_b64decode">[docs]</a><span class="k">def</span> <span class="nf">standard_b64decode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decode a string encoded with the standard Base64 alphabet.</span>
 
 <span class="sd">    Argument s is the string to decode.  The decoded string is returned.  A</span>
@@ -246,7 +246,7 @@
 <span class="n">_urlsafe_encode_translation</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="n">b</span><span class="s1">&#39;+/&#39;</span><span class="p">,</span> <span class="n">b</span><span class="s1">&#39;-_&#39;</span><span class="p">)</span>
 <span class="n">_urlsafe_decode_translation</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="n">b</span><span class="s1">&#39;-_&#39;</span><span class="p">,</span> <span class="n">b</span><span class="s1">&#39;+/&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="urlsafe_b64encode"><a class="viewcode-back" href="../generated/base64.urlsafe_b64encode.html#base64.urlsafe_b64encode">[docs]</a><span class="k">def</span> <span class="nf">urlsafe_b64encode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="urlsafe_b64encode"><a class="viewcode-back" href="../generated/generated/base64.urlsafe_b64encode.html#base64.urlsafe_b64encode">[docs]</a><span class="k">def</span> <span class="nf">urlsafe_b64encode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Encode a string using the URL- and filesystem-safe Base64 alphabet.</span>
 
 <span class="sd">    Argument s is the string to encode.  The encoded string is returned.  The</span>
@@ -254,7 +254,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">b64encode</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">_urlsafe_encode_translation</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="urlsafe_b64decode"><a class="viewcode-back" href="../generated/base64.urlsafe_b64decode.html#base64.urlsafe_b64decode">[docs]</a><span class="k">def</span> <span class="nf">urlsafe_b64decode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="urlsafe_b64decode"><a class="viewcode-back" href="../generated/generated/base64.urlsafe_b64decode.html#base64.urlsafe_b64decode">[docs]</a><span class="k">def</span> <span class="nf">urlsafe_b64decode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decode a string using the URL- and filesystem-safe Base64 alphabet.</span>
 
 <span class="sd">    Argument s is the string to decode.  The decoded string is returned.  A</span>
@@ -288,7 +288,7 @@
 <span class="n">_b32rev</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">([(</span><span class="n">v</span><span class="p">,</span> <span class="nb">long</span><span class="p">(</span><span class="n">k</span><span class="p">))</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">_b32alphabet</span><span class="o">.</span><span class="n">items</span><span class="p">()])</span>
 
 
-<div class="viewcode-block" id="b32encode"><a class="viewcode-back" href="../generated/base64.b32encode.html#base64.b32encode">[docs]</a><span class="k">def</span> <span class="nf">b32encode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="b32encode"><a class="viewcode-back" href="../generated/generated/base64.b32encode.html#base64.b32encode">[docs]</a><span class="k">def</span> <span class="nf">b32encode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Encode a string using Base32.</span>
 
 <span class="sd">    s is the string to encode.  The encoded string is returned.</span>
@@ -330,7 +330,7 @@
     <span class="k">return</span> <span class="n">encoded</span></div>
 
 
-<div class="viewcode-block" id="b32decode"><a class="viewcode-back" href="../generated/base64.b32decode.html#base64.b32decode">[docs]</a><span class="k">def</span> <span class="nf">b32decode</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">casefold</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">map01</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="b32decode"><a class="viewcode-back" href="../generated/generated/base64.b32decode.html#base64.b32decode">[docs]</a><span class="k">def</span> <span class="nf">b32decode</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">casefold</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">map01</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decode a Base32 encoded string.</span>
 
 <span class="sd">    s is the string to decode.  Optional casefold is a flag specifying whether</span>
@@ -405,7 +405,7 @@
 <span class="c1"># RFC 3548, Base 16 Alphabet specifies uppercase, but hexlify() returns</span>
 <span class="c1"># lowercase.  The RFC also recommends against accepting input case</span>
 <span class="c1"># insensitively.</span>
-<div class="viewcode-block" id="b16encode"><a class="viewcode-back" href="../generated/base64.b16encode.html#base64.b16encode">[docs]</a><span class="k">def</span> <span class="nf">b16encode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="b16encode"><a class="viewcode-back" href="../generated/generated/base64.b16encode.html#base64.b16encode">[docs]</a><span class="k">def</span> <span class="nf">b16encode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Encode a string using Base16.</span>
 
 <span class="sd">    s is the string to encode.  The encoded string is returned.</span>
@@ -413,7 +413,7 @@
     <span class="k">return</span> <span class="n">binascii</span><span class="o">.</span><span class="n">hexlify</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span></div>
 
 
-<div class="viewcode-block" id="b16decode"><a class="viewcode-back" href="../generated/base64.b16decode.html#base64.b16decode">[docs]</a><span class="k">def</span> <span class="nf">b16decode</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">casefold</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+<div class="viewcode-block" id="b16decode"><a class="viewcode-back" href="../generated/generated/base64.b16decode.html#base64.b16decode">[docs]</a><span class="k">def</span> <span class="nf">b16decode</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">casefold</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decode a Base16 encoded string.</span>
 
 <span class="sd">    s is the string to decode.  Optional casefold is a flag specifying whether</span>
@@ -440,7 +440,7 @@
 <span class="n">MAXLINESIZE</span> <span class="o">=</span> <span class="mi">76</span> <span class="c1"># Excluding the CRLF</span>
 <span class="n">MAXBINSIZE</span> <span class="o">=</span> <span class="p">(</span><span class="n">MAXLINESIZE</span><span class="o">//</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="mi">3</span>
 
-<div class="viewcode-block" id="encode"><a class="viewcode-back" href="../generated/base64.encode.html#base64.encode">[docs]</a><span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+<div class="viewcode-block" id="encode"><a class="viewcode-back" href="../generated/generated/base64.encode.html#base64.encode">[docs]</a><span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Encode a file.&quot;&quot;&quot;</span>
     <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
         <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">MAXBINSIZE</span><span class="p">)</span>
@@ -455,7 +455,7 @@
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="decode"><a class="viewcode-back" href="../generated/base64.decode.html#base64.decode">[docs]</a><span class="k">def</span> <span class="nf">decode</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+<div class="viewcode-block" id="decode"><a class="viewcode-back" href="../generated/generated/base64.decode.html#base64.decode">[docs]</a><span class="k">def</span> <span class="nf">decode</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decode a file.&quot;&quot;&quot;</span>
     <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
         <span class="n">line</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
@@ -465,7 +465,7 @@
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="encodestring"><a class="viewcode-back" href="../generated/base64.encodestring.html#base64.encodestring">[docs]</a><span class="k">def</span> <span class="nf">encodestring</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="encodestring"><a class="viewcode-back" href="../generated/generated/base64.encodestring.html#base64.encodestring">[docs]</a><span class="k">def</span> <span class="nf">encodestring</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Encode a string into multiple lines of base-64 data.&quot;&quot;&quot;</span>
     <span class="n">pieces</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="n">MAXBINSIZE</span><span class="p">):</span>
@@ -474,7 +474,7 @@
     <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pieces</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="decodestring"><a class="viewcode-back" href="../generated/base64.decodestring.html#base64.decodestring">[docs]</a><span class="k">def</span> <span class="nf">decodestring</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="decodestring"><a class="viewcode-back" href="../generated/generated/base64.decodestring.html#base64.decodestring">[docs]</a><span class="k">def</span> <span class="nf">decodestring</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decode a string.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">binascii</span><span class="o">.</span><span class="n">a2b_base64</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></div>
 
@@ -482,7 +482,7 @@
 
 
 <span class="c1"># Useable as a script...</span>
-<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/base64.test.html#base64.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
+<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/generated/base64.test.html#base64.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Small test program&quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">getopt</span>
     <span class="k">try</span><span class="p">:</span>
@@ -508,7 +508,7 @@
         <span class="n">func</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="test1"><a class="viewcode-back" href="../generated/base64.test1.html#base64.test1">[docs]</a><span class="k">def</span> <span class="nf">test1</span><span class="p">():</span>
+<div class="viewcode-block" id="test1"><a class="viewcode-back" href="../generated/generated/base64.test1.html#base64.test1">[docs]</a><span class="k">def</span> <span class="nf">test1</span><span class="p">():</span>
     <span class="n">s0</span> <span class="o">=</span> <span class="s2">&quot;Aladdin:open sesame&quot;</span>
     <span class="n">s1</span> <span class="o">=</span> <span class="n">encodestring</span><span class="p">(</span><span class="n">s0</span><span class="p">)</span>
     <span class="n">s2</span> <span class="o">=</span> <span class="n">decodestring</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>

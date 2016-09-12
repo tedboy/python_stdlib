@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       StringIO
       readPlist
@@ -19,6 +19,20 @@
       writePlist
       writePlistToResource
       writePlistToString
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/plistlib.StringIO
+       generated/plistlib.readPlist
+       generated/plistlib.readPlistFromResource
+       generated/plistlib.readPlistFromString
+       generated/plistlib.writePlist
+       generated/plistlib.writePlistToResource
+       generated/plistlib.writePlistToString
+      
    
    
 

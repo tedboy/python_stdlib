@@ -491,7 +491,7 @@
 
 <span class="n">nobody</span> <span class="o">=</span> <span class="bp">None</span>
 
-<div class="viewcode-block" id="nobody_uid"><a class="viewcode-back" href="../generated/CGIHTTPServer.nobody_uid.html#CGIHTTPServer.nobody_uid">[docs]</a><span class="k">def</span> <span class="nf">nobody_uid</span><span class="p">():</span>
+<div class="viewcode-block" id="nobody_uid"><a class="viewcode-back" href="../generated/generated/CGIHTTPServer.nobody_uid.html#CGIHTTPServer.nobody_uid">[docs]</a><span class="k">def</span> <span class="nf">nobody_uid</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Internal routine to get nobody&#39;s uid&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">nobody</span>
     <span class="k">if</span> <span class="n">nobody</span><span class="p">:</span>
@@ -507,7 +507,7 @@
     <span class="k">return</span> <span class="n">nobody</span></div>
 
 
-<div class="viewcode-block" id="executable"><a class="viewcode-back" href="../generated/CGIHTTPServer.executable.html#CGIHTTPServer.executable">[docs]</a><span class="k">def</span> <span class="nf">executable</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="executable"><a class="viewcode-back" href="../generated/generated/CGIHTTPServer.executable.html#CGIHTTPServer.executable">[docs]</a><span class="k">def</span> <span class="nf">executable</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Test for executable file.&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">st</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
@@ -516,7 +516,7 @@
     <span class="k">return</span> <span class="n">st</span><span class="o">.</span><span class="n">st_mode</span> <span class="o">&amp;</span> <span class="mo">0111</span> <span class="o">!=</span> <span class="mi">0</span></div>
 
 
-<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/CGIHTTPServer.test.html#CGIHTTPServer.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">HandlerClass</span> <span class="o">=</span> <span class="n">CGIHTTPRequestHandler</span><span class="p">,</span>
+<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/generated/CGIHTTPServer.test.html#CGIHTTPServer.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">HandlerClass</span> <span class="o">=</span> <span class="n">CGIHTTPRequestHandler</span><span class="p">,</span>
          <span class="n">ServerClass</span> <span class="o">=</span> <span class="n">BaseHTTPServer</span><span class="o">.</span><span class="n">HTTPServer</span><span class="p">):</span>
     <span class="n">SimpleHTTPServer</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="n">HandlerClass</span><span class="p">,</span> <span class="n">ServerClass</span><span class="p">)</span></div>
 

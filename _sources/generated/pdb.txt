@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       find_function
       help
@@ -23,6 +23,24 @@
       runeval
       set_trace
       test
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pdb.find_function
+       generated/pdb.help
+       generated/pdb.main
+       generated/pdb.pm
+       generated/pdb.post_mortem
+       generated/pdb.run
+       generated/pdb.runcall
+       generated/pdb.runctx
+       generated/pdb.runeval
+       generated/pdb.set_trace
+       generated/pdb.test
+      
    
    
 

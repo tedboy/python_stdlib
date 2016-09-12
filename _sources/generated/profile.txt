@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       Stats
       help
@@ -18,6 +18,19 @@
       resgetrusage
       run
       runctx
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/profile.Stats
+       generated/profile.help
+       generated/profile.main
+       generated/profile.resgetrusage
+       generated/profile.run
+       generated/profile.runctx
+      
    
    
 

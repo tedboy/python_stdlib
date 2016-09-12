@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       a2b_base64
       a2b_hex
@@ -28,6 +28,29 @@
       rlecode_hqx
       rledecode_hqx
       unhexlify
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/binascii.a2b_base64
+       generated/binascii.a2b_hex
+       generated/binascii.a2b_hqx
+       generated/binascii.a2b_qp
+       generated/binascii.a2b_uu
+       generated/binascii.b2a_base64
+       generated/binascii.b2a_hex
+       generated/binascii.b2a_hqx
+       generated/binascii.b2a_qp
+       generated/binascii.b2a_uu
+       generated/binascii.crc32
+       generated/binascii.crc_hqx
+       generated/binascii.hexlify
+       generated/binascii.rlecode_hqx
+       generated/binascii.rledecode_hqx
+       generated/binascii.unhexlify
+      
    
    
 

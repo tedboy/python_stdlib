@@ -294,7 +294,7 @@ reference (for encoding only)</li>
 <li><code class="docutils literal"><span class="pre">'backslashreplace'</span></code>: replace with backslashed escape sequences (for
 encoding only)</li>
 </ul>
-<p>as well as any other error handling name defined via <a class="reference internal" href="../generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">register_error()</span></code></a>.</p>
+<p>as well as any other error handling name defined via <a class="reference internal" href="../generated/generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">register_error()</span></code></a>.</p>
 <p>In case a search function cannot find a given encoding, it should return
 <code class="docutils literal"><span class="pre">None</span></code>.</p>
 </dd></dl>
@@ -311,7 +311,7 @@ is stored in the cache and returned to the caller.</p>
 </dd></dl>
 
 <p>To simplify access to the various codecs, the module provides these additional
-functions which use <a class="reference internal" href="../generated/codecs.lookup.html#codecs.lookup" title="codecs.lookup"><code class="xref py py-func docutils literal"><span class="pre">lookup()</span></code></a> for the codec lookup:</p>
+functions which use <a class="reference internal" href="../generated/generated/codecs.lookup.html#codecs.lookup" title="codecs.lookup"><code class="xref py py-func docutils literal"><span class="pre">lookup()</span></code></a> for the codec lookup:</p>
 <dl class="function">
 <dt id="codecs.getencoder">
 <code class="descclassname">codecs.</code><code class="descname">getencoder</code><span class="sig-paren">(</span><em>encoding</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/codecs.html#getencoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#codecs.getencoder" title="Permalink to this definition">¶</a></dt>
@@ -575,7 +575,7 @@ reference (only for encoding).</td>
 </tr>
 </tbody>
 </table>
-<p>The set of allowed values can be extended via <a class="reference internal" href="../generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-meth docutils literal"><span class="pre">register_error()</span></code></a>.</p>
+<p>The set of allowed values can be extended via <a class="reference internal" href="../generated/generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-meth docutils literal"><span class="pre">register_error()</span></code></a>.</p>
 <div class="section" id="codec-objects">
 <span id="id2"></span><h3><a class="toc-backref" href="#id8">8.1.1. Codec Objects</a><a class="headerlink" href="#codec-objects" title="Permalink to this headline">¶</a></h3>
 <p>The <a class="reference internal" href="../generated/generated/codecs.Codec.html#codecs.Codec" title="codecs.Codec"><code class="xref py py-class docutils literal"><span class="pre">Codec</span></code></a> class defines these methods which also define the function
@@ -655,13 +655,13 @@ Assigning to this attribute makes it possible to switch between different error
 handling strategies during the lifetime of the <a class="reference internal" href="../generated/generated/codecs.IncrementalEncoder.html#codecs.IncrementalEncoder" title="codecs.IncrementalEncoder"><code class="xref py py-class docutils literal"><span class="pre">IncrementalEncoder</span></code></a>
 object.</p>
 <p>The set of allowed values for the <em>errors</em> argument can be extended with
-<a class="reference internal" href="../generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">register_error()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">register_error()</span></code></a>.</p>
 <dl class="method">
 <dt id="codecs.IncrementalEncoder.encode">
 <code class="descname">encode</code><span class="sig-paren">(</span><em>object</em><span class="optional">[</span>, <em>final</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/codecs.html#IncrementalEncoder.encode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#codecs.IncrementalEncoder.encode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Encodes <em>object</em> (taking the current state of the encoder into account)
 and returns the resulting encoded object. If this is the last call to
-<a class="reference internal" href="../generated/codecs.encode.html#codecs.encode" title="codecs.encode"><code class="xref py py-meth docutils literal"><span class="pre">encode()</span></code></a> <em>final</em> must be true (the default is false).</p>
+<a class="reference internal" href="../generated/generated/codecs.encode.html#codecs.encode" title="codecs.encode"><code class="xref py py-meth docutils literal"><span class="pre">encode()</span></code></a> <em>final</em> must be true (the default is false).</p>
 </dd></dl>
 
 <dl class="method">
@@ -697,13 +697,13 @@ Assigning to this attribute makes it possible to switch between different error
 handling strategies during the lifetime of the <a class="reference internal" href="../generated/generated/codecs.IncrementalDecoder.html#codecs.IncrementalDecoder" title="codecs.IncrementalDecoder"><code class="xref py py-class docutils literal"><span class="pre">IncrementalDecoder</span></code></a>
 object.</p>
 <p>The set of allowed values for the <em>errors</em> argument can be extended with
-<a class="reference internal" href="../generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">register_error()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">register_error()</span></code></a>.</p>
 <dl class="method">
 <dt id="codecs.IncrementalDecoder.decode">
 <code class="descname">decode</code><span class="sig-paren">(</span><em>object</em><span class="optional">[</span>, <em>final</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/codecs.html#IncrementalDecoder.decode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#codecs.IncrementalDecoder.decode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Decodes <em>object</em> (taking the current state of the decoder into account)
 and returns the resulting decoded object. If this is the last call to
-<a class="reference internal" href="../generated/codecs.decode.html#codecs.decode" title="codecs.decode"><code class="xref py py-meth docutils literal"><span class="pre">decode()</span></code></a> <em>final</em> must be true (the default is false). If <em>final</em> is
+<a class="reference internal" href="../generated/generated/codecs.decode.html#codecs.decode" title="codecs.decode"><code class="xref py py-meth docutils literal"><span class="pre">decode()</span></code></a> <em>final</em> must be true (the default is false). If <em>final</em> is
 true the decoder must decode the input completely and must flush all
 buffers. If this isn&#8217;t possible (e.g. because of incomplete byte sequences
 at the end of the input) it must initiate error handling just like in the
@@ -748,7 +748,7 @@ providing the <em>errors</em> keyword argument. These parameters are predefined:
 Assigning to this attribute makes it possible to switch between different error
 handling strategies during the lifetime of the <a class="reference internal" href="../generated/generated/codecs.StreamWriter.html#codecs.StreamWriter" title="codecs.StreamWriter"><code class="xref py py-class docutils literal"><span class="pre">StreamWriter</span></code></a> object.</p>
 <p>The set of allowed values for the <em>errors</em> argument can be extended with
-<a class="reference internal" href="../generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">register_error()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">register_error()</span></code></a>.</p>
 <dl class="method">
 <dt id="codecs.StreamWriter.write">
 <code class="descname">write</code><span class="sig-paren">(</span><em>object</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/codecs.html#StreamWriter.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#codecs.StreamWriter.write" title="Permalink to this definition">¶</a></dt>
@@ -800,7 +800,7 @@ providing the <em>errors</em> keyword argument. These parameters are defined:</p
 Assigning to this attribute makes it possible to switch between different error
 handling strategies during the lifetime of the <a class="reference internal" href="../generated/generated/codecs.StreamReader.html#codecs.StreamReader" title="codecs.StreamReader"><code class="xref py py-class docutils literal"><span class="pre">StreamReader</span></code></a> object.</p>
 <p>The set of allowed values for the <em>errors</em> argument can be extended with
-<a class="reference internal" href="../generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">register_error()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">register_error()</span></code></a>.</p>
 <dl class="method">
 <dt id="codecs.StreamReader.read">
 <code class="descname">read</code><span class="sig-paren">(</span><span class="optional">[</span><em>size</em><span class="optional">[</span>, <em>chars</em><span class="optional">[</span>, <em>firstline</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/codecs.html#StreamReader.read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#codecs.StreamReader.read" title="Permalink to this definition">¶</a></dt>
@@ -871,7 +871,7 @@ the codec registry, but may provide useful in practice.</p>
 <p>The <a class="reference internal" href="../generated/generated/codecs.StreamReaderWriter.html#codecs.StreamReaderWriter" title="codecs.StreamReaderWriter"><code class="xref py py-class docutils literal"><span class="pre">StreamReaderWriter</span></code></a> allows wrapping streams which work in both read
 and write modes.</p>
 <p>The design is such that one can use the factory functions returned by the
-<a class="reference internal" href="../generated/codecs.lookup.html#codecs.lookup" title="codecs.lookup"><code class="xref py py-func docutils literal"><span class="pre">lookup()</span></code></a> function to construct the instance.</p>
+<a class="reference internal" href="../generated/generated/codecs.lookup.html#codecs.lookup" title="codecs.lookup"><code class="xref py py-func docutils literal"><span class="pre">lookup()</span></code></a> function to construct the instance.</p>
 <dl class="class">
 <dt id="codecs.StreamReaderWriter">
 <em class="property">class </em><code class="descclassname">codecs.</code><code class="descname">StreamReaderWriter</code><span class="sig-paren">(</span><em>stream</em>, <em>Reader</em>, <em>Writer</em>, <em>errors</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/codecs.html#StreamReaderWriter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#codecs.StreamReaderWriter" title="Permalink to this definition">¶</a></dt>
@@ -890,7 +890,7 @@ methods and attributes from the underlying stream.</p>
 <p>The <a class="reference internal" href="../generated/generated/codecs.StreamRecoder.html#codecs.StreamRecoder" title="codecs.StreamRecoder"><code class="xref py py-class docutils literal"><span class="pre">StreamRecoder</span></code></a> provide a frontend - backend view of encoding data
 which is sometimes useful when dealing with different encoding environments.</p>
 <p>The design is such that one can use the factory functions returned by the
-<a class="reference internal" href="../generated/codecs.lookup.html#codecs.lookup" title="codecs.lookup"><code class="xref py py-func docutils literal"><span class="pre">lookup()</span></code></a> function to construct the instance.</p>
+<a class="reference internal" href="../generated/generated/codecs.lookup.html#codecs.lookup" title="codecs.lookup"><code class="xref py py-func docutils literal"><span class="pre">lookup()</span></code></a> function to construct the instance.</p>
 <dl class="class">
 <dt id="codecs.StreamRecoder">
 <em class="property">class </em><code class="descclassname">codecs.</code><code class="descname">StreamRecoder</code><span class="sig-paren">(</span><em>stream</em>, <em>encode</em>, <em>decode</em>, <em>Reader</em>, <em>Writer</em>, <em>errors</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/codecs.html#StreamRecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#codecs.StreamRecoder" title="Permalink to this definition">¶</a></dt>
@@ -1563,15 +1563,15 @@ operand</td>
 multiline MIME base64 (the
 result always includes a
 trailing <code class="docutils literal"><span class="pre">'\n'</span></code>)</td>
-<td><a class="reference internal" href="../generated/base64.encodestring.html#base64.encodestring" title="base64.encodestring"><code class="xref py py-meth docutils literal"><span class="pre">base64.encodestring()</span></code></a>,
-<a class="reference internal" href="../generated/base64.decodestring.html#base64.decodestring" title="base64.decodestring"><code class="xref py py-meth docutils literal"><span class="pre">base64.decodestring()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/base64.encodestring.html#base64.encodestring" title="base64.encodestring"><code class="xref py py-meth docutils literal"><span class="pre">base64.encodestring()</span></code></a>,
+<a class="reference internal" href="../generated/generated/base64.decodestring.html#base64.decodestring" title="base64.decodestring"><code class="xref py py-meth docutils literal"><span class="pre">base64.decodestring()</span></code></a></td>
 </tr>
 <tr class="row-odd"><td>bz2_codec</td>
 <td>bz2</td>
 <td>Compress the operand
 using bz2</td>
-<td><a class="reference internal" href="../generated/bz2.compress.html#bz2.compress" title="bz2.compress"><code class="xref py py-meth docutils literal"><span class="pre">bz2.compress()</span></code></a>,
-<a class="reference internal" href="../generated/bz2.decompress.html#bz2.decompress" title="bz2.decompress"><code class="xref py py-meth docutils literal"><span class="pre">bz2.decompress()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/bz2.compress.html#bz2.compress" title="bz2.compress"><code class="xref py py-meth docutils literal"><span class="pre">bz2.compress()</span></code></a>,
+<a class="reference internal" href="../generated/generated/bz2.decompress.html#bz2.decompress" title="bz2.decompress"><code class="xref py py-meth docutils literal"><span class="pre">bz2.decompress()</span></code></a></td>
 </tr>
 <tr class="row-even"><td>hex_codec</td>
 <td>hex</td>
@@ -1579,17 +1579,17 @@ using bz2</td>
 hexadecimal
 representation, with two
 digits per byte</td>
-<td><a class="reference internal" href="../generated/binascii.b2a_hex.html#binascii.b2a_hex" title="binascii.b2a_hex"><code class="xref py py-meth docutils literal"><span class="pre">binascii.b2a_hex()</span></code></a>,
-<a class="reference internal" href="../generated/binascii.a2b_hex.html#binascii.a2b_hex" title="binascii.a2b_hex"><code class="xref py py-meth docutils literal"><span class="pre">binascii.a2b_hex()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/binascii.b2a_hex.html#binascii.b2a_hex" title="binascii.b2a_hex"><code class="xref py py-meth docutils literal"><span class="pre">binascii.b2a_hex()</span></code></a>,
+<a class="reference internal" href="../generated/generated/binascii.a2b_hex.html#binascii.a2b_hex" title="binascii.a2b_hex"><code class="xref py py-meth docutils literal"><span class="pre">binascii.a2b_hex()</span></code></a></td>
 </tr>
 <tr class="row-odd"><td>quopri_codec</td>
 <td>quopri, quoted-printable,
 quotedprintable</td>
 <td>Convert operand to MIME
 quoted printable</td>
-<td><a class="reference internal" href="../generated/quopri.encode.html#quopri.encode" title="quopri.encode"><code class="xref py py-meth docutils literal"><span class="pre">quopri.encode()</span></code></a> with
+<td><a class="reference internal" href="../generated/generated/quopri.encode.html#quopri.encode" title="quopri.encode"><code class="xref py py-meth docutils literal"><span class="pre">quopri.encode()</span></code></a> with
 <code class="docutils literal"><span class="pre">quotetabs=True</span></code>,
-<a class="reference internal" href="../generated/quopri.decode.html#quopri.decode" title="quopri.decode"><code class="xref py py-meth docutils literal"><span class="pre">quopri.decode()</span></code></a></td>
+<a class="reference internal" href="../generated/generated/quopri.decode.html#quopri.decode" title="quopri.decode"><code class="xref py py-meth docutils literal"><span class="pre">quopri.decode()</span></code></a></td>
 </tr>
 <tr class="row-even"><td>string_escape</td>
 <td>&nbsp;</td>
@@ -1603,15 +1603,15 @@ code</td>
 <td>uu</td>
 <td>Convert the operand using
 uuencode</td>
-<td><a class="reference internal" href="../generated/uu.encode.html#uu.encode" title="uu.encode"><code class="xref py py-meth docutils literal"><span class="pre">uu.encode()</span></code></a>,
-<a class="reference internal" href="../generated/uu.decode.html#uu.decode" title="uu.decode"><code class="xref py py-meth docutils literal"><span class="pre">uu.decode()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/uu.encode.html#uu.encode" title="uu.encode"><code class="xref py py-meth docutils literal"><span class="pre">uu.encode()</span></code></a>,
+<a class="reference internal" href="../generated/generated/uu.decode.html#uu.decode" title="uu.decode"><code class="xref py py-meth docutils literal"><span class="pre">uu.decode()</span></code></a></td>
 </tr>
 <tr class="row-even"><td>zlib_codec</td>
 <td>zip, zlib</td>
 <td>Compress the operand
 using gzip</td>
-<td><a class="reference internal" href="../generated/zlib.compress.html#zlib.compress" title="zlib.compress"><code class="xref py py-meth docutils literal"><span class="pre">zlib.compress()</span></code></a>,
-<a class="reference internal" href="../generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">zlib.decompress()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/zlib.compress.html#zlib.compress" title="zlib.compress"><code class="xref py py-meth docutils literal"><span class="pre">zlib.compress()</span></code></a>,
+<a class="reference internal" href="../generated/generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">zlib.decompress()</span></code></a></td>
 </tr>
 </tbody>
 </table>

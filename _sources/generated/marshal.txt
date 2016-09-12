@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       dump
       dumps
       load
       loads
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/marshal.dump
+       generated/marshal.dumps
+       generated/marshal.load
+       generated/marshal.loads
+      
    
    
 

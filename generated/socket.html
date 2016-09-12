@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="socket.MethodType" href="generated/socket.MethodType.html"/>
+        <link rel="next" title="socket.RAND_add()" href="generated/socket.RAND_add.html"/>
         <link rel="prev" title="subprocess.CalledProcessError" href="subprocess.CalledProcessError.html"/> 
 
   
@@ -82,12 +82,104 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="subprocess.html"><code class="docutils literal"><span class="pre">subprocess</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">socket</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.RAND_add.html"><code class="docutils literal"><span class="pre">socket.RAND_add()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.RAND_egd.html"><code class="docutils literal"><span class="pre">socket.RAND_egd()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.RAND_status.html"><code class="docutils literal"><span class="pre">socket.RAND_status()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.StringIO.html"><code class="docutils literal"><span class="pre">socket.StringIO()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.create_connection.html"><code class="docutils literal"><span class="pre">socket.create_connection()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.fromfd.html"><code class="docutils literal"><span class="pre">socket.fromfd()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.getaddrinfo.html"><code class="docutils literal"><span class="pre">socket.getaddrinfo()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.getdefaulttimeout.html"><code class="docutils literal"><span class="pre">socket.getdefaulttimeout()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.getfqdn.html"><code class="docutils literal"><span class="pre">socket.getfqdn()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.gethostbyaddr.html"><code class="docutils literal"><span class="pre">socket.gethostbyaddr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.gethostbyname.html"><code class="docutils literal"><span class="pre">socket.gethostbyname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.gethostbyname_ex.html"><code class="docutils literal"><span class="pre">socket.gethostbyname_ex()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.gethostname.html"><code class="docutils literal"><span class="pre">socket.gethostname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.getnameinfo.html"><code class="docutils literal"><span class="pre">socket.getnameinfo()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.getprotobyname.html"><code class="docutils literal"><span class="pre">socket.getprotobyname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.getservbyname.html"><code class="docutils literal"><span class="pre">socket.getservbyname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.getservbyport.html"><code class="docutils literal"><span class="pre">socket.getservbyport()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.htonl.html"><code class="docutils literal"><span class="pre">socket.htonl()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.htons.html"><code class="docutils literal"><span class="pre">socket.htons()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.inet_aton.html"><code class="docutils literal"><span class="pre">socket.inet_aton()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.inet_ntoa.html"><code class="docutils literal"><span class="pre">socket.inet_ntoa()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.inet_ntop.html"><code class="docutils literal"><span class="pre">socket.inet_ntop()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.inet_pton.html"><code class="docutils literal"><span class="pre">socket.inet_pton()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.meth.html"><code class="docutils literal"><span class="pre">socket.meth()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.ntohl.html"><code class="docutils literal"><span class="pre">socket.ntohl()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.ntohs.html"><code class="docutils literal"><span class="pre">socket.ntohs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.setdefaulttimeout.html"><code class="docutils literal"><span class="pre">socket.setdefaulttimeout()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.socketpair.html"><code class="docutils literal"><span class="pre">socket.socketpair()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.ssl.html"><code class="docutils literal"><span class="pre">socket.ssl()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.MethodType.html"><code class="docutils literal"><span class="pre">socket.MethodType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.SocketType.html"><code class="docutils literal"><span class="pre">socket.SocketType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.partial.html"><code class="docutils literal"><span class="pre">socket.partial</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/socket.socket.html"><code class="docutils literal"><span class="pre">socket.socket</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="socket.error.html">socket.error</a></li>
+<li class="toctree-l5"><a class="reference internal" href="socket.gaierror.html">socket.gaierror</a></li>
+<li class="toctree-l5"><a class="reference internal" href="socket.herror.html">socket.herror</a></li>
+<li class="toctree-l5"><a class="reference internal" href="socket.sslerror.html">socket.sslerror</a></li>
+<li class="toctree-l5"><a class="reference internal" href="socket.timeout.html">socket.timeout</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ssl.html"><code class="docutils literal"><span class="pre">ssl</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html"><code class="docutils literal"><span class="pre">signal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="popen2.html"><code class="docutils literal"><span class="pre">popen2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="asyncore.html"><code class="docutils literal"><span class="pre">asyncore</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="asynchat.html"><code class="docutils literal"><span class="pre">asynchat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -187,6 +279,103 @@ SOCK_STREAM, SOCK_DGRAM, SOCK_RAW &#8211; socket types (second argument)</p>
 the setsockopt() and getsockopt() methods.</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.RAND_add.html#socket.RAND_add" title="socket.RAND_add"><code class="xref py py-obj docutils literal"><span class="pre">RAND_add</span></code></a>(string,&nbsp;entropy)</td>
+<td>Mix string into the OpenSSL PRNG state.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.RAND_egd.html#socket.RAND_egd" title="socket.RAND_egd"><code class="xref py py-obj docutils literal"><span class="pre">RAND_egd</span></code></a>((path)&nbsp;-&gt;&nbsp;bytes)</td>
+<td>Queries the entropy gather daemon (EGD) on the socket named by &#8216;path&#8217;.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.RAND_status.html#socket.RAND_status" title="socket.RAND_status"><code class="xref py py-obj docutils literal"><span class="pre">RAND_status</span></code></a>(()&nbsp;-&gt;&nbsp;0&nbsp;or&nbsp;1)</td>
+<td>Returns 1 if the OpenSSL PRNG has been seeded with enough data and 0 if not.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.StringIO.html#socket.StringIO" title="socket.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
+<td>StringIO([s]) &#8211; Return a StringIO-like stream for reading or writing</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.create_connection.html#socket.create_connection" title="socket.create_connection"><code class="xref py py-obj docutils literal"><span class="pre">create_connection</span></code></a>(address[,&nbsp;timeout,&nbsp;...])</td>
+<td>Connect to <em>address</em> and return the socket object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.fromfd.html#socket.fromfd" title="socket.fromfd"><code class="xref py py-obj docutils literal"><span class="pre">fromfd</span></code></a>((fd,&nbsp;family,&nbsp;type[,&nbsp;...)</td>
+<td>Create a socket object from a duplicate of the given file descriptor.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.getaddrinfo.html#socket.getaddrinfo" title="socket.getaddrinfo"><code class="xref py py-obj docutils literal"><span class="pre">getaddrinfo</span></code></a>(host,&nbsp;port&nbsp;[,&nbsp;family,&nbsp;socktype,&nbsp;...)</td>
+<td>-&gt; list of (family, socktype, proto, canonname, sockaddr)</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.getdefaulttimeout.html#socket.getdefaulttimeout" title="socket.getdefaulttimeout"><code class="xref py py-obj docutils literal"><span class="pre">getdefaulttimeout</span></code></a>(()&nbsp;-&gt;&nbsp;timeout)</td>
+<td>Returns the default timeout in seconds (float) for new socket objects.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.getfqdn.html#socket.getfqdn" title="socket.getfqdn"><code class="xref py py-obj docutils literal"><span class="pre">getfqdn</span></code></a>([name])</td>
+<td>Get fully qualified domain name from name.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.gethostbyaddr.html#socket.gethostbyaddr" title="socket.gethostbyaddr"><code class="xref py py-obj docutils literal"><span class="pre">gethostbyaddr</span></code></a>(host)&nbsp;-&gt;&nbsp;(name,&nbsp;aliaslist,&nbsp;...)</td>
+<td>Return the true host name, a list of aliases, and a list of IP addresses, for a host.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.gethostbyname.html#socket.gethostbyname" title="socket.gethostbyname"><code class="xref py py-obj docutils literal"><span class="pre">gethostbyname</span></code></a>((host)&nbsp;-&gt;&nbsp;address)</td>
+<td>Return the IP address (a string of the form &#8216;255.255.255.255&#8217;) for a host.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.gethostbyname_ex.html#socket.gethostbyname_ex" title="socket.gethostbyname_ex"><code class="xref py py-obj docutils literal"><span class="pre">gethostbyname_ex</span></code></a>(host)&nbsp;-&gt;&nbsp;(name,&nbsp;aliaslist,&nbsp;...)</td>
+<td>Return the true host name, a list of aliases, and a list of IP addresses, for a host.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.gethostname.html#socket.gethostname" title="socket.gethostname"><code class="xref py py-obj docutils literal"><span class="pre">gethostname</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the current host name.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.getnameinfo.html#socket.getnameinfo" title="socket.getnameinfo"><code class="xref py py-obj docutils literal"><span class="pre">getnameinfo</span></code></a>(sockaddr,&nbsp;flags)&nbsp;&#8211;&gt;&nbsp;(host,&nbsp;port)</td>
+<td>Get host and port for a sockaddr.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.getprotobyname.html#socket.getprotobyname" title="socket.getprotobyname"><code class="xref py py-obj docutils literal"><span class="pre">getprotobyname</span></code></a>((name)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the protocol number for the named protocol.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.getservbyname.html#socket.getservbyname" title="socket.getservbyname"><code class="xref py py-obj docutils literal"><span class="pre">getservbyname</span></code></a>((servicename[,&nbsp;...)</td>
+<td>Return a port number from a service name and protocol name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.getservbyport.html#socket.getservbyport" title="socket.getservbyport"><code class="xref py py-obj docutils literal"><span class="pre">getservbyport</span></code></a>((port[,&nbsp;protocolname])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the service name from a port number and protocol name.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.htonl.html#socket.htonl" title="socket.htonl"><code class="xref py py-obj docutils literal"><span class="pre">htonl</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Convert a 32-bit integer from host to network byte order.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.htons.html#socket.htons" title="socket.htons"><code class="xref py py-obj docutils literal"><span class="pre">htons</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Convert a 16-bit integer from host to network byte order.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.inet_aton.html#socket.inet_aton" title="socket.inet_aton"><code class="xref py py-obj docutils literal"><span class="pre">inet_aton</span></code></a>(...)</td>
+<td>Convert an IP address in string format (123.45.67.89) to the 32-bit packed binary format used in low-level network functions.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.inet_ntoa.html#socket.inet_ntoa" title="socket.inet_ntoa"><code class="xref py py-obj docutils literal"><span class="pre">inet_ntoa</span></code></a>((packed_ip)&nbsp;-&gt;&nbsp;ip_address_string)</td>
+<td>Convert an IP address from 32-bit packed binary format to string format</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.inet_ntop.html#socket.inet_ntop" title="socket.inet_ntop"><code class="xref py py-obj docutils literal"><span class="pre">inet_ntop</span></code></a>((af,&nbsp;...)</td>
+<td>Convert a packed IP address of the given family to string format.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.inet_pton.html#socket.inet_pton" title="socket.inet_pton"><code class="xref py py-obj docutils literal"><span class="pre">inet_pton</span></code></a>((af,&nbsp;ip)&nbsp;-&gt;&nbsp;packed&nbsp;IP&nbsp;address&nbsp;string)</td>
+<td>Convert an IP address from string format to a packed string suitable for use with low-level network functions.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.meth.html#socket.meth" title="socket.meth"><code class="xref py py-obj docutils literal"><span class="pre">meth</span></code></a>(name,&nbsp;self,&nbsp;*args)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.ntohl.html#socket.ntohl" title="socket.ntohl"><code class="xref py py-obj docutils literal"><span class="pre">ntohl</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Convert a 32-bit integer from network to host byte order.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.ntohs.html#socket.ntohs" title="socket.ntohs"><code class="xref py py-obj docutils literal"><span class="pre">ntohs</span></code></a>((integer)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Convert a 16-bit integer from network to host byte order.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.setdefaulttimeout.html#socket.setdefaulttimeout" title="socket.setdefaulttimeout"><code class="xref py py-obj docutils literal"><span class="pre">setdefaulttimeout</span></code></a>(timeout)</td>
+<td>Set the default timeout in seconds (float) for new socket objects.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/socket.socketpair.html#socket.socketpair" title="socket.socketpair"><code class="xref py py-obj docutils literal"><span class="pre">socketpair</span></code></a>([family[,&nbsp;type[,&nbsp;...)</td>
+<td>Create a pair of socket objects from the sockets returned by the platform socketpair() function.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/socket.ssl.html#socket.ssl" title="socket.ssl"><code class="xref py py-obj docutils literal"><span class="pre">ssl</span></code></a>(sock[,&nbsp;keyfile,&nbsp;certfile])</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -248,7 +437,7 @@ the setsockopt() and getsockopt() methods.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/socket.MethodType.html" class="btn btn-neutral float-right" title="socket.MethodType" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/socket.RAND_add.html" class="btn btn-neutral float-right" title="socket.RAND_add()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="subprocess.CalledProcessError.html" class="btn btn-neutral" title="subprocess.CalledProcessError" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

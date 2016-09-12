@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       filterwarnings
       formatwarning
@@ -20,6 +20,21 @@
       warn
       warn_explicit
       warnpy3k
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/warnings.filterwarnings
+       generated/warnings.formatwarning
+       generated/warnings.resetwarnings
+       generated/warnings.showwarning
+       generated/warnings.simplefilter
+       generated/warnings.warn
+       generated/warnings.warn_explicit
+       generated/warnings.warnpy3k
+      
    
    
 

@@ -220,7 +220,7 @@ common in texts because of its suitability for in-place sorting).</p>
 surprises: <code class="docutils literal"><span class="pre">heap[0]</span></code> is the smallest item, and <code class="docutils literal"><span class="pre">heap.sort()</span></code> maintains the
 heap invariant!</p>
 <p>To create a heap, use a list initialized to <code class="docutils literal"><span class="pre">[]</span></code>, or you can transform a
-populated list into a heap via function <a class="reference internal" href="../generated/heapq.heapify.html#heapq.heapify" title="heapq.heapify"><code class="xref py py-func docutils literal"><span class="pre">heapify()</span></code></a>.</p>
+populated list into a heap via function <a class="reference internal" href="../generated/generated/heapq.heapify.html#heapq.heapify" title="heapq.heapify"><code class="xref py py-func docutils literal"><span class="pre">heapify()</span></code></a>.</p>
 <p>The following functions are provided:</p>
 <dl class="function">
 <dt id="heapq.heappush">
@@ -240,8 +240,8 @@ smallest item without popping it, use <code class="docutils literal"><span class
 <dt id="heapq.heappushpop">
 <code class="descclassname">heapq.</code><code class="descname">heappushpop</code><span class="sig-paren">(</span><em>heap</em>, <em>item</em><span class="sig-paren">)</span><a class="headerlink" href="#heapq.heappushpop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Push <em>item</em> on the heap, then pop and return the smallest item from the
-<em>heap</em>.  The combined action runs more efficiently than <a class="reference internal" href="../generated/heapq.heappush.html#heapq.heappush" title="heapq.heappush"><code class="xref py py-func docutils literal"><span class="pre">heappush()</span></code></a>
-followed by a separate call to <a class="reference internal" href="../generated/heapq.heappop.html#heapq.heappop" title="heapq.heappop"><code class="xref py py-func docutils literal"><span class="pre">heappop()</span></code></a>.</p>
+<em>heap</em>.  The combined action runs more efficiently than <a class="reference internal" href="../generated/generated/heapq.heappush.html#heapq.heappush" title="heapq.heappush"><code class="xref py py-func docutils literal"><span class="pre">heappush()</span></code></a>
+followed by a separate call to <a class="reference internal" href="../generated/generated/heapq.heappop.html#heapq.heappop" title="heapq.heappop"><code class="xref py py-func docutils literal"><span class="pre">heappop()</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
@@ -258,12 +258,12 @@ followed by a separate call to <a class="reference internal" href="../generated/
 <code class="descclassname">heapq.</code><code class="descname">heapreplace</code><span class="sig-paren">(</span><em>heap</em>, <em>item</em><span class="sig-paren">)</span><a class="headerlink" href="#heapq.heapreplace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Pop and return the smallest item from the <em>heap</em>, and also push the new <em>item</em>.
 The heap size doesn&#8217;t change. If the heap is empty, <a class="reference internal" href="../generated/exceptions.IndexError.html#exceptions.IndexError" title="exceptions.IndexError"><code class="xref py py-exc docutils literal"><span class="pre">IndexError</span></code></a> is raised.</p>
-<p>This one step operation is more efficient than a <a class="reference internal" href="../generated/heapq.heappop.html#heapq.heappop" title="heapq.heappop"><code class="xref py py-func docutils literal"><span class="pre">heappop()</span></code></a> followed by
-<a class="reference internal" href="../generated/heapq.heappush.html#heapq.heappush" title="heapq.heappush"><code class="xref py py-func docutils literal"><span class="pre">heappush()</span></code></a> and can be more appropriate when using a fixed-size heap.
+<p>This one step operation is more efficient than a <a class="reference internal" href="../generated/generated/heapq.heappop.html#heapq.heappop" title="heapq.heappop"><code class="xref py py-func docutils literal"><span class="pre">heappop()</span></code></a> followed by
+<a class="reference internal" href="../generated/generated/heapq.heappush.html#heapq.heappush" title="heapq.heappush"><code class="xref py py-func docutils literal"><span class="pre">heappush()</span></code></a> and can be more appropriate when using a fixed-size heap.
 The pop/push combination always returns an element from the heap and replaces
 it with <em>item</em>.</p>
 <p>The value returned may be larger than the <em>item</em> added.  If that isn&#8217;t
-desired, consider using <a class="reference internal" href="../generated/heapq.heappushpop.html#heapq.heappushpop" title="heapq.heappushpop"><code class="xref py py-func docutils literal"><span class="pre">heappushpop()</span></code></a> instead.  Its push/pop
+desired, consider using <a class="reference internal" href="../generated/generated/heapq.heappushpop.html#heapq.heappushpop" title="heapq.heappushpop"><code class="xref py py-func docutils literal"><span class="pre">heappushpop()</span></code></a> instead.  Its push/pop
 combination returns the smaller of the two values, leaving the larger value
 on the heap.</p>
 </dd></dl>

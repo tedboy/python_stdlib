@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       get
       main
@@ -19,6 +19,20 @@
       open_new_tab
       register
       register_X_browsers
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/webbrowser.get
+       generated/webbrowser.main
+       generated/webbrowser.open
+       generated/webbrowser.open_new
+       generated/webbrowser.open_new_tab
+       generated/webbrowser.register
+       generated/webbrowser.register_X_browsers
+      
    
    
 

@@ -214,7 +214,7 @@
 
 <span class="c1"># --------------------------------------------------------- common routines</span>
 
-<div class="viewcode-block" id="pathdirs"><a class="viewcode-back" href="../generated/pydoc.pathdirs.html#DocXMLRPCServer.pathdirs">[docs]</a><span class="k">def</span> <span class="nf">pathdirs</span><span class="p">():</span>
+<div class="viewcode-block" id="pathdirs"><a class="viewcode-back" href="../generated/generated/pydoc.pathdirs.html#DocXMLRPCServer.pathdirs">[docs]</a><span class="k">def</span> <span class="nf">pathdirs</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Convert sys.path into a list of absolute, existing, unique paths.&quot;&quot;&quot;</span>
     <span class="n">dirs</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">normdirs</span> <span class="o">=</span> <span class="p">[]</span>
@@ -226,13 +226,13 @@
             <span class="n">normdirs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">normdir</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">dirs</span></div>
 
-<div class="viewcode-block" id="getdoc"><a class="viewcode-back" href="../generated/pydoc.getdoc.html#DocXMLRPCServer.getdoc">[docs]</a><span class="k">def</span> <span class="nf">getdoc</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="getdoc"><a class="viewcode-back" href="../generated/generated/pydoc.getdoc.html#DocXMLRPCServer.getdoc">[docs]</a><span class="k">def</span> <span class="nf">getdoc</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get the doc string or comments for an object.&quot;&quot;&quot;</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">inspect</span><span class="o">.</span><span class="n">getdoc</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="ow">or</span> <span class="n">inspect</span><span class="o">.</span><span class="n">getcomments</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">_encode</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">result</span> <span class="ow">and</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;^ *</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">rstrip</span><span class="p">(</span><span class="n">result</span><span class="p">))</span> <span class="ow">or</span> <span class="s1">&#39;&#39;</span></div>
 
-<div class="viewcode-block" id="splitdoc"><a class="viewcode-back" href="../generated/pydoc.splitdoc.html#DocXMLRPCServer.splitdoc">[docs]</a><span class="k">def</span> <span class="nf">splitdoc</span><span class="p">(</span><span class="n">doc</span><span class="p">):</span>
+<div class="viewcode-block" id="splitdoc"><a class="viewcode-back" href="../generated/generated/pydoc.splitdoc.html#DocXMLRPCServer.splitdoc">[docs]</a><span class="k">def</span> <span class="nf">splitdoc</span><span class="p">(</span><span class="n">doc</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Split a doc string into a synopsis line (if any) and the rest.&quot;&quot;&quot;</span>
     <span class="n">lines</span> <span class="o">=</span> <span class="n">split</span><span class="p">(</span><span class="n">strip</span><span class="p">(</span><span class="n">doc</span><span class="p">),</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
@@ -241,27 +241,27 @@
         <span class="k">return</span> <span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">:],</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="classname"><a class="viewcode-back" href="../generated/pydoc.classname.html#DocXMLRPCServer.classname">[docs]</a><span class="k">def</span> <span class="nf">classname</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">modname</span><span class="p">):</span>
+<div class="viewcode-block" id="classname"><a class="viewcode-back" href="../generated/generated/pydoc.classname.html#DocXMLRPCServer.classname">[docs]</a><span class="k">def</span> <span class="nf">classname</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">modname</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get a class name and qualify it with a module name if necessary.&quot;&quot;&quot;</span>
     <span class="n">name</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">__name__</span>
     <span class="k">if</span> <span class="nb">object</span><span class="o">.</span><span class="n">__module__</span> <span class="o">!=</span> <span class="n">modname</span><span class="p">:</span>
         <span class="n">name</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">__module__</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span> <span class="o">+</span> <span class="n">name</span>
     <span class="k">return</span> <span class="n">name</span></div>
 
-<div class="viewcode-block" id="isdata"><a class="viewcode-back" href="../generated/pydoc.isdata.html#DocXMLRPCServer.isdata">[docs]</a><span class="k">def</span> <span class="nf">isdata</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="isdata"><a class="viewcode-back" href="../generated/generated/pydoc.isdata.html#DocXMLRPCServer.isdata">[docs]</a><span class="k">def</span> <span class="nf">isdata</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Check if an object is of a type that probably means it&#39;s data.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="ow">not</span> <span class="p">(</span><span class="n">inspect</span><span class="o">.</span><span class="n">ismodule</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="ow">or</span> <span class="n">inspect</span><span class="o">.</span><span class="n">isclass</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="ow">or</span>
                 <span class="n">inspect</span><span class="o">.</span><span class="n">isroutine</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="ow">or</span> <span class="n">inspect</span><span class="o">.</span><span class="n">isframe</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="ow">or</span>
                 <span class="n">inspect</span><span class="o">.</span><span class="n">istraceback</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="ow">or</span> <span class="n">inspect</span><span class="o">.</span><span class="n">iscode</span><span class="p">(</span><span class="nb">object</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="replace"><a class="viewcode-back" href="../generated/pydoc.replace.html#DocXMLRPCServer.replace">[docs]</a><span class="k">def</span> <span class="nf">replace</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="o">*</span><span class="n">pairs</span><span class="p">):</span>
+<div class="viewcode-block" id="replace"><a class="viewcode-back" href="../generated/generated/pydoc.replace.html#DocXMLRPCServer.replace">[docs]</a><span class="k">def</span> <span class="nf">replace</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="o">*</span><span class="n">pairs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Do a series of global replacements on a string.&quot;&quot;&quot;</span>
     <span class="k">while</span> <span class="n">pairs</span><span class="p">:</span>
         <span class="n">text</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">split</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">pairs</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">pairs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
         <span class="n">pairs</span> <span class="o">=</span> <span class="n">pairs</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
     <span class="k">return</span> <span class="n">text</span></div>
 
-<div class="viewcode-block" id="cram"><a class="viewcode-back" href="../generated/pydoc.cram.html#DocXMLRPCServer.cram">[docs]</a><span class="k">def</span> <span class="nf">cram</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">maxlen</span><span class="p">):</span>
+<div class="viewcode-block" id="cram"><a class="viewcode-back" href="../generated/generated/pydoc.cram.html#DocXMLRPCServer.cram">[docs]</a><span class="k">def</span> <span class="nf">cram</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">maxlen</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Omit part of a string if needed to make it fit in a maximum length.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">maxlen</span><span class="p">:</span>
         <span class="n">pre</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">maxlen</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
@@ -270,7 +270,7 @@
     <span class="k">return</span> <span class="n">text</span></div>
 
 <span class="n">_re_stripid</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">r&#39; at 0x[0-9a-f]{6,16}(&gt;+)$&#39;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">IGNORECASE</span><span class="p">)</span>
-<div class="viewcode-block" id="stripid"><a class="viewcode-back" href="../generated/pydoc.stripid.html#DocXMLRPCServer.stripid">[docs]</a><span class="k">def</span> <span class="nf">stripid</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<div class="viewcode-block" id="stripid"><a class="viewcode-back" href="../generated/generated/pydoc.stripid.html#DocXMLRPCServer.stripid">[docs]</a><span class="k">def</span> <span class="nf">stripid</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Remove the hexadecimal id from a Python object representation.&quot;&quot;&quot;</span>
     <span class="c1"># The behaviour of %p is implementation-dependent in terms of case.</span>
     <span class="k">return</span> <span class="n">_re_stripid</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">r&#39;\1&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span></div>
@@ -278,7 +278,7 @@
 <span class="k">def</span> <span class="nf">_is_some_method</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="ow">or</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethoddescriptor</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
 
-<div class="viewcode-block" id="allmethods"><a class="viewcode-back" href="../generated/pydoc.allmethods.html#DocXMLRPCServer.allmethods">[docs]</a><span class="k">def</span> <span class="nf">allmethods</span><span class="p">(</span><span class="n">cl</span><span class="p">):</span>
+<div class="viewcode-block" id="allmethods"><a class="viewcode-back" href="../generated/generated/pydoc.allmethods.html#DocXMLRPCServer.allmethods">[docs]</a><span class="k">def</span> <span class="nf">allmethods</span><span class="p">(</span><span class="n">cl</span><span class="p">):</span>
     <span class="n">methods</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">inspect</span><span class="o">.</span><span class="n">getmembers</span><span class="p">(</span><span class="n">cl</span><span class="p">,</span> <span class="n">_is_some_method</span><span class="p">):</span>
         <span class="n">methods</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
@@ -305,7 +305,7 @@
             <span class="n">no</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">yes</span><span class="p">,</span> <span class="n">no</span>
 
-<div class="viewcode-block" id="visiblename"><a class="viewcode-back" href="../generated/pydoc.visiblename.html#DocXMLRPCServer.visiblename">[docs]</a><span class="k">def</span> <span class="nf">visiblename</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">all</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">obj</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="visiblename"><a class="viewcode-back" href="../generated/generated/pydoc.visiblename.html#DocXMLRPCServer.visiblename">[docs]</a><span class="k">def</span> <span class="nf">visiblename</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">all</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">obj</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decide whether to show documentation on a variable.&quot;&quot;&quot;</span>
     <span class="c1"># Certain special names are redundant.</span>
     <span class="n">_hidden_names</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;__builtins__&#39;</span><span class="p">,</span> <span class="s1">&#39;__doc__&#39;</span><span class="p">,</span> <span class="s1">&#39;__file__&#39;</span><span class="p">,</span> <span class="s1">&#39;__path__&#39;</span><span class="p">,</span>
@@ -322,7 +322,7 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="ow">not</span> <span class="n">name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="classify_class_attrs"><a class="viewcode-back" href="../generated/pydoc.classify_class_attrs.html#DocXMLRPCServer.classify_class_attrs">[docs]</a><span class="k">def</span> <span class="nf">classify_class_attrs</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="classify_class_attrs"><a class="viewcode-back" href="../generated/generated/pydoc.classify_class_attrs.html#DocXMLRPCServer.classify_class_attrs">[docs]</a><span class="k">def</span> <span class="nf">classify_class_attrs</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Wrap inspect.classify_class_attrs, with fixup for data descriptors.&quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">fixup</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
         <span class="n">name</span><span class="p">,</span> <span class="n">kind</span><span class="p">,</span> <span class="n">cls</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">data</span>
@@ -363,7 +363,7 @@
 
 <span class="c1"># ----------------------------------------------------- module manipulation</span>
 
-<div class="viewcode-block" id="ispackage"><a class="viewcode-back" href="../generated/pydoc.ispackage.html#DocXMLRPCServer.ispackage">[docs]</a><span class="k">def</span> <span class="nf">ispackage</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="ispackage"><a class="viewcode-back" href="../generated/generated/pydoc.ispackage.html#DocXMLRPCServer.ispackage">[docs]</a><span class="k">def</span> <span class="nf">ispackage</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Guess whether a path refers to a package directory.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">ext</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;.py&#39;</span><span class="p">,</span> <span class="s1">&#39;.pyc&#39;</span><span class="p">,</span> <span class="s1">&#39;.pyo&#39;</span><span class="p">):</span>
@@ -371,7 +371,7 @@
                 <span class="k">return</span> <span class="bp">True</span>
     <span class="k">return</span> <span class="bp">False</span></div>
 
-<div class="viewcode-block" id="source_synopsis"><a class="viewcode-back" href="../generated/pydoc.source_synopsis.html#DocXMLRPCServer.source_synopsis">[docs]</a><span class="k">def</span> <span class="nf">source_synopsis</span><span class="p">(</span><span class="nb">file</span><span class="p">):</span>
+<div class="viewcode-block" id="source_synopsis"><a class="viewcode-back" href="../generated/generated/pydoc.source_synopsis.html#DocXMLRPCServer.source_synopsis">[docs]</a><span class="k">def</span> <span class="nf">source_synopsis</span><span class="p">(</span><span class="nb">file</span><span class="p">):</span>
     <span class="n">line</span> <span class="o">=</span> <span class="nb">file</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
     <span class="k">while</span> <span class="n">line</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;#&#39;</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">strip</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
         <span class="n">line</span> <span class="o">=</span> <span class="nb">file</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
@@ -388,7 +388,7 @@
     <span class="k">else</span><span class="p">:</span> <span class="n">result</span> <span class="o">=</span> <span class="bp">None</span>
     <span class="k">return</span> <span class="n">result</span></div>
 
-<div class="viewcode-block" id="synopsis"><a class="viewcode-back" href="../generated/pydoc.synopsis.html#DocXMLRPCServer.synopsis">[docs]</a><span class="k">def</span> <span class="nf">synopsis</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="p">{}):</span>
+<div class="viewcode-block" id="synopsis"><a class="viewcode-back" href="../generated/generated/pydoc.synopsis.html#DocXMLRPCServer.synopsis">[docs]</a><span class="k">def</span> <span class="nf">synopsis</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="p">{}):</span>
     <span class="sd">&quot;&quot;&quot;Get the one-line summary out of a module file.&quot;&quot;&quot;</span>
     <span class="n">mtime</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">.</span><span class="n">st_mtime</span>
     <span class="n">lastupdate</span><span class="p">,</span> <span class="n">result</span> <span class="o">=</span> <span class="n">cache</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">))</span>
@@ -425,7 +425,7 @@
             <span class="n">exc</span> <span class="o">=</span> <span class="n">exc</span><span class="o">.</span><span class="n">__name__</span>
         <span class="k">return</span> <span class="s1">&#39;problem in </span><span class="si">%s</span><span class="s1"> - </span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">exc</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="importfile"><a class="viewcode-back" href="../generated/pydoc.importfile.html#DocXMLRPCServer.importfile">[docs]</a><span class="k">def</span> <span class="nf">importfile</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="importfile"><a class="viewcode-back" href="../generated/generated/pydoc.importfile.html#DocXMLRPCServer.importfile">[docs]</a><span class="k">def</span> <span class="nf">importfile</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Import a Python source file or compiled file given its path.&quot;&quot;&quot;</span>
     <span class="n">magic</span> <span class="o">=</span> <span class="n">imp</span><span class="o">.</span><span class="n">get_magic</span><span class="p">()</span>
     <span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
@@ -444,7 +444,7 @@
     <span class="nb">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">module</span></div>
 
-<div class="viewcode-block" id="safeimport"><a class="viewcode-back" href="../generated/pydoc.safeimport.html#DocXMLRPCServer.safeimport">[docs]</a><span class="k">def</span> <span class="nf">safeimport</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="p">{}):</span>
+<div class="viewcode-block" id="safeimport"><a class="viewcode-back" href="../generated/generated/pydoc.safeimport.html#DocXMLRPCServer.safeimport">[docs]</a><span class="k">def</span> <span class="nf">safeimport</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="p">{}):</span>
     <span class="sd">&quot;&quot;&quot;Import a module; handle errors; return None if the module isn&#39;t found.</span>
 
 <span class="sd">    If the module *is* found but an exception occurs, it&#39;s wrapped in an</span>
@@ -1515,13 +1515,13 @@
 
 <span class="c1"># --------------------------------------------------------- user interfaces</span>
 
-<div class="viewcode-block" id="pager"><a class="viewcode-back" href="../generated/pydoc.pager.html#DocXMLRPCServer.pager">[docs]</a><span class="k">def</span> <span class="nf">pager</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<div class="viewcode-block" id="pager"><a class="viewcode-back" href="../generated/generated/pydoc.pager.html#DocXMLRPCServer.pager">[docs]</a><span class="k">def</span> <span class="nf">pager</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;The first time this is called, determine what kind of pager to use.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">pager</span>
     <span class="n">pager</span> <span class="o">=</span> <span class="n">getpager</span><span class="p">()</span>
     <span class="n">pager</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="getpager"><a class="viewcode-back" href="../generated/pydoc.getpager.html#DocXMLRPCServer.getpager">[docs]</a><span class="k">def</span> <span class="nf">getpager</span><span class="p">():</span>
+<div class="viewcode-block" id="getpager"><a class="viewcode-back" href="../generated/generated/pydoc.getpager.html#DocXMLRPCServer.getpager">[docs]</a><span class="k">def</span> <span class="nf">getpager</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Decide what method to use for paging through text.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">types</span><span class="o">.</span><span class="n">FileType</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">plainpager</span>
@@ -1554,11 +1554,11 @@
     <span class="k">finally</span><span class="p">:</span>
         <span class="n">os</span><span class="o">.</span><span class="n">unlink</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="plain"><a class="viewcode-back" href="../generated/pydoc.plain.html#DocXMLRPCServer.plain">[docs]</a><span class="k">def</span> <span class="nf">plain</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<div class="viewcode-block" id="plain"><a class="viewcode-back" href="../generated/generated/pydoc.plain.html#DocXMLRPCServer.plain">[docs]</a><span class="k">def</span> <span class="nf">plain</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Remove boldface formatting from text.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;.</span><span class="se">\b</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="pipepager"><a class="viewcode-back" href="../generated/pydoc.pipepager.html#DocXMLRPCServer.pipepager">[docs]</a><span class="k">def</span> <span class="nf">pipepager</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">cmd</span><span class="p">):</span>
+<div class="viewcode-block" id="pipepager"><a class="viewcode-back" href="../generated/generated/pydoc.pipepager.html#DocXMLRPCServer.pipepager">[docs]</a><span class="k">def</span> <span class="nf">pipepager</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">cmd</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Page through text by feeding it to another program.&quot;&quot;&quot;</span>
     <span class="n">pipe</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
     <span class="k">try</span><span class="p">:</span>
@@ -1567,7 +1567,7 @@
     <span class="k">except</span> <span class="ne">IOError</span><span class="p">:</span>
         <span class="k">pass</span> <span class="c1"># Ignore broken pipes caused by quitting the pager program.</span></div>
 
-<div class="viewcode-block" id="tempfilepager"><a class="viewcode-back" href="../generated/pydoc.tempfilepager.html#DocXMLRPCServer.tempfilepager">[docs]</a><span class="k">def</span> <span class="nf">tempfilepager</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">cmd</span><span class="p">):</span>
+<div class="viewcode-block" id="tempfilepager"><a class="viewcode-back" href="../generated/generated/pydoc.tempfilepager.html#DocXMLRPCServer.tempfilepager">[docs]</a><span class="k">def</span> <span class="nf">tempfilepager</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">cmd</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Page through text by invoking a program on a temporary file.&quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">tempfile</span>
     <span class="n">filename</span> <span class="o">=</span> <span class="n">tempfile</span><span class="o">.</span><span class="n">mktemp</span><span class="p">()</span>
@@ -1579,7 +1579,7 @@
     <span class="k">finally</span><span class="p">:</span>
         <span class="n">os</span><span class="o">.</span><span class="n">unlink</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="ttypager"><a class="viewcode-back" href="../generated/pydoc.ttypager.html#DocXMLRPCServer.ttypager">[docs]</a><span class="k">def</span> <span class="nf">ttypager</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<div class="viewcode-block" id="ttypager"><a class="viewcode-back" href="../generated/generated/pydoc.ttypager.html#DocXMLRPCServer.ttypager">[docs]</a><span class="k">def</span> <span class="nf">ttypager</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Page through text on a text terminal.&quot;&quot;&quot;</span>
     <span class="n">lines</span> <span class="o">=</span> <span class="n">plain</span><span class="p">(</span><span class="n">_encode</span><span class="p">(</span><span class="n">plain</span><span class="p">(</span><span class="n">text</span><span class="p">),</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="s1">&#39;encoding&#39;</span><span class="p">,</span> <span class="n">_encoding</span><span class="p">)))</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="k">try</span><span class="p">:</span>
@@ -1623,11 +1623,11 @@
         <span class="k">if</span> <span class="n">tty</span><span class="p">:</span>
             <span class="n">tty</span><span class="o">.</span><span class="n">tcsetattr</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">tty</span><span class="o">.</span><span class="n">TCSAFLUSH</span><span class="p">,</span> <span class="n">old</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="plainpager"><a class="viewcode-back" href="../generated/pydoc.plainpager.html#DocXMLRPCServer.plainpager">[docs]</a><span class="k">def</span> <span class="nf">plainpager</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<div class="viewcode-block" id="plainpager"><a class="viewcode-back" href="../generated/generated/pydoc.plainpager.html#DocXMLRPCServer.plainpager">[docs]</a><span class="k">def</span> <span class="nf">plainpager</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Simply print unformatted text.  This is the ultimate fallback.&quot;&quot;&quot;</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">_encode</span><span class="p">(</span><span class="n">plain</span><span class="p">(</span><span class="n">text</span><span class="p">),</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="s1">&#39;encoding&#39;</span><span class="p">,</span> <span class="n">_encoding</span><span class="p">)))</span></div>
 
-<div class="viewcode-block" id="describe"><a class="viewcode-back" href="../generated/pydoc.describe.html#DocXMLRPCServer.describe">[docs]</a><span class="k">def</span> <span class="nf">describe</span><span class="p">(</span><span class="n">thing</span><span class="p">):</span>
+<div class="viewcode-block" id="describe"><a class="viewcode-back" href="../generated/generated/pydoc.describe.html#DocXMLRPCServer.describe">[docs]</a><span class="k">def</span> <span class="nf">describe</span><span class="p">(</span><span class="n">thing</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Produce a short description of the given thing.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismodule</span><span class="p">(</span><span class="n">thing</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">thing</span><span class="o">.</span><span class="n">__name__</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">builtin_module_names</span><span class="p">:</span>
@@ -1656,7 +1656,7 @@
         <span class="k">return</span> <span class="s1">&#39;instance of &#39;</span> <span class="o">+</span> <span class="n">thing</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span>
     <span class="k">return</span> <span class="nb">type</span><span class="p">(</span><span class="n">thing</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span></div>
 
-<div class="viewcode-block" id="locate"><a class="viewcode-back" href="../generated/pydoc.locate.html#DocXMLRPCServer.locate">[docs]</a><span class="k">def</span> <span class="nf">locate</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="locate"><a class="viewcode-back" href="../generated/generated/pydoc.locate.html#DocXMLRPCServer.locate">[docs]</a><span class="k">def</span> <span class="nf">locate</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Locate an object by name or dotted path, importing as necessary.&quot;&quot;&quot;</span>
     <span class="n">parts</span> <span class="o">=</span> <span class="p">[</span><span class="n">part</span> <span class="k">for</span> <span class="n">part</span> <span class="ow">in</span> <span class="n">split</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">part</span><span class="p">]</span>
     <span class="n">module</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">0</span>
@@ -1683,7 +1683,7 @@
 <span class="k">class</span> <span class="nc">_OldStyleClass</span><span class="p">:</span> <span class="k">pass</span>
 <span class="n">_OLD_INSTANCE_TYPE</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">_OldStyleClass</span><span class="p">())</span>
 
-<div class="viewcode-block" id="resolve"><a class="viewcode-back" href="../generated/pydoc.resolve.html#DocXMLRPCServer.resolve">[docs]</a><span class="k">def</span> <span class="nf">resolve</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="resolve"><a class="viewcode-back" href="../generated/generated/pydoc.resolve.html#DocXMLRPCServer.resolve">[docs]</a><span class="k">def</span> <span class="nf">resolve</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Given an object or a path to an object, get the object and its name.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
         <span class="nb">object</span> <span class="o">=</span> <span class="n">locate</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">forceload</span><span class="p">)</span>
@@ -1694,7 +1694,7 @@
         <span class="n">name</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="s1">&#39;__name__&#39;</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">thing</span><span class="p">,</span> <span class="n">name</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">else</span> <span class="bp">None</span></div>
 
-<div class="viewcode-block" id="render_doc"><a class="viewcode-back" href="../generated/pydoc.render_doc.html#DocXMLRPCServer.render_doc">[docs]</a><span class="k">def</span> <span class="nf">render_doc</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Python Library Documentation: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="render_doc"><a class="viewcode-back" href="../generated/generated/pydoc.render_doc.html#DocXMLRPCServer.render_doc">[docs]</a><span class="k">def</span> <span class="nf">render_doc</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Python Library Documentation: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Render text documentation, given an object or a path to an object.&quot;&quot;&quot;</span>
     <span class="nb">object</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">resolve</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">forceload</span><span class="p">)</span>
     <span class="n">desc</span> <span class="o">=</span> <span class="n">describe</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
@@ -1719,14 +1719,14 @@
         <span class="n">desc</span> <span class="o">+=</span> <span class="s1">&#39; object&#39;</span>
     <span class="k">return</span> <span class="n">title</span> <span class="o">%</span> <span class="n">desc</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">text</span><span class="o">.</span><span class="n">document</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="doc"><a class="viewcode-back" href="../generated/pydoc.doc.html#DocXMLRPCServer.doc">[docs]</a><span class="k">def</span> <span class="nf">doc</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Python Library Documentation: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="doc"><a class="viewcode-back" href="../generated/generated/pydoc.doc.html#DocXMLRPCServer.doc">[docs]</a><span class="k">def</span> <span class="nf">doc</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Python Library Documentation: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Display text documentation, given an object or a path to an object.&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">pager</span><span class="p">(</span><span class="n">render_doc</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">forceload</span><span class="p">))</span>
     <span class="k">except</span> <span class="p">(</span><span class="ne">ImportError</span><span class="p">,</span> <span class="n">ErrorDuringImport</span><span class="p">),</span> <span class="n">value</span><span class="p">:</span>
         <span class="k">print</span> <span class="n">value</span></div>
 
-<div class="viewcode-block" id="writedoc"><a class="viewcode-back" href="../generated/pydoc.writedoc.html#DocXMLRPCServer.writedoc">[docs]</a><span class="k">def</span> <span class="nf">writedoc</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="writedoc"><a class="viewcode-back" href="../generated/generated/pydoc.writedoc.html#DocXMLRPCServer.writedoc">[docs]</a><span class="k">def</span> <span class="nf">writedoc</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">forceload</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Write HTML documentation to a file in the current directory.&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="nb">object</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">resolve</span><span class="p">(</span><span class="n">thing</span><span class="p">,</span> <span class="n">forceload</span><span class="p">)</span>
@@ -1738,7 +1738,7 @@
     <span class="k">except</span> <span class="p">(</span><span class="ne">ImportError</span><span class="p">,</span> <span class="n">ErrorDuringImport</span><span class="p">),</span> <span class="n">value</span><span class="p">:</span>
         <span class="k">print</span> <span class="n">value</span></div>
 
-<div class="viewcode-block" id="writedocs"><a class="viewcode-back" href="../generated/pydoc.writedocs.html#DocXMLRPCServer.writedocs">[docs]</a><span class="k">def</span> <span class="nf">writedocs</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">pkgpath</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">done</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="writedocs"><a class="viewcode-back" href="../generated/generated/pydoc.writedocs.html#DocXMLRPCServer.writedocs">[docs]</a><span class="k">def</span> <span class="nf">writedocs</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">pkgpath</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">done</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Write out HTML documentation for all modules in a directory tree.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">done</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span> <span class="n">done</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">for</span> <span class="n">importer</span><span class="p">,</span> <span class="n">modname</span><span class="p">,</span> <span class="n">ispkg</span> <span class="ow">in</span> <span class="n">pkgutil</span><span class="o">.</span><span class="n">walk_packages</span><span class="p">([</span><span class="nb">dir</span><span class="p">],</span> <span class="n">pkgpath</span><span class="p">):</span>
@@ -2175,7 +2175,7 @@
         <span class="k">if</span> <span class="n">completer</span><span class="p">:</span>
             <span class="n">completer</span><span class="p">()</span></div></div>
 
-<div class="viewcode-block" id="apropos"><a class="viewcode-back" href="../generated/pydoc.apropos.html#DocXMLRPCServer.apropos">[docs]</a><span class="k">def</span> <span class="nf">apropos</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+<div class="viewcode-block" id="apropos"><a class="viewcode-back" href="../generated/generated/pydoc.apropos.html#DocXMLRPCServer.apropos">[docs]</a><span class="k">def</span> <span class="nf">apropos</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Print all the one-line module summaries that contain a substring.&quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">callback</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">modname</span><span class="p">,</span> <span class="n">desc</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">modname</span><span class="p">[</span><span class="o">-</span><span class="mi">9</span><span class="p">:]</span> <span class="o">==</span> <span class="s1">&#39;.__init__&#39;</span><span class="p">:</span>
@@ -2189,7 +2189,7 @@
 
 <span class="c1"># --------------------------------------------------- web browser interface</span>
 
-<div class="viewcode-block" id="serve"><a class="viewcode-back" href="../generated/pydoc.serve.html#DocXMLRPCServer.serve">[docs]</a><span class="k">def</span> <span class="nf">serve</span><span class="p">(</span><span class="n">port</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">completer</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="serve"><a class="viewcode-back" href="../generated/generated/pydoc.serve.html#DocXMLRPCServer.serve">[docs]</a><span class="k">def</span> <span class="nf">serve</span><span class="p">(</span><span class="n">port</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">completer</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">BaseHTTPServer</span><span class="o">,</span> <span class="nn">mimetools</span><span class="o">,</span> <span class="nn">select</span>
 
     <span class="c1"># Patch up mimetools.Message so it doesn&#39;t break if rfc822 is reloaded.</span>
@@ -2280,7 +2280,7 @@
 
 <span class="c1"># ----------------------------------------------------- graphical interface</span>
 
-<div class="viewcode-block" id="gui"><a class="viewcode-back" href="../generated/pydoc.gui.html#DocXMLRPCServer.gui">[docs]</a><span class="k">def</span> <span class="nf">gui</span><span class="p">():</span>
+<div class="viewcode-block" id="gui"><a class="viewcode-back" href="../generated/generated/pydoc.gui.html#DocXMLRPCServer.gui">[docs]</a><span class="k">def</span> <span class="nf">gui</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Graphical interface (starts web server and pops up a control window).&quot;&quot;&quot;</span>
     <span class="k">class</span> <span class="nc">GUI</span><span class="p">:</span>
         <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">window</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">7464</span><span class="p">):</span>
@@ -2466,10 +2466,10 @@
 
 <span class="c1"># -------------------------------------------------- command-line interface</span>
 
-<div class="viewcode-block" id="ispath"><a class="viewcode-back" href="../generated/pydoc.ispath.html#DocXMLRPCServer.ispath">[docs]</a><span class="k">def</span> <span class="nf">ispath</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="viewcode-block" id="ispath"><a class="viewcode-back" href="../generated/generated/pydoc.ispath.html#DocXMLRPCServer.ispath">[docs]</a><span class="k">def</span> <span class="nf">ispath</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="n">find</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">sep</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span></div>
 
-<div class="viewcode-block" id="cli"><a class="viewcode-back" href="../generated/pydoc.cli.html#DocXMLRPCServer.cli">[docs]</a><span class="k">def</span> <span class="nf">cli</span><span class="p">():</span>
+<div class="viewcode-block" id="cli"><a class="viewcode-back" href="../generated/generated/pydoc.cli.html#DocXMLRPCServer.cli">[docs]</a><span class="k">def</span> <span class="nf">cli</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Command-line interface (looks at sys.argv to decide what to do).&quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">getopt</span>
     <span class="k">class</span> <span class="nc">BadUsage</span><span class="p">:</span> <span class="k">pass</span>

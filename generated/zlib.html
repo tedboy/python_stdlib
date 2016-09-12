@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="zlib.error" href="zlib.error.html"/>
+        <link rel="next" title="zlib.adler32()" href="generated/zlib.adler32.html"/>
         <link rel="prev" title="sqlite3.Warning" href="sqlite3.Warning.html"/> 
 
   
@@ -82,12 +82,68 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">zlib</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/zlib.adler32.html"><code class="docutils literal"><span class="pre">zlib.adler32()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/zlib.compress.html"><code class="docutils literal"><span class="pre">zlib.compress()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/zlib.compressobj.html"><code class="docutils literal"><span class="pre">zlib.compressobj()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/zlib.crc32.html"><code class="docutils literal"><span class="pre">zlib.crc32()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/zlib.decompress.html"><code class="docutils literal"><span class="pre">zlib.decompress()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/zlib.decompressobj.html"><code class="docutils literal"><span class="pre">zlib.decompressobj()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="zlib.error.html">zlib.error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gzip.html"><code class="docutils literal"><span class="pre">gzip</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bz2.html"><code class="docutils literal"><span class="pre">bz2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="zipfile.html"><code class="docutils literal"><span class="pre">zipfile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tarfile.html"><code class="docutils literal"><span class="pre">tarfile</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -163,6 +219,34 @@ Compressor objects support compress() and flush() methods; decompressor
 objects support decompress() and flush().</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/zlib.adler32.html#zlib.adler32" title="zlib.adler32"><code class="xref py py-obj docutils literal"><span class="pre">adler32</span></code></a></td>
+<td>adler32(string[, start]) &#8211; Compute an Adler-32 checksum of string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/zlib.compress.html#zlib.compress" title="zlib.compress"><code class="xref py py-obj docutils literal"><span class="pre">compress</span></code></a></td>
+<td>compress(string[, level]) &#8211; Returned compressed string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/zlib.compressobj.html#zlib.compressobj" title="zlib.compressobj"><code class="xref py py-obj docutils literal"><span class="pre">compressobj</span></code></a></td>
+<td>compressobj([level]) &#8211; Return a compressor object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/zlib.crc32.html#zlib.crc32" title="zlib.crc32"><code class="xref py py-obj docutils literal"><span class="pre">crc32</span></code></a></td>
+<td>crc32(string[, start]) &#8211; Compute a CRC-32 checksum of string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-obj docutils literal"><span class="pre">decompress</span></code></a></td>
+<td>decompress(string[, wbits[, bufsize]]) &#8211; Return decompressed string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/zlib.decompressobj.html#zlib.decompressobj" title="zlib.decompressobj"><code class="xref py py-obj docutils literal"><span class="pre">decompressobj</span></code></a></td>
+<td>decompressobj([wbits]) &#8211; Return a decompressor object.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="exceptions">
 <h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
@@ -187,7 +271,7 @@ objects support decompress() and flush().</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="zlib.error.html" class="btn btn-neutral float-right" title="zlib.error" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/zlib.adler32.html" class="btn btn-neutral float-right" title="zlib.adler32()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="sqlite3.Warning.html" class="btn btn-neutral" title="sqlite3.Warning" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

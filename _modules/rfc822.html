@@ -621,7 +621,7 @@
 <span class="c1"># XXX The inverses of the parse functions may also be useful.</span>
 
 
-<div class="viewcode-block" id="unquote"><a class="viewcode-back" href="../generated/rfc822.unquote.html#rfc822.unquote">[docs]</a><span class="k">def</span> <span class="nf">unquote</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="unquote"><a class="viewcode-back" href="../generated/generated/rfc822.unquote.html#rfc822.unquote">[docs]</a><span class="k">def</span> <span class="nf">unquote</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Remove quotes from a string.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">s</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">):</span>
@@ -631,12 +631,12 @@
     <span class="k">return</span> <span class="n">s</span></div>
 
 
-<div class="viewcode-block" id="quote"><a class="viewcode-back" href="../generated/rfc822.quote.html#rfc822.quote">[docs]</a><span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="quote"><a class="viewcode-back" href="../generated/generated/rfc822.quote.html#rfc822.quote">[docs]</a><span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Add quotes around a string.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\\\</span><span class="s1">&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&quot;&#39;</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="parseaddr"><a class="viewcode-back" href="../generated/rfc822.parseaddr.html#rfc822.parseaddr">[docs]</a><span class="k">def</span> <span class="nf">parseaddr</span><span class="p">(</span><span class="n">address</span><span class="p">):</span>
+<div class="viewcode-block" id="parseaddr"><a class="viewcode-back" href="../generated/generated/rfc822.parseaddr.html#rfc822.parseaddr">[docs]</a><span class="k">def</span> <span class="nf">parseaddr</span><span class="p">(</span><span class="n">address</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Parse an address into a (realname, mailaddr) tuple.&quot;&quot;&quot;</span>
     <span class="n">a</span> <span class="o">=</span> <span class="n">AddressList</span><span class="p">(</span><span class="n">address</span><span class="p">)</span>
     <span class="n">lst</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">addresslist</span>
@@ -969,7 +969,7 @@
         <span class="c1"># Make indexing, slices, and &#39;in&#39; work</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">addresslist</span><span class="p">[</span><span class="n">index</span><span class="p">]</span></div></div>
 
-<div class="viewcode-block" id="dump_address_pair"><a class="viewcode-back" href="../generated/rfc822.dump_address_pair.html#rfc822.dump_address_pair">[docs]</a><span class="k">def</span> <span class="nf">dump_address_pair</span><span class="p">(</span><span class="n">pair</span><span class="p">):</span>
+<div class="viewcode-block" id="dump_address_pair"><a class="viewcode-back" href="../generated/generated/rfc822.dump_address_pair.html#rfc822.dump_address_pair">[docs]</a><span class="k">def</span> <span class="nf">dump_address_pair</span><span class="p">(</span><span class="n">pair</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Dump a (name, address) pair in a canonicalized form.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">pair</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
         <span class="k">return</span> <span class="s1">&#39;&quot;&#39;</span> <span class="o">+</span> <span class="n">pair</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&quot; &lt;&#39;</span> <span class="o">+</span> <span class="n">pair</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&gt;&#39;</span>
@@ -999,7 +999,7 @@
               <span class="p">}</span>
 
 
-<div class="viewcode-block" id="parsedate_tz"><a class="viewcode-back" href="../generated/rfc822.parsedate_tz.html#rfc822.parsedate_tz">[docs]</a><span class="k">def</span> <span class="nf">parsedate_tz</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<div class="viewcode-block" id="parsedate_tz"><a class="viewcode-back" href="../generated/generated/rfc822.parsedate_tz.html#rfc822.parsedate_tz">[docs]</a><span class="k">def</span> <span class="nf">parsedate_tz</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert a date string to a time tuple.</span>
 
 <span class="sd">    Accounts for military timezones.</span>
@@ -1084,7 +1084,7 @@
     <span class="k">return</span> <span class="p">(</span><span class="n">yy</span><span class="p">,</span> <span class="n">mm</span><span class="p">,</span> <span class="n">dd</span><span class="p">,</span> <span class="n">thh</span><span class="p">,</span> <span class="n">tmm</span><span class="p">,</span> <span class="n">tss</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tzoffset</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="parsedate"><a class="viewcode-back" href="../generated/rfc822.parsedate.html#rfc822.parsedate">[docs]</a><span class="k">def</span> <span class="nf">parsedate</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<div class="viewcode-block" id="parsedate"><a class="viewcode-back" href="../generated/generated/rfc822.parsedate.html#rfc822.parsedate">[docs]</a><span class="k">def</span> <span class="nf">parsedate</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert a time string to a time tuple.&quot;&quot;&quot;</span>
     <span class="n">t</span> <span class="o">=</span> <span class="n">parsedate_tz</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">t</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -1092,7 +1092,7 @@
     <span class="k">return</span> <span class="n">t</span><span class="p">[:</span><span class="mi">9</span><span class="p">]</span></div>
 
 
-<div class="viewcode-block" id="mktime_tz"><a class="viewcode-back" href="../generated/rfc822.mktime_tz.html#rfc822.mktime_tz">[docs]</a><span class="k">def</span> <span class="nf">mktime_tz</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<div class="viewcode-block" id="mktime_tz"><a class="viewcode-back" href="../generated/generated/rfc822.mktime_tz.html#rfc822.mktime_tz">[docs]</a><span class="k">def</span> <span class="nf">mktime_tz</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Turn a 10-tuple as returned by parsedate_tz() into a UTC timestamp.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="c1"># No zone info, so localtime is better assumption than GMT</span>
@@ -1101,7 +1101,7 @@
         <span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">mktime</span><span class="p">(</span><span class="n">data</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="mi">0</span><span class="p">,))</span>
         <span class="k">return</span> <span class="n">t</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="o">-</span> <span class="n">time</span><span class="o">.</span><span class="n">timezone</span></div>
 
-<div class="viewcode-block" id="formatdate"><a class="viewcode-back" href="../generated/rfc822.formatdate.html#rfc822.formatdate">[docs]</a><span class="k">def</span> <span class="nf">formatdate</span><span class="p">(</span><span class="n">timeval</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="formatdate"><a class="viewcode-back" href="../generated/generated/rfc822.formatdate.html#rfc822.formatdate">[docs]</a><span class="k">def</span> <span class="nf">formatdate</span><span class="p">(</span><span class="n">timeval</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Returns time format preferred for Internet standards.</span>
 
 <span class="sd">    Sun, 06 Nov 1994 08:49:37 GMT  ; RFC 822, updated by RFC 1123</span>

@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       ISEOF
       ISNONTERMINAL
@@ -24,6 +24,25 @@
       tokenize
       tokenize_loop
       untokenize
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/tokenize.ISEOF
+       generated/tokenize.ISNONTERMINAL
+       generated/tokenize.ISTERMINAL
+       generated/tokenize.any
+       generated/tokenize.generate_tokens
+       generated/tokenize.group
+       generated/tokenize.main
+       generated/tokenize.maybe
+       generated/tokenize.printtoken
+       generated/tokenize.tokenize
+       generated/tokenize.tokenize_loop
+       generated/tokenize.untokenize
+      
    
    
 

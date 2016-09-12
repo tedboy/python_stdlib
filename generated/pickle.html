@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="pickle.BooleanType" href="generated/pickle.BooleanType.html"/>
+        <link rel="next" title="pickle.StringIO()" href="generated/pickle.StringIO.html"/>
         <link rel="prev" title="macpath.norm_error" href="macpath.norm_error.html"/> 
 
   
@@ -82,12 +82,118 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">pickle</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.StringIO.html"><code class="docutils literal"><span class="pre">pickle.StringIO()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.decode_long.html"><code class="docutils literal"><span class="pre">pickle.decode_long()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.dump.html"><code class="docutils literal"><span class="pre">pickle.dump()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.dumps.html"><code class="docutils literal"><span class="pre">pickle.dumps()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.encode_long.html"><code class="docutils literal"><span class="pre">pickle.encode_long()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.load.html"><code class="docutils literal"><span class="pre">pickle.load()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.loads.html"><code class="docutils literal"><span class="pre">pickle.loads()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.mloads.html"><code class="docutils literal"><span class="pre">pickle.mloads()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.whichmodule.html"><code class="docutils literal"><span class="pre">pickle.whichmodule()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.BooleanType.html"><code class="docutils literal"><span class="pre">pickle.BooleanType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.BufferType.html"><code class="docutils literal"><span class="pre">pickle.BufferType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.BuiltinFunctionType.html"><code class="docutils literal"><span class="pre">pickle.BuiltinFunctionType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.BuiltinMethodType.html"><code class="docutils literal"><span class="pre">pickle.BuiltinMethodType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.ClassType.html"><code class="docutils literal"><span class="pre">pickle.ClassType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.CodeType.html"><code class="docutils literal"><span class="pre">pickle.CodeType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.ComplexType.html"><code class="docutils literal"><span class="pre">pickle.ComplexType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.DictProxyType.html"><code class="docutils literal"><span class="pre">pickle.DictProxyType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.DictType.html"><code class="docutils literal"><span class="pre">pickle.DictType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.DictionaryType.html"><code class="docutils literal"><span class="pre">pickle.DictionaryType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.EllipsisType.html"><code class="docutils literal"><span class="pre">pickle.EllipsisType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.FileType.html"><code class="docutils literal"><span class="pre">pickle.FileType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.FloatType.html"><code class="docutils literal"><span class="pre">pickle.FloatType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.FrameType.html"><code class="docutils literal"><span class="pre">pickle.FrameType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.FunctionType.html"><code class="docutils literal"><span class="pre">pickle.FunctionType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.GeneratorType.html"><code class="docutils literal"><span class="pre">pickle.GeneratorType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.GetSetDescriptorType.html"><code class="docutils literal"><span class="pre">pickle.GetSetDescriptorType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.InstanceType.html"><code class="docutils literal"><span class="pre">pickle.InstanceType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.IntType.html"><code class="docutils literal"><span class="pre">pickle.IntType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.LambdaType.html"><code class="docutils literal"><span class="pre">pickle.LambdaType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.ListType.html"><code class="docutils literal"><span class="pre">pickle.ListType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.LongType.html"><code class="docutils literal"><span class="pre">pickle.LongType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.MemberDescriptorType.html"><code class="docutils literal"><span class="pre">pickle.MemberDescriptorType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.MethodType.html"><code class="docutils literal"><span class="pre">pickle.MethodType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.ModuleType.html"><code class="docutils literal"><span class="pre">pickle.ModuleType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.NoneType.html"><code class="docutils literal"><span class="pre">pickle.NoneType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.NotImplementedType.html"><code class="docutils literal"><span class="pre">pickle.NotImplementedType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.ObjectType.html"><code class="docutils literal"><span class="pre">pickle.ObjectType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.Pickler.html"><code class="docutils literal"><span class="pre">pickle.Pickler</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.SliceType.html"><code class="docutils literal"><span class="pre">pickle.SliceType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.StringType.html"><code class="docutils literal"><span class="pre">pickle.StringType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.TracebackType.html"><code class="docutils literal"><span class="pre">pickle.TracebackType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.TupleType.html"><code class="docutils literal"><span class="pre">pickle.TupleType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.TypeType.html"><code class="docutils literal"><span class="pre">pickle.TypeType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.UnboundMethodType.html"><code class="docutils literal"><span class="pre">pickle.UnboundMethodType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.UnicodeType.html"><code class="docutils literal"><span class="pre">pickle.UnicodeType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.Unpickler.html"><code class="docutils literal"><span class="pre">pickle.Unpickler</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/pickle.XRangeType.html"><code class="docutils literal"><span class="pre">pickle.XRangeType</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="pickle.PickleError.html">pickle.PickleError</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pickle.PicklingError.html">pickle.PicklingError</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pickle.UnpicklingError.html">pickle.UnpicklingError</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cPickle.html"><code class="docutils literal"><span class="pre">cPickle</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="copy_reg.html"><code class="docutils literal"><span class="pre">copy_reg</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shelve.html"><code class="docutils literal"><span class="pre">shelve</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="marshal.html"><code class="docutils literal"><span class="pre">marshal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="anydbm.html"><code class="docutils literal"><span class="pre">anydbm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="whichdb.html"><code class="docutils literal"><span class="pre">whichdb</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="dumbdbm.html"><code class="docutils literal"><span class="pre">dumbdbm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sqlite3.html"><code class="docutils literal"><span class="pre">sqlite3</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -171,6 +277,43 @@ format_version
 compatible_formats</div></blockquote>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.StringIO.html#pickle.StringIO" title="pickle.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
+<td>StringIO([s]) &#8211; Return a StringIO-like stream for reading or writing</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.decode_long.html#pickle.decode_long" title="pickle.decode_long"><code class="xref py py-obj docutils literal"><span class="pre">decode_long</span></code></a>(data)</td>
+<td>Decode a long from a two&#8217;s complement little-endian binary string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.dump.html#pickle.dump" title="pickle.dump"><code class="xref py py-obj docutils literal"><span class="pre">dump</span></code></a>(obj,&nbsp;file[,&nbsp;protocol])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.dumps.html#pickle.dumps" title="pickle.dumps"><code class="xref py py-obj docutils literal"><span class="pre">dumps</span></code></a>(obj[,&nbsp;protocol])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.encode_long.html#pickle.encode_long" title="pickle.encode_long"><code class="xref py py-obj docutils literal"><span class="pre">encode_long</span></code></a>(x)</td>
+<td>Encode a long to a two&#8217;s complement little-endian binary string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.load.html#pickle.load" title="pickle.load"><code class="xref py py-obj docutils literal"><span class="pre">load</span></code></a>(file)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.loads.html#pickle.loads" title="pickle.loads"><code class="xref py py-obj docutils literal"><span class="pre">loads</span></code></a>(str)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pickle.mloads.html#pickle.mloads" title="pickle.mloads"><code class="xref py py-obj docutils literal"><span class="pre">mloads</span></code></a>(string)</td>
+<td>Convert the string to a value.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pickle.whichmodule.html#pickle.whichmodule" title="pickle.whichmodule"><code class="xref py py-obj docutils literal"><span class="pre">whichmodule</span></code></a>(func,&nbsp;funcname)</td>
+<td>Figure out the module in which a function occurs.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -328,7 +471,7 @@ compatible_formats</div></blockquote>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/pickle.BooleanType.html" class="btn btn-neutral float-right" title="pickle.BooleanType" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/pickle.StringIO.html" class="btn btn-neutral float-right" title="pickle.StringIO()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="macpath.norm_error.html" class="btn btn-neutral" title="macpath.norm_error" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

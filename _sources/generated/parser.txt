@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       ast2list
       ast2tuple
@@ -26,6 +26,27 @@
       suite
       tuple2ast
       tuple2st
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/parser.ast2list
+       generated/parser.ast2tuple
+       generated/parser.compileast
+       generated/parser.compilest
+       generated/parser.expr
+       generated/parser.isexpr
+       generated/parser.issuite
+       generated/parser.sequence2ast
+       generated/parser.sequence2st
+       generated/parser.st2list
+       generated/parser.st2tuple
+       generated/parser.suite
+       generated/parser.tuple2ast
+       generated/parser.tuple2st
+      
    
    
 

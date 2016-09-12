@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       cmp_to_key
       reduce
       total_ordering
       update_wrapper
       wraps
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/functools.cmp_to_key
+       generated/functools.reduce
+       generated/functools.total_ordering
+       generated/functools.update_wrapper
+       generated/functools.wraps
+      
    
    
 

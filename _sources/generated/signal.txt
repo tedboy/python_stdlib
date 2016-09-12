@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       alarm
       default_int_handler
@@ -21,6 +21,22 @@
       setitimer
       siginterrupt
       signal
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/signal.alarm
+       generated/signal.default_int_handler
+       generated/signal.getitimer
+       generated/signal.getsignal
+       generated/signal.pause
+       generated/signal.set_wakeup_fd
+       generated/signal.setitimer
+       generated/signal.siginterrupt
+       generated/signal.signal
+      
    
    
 

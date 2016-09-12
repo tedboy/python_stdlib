@@ -226,7 +226,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">Creator</span> <span class="o">=</span> <span class="s1">&#39;????&#39;</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">Flags</span> <span class="o">=</span> <span class="mi">0</span></div></div>
 
-<div class="viewcode-block" id="getfileinfo"><a class="viewcode-back" href="../generated/binhex.getfileinfo.html#binhex.getfileinfo">[docs]</a>    <span class="k">def</span> <span class="nf">getfileinfo</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<div class="viewcode-block" id="getfileinfo"><a class="viewcode-back" href="../generated/generated/binhex.getfileinfo.html#binhex.getfileinfo">[docs]</a>    <span class="k">def</span> <span class="nf">getfileinfo</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
         <span class="n">finfo</span> <span class="o">=</span> <span class="n">FInfo</span><span class="p">()</span>
         <span class="c1"># Quick check for textfile</span>
         <span class="n">fp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
@@ -400,7 +400,7 @@
             <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">ofp</span>
             <span class="n">ofp</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div></div>
 
-<div class="viewcode-block" id="binhex"><a class="viewcode-back" href="../generated/binhex.binhex.html#binhex.binhex">[docs]</a><span class="k">def</span> <span class="nf">binhex</span><span class="p">(</span><span class="n">inp</span><span class="p">,</span> <span class="n">out</span><span class="p">):</span>
+<div class="viewcode-block" id="binhex"><a class="viewcode-back" href="../generated/generated/binhex.binhex.html#binhex.binhex">[docs]</a><span class="k">def</span> <span class="nf">binhex</span><span class="p">(</span><span class="n">inp</span><span class="p">,</span> <span class="n">out</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;(infilename, outfilename) - Create binhex-encoded copy of a file&quot;&quot;&quot;</span>
     <span class="n">finfo</span> <span class="o">=</span> <span class="n">getfileinfo</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
     <span class="n">ofp</span> <span class="o">=</span> <span class="n">BinHex</span><span class="p">(</span><span class="n">finfo</span><span class="p">,</span> <span class="n">out</span><span class="p">)</span>
@@ -626,7 +626,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="bp">None</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">ifp</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div></div>
 
-<div class="viewcode-block" id="hexbin"><a class="viewcode-back" href="../generated/binhex.hexbin.html#binhex.hexbin">[docs]</a><span class="k">def</span> <span class="nf">hexbin</span><span class="p">(</span><span class="n">inp</span><span class="p">,</span> <span class="n">out</span><span class="p">):</span>
+<div class="viewcode-block" id="hexbin"><a class="viewcode-back" href="../generated/generated/binhex.hexbin.html#binhex.hexbin">[docs]</a><span class="k">def</span> <span class="nf">hexbin</span><span class="p">(</span><span class="n">inp</span><span class="p">,</span> <span class="n">out</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;(infilename, outfilename) - Decode binhexed file&quot;&quot;&quot;</span>
     <span class="n">ifp</span> <span class="o">=</span> <span class="n">HexBin</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
     <span class="n">finfo</span> <span class="o">=</span> <span class="n">ifp</span><span class="o">.</span><span class="n">FInfo</span>

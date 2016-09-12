@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       DocFileSuite
       DocFileTest
@@ -26,6 +26,27 @@
       testfile
       testmod
       testsource
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/doctest.DocFileSuite
+       generated/doctest.DocFileTest
+       generated/doctest.DocTestSuite
+       generated/doctest.debug
+       generated/doctest.debug_script
+       generated/doctest.debug_src
+       generated/doctest.namedtuple
+       generated/doctest.register_optionflag
+       generated/doctest.run_docstring_examples
+       generated/doctest.script_from_examples
+       generated/doctest.set_unittest_reportflags
+       generated/doctest.testfile
+       generated/doctest.testmod
+       generated/doctest.testsource
+      
    
    
 

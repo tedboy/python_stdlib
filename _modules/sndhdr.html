@@ -179,13 +179,13 @@
 
 <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;what&quot;</span><span class="p">,</span><span class="s2">&quot;whathdr&quot;</span><span class="p">]</span>
 
-<div class="viewcode-block" id="what"><a class="viewcode-back" href="../generated/sndhdr.what.html#sndhdr.what">[docs]</a><span class="k">def</span> <span class="nf">what</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<div class="viewcode-block" id="what"><a class="viewcode-back" href="../generated/generated/sndhdr.what.html#sndhdr.what">[docs]</a><span class="k">def</span> <span class="nf">what</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Guess the type of a sound file&quot;&quot;&quot;</span>
     <span class="n">res</span> <span class="o">=</span> <span class="n">whathdr</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">res</span></div>
 
 
-<div class="viewcode-block" id="whathdr"><a class="viewcode-back" href="../generated/sndhdr.whathdr.html#sndhdr.whathdr">[docs]</a><span class="k">def</span> <span class="nf">whathdr</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<div class="viewcode-block" id="whathdr"><a class="viewcode-back" href="../generated/generated/sndhdr.whathdr.html#sndhdr.whathdr">[docs]</a><span class="k">def</span> <span class="nf">whathdr</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Recognize sound headers&quot;&quot;&quot;</span>
     <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
     <span class="n">h</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">512</span><span class="p">)</span>
@@ -202,7 +202,7 @@
 
 <span class="n">tests</span> <span class="o">=</span> <span class="p">[]</span>
 
-<div class="viewcode-block" id="test_aifc"><a class="viewcode-back" href="../generated/sndhdr.test_aifc.html#sndhdr.test_aifc">[docs]</a><span class="k">def</span> <span class="nf">test_aifc</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_aifc"><a class="viewcode-back" href="../generated/generated/sndhdr.test_aifc.html#sndhdr.test_aifc">[docs]</a><span class="k">def</span> <span class="nf">test_aifc</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">aifc</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;FORM&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">None</span>
@@ -223,7 +223,7 @@
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_aifc</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="test_au"><a class="viewcode-back" href="../generated/sndhdr.test_au.html#sndhdr.test_au">[docs]</a><span class="k">def</span> <span class="nf">test_au</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_au"><a class="viewcode-back" href="../generated/generated/sndhdr.test_au.html#sndhdr.test_au">[docs]</a><span class="k">def</span> <span class="nf">test_au</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;.snd&#39;</span><span class="p">:</span>
         <span class="n">f</span> <span class="o">=</span> <span class="n">get_long_be</span>
     <span class="k">elif</span> <span class="n">h</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;</span><span class="se">\0</span><span class="s1">ds.&#39;</span><span class="p">,</span> <span class="s1">&#39;dns.&#39;</span><span class="p">):</span>
@@ -252,7 +252,7 @@
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_au</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="test_hcom"><a class="viewcode-back" href="../generated/sndhdr.test_hcom.html#sndhdr.test_hcom">[docs]</a><span class="k">def</span> <span class="nf">test_hcom</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_hcom"><a class="viewcode-back" href="../generated/generated/sndhdr.test_hcom.html#sndhdr.test_hcom">[docs]</a><span class="k">def</span> <span class="nf">test_hcom</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[</span><span class="mi">65</span><span class="p">:</span><span class="mi">69</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;FSSD&#39;</span> <span class="ow">or</span> <span class="n">h</span><span class="p">[</span><span class="mi">128</span><span class="p">:</span><span class="mi">132</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;HCOM&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">None</span>
     <span class="n">divisor</span> <span class="o">=</span> <span class="n">get_long_be</span><span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="mi">128</span><span class="o">+</span><span class="mi">16</span><span class="p">:</span><span class="mi">128</span><span class="o">+</span><span class="mi">20</span><span class="p">])</span>
@@ -261,7 +261,7 @@
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_hcom</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="test_voc"><a class="viewcode-back" href="../generated/sndhdr.test_voc.html#sndhdr.test_voc">[docs]</a><span class="k">def</span> <span class="nf">test_voc</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_voc"><a class="viewcode-back" href="../generated/generated/sndhdr.test_voc.html#sndhdr.test_voc">[docs]</a><span class="k">def</span> <span class="nf">test_voc</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">20</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;Creative Voice File</span><span class="se">\032</span><span class="s1">&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">None</span>
     <span class="n">sbseek</span> <span class="o">=</span> <span class="n">get_short_le</span><span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="mi">20</span><span class="p">:</span><span class="mi">22</span><span class="p">])</span>
@@ -274,7 +274,7 @@
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_voc</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="test_wav"><a class="viewcode-back" href="../generated/sndhdr.test_wav.html#sndhdr.test_wav">[docs]</a><span class="k">def</span> <span class="nf">test_wav</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_wav"><a class="viewcode-back" href="../generated/generated/sndhdr.test_wav.html#sndhdr.test_wav">[docs]</a><span class="k">def</span> <span class="nf">test_wav</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="c1"># &#39;RIFF&#39; &lt;len&gt; &#39;WAVE&#39; &#39;fmt &#39; &lt;len&gt;</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;RIFF&#39;</span> <span class="ow">or</span> <span class="n">h</span><span class="p">[</span><span class="mi">8</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;WAVE&#39;</span> <span class="ow">or</span> <span class="n">h</span><span class="p">[</span><span class="mi">12</span><span class="p">:</span><span class="mi">16</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;fmt &#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">None</span>
@@ -287,7 +287,7 @@
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_wav</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="test_8svx"><a class="viewcode-back" href="../generated/sndhdr.test_8svx.html#sndhdr.test_8svx">[docs]</a><span class="k">def</span> <span class="nf">test_8svx</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_8svx"><a class="viewcode-back" href="../generated/generated/sndhdr.test_8svx.html#sndhdr.test_8svx">[docs]</a><span class="k">def</span> <span class="nf">test_8svx</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;FORM&#39;</span> <span class="ow">or</span> <span class="n">h</span><span class="p">[</span><span class="mi">8</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;8SVX&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">None</span>
     <span class="c1"># Should decode it to get #channels -- assume always 1</span>
@@ -296,7 +296,7 @@
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_8svx</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="test_sndt"><a class="viewcode-back" href="../generated/sndhdr.test_sndt.html#sndhdr.test_sndt">[docs]</a><span class="k">def</span> <span class="nf">test_sndt</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_sndt"><a class="viewcode-back" href="../generated/generated/sndhdr.test_sndt.html#sndhdr.test_sndt">[docs]</a><span class="k">def</span> <span class="nf">test_sndt</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;SOUND&#39;</span><span class="p">:</span>
         <span class="n">nsamples</span> <span class="o">=</span> <span class="n">get_long_le</span><span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="mi">8</span><span class="p">:</span><span class="mi">12</span><span class="p">])</span>
         <span class="n">rate</span> <span class="o">=</span> <span class="n">get_short_le</span><span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="mi">20</span><span class="p">:</span><span class="mi">22</span><span class="p">])</span>
@@ -305,7 +305,7 @@
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_sndt</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="test_sndr"><a class="viewcode-back" href="../generated/sndhdr.test_sndr.html#sndhdr.test_sndr">[docs]</a><span class="k">def</span> <span class="nf">test_sndr</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_sndr"><a class="viewcode-back" href="../generated/generated/sndhdr.test_sndr.html#sndhdr.test_sndr">[docs]</a><span class="k">def</span> <span class="nf">test_sndr</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="se">\0\0</span><span class="s1">&#39;</span><span class="p">:</span>
         <span class="n">rate</span> <span class="o">=</span> <span class="n">get_short_le</span><span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
         <span class="k">if</span> <span class="mi">4000</span> <span class="o">&lt;=</span> <span class="n">rate</span> <span class="o">&lt;=</span> <span class="mi">25000</span><span class="p">:</span>
@@ -318,16 +318,16 @@
 <span class="c1"># Subroutines to extract numbers from strings #</span>
 <span class="c1">#---------------------------------------------#</span>
 
-<div class="viewcode-block" id="get_long_be"><a class="viewcode-back" href="../generated/sndhdr.get_long_be.html#sndhdr.get_long_be">[docs]</a><span class="k">def</span> <span class="nf">get_long_be</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="get_long_be"><a class="viewcode-back" href="../generated/generated/sndhdr.get_long_be.html#sndhdr.get_long_be">[docs]</a><span class="k">def</span> <span class="nf">get_long_be</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">&lt;&lt;</span><span class="mi">24</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">&lt;&lt;</span><span class="mi">16</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">&lt;&lt;</span><span class="mi">8</span><span class="p">)</span> <span class="o">|</span> <span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span></div>
 
-<div class="viewcode-block" id="get_long_le"><a class="viewcode-back" href="../generated/sndhdr.get_long_le.html#sndhdr.get_long_le">[docs]</a><span class="k">def</span> <span class="nf">get_long_le</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="get_long_le"><a class="viewcode-back" href="../generated/generated/sndhdr.get_long_le.html#sndhdr.get_long_le">[docs]</a><span class="k">def</span> <span class="nf">get_long_le</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">&lt;&lt;</span><span class="mi">24</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">&lt;&lt;</span><span class="mi">16</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">&lt;&lt;</span><span class="mi">8</span><span class="p">)</span> <span class="o">|</span> <span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span></div>
 
-<div class="viewcode-block" id="get_short_be"><a class="viewcode-back" href="../generated/sndhdr.get_short_be.html#sndhdr.get_short_be">[docs]</a><span class="k">def</span> <span class="nf">get_short_be</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="get_short_be"><a class="viewcode-back" href="../generated/generated/sndhdr.get_short_be.html#sndhdr.get_short_be">[docs]</a><span class="k">def</span> <span class="nf">get_short_be</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">&lt;&lt;</span><span class="mi">8</span><span class="p">)</span> <span class="o">|</span> <span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span></div>
 
-<div class="viewcode-block" id="get_short_le"><a class="viewcode-back" href="../generated/sndhdr.get_short_le.html#sndhdr.get_short_le">[docs]</a><span class="k">def</span> <span class="nf">get_short_le</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="get_short_le"><a class="viewcode-back" href="../generated/generated/sndhdr.get_short_le.html#sndhdr.get_short_le">[docs]</a><span class="k">def</span> <span class="nf">get_short_le</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">&lt;&lt;</span><span class="mi">8</span><span class="p">)</span> <span class="o">|</span> <span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span></div>
 
 
@@ -335,7 +335,7 @@
 <span class="c1"># Small test program #</span>
 <span class="c1">#--------------------#</span>
 
-<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/sndhdr.test.html#sndhdr.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
+<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/generated/sndhdr.test.html#sndhdr.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
     <span class="kn">import</span> <span class="nn">sys</span>
     <span class="n">recursive</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="ow">and</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;-r&#39;</span><span class="p">:</span>
@@ -350,7 +350,7 @@
         <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">[Interrupted]</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="testall"><a class="viewcode-back" href="../generated/sndhdr.testall.html#sndhdr.testall">[docs]</a><span class="k">def</span> <span class="nf">testall</span><span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="n">recursive</span><span class="p">,</span> <span class="n">toplevel</span><span class="p">):</span>
+<div class="viewcode-block" id="testall"><a class="viewcode-back" href="../generated/generated/sndhdr.testall.html#sndhdr.testall">[docs]</a><span class="k">def</span> <span class="nf">testall</span><span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="n">recursive</span><span class="p">,</span> <span class="n">toplevel</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">sys</span>
     <span class="kn">import</span> <span class="nn">os</span>
     <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">:</span>

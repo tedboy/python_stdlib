@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       cmp
       cmpfiles
       demo
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/filecmp.cmp
+       generated/filecmp.cmpfiles
+       generated/filecmp.demo
+      
    
    
 

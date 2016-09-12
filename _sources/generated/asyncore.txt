@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       close_all
       compact_traceback
@@ -21,6 +21,22 @@
       read
       readwrite
       write
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/asyncore.close_all
+       generated/asyncore.compact_traceback
+       generated/asyncore.loop
+       generated/asyncore.poll
+       generated/asyncore.poll2
+       generated/asyncore.poll3
+       generated/asyncore.read
+       generated/asyncore.readwrite
+       generated/asyncore.write
+      
    
    
 

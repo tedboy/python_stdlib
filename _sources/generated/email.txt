@@ -8,12 +8,21 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       message_from_file
       message_from_string
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/email.message_from_file
+       generated/email.message_from_string
+      
    
    
 

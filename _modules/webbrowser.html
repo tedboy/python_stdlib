@@ -164,7 +164,7 @@
 <span class="n">_browsers</span> <span class="o">=</span> <span class="p">{}</span>          <span class="c1"># Dictionary of available browser controllers</span>
 <span class="n">_tryorder</span> <span class="o">=</span> <span class="p">[]</span>          <span class="c1"># Preference order of available browsers</span>
 
-<div class="viewcode-block" id="register"><a class="viewcode-back" href="../generated/webbrowser.register.html#webbrowser.register">[docs]</a><span class="k">def</span> <span class="nf">register</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">klass</span><span class="p">,</span> <span class="n">instance</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">update_tryorder</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="register"><a class="viewcode-back" href="../generated/generated/webbrowser.register.html#webbrowser.register">[docs]</a><span class="k">def</span> <span class="nf">register</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">klass</span><span class="p">,</span> <span class="n">instance</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">update_tryorder</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Register a browser connector and, optionally, connection.&quot;&quot;&quot;</span>
     <span class="n">_browsers</span><span class="p">[</span><span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span> <span class="o">=</span> <span class="p">[</span><span class="n">klass</span><span class="p">,</span> <span class="n">instance</span><span class="p">]</span>
     <span class="k">if</span> <span class="n">update_tryorder</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
@@ -172,7 +172,7 @@
     <span class="k">elif</span> <span class="n">update_tryorder</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">_tryorder</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="get"><a class="viewcode-back" href="../generated/webbrowser.get.html#webbrowser.get">[docs]</a><span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="n">using</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="get"><a class="viewcode-back" href="../generated/generated/webbrowser.get.html#webbrowser.get">[docs]</a><span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="n">using</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return a browser launcher instance appropriate for the environment.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">using</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">alternatives</span> <span class="o">=</span> <span class="p">[</span><span class="n">using</span><span class="p">]</span>
@@ -202,17 +202,17 @@
 <span class="c1"># It is recommended one does &quot;import webbrowser&quot; and uses webbrowser.open(url)</span>
 <span class="c1"># instead of &quot;from webbrowser import *&quot;.</span>
 
-<div class="viewcode-block" id="open"><a class="viewcode-back" href="../generated/webbrowser.open.html#webbrowser.open">[docs]</a><span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">new</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">autoraise</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+<div class="viewcode-block" id="open"><a class="viewcode-back" href="../generated/generated/webbrowser.open.html#webbrowser.open">[docs]</a><span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">new</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">autoraise</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">_tryorder</span><span class="p">:</span>
         <span class="n">browser</span> <span class="o">=</span> <span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">browser</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">new</span><span class="p">,</span> <span class="n">autoraise</span><span class="p">):</span>
             <span class="k">return</span> <span class="bp">True</span>
     <span class="k">return</span> <span class="bp">False</span></div>
 
-<div class="viewcode-block" id="open_new"><a class="viewcode-back" href="../generated/webbrowser.open_new.html#webbrowser.open_new">[docs]</a><span class="k">def</span> <span class="nf">open_new</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="open_new"><a class="viewcode-back" href="../generated/generated/webbrowser.open_new.html#webbrowser.open_new">[docs]</a><span class="k">def</span> <span class="nf">open_new</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="open_new_tab"><a class="viewcode-back" href="../generated/webbrowser.open_new_tab.html#webbrowser.open_new_tab">[docs]</a><span class="k">def</span> <span class="nf">open_new_tab</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="open_new_tab"><a class="viewcode-back" href="../generated/generated/webbrowser.open_new_tab.html#webbrowser.open_new_tab">[docs]</a><span class="k">def</span> <span class="nf">open_new_tab</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></div>
 
 
@@ -598,7 +598,7 @@
 <span class="c1"># These are the right tests because all these Unix browsers require either</span>
 <span class="c1"># a console terminal or an X display to run.</span>
 
-<div class="viewcode-block" id="register_X_browsers"><a class="viewcode-back" href="../generated/webbrowser.register_X_browsers.html#webbrowser.register_X_browsers">[docs]</a><span class="k">def</span> <span class="nf">register_X_browsers</span><span class="p">():</span>
+<div class="viewcode-block" id="register_X_browsers"><a class="viewcode-back" href="../generated/generated/webbrowser.register_X_browsers.html#webbrowser.register_X_browsers">[docs]</a><span class="k">def</span> <span class="nf">register_X_browsers</span><span class="p">():</span>
 
     <span class="c1"># use xdg-open if around</span>
     <span class="k">if</span> <span class="n">_iscommand</span><span class="p">(</span><span class="s2">&quot;xdg-open&quot;</span><span class="p">):</span>
@@ -823,7 +823,7 @@
 <span class="c1"># what to do if _tryorder is now empty?</span>
 
 
-<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/webbrowser.main.html#webbrowser.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/generated/webbrowser.main.html#webbrowser.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="kn">import</span> <span class="nn">getopt</span>
     <span class="n">usage</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Usage: </span><span class="si">%s</span><span class="s2"> [-n | -t] url</span>
 <span class="s2">    -n: open new window</span>

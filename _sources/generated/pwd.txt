@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       getpwall
       getpwnam
       getpwuid
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pwd.getpwall
+       generated/pwd.getpwnam
+       generated/pwd.getpwuid
+      
    
    
 

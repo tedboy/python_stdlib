@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       StringIO
       decode_long
@@ -21,6 +21,22 @@
       loads
       mloads
       whichmodule
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pickle.StringIO
+       generated/pickle.decode_long
+       generated/pickle.dump
+       generated/pickle.dumps
+       generated/pickle.encode_long
+       generated/pickle.load
+       generated/pickle.loads
+       generated/pickle.mloads
+       generated/pickle.whichmodule
+      
    
    
 

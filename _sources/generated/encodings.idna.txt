@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       ToASCII
       ToUnicode
       getregentry
       nameprep
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/encodings.idna.ToASCII
+       generated/encodings.idna.ToUnicode
+       generated/encodings.idna.getregentry
+       generated/encodings.idna.nameprep
+      
    
    
 

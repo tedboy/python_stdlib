@@ -576,7 +576,7 @@ strings are immutable):</p>
 </div>
 <p>You should be careful, however, not to pass them to functions expecting pointers
 to mutable memory. If you need mutable memory blocks, ctypes has a
-<a class="reference internal" href="../generated/ctypes.create_string_buffer.html#ctypes.create_string_buffer" title="ctypes.create_string_buffer"><code class="xref py py-func docutils literal"><span class="pre">create_string_buffer()</span></code></a> function which creates these in various ways.  The
+<a class="reference internal" href="../generated/generated/ctypes.create_string_buffer.html#ctypes.create_string_buffer" title="ctypes.create_string_buffer"><code class="xref py py-func docutils literal"><span class="pre">create_string_buffer()</span></code></a> function which creates these in various ways.  The
 current memory block contents can be accessed (or changed) with the <code class="docutils literal"><span class="pre">raw</span></code>
 property; if you want to access it as NUL terminated string, use the <code class="docutils literal"><span class="pre">value</span></code>
 property:</p>
@@ -598,11 +598,11 @@ property:</p>
 <span class="go">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
-<p>The <a class="reference internal" href="../generated/ctypes.create_string_buffer.html#ctypes.create_string_buffer" title="ctypes.create_string_buffer"><code class="xref py py-func docutils literal"><span class="pre">create_string_buffer()</span></code></a> function replaces the <a class="reference internal" href="../generated/ctypes.c_buffer.html#ctypes.c_buffer" title="ctypes.c_buffer"><code class="xref py py-func docutils literal"><span class="pre">c_buffer()</span></code></a> function
+<p>The <a class="reference internal" href="../generated/generated/ctypes.create_string_buffer.html#ctypes.create_string_buffer" title="ctypes.create_string_buffer"><code class="xref py py-func docutils literal"><span class="pre">create_string_buffer()</span></code></a> function replaces the <a class="reference internal" href="../generated/generated/ctypes.c_buffer.html#ctypes.c_buffer" title="ctypes.c_buffer"><code class="xref py py-func docutils literal"><span class="pre">c_buffer()</span></code></a> function
 (which is still available as an alias), as well as the <code class="xref py py-func docutils literal"><span class="pre">c_string()</span></code> function
 from earlier ctypes releases.  To create a mutable memory block containing
 unicode characters of the C type <code class="xref c c-type docutils literal"><span class="pre">wchar_t</span></code> use the
-<a class="reference internal" href="../generated/ctypes.create_unicode_buffer.html#ctypes.create_unicode_buffer" title="ctypes.create_unicode_buffer"><code class="xref py py-func docutils literal"><span class="pre">create_unicode_buffer()</span></code></a> function.</p>
+<a class="reference internal" href="../generated/generated/ctypes.create_unicode_buffer.html#ctypes.create_unicode_buffer" title="ctypes.create_unicode_buffer"><code class="xref py py-func docutils literal"><span class="pre">create_unicode_buffer()</span></code></a> function.</p>
 </div>
 <div class="section" id="calling-functions-continued">
 <span id="ctypes-calling-functions-continued"></span><h3><a class="toc-backref" href="#id7">16.1.5. Calling functions, continued</a><a class="headerlink" href="#calling-functions-continued" title="Permalink to this headline">¶</a></h3>
@@ -765,10 +765,10 @@ through the <code class="xref py py-attr docutils literal"><span class="pre">err
 <p>Sometimes a C api function expects a <em>pointer</em> to a data type as parameter,
 probably to write into the corresponding location, or if the data is too large
 to be passed by value. This is also known as <em>passing parameters by reference</em>.</p>
-<p><a class="reference internal" href="../generated/ctypes.html#module-ctypes" title="ctypes"><code class="xref py py-mod docutils literal"><span class="pre">ctypes</span></code></a> exports the <a class="reference internal" href="../generated/ctypes.byref.html#ctypes.byref" title="ctypes.byref"><code class="xref py py-func docutils literal"><span class="pre">byref()</span></code></a> function which is used to pass
+<p><a class="reference internal" href="../generated/ctypes.html#module-ctypes" title="ctypes"><code class="xref py py-mod docutils literal"><span class="pre">ctypes</span></code></a> exports the <a class="reference internal" href="../generated/generated/ctypes.byref.html#ctypes.byref" title="ctypes.byref"><code class="xref py py-func docutils literal"><span class="pre">byref()</span></code></a> function which is used to pass
 parameters by reference.  The same effect can be achieved with the
-<a class="reference internal" href="../generated/ctypes.pointer.html#ctypes.pointer" title="ctypes.pointer"><code class="xref py py-func docutils literal"><span class="pre">pointer()</span></code></a> function, although <a class="reference internal" href="../generated/ctypes.pointer.html#ctypes.pointer" title="ctypes.pointer"><code class="xref py py-func docutils literal"><span class="pre">pointer()</span></code></a> does a lot more work since it
-constructs a real pointer object, so it is faster to use <a class="reference internal" href="../generated/ctypes.byref.html#ctypes.byref" title="ctypes.byref"><code class="xref py py-func docutils literal"><span class="pre">byref()</span></code></a> if you
+<a class="reference internal" href="../generated/generated/ctypes.pointer.html#ctypes.pointer" title="ctypes.pointer"><code class="xref py py-func docutils literal"><span class="pre">pointer()</span></code></a> function, although <a class="reference internal" href="../generated/generated/ctypes.pointer.html#ctypes.pointer" title="ctypes.pointer"><code class="xref py py-func docutils literal"><span class="pre">pointer()</span></code></a> does a lot more work since it
+constructs a real pointer object, so it is faster to use <a class="reference internal" href="../generated/generated/ctypes.byref.html#ctypes.byref" title="ctypes.byref"><code class="xref py py-func docutils literal"><span class="pre">byref()</span></code></a> if you
 don&#8217;t need the pointer object in Python itself:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">c_int</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">c_float</span><span class="p">()</span>
@@ -927,7 +927,7 @@ initialized to zeros.</p>
 </div>
 <div class="section" id="pointers">
 <span id="ctypes-pointers"></span><h3><a class="toc-backref" href="#id16">16.1.14. Pointers</a><a class="headerlink" href="#pointers" title="Permalink to this headline">¶</a></h3>
-<p>Pointer instances are created by calling the <a class="reference internal" href="../generated/ctypes.pointer.html#ctypes.pointer" title="ctypes.pointer"><code class="xref py py-func docutils literal"><span class="pre">pointer()</span></code></a> function on a
+<p>Pointer instances are created by calling the <a class="reference internal" href="../generated/generated/ctypes.pointer.html#ctypes.pointer" title="ctypes.pointer"><code class="xref py py-func docutils literal"><span class="pre">pointer()</span></code></a> function on a
 <a class="reference internal" href="../generated/ctypes.html#module-ctypes" title="ctypes"><code class="xref py py-mod docutils literal"><span class="pre">ctypes</span></code></a> type:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ctypes</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">c_int</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
@@ -980,9 +980,9 @@ you&#8217;re doing, just as in C: You can access or change arbitrary memory loca
 Generally you only use this feature if you receive a pointer from a C function,
 and you <em>know</em> that the pointer actually points to an array instead of a single
 item.</p>
-<p>Behind the scenes, the <a class="reference internal" href="../generated/ctypes.pointer.html#ctypes.pointer" title="ctypes.pointer"><code class="xref py py-func docutils literal"><span class="pre">pointer()</span></code></a> function does more than simply create
+<p>Behind the scenes, the <a class="reference internal" href="../generated/generated/ctypes.pointer.html#ctypes.pointer" title="ctypes.pointer"><code class="xref py py-func docutils literal"><span class="pre">pointer()</span></code></a> function does more than simply create
 pointer instances, it has to create pointer <em>types</em> first.  This is done with
-the <a class="reference internal" href="../generated/ctypes.POINTER.html#ctypes.POINTER" title="ctypes.POINTER"><code class="xref py py-func docutils literal"><span class="pre">POINTER()</span></code></a> function, which accepts any <a class="reference internal" href="../generated/ctypes.html#module-ctypes" title="ctypes"><code class="xref py py-mod docutils literal"><span class="pre">ctypes</span></code></a> type, and returns
+the <a class="reference internal" href="../generated/generated/ctypes.POINTER.html#ctypes.POINTER" title="ctypes.POINTER"><code class="xref py py-func docutils literal"><span class="pre">POINTER()</span></code></a> function, which accepts any <a class="reference internal" href="../generated/ctypes.html#module-ctypes" title="ctypes"><code class="xref py py-mod docutils literal"><span class="pre">ctypes</span></code></a> type, and returns
 a new type:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">PI</span> <span class="o">=</span> <span class="n">POINTER</span><span class="p">(</span><span class="n">c_int</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">PI</span>
@@ -1046,14 +1046,14 @@ pointer types.  So, for <code class="docutils literal"><span class="pre">POINTER
 <p>In addition, if a function argument is explicitly declared to be a pointer type
 (such as <code class="docutils literal"><span class="pre">POINTER(c_int)</span></code>) in <code class="xref py py-attr docutils literal"><span class="pre">argtypes</span></code>, an object of the pointed
 type (<code class="docutils literal"><span class="pre">c_int</span></code> in this case) can be passed to the function.  ctypes will apply
-the required <a class="reference internal" href="../generated/ctypes.byref.html#ctypes.byref" title="ctypes.byref"><code class="xref py py-func docutils literal"><span class="pre">byref()</span></code></a> conversion in this case automatically.</p>
+the required <a class="reference internal" href="../generated/generated/ctypes.byref.html#ctypes.byref" title="ctypes.byref"><code class="xref py py-func docutils literal"><span class="pre">byref()</span></code></a> conversion in this case automatically.</p>
 <p>To set a POINTER type field to <code class="docutils literal"><span class="pre">NULL</span></code>, you can assign <code class="docutils literal"><span class="pre">None</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">bar</span><span class="o">.</span><span class="n">values</span> <span class="o">=</span> <span class="bp">None</span>
 <span class="go">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
 <p>Sometimes you have instances of incompatible types.  In C, you can cast one type
-into another type.  <a class="reference internal" href="../generated/ctypes.html#module-ctypes" title="ctypes"><code class="xref py py-mod docutils literal"><span class="pre">ctypes</span></code></a> provides a <a class="reference internal" href="../generated/ctypes.cast.html#ctypes.cast" title="ctypes.cast"><code class="xref py py-func docutils literal"><span class="pre">cast()</span></code></a> function which can be
+into another type.  <a class="reference internal" href="../generated/ctypes.html#module-ctypes" title="ctypes"><code class="xref py py-mod docutils literal"><span class="pre">ctypes</span></code></a> provides a <a class="reference internal" href="../generated/generated/ctypes.cast.html#ctypes.cast" title="ctypes.cast"><code class="xref py py-func docutils literal"><span class="pre">cast()</span></code></a> function which can be
 used in the same way.  The <code class="docutils literal"><span class="pre">Bar</span></code> structure defined above accepts
 <code class="docutils literal"><span class="pre">POINTER(c_int)</span></code> pointers or <a class="reference internal" href="../generated/generated/ctypes.c_int.html#ctypes.c_int" title="ctypes.c_int"><code class="xref py py-class docutils literal"><span class="pre">c_int</span></code></a> arrays for its <code class="docutils literal"><span class="pre">values</span></code> field,
 but not instances of other types:</p>
@@ -1064,9 +1064,9 @@ but not instances of other types:</p>
 <span class="go">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
-<p>For these cases, the <a class="reference internal" href="../generated/ctypes.cast.html#ctypes.cast" title="ctypes.cast"><code class="xref py py-func docutils literal"><span class="pre">cast()</span></code></a> function is handy.</p>
-<p>The <a class="reference internal" href="../generated/ctypes.cast.html#ctypes.cast" title="ctypes.cast"><code class="xref py py-func docutils literal"><span class="pre">cast()</span></code></a> function can be used to cast a ctypes instance into a pointer
-to a different ctypes data type.  <a class="reference internal" href="../generated/ctypes.cast.html#ctypes.cast" title="ctypes.cast"><code class="xref py py-func docutils literal"><span class="pre">cast()</span></code></a> takes two parameters, a ctypes
+<p>For these cases, the <a class="reference internal" href="../generated/generated/ctypes.cast.html#ctypes.cast" title="ctypes.cast"><code class="xref py py-func docutils literal"><span class="pre">cast()</span></code></a> function is handy.</p>
+<p>The <a class="reference internal" href="../generated/generated/ctypes.cast.html#ctypes.cast" title="ctypes.cast"><code class="xref py py-func docutils literal"><span class="pre">cast()</span></code></a> function can be used to cast a ctypes instance into a pointer
+to a different ctypes data type.  <a class="reference internal" href="../generated/generated/ctypes.cast.html#ctypes.cast" title="ctypes.cast"><code class="xref py py-func docutils literal"><span class="pre">cast()</span></code></a> takes two parameters, a ctypes
 object that is or can be converted to a pointer of some kind, and a ctypes
 pointer type.  It returns an instance of the second argument, which references
 the same memory block as the first argument:</p>
@@ -1076,7 +1076,7 @@ the same memory block as the first argument:</p>
 <span class="go">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
-<p>So, <a class="reference internal" href="../generated/ctypes.cast.html#ctypes.cast" title="ctypes.cast"><code class="xref py py-func docutils literal"><span class="pre">cast()</span></code></a> can be used to assign to the <code class="docutils literal"><span class="pre">values</span></code> field of <code class="docutils literal"><span class="pre">Bar</span></code> the
+<p>So, <a class="reference internal" href="../generated/generated/ctypes.cast.html#ctypes.cast" title="ctypes.cast"><code class="xref py py-func docutils literal"><span class="pre">cast()</span></code></a> can be used to assign to the <code class="docutils literal"><span class="pre">values</span></code> field of <code class="docutils literal"><span class="pre">Bar</span></code> the
 structure:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">bar</span> <span class="o">=</span> <span class="n">Bar</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">bar</span><span class="o">.</span><span class="n">values</span> <span class="o">=</span> <span class="n">cast</span><span class="p">((</span><span class="n">c_byte</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)(),</span> <span class="n">POINTER</span><span class="p">(</span><span class="n">c_int</span><span class="p">))</span>
@@ -1286,7 +1286,7 @@ more comparisons than the linux version!</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Make sure you keep references to <a class="reference internal" href="../generated/ctypes.CFUNCTYPE.html#ctypes.CFUNCTYPE" title="ctypes.CFUNCTYPE"><code class="xref py py-func docutils literal"><span class="pre">CFUNCTYPE()</span></code></a> objects as long as they
+<p>Make sure you keep references to <a class="reference internal" href="../generated/generated/ctypes.CFUNCTYPE.html#ctypes.CFUNCTYPE" title="ctypes.CFUNCTYPE"><code class="xref py py-func docutils literal"><span class="pre">CFUNCTYPE()</span></code></a> objects as long as they
 are used from C code. <a class="reference internal" href="../generated/ctypes.html#module-ctypes" title="ctypes"><code class="xref py py-mod docutils literal"><span class="pre">ctypes</span></code></a> doesn&#8217;t, and if you don&#8217;t, they may be
 garbage collected, crashing your program when a callback is made.</p>
 <p class="last">Also, note that if the callback function is called in a thread created
@@ -1421,7 +1421,7 @@ constructs a new Python object each time!</p>
 <div class="section" id="variable-sized-data-types">
 <span id="ctypes-variable-sized-data-types"></span><h3><a class="toc-backref" href="#id22">16.1.20. Variable-sized data types</a><a class="headerlink" href="#variable-sized-data-types" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="../generated/ctypes.html#module-ctypes" title="ctypes"><code class="xref py py-mod docutils literal"><span class="pre">ctypes</span></code></a> provides some support for variable-sized arrays and structures.</p>
-<p>The <a class="reference internal" href="../generated/ctypes.resize.html#ctypes.resize" title="ctypes.resize"><code class="xref py py-func docutils literal"><span class="pre">resize()</span></code></a> function can be used to resize the memory buffer of an
+<p>The <a class="reference internal" href="../generated/generated/ctypes.resize.html#ctypes.resize" title="ctypes.resize"><code class="xref py py-func docutils literal"><span class="pre">resize()</span></code></a> function can be used to resize the memory buffer of an
 existing ctypes object.  The function takes the object as first argument, and
 the requested size in bytes as the second argument.  The memory block cannot be
 made smaller than the natural memory block specified by the objects type, a
@@ -1575,8 +1575,8 @@ allows accessing the system <a class="reference internal" href="../generated/err
 variable; if you call foreign functions created with <code class="docutils literal"><span class="pre">use_errno=True</span></code> then the
 <a class="reference internal" href="../generated/errno.html#module-errno" title="errno"><code class="xref py py-data docutils literal"><span class="pre">errno</span></code></a> value before the function call is swapped with the ctypes private
 copy, the same happens immediately after the function call.</p>
-<p>The function <a class="reference internal" href="../generated/ctypes.get_errno.html#ctypes.get_errno" title="ctypes.get_errno"><code class="xref py py-func docutils literal"><span class="pre">ctypes.get_errno()</span></code></a> returns the value of the ctypes private
-copy, and the function <a class="reference internal" href="../generated/ctypes.set_errno.html#ctypes.set_errno" title="ctypes.set_errno"><code class="xref py py-func docutils literal"><span class="pre">ctypes.set_errno()</span></code></a> changes the ctypes private copy
+<p>The function <a class="reference internal" href="../generated/generated/ctypes.get_errno.html#ctypes.get_errno" title="ctypes.get_errno"><code class="xref py py-func docutils literal"><span class="pre">ctypes.get_errno()</span></code></a> returns the value of the ctypes private
+copy, and the function <a class="reference internal" href="../generated/generated/ctypes.set_errno.html#ctypes.set_errno" title="ctypes.set_errno"><code class="xref py py-func docutils literal"><span class="pre">ctypes.set_errno()</span></code></a> changes the ctypes private copy
 to a new value and returns the former value.</p>
 <p>The <em>use_last_error</em> parameter, when set to True, enables the same mechanism for
 the Windows error code which is managed by the <a class="reference internal" href="#ctypes.GetLastError" title="ctypes.GetLastError"><code class="xref py py-func docutils literal"><span class="pre">GetLastError()</span></code></a> and
@@ -1797,7 +1797,7 @@ code.</p>
 <code class="descclassname">ctypes.</code><code class="descname">WINFUNCTYPE</code><span class="sig-paren">(</span><em>restype</em>, <em>*argtypes</em>, <em>use_errno=False</em>, <em>use_last_error=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ctypes.WINFUNCTYPE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Windows only: The returned function prototype creates functions that use the
 <code class="docutils literal"><span class="pre">stdcall</span></code> calling convention, except on Windows CE where
-<a class="reference internal" href="#ctypes.WINFUNCTYPE" title="ctypes.WINFUNCTYPE"><code class="xref py py-func docutils literal"><span class="pre">WINFUNCTYPE()</span></code></a> is the same as <a class="reference internal" href="../generated/ctypes.CFUNCTYPE.html#ctypes.CFUNCTYPE" title="ctypes.CFUNCTYPE"><code class="xref py py-func docutils literal"><span class="pre">CFUNCTYPE()</span></code></a>.  The function will
+<a class="reference internal" href="#ctypes.WINFUNCTYPE" title="ctypes.WINFUNCTYPE"><code class="xref py py-func docutils literal"><span class="pre">WINFUNCTYPE()</span></code></a> is the same as <a class="reference internal" href="../generated/generated/ctypes.CFUNCTYPE.html#ctypes.CFUNCTYPE" title="ctypes.CFUNCTYPE"><code class="xref py py-func docutils literal"><span class="pre">CFUNCTYPE()</span></code></a>.  The function will
 release the GIL during the call.  <em>use_errno</em> and <em>use_last_error</em> have the
 same meaning as above.</p>
 </dd></dl>
@@ -2148,7 +2148,7 @@ but it is possible to enlarge the buffer.</p>
 encoding, like <code class="docutils literal"><span class="pre">'utf-8'</span></code> or <code class="docutils literal"><span class="pre">'mbcs'</span></code>, <em>errors</em> must be a string
 specifying the error handling on encoding/decoding errors.  Examples of
 possible values are <code class="docutils literal"><span class="pre">&quot;strict&quot;</span></code>, <code class="docutils literal"><span class="pre">&quot;replace&quot;</span></code>, or <code class="docutils literal"><span class="pre">&quot;ignore&quot;</span></code>.</p>
-<p><a class="reference internal" href="../generated/ctypes.set_conversion_mode.html#ctypes.set_conversion_mode" title="ctypes.set_conversion_mode"><code class="xref py py-func docutils literal"><span class="pre">set_conversion_mode()</span></code></a> returns a 2-tuple containing the previous
+<p><a class="reference internal" href="../generated/generated/ctypes.set_conversion_mode.html#ctypes.set_conversion_mode" title="ctypes.set_conversion_mode"><code class="xref py py-func docutils literal"><span class="pre">set_conversion_mode()</span></code></a> returns a 2-tuple containing the previous
 conversion rules.  On windows, the initial conversion rules are <code class="docutils literal"><span class="pre">('mbcs',</span>
 <span class="pre">'ignore')</span></code>, on other systems <code class="docutils literal"><span class="pre">('ascii',</span> <span class="pre">'strict')</span></code>.</p>
 </dd></dl>
@@ -2217,7 +2217,7 @@ zero-terminated.</p>
 <dd><p>This non-public class is the common base class of all ctypes data types.
 Among other things, all ctypes type instances contain a memory block that
 hold C compatible data; the address of the memory block is returned by the
-<a class="reference internal" href="../generated/ctypes.addressof.html#ctypes.addressof" title="ctypes.addressof"><code class="xref py py-func docutils literal"><span class="pre">addressof()</span></code></a> helper function.  Another instance variable is exposed as
+<a class="reference internal" href="../generated/generated/ctypes.addressof.html#ctypes.addressof" title="ctypes.addressof"><code class="xref py py-func docutils literal"><span class="pre">addressof()</span></code></a> helper function.  Another instance variable is exposed as
 <a class="reference internal" href="#ctypes._CData._objects" title="ctypes._CData._objects"><code class="xref py py-attr docutils literal"><span class="pre">_objects</span></code></a>; this contains other Python objects that need to be kept
 alive in case the memory block contains pointers.</p>
 <p>Common methods of ctypes data types, these are all class methods (to be
@@ -2733,9 +2733,9 @@ initialize the elements in order.</p>
 <dt id="ctypes._Pointer">
 <em class="property">class </em><code class="descclassname">ctypes.</code><code class="descname">_Pointer</code><a class="headerlink" href="#ctypes._Pointer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Private, abstract base class for pointers.</p>
-<p>Concrete pointer types are created by calling <a class="reference internal" href="../generated/ctypes.POINTER.html#ctypes.POINTER" title="ctypes.POINTER"><code class="xref py py-func docutils literal"><span class="pre">POINTER()</span></code></a> with the
+<p>Concrete pointer types are created by calling <a class="reference internal" href="../generated/generated/ctypes.POINTER.html#ctypes.POINTER" title="ctypes.POINTER"><code class="xref py py-func docutils literal"><span class="pre">POINTER()</span></code></a> with the
 type that will be pointed to; this is done automatically by
-<a class="reference internal" href="../generated/ctypes.pointer.html#ctypes.pointer" title="ctypes.pointer"><code class="xref py py-func docutils literal"><span class="pre">pointer()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/ctypes.pointer.html#ctypes.pointer" title="ctypes.pointer"><code class="xref py py-func docutils literal"><span class="pre">pointer()</span></code></a>.</p>
 <p>If a pointer points to an array, its elements can be read and
 written using standard subscript and slice accesses.  Pointer objects
 have no size, so <a class="reference internal" href="../02_builtin_functions/02.html#len" title="len"><code class="xref py py-func docutils literal"><span class="pre">len()</span></code></a> will raise <a class="reference internal" href="../generated/exceptions.TypeError.html#exceptions.TypeError" title="exceptions.TypeError"><code class="xref py py-exc docutils literal"><span class="pre">TypeError</span></code></a>.  Negative

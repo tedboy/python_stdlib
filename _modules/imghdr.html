@@ -153,7 +153,7 @@
 <span class="c1"># Recognize image headers #</span>
 <span class="c1">#-------------------------#</span>
 
-<div class="viewcode-block" id="what"><a class="viewcode-back" href="../generated/imghdr.what.html#imghdr.what">[docs]</a><span class="k">def</span> <span class="nf">what</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="what"><a class="viewcode-back" href="../generated/generated/imghdr.what.html#imghdr.what">[docs]</a><span class="k">def</span> <span class="nf">what</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">f</span> <span class="o">=</span> <span class="bp">None</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">h</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -179,48 +179,48 @@
 
 <span class="n">tests</span> <span class="o">=</span> <span class="p">[]</span>
 
-<div class="viewcode-block" id="test_jpeg"><a class="viewcode-back" href="../generated/imghdr.test_jpeg.html#imghdr.test_jpeg">[docs]</a><span class="k">def</span> <span class="nf">test_jpeg</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_jpeg"><a class="viewcode-back" href="../generated/generated/imghdr.test_jpeg.html#imghdr.test_jpeg">[docs]</a><span class="k">def</span> <span class="nf">test_jpeg</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;JPEG data in JFIF format&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;JFIF&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;jpeg&#39;</span></div>
 
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_jpeg</span><span class="p">)</span>
 
-<div class="viewcode-block" id="test_exif"><a class="viewcode-back" href="../generated/imghdr.test_exif.html#imghdr.test_exif">[docs]</a><span class="k">def</span> <span class="nf">test_exif</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_exif"><a class="viewcode-back" href="../generated/generated/imghdr.test_exif.html#imghdr.test_exif">[docs]</a><span class="k">def</span> <span class="nf">test_exif</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;JPEG data in Exif format&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Exif&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;jpeg&#39;</span></div>
 
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_exif</span><span class="p">)</span>
 
-<div class="viewcode-block" id="test_png"><a class="viewcode-back" href="../generated/imghdr.test_png.html#imghdr.test_png">[docs]</a><span class="k">def</span> <span class="nf">test_png</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_png"><a class="viewcode-back" href="../generated/generated/imghdr.test_png.html#imghdr.test_png">[docs]</a><span class="k">def</span> <span class="nf">test_png</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="se">\211</span><span class="s2">PNG</span><span class="se">\r\n\032\n</span><span class="s2">&quot;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;png&#39;</span></div>
 
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_png</span><span class="p">)</span>
 
-<div class="viewcode-block" id="test_gif"><a class="viewcode-back" href="../generated/imghdr.test_gif.html#imghdr.test_gif">[docs]</a><span class="k">def</span> <span class="nf">test_gif</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_gif"><a class="viewcode-back" href="../generated/generated/imghdr.test_gif.html#imghdr.test_gif">[docs]</a><span class="k">def</span> <span class="nf">test_gif</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;GIF (&#39;87 and &#39;89 variants)&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;GIF87a&#39;</span><span class="p">,</span> <span class="s1">&#39;GIF89a&#39;</span><span class="p">):</span>
         <span class="k">return</span> <span class="s1">&#39;gif&#39;</span></div>
 
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_gif</span><span class="p">)</span>
 
-<div class="viewcode-block" id="test_tiff"><a class="viewcode-back" href="../generated/imghdr.test_tiff.html#imghdr.test_tiff">[docs]</a><span class="k">def</span> <span class="nf">test_tiff</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_tiff"><a class="viewcode-back" href="../generated/generated/imghdr.test_tiff.html#imghdr.test_tiff">[docs]</a><span class="k">def</span> <span class="nf">test_tiff</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;TIFF (can be in Motorola or Intel byte order)&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;MM&#39;</span><span class="p">,</span> <span class="s1">&#39;II&#39;</span><span class="p">):</span>
         <span class="k">return</span> <span class="s1">&#39;tiff&#39;</span></div>
 
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_tiff</span><span class="p">)</span>
 
-<div class="viewcode-block" id="test_rgb"><a class="viewcode-back" href="../generated/imghdr.test_rgb.html#imghdr.test_rgb">[docs]</a><span class="k">def</span> <span class="nf">test_rgb</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_rgb"><a class="viewcode-back" href="../generated/generated/imghdr.test_rgb.html#imghdr.test_rgb">[docs]</a><span class="k">def</span> <span class="nf">test_rgb</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;SGI image library&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="se">\001\332</span><span class="s1">&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;rgb&#39;</span></div>
 
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_rgb</span><span class="p">)</span>
 
-<div class="viewcode-block" id="test_pbm"><a class="viewcode-back" href="../generated/imghdr.test_pbm.html#imghdr.test_pbm">[docs]</a><span class="k">def</span> <span class="nf">test_pbm</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_pbm"><a class="viewcode-back" href="../generated/generated/imghdr.test_pbm.html#imghdr.test_pbm">[docs]</a><span class="k">def</span> <span class="nf">test_pbm</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;PBM (portable bitmap)&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="ow">and</span> \
         <span class="n">h</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;P&#39;</span> <span class="ow">and</span> <span class="n">h</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="s1">&#39;14&#39;</span> <span class="ow">and</span> <span class="n">h</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="ow">in</span> <span class="s1">&#39; </span><span class="se">\t\n\r</span><span class="s1">&#39;</span><span class="p">:</span>
@@ -228,7 +228,7 @@
 
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_pbm</span><span class="p">)</span>
 
-<div class="viewcode-block" id="test_pgm"><a class="viewcode-back" href="../generated/imghdr.test_pgm.html#imghdr.test_pgm">[docs]</a><span class="k">def</span> <span class="nf">test_pgm</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_pgm"><a class="viewcode-back" href="../generated/generated/imghdr.test_pgm.html#imghdr.test_pgm">[docs]</a><span class="k">def</span> <span class="nf">test_pgm</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;PGM (portable graymap)&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="ow">and</span> \
         <span class="n">h</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;P&#39;</span> <span class="ow">and</span> <span class="n">h</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="s1">&#39;25&#39;</span> <span class="ow">and</span> <span class="n">h</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="ow">in</span> <span class="s1">&#39; </span><span class="se">\t\n\r</span><span class="s1">&#39;</span><span class="p">:</span>
@@ -236,7 +236,7 @@
 
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_pgm</span><span class="p">)</span>
 
-<div class="viewcode-block" id="test_ppm"><a class="viewcode-back" href="../generated/imghdr.test_ppm.html#imghdr.test_ppm">[docs]</a><span class="k">def</span> <span class="nf">test_ppm</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_ppm"><a class="viewcode-back" href="../generated/generated/imghdr.test_ppm.html#imghdr.test_ppm">[docs]</a><span class="k">def</span> <span class="nf">test_ppm</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;PPM (portable pixmap)&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="ow">and</span> \
         <span class="n">h</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;P&#39;</span> <span class="ow">and</span> <span class="n">h</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="s1">&#39;36&#39;</span> <span class="ow">and</span> <span class="n">h</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="ow">in</span> <span class="s1">&#39; </span><span class="se">\t\n\r</span><span class="s1">&#39;</span><span class="p">:</span>
@@ -244,14 +244,14 @@
 
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_ppm</span><span class="p">)</span>
 
-<div class="viewcode-block" id="test_rast"><a class="viewcode-back" href="../generated/imghdr.test_rast.html#imghdr.test_rast">[docs]</a><span class="k">def</span> <span class="nf">test_rast</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_rast"><a class="viewcode-back" href="../generated/generated/imghdr.test_rast.html#imghdr.test_rast">[docs]</a><span class="k">def</span> <span class="nf">test_rast</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Sun raster file&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="se">\x59\xA6\x6A\x95</span><span class="s1">&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;rast&#39;</span></div>
 
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_rast</span><span class="p">)</span>
 
-<div class="viewcode-block" id="test_xbm"><a class="viewcode-back" href="../generated/imghdr.test_xbm.html#imghdr.test_xbm">[docs]</a><span class="k">def</span> <span class="nf">test_xbm</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_xbm"><a class="viewcode-back" href="../generated/generated/imghdr.test_xbm.html#imghdr.test_xbm">[docs]</a><span class="k">def</span> <span class="nf">test_xbm</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;X bitmap (X10 or X11)&quot;&quot;&quot;</span>
     <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;#define &#39;</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)]</span> <span class="o">==</span> <span class="n">s</span><span class="p">:</span>
@@ -259,7 +259,7 @@
 
 <span class="n">tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_xbm</span><span class="p">)</span>
 
-<div class="viewcode-block" id="test_bmp"><a class="viewcode-back" href="../generated/imghdr.test_bmp.html#imghdr.test_bmp">[docs]</a><span class="k">def</span> <span class="nf">test_bmp</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+<div class="viewcode-block" id="test_bmp"><a class="viewcode-back" href="../generated/generated/imghdr.test_bmp.html#imghdr.test_bmp">[docs]</a><span class="k">def</span> <span class="nf">test_bmp</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">h</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;BM&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;bmp&#39;</span></div>
 
@@ -269,7 +269,7 @@
 <span class="c1"># Small test program #</span>
 <span class="c1">#--------------------#</span>
 
-<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/imghdr.test.html#imghdr.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
+<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/generated/imghdr.test.html#imghdr.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
     <span class="kn">import</span> <span class="nn">sys</span>
     <span class="n">recursive</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="ow">and</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;-r&#39;</span><span class="p">:</span>
@@ -284,7 +284,7 @@
         <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">[Interrupted]</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="testall"><a class="viewcode-back" href="../generated/imghdr.testall.html#imghdr.testall">[docs]</a><span class="k">def</span> <span class="nf">testall</span><span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="n">recursive</span><span class="p">,</span> <span class="n">toplevel</span><span class="p">):</span>
+<div class="viewcode-block" id="testall"><a class="viewcode-back" href="../generated/generated/imghdr.testall.html#imghdr.testall">[docs]</a><span class="k">def</span> <span class="nf">testall</span><span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="n">recursive</span><span class="p">,</span> <span class="n">toplevel</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">sys</span>
     <span class="kn">import</span> <span class="nn">os</span>
     <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">:</span>

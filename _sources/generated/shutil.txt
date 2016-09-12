@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       abspath
       copy
@@ -29,6 +29,30 @@
       register_archive_format
       rmtree
       unregister_archive_format
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/shutil.abspath
+       generated/shutil.copy
+       generated/shutil.copy2
+       generated/shutil.copyfile
+       generated/shutil.copyfileobj
+       generated/shutil.copymode
+       generated/shutil.copystat
+       generated/shutil.copytree
+       generated/shutil.get_archive_formats
+       generated/shutil.getgrnam
+       generated/shutil.getpwnam
+       generated/shutil.ignore_patterns
+       generated/shutil.make_archive
+       generated/shutil.move
+       generated/shutil.register_archive_format
+       generated/shutil.rmtree
+       generated/shutil.unregister_archive_format
+      
    
    
 

@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       allmethods
       apropos
@@ -56,6 +56,57 @@
       visiblename
       writedoc
       writedocs
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pydoc.allmethods
+       generated/pydoc.apropos
+       generated/pydoc.classify_class_attrs
+       generated/pydoc.classname
+       generated/pydoc.cli
+       generated/pydoc.cram
+       generated/pydoc.describe
+       generated/pydoc.doc
+       generated/pydoc.expandtabs
+       generated/pydoc.extract_tb
+       generated/pydoc.find
+       generated/pydoc.getdoc
+       generated/pydoc.getpager
+       generated/pydoc.gui
+       generated/pydoc.importfile
+       generated/pydoc.isdata
+       generated/pydoc.ispackage
+       generated/pydoc.ispath
+       generated/pydoc.join
+       generated/pydoc.locate
+       generated/pydoc.lower
+       generated/pydoc.pager
+       generated/pydoc.pathdirs
+       generated/pydoc.pipepager
+       generated/pydoc.plain
+       generated/pydoc.plainpager
+       generated/pydoc.render_doc
+       generated/pydoc.replace
+       generated/pydoc.resolve
+       generated/pydoc.rfind
+       generated/pydoc.rstrip
+       generated/pydoc.safeimport
+       generated/pydoc.serve
+       generated/pydoc.source_synopsis
+       generated/pydoc.split
+       generated/pydoc.splitdoc
+       generated/pydoc.strip
+       generated/pydoc.stripid
+       generated/pydoc.synopsis
+       generated/pydoc.tempfilepager
+       generated/pydoc.ttypager
+       generated/pydoc.visiblename
+       generated/pydoc.writedoc
+       generated/pydoc.writedocs
+      
    
    
 

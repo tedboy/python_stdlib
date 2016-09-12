@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       clear_cache
       namedtuple
@@ -23,6 +23,24 @@
       urlsplit
       urlunparse
       urlunsplit
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/urlparse.clear_cache
+       generated/urlparse.namedtuple
+       generated/urlparse.parse_qs
+       generated/urlparse.parse_qsl
+       generated/urlparse.unquote
+       generated/urlparse.urldefrag
+       generated/urlparse.urljoin
+       generated/urlparse.urlparse
+       generated/urlparse.urlsplit
+       generated/urlparse.urlunparse
+       generated/urlparse.urlunsplit
+      
    
    
 

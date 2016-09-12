@@ -157,7 +157,7 @@
 
 <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;getline&quot;</span><span class="p">,</span> <span class="s2">&quot;clearcache&quot;</span><span class="p">,</span> <span class="s2">&quot;checkcache&quot;</span><span class="p">]</span>
 
-<div class="viewcode-block" id="getline"><a class="viewcode-back" href="../generated/linecache.getline.html#linecache.getline">[docs]</a><span class="k">def</span> <span class="nf">getline</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">module_globals</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="getline"><a class="viewcode-back" href="../generated/generated/linecache.getline.html#linecache.getline">[docs]</a><span class="k">def</span> <span class="nf">getline</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">module_globals</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">lines</span> <span class="o">=</span> <span class="n">getlines</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">module_globals</span><span class="p">)</span>
     <span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;=</span> <span class="n">lineno</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">lines</span><span class="p">[</span><span class="n">lineno</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -170,14 +170,14 @@
 <span class="n">cache</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># The cache</span>
 
 
-<div class="viewcode-block" id="clearcache"><a class="viewcode-back" href="../generated/linecache.clearcache.html#linecache.clearcache">[docs]</a><span class="k">def</span> <span class="nf">clearcache</span><span class="p">():</span>
+<div class="viewcode-block" id="clearcache"><a class="viewcode-back" href="../generated/generated/linecache.clearcache.html#linecache.clearcache">[docs]</a><span class="k">def</span> <span class="nf">clearcache</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Clear the cache entirely.&quot;&quot;&quot;</span>
 
     <span class="k">global</span> <span class="n">cache</span>
     <span class="n">cache</span> <span class="o">=</span> <span class="p">{}</span></div>
 
 
-<div class="viewcode-block" id="getlines"><a class="viewcode-back" href="../generated/linecache.getlines.html#linecache.getlines">[docs]</a><span class="k">def</span> <span class="nf">getlines</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">module_globals</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="getlines"><a class="viewcode-back" href="../generated/generated/linecache.getlines.html#linecache.getlines">[docs]</a><span class="k">def</span> <span class="nf">getlines</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">module_globals</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get the lines for a file from the cache.</span>
 <span class="sd">    Update the cache if it doesn&#39;t contain an entry for this file already.&quot;&quot;&quot;</span>
 
@@ -191,7 +191,7 @@
         <span class="k">return</span> <span class="p">[]</span></div>
 
 
-<div class="viewcode-block" id="checkcache"><a class="viewcode-back" href="../generated/linecache.checkcache.html#linecache.checkcache">[docs]</a><span class="k">def</span> <span class="nf">checkcache</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="checkcache"><a class="viewcode-back" href="../generated/generated/linecache.checkcache.html#linecache.checkcache">[docs]</a><span class="k">def</span> <span class="nf">checkcache</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Discard cache entries that are out of date.</span>
 <span class="sd">    (This is not checked upon each call!)&quot;&quot;&quot;</span>
 
@@ -216,7 +216,7 @@
             <span class="k">del</span> <span class="n">cache</span><span class="p">[</span><span class="n">filename</span><span class="p">]</span></div>
 
 
-<div class="viewcode-block" id="updatecache"><a class="viewcode-back" href="../generated/linecache.updatecache.html#linecache.updatecache">[docs]</a><span class="k">def</span> <span class="nf">updatecache</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">module_globals</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="updatecache"><a class="viewcode-back" href="../generated/generated/linecache.updatecache.html#linecache.updatecache">[docs]</a><span class="k">def</span> <span class="nf">updatecache</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">module_globals</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Update a cache entry and return its list of lines.</span>
 <span class="sd">    If something&#39;s wrong, print a message, discard the cache entry,</span>
 <span class="sd">    and return an empty list.&quot;&quot;&quot;</span>

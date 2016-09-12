@@ -197,12 +197,12 @@
 <span class="k">elif</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;riscos&#39;</span><span class="p">:</span>
     <span class="kn">from</span> <span class="nn">rourl2path</span> <span class="kn">import</span> <span class="n">url2pathname</span><span class="p">,</span> <span class="n">pathname2url</span>
 <span class="k">else</span><span class="p">:</span>
-<div class="viewcode-block" id="url2pathname"><a class="viewcode-back" href="../generated/urllib2.url2pathname.html#urllib.url2pathname">[docs]</a>    <span class="k">def</span> <span class="nf">url2pathname</span><span class="p">(</span><span class="n">pathname</span><span class="p">):</span>
+<div class="viewcode-block" id="url2pathname"><a class="viewcode-back" href="../generated/generated/urllib2.url2pathname.html#urllib.url2pathname">[docs]</a>    <span class="k">def</span> <span class="nf">url2pathname</span><span class="p">(</span><span class="n">pathname</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;OS-specific conversion from a relative URL of the &#39;file&#39; scheme</span>
 <span class="sd">        to a file system path; not recommended for general use.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">unquote</span><span class="p">(</span><span class="n">pathname</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="pathname2url"><a class="viewcode-back" href="../generated/urllib.pathname2url.html#urllib.pathname2url">[docs]</a>    <span class="k">def</span> <span class="nf">pathname2url</span><span class="p">(</span><span class="n">pathname</span><span class="p">):</span>
+<div class="viewcode-block" id="pathname2url"><a class="viewcode-back" href="../generated/generated/urllib.pathname2url.html#urllib.pathname2url">[docs]</a>    <span class="k">def</span> <span class="nf">pathname2url</span><span class="p">(</span><span class="n">pathname</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;OS-specific conversion from a file system path to a relative URL</span>
 <span class="sd">        of the &#39;file&#39; scheme; not recommended for general use.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">quote</span><span class="p">(</span><span class="n">pathname</span><span class="p">)</span></div>
@@ -216,7 +216,7 @@
 
 <span class="c1"># Shortcut for basic usage</span>
 <span class="n">_urlopener</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="urlopen"><a class="viewcode-back" href="../generated/urllib.urlopen.html#urllib.urlopen">[docs]</a><span class="k">def</span> <span class="nf">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">proxies</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="urlopen"><a class="viewcode-back" href="../generated/generated/urllib.urlopen.html#urllib.urlopen">[docs]</a><span class="k">def</span> <span class="nf">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">proxies</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Create a file-like object for the specified URL to read from.&quot;&quot;&quot;</span>
     <span class="kn">from</span> <span class="nn">warnings</span> <span class="kn">import</span> <span class="n">warnpy3k</span>
     <span class="n">warnpy3k</span><span class="p">(</span><span class="s2">&quot;urllib.urlopen() has been removed in Python 3.0 in &quot;</span>
@@ -234,7 +234,7 @@
         <span class="k">return</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span></div>
-<div class="viewcode-block" id="urlretrieve"><a class="viewcode-back" href="../generated/urllib.urlretrieve.html#urllib.urlretrieve">[docs]</a><span class="k">def</span> <span class="nf">urlretrieve</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">reporthook</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="urlretrieve"><a class="viewcode-back" href="../generated/generated/urllib.urlretrieve.html#urllib.urlretrieve">[docs]</a><span class="k">def</span> <span class="nf">urlretrieve</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">reporthook</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">global</span> <span class="n">_urlopener</span>
     <span class="k">if</span> <span class="n">context</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">opener</span> <span class="o">=</span> <span class="n">FancyURLopener</span><span class="p">(</span><span class="n">context</span><span class="o">=</span><span class="n">context</span><span class="p">)</span>
@@ -243,7 +243,7 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="n">opener</span> <span class="o">=</span> <span class="n">_urlopener</span>
     <span class="k">return</span> <span class="n">opener</span><span class="o">.</span><span class="n">retrieve</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">reporthook</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span></div>
-<div class="viewcode-block" id="urlcleanup"><a class="viewcode-back" href="../generated/urllib.urlcleanup.html#urllib.urlcleanup">[docs]</a><span class="k">def</span> <span class="nf">urlcleanup</span><span class="p">():</span>
+<div class="viewcode-block" id="urlcleanup"><a class="viewcode-back" href="../generated/generated/urllib.urlcleanup.html#urllib.urlcleanup">[docs]</a><span class="k">def</span> <span class="nf">urlcleanup</span><span class="p">():</span>
     <span class="k">if</span> <span class="n">_urlopener</span><span class="p">:</span>
         <span class="n">_urlopener</span><span class="o">.</span><span class="n">cleanup</span><span class="p">()</span>
     <span class="n">_safe_quoters</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
@@ -962,7 +962,7 @@
 <span class="c1"># Utility functions</span>
 
 <span class="n">_localhost</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="localhost"><a class="viewcode-back" href="../generated/urllib2.localhost.html#urllib.localhost">[docs]</a><span class="k">def</span> <span class="nf">localhost</span><span class="p">():</span>
+<div class="viewcode-block" id="localhost"><a class="viewcode-back" href="../generated/generated/urllib2.localhost.html#urllib.localhost">[docs]</a><span class="k">def</span> <span class="nf">localhost</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return the IP address of the magic hostname &#39;localhost&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_localhost</span>
     <span class="k">if</span> <span class="n">_localhost</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -970,7 +970,7 @@
     <span class="k">return</span> <span class="n">_localhost</span></div>
 
 <span class="n">_thishost</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="thishost"><a class="viewcode-back" href="../generated/urllib.thishost.html#urllib.thishost">[docs]</a><span class="k">def</span> <span class="nf">thishost</span><span class="p">():</span>
+<div class="viewcode-block" id="thishost"><a class="viewcode-back" href="../generated/generated/urllib.thishost.html#urllib.thishost">[docs]</a><span class="k">def</span> <span class="nf">thishost</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return the IP address of the current host.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_thishost</span>
     <span class="k">if</span> <span class="n">_thishost</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -981,7 +981,7 @@
     <span class="k">return</span> <span class="n">_thishost</span></div>
 
 <span class="n">_ftperrors</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="ftperrors"><a class="viewcode-back" href="../generated/urllib.ftperrors.html#urllib.ftperrors">[docs]</a><span class="k">def</span> <span class="nf">ftperrors</span><span class="p">():</span>
+<div class="viewcode-block" id="ftperrors"><a class="viewcode-back" href="../generated/generated/urllib.ftperrors.html#urllib.ftperrors">[docs]</a><span class="k">def</span> <span class="nf">ftperrors</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return the set of errors raised by the FTP class.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_ftperrors</span>
     <span class="k">if</span> <span class="n">_ftperrors</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -990,7 +990,7 @@
     <span class="k">return</span> <span class="n">_ftperrors</span></div>
 
 <span class="n">_noheaders</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="noheaders"><a class="viewcode-back" href="../generated/urllib.noheaders.html#urllib.noheaders">[docs]</a><span class="k">def</span> <span class="nf">noheaders</span><span class="p">():</span>
+<div class="viewcode-block" id="noheaders"><a class="viewcode-back" href="../generated/generated/urllib.noheaders.html#urllib.noheaders">[docs]</a><span class="k">def</span> <span class="nf">noheaders</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return an empty mimetools.Message object.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_noheaders</span>
     <span class="k">if</span> <span class="n">_noheaders</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -1201,7 +1201,7 @@
     <span class="k">def</span> <span class="nf">_is_unicode</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">unicode</span><span class="p">)</span>
 
-<div class="viewcode-block" id="toBytes"><a class="viewcode-back" href="../generated/urllib2.toBytes.html#urllib.toBytes">[docs]</a><span class="k">def</span> <span class="nf">toBytes</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="toBytes"><a class="viewcode-back" href="../generated/generated/urllib2.toBytes.html#urllib.toBytes">[docs]</a><span class="k">def</span> <span class="nf">toBytes</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;toBytes(u&quot;URL&quot;) --&gt; &#39;URL&#39;.&quot;&quot;&quot;</span>
     <span class="c1"># Most URL schemes require ASCII. If that changes, the conversion</span>
     <span class="c1"># can be relaxed</span>
@@ -1213,7 +1213,7 @@
                                <span class="s2">&quot; contains non-ASCII characters&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">url</span></div>
 
-<div class="viewcode-block" id="unwrap"><a class="viewcode-back" href="../generated/urllib2.unwrap.html#urllib.unwrap">[docs]</a><span class="k">def</span> <span class="nf">unwrap</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="unwrap"><a class="viewcode-back" href="../generated/generated/urllib2.unwrap.html#urllib.unwrap">[docs]</a><span class="k">def</span> <span class="nf">unwrap</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;unwrap(&#39;&lt;URL:type://host/path&gt;&#39;) --&gt; &#39;type://host/path&#39;.&quot;&quot;&quot;</span>
     <span class="n">url</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">url</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&lt;&#39;</span> <span class="ow">and</span> <span class="n">url</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:]</span> <span class="o">==</span> <span class="s1">&#39;&gt;&#39;</span><span class="p">:</span>
@@ -1222,7 +1222,7 @@
     <span class="k">return</span> <span class="n">url</span></div>
 
 <span class="n">_typeprog</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="splittype"><a class="viewcode-back" href="../generated/urllib2.splittype.html#urllib.splittype">[docs]</a><span class="k">def</span> <span class="nf">splittype</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="splittype"><a class="viewcode-back" href="../generated/generated/urllib2.splittype.html#urllib.splittype">[docs]</a><span class="k">def</span> <span class="nf">splittype</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splittype(&#39;type:opaquestring&#39;) --&gt; &#39;type&#39;, &#39;opaquestring&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_typeprog</span>
     <span class="k">if</span> <span class="n">_typeprog</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -1236,7 +1236,7 @@
     <span class="k">return</span> <span class="bp">None</span><span class="p">,</span> <span class="n">url</span></div>
 
 <span class="n">_hostprog</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="splithost"><a class="viewcode-back" href="../generated/urllib2.splithost.html#urllib.splithost">[docs]</a><span class="k">def</span> <span class="nf">splithost</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="splithost"><a class="viewcode-back" href="../generated/generated/urllib2.splithost.html#urllib.splithost">[docs]</a><span class="k">def</span> <span class="nf">splithost</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splithost(&#39;//host[:port]/path&#39;) --&gt; &#39;host[:port]&#39;, &#39;/path&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_hostprog</span>
     <span class="k">if</span> <span class="n">_hostprog</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -1253,7 +1253,7 @@
     <span class="k">return</span> <span class="bp">None</span><span class="p">,</span> <span class="n">url</span></div>
 
 <span class="n">_userprog</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="splituser"><a class="viewcode-back" href="../generated/urllib2.splituser.html#urllib.splituser">[docs]</a><span class="k">def</span> <span class="nf">splituser</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
+<div class="viewcode-block" id="splituser"><a class="viewcode-back" href="../generated/generated/urllib2.splituser.html#urllib.splituser">[docs]</a><span class="k">def</span> <span class="nf">splituser</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splituser(&#39;user[:passwd]@host[:port]&#39;) --&gt; &#39;user[:passwd]&#39;, &#39;host[:port]&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_userprog</span>
     <span class="k">if</span> <span class="n">_userprog</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -1265,7 +1265,7 @@
     <span class="k">return</span> <span class="bp">None</span><span class="p">,</span> <span class="n">host</span></div>
 
 <span class="n">_passwdprog</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="splitpasswd"><a class="viewcode-back" href="../generated/urllib2.splitpasswd.html#urllib.splitpasswd">[docs]</a><span class="k">def</span> <span class="nf">splitpasswd</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+<div class="viewcode-block" id="splitpasswd"><a class="viewcode-back" href="../generated/generated/urllib2.splitpasswd.html#urllib.splitpasswd">[docs]</a><span class="k">def</span> <span class="nf">splitpasswd</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splitpasswd(&#39;user:passwd&#39;) -&gt; &#39;user&#39;, &#39;passwd&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_passwdprog</span>
     <span class="k">if</span> <span class="n">_passwdprog</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -1278,7 +1278,7 @@
 
 <span class="c1"># splittag(&#39;/path#tag&#39;) --&gt; &#39;/path&#39;, &#39;tag&#39;</span>
 <span class="n">_portprog</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="splitport"><a class="viewcode-back" href="../generated/urllib2.splitport.html#urllib.splitport">[docs]</a><span class="k">def</span> <span class="nf">splitport</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
+<div class="viewcode-block" id="splitport"><a class="viewcode-back" href="../generated/generated/urllib2.splitport.html#urllib.splitport">[docs]</a><span class="k">def</span> <span class="nf">splitport</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splitport(&#39;host:port&#39;) --&gt; &#39;host&#39;, &#39;port&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_portprog</span>
     <span class="k">if</span> <span class="n">_portprog</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -1293,7 +1293,7 @@
     <span class="k">return</span> <span class="n">host</span><span class="p">,</span> <span class="bp">None</span></div>
 
 <span class="n">_nportprog</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="splitnport"><a class="viewcode-back" href="../generated/urllib.splitnport.html#urllib.splitnport">[docs]</a><span class="k">def</span> <span class="nf">splitnport</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">defport</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="splitnport"><a class="viewcode-back" href="../generated/generated/urllib.splitnport.html#urllib.splitnport">[docs]</a><span class="k">def</span> <span class="nf">splitnport</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">defport</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Split host and port, returning numeric port.</span>
 <span class="sd">    Return given default port if no &#39;:&#39; found; defaults to -1.</span>
 <span class="sd">    Return numerical port if a valid number are found after &#39;:&#39;.</span>
@@ -1315,7 +1315,7 @@
     <span class="k">return</span> <span class="n">host</span><span class="p">,</span> <span class="n">defport</span></div>
 
 <span class="n">_queryprog</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="splitquery"><a class="viewcode-back" href="../generated/urllib.splitquery.html#urllib.splitquery">[docs]</a><span class="k">def</span> <span class="nf">splitquery</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="splitquery"><a class="viewcode-back" href="../generated/generated/urllib.splitquery.html#urllib.splitquery">[docs]</a><span class="k">def</span> <span class="nf">splitquery</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splitquery(&#39;/path?query&#39;) --&gt; &#39;/path&#39;, &#39;query&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_queryprog</span>
     <span class="k">if</span> <span class="n">_queryprog</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -1327,7 +1327,7 @@
     <span class="k">return</span> <span class="n">url</span><span class="p">,</span> <span class="bp">None</span></div>
 
 <span class="n">_tagprog</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="splittag"><a class="viewcode-back" href="../generated/urllib2.splittag.html#urllib.splittag">[docs]</a><span class="k">def</span> <span class="nf">splittag</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="splittag"><a class="viewcode-back" href="../generated/generated/urllib2.splittag.html#urllib.splittag">[docs]</a><span class="k">def</span> <span class="nf">splittag</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splittag(&#39;/path#tag&#39;) --&gt; &#39;/path&#39;, &#39;tag&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_tagprog</span>
     <span class="k">if</span> <span class="n">_tagprog</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -1338,14 +1338,14 @@
     <span class="k">if</span> <span class="n">match</span><span class="p">:</span> <span class="k">return</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">url</span><span class="p">,</span> <span class="bp">None</span></div>
 
-<div class="viewcode-block" id="splitattr"><a class="viewcode-back" href="../generated/urllib2.splitattr.html#urllib.splitattr">[docs]</a><span class="k">def</span> <span class="nf">splitattr</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<div class="viewcode-block" id="splitattr"><a class="viewcode-back" href="../generated/generated/urllib2.splitattr.html#urllib.splitattr">[docs]</a><span class="k">def</span> <span class="nf">splitattr</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splitattr(&#39;/path;attr1=value1;attr2=value2;...&#39;) -&gt;</span>
 <span class="sd">        &#39;/path&#39;, [&#39;attr1=value1&#39;, &#39;attr2=value2&#39;, ...].&quot;&quot;&quot;</span>
     <span class="n">words</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">words</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">words</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span></div>
 
 <span class="n">_valueprog</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="splitvalue"><a class="viewcode-back" href="../generated/urllib2.splitvalue.html#urllib.splitvalue">[docs]</a><span class="k">def</span> <span class="nf">splitvalue</span><span class="p">(</span><span class="n">attr</span><span class="p">):</span>
+<div class="viewcode-block" id="splitvalue"><a class="viewcode-back" href="../generated/generated/urllib2.splitvalue.html#urllib.splitvalue">[docs]</a><span class="k">def</span> <span class="nf">splitvalue</span><span class="p">(</span><span class="n">attr</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;splitvalue(&#39;attr=value&#39;) --&gt; &#39;attr&#39;, &#39;value&#39;.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">_valueprog</span>
     <span class="k">if</span> <span class="n">_valueprog</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -1365,7 +1365,7 @@
                  <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">_hexdig</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">_hexdig</span><span class="p">)</span>
 <span class="n">_asciire</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;([</span><span class="se">\x00</span><span class="s1">-</span><span class="se">\x7f</span><span class="s1">]+)&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="unquote"><a class="viewcode-back" href="../generated/urllib2.unquote.html#urllib.unquote">[docs]</a><span class="k">def</span> <span class="nf">unquote</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="unquote"><a class="viewcode-back" href="../generated/generated/urllib2.unquote.html#urllib.unquote">[docs]</a><span class="k">def</span> <span class="nf">unquote</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;unquote(&#39;abc%20def&#39;) -&gt; &#39;abc def&#39;.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">_is_unicode</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
         <span class="k">if</span> <span class="s1">&#39;%&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
@@ -1393,7 +1393,7 @@
             <span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
     <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="unquote_plus"><a class="viewcode-back" href="../generated/urllib.unquote_plus.html#urllib.unquote_plus">[docs]</a><span class="k">def</span> <span class="nf">unquote_plus</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="unquote_plus"><a class="viewcode-back" href="../generated/generated/urllib.unquote_plus.html#urllib.unquote_plus">[docs]</a><span class="k">def</span> <span class="nf">unquote_plus</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;unquote(&#39;%7e/abc+def&#39;) -&gt; &#39;~/abc def&#39;&quot;&quot;&quot;</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;+&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">unquote</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></div>
@@ -1406,7 +1406,7 @@
     <span class="n">_safe_map</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span> <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">128</span> <span class="ow">and</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">always_safe</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;%{:02X}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="n">_safe_quoters</span> <span class="o">=</span> <span class="p">{}</span>
 
-<div class="viewcode-block" id="quote"><a class="viewcode-back" href="../generated/urllib2.quote.html#urllib.quote">[docs]</a><span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s1">&#39;/&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="quote"><a class="viewcode-back" href="../generated/generated/urllib2.quote.html#urllib.quote">[docs]</a><span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s1">&#39;/&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;quote(&#39;abc def&#39;) -&gt; &#39;abc%20def&#39;</span>
 
 <span class="sd">    Each part of a URL, e.g. the path info, the query, etc., has a</span>
@@ -1445,14 +1445,14 @@
         <span class="k">return</span> <span class="n">s</span>
     <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">quoter</span><span class="p">,</span> <span class="n">s</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="quote_plus"><a class="viewcode-back" href="../generated/urllib.quote_plus.html#urllib.quote_plus">[docs]</a><span class="k">def</span> <span class="nf">quote_plus</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="quote_plus"><a class="viewcode-back" href="../generated/generated/urllib.quote_plus.html#urllib.quote_plus">[docs]</a><span class="k">def</span> <span class="nf">quote_plus</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">safe</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Quote the query fragment of a URL; replacing &#39; &#39; with &#39;+&#39;&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="s1">&#39; &#39;</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
         <span class="n">s</span> <span class="o">=</span> <span class="n">quote</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">safe</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;+&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">quote</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">safe</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="urlencode"><a class="viewcode-back" href="../generated/urllib.urlencode.html#urllib.urlencode">[docs]</a><span class="k">def</span> <span class="nf">urlencode</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">doseq</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="urlencode"><a class="viewcode-back" href="../generated/generated/urllib.urlencode.html#urllib.urlencode">[docs]</a><span class="k">def</span> <span class="nf">urlencode</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">doseq</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Encode a sequence of two-element tuples or dictionary into a URL query string.</span>
 
 <span class="sd">    If any values in the query arg are sequences and doseq is true, each</span>
@@ -1516,7 +1516,7 @@
     <span class="k">return</span> <span class="s1">&#39;&amp;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">l</span><span class="p">)</span></div>
 
 <span class="c1"># Proxy handling</span>
-<div class="viewcode-block" id="getproxies_environment"><a class="viewcode-back" href="../generated/urllib.getproxies_environment.html#urllib.getproxies_environment">[docs]</a><span class="k">def</span> <span class="nf">getproxies_environment</span><span class="p">():</span>
+<div class="viewcode-block" id="getproxies_environment"><a class="viewcode-back" href="../generated/generated/urllib.getproxies_environment.html#urllib.getproxies_environment">[docs]</a><span class="k">def</span> <span class="nf">getproxies_environment</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return a dictionary of scheme -&gt; proxy server URL mappings.</span>
 
 <span class="sd">    Scan the environment for variables named &lt;scheme&gt;_proxy;</span>
@@ -1543,7 +1543,7 @@
 
     <span class="k">return</span> <span class="n">proxies</span></div>
 
-<div class="viewcode-block" id="proxy_bypass_environment"><a class="viewcode-back" href="../generated/urllib.proxy_bypass_environment.html#urllib.proxy_bypass_environment">[docs]</a><span class="k">def</span> <span class="nf">proxy_bypass_environment</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">proxies</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="proxy_bypass_environment"><a class="viewcode-back" href="../generated/generated/urllib.proxy_bypass_environment.html#urllib.proxy_bypass_environment">[docs]</a><span class="k">def</span> <span class="nf">proxy_bypass_environment</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">proxies</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Test if proxies should not be used for a particular host.</span>
 
 <span class="sd">    Checks the proxies dict for the value of no_proxy, which should be a</span>
@@ -1706,7 +1706,7 @@
             <span class="k">pass</span>
         <span class="k">return</span> <span class="n">proxies</span>
 
-<div class="viewcode-block" id="getproxies"><a class="viewcode-back" href="../generated/urllib2.getproxies.html#urllib.getproxies">[docs]</a>    <span class="k">def</span> <span class="nf">getproxies</span><span class="p">():</span>
+<div class="viewcode-block" id="getproxies"><a class="viewcode-back" href="../generated/generated/urllib2.getproxies.html#urllib.getproxies">[docs]</a>    <span class="k">def</span> <span class="nf">getproxies</span><span class="p">():</span>
         <span class="sd">&quot;&quot;&quot;Return a dictionary of scheme -&gt; proxy server URL mappings.</span>
 
 <span class="sd">        Returns settings gathered from the environment, if specified,</span>
@@ -1767,7 +1767,7 @@
                     <span class="k">return</span> <span class="mi">1</span>
         <span class="k">return</span> <span class="mi">0</span>
 
-<div class="viewcode-block" id="proxy_bypass"><a class="viewcode-back" href="../generated/urllib2.proxy_bypass.html#urllib.proxy_bypass">[docs]</a>    <span class="k">def</span> <span class="nf">proxy_bypass</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
+<div class="viewcode-block" id="proxy_bypass"><a class="viewcode-back" href="../generated/generated/urllib2.proxy_bypass.html#urllib.proxy_bypass">[docs]</a>    <span class="k">def</span> <span class="nf">proxy_bypass</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return True, if the host should be bypassed.</span>
 
 <span class="sd">        Checks proxy settings gathered from the environment, if specified,</span>
@@ -1785,7 +1785,7 @@
     <span class="n">proxy_bypass</span> <span class="o">=</span> <span class="n">proxy_bypass_environment</span>
 
 <span class="c1"># Test and time quote() and unquote()</span>
-<div class="viewcode-block" id="test1"><a class="viewcode-back" href="../generated/urllib.test1.html#urllib.test1">[docs]</a><span class="k">def</span> <span class="nf">test1</span><span class="p">():</span>
+<div class="viewcode-block" id="test1"><a class="viewcode-back" href="../generated/generated/urllib.test1.html#urllib.test1">[docs]</a><span class="k">def</span> <span class="nf">test1</span><span class="p">():</span>
     <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">256</span><span class="p">):</span> <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="nb">chr</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">*</span><span class="mi">4</span>
@@ -1801,7 +1801,7 @@
     <span class="k">print</span> <span class="nb">round</span><span class="p">(</span><span class="n">t1</span> <span class="o">-</span> <span class="n">t0</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="s1">&#39;sec&#39;</span></div>
 
 
-<div class="viewcode-block" id="reporthook"><a class="viewcode-back" href="../generated/urllib.reporthook.html#urllib.reporthook">[docs]</a><span class="k">def</span> <span class="nf">reporthook</span><span class="p">(</span><span class="n">blocknum</span><span class="p">,</span> <span class="n">blocksize</span><span class="p">,</span> <span class="n">totalsize</span><span class="p">):</span>
+<div class="viewcode-block" id="reporthook"><a class="viewcode-back" href="../generated/generated/urllib.reporthook.html#urllib.reporthook">[docs]</a><span class="k">def</span> <span class="nf">reporthook</span><span class="p">(</span><span class="n">blocknum</span><span class="p">,</span> <span class="n">blocksize</span><span class="p">,</span> <span class="n">totalsize</span><span class="p">):</span>
     <span class="c1"># Report during remote transfers</span>
     <span class="k">print</span> <span class="s2">&quot;Block number: </span><span class="si">%d</span><span class="s2">, Block size: </span><span class="si">%d</span><span class="s2">, Total size: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span>
         <span class="n">blocknum</span><span class="p">,</span> <span class="n">blocksize</span><span class="p">,</span> <span class="n">totalsize</span><span class="p">)</span></div>

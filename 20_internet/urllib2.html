@@ -254,7 +254,7 @@ is recommended for a higher-level HTTP client interface.</p>
 that use <em>data</em>; the HTTP request will be a POST instead of a GET when the
 <em>data</em> parameter is provided.  <em>data</em> should be a buffer in the standard
 <em class="mimetype">application/x-www-form-urlencoded</em> format.  The
-<a class="reference internal" href="../generated/urllib.urlencode.html#urllib.urlencode" title="urllib.urlencode"><code class="xref py py-func docutils literal"><span class="pre">urllib.urlencode()</span></code></a> function takes a mapping or sequence of 2-tuples and
+<a class="reference internal" href="../generated/generated/urllib.urlencode.html#urllib.urlencode" title="urllib.urlencode"><code class="xref py py-func docutils literal"><span class="pre">urllib.urlencode()</span></code></a> function takes a mapping or sequence of 2-tuples and
 returns a string in this format. urllib2 module sends HTTP/1.1 requests with
 <code class="docutils literal"><span class="pre">Connection:close</span></code> header included.</p>
 <p>The optional <em>timeout</em> parameter specifies a timeout in seconds for blocking
@@ -300,7 +300,7 @@ handled through the proxy.</p>
 <code class="descclassname">urllib2.</code><code class="descname">install_opener</code><span class="sig-paren">(</span><em>opener</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/urllib2.html#install_opener"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#urllib2.install_opener" title="Permalink to this definition">¶</a></dt>
 <dd><p>Install an <a class="reference internal" href="../generated/generated/urllib2.OpenerDirector.html#urllib2.OpenerDirector" title="urllib2.OpenerDirector"><code class="xref py py-class docutils literal"><span class="pre">OpenerDirector</span></code></a> instance as the default global opener.
 Installing an opener is only necessary if you want urlopen to use that opener;
-otherwise, simply call <a class="reference internal" href="../generated/generated/urllib2.OpenerDirector.open.html#urllib2.OpenerDirector.open" title="urllib2.OpenerDirector.open"><code class="xref py py-meth docutils literal"><span class="pre">OpenerDirector.open()</span></code></a> instead of <a class="reference internal" href="../generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a>.
+otherwise, simply call <a class="reference internal" href="../generated/generated/urllib2.OpenerDirector.open.html#urllib2.OpenerDirector.open" title="urllib2.OpenerDirector.open"><code class="xref py py-meth docutils literal"><span class="pre">OpenerDirector.open()</span></code></a> instead of <a class="reference internal" href="../generated/generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a>.
 The code does not check for a real <a class="reference internal" href="../generated/generated/urllib2.OpenerDirector.html#urllib2.OpenerDirector" title="urllib2.OpenerDirector"><code class="xref py py-class docutils literal"><span class="pre">OpenerDirector</span></code></a>, and any class with
 the appropriate interface will work.</p>
 </dd></dl>
@@ -346,7 +346,7 @@ URLs).</p>
 <em class="property">exception </em><code class="descclassname">urllib2.</code><code class="descname">HTTPError</code><a class="reference internal" href="../_modules/urllib2.html#HTTPError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#urllib2.HTTPError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Though being an exception (a subclass of <a class="reference internal" href="../generated/urllib2.URLError.html#urllib2.URLError" title="urllib2.URLError"><code class="xref py py-exc docutils literal"><span class="pre">URLError</span></code></a>), an <a class="reference internal" href="../generated/urllib2.HTTPError.html#urllib2.HTTPError" title="urllib2.HTTPError"><code class="xref py py-exc docutils literal"><span class="pre">HTTPError</span></code></a>
 can also function as a non-exceptional file-like return value (the same thing
-that <a class="reference internal" href="../generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a> returns).  This is useful when handling exotic HTTP
+that <a class="reference internal" href="../generated/generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a> returns).  This is useful when handling exotic HTTP
 errors, such as requests for authentication.</p>
 <dl class="attribute">
 <dt id="urllib2.HTTPError.code">
@@ -376,7 +376,7 @@ instance.</p>
 that use <em>data</em>; the HTTP request will be a POST instead of a GET when the
 <em>data</em> parameter is provided.  <em>data</em> should be a buffer in the standard
 <em class="mimetype">application/x-www-form-urlencoded</em> format.  The
-<a class="reference internal" href="../generated/urllib.urlencode.html#urllib.urlencode" title="urllib.urlencode"><code class="xref py py-func docutils literal"><span class="pre">urllib.urlencode()</span></code></a> function takes a mapping or sequence of 2-tuples and
+<a class="reference internal" href="../generated/generated/urllib.urlencode.html#urllib.urlencode" title="urllib.urlencode"><code class="xref py py-func docutils literal"><span class="pre">urllib.urlencode()</span></code></a> function takes a mapping or sequence of 2-tuples and
 returns a string in this format.</p>
 <p><em>headers</em> should be a dictionary, and will be treated as if <a class="reference internal" href="../generated/generated/urllib2.Request.add_header.html#urllib2.Request.add_header" title="urllib2.Request.add_header"><code class="xref py py-meth docutils literal"><span class="pre">add_header()</span></code></a>
 was called with each key and value as arguments.  This is often used to &#8220;spoof&#8221;
@@ -711,7 +711,7 @@ post-process <em>protocol</em> responses.</li>
 <code class="descclassname">OpenerDirector.</code><code class="descname">open</code><span class="sig-paren">(</span><em>url[, data][, timeout]</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/urllib2.html#OpenerDirector.open"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#urllib2.OpenerDirector.open" title="Permalink to this definition">¶</a></dt>
 <dd><p>Open the given <em>url</em> (which can be a request object or a string), optionally
 passing the given <em>data</em>. Arguments, return values and exceptions raised are
-the same as those of <a class="reference internal" href="../generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a> (which simply calls the <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-meth docutils literal"><span class="pre">open()</span></code></a>
+the same as those of <a class="reference internal" href="../generated/generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a> (which simply calls the <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-meth docutils literal"><span class="pre">open()</span></code></a>
 method on the currently installed global <a class="reference internal" href="../generated/generated/urllib2.OpenerDirector.html#urllib2.OpenerDirector" title="urllib2.OpenerDirector"><code class="xref py py-class docutils literal"><span class="pre">OpenerDirector</span></code></a>).  The
 optional <em>timeout</em> parameter specifies a timeout in seconds for blocking
 operations like the connection attempt (if not specified, the global default
@@ -730,7 +730,7 @@ handlers for the given protocol with the given arguments (which are protocol
 specific).  The HTTP protocol is a special case which uses the HTTP response
 code to determine the specific error handler; refer to the <code class="xref py py-meth docutils literal"><span class="pre">http_error_*()</span></code>
 methods of the handler classes.</p>
-<p>Return values and exceptions raised are the same as those of <a class="reference internal" href="../generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a>.</p>
+<p>Return values and exceptions raised are the same as those of <a class="reference internal" href="../generated/generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a>.</p>
 </dd></dl>
 
 <p>OpenerDirector objects open URLs in three stages:</p>
@@ -836,7 +836,7 @@ the HTTP error body, <em>code</em> will be the three-digit code of the error, <e
 will be the user-visible explanation of the code and <em>hdrs</em> will be a mapping
 object with the headers of the error.</p>
 <p>Return values and exceptions raised should be the same as those of
-<a class="reference internal" href="../generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -869,9 +869,9 @@ define it if they want to pre-process requests of the given <em>protocol</em>.</
 define it if they want to post-process responses of the given <em>protocol</em>.</p>
 <p>This method, if defined, will be called by the parent <a class="reference internal" href="../generated/generated/urllib2.OpenerDirector.html#urllib2.OpenerDirector" title="urllib2.OpenerDirector"><code class="xref py py-class docutils literal"><span class="pre">OpenerDirector</span></code></a>.
 <em>req</em> will be a <a class="reference internal" href="../generated/generated/urllib2.Request.html#urllib2.Request" title="urllib2.Request"><code class="xref py py-class docutils literal"><span class="pre">Request</span></code></a> object. <em>response</em> will be an object
-implementing the same interface as the return value of <a class="reference internal" href="../generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a>.  The
+implementing the same interface as the return value of <a class="reference internal" href="../generated/generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a>.  The
 return value should implement the same interface as the return value of
-<a class="reference internal" href="../generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a>.</p>
 </dd></dl>
 
 </div>
@@ -1180,7 +1180,7 @@ installation supports SSL.</p>
 <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://www.example.com/login.html&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><a class="reference internal" href="../generated/urllib2.build_opener.html#urllib2.build_opener" title="urllib2.build_opener"><code class="xref py py-func docutils literal"><span class="pre">build_opener()</span></code></a> provides many handlers by default, including a
+<p><a class="reference internal" href="../generated/generated/urllib2.build_opener.html#urllib2.build_opener" title="urllib2.build_opener"><code class="xref py py-func docutils literal"><span class="pre">build_opener()</span></code></a> provides many handlers by default, including a
 <a class="reference internal" href="../generated/generated/urllib2.ProxyHandler.html#urllib2.ProxyHandler" title="urllib2.ProxyHandler"><code class="xref py py-class docutils literal"><span class="pre">ProxyHandler</span></code></a>.  By default, <a class="reference internal" href="../generated/generated/urllib2.ProxyHandler.html#urllib2.ProxyHandler" title="urllib2.ProxyHandler"><code class="xref py py-class docutils literal"><span class="pre">ProxyHandler</span></code></a> uses the environment
 variables named <code class="docutils literal"><span class="pre">&lt;scheme&gt;_proxy</span></code>, where <code class="docutils literal"><span class="pre">&lt;scheme&gt;</span></code> is the URL scheme
 involved.  For example, the <span class="target" id="index-6"></span><code class="xref std std-envvar docutils literal"><span class="pre">http_proxy</span></code> environment variable is read to
@@ -1215,7 +1215,7 @@ every <a class="reference internal" href="../generated/generated/urllib2.Request
 </div>
 <p>Also, remember that a few standard headers (<em class="mailheader">Content-Length</em>,
 <em class="mailheader">Content-Type</em> and <em class="mailheader">Host</em>) are added when the
-<a class="reference internal" href="../generated/generated/urllib2.Request.html#urllib2.Request" title="urllib2.Request"><code class="xref py py-class docutils literal"><span class="pre">Request</span></code></a> is passed to <a class="reference internal" href="../generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a> (or <a class="reference internal" href="../generated/generated/urllib2.OpenerDirector.open.html#urllib2.OpenerDirector.open" title="urllib2.OpenerDirector.open"><code class="xref py py-meth docutils literal"><span class="pre">OpenerDirector.open()</span></code></a>).</p>
+<a class="reference internal" href="../generated/generated/urllib2.Request.html#urllib2.Request" title="urllib2.Request"><code class="xref py py-class docutils literal"><span class="pre">Request</span></code></a> is passed to <a class="reference internal" href="../generated/generated/urllib2.urlopen.html#urllib2.urlopen" title="urllib2.urlopen"><code class="xref py py-func docutils literal"><span class="pre">urlopen()</span></code></a> (or <a class="reference internal" href="../generated/generated/urllib2.OpenerDirector.open.html#urllib2.OpenerDirector.open" title="urllib2.OpenerDirector.open"><code class="xref py py-meth docutils literal"><span class="pre">OpenerDirector.open()</span></code></a>).</p>
 </div>
 </div>
 

@@ -333,7 +333,7 @@ output are escaped with <code class="docutils literal"><span class="pre">\uXXXX<
 <em>ensure_ascii</em> is <code class="docutils literal"><span class="pre">False</span></code>, some chunks written to <em>fp</em> may be
 <a class="reference internal" href="../02_builtin_functions/02.html#unicode" title="unicode"><code class="xref py py-class docutils literal"><span class="pre">unicode</span></code></a> instances.  This usually happens because the input contains
 unicode strings or the <em>encoding</em> parameter is used.  Unless <code class="docutils literal"><span class="pre">fp.write()</span></code>
-explicitly understands <a class="reference internal" href="../02_builtin_functions/02.html#unicode" title="unicode"><code class="xref py py-class docutils literal"><span class="pre">unicode</span></code></a> (as in <a class="reference internal" href="../generated/codecs.getwriter.html#codecs.getwriter" title="codecs.getwriter"><code class="xref py py-func docutils literal"><span class="pre">codecs.getwriter()</span></code></a>)
+explicitly understands <a class="reference internal" href="../02_builtin_functions/02.html#unicode" title="unicode"><code class="xref py py-class docutils literal"><span class="pre">unicode</span></code></a> (as in <a class="reference internal" href="../generated/generated/codecs.getwriter.html#codecs.getwriter" title="codecs.getwriter"><code class="xref py py-func docutils literal"><span class="pre">codecs.getwriter()</span></code></a>)
 this is likely to cause an error.</p>
 <p>If <em>check_circular</em> is <code class="docutils literal"><span class="pre">False</span></code> (default: <code class="docutils literal"><span class="pre">True</span></code>), then the circular
 reference check for container types will be skipped and a circular reference
@@ -366,7 +366,7 @@ dictionaries will be sorted by key.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Unlike <a class="reference internal" href="../generated/pickle.html#module-pickle" title="pickle"><code class="xref py py-mod docutils literal"><span class="pre">pickle</span></code></a> and <a class="reference internal" href="../generated/marshal.html#module-marshal" title="marshal"><code class="xref py py-mod docutils literal"><span class="pre">marshal</span></code></a>, JSON is not a framed protocol so
-trying to serialize more objects with repeated calls to <a class="reference internal" href="../generated/json.dump.html#json.dump" title="json.dump"><code class="xref py py-func docutils literal"><span class="pre">dump()</span></code></a> and
+trying to serialize more objects with repeated calls to <a class="reference internal" href="../generated/generated/json.dump.html#json.dump" title="json.dump"><code class="xref py py-func docutils literal"><span class="pre">dump()</span></code></a> and
 the same <em>fp</em> will result in an invalid JSON file.</p>
 </div>
 </dd></dl>
@@ -378,7 +378,7 @@ the same <em>fp</em> will result in an invalid JSON file.</p>
 table</span></a>.  If <em>ensure_ascii</em> is <code class="docutils literal"><span class="pre">False</span></code>, the result may
 contain non-ASCII characters and the return value may be a <a class="reference internal" href="../02_builtin_functions/02.html#unicode" title="unicode"><code class="xref py py-class docutils literal"><span class="pre">unicode</span></code></a>
 instance.</p>
-<p>The arguments have the same meaning as in <a class="reference internal" href="../generated/json.dump.html#json.dump" title="json.dump"><code class="xref py py-func docutils literal"><span class="pre">dump()</span></code></a>.</p>
+<p>The arguments have the same meaning as in <a class="reference internal" href="../generated/generated/json.dump.html#json.dump" title="json.dump"><code class="xref py py-func docutils literal"><span class="pre">dump()</span></code></a>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Keys in key/value pairs of JSON are always of the type <a class="reference internal" href="../02_builtin_functions/02.html#str" title="str"><code class="xref py py-class docutils literal"><span class="pre">str</span></code></a>. When
@@ -400,7 +400,7 @@ table</span></a>.</p>
 UTF-8 (e.g. latin-1), then an appropriate <em>encoding</em> name must be specified.
 Encodings that are not ASCII based (such as UCS-2) are not allowed, and
 should be wrapped with <code class="docutils literal"><span class="pre">codecs.getreader(encoding)(fp)</span></code>, or simply decoded
-to a <a class="reference internal" href="../02_builtin_functions/02.html#unicode" title="unicode"><code class="xref py py-class docutils literal"><span class="pre">unicode</span></code></a> object and passed to <a class="reference internal" href="../generated/json.loads.html#json.loads" title="json.loads"><code class="xref py py-func docutils literal"><span class="pre">loads()</span></code></a>.</p>
+to a <a class="reference internal" href="../02_builtin_functions/02.html#unicode" title="unicode"><code class="xref py py-class docutils literal"><span class="pre">unicode</span></code></a> object and passed to <a class="reference internal" href="../generated/generated/json.loads.html#json.loads" title="json.loads"><code class="xref py py-func docutils literal"><span class="pre">loads()</span></code></a>.</p>
 <p><em>object_hook</em> is an optional function that will be called with the result of
 any object literal decoded (a <a class="reference internal" href="../05_builtin_types/mapping_types.html#dict" title="dict"><code class="xref py py-class docutils literal"><span class="pre">dict</span></code></a>).  The return value of
 <em>object_hook</em> will be used instead of the <a class="reference internal" href="../05_builtin_types/mapping_types.html#dict" title="dict"><code class="xref py py-class docutils literal"><span class="pre">dict</span></code></a>.  This feature can be used
@@ -445,7 +445,7 @@ document) to a Python object using this <a class="reference internal" href="#jso
 other than UTF-8 (e.g. latin-1), then an appropriate <em>encoding</em> name must be
 specified.  Encodings that are not ASCII based (such as UCS-2) are not
 allowed and should be decoded to <a class="reference internal" href="../02_builtin_functions/02.html#unicode" title="unicode"><code class="xref py py-class docutils literal"><span class="pre">unicode</span></code></a> first.</p>
-<p>The other arguments have the same meaning as in <a class="reference internal" href="../generated/json.load.html#json.load" title="json.load"><code class="xref py py-func docutils literal"><span class="pre">load()</span></code></a>.</p>
+<p>The other arguments have the same meaning as in <a class="reference internal" href="../generated/generated/json.load.html#json.load" title="json.load"><code class="xref py py-func docutils literal"><span class="pre">load()</span></code></a>.</p>
 </dd></dl>
 
 </div>

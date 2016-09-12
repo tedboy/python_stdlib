@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       At
       AtEnd
@@ -23,6 +23,24 @@
       image_names
       image_types
       mainloop
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/Tkinter.At
+       generated/Tkinter.AtEnd
+       generated/Tkinter.AtInsert
+       generated/Tkinter.AtSelFirst
+       generated/Tkinter.AtSelLast
+       generated/Tkinter.NoDefaultRoot
+       generated/Tkinter.Tcl
+       generated/Tkinter.getboolean
+       generated/Tkinter.image_names
+       generated/Tkinter.image_types
+       generated/Tkinter.mainloop
+      
    
    
 

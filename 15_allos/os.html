@@ -254,7 +254,7 @@ names have currently been registered: <code class="docutils literal"><span class
 <code class="docutils literal"><span class="pre">'os2'</span></code>, <code class="docutils literal"><span class="pre">'ce'</span></code>, <code class="docutils literal"><span class="pre">'java'</span></code>, <code class="docutils literal"><span class="pre">'riscos'</span></code>.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p><a class="reference internal" href="../28_runtime_service/sys.html#sys.platform" title="sys.platform"><code class="xref py py-attr docutils literal"><span class="pre">sys.platform</span></code></a> has a finer granularity.  <a class="reference internal" href="../generated/os.uname.html#os.uname" title="os.uname"><code class="xref py py-func docutils literal"><span class="pre">os.uname()</span></code></a> gives
+<p><a class="reference internal" href="../28_runtime_service/sys.html#sys.platform" title="sys.platform"><code class="xref py py-attr docutils literal"><span class="pre">sys.platform</span></code></a> has a finer granularity.  <a class="reference internal" href="../generated/generated/os.uname.html#os.uname" title="os.uname"><code class="xref py py-func docutils literal"><span class="pre">os.uname()</span></code></a> gives
 system-dependent version information.</p>
 <p class="last">The <a class="reference internal" href="../generated/platform.html#module-platform" title="platform"><code class="xref py py-mod docutils literal"><span class="pre">platform</span></code></a> module provides detailed checks for the
 system&#8217;s identity.</p>
@@ -275,12 +275,12 @@ and is equivalent to <code class="docutils literal"><span class="pre">getenv(&qu
 typically during Python startup as part of processing <code class="file docutils literal"><span class="pre">site.py</span></code>.  Changes
 to the environment made after this time are not reflected in <code class="docutils literal"><span class="pre">os.environ</span></code>,
 except for changes made by modifying <code class="docutils literal"><span class="pre">os.environ</span></code> directly.</p>
-<p>If the platform supports the <a class="reference internal" href="../generated/os.putenv.html#os.putenv" title="os.putenv"><code class="xref py py-func docutils literal"><span class="pre">putenv()</span></code></a> function, this mapping may be used
-to modify the environment as well as query the environment.  <a class="reference internal" href="../generated/os.putenv.html#os.putenv" title="os.putenv"><code class="xref py py-func docutils literal"><span class="pre">putenv()</span></code></a> will
+<p>If the platform supports the <a class="reference internal" href="../generated/generated/os.putenv.html#os.putenv" title="os.putenv"><code class="xref py py-func docutils literal"><span class="pre">putenv()</span></code></a> function, this mapping may be used
+to modify the environment as well as query the environment.  <a class="reference internal" href="../generated/generated/os.putenv.html#os.putenv" title="os.putenv"><code class="xref py py-func docutils literal"><span class="pre">putenv()</span></code></a> will
 be called automatically when the mapping is modified.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Calling <a class="reference internal" href="../generated/os.putenv.html#os.putenv" title="os.putenv"><code class="xref py py-func docutils literal"><span class="pre">putenv()</span></code></a> directly does not change <code class="docutils literal"><span class="pre">os.environ</span></code>, so it&#8217;s better
+<p class="last">Calling <a class="reference internal" href="../generated/generated/os.putenv.html#os.putenv" title="os.putenv"><code class="xref py py-func docutils literal"><span class="pre">putenv()</span></code></a> directly does not change <code class="docutils literal"><span class="pre">os.environ</span></code>, so it&#8217;s better
 to modify <code class="docutils literal"><span class="pre">os.environ</span></code>.</p>
 </div>
 <div class="admonition note">
@@ -289,11 +289,11 @@ to modify <code class="docutils literal"><span class="pre">os.environ</span></co
 cause memory leaks.  Refer to the system documentation for
 <code class="xref c c-func docutils literal"><span class="pre">putenv()</span></code>.</p>
 </div>
-<p>If <a class="reference internal" href="../generated/os.putenv.html#os.putenv" title="os.putenv"><code class="xref py py-func docutils literal"><span class="pre">putenv()</span></code></a> is not provided, a modified copy of this mapping  may be
+<p>If <a class="reference internal" href="../generated/generated/os.putenv.html#os.putenv" title="os.putenv"><code class="xref py py-func docutils literal"><span class="pre">putenv()</span></code></a> is not provided, a modified copy of this mapping  may be
 passed to the appropriate process-creation functions to cause  child processes
 to use a modified environment.</p>
-<p>If the platform supports the <a class="reference internal" href="../generated/os.unsetenv.html#os.unsetenv" title="os.unsetenv"><code class="xref py py-func docutils literal"><span class="pre">unsetenv()</span></code></a> function, you can delete items in
-this mapping to unset environment variables. <a class="reference internal" href="../generated/os.unsetenv.html#os.unsetenv" title="os.unsetenv"><code class="xref py py-func docutils literal"><span class="pre">unsetenv()</span></code></a> will be called
+<p>If the platform supports the <a class="reference internal" href="../generated/generated/os.unsetenv.html#os.unsetenv" title="os.unsetenv"><code class="xref py py-func docutils literal"><span class="pre">unsetenv()</span></code></a> function, you can delete items in
+this mapping to unset environment variables. <a class="reference internal" href="../generated/generated/os.unsetenv.html#os.unsetenv" title="os.unsetenv"><code class="xref py py-func docutils literal"><span class="pre">unsetenv()</span></code></a> will be called
 automatically when an item is deleted from <code class="docutils literal"><span class="pre">os.environ</span></code>, and when
 one of the <code class="xref py py-meth docutils literal"><span class="pre">pop()</span></code> or <code class="xref py py-meth docutils literal"><span class="pre">clear()</span></code> methods is called.</p>
 <div class="versionchanged">
@@ -344,19 +344,19 @@ and <code class="xref py py-meth docutils literal"><span class="pre">os.environ.
 <p>Availability: Unix.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">On Mac OS X, <a class="reference internal" href="../generated/os.getgroups.html#os.getgroups" title="os.getgroups"><code class="xref py py-func docutils literal"><span class="pre">getgroups()</span></code></a> behavior differs somewhat from
+<p class="last">On Mac OS X, <a class="reference internal" href="../generated/generated/os.getgroups.html#os.getgroups" title="os.getgroups"><code class="xref py py-func docutils literal"><span class="pre">getgroups()</span></code></a> behavior differs somewhat from
 other Unix platforms. If the Python interpreter was built with a
-deployment target of <code class="xref py py-const docutils literal"><span class="pre">10.5</span></code> or earlier, <a class="reference internal" href="../generated/os.getgroups.html#os.getgroups" title="os.getgroups"><code class="xref py py-func docutils literal"><span class="pre">getgroups()</span></code></a> returns
+deployment target of <code class="xref py py-const docutils literal"><span class="pre">10.5</span></code> or earlier, <a class="reference internal" href="../generated/generated/os.getgroups.html#os.getgroups" title="os.getgroups"><code class="xref py py-func docutils literal"><span class="pre">getgroups()</span></code></a> returns
 the list of effective group ids associated with the current user process;
 this list is limited to a system-defined number of entries, typically 16,
-and may be modified by calls to <a class="reference internal" href="../generated/os.setgroups.html#os.setgroups" title="os.setgroups"><code class="xref py py-func docutils literal"><span class="pre">setgroups()</span></code></a> if suitably privileged.
+and may be modified by calls to <a class="reference internal" href="../generated/generated/os.setgroups.html#os.setgroups" title="os.setgroups"><code class="xref py py-func docutils literal"><span class="pre">setgroups()</span></code></a> if suitably privileged.
 If built with a deployment target greater than <code class="xref py py-const docutils literal"><span class="pre">10.5</span></code>,
-<a class="reference internal" href="../generated/os.getgroups.html#os.getgroups" title="os.getgroups"><code class="xref py py-func docutils literal"><span class="pre">getgroups()</span></code></a> returns the current group access list for the user
+<a class="reference internal" href="../generated/generated/os.getgroups.html#os.getgroups" title="os.getgroups"><code class="xref py py-func docutils literal"><span class="pre">getgroups()</span></code></a> returns the current group access list for the user
 associated with the effective user id of the process; the group access
 list may change over the lifetime of the process, it is not affected by
-calls to <a class="reference internal" href="../generated/os.setgroups.html#os.setgroups" title="os.setgroups"><code class="xref py py-func docutils literal"><span class="pre">setgroups()</span></code></a>, and its length is not limited to 16.  The
+calls to <a class="reference internal" href="../generated/generated/os.setgroups.html#os.setgroups" title="os.setgroups"><code class="xref py py-func docutils literal"><span class="pre">setgroups()</span></code></a>, and its length is not limited to 16.  The
 deployment target value, <code class="xref py py-const docutils literal"><span class="pre">MACOSX_DEPLOYMENT_TARGET</span></code>, can be
-obtained with <a class="reference internal" href="../generated/sysconfig.get_config_var.html#sysconfig.get_config_var" title="sysconfig.get_config_var"><code class="xref py py-func docutils literal"><span class="pre">sysconfig.get_config_var()</span></code></a>.</p>
+obtained with <a class="reference internal" href="../generated/generated/sysconfig.get_config_var.html#sysconfig.get_config_var" title="sysconfig.get_config_var"><code class="xref py py-func docutils literal"><span class="pre">sysconfig.get_config_var()</span></code></a>.</p>
 </div>
 </dd></dl>
 
@@ -484,7 +484,7 @@ identifying a group. This operation is typically available only to the superuser
 <p class="first admonition-title">Note</p>
 <p class="last">On Mac OS X, the length of <em>groups</em> may not exceed the
 system-defined maximum number of effective group ids, typically 16.
-See the documentation for <a class="reference internal" href="../generated/os.getgroups.html#os.getgroups" title="os.getgroups"><code class="xref py py-func docutils literal"><span class="pre">getgroups()</span></code></a> for cases where it may not
+See the documentation for <a class="reference internal" href="../generated/generated/os.getgroups.html#os.getgroups" title="os.getgroups"><code class="xref py py-func docutils literal"><span class="pre">getgroups()</span></code></a> for cases where it may not
 return the same group list set by calling setgroups().</p>
 </div>
 </dd></dl>
@@ -604,7 +604,7 @@ error number, <a class="reference internal" href="../generated/exceptions.ValueE
 connected to the pipe, which can be read or written depending on whether <em>mode</em>
 is <code class="docutils literal"><span class="pre">'r'</span></code> (default) or <code class="docutils literal"><span class="pre">'w'</span></code>. The <em>bufsize</em> argument has the same meaning as
 the corresponding argument to the built-in <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> function.  The exit
-status of the command (encoded in the format specified for <a class="reference internal" href="../generated/os.wait.html#os.wait" title="os.wait"><code class="xref py py-func docutils literal"><span class="pre">wait()</span></code></a>) is
+status of the command (encoded in the format specified for <a class="reference internal" href="../generated/generated/os.wait.html#os.wait" title="os.wait"><code class="xref py py-func docutils literal"><span class="pre">wait()</span></code></a>) is
 available as the return value of the <a class="reference internal" href="../05_builtin_types/file_objects.html#file.close" title="file.close"><code class="xref py py-meth docutils literal"><span class="pre">close()</span></code></a> method of the file object,
 except that when the exit status is zero (termination without errors), <code class="docutils literal"><span class="pre">None</span></code>
 is returned.</p>
@@ -643,8 +643,8 @@ file objects should be opened in binary or text mode.  The default value for
 <em>mode</em> is <code class="docutils literal"><span class="pre">'t'</span></code>.</p>
 <p>Also, for each of these variants, on Unix, <em>cmd</em> may be a sequence, in which
 case arguments will be passed directly to the program without shell intervention
-(as with <a class="reference internal" href="../generated/os.spawnv.html#os.spawnv" title="os.spawnv"><code class="xref py py-func docutils literal"><span class="pre">os.spawnv()</span></code></a>). If <em>cmd</em> is a string it will be passed to the shell
-(as with <a class="reference internal" href="../generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a>).</p>
+(as with <a class="reference internal" href="../generated/generated/os.spawnv.html#os.spawnv" title="os.spawnv"><code class="xref py py-func docutils literal"><span class="pre">os.spawnv()</span></code></a>). If <em>cmd</em> is a string it will be passed to the shell
+(as with <a class="reference internal" href="../generated/generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a>).</p>
 <p>These methods do not make it possible to retrieve the exit status from the child
 processes.  The only way to control the input and output streams and also
 retrieve the return codes is to use the <a class="reference internal" href="../generated/subprocess.html#module-subprocess" title="subprocess"><code class="xref py py-mod docutils literal"><span class="pre">subprocess</span></code></a> module; these are only
@@ -724,9 +724,9 @@ as internal buffering of data.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This function is intended for low-level I/O and must be applied to a file
-descriptor as returned by <a class="reference internal" href="../generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">os.open()</span></code></a> or <a class="reference internal" href="../generated/os.pipe.html#os.pipe" title="os.pipe"><code class="xref py py-func docutils literal"><span class="pre">pipe()</span></code></a>.  To close a &#8220;file
-object&#8221; returned by the built-in function <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> or by <a class="reference internal" href="../generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">popen()</span></code></a> or
-<a class="reference internal" href="../generated/os.fdopen.html#os.fdopen" title="os.fdopen"><code class="xref py py-func docutils literal"><span class="pre">fdopen()</span></code></a>, use its <a class="reference internal" href="../generated/generated/io.IOBase.close.html#io.IOBase.close" title="io.IOBase.close"><code class="xref py py-meth docutils literal"><span class="pre">close()</span></code></a> method.</p>
+descriptor as returned by <a class="reference internal" href="../generated/generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">os.open()</span></code></a> or <a class="reference internal" href="../generated/generated/os.pipe.html#os.pipe" title="os.pipe"><code class="xref py py-func docutils literal"><span class="pre">pipe()</span></code></a>.  To close a &#8220;file
+object&#8221; returned by the built-in function <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> or by <a class="reference internal" href="../generated/generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">popen()</span></code></a> or
+<a class="reference internal" href="../generated/generated/os.fdopen.html#os.fdopen" title="os.fdopen"><code class="xref py py-func docutils literal"><span class="pre">fdopen()</span></code></a>, use its <a class="reference internal" href="../generated/generated/io.IOBase.close.html#io.IOBase.close" title="io.IOBase.close"><code class="xref py py-meth docutils literal"><span class="pre">close()</span></code></a> method.</p>
 </div>
 </dd></dl>
 
@@ -766,7 +766,7 @@ ignoring errors. Equivalent to:</p>
 <dt id="os.fchmod">
 <code class="descclassname">os.</code><code class="descname">fchmod</code><span class="sig-paren">(</span><em>fd</em>, <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#os.fchmod" title="Permalink to this definition">¶</a></dt>
 <dd><p>Change the mode of the file given by <em>fd</em> to the numeric <em>mode</em>.  See the docs
-for <a class="reference internal" href="../generated/os.chmod.html#os.chmod" title="os.chmod"><code class="xref py py-func docutils literal"><span class="pre">chmod()</span></code></a> for possible values of <em>mode</em>.</p>
+for <a class="reference internal" href="../generated/generated/os.chmod.html#os.chmod" title="os.chmod"><code class="xref py py-func docutils literal"><span class="pre">chmod()</span></code></a> for possible values of <em>mode</em>.</p>
 <p>Availability: Unix.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
@@ -816,7 +816,7 @@ included in <code class="docutils literal"><span class="pre">pathconf_names</spa
 <dl class="function">
 <dt id="os.fstat">
 <code class="descclassname">os.</code><code class="descname">fstat</code><span class="sig-paren">(</span><em>fd</em><span class="sig-paren">)</span><a class="headerlink" href="#os.fstat" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return status for file descriptor <em>fd</em>, like <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a>.</p>
+<dd><p>Return status for file descriptor <em>fd</em>, like <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a>.</p>
 <p>Availability: Unix, Windows.</p>
 </dd></dl>
 
@@ -872,7 +872,7 @@ the file. Return the new cursor position in bytes, starting from the beginning.<
 <code class="descclassname">os.</code><code class="descname">SEEK_CUR</code><a class="headerlink" href="#os.SEEK_CUR" title="Permalink to this definition">¶</a></dt>
 <dt id="os.SEEK_END">
 <code class="descclassname">os.</code><code class="descname">SEEK_END</code><a class="headerlink" href="#os.SEEK_END" title="Permalink to this definition">¶</a></dt>
-<dd><p>Parameters to the <a class="reference internal" href="../generated/os.lseek.html#os.lseek" title="os.lseek"><code class="xref py py-func docutils literal"><span class="pre">lseek()</span></code></a> function. Their values are 0, 1, and 2,
+<dd><p>Parameters to the <a class="reference internal" href="../generated/generated/os.lseek.html#os.lseek" title="os.lseek"><code class="xref py py-func docutils literal"><span class="pre">lseek()</span></code></a> function. Their values are 0, 1, and 2,
 respectively.</p>
 <p>Availability: Windows, Unix.</p>
 <div class="versionadded">
@@ -897,7 +897,7 @@ this module too (see <a class="reference internal" href="#open-constants"><span>
 <p class="last">This function is intended for low-level I/O.  For normal usage, use the
 built-in function <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a>, which returns a &#8220;file object&#8221; with
 <a class="reference internal" href="../05_builtin_types/file_objects.html#file.read" title="file.read"><code class="xref py py-meth docutils literal"><span class="pre">read()</span></code></a> and <a class="reference internal" href="../05_builtin_types/file_objects.html#file.write" title="file.write"><code class="xref py py-meth docutils literal"><span class="pre">write()</span></code></a> methods (and many more).  To
-wrap a file descriptor in a &#8220;file object&#8221;, use <a class="reference internal" href="../generated/os.fdopen.html#os.fdopen" title="os.fdopen"><code class="xref py py-func docutils literal"><span class="pre">fdopen()</span></code></a>.</p>
+wrap a file descriptor in a &#8220;file object&#8221;, use <a class="reference internal" href="../generated/generated/os.fdopen.html#os.fdopen" title="os.fdopen"><code class="xref py py-func docutils literal"><span class="pre">fdopen()</span></code></a>.</p>
 </div>
 </dd></dl>
 
@@ -924,9 +924,9 @@ empty string is returned.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This function is intended for low-level I/O and must be applied to a file
-descriptor as returned by <a class="reference internal" href="../generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">os.open()</span></code></a> or <a class="reference internal" href="../generated/os.pipe.html#os.pipe" title="os.pipe"><code class="xref py py-func docutils literal"><span class="pre">pipe()</span></code></a>.  To read a &#8220;file object&#8221;
-returned by the built-in function <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> or by <a class="reference internal" href="../generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">popen()</span></code></a> or
-<a class="reference internal" href="../generated/os.fdopen.html#os.fdopen" title="os.fdopen"><code class="xref py py-func docutils literal"><span class="pre">fdopen()</span></code></a>, or <a class="reference internal" href="../28_runtime_service/sys.html#sys.stdin" title="sys.stdin"><code class="xref py py-data docutils literal"><span class="pre">sys.stdin</span></code></a>, use its <a class="reference internal" href="../05_builtin_types/file_objects.html#file.read" title="file.read"><code class="xref py py-meth docutils literal"><span class="pre">read()</span></code></a> or
+descriptor as returned by <a class="reference internal" href="../generated/generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">os.open()</span></code></a> or <a class="reference internal" href="../generated/generated/os.pipe.html#os.pipe" title="os.pipe"><code class="xref py py-func docutils literal"><span class="pre">pipe()</span></code></a>.  To read a &#8220;file object&#8221;
+returned by the built-in function <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> or by <a class="reference internal" href="../generated/generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">popen()</span></code></a> or
+<a class="reference internal" href="../generated/generated/os.fdopen.html#os.fdopen" title="os.fdopen"><code class="xref py py-func docutils literal"><span class="pre">fdopen()</span></code></a>, or <a class="reference internal" href="../28_runtime_service/sys.html#sys.stdin" title="sys.stdin"><code class="xref py py-data docutils literal"><span class="pre">sys.stdin</span></code></a>, use its <a class="reference internal" href="../05_builtin_types/file_objects.html#file.read" title="file.read"><code class="xref py py-meth docutils literal"><span class="pre">read()</span></code></a> or
 <a class="reference internal" href="../05_builtin_types/file_objects.html#file.readline" title="file.readline"><code class="xref py py-meth docutils literal"><span class="pre">readline()</span></code></a> methods.</p>
 </div>
 </dd></dl>
@@ -935,7 +935,7 @@ returned by the built-in function <a class="reference internal" href="../02_buil
 <dt id="os.tcgetpgrp">
 <code class="descclassname">os.</code><code class="descname">tcgetpgrp</code><span class="sig-paren">(</span><em>fd</em><span class="sig-paren">)</span><a class="headerlink" href="#os.tcgetpgrp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the process group associated with the terminal given by <em>fd</em> (an open
-file descriptor as returned by <a class="reference internal" href="../generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">os.open()</span></code></a>).</p>
+file descriptor as returned by <a class="reference internal" href="../generated/generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">os.open()</span></code></a>).</p>
 <p>Availability: Unix.</p>
 </dd></dl>
 
@@ -943,7 +943,7 @@ file descriptor as returned by <a class="reference internal" href="../generated/
 <dt id="os.tcsetpgrp">
 <code class="descclassname">os.</code><code class="descname">tcsetpgrp</code><span class="sig-paren">(</span><em>fd</em>, <em>pg</em><span class="sig-paren">)</span><a class="headerlink" href="#os.tcsetpgrp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the process group associated with the terminal given by <em>fd</em> (an open file
-descriptor as returned by <a class="reference internal" href="../generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">os.open()</span></code></a>) to <em>pg</em>.</p>
+descriptor as returned by <a class="reference internal" href="../generated/generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">os.open()</span></code></a>) to <em>pg</em>.</p>
 <p>Availability: Unix.</p>
 </dd></dl>
 
@@ -965,9 +965,9 @@ actually written.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This function is intended for low-level I/O and must be applied to a file
-descriptor as returned by <a class="reference internal" href="../generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">os.open()</span></code></a> or <a class="reference internal" href="../generated/os.pipe.html#os.pipe" title="os.pipe"><code class="xref py py-func docutils literal"><span class="pre">pipe()</span></code></a>.  To write a &#8220;file
-object&#8221; returned by the built-in function <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> or by <a class="reference internal" href="../generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">popen()</span></code></a> or
-<a class="reference internal" href="../generated/os.fdopen.html#os.fdopen" title="os.fdopen"><code class="xref py py-func docutils literal"><span class="pre">fdopen()</span></code></a>, or <a class="reference internal" href="../28_runtime_service/sys.html#sys.stdout" title="sys.stdout"><code class="xref py py-data docutils literal"><span class="pre">sys.stdout</span></code></a> or <a class="reference internal" href="../28_runtime_service/sys.html#sys.stderr" title="sys.stderr"><code class="xref py py-data docutils literal"><span class="pre">sys.stderr</span></code></a>, use its
+descriptor as returned by <a class="reference internal" href="../generated/generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">os.open()</span></code></a> or <a class="reference internal" href="../generated/generated/os.pipe.html#os.pipe" title="os.pipe"><code class="xref py py-func docutils literal"><span class="pre">pipe()</span></code></a>.  To write a &#8220;file
+object&#8221; returned by the built-in function <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> or by <a class="reference internal" href="../generated/generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">popen()</span></code></a> or
+<a class="reference internal" href="../generated/generated/os.fdopen.html#os.fdopen" title="os.fdopen"><code class="xref py py-func docutils literal"><span class="pre">fdopen()</span></code></a>, or <a class="reference internal" href="../28_runtime_service/sys.html#sys.stdout" title="sys.stdout"><code class="xref py py-data docutils literal"><span class="pre">sys.stdout</span></code></a> or <a class="reference internal" href="../28_runtime_service/sys.html#sys.stderr" title="sys.stderr"><code class="xref py py-data docutils literal"><span class="pre">sys.stderr</span></code></a>, use its
 <a class="reference internal" href="../05_builtin_types/file_objects.html#file.write" title="file.write"><code class="xref py py-meth docutils literal"><span class="pre">write()</span></code></a> method.</p>
 </div>
 </dd></dl>
@@ -975,7 +975,7 @@ object&#8221; returned by the built-in function <a class="reference internal" hr
 <div class="section" id="open-flag-constants">
 <span id="open-constants"></span><h3><a class="toc-backref" href="#id4">1.3.1. <code class="docutils literal"><span class="pre">open()</span></code> flag constants</a><a class="headerlink" href="#open-flag-constants" title="Permalink to this headline">¶</a></h3>
 <p>The following constants are options for the <em>flags</em> parameter to the
-<a class="reference internal" href="../generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> function.  They can be combined using the bitwise OR operator
+<a class="reference internal" href="../generated/generated/os.open.html#os.open" title="os.open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> function.  They can be combined using the bitwise OR operator
 <code class="docutils literal"><span class="pre">|</span></code>.  Some of them are not available on all platforms.  For descriptions of
 their availability and use, consult the <em class="manpage">open(2)</em> manual page on Unix
 or <a class="reference external" href="http://msdn.microsoft.com/en-us/library/z0kc8e3z.aspx">the MSDN</a> on Windows.</p>
@@ -1068,7 +1068,7 @@ information.</p>
 <p>Availability: Unix, Windows.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Using <a class="reference internal" href="../generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> to check if a user is authorized to e.g. open a file
+<p>Using <a class="reference internal" href="../generated/generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> to check if a user is authorized to e.g. open a file
 before actually doing so using <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> creates a security hole,
 because the user might exploit the short time interval between checking
 and opening the file to manipulate it. It&#8217;s preferable to use <span class="xref std std-term">EAFP</span>
@@ -1095,7 +1095,7 @@ techniques. For example:</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">I/O operations may fail even when <a class="reference internal" href="../generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> indicates that they would
+<p class="last">I/O operations may fail even when <a class="reference internal" href="../generated/generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> indicates that they would
 succeed, particularly for operations on network filesystems which may have
 permissions semantics beyond the usual POSIX permission-bit model.</p>
 </div>
@@ -1104,28 +1104,28 @@ permissions semantics beyond the usual POSIX permission-bit model.</p>
 <dl class="data">
 <dt id="os.F_OK">
 <code class="descclassname">os.</code><code class="descname">F_OK</code><a class="headerlink" href="#os.F_OK" title="Permalink to this definition">¶</a></dt>
-<dd><p>Value to pass as the <em>mode</em> parameter of <a class="reference internal" href="../generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> to test the existence of
+<dd><p>Value to pass as the <em>mode</em> parameter of <a class="reference internal" href="../generated/generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> to test the existence of
 <em>path</em>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="os.R_OK">
 <code class="descclassname">os.</code><code class="descname">R_OK</code><a class="headerlink" href="#os.R_OK" title="Permalink to this definition">¶</a></dt>
-<dd><p>Value to include in the <em>mode</em> parameter of <a class="reference internal" href="../generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> to test the
+<dd><p>Value to include in the <em>mode</em> parameter of <a class="reference internal" href="../generated/generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> to test the
 readability of <em>path</em>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="os.W_OK">
 <code class="descclassname">os.</code><code class="descname">W_OK</code><a class="headerlink" href="#os.W_OK" title="Permalink to this definition">¶</a></dt>
-<dd><p>Value to include in the <em>mode</em> parameter of <a class="reference internal" href="../generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> to test the
+<dd><p>Value to include in the <em>mode</em> parameter of <a class="reference internal" href="../generated/generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> to test the
 writability of <em>path</em>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="os.X_OK">
 <code class="descclassname">os.</code><code class="descname">X_OK</code><a class="headerlink" href="#os.X_OK" title="Permalink to this definition">¶</a></dt>
-<dd><p>Value to include in the <em>mode</em> parameter of <a class="reference internal" href="../generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> to determine if
+<dd><p>Value to include in the <em>mode</em> parameter of <a class="reference internal" href="../generated/generated/os.access.html#os.access" title="os.access"><code class="xref py py-func docutils literal"><span class="pre">access()</span></code></a> to determine if
 <em>path</em> can be executed.</p>
 </dd></dl>
 
@@ -1228,7 +1228,7 @@ combinations of them:</p>
 <p>Availability: Unix, Windows.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Although Windows supports <a class="reference internal" href="../generated/os.chmod.html#os.chmod" title="os.chmod"><code class="xref py py-func docutils literal"><span class="pre">chmod()</span></code></a>, you can only  set the file&#8217;s read-only
+<p class="last">Although Windows supports <a class="reference internal" href="../generated/generated/os.chmod.html#os.chmod" title="os.chmod"><code class="xref py py-func docutils literal"><span class="pre">chmod()</span></code></a>, you can only  set the file&#8217;s read-only
 flag with it (via the <code class="docutils literal"><span class="pre">stat.S_IWRITE</span></code>  and <code class="docutils literal"><span class="pre">stat.S_IREAD</span></code>
 constants or a corresponding integer value).  All other bits are
 ignored.</p>
@@ -1258,7 +1258,7 @@ follow symbolic links.</p>
 <dt id="os.lchmod">
 <code class="descclassname">os.</code><code class="descname">lchmod</code><span class="sig-paren">(</span><em>path</em>, <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#os.lchmod" title="Permalink to this definition">¶</a></dt>
 <dd><p>Change the mode of <em>path</em> to the numeric <em>mode</em>. If path is a symlink, this
-affects the symlink rather than the target. See the docs for <a class="reference internal" href="../generated/os.chmod.html#os.chmod" title="os.chmod"><code class="xref py py-func docutils literal"><span class="pre">chmod()</span></code></a>
+affects the symlink rather than the target. See the docs for <a class="reference internal" href="../generated/generated/os.chmod.html#os.chmod" title="os.chmod"><code class="xref py py-func docutils literal"><span class="pre">chmod()</span></code></a>
 for possible values of <em>mode</em>.</p>
 <p>Availability: Unix.</p>
 <div class="versionadded">
@@ -1303,9 +1303,9 @@ string objects.</p>
 <dt id="os.lstat">
 <code class="descclassname">os.</code><code class="descname">lstat</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#os.lstat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform the equivalent of an <code class="xref c c-func docutils literal"><span class="pre">lstat()</span></code> system call on the given path.
-Similar to <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a>, but does not follow symbolic links.  On
+Similar to <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a>, but does not follow symbolic links.  On
 platforms that do not support symbolic links, this is an alias for
-<a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1316,9 +1316,9 @@ platforms that do not support symbolic links, this is an alias for
 the mode.</p>
 <p>Availability: Unix.</p>
 <p>FIFOs are pipes that can be accessed like regular files.  FIFOs exist until they
-are deleted (for example with <a class="reference internal" href="../generated/os.unlink.html#os.unlink" title="os.unlink"><code class="xref py py-func docutils literal"><span class="pre">os.unlink()</span></code></a>). Generally, FIFOs are used as
+are deleted (for example with <a class="reference internal" href="../generated/generated/os.unlink.html#os.unlink" title="os.unlink"><code class="xref py py-func docutils literal"><span class="pre">os.unlink()</span></code></a>). Generally, FIFOs are used as
 rendezvous between &#8220;client&#8221; and &#8220;server&#8221; type processes: the server opens the
-FIFO for reading, and the client opens it for writing.  Note that <a class="reference internal" href="../generated/os.mkfifo.html#os.mkfifo" title="os.mkfifo"><code class="xref py py-func docutils literal"><span class="pre">mkfifo()</span></code></a>
+FIFO for reading, and the client opens it for writing.  Note that <a class="reference internal" href="../generated/generated/os.mkfifo.html#os.mkfifo" title="os.mkfifo"><code class="xref py py-func docutils literal"><span class="pre">mkfifo()</span></code></a>
 doesn&#8217;t open the FIFO &#8212; it just creates the rendezvous point.</p>
 </dd></dl>
 
@@ -1332,7 +1332,7 @@ be created, being combined (bitwise OR) with one of <code class="docutils litera
 and <code class="docutils literal"><span class="pre">stat.S_IFIFO</span></code> (those constants are available in <a class="reference internal" href="../generated/stat.html#module-stat" title="stat"><code class="xref py py-mod docutils literal"><span class="pre">stat</span></code></a>).
 For <code class="docutils literal"><span class="pre">stat.S_IFCHR</span></code> and
 <code class="docutils literal"><span class="pre">stat.S_IFBLK</span></code>, <em>device</em> defines the newly created device special file (probably using
-<a class="reference internal" href="../generated/os.makedev.html#os.makedev" title="os.makedev"><code class="xref py py-func docutils literal"><span class="pre">os.makedev()</span></code></a>), otherwise it is ignored.</p>
+<a class="reference internal" href="../generated/generated/os.makedev.html#os.makedev" title="os.makedev"><code class="xref py py-func docutils literal"><span class="pre">os.makedev()</span></code></a>), otherwise it is ignored.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.3.</span></p>
 </div>
@@ -1375,7 +1375,7 @@ For <code class="docutils literal"><span class="pre">stat.S_IFCHR</span></code> 
 current umask value is first masked out.  If the directory already exists,
 <a class="reference internal" href="../generated/exceptions.OSError.html#exceptions.OSError" title="exceptions.OSError"><code class="xref py py-exc docutils literal"><span class="pre">OSError</span></code></a> is raised.</p>
 <p>It is also possible to create temporary directories; see the
-<a class="reference internal" href="../generated/tempfile.html#module-tempfile" title="tempfile"><code class="xref py py-mod docutils literal"><span class="pre">tempfile</span></code></a> module&#8217;s <a class="reference internal" href="../generated/tempfile.mkdtemp.html#tempfile.mkdtemp" title="tempfile.mkdtemp"><code class="xref py py-func docutils literal"><span class="pre">tempfile.mkdtemp()</span></code></a> function.</p>
+<a class="reference internal" href="../generated/tempfile.html#module-tempfile" title="tempfile"><code class="xref py py-mod docutils literal"><span class="pre">tempfile</span></code></a> module&#8217;s <a class="reference internal" href="../generated/generated/tempfile.mkdtemp.html#tempfile.mkdtemp" title="tempfile.mkdtemp"><code class="xref py py-func docutils literal"><span class="pre">tempfile.mkdtemp()</span></code></a> function.</p>
 <p>Availability: Unix, Windows.</p>
 </dd></dl>
 
@@ -1404,7 +1404,7 @@ included in <code class="docutils literal"><span class="pre">pathconf_names</spa
 <dl class="data">
 <dt id="os.pathconf_names">
 <code class="descclassname">os.</code><code class="descname">pathconf_names</code><a class="headerlink" href="#os.pathconf_names" title="Permalink to this definition">¶</a></dt>
-<dd><p>Dictionary mapping names accepted by <a class="reference internal" href="../generated/os.pathconf.html#os.pathconf" title="os.pathconf"><code class="xref py py-func docutils literal"><span class="pre">pathconf()</span></code></a> and <a class="reference internal" href="../generated/os.fpathconf.html#os.fpathconf" title="os.fpathconf"><code class="xref py py-func docutils literal"><span class="pre">fpathconf()</span></code></a> to
+<dd><p>Dictionary mapping names accepted by <a class="reference internal" href="../generated/generated/os.pathconf.html#os.pathconf" title="os.pathconf"><code class="xref py py-func docutils literal"><span class="pre">pathconf()</span></code></a> and <a class="reference internal" href="../generated/generated/os.fpathconf.html#os.fpathconf" title="os.fpathconf"><code class="xref py py-func docutils literal"><span class="pre">fpathconf()</span></code></a> to
 the integer values defined for those names by the host operating system.  This
 can be used to determine the set of names known to the system. Availability:
 Unix.</p>
@@ -1427,8 +1427,8 @@ be converted to an absolute pathname using <code class="docutils literal"><span 
 <dt id="os.remove">
 <code class="descclassname">os.</code><code class="descname">remove</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#os.remove" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove (delete) the file <em>path</em>.  If <em>path</em> is a directory, <a class="reference internal" href="../generated/exceptions.OSError.html#exceptions.OSError" title="exceptions.OSError"><code class="xref py py-exc docutils literal"><span class="pre">OSError</span></code></a> is
-raised; see <a class="reference internal" href="../generated/os.rmdir.html#os.rmdir" title="os.rmdir"><code class="xref py py-func docutils literal"><span class="pre">rmdir()</span></code></a> below to remove a directory.  This is identical to
-the <a class="reference internal" href="../generated/os.unlink.html#os.unlink" title="os.unlink"><code class="xref py py-func docutils literal"><span class="pre">unlink()</span></code></a> function documented below.  On Windows, attempting to
+raised; see <a class="reference internal" href="../generated/generated/os.rmdir.html#os.rmdir" title="os.rmdir"><code class="xref py py-func docutils literal"><span class="pre">rmdir()</span></code></a> below to remove a directory.  This is identical to
+the <a class="reference internal" href="../generated/generated/os.unlink.html#os.unlink" title="os.unlink"><code class="xref py py-func docutils literal"><span class="pre">unlink()</span></code></a> function documented below.  On Windows, attempting to
 remove a file that is in use causes an exception to be raised; on Unix, the
 directory entry is removed but the storage allocated to the file is not made
 available until the original file is no longer in use.</p>
@@ -1457,10 +1457,10 @@ existing file.</p>
 <dl class="function">
 <dt id="os.renames">
 <code class="descclassname">os.</code><code class="descname">renames</code><span class="sig-paren">(</span><em>old</em>, <em>new</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/os.html#renames"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#os.renames" title="Permalink to this definition">¶</a></dt>
-<dd><p>Recursive directory or file renaming function. Works like <a class="reference internal" href="../generated/os.rename.html#os.rename" title="os.rename"><code class="xref py py-func docutils literal"><span class="pre">rename()</span></code></a>, except
+<dd><p>Recursive directory or file renaming function. Works like <a class="reference internal" href="../generated/generated/os.rename.html#os.rename" title="os.rename"><code class="xref py py-func docutils literal"><span class="pre">rename()</span></code></a>, except
 creation of any intermediate directories needed to make the new pathname good is
 attempted first. After the rename, directories corresponding to rightmost path
-segments of the old name will be pruned away using <a class="reference internal" href="../generated/os.removedirs.html#os.removedirs" title="os.removedirs"><code class="xref py py-func docutils literal"><span class="pre">removedirs()</span></code></a>.</p>
+segments of the old name will be pruned away using <a class="reference internal" href="../generated/generated/os.removedirs.html#os.removedirs" title="os.removedirs"><code class="xref py py-func docutils literal"><span class="pre">removedirs()</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.5.2.</span></p>
 </div>
@@ -1476,7 +1476,7 @@ permissions needed to remove the leaf directory or file.</p>
 <code class="descclassname">os.</code><code class="descname">rmdir</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#os.rmdir" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove (delete) the directory <em>path</em>.  Only works when the directory is
 empty, otherwise, <a class="reference internal" href="../generated/exceptions.OSError.html#exceptions.OSError" title="exceptions.OSError"><code class="xref py py-exc docutils literal"><span class="pre">OSError</span></code></a> is raised.  In order to remove whole
-directory trees, <a class="reference internal" href="../generated/shutil.rmtree.html#shutil.rmtree" title="shutil.rmtree"><code class="xref py py-func docutils literal"><span class="pre">shutil.rmtree()</span></code></a> can be used.</p>
+directory trees, <a class="reference internal" href="../generated/generated/shutil.rmtree.html#shutil.rmtree" title="shutil.rmtree"><code class="xref py py-func docutils literal"><span class="pre">shutil.rmtree()</span></code></a> can be used.</p>
 <p>Availability: Unix, Windows.</p>
 </dd></dl>
 
@@ -1484,7 +1484,7 @@ directory trees, <a class="reference internal" href="../generated/shutil.rmtree.
 <dt id="os.stat">
 <code class="descclassname">os.</code><code class="descname">stat</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#os.stat" title="Permalink to this definition">¶</a></dt>
 <dd><p id="index-16">Perform the equivalent of a <code class="xref c c-func docutils literal"><span class="pre">stat()</span></code> system call on the given path.
-(This function follows symlinks; to stat a symlink use <a class="reference internal" href="../generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">lstat()</span></code></a>.)</p>
+(This function follows symlinks; to stat a symlink use <a class="reference internal" href="../generated/generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">lstat()</span></code></a>.)</p>
 <p>The return value is an object whose attributes correspond to the members
 of the <code class="xref c c-type docutils literal"><span class="pre">stat</span></code> structure, namely:</p>
 <ul class="simple">
@@ -1501,9 +1501,9 @@ of the <code class="xref c c-type docutils literal"><span class="pre">stat</span
 Unix, or the time of creation on Windows)</li>
 </ul>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.3: </span>If <a class="reference internal" href="../generated/os.stat_float_times.html#os.stat_float_times" title="os.stat_float_times"><code class="xref py py-func docutils literal"><span class="pre">stat_float_times()</span></code></a> returns <code class="docutils literal"><span class="pre">True</span></code>, the time values are floats, measuring
+<p><span class="versionmodified">Changed in version 2.3: </span>If <a class="reference internal" href="../generated/generated/os.stat_float_times.html#os.stat_float_times" title="os.stat_float_times"><code class="xref py py-func docutils literal"><span class="pre">stat_float_times()</span></code></a> returns <code class="docutils literal"><span class="pre">True</span></code>, the time values are floats, measuring
 seconds. Fractions of a second may be reported if the system supports that.
-See <a class="reference internal" href="../generated/os.stat_float_times.html#os.stat_float_times" title="os.stat_float_times"><code class="xref py py-func docutils literal"><span class="pre">stat_float_times()</span></code></a> for further discussion.</p>
+See <a class="reference internal" href="../generated/generated/os.stat_float_times.html#os.stat_float_times" title="os.stat_float_times"><code class="xref py py-func docutils literal"><span class="pre">stat_float_times()</span></code></a> for further discussion.</p>
 </div>
 <p>On some Unix systems (such as Linux), the following attributes may also be
 available:</p>
@@ -1534,7 +1534,7 @@ or FAT32 file systems, <code class="xref py py-attr docutils literal"><span clas
 <code class="xref py py-attr docutils literal"><span class="pre">st_atime</span></code> has only 1-day resolution.  See your operating system
 documentation for details.</p>
 </div>
-<p>For backward compatibility, the return value of <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a> is also accessible
+<p>For backward compatibility, the return value of <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a> is also accessible
 as a tuple of at least 10 integers giving the most important (and portable)
 members of the <code class="xref c c-type docutils literal"><span class="pre">stat</span></code> structure, in the order <code class="xref py py-attr docutils literal"><span class="pre">st_mode</span></code>,
 <code class="xref py py-attr docutils literal"><span class="pre">st_ino</span></code>, <code class="xref py py-attr docutils literal"><span class="pre">st_dev</span></code>, <code class="xref py py-attr docutils literal"><span class="pre">st_nlink</span></code>, <code class="xref py py-attr docutils literal"><span class="pre">st_uid</span></code>,
@@ -1546,7 +1546,7 @@ members of the <code class="xref c c-type docutils literal"><span class="pre">st
 <dt id="os.stat_float_times">
 <code class="descclassname">os.</code><code class="descname">stat_float_times</code><span class="sig-paren">(</span><span class="optional">[</span><em>newvalue</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#os.stat_float_times" title="Permalink to this definition">¶</a></dt>
 <dd><p>Determine whether <a class="reference internal" href="../generated/generated/os.stat_result.html#os.stat_result" title="os.stat_result"><code class="xref py py-class docutils literal"><span class="pre">stat_result</span></code></a> represents time stamps as float objects.
-If <em>newvalue</em> is <code class="docutils literal"><span class="pre">True</span></code>, future calls to <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a> return floats, if it is
+If <em>newvalue</em> is <code class="docutils literal"><span class="pre">True</span></code>, future calls to <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a> return floats, if it is
 <code class="docutils literal"><span class="pre">False</span></code>, future calls return ints. If <em>newvalue</em> is omitted, return the
 current setting.</p>
 <p>For compatibility with older Python versions, accessing <a class="reference internal" href="../generated/generated/os.stat_result.html#os.stat_result" title="os.stat_result"><code class="xref py py-class docutils literal"><span class="pre">stat_result</span></code></a> as
@@ -1592,15 +1592,15 @@ This will be an absolute path that names a potential directory entry in the
 directory <em>dir</em> or a common location for temporary files if <em>dir</em> is omitted or
 <code class="docutils literal"><span class="pre">None</span></code>.  If given and not <code class="docutils literal"><span class="pre">None</span></code>, <em>prefix</em> is used to provide a short prefix
 to the filename.  Applications are responsible for properly creating and
-managing files created using paths returned by <a class="reference internal" href="../generated/os.tempnam.html#os.tempnam" title="os.tempnam"><code class="xref py py-func docutils literal"><span class="pre">tempnam()</span></code></a>; no automatic
+managing files created using paths returned by <a class="reference internal" href="../generated/generated/os.tempnam.html#os.tempnam" title="os.tempnam"><code class="xref py py-func docutils literal"><span class="pre">tempnam()</span></code></a>; no automatic
 cleanup is provided. On Unix, the environment variable <span class="target" id="index-18"></span><code class="xref std std-envvar docutils literal"><span class="pre">TMPDIR</span></code>
 overrides <em>dir</em>, while on Windows <span class="target" id="index-19"></span><code class="xref std std-envvar docutils literal"><span class="pre">TMP</span></code> is used.  The specific
 behavior of this function depends on the C library implementation; some aspects
 are underspecified in system documentation.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Use of <a class="reference internal" href="../generated/os.tempnam.html#os.tempnam" title="os.tempnam"><code class="xref py py-func docutils literal"><span class="pre">tempnam()</span></code></a> is vulnerable to symlink attacks; consider using
-<a class="reference internal" href="../generated/os.tmpfile.html#os.tmpfile" title="os.tmpfile"><code class="xref py py-func docutils literal"><span class="pre">tmpfile()</span></code></a> (section <a class="reference internal" href="#os-newstreams"><span>File Object Creation</span></a>) instead.</p>
+<p class="last">Use of <a class="reference internal" href="../generated/generated/os.tempnam.html#os.tempnam" title="os.tempnam"><code class="xref py py-func docutils literal"><span class="pre">tempnam()</span></code></a> is vulnerable to symlink attacks; consider using
+<a class="reference internal" href="../generated/generated/os.tmpfile.html#os.tmpfile" title="os.tmpfile"><code class="xref py py-func docutils literal"><span class="pre">tmpfile()</span></code></a> (section <a class="reference internal" href="#os-newstreams"><span>File Object Creation</span></a>) instead.</p>
 </div>
 <p>Availability: Unix, Windows.</p>
 </dd></dl>
@@ -1611,15 +1611,15 @@ are underspecified in system documentation.</p>
 <dd><p>Return a unique path name that is reasonable for creating a temporary file.
 This will be an absolute path that names a potential directory entry in a common
 location for temporary files.  Applications are responsible for properly
-creating and managing files created using paths returned by <a class="reference internal" href="../generated/os.tmpnam.html#os.tmpnam" title="os.tmpnam"><code class="xref py py-func docutils literal"><span class="pre">tmpnam()</span></code></a>; no
+creating and managing files created using paths returned by <a class="reference internal" href="../generated/generated/os.tmpnam.html#os.tmpnam" title="os.tmpnam"><code class="xref py py-func docutils literal"><span class="pre">tmpnam()</span></code></a>; no
 automatic cleanup is provided.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Use of <a class="reference internal" href="../generated/os.tmpnam.html#os.tmpnam" title="os.tmpnam"><code class="xref py py-func docutils literal"><span class="pre">tmpnam()</span></code></a> is vulnerable to symlink attacks; consider using
-<a class="reference internal" href="../generated/os.tmpfile.html#os.tmpfile" title="os.tmpfile"><code class="xref py py-func docutils literal"><span class="pre">tmpfile()</span></code></a> (section <a class="reference internal" href="#os-newstreams"><span>File Object Creation</span></a>) instead.</p>
+<p class="last">Use of <a class="reference internal" href="../generated/generated/os.tmpnam.html#os.tmpnam" title="os.tmpnam"><code class="xref py py-func docutils literal"><span class="pre">tmpnam()</span></code></a> is vulnerable to symlink attacks; consider using
+<a class="reference internal" href="../generated/generated/os.tmpfile.html#os.tmpfile" title="os.tmpfile"><code class="xref py py-func docutils literal"><span class="pre">tmpfile()</span></code></a> (section <a class="reference internal" href="#os-newstreams"><span>File Object Creation</span></a>) instead.</p>
 </div>
 <p>Availability: Unix, Windows.  This function probably shouldn&#8217;t be used on
-Windows, though: Microsoft&#8217;s implementation of <a class="reference internal" href="../generated/os.tmpnam.html#os.tmpnam" title="os.tmpnam"><code class="xref py py-func docutils literal"><span class="pre">tmpnam()</span></code></a> always creates a
+Windows, though: Microsoft&#8217;s implementation of <a class="reference internal" href="../generated/generated/os.tmpnam.html#os.tmpnam" title="os.tmpnam"><code class="xref py py-func docutils literal"><span class="pre">tmpnam()</span></code></a> always creates a
 name in the root directory of the current drive, and that&#8217;s generally a poor
 location for a temp file (depending on privileges, you may not even be able to
 open a file using this name).</p>
@@ -1628,7 +1628,7 @@ open a file using this name).</p>
 <dl class="data">
 <dt id="os.TMP_MAX">
 <code class="descclassname">os.</code><code class="descname">TMP_MAX</code><a class="headerlink" href="#os.TMP_MAX" title="Permalink to this definition">¶</a></dt>
-<dd><p>The maximum number of unique names that <a class="reference internal" href="../generated/os.tmpnam.html#os.tmpnam" title="os.tmpnam"><code class="xref py py-func docutils literal"><span class="pre">tmpnam()</span></code></a> will generate before
+<dd><p>The maximum number of unique names that <a class="reference internal" href="../generated/generated/os.tmpnam.html#os.tmpnam" title="os.tmpnam"><code class="xref py py-func docutils literal"><span class="pre">tmpnam()</span></code></a> will generate before
 reusing names.</p>
 </dd></dl>
 
@@ -1636,7 +1636,7 @@ reusing names.</p>
 <dt id="os.unlink">
 <code class="descclassname">os.</code><code class="descname">unlink</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#os.unlink" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove (delete) the file <em>path</em>.  This is the same function as
-<a class="reference internal" href="../generated/os.remove.html#os.remove" title="os.remove"><code class="xref py py-func docutils literal"><span class="pre">remove()</span></code></a>; the <a class="reference internal" href="../generated/os.unlink.html#os.unlink" title="os.unlink"><code class="xref py py-func docutils literal"><span class="pre">unlink()</span></code></a> name is its traditional Unix
+<a class="reference internal" href="../generated/generated/os.remove.html#os.remove" title="os.remove"><code class="xref py py-func docutils literal"><span class="pre">remove()</span></code></a>; the <a class="reference internal" href="../generated/generated/os.unlink.html#os.unlink" title="os.unlink"><code class="xref py py-func docutils literal"><span class="pre">unlink()</span></code></a> name is its traditional Unix
 name.</p>
 <p>Availability: Unix, Windows.</p>
 </dd></dl>
@@ -1652,8 +1652,8 @@ the path.)  Otherwise, <em>times</em> must be a 2-tuple of numbers, of the form
 respectively. Whether a directory can be given for <em>path</em> depends on whether
 the operating system implements directories as files (for example, Windows
 does not).  Note that the exact times you set here may not be returned by a
-subsequent <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a> call, depending on the resolution with which your
-operating system records access and modification times; see <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a>.</p>
+subsequent <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a> call, depending on the resolution with which your
+operating system records access and modification times; see <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a>.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.0: </span>Added support for <code class="docutils literal"><span class="pre">None</span></code> for <em>times</em>.</p>
 </div>
@@ -1669,7 +1669,7 @@ operating system records access and modification times; see <a class="reference 
 <div class="section" id="process-management">
 <span id="os-process"></span><span id="index-20"></span><h2><a class="toc-backref" href="#id6">1.5. Process Management</a><a class="headerlink" href="#process-management" title="Permalink to this headline">¶</a></h2>
 <p>These functions may be used to create and manage processes.</p>
-<p>The various <a class="reference internal" href="../generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">exec*</span></code></a> functions take a list of arguments for the new
+<p>The various <a class="reference internal" href="../generated/generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">exec*</span></code></a> functions take a list of arguments for the new
 program loaded into the process.  In each case, the first of these arguments is
 passed to the new program as its own name rather than as an argument a user may
 have typed on a command line.  For the C programmer, this is the <code class="docutils literal"><span class="pre">argv[0]</span></code>
@@ -1683,7 +1683,7 @@ to be ignored.</p>
 behavior is to produce a core dump; on Windows, the process immediately returns
 an exit code of <code class="docutils literal"><span class="pre">3</span></code>.  Be aware that calling this function will not call the
 Python signal handler registered for <code class="xref py py-const docutils literal"><span class="pre">SIGABRT</span></code> with
-<a class="reference internal" href="../generated/signal.signal.html#signal.signal" title="signal.signal"><code class="xref py py-func docutils literal"><span class="pre">signal.signal()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/signal.signal.html#signal.signal" title="signal.signal"><code class="xref py py-func docutils literal"><span class="pre">signal.signal()</span></code></a>.</p>
 <p>Availability: Unix, Windows.</p>
 </dd></dl>
 
@@ -1711,9 +1711,9 @@ and will have the same process id as the caller.  Errors will be reported as
 <p>The current process is replaced immediately. Open file objects and
 descriptors are not flushed, so if there may be data buffered
 on these open files, you should flush them using
-<code class="xref py py-func docutils literal"><span class="pre">sys.stdout.flush()</span></code> or <a class="reference internal" href="../generated/os.fsync.html#os.fsync" title="os.fsync"><code class="xref py py-func docutils literal"><span class="pre">os.fsync()</span></code></a> before calling an
-<a class="reference internal" href="../generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">exec*</span></code></a> function.</p>
-<p>The &#8220;l&#8221; and &#8220;v&#8221; variants of the <a class="reference internal" href="../generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">exec*</span></code></a> functions differ in how
+<code class="xref py py-func docutils literal"><span class="pre">sys.stdout.flush()</span></code> or <a class="reference internal" href="../generated/generated/os.fsync.html#os.fsync" title="os.fsync"><code class="xref py py-func docutils literal"><span class="pre">os.fsync()</span></code></a> before calling an
+<a class="reference internal" href="../generated/generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">exec*</span></code></a> function.</p>
+<p>The &#8220;l&#8221; and &#8220;v&#8221; variants of the <a class="reference internal" href="../generated/generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">exec*</span></code></a> functions differ in how
 command-line arguments are passed.  The &#8220;l&#8221; variants are perhaps the easiest
 to work with if the number of parameters is fixed when the code is written; the
 individual parameters simply become additional parameters to the <code class="xref py py-func docutils literal"><span class="pre">execl*()</span></code>
@@ -1721,20 +1721,20 @@ functions.  The &#8220;v&#8221; variants are good when the number of parameters 
 variable, with the arguments being passed in a list or tuple as the <em>args</em>
 parameter.  In either case, the arguments to the child process should start with
 the name of the command being run, but this is not enforced.</p>
-<p>The variants which include a &#8220;p&#8221; near the end (<a class="reference internal" href="../generated/os.execlp.html#os.execlp" title="os.execlp"><code class="xref py py-func docutils literal"><span class="pre">execlp()</span></code></a>,
-<a class="reference internal" href="../generated/os.execlpe.html#os.execlpe" title="os.execlpe"><code class="xref py py-func docutils literal"><span class="pre">execlpe()</span></code></a>, <a class="reference internal" href="../generated/os.execvp.html#os.execvp" title="os.execvp"><code class="xref py py-func docutils literal"><span class="pre">execvp()</span></code></a>, and <a class="reference internal" href="../generated/os.execvpe.html#os.execvpe" title="os.execvpe"><code class="xref py py-func docutils literal"><span class="pre">execvpe()</span></code></a>) will use the
+<p>The variants which include a &#8220;p&#8221; near the end (<a class="reference internal" href="../generated/generated/os.execlp.html#os.execlp" title="os.execlp"><code class="xref py py-func docutils literal"><span class="pre">execlp()</span></code></a>,
+<a class="reference internal" href="../generated/generated/os.execlpe.html#os.execlpe" title="os.execlpe"><code class="xref py py-func docutils literal"><span class="pre">execlpe()</span></code></a>, <a class="reference internal" href="../generated/generated/os.execvp.html#os.execvp" title="os.execvp"><code class="xref py py-func docutils literal"><span class="pre">execvp()</span></code></a>, and <a class="reference internal" href="../generated/generated/os.execvpe.html#os.execvpe" title="os.execvpe"><code class="xref py py-func docutils literal"><span class="pre">execvpe()</span></code></a>) will use the
 <span class="target" id="index-21"></span><code class="xref std std-envvar docutils literal"><span class="pre">PATH</span></code> environment variable to locate the program <em>file</em>.  When the
-environment is being replaced (using one of the <a class="reference internal" href="../generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">exec*e</span></code></a> variants,
+environment is being replaced (using one of the <a class="reference internal" href="../generated/generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">exec*e</span></code></a> variants,
 discussed in the next paragraph), the new environment is used as the source of
-the <span class="target" id="index-22"></span><code class="xref std std-envvar docutils literal"><span class="pre">PATH</span></code> variable. The other variants, <a class="reference internal" href="../generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">execl()</span></code></a>, <a class="reference internal" href="../generated/os.execle.html#os.execle" title="os.execle"><code class="xref py py-func docutils literal"><span class="pre">execle()</span></code></a>,
-<a class="reference internal" href="../generated/os.execv.html#os.execv" title="os.execv"><code class="xref py py-func docutils literal"><span class="pre">execv()</span></code></a>, and <a class="reference internal" href="../generated/os.execve.html#os.execve" title="os.execve"><code class="xref py py-func docutils literal"><span class="pre">execve()</span></code></a>, will not use the <span class="target" id="index-23"></span><code class="xref std std-envvar docutils literal"><span class="pre">PATH</span></code> variable to
+the <span class="target" id="index-22"></span><code class="xref std std-envvar docutils literal"><span class="pre">PATH</span></code> variable. The other variants, <a class="reference internal" href="../generated/generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">execl()</span></code></a>, <a class="reference internal" href="../generated/generated/os.execle.html#os.execle" title="os.execle"><code class="xref py py-func docutils literal"><span class="pre">execle()</span></code></a>,
+<a class="reference internal" href="../generated/generated/os.execv.html#os.execv" title="os.execv"><code class="xref py py-func docutils literal"><span class="pre">execv()</span></code></a>, and <a class="reference internal" href="../generated/generated/os.execve.html#os.execve" title="os.execve"><code class="xref py py-func docutils literal"><span class="pre">execve()</span></code></a>, will not use the <span class="target" id="index-23"></span><code class="xref std std-envvar docutils literal"><span class="pre">PATH</span></code> variable to
 locate the executable; <em>path</em> must contain an appropriate absolute or relative
 path.</p>
-<p>For <a class="reference internal" href="../generated/os.execle.html#os.execle" title="os.execle"><code class="xref py py-func docutils literal"><span class="pre">execle()</span></code></a>, <a class="reference internal" href="../generated/os.execlpe.html#os.execlpe" title="os.execlpe"><code class="xref py py-func docutils literal"><span class="pre">execlpe()</span></code></a>, <a class="reference internal" href="../generated/os.execve.html#os.execve" title="os.execve"><code class="xref py py-func docutils literal"><span class="pre">execve()</span></code></a>, and <a class="reference internal" href="../generated/os.execvpe.html#os.execvpe" title="os.execvpe"><code class="xref py py-func docutils literal"><span class="pre">execvpe()</span></code></a> (note
+<p>For <a class="reference internal" href="../generated/generated/os.execle.html#os.execle" title="os.execle"><code class="xref py py-func docutils literal"><span class="pre">execle()</span></code></a>, <a class="reference internal" href="../generated/generated/os.execlpe.html#os.execlpe" title="os.execlpe"><code class="xref py py-func docutils literal"><span class="pre">execlpe()</span></code></a>, <a class="reference internal" href="../generated/generated/os.execve.html#os.execve" title="os.execve"><code class="xref py py-func docutils literal"><span class="pre">execve()</span></code></a>, and <a class="reference internal" href="../generated/generated/os.execvpe.html#os.execvpe" title="os.execvpe"><code class="xref py py-func docutils literal"><span class="pre">execvpe()</span></code></a> (note
 that these all end in &#8220;e&#8221;), the <em>env</em> parameter must be a mapping which is
 used to define the environment variables for the new process (these are used
-instead of the current process&#8217; environment); the functions <a class="reference internal" href="../generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">execl()</span></code></a>,
-<a class="reference internal" href="../generated/os.execlp.html#os.execlp" title="os.execlp"><code class="xref py py-func docutils literal"><span class="pre">execlp()</span></code></a>, <a class="reference internal" href="../generated/os.execv.html#os.execv" title="os.execv"><code class="xref py py-func docutils literal"><span class="pre">execv()</span></code></a>, and <a class="reference internal" href="../generated/os.execvp.html#os.execvp" title="os.execvp"><code class="xref py py-func docutils literal"><span class="pre">execvp()</span></code></a> all cause the new process to
+instead of the current process&#8217; environment); the functions <a class="reference internal" href="../generated/generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">execl()</span></code></a>,
+<a class="reference internal" href="../generated/generated/os.execlp.html#os.execlp" title="os.execlp"><code class="xref py py-func docutils literal"><span class="pre">execlp()</span></code></a>, <a class="reference internal" href="../generated/generated/os.execv.html#os.execv" title="os.execv"><code class="xref py py-func docutils literal"><span class="pre">execv()</span></code></a>, and <a class="reference internal" href="../generated/generated/os.execvp.html#os.execvp" title="os.execvp"><code class="xref py py-func docutils literal"><span class="pre">execvp()</span></code></a> all cause the new process to
 inherit the environment of the current process.</p>
 <p>Availability: Unix, Windows.</p>
 </dd></dl>
@@ -1748,7 +1748,7 @@ stdio buffers, etc.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The standard way to exit is <code class="docutils literal"><span class="pre">sys.exit(n)</span></code>.  <a class="reference internal" href="#os._exit" title="os._exit"><code class="xref py py-func docutils literal"><span class="pre">_exit()</span></code></a> should
-normally only be used in the child process after a <a class="reference internal" href="../generated/os.fork.html#os.fork" title="os.fork"><code class="xref py py-func docutils literal"><span class="pre">fork()</span></code></a>.</p>
+normally only be used in the child process after a <a class="reference internal" href="../generated/generated/os.fork.html#os.fork" title="os.fork"><code class="xref py py-func docutils literal"><span class="pre">fork()</span></code></a>.</p>
 </div>
 </dd></dl>
 
@@ -2027,8 +2027,8 @@ preferable to using these functions.  Check especially the
 process; if <em>mode</em> is <a class="reference internal" href="#os.P_WAIT" title="os.P_WAIT"><code class="xref py py-const docutils literal"><span class="pre">P_WAIT</span></code></a>, returns the process&#8217;s exit code if it
 exits normally, or <code class="docutils literal"><span class="pre">-signal</span></code>, where <em>signal</em> is the signal that killed the
 process.  On Windows, the process id will actually be the process handle, so can
-be used with the <a class="reference internal" href="../generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a> function.</p>
-<p>The &#8220;l&#8221; and &#8220;v&#8221; variants of the <a class="reference internal" href="../generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*</span></code></a> functions differ in how
+be used with the <a class="reference internal" href="../generated/generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a> function.</p>
+<p>The &#8220;l&#8221; and &#8220;v&#8221; variants of the <a class="reference internal" href="../generated/generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*</span></code></a> functions differ in how
 command-line arguments are passed.  The &#8220;l&#8221; variants are perhaps the easiest
 to work with if the number of parameters is fixed when the code is written; the
 individual parameters simply become additional parameters to the
@@ -2036,24 +2036,24 @@ individual parameters simply become additional parameters to the
 parameters is variable, with the arguments being passed in a list or tuple as
 the <em>args</em> parameter.  In either case, the arguments to the child process must
 start with the name of the command being run.</p>
-<p>The variants which include a second &#8220;p&#8221; near the end (<a class="reference internal" href="../generated/os.spawnlp.html#os.spawnlp" title="os.spawnlp"><code class="xref py py-func docutils literal"><span class="pre">spawnlp()</span></code></a>,
-<a class="reference internal" href="../generated/os.spawnlpe.html#os.spawnlpe" title="os.spawnlpe"><code class="xref py py-func docutils literal"><span class="pre">spawnlpe()</span></code></a>, <a class="reference internal" href="../generated/os.spawnvp.html#os.spawnvp" title="os.spawnvp"><code class="xref py py-func docutils literal"><span class="pre">spawnvp()</span></code></a>, and <a class="reference internal" href="../generated/os.spawnvpe.html#os.spawnvpe" title="os.spawnvpe"><code class="xref py py-func docutils literal"><span class="pre">spawnvpe()</span></code></a>) will use the
+<p>The variants which include a second &#8220;p&#8221; near the end (<a class="reference internal" href="../generated/generated/os.spawnlp.html#os.spawnlp" title="os.spawnlp"><code class="xref py py-func docutils literal"><span class="pre">spawnlp()</span></code></a>,
+<a class="reference internal" href="../generated/generated/os.spawnlpe.html#os.spawnlpe" title="os.spawnlpe"><code class="xref py py-func docutils literal"><span class="pre">spawnlpe()</span></code></a>, <a class="reference internal" href="../generated/generated/os.spawnvp.html#os.spawnvp" title="os.spawnvp"><code class="xref py py-func docutils literal"><span class="pre">spawnvp()</span></code></a>, and <a class="reference internal" href="../generated/generated/os.spawnvpe.html#os.spawnvpe" title="os.spawnvpe"><code class="xref py py-func docutils literal"><span class="pre">spawnvpe()</span></code></a>) will use the
 <span class="target" id="index-26"></span><code class="xref std std-envvar docutils literal"><span class="pre">PATH</span></code> environment variable to locate the program <em>file</em>.  When the
-environment is being replaced (using one of the <a class="reference internal" href="../generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*e</span></code></a> variants,
+environment is being replaced (using one of the <a class="reference internal" href="../generated/generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*e</span></code></a> variants,
 discussed in the next paragraph), the new environment is used as the source of
-the <span class="target" id="index-27"></span><code class="xref std std-envvar docutils literal"><span class="pre">PATH</span></code> variable.  The other variants, <a class="reference internal" href="../generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawnl()</span></code></a>,
-<a class="reference internal" href="../generated/os.spawnle.html#os.spawnle" title="os.spawnle"><code class="xref py py-func docutils literal"><span class="pre">spawnle()</span></code></a>, <a class="reference internal" href="../generated/os.spawnv.html#os.spawnv" title="os.spawnv"><code class="xref py py-func docutils literal"><span class="pre">spawnv()</span></code></a>, and <a class="reference internal" href="../generated/os.spawnve.html#os.spawnve" title="os.spawnve"><code class="xref py py-func docutils literal"><span class="pre">spawnve()</span></code></a>, will not use the
+the <span class="target" id="index-27"></span><code class="xref std std-envvar docutils literal"><span class="pre">PATH</span></code> variable.  The other variants, <a class="reference internal" href="../generated/generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawnl()</span></code></a>,
+<a class="reference internal" href="../generated/generated/os.spawnle.html#os.spawnle" title="os.spawnle"><code class="xref py py-func docutils literal"><span class="pre">spawnle()</span></code></a>, <a class="reference internal" href="../generated/generated/os.spawnv.html#os.spawnv" title="os.spawnv"><code class="xref py py-func docutils literal"><span class="pre">spawnv()</span></code></a>, and <a class="reference internal" href="../generated/generated/os.spawnve.html#os.spawnve" title="os.spawnve"><code class="xref py py-func docutils literal"><span class="pre">spawnve()</span></code></a>, will not use the
 <span class="target" id="index-28"></span><code class="xref std std-envvar docutils literal"><span class="pre">PATH</span></code> variable to locate the executable; <em>path</em> must contain an
 appropriate absolute or relative path.</p>
-<p>For <a class="reference internal" href="../generated/os.spawnle.html#os.spawnle" title="os.spawnle"><code class="xref py py-func docutils literal"><span class="pre">spawnle()</span></code></a>, <a class="reference internal" href="../generated/os.spawnlpe.html#os.spawnlpe" title="os.spawnlpe"><code class="xref py py-func docutils literal"><span class="pre">spawnlpe()</span></code></a>, <a class="reference internal" href="../generated/os.spawnve.html#os.spawnve" title="os.spawnve"><code class="xref py py-func docutils literal"><span class="pre">spawnve()</span></code></a>, and <a class="reference internal" href="../generated/os.spawnvpe.html#os.spawnvpe" title="os.spawnvpe"><code class="xref py py-func docutils literal"><span class="pre">spawnvpe()</span></code></a>
+<p>For <a class="reference internal" href="../generated/generated/os.spawnle.html#os.spawnle" title="os.spawnle"><code class="xref py py-func docutils literal"><span class="pre">spawnle()</span></code></a>, <a class="reference internal" href="../generated/generated/os.spawnlpe.html#os.spawnlpe" title="os.spawnlpe"><code class="xref py py-func docutils literal"><span class="pre">spawnlpe()</span></code></a>, <a class="reference internal" href="../generated/generated/os.spawnve.html#os.spawnve" title="os.spawnve"><code class="xref py py-func docutils literal"><span class="pre">spawnve()</span></code></a>, and <a class="reference internal" href="../generated/generated/os.spawnvpe.html#os.spawnvpe" title="os.spawnvpe"><code class="xref py py-func docutils literal"><span class="pre">spawnvpe()</span></code></a>
 (note that these all end in &#8220;e&#8221;), the <em>env</em> parameter must be a mapping
 which is used to define the environment variables for the new process (they are
 used instead of the current process&#8217; environment); the functions
-<a class="reference internal" href="../generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawnl()</span></code></a>, <a class="reference internal" href="../generated/os.spawnlp.html#os.spawnlp" title="os.spawnlp"><code class="xref py py-func docutils literal"><span class="pre">spawnlp()</span></code></a>, <a class="reference internal" href="../generated/os.spawnv.html#os.spawnv" title="os.spawnv"><code class="xref py py-func docutils literal"><span class="pre">spawnv()</span></code></a>, and <a class="reference internal" href="../generated/os.spawnvp.html#os.spawnvp" title="os.spawnvp"><code class="xref py py-func docutils literal"><span class="pre">spawnvp()</span></code></a> all cause
+<a class="reference internal" href="../generated/generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawnl()</span></code></a>, <a class="reference internal" href="../generated/generated/os.spawnlp.html#os.spawnlp" title="os.spawnlp"><code class="xref py py-func docutils literal"><span class="pre">spawnlp()</span></code></a>, <a class="reference internal" href="../generated/generated/os.spawnv.html#os.spawnv" title="os.spawnv"><code class="xref py py-func docutils literal"><span class="pre">spawnv()</span></code></a>, and <a class="reference internal" href="../generated/generated/os.spawnvp.html#os.spawnvp" title="os.spawnvp"><code class="xref py py-func docutils literal"><span class="pre">spawnvp()</span></code></a> all cause
 the new process to inherit the environment of the current process.  Note that
 keys and values in the <em>env</em> dictionary must be strings; invalid keys or
 values will cause the function to fail, with a return value of <code class="docutils literal"><span class="pre">127</span></code>.</p>
-<p>As an example, the following calls to <a class="reference internal" href="../generated/os.spawnlp.html#os.spawnlp" title="os.spawnlp"><code class="xref py py-func docutils literal"><span class="pre">spawnlp()</span></code></a> and <a class="reference internal" href="../generated/os.spawnvpe.html#os.spawnvpe" title="os.spawnvpe"><code class="xref py py-func docutils literal"><span class="pre">spawnvpe()</span></code></a> are
+<p>As an example, the following calls to <a class="reference internal" href="../generated/generated/os.spawnlp.html#os.spawnlp" title="os.spawnlp"><code class="xref py py-func docutils literal"><span class="pre">spawnlp()</span></code></a> and <a class="reference internal" href="../generated/generated/os.spawnvpe.html#os.spawnvpe" title="os.spawnvpe"><code class="xref py py-func docutils literal"><span class="pre">spawnvpe()</span></code></a> are
 equivalent:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="n">os</span><span class="o">.</span><span class="n">spawnlp</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">P_WAIT</span><span class="p">,</span> <span class="s1">&#39;cp&#39;</span><span class="p">,</span> <span class="s1">&#39;cp&#39;</span><span class="p">,</span> <span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="s1">&#39;/dev/null&#39;</span><span class="p">)</span>
@@ -2062,9 +2062,9 @@ equivalent:</p>
 <span class="n">os</span><span class="o">.</span><span class="n">spawnvpe</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">P_WAIT</span><span class="p">,</span> <span class="s1">&#39;cp&#39;</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Availability: Unix, Windows.  <a class="reference internal" href="../generated/os.spawnlp.html#os.spawnlp" title="os.spawnlp"><code class="xref py py-func docutils literal"><span class="pre">spawnlp()</span></code></a>, <a class="reference internal" href="../generated/os.spawnlpe.html#os.spawnlpe" title="os.spawnlpe"><code class="xref py py-func docutils literal"><span class="pre">spawnlpe()</span></code></a>, <a class="reference internal" href="../generated/os.spawnvp.html#os.spawnvp" title="os.spawnvp"><code class="xref py py-func docutils literal"><span class="pre">spawnvp()</span></code></a>
-and <a class="reference internal" href="../generated/os.spawnvpe.html#os.spawnvpe" title="os.spawnvpe"><code class="xref py py-func docutils literal"><span class="pre">spawnvpe()</span></code></a> are not available on Windows.  <a class="reference internal" href="../generated/os.spawnle.html#os.spawnle" title="os.spawnle"><code class="xref py py-func docutils literal"><span class="pre">spawnle()</span></code></a> and
-<a class="reference internal" href="../generated/os.spawnve.html#os.spawnve" title="os.spawnve"><code class="xref py py-func docutils literal"><span class="pre">spawnve()</span></code></a> are not thread-safe on Windows; we advise you to use the
+<p>Availability: Unix, Windows.  <a class="reference internal" href="../generated/generated/os.spawnlp.html#os.spawnlp" title="os.spawnlp"><code class="xref py py-func docutils literal"><span class="pre">spawnlp()</span></code></a>, <a class="reference internal" href="../generated/generated/os.spawnlpe.html#os.spawnlpe" title="os.spawnlpe"><code class="xref py py-func docutils literal"><span class="pre">spawnlpe()</span></code></a>, <a class="reference internal" href="../generated/generated/os.spawnvp.html#os.spawnvp" title="os.spawnvp"><code class="xref py py-func docutils literal"><span class="pre">spawnvp()</span></code></a>
+and <a class="reference internal" href="../generated/generated/os.spawnvpe.html#os.spawnvpe" title="os.spawnvpe"><code class="xref py py-func docutils literal"><span class="pre">spawnvpe()</span></code></a> are not available on Windows.  <a class="reference internal" href="../generated/generated/os.spawnle.html#os.spawnle" title="os.spawnle"><code class="xref py py-func docutils literal"><span class="pre">spawnle()</span></code></a> and
+<a class="reference internal" href="../generated/generated/os.spawnve.html#os.spawnve" title="os.spawnve"><code class="xref py py-func docutils literal"><span class="pre">spawnve()</span></code></a> are not thread-safe on Windows; we advise you to use the
 <a class="reference internal" href="../generated/subprocess.html#module-subprocess" title="subprocess"><code class="xref py py-mod docutils literal"><span class="pre">subprocess</span></code></a> module instead.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.6.</span></p>
@@ -2076,7 +2076,7 @@ and <a class="reference internal" href="../generated/os.spawnvpe.html#os.spawnvp
 <code class="descclassname">os.</code><code class="descname">P_NOWAIT</code><a class="headerlink" href="#os.P_NOWAIT" title="Permalink to this definition">¶</a></dt>
 <dt id="os.P_NOWAITO">
 <code class="descclassname">os.</code><code class="descname">P_NOWAITO</code><a class="headerlink" href="#os.P_NOWAITO" title="Permalink to this definition">¶</a></dt>
-<dd><p>Possible values for the <em>mode</em> parameter to the <a class="reference internal" href="../generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*</span></code></a> family of
+<dd><p>Possible values for the <em>mode</em> parameter to the <a class="reference internal" href="../generated/generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*</span></code></a> family of
 functions.  If either of these values is given, the <code class="xref py py-func docutils literal"><span class="pre">spawn*()</span></code> functions
 will return as soon as the new process has been created, with the process id as
 the return value.</p>
@@ -2089,7 +2089,7 @@ the return value.</p>
 <dl class="data">
 <dt id="os.P_WAIT">
 <code class="descclassname">os.</code><code class="descname">P_WAIT</code><a class="headerlink" href="#os.P_WAIT" title="Permalink to this definition">¶</a></dt>
-<dd><p>Possible value for the <em>mode</em> parameter to the <a class="reference internal" href="../generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*</span></code></a> family of
+<dd><p>Possible value for the <em>mode</em> parameter to the <a class="reference internal" href="../generated/generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*</span></code></a> family of
 functions.  If this is given as <em>mode</em>, the <code class="xref py py-func docutils literal"><span class="pre">spawn*()</span></code> functions will not
 return until the new process has run to completion and will return the exit code
 of the process the run is successful, or <code class="docutils literal"><span class="pre">-signal</span></code> if a signal kills the
@@ -2105,7 +2105,7 @@ process.</p>
 <code class="descclassname">os.</code><code class="descname">P_DETACH</code><a class="headerlink" href="#os.P_DETACH" title="Permalink to this definition">¶</a></dt>
 <dt id="os.P_OVERLAY">
 <code class="descclassname">os.</code><code class="descname">P_OVERLAY</code><a class="headerlink" href="#os.P_OVERLAY" title="Permalink to this definition">¶</a></dt>
-<dd><p>Possible values for the <em>mode</em> parameter to the <a class="reference internal" href="../generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*</span></code></a> family of
+<dd><p>Possible values for the <em>mode</em> parameter to the <a class="reference internal" href="../generated/generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*</span></code></a> family of
 functions.  These are less portable than those listed above. <a class="reference internal" href="#os.P_DETACH" title="os.P_DETACH"><code class="xref py py-const docutils literal"><span class="pre">P_DETACH</span></code></a>
 is similar to <a class="reference internal" href="#os.P_NOWAIT" title="os.P_NOWAIT"><code class="xref py py-const docutils literal"><span class="pre">P_NOWAIT</span></code></a>, but the new process is detached from the
 console of the calling process. If <a class="reference internal" href="#os.P_OVERLAY" title="os.P_OVERLAY"><code class="xref py py-const docutils literal"><span class="pre">P_OVERLAY</span></code></a> is used, the current
@@ -2133,7 +2133,7 @@ There is no option to wait for the application to close, and no way to retrieve
 the application&#8217;s exit status.  The <em>path</em> parameter is relative to the current
 directory.  If you want to use an absolute path, make sure the first character
 is not a slash (<code class="docutils literal"><span class="pre">'/'</span></code>); the underlying Win32 <code class="xref c c-func docutils literal"><span class="pre">ShellExecute()</span></code> function
-doesn&#8217;t work if it is.  Use the <a class="reference internal" href="../generated/os.path.normpath.html#os.path.normpath" title="os.path.normpath"><code class="xref py py-func docutils literal"><span class="pre">os.path.normpath()</span></code></a> function to ensure that
+doesn&#8217;t work if it is.  Use the <a class="reference internal" href="../generated/generated/os.path.normpath.html#os.path.normpath" title="os.path.normpath"><code class="xref py py-func docutils literal"><span class="pre">os.path.normpath()</span></code></a> function to ensure that
 the path is properly encoded for Win32.</p>
 <p>Availability: Windows.</p>
 <div class="versionadded">
@@ -2152,7 +2152,7 @@ the Standard C function <code class="xref c c-func docutils literal"><span class
 Changes to <a class="reference internal" href="../28_runtime_service/sys.html#sys.stdin" title="sys.stdin"><code class="xref py py-data docutils literal"><span class="pre">sys.stdin</span></code></a>, etc. are not reflected in the environment of the
 executed command.</p>
 <p>On Unix, the return value is the exit status of the process encoded in the
-format specified for <a class="reference internal" href="../generated/os.wait.html#os.wait" title="os.wait"><code class="xref py py-func docutils literal"><span class="pre">wait()</span></code></a>.  Note that POSIX does not specify the meaning
+format specified for <a class="reference internal" href="../generated/generated/os.wait.html#os.wait" title="os.wait"><code class="xref py py-func docutils literal"><span class="pre">wait()</span></code></a>.  Note that POSIX does not specify the meaning
 of the return value of the C <code class="xref c c-func docutils literal"><span class="pre">system()</span></code> function, so the return value of
 the Python function is system-dependent.</p>
 <p>On Windows, the return value is that returned by the system shell after running
@@ -2198,9 +2198,9 @@ produced.</p>
 <dd><p>The details of this function differ on Unix and Windows.</p>
 <p>On Unix: Wait for completion of a child process given by process id <em>pid</em>, and
 return a tuple containing its process id and exit status indication (encoded as
-for <a class="reference internal" href="../generated/os.wait.html#os.wait" title="os.wait"><code class="xref py py-func docutils literal"><span class="pre">wait()</span></code></a>).  The semantics of the call are affected by the value of the
+for <a class="reference internal" href="../generated/generated/os.wait.html#os.wait" title="os.wait"><code class="xref py py-func docutils literal"><span class="pre">wait()</span></code></a>).  The semantics of the call are affected by the value of the
 integer <em>options</em>, which should be <code class="docutils literal"><span class="pre">0</span></code> for normal operation.</p>
-<p>If <em>pid</em> is greater than <code class="docutils literal"><span class="pre">0</span></code>, <a class="reference internal" href="../generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a> requests status information for
+<p>If <em>pid</em> is greater than <code class="docutils literal"><span class="pre">0</span></code>, <a class="reference internal" href="../generated/generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a> requests status information for
 that specific process.  If <em>pid</em> is <code class="docutils literal"><span class="pre">0</span></code>, the request is for the status of any
 child in the process group of the current process.  If <em>pid</em> is <code class="docutils literal"><span class="pre">-1</span></code>, the
 request pertains to any child of the current process.  If <em>pid</em> is less than
@@ -2213,18 +2213,18 @@ return a tuple containing <em>pid</em>, and its exit status shifted left by 8 bi
 (shifting makes cross-platform use of the function easier). A <em>pid</em> less than or
 equal to <code class="docutils literal"><span class="pre">0</span></code> has no special meaning on Windows, and raises an exception. The
 value of integer <em>options</em> has no effect. <em>pid</em> can refer to any process whose
-id is known, not necessarily a child process. The <a class="reference internal" href="../generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*</span></code></a>
+id is known, not necessarily a child process. The <a class="reference internal" href="../generated/generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*</span></code></a>
 functions called with <a class="reference internal" href="#os.P_NOWAIT" title="os.P_NOWAIT"><code class="xref py py-const docutils literal"><span class="pre">P_NOWAIT</span></code></a> return suitable process handles.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="os.wait3">
 <code class="descclassname">os.</code><code class="descname">wait3</code><span class="sig-paren">(</span><em>options</em><span class="sig-paren">)</span><a class="headerlink" href="#os.wait3" title="Permalink to this definition">¶</a></dt>
-<dd><p>Similar to <a class="reference internal" href="../generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a>, except no process id argument is given and a
+<dd><p>Similar to <a class="reference internal" href="../generated/generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a>, except no process id argument is given and a
 3-element tuple containing the child&#8217;s process id, exit status indication, and
-resource usage information is returned.  Refer to <a class="reference internal" href="../generated/resource.html#module-resource" title="resource"><code class="xref py py-mod docutils literal"><span class="pre">resource</span></code></a>.<a class="reference internal" href="../generated/resource.getrusage.html#resource.getrusage" title="resource.getrusage"><code class="xref py py-func docutils literal"><span class="pre">getrusage()</span></code></a> for details on resource usage information.  The
-option argument is the same as that provided to <a class="reference internal" href="../generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a> and
-<a class="reference internal" href="../generated/os.wait4.html#os.wait4" title="os.wait4"><code class="xref py py-func docutils literal"><span class="pre">wait4()</span></code></a>.</p>
+resource usage information is returned.  Refer to <a class="reference internal" href="../generated/resource.html#module-resource" title="resource"><code class="xref py py-mod docutils literal"><span class="pre">resource</span></code></a>.<a class="reference internal" href="../generated/generated/resource.getrusage.html#resource.getrusage" title="resource.getrusage"><code class="xref py py-func docutils literal"><span class="pre">getrusage()</span></code></a> for details on resource usage information.  The
+option argument is the same as that provided to <a class="reference internal" href="../generated/generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a> and
+<a class="reference internal" href="../generated/generated/os.wait4.html#os.wait4" title="os.wait4"><code class="xref py py-func docutils literal"><span class="pre">wait4()</span></code></a>.</p>
 <p>Availability: Unix.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.5.</span></p>
@@ -2234,11 +2234,11 @@ option argument is the same as that provided to <a class="reference internal" hr
 <dl class="function">
 <dt id="os.wait4">
 <code class="descclassname">os.</code><code class="descname">wait4</code><span class="sig-paren">(</span><em>pid</em>, <em>options</em><span class="sig-paren">)</span><a class="headerlink" href="#os.wait4" title="Permalink to this definition">¶</a></dt>
-<dd><p>Similar to <a class="reference internal" href="../generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a>, except a 3-element tuple, containing the child&#8217;s
+<dd><p>Similar to <a class="reference internal" href="../generated/generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a>, except a 3-element tuple, containing the child&#8217;s
 process id, exit status indication, and resource usage information is returned.
-Refer to <a class="reference internal" href="../generated/resource.html#module-resource" title="resource"><code class="xref py py-mod docutils literal"><span class="pre">resource</span></code></a>.<a class="reference internal" href="../generated/resource.getrusage.html#resource.getrusage" title="resource.getrusage"><code class="xref py py-func docutils literal"><span class="pre">getrusage()</span></code></a> for details on
-resource usage information.  The arguments to <a class="reference internal" href="../generated/os.wait4.html#os.wait4" title="os.wait4"><code class="xref py py-func docutils literal"><span class="pre">wait4()</span></code></a> are the same as
-those provided to <a class="reference internal" href="../generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a>.</p>
+Refer to <a class="reference internal" href="../generated/resource.html#module-resource" title="resource"><code class="xref py py-mod docutils literal"><span class="pre">resource</span></code></a>.<a class="reference internal" href="../generated/generated/resource.getrusage.html#resource.getrusage" title="resource.getrusage"><code class="xref py py-func docutils literal"><span class="pre">getrusage()</span></code></a> for details on
+resource usage information.  The arguments to <a class="reference internal" href="../generated/generated/os.wait4.html#os.wait4" title="os.wait4"><code class="xref py py-func docutils literal"><span class="pre">wait4()</span></code></a> are the same as
+those provided to <a class="reference internal" href="../generated/generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a>.</p>
 <p>Availability: Unix.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.5.</span></p>
@@ -2248,7 +2248,7 @@ those provided to <a class="reference internal" href="../generated/os.waitpid.ht
 <dl class="data">
 <dt id="os.WNOHANG">
 <code class="descclassname">os.</code><code class="descname">WNOHANG</code><a class="headerlink" href="#os.WNOHANG" title="Permalink to this definition">¶</a></dt>
-<dd><p>The option for <a class="reference internal" href="../generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a> to return immediately if no child process status
+<dd><p>The option for <a class="reference internal" href="../generated/generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a> to return immediately if no child process status
 is available immediately. The function returns <code class="docutils literal"><span class="pre">(0,</span> <span class="pre">0)</span></code> in this case.</p>
 <p>Availability: Unix.</p>
 </dd></dl>
@@ -2276,7 +2276,7 @@ their current state has not been reported since they were stopped.</p>
 </dd></dl>
 
 <p>The following functions take a process status code as returned by
-<a class="reference internal" href="../generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">system()</span></code></a>, <a class="reference internal" href="../generated/os.wait.html#os.wait" title="os.wait"><code class="xref py py-func docutils literal"><span class="pre">wait()</span></code></a>, or <a class="reference internal" href="../generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a> as a parameter.  They may be
+<a class="reference internal" href="../generated/generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">system()</span></code></a>, <a class="reference internal" href="../generated/generated/os.wait.html#os.wait" title="os.wait"><code class="xref py py-func docutils literal"><span class="pre">wait()</span></code></a>, or <a class="reference internal" href="../generated/generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-func docutils literal"><span class="pre">waitpid()</span></code></a> as a parameter.  They may be
 used to determine the disposition of a process.</p>
 <dl class="function">
 <dt id="os.WCOREDUMP">
@@ -2371,7 +2371,7 @@ included in <code class="docutils literal"><span class="pre">confstr_names</span
 <dl class="data">
 <dt id="os.confstr_names">
 <code class="descclassname">os.</code><code class="descname">confstr_names</code><a class="headerlink" href="#os.confstr_names" title="Permalink to this definition">¶</a></dt>
-<dd><p>Dictionary mapping names accepted by <a class="reference internal" href="../generated/os.confstr.html#os.confstr" title="os.confstr"><code class="xref py py-func docutils literal"><span class="pre">confstr()</span></code></a> to the integer values
+<dd><p>Dictionary mapping names accepted by <a class="reference internal" href="../generated/generated/os.confstr.html#os.confstr" title="os.confstr"><code class="xref py py-func docutils literal"><span class="pre">confstr()</span></code></a> to the integer values
 defined for those names by the host operating system. This can be used to
 determine the set of names known to the system.</p>
 <p>Availability: Unix.</p>
@@ -2394,7 +2394,7 @@ unobtainable.</p>
 <code class="descclassname">os.</code><code class="descname">sysconf</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#os.sysconf" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return integer-valued system configuration values. If the configuration value
 specified by <em>name</em> isn&#8217;t defined, <code class="docutils literal"><span class="pre">-1</span></code> is returned.  The comments regarding
-the <em>name</em> parameter for <a class="reference internal" href="../generated/os.confstr.html#os.confstr" title="os.confstr"><code class="xref py py-func docutils literal"><span class="pre">confstr()</span></code></a> apply here as well; the dictionary that
+the <em>name</em> parameter for <a class="reference internal" href="../generated/generated/os.confstr.html#os.confstr" title="os.confstr"><code class="xref py py-func docutils literal"><span class="pre">confstr()</span></code></a> apply here as well; the dictionary that
 provides information on the known names is given by <code class="docutils literal"><span class="pre">sysconf_names</span></code>.</p>
 <p>Availability: Unix.</p>
 </dd></dl>
@@ -2402,7 +2402,7 @@ provides information on the known names is given by <code class="docutils litera
 <dl class="data">
 <dt id="os.sysconf_names">
 <code class="descclassname">os.</code><code class="descname">sysconf_names</code><a class="headerlink" href="#os.sysconf_names" title="Permalink to this definition">¶</a></dt>
-<dd><p>Dictionary mapping names accepted by <a class="reference internal" href="../generated/os.sysconf.html#os.sysconf" title="os.sysconf"><code class="xref py py-func docutils literal"><span class="pre">sysconf()</span></code></a> to the integer values
+<dd><p>Dictionary mapping names accepted by <a class="reference internal" href="../generated/generated/os.sysconf.html#os.sysconf" title="os.sysconf"><code class="xref py py-func docutils literal"><span class="pre">sysconf()</span></code></a> to the integer values
 defined for those names by the host operating system. This can be used to
 determine the set of names known to the system.</p>
 <p>Availability: Unix.</p>
@@ -2433,7 +2433,7 @@ directory. This is <code class="docutils literal"><span class="pre">'..'</span><
 <dd><p>The character used by the operating system to separate pathname components.
 This is <code class="docutils literal"><span class="pre">'/'</span></code> for POSIX and <code class="docutils literal"><span class="pre">'\\'</span></code> for Windows.  Note that knowing this
 is not sufficient to be able to parse or concatenate pathnames &#8212; use
-<a class="reference internal" href="../generated/os.path.split.html#os.path.split" title="os.path.split"><code class="xref py py-func docutils literal"><span class="pre">os.path.split()</span></code></a> and <a class="reference internal" href="../generated/os.path.join.html#os.path.join" title="os.path.join"><code class="xref py py-func docutils literal"><span class="pre">os.path.join()</span></code></a> &#8212; but it is occasionally
+<a class="reference internal" href="../generated/generated/os.path.split.html#os.path.split" title="os.path.split"><code class="xref py py-func docutils literal"><span class="pre">os.path.split()</span></code></a> and <a class="reference internal" href="../generated/generated/os.path.join.html#os.path.join" title="os.path.join"><code class="xref py py-func docutils literal"><span class="pre">os.path.join()</span></code></a> &#8212; but it is occasionally
 useful. Also available via <a class="reference internal" href="../generated/os.path.html#module-os.path" title="os.path"><code class="xref py py-mod docutils literal"><span class="pre">os.path</span></code></a>.</p>
 </dd></dl>
 
@@ -2467,8 +2467,8 @@ Windows. Also available via <a class="reference internal" href="../generated/os.
 <dl class="data">
 <dt id="os.defpath">
 <code class="descclassname">os.</code><code class="descname">defpath</code><a class="headerlink" href="#os.defpath" title="Permalink to this definition">¶</a></dt>
-<dd><p>The default search path used by <a class="reference internal" href="../generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">exec*p*</span></code></a> and
-<a class="reference internal" href="../generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*p*</span></code></a> if the environment doesn&#8217;t have a <code class="docutils literal"><span class="pre">'PATH'</span></code>
+<dd><p>The default search path used by <a class="reference internal" href="../generated/generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-func docutils literal"><span class="pre">exec*p*</span></code></a> and
+<a class="reference internal" href="../generated/generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-func docutils literal"><span class="pre">spawn*p*</span></code></a> if the environment doesn&#8217;t have a <code class="docutils literal"><span class="pre">'PATH'</span></code>
 key. Also available via <a class="reference internal" href="../generated/os.path.html#module-os.path" title="os.path"><code class="xref py py-mod docutils literal"><span class="pre">os.path</span></code></a>.</p>
 </dd></dl>
 

@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       compile_dir
       compile_file
       compile_path
       expand_args
       main
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/compileall.compile_dir
+       generated/compileall.compile_file
+       generated/compileall.compile_path
+       generated/compileall.expand_args
+       generated/compileall.main
+      
    
    
 

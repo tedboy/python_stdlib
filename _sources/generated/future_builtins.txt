@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       ascii
       hex
       oct
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/future_builtins.ascii
+       generated/future_builtins.hex
+       generated/future_builtins.oct
+      
    
    
 

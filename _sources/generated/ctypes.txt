@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       ARRAY
       CFUNCTYPE
@@ -32,6 +32,33 @@
       sizeof
       string_at
       wstring_at
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/ctypes.ARRAY
+       generated/ctypes.CFUNCTYPE
+       generated/ctypes.POINTER
+       generated/ctypes.PYFUNCTYPE
+       generated/ctypes.SetPointerType
+       generated/ctypes.addressof
+       generated/ctypes.alignment
+       generated/ctypes.byref
+       generated/ctypes.c_buffer
+       generated/ctypes.cast
+       generated/ctypes.create_string_buffer
+       generated/ctypes.create_unicode_buffer
+       generated/ctypes.get_errno
+       generated/ctypes.pointer
+       generated/ctypes.resize
+       generated/ctypes.set_conversion_mode
+       generated/ctypes.set_errno
+       generated/ctypes.sizeof
+       generated/ctypes.string_at
+       generated/ctypes.wstring_at
+      
    
    
 

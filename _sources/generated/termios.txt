@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       tcdrain
       tcflow
@@ -18,6 +18,19 @@
       tcgetattr
       tcsendbreak
       tcsetattr
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/termios.tcdrain
+       generated/termios.tcflow
+       generated/termios.tcflush
+       generated/termios.tcgetattr
+       generated/termios.tcsendbreak
+       generated/termios.tcsetattr
+      
    
    
 

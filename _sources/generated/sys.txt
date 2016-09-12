@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       call_tracing
       callstats
@@ -34,6 +34,35 @@
       setprofile
       setrecursionlimit
       settrace
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/sys.call_tracing
+       generated/sys.callstats
+       generated/sys.displayhook
+       generated/sys.exc_clear
+       generated/sys.exc_info
+       generated/sys.excepthook
+       generated/sys.exit
+       generated/sys.exitfunc
+       generated/sys.getcheckinterval
+       generated/sys.getdefaultencoding
+       generated/sys.getdlopenflags
+       generated/sys.getfilesystemencoding
+       generated/sys.getprofile
+       generated/sys.getrecursionlimit
+       generated/sys.getrefcount
+       generated/sys.getsizeof
+       generated/sys.gettrace
+       generated/sys.setcheckinterval
+       generated/sys.setdlopenflags
+       generated/sys.setprofile
+       generated/sys.setrecursionlimit
+       generated/sys.settrace
+      
    
    
 

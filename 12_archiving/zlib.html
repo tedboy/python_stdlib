@@ -299,7 +299,7 @@ If <em>bufsize</em> is given, it is used as the initial size of the output
 buffer.  Raises the <a class="reference internal" href="../generated/zlib.error.html#zlib.error" title="zlib.error"><code class="xref py py-exc docutils literal"><span class="pre">error</span></code></a> exception if any error occurs.</p>
 <p id="decompress-wbits">The <em>wbits</em> parameter controls the size of the history buffer
 (or &#8220;window size&#8221;), and what header and trailer format is expected.
-It is similar to the parameter for <a class="reference internal" href="../generated/zlib.compressobj.html#zlib.compressobj" title="zlib.compressobj"><code class="xref py py-func docutils literal"><span class="pre">compressobj()</span></code></a>, but accepts
+It is similar to the parameter for <a class="reference internal" href="../generated/generated/zlib.compressobj.html#zlib.compressobj" title="zlib.compressobj"><code class="xref py py-func docutils literal"><span class="pre">compressobj()</span></code></a>, but accepts
 more ranges of values:</p>
 <ul class="simple">
 <li>+8 to +15: The base-two logarithm of the window size.  The input
@@ -342,7 +342,7 @@ the same meaning as <a class="reference external" href="#decompress-wbits">descr
 <code class="descclassname">Compress.</code><code class="descname">compress</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="headerlink" href="#zlib.Compress.compress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compress <em>string</em>, returning a string containing compressed data for at least
 part of the data in <em>string</em>.  This data should be concatenated to the output
-produced by any preceding calls to the <a class="reference internal" href="../generated/zlib.compress.html#zlib.compress" title="zlib.compress"><code class="xref py py-meth docutils literal"><span class="pre">compress()</span></code></a> method.  Some input may
+produced by any preceding calls to the <a class="reference internal" href="../generated/generated/zlib.compress.html#zlib.compress" title="zlib.compress"><code class="xref py py-meth docutils literal"><span class="pre">compress()</span></code></a> method.  Some input may
 be kept in internal buffers for later processing.</p>
 </dd></dl>
 
@@ -356,7 +356,7 @@ defaulting to <code class="xref py py-const docutils literal"><span class="pre">
 <code class="xref py py-const docutils literal"><span class="pre">Z_FULL_FLUSH</span></code> allow compressing further strings of data, while
 <code class="xref py py-const docutils literal"><span class="pre">Z_FINISH</span></code> finishes the compressed stream and  prevents compressing any
 more data.  After calling <a class="reference internal" href="#zlib.Compress.flush" title="zlib.Compress.flush"><code class="xref py py-meth docutils literal"><span class="pre">flush()</span></code></a> with <em>mode</em> set to <code class="xref py py-const docutils literal"><span class="pre">Z_FINISH</span></code>,
-the <a class="reference internal" href="../generated/zlib.compress.html#zlib.compress" title="zlib.compress"><code class="xref py py-meth docutils literal"><span class="pre">compress()</span></code></a> method cannot be called again; the only realistic action is
+the <a class="reference internal" href="../generated/generated/zlib.compress.html#zlib.compress" title="zlib.compress"><code class="xref py py-meth docutils literal"><span class="pre">compress()</span></code></a> method cannot be called again; the only realistic action is
 to delete the object.</p>
 </dd></dl>
 
@@ -382,7 +382,7 @@ available.  If the whole string turned out to contain compressed data, this is
 decompressing it.  This means that when compressed data is contained part of a
 larger file, you can only find the end of it by reading data and feeding it
 followed by some non-empty string into a decompression object&#8217;s
-<a class="reference internal" href="../generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> method until the <a class="reference internal" href="#zlib.Decompress.unused_data" title="zlib.Decompress.unused_data"><code class="xref py py-attr docutils literal"><span class="pre">unused_data</span></code></a> attribute is no longer
+<a class="reference internal" href="../generated/generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> method until the <a class="reference internal" href="#zlib.Decompress.unused_data" title="zlib.Decompress.unused_data"><code class="xref py py-attr docutils literal"><span class="pre">unused_data</span></code></a> attribute is no longer
 the empty string.</p>
 </dd></dl>
 
@@ -390,10 +390,10 @@ the empty string.</p>
 <dt id="zlib.Decompress.unconsumed_tail">
 <code class="descclassname">Decompress.</code><code class="descname">unconsumed_tail</code><a class="headerlink" href="#zlib.Decompress.unconsumed_tail" title="Permalink to this definition">¶</a></dt>
 <dd><p>A string that contains any data that was not consumed by the last
-<a class="reference internal" href="../generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> call because it exceeded the limit for the uncompressed data
+<a class="reference internal" href="../generated/generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> call because it exceeded the limit for the uncompressed data
 buffer.  This data has not yet been seen by the zlib machinery, so you must feed
 it (possibly with further data concatenated to it) back to a subsequent
-<a class="reference internal" href="../generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> method call in order to get correct output.</p>
+<a class="reference internal" href="../generated/generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> method call in order to get correct output.</p>
 </dd></dl>
 
 <dl class="method">
@@ -402,13 +402,13 @@ it (possibly with further data concatenated to it) back to a subsequent
 <dd><p>Decompress <em>string</em>, returning a string containing the uncompressed data
 corresponding to at least part of the data in <em>string</em>.  This data should be
 concatenated to the output produced by any preceding calls to the
-<a class="reference internal" href="../generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> method.  Some of the input data may be preserved in internal
+<a class="reference internal" href="../generated/generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> method.  Some of the input data may be preserved in internal
 buffers for later processing.</p>
 <p>If the optional parameter <em>max_length</em> is non-zero then the return value will be
 no longer than <em>max_length</em>. This may mean that not all of the compressed input
 can be processed; and unconsumed data will be stored in the attribute
 <a class="reference internal" href="#zlib.Decompress.unconsumed_tail" title="zlib.Decompress.unconsumed_tail"><code class="xref py py-attr docutils literal"><span class="pre">unconsumed_tail</span></code></a>. This string must be passed to a subsequent call to
-<a class="reference internal" href="../generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> if decompression is to continue.  If <em>max_length</em> is not
+<a class="reference internal" href="../generated/generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> if decompression is to continue.  If <em>max_length</em> is not
 supplied then the whole input is decompressed, and <a class="reference internal" href="#zlib.Decompress.unconsumed_tail" title="zlib.Decompress.unconsumed_tail"><code class="xref py py-attr docutils literal"><span class="pre">unconsumed_tail</span></code></a> is an
 empty string.</p>
 </dd></dl>
@@ -418,7 +418,7 @@ empty string.</p>
 <code class="descclassname">Decompress.</code><code class="descname">flush</code><span class="sig-paren">(</span><span class="optional">[</span><em>length</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#zlib.Decompress.flush" title="Permalink to this definition">¶</a></dt>
 <dd><p>All pending input is processed, and a string containing the remaining
 uncompressed output is returned.  After calling <a class="reference internal" href="#zlib.Decompress.flush" title="zlib.Decompress.flush"><code class="xref py py-meth docutils literal"><span class="pre">flush()</span></code></a>, the
-<a class="reference internal" href="../generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> method cannot be called again; the only realistic action is
+<a class="reference internal" href="../generated/generated/zlib.decompress.html#zlib.decompress" title="zlib.decompress"><code class="xref py py-meth docutils literal"><span class="pre">decompress()</span></code></a> method cannot be called again; the only realistic action is
 to delete the object.</p>
 <p>The optional parameter <em>length</em> sets the initial size of the output buffer.</p>
 </dd></dl>

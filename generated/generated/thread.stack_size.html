@@ -1,0 +1,309 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>thread.stack_size() &mdash; Python Standard Library</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="thread" href="../thread.html"/>
+        <link rel="next" title="thread.start_new()" href="thread.start_new.html"/>
+        <link rel="prev" title="thread.interrupt_main()" href="thread.interrupt_main.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../select.html"><code class="docutils literal"><span class="pre">select</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../threading.html"><code class="docutils literal"><span class="pre">threading</span></code></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../thread.html"><code class="docutils literal"><span class="pre">thread</span></code></a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../thread.html#functions">Functions</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="thread.allocate.html"><code class="docutils literal"><span class="pre">thread.allocate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="thread.allocate_lock.html"><code class="docutils literal"><span class="pre">thread.allocate_lock()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="thread.exit.html"><code class="docutils literal"><span class="pre">thread.exit()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="thread.exit_thread.html"><code class="docutils literal"><span class="pre">thread.exit_thread()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="thread.get_ident.html"><code class="docutils literal"><span class="pre">thread.get_ident()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="thread.interrupt_main.html"><code class="docutils literal"><span class="pre">thread.interrupt_main()</span></code></a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">thread.stack_size()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="thread.start_new.html"><code class="docutils literal"><span class="pre">thread.start_new()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="thread.start_new_thread.html"><code class="docutils literal"><span class="pre">thread.start_new_thread()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../thread.html#classes">Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../thread.html#exceptions">Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../dummy_threading.html"><code class="docutils literal"><span class="pre">dummy_threading</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dummy_thread.html"><code class="docutils literal"><span class="pre">dummy_thread</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../multiprocessing.html"><code class="docutils literal"><span class="pre">multiprocessing</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mmap.html"><code class="docutils literal"><span class="pre">mmap</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../readline.html"><code class="docutils literal"><span class="pre">readline</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rlcompleter.html"><code class="docutils literal"><span class="pre">rlcompleter</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../api_all.html">api</a> &raquo;</li>
+        
+          <li><a href="../thread.html"><code class="docutils literal"><span class="pre">thread</span></code></a> &raquo;</li>
+        
+      <li><code class="docutils literal"><span class="pre">thread.stack_size()</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/thread.stack_size.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="thread-stack-size">
+<h1><a class="reference internal" href="#thread.stack_size" title="thread.stack_size"><code class="xref py py-func docutils literal"><span class="pre">thread.stack_size()</span></code></a><a class="headerlink" href="#thread-stack-size" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="thread.stack_size">
+<code class="descclassname">thread.</code><code class="descname">stack_size</code><span class="sig-paren">(</span><span class="optional">[</span><em>size</em><span class="optional">]</span><span class="sig-paren">)</span> &rarr; size<a class="headerlink" href="#thread.stack_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the thread stack size used when creating new threads.  The
+optional size argument specifies the stack size (in bytes) to be used
+for subsequently created threads, and must be 0 (use platform or
+configured default) or a positive integer value of at least 32,768 (32k).
+If changing the thread stack size is unsupported, a ThreadError
+exception is raised.  If the specified size is invalid, a ValueError
+exception is raised, and the stack size is unmodified.  32k bytes</p>
+<blockquote>
+<div>currently the minimum supported stack size value to guarantee</div></blockquote>
+<p>sufficient stack space for the interpreter itself.</p>
+<p>Note that some platforms may have particular restrictions on values for
+the stack size, such as requiring a minimum stack size larger than 32kB or
+requiring allocation in multiples of the system memory page size
+- platform documentation should be referred to for more information
+(4kB pages are common; using multiples of 4096 for the stack size is
+the suggested approach in the absence of more specific information).</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="thread.start_new.html" class="btn btn-neutral float-right" title="thread.start_new()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="thread.interrupt_main.html" class="btn btn-neutral" title="thread.interrupt_main()" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       test
       test_bmp
@@ -27,6 +27,28 @@
       test_xbm
       testall
       what
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/imghdr.test
+       generated/imghdr.test_bmp
+       generated/imghdr.test_exif
+       generated/imghdr.test_gif
+       generated/imghdr.test_jpeg
+       generated/imghdr.test_pbm
+       generated/imghdr.test_pgm
+       generated/imghdr.test_png
+       generated/imghdr.test_ppm
+       generated/imghdr.test_rast
+       generated/imghdr.test_rgb
+       generated/imghdr.test_tiff
+       generated/imghdr.test_xbm
+       generated/imghdr.testall
+       generated/imghdr.what
+      
    
    
 

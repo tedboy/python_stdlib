@@ -255,7 +255,7 @@ locale-dependent and will not change.</p>
 <code class="descclassname">string.</code><code class="descname">letters</code><a class="headerlink" href="#string.letters" title="Permalink to this definition">¶</a></dt>
 <dd><p>The concatenation of the strings <a class="reference internal" href="#string.lowercase" title="string.lowercase"><code class="xref py py-const docutils literal"><span class="pre">lowercase</span></code></a> and <a class="reference internal" href="#string.uppercase" title="string.uppercase"><code class="xref py py-const docutils literal"><span class="pre">uppercase</span></code></a>
 described below.  The specific value is locale-dependent, and will be updated
-when <a class="reference internal" href="../generated/locale.setlocale.html#locale.setlocale" title="locale.setlocale"><code class="xref py py-func docutils literal"><span class="pre">locale.setlocale()</span></code></a> is called.</p>
+when <a class="reference internal" href="../generated/generated/locale.setlocale.html#locale.setlocale" title="locale.setlocale"><code class="xref py py-func docutils literal"><span class="pre">locale.setlocale()</span></code></a> is called.</p>
 </dd></dl>
 
 <dl class="data">
@@ -264,7 +264,7 @@ when <a class="reference internal" href="../generated/locale.setlocale.html#loca
 <dd><p>A string containing all the characters that are considered lowercase letters.
 On most systems this is the string <code class="docutils literal"><span class="pre">'abcdefghijklmnopqrstuvwxyz'</span></code>.  The
 specific value is locale-dependent, and will be updated when
-<a class="reference internal" href="../generated/locale.setlocale.html#locale.setlocale" title="locale.setlocale"><code class="xref py py-func docutils literal"><span class="pre">locale.setlocale()</span></code></a> is called.</p>
+<a class="reference internal" href="../generated/generated/locale.setlocale.html#locale.setlocale" title="locale.setlocale"><code class="xref py py-func docutils literal"><span class="pre">locale.setlocale()</span></code></a> is called.</p>
 </dd></dl>
 
 <dl class="data">
@@ -294,7 +294,7 @@ specific value is locale-dependent, and will be updated when
 <dd><p>A string containing all the characters that are considered uppercase letters.
 On most systems this is the string <code class="docutils literal"><span class="pre">'ABCDEFGHIJKLMNOPQRSTUVWXYZ'</span></code>.  The
 specific value is locale-dependent, and will be updated when
-<a class="reference internal" href="../generated/locale.setlocale.html#locale.setlocale" title="locale.setlocale"><code class="xref py py-func docutils literal"><span class="pre">locale.setlocale()</span></code></a> is called.</p>
+<a class="reference internal" href="../generated/generated/locale.setlocale.html#locale.setlocale" title="locale.setlocale"><code class="xref py py-func docutils literal"><span class="pre">locale.setlocale()</span></code></a> is called.</p>
 </dd></dl>
 
 <dl class="data">
@@ -983,7 +983,7 @@ to parse template strings.  To do this, you can override these class attributes:
 <ul class="simple">
 <li><em>delimiter</em> &#8211; This is the literal string describing a placeholder introducing
 delimiter.  The default value is <code class="docutils literal"><span class="pre">$</span></code>.  Note that this should <em>not</em> be a
-regular expression, as the implementation will call <a class="reference internal" href="../generated/re.escape.html#re.escape" title="re.escape"><code class="xref py py-meth docutils literal"><span class="pre">re.escape()</span></code></a> on this
+regular expression, as the implementation will call <a class="reference internal" href="../generated/generated/re.escape.html#re.escape" title="re.escape"><code class="xref py py-meth docutils literal"><span class="pre">re.escape()</span></code></a> on this
 string as needed.</li>
 <li><em>idpattern</em> &#8211; This is the regular expression describing the pattern for
 non-braced placeholders (the braces will be added automatically as
@@ -1024,7 +1024,7 @@ split and join the words.</p>
 <dl class="function">
 <dt id="string.maketrans">
 <code class="descclassname">string.</code><code class="descname">maketrans</code><span class="sig-paren">(</span><em>from</em>, <em>to</em><span class="sig-paren">)</span><a class="headerlink" href="#string.maketrans" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return a translation table suitable for passing to <a class="reference internal" href="../generated/string.translate.html#string.translate" title="string.translate"><code class="xref py py-func docutils literal"><span class="pre">translate()</span></code></a>, that will
+<dd><p>Return a translation table suitable for passing to <a class="reference internal" href="../generated/generated/string.translate.html#string.translate" title="string.translate"><code class="xref py py-func docutils literal"><span class="pre">translate()</span></code></a>, that will
 map each character in <em>from</em> into the character at the same position in <em>to</em>;
 <em>from</em> and <em>to</em> must have the same length.</p>
 <div class="admonition note">
@@ -1093,19 +1093,19 @@ as for slices.</p>
 <dl class="function">
 <dt id="string.rfind">
 <code class="descclassname">string.</code><code class="descname">rfind</code><span class="sig-paren">(</span><em>s</em>, <em>sub</em><span class="optional">[</span>, <em>start</em><span class="optional">[</span>, <em>end</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/string.html#rfind"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#string.rfind" title="Permalink to this definition">¶</a></dt>
-<dd><p>Like <a class="reference internal" href="../generated/string.find.html#string.find" title="string.find"><code class="xref py py-func docutils literal"><span class="pre">find()</span></code></a> but find the highest index.</p>
+<dd><p>Like <a class="reference internal" href="../generated/generated/string.find.html#string.find" title="string.find"><code class="xref py py-func docutils literal"><span class="pre">find()</span></code></a> but find the highest index.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="string.index">
 <code class="descclassname">string.</code><code class="descname">index</code><span class="sig-paren">(</span><em>s</em>, <em>sub</em><span class="optional">[</span>, <em>start</em><span class="optional">[</span>, <em>end</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/string.html#index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#string.index" title="Permalink to this definition">¶</a></dt>
-<dd><p>Like <a class="reference internal" href="../generated/string.find.html#string.find" title="string.find"><code class="xref py py-func docutils literal"><span class="pre">find()</span></code></a> but raise <a class="reference internal" href="../generated/exceptions.ValueError.html#exceptions.ValueError" title="exceptions.ValueError"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code></a> when the substring is not found.</p>
+<dd><p>Like <a class="reference internal" href="../generated/generated/string.find.html#string.find" title="string.find"><code class="xref py py-func docutils literal"><span class="pre">find()</span></code></a> but raise <a class="reference internal" href="../generated/exceptions.ValueError.html#exceptions.ValueError" title="exceptions.ValueError"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code></a> when the substring is not found.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="string.rindex">
 <code class="descclassname">string.</code><code class="descname">rindex</code><span class="sig-paren">(</span><em>s</em>, <em>sub</em><span class="optional">[</span>, <em>start</em><span class="optional">[</span>, <em>end</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/string.html#rindex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#string.rindex" title="Permalink to this definition">¶</a></dt>
-<dd><p>Like <a class="reference internal" href="../generated/string.rfind.html#string.rfind" title="string.rfind"><code class="xref py py-func docutils literal"><span class="pre">rfind()</span></code></a> but raise <a class="reference internal" href="../generated/exceptions.ValueError.html#exceptions.ValueError" title="exceptions.ValueError"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code></a> when the substring is not found.</p>
+<dd><p>Like <a class="reference internal" href="../generated/generated/string.rfind.html#string.rfind" title="string.rfind"><code class="xref py py-func docutils literal"><span class="pre">rfind()</span></code></a> but raise <a class="reference internal" href="../generated/exceptions.ValueError.html#exceptions.ValueError" title="exceptions.ValueError"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code></a> when the substring is not found.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1147,7 +1147,7 @@ element which is an empty string.</p>
 <code class="descclassname">string.</code><code class="descname">rsplit</code><span class="sig-paren">(</span><em>s</em><span class="optional">[</span>, <em>sep</em><span class="optional">[</span>, <em>maxsplit</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/string.html#rsplit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#string.rsplit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a list of the words of the string <em>s</em>, scanning <em>s</em> from the end.  To all
 intents and purposes, the resulting list of words is the same as returned by
-<a class="reference internal" href="../generated/string.split.html#string.split" title="string.split"><code class="xref py py-func docutils literal"><span class="pre">split()</span></code></a>, except when the optional third argument <em>maxsplit</em> is explicitly
+<a class="reference internal" href="../generated/generated/string.split.html#string.split" title="string.split"><code class="xref py py-func docutils literal"><span class="pre">split()</span></code></a>, except when the optional third argument <em>maxsplit</em> is explicitly
 specified and nonzero.  If <em>maxsplit</em> is given, at most <em>maxsplit</em> number of
 splits &#8211; the <em>rightmost</em> ones &#8211; occur, and the remainder of the string is
 returned as the first element of the list (thus, the list will have at most
@@ -1160,8 +1160,8 @@ returned as the first element of the list (thus, the list will have at most
 <dl class="function">
 <dt id="string.splitfields">
 <code class="descclassname">string.</code><code class="descname">splitfields</code><span class="sig-paren">(</span><em>s</em><span class="optional">[</span>, <em>sep</em><span class="optional">[</span>, <em>maxsplit</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#string.splitfields" title="Permalink to this definition">¶</a></dt>
-<dd><p>This function behaves identically to <a class="reference internal" href="../generated/string.split.html#string.split" title="string.split"><code class="xref py py-func docutils literal"><span class="pre">split()</span></code></a>.  (In the past, <a class="reference internal" href="../generated/string.split.html#string.split" title="string.split"><code class="xref py py-func docutils literal"><span class="pre">split()</span></code></a>
-was only used with one argument, while <a class="reference internal" href="../generated/string.splitfields.html#string.splitfields" title="string.splitfields"><code class="xref py py-func docutils literal"><span class="pre">splitfields()</span></code></a> was only used with
+<dd><p>This function behaves identically to <a class="reference internal" href="../generated/generated/string.split.html#string.split" title="string.split"><code class="xref py py-func docutils literal"><span class="pre">split()</span></code></a>.  (In the past, <a class="reference internal" href="../generated/generated/string.split.html#string.split" title="string.split"><code class="xref py py-func docutils literal"><span class="pre">split()</span></code></a>
+was only used with one argument, while <a class="reference internal" href="../generated/generated/string.splitfields.html#string.splitfields" title="string.splitfields"><code class="xref py py-func docutils literal"><span class="pre">splitfields()</span></code></a> was only used with
 two arguments.)</p>
 </dd></dl>
 
@@ -1176,10 +1176,10 @@ The default value for <em>sep</em> is a single space character.  It is always tr
 <dl class="function">
 <dt id="string.joinfields">
 <code class="descclassname">string.</code><code class="descname">joinfields</code><span class="sig-paren">(</span><em>words</em><span class="optional">[</span>, <em>sep</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#string.joinfields" title="Permalink to this definition">¶</a></dt>
-<dd><p>This function behaves identically to <a class="reference internal" href="../generated/string.join.html#string.join" title="string.join"><code class="xref py py-func docutils literal"><span class="pre">join()</span></code></a>.  (In the past,  <a class="reference internal" href="../generated/string.join.html#string.join" title="string.join"><code class="xref py py-func docutils literal"><span class="pre">join()</span></code></a>
-was only used with one argument, while <a class="reference internal" href="../generated/string.joinfields.html#string.joinfields" title="string.joinfields"><code class="xref py py-func docutils literal"><span class="pre">joinfields()</span></code></a> was only used with two
-arguments.) Note that there is no <a class="reference internal" href="../generated/string.joinfields.html#string.joinfields" title="string.joinfields"><code class="xref py py-meth docutils literal"><span class="pre">joinfields()</span></code></a> method on string objects;
-use the <a class="reference internal" href="../generated/string.join.html#string.join" title="string.join"><code class="xref py py-meth docutils literal"><span class="pre">join()</span></code></a> method instead.</p>
+<dd><p>This function behaves identically to <a class="reference internal" href="../generated/generated/string.join.html#string.join" title="string.join"><code class="xref py py-func docutils literal"><span class="pre">join()</span></code></a>.  (In the past,  <a class="reference internal" href="../generated/generated/string.join.html#string.join" title="string.join"><code class="xref py py-func docutils literal"><span class="pre">join()</span></code></a>
+was only used with one argument, while <a class="reference internal" href="../generated/generated/string.joinfields.html#string.joinfields" title="string.joinfields"><code class="xref py py-func docutils literal"><span class="pre">joinfields()</span></code></a> was only used with two
+arguments.) Note that there is no <a class="reference internal" href="../generated/generated/string.joinfields.html#string.joinfields" title="string.joinfields"><code class="xref py py-meth docutils literal"><span class="pre">joinfields()</span></code></a> method on string objects;
+use the <a class="reference internal" href="../generated/generated/string.join.html#string.join" title="string.join"><code class="xref py py-meth docutils literal"><span class="pre">join()</span></code></a> method instead.</p>
 </dd></dl>
 
 <dl class="function">

@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       asctime
       clock
@@ -23,6 +23,24 @@
       strptime
       time
       tzset
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/time.asctime
+       generated/time.clock
+       generated/time.ctime
+       generated/time.gmtime
+       generated/time.localtime
+       generated/time.mktime
+       generated/time.sleep
+       generated/time.strftime
+       generated/time.strptime
+       generated/time.time
+       generated/time.tzset
+      
    
    
 

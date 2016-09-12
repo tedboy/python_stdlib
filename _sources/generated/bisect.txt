@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       bisect
       bisect_left
@@ -18,6 +18,19 @@
       insort
       insort_left
       insort_right
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/bisect.bisect
+       generated/bisect.bisect_left
+       generated/bisect.bisect_right
+       generated/bisect.insort
+       generated/bisect.insort_left
+       generated/bisect.insort_right
+      
    
    
 

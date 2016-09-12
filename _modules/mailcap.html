@@ -153,7 +153,7 @@
 
 <span class="c1"># Part 1: top-level interface.</span>
 
-<div class="viewcode-block" id="getcaps"><a class="viewcode-back" href="../generated/mailcap.getcaps.html#mailcap.getcaps">[docs]</a><span class="k">def</span> <span class="nf">getcaps</span><span class="p">():</span>
+<div class="viewcode-block" id="getcaps"><a class="viewcode-back" href="../generated/generated/mailcap.getcaps.html#mailcap.getcaps">[docs]</a><span class="k">def</span> <span class="nf">getcaps</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return a dictionary containing the mailcap database.</span>
 
 <span class="sd">    The dictionary maps a MIME type (in all lowercase, e.g. &#39;text/plain&#39;)</span>
@@ -178,7 +178,7 @@
                 <span class="n">caps</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">caps</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">+</span> <span class="n">value</span>
     <span class="k">return</span> <span class="n">caps</span></div>
 
-<div class="viewcode-block" id="listmailcapfiles"><a class="viewcode-back" href="../generated/mailcap.listmailcapfiles.html#mailcap.listmailcapfiles">[docs]</a><span class="k">def</span> <span class="nf">listmailcapfiles</span><span class="p">():</span>
+<div class="viewcode-block" id="listmailcapfiles"><a class="viewcode-back" href="../generated/generated/mailcap.listmailcapfiles.html#mailcap.listmailcapfiles">[docs]</a><span class="k">def</span> <span class="nf">listmailcapfiles</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return a list of all mailcap files found on the system.&quot;&quot;&quot;</span>
     <span class="c1"># XXX Actually, this is Unix-specific</span>
     <span class="k">if</span> <span class="s1">&#39;MAILCAPS&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
@@ -197,7 +197,7 @@
 
 <span class="c1"># Part 2: the parser.</span>
 
-<div class="viewcode-block" id="readmailcapfile"><a class="viewcode-back" href="../generated/mailcap.readmailcapfile.html#mailcap.readmailcapfile">[docs]</a><span class="k">def</span> <span class="nf">readmailcapfile</span><span class="p">(</span><span class="n">fp</span><span class="p">):</span>
+<div class="viewcode-block" id="readmailcapfile"><a class="viewcode-back" href="../generated/generated/mailcap.readmailcapfile.html#mailcap.readmailcapfile">[docs]</a><span class="k">def</span> <span class="nf">readmailcapfile</span><span class="p">(</span><span class="n">fp</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Read a mailcap file and return a dictionary keyed by MIME type.</span>
 
 <span class="sd">    Each MIME type is mapped to an entry consisting of a list of</span>
@@ -235,7 +235,7 @@
             <span class="n">caps</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">fields</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">caps</span></div>
 
-<div class="viewcode-block" id="parseline"><a class="viewcode-back" href="../generated/mailcap.parseline.html#mailcap.parseline">[docs]</a><span class="k">def</span> <span class="nf">parseline</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+<div class="viewcode-block" id="parseline"><a class="viewcode-back" href="../generated/generated/mailcap.parseline.html#mailcap.parseline">[docs]</a><span class="k">def</span> <span class="nf">parseline</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Parse one entry in a mailcap file and return a dictionary.</span>
 
 <span class="sd">    The viewing command is stored as the value with the key &quot;view&quot;,</span>
@@ -266,7 +266,7 @@
             <span class="n">fields</span><span class="p">[</span><span class="n">fkey</span><span class="p">]</span> <span class="o">=</span> <span class="n">fvalue</span>
     <span class="k">return</span> <span class="n">key</span><span class="p">,</span> <span class="n">fields</span></div>
 
-<div class="viewcode-block" id="parsefield"><a class="viewcode-back" href="../generated/mailcap.parsefield.html#mailcap.parsefield">[docs]</a><span class="k">def</span> <span class="nf">parsefield</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<div class="viewcode-block" id="parsefield"><a class="viewcode-back" href="../generated/generated/mailcap.parsefield.html#mailcap.parsefield">[docs]</a><span class="k">def</span> <span class="nf">parsefield</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Separate one key-value pair in a mailcap entry.&quot;&quot;&quot;</span>
     <span class="n">start</span> <span class="o">=</span> <span class="n">i</span>
     <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
@@ -282,7 +282,7 @@
 
 <span class="c1"># Part 3: using the database.</span>
 
-<div class="viewcode-block" id="findmatch"><a class="viewcode-back" href="../generated/mailcap.findmatch.html#mailcap.findmatch">[docs]</a><span class="k">def</span> <span class="nf">findmatch</span><span class="p">(</span><span class="n">caps</span><span class="p">,</span> <span class="n">MIMEtype</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="s1">&#39;view&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;/dev/null&quot;</span><span class="p">,</span> <span class="n">plist</span><span class="o">=</span><span class="p">[]):</span>
+<div class="viewcode-block" id="findmatch"><a class="viewcode-back" href="../generated/generated/mailcap.findmatch.html#mailcap.findmatch">[docs]</a><span class="k">def</span> <span class="nf">findmatch</span><span class="p">(</span><span class="n">caps</span><span class="p">,</span> <span class="n">MIMEtype</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="s1">&#39;view&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;/dev/null&quot;</span><span class="p">,</span> <span class="n">plist</span><span class="o">=</span><span class="p">[]):</span>
     <span class="sd">&quot;&quot;&quot;Find a match for a mailcap entry.</span>
 
 <span class="sd">    Return a tuple containing the command line, and the mailcap entry</span>
@@ -302,7 +302,7 @@
         <span class="k">return</span> <span class="n">command</span><span class="p">,</span> <span class="n">e</span>
     <span class="k">return</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span></div>
 
-<div class="viewcode-block" id="lookup"><a class="viewcode-back" href="../generated/mailcap.lookup.html#mailcap.lookup">[docs]</a><span class="k">def</span> <span class="nf">lookup</span><span class="p">(</span><span class="n">caps</span><span class="p">,</span> <span class="n">MIMEtype</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="lookup"><a class="viewcode-back" href="../generated/generated/mailcap.lookup.html#mailcap.lookup">[docs]</a><span class="k">def</span> <span class="nf">lookup</span><span class="p">(</span><span class="n">caps</span><span class="p">,</span> <span class="n">MIMEtype</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">entries</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">if</span> <span class="n">MIMEtype</span> <span class="ow">in</span> <span class="n">caps</span><span class="p">:</span>
         <span class="n">entries</span> <span class="o">=</span> <span class="n">entries</span> <span class="o">+</span> <span class="n">caps</span><span class="p">[</span><span class="n">MIMEtype</span><span class="p">]</span>
@@ -314,7 +314,7 @@
         <span class="n">entries</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">e</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">key</span><span class="p">:</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">e</span><span class="p">,</span> <span class="n">entries</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">entries</span></div>
 
-<div class="viewcode-block" id="subst"><a class="viewcode-back" href="../generated/mailcap.subst.html#mailcap.subst">[docs]</a><span class="k">def</span> <span class="nf">subst</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">MIMEtype</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">plist</span><span class="o">=</span><span class="p">[]):</span>
+<div class="viewcode-block" id="subst"><a class="viewcode-back" href="../generated/generated/mailcap.subst.html#mailcap.subst">[docs]</a><span class="k">def</span> <span class="nf">subst</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">MIMEtype</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">plist</span><span class="o">=</span><span class="p">[]):</span>
     <span class="c1"># XXX Actually, this is Unix-specific</span>
     <span class="n">res</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
     <span class="n">i</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
@@ -346,7 +346,7 @@
                 <span class="n">res</span> <span class="o">=</span> <span class="n">res</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span> <span class="o">+</span> <span class="n">c</span>
     <span class="k">return</span> <span class="n">res</span></div>
 
-<div class="viewcode-block" id="findparam"><a class="viewcode-back" href="../generated/mailcap.findparam.html#mailcap.findparam">[docs]</a><span class="k">def</span> <span class="nf">findparam</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">plist</span><span class="p">):</span>
+<div class="viewcode-block" id="findparam"><a class="viewcode-back" href="../generated/generated/mailcap.findparam.html#mailcap.findparam">[docs]</a><span class="k">def</span> <span class="nf">findparam</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">plist</span><span class="p">):</span>
     <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;=&#39;</span>
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">plist</span><span class="p">:</span>
@@ -357,7 +357,7 @@
 
 <span class="c1"># Part 4: test program.</span>
 
-<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/mailcap.test.html#mailcap.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
+<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/generated/mailcap.test.html#mailcap.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
     <span class="kn">import</span> <span class="nn">sys</span>
     <span class="n">caps</span> <span class="o">=</span> <span class="n">getcaps</span><span class="p">()</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
@@ -379,7 +379,7 @@
             <span class="k">if</span> <span class="n">sts</span><span class="p">:</span>
                 <span class="k">print</span> <span class="s2">&quot;Exit status:&quot;</span><span class="p">,</span> <span class="n">sts</span></div>
 
-<div class="viewcode-block" id="show"><a class="viewcode-back" href="../generated/mailcap.show.html#mailcap.show">[docs]</a><span class="k">def</span> <span class="nf">show</span><span class="p">(</span><span class="n">caps</span><span class="p">):</span>
+<div class="viewcode-block" id="show"><a class="viewcode-back" href="../generated/generated/mailcap.show.html#mailcap.show">[docs]</a><span class="k">def</span> <span class="nf">show</span><span class="p">(</span><span class="n">caps</span><span class="p">):</span>
     <span class="k">print</span> <span class="s2">&quot;Mailcap files:&quot;</span>
     <span class="k">for</span> <span class="n">fn</span> <span class="ow">in</span> <span class="n">listmailcapfiles</span><span class="p">():</span> <span class="k">print</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">fn</span>
     <span class="k">print</span>

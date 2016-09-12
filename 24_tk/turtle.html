@@ -282,7 +282,7 @@ graphics, it needs a version of Python installed with Tk support.</p>
 the drawing turtles.  Its constructor needs a <a class="reference internal" href="../generated/generated/Tkinter.Canvas.html#Tkinter.Canvas" title="Tkinter.Canvas"><code class="xref py py-class docutils literal"><span class="pre">Tkinter.Canvas</span></code></a> or a
 <a class="reference internal" href="../generated/generated/turtle.ScrolledCanvas.html#turtle.ScrolledCanvas" title="turtle.ScrolledCanvas"><code class="xref py py-class docutils literal"><span class="pre">ScrolledCanvas</span></code></a> as argument.  It should be used when <a class="reference internal" href="../generated/turtle.html#module-turtle" title="turtle"><code class="xref py py-mod docutils literal"><span class="pre">turtle</span></code></a> is
 used as part of some application.</p>
-<p>The function <a class="reference internal" href="../generated/turtle.Screen.html#turtle.Screen" title="turtle.Screen"><code class="xref py py-func docutils literal"><span class="pre">Screen()</span></code></a> returns a singleton object of a
+<p>The function <a class="reference internal" href="../generated/generated/turtle.Screen.html#turtle.Screen" title="turtle.Screen"><code class="xref py py-func docutils literal"><span class="pre">Screen()</span></code></a> returns a singleton object of a
 <a class="reference internal" href="../generated/generated/turtle.TurtleScreen.html#turtle.TurtleScreen" title="turtle.TurtleScreen"><code class="xref py py-class docutils literal"><span class="pre">TurtleScreen</span></code></a> subclass. This function should be used when
 <a class="reference internal" href="../generated/turtle.html#module-turtle" title="turtle"><code class="xref py py-mod docutils literal"><span class="pre">turtle</span></code></a> is used as a standalone tool for doing graphics.
 As a singleton object, inheriting from its class is not possible.</p>
@@ -293,14 +293,14 @@ the procedure-oriented interface.</p>
 on a <a class="reference internal" href="../generated/generated/turtle.TurtleScreen.html#turtle.TurtleScreen" title="turtle.TurtleScreen"><code class="xref py py-class docutils literal"><span class="pre">TurtleScreen</span></code></a>.  Its constructor needs a Canvas, ScrolledCanvas
 or TurtleScreen as argument, so the RawTurtle objects know where to draw.</p>
 <p>Derived from RawTurtle is the subclass <a class="reference internal" href="../generated/generated/turtle.Turtle.html#turtle.Turtle" title="turtle.Turtle"><code class="xref py py-class docutils literal"><span class="pre">Turtle</span></code></a> (alias: <a class="reference internal" href="../generated/generated/turtle.Pen.html#turtle.Pen" title="turtle.Pen"><code class="xref py py-class docutils literal"><span class="pre">Pen</span></code></a>),
-which draws on &#8220;the&#8221; <a class="reference internal" href="../generated/turtle.Screen.html#turtle.Screen" title="turtle.Screen"><code class="xref py py-class docutils literal"><span class="pre">Screen</span></code></a> - instance which is automatically
+which draws on &#8220;the&#8221; <a class="reference internal" href="../generated/generated/turtle.Screen.html#turtle.Screen" title="turtle.Screen"><code class="xref py py-class docutils literal"><span class="pre">Screen</span></code></a> - instance which is automatically
 created, if not already present.</p>
 <p>All methods of RawTurtle/Turtle also exist as functions, i.e. part of the
 procedure-oriented interface.</p>
 </li>
 </ol>
 <p>The procedural interface provides functions which are derived from the methods
-of the classes <a class="reference internal" href="../generated/turtle.Screen.html#turtle.Screen" title="turtle.Screen"><code class="xref py py-class docutils literal"><span class="pre">Screen</span></code></a> and <a class="reference internal" href="../generated/generated/turtle.Turtle.html#turtle.Turtle" title="turtle.Turtle"><code class="xref py py-class docutils literal"><span class="pre">Turtle</span></code></a>.  They have the same names as
+of the classes <a class="reference internal" href="../generated/generated/turtle.Screen.html#turtle.Screen" title="turtle.Screen"><code class="xref py py-class docutils literal"><span class="pre">Screen</span></code></a> and <a class="reference internal" href="../generated/generated/turtle.Turtle.html#turtle.Turtle" title="turtle.Turtle"><code class="xref py py-class docutils literal"><span class="pre">Turtle</span></code></a>.  They have the same names as
 the corresponding methods.  A screen object is automatically created whenever a
 function derived from a Screen method is called.  An (unnamed) turtle object is
 automatically created whenever any of the functions derived from a Turtle method
@@ -322,38 +322,38 @@ omitted here.</p>
 <dd><dl class="first last docutils">
 <dt>Move and draw</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.forward.html#turtle.forward" title="turtle.forward"><code class="xref py py-func docutils literal"><span class="pre">forward()</span></code></a> | <a class="reference internal" href="../generated/turtle.fd.html#turtle.fd" title="turtle.fd"><code class="xref py py-func docutils literal"><span class="pre">fd()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.backward.html#turtle.backward" title="turtle.backward"><code class="xref py py-func docutils literal"><span class="pre">backward()</span></code></a> | <a class="reference internal" href="../generated/turtle.bk.html#turtle.bk" title="turtle.bk"><code class="xref py py-func docutils literal"><span class="pre">bk()</span></code></a> | <a class="reference internal" href="../generated/turtle.back.html#turtle.back" title="turtle.back"><code class="xref py py-func docutils literal"><span class="pre">back()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.right.html#turtle.right" title="turtle.right"><code class="xref py py-func docutils literal"><span class="pre">right()</span></code></a> | <a class="reference internal" href="../generated/turtle.rt.html#turtle.rt" title="turtle.rt"><code class="xref py py-func docutils literal"><span class="pre">rt()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.left.html#turtle.left" title="turtle.left"><code class="xref py py-func docutils literal"><span class="pre">left()</span></code></a> | <a class="reference internal" href="../generated/turtle.lt.html#turtle.lt" title="turtle.lt"><code class="xref py py-func docutils literal"><span class="pre">lt()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.goto.html#turtle.goto" title="turtle.goto"><code class="xref py py-func docutils literal"><span class="pre">goto()</span></code></a> | <a class="reference internal" href="../generated/turtle.setpos.html#turtle.setpos" title="turtle.setpos"><code class="xref py py-func docutils literal"><span class="pre">setpos()</span></code></a> | <a class="reference internal" href="../generated/turtle.setposition.html#turtle.setposition" title="turtle.setposition"><code class="xref py py-func docutils literal"><span class="pre">setposition()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.setx.html#turtle.setx" title="turtle.setx"><code class="xref py py-func docutils literal"><span class="pre">setx()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.sety.html#turtle.sety" title="turtle.sety"><code class="xref py py-func docutils literal"><span class="pre">sety()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.setheading.html#turtle.setheading" title="turtle.setheading"><code class="xref py py-func docutils literal"><span class="pre">setheading()</span></code></a> | <a class="reference internal" href="../generated/turtle.seth.html#turtle.seth" title="turtle.seth"><code class="xref py py-func docutils literal"><span class="pre">seth()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.home.html#turtle.home" title="turtle.home"><code class="xref py py-func docutils literal"><span class="pre">home()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.circle.html#turtle.circle" title="turtle.circle"><code class="xref py py-func docutils literal"><span class="pre">circle()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.dot.html#turtle.dot" title="turtle.dot"><code class="xref py py-func docutils literal"><span class="pre">dot()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.stamp.html#turtle.stamp" title="turtle.stamp"><code class="xref py py-func docutils literal"><span class="pre">stamp()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.clearstamp.html#turtle.clearstamp" title="turtle.clearstamp"><code class="xref py py-func docutils literal"><span class="pre">clearstamp()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.clearstamps.html#turtle.clearstamps" title="turtle.clearstamps"><code class="xref py py-func docutils literal"><span class="pre">clearstamps()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.undo.html#turtle.undo" title="turtle.undo"><code class="xref py py-func docutils literal"><span class="pre">undo()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.speed.html#turtle.speed" title="turtle.speed"><code class="xref py py-func docutils literal"><span class="pre">speed()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.forward.html#turtle.forward" title="turtle.forward"><code class="xref py py-func docutils literal"><span class="pre">forward()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.fd.html#turtle.fd" title="turtle.fd"><code class="xref py py-func docutils literal"><span class="pre">fd()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.backward.html#turtle.backward" title="turtle.backward"><code class="xref py py-func docutils literal"><span class="pre">backward()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.bk.html#turtle.bk" title="turtle.bk"><code class="xref py py-func docutils literal"><span class="pre">bk()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.back.html#turtle.back" title="turtle.back"><code class="xref py py-func docutils literal"><span class="pre">back()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.right.html#turtle.right" title="turtle.right"><code class="xref py py-func docutils literal"><span class="pre">right()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.rt.html#turtle.rt" title="turtle.rt"><code class="xref py py-func docutils literal"><span class="pre">rt()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.left.html#turtle.left" title="turtle.left"><code class="xref py py-func docutils literal"><span class="pre">left()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.lt.html#turtle.lt" title="turtle.lt"><code class="xref py py-func docutils literal"><span class="pre">lt()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.goto.html#turtle.goto" title="turtle.goto"><code class="xref py py-func docutils literal"><span class="pre">goto()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.setpos.html#turtle.setpos" title="turtle.setpos"><code class="xref py py-func docutils literal"><span class="pre">setpos()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.setposition.html#turtle.setposition" title="turtle.setposition"><code class="xref py py-func docutils literal"><span class="pre">setposition()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.setx.html#turtle.setx" title="turtle.setx"><code class="xref py py-func docutils literal"><span class="pre">setx()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.sety.html#turtle.sety" title="turtle.sety"><code class="xref py py-func docutils literal"><span class="pre">sety()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.setheading.html#turtle.setheading" title="turtle.setheading"><code class="xref py py-func docutils literal"><span class="pre">setheading()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.seth.html#turtle.seth" title="turtle.seth"><code class="xref py py-func docutils literal"><span class="pre">seth()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.home.html#turtle.home" title="turtle.home"><code class="xref py py-func docutils literal"><span class="pre">home()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.circle.html#turtle.circle" title="turtle.circle"><code class="xref py py-func docutils literal"><span class="pre">circle()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.dot.html#turtle.dot" title="turtle.dot"><code class="xref py py-func docutils literal"><span class="pre">dot()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.stamp.html#turtle.stamp" title="turtle.stamp"><code class="xref py py-func docutils literal"><span class="pre">stamp()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.clearstamp.html#turtle.clearstamp" title="turtle.clearstamp"><code class="xref py py-func docutils literal"><span class="pre">clearstamp()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.clearstamps.html#turtle.clearstamps" title="turtle.clearstamps"><code class="xref py py-func docutils literal"><span class="pre">clearstamps()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.undo.html#turtle.undo" title="turtle.undo"><code class="xref py py-func docutils literal"><span class="pre">undo()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.speed.html#turtle.speed" title="turtle.speed"><code class="xref py py-func docutils literal"><span class="pre">speed()</span></code></a></div>
 </div>
 </dd>
 <dt>Tell Turtle&#8217;s state</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.position.html#turtle.position" title="turtle.position"><code class="xref py py-func docutils literal"><span class="pre">position()</span></code></a> | <a class="reference internal" href="../generated/turtle.pos.html#turtle.pos" title="turtle.pos"><code class="xref py py-func docutils literal"><span class="pre">pos()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.towards.html#turtle.towards" title="turtle.towards"><code class="xref py py-func docutils literal"><span class="pre">towards()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.xcor.html#turtle.xcor" title="turtle.xcor"><code class="xref py py-func docutils literal"><span class="pre">xcor()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.ycor.html#turtle.ycor" title="turtle.ycor"><code class="xref py py-func docutils literal"><span class="pre">ycor()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.heading.html#turtle.heading" title="turtle.heading"><code class="xref py py-func docutils literal"><span class="pre">heading()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.distance.html#turtle.distance" title="turtle.distance"><code class="xref py py-func docutils literal"><span class="pre">distance()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.position.html#turtle.position" title="turtle.position"><code class="xref py py-func docutils literal"><span class="pre">position()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.pos.html#turtle.pos" title="turtle.pos"><code class="xref py py-func docutils literal"><span class="pre">pos()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.towards.html#turtle.towards" title="turtle.towards"><code class="xref py py-func docutils literal"><span class="pre">towards()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.xcor.html#turtle.xcor" title="turtle.xcor"><code class="xref py py-func docutils literal"><span class="pre">xcor()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.ycor.html#turtle.ycor" title="turtle.ycor"><code class="xref py py-func docutils literal"><span class="pre">ycor()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.heading.html#turtle.heading" title="turtle.heading"><code class="xref py py-func docutils literal"><span class="pre">heading()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.distance.html#turtle.distance" title="turtle.distance"><code class="xref py py-func docutils literal"><span class="pre">distance()</span></code></a></div>
 </div>
 </dd>
 <dt>Setting and measurement</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.degrees.html#turtle.degrees" title="turtle.degrees"><code class="xref py py-func docutils literal"><span class="pre">degrees()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.radians.html#turtle.radians" title="turtle.radians"><code class="xref py py-func docutils literal"><span class="pre">radians()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.degrees.html#turtle.degrees" title="turtle.degrees"><code class="xref py py-func docutils literal"><span class="pre">degrees()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.radians.html#turtle.radians" title="turtle.radians"><code class="xref py py-func docutils literal"><span class="pre">radians()</span></code></a></div>
 </div>
 </dd>
 </dl>
@@ -362,32 +362,32 @@ omitted here.</p>
 <dd><dl class="first last docutils">
 <dt>Drawing state</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.pendown.html#turtle.pendown" title="turtle.pendown"><code class="xref py py-func docutils literal"><span class="pre">pendown()</span></code></a> | <a class="reference internal" href="../generated/turtle.pd.html#turtle.pd" title="turtle.pd"><code class="xref py py-func docutils literal"><span class="pre">pd()</span></code></a> | <a class="reference internal" href="../generated/turtle.down.html#turtle.down" title="turtle.down"><code class="xref py py-func docutils literal"><span class="pre">down()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.penup.html#turtle.penup" title="turtle.penup"><code class="xref py py-func docutils literal"><span class="pre">penup()</span></code></a> | <a class="reference internal" href="../generated/turtle.pu.html#turtle.pu" title="turtle.pu"><code class="xref py py-func docutils literal"><span class="pre">pu()</span></code></a> | <a class="reference internal" href="../generated/turtle.up.html#turtle.up" title="turtle.up"><code class="xref py py-func docutils literal"><span class="pre">up()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.pensize.html#turtle.pensize" title="turtle.pensize"><code class="xref py py-func docutils literal"><span class="pre">pensize()</span></code></a> | <a class="reference internal" href="../generated/turtle.width.html#turtle.width" title="turtle.width"><code class="xref py py-func docutils literal"><span class="pre">width()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.pen.html#turtle.pen" title="turtle.pen"><code class="xref py py-func docutils literal"><span class="pre">pen()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.isdown.html#turtle.isdown" title="turtle.isdown"><code class="xref py py-func docutils literal"><span class="pre">isdown()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.pendown.html#turtle.pendown" title="turtle.pendown"><code class="xref py py-func docutils literal"><span class="pre">pendown()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.pd.html#turtle.pd" title="turtle.pd"><code class="xref py py-func docutils literal"><span class="pre">pd()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.down.html#turtle.down" title="turtle.down"><code class="xref py py-func docutils literal"><span class="pre">down()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.penup.html#turtle.penup" title="turtle.penup"><code class="xref py py-func docutils literal"><span class="pre">penup()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.pu.html#turtle.pu" title="turtle.pu"><code class="xref py py-func docutils literal"><span class="pre">pu()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.up.html#turtle.up" title="turtle.up"><code class="xref py py-func docutils literal"><span class="pre">up()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.pensize.html#turtle.pensize" title="turtle.pensize"><code class="xref py py-func docutils literal"><span class="pre">pensize()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.width.html#turtle.width" title="turtle.width"><code class="xref py py-func docutils literal"><span class="pre">width()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.pen.html#turtle.pen" title="turtle.pen"><code class="xref py py-func docutils literal"><span class="pre">pen()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.isdown.html#turtle.isdown" title="turtle.isdown"><code class="xref py py-func docutils literal"><span class="pre">isdown()</span></code></a></div>
 </div>
 </dd>
 <dt>Color control</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.color.html#turtle.color" title="turtle.color"><code class="xref py py-func docutils literal"><span class="pre">color()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.pencolor.html#turtle.pencolor" title="turtle.pencolor"><code class="xref py py-func docutils literal"><span class="pre">pencolor()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.fillcolor.html#turtle.fillcolor" title="turtle.fillcolor"><code class="xref py py-func docutils literal"><span class="pre">fillcolor()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.color.html#turtle.color" title="turtle.color"><code class="xref py py-func docutils literal"><span class="pre">color()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.pencolor.html#turtle.pencolor" title="turtle.pencolor"><code class="xref py py-func docutils literal"><span class="pre">pencolor()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.fillcolor.html#turtle.fillcolor" title="turtle.fillcolor"><code class="xref py py-func docutils literal"><span class="pre">fillcolor()</span></code></a></div>
 </div>
 </dd>
 <dt>Filling</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.fill.html#turtle.fill" title="turtle.fill"><code class="xref py py-func docutils literal"><span class="pre">fill()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.begin_fill.html#turtle.begin_fill" title="turtle.begin_fill"><code class="xref py py-func docutils literal"><span class="pre">begin_fill()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.end_fill.html#turtle.end_fill" title="turtle.end_fill"><code class="xref py py-func docutils literal"><span class="pre">end_fill()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.fill.html#turtle.fill" title="turtle.fill"><code class="xref py py-func docutils literal"><span class="pre">fill()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.begin_fill.html#turtle.begin_fill" title="turtle.begin_fill"><code class="xref py py-func docutils literal"><span class="pre">begin_fill()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.end_fill.html#turtle.end_fill" title="turtle.end_fill"><code class="xref py py-func docutils literal"><span class="pre">end_fill()</span></code></a></div>
 </div>
 </dd>
 <dt>More drawing control</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.reset.html#turtle.reset" title="turtle.reset"><code class="xref py py-func docutils literal"><span class="pre">reset()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.clear.html#turtle.clear" title="turtle.clear"><code class="xref py py-func docutils literal"><span class="pre">clear()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.write.html#turtle.write" title="turtle.write"><code class="xref py py-func docutils literal"><span class="pre">write()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.reset.html#turtle.reset" title="turtle.reset"><code class="xref py py-func docutils literal"><span class="pre">reset()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.clear.html#turtle.clear" title="turtle.clear"><code class="xref py py-func docutils literal"><span class="pre">clear()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.write.html#turtle.write" title="turtle.write"><code class="xref py py-func docutils literal"><span class="pre">write()</span></code></a></div>
 </div>
 </dd>
 </dl>
@@ -396,44 +396,44 @@ omitted here.</p>
 <dd><dl class="first last docutils">
 <dt>Visibility</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.showturtle.html#turtle.showturtle" title="turtle.showturtle"><code class="xref py py-func docutils literal"><span class="pre">showturtle()</span></code></a> | <a class="reference internal" href="../generated/turtle.st.html#turtle.st" title="turtle.st"><code class="xref py py-func docutils literal"><span class="pre">st()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.hideturtle.html#turtle.hideturtle" title="turtle.hideturtle"><code class="xref py py-func docutils literal"><span class="pre">hideturtle()</span></code></a> | <a class="reference internal" href="../generated/turtle.ht.html#turtle.ht" title="turtle.ht"><code class="xref py py-func docutils literal"><span class="pre">ht()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.isvisible.html#turtle.isvisible" title="turtle.isvisible"><code class="xref py py-func docutils literal"><span class="pre">isvisible()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.showturtle.html#turtle.showturtle" title="turtle.showturtle"><code class="xref py py-func docutils literal"><span class="pre">showturtle()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.st.html#turtle.st" title="turtle.st"><code class="xref py py-func docutils literal"><span class="pre">st()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.hideturtle.html#turtle.hideturtle" title="turtle.hideturtle"><code class="xref py py-func docutils literal"><span class="pre">hideturtle()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.ht.html#turtle.ht" title="turtle.ht"><code class="xref py py-func docutils literal"><span class="pre">ht()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.isvisible.html#turtle.isvisible" title="turtle.isvisible"><code class="xref py py-func docutils literal"><span class="pre">isvisible()</span></code></a></div>
 </div>
 </dd>
 <dt>Appearance</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.shape.html#turtle.shape" title="turtle.shape"><code class="xref py py-func docutils literal"><span class="pre">shape()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.resizemode.html#turtle.resizemode" title="turtle.resizemode"><code class="xref py py-func docutils literal"><span class="pre">resizemode()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.shapesize.html#turtle.shapesize" title="turtle.shapesize"><code class="xref py py-func docutils literal"><span class="pre">shapesize()</span></code></a> | <a class="reference internal" href="../generated/turtle.turtlesize.html#turtle.turtlesize" title="turtle.turtlesize"><code class="xref py py-func docutils literal"><span class="pre">turtlesize()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.settiltangle.html#turtle.settiltangle" title="turtle.settiltangle"><code class="xref py py-func docutils literal"><span class="pre">settiltangle()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.tiltangle.html#turtle.tiltangle" title="turtle.tiltangle"><code class="xref py py-func docutils literal"><span class="pre">tiltangle()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.tilt.html#turtle.tilt" title="turtle.tilt"><code class="xref py py-func docutils literal"><span class="pre">tilt()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.shape.html#turtle.shape" title="turtle.shape"><code class="xref py py-func docutils literal"><span class="pre">shape()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.resizemode.html#turtle.resizemode" title="turtle.resizemode"><code class="xref py py-func docutils literal"><span class="pre">resizemode()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.shapesize.html#turtle.shapesize" title="turtle.shapesize"><code class="xref py py-func docutils literal"><span class="pre">shapesize()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.turtlesize.html#turtle.turtlesize" title="turtle.turtlesize"><code class="xref py py-func docutils literal"><span class="pre">turtlesize()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.settiltangle.html#turtle.settiltangle" title="turtle.settiltangle"><code class="xref py py-func docutils literal"><span class="pre">settiltangle()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.tiltangle.html#turtle.tiltangle" title="turtle.tiltangle"><code class="xref py py-func docutils literal"><span class="pre">tiltangle()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.tilt.html#turtle.tilt" title="turtle.tilt"><code class="xref py py-func docutils literal"><span class="pre">tilt()</span></code></a></div>
 </div>
 </dd>
 </dl>
 </dd>
 <dt>Using events</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.onclick.html#turtle.onclick" title="turtle.onclick"><code class="xref py py-func docutils literal"><span class="pre">onclick()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.onrelease.html#turtle.onrelease" title="turtle.onrelease"><code class="xref py py-func docutils literal"><span class="pre">onrelease()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.ondrag.html#turtle.ondrag" title="turtle.ondrag"><code class="xref py py-func docutils literal"><span class="pre">ondrag()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.mainloop.html#turtle.mainloop" title="turtle.mainloop"><code class="xref py py-func docutils literal"><span class="pre">mainloop()</span></code></a> | <a class="reference internal" href="../generated/turtle.done.html#turtle.done" title="turtle.done"><code class="xref py py-func docutils literal"><span class="pre">done()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.onclick.html#turtle.onclick" title="turtle.onclick"><code class="xref py py-func docutils literal"><span class="pre">onclick()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.onrelease.html#turtle.onrelease" title="turtle.onrelease"><code class="xref py py-func docutils literal"><span class="pre">onrelease()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.ondrag.html#turtle.ondrag" title="turtle.ondrag"><code class="xref py py-func docutils literal"><span class="pre">ondrag()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.mainloop.html#turtle.mainloop" title="turtle.mainloop"><code class="xref py py-func docutils literal"><span class="pre">mainloop()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.done.html#turtle.done" title="turtle.done"><code class="xref py py-func docutils literal"><span class="pre">done()</span></code></a></div>
 </div>
 </dd>
 <dt>Special Turtle methods</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.begin_poly.html#turtle.begin_poly" title="turtle.begin_poly"><code class="xref py py-func docutils literal"><span class="pre">begin_poly()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.end_poly.html#turtle.end_poly" title="turtle.end_poly"><code class="xref py py-func docutils literal"><span class="pre">end_poly()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.get_poly.html#turtle.get_poly" title="turtle.get_poly"><code class="xref py py-func docutils literal"><span class="pre">get_poly()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.clone.html#turtle.clone" title="turtle.clone"><code class="xref py py-func docutils literal"><span class="pre">clone()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.getturtle.html#turtle.getturtle" title="turtle.getturtle"><code class="xref py py-func docutils literal"><span class="pre">getturtle()</span></code></a> | <a class="reference internal" href="../generated/turtle.getpen.html#turtle.getpen" title="turtle.getpen"><code class="xref py py-func docutils literal"><span class="pre">getpen()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.getscreen.html#turtle.getscreen" title="turtle.getscreen"><code class="xref py py-func docutils literal"><span class="pre">getscreen()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.setundobuffer.html#turtle.setundobuffer" title="turtle.setundobuffer"><code class="xref py py-func docutils literal"><span class="pre">setundobuffer()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.undobufferentries.html#turtle.undobufferentries" title="turtle.undobufferentries"><code class="xref py py-func docutils literal"><span class="pre">undobufferentries()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.tracer.html#turtle.tracer" title="turtle.tracer"><code class="xref py py-func docutils literal"><span class="pre">tracer()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.window_width.html#turtle.window_width" title="turtle.window_width"><code class="xref py py-func docutils literal"><span class="pre">window_width()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.window_height.html#turtle.window_height" title="turtle.window_height"><code class="xref py py-func docutils literal"><span class="pre">window_height()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.begin_poly.html#turtle.begin_poly" title="turtle.begin_poly"><code class="xref py py-func docutils literal"><span class="pre">begin_poly()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.end_poly.html#turtle.end_poly" title="turtle.end_poly"><code class="xref py py-func docutils literal"><span class="pre">end_poly()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.get_poly.html#turtle.get_poly" title="turtle.get_poly"><code class="xref py py-func docutils literal"><span class="pre">get_poly()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.clone.html#turtle.clone" title="turtle.clone"><code class="xref py py-func docutils literal"><span class="pre">clone()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.getturtle.html#turtle.getturtle" title="turtle.getturtle"><code class="xref py py-func docutils literal"><span class="pre">getturtle()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.getpen.html#turtle.getpen" title="turtle.getpen"><code class="xref py py-func docutils literal"><span class="pre">getpen()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.getscreen.html#turtle.getscreen" title="turtle.getscreen"><code class="xref py py-func docutils literal"><span class="pre">getscreen()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.setundobuffer.html#turtle.setundobuffer" title="turtle.setundobuffer"><code class="xref py py-func docutils literal"><span class="pre">setundobuffer()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.undobufferentries.html#turtle.undobufferentries" title="turtle.undobufferentries"><code class="xref py py-func docutils literal"><span class="pre">undobufferentries()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.tracer.html#turtle.tracer" title="turtle.tracer"><code class="xref py py-func docutils literal"><span class="pre">tracer()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.window_width.html#turtle.window_width" title="turtle.window_width"><code class="xref py py-func docutils literal"><span class="pre">window_width()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.window_height.html#turtle.window_height" title="turtle.window_height"><code class="xref py py-func docutils literal"><span class="pre">window_height()</span></code></a></div>
 </div>
 </dd>
 </dl>
@@ -443,47 +443,47 @@ omitted here.</p>
 <dl class="docutils">
 <dt>Window control</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.bgcolor.html#turtle.bgcolor" title="turtle.bgcolor"><code class="xref py py-func docutils literal"><span class="pre">bgcolor()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.bgpic.html#turtle.bgpic" title="turtle.bgpic"><code class="xref py py-func docutils literal"><span class="pre">bgpic()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.clear.html#turtle.clear" title="turtle.clear"><code class="xref py py-func docutils literal"><span class="pre">clear()</span></code></a> | <a class="reference internal" href="../generated/turtle.clearscreen.html#turtle.clearscreen" title="turtle.clearscreen"><code class="xref py py-func docutils literal"><span class="pre">clearscreen()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.reset.html#turtle.reset" title="turtle.reset"><code class="xref py py-func docutils literal"><span class="pre">reset()</span></code></a> | <a class="reference internal" href="../generated/turtle.resetscreen.html#turtle.resetscreen" title="turtle.resetscreen"><code class="xref py py-func docutils literal"><span class="pre">resetscreen()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.screensize.html#turtle.screensize" title="turtle.screensize"><code class="xref py py-func docutils literal"><span class="pre">screensize()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.setworldcoordinates.html#turtle.setworldcoordinates" title="turtle.setworldcoordinates"><code class="xref py py-func docutils literal"><span class="pre">setworldcoordinates()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.bgcolor.html#turtle.bgcolor" title="turtle.bgcolor"><code class="xref py py-func docutils literal"><span class="pre">bgcolor()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.bgpic.html#turtle.bgpic" title="turtle.bgpic"><code class="xref py py-func docutils literal"><span class="pre">bgpic()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.clear.html#turtle.clear" title="turtle.clear"><code class="xref py py-func docutils literal"><span class="pre">clear()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.clearscreen.html#turtle.clearscreen" title="turtle.clearscreen"><code class="xref py py-func docutils literal"><span class="pre">clearscreen()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.reset.html#turtle.reset" title="turtle.reset"><code class="xref py py-func docutils literal"><span class="pre">reset()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.resetscreen.html#turtle.resetscreen" title="turtle.resetscreen"><code class="xref py py-func docutils literal"><span class="pre">resetscreen()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.screensize.html#turtle.screensize" title="turtle.screensize"><code class="xref py py-func docutils literal"><span class="pre">screensize()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.setworldcoordinates.html#turtle.setworldcoordinates" title="turtle.setworldcoordinates"><code class="xref py py-func docutils literal"><span class="pre">setworldcoordinates()</span></code></a></div>
 </div>
 </dd>
 <dt>Animation control</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.delay.html#turtle.delay" title="turtle.delay"><code class="xref py py-func docutils literal"><span class="pre">delay()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.tracer.html#turtle.tracer" title="turtle.tracer"><code class="xref py py-func docutils literal"><span class="pre">tracer()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.update.html#turtle.update" title="turtle.update"><code class="xref py py-func docutils literal"><span class="pre">update()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.delay.html#turtle.delay" title="turtle.delay"><code class="xref py py-func docutils literal"><span class="pre">delay()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.tracer.html#turtle.tracer" title="turtle.tracer"><code class="xref py py-func docutils literal"><span class="pre">tracer()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.update.html#turtle.update" title="turtle.update"><code class="xref py py-func docutils literal"><span class="pre">update()</span></code></a></div>
 </div>
 </dd>
 <dt>Using screen events</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.listen.html#turtle.listen" title="turtle.listen"><code class="xref py py-func docutils literal"><span class="pre">listen()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.onkey.html#turtle.onkey" title="turtle.onkey"><code class="xref py py-func docutils literal"><span class="pre">onkey()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.onclick.html#turtle.onclick" title="turtle.onclick"><code class="xref py py-func docutils literal"><span class="pre">onclick()</span></code></a> | <a class="reference internal" href="../generated/turtle.onscreenclick.html#turtle.onscreenclick" title="turtle.onscreenclick"><code class="xref py py-func docutils literal"><span class="pre">onscreenclick()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.ontimer.html#turtle.ontimer" title="turtle.ontimer"><code class="xref py py-func docutils literal"><span class="pre">ontimer()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.listen.html#turtle.listen" title="turtle.listen"><code class="xref py py-func docutils literal"><span class="pre">listen()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.onkey.html#turtle.onkey" title="turtle.onkey"><code class="xref py py-func docutils literal"><span class="pre">onkey()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.onclick.html#turtle.onclick" title="turtle.onclick"><code class="xref py py-func docutils literal"><span class="pre">onclick()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.onscreenclick.html#turtle.onscreenclick" title="turtle.onscreenclick"><code class="xref py py-func docutils literal"><span class="pre">onscreenclick()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.ontimer.html#turtle.ontimer" title="turtle.ontimer"><code class="xref py py-func docutils literal"><span class="pre">ontimer()</span></code></a></div>
 </div>
 </dd>
 <dt>Settings and special methods</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.mode.html#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal"><span class="pre">mode()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.colormode.html#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal"><span class="pre">colormode()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.getcanvas.html#turtle.getcanvas" title="turtle.getcanvas"><code class="xref py py-func docutils literal"><span class="pre">getcanvas()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.getshapes.html#turtle.getshapes" title="turtle.getshapes"><code class="xref py py-func docutils literal"><span class="pre">getshapes()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.register_shape.html#turtle.register_shape" title="turtle.register_shape"><code class="xref py py-func docutils literal"><span class="pre">register_shape()</span></code></a> | <a class="reference internal" href="../generated/turtle.addshape.html#turtle.addshape" title="turtle.addshape"><code class="xref py py-func docutils literal"><span class="pre">addshape()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.turtles.html#turtle.turtles" title="turtle.turtles"><code class="xref py py-func docutils literal"><span class="pre">turtles()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.window_height.html#turtle.window_height" title="turtle.window_height"><code class="xref py py-func docutils literal"><span class="pre">window_height()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.window_width.html#turtle.window_width" title="turtle.window_width"><code class="xref py py-func docutils literal"><span class="pre">window_width()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.mode.html#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal"><span class="pre">mode()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.colormode.html#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal"><span class="pre">colormode()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.getcanvas.html#turtle.getcanvas" title="turtle.getcanvas"><code class="xref py py-func docutils literal"><span class="pre">getcanvas()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.getshapes.html#turtle.getshapes" title="turtle.getshapes"><code class="xref py py-func docutils literal"><span class="pre">getshapes()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.register_shape.html#turtle.register_shape" title="turtle.register_shape"><code class="xref py py-func docutils literal"><span class="pre">register_shape()</span></code></a> | <a class="reference internal" href="../generated/generated/turtle.addshape.html#turtle.addshape" title="turtle.addshape"><code class="xref py py-func docutils literal"><span class="pre">addshape()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.turtles.html#turtle.turtles" title="turtle.turtles"><code class="xref py py-func docutils literal"><span class="pre">turtles()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.window_height.html#turtle.window_height" title="turtle.window_height"><code class="xref py py-func docutils literal"><span class="pre">window_height()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.window_width.html#turtle.window_width" title="turtle.window_width"><code class="xref py py-func docutils literal"><span class="pre">window_width()</span></code></a></div>
 </div>
 </dd>
 <dt>Methods specific to Screen</dt>
 <dd><div class="first last line-block">
-<div class="line"><a class="reference internal" href="../generated/turtle.bye.html#turtle.bye" title="turtle.bye"><code class="xref py py-func docutils literal"><span class="pre">bye()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.exitonclick.html#turtle.exitonclick" title="turtle.exitonclick"><code class="xref py py-func docutils literal"><span class="pre">exitonclick()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.setup.html#turtle.setup" title="turtle.setup"><code class="xref py py-func docutils literal"><span class="pre">setup()</span></code></a></div>
-<div class="line"><a class="reference internal" href="../generated/turtle.title.html#turtle.title" title="turtle.title"><code class="xref py py-func docutils literal"><span class="pre">title()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.bye.html#turtle.bye" title="turtle.bye"><code class="xref py py-func docutils literal"><span class="pre">bye()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.exitonclick.html#turtle.exitonclick" title="turtle.exitonclick"><code class="xref py py-func docutils literal"><span class="pre">exitonclick()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.setup.html#turtle.setup" title="turtle.setup"><code class="xref py py-func docutils literal"><span class="pre">setup()</span></code></a></div>
+<div class="line"><a class="reference internal" href="../generated/generated/turtle.title.html#turtle.title" title="turtle.title"><code class="xref py py-func docutils literal"><span class="pre">title()</span></code></a></div>
 </div>
 </dd>
 </dl>
@@ -545,8 +545,8 @@ turtle is headed.  Do not change the turtle&#8217;s heading.</p>
 </tbody>
 </table>
 <p>Turn turtle right by <em>angle</em> units.  (Units are by default degrees, but
-can be set via the <a class="reference internal" href="../generated/turtle.degrees.html#turtle.degrees" title="turtle.degrees"><code class="xref py py-func docutils literal"><span class="pre">degrees()</span></code></a> and <a class="reference internal" href="../generated/turtle.radians.html#turtle.radians" title="turtle.radians"><code class="xref py py-func docutils literal"><span class="pre">radians()</span></code></a> functions.)  Angle
-orientation depends on the turtle mode, see <a class="reference internal" href="../generated/turtle.mode.html#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal"><span class="pre">mode()</span></code></a>.</p>
+can be set via the <a class="reference internal" href="../generated/generated/turtle.degrees.html#turtle.degrees" title="turtle.degrees"><code class="xref py py-func docutils literal"><span class="pre">degrees()</span></code></a> and <a class="reference internal" href="../generated/generated/turtle.radians.html#turtle.radians" title="turtle.radians"><code class="xref py py-func docutils literal"><span class="pre">radians()</span></code></a> functions.)  Angle
+orientation depends on the turtle mode, see <a class="reference internal" href="../generated/generated/turtle.mode.html#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal"><span class="pre">mode()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -563,8 +563,8 @@ orientation depends on the turtle mode, see <a class="reference internal" href="
 </tbody>
 </table>
 <p>Turn turtle left by <em>angle</em> units.  (Units are by default degrees, but
-can be set via the <a class="reference internal" href="../generated/turtle.degrees.html#turtle.degrees" title="turtle.degrees"><code class="xref py py-func docutils literal"><span class="pre">degrees()</span></code></a> and <a class="reference internal" href="../generated/turtle.radians.html#turtle.radians" title="turtle.radians"><code class="xref py py-func docutils literal"><span class="pre">radians()</span></code></a> functions.)  Angle
-orientation depends on the turtle mode, see <a class="reference internal" href="../generated/turtle.mode.html#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal"><span class="pre">mode()</span></code></a>.</p>
+can be set via the <a class="reference internal" href="../generated/generated/turtle.degrees.html#turtle.degrees" title="turtle.degrees"><code class="xref py py-func docutils literal"><span class="pre">degrees()</span></code></a> and <a class="reference internal" href="../generated/generated/turtle.radians.html#turtle.radians" title="turtle.radians"><code class="xref py py-func docutils literal"><span class="pre">radians()</span></code></a> functions.)  Angle
+orientation depends on the turtle mode, see <a class="reference internal" href="../generated/generated/turtle.mode.html#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal"><span class="pre">mode()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -587,7 +587,7 @@ orientation depends on the turtle mode, see <a class="reference internal" href="
 </tbody>
 </table>
 <p>If <em>y</em> is <code class="docutils literal"><span class="pre">None</span></code>, <em>x</em> must be a pair of coordinates or a <a class="reference internal" href="../generated/generated/turtle.Vec2D.html#turtle.Vec2D" title="turtle.Vec2D"><code class="xref py py-class docutils literal"><span class="pre">Vec2D</span></code></a>
-(e.g. as returned by <a class="reference internal" href="../generated/turtle.pos.html#turtle.pos" title="turtle.pos"><code class="xref py py-func docutils literal"><span class="pre">pos()</span></code></a>).</p>
+(e.g. as returned by <a class="reference internal" href="../generated/generated/turtle.pos.html#turtle.pos" title="turtle.pos"><code class="xref py py-func docutils literal"><span class="pre">pos()</span></code></a>).</p>
 <p>Move turtle to an absolute position.  If the pen is down, draw line.  Do
 not change the turtle&#8217;s orientation.</p>
 </dd></dl>
@@ -667,7 +667,7 @@ directions in degrees:</p>
 <dt id="turtle.home">
 <code class="descclassname">turtle.</code><code class="descname">home</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.home" title="Permalink to this definition">¶</a></dt>
 <dd><p>Move turtle to the origin &#8211; coordinates (0,0) &#8211; and set its heading to
-its start-orientation (which depends on the mode, see <a class="reference internal" href="../generated/turtle.mode.html#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal"><span class="pre">mode()</span></code></a>).</p>
+its start-orientation (which depends on the mode, see <a class="reference internal" href="../generated/generated/turtle.mode.html#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal"><span class="pre">mode()</span></code></a>).</p>
 </dd></dl>
 
 <dl class="function">
@@ -733,7 +733,7 @@ it by calling <code class="docutils literal"><span class="pre">clearstamp(stamp_
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stampid</strong> &#8211; an integer, must be return value of previous
-<a class="reference internal" href="../generated/turtle.stamp.html#turtle.stamp" title="turtle.stamp"><code class="xref py py-func docutils literal"><span class="pre">stamp()</span></code></a> call</td>
+<a class="reference internal" href="../generated/generated/turtle.stamp.html#turtle.stamp" title="turtle.stamp"><code class="xref py py-func docutils literal"><span class="pre">stamp()</span></code></a> call</td>
 </tr>
 </tbody>
 </table>
@@ -839,7 +839,7 @@ orientation which depends on the mode - &#8220;standard&#8221;/&#8221;world&#822
 <dt id="turtle.heading">
 <code class="descclassname">turtle.</code><code class="descname">heading</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.heading" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the turtle&#8217;s current heading (value depends on the turtle mode, see
-<a class="reference internal" href="../generated/turtle.mode.html#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal"><span class="pre">mode()</span></code></a>).</p>
+<a class="reference internal" href="../generated/generated/turtle.mode.html#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal"><span class="pre">mode()</span></code></a>).</p>
 </dd></dl>
 
 <dl class="function">
@@ -958,7 +958,7 @@ key/value pairs:</p>
 <li>&#8220;outline&#8221;: positive number</li>
 <li>&#8220;tilt&#8221;: number</li>
 </ul>
-<p>This dictionary can be used as argument for a subsequent call to <a class="reference internal" href="../generated/turtle.pen.html#turtle.pen" title="turtle.pen"><code class="xref py py-func docutils literal"><span class="pre">pen()</span></code></a>
+<p>This dictionary can be used as argument for a subsequent call to <a class="reference internal" href="../generated/generated/turtle.pen.html#turtle.pen" title="turtle.pen"><code class="xref py py-func docutils literal"><span class="pre">pen()</span></code></a>
 to restore the former pen-state.  Moreover one or more of these attributes
 can be provided as keyword-arguments.  This can be used to set several pen
 attributes in one statement.</p>
@@ -989,7 +989,7 @@ such as <code class="docutils literal"><span class="pre">&quot;red&quot;</span><
 <dt><code class="docutils literal"><span class="pre">pencolor((r,</span> <span class="pre">g,</span> <span class="pre">b))</span></code></dt>
 <dd>Set pencolor to the RGB color represented by the tuple of <em>r</em>, <em>g</em>, and
 <em>b</em>.  Each of <em>r</em>, <em>g</em>, and <em>b</em> must be in the range 0..colormode, where
-colormode is either 1.0 or 255 (see <a class="reference internal" href="../generated/turtle.colormode.html#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal"><span class="pre">colormode()</span></code></a>).</dd>
+colormode is either 1.0 or 255 (see <a class="reference internal" href="../generated/generated/turtle.colormode.html#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal"><span class="pre">colormode()</span></code></a>).</dd>
 <dt><code class="docutils literal"><span class="pre">pencolor(r,</span> <span class="pre">g,</span> <span class="pre">b)</span></code></dt>
 <dd><blockquote class="first">
 <div>Set pencolor to the RGB color represented by <em>r</em>, <em>g</em>, and <em>b</em>.  Each of
@@ -1016,7 +1016,7 @@ such as <code class="docutils literal"><span class="pre">&quot;red&quot;</span><
 <dt><code class="docutils literal"><span class="pre">fillcolor((r,</span> <span class="pre">g,</span> <span class="pre">b))</span></code></dt>
 <dd>Set fillcolor to the RGB color represented by the tuple of <em>r</em>, <em>g</em>, and
 <em>b</em>.  Each of <em>r</em>, <em>g</em>, and <em>b</em> must be in the range 0..colormode, where
-colormode is either 1.0 or 255 (see <a class="reference internal" href="../generated/turtle.colormode.html#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal"><span class="pre">colormode()</span></code></a>).</dd>
+colormode is either 1.0 or 255 (see <a class="reference internal" href="../generated/generated/turtle.colormode.html#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal"><span class="pre">colormode()</span></code></a>).</dd>
 <dt><code class="docutils literal"><span class="pre">fillcolor(r,</span> <span class="pre">g,</span> <span class="pre">b)</span></code></dt>
 <dd><blockquote class="first">
 <div>Set fillcolor to the RGB color represented by <em>r</em>, <em>g</em>, and <em>b</em>.  Each of
@@ -1036,10 +1036,10 @@ follows:</p>
 <dl class="docutils">
 <dt><code class="docutils literal"><span class="pre">color()</span></code></dt>
 <dd>Return the current pencolor and the current fillcolor as a pair of color
-specification strings or tuples as returned by <a class="reference internal" href="../generated/turtle.pencolor.html#turtle.pencolor" title="turtle.pencolor"><code class="xref py py-func docutils literal"><span class="pre">pencolor()</span></code></a> and
-<a class="reference internal" href="../generated/turtle.fillcolor.html#turtle.fillcolor" title="turtle.fillcolor"><code class="xref py py-func docutils literal"><span class="pre">fillcolor()</span></code></a>.</dd>
+specification strings or tuples as returned by <a class="reference internal" href="../generated/generated/turtle.pencolor.html#turtle.pencolor" title="turtle.pencolor"><code class="xref py py-func docutils literal"><span class="pre">pencolor()</span></code></a> and
+<a class="reference internal" href="../generated/generated/turtle.fillcolor.html#turtle.fillcolor" title="turtle.fillcolor"><code class="xref py py-func docutils literal"><span class="pre">fillcolor()</span></code></a>.</dd>
 <dt><code class="docutils literal"><span class="pre">color(colorstring)</span></code>, <code class="docutils literal"><span class="pre">color((r,g,b))</span></code>, <code class="docutils literal"><span class="pre">color(r,g,b)</span></code></dt>
-<dd>Inputs as in <a class="reference internal" href="../generated/turtle.pencolor.html#turtle.pencolor" title="turtle.pencolor"><code class="xref py py-func docutils literal"><span class="pre">pencolor()</span></code></a>, set both, fillcolor and pencolor, to the
+<dd>Inputs as in <a class="reference internal" href="../generated/generated/turtle.pencolor.html#turtle.pencolor" title="turtle.pencolor"><code class="xref py py-func docutils literal"><span class="pre">pencolor()</span></code></a>, set both, fillcolor and pencolor, to the
 given value.</dd>
 <dt><code class="docutils literal"><span class="pre">color(colorstring1,</span> <span class="pre">colorstring2)</span></code>, <code class="docutils literal"><span class="pre">color((r1,g1,b1),</span> <span class="pre">(r2,g2,b2))</span></code></dt>
 <dd><blockquote class="first">
@@ -1051,7 +1051,7 @@ with the newly set colors.</p>
 </dl>
 </dd></dl>
 
-<p>See also: Screen method <a class="reference internal" href="../generated/turtle.colormode.html#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal"><span class="pre">colormode()</span></code></a>.</p>
+<p>See also: Screen method <a class="reference internal" href="../generated/generated/turtle.colormode.html#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal"><span class="pre">colormode()</span></code></a>.</p>
 </div>
 <div class="section" id="filling">
 <h4>5.3.4.3. Filling<a class="headerlink" href="#filling" title="Permalink to this headline">¶</a></h4>
@@ -1080,7 +1080,7 @@ with the newly set colors.</p>
 <dl class="function">
 <dt id="turtle.end_fill">
 <code class="descclassname">turtle.</code><code class="descname">end_fill</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.end_fill" title="Permalink to this definition">¶</a></dt>
-<dd><p>Fill the shape drawn after the last call to <a class="reference internal" href="../generated/turtle.begin_fill.html#turtle.begin_fill" title="turtle.begin_fill"><code class="xref py py-func docutils literal"><span class="pre">begin_fill()</span></code></a>.  Equivalent
+<dd><p>Fill the shape drawn after the last call to <a class="reference internal" href="../generated/generated/turtle.begin_fill.html#turtle.begin_fill" title="turtle.begin_fill"><code class="xref py py-func docutils literal"><span class="pre">begin_fill()</span></code></a>.  Equivalent
 to <code class="docutils literal"><span class="pre">fill(False)</span></code>.</p>
 </dd></dl>
 
@@ -1184,7 +1184,7 @@ drawing observably.</p>
 name of current shape.  Shape with <em>name</em> must exist in the TurtleScreen&#8217;s
 shape dictionary.  Initially there are the following polygon shapes: &#8220;arrow&#8221;,
 &#8220;turtle&#8221;, &#8220;circle&#8221;, &#8220;square&#8221;, &#8220;triangle&#8221;, &#8220;classic&#8221;.  To learn about how to
-deal with shapes see Screen method <a class="reference internal" href="../generated/turtle.register_shape.html#turtle.register_shape" title="turtle.register_shape"><code class="xref py py-func docutils literal"><span class="pre">register_shape()</span></code></a>.</p>
+deal with shapes see Screen method <a class="reference internal" href="../generated/generated/turtle.register_shape.html#turtle.register_shape" title="turtle.register_shape"><code class="xref py py-func docutils literal"><span class="pre">register_shape()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1205,10 +1205,10 @@ following effects:</p>
 <li>&#8220;auto&#8221;: adapts the appearance of the turtle corresponding to the value of pensize.</li>
 <li>&#8220;user&#8221;: adapts the appearance of the turtle according to the values of
 stretchfactor and outlinewidth (outline), which are set by
-<a class="reference internal" href="../generated/turtle.shapesize.html#turtle.shapesize" title="turtle.shapesize"><code class="xref py py-func docutils literal"><span class="pre">shapesize()</span></code></a>.</li>
+<a class="reference internal" href="../generated/generated/turtle.shapesize.html#turtle.shapesize" title="turtle.shapesize"><code class="xref py py-func docutils literal"><span class="pre">shapesize()</span></code></a>.</li>
 <li>&#8220;noresize&#8221;: no adaption of the turtle&#8217;s appearance takes place.</li>
 </ul>
-<p>resizemode(&#8220;user&#8221;) is called by <a class="reference internal" href="../generated/turtle.shapesize.html#turtle.shapesize" title="turtle.shapesize"><code class="xref py py-func docutils literal"><span class="pre">shapesize()</span></code></a> when used with arguments.</p>
+<p>resizemode(&#8220;user&#8221;) is called by <a class="reference internal" href="../generated/generated/turtle.shapesize.html#turtle.shapesize" title="turtle.shapesize"><code class="xref py py-func docutils literal"><span class="pre">shapesize()</span></code></a> when used with arguments.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1421,7 +1421,7 @@ TurtleScreen methods can then be called for that object.</p>
 </table>
 <p>Set or disable undobuffer.  If <em>size</em> is an integer an empty undobuffer of
 given size is installed.  <em>size</em> gives the maximum number of turtle actions
-that can be undone by the <a class="reference internal" href="../generated/turtle.undo.html#turtle.undo" title="turtle.undo"><code class="xref py py-func docutils literal"><span class="pre">undo()</span></code></a> method/function.  If <em>size</em> is
+that can be undone by the <a class="reference internal" href="../generated/generated/turtle.undo.html#turtle.undo" title="turtle.undo"><code class="xref py py-func docutils literal"><span class="pre">undo()</span></code></a> method/function.  If <em>size</em> is
 <code class="docutils literal"><span class="pre">None</span></code>, the undobuffer is disabled.</p>
 </dd></dl>
 
@@ -1469,7 +1469,7 @@ below:</p>
 </ol>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <a class="reference internal" href="../generated/generated/turtle.Shape.html#turtle.Shape" title="turtle.Shape"><code class="xref py py-class docutils literal"><span class="pre">Shape</span></code></a> class is used internally by the <a class="reference internal" href="../generated/turtle.register_shape.html#turtle.register_shape" title="turtle.register_shape"><code class="xref py py-func docutils literal"><span class="pre">register_shape()</span></code></a>
+<p class="last">The <a class="reference internal" href="../generated/generated/turtle.Shape.html#turtle.Shape" title="turtle.Shape"><code class="xref py py-class docutils literal"><span class="pre">Shape</span></code></a> class is used internally by the <a class="reference internal" href="../generated/generated/turtle.register_shape.html#turtle.register_shape" title="turtle.register_shape"><code class="xref py py-func docutils literal"><span class="pre">register_shape()</span></code></a>
 method in different ways.  The application programmer has to deal with the
 Shape class <em>only</em> when using compound shapes like shown above!</p>
 </div>
@@ -1643,7 +1643,7 @@ drawing delay, the slower the animation.</p>
 <p>Turn turtle animation on/off and set delay for update drawings.  If <em>n</em> is
 given, only each n-th regular screen update is really performed.  (Can be
 used to accelerate the drawing of complex graphics.)  Second argument sets
-delay value (see <a class="reference internal" href="../generated/turtle.delay.html#turtle.delay" title="turtle.delay"><code class="xref py py-func docutils literal"><span class="pre">delay()</span></code></a>).</p>
+delay value (see <a class="reference internal" href="../generated/generated/turtle.delay.html#turtle.delay" title="turtle.delay"><code class="xref py py-func docutils literal"><span class="pre">delay()</span></code></a>).</p>
 </dd></dl>
 
 <dl class="function">
@@ -1652,7 +1652,7 @@ delay value (see <a class="reference internal" href="../generated/turtle.delay.h
 <dd><p>Perform a TurtleScreen update. To be used when tracer is turned off.</p>
 </dd></dl>
 
-<p>See also the RawTurtle/Turtle method <a class="reference internal" href="../generated/turtle.speed.html#turtle.speed" title="turtle.speed"><code class="xref py py-func docutils literal"><span class="pre">speed()</span></code></a>.</p>
+<p>See also the RawTurtle/Turtle method <a class="reference internal" href="../generated/generated/turtle.speed.html#turtle.speed" title="turtle.speed"><code class="xref py py-func docutils literal"><span class="pre">speed()</span></code></a>.</p>
 </div>
 <div class="section" id="using-screen-events">
 <h3><a class="toc-backref" href="#id17">5.4.3. Using screen events</a><a class="headerlink" href="#using-screen-events" title="Permalink to this headline">¶</a></h3>
@@ -1660,7 +1660,7 @@ delay value (see <a class="reference internal" href="../generated/turtle.delay.h
 <dt id="turtle.listen">
 <code class="descclassname">turtle.</code><code class="descname">listen</code><span class="sig-paren">(</span><em>xdummy=None</em>, <em>ydummy=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.listen" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set focus on TurtleScreen (in order to collect key-events).  Dummy arguments
-are provided in order to be able to pass <a class="reference internal" href="../generated/turtle.listen.html#turtle.listen" title="turtle.listen"><code class="xref py py-func docutils literal"><span class="pre">listen()</span></code></a> to the onclick method.</p>
+are provided in order to be able to pass <a class="reference internal" href="../generated/generated/turtle.listen.html#turtle.listen" title="turtle.listen"><code class="xref py py-func docutils literal"><span class="pre">listen()</span></code></a> to the onclick method.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1680,7 +1680,7 @@ are provided in order to be able to pass <a class="reference internal" href="../
 </table>
 <p>Bind <em>fun</em> to key-release event of key.  If <em>fun</em> is <code class="docutils literal"><span class="pre">None</span></code>, event bindings
 are removed. Remark: in order to be able to register key-events, TurtleScreen
-must have the focus. (See method <a class="reference internal" href="../generated/turtle.listen.html#turtle.listen" title="turtle.listen"><code class="xref py py-func docutils literal"><span class="pre">listen()</span></code></a>.)</p>
+must have the focus. (See method <a class="reference internal" href="../generated/generated/turtle.listen.html#turtle.listen" title="turtle.listen"><code class="xref py py-func docutils literal"><span class="pre">listen()</span></code></a>.)</p>
 </dd></dl>
 
 <dl class="function">
@@ -1950,7 +1950,7 @@ Turtle/RawTurtle&#8221;.</p>
 <dt id="turtle.Turtle">
 <em class="property">class </em><code class="descclassname">turtle.</code><code class="descname">Turtle</code><a class="reference internal" href="../_modules/turtle.html#Turtle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#turtle.Turtle" title="Permalink to this definition">¶</a></dt>
 <dd><p>Subclass of RawTurtle, has the same interface but draws on a default
-<a class="reference internal" href="../generated/turtle.Screen.html#turtle.Screen" title="turtle.Screen"><code class="xref py py-class docutils literal"><span class="pre">Screen</span></code></a> object created automatically when needed for the first time.</p>
+<a class="reference internal" href="../generated/generated/turtle.Screen.html#turtle.Screen" title="turtle.Screen"><code class="xref py py-class docutils literal"><span class="pre">Screen</span></code></a> object created automatically when needed for the first time.</p>
 </dd></dl>
 
 <dl class="class">
@@ -2231,7 +2231,7 @@ objects as they occur in the docstrings.  The transformation of
 method-docstrings to function-docstrings will delete these names from the
 docstrings.</li>
 <li><em>using_IDLE</em>: Set this to <code class="docutils literal"><span class="pre">True</span></code> if you regularly work with IDLE and its -n
-switch (&#8220;no subprocess&#8221;).  This will prevent <a class="reference internal" href="../generated/turtle.exitonclick.html#turtle.exitonclick" title="turtle.exitonclick"><code class="xref py py-func docutils literal"><span class="pre">exitonclick()</span></code></a> to enter the
+switch (&#8220;no subprocess&#8221;).  This will prevent <a class="reference internal" href="../generated/generated/turtle.exitonclick.html#turtle.exitonclick" title="turtle.exitonclick"><code class="xref py py-func docutils literal"><span class="pre">exitonclick()</span></code></a> to enter the
 mainloop.</li>
 </ul>
 <p>There can be a <code class="file docutils literal"><span class="pre">turtle.cfg</span></code> file in the directory where <a class="reference internal" href="../generated/turtle.html#module-turtle" title="turtle"><code class="xref py py-mod docutils literal"><span class="pre">turtle</span></code></a> is
@@ -2276,8 +2276,8 @@ example for how to write and use such files.</li>
 <tr class="row-even"><td>bytedesign</td>
 <td>complex classical
 turtlegraphics pattern</td>
-<td><a class="reference internal" href="../generated/turtle.tracer.html#turtle.tracer" title="turtle.tracer"><code class="xref py py-func docutils literal"><span class="pre">tracer()</span></code></a>, delay,
-<a class="reference internal" href="../generated/turtle.update.html#turtle.update" title="turtle.update"><code class="xref py py-func docutils literal"><span class="pre">update()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/turtle.tracer.html#turtle.tracer" title="turtle.tracer"><code class="xref py py-func docutils literal"><span class="pre">tracer()</span></code></a>, delay,
+<a class="reference internal" href="../generated/generated/turtle.update.html#turtle.update" title="turtle.update"><code class="xref py py-func docutils literal"><span class="pre">update()</span></code></a></td>
 </tr>
 <tr class="row-odd"><td>chaos</td>
 <td>graphs Verhulst dynamics,
@@ -2295,7 +2295,7 @@ hands, ontimer</td>
 </tr>
 <tr class="row-odd"><td>colormixer</td>
 <td>experiment with r, g, b</td>
-<td><a class="reference internal" href="../generated/turtle.ondrag.html#turtle.ondrag" title="turtle.ondrag"><code class="xref py py-func docutils literal"><span class="pre">ondrag()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/turtle.ondrag.html#turtle.ondrag" title="turtle.ondrag"><code class="xref py py-func docutils literal"><span class="pre">ondrag()</span></code></a></td>
 </tr>
 <tr class="row-even"><td>fractalcurves</td>
 <td>Hilbert &amp; Koch curves</td>
@@ -2315,7 +2315,7 @@ as Hanoi discs
 <tr class="row-odd"><td>paint</td>
 <td>super minimalistic
 drawing program</td>
-<td><a class="reference internal" href="../generated/turtle.onclick.html#turtle.onclick" title="turtle.onclick"><code class="xref py py-func docutils literal"><span class="pre">onclick()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/turtle.onclick.html#turtle.onclick" title="turtle.onclick"><code class="xref py py-func docutils literal"><span class="pre">onclick()</span></code></a></td>
 </tr>
 <tr class="row-even"><td>peace</td>
 <td>elementary</td>
@@ -2325,7 +2325,7 @@ and animation</td>
 <tr class="row-odd"><td>penrose</td>
 <td>aperiodic tiling with
 kites and darts</td>
-<td><a class="reference internal" href="../generated/turtle.stamp.html#turtle.stamp" title="turtle.stamp"><code class="xref py py-func docutils literal"><span class="pre">stamp()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/turtle.stamp.html#turtle.stamp" title="turtle.stamp"><code class="xref py py-func docutils literal"><span class="pre">stamp()</span></code></a></td>
 </tr>
 <tr class="row-even"><td>planet_and_moon</td>
 <td>simulation of
@@ -2336,17 +2336,17 @@ gravitational system</td>
 <tr class="row-odd"><td>tree</td>
 <td>a (graphical) breadth
 first tree (using generators)</td>
-<td><a class="reference internal" href="../generated/turtle.clone.html#turtle.clone" title="turtle.clone"><code class="xref py py-func docutils literal"><span class="pre">clone()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/turtle.clone.html#turtle.clone" title="turtle.clone"><code class="xref py py-func docutils literal"><span class="pre">clone()</span></code></a></td>
 </tr>
 <tr class="row-even"><td>wikipedia</td>
 <td>a pattern from the wikipedia
 article on turtle graphics</td>
-<td><a class="reference internal" href="../generated/turtle.clone.html#turtle.clone" title="turtle.clone"><code class="xref py py-func docutils literal"><span class="pre">clone()</span></code></a>,
-<a class="reference internal" href="../generated/turtle.undo.html#turtle.undo" title="turtle.undo"><code class="xref py py-func docutils literal"><span class="pre">undo()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/turtle.clone.html#turtle.clone" title="turtle.clone"><code class="xref py py-func docutils literal"><span class="pre">clone()</span></code></a>,
+<a class="reference internal" href="../generated/generated/turtle.undo.html#turtle.undo" title="turtle.undo"><code class="xref py py-func docutils literal"><span class="pre">undo()</span></code></a></td>
 </tr>
 <tr class="row-odd"><td>yingyang</td>
 <td>another elementary example</td>
-<td><a class="reference internal" href="../generated/turtle.circle.html#turtle.circle" title="turtle.circle"><code class="xref py py-func docutils literal"><span class="pre">circle()</span></code></a></td>
+<td><a class="reference internal" href="../generated/generated/turtle.circle.html#turtle.circle" title="turtle.circle"><code class="xref py py-func docutils literal"><span class="pre">circle()</span></code></a></td>
 </tr>
 </tbody>
 </table>

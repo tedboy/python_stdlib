@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       add_history
       clear_history
@@ -37,6 +37,38 @@
       set_pre_input_hook
       set_startup_hook
       write_history_file
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/readline.add_history
+       generated/readline.clear_history
+       generated/readline.get_begidx
+       generated/readline.get_completer
+       generated/readline.get_completer_delims
+       generated/readline.get_completion_type
+       generated/readline.get_current_history_length
+       generated/readline.get_endidx
+       generated/readline.get_history_item
+       generated/readline.get_history_length
+       generated/readline.get_line_buffer
+       generated/readline.insert_text
+       generated/readline.parse_and_bind
+       generated/readline.read_history_file
+       generated/readline.read_init_file
+       generated/readline.redisplay
+       generated/readline.remove_history_item
+       generated/readline.replace_history_item
+       generated/readline.set_completer
+       generated/readline.set_completer_delims
+       generated/readline.set_completion_display_matches_hook
+       generated/readline.set_history_length
+       generated/readline.set_pre_input_hook
+       generated/readline.set_startup_hook
+       generated/readline.write_history_file
+      
    
    
 

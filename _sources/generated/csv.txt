@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       StringIO
       field_size_limit
@@ -21,6 +21,22 @@
       register_dialect
       unregister_dialect
       writer
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/csv.StringIO
+       generated/csv.field_size_limit
+       generated/csv.get_dialect
+       generated/csv.list_dialects
+       generated/csv.reader
+       generated/csv.reduce
+       generated/csv.register_dialect
+       generated/csv.unregister_dialect
+       generated/csv.writer
+      
    
    
 

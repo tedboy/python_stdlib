@@ -212,7 +212,7 @@
 <span class="kn">import</span> <span class="nn">warnings</span>
 
 
-<div class="viewcode-block" id="readPlist"><a class="viewcode-back" href="../generated/plistlib.readPlist.html#plistlib.readPlist">[docs]</a><span class="k">def</span> <span class="nf">readPlist</span><span class="p">(</span><span class="n">pathOrFile</span><span class="p">):</span>
+<div class="viewcode-block" id="readPlist"><a class="viewcode-back" href="../generated/generated/plistlib.readPlist.html#plistlib.readPlist">[docs]</a><span class="k">def</span> <span class="nf">readPlist</span><span class="p">(</span><span class="n">pathOrFile</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Read a .plist file. &#39;pathOrFile&#39; may either be a file name or a</span>
 <span class="sd">    (readable) file object. Return the unpacked root object (which</span>
 <span class="sd">    usually is a dictionary).</span>
@@ -228,7 +228,7 @@
     <span class="k">return</span> <span class="n">rootObject</span></div>
 
 
-<div class="viewcode-block" id="writePlist"><a class="viewcode-back" href="../generated/plistlib.writePlist.html#plistlib.writePlist">[docs]</a><span class="k">def</span> <span class="nf">writePlist</span><span class="p">(</span><span class="n">rootObject</span><span class="p">,</span> <span class="n">pathOrFile</span><span class="p">):</span>
+<div class="viewcode-block" id="writePlist"><a class="viewcode-back" href="../generated/generated/plistlib.writePlist.html#plistlib.writePlist">[docs]</a><span class="k">def</span> <span class="nf">writePlist</span><span class="p">(</span><span class="n">rootObject</span><span class="p">,</span> <span class="n">pathOrFile</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Write &#39;rootObject&#39; to a .plist file. &#39;pathOrFile&#39; may either be a</span>
 <span class="sd">    file name or a (writable) file object.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -244,13 +244,13 @@
         <span class="n">pathOrFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
 
 
-<div class="viewcode-block" id="readPlistFromString"><a class="viewcode-back" href="../generated/plistlib.readPlistFromString.html#plistlib.readPlistFromString">[docs]</a><span class="k">def</span> <span class="nf">readPlistFromString</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<div class="viewcode-block" id="readPlistFromString"><a class="viewcode-back" href="../generated/generated/plistlib.readPlistFromString.html#plistlib.readPlistFromString">[docs]</a><span class="k">def</span> <span class="nf">readPlistFromString</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Read a plist data from a string. Return the root object.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">readPlist</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">data</span><span class="p">))</span></div>
 
 
-<div class="viewcode-block" id="writePlistToString"><a class="viewcode-back" href="../generated/plistlib.writePlistToString.html#plistlib.writePlistToString">[docs]</a><span class="k">def</span> <span class="nf">writePlistToString</span><span class="p">(</span><span class="n">rootObject</span><span class="p">):</span>
+<div class="viewcode-block" id="writePlistToString"><a class="viewcode-back" href="../generated/generated/plistlib.writePlistToString.html#plistlib.writePlistToString">[docs]</a><span class="k">def</span> <span class="nf">writePlistToString</span><span class="p">(</span><span class="n">rootObject</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return &#39;rootObject&#39; as a plist-formatted string.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">f</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
@@ -258,7 +258,7 @@
     <span class="k">return</span> <span class="n">f</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span></div>
 
 
-<div class="viewcode-block" id="readPlistFromResource"><a class="viewcode-back" href="../generated/plistlib.readPlistFromResource.html#plistlib.readPlistFromResource">[docs]</a><span class="k">def</span> <span class="nf">readPlistFromResource</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">restype</span><span class="o">=</span><span class="s1">&#39;plst&#39;</span><span class="p">,</span> <span class="n">resid</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="readPlistFromResource"><a class="viewcode-back" href="../generated/generated/plistlib.readPlistFromResource.html#plistlib.readPlistFromResource">[docs]</a><span class="k">def</span> <span class="nf">readPlistFromResource</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">restype</span><span class="o">=</span><span class="s1">&#39;plst&#39;</span><span class="p">,</span> <span class="n">resid</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Read plst resource from the resource fork of path.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warnpy3k</span><span class="p">(</span><span class="s2">&quot;In 3.x, readPlistFromResource is removed.&quot;</span><span class="p">,</span>
@@ -274,7 +274,7 @@
     <span class="k">return</span> <span class="n">readPlistFromString</span><span class="p">(</span><span class="n">plistData</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="writePlistToResource"><a class="viewcode-back" href="../generated/plistlib.writePlistToResource.html#plistlib.writePlistToResource">[docs]</a><span class="k">def</span> <span class="nf">writePlistToResource</span><span class="p">(</span><span class="n">rootObject</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">restype</span><span class="o">=</span><span class="s1">&#39;plst&#39;</span><span class="p">,</span> <span class="n">resid</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="writePlistToResource"><a class="viewcode-back" href="../generated/generated/plistlib.writePlistToResource.html#plistlib.writePlistToResource">[docs]</a><span class="k">def</span> <span class="nf">writePlistToResource</span><span class="p">(</span><span class="n">rootObject</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">restype</span><span class="o">=</span><span class="s1">&#39;plst&#39;</span><span class="p">,</span> <span class="n">resid</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Write &#39;rootObject&#39; as a plst resource to the resource fork of path.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warnpy3k</span><span class="p">(</span><span class="s2">&quot;In 3.x, writePlistToResource is removed.&quot;</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>

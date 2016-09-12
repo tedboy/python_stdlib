@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       defproperty
       getDOMImplementation
       parse
       parseString
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/xml.dom.minidom.defproperty
+       generated/xml.dom.minidom.getDOMImplementation
+       generated/xml.dom.minidom.parse
+       generated/xml.dom.minidom.parseString
+      
    
    
 

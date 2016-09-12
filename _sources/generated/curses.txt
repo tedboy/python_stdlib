@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       baudrate
       beep
@@ -85,6 +85,86 @@
       use_default_colors
       use_env
       wrapper
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/curses.baudrate
+       generated/curses.beep
+       generated/curses.can_change_color
+       generated/curses.cbreak
+       generated/curses.color_content
+       generated/curses.color_pair
+       generated/curses.curs_set
+       generated/curses.def_prog_mode
+       generated/curses.def_shell_mode
+       generated/curses.delay_output
+       generated/curses.doupdate
+       generated/curses.echo
+       generated/curses.endwin
+       generated/curses.erasechar
+       generated/curses.filter
+       generated/curses.flash
+       generated/curses.flushinp
+       generated/curses.getmouse
+       generated/curses.getsyx
+       generated/curses.getwin
+       generated/curses.halfdelay
+       generated/curses.has_colors
+       generated/curses.has_ic
+       generated/curses.has_il
+       generated/curses.has_key
+       generated/curses.init_color
+       generated/curses.init_pair
+       generated/curses.initscr
+       generated/curses.intrflush
+       generated/curses.is_term_resized
+       generated/curses.isendwin
+       generated/curses.keyname
+       generated/curses.killchar
+       generated/curses.longname
+       generated/curses.meta
+       generated/curses.mouseinterval
+       generated/curses.mousemask
+       generated/curses.napms
+       generated/curses.newpad
+       generated/curses.newwin
+       generated/curses.nl
+       generated/curses.nocbreak
+       generated/curses.noecho
+       generated/curses.nonl
+       generated/curses.noqiflush
+       generated/curses.noraw
+       generated/curses.pair_content
+       generated/curses.pair_number
+       generated/curses.putp
+       generated/curses.qiflush
+       generated/curses.raw
+       generated/curses.reset_prog_mode
+       generated/curses.reset_shell_mode
+       generated/curses.resetty
+       generated/curses.resize_term
+       generated/curses.resizeterm
+       generated/curses.savetty
+       generated/curses.setsyx
+       generated/curses.setupterm
+       generated/curses.start_color
+       generated/curses.termattrs
+       generated/curses.termname
+       generated/curses.tigetflag
+       generated/curses.tigetnum
+       generated/curses.tigetstr
+       generated/curses.tparm
+       generated/curses.typeahead
+       generated/curses.unctrl
+       generated/curses.ungetch
+       generated/curses.ungetmouse
+       generated/curses.use_default_colors
+       generated/curses.use_env
+       generated/curses.wrapper
+      
    
    
 

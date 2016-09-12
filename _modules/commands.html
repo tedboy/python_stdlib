@@ -181,7 +181,7 @@
 
 <span class="c1"># Get &#39;ls -l&#39; status for an object into a string</span>
 <span class="c1">#</span>
-<div class="viewcode-block" id="getstatus"><a class="viewcode-back" href="../generated/commands.getstatus.html#commands.getstatus">[docs]</a><span class="k">def</span> <span class="nf">getstatus</span><span class="p">(</span><span class="nb">file</span><span class="p">):</span>
+<div class="viewcode-block" id="getstatus"><a class="viewcode-back" href="../generated/generated/commands.getstatus.html#commands.getstatus">[docs]</a><span class="k">def</span> <span class="nf">getstatus</span><span class="p">(</span><span class="nb">file</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return output of &quot;ls -ld &lt;file&gt;&quot; in a string.&quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">warnings</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;commands.getstatus() is deprecated&quot;</span><span class="p">,</span> <span class="ne">DeprecationWarning</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -192,7 +192,7 @@
 <span class="c1"># The exit status is ignored; a trailing newline is stripped.</span>
 <span class="c1"># Assume the command will work with &#39;{ ... ; } 2&gt;&amp;1&#39; around it..</span>
 <span class="c1">#</span>
-<div class="viewcode-block" id="getoutput"><a class="viewcode-back" href="../generated/commands.getoutput.html#commands.getoutput">[docs]</a><span class="k">def</span> <span class="nf">getoutput</span><span class="p">(</span><span class="n">cmd</span><span class="p">):</span>
+<div class="viewcode-block" id="getoutput"><a class="viewcode-back" href="../generated/generated/commands.getoutput.html#commands.getoutput">[docs]</a><span class="k">def</span> <span class="nf">getoutput</span><span class="p">(</span><span class="n">cmd</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return output (stdout or stderr) of executing cmd in a shell.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">getstatusoutput</span><span class="p">(</span><span class="n">cmd</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span></div>
 
@@ -200,7 +200,7 @@
 <span class="c1"># Ditto but preserving the exit status.</span>
 <span class="c1"># Returns a pair (sts, output)</span>
 <span class="c1">#</span>
-<div class="viewcode-block" id="getstatusoutput"><a class="viewcode-back" href="../generated/commands.getstatusoutput.html#commands.getstatusoutput">[docs]</a><span class="k">def</span> <span class="nf">getstatusoutput</span><span class="p">(</span><span class="n">cmd</span><span class="p">):</span>
+<div class="viewcode-block" id="getstatusoutput"><a class="viewcode-back" href="../generated/generated/commands.getstatusoutput.html#commands.getstatusoutput">[docs]</a><span class="k">def</span> <span class="nf">getstatusoutput</span><span class="p">(</span><span class="n">cmd</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return (status, output) of executing cmd in a shell.&quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">os</span>
     <span class="n">pipe</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">&#39;{ &#39;</span> <span class="o">+</span> <span class="n">cmd</span> <span class="o">+</span> <span class="s1">&#39;; } 2&gt;&amp;1&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
@@ -213,7 +213,7 @@
 
 <span class="c1"># Make command argument from directory and pathname (prefix space, add quotes).</span>
 <span class="c1">#</span>
-<div class="viewcode-block" id="mk2arg"><a class="viewcode-back" href="../generated/commands.mk2arg.html#commands.mk2arg">[docs]</a><span class="k">def</span> <span class="nf">mk2arg</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+<div class="viewcode-block" id="mk2arg"><a class="viewcode-back" href="../generated/generated/commands.mk2arg.html#commands.mk2arg">[docs]</a><span class="k">def</span> <span class="nf">mk2arg</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">os</span>
     <span class="k">return</span> <span class="n">mkarg</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span></div>
 
@@ -225,7 +225,7 @@
 <span class="c1"># otherwise, enclose in double quotes and prefix quotable characters</span>
 <span class="c1"># with backslash.</span>
 <span class="c1">#</span>
-<div class="viewcode-block" id="mkarg"><a class="viewcode-back" href="../generated/commands.mkarg.html#commands.mkarg">[docs]</a><span class="k">def</span> <span class="nf">mkarg</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="viewcode-block" id="mkarg"><a class="viewcode-back" href="../generated/generated/commands.mkarg.html#commands.mkarg">[docs]</a><span class="k">def</span> <span class="nf">mkarg</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">if</span> <span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39; </span><span class="se">\&#39;</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">x</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">&#39;</span>
     <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39; &quot;&#39;</span>

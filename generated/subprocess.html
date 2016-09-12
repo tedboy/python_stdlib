@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="subprocess.Popen" href="generated/subprocess.Popen.html"/>
+        <link rel="next" title="subprocess.call()" href="generated/subprocess.call.html"/>
         <link rel="prev" title="rlcompleter.Completer.global_matches" href="generated/rlcompleter.Completer.global_matches.html"/> 
 
   
@@ -82,12 +82,87 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">subprocess</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-subprocess-module">Using the subprocess module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#security">Security</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#popen-objects">Popen objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#replacing-older-functions-with-the-subprocess-module">Replacing older functions with the subprocess module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#replacing-bin-sh-shell-backquote">Replacing /bin/sh shell backquote</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#replacing-shell-pipe-line">Replacing shell pipe line</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#replacing-os-system">Replacing os.system()</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#replacing-os-spawn">Replacing os.spawn*</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#replacing-os-popen">Replacing os.popen*</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#replacing-popen2">Replacing popen2.*</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="generated/subprocess.call.html"><code class="docutils literal"><span class="pre">subprocess.call()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="generated/subprocess.check_call.html"><code class="docutils literal"><span class="pre">subprocess.check_call()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="generated/subprocess.check_output.html"><code class="docutils literal"><span class="pre">subprocess.check_output()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="generated/subprocess.list2cmdline.html"><code class="docutils literal"><span class="pre">subprocess.list2cmdline()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="generated/subprocess.Popen.html"><code class="docutils literal"><span class="pre">subprocess.Popen</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#id15">Exceptions</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="subprocess.CalledProcessError.html">subprocess.CalledProcessError</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="socket.html"><code class="docutils literal"><span class="pre">socket</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssl.html"><code class="docutils literal"><span class="pre">ssl</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html"><code class="docutils literal"><span class="pre">signal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="popen2.html"><code class="docutils literal"><span class="pre">popen2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="asyncore.html"><code class="docutils literal"><span class="pre">asyncore</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="asynchat.html"><code class="docutils literal"><span class="pre">asynchat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -476,6 +551,28 @@ close_fds=True with subprocess.Popen.</li>
 </div>
 <div class="section" id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/subprocess.call.html#subprocess.call" title="subprocess.call"><code class="xref py py-obj docutils literal"><span class="pre">call</span></code></a>(*popenargs,&nbsp;**kwargs)</td>
+<td>Run command with arguments.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/subprocess.check_call.html#subprocess.check_call" title="subprocess.check_call"><code class="xref py py-obj docutils literal"><span class="pre">check_call</span></code></a>(*popenargs,&nbsp;**kwargs)</td>
+<td>Run command with arguments.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/subprocess.check_output.html#subprocess.check_output" title="subprocess.check_output"><code class="xref py py-obj docutils literal"><span class="pre">check_output</span></code></a>(*popenargs,&nbsp;**kwargs)</td>
+<td>Run command with arguments and return its output as a byte string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/subprocess.list2cmdline.html#subprocess.list2cmdline" title="subprocess.list2cmdline"><code class="xref py py-obj docutils literal"><span class="pre">list2cmdline</span></code></a>(seq)</td>
+<td>Translate a sequence of arguments into a command line</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h3>
@@ -517,7 +614,7 @@ close_fds=True with subprocess.Popen.</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/subprocess.Popen.html" class="btn btn-neutral float-right" title="subprocess.Popen" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/subprocess.call.html" class="btn btn-neutral float-right" title="subprocess.call()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="generated/rlcompleter.Completer.global_matches.html" class="btn btn-neutral" title="rlcompleter.Completer.global_matches" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

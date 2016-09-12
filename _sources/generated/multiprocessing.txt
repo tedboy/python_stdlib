@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       Array
       BoundedSemaphore
@@ -34,6 +34,35 @@
       freeze_support
       get_logger
       log_to_stderr
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/multiprocessing.Array
+       generated/multiprocessing.BoundedSemaphore
+       generated/multiprocessing.Condition
+       generated/multiprocessing.Event
+       generated/multiprocessing.JoinableQueue
+       generated/multiprocessing.Lock
+       generated/multiprocessing.Manager
+       generated/multiprocessing.Pipe
+       generated/multiprocessing.Pool
+       generated/multiprocessing.Queue
+       generated/multiprocessing.RLock
+       generated/multiprocessing.RawArray
+       generated/multiprocessing.RawValue
+       generated/multiprocessing.Semaphore
+       generated/multiprocessing.Value
+       generated/multiprocessing.active_children
+       generated/multiprocessing.allow_connection_pickling
+       generated/multiprocessing.cpu_count
+       generated/multiprocessing.current_process
+       generated/multiprocessing.freeze_support
+       generated/multiprocessing.get_logger
+       generated/multiprocessing.log_to_stderr
+      
    
    
 

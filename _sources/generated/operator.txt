@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       abs
       add
@@ -72,6 +72,73 @@
       truediv
       truth
       xor
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/operator.abs
+       generated/operator.add
+       generated/operator.and_
+       generated/operator.concat
+       generated/operator.contains
+       generated/operator.countOf
+       generated/operator.delitem
+       generated/operator.delslice
+       generated/operator.div
+       generated/operator.eq
+       generated/operator.floordiv
+       generated/operator.ge
+       generated/operator.getitem
+       generated/operator.getslice
+       generated/operator.gt
+       generated/operator.iadd
+       generated/operator.iand
+       generated/operator.iconcat
+       generated/operator.idiv
+       generated/operator.ifloordiv
+       generated/operator.ilshift
+       generated/operator.imod
+       generated/operator.imul
+       generated/operator.index
+       generated/operator.indexOf
+       generated/operator.inv
+       generated/operator.invert
+       generated/operator.ior
+       generated/operator.ipow
+       generated/operator.irepeat
+       generated/operator.irshift
+       generated/operator.isCallable
+       generated/operator.isMappingType
+       generated/operator.isNumberType
+       generated/operator.isSequenceType
+       generated/operator.is_
+       generated/operator.is_not
+       generated/operator.isub
+       generated/operator.itruediv
+       generated/operator.ixor
+       generated/operator.le
+       generated/operator.lshift
+       generated/operator.lt
+       generated/operator.mod
+       generated/operator.mul
+       generated/operator.ne
+       generated/operator.neg
+       generated/operator.not_
+       generated/operator.or_
+       generated/operator.pos
+       generated/operator.pow
+       generated/operator.repeat
+       generated/operator.rshift
+       generated/operator.sequenceIncludes
+       generated/operator.setitem
+       generated/operator.setslice
+       generated/operator.sub
+       generated/operator.truediv
+       generated/operator.truth
+       generated/operator.xor
+      
    
    
 

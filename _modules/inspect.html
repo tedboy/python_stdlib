@@ -195,7 +195,7 @@
 <span class="n">TPFLAGS_IS_ABSTRACT</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">20</span>
 
 <span class="c1"># ----------------------------------------------------------- type-checking</span>
-<div class="viewcode-block" id="ismodule"><a class="viewcode-back" href="../generated/inspect.ismodule.html#inspect.ismodule">[docs]</a><span class="k">def</span> <span class="nf">ismodule</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="ismodule"><a class="viewcode-back" href="../generated/generated/inspect.ismodule.html#inspect.ismodule">[docs]</a><span class="k">def</span> <span class="nf">ismodule</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is a module.</span>
 
 <span class="sd">    Module objects provide these attributes:</span>
@@ -203,7 +203,7 @@
 <span class="sd">        __file__        filename (missing for built-in modules)&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">ModuleType</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="isclass"><a class="viewcode-back" href="../generated/inspect.isclass.html#inspect.isclass">[docs]</a><span class="k">def</span> <span class="nf">isclass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="isclass"><a class="viewcode-back" href="../generated/generated/inspect.isclass.html#inspect.isclass">[docs]</a><span class="k">def</span> <span class="nf">isclass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is a class.</span>
 
 <span class="sd">    Class objects provide these attributes:</span>
@@ -211,7 +211,7 @@
 <span class="sd">        __module__      name of module in which this class was defined&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="p">(</span><span class="nb">type</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">ClassType</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="ismethod"><a class="viewcode-back" href="../generated/inspect.ismethod.html#inspect.ismethod">[docs]</a><span class="k">def</span> <span class="nf">ismethod</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="ismethod"><a class="viewcode-back" href="../generated/generated/inspect.ismethod.html#inspect.ismethod">[docs]</a><span class="k">def</span> <span class="nf">ismethod</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is an instance method.</span>
 
 <span class="sd">    Instance method objects provide these attributes:</span>
@@ -222,7 +222,7 @@
 <span class="sd">        im_self         instance to which this method is bound, or None&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">MethodType</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="ismethoddescriptor"><a class="viewcode-back" href="../generated/inspect.ismethoddescriptor.html#inspect.ismethoddescriptor">[docs]</a><span class="k">def</span> <span class="nf">ismethoddescriptor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="ismethoddescriptor"><a class="viewcode-back" href="../generated/generated/inspect.ismethoddescriptor.html#inspect.ismethoddescriptor">[docs]</a><span class="k">def</span> <span class="nf">ismethoddescriptor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is a method descriptor.</span>
 
 <span class="sd">    But not if ismethod() or isclass() or isfunction() are true.</span>
@@ -242,7 +242,7 @@
             <span class="ow">and</span> <span class="ow">not</span> <span class="n">isfunction</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
             <span class="ow">and</span> <span class="ow">not</span> <span class="n">isclass</span><span class="p">(</span><span class="nb">object</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="isdatadescriptor"><a class="viewcode-back" href="../generated/inspect.isdatadescriptor.html#inspect.isdatadescriptor">[docs]</a><span class="k">def</span> <span class="nf">isdatadescriptor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="isdatadescriptor"><a class="viewcode-back" href="../generated/generated/inspect.isdatadescriptor.html#inspect.isdatadescriptor">[docs]</a><span class="k">def</span> <span class="nf">isdatadescriptor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is a data descriptor.</span>
 
 <span class="sd">    Data descriptors have both a __get__ and a __set__ attribute.  Examples are</span>
@@ -262,7 +262,7 @@
         <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">MemberDescriptorType</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="c1"># Other implementations</span>
-<div class="viewcode-block" id="ismemberdescriptor"><a class="viewcode-back" href="../generated/inspect.ismemberdescriptor.html#inspect.ismemberdescriptor">[docs]</a>    <span class="k">def</span> <span class="nf">ismemberdescriptor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="ismemberdescriptor"><a class="viewcode-back" href="../generated/generated/inspect.ismemberdescriptor.html#inspect.ismemberdescriptor">[docs]</a>    <span class="k">def</span> <span class="nf">ismemberdescriptor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return true if the object is a member descriptor.</span>
 
 <span class="sd">        Member descriptors are specialized descriptors defined in extension</span>
@@ -279,14 +279,14 @@
         <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">GetSetDescriptorType</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="c1"># Other implementations</span>
-<div class="viewcode-block" id="isgetsetdescriptor"><a class="viewcode-back" href="../generated/inspect.isgetsetdescriptor.html#inspect.isgetsetdescriptor">[docs]</a>    <span class="k">def</span> <span class="nf">isgetsetdescriptor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="isgetsetdescriptor"><a class="viewcode-back" href="../generated/generated/inspect.isgetsetdescriptor.html#inspect.isgetsetdescriptor">[docs]</a>    <span class="k">def</span> <span class="nf">isgetsetdescriptor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Return true if the object is a getset descriptor.</span>
 
 <span class="sd">        getset descriptors are specialized descriptors defined in extension</span>
 <span class="sd">        modules.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">False</span></div>
 
-<div class="viewcode-block" id="isfunction"><a class="viewcode-back" href="../generated/inspect.isfunction.html#inspect.isfunction">[docs]</a><span class="k">def</span> <span class="nf">isfunction</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="isfunction"><a class="viewcode-back" href="../generated/generated/inspect.isfunction.html#inspect.isfunction">[docs]</a><span class="k">def</span> <span class="nf">isfunction</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is a user-defined function.</span>
 
 <span class="sd">    Function objects provide these attributes:</span>
@@ -299,7 +299,7 @@
 <span class="sd">        func_name       (same as __name__)&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">FunctionType</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="isgeneratorfunction"><a class="viewcode-back" href="../generated/inspect.isgeneratorfunction.html#inspect.isgeneratorfunction">[docs]</a><span class="k">def</span> <span class="nf">isgeneratorfunction</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="isgeneratorfunction"><a class="viewcode-back" href="../generated/generated/inspect.isgeneratorfunction.html#inspect.isgeneratorfunction">[docs]</a><span class="k">def</span> <span class="nf">isgeneratorfunction</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is a user-defined generator function.</span>
 
 <span class="sd">    Generator function objects provides same attributes as functions.</span>
@@ -308,7 +308,7 @@
     <span class="k">return</span> <span class="nb">bool</span><span class="p">((</span><span class="n">isfunction</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="ow">or</span> <span class="n">ismethod</span><span class="p">(</span><span class="nb">object</span><span class="p">))</span> <span class="ow">and</span>
                 <span class="nb">object</span><span class="o">.</span><span class="n">func_code</span><span class="o">.</span><span class="n">co_flags</span> <span class="o">&amp;</span> <span class="n">CO_GENERATOR</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="isgenerator"><a class="viewcode-back" href="../generated/inspect.isgenerator.html#inspect.isgenerator">[docs]</a><span class="k">def</span> <span class="nf">isgenerator</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="isgenerator"><a class="viewcode-back" href="../generated/generated/inspect.isgenerator.html#inspect.isgenerator">[docs]</a><span class="k">def</span> <span class="nf">isgenerator</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is a generator.</span>
 
 <span class="sd">    Generator objects provide these attributes:</span>
@@ -325,7 +325,7 @@
 <span class="sd">        throw           used to raise an exception inside the generator&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">GeneratorType</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="istraceback"><a class="viewcode-back" href="../generated/inspect.istraceback.html#inspect.istraceback">[docs]</a><span class="k">def</span> <span class="nf">istraceback</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="istraceback"><a class="viewcode-back" href="../generated/generated/inspect.istraceback.html#inspect.istraceback">[docs]</a><span class="k">def</span> <span class="nf">istraceback</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is a traceback.</span>
 
 <span class="sd">    Traceback objects provide these attributes:</span>
@@ -335,7 +335,7 @@
 <span class="sd">        tb_next         next inner traceback object (called by this level)&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">TracebackType</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="isframe"><a class="viewcode-back" href="../generated/inspect.isframe.html#inspect.isframe">[docs]</a><span class="k">def</span> <span class="nf">isframe</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="isframe"><a class="viewcode-back" href="../generated/generated/inspect.isframe.html#inspect.isframe">[docs]</a><span class="k">def</span> <span class="nf">isframe</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is a frame object.</span>
 
 <span class="sd">    Frame objects provide these attributes:</span>
@@ -353,7 +353,7 @@
 <span class="sd">        f_trace         tracing function for this frame, or None&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">FrameType</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="iscode"><a class="viewcode-back" href="../generated/inspect.iscode.html#inspect.iscode">[docs]</a><span class="k">def</span> <span class="nf">iscode</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="iscode"><a class="viewcode-back" href="../generated/generated/inspect.iscode.html#inspect.iscode">[docs]</a><span class="k">def</span> <span class="nf">iscode</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is a code object.</span>
 
 <span class="sd">    Code objects provide these attributes:</span>
@@ -371,7 +371,7 @@
 <span class="sd">        co_varnames     tuple of names of arguments and local variables&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">CodeType</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="isbuiltin"><a class="viewcode-back" href="../generated/inspect.isbuiltin.html#inspect.isbuiltin">[docs]</a><span class="k">def</span> <span class="nf">isbuiltin</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="isbuiltin"><a class="viewcode-back" href="../generated/generated/inspect.isbuiltin.html#inspect.isbuiltin">[docs]</a><span class="k">def</span> <span class="nf">isbuiltin</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is a built-in function or method.</span>
 
 <span class="sd">    Built-in functions and methods provide these attributes:</span>
@@ -380,18 +380,18 @@
 <span class="sd">        __self__        instance to which a method is bound, or None&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">BuiltinFunctionType</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="isroutine"><a class="viewcode-back" href="../generated/inspect.isroutine.html#inspect.isroutine">[docs]</a><span class="k">def</span> <span class="nf">isroutine</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="isroutine"><a class="viewcode-back" href="../generated/generated/inspect.isroutine.html#inspect.isroutine">[docs]</a><span class="k">def</span> <span class="nf">isroutine</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is any kind of function or method.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">isbuiltin</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
             <span class="ow">or</span> <span class="n">isfunction</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
             <span class="ow">or</span> <span class="n">ismethod</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
             <span class="ow">or</span> <span class="n">ismethoddescriptor</span><span class="p">(</span><span class="nb">object</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="isabstract"><a class="viewcode-back" href="../generated/inspect.isabstract.html#inspect.isabstract">[docs]</a><span class="k">def</span> <span class="nf">isabstract</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="isabstract"><a class="viewcode-back" href="../generated/generated/inspect.isabstract.html#inspect.isabstract">[docs]</a><span class="k">def</span> <span class="nf">isabstract</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the object is an abstract base class (ABC).&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="nb">type</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">object</span><span class="o">.</span><span class="n">__flags__</span> <span class="o">&amp;</span> <span class="n">TPFLAGS_IS_ABSTRACT</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="getmembers"><a class="viewcode-back" href="../generated/inspect.getmembers.html#inspect.getmembers">[docs]</a><span class="k">def</span> <span class="nf">getmembers</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">predicate</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="getmembers"><a class="viewcode-back" href="../generated/generated/inspect.getmembers.html#inspect.getmembers">[docs]</a><span class="k">def</span> <span class="nf">getmembers</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">predicate</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return all members of an object as (name, value) pairs sorted by name.</span>
 <span class="sd">    Optionally, only return members that satisfy a given predicate.&quot;&quot;&quot;</span>
     <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
@@ -407,7 +407,7 @@
 
 <span class="n">Attribute</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Attribute&#39;</span><span class="p">,</span> <span class="s1">&#39;name kind defining_class object&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="classify_class_attrs"><a class="viewcode-back" href="../generated/inspect.classify_class_attrs.html#inspect.classify_class_attrs">[docs]</a><span class="k">def</span> <span class="nf">classify_class_attrs</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
+<div class="viewcode-block" id="classify_class_attrs"><a class="viewcode-back" href="../generated/generated/inspect.classify_class_attrs.html#inspect.classify_class_attrs">[docs]</a><span class="k">def</span> <span class="nf">classify_class_attrs</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return list of attribute-descriptor tuples.</span>
 
 <span class="sd">    For each name in dir(cls), the return list contains a 4-tuple</span>
@@ -484,7 +484,7 @@
     <span class="k">for</span> <span class="n">base</span> <span class="ow">in</span> <span class="n">cls</span><span class="o">.</span><span class="n">__bases__</span><span class="p">:</span>
         <span class="n">_searchbases</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">accum</span><span class="p">)</span>
 
-<div class="viewcode-block" id="getmro"><a class="viewcode-back" href="../generated/inspect.getmro.html#inspect.getmro">[docs]</a><span class="k">def</span> <span class="nf">getmro</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
+<div class="viewcode-block" id="getmro"><a class="viewcode-back" href="../generated/generated/inspect.getmro.html#inspect.getmro">[docs]</a><span class="k">def</span> <span class="nf">getmro</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
     <span class="s2">&quot;Return tuple of base classes (including cls) in method resolution order.&quot;</span>
     <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="s2">&quot;__mro__&quot;</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">cls</span><span class="o">.</span><span class="n">__mro__</span>
@@ -494,12 +494,12 @@
         <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></div>
 
 <span class="c1"># -------------------------------------------------- source code extraction</span>
-<div class="viewcode-block" id="indentsize"><a class="viewcode-back" href="../generated/inspect.indentsize.html#inspect.indentsize">[docs]</a><span class="k">def</span> <span class="nf">indentsize</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+<div class="viewcode-block" id="indentsize"><a class="viewcode-back" href="../generated/generated/inspect.indentsize.html#inspect.indentsize">[docs]</a><span class="k">def</span> <span class="nf">indentsize</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the indent size, in spaces, at the start of a line of text.&quot;&quot;&quot;</span>
     <span class="n">expline</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">expandtabs</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
     <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">expline</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="n">expline</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="getdoc"><a class="viewcode-back" href="../generated/inspect.getdoc.html#inspect.getdoc">[docs]</a><span class="k">def</span> <span class="nf">getdoc</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="getdoc"><a class="viewcode-back" href="../generated/generated/inspect.getdoc.html#inspect.getdoc">[docs]</a><span class="k">def</span> <span class="nf">getdoc</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get the documentation string for an object.</span>
 
 <span class="sd">    All tabs are expanded to spaces.  To clean up docstrings that are</span>
@@ -513,7 +513,7 @@
         <span class="k">return</span> <span class="bp">None</span>
     <span class="k">return</span> <span class="n">cleandoc</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="cleandoc"><a class="viewcode-back" href="../generated/inspect.cleandoc.html#inspect.cleandoc">[docs]</a><span class="k">def</span> <span class="nf">cleandoc</span><span class="p">(</span><span class="n">doc</span><span class="p">):</span>
+<div class="viewcode-block" id="cleandoc"><a class="viewcode-back" href="../generated/generated/inspect.cleandoc.html#inspect.cleandoc">[docs]</a><span class="k">def</span> <span class="nf">cleandoc</span><span class="p">(</span><span class="n">doc</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Clean up indentation from docstrings.</span>
 
 <span class="sd">    Any whitespace that can be uniformly removed from the second line</span>
@@ -542,7 +542,7 @@
             <span class="n">lines</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">string</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="getfile"><a class="viewcode-back" href="../generated/inspect.getfile.html#inspect.getfile">[docs]</a><span class="k">def</span> <span class="nf">getfile</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="getfile"><a class="viewcode-back" href="../generated/generated/inspect.getfile.html#inspect.getfile">[docs]</a><span class="k">def</span> <span class="nf">getfile</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Work out which source or compiled file an object was defined in.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">ismodule</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="s1">&#39;__file__&#39;</span><span class="p">):</span>
@@ -568,7 +568,7 @@
 
 <span class="n">ModuleInfo</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;ModuleInfo&#39;</span><span class="p">,</span> <span class="s1">&#39;name suffix mode module_type&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="getmoduleinfo"><a class="viewcode-back" href="../generated/inspect.getmoduleinfo.html#inspect.getmoduleinfo">[docs]</a><span class="k">def</span> <span class="nf">getmoduleinfo</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="getmoduleinfo"><a class="viewcode-back" href="../generated/generated/inspect.getmoduleinfo.html#inspect.getmoduleinfo">[docs]</a><span class="k">def</span> <span class="nf">getmoduleinfo</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get the module name, suffix, mode, and module type for a given file.&quot;&quot;&quot;</span>
     <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
     <span class="n">suffixes</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">info</span><span class="p">:</span>
@@ -579,12 +579,12 @@
         <span class="k">if</span> <span class="n">filename</span><span class="p">[</span><span class="n">neglen</span><span class="p">:]</span> <span class="o">==</span> <span class="n">suffix</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">ModuleInfo</span><span class="p">(</span><span class="n">filename</span><span class="p">[:</span><span class="n">neglen</span><span class="p">],</span> <span class="n">suffix</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">mtype</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="getmodulename"><a class="viewcode-back" href="../generated/inspect.getmodulename.html#inspect.getmodulename">[docs]</a><span class="k">def</span> <span class="nf">getmodulename</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="getmodulename"><a class="viewcode-back" href="../generated/generated/inspect.getmodulename.html#inspect.getmodulename">[docs]</a><span class="k">def</span> <span class="nf">getmodulename</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the module name for a given file, or None.&quot;&quot;&quot;</span>
     <span class="n">info</span> <span class="o">=</span> <span class="n">getmoduleinfo</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">info</span><span class="p">:</span> <span class="k">return</span> <span class="n">info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
 
-<div class="viewcode-block" id="getsourcefile"><a class="viewcode-back" href="../generated/inspect.getsourcefile.html#inspect.getsourcefile">[docs]</a><span class="k">def</span> <span class="nf">getsourcefile</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="getsourcefile"><a class="viewcode-back" href="../generated/generated/inspect.getsourcefile.html#inspect.getsourcefile">[docs]</a><span class="k">def</span> <span class="nf">getsourcefile</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the filename that can be used to locate an object&#39;s source.</span>
 <span class="sd">    Return None if no way can be identified to get the source.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -604,7 +604,7 @@
     <span class="k">if</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">linecache</span><span class="o">.</span><span class="n">cache</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">filename</span></div>
 
-<div class="viewcode-block" id="getabsfile"><a class="viewcode-back" href="../generated/inspect.getabsfile.html#inspect.getabsfile">[docs]</a><span class="k">def</span> <span class="nf">getabsfile</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">_filename</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="getabsfile"><a class="viewcode-back" href="../generated/generated/inspect.getabsfile.html#inspect.getabsfile">[docs]</a><span class="k">def</span> <span class="nf">getabsfile</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">_filename</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return an absolute path to the source or compiled file for an object.</span>
 
 <span class="sd">    The idea is for each object to have a unique origin, so this routine</span>
@@ -616,7 +616,7 @@
 <span class="n">modulesbyfile</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">_filesbymodname</span> <span class="o">=</span> <span class="p">{}</span>
 
-<div class="viewcode-block" id="getmodule"><a class="viewcode-back" href="../generated/inspect.getmodule.html#inspect.getmodule">[docs]</a><span class="k">def</span> <span class="nf">getmodule</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">_filename</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="getmodule"><a class="viewcode-back" href="../generated/generated/inspect.getmodule.html#inspect.getmodule">[docs]</a><span class="k">def</span> <span class="nf">getmodule</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">_filename</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the module an object was defined in, or None if not found.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">ismodule</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">object</span>
@@ -662,7 +662,7 @@
         <span class="k">if</span> <span class="n">builtinobject</span> <span class="ow">is</span> <span class="nb">object</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">builtin</span></div>
 
-<div class="viewcode-block" id="findsource"><a class="viewcode-back" href="../generated/inspect.findsource.html#inspect.findsource">[docs]</a><span class="k">def</span> <span class="nf">findsource</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="findsource"><a class="viewcode-back" href="../generated/generated/inspect.findsource.html#inspect.findsource">[docs]</a><span class="k">def</span> <span class="nf">findsource</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the entire source file and starting line number for an object.</span>
 
 <span class="sd">    The argument may be a module, class, method, function, traceback, frame,</span>
@@ -729,7 +729,7 @@
         <span class="k">return</span> <span class="n">lines</span><span class="p">,</span> <span class="n">lnum</span>
     <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;could not find code object&#39;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="getcomments"><a class="viewcode-back" href="../generated/inspect.getcomments.html#inspect.getcomments">[docs]</a><span class="k">def</span> <span class="nf">getcomments</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="getcomments"><a class="viewcode-back" href="../generated/generated/inspect.getcomments.html#inspect.getcomments">[docs]</a><span class="k">def</span> <span class="nf">getcomments</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get lines of comments immediately preceding an object&#39;s source code.</span>
 
 <span class="sd">    Returns None when source can&#39;t be found.</span>
@@ -817,7 +817,7 @@
             <span class="c1"># block as well, except the pseudo-tokens COMMENT and NL.</span>
             <span class="k">raise</span> <span class="n">EndOfBlock</span></div></div>
 
-<div class="viewcode-block" id="getblock"><a class="viewcode-back" href="../generated/inspect.getblock.html#inspect.getblock">[docs]</a><span class="k">def</span> <span class="nf">getblock</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
+<div class="viewcode-block" id="getblock"><a class="viewcode-back" href="../generated/generated/inspect.getblock.html#inspect.getblock">[docs]</a><span class="k">def</span> <span class="nf">getblock</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Extract the block of code at the top of the given list of lines.&quot;&quot;&quot;</span>
     <span class="n">blockfinder</span> <span class="o">=</span> <span class="n">BlockFinder</span><span class="p">()</span>
     <span class="k">try</span><span class="p">:</span>
@@ -826,7 +826,7 @@
         <span class="k">pass</span>
     <span class="k">return</span> <span class="n">lines</span><span class="p">[:</span><span class="n">blockfinder</span><span class="o">.</span><span class="n">last</span><span class="p">]</span></div>
 
-<div class="viewcode-block" id="getsourcelines"><a class="viewcode-back" href="../generated/inspect.getsourcelines.html#inspect.getsourcelines">[docs]</a><span class="k">def</span> <span class="nf">getsourcelines</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="getsourcelines"><a class="viewcode-back" href="../generated/generated/inspect.getsourcelines.html#inspect.getsourcelines">[docs]</a><span class="k">def</span> <span class="nf">getsourcelines</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return a list of source lines and starting line number for an object.</span>
 
 <span class="sd">    The argument may be a module, class, method, function, traceback, frame,</span>
@@ -839,7 +839,7 @@
     <span class="k">if</span> <span class="n">ismodule</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span> <span class="k">return</span> <span class="n">lines</span><span class="p">,</span> <span class="mi">0</span>
     <span class="k">else</span><span class="p">:</span> <span class="k">return</span> <span class="n">getblock</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">lnum</span><span class="p">:]),</span> <span class="n">lnum</span> <span class="o">+</span> <span class="mi">1</span></div>
 
-<div class="viewcode-block" id="getsource"><a class="viewcode-back" href="../generated/inspect.getsource.html#inspect.getsource">[docs]</a><span class="k">def</span> <span class="nf">getsource</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="getsource"><a class="viewcode-back" href="../generated/generated/inspect.getsource.html#inspect.getsource">[docs]</a><span class="k">def</span> <span class="nf">getsource</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the text of the source code for an object.</span>
 
 <span class="sd">    The argument may be a module, class, method, function, traceback, frame,</span>
@@ -849,7 +849,7 @@
     <span class="k">return</span> <span class="n">string</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></div>
 
 <span class="c1"># --------------------------------------------------- class tree extraction</span>
-<div class="viewcode-block" id="walktree"><a class="viewcode-back" href="../generated/inspect.walktree.html#inspect.walktree">[docs]</a><span class="k">def</span> <span class="nf">walktree</span><span class="p">(</span><span class="n">classes</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+<div class="viewcode-block" id="walktree"><a class="viewcode-back" href="../generated/generated/inspect.walktree.html#inspect.walktree">[docs]</a><span class="k">def</span> <span class="nf">walktree</span><span class="p">(</span><span class="n">classes</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Recursive helper function for getclasstree().&quot;&quot;&quot;</span>
     <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">classes</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">attrgetter</span><span class="p">(</span><span class="s1">&#39;__module__&#39;</span><span class="p">,</span> <span class="s1">&#39;__name__&#39;</span><span class="p">))</span>
@@ -859,7 +859,7 @@
             <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">walktree</span><span class="p">(</span><span class="n">children</span><span class="p">[</span><span class="n">c</span><span class="p">],</span> <span class="n">children</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">results</span></div>
 
-<div class="viewcode-block" id="getclasstree"><a class="viewcode-back" href="../generated/inspect.getclasstree.html#inspect.getclasstree">[docs]</a><span class="k">def</span> <span class="nf">getclasstree</span><span class="p">(</span><span class="n">classes</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="getclasstree"><a class="viewcode-back" href="../generated/generated/inspect.getclasstree.html#inspect.getclasstree">[docs]</a><span class="k">def</span> <span class="nf">getclasstree</span><span class="p">(</span><span class="n">classes</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Arrange the given list of classes into a hierarchy of nested lists.</span>
 
 <span class="sd">    Where a nested list appears, it contains classes derived from the class</span>
@@ -888,7 +888,7 @@
 <span class="c1"># ------------------------------------------------ argument list extraction</span>
 <span class="n">Arguments</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Arguments&#39;</span><span class="p">,</span> <span class="s1">&#39;args varargs keywords&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="getargs"><a class="viewcode-back" href="../generated/inspect.getargs.html#inspect.getargs">[docs]</a><span class="k">def</span> <span class="nf">getargs</span><span class="p">(</span><span class="n">co</span><span class="p">):</span>
+<div class="viewcode-block" id="getargs"><a class="viewcode-back" href="../generated/generated/inspect.getargs.html#inspect.getargs">[docs]</a><span class="k">def</span> <span class="nf">getargs</span><span class="p">(</span><span class="n">co</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get information about the arguments accepted by a code object.</span>
 
 <span class="sd">    Three things are returned: (args, varargs, varkw), where &#39;args&#39; is</span>
@@ -948,7 +948,7 @@
 
 <span class="n">ArgSpec</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;ArgSpec&#39;</span><span class="p">,</span> <span class="s1">&#39;args varargs keywords defaults&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="getargspec"><a class="viewcode-back" href="../generated/inspect.getargspec.html#inspect.getargspec">[docs]</a><span class="k">def</span> <span class="nf">getargspec</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+<div class="viewcode-block" id="getargspec"><a class="viewcode-back" href="../generated/generated/inspect.getargspec.html#inspect.getargspec">[docs]</a><span class="k">def</span> <span class="nf">getargspec</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get the names and default values of a function&#39;s arguments.</span>
 
 <span class="sd">    A tuple of four things is returned: (args, varargs, varkw, defaults).</span>
@@ -966,7 +966,7 @@
 
 <span class="n">ArgInfo</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;ArgInfo&#39;</span><span class="p">,</span> <span class="s1">&#39;args varargs keywords locals&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="getargvalues"><a class="viewcode-back" href="../generated/inspect.getargvalues.html#inspect.getargvalues">[docs]</a><span class="k">def</span> <span class="nf">getargvalues</span><span class="p">(</span><span class="n">frame</span><span class="p">):</span>
+<div class="viewcode-block" id="getargvalues"><a class="viewcode-back" href="../generated/generated/inspect.getargvalues.html#inspect.getargvalues">[docs]</a><span class="k">def</span> <span class="nf">getargvalues</span><span class="p">(</span><span class="n">frame</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get information about arguments passed into a particular frame.</span>
 
 <span class="sd">    A tuple of four things is returned: (args, varargs, varkw, locals).</span>
@@ -976,20 +976,20 @@
     <span class="n">args</span><span class="p">,</span> <span class="n">varargs</span><span class="p">,</span> <span class="n">varkw</span> <span class="o">=</span> <span class="n">getargs</span><span class="p">(</span><span class="n">frame</span><span class="o">.</span><span class="n">f_code</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">ArgInfo</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">varargs</span><span class="p">,</span> <span class="n">varkw</span><span class="p">,</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_locals</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="joinseq"><a class="viewcode-back" href="../generated/inspect.joinseq.html#inspect.joinseq">[docs]</a><span class="k">def</span> <span class="nf">joinseq</span><span class="p">(</span><span class="n">seq</span><span class="p">):</span>
+<div class="viewcode-block" id="joinseq"><a class="viewcode-back" href="../generated/generated/inspect.joinseq.html#inspect.joinseq">[docs]</a><span class="k">def</span> <span class="nf">joinseq</span><span class="p">(</span><span class="n">seq</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;(&#39;</span> <span class="o">+</span> <span class="n">seq</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;,)&#39;</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;(&#39;</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">seq</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;)&#39;</span></div>
 
-<div class="viewcode-block" id="strseq"><a class="viewcode-back" href="../generated/inspect.strseq.html#inspect.strseq">[docs]</a><span class="k">def</span> <span class="nf">strseq</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">convert</span><span class="p">,</span> <span class="n">join</span><span class="o">=</span><span class="n">joinseq</span><span class="p">):</span>
+<div class="viewcode-block" id="strseq"><a class="viewcode-back" href="../generated/generated/inspect.strseq.html#inspect.strseq">[docs]</a><span class="k">def</span> <span class="nf">strseq</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">convert</span><span class="p">,</span> <span class="n">join</span><span class="o">=</span><span class="n">joinseq</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Recursively walk a sequence, stringifying each element.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="ow">in</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">o</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">convert</span><span class="p">,</span> <span class="n">j</span><span class="o">=</span><span class="n">join</span><span class="p">:</span> <span class="n">strseq</span><span class="p">(</span><span class="n">o</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">j</span><span class="p">),</span> <span class="nb">object</span><span class="p">))</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">convert</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="formatargspec"><a class="viewcode-back" href="../generated/inspect.formatargspec.html#inspect.formatargspec">[docs]</a><span class="k">def</span> <span class="nf">formatargspec</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">varargs</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">varkw</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">defaults</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="formatargspec"><a class="viewcode-back" href="../generated/generated/inspect.formatargspec.html#inspect.formatargspec">[docs]</a><span class="k">def</span> <span class="nf">formatargspec</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">varargs</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">varkw</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">defaults</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                   <span class="n">formatarg</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
                   <span class="n">formatvarargs</span><span class="o">=</span><span class="k">lambda</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;*&#39;</span> <span class="o">+</span> <span class="n">name</span><span class="p">,</span>
                   <span class="n">formatvarkw</span><span class="o">=</span><span class="k">lambda</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;**&#39;</span> <span class="o">+</span> <span class="n">name</span><span class="p">,</span>
@@ -1015,7 +1015,7 @@
         <span class="n">specs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">formatvarkw</span><span class="p">(</span><span class="n">varkw</span><span class="p">))</span>
     <span class="k">return</span> <span class="s1">&#39;(&#39;</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">specs</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;)&#39;</span></div>
 
-<div class="viewcode-block" id="formatargvalues"><a class="viewcode-back" href="../generated/inspect.formatargvalues.html#inspect.formatargvalues">[docs]</a><span class="k">def</span> <span class="nf">formatargvalues</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">varargs</span><span class="p">,</span> <span class="n">varkw</span><span class="p">,</span> <span class="nb">locals</span><span class="p">,</span>
+<div class="viewcode-block" id="formatargvalues"><a class="viewcode-back" href="../generated/generated/inspect.formatargvalues.html#inspect.formatargvalues">[docs]</a><span class="k">def</span> <span class="nf">formatargvalues</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">varargs</span><span class="p">,</span> <span class="n">varkw</span><span class="p">,</span> <span class="nb">locals</span><span class="p">,</span>
                     <span class="n">formatarg</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
                     <span class="n">formatvarargs</span><span class="o">=</span><span class="k">lambda</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;*&#39;</span> <span class="o">+</span> <span class="n">name</span><span class="p">,</span>
                     <span class="n">formatvarkw</span><span class="o">=</span><span class="k">lambda</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;**&#39;</span> <span class="o">+</span> <span class="n">name</span><span class="p">,</span>
@@ -1039,7 +1039,7 @@
         <span class="n">specs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">formatvarkw</span><span class="p">(</span><span class="n">varkw</span><span class="p">)</span> <span class="o">+</span> <span class="n">formatvalue</span><span class="p">(</span><span class="nb">locals</span><span class="p">[</span><span class="n">varkw</span><span class="p">]))</span>
     <span class="k">return</span> <span class="s1">&#39;(&#39;</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">specs</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;)&#39;</span></div>
 
-<div class="viewcode-block" id="getcallargs"><a class="viewcode-back" href="../generated/inspect.getcallargs.html#inspect.getcallargs">[docs]</a><span class="k">def</span> <span class="nf">getcallargs</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="n">positional</span><span class="p">,</span> <span class="o">**</span><span class="n">named</span><span class="p">):</span>
+<div class="viewcode-block" id="getcallargs"><a class="viewcode-back" href="../generated/generated/inspect.getcallargs.html#inspect.getcallargs">[docs]</a><span class="k">def</span> <span class="nf">getcallargs</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="n">positional</span><span class="p">,</span> <span class="o">**</span><span class="n">named</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get the mapping of arguments to values.</span>
 
 <span class="sd">    A dict is returned, with keys the function argument names (including the</span>
@@ -1137,7 +1137,7 @@
 
 <span class="n">Traceback</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Traceback&#39;</span><span class="p">,</span> <span class="s1">&#39;filename lineno function code_context index&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="getframeinfo"><a class="viewcode-back" href="../generated/inspect.getframeinfo.html#inspect.getframeinfo">[docs]</a><span class="k">def</span> <span class="nf">getframeinfo</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="getframeinfo"><a class="viewcode-back" href="../generated/generated/inspect.getframeinfo.html#inspect.getframeinfo">[docs]</a><span class="k">def</span> <span class="nf">getframeinfo</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get information about a frame or traceback object.</span>
 
 <span class="sd">    A tuple of five things is returned: the filename, the line number of</span>
@@ -1170,12 +1170,12 @@
 
     <span class="k">return</span> <span class="n">Traceback</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_code</span><span class="o">.</span><span class="n">co_name</span><span class="p">,</span> <span class="n">lines</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="getlineno"><a class="viewcode-back" href="../generated/inspect.getlineno.html#inspect.getlineno">[docs]</a><span class="k">def</span> <span class="nf">getlineno</span><span class="p">(</span><span class="n">frame</span><span class="p">):</span>
+<div class="viewcode-block" id="getlineno"><a class="viewcode-back" href="../generated/generated/inspect.getlineno.html#inspect.getlineno">[docs]</a><span class="k">def</span> <span class="nf">getlineno</span><span class="p">(</span><span class="n">frame</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get the line number from a frame object, allowing for optimization.&quot;&quot;&quot;</span>
     <span class="c1"># FrameType.f_lineno is now a descriptor that grovels co_lnotab</span>
     <span class="k">return</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_lineno</span></div>
 
-<div class="viewcode-block" id="getouterframes"><a class="viewcode-back" href="../generated/inspect.getouterframes.html#inspect.getouterframes">[docs]</a><span class="k">def</span> <span class="nf">getouterframes</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="getouterframes"><a class="viewcode-back" href="../generated/generated/inspect.getouterframes.html#inspect.getouterframes">[docs]</a><span class="k">def</span> <span class="nf">getouterframes</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get a list of records for a frame and all higher (calling) frames.</span>
 
 <span class="sd">    Each record contains a frame object, filename, line number, function</span>
@@ -1186,7 +1186,7 @@
         <span class="n">frame</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_back</span>
     <span class="k">return</span> <span class="n">framelist</span></div>
 
-<div class="viewcode-block" id="getinnerframes"><a class="viewcode-back" href="../generated/inspect.getinnerframes.html#inspect.getinnerframes">[docs]</a><span class="k">def</span> <span class="nf">getinnerframes</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="getinnerframes"><a class="viewcode-back" href="../generated/generated/inspect.getinnerframes.html#inspect.getinnerframes">[docs]</a><span class="k">def</span> <span class="nf">getinnerframes</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get a list of records for a traceback&#39;s frame and all lower frames.</span>
 
 <span class="sd">    Each record contains a frame object, filename, line number, function</span>
@@ -1202,11 +1202,11 @@
 <span class="k">else</span><span class="p">:</span>
     <span class="n">currentframe</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">_</span><span class="o">=</span><span class="bp">None</span><span class="p">:</span> <span class="bp">None</span>
 
-<div class="viewcode-block" id="stack"><a class="viewcode-back" href="../generated/inspect.stack.html#inspect.stack">[docs]</a><span class="k">def</span> <span class="nf">stack</span><span class="p">(</span><span class="n">context</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="stack"><a class="viewcode-back" href="../generated/generated/inspect.stack.html#inspect.stack">[docs]</a><span class="k">def</span> <span class="nf">stack</span><span class="p">(</span><span class="n">context</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return a list of records for the stack above the caller&#39;s frame.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">getouterframes</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">_getframe</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">context</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="trace"><a class="viewcode-back" href="../generated/inspect.trace.html#inspect.trace">[docs]</a><span class="k">def</span> <span class="nf">trace</span><span class="p">(</span><span class="n">context</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="trace"><a class="viewcode-back" href="../generated/generated/inspect.trace.html#inspect.trace">[docs]</a><span class="k">def</span> <span class="nf">trace</span><span class="p">(</span><span class="n">context</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return a list of records for the stack below the current exception.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">getinnerframes</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()[</span><span class="mi">2</span><span class="p">],</span> <span class="n">context</span><span class="p">)</span></div>
 </pre></div>

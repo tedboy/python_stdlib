@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       md5
       new
@@ -20,6 +20,21 @@
       sha256
       sha384
       sha512
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/hashlib.md5
+       generated/hashlib.new
+       generated/hashlib.pbkdf2_hmac
+       generated/hashlib.sha1
+       generated/hashlib.sha224
+       generated/hashlib.sha256
+       generated/hashlib.sha384
+       generated/hashlib.sha512
+      
    
    
 

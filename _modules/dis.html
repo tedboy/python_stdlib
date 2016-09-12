@@ -160,7 +160,7 @@
 <span class="n">_have_code</span> <span class="o">=</span> <span class="p">(</span><span class="n">types</span><span class="o">.</span><span class="n">MethodType</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">FunctionType</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">CodeType</span><span class="p">,</span>
               <span class="n">types</span><span class="o">.</span><span class="n">ClassType</span><span class="p">,</span> <span class="nb">type</span><span class="p">)</span>
 
-<div class="viewcode-block" id="dis"><a class="viewcode-back" href="../generated/dis.dis.html#dis.dis">[docs]</a><span class="k">def</span> <span class="nf">dis</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="dis"><a class="viewcode-back" href="../generated/generated/dis.dis.html#dis.dis">[docs]</a><span class="k">def</span> <span class="nf">dis</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Disassemble classes, methods, functions, or code.</span>
 
 <span class="sd">    With no argument, disassemble the last traceback.</span>
@@ -195,7 +195,7 @@
               <span class="s2">&quot;don&#39;t know how to disassemble </span><span class="si">%s</span><span class="s2"> objects&quot;</span> <span class="o">%</span> \
               <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span></div>
 
-<div class="viewcode-block" id="distb"><a class="viewcode-back" href="../generated/dis.distb.html#dis.distb">[docs]</a><span class="k">def</span> <span class="nf">distb</span><span class="p">(</span><span class="n">tb</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="distb"><a class="viewcode-back" href="../generated/generated/dis.distb.html#dis.distb">[docs]</a><span class="k">def</span> <span class="nf">distb</span><span class="p">(</span><span class="n">tb</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Disassemble a traceback (default: last traceback).&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">tb</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="k">try</span><span class="p">:</span>
@@ -205,7 +205,7 @@
         <span class="k">while</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_next</span><span class="p">:</span> <span class="n">tb</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_next</span>
     <span class="n">disassemble</span><span class="p">(</span><span class="n">tb</span><span class="o">.</span><span class="n">tb_frame</span><span class="o">.</span><span class="n">f_code</span><span class="p">,</span> <span class="n">tb</span><span class="o">.</span><span class="n">tb_lasti</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="disassemble"><a class="viewcode-back" href="../generated/dis.disassemble.html#dis.disassemble">[docs]</a><span class="k">def</span> <span class="nf">disassemble</span><span class="p">(</span><span class="n">co</span><span class="p">,</span> <span class="n">lasti</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="disassemble"><a class="viewcode-back" href="../generated/generated/dis.disassemble.html#dis.disassemble">[docs]</a><span class="k">def</span> <span class="nf">disassemble</span><span class="p">(</span><span class="n">co</span><span class="p">,</span> <span class="n">lasti</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Disassemble a code object.&quot;&quot;&quot;</span>
     <span class="n">code</span> <span class="o">=</span> <span class="n">co</span><span class="o">.</span><span class="n">co_code</span>
     <span class="n">labels</span> <span class="o">=</span> <span class="n">findlabels</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
@@ -254,7 +254,7 @@
                 <span class="k">print</span> <span class="s1">&#39;(&#39;</span> <span class="o">+</span> <span class="n">free</span><span class="p">[</span><span class="n">oparg</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;)&#39;</span><span class="p">,</span>
         <span class="k">print</span></div>
 
-<div class="viewcode-block" id="disassemble_string"><a class="viewcode-back" href="../generated/dis.disassemble_string.html#dis.disassemble_string">[docs]</a><span class="k">def</span> <span class="nf">disassemble_string</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">lasti</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">varnames</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="disassemble_string"><a class="viewcode-back" href="../generated/generated/dis.disassemble_string.html#dis.disassemble_string">[docs]</a><span class="k">def</span> <span class="nf">disassemble_string</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">lasti</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">varnames</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                        <span class="n">constants</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">labels</span> <span class="o">=</span> <span class="n">findlabels</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
@@ -296,7 +296,7 @@
 
 <span class="n">disco</span> <span class="o">=</span> <span class="n">disassemble</span>                     <span class="c1"># XXX For backwards compatibility</span>
 
-<div class="viewcode-block" id="findlabels"><a class="viewcode-back" href="../generated/dis.findlabels.html#dis.findlabels">[docs]</a><span class="k">def</span> <span class="nf">findlabels</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
+<div class="viewcode-block" id="findlabels"><a class="viewcode-back" href="../generated/generated/dis.findlabels.html#dis.findlabels">[docs]</a><span class="k">def</span> <span class="nf">findlabels</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Detect all offsets in a byte code which are jump targets.</span>
 
 <span class="sd">    Return the list of offsets.</span>
@@ -322,7 +322,7 @@
                     <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">labels</span></div>
 
-<div class="viewcode-block" id="findlinestarts"><a class="viewcode-back" href="../generated/dis.findlinestarts.html#dis.findlinestarts">[docs]</a><span class="k">def</span> <span class="nf">findlinestarts</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
+<div class="viewcode-block" id="findlinestarts"><a class="viewcode-back" href="../generated/generated/dis.findlinestarts.html#dis.findlinestarts">[docs]</a><span class="k">def</span> <span class="nf">findlinestarts</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Find the offsets in a byte code which are start of lines in the source.</span>
 
 <span class="sd">    Generate pairs (offset, lineno) as described in Python/compile.c.</span>

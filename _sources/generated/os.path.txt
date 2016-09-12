@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       abspath
       basename
@@ -41,6 +41,42 @@
       splitdrive
       splitext
       walk
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/os.path.abspath
+       generated/os.path.basename
+       generated/os.path.commonprefix
+       generated/os.path.dirname
+       generated/os.path.exists
+       generated/os.path.expanduser
+       generated/os.path.expandvars
+       generated/os.path.getatime
+       generated/os.path.getctime
+       generated/os.path.getmtime
+       generated/os.path.getsize
+       generated/os.path.isabs
+       generated/os.path.isdir
+       generated/os.path.isfile
+       generated/os.path.islink
+       generated/os.path.ismount
+       generated/os.path.join
+       generated/os.path.lexists
+       generated/os.path.normcase
+       generated/os.path.normpath
+       generated/os.path.realpath
+       generated/os.path.relpath
+       generated/os.path.samefile
+       generated/os.path.sameopenfile
+       generated/os.path.samestat
+       generated/os.path.split
+       generated/os.path.splitdrive
+       generated/os.path.splitext
+       generated/os.path.walk
+      
    
    
 

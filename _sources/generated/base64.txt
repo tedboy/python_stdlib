@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       b16decode
       b16encode
@@ -28,6 +28,29 @@
       test1
       urlsafe_b64decode
       urlsafe_b64encode
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/base64.b16decode
+       generated/base64.b16encode
+       generated/base64.b32decode
+       generated/base64.b32encode
+       generated/base64.b64decode
+       generated/base64.b64encode
+       generated/base64.decode
+       generated/base64.decodestring
+       generated/base64.encode
+       generated/base64.encodestring
+       generated/base64.standard_b64decode
+       generated/base64.standard_b64encode
+       generated/base64.test
+       generated/base64.test1
+       generated/base64.urlsafe_b64decode
+       generated/base64.urlsafe_b64encode
+      
    
    
 

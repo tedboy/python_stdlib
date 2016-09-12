@@ -203,7 +203,7 @@ types for sequential (de)compression.</p>
 algorithm borrowed from file objects;</li>
 <li>Sequential (de)compression supported by <a class="reference internal" href="../generated/generated/bz2.BZ2Compressor.html#bz2.BZ2Compressor" title="bz2.BZ2Compressor"><code class="xref py py-class docutils literal"><span class="pre">BZ2Compressor</span></code></a> and
 <a class="reference internal" href="../generated/generated/bz2.BZ2Decompressor.html#bz2.BZ2Decompressor" title="bz2.BZ2Decompressor"><code class="xref py py-class docutils literal"><span class="pre">BZ2Decompressor</span></code></a> classes;</li>
-<li>One-shot (de)compression supported by <a class="reference internal" href="../generated/bz2.compress.html#bz2.compress" title="bz2.compress"><code class="xref py py-func docutils literal"><span class="pre">compress()</span></code></a> and <a class="reference internal" href="../generated/bz2.decompress.html#bz2.decompress" title="bz2.decompress"><code class="xref py py-func docutils literal"><span class="pre">decompress()</span></code></a>
+<li>One-shot (de)compression supported by <a class="reference internal" href="../generated/generated/bz2.compress.html#bz2.compress" title="bz2.compress"><code class="xref py py-func docutils literal"><span class="pre">compress()</span></code></a> and <a class="reference internal" href="../generated/generated/bz2.decompress.html#bz2.decompress" title="bz2.decompress"><code class="xref py py-func docutils literal"><span class="pre">decompress()</span></code></a>
 functions;</li>
 <li>Thread safety uses individual locking mechanism.</li>
 </ul>
@@ -331,7 +331,7 @@ equivalent to calling write() for each string.</p>
 <em class="property">class </em><code class="descclassname">bz2.</code><code class="descname">BZ2Compressor</code><span class="sig-paren">(</span><span class="optional">[</span><em>compresslevel</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#bz2.BZ2Compressor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a new compressor object. This object may be used to compress data
 sequentially. If you want to compress data in one shot, use the
-<a class="reference internal" href="../generated/bz2.compress.html#bz2.compress" title="bz2.compress"><code class="xref py py-func docutils literal"><span class="pre">compress()</span></code></a> function instead. The <em>compresslevel</em> parameter, if given,
+<a class="reference internal" href="../generated/generated/bz2.compress.html#bz2.compress" title="bz2.compress"><code class="xref py py-func docutils literal"><span class="pre">compress()</span></code></a> function instead. The <em>compresslevel</em> parameter, if given,
 must be a number between <code class="docutils literal"><span class="pre">1</span></code> and <code class="docutils literal"><span class="pre">9</span></code>; the default is <code class="docutils literal"><span class="pre">9</span></code>.</p>
 <dl class="method">
 <dt id="bz2.BZ2Compressor.compress">
@@ -356,7 +356,7 @@ buffers. You must not use the compressor object after calling this method.</p>
 <em class="property">class </em><code class="descclassname">bz2.</code><code class="descname">BZ2Decompressor</code><a class="headerlink" href="#bz2.BZ2Decompressor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a new decompressor object. This object may be used to decompress data
 sequentially. If you want to decompress data in one shot, use the
-<a class="reference internal" href="../generated/bz2.decompress.html#bz2.decompress" title="bz2.decompress"><code class="xref py py-func docutils literal"><span class="pre">decompress()</span></code></a> function instead.</p>
+<a class="reference internal" href="../generated/generated/bz2.decompress.html#bz2.decompress" title="bz2.decompress"><code class="xref py py-func docutils literal"><span class="pre">decompress()</span></code></a> function instead.</p>
 <dl class="method">
 <dt id="bz2.BZ2Decompressor.decompress">
 <code class="descname">decompress</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#bz2.BZ2Decompressor.decompress" title="Permalink to this definition">¶</a></dt>
@@ -372,8 +372,8 @@ was found after the end of stream, it&#8217;ll be ignored and saved in
 </div>
 <div class="section" id="one-shot-de-compression">
 <h2><a class="toc-backref" href="#id3">3.3. One-shot (de)compression</a><a class="headerlink" href="#one-shot-de-compression" title="Permalink to this headline">¶</a></h2>
-<p>One-shot compression and decompression is provided through the <a class="reference internal" href="../generated/bz2.compress.html#bz2.compress" title="bz2.compress"><code class="xref py py-func docutils literal"><span class="pre">compress()</span></code></a>
-and <a class="reference internal" href="../generated/bz2.decompress.html#bz2.decompress" title="bz2.decompress"><code class="xref py py-func docutils literal"><span class="pre">decompress()</span></code></a> functions.</p>
+<p>One-shot compression and decompression is provided through the <a class="reference internal" href="../generated/generated/bz2.compress.html#bz2.compress" title="bz2.compress"><code class="xref py py-func docutils literal"><span class="pre">compress()</span></code></a>
+and <a class="reference internal" href="../generated/generated/bz2.decompress.html#bz2.decompress" title="bz2.decompress"><code class="xref py py-func docutils literal"><span class="pre">decompress()</span></code></a> functions.</p>
 <dl class="function">
 <dt id="bz2.compress">
 <code class="descclassname">bz2.</code><code class="descname">compress</code><span class="sig-paren">(</span><em>data</em><span class="optional">[</span>, <em>compresslevel</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#bz2.compress" title="Permalink to this definition">¶</a></dt>

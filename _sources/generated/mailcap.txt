@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       findmatch
       findparam
@@ -23,6 +23,24 @@
       show
       subst
       test
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/mailcap.findmatch
+       generated/mailcap.findparam
+       generated/mailcap.getcaps
+       generated/mailcap.listmailcapfiles
+       generated/mailcap.lookup
+       generated/mailcap.parsefield
+       generated/mailcap.parseline
+       generated/mailcap.readmailcapfile
+       generated/mailcap.show
+       generated/mailcap.subst
+       generated/mailcap.test
+      
    
    
 

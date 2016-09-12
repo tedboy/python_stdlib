@@ -330,7 +330,7 @@ about the most recently handled exception is accessible.</p>
 <code class="descclassname">sys.</code><code class="descname">exc_clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sys.exc_clear" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function clears all information relating to the current or last exception
 that occurred in the current thread.  After calling this function,
-<a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">exc_info()</span></code></a> will return three <code class="docutils literal"><span class="pre">None</span></code> values until another exception is
+<a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">exc_info()</span></code></a> will return three <code class="docutils literal"><span class="pre">None</span></code> values until another exception is
 raised in the current thread or the execution stack returns to a frame where
 another exception is being handled.</p>
 <p>This function is only needed in only a few obscure situations.  These include
@@ -351,7 +351,7 @@ be freed, if any.</p>
 <dt id="sys.exc_traceback">
 <code class="descclassname">sys.</code><code class="descname">exc_traceback</code><a class="headerlink" href="#sys.exc_traceback" title="Permalink to this definition">¶</a></dt>
 <dd><div class="deprecated">
-<p><span class="versionmodified">Deprecated since version 1.5: </span>Use <a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">exc_info()</span></code></a> instead.</p>
+<p><span class="versionmodified">Deprecated since version 1.5: </span>Use <a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">exc_info()</span></code></a> instead.</p>
 </div>
 <p>Since they are global variables, they are not specific to the current thread, so
 their use is not safe in a multi-threaded program.  When no exception is being
@@ -619,7 +619,7 @@ versions of Python prior to 2.7.</p>
 <dl class="function">
 <dt id="sys.getcheckinterval">
 <code class="descclassname">sys.</code><code class="descname">getcheckinterval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sys.getcheckinterval" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the interpreter&#8217;s &#8220;check interval&#8221;; see <a class="reference internal" href="../generated/sys.setcheckinterval.html#sys.setcheckinterval" title="sys.setcheckinterval"><code class="xref py py-func docutils literal"><span class="pre">setcheckinterval()</span></code></a>.</p>
+<dd><p>Return the interpreter&#8217;s &#8220;check interval&#8221;; see <a class="reference internal" href="../generated/generated/sys.setcheckinterval.html#sys.setcheckinterval" title="sys.setcheckinterval"><code class="xref py py-func docutils literal"><span class="pre">setcheckinterval()</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.3.</span></p>
 </div>
@@ -658,7 +658,7 @@ depends on the operating system:</p>
 nl_langinfo(CODESET), or <code class="docutils literal"><span class="pre">None</span></code> if the <code class="docutils literal"><span class="pre">nl_langinfo(CODESET)</span></code>
 failed.</li>
 <li>On Windows NT+, file names are Unicode natively, so no conversion is
-performed. <a class="reference internal" href="../generated/sys.getfilesystemencoding.html#sys.getfilesystemencoding" title="sys.getfilesystemencoding"><code class="xref py py-func docutils literal"><span class="pre">getfilesystemencoding()</span></code></a> still returns <code class="docutils literal"><span class="pre">'mbcs'</span></code>, as
+performed. <a class="reference internal" href="../generated/generated/sys.getfilesystemencoding.html#sys.getfilesystemencoding" title="sys.getfilesystemencoding"><code class="xref py py-func docutils literal"><span class="pre">getfilesystemencoding()</span></code></a> still returns <code class="docutils literal"><span class="pre">'mbcs'</span></code>, as
 this is the encoding that applications should use when they explicitly
 want to convert Unicode strings to byte strings that are equivalent when
 used as file names.</li>
@@ -674,7 +674,7 @@ used as file names.</li>
 <code class="descclassname">sys.</code><code class="descname">getrefcount</code><span class="sig-paren">(</span><em>object</em><span class="sig-paren">)</span><a class="headerlink" href="#sys.getrefcount" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the reference count of the <em>object</em>.  The count returned is generally one
 higher than you might expect, because it includes the (temporary) reference as
-an argument to <a class="reference internal" href="../generated/sys.getrefcount.html#sys.getrefcount" title="sys.getrefcount"><code class="xref py py-func docutils literal"><span class="pre">getrefcount()</span></code></a>.</p>
+an argument to <a class="reference internal" href="../generated/generated/sys.getrefcount.html#sys.getrefcount" title="sys.getrefcount"><code class="xref py py-func docutils literal"><span class="pre">getrefcount()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -683,7 +683,7 @@ an argument to <a class="reference internal" href="../generated/sys.getrefcount.
 <dd><p>Return the current value of the recursion limit, the maximum depth of the Python
 interpreter stack.  This limit prevents infinite recursion from causing an
 overflow of the C stack and crashing Python.  It can be set by
-<a class="reference internal" href="../generated/sys.setrecursionlimit.html#sys.setrecursionlimit" title="sys.setrecursionlimit"><code class="xref py py-func docutils literal"><span class="pre">setrecursionlimit()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/sys.setrecursionlimit.html#sys.setrecursionlimit" title="sys.setrecursionlimit"><code class="xref py py-func docutils literal"><span class="pre">setrecursionlimit()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -695,7 +695,7 @@ does not have to hold true for third-party extensions as it is implementation
 specific.</p>
 <p>If given, <em>default</em> will be returned if the object does not provide means to
 retrieve the size.  Otherwise a <a class="reference internal" href="../generated/exceptions.TypeError.html#exceptions.TypeError" title="exceptions.TypeError"><code class="xref py py-exc docutils literal"><span class="pre">TypeError</span></code></a> will be raised.</p>
-<p><a class="reference internal" href="../generated/sys.getsizeof.html#sys.getsizeof" title="sys.getsizeof"><code class="xref py py-func docutils literal"><span class="pre">getsizeof()</span></code></a> calls the object&#8217;s <code class="docutils literal"><span class="pre">__sizeof__</span></code> method and adds an
+<p><a class="reference internal" href="../generated/generated/sys.getsizeof.html#sys.getsizeof" title="sys.getsizeof"><code class="xref py py-func docutils literal"><span class="pre">getsizeof()</span></code></a> calls the object&#8217;s <code class="docutils literal"><span class="pre">__sizeof__</span></code> method and adds an
 additional garbage collector overhead if the object is managed by the garbage
 collector.</p>
 <div class="versionadded">
@@ -904,7 +904,7 @@ that caused the error.  (Typical use is <code class="docutils literal"><span cla
 post-mortem debugger; see chapter <a class="reference internal" href="../26_debugging_and_profiling/26.23_pdb.html#debugger"><span>pdb &#8212; The Python Debugger</span></a> for
 more information.)</p>
 <p>The meaning of the variables is the same as that of the return values from
-<a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">exc_info()</span></code></a> above.  (Since there is only one interactive thread,
+<a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">exc_info()</span></code></a> above.  (Since there is only one interactive thread,
 thread-safety is not a concern for these variables, unlike for <code class="docutils literal"><span class="pre">exc_type</span></code>
 etc.)</p>
 </dd></dl>
@@ -1065,7 +1065,7 @@ use the <code class="docutils literal"><span class="pre">startswith</span></code
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p><a class="reference internal" href="../15_allos/os.html#os.name" title="os.name"><code class="xref py py-attr docutils literal"><span class="pre">os.name</span></code></a> has a coarser granularity.  <a class="reference internal" href="../generated/os.uname.html#os.uname" title="os.uname"><code class="xref py py-func docutils literal"><span class="pre">os.uname()</span></code></a> gives
+<p><a class="reference internal" href="../15_allos/os.html#os.name" title="os.name"><code class="xref py py-attr docutils literal"><span class="pre">os.name</span></code></a> has a coarser granularity.  <a class="reference internal" href="../generated/generated/os.uname.html#os.uname" title="os.uname"><code class="xref py py-func docutils literal"><span class="pre">os.uname()</span></code></a> gives
 system-dependent version information.</p>
 <p class="last">The <a class="reference internal" href="../generated/platform.html#module-platform" title="platform"><code class="xref py py-mod docutils literal"><span class="pre">platform</span></code></a> module provides detailed checks for the
 system&#8217;s identity.</p>
@@ -1201,7 +1201,7 @@ and (almost all of) its error messages go to <code class="docutils literal"><spa
 <code class="docutils literal"><span class="pre">stderr</span></code> needn&#8217;t be built-in file objects: any object is acceptable as long
 as it has a <code class="xref py py-meth docutils literal"><span class="pre">write()</span></code> method that takes a string argument.  (Changing these
 objects doesn&#8217;t affect the standard I/O streams of processes executed by
-<a class="reference internal" href="../generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">os.popen()</span></code></a>, <a class="reference internal" href="../generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a> or the <code class="xref py py-func docutils literal"><span class="pre">exec*()</span></code> family of functions in
+<a class="reference internal" href="../generated/generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">os.popen()</span></code></a>, <a class="reference internal" href="../generated/generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a> or the <code class="xref py py-func docutils literal"><span class="pre">exec*()</span></code> family of functions in
 the <a class="reference internal" href="../generated/os.html#module-os" title="os"><code class="xref py py-mod docutils literal"><span class="pre">os</span></code></a> module.)</p>
 </dd></dl>
 

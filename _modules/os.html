@@ -280,7 +280,7 @@
 <span class="c1"># Super directory utilities.</span>
 <span class="c1"># (Inspired by Eric Raymond; the doc strings are mostly his)</span>
 
-<div class="viewcode-block" id="makedirs"><a class="viewcode-back" href="../generated/os.makedirs.html#os.makedirs">[docs]</a><span class="k">def</span> <span class="nf">makedirs</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="mo">0777</span><span class="p">):</span>
+<div class="viewcode-block" id="makedirs"><a class="viewcode-back" href="../generated/generated/os.makedirs.html#os.makedirs">[docs]</a><span class="k">def</span> <span class="nf">makedirs</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="mo">0777</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;makedirs(path [, mode=0777])</span>
 
 <span class="sd">    Super-mkdir; create a leaf directory and all intermediate ones.</span>
@@ -303,7 +303,7 @@
             <span class="k">return</span>
     <span class="n">mkdir</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="removedirs"><a class="viewcode-back" href="../generated/os.removedirs.html#os.removedirs">[docs]</a><span class="k">def</span> <span class="nf">removedirs</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<div class="viewcode-block" id="removedirs"><a class="viewcode-back" href="../generated/generated/os.removedirs.html#os.removedirs">[docs]</a><span class="k">def</span> <span class="nf">removedirs</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;removedirs(path)</span>
 
 <span class="sd">    Super-rmdir; remove a leaf directory and all empty intermediate</span>
@@ -325,7 +325,7 @@
             <span class="k">break</span>
         <span class="n">head</span><span class="p">,</span> <span class="n">tail</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">head</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="renames"><a class="viewcode-back" href="../generated/os.renames.html#os.renames">[docs]</a><span class="k">def</span> <span class="nf">renames</span><span class="p">(</span><span class="n">old</span><span class="p">,</span> <span class="n">new</span><span class="p">):</span>
+<div class="viewcode-block" id="renames"><a class="viewcode-back" href="../generated/generated/os.renames.html#os.renames">[docs]</a><span class="k">def</span> <span class="nf">renames</span><span class="p">(</span><span class="n">old</span><span class="p">,</span> <span class="n">new</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;renames(old, new)</span>
 
 <span class="sd">    Super-rename; create directories as necessary and delete any left</span>
@@ -353,7 +353,7 @@
 
 <span class="n">__all__</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="s2">&quot;makedirs&quot;</span><span class="p">,</span> <span class="s2">&quot;removedirs&quot;</span><span class="p">,</span> <span class="s2">&quot;renames&quot;</span><span class="p">])</span>
 
-<div class="viewcode-block" id="walk"><a class="viewcode-back" href="../generated/os.walk.html#os.walk">[docs]</a><span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="n">top</span><span class="p">,</span> <span class="n">topdown</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">onerror</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">followlinks</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+<div class="viewcode-block" id="walk"><a class="viewcode-back" href="../generated/generated/os.walk.html#os.walk">[docs]</a><span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="n">top</span><span class="p">,</span> <span class="n">topdown</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">onerror</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">followlinks</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Directory tree generator.</span>
 
 <span class="sd">    For each directory in the directory tree rooted at top (including top</span>
@@ -453,14 +453,14 @@
 <span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
     <span class="n">environ</span> <span class="o">=</span> <span class="p">{}</span>
 
-<div class="viewcode-block" id="execl"><a class="viewcode-back" href="../generated/os.execl.html#os.execl">[docs]</a><span class="k">def</span> <span class="nf">execl</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="execl"><a class="viewcode-back" href="../generated/generated/os.execl.html#os.execl">[docs]</a><span class="k">def</span> <span class="nf">execl</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;execl(file, *args)</span>
 
 <span class="sd">    Execute the executable file with argument list args, replacing the</span>
 <span class="sd">    current process. &quot;&quot;&quot;</span>
     <span class="n">execv</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="execle"><a class="viewcode-back" href="../generated/os.execle.html#os.execle">[docs]</a><span class="k">def</span> <span class="nf">execle</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="execle"><a class="viewcode-back" href="../generated/generated/os.execle.html#os.execle">[docs]</a><span class="k">def</span> <span class="nf">execle</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;execle(file, *args, env)</span>
 
 <span class="sd">    Execute the executable file with argument list args and</span>
@@ -468,14 +468,14 @@
     <span class="n">env</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">execve</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">env</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="execlp"><a class="viewcode-back" href="../generated/os.execlp.html#os.execlp">[docs]</a><span class="k">def</span> <span class="nf">execlp</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="execlp"><a class="viewcode-back" href="../generated/generated/os.execlp.html#os.execlp">[docs]</a><span class="k">def</span> <span class="nf">execlp</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;execlp(file, *args)</span>
 
 <span class="sd">    Execute the executable file (which is searched for along $PATH)</span>
 <span class="sd">    with argument list args, replacing the current process. &quot;&quot;&quot;</span>
     <span class="n">execvp</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="execlpe"><a class="viewcode-back" href="../generated/os.execlpe.html#os.execlpe">[docs]</a><span class="k">def</span> <span class="nf">execlpe</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="execlpe"><a class="viewcode-back" href="../generated/generated/os.execlpe.html#os.execlpe">[docs]</a><span class="k">def</span> <span class="nf">execlpe</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;execlpe(file, *args, env)</span>
 
 <span class="sd">    Execute the executable file (which is searched for along $PATH)</span>
@@ -484,7 +484,7 @@
     <span class="n">env</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">execvpe</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">env</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="execvp"><a class="viewcode-back" href="../generated/os.execvp.html#os.execvp">[docs]</a><span class="k">def</span> <span class="nf">execvp</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="execvp"><a class="viewcode-back" href="../generated/generated/os.execvp.html#os.execvp">[docs]</a><span class="k">def</span> <span class="nf">execvp</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;execvp(file, args)</span>
 
 <span class="sd">    Execute the executable file (which is searched for along $PATH)</span>
@@ -492,7 +492,7 @@
 <span class="sd">    args may be a list or tuple of strings. &quot;&quot;&quot;</span>
     <span class="n">_execvpe</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="execvpe"><a class="viewcode-back" href="../generated/os.execvpe.html#os.execvpe">[docs]</a><span class="k">def</span> <span class="nf">execvpe</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
+<div class="viewcode-block" id="execvpe"><a class="viewcode-back" href="../generated/generated/os.execvpe.html#os.execvpe">[docs]</a><span class="k">def</span> <span class="nf">execvpe</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;execvpe(file, args, env)</span>
 
 <span class="sd">    Execute the executable file (which is searched for along $PATH)</span>
@@ -656,7 +656,7 @@
 
     <span class="n">environ</span> <span class="o">=</span> <span class="n">_Environ</span><span class="p">(</span><span class="n">environ</span><span class="p">)</span>
 
-<div class="viewcode-block" id="getenv"><a class="viewcode-back" href="../generated/os.getenv.html#os.getenv">[docs]</a><span class="k">def</span> <span class="nf">getenv</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="getenv"><a class="viewcode-back" href="../generated/generated/os.getenv.html#os.getenv">[docs]</a><span class="k">def</span> <span class="nf">getenv</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Get an environment variable, return None if it doesn&#39;t exist.</span>
 <span class="sd">    The optional second argument can specify an alternate default.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">default</span><span class="p">)</span></div>
@@ -702,7 +702,7 @@
                 <span class="k">else</span><span class="p">:</span>
                     <span class="k">raise</span> <span class="n">error</span><span class="p">,</span> <span class="s2">&quot;Not stopped, signaled or exited???&quot;</span>
 
-<div class="viewcode-block" id="spawnv"><a class="viewcode-back" href="../generated/os.spawnv.html#os.spawnv">[docs]</a>    <span class="k">def</span> <span class="nf">spawnv</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="spawnv"><a class="viewcode-back" href="../generated/generated/os.spawnv.html#os.spawnv">[docs]</a>    <span class="k">def</span> <span class="nf">spawnv</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;spawnv(mode, file, args) -&gt; integer</span>
 
 <span class="sd">Execute file with arguments from args in a subprocess.</span>
@@ -711,7 +711,7 @@
 <span class="sd">otherwise return -SIG, where SIG is the signal that killed it. &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">_spawnvef</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">execv</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="spawnve"><a class="viewcode-back" href="../generated/os.spawnve.html#os.spawnve">[docs]</a>    <span class="k">def</span> <span class="nf">spawnve</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
+<div class="viewcode-block" id="spawnve"><a class="viewcode-back" href="../generated/generated/os.spawnve.html#os.spawnve">[docs]</a>    <span class="k">def</span> <span class="nf">spawnve</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;spawnve(mode, file, args, env) -&gt; integer</span>
 
 <span class="sd">Execute file with arguments from args in a subprocess with the</span>
@@ -723,7 +723,7 @@
 
     <span class="c1"># Note: spawnvp[e] is&#39;t currently supported on Windows</span>
 
-<div class="viewcode-block" id="spawnvp"><a class="viewcode-back" href="../generated/os.spawnvp.html#os.spawnvp">[docs]</a>    <span class="k">def</span> <span class="nf">spawnvp</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="spawnvp"><a class="viewcode-back" href="../generated/generated/os.spawnvp.html#os.spawnvp">[docs]</a>    <span class="k">def</span> <span class="nf">spawnvp</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;spawnvp(mode, file, args) -&gt; integer</span>
 
 <span class="sd">Execute file (which is looked for along $PATH) with arguments from</span>
@@ -733,7 +733,7 @@
 <span class="sd">otherwise return -SIG, where SIG is the signal that killed it. &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">_spawnvef</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">execvp</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="spawnvpe"><a class="viewcode-back" href="../generated/os.spawnvpe.html#os.spawnvpe">[docs]</a>    <span class="k">def</span> <span class="nf">spawnvpe</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
+<div class="viewcode-block" id="spawnvpe"><a class="viewcode-back" href="../generated/generated/os.spawnvpe.html#os.spawnvpe">[docs]</a>    <span class="k">def</span> <span class="nf">spawnvpe</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;spawnvpe(mode, file, args, env) -&gt; integer</span>
 
 <span class="sd">Execute file (which is looked for along $PATH) with arguments from</span>
@@ -747,7 +747,7 @@
     <span class="c1"># These aren&#39;t supplied by the basic Windows code</span>
     <span class="c1"># but can be easily implemented in Python</span>
 
-<div class="viewcode-block" id="spawnl"><a class="viewcode-back" href="../generated/os.spawnl.html#os.spawnl">[docs]</a>    <span class="k">def</span> <span class="nf">spawnl</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="spawnl"><a class="viewcode-back" href="../generated/generated/os.spawnl.html#os.spawnl">[docs]</a>    <span class="k">def</span> <span class="nf">spawnl</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;spawnl(mode, file, *args) -&gt; integer</span>
 
 <span class="sd">Execute file with arguments from args in a subprocess.</span>
@@ -756,7 +756,7 @@
 <span class="sd">otherwise return -SIG, where SIG is the signal that killed it. &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">spawnv</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="spawnle"><a class="viewcode-back" href="../generated/os.spawnle.html#os.spawnle">[docs]</a>    <span class="k">def</span> <span class="nf">spawnle</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="spawnle"><a class="viewcode-back" href="../generated/generated/os.spawnle.html#os.spawnle">[docs]</a>    <span class="k">def</span> <span class="nf">spawnle</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;spawnle(mode, file, *args, env) -&gt; integer</span>
 
 <span class="sd">Execute file with arguments from args in a subprocess with the</span>
@@ -774,7 +774,7 @@
 <span class="k">if</span> <span class="n">_exists</span><span class="p">(</span><span class="s2">&quot;spawnvp&quot;</span><span class="p">):</span>
     <span class="c1"># At the moment, Windows doesn&#39;t implement spawnvp[e],</span>
     <span class="c1"># so it won&#39;t have spawnlp[e] either.</span>
-<div class="viewcode-block" id="spawnlp"><a class="viewcode-back" href="../generated/os.spawnlp.html#os.spawnlp">[docs]</a>    <span class="k">def</span> <span class="nf">spawnlp</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="spawnlp"><a class="viewcode-back" href="../generated/generated/os.spawnlp.html#os.spawnlp">[docs]</a>    <span class="k">def</span> <span class="nf">spawnlp</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;spawnlp(mode, file, *args) -&gt; integer</span>
 
 <span class="sd">Execute file (which is looked for along $PATH) with arguments from</span>
@@ -784,7 +784,7 @@
 <span class="sd">otherwise return -SIG, where SIG is the signal that killed it. &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">spawnvp</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="spawnlpe"><a class="viewcode-back" href="../generated/os.spawnlpe.html#os.spawnlpe">[docs]</a>    <span class="k">def</span> <span class="nf">spawnlpe</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="spawnlpe"><a class="viewcode-back" href="../generated/generated/os.spawnlpe.html#os.spawnlpe">[docs]</a>    <span class="k">def</span> <span class="nf">spawnlpe</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;spawnlpe(mode, file, *args, env) -&gt; integer</span>
 
 <span class="sd">Execute file (which is looked for along $PATH) with arguments from</span>
@@ -802,7 +802,7 @@
 <span class="c1"># Supply popen2 etc. (for Unix)</span>
 <span class="k">if</span> <span class="n">_exists</span><span class="p">(</span><span class="s2">&quot;fork&quot;</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">_exists</span><span class="p">(</span><span class="s2">&quot;popen2&quot;</span><span class="p">):</span>
-<div class="viewcode-block" id="popen2"><a class="viewcode-back" href="../generated/os.popen2.html#os.popen2">[docs]</a>        <span class="k">def</span> <span class="nf">popen2</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;t&quot;</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="popen2"><a class="viewcode-back" href="../generated/generated/os.popen2.html#os.popen2">[docs]</a>        <span class="k">def</span> <span class="nf">popen2</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;t&quot;</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
             <span class="sd">&quot;&quot;&quot;Execute the shell command &#39;cmd&#39; in a sub-process.  On UNIX, &#39;cmd&#39;</span>
 <span class="sd">            may be a sequence, in which case arguments will be passed directly to</span>
 <span class="sd">            the program without shell intervention (as with os.spawnv()).  If &#39;cmd&#39;</span>
@@ -822,7 +822,7 @@
         <span class="n">__all__</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;popen2&quot;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="ow">not</span> <span class="n">_exists</span><span class="p">(</span><span class="s2">&quot;popen3&quot;</span><span class="p">):</span>
-<div class="viewcode-block" id="popen3"><a class="viewcode-back" href="../generated/os.popen3.html#os.popen3">[docs]</a>        <span class="k">def</span> <span class="nf">popen3</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;t&quot;</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="popen3"><a class="viewcode-back" href="../generated/generated/os.popen3.html#os.popen3">[docs]</a>        <span class="k">def</span> <span class="nf">popen3</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;t&quot;</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
             <span class="sd">&quot;&quot;&quot;Execute the shell command &#39;cmd&#39; in a sub-process.  On UNIX, &#39;cmd&#39;</span>
 <span class="sd">            may be a sequence, in which case arguments will be passed directly to</span>
 <span class="sd">            the program without shell intervention (as with os.spawnv()).  If &#39;cmd&#39;</span>
@@ -842,7 +842,7 @@
         <span class="n">__all__</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;popen3&quot;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="ow">not</span> <span class="n">_exists</span><span class="p">(</span><span class="s2">&quot;popen4&quot;</span><span class="p">):</span>
-<div class="viewcode-block" id="popen4"><a class="viewcode-back" href="../generated/os.popen4.html#os.popen4">[docs]</a>        <span class="k">def</span> <span class="nf">popen4</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;t&quot;</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="popen4"><a class="viewcode-back" href="../generated/generated/os.popen4.html#os.popen4">[docs]</a>        <span class="k">def</span> <span class="nf">popen4</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;t&quot;</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
             <span class="sd">&quot;&quot;&quot;Execute the shell command &#39;cmd&#39; in a sub-process.  On UNIX, &#39;cmd&#39;</span>
 <span class="sd">            may be a sequence, in which case arguments will be passed directly to</span>
 <span class="sd">            the program without shell intervention (as with os.spawnv()).  If &#39;cmd&#39;</span>

@@ -167,7 +167,7 @@
 
 <span class="c1"># Does a path exist?</span>
 <span class="c1"># This is false for dangling symbolic links on systems that support them.</span>
-<div class="viewcode-block" id="exists"><a class="viewcode-back" href="../generated/os.path.exists.html#os.path.exists">[docs]</a><span class="k">def</span> <span class="nf">exists</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="exists"><a class="viewcode-back" href="../generated/generated/os.path.exists.html#os.path.exists">[docs]</a><span class="k">def</span> <span class="nf">exists</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Test whether a path exists.  Returns False for broken symbolic links&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
@@ -178,7 +178,7 @@
 
 <span class="c1"># This follows symbolic links, so both islink() and isdir() can be true</span>
 <span class="c1"># for the same path on systems that support symlinks</span>
-<div class="viewcode-block" id="isfile"><a class="viewcode-back" href="../generated/turtle.isfile.html#os.path.isfile">[docs]</a><span class="k">def</span> <span class="nf">isfile</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="isfile"><a class="viewcode-back" href="../generated/generated/turtle.isfile.html#os.path.isfile">[docs]</a><span class="k">def</span> <span class="nf">isfile</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Test whether a path is a regular file&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">st</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
@@ -190,7 +190,7 @@
 <span class="c1"># Is a path a directory?</span>
 <span class="c1"># This follows symbolic links, so both islink() and isdir()</span>
 <span class="c1"># can be true for the same path on systems that support symlinks</span>
-<div class="viewcode-block" id="isdir"><a class="viewcode-back" href="../generated/os.path.isdir.html#os.path.isdir">[docs]</a><span class="k">def</span> <span class="nf">isdir</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="isdir"><a class="viewcode-back" href="../generated/generated/os.path.isdir.html#os.path.isdir">[docs]</a><span class="k">def</span> <span class="nf">isdir</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the pathname refers to an existing directory.&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">st</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
@@ -199,28 +199,28 @@
     <span class="k">return</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISDIR</span><span class="p">(</span><span class="n">st</span><span class="o">.</span><span class="n">st_mode</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="getsize"><a class="viewcode-back" href="../generated/os.path.getsize.html#os.path.getsize">[docs]</a><span class="k">def</span> <span class="nf">getsize</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<div class="viewcode-block" id="getsize"><a class="viewcode-back" href="../generated/generated/os.path.getsize.html#os.path.getsize">[docs]</a><span class="k">def</span> <span class="nf">getsize</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the size of a file, reported by os.stat().&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">.</span><span class="n">st_size</span></div>
 
 
-<div class="viewcode-block" id="getmtime"><a class="viewcode-back" href="../generated/os.path.getmtime.html#os.path.getmtime">[docs]</a><span class="k">def</span> <span class="nf">getmtime</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<div class="viewcode-block" id="getmtime"><a class="viewcode-back" href="../generated/generated/os.path.getmtime.html#os.path.getmtime">[docs]</a><span class="k">def</span> <span class="nf">getmtime</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the last modification time of a file, reported by os.stat().&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">.</span><span class="n">st_mtime</span></div>
 
 
-<div class="viewcode-block" id="getatime"><a class="viewcode-back" href="../generated/os.path.getatime.html#os.path.getatime">[docs]</a><span class="k">def</span> <span class="nf">getatime</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<div class="viewcode-block" id="getatime"><a class="viewcode-back" href="../generated/generated/os.path.getatime.html#os.path.getatime">[docs]</a><span class="k">def</span> <span class="nf">getatime</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the last access time of a file, reported by os.stat().&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">.</span><span class="n">st_atime</span></div>
 
 
-<div class="viewcode-block" id="getctime"><a class="viewcode-back" href="../generated/os.path.getctime.html#os.path.getctime">[docs]</a><span class="k">def</span> <span class="nf">getctime</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<div class="viewcode-block" id="getctime"><a class="viewcode-back" href="../generated/generated/os.path.getctime.html#os.path.getctime">[docs]</a><span class="k">def</span> <span class="nf">getctime</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return the metadata change time of a file, reported by os.stat().&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">.</span><span class="n">st_ctime</span></div>
 
 
 <span class="c1"># Return the longest prefix of all list elements.</span>
-<div class="viewcode-block" id="commonprefix"><a class="viewcode-back" href="../generated/os.path.commonprefix.html#os.path.commonprefix">[docs]</a><span class="k">def</span> <span class="nf">commonprefix</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+<div class="viewcode-block" id="commonprefix"><a class="viewcode-back" href="../generated/generated/os.path.commonprefix.html#os.path.commonprefix">[docs]</a><span class="k">def</span> <span class="nf">commonprefix</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
     <span class="s2">&quot;Given a list of pathnames, returns the longest common leading component&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">m</span><span class="p">:</span> <span class="k">return</span> <span class="s1">&#39;&#39;</span>
     <span class="n">s1</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>

@@ -171,7 +171,7 @@
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">args</span> <span class="o">=</span> <span class="n">args</span></div>
 
-<div class="viewcode-block" id="start_new_thread"><a class="viewcode-back" href="../generated/dummy_thread.start_new_thread.html#dummy_thread.start_new_thread">[docs]</a><span class="k">def</span> <span class="nf">start_new_thread</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{}):</span>
+<div class="viewcode-block" id="start_new_thread"><a class="viewcode-back" href="../generated/generated/dummy_thread.start_new_thread.html#dummy_thread.start_new_thread">[docs]</a><span class="k">def</span> <span class="nf">start_new_thread</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{}):</span>
     <span class="sd">&quot;&quot;&quot;Dummy implementation of thread.start_new_thread().</span>
 
 <span class="sd">    Compatibility is maintained by making sure that ``args`` is a</span>
@@ -202,11 +202,11 @@
         <span class="n">_interrupt</span> <span class="o">=</span> <span class="bp">False</span>
         <span class="k">raise</span> <span class="ne">KeyboardInterrupt</span></div>
 
-<div class="viewcode-block" id="exit"><a class="viewcode-back" href="../generated/dummy_thread.exit.html#dummy_thread.exit">[docs]</a><span class="k">def</span> <span class="nf">exit</span><span class="p">():</span>
+<div class="viewcode-block" id="exit"><a class="viewcode-back" href="../generated/generated/dummy_thread.exit.html#dummy_thread.exit">[docs]</a><span class="k">def</span> <span class="nf">exit</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Dummy implementation of thread.exit().&quot;&quot;&quot;</span>
     <span class="k">raise</span> <span class="ne">SystemExit</span></div>
 
-<div class="viewcode-block" id="get_ident"><a class="viewcode-back" href="../generated/dummy_thread.get_ident.html#dummy_thread.get_ident">[docs]</a><span class="k">def</span> <span class="nf">get_ident</span><span class="p">():</span>
+<div class="viewcode-block" id="get_ident"><a class="viewcode-back" href="../generated/generated/dummy_thread.get_ident.html#dummy_thread.get_ident">[docs]</a><span class="k">def</span> <span class="nf">get_ident</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Dummy implementation of thread.get_ident().</span>
 
 <span class="sd">    Since this module should only be used when threadmodule is not</span>
@@ -215,11 +215,11 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span></div>
 
-<div class="viewcode-block" id="allocate_lock"><a class="viewcode-back" href="../generated/dummy_thread.allocate_lock.html#dummy_thread.allocate_lock">[docs]</a><span class="k">def</span> <span class="nf">allocate_lock</span><span class="p">():</span>
+<div class="viewcode-block" id="allocate_lock"><a class="viewcode-back" href="../generated/generated/dummy_thread.allocate_lock.html#dummy_thread.allocate_lock">[docs]</a><span class="k">def</span> <span class="nf">allocate_lock</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Dummy implementation of thread.allocate_lock().&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">LockType</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="stack_size"><a class="viewcode-back" href="../generated/dummy_threading.stack_size.html#dummy_thread.stack_size">[docs]</a><span class="k">def</span> <span class="nf">stack_size</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="stack_size"><a class="viewcode-back" href="../generated/generated/dummy_threading.stack_size.html#dummy_thread.stack_size">[docs]</a><span class="k">def</span> <span class="nf">stack_size</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Dummy implementation of thread.stack_size().&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">size</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="k">raise</span> <span class="n">error</span><span class="p">(</span><span class="s2">&quot;setting thread stack size not supported&quot;</span><span class="p">)</span>
@@ -282,7 +282,7 @@
 <span class="c1"># True when not executing in a &quot;thread&quot;</span>
 <span class="n">_main</span> <span class="o">=</span> <span class="bp">True</span>
 
-<div class="viewcode-block" id="interrupt_main"><a class="viewcode-back" href="../generated/dummy_thread.interrupt_main.html#dummy_thread.interrupt_main">[docs]</a><span class="k">def</span> <span class="nf">interrupt_main</span><span class="p">():</span>
+<div class="viewcode-block" id="interrupt_main"><a class="viewcode-back" href="../generated/generated/dummy_thread.interrupt_main.html#dummy_thread.interrupt_main">[docs]</a><span class="k">def</span> <span class="nf">interrupt_main</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Set _interrupt flag to True to have start_new_thread raise</span>
 <span class="sd">    KeyboardInterrupt upon exiting.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">_main</span><span class="p">:</span>

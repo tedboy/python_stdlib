@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       abs__file__
       addpackage
@@ -32,6 +32,33 @@
       setencoding
       sethelper
       setquit
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/site.abs__file__
+       generated/site.addpackage
+       generated/site.addsitedir
+       generated/site.addsitepackages
+       generated/site.addusersitepackages
+       generated/site.aliasmbcs
+       generated/site.check_enableusersite
+       generated/site.execsitecustomize
+       generated/site.execusercustomize
+       generated/site.getsitepackages
+       generated/site.getuserbase
+       generated/site.getusersitepackages
+       generated/site.main
+       generated/site.makepath
+       generated/site.removeduppaths
+       generated/site.setBEGINLIBPATH
+       generated/site.setcopyright
+       generated/site.setencoding
+       generated/site.sethelper
+       generated/site.setquit
+      
    
    
 

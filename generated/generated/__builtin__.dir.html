@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>__builtin__.dir() &mdash; Python Standard Library</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="__builtin__" href="../__builtin__.html"/>
+        <link rel="next" title="__builtin__.divmod()" href="__builtin__.divmod.html"/>
+        <link rel="prev" title="__builtin__.delattr()" href="__builtin__.delattr.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../api_all.html#python-runtime-services">28 Python Runtime Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../sys.html"><code class="docutils literal"><span class="pre">sys</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sysconfig.html"><code class="docutils literal"><span class="pre">sysconfig</span></code></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../__builtin__.html"><code class="docutils literal"><span class="pre">__builtin__</span></code></a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../__builtin__.html#functions">Functions</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.abs.html"><code class="docutils literal"><span class="pre">__builtin__.abs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.all.html"><code class="docutils literal"><span class="pre">__builtin__.all()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.any.html"><code class="docutils literal"><span class="pre">__builtin__.any()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.apply.html"><code class="docutils literal"><span class="pre">__builtin__.apply()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.bin.html"><code class="docutils literal"><span class="pre">__builtin__.bin()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.callable.html"><code class="docutils literal"><span class="pre">__builtin__.callable()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.chr.html"><code class="docutils literal"><span class="pre">__builtin__.chr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.cmp.html"><code class="docutils literal"><span class="pre">__builtin__.cmp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.coerce.html"><code class="docutils literal"><span class="pre">__builtin__.coerce()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.compile.html"><code class="docutils literal"><span class="pre">__builtin__.compile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.delattr.html"><code class="docutils literal"><span class="pre">__builtin__.delattr()</span></code></a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">__builtin__.dir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.divmod.html"><code class="docutils literal"><span class="pre">__builtin__.divmod()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.eval.html"><code class="docutils literal"><span class="pre">__builtin__.eval()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.execfile.html"><code class="docutils literal"><span class="pre">__builtin__.execfile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.filter.html"><code class="docutils literal"><span class="pre">__builtin__.filter()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.format.html"><code class="docutils literal"><span class="pre">__builtin__.format()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.getattr.html"><code class="docutils literal"><span class="pre">__builtin__.getattr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.globals.html"><code class="docutils literal"><span class="pre">__builtin__.globals()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.hasattr.html"><code class="docutils literal"><span class="pre">__builtin__.hasattr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.hash.html"><code class="docutils literal"><span class="pre">__builtin__.hash()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.hex.html"><code class="docutils literal"><span class="pre">__builtin__.hex()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.id.html"><code class="docutils literal"><span class="pre">__builtin__.id()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.input.html"><code class="docutils literal"><span class="pre">__builtin__.input()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.intern.html"><code class="docutils literal"><span class="pre">__builtin__.intern()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.isinstance.html"><code class="docutils literal"><span class="pre">__builtin__.isinstance()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.issubclass.html"><code class="docutils literal"><span class="pre">__builtin__.issubclass()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.iter.html"><code class="docutils literal"><span class="pre">__builtin__.iter()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.len.html"><code class="docutils literal"><span class="pre">__builtin__.len()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.locals.html"><code class="docutils literal"><span class="pre">__builtin__.locals()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.map.html"><code class="docutils literal"><span class="pre">__builtin__.map()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.max.html"><code class="docutils literal"><span class="pre">__builtin__.max()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.min.html"><code class="docutils literal"><span class="pre">__builtin__.min()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.next.html"><code class="docutils literal"><span class="pre">__builtin__.next()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.oct.html"><code class="docutils literal"><span class="pre">__builtin__.oct()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.open.html"><code class="docutils literal"><span class="pre">__builtin__.open()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.ord.html"><code class="docutils literal"><span class="pre">__builtin__.ord()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.pow.html"><code class="docutils literal"><span class="pre">__builtin__.pow()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.print.html"><code class="docutils literal"><span class="pre">__builtin__.print()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.range.html"><code class="docutils literal"><span class="pre">__builtin__.range()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.raw_input.html"><code class="docutils literal"><span class="pre">__builtin__.raw_input()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.reduce.html"><code class="docutils literal"><span class="pre">__builtin__.reduce()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.reload.html"><code class="docutils literal"><span class="pre">__builtin__.reload()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.repr.html"><code class="docutils literal"><span class="pre">__builtin__.repr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.round.html"><code class="docutils literal"><span class="pre">__builtin__.round()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.setattr.html"><code class="docutils literal"><span class="pre">__builtin__.setattr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.sorted.html"><code class="docutils literal"><span class="pre">__builtin__.sorted()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.sum.html"><code class="docutils literal"><span class="pre">__builtin__.sum()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.unichr.html"><code class="docutils literal"><span class="pre">__builtin__.unichr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.vars.html"><code class="docutils literal"><span class="pre">__builtin__.vars()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="__builtin__.zip.html"><code class="docutils literal"><span class="pre">__builtin__.zip()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../__builtin__.html#classes">Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__builtin__.html#exceptions">Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../future_builtins.html"><code class="docutils literal"><span class="pre">future_builtins</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../__main__.html"><code class="docutils literal"><span class="pre">__main__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../warnings.html"><code class="docutils literal"><span class="pre">warnings</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contextlib.html"><code class="docutils literal"><span class="pre">contextlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../abc.html"><code class="docutils literal"><span class="pre">abc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../atexit.html"><code class="docutils literal"><span class="pre">atexit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../traceback.html"><code class="docutils literal"><span class="pre">traceback</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../__future__.html"><code class="docutils literal"><span class="pre">__future__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gc.html"><code class="docutils literal"><span class="pre">gc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../inspect.html"><code class="docutils literal"><span class="pre">inspect</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../site.html"><code class="docutils literal"><span class="pre">site</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user.html"><code class="docutils literal"><span class="pre">user</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../api_all.html">api</a> &raquo;</li>
+        
+          <li><a href="../__builtin__.html"><code class="docutils literal"><span class="pre">__builtin__</span></code></a> &raquo;</li>
+        
+      <li><code class="docutils literal"><span class="pre">__builtin__.dir()</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/__builtin__.dir.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="builtin-dir">
+<h1><a class="reference internal" href="#__builtin__.dir" title="__builtin__.dir"><code class="xref py py-func docutils literal"><span class="pre">__builtin__.dir()</span></code></a><a class="headerlink" href="#builtin-dir" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="__builtin__.dir">
+<code class="descclassname">__builtin__.</code><code class="descname">dir</code><span class="sig-paren">(</span><span class="optional">[</span><em>object</em><span class="optional">]</span><span class="sig-paren">)</span> &rarr; list of strings<a class="headerlink" href="#__builtin__.dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>If called without an argument, return the names in the current scope.
+Else, return an alphabetized list of names comprising (some of) the attributes
+of the given object, and of attributes reachable from it.
+If the object supplies a method named __dir__, it will be used; otherwise
+the default dir() logic is used and returns:</p>
+<blockquote>
+<div><p>for a module object: the module&#8217;s attributes.
+for a class object:  its attributes, and recursively the attributes</p>
+<blockquote>
+<div>of its bases.</div></blockquote>
+<dl class="docutils">
+<dt>for any other object: its attributes, its class&#8217;s attributes, and</dt>
+<dd>recursively the attributes of its class&#8217;s base classes.</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="__builtin__.divmod.html" class="btn btn-neutral float-right" title="__builtin__.divmod()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="__builtin__.delattr.html" class="btn btn-neutral" title="__builtin__.delattr()" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

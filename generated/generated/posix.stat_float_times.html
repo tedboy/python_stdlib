@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>posix.stat_float_times() &mdash; Python Standard Library</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="posix" href="../posix.html"/>
+        <link rel="next" title="posix.statvfs()" href="posix.statvfs.html"/>
+        <link rel="prev" title="posix.stat()" href="posix.stat.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../api_all.html#unix-specific-services">36. Unix Specific Services</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../posix.html"><code class="docutils literal"><span class="pre">posix</span></code></a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../posix.html#functions">Functions</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="posix.WCOREDUMP.html"><code class="docutils literal"><span class="pre">posix.WCOREDUMP()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.WEXITSTATUS.html"><code class="docutils literal"><span class="pre">posix.WEXITSTATUS()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.WIFCONTINUED.html"><code class="docutils literal"><span class="pre">posix.WIFCONTINUED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.WIFEXITED.html"><code class="docutils literal"><span class="pre">posix.WIFEXITED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.WIFSIGNALED.html"><code class="docutils literal"><span class="pre">posix.WIFSIGNALED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.WIFSTOPPED.html"><code class="docutils literal"><span class="pre">posix.WIFSTOPPED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.WSTOPSIG.html"><code class="docutils literal"><span class="pre">posix.WSTOPSIG()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.WTERMSIG.html"><code class="docutils literal"><span class="pre">posix.WTERMSIG()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.abort.html"><code class="docutils literal"><span class="pre">posix.abort()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.access.html"><code class="docutils literal"><span class="pre">posix.access()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.chdir.html"><code class="docutils literal"><span class="pre">posix.chdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.chmod.html"><code class="docutils literal"><span class="pre">posix.chmod()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.chown.html"><code class="docutils literal"><span class="pre">posix.chown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.chroot.html"><code class="docutils literal"><span class="pre">posix.chroot()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.close.html"><code class="docutils literal"><span class="pre">posix.close()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.closerange.html"><code class="docutils literal"><span class="pre">posix.closerange()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.confstr.html"><code class="docutils literal"><span class="pre">posix.confstr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.ctermid.html"><code class="docutils literal"><span class="pre">posix.ctermid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.dup.html"><code class="docutils literal"><span class="pre">posix.dup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.dup2.html"><code class="docutils literal"><span class="pre">posix.dup2()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.execv.html"><code class="docutils literal"><span class="pre">posix.execv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.execve.html"><code class="docutils literal"><span class="pre">posix.execve()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.fchdir.html"><code class="docutils literal"><span class="pre">posix.fchdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.fchmod.html"><code class="docutils literal"><span class="pre">posix.fchmod()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.fchown.html"><code class="docutils literal"><span class="pre">posix.fchown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.fdatasync.html"><code class="docutils literal"><span class="pre">posix.fdatasync()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.fdopen.html"><code class="docutils literal"><span class="pre">posix.fdopen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.fork.html"><code class="docutils literal"><span class="pre">posix.fork()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.forkpty.html"><code class="docutils literal"><span class="pre">posix.forkpty()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.fpathconf.html"><code class="docutils literal"><span class="pre">posix.fpathconf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.fstat.html"><code class="docutils literal"><span class="pre">posix.fstat()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.fstatvfs.html"><code class="docutils literal"><span class="pre">posix.fstatvfs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.fsync.html"><code class="docutils literal"><span class="pre">posix.fsync()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.ftruncate.html"><code class="docutils literal"><span class="pre">posix.ftruncate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getcwd.html"><code class="docutils literal"><span class="pre">posix.getcwd()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getcwdu.html"><code class="docutils literal"><span class="pre">posix.getcwdu()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getegid.html"><code class="docutils literal"><span class="pre">posix.getegid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.geteuid.html"><code class="docutils literal"><span class="pre">posix.geteuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getgid.html"><code class="docutils literal"><span class="pre">posix.getgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getgroups.html"><code class="docutils literal"><span class="pre">posix.getgroups()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getloadavg.html"><code class="docutils literal"><span class="pre">posix.getloadavg()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getlogin.html"><code class="docutils literal"><span class="pre">posix.getlogin()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getpgid.html"><code class="docutils literal"><span class="pre">posix.getpgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getpgrp.html"><code class="docutils literal"><span class="pre">posix.getpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getpid.html"><code class="docutils literal"><span class="pre">posix.getpid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getppid.html"><code class="docutils literal"><span class="pre">posix.getppid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getresgid.html"><code class="docutils literal"><span class="pre">posix.getresgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getresuid.html"><code class="docutils literal"><span class="pre">posix.getresuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getsid.html"><code class="docutils literal"><span class="pre">posix.getsid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.getuid.html"><code class="docutils literal"><span class="pre">posix.getuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.initgroups.html"><code class="docutils literal"><span class="pre">posix.initgroups()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.isatty.html"><code class="docutils literal"><span class="pre">posix.isatty()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.kill.html"><code class="docutils literal"><span class="pre">posix.kill()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.killpg.html"><code class="docutils literal"><span class="pre">posix.killpg()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.lchown.html"><code class="docutils literal"><span class="pre">posix.lchown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.link.html"><code class="docutils literal"><span class="pre">posix.link()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.listdir.html"><code class="docutils literal"><span class="pre">posix.listdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.lseek.html"><code class="docutils literal"><span class="pre">posix.lseek()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.lstat.html"><code class="docutils literal"><span class="pre">posix.lstat()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.major.html"><code class="docutils literal"><span class="pre">posix.major()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.makedev.html"><code class="docutils literal"><span class="pre">posix.makedev()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.minor.html"><code class="docutils literal"><span class="pre">posix.minor()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.mkdir.html"><code class="docutils literal"><span class="pre">posix.mkdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.mkfifo.html"><code class="docutils literal"><span class="pre">posix.mkfifo()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.mknod.html"><code class="docutils literal"><span class="pre">posix.mknod()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.nice.html"><code class="docutils literal"><span class="pre">posix.nice()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.open.html"><code class="docutils literal"><span class="pre">posix.open()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.openpty.html"><code class="docutils literal"><span class="pre">posix.openpty()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.pathconf.html"><code class="docutils literal"><span class="pre">posix.pathconf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.pipe.html"><code class="docutils literal"><span class="pre">posix.pipe()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.popen.html"><code class="docutils literal"><span class="pre">posix.popen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.putenv.html"><code class="docutils literal"><span class="pre">posix.putenv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.read.html"><code class="docutils literal"><span class="pre">posix.read()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.readlink.html"><code class="docutils literal"><span class="pre">posix.readlink()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.remove.html"><code class="docutils literal"><span class="pre">posix.remove()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.rename.html"><code class="docutils literal"><span class="pre">posix.rename()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.rmdir.html"><code class="docutils literal"><span class="pre">posix.rmdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.setegid.html"><code class="docutils literal"><span class="pre">posix.setegid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.seteuid.html"><code class="docutils literal"><span class="pre">posix.seteuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.setgid.html"><code class="docutils literal"><span class="pre">posix.setgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.setgroups.html"><code class="docutils literal"><span class="pre">posix.setgroups()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.setpgid.html"><code class="docutils literal"><span class="pre">posix.setpgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.setpgrp.html"><code class="docutils literal"><span class="pre">posix.setpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.setregid.html"><code class="docutils literal"><span class="pre">posix.setregid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.setresgid.html"><code class="docutils literal"><span class="pre">posix.setresgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.setresuid.html"><code class="docutils literal"><span class="pre">posix.setresuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.setreuid.html"><code class="docutils literal"><span class="pre">posix.setreuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.setsid.html"><code class="docutils literal"><span class="pre">posix.setsid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.setuid.html"><code class="docutils literal"><span class="pre">posix.setuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.stat.html"><code class="docutils literal"><span class="pre">posix.stat()</span></code></a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">posix.stat_float_times()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.statvfs.html"><code class="docutils literal"><span class="pre">posix.statvfs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.strerror.html"><code class="docutils literal"><span class="pre">posix.strerror()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.symlink.html"><code class="docutils literal"><span class="pre">posix.symlink()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.sysconf.html"><code class="docutils literal"><span class="pre">posix.sysconf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.system.html"><code class="docutils literal"><span class="pre">posix.system()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.tcgetpgrp.html"><code class="docutils literal"><span class="pre">posix.tcgetpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.tcsetpgrp.html"><code class="docutils literal"><span class="pre">posix.tcsetpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.tempnam.html"><code class="docutils literal"><span class="pre">posix.tempnam()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.times.html"><code class="docutils literal"><span class="pre">posix.times()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.tmpfile.html"><code class="docutils literal"><span class="pre">posix.tmpfile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.tmpnam.html"><code class="docutils literal"><span class="pre">posix.tmpnam()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.ttyname.html"><code class="docutils literal"><span class="pre">posix.ttyname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.umask.html"><code class="docutils literal"><span class="pre">posix.umask()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.uname.html"><code class="docutils literal"><span class="pre">posix.uname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.unlink.html"><code class="docutils literal"><span class="pre">posix.unlink()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.unsetenv.html"><code class="docutils literal"><span class="pre">posix.unsetenv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.urandom.html"><code class="docutils literal"><span class="pre">posix.urandom()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.utime.html"><code class="docutils literal"><span class="pre">posix.utime()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.wait.html"><code class="docutils literal"><span class="pre">posix.wait()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.wait3.html"><code class="docutils literal"><span class="pre">posix.wait3()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.wait4.html"><code class="docutils literal"><span class="pre">posix.wait4()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.waitpid.html"><code class="docutils literal"><span class="pre">posix.waitpid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="posix.write.html"><code class="docutils literal"><span class="pre">posix.write()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../posix.html#classes">Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../posix.html#exceptions">Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pwd.html"><code class="docutils literal"><span class="pre">pwd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../spwd.html"><code class="docutils literal"><span class="pre">spwd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../grp.html"><code class="docutils literal"><span class="pre">grp</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../crypt.html"><code class="docutils literal"><span class="pre">crypt</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../termios.html"><code class="docutils literal"><span class="pre">termios</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tty.html"><code class="docutils literal"><span class="pre">tty</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pty.html"><code class="docutils literal"><span class="pre">pty</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fcntl.html"><code class="docutils literal"><span class="pre">fcntl</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pipes.html"><code class="docutils literal"><span class="pre">pipes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../posixfile.html"><code class="docutils literal"><span class="pre">posixfile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../resource.html"><code class="docutils literal"><span class="pre">resource</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nis.html"><code class="docutils literal"><span class="pre">nis</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../syslog.html"><code class="docutils literal"><span class="pre">syslog</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commands.html"><code class="docutils literal"><span class="pre">commands</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../api_all.html">api</a> &raquo;</li>
+        
+          <li><a href="../posix.html"><code class="docutils literal"><span class="pre">posix</span></code></a> &raquo;</li>
+        
+      <li><code class="docutils literal"><span class="pre">posix.stat_float_times()</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/posix.stat_float_times.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="posix-stat-float-times">
+<h1><a class="reference internal" href="#posix.stat_float_times" title="posix.stat_float_times"><code class="xref py py-func docutils literal"><span class="pre">posix.stat_float_times()</span></code></a><a class="headerlink" href="#posix-stat-float-times" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="posix.stat_float_times">
+<code class="descclassname">posix.</code><code class="descname">stat_float_times</code><span class="sig-paren">(</span><span class="optional">[</span><em>newval</em><span class="optional">]</span><span class="sig-paren">)</span> &rarr; oldval<a class="headerlink" href="#posix.stat_float_times" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether os.[lf]stat represents time stamps as float objects.
+If newval is True, future calls to stat() return floats, if it is False,
+future calls return ints. 
+If newval is omitted, return the current setting.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="posix.statvfs.html" class="btn btn-neutral float-right" title="posix.statvfs()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="posix.stat.html" class="btn btn-neutral" title="posix.stat()" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

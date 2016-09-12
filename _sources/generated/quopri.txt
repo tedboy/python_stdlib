@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       a2b_qp
       b2a_qp
@@ -23,6 +23,24 @@
       needsquoting
       quote
       unhex
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/quopri.a2b_qp
+       generated/quopri.b2a_qp
+       generated/quopri.decode
+       generated/quopri.decodestring
+       generated/quopri.encode
+       generated/quopri.encodestring
+       generated/quopri.ishex
+       generated/quopri.main
+       generated/quopri.needsquoting
+       generated/quopri.quote
+       generated/quopri.unhex
+      
    
    
 

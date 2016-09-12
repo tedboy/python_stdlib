@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       setcbreak
       setraw
@@ -20,6 +20,21 @@
       tcgetattr
       tcsendbreak
       tcsetattr
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/tty.setcbreak
+       generated/tty.setraw
+       generated/tty.tcdrain
+       generated/tty.tcflow
+       generated/tty.tcflush
+       generated/tty.tcgetattr
+       generated/tty.tcsendbreak
+       generated/tty.tcsetattr
+      
    
    
 

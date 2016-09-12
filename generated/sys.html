@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="sys.exc_type" href="sys.exc_type.html"/>
+        <link rel="next" title="sys.call_tracing()" href="generated/sys.call_tracing.html"/>
         <link rel="prev" title="distutils" href="distutils.html"/> 
 
   
@@ -82,12 +82,94 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">sys</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.call_tracing.html"><code class="docutils literal"><span class="pre">sys.call_tracing()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.callstats.html"><code class="docutils literal"><span class="pre">sys.callstats()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.displayhook.html"><code class="docutils literal"><span class="pre">sys.displayhook()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.exc_clear.html"><code class="docutils literal"><span class="pre">sys.exc_clear()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.exc_info.html"><code class="docutils literal"><span class="pre">sys.exc_info()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.excepthook.html"><code class="docutils literal"><span class="pre">sys.excepthook()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.exit.html"><code class="docutils literal"><span class="pre">sys.exit()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.exitfunc.html"><code class="docutils literal"><span class="pre">sys.exitfunc()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.getcheckinterval.html"><code class="docutils literal"><span class="pre">sys.getcheckinterval()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.getdefaultencoding.html"><code class="docutils literal"><span class="pre">sys.getdefaultencoding()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.getdlopenflags.html"><code class="docutils literal"><span class="pre">sys.getdlopenflags()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.getfilesystemencoding.html"><code class="docutils literal"><span class="pre">sys.getfilesystemencoding()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.getprofile.html"><code class="docutils literal"><span class="pre">sys.getprofile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.getrecursionlimit.html"><code class="docutils literal"><span class="pre">sys.getrecursionlimit()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.getrefcount.html"><code class="docutils literal"><span class="pre">sys.getrefcount()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.getsizeof.html"><code class="docutils literal"><span class="pre">sys.getsizeof()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.gettrace.html"><code class="docutils literal"><span class="pre">sys.gettrace()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.setcheckinterval.html"><code class="docutils literal"><span class="pre">sys.setcheckinterval()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.setdlopenflags.html"><code class="docutils literal"><span class="pre">sys.setdlopenflags()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.setprofile.html"><code class="docutils literal"><span class="pre">sys.setprofile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.setrecursionlimit.html"><code class="docutils literal"><span class="pre">sys.setrecursionlimit()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/sys.settrace.html"><code class="docutils literal"><span class="pre">sys.settrace()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sys.exc_type.html">sys.exc_type</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sysconfig.html"><code class="docutils literal"><span class="pre">sysconfig</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="__builtin__.html"><code class="docutils literal"><span class="pre">__builtin__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="future_builtins.html"><code class="docutils literal"><span class="pre">future_builtins</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="__main__.html"><code class="docutils literal"><span class="pre">__main__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="warnings.html"><code class="docutils literal"><span class="pre">warnings</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="contextlib.html"><code class="docutils literal"><span class="pre">contextlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abc.html"><code class="docutils literal"><span class="pre">abc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="atexit.html"><code class="docutils literal"><span class="pre">atexit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="traceback.html"><code class="docutils literal"><span class="pre">traceback</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="__future__.html"><code class="docutils literal"><span class="pre">__future__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="gc.html"><code class="docutils literal"><span class="pre">gc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="inspect.html"><code class="docutils literal"><span class="pre">inspect</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="site.html"><code class="docutils literal"><span class="pre">site</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="user.html"><code class="docutils literal"><span class="pre">user</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -223,6 +305,82 @@ setrecursionlimit() &#8211; set the max recursion depth for the interpreter
 settrace() &#8211; set the global debug tracing function</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.call_tracing.html#sys.call_tracing" title="sys.call_tracing"><code class="xref py py-obj docutils literal"><span class="pre">call_tracing</span></code></a>((func,&nbsp;args)&nbsp;-&gt;&nbsp;object)</td>
+<td>Call func(<a href="#id1"><span class="problematic" id="id2">*</span></a>args), while tracing is enabled.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sys.callstats.html#sys.callstats" title="sys.callstats"><code class="xref py py-obj docutils literal"><span class="pre">callstats</span></code></a>(()&nbsp;-&gt;&nbsp;tuple&nbsp;of&nbsp;integers)</td>
+<td>Return a tuple of function call statistics, if CALL_PROFILE was defined when Python was built.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.displayhook.html#sys.displayhook" title="sys.displayhook"><code class="xref py py-obj docutils literal"><span class="pre">displayhook</span></code></a>((object)&nbsp;-&gt;&nbsp;None)</td>
+<td>Print an object to sys.stdout and also save it in __builtin__._</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sys.exc_clear.html#sys.exc_clear" title="sys.exc_clear"><code class="xref py py-obj docutils literal"><span class="pre">exc_clear</span></code></a>(()&nbsp;-&gt;&nbsp;None)</td>
+<td>Clear global information on the current exception.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-obj docutils literal"><span class="pre">exc_info</span></code></a>()&nbsp;-&gt;&nbsp;(type,&nbsp;value,&nbsp;traceback)</td>
+<td>Return information about the most recent exception caught by an except clause in the current stack frame or in an older stack frame.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sys.excepthook.html#sys.excepthook" title="sys.excepthook"><code class="xref py py-obj docutils literal"><span class="pre">excepthook</span></code></a>((exctype,&nbsp;value,&nbsp;traceback)&nbsp;-&gt;&nbsp;None)</td>
+<td>Handle an exception by displaying it with a traceback on sys.stderr.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-obj docutils literal"><span class="pre">exit</span></code></a>([status])</td>
+<td>Exit the interpreter by raising SystemExit(status).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sys.exitfunc.html#sys.exitfunc" title="sys.exitfunc"><code class="xref py py-obj docutils literal"><span class="pre">exitfunc</span></code></a>()</td>
+<td>run any registered exit functions</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.getcheckinterval.html#sys.getcheckinterval" title="sys.getcheckinterval"><code class="xref py py-obj docutils literal"><span class="pre">getcheckinterval</span></code></a>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sys.getdefaultencoding.html#sys.getdefaultencoding" title="sys.getdefaultencoding"><code class="xref py py-obj docutils literal"><span class="pre">getdefaultencoding</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the current default string encoding used by the Unicode  implementation.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.getdlopenflags.html#sys.getdlopenflags" title="sys.getdlopenflags"><code class="xref py py-obj docutils literal"><span class="pre">getdlopenflags</span></code></a>(()&nbsp;-&gt;&nbsp;int)</td>
+<td>Return the current value of the flags that are used for dlopen calls.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sys.getfilesystemencoding.html#sys.getfilesystemencoding" title="sys.getfilesystemencoding"><code class="xref py py-obj docutils literal"><span class="pre">getfilesystemencoding</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the encoding used to convert Unicode filenames in operating system filenames.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.getprofile.html#sys.getprofile" title="sys.getprofile"><code class="xref py py-obj docutils literal"><span class="pre">getprofile</span></code></a>()</td>
+<td>Return the profiling function set with sys.setprofile.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sys.getrecursionlimit.html#sys.getrecursionlimit" title="sys.getrecursionlimit"><code class="xref py py-obj docutils literal"><span class="pre">getrecursionlimit</span></code></a>()</td>
+<td>Return the current value of the recursion limit, the maximum depth of the Python interpreter stack.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.getrefcount.html#sys.getrefcount" title="sys.getrefcount"><code class="xref py py-obj docutils literal"><span class="pre">getrefcount</span></code></a>((object)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the reference count of object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sys.getsizeof.html#sys.getsizeof" title="sys.getsizeof"><code class="xref py py-obj docutils literal"><span class="pre">getsizeof</span></code></a>((object,&nbsp;default)&nbsp;-&gt;&nbsp;int)</td>
+<td>Return the size of object in bytes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.gettrace.html#sys.gettrace" title="sys.gettrace"><code class="xref py py-obj docutils literal"><span class="pre">gettrace</span></code></a>()</td>
+<td>Return the global debug tracing function set with sys.settrace.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sys.setcheckinterval.html#sys.setcheckinterval" title="sys.setcheckinterval"><code class="xref py py-obj docutils literal"><span class="pre">setcheckinterval</span></code></a>(n)</td>
+<td>Tell the Python interpreter to check for asynchronous events every n instructions.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.setdlopenflags.html#sys.setdlopenflags" title="sys.setdlopenflags"><code class="xref py py-obj docutils literal"><span class="pre">setdlopenflags</span></code></a>((n)&nbsp;-&gt;&nbsp;None)</td>
+<td>Set the flags used by the interpreter for dlopen calls, such as when the interpreter loads extension modules.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sys.setprofile.html#sys.setprofile" title="sys.setprofile"><code class="xref py py-obj docutils literal"><span class="pre">setprofile</span></code></a>(function)</td>
+<td>Set the profiling function.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sys.setrecursionlimit.html#sys.setrecursionlimit" title="sys.setrecursionlimit"><code class="xref py py-obj docutils literal"><span class="pre">setrecursionlimit</span></code></a>(n)</td>
+<td>Set the maximum depth of the Python interpreter stack to n.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sys.settrace.html#sys.settrace" title="sys.settrace"><code class="xref py py-obj docutils literal"><span class="pre">settrace</span></code></a>(function)</td>
+<td>Set the global debug tracing function.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="exceptions">
 <h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
@@ -247,7 +405,7 @@ settrace() &#8211; set the global debug tracing function</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="sys.exc_type.html" class="btn btn-neutral float-right" title="sys.exc_type" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/sys.call_tracing.html" class="btn btn-neutral float-right" title="sys.call_tracing()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="distutils.html" class="btn btn-neutral" title="distutils" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

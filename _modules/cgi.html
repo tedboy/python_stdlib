@@ -215,7 +215,7 @@
 <span class="n">logfile</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>            <span class="c1"># Filename to log to, if not empty</span>
 <span class="n">logfp</span> <span class="o">=</span> <span class="bp">None</span>            <span class="c1"># File object to log to, if not None</span>
 
-<div class="viewcode-block" id="initlog"><a class="viewcode-back" href="../generated/cgi.initlog.html#cgi.initlog">[docs]</a><span class="k">def</span> <span class="nf">initlog</span><span class="p">(</span><span class="o">*</span><span class="n">allargs</span><span class="p">):</span>
+<div class="viewcode-block" id="initlog"><a class="viewcode-back" href="../generated/generated/cgi.initlog.html#cgi.initlog">[docs]</a><span class="k">def</span> <span class="nf">initlog</span><span class="p">(</span><span class="o">*</span><span class="n">allargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Write a log message, if there is a log file.</span>
 
 <span class="sd">    Even though this function is called initlog(), you should always</span>
@@ -250,11 +250,11 @@
         <span class="n">log</span> <span class="o">=</span> <span class="n">dolog</span>
     <span class="n">log</span><span class="p">(</span><span class="o">*</span><span class="n">allargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="dolog"><a class="viewcode-back" href="../generated/cgi.dolog.html#cgi.dolog">[docs]</a><span class="k">def</span> <span class="nf">dolog</span><span class="p">(</span><span class="n">fmt</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="dolog"><a class="viewcode-back" href="../generated/generated/cgi.dolog.html#cgi.dolog">[docs]</a><span class="k">def</span> <span class="nf">dolog</span><span class="p">(</span><span class="n">fmt</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Write a log message to the log file.  See initlog() for docs.&quot;&quot;&quot;</span>
     <span class="n">logfp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">fmt</span><span class="o">%</span><span class="n">args</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="nolog"><a class="viewcode-back" href="../generated/cgi.nolog.html#cgi.nolog">[docs]</a><span class="k">def</span> <span class="nf">nolog</span><span class="p">(</span><span class="o">*</span><span class="n">allargs</span><span class="p">):</span>
+<div class="viewcode-block" id="nolog"><a class="viewcode-back" href="../generated/generated/cgi.nolog.html#cgi.nolog">[docs]</a><span class="k">def</span> <span class="nf">nolog</span><span class="p">(</span><span class="o">*</span><span class="n">allargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Dummy function, assigned to log when logging is disabled.&quot;&quot;&quot;</span>
     <span class="k">pass</span></div>
 
@@ -268,7 +268,7 @@
 <span class="c1"># 0 ==&gt; unlimited input</span>
 <span class="n">maxlen</span> <span class="o">=</span> <span class="mi">0</span>
 
-<div class="viewcode-block" id="parse"><a class="viewcode-back" href="../generated/cgi.parse.html#cgi.parse">[docs]</a><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="n">fp</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">environ</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">,</span> <span class="n">keep_blank_values</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">strict_parsing</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="parse"><a class="viewcode-back" href="../generated/generated/cgi.parse.html#cgi.parse">[docs]</a><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="n">fp</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">environ</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">,</span> <span class="n">keep_blank_values</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">strict_parsing</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Parse a query in the environment or from a file (default stdin)</span>
 
 <span class="sd">        Arguments, all optional:</span>
@@ -324,20 +324,20 @@
 <span class="c1"># parse query string function called from urlparse,</span>
 <span class="c1"># this is done in order to maintain backward compatibility.</span>
 
-<div class="viewcode-block" id="parse_qs"><a class="viewcode-back" href="../generated/cgi.parse_qs.html#cgi.parse_qs">[docs]</a><span class="k">def</span> <span class="nf">parse_qs</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">keep_blank_values</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">strict_parsing</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="parse_qs"><a class="viewcode-back" href="../generated/generated/cgi.parse_qs.html#cgi.parse_qs">[docs]</a><span class="k">def</span> <span class="nf">parse_qs</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">keep_blank_values</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">strict_parsing</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Parse a query given as a string argument.&quot;&quot;&quot;</span>
     <span class="n">warn</span><span class="p">(</span><span class="s2">&quot;cgi.parse_qs is deprecated, use urlparse.parse_qs instead&quot;</span><span class="p">,</span>
          <span class="ne">PendingDeprecationWarning</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">urlparse</span><span class="o">.</span><span class="n">parse_qs</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">keep_blank_values</span><span class="p">,</span> <span class="n">strict_parsing</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="parse_qsl"><a class="viewcode-back" href="../generated/cgi.parse_qsl.html#cgi.parse_qsl">[docs]</a><span class="k">def</span> <span class="nf">parse_qsl</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">keep_blank_values</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">strict_parsing</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="parse_qsl"><a class="viewcode-back" href="../generated/generated/cgi.parse_qsl.html#cgi.parse_qsl">[docs]</a><span class="k">def</span> <span class="nf">parse_qsl</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">keep_blank_values</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">strict_parsing</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Parse a query given as a string argument.&quot;&quot;&quot;</span>
     <span class="n">warn</span><span class="p">(</span><span class="s2">&quot;cgi.parse_qsl is deprecated, use urlparse.parse_qsl instead&quot;</span><span class="p">,</span>
          <span class="ne">PendingDeprecationWarning</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">urlparse</span><span class="o">.</span><span class="n">parse_qsl</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">keep_blank_values</span><span class="p">,</span> <span class="n">strict_parsing</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="parse_multipart"><a class="viewcode-back" href="../generated/cgi.parse_multipart.html#cgi.parse_multipart">[docs]</a><span class="k">def</span> <span class="nf">parse_multipart</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="n">pdict</span><span class="p">):</span>
+<div class="viewcode-block" id="parse_multipart"><a class="viewcode-back" href="../generated/generated/cgi.parse_multipart.html#cgi.parse_multipart">[docs]</a><span class="k">def</span> <span class="nf">parse_multipart</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="n">pdict</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Parse multipart input.</span>
 
 <span class="sd">    Arguments:</span>
@@ -447,7 +447,7 @@
         <span class="k">yield</span> <span class="n">f</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
         <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">end</span><span class="p">:]</span>
 
-<div class="viewcode-block" id="parse_header"><a class="viewcode-back" href="../generated/cgi.parse_header.html#cgi.parse_header">[docs]</a><span class="k">def</span> <span class="nf">parse_header</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+<div class="viewcode-block" id="parse_header"><a class="viewcode-back" href="../generated/generated/cgi.parse_header.html#cgi.parse_header">[docs]</a><span class="k">def</span> <span class="nf">parse_header</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Parse a Content-type like header.</span>
 
 <span class="sd">    Return the main content-type and a dictionary of options.</span>
@@ -1035,7 +1035,7 @@
 <span class="c1"># Test/debug code</span>
 <span class="c1"># ===============</span>
 
-<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/cgi.test.html#cgi.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">environ</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">):</span>
+<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/generated/cgi.test.html#cgi.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">environ</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Robust test CGI script, usable as main program.</span>
 
 <span class="sd">    Write minimal HTTP headers and dump all information provided to</span>
@@ -1074,7 +1074,7 @@
     <span class="k">except</span><span class="p">:</span>
         <span class="n">print_exception</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="print_exception"><a class="viewcode-back" href="../generated/cgi.print_exception.html#cgi.print_exception">[docs]</a><span class="k">def</span> <span class="nf">print_exception</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">tb</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="print_exception"><a class="viewcode-back" href="../generated/generated/cgi.print_exception.html#cgi.print_exception">[docs]</a><span class="k">def</span> <span class="nf">print_exception</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">tb</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">type</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="nb">type</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
     <span class="kn">import</span> <span class="nn">traceback</span>
@@ -1088,7 +1088,7 @@
         <span class="p">)</span>
     <span class="k">del</span> <span class="n">tb</span></div>
 
-<div class="viewcode-block" id="print_environ"><a class="viewcode-back" href="../generated/cgi.print_environ.html#cgi.print_environ">[docs]</a><span class="k">def</span> <span class="nf">print_environ</span><span class="p">(</span><span class="n">environ</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">):</span>
+<div class="viewcode-block" id="print_environ"><a class="viewcode-back" href="../generated/generated/cgi.print_environ.html#cgi.print_environ">[docs]</a><span class="k">def</span> <span class="nf">print_environ</span><span class="p">(</span><span class="n">environ</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Dump the shell environment as HTML.&quot;&quot;&quot;</span>
     <span class="n">keys</span> <span class="o">=</span> <span class="n">environ</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
     <span class="n">keys</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
@@ -1100,7 +1100,7 @@
     <span class="k">print</span> <span class="s2">&quot;&lt;/DL&gt;&quot;</span>
     <span class="k">print</span></div>
 
-<div class="viewcode-block" id="print_form"><a class="viewcode-back" href="../generated/cgi.print_form.html#cgi.print_form">[docs]</a><span class="k">def</span> <span class="nf">print_form</span><span class="p">(</span><span class="n">form</span><span class="p">):</span>
+<div class="viewcode-block" id="print_form"><a class="viewcode-back" href="../generated/generated/cgi.print_form.html#cgi.print_form">[docs]</a><span class="k">def</span> <span class="nf">print_form</span><span class="p">(</span><span class="n">form</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Dump the contents of a form as HTML.&quot;&quot;&quot;</span>
     <span class="n">keys</span> <span class="o">=</span> <span class="n">form</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
     <span class="n">keys</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
@@ -1117,7 +1117,7 @@
     <span class="k">print</span> <span class="s2">&quot;&lt;/DL&gt;&quot;</span>
     <span class="k">print</span></div>
 
-<div class="viewcode-block" id="print_directory"><a class="viewcode-back" href="../generated/cgi.print_directory.html#cgi.print_directory">[docs]</a><span class="k">def</span> <span class="nf">print_directory</span><span class="p">():</span>
+<div class="viewcode-block" id="print_directory"><a class="viewcode-back" href="../generated/generated/cgi.print_directory.html#cgi.print_directory">[docs]</a><span class="k">def</span> <span class="nf">print_directory</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Dump the current directory as HTML.&quot;&quot;&quot;</span>
     <span class="k">print</span>
     <span class="k">print</span> <span class="s2">&quot;&lt;H3&gt;Current Working Directory:&lt;/H3&gt;&quot;</span>
@@ -1129,14 +1129,14 @@
         <span class="k">print</span> <span class="n">escape</span><span class="p">(</span><span class="n">pwd</span><span class="p">)</span>
     <span class="k">print</span></div>
 
-<div class="viewcode-block" id="print_arguments"><a class="viewcode-back" href="../generated/cgi.print_arguments.html#cgi.print_arguments">[docs]</a><span class="k">def</span> <span class="nf">print_arguments</span><span class="p">():</span>
+<div class="viewcode-block" id="print_arguments"><a class="viewcode-back" href="../generated/generated/cgi.print_arguments.html#cgi.print_arguments">[docs]</a><span class="k">def</span> <span class="nf">print_arguments</span><span class="p">():</span>
     <span class="k">print</span>
     <span class="k">print</span> <span class="s2">&quot;&lt;H3&gt;Command Line Arguments:&lt;/H3&gt;&quot;</span>
     <span class="k">print</span>
     <span class="k">print</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span>
     <span class="k">print</span></div>
 
-<div class="viewcode-block" id="print_environ_usage"><a class="viewcode-back" href="../generated/cgi.print_environ_usage.html#cgi.print_environ_usage">[docs]</a><span class="k">def</span> <span class="nf">print_environ_usage</span><span class="p">():</span>
+<div class="viewcode-block" id="print_environ_usage"><a class="viewcode-back" href="../generated/generated/cgi.print_environ_usage.html#cgi.print_environ_usage">[docs]</a><span class="k">def</span> <span class="nf">print_environ_usage</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Dump a list of environment variables used by CGI as HTML.&quot;&quot;&quot;</span>
     <span class="k">print</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">&lt;H3&gt;These environment variables could have been set:&lt;/H3&gt;</span>
@@ -1183,7 +1183,7 @@
 <span class="c1"># Utilities</span>
 <span class="c1"># =========</span>
 
-<div class="viewcode-block" id="escape"><a class="viewcode-back" href="../generated/cgi.escape.html#cgi.escape">[docs]</a><span class="k">def</span> <span class="nf">escape</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">quote</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="escape"><a class="viewcode-back" href="../generated/generated/cgi.escape.html#cgi.escape">[docs]</a><span class="k">def</span> <span class="nf">escape</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">quote</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Replace special characters &quot;&amp;&quot;, &quot;&lt;&quot; and &quot;&gt;&quot; to HTML-safe sequences.</span>
 <span class="sd">    If the optional flag quote is true, the quotation mark character (&quot;)</span>
 <span class="sd">    is also translated.&#39;&#39;&#39;</span>
@@ -1194,7 +1194,7 @@
         <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s2">&quot;&amp;quot;&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">s</span></div>
 
-<div class="viewcode-block" id="valid_boundary"><a class="viewcode-back" href="../generated/cgi.valid_boundary.html#cgi.valid_boundary">[docs]</a><span class="k">def</span> <span class="nf">valid_boundary</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">_vb_pattern</span><span class="o">=</span><span class="s2">&quot;^[ -~]{0,200}[!-~]$&quot;</span><span class="p">):</span>
+<div class="viewcode-block" id="valid_boundary"><a class="viewcode-back" href="../generated/generated/cgi.valid_boundary.html#cgi.valid_boundary">[docs]</a><span class="k">def</span> <span class="nf">valid_boundary</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">_vb_pattern</span><span class="o">=</span><span class="s2">&quot;^[ -~]{0,200}[!-~]$&quot;</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">re</span>
     <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">_vb_pattern</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span></div>
 

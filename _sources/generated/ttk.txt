@@ -8,12 +8,21 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       setup_master
       tclobjs_to_py
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/ttk.setup_master
+       generated/ttk.tclobjs_to_py
+      
    
    
 

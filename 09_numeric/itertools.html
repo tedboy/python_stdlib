@@ -298,7 +298,7 @@ operator can be mapped across two vectors to form an efficient dot-product:
 <td>func(*seq[0]), func(*seq[1]), ...</td>
 <td><code class="docutils literal"><span class="pre">starmap(pow,</span> <span class="pre">[(2,5),</span> <span class="pre">(3,2),</span> <span class="pre">(10,3)])</span> <span class="pre">--&gt;</span> <span class="pre">32</span> <span class="pre">9</span> <span class="pre">1000</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="../generated/itertools.tee.html#itertools.tee" title="itertools.tee"><code class="xref py py-func docutils literal"><span class="pre">tee()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="../generated/generated/itertools.tee.html#itertools.tee" title="itertools.tee"><code class="xref py py-func docutils literal"><span class="pre">tee()</span></code></a></td>
 <td>it, n</td>
 <td>it1, it2, ... itn  splits one iterator into n</td>
 <td>&nbsp;</td>
@@ -960,13 +960,13 @@ predicate is true.  Equivalent to:</p>
     <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">gen</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">deques</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Once <a class="reference internal" href="../generated/itertools.tee.html#itertools.tee" title="itertools.tee"><code class="xref py py-func docutils literal"><span class="pre">tee()</span></code></a> has made a split, the original <em>iterable</em> should not be
+<p>Once <a class="reference internal" href="../generated/generated/itertools.tee.html#itertools.tee" title="itertools.tee"><code class="xref py py-func docutils literal"><span class="pre">tee()</span></code></a> has made a split, the original <em>iterable</em> should not be
 used anywhere else; otherwise, the <em>iterable</em> could get advanced without
 the tee objects being informed.</p>
 <p>This itertool may require significant auxiliary storage (depending on how
 much temporary data needs to be stored). In general, if one iterator uses
 most or all of the data before another iterator starts, it is faster to use
-<a class="reference internal" href="../02_builtin_functions/02.html#list" title="list"><code class="xref py py-func docutils literal"><span class="pre">list()</span></code></a> instead of <a class="reference internal" href="../generated/itertools.tee.html#itertools.tee" title="itertools.tee"><code class="xref py py-func docutils literal"><span class="pre">tee()</span></code></a>.</p>
+<a class="reference internal" href="../02_builtin_functions/02.html#list" title="list"><code class="xref py py-func docutils literal"><span class="pre">list()</span></code></a> instead of <a class="reference internal" href="../generated/generated/itertools.tee.html#itertools.tee" title="itertools.tee"><code class="xref py py-func docutils literal"><span class="pre">tee()</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.4.</span></p>
 </div>

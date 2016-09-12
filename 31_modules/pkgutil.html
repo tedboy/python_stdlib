@@ -204,7 +204,7 @@ returned.  Items are only appended to the copy at the end.</p>
 that are not (Unicode or 8-bit) strings referring to existing directories are
 ignored.  Unicode items on <a class="reference internal" href="../28_runtime_service/sys.html#sys.path" title="sys.path"><code class="xref py py-data docutils literal"><span class="pre">sys.path</span></code></a> that cause errors when used as
 filenames may cause this function to raise an exception (in line with
-<a class="reference internal" href="../generated/os.path.isdir.html#os.path.isdir" title="os.path.isdir"><code class="xref py py-func docutils literal"><span class="pre">os.path.isdir()</span></code></a> behavior).</p>
+<a class="reference internal" href="../generated/generated/os.path.isdir.html#os.path.isdir" title="os.path.isdir"><code class="xref py py-func docutils literal"><span class="pre">os.path.isdir()</span></code></a> behavior).</p>
 </dd></dl>
 
 <dl class="class">
@@ -231,7 +231,7 @@ placement on <a class="reference internal" href="../28_runtime_service/sys.html#
 <dd><p>Find a <span class="target" id="index-4"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0302"><strong>PEP 302</strong></a> &#8220;loader&#8221; object for <em>fullname</em>.</p>
 <p>If <em>fullname</em> contains dots, path must be the containing package&#8217;s
 <code class="docutils literal"><span class="pre">__path__</span></code>.  Returns <code class="docutils literal"><span class="pre">None</span></code> if the module cannot be found or imported.
-This function uses <a class="reference internal" href="../generated/pkgutil.iter_importers.html#pkgutil.iter_importers" title="pkgutil.iter_importers"><code class="xref py py-func docutils literal"><span class="pre">iter_importers()</span></code></a>, and is thus subject to the same
+This function uses <a class="reference internal" href="../generated/generated/pkgutil.iter_importers.html#pkgutil.iter_importers" title="pkgutil.iter_importers"><code class="xref py py-func docutils literal"><span class="pre">iter_importers()</span></code></a>, and is thus subject to the same
 limitations regarding platform-specific special import locations such as the
 Windows registry.</p>
 </dd></dl>
@@ -258,7 +258,7 @@ wrapper around the relevant part of that machinery is returned.  Returns
 <code class="docutils literal"><span class="pre">None</span></code> if the module cannot be found or imported.  If the named module is
 not already imported, its containing package (if any) is imported, in order
 to establish the package <code class="docutils literal"><span class="pre">__path__</span></code>.</p>
-<p>This function uses <a class="reference internal" href="../generated/pkgutil.iter_importers.html#pkgutil.iter_importers" title="pkgutil.iter_importers"><code class="xref py py-func docutils literal"><span class="pre">iter_importers()</span></code></a>, and is thus subject to the same
+<p>This function uses <a class="reference internal" href="../generated/generated/pkgutil.iter_importers.html#pkgutil.iter_importers" title="pkgutil.iter_importers"><code class="xref py py-func docutils literal"><span class="pre">iter_importers()</span></code></a>, and is thus subject to the same
 limitations regarding platform-specific special import locations such as the
 Windows registry.</p>
 </dd></dl>
@@ -324,7 +324,7 @@ terminating the search.</p>
 <dt id="pkgutil.get_data">
 <code class="descclassname">pkgutil.</code><code class="descname">get_data</code><span class="sig-paren">(</span><em>package</em>, <em>resource</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pkgutil.html#get_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pkgutil.get_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a resource from a package.</p>
-<p>This is a wrapper for the <span class="target" id="index-10"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0302"><strong>PEP 302</strong></a> loader <a class="reference internal" href="../generated/pkgutil.get_data.html#pkgutil.get_data" title="pkgutil.get_data"><code class="xref py py-func docutils literal"><span class="pre">get_data()</span></code></a> API.  The
+<p>This is a wrapper for the <span class="target" id="index-10"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0302"><strong>PEP 302</strong></a> loader <a class="reference internal" href="../generated/generated/pkgutil.get_data.html#pkgutil.get_data" title="pkgutil.get_data"><code class="xref py py-func docutils literal"><span class="pre">get_data()</span></code></a> API.  The
 <em>package</em> argument should be the name of a package, in standard module format
 (<code class="docutils literal"><span class="pre">foo.bar</span></code>).  The <em>resource</em> argument should be in the form of a relative
 filename, using <code class="docutils literal"><span class="pre">/</span></code> as the path separator.  The parent directory name
@@ -338,7 +338,7 @@ this is the rough equivalent of:</p>
 </pre></div>
 </div>
 <p>If the package cannot be located or loaded, or it uses a <span class="target" id="index-11"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0302"><strong>PEP 302</strong></a> loader
-which does not support <a class="reference internal" href="../generated/pkgutil.get_data.html#pkgutil.get_data" title="pkgutil.get_data"><code class="xref py py-func docutils literal"><span class="pre">get_data()</span></code></a>, then <code class="docutils literal"><span class="pre">None</span></code> is returned.</p>
+which does not support <a class="reference internal" href="../generated/generated/pkgutil.get_data.html#pkgutil.get_data" title="pkgutil.get_data"><code class="xref py py-func docutils literal"><span class="pre">get_data()</span></code></a>, then <code class="docutils literal"><span class="pre">None</span></code> is returned.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>

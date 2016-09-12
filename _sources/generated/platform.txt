@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       architecture
       dist
@@ -36,6 +36,37 @@
       uname
       version
       win32_ver
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/platform.architecture
+       generated/platform.dist
+       generated/platform.java_ver
+       generated/platform.libc_ver
+       generated/platform.linux_distribution
+       generated/platform.mac_ver
+       generated/platform.machine
+       generated/platform.node
+       generated/platform.platform
+       generated/platform.popen
+       generated/platform.processor
+       generated/platform.python_branch
+       generated/platform.python_build
+       generated/platform.python_compiler
+       generated/platform.python_implementation
+       generated/platform.python_revision
+       generated/platform.python_version
+       generated/platform.python_version_tuple
+       generated/platform.release
+       generated/platform.system
+       generated/platform.system_alias
+       generated/platform.uname
+       generated/platform.version
+       generated/platform.win32_ver
+      
    
    
 

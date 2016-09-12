@@ -252,7 +252,7 @@ performed.</p>
 <em class="property">exception </em><code class="descname">LookupError</code><a class="headerlink" href="#exceptions.LookupError" title="Permalink to this definition">¶</a></dt>
 <dd><p>The base class for the exceptions that are raised when a key or index used on
 a mapping or sequence is invalid: <a class="reference internal" href="../generated/exceptions.IndexError.html#exceptions.IndexError" title="exceptions.IndexError"><code class="xref py py-exc docutils literal"><span class="pre">IndexError</span></code></a>, <a class="reference internal" href="../generated/exceptions.KeyError.html#exceptions.KeyError" title="exceptions.KeyError"><code class="xref py py-exc docutils literal"><span class="pre">KeyError</span></code></a>.  This
-can be raised directly by <a class="reference internal" href="../generated/codecs.lookup.html#codecs.lookup" title="codecs.lookup"><code class="xref py py-func docutils literal"><span class="pre">codecs.lookup()</span></code></a>.</p>
+can be raised directly by <a class="reference internal" href="../generated/generated/codecs.lookup.html#codecs.lookup" title="codecs.lookup"><code class="xref py py-func docutils literal"><span class="pre">codecs.lookup()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="exception">
@@ -424,7 +424,7 @@ also aren&#8217;t checked.</p>
 <dt id="exceptions.ReferenceError">
 <em class="property">exception </em><code class="descname">ReferenceError</code><a class="headerlink" href="#exceptions.ReferenceError" title="Permalink to this definition">¶</a></dt>
 <dd><p>This exception is raised when a weak reference proxy, created by the
-<a class="reference internal" href="../generated/weakref.proxy.html#weakref.proxy" title="weakref.proxy"><code class="xref py py-func docutils literal"><span class="pre">weakref.proxy()</span></code></a> function, is used to access an attribute of the referent
+<a class="reference internal" href="../generated/generated/weakref.proxy.html#weakref.proxy" title="weakref.proxy"><code class="xref py py-func docutils literal"><span class="pre">weakref.proxy()</span></code></a> function, is used to access an attribute of the referent
 after it has been garbage collected. For more information on weak references,
 see the <a class="reference internal" href="../generated/weakref.html#module-weakref" title="weakref"><code class="xref py py-mod docutils literal"><span class="pre">weakref</span></code></a> module.</p>
 <div class="versionadded">
@@ -494,7 +494,7 @@ program that triggered the error.</p>
 <dl class="exception">
 <dt id="exceptions.SystemExit">
 <em class="property">exception </em><code class="descname">SystemExit</code><a class="headerlink" href="#exceptions.SystemExit" title="Permalink to this definition">¶</a></dt>
-<dd><p>This exception is raised by the <a class="reference internal" href="../generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a> function.  When it is not
+<dd><p>This exception is raised by the <a class="reference internal" href="../generated/generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a> function.  When it is not
 handled, the Python interpreter exits; no stack traceback is printed.  If the
 associated value is a plain integer, it specifies the system exit status (passed
 to C&#8217;s <code class="xref c c-func docutils literal"><span class="pre">exit()</span></code> function); if it is <code class="docutils literal"><span class="pre">None</span></code>, the exit status is zero; if
@@ -504,12 +504,12 @@ exit status is one.</p>
 status or error message (defaulting to <code class="docutils literal"><span class="pre">None</span></code>). Also, this exception derives
 directly from <a class="reference internal" href="../generated/exceptions.BaseException.html#exceptions.BaseException" title="exceptions.BaseException"><code class="xref py py-exc docutils literal"><span class="pre">BaseException</span></code></a> and not <a class="reference internal" href="../generated/exceptions.StandardError.html#exceptions.StandardError" title="exceptions.StandardError"><code class="xref py py-exc docutils literal"><span class="pre">StandardError</span></code></a>, since it is not
 technically an error.</p>
-<p>A call to <a class="reference internal" href="../generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a> is translated into an exception so that clean-up
+<p>A call to <a class="reference internal" href="../generated/generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a> is translated into an exception so that clean-up
 handlers (<code class="xref std std-keyword docutils literal"><span class="pre">finally</span></code> clauses of <code class="xref std std-keyword docutils literal"><span class="pre">try</span></code> statements) can be
 executed, and so that a debugger can execute a script without running the risk
 of losing control.  The <a class="reference internal" href="../15_allos/os.html#os._exit" title="os._exit"><code class="xref py py-func docutils literal"><span class="pre">os._exit()</span></code></a> function can be used if it is
 absolutely positively necessary to exit immediately (for example, in the child
-process after a call to <a class="reference internal" href="../generated/os.fork.html#os.fork" title="os.fork"><code class="xref py py-func docutils literal"><span class="pre">os.fork()</span></code></a>).</p>
+process after a call to <a class="reference internal" href="../generated/generated/os.fork.html#os.fork" title="os.fork"><code class="xref py py-func docutils literal"><span class="pre">os.fork()</span></code></a>).</p>
 <p>The exception inherits from <a class="reference internal" href="../generated/exceptions.BaseException.html#exceptions.BaseException" title="exceptions.BaseException"><code class="xref py py-exc docutils literal"><span class="pre">BaseException</span></code></a> instead of <a class="reference internal" href="../generated/exceptions.StandardError.html#exceptions.StandardError" title="exceptions.StandardError"><code class="xref py py-exc docutils literal"><span class="pre">StandardError</span></code></a>
 or <a class="reference internal" href="../generated/exceptions.Exception.html#exceptions.Exception" title="exceptions.Exception"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code></a> so that it is not accidentally caught by code that catches
 <a class="reference internal" href="../generated/exceptions.Exception.html#exceptions.Exception" title="exceptions.Exception"><code class="xref py py-exc docutils literal"><span class="pre">Exception</span></code></a>.  This allows the exception to properly propagate up and cause

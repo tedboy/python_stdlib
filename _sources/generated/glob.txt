@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       glob
       glob0
       glob1
       has_magic
       iglob
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/glob.glob
+       generated/glob.glob0
+       generated/glob.glob1
+       generated/glob.has_magic
+       generated/glob.iglob
+      
    
    
 

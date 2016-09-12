@@ -315,8 +315,8 @@ available will be used.</p>
 <div class="section" id="usage">
 <h2><a class="toc-backref" href="#id21">1.3. Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <p>To serialize an object hierarchy, you first create a pickler, then you call the
-pickler&#8217;s <a class="reference internal" href="../generated/pickle.dump.html#pickle.dump" title="pickle.dump"><code class="xref py py-meth docutils literal"><span class="pre">dump()</span></code></a> method.  To de-serialize a data stream, you first create
-an unpickler, then you call the unpickler&#8217;s <a class="reference internal" href="../generated/pickle.load.html#pickle.load" title="pickle.load"><code class="xref py py-meth docutils literal"><span class="pre">load()</span></code></a> method.  The
+pickler&#8217;s <a class="reference internal" href="../generated/generated/pickle.dump.html#pickle.dump" title="pickle.dump"><code class="xref py py-meth docutils literal"><span class="pre">dump()</span></code></a> method.  To de-serialize a data stream, you first create
+an unpickler, then you call the unpickler&#8217;s <a class="reference internal" href="../generated/generated/pickle.load.html#pickle.load" title="pickle.load"><code class="xref py py-meth docutils literal"><span class="pre">load()</span></code></a> method.  The
 <a class="reference internal" href="../generated/pickle.html#module-pickle" title="pickle"><code class="xref py py-mod docutils literal"><span class="pre">pickle</span></code></a> module provides the following constant:</p>
 <dl class="data">
 <dt id="pickle.HIGHEST_PROTOCOL">
@@ -402,7 +402,7 @@ the pickled object&#8217;s representation are ignored.</p>
 <dt id="pickle.PicklingError">
 <em class="property">exception </em><code class="descclassname">pickle.</code><code class="descname">PicklingError</code><a class="reference internal" href="../_modules/pickle.html#PicklingError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pickle.PicklingError" title="Permalink to this definition">¶</a></dt>
 <dd><p>This exception is raised when an unpicklable object is passed to the
-<a class="reference internal" href="../generated/pickle.dump.html#pickle.dump" title="pickle.dump"><code class="xref py py-meth docutils literal"><span class="pre">dump()</span></code></a> method.</p>
+<a class="reference internal" href="../generated/generated/pickle.dump.html#pickle.dump" title="pickle.dump"><code class="xref py py-meth docutils literal"><span class="pre">dump()</span></code></a> method.</p>
 </dd></dl>
 
 <dl class="exception">
@@ -461,11 +461,11 @@ the memo for a <a class="reference internal" href="../generated/pickle.html#modu
 
 </dd></dl>
 
-<p>It is possible to make multiple calls to the <a class="reference internal" href="../generated/pickle.dump.html#pickle.dump" title="pickle.dump"><code class="xref py py-meth docutils literal"><span class="pre">dump()</span></code></a> method of the same
+<p>It is possible to make multiple calls to the <a class="reference internal" href="../generated/generated/pickle.dump.html#pickle.dump" title="pickle.dump"><code class="xref py py-meth docutils literal"><span class="pre">dump()</span></code></a> method of the same
 <a class="reference internal" href="../generated/generated/pickle.Pickler.html#pickle.Pickler" title="pickle.Pickler"><code class="xref py py-class docutils literal"><span class="pre">Pickler</span></code></a> instance.  These must then be matched to the same number of
-calls to the <a class="reference internal" href="../generated/pickle.load.html#pickle.load" title="pickle.load"><code class="xref py py-meth docutils literal"><span class="pre">load()</span></code></a> method of the corresponding <a class="reference internal" href="../generated/generated/pickle.Unpickler.html#pickle.Unpickler" title="pickle.Unpickler"><code class="xref py py-class docutils literal"><span class="pre">Unpickler</span></code></a>
-instance.  If the same object is pickled by multiple <a class="reference internal" href="../generated/pickle.dump.html#pickle.dump" title="pickle.dump"><code class="xref py py-meth docutils literal"><span class="pre">dump()</span></code></a> calls, the
-<a class="reference internal" href="../generated/pickle.load.html#pickle.load" title="pickle.load"><code class="xref py py-meth docutils literal"><span class="pre">load()</span></code></a> will all yield references to the same object. <a class="footnote-reference" href="#id12" id="id3">[3]</a></p>
+calls to the <a class="reference internal" href="../generated/generated/pickle.load.html#pickle.load" title="pickle.load"><code class="xref py py-meth docutils literal"><span class="pre">load()</span></code></a> method of the corresponding <a class="reference internal" href="../generated/generated/pickle.Unpickler.html#pickle.Unpickler" title="pickle.Unpickler"><code class="xref py py-class docutils literal"><span class="pre">Unpickler</span></code></a>
+instance.  If the same object is pickled by multiple <a class="reference internal" href="../generated/generated/pickle.dump.html#pickle.dump" title="pickle.dump"><code class="xref py py-meth docutils literal"><span class="pre">dump()</span></code></a> calls, the
+<a class="reference internal" href="../generated/generated/pickle.load.html#pickle.load" title="pickle.load"><code class="xref py py-meth docutils literal"><span class="pre">load()</span></code></a> will all yield references to the same object. <a class="footnote-reference" href="#id12" id="id3">[3]</a></p>
 <p><a class="reference internal" href="../generated/generated/pickle.Unpickler.html#pickle.Unpickler" title="pickle.Unpickler"><code class="xref py py-class docutils literal"><span class="pre">Unpickler</span></code></a> objects are defined as:</p>
 <dl class="class">
 <dt id="pickle.Unpickler">
@@ -493,7 +493,7 @@ in binary mode or not.</p>
 <dl class="method">
 <dt id="pickle.Unpickler.noload">
 <code class="descname">noload</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pickle.Unpickler.noload" title="Permalink to this definition">¶</a></dt>
-<dd><p>This is just like <a class="reference internal" href="../generated/pickle.load.html#pickle.load" title="pickle.load"><code class="xref py py-meth docutils literal"><span class="pre">load()</span></code></a> except that it doesn&#8217;t actually create any
+<dd><p>This is just like <a class="reference internal" href="../generated/generated/pickle.load.html#pickle.load" title="pickle.load"><code class="xref py py-meth docutils literal"><span class="pre">load()</span></code></a> except that it doesn&#8217;t actually create any
 objects.  This is useful primarily for finding what&#8217;s called &#8220;persistent
 ids&#8221; that may be referenced in a pickle data stream.  See section
 <a class="reference internal" href="#pickle-protocol"><span>The pickle protocol</span></a> below for more details.</p>
@@ -526,7 +526,7 @@ exception; when this happens, an unspecified number of bytes may have already
 been written to the underlying file. Trying to pickle a highly recursive data
 structure may exceed the maximum recursion depth, a <a class="reference internal" href="../generated/exceptions.RuntimeError.html#exceptions.RuntimeError" title="exceptions.RuntimeError"><code class="xref py py-exc docutils literal"><span class="pre">RuntimeError</span></code></a> will be
 raised in this case. You can carefully raise this limit with
-<a class="reference internal" href="../generated/sys.setrecursionlimit.html#sys.setrecursionlimit" title="sys.setrecursionlimit"><code class="xref py py-func docutils literal"><span class="pre">sys.setrecursionlimit()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/sys.setrecursionlimit.html#sys.setrecursionlimit" title="sys.setrecursionlimit"><code class="xref py py-func docutils literal"><span class="pre">sys.setrecursionlimit()</span></code></a>.</p>
 <p>Note that functions (built-in and user-defined) are pickled by &#8220;fully qualified&#8221;
 name reference, not by value.  This means that only the function name is
 pickled, along with the name of the module the function is defined in.  Neither

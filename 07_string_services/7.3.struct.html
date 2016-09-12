@@ -550,11 +550,11 @@ bytes.  As a special case, <code class="docutils literal"><span class="pre">'0s'
 <p>The <code class="docutils literal"><span class="pre">'p'</span></code> format character encodes a &#8220;Pascal string&#8221;, meaning a short
 variable-length string stored in a <em>fixed number of bytes</em>, given by the count.
 The first byte stored is the length of the string, or 255, whichever is smaller.
-The bytes of the string follow.  If the string passed in to <a class="reference internal" href="../generated/struct.pack.html#struct.pack" title="struct.pack"><code class="xref py py-func docutils literal"><span class="pre">pack()</span></code></a> is too
+The bytes of the string follow.  If the string passed in to <a class="reference internal" href="../generated/generated/struct.pack.html#struct.pack" title="struct.pack"><code class="xref py py-func docutils literal"><span class="pre">pack()</span></code></a> is too
 long (longer than the count minus 1), only the leading <code class="docutils literal"><span class="pre">count-1</span></code> bytes of the
 string are stored.  If the string is shorter than <code class="docutils literal"><span class="pre">count-1</span></code>, it is padded with
 null bytes so that exactly count bytes in all are used.  Note that for
-<a class="reference internal" href="../generated/struct.unpack.html#struct.unpack" title="struct.unpack"><code class="xref py py-func docutils literal"><span class="pre">unpack()</span></code></a>, the <code class="docutils literal"><span class="pre">'p'</span></code> format character consumes count bytes, but that the
+<a class="reference internal" href="../generated/generated/struct.unpack.html#struct.unpack" title="struct.unpack"><code class="xref py py-func docutils literal"><span class="pre">unpack()</span></code></a>, the <code class="docutils literal"><span class="pre">'p'</span></code> format character consumes count bytes, but that the
 string returned can never contain more than 255 characters.</p>
 <p>For the <code class="docutils literal"><span class="pre">'P'</span></code> format character, the return value is a Python integer or long
 integer, depending on the size needed to hold a pointer when it has been cast to
@@ -644,27 +644,27 @@ same format since the format string only needs to be compiled once.</p>
 <dl class="method">
 <dt id="struct.Struct.pack">
 <code class="descname">pack</code><span class="sig-paren">(</span><em>v1</em>, <em>v2</em>, <em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#struct.Struct.pack" title="Permalink to this definition">¶</a></dt>
-<dd><p>Identical to the <a class="reference internal" href="../generated/struct.pack.html#struct.pack" title="struct.pack"><code class="xref py py-func docutils literal"><span class="pre">pack()</span></code></a> function, using the compiled format.
+<dd><p>Identical to the <a class="reference internal" href="../generated/generated/struct.pack.html#struct.pack" title="struct.pack"><code class="xref py py-func docutils literal"><span class="pre">pack()</span></code></a> function, using the compiled format.
 (<code class="docutils literal"><span class="pre">len(result)</span></code> will equal <code class="xref py py-attr docutils literal"><span class="pre">self.size</span></code>.)</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="struct.Struct.pack_into">
 <code class="descname">pack_into</code><span class="sig-paren">(</span><em>buffer</em>, <em>offset</em>, <em>v1</em>, <em>v2</em>, <em>...</em><span class="sig-paren">)</span><a class="headerlink" href="#struct.Struct.pack_into" title="Permalink to this definition">¶</a></dt>
-<dd><p>Identical to the <a class="reference internal" href="../generated/struct.pack_into.html#struct.pack_into" title="struct.pack_into"><code class="xref py py-func docutils literal"><span class="pre">pack_into()</span></code></a> function, using the compiled format.</p>
+<dd><p>Identical to the <a class="reference internal" href="../generated/generated/struct.pack_into.html#struct.pack_into" title="struct.pack_into"><code class="xref py py-func docutils literal"><span class="pre">pack_into()</span></code></a> function, using the compiled format.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="struct.Struct.unpack">
 <code class="descname">unpack</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="headerlink" href="#struct.Struct.unpack" title="Permalink to this definition">¶</a></dt>
-<dd><p>Identical to the <a class="reference internal" href="../generated/struct.unpack.html#struct.unpack" title="struct.unpack"><code class="xref py py-func docutils literal"><span class="pre">unpack()</span></code></a> function, using the compiled format.
+<dd><p>Identical to the <a class="reference internal" href="../generated/generated/struct.unpack.html#struct.unpack" title="struct.unpack"><code class="xref py py-func docutils literal"><span class="pre">unpack()</span></code></a> function, using the compiled format.
 (<code class="docutils literal"><span class="pre">len(string)</span></code> must equal <code class="xref py py-attr docutils literal"><span class="pre">self.size</span></code>).</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="struct.Struct.unpack_from">
 <code class="descname">unpack_from</code><span class="sig-paren">(</span><em>buffer</em>, <em>offset=0</em><span class="sig-paren">)</span><a class="headerlink" href="#struct.Struct.unpack_from" title="Permalink to this definition">¶</a></dt>
-<dd><p>Identical to the <a class="reference internal" href="../generated/struct.unpack_from.html#struct.unpack_from" title="struct.unpack_from"><code class="xref py py-func docutils literal"><span class="pre">unpack_from()</span></code></a> function, using the compiled format.
+<dd><p>Identical to the <a class="reference internal" href="../generated/generated/struct.unpack_from.html#struct.unpack_from" title="struct.unpack_from"><code class="xref py py-func docutils literal"><span class="pre">unpack_from()</span></code></a> function, using the compiled format.
 (<code class="docutils literal"><span class="pre">len(buffer[offset:])</span></code> must be at least <code class="xref py py-attr docutils literal"><span class="pre">self.size</span></code>).</p>
 </dd></dl>
 

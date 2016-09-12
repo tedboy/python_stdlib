@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       cmp_lt
       heapify
@@ -22,6 +22,23 @@
       nlargest
       nsmallest
       tee
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/heapq.cmp_lt
+       generated/heapq.heapify
+       generated/heapq.heappop
+       generated/heapq.heappush
+       generated/heapq.heappushpop
+       generated/heapq.heapreplace
+       generated/heapq.merge
+       generated/heapq.nlargest
+       generated/heapq.nsmallest
+       generated/heapq.tee
+      
    
    
 

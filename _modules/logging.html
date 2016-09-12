@@ -207,7 +207,7 @@
     <span class="n">_unicode</span> <span class="o">=</span> <span class="bp">False</span>
 
 <span class="c1"># next bit filched from 1.5.2&#39;s inspect.py</span>
-<div class="viewcode-block" id="currentframe"><a class="viewcode-back" href="../generated/logging.currentframe.html#logging.currentframe">[docs]</a><span class="k">def</span> <span class="nf">currentframe</span><span class="p">():</span>
+<div class="viewcode-block" id="currentframe"><a class="viewcode-back" href="../generated/generated/logging.currentframe.html#logging.currentframe">[docs]</a><span class="k">def</span> <span class="nf">currentframe</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return the frame object for the caller&#39;s stack frame.&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">Exception</span>
@@ -292,7 +292,7 @@
     <span class="s1">&#39;NOTSET&#39;</span> <span class="p">:</span> <span class="n">NOTSET</span><span class="p">,</span>
 <span class="p">}</span>
 
-<div class="viewcode-block" id="getLevelName"><a class="viewcode-back" href="../generated/logging.getLevelName.html#logging.getLevelName">[docs]</a><span class="k">def</span> <span class="nf">getLevelName</span><span class="p">(</span><span class="n">level</span><span class="p">):</span>
+<div class="viewcode-block" id="getLevelName"><a class="viewcode-back" href="../generated/generated/logging.getLevelName.html#logging.getLevelName">[docs]</a><span class="k">def</span> <span class="nf">getLevelName</span><span class="p">(</span><span class="n">level</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Return the textual representation of logging level &#39;level&#39;.</span>
 
@@ -308,7 +308,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">_levelNames</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">level</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Level </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">level</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="addLevelName"><a class="viewcode-back" href="../generated/logging.addLevelName.html#logging.addLevelName">[docs]</a><span class="k">def</span> <span class="nf">addLevelName</span><span class="p">(</span><span class="n">level</span><span class="p">,</span> <span class="n">levelName</span><span class="p">):</span>
+<div class="viewcode-block" id="addLevelName"><a class="viewcode-back" href="../generated/generated/logging.addLevelName.html#logging.addLevelName">[docs]</a><span class="k">def</span> <span class="nf">addLevelName</span><span class="p">(</span><span class="n">level</span><span class="p">,</span> <span class="n">levelName</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Associate &#39;levelName&#39; with &#39;level&#39;.</span>
 
@@ -476,7 +476,7 @@
             <span class="n">msg</span> <span class="o">=</span> <span class="n">msg</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">args</span>
         <span class="k">return</span> <span class="n">msg</span></div></div>
 
-<div class="viewcode-block" id="makeLogRecord"><a class="viewcode-back" href="../generated/logging.makeLogRecord.html#logging.makeLogRecord">[docs]</a><span class="k">def</span> <span class="nf">makeLogRecord</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
+<div class="viewcode-block" id="makeLogRecord"><a class="viewcode-back" href="../generated/generated/logging.makeLogRecord.html#logging.makeLogRecord">[docs]</a><span class="k">def</span> <span class="nf">makeLogRecord</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Make a LogRecord whose attributes are defined by the specified dictionary,</span>
 <span class="sd">    This function is useful for converting a logging event received over</span>
@@ -1134,7 +1134,7 @@
 <span class="c1">#</span>
 <span class="n">_loggerClass</span> <span class="o">=</span> <span class="bp">None</span>
 
-<div class="viewcode-block" id="setLoggerClass"><a class="viewcode-back" href="../generated/logging.setLoggerClass.html#logging.setLoggerClass">[docs]</a><span class="k">def</span> <span class="nf">setLoggerClass</span><span class="p">(</span><span class="n">klass</span><span class="p">):</span>
+<div class="viewcode-block" id="setLoggerClass"><a class="viewcode-back" href="../generated/generated/logging.setLoggerClass.html#logging.setLoggerClass">[docs]</a><span class="k">def</span> <span class="nf">setLoggerClass</span><span class="p">(</span><span class="n">klass</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Set the class to be used when instantiating a logger. The class should</span>
 <span class="sd">    define __init__() such that only a name argument is required, and the</span>
@@ -1147,7 +1147,7 @@
     <span class="k">global</span> <span class="n">_loggerClass</span>
     <span class="n">_loggerClass</span> <span class="o">=</span> <span class="n">klass</span></div>
 
-<div class="viewcode-block" id="getLoggerClass"><a class="viewcode-back" href="../generated/logging.getLoggerClass.html#logging.getLoggerClass">[docs]</a><span class="k">def</span> <span class="nf">getLoggerClass</span><span class="p">():</span>
+<div class="viewcode-block" id="getLoggerClass"><a class="viewcode-back" href="../generated/generated/logging.getLoggerClass.html#logging.getLoggerClass">[docs]</a><span class="k">def</span> <span class="nf">getLoggerClass</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Return the class to be used when instantiating a logger.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1651,7 +1651,7 @@
 
 <span class="n">BASIC_FORMAT</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%(levelname)s</span><span class="s2">:</span><span class="si">%(name)s</span><span class="s2">:</span><span class="si">%(message)s</span><span class="s2">&quot;</span>
 
-<div class="viewcode-block" id="basicConfig"><a class="viewcode-back" href="../generated/logging.basicConfig.html#logging.basicConfig">[docs]</a><span class="k">def</span> <span class="nf">basicConfig</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="basicConfig"><a class="viewcode-back" href="../generated/generated/logging.basicConfig.html#logging.basicConfig">[docs]</a><span class="k">def</span> <span class="nf">basicConfig</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Do basic configuration for the logging system.</span>
 
@@ -1711,7 +1711,7 @@
 <span class="c1"># Basically delegate everything to the root logger.</span>
 <span class="c1">#---------------------------------------------------------------------------</span>
 
-<div class="viewcode-block" id="getLogger"><a class="viewcode-back" href="../generated/logging.getLogger.html#logging.getLogger">[docs]</a><span class="k">def</span> <span class="nf">getLogger</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="getLogger"><a class="viewcode-back" href="../generated/generated/logging.getLogger.html#logging.getLogger">[docs]</a><span class="k">def</span> <span class="nf">getLogger</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Return a logger with the specified name, creating it if necessary.</span>
 
@@ -1731,7 +1731,7 @@
 <span class="c1">#    &quot;&quot;&quot;</span>
 <span class="c1">#    return root</span>
 
-<div class="viewcode-block" id="critical"><a class="viewcode-back" href="../generated/logging.critical.html#logging.critical">[docs]</a><span class="k">def</span> <span class="nf">critical</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="critical"><a class="viewcode-back" href="../generated/generated/logging.critical.html#logging.critical">[docs]</a><span class="k">def</span> <span class="nf">critical</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Log a message with severity &#39;CRITICAL&#39; on the root logger.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1741,7 +1741,7 @@
 
 <span class="n">fatal</span> <span class="o">=</span> <span class="n">critical</span>
 
-<div class="viewcode-block" id="error"><a class="viewcode-back" href="../generated/logging.error.html#logging.error">[docs]</a><span class="k">def</span> <span class="nf">error</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="error"><a class="viewcode-back" href="../generated/generated/logging.error.html#logging.error">[docs]</a><span class="k">def</span> <span class="nf">error</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Log a message with severity &#39;ERROR&#39; on the root logger.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1749,7 +1749,7 @@
         <span class="n">basicConfig</span><span class="p">()</span>
     <span class="n">root</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="exception"><a class="viewcode-back" href="../generated/logging.exception.html#logging.exception">[docs]</a><span class="k">def</span> <span class="nf">exception</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="exception"><a class="viewcode-back" href="../generated/generated/logging.exception.html#logging.exception">[docs]</a><span class="k">def</span> <span class="nf">exception</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Log a message with severity &#39;ERROR&#39; on the root logger,</span>
 <span class="sd">    with exception information.</span>
@@ -1757,7 +1757,7 @@
     <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;exc_info&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="warning"><a class="viewcode-back" href="../generated/logging.warning.html#logging.warning">[docs]</a><span class="k">def</span> <span class="nf">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="warning"><a class="viewcode-back" href="../generated/generated/logging.warning.html#logging.warning">[docs]</a><span class="k">def</span> <span class="nf">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Log a message with severity &#39;WARNING&#39; on the root logger.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1767,7 +1767,7 @@
 
 <span class="n">warn</span> <span class="o">=</span> <span class="n">warning</span>
 
-<div class="viewcode-block" id="info"><a class="viewcode-back" href="../generated/logging.info.html#logging.info">[docs]</a><span class="k">def</span> <span class="nf">info</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="info"><a class="viewcode-back" href="../generated/generated/logging.info.html#logging.info">[docs]</a><span class="k">def</span> <span class="nf">info</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Log a message with severity &#39;INFO&#39; on the root logger.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1775,7 +1775,7 @@
         <span class="n">basicConfig</span><span class="p">()</span>
     <span class="n">root</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="debug"><a class="viewcode-back" href="../generated/logging.debug.html#logging.debug">[docs]</a><span class="k">def</span> <span class="nf">debug</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="debug"><a class="viewcode-back" href="../generated/generated/logging.debug.html#logging.debug">[docs]</a><span class="k">def</span> <span class="nf">debug</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Log a message with severity &#39;DEBUG&#39; on the root logger.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1783,7 +1783,7 @@
         <span class="n">basicConfig</span><span class="p">()</span>
     <span class="n">root</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="log"><a class="viewcode-back" href="../generated/logging.log.html#logging.log">[docs]</a><span class="k">def</span> <span class="nf">log</span><span class="p">(</span><span class="n">level</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="log"><a class="viewcode-back" href="../generated/generated/logging.log.html#logging.log">[docs]</a><span class="k">def</span> <span class="nf">log</span><span class="p">(</span><span class="n">level</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Log &#39;msg % args&#39; with the integer severity &#39;level&#39; on the root logger.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1791,13 +1791,13 @@
         <span class="n">basicConfig</span><span class="p">()</span>
     <span class="n">root</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">level</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="disable"><a class="viewcode-back" href="../generated/logging.disable.html#logging.disable">[docs]</a><span class="k">def</span> <span class="nf">disable</span><span class="p">(</span><span class="n">level</span><span class="p">):</span>
+<div class="viewcode-block" id="disable"><a class="viewcode-back" href="../generated/generated/logging.disable.html#logging.disable">[docs]</a><span class="k">def</span> <span class="nf">disable</span><span class="p">(</span><span class="n">level</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Disable all logging calls of severity &#39;level&#39; and below.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">root</span><span class="o">.</span><span class="n">manager</span><span class="o">.</span><span class="n">disable</span> <span class="o">=</span> <span class="n">level</span></div>
 
-<div class="viewcode-block" id="shutdown"><a class="viewcode-back" href="../generated/logging.shutdown.html#logging.shutdown">[docs]</a><span class="k">def</span> <span class="nf">shutdown</span><span class="p">(</span><span class="n">handlerList</span><span class="o">=</span><span class="n">_handlerList</span><span class="p">):</span>
+<div class="viewcode-block" id="shutdown"><a class="viewcode-back" href="../generated/generated/logging.shutdown.html#logging.shutdown">[docs]</a><span class="k">def</span> <span class="nf">shutdown</span><span class="p">(</span><span class="n">handlerList</span><span class="o">=</span><span class="n">_handlerList</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Perform any cleanup actions in the logging system (e.g. flushing</span>
 <span class="sd">    buffers).</span>
@@ -1874,7 +1874,7 @@
             <span class="n">logger</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">NullHandler</span><span class="p">())</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
 
-<div class="viewcode-block" id="captureWarnings"><a class="viewcode-back" href="../generated/logging.captureWarnings.html#logging.captureWarnings">[docs]</a><span class="k">def</span> <span class="nf">captureWarnings</span><span class="p">(</span><span class="n">capture</span><span class="p">):</span>
+<div class="viewcode-block" id="captureWarnings"><a class="viewcode-back" href="../generated/generated/logging.captureWarnings.html#logging.captureWarnings">[docs]</a><span class="k">def</span> <span class="nf">captureWarnings</span><span class="p">(</span><span class="n">capture</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    If capture is true, redirect all warnings to the logging package.</span>
 <span class="sd">    If capture is False, ensure that warnings are not redirected to logging</span>

@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       make_parser
       parse
       parseString
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/xml.sax.make_parser
+       generated/xml.sax.parse
+       generated/xml.sax.parseString
+      
    
    
 

@@ -161,7 +161,7 @@
 
 <span class="n">WRAPPER_ASSIGNMENTS</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;__module__&#39;</span><span class="p">,</span> <span class="s1">&#39;__name__&#39;</span><span class="p">,</span> <span class="s1">&#39;__doc__&#39;</span><span class="p">)</span>
 <span class="n">WRAPPER_UPDATES</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;__dict__&#39;</span><span class="p">,)</span>
-<div class="viewcode-block" id="update_wrapper"><a class="viewcode-back" href="../generated/functools.update_wrapper.html#functools.update_wrapper">[docs]</a><span class="k">def</span> <span class="nf">update_wrapper</span><span class="p">(</span><span class="n">wrapper</span><span class="p">,</span>
+<div class="viewcode-block" id="update_wrapper"><a class="viewcode-back" href="../generated/generated/functools.update_wrapper.html#functools.update_wrapper">[docs]</a><span class="k">def</span> <span class="nf">update_wrapper</span><span class="p">(</span><span class="n">wrapper</span><span class="p">,</span>
                    <span class="n">wrapped</span><span class="p">,</span>
                    <span class="n">assigned</span> <span class="o">=</span> <span class="n">WRAPPER_ASSIGNMENTS</span><span class="p">,</span>
                    <span class="n">updated</span> <span class="o">=</span> <span class="n">WRAPPER_UPDATES</span><span class="p">):</span>
@@ -183,7 +183,7 @@
     <span class="c1"># Return the wrapper so this can be used as a decorator via partial()</span>
     <span class="k">return</span> <span class="n">wrapper</span></div>
 
-<div class="viewcode-block" id="wraps"><a class="viewcode-back" href="../generated/xdrlib.wraps.html#functools.wraps">[docs]</a><span class="k">def</span> <span class="nf">wraps</span><span class="p">(</span><span class="n">wrapped</span><span class="p">,</span>
+<div class="viewcode-block" id="wraps"><a class="viewcode-back" href="../generated/generated/xdrlib.wraps.html#functools.wraps">[docs]</a><span class="k">def</span> <span class="nf">wraps</span><span class="p">(</span><span class="n">wrapped</span><span class="p">,</span>
           <span class="n">assigned</span> <span class="o">=</span> <span class="n">WRAPPER_ASSIGNMENTS</span><span class="p">,</span>
           <span class="n">updated</span> <span class="o">=</span> <span class="n">WRAPPER_UPDATES</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decorator factory to apply update_wrapper() to a wrapper function</span>
@@ -197,7 +197,7 @@
     <span class="k">return</span> <span class="n">partial</span><span class="p">(</span><span class="n">update_wrapper</span><span class="p">,</span> <span class="n">wrapped</span><span class="o">=</span><span class="n">wrapped</span><span class="p">,</span>
                    <span class="n">assigned</span><span class="o">=</span><span class="n">assigned</span><span class="p">,</span> <span class="n">updated</span><span class="o">=</span><span class="n">updated</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="total_ordering"><a class="viewcode-back" href="../generated/functools.total_ordering.html#functools.total_ordering">[docs]</a><span class="k">def</span> <span class="nf">total_ordering</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
+<div class="viewcode-block" id="total_ordering"><a class="viewcode-back" href="../generated/generated/functools.total_ordering.html#functools.total_ordering">[docs]</a><span class="k">def</span> <span class="nf">total_ordering</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Class decorator that fills in missing ordering methods&quot;&quot;&quot;</span>
     <span class="n">convert</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s1">&#39;__lt__&#39;</span><span class="p">:</span> <span class="p">[(</span><span class="s1">&#39;__gt__&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="ow">not</span> <span class="p">(</span><span class="bp">self</span> <span class="o">&lt;</span> <span class="n">other</span> <span class="ow">or</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span><span class="p">)),</span>
@@ -224,7 +224,7 @@
             <span class="nb">setattr</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">opname</span><span class="p">,</span> <span class="n">opfunc</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">cls</span></div>
 
-<div class="viewcode-block" id="cmp_to_key"><a class="viewcode-back" href="../generated/functools.cmp_to_key.html#functools.cmp_to_key">[docs]</a><span class="k">def</span> <span class="nf">cmp_to_key</span><span class="p">(</span><span class="n">mycmp</span><span class="p">):</span>
+<div class="viewcode-block" id="cmp_to_key"><a class="viewcode-back" href="../generated/generated/functools.cmp_to_key.html#functools.cmp_to_key">[docs]</a><span class="k">def</span> <span class="nf">cmp_to_key</span><span class="p">(</span><span class="n">mycmp</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert a cmp= function into a key= function&quot;&quot;&quot;</span>
     <span class="k">class</span> <span class="nc">K</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
         <span class="n">__slots__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;obj&#39;</span><span class="p">]</span>

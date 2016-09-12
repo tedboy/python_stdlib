@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       deepvalues
       domain_match
@@ -37,6 +37,38 @@
       uppercase_escaped_char
       user_domain_match
       vals_sorted_by_key
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/cookielib.deepvalues
+       generated/cookielib.domain_match
+       generated/cookielib.eff_request_host
+       generated/cookielib.escape_path
+       generated/cookielib.http2time
+       generated/cookielib.is_HDN
+       generated/cookielib.is_third_party
+       generated/cookielib.iso2time
+       generated/cookielib.join_header_words
+       generated/cookielib.liberal_is_HDN
+       generated/cookielib.lwp_cookie_str
+       generated/cookielib.offset_from_tz_string
+       generated/cookielib.parse_ns_headers
+       generated/cookielib.reach
+       generated/cookielib.request_host
+       generated/cookielib.request_path
+       generated/cookielib.request_port
+       generated/cookielib.split_header_words
+       generated/cookielib.time2isoz
+       generated/cookielib.time2netscape
+       generated/cookielib.timegm
+       generated/cookielib.unmatched
+       generated/cookielib.uppercase_escaped_char
+       generated/cookielib.user_domain_match
+       generated/cookielib.vals_sorted_by_key
+      
    
    
 

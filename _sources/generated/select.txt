@@ -8,12 +8,21 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       poll
       select
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/select.poll
+       generated/select.select
+      
    
    
 

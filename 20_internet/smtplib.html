@@ -205,7 +205,7 @@ host and port parameters are given, the SMTP <a class="reference internal" href=
 called with those parameters during initialization.  If specified,
 <em>local_hostname</em> is used as the FQDN of the local host in the HELO/EHLO
 command.  Otherwise, the local hostname is found using
-<a class="reference internal" href="../generated/socket.getfqdn.html#socket.getfqdn" title="socket.getfqdn"><code class="xref py py-func docutils literal"><span class="pre">socket.getfqdn()</span></code></a>.  If the <a class="reference internal" href="../generated/generated/smtplib.SMTP.connect.html#smtplib.SMTP.connect" title="smtplib.SMTP.connect"><code class="xref py py-meth docutils literal"><span class="pre">connect()</span></code></a> call returns anything other
+<a class="reference internal" href="../generated/generated/socket.getfqdn.html#socket.getfqdn" title="socket.getfqdn"><code class="xref py py-func docutils literal"><span class="pre">socket.getfqdn()</span></code></a>.  If the <a class="reference internal" href="../generated/generated/smtplib.SMTP.connect.html#smtplib.SMTP.connect" title="smtplib.SMTP.connect"><code class="xref py py-meth docutils literal"><span class="pre">connect()</span></code></a> call returns anything other
 than a success code, an <a class="reference internal" href="../generated/smtplib.SMTPConnectError.html#smtplib.SMTPConnectError" title="smtplib.SMTPConnectError"><code class="xref py py-exc docutils literal"><span class="pre">SMTPConnectError</span></code></a> is raised. The optional
 <em>timeout</em> parameter specifies a timeout in seconds for blocking operations
 like the connection attempt (if not specified, the global default timeout

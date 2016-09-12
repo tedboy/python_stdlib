@@ -8,12 +8,21 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       readmodule
       readmodule_ex
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pyclbr.readmodule
+       generated/pyclbr.readmodule_ex
+      
    
    
 

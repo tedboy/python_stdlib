@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       decode
       encode
       test
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/uu.decode
+       generated/uu.encode
+       generated/uu.test
+      
    
    
 

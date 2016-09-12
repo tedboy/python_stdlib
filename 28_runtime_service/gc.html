@@ -299,11 +299,11 @@ types which do refer to other objects but do not support garbage collection will
 not be found.</p>
 <p>Note that objects which have already been dereferenced, but which live in cycles
 and have not yet been collected by the garbage collector can be listed among the
-resulting referrers.  To get only currently live objects, call <a class="reference internal" href="../generated/gc.collect.html#gc.collect" title="gc.collect"><code class="xref py py-func docutils literal"><span class="pre">collect()</span></code></a>
-before calling <a class="reference internal" href="../generated/gc.get_referrers.html#gc.get_referrers" title="gc.get_referrers"><code class="xref py py-func docutils literal"><span class="pre">get_referrers()</span></code></a>.</p>
-<p>Care must be taken when using objects returned by <a class="reference internal" href="../generated/gc.get_referrers.html#gc.get_referrers" title="gc.get_referrers"><code class="xref py py-func docutils literal"><span class="pre">get_referrers()</span></code></a> because
+resulting referrers.  To get only currently live objects, call <a class="reference internal" href="../generated/generated/gc.collect.html#gc.collect" title="gc.collect"><code class="xref py py-func docutils literal"><span class="pre">collect()</span></code></a>
+before calling <a class="reference internal" href="../generated/generated/gc.get_referrers.html#gc.get_referrers" title="gc.get_referrers"><code class="xref py py-func docutils literal"><span class="pre">get_referrers()</span></code></a>.</p>
+<p>Care must be taken when using objects returned by <a class="reference internal" href="../generated/generated/gc.get_referrers.html#gc.get_referrers" title="gc.get_referrers"><code class="xref py py-func docutils literal"><span class="pre">get_referrers()</span></code></a> because
 some of them could still be under construction and hence in a temporarily
-invalid state. Avoid using <a class="reference internal" href="../generated/gc.get_referrers.html#gc.get_referrers" title="gc.get_referrers"><code class="xref py py-func docutils literal"><span class="pre">get_referrers()</span></code></a> for any purpose other than
+invalid state. Avoid using <a class="reference internal" href="../generated/generated/gc.get_referrers.html#gc.get_referrers" title="gc.get_referrers"><code class="xref py py-func docutils literal"><span class="pre">get_referrers()</span></code></a> for any purpose other than
 debugging.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.2.</span></p>
@@ -377,7 +377,7 @@ verify that no such cycles are being created.</p>
 this list rather than freed.</p>
 </dd></dl>
 
-<p>The following constants are provided for use with <a class="reference internal" href="../generated/gc.set_debug.html#gc.set_debug" title="gc.set_debug"><code class="xref py py-func docutils literal"><span class="pre">set_debug()</span></code></a>:</p>
+<p>The following constants are provided for use with <a class="reference internal" href="../generated/generated/gc.set_debug.html#gc.set_debug" title="gc.set_debug"><code class="xref py py-func docutils literal"><span class="pre">set_debug()</span></code></a>:</p>
 <dl class="data">
 <dt id="gc.DEBUG_STATS">
 <code class="descclassname">gc.</code><code class="descname">DEBUG_STATS</code><a class="headerlink" href="#gc.DEBUG_STATS" title="Permalink to this definition">¶</a></dt>

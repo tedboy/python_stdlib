@@ -261,7 +261,7 @@ unauthenticated data see <a class="reference internal" href="xml.html#xml-vulner
 <li>a number of child elements, stored in a Python sequence</li>
 </ul>
 <p>To create an element instance, use the <a class="reference internal" href="../generated/generated/xml.etree.ElementTree.Element.html#xml.etree.ElementTree.Element" title="xml.etree.ElementTree.Element"><code class="xref py py-class docutils literal"><span class="pre">Element</span></code></a> constructor or the
-<a class="reference internal" href="../generated/xml.etree.ElementTree.SubElement.html#xml.etree.ElementTree.SubElement" title="xml.etree.ElementTree.SubElement"><code class="xref py py-func docutils literal"><span class="pre">SubElement()</span></code></a> factory function.</p>
+<a class="reference internal" href="../generated/generated/xml.etree.ElementTree.SubElement.html#xml.etree.ElementTree.SubElement" title="xml.etree.ElementTree.SubElement"><code class="xref py py-func docutils literal"><span class="pre">SubElement()</span></code></a> factory function.</p>
 <p>The <a class="reference internal" href="../generated/generated/xml.etree.ElementTree.ElementTree.html#xml.etree.ElementTree.ElementTree" title="xml.etree.ElementTree.ElementTree"><code class="xref py py-class docutils literal"><span class="pre">ElementTree</span></code></a> class can be used to wrap an element structure, and
 convert it from and to XML.</p>
 <p>A C implementation of this API is available as <code class="xref py py-mod docutils literal"><span class="pre">xml.etree.cElementTree</span></code>.</p>
@@ -325,7 +325,7 @@ and its sub-elements are done on the <a class="reference internal" href="../gene
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">root</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">country_data_as_string</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><a class="reference internal" href="../generated/xml.etree.ElementTree.fromstring.html#xml.etree.ElementTree.fromstring" title="xml.etree.ElementTree.fromstring"><code class="xref py py-func docutils literal"><span class="pre">fromstring()</span></code></a> parses XML from a string directly into an <a class="reference internal" href="../generated/generated/xml.etree.ElementTree.Element.html#xml.etree.ElementTree.Element" title="xml.etree.ElementTree.Element"><code class="xref py py-class docutils literal"><span class="pre">Element</span></code></a>,
+<p><a class="reference internal" href="../generated/generated/xml.etree.ElementTree.fromstring.html#xml.etree.ElementTree.fromstring" title="xml.etree.ElementTree.fromstring"><code class="xref py py-func docutils literal"><span class="pre">fromstring()</span></code></a> parses XML from a string directly into an <a class="reference internal" href="../generated/generated/xml.etree.ElementTree.Element.html#xml.etree.ElementTree.Element" title="xml.etree.ElementTree.Element"><code class="xref py py-class docutils literal"><span class="pre">Element</span></code></a>,
 which is the root element of the parsed tree.  Other parsing functions may
 create an <a class="reference internal" href="../generated/generated/xml.etree.ElementTree.ElementTree.html#xml.etree.ElementTree.ElementTree" title="xml.etree.ElementTree.ElementTree"><code class="xref py py-class docutils literal"><span class="pre">ElementTree</span></code></a>.  Check the documentation to be sure.</p>
 <p>As an <a class="reference internal" href="../generated/generated/xml.etree.ElementTree.Element.html#xml.etree.ElementTree.Element" title="xml.etree.ElementTree.Element"><code class="xref py py-class docutils literal"><span class="pre">Element</span></code></a>, <code class="docutils literal"><span class="pre">root</span></code> has a tag and a dictionary of attributes:</p>
@@ -458,7 +458,7 @@ remove all countries with a rank higher than 50:</p>
 </div>
 <div class="section" id="building-xml-documents">
 <h3><a class="toc-backref" href="#id13">7.1.5. Building XML documents</a><a class="headerlink" href="#building-xml-documents" title="Permalink to this headline">¶</a></h3>
-<p>The <a class="reference internal" href="../generated/xml.etree.ElementTree.SubElement.html#xml.etree.ElementTree.SubElement" title="xml.etree.ElementTree.SubElement"><code class="xref py py-func docutils literal"><span class="pre">SubElement()</span></code></a> function also provides a convenient way to create new
+<p>The <a class="reference internal" href="../generated/generated/xml.etree.ElementTree.SubElement.html#xml.etree.ElementTree.SubElement" title="xml.etree.ElementTree.SubElement"><code class="xref py py-func docutils literal"><span class="pre">SubElement()</span></code></a> function also provides a convenient way to create new
 sub-elements for a given element:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
@@ -663,7 +663,7 @@ written as an ordinary XML file.</p>
 <dl class="function">
 <dt id="xml.etree.ElementTree.fromstring">
 <code class="descclassname">xml.etree.ElementTree.</code><code class="descname">fromstring</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#xml.etree.ElementTree.fromstring" title="Permalink to this definition">¶</a></dt>
-<dd><p>Parses an XML section from a string constant.  Same as <a class="reference internal" href="../generated/xml.etree.ElementTree.XML.html#xml.etree.ElementTree.XML" title="xml.etree.ElementTree.XML"><code class="xref py py-func docutils literal"><span class="pre">XML()</span></code></a>.  <em>text</em>
+<dd><p>Parses an XML section from a string constant.  Same as <a class="reference internal" href="../generated/generated/xml.etree.ElementTree.XML.html#xml.etree.ElementTree.XML" title="xml.etree.ElementTree.XML"><code class="xref py py-func docutils literal"><span class="pre">XML()</span></code></a>.  <em>text</em>
 is a string containing XML data.  Returns an <a class="reference internal" href="../generated/generated/xml.etree.ElementTree.Element.html#xml.etree.ElementTree.Element" title="xml.etree.ElementTree.Element"><code class="xref py py-class docutils literal"><span class="pre">Element</span></code></a> instance.</p>
 </dd></dl>
 
@@ -698,7 +698,7 @@ supported by <code class="docutils literal"><span class="pre">cElementTree</span
 <code class="docutils literal"><span class="pre">(event,</span> <span class="pre">elem)</span></code> pairs.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p><a class="reference internal" href="../generated/xml.etree.ElementTree.iterparse.html#xml.etree.ElementTree.iterparse" title="xml.etree.ElementTree.iterparse"><code class="xref py py-func docutils literal"><span class="pre">iterparse()</span></code></a> only guarantees that it has seen the &#8220;&gt;&#8221;
+<p><a class="reference internal" href="../generated/generated/xml.etree.ElementTree.iterparse.html#xml.etree.ElementTree.iterparse" title="xml.etree.ElementTree.iterparse"><code class="xref py py-func docutils literal"><span class="pre">iterparse()</span></code></a> only guarantees that it has seen the &#8220;&gt;&#8221;
 character of a starting tag when it emits a &#8220;start&#8221; event, so the
 attributes are defined, but the contents of the text and tail attributes
 are undefined at that point.  The same applies to the element children;
@@ -982,7 +982,7 @@ subelements, in document order, and returns all inner text.</p>
 <dt id="xml.etree.ElementTree.Element.makeelement">
 <code class="descname">makeelement</code><span class="sig-paren">(</span><em>tag</em>, <em>attrib</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/xml/etree/ElementTree.html#Element.makeelement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#xml.etree.ElementTree.Element.makeelement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a new element object of the same type as this element.  Do not
-call this method, use the <a class="reference internal" href="../generated/xml.etree.ElementTree.SubElement.html#xml.etree.ElementTree.SubElement" title="xml.etree.ElementTree.SubElement"><code class="xref py py-func docutils literal"><span class="pre">SubElement()</span></code></a> factory function instead.</p>
+call this method, use the <a class="reference internal" href="../generated/generated/xml.etree.ElementTree.SubElement.html#xml.etree.ElementTree.SubElement" title="xml.etree.ElementTree.SubElement"><code class="xref py py-func docutils literal"><span class="pre">SubElement()</span></code></a> factory function instead.</p>
 </dd></dl>
 
 <dl class="method">

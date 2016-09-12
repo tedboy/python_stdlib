@@ -179,7 +179,7 @@
 <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
     <span class="n">NotANumber</span> <span class="o">=</span> <span class="s1">&#39;fpformat.NotANumber&#39;</span>
 
-<div class="viewcode-block" id="extract"><a class="viewcode-back" href="../generated/fpformat.extract.html#fpformat.extract">[docs]</a><span class="k">def</span> <span class="nf">extract</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="extract"><a class="viewcode-back" href="../generated/generated/fpformat.extract.html#fpformat.extract">[docs]</a><span class="k">def</span> <span class="nf">extract</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return (sign, intpart, fraction, expo) or raise an exception:</span>
 <span class="sd">    sign is &#39;+&#39; or &#39;-&#39;</span>
 <span class="sd">    intpart is 0 or more digits beginning with a nonzero</span>
@@ -194,7 +194,7 @@
     <span class="k">else</span><span class="p">:</span> <span class="n">expo</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">return</span> <span class="n">sign</span><span class="p">,</span> <span class="n">intpart</span><span class="p">,</span> <span class="n">fraction</span><span class="p">,</span> <span class="n">expo</span></div>
 
-<div class="viewcode-block" id="unexpo"><a class="viewcode-back" href="../generated/fpformat.unexpo.html#fpformat.unexpo">[docs]</a><span class="k">def</span> <span class="nf">unexpo</span><span class="p">(</span><span class="n">intpart</span><span class="p">,</span> <span class="n">fraction</span><span class="p">,</span> <span class="n">expo</span><span class="p">):</span>
+<div class="viewcode-block" id="unexpo"><a class="viewcode-back" href="../generated/generated/fpformat.unexpo.html#fpformat.unexpo">[docs]</a><span class="k">def</span> <span class="nf">unexpo</span><span class="p">(</span><span class="n">intpart</span><span class="p">,</span> <span class="n">fraction</span><span class="p">,</span> <span class="n">expo</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Remove the exponent by changing intpart and fraction.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">expo</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># Move the point left</span>
         <span class="n">f</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">fraction</span><span class="p">)</span>
@@ -208,7 +208,7 @@
             <span class="n">fraction</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="n">expo</span><span class="o">-</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="n">fraction</span>
     <span class="k">return</span> <span class="n">intpart</span><span class="p">,</span> <span class="n">fraction</span></div>
 
-<div class="viewcode-block" id="roundfrac"><a class="viewcode-back" href="../generated/fpformat.roundfrac.html#fpformat.roundfrac">[docs]</a><span class="k">def</span> <span class="nf">roundfrac</span><span class="p">(</span><span class="n">intpart</span><span class="p">,</span> <span class="n">fraction</span><span class="p">,</span> <span class="n">digs</span><span class="p">):</span>
+<div class="viewcode-block" id="roundfrac"><a class="viewcode-back" href="../generated/generated/fpformat.roundfrac.html#fpformat.roundfrac">[docs]</a><span class="k">def</span> <span class="nf">roundfrac</span><span class="p">(</span><span class="n">intpart</span><span class="p">,</span> <span class="n">fraction</span><span class="p">,</span> <span class="n">digs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Round or extend the fraction to size digs.&quot;&quot;&quot;</span>
     <span class="n">f</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">fraction</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">f</span> <span class="o">&lt;=</span> <span class="n">digs</span><span class="p">:</span>
@@ -234,7 +234,7 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">intpart</span><span class="p">[:</span><span class="n">digs</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;0&#39;</span><span class="o">*-</span><span class="n">digs</span><span class="p">,</span> <span class="s1">&#39;&#39;</span></div>
 
-<div class="viewcode-block" id="fix"><a class="viewcode-back" href="../generated/fpformat.fix.html#fpformat.fix">[docs]</a><span class="k">def</span> <span class="nf">fix</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">digs</span><span class="p">):</span>
+<div class="viewcode-block" id="fix"><a class="viewcode-back" href="../generated/generated/fpformat.fix.html#fpformat.fix">[docs]</a><span class="k">def</span> <span class="nf">fix</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">digs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Format x as [-]ddd.ddd with &#39;digs&#39; digits after the point</span>
 <span class="sd">    and at least one digit before.</span>
 <span class="sd">    If digs &lt;= 0, the point is suppressed.&quot;&quot;&quot;</span>
@@ -250,7 +250,7 @@
     <span class="k">if</span> <span class="n">digs</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="n">sign</span> <span class="o">+</span> <span class="n">intpart</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span> <span class="o">+</span> <span class="n">fraction</span>
     <span class="k">else</span><span class="p">:</span> <span class="k">return</span> <span class="n">sign</span> <span class="o">+</span> <span class="n">intpart</span></div>
 
-<div class="viewcode-block" id="sci"><a class="viewcode-back" href="../generated/fpformat.sci.html#fpformat.sci">[docs]</a><span class="k">def</span> <span class="nf">sci</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">digs</span><span class="p">):</span>
+<div class="viewcode-block" id="sci"><a class="viewcode-back" href="../generated/generated/fpformat.sci.html#fpformat.sci">[docs]</a><span class="k">def</span> <span class="nf">sci</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">digs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Format x as [-]d.dddE[+-]ddd with &#39;digs&#39; digits after the point</span>
 <span class="sd">    and exactly one digit before.</span>
 <span class="sd">    If digs is &lt;= 0, one digit is kept and the point is suppressed.&quot;&quot;&quot;</span>
@@ -282,7 +282,7 @@
     <span class="k">else</span><span class="p">:</span> <span class="n">e</span> <span class="o">=</span> <span class="s1">&#39;+&#39;</span> <span class="o">+</span> <span class="n">e</span>
     <span class="k">return</span> <span class="n">s</span> <span class="o">+</span> <span class="s1">&#39;e&#39;</span> <span class="o">+</span> <span class="n">e</span></div>
 
-<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/fpformat.test.html#fpformat.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
+<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/generated/fpformat.test.html#fpformat.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Interactive test run.&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>

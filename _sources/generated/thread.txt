@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       allocate
       allocate_lock
@@ -21,6 +21,22 @@
       stack_size
       start_new
       start_new_thread
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/thread.allocate
+       generated/thread.allocate_lock
+       generated/thread.exit
+       generated/thread.exit_thread
+       generated/thread.get_ident
+       generated/thread.interrupt_main
+       generated/thread.stack_size
+       generated/thread.start_new
+       generated/thread.start_new_thread
+      
    
    
 

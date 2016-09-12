@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       dump_address_pair
       formatdate
@@ -21,6 +21,22 @@
       quote
       unquote
       warnpy3k
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/rfc822.dump_address_pair
+       generated/rfc822.formatdate
+       generated/rfc822.mktime_tz
+       generated/rfc822.parseaddr
+       generated/rfc822.parsedate
+       generated/rfc822.parsedate_tz
+       generated/rfc822.quote
+       generated/rfc822.unquote
+       generated/rfc822.warnpy3k
+      
    
    
 

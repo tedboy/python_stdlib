@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       StringIO
       dolog
@@ -33,6 +33,34 @@
       test
       valid_boundary
       warn
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/cgi.StringIO
+       generated/cgi.dolog
+       generated/cgi.escape
+       generated/cgi.filterwarnings
+       generated/cgi.initlog
+       generated/cgi.log
+       generated/cgi.nolog
+       generated/cgi.parse
+       generated/cgi.parse_header
+       generated/cgi.parse_multipart
+       generated/cgi.parse_qs
+       generated/cgi.parse_qsl
+       generated/cgi.print_arguments
+       generated/cgi.print_directory
+       generated/cgi.print_environ
+       generated/cgi.print_environ_usage
+       generated/cgi.print_exception
+       generated/cgi.print_form
+       generated/cgi.test
+       generated/cgi.valid_boundary
+       generated/cgi.warn
+      
    
    
 

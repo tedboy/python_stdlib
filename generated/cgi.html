@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="cgi.FieldStorage" href="generated/cgi.FieldStorage.html"/>
+        <link rel="next" title="cgi.StringIO()" href="generated/cgi.StringIO.html"/>
         <link rel="prev" title="webbrowser.Error" href="webbrowser.Error.html"/> 
 
   
@@ -82,12 +82,110 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="webbrowser.html"><code class="docutils literal"><span class="pre">webbrowser</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">cgi</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.StringIO.html"><code class="docutils literal"><span class="pre">cgi.StringIO()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.dolog.html"><code class="docutils literal"><span class="pre">cgi.dolog()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.escape.html"><code class="docutils literal"><span class="pre">cgi.escape()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.filterwarnings.html"><code class="docutils literal"><span class="pre">cgi.filterwarnings()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.initlog.html"><code class="docutils literal"><span class="pre">cgi.initlog()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.log.html"><code class="docutils literal"><span class="pre">cgi.log()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.nolog.html"><code class="docutils literal"><span class="pre">cgi.nolog()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.parse.html"><code class="docutils literal"><span class="pre">cgi.parse()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.parse_header.html"><code class="docutils literal"><span class="pre">cgi.parse_header()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.parse_multipart.html"><code class="docutils literal"><span class="pre">cgi.parse_multipart()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.parse_qs.html"><code class="docutils literal"><span class="pre">cgi.parse_qs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.parse_qsl.html"><code class="docutils literal"><span class="pre">cgi.parse_qsl()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.print_arguments.html"><code class="docutils literal"><span class="pre">cgi.print_arguments()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.print_directory.html"><code class="docutils literal"><span class="pre">cgi.print_directory()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.print_environ.html"><code class="docutils literal"><span class="pre">cgi.print_environ()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.print_environ_usage.html"><code class="docutils literal"><span class="pre">cgi.print_environ_usage()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.print_exception.html"><code class="docutils literal"><span class="pre">cgi.print_exception()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.print_form.html"><code class="docutils literal"><span class="pre">cgi.print_form()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.test.html"><code class="docutils literal"><span class="pre">cgi.test()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.valid_boundary.html"><code class="docutils literal"><span class="pre">cgi.valid_boundary()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.warn.html"><code class="docutils literal"><span class="pre">cgi.warn()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.FieldStorage.html"><code class="docutils literal"><span class="pre">cgi.FieldStorage</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.FormContent.html"><code class="docutils literal"><span class="pre">cgi.FormContent</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.FormContentDict.html"><code class="docutils literal"><span class="pre">cgi.FormContentDict</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.InterpFormContentDict.html"><code class="docutils literal"><span class="pre">cgi.InterpFormContentDict</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.MiniFieldStorage.html"><code class="docutils literal"><span class="pre">cgi.MiniFieldStorage</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.SvFormContentDict.html"><code class="docutils literal"><span class="pre">cgi.SvFormContentDict</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.attrgetter.html"><code class="docutils literal"><span class="pre">cgi.attrgetter</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cgi.catch_warnings.html"><code class="docutils literal"><span class="pre">cgi.catch_warnings</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cgitb.html"><code class="docutils literal"><span class="pre">cgitb</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsgiref.html"><code class="docutils literal"><span class="pre">wsgiref</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="urllib.html"><code class="docutils literal"><span class="pre">urllib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="urllib2.html"><code class="docutils literal"><span class="pre">urllib2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="httplib.html"><code class="docutils literal"><span class="pre">httplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ftplib.html"><code class="docutils literal"><span class="pre">ftplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="poplib.html"><code class="docutils literal"><span class="pre">poplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="imaplib.html"><code class="docutils literal"><span class="pre">imaplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="nntplib.html"><code class="docutils literal"><span class="pre">nntplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="smtplib.html"><code class="docutils literal"><span class="pre">smtplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="smtpd.html"><code class="docutils literal"><span class="pre">smtpd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="telnetlib.html"><code class="docutils literal"><span class="pre">telnetlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="uuid.html"><code class="docutils literal"><span class="pre">uuid</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="urlparse.html"><code class="docutils literal"><span class="pre">urlparse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="SocketServer.html"><code class="docutils literal"><span class="pre">SocketServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="BaseHTTPServer.html"><code class="docutils literal"><span class="pre">BaseHTTPServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="SimpleHTTPServer.html"><code class="docutils literal"><span class="pre">SimpleHTTPServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="CGIHTTPServer.html"><code class="docutils literal"><span class="pre">CGIHTTPServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookielib.html"><code class="docutils literal"><span class="pre">cookielib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cookie.html"><code class="docutils literal"><span class="pre">Cookie</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="xmlrpclib.html"><code class="docutils literal"><span class="pre">xmlrpclib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="SimpleXMLRPCServer.html"><code class="docutils literal"><span class="pre">SimpleXMLRPCServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="DocXMLRPCServer.html"><code class="docutils literal"><span class="pre">DocXMLRPCServer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -155,6 +253,79 @@
 written in Python.</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.StringIO.html#cgi.StringIO" title="cgi.StringIO"><code class="xref py py-obj docutils literal"><span class="pre">StringIO</span></code></a></td>
+<td>StringIO([s]) &#8211; Return a StringIO-like stream for reading or writing</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.dolog.html#cgi.dolog" title="cgi.dolog"><code class="xref py py-obj docutils literal"><span class="pre">dolog</span></code></a>(fmt,&nbsp;*args)</td>
+<td>Write a log message to the log file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.escape.html#cgi.escape" title="cgi.escape"><code class="xref py py-obj docutils literal"><span class="pre">escape</span></code></a>(s[,&nbsp;quote])</td>
+<td>Replace special characters &#8220;&amp;&#8221;, &#8220;&lt;&#8221; and &#8220;&gt;&#8221; to HTML-safe sequences.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.filterwarnings.html#cgi.filterwarnings" title="cgi.filterwarnings"><code class="xref py py-obj docutils literal"><span class="pre">filterwarnings</span></code></a>(action[,&nbsp;message,&nbsp;category,&nbsp;...])</td>
+<td>Insert an entry into the list of warnings filters (at the front).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.initlog.html#cgi.initlog" title="cgi.initlog"><code class="xref py py-obj docutils literal"><span class="pre">initlog</span></code></a>(*allargs)</td>
+<td>Write a log message, if there is a log file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.log.html#cgi.log" title="cgi.log"><code class="xref py py-obj docutils literal"><span class="pre">log</span></code></a>(*allargs)</td>
+<td>Write a log message, if there is a log file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.nolog.html#cgi.nolog" title="cgi.nolog"><code class="xref py py-obj docutils literal"><span class="pre">nolog</span></code></a>(*allargs)</td>
+<td>Dummy function, assigned to log when logging is disabled.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.parse.html#cgi.parse" title="cgi.parse"><code class="xref py py-obj docutils literal"><span class="pre">parse</span></code></a>([fp,&nbsp;environ,&nbsp;keep_blank_values,&nbsp;...])</td>
+<td>Parse a query in the environment or from a file (default stdin)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.parse_header.html#cgi.parse_header" title="cgi.parse_header"><code class="xref py py-obj docutils literal"><span class="pre">parse_header</span></code></a>(line)</td>
+<td>Parse a Content-type like header.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.parse_multipart.html#cgi.parse_multipart" title="cgi.parse_multipart"><code class="xref py py-obj docutils literal"><span class="pre">parse_multipart</span></code></a>(fp,&nbsp;pdict)</td>
+<td>Parse multipart input.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.parse_qs.html#cgi.parse_qs" title="cgi.parse_qs"><code class="xref py py-obj docutils literal"><span class="pre">parse_qs</span></code></a>(qs[,&nbsp;keep_blank_values,&nbsp;strict_parsing])</td>
+<td>Parse a query given as a string argument.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.parse_qsl.html#cgi.parse_qsl" title="cgi.parse_qsl"><code class="xref py py-obj docutils literal"><span class="pre">parse_qsl</span></code></a>(qs[,&nbsp;keep_blank_values,&nbsp;...])</td>
+<td>Parse a query given as a string argument.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.print_arguments.html#cgi.print_arguments" title="cgi.print_arguments"><code class="xref py py-obj docutils literal"><span class="pre">print_arguments</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.print_directory.html#cgi.print_directory" title="cgi.print_directory"><code class="xref py py-obj docutils literal"><span class="pre">print_directory</span></code></a>()</td>
+<td>Dump the current directory as HTML.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.print_environ.html#cgi.print_environ" title="cgi.print_environ"><code class="xref py py-obj docutils literal"><span class="pre">print_environ</span></code></a>([environ])</td>
+<td>Dump the shell environment as HTML.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.print_environ_usage.html#cgi.print_environ_usage" title="cgi.print_environ_usage"><code class="xref py py-obj docutils literal"><span class="pre">print_environ_usage</span></code></a>()</td>
+<td>Dump a list of environment variables used by CGI as HTML.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.print_exception.html#cgi.print_exception" title="cgi.print_exception"><code class="xref py py-obj docutils literal"><span class="pre">print_exception</span></code></a>([type,&nbsp;value,&nbsp;tb,&nbsp;limit])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.print_form.html#cgi.print_form" title="cgi.print_form"><code class="xref py py-obj docutils literal"><span class="pre">print_form</span></code></a>(form)</td>
+<td>Dump the contents of a form as HTML.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.test.html#cgi.test" title="cgi.test"><code class="xref py py-obj docutils literal"><span class="pre">test</span></code></a>([environ])</td>
+<td>Robust test CGI script, usable as main program.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cgi.valid_boundary.html#cgi.valid_boundary" title="cgi.valid_boundary"><code class="xref py py-obj docutils literal"><span class="pre">valid_boundary</span></code></a>(s[,&nbsp;_vb_pattern])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cgi.warn.html#cgi.warn" title="cgi.warn"><code class="xref py py-obj docutils literal"><span class="pre">warn</span></code></a></td>
+<td>Issue a warning, or maybe ignore it or raise an exception.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -202,7 +373,7 @@ written in Python.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/cgi.FieldStorage.html" class="btn btn-neutral float-right" title="cgi.FieldStorage" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/cgi.StringIO.html" class="btn btn-neutral float-right" title="cgi.StringIO()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="webbrowser.Error.html" class="btn btn-neutral" title="webbrowser.Error" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

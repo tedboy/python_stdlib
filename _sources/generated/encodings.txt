@@ -8,12 +8,21 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       normalize_encoding
       search_function
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/encodings.normalize_encoding
+       generated/encodings.search_function
+      
    
    
 

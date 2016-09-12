@@ -230,7 +230,7 @@
 <span class="n">MONTHS_LOWER</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">month</span> <span class="ow">in</span> <span class="n">MONTHS</span><span class="p">:</span> <span class="n">MONTHS_LOWER</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">month</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
 
-<div class="viewcode-block" id="time2isoz"><a class="viewcode-back" href="../generated/cookielib.time2isoz.html#cookielib.time2isoz">[docs]</a><span class="k">def</span> <span class="nf">time2isoz</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="time2isoz"><a class="viewcode-back" href="../generated/generated/cookielib.time2isoz.html#cookielib.time2isoz">[docs]</a><span class="k">def</span> <span class="nf">time2isoz</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return a string representing time in seconds since epoch, t.</span>
 
 <span class="sd">    If the function is called without an argument, it will use the current</span>
@@ -247,7 +247,7 @@
     <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%04d</span><span class="s2">-</span><span class="si">%02d</span><span class="s2">-</span><span class="si">%02d</span><span class="s2"> </span><span class="si">%02d</span><span class="s2">:</span><span class="si">%02d</span><span class="s2">:</span><span class="si">%02d</span><span class="s2">Z&quot;</span> <span class="o">%</span> <span class="p">(</span>
         <span class="n">year</span><span class="p">,</span> <span class="n">mon</span><span class="p">,</span> <span class="n">mday</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="nb">min</span><span class="p">,</span> <span class="n">sec</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="time2netscape"><a class="viewcode-back" href="../generated/cookielib.time2netscape.html#cookielib.time2netscape">[docs]</a><span class="k">def</span> <span class="nf">time2netscape</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="time2netscape"><a class="viewcode-back" href="../generated/generated/cookielib.time2netscape.html#cookielib.time2netscape">[docs]</a><span class="k">def</span> <span class="nf">time2netscape</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return a string representing time in seconds since epoch, t.</span>
 
 <span class="sd">    If the function is called without an argument, it will use the current</span>
@@ -267,7 +267,7 @@
 <span class="n">UTC_ZONES</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;GMT&quot;</span><span class="p">:</span> <span class="bp">None</span><span class="p">,</span> <span class="s2">&quot;UTC&quot;</span><span class="p">:</span> <span class="bp">None</span><span class="p">,</span> <span class="s2">&quot;UT&quot;</span><span class="p">:</span> <span class="bp">None</span><span class="p">,</span> <span class="s2">&quot;Z&quot;</span><span class="p">:</span> <span class="bp">None</span><span class="p">}</span>
 
 <span class="n">TIMEZONE_RE</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">r&quot;^([-+])?(\d\d?):?(\d\d)?$&quot;</span><span class="p">)</span>
-<div class="viewcode-block" id="offset_from_tz_string"><a class="viewcode-back" href="../generated/cookielib.offset_from_tz_string.html#cookielib.offset_from_tz_string">[docs]</a><span class="k">def</span> <span class="nf">offset_from_tz_string</span><span class="p">(</span><span class="n">tz</span><span class="p">):</span>
+<div class="viewcode-block" id="offset_from_tz_string"><a class="viewcode-back" href="../generated/generated/cookielib.offset_from_tz_string.html#cookielib.offset_from_tz_string">[docs]</a><span class="k">def</span> <span class="nf">offset_from_tz_string</span><span class="p">(</span><span class="n">tz</span><span class="p">):</span>
     <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span>
     <span class="k">if</span> <span class="n">tz</span> <span class="ow">in</span> <span class="n">UTC_ZONES</span><span class="p">:</span>
         <span class="n">offset</span> <span class="o">=</span> <span class="mi">0</span>
@@ -356,7 +356,7 @@
 <span class="sd">       \s*</span>
 <span class="sd">    (?:\(\w+\))?       # ASCII representation of timezone in parens.</span>
 <span class="sd">       \s*$&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
-<div class="viewcode-block" id="http2time"><a class="viewcode-back" href="../generated/cookielib.http2time.html#cookielib.http2time">[docs]</a><span class="k">def</span> <span class="nf">http2time</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<div class="viewcode-block" id="http2time"><a class="viewcode-back" href="../generated/generated/cookielib.http2time.html#cookielib.http2time">[docs]</a><span class="k">def</span> <span class="nf">http2time</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Returns time in seconds since epoch of time represented by a string.</span>
 
 <span class="sd">    Return value is an integer.</span>
@@ -428,7 +428,7 @@
 <span class="sd">   ([-+]?\d\d?:?(:?\d\d)?</span>
 <span class="sd">    |Z|z)?               # timezone  (Z is &quot;zero meridian&quot;, i.e. GMT)</span>
 <span class="sd">      \s*$&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
-<div class="viewcode-block" id="iso2time"><a class="viewcode-back" href="../generated/cookielib.iso2time.html#cookielib.iso2time">[docs]</a><span class="k">def</span> <span class="nf">iso2time</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<div class="viewcode-block" id="iso2time"><a class="viewcode-back" href="../generated/generated/cookielib.iso2time.html#cookielib.iso2time">[docs]</a><span class="k">def</span> <span class="nf">iso2time</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    As for http2time, but parses the ISO 8601 formats:</span>
 
@@ -461,7 +461,7 @@
 <span class="c1"># Header parsing</span>
 <span class="c1"># -----------------------------------------------------------------------------</span>
 
-<div class="viewcode-block" id="unmatched"><a class="viewcode-back" href="../generated/cookielib.unmatched.html#cookielib.unmatched">[docs]</a><span class="k">def</span> <span class="nf">unmatched</span><span class="p">(</span><span class="n">match</span><span class="p">):</span>
+<div class="viewcode-block" id="unmatched"><a class="viewcode-back" href="../generated/generated/cookielib.unmatched.html#cookielib.unmatched">[docs]</a><span class="k">def</span> <span class="nf">unmatched</span><span class="p">(</span><span class="n">match</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return unmatched part of re.Match object.&quot;&quot;&quot;</span>
     <span class="n">start</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">span</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">match</span><span class="o">.</span><span class="n">string</span><span class="p">[:</span><span class="n">start</span><span class="p">]</span><span class="o">+</span><span class="n">match</span><span class="o">.</span><span class="n">string</span><span class="p">[</span><span class="n">end</span><span class="p">:]</span></div>
@@ -470,7 +470,7 @@
 <span class="n">HEADER_QUOTED_VALUE_RE</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">r&quot;^\s*=\s*</span><span class="se">\&quot;</span><span class="s2">([^</span><span class="se">\&quot;\\</span><span class="s2">]*(?:</span><span class="se">\\</span><span class="s2">.[^</span><span class="se">\&quot;\\</span><span class="s2">]*)*)</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="n">HEADER_VALUE_RE</span> <span class="o">=</span>        <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">r&quot;^\s*=\s*([^\s;,]*)&quot;</span><span class="p">)</span>
 <span class="n">HEADER_ESCAPE_RE</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">r&quot;</span><span class="se">\\</span><span class="s2">(.)&quot;</span><span class="p">)</span>
-<div class="viewcode-block" id="split_header_words"><a class="viewcode-back" href="../generated/cookielib.split_header_words.html#cookielib.split_header_words">[docs]</a><span class="k">def</span> <span class="nf">split_header_words</span><span class="p">(</span><span class="n">header_values</span><span class="p">):</span>
+<div class="viewcode-block" id="split_header_words"><a class="viewcode-back" href="../generated/generated/cookielib.split_header_words.html#cookielib.split_header_words">[docs]</a><span class="k">def</span> <span class="nf">split_header_words</span><span class="p">(</span><span class="n">header_values</span><span class="p">):</span>
     <span class="sd">r&quot;&quot;&quot;Parse header values into a list of lists containing key,value pairs.</span>
 
 <span class="sd">    The function knows how to deal with &quot;,&quot;, &quot;;&quot; and &quot;=&quot; as well as quoted</span>
@@ -556,7 +556,7 @@
     <span class="k">return</span> <span class="n">result</span></div>
 
 <span class="n">HEADER_JOIN_ESCAPE_RE</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">r&quot;([</span><span class="se">\&quot;\\</span><span class="s2">])&quot;</span><span class="p">)</span>
-<div class="viewcode-block" id="join_header_words"><a class="viewcode-back" href="../generated/cookielib.join_header_words.html#cookielib.join_header_words">[docs]</a><span class="k">def</span> <span class="nf">join_header_words</span><span class="p">(</span><span class="n">lists</span><span class="p">):</span>
+<div class="viewcode-block" id="join_header_words"><a class="viewcode-back" href="../generated/generated/cookielib.join_header_words.html#cookielib.join_header_words">[docs]</a><span class="k">def</span> <span class="nf">join_header_words</span><span class="p">(</span><span class="n">lists</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Do the inverse (almost) of the conversion done by split_header_words.</span>
 
 <span class="sd">    Takes a list of lists of (key, value) pairs and produces a single header</span>
@@ -588,7 +588,7 @@
         <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">text</span>
 
-<div class="viewcode-block" id="parse_ns_headers"><a class="viewcode-back" href="../generated/cookielib.parse_ns_headers.html#cookielib.parse_ns_headers">[docs]</a><span class="k">def</span> <span class="nf">parse_ns_headers</span><span class="p">(</span><span class="n">ns_headers</span><span class="p">):</span>
+<div class="viewcode-block" id="parse_ns_headers"><a class="viewcode-back" href="../generated/generated/cookielib.parse_ns_headers.html#cookielib.parse_ns_headers">[docs]</a><span class="k">def</span> <span class="nf">parse_ns_headers</span><span class="p">(</span><span class="n">ns_headers</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Ad-hoc parser for Netscape protocol cookie-attributes.</span>
 
 <span class="sd">    The old Netscape cookie format for Set-Cookie can for instance contain</span>
@@ -657,7 +657,7 @@
 
 
 <span class="n">IPV4_RE</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">r&quot;\.\d+$&quot;</span><span class="p">)</span>
-<div class="viewcode-block" id="is_HDN"><a class="viewcode-back" href="../generated/cookielib.is_HDN.html#cookielib.is_HDN">[docs]</a><span class="k">def</span> <span class="nf">is_HDN</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<div class="viewcode-block" id="is_HDN"><a class="viewcode-back" href="../generated/generated/cookielib.is_HDN.html#cookielib.is_HDN">[docs]</a><span class="k">def</span> <span class="nf">is_HDN</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return True if text is a host domain name.&quot;&quot;&quot;</span>
     <span class="c1"># XXX</span>
     <span class="c1"># This may well be wrong.  Which RFC is HDN defined in, if any (for</span>
@@ -672,7 +672,7 @@
         <span class="k">return</span> <span class="bp">False</span>
     <span class="k">return</span> <span class="bp">True</span></div>
 
-<div class="viewcode-block" id="domain_match"><a class="viewcode-back" href="../generated/cookielib.domain_match.html#cookielib.domain_match">[docs]</a><span class="k">def</span> <span class="nf">domain_match</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+<div class="viewcode-block" id="domain_match"><a class="viewcode-back" href="../generated/generated/cookielib.domain_match.html#cookielib.domain_match">[docs]</a><span class="k">def</span> <span class="nf">domain_match</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return True if domain A domain-matches domain B, according to RFC 2965.</span>
 
 <span class="sd">    A and B may be host domain names or IP addresses.</span>
@@ -711,7 +711,7 @@
         <span class="k">return</span> <span class="bp">False</span>
     <span class="k">return</span> <span class="bp">True</span></div>
 
-<div class="viewcode-block" id="liberal_is_HDN"><a class="viewcode-back" href="../generated/cookielib.liberal_is_HDN.html#cookielib.liberal_is_HDN">[docs]</a><span class="k">def</span> <span class="nf">liberal_is_HDN</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<div class="viewcode-block" id="liberal_is_HDN"><a class="viewcode-back" href="../generated/generated/cookielib.liberal_is_HDN.html#cookielib.liberal_is_HDN">[docs]</a><span class="k">def</span> <span class="nf">liberal_is_HDN</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return True if text is a sort-of-like a host domain name.</span>
 
 <span class="sd">    For accepting/blocking domains.</span>
@@ -721,7 +721,7 @@
         <span class="k">return</span> <span class="bp">False</span>
     <span class="k">return</span> <span class="bp">True</span></div>
 
-<div class="viewcode-block" id="user_domain_match"><a class="viewcode-back" href="../generated/cookielib.user_domain_match.html#cookielib.user_domain_match">[docs]</a><span class="k">def</span> <span class="nf">user_domain_match</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+<div class="viewcode-block" id="user_domain_match"><a class="viewcode-back" href="../generated/generated/cookielib.user_domain_match.html#cookielib.user_domain_match">[docs]</a><span class="k">def</span> <span class="nf">user_domain_match</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;For blocking/accepting domains.</span>
 
 <span class="sd">    A and B may be host domain names or IP addresses.</span>
@@ -742,7 +742,7 @@
     <span class="k">return</span> <span class="bp">False</span></div>
 
 <span class="n">cut_port_re</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">r&quot;:\d+$&quot;</span><span class="p">)</span>
-<div class="viewcode-block" id="request_host"><a class="viewcode-back" href="../generated/cookielib.request_host.html#cookielib.request_host">[docs]</a><span class="k">def</span> <span class="nf">request_host</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<div class="viewcode-block" id="request_host"><a class="viewcode-back" href="../generated/generated/cookielib.request_host.html#cookielib.request_host">[docs]</a><span class="k">def</span> <span class="nf">request_host</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return request-host, as defined by RFC 2965.</span>
 
 <span class="sd">    Variation from RFC: returned value is lowercased, for convenient</span>
@@ -758,7 +758,7 @@
     <span class="n">host</span> <span class="o">=</span> <span class="n">cut_port_re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">host</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="eff_request_host"><a class="viewcode-back" href="../generated/cookielib.eff_request_host.html#cookielib.eff_request_host">[docs]</a><span class="k">def</span> <span class="nf">eff_request_host</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<div class="viewcode-block" id="eff_request_host"><a class="viewcode-back" href="../generated/generated/cookielib.eff_request_host.html#cookielib.eff_request_host">[docs]</a><span class="k">def</span> <span class="nf">eff_request_host</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return a tuple (request-host, effective request-host name).</span>
 
 <span class="sd">    As defined by RFC 2965, except both are lowercased.</span>
@@ -769,7 +769,7 @@
         <span class="n">erhn</span> <span class="o">=</span> <span class="n">req_host</span> <span class="o">+</span> <span class="s2">&quot;.local&quot;</span>
     <span class="k">return</span> <span class="n">req_host</span><span class="p">,</span> <span class="n">erhn</span></div>
 
-<div class="viewcode-block" id="request_path"><a class="viewcode-back" href="../generated/cookielib.request_path.html#cookielib.request_path">[docs]</a><span class="k">def</span> <span class="nf">request_path</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<div class="viewcode-block" id="request_path"><a class="viewcode-back" href="../generated/generated/cookielib.request_path.html#cookielib.request_path">[docs]</a><span class="k">def</span> <span class="nf">request_path</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Path component of request-URI, as defined by RFC 2965.&quot;&quot;&quot;</span>
     <span class="n">url</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_full_url</span><span class="p">()</span>
     <span class="n">parts</span> <span class="o">=</span> <span class="n">urlparse</span><span class="o">.</span><span class="n">urlsplit</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
@@ -779,7 +779,7 @@
         <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="n">path</span>
     <span class="k">return</span> <span class="n">path</span></div>
 
-<div class="viewcode-block" id="request_port"><a class="viewcode-back" href="../generated/cookielib.request_port.html#cookielib.request_port">[docs]</a><span class="k">def</span> <span class="nf">request_port</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<div class="viewcode-block" id="request_port"><a class="viewcode-back" href="../generated/generated/cookielib.request_port.html#cookielib.request_port">[docs]</a><span class="k">def</span> <span class="nf">request_port</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
     <span class="n">host</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_host</span><span class="p">()</span>
     <span class="n">i</span> <span class="o">=</span> <span class="n">host</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
@@ -797,9 +797,9 @@
 <span class="c1"># need to be escaped to form a valid HTTP URL (RFCs 2396 and 1738).</span>
 <span class="n">HTTP_PATH_SAFE</span> <span class="o">=</span> <span class="s2">&quot;%/;:@&amp;=+$,!~*&#39;()&quot;</span>
 <span class="n">ESCAPED_CHAR_RE</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">r&quot;%([0-9a-fA-F][0-9a-fA-F])&quot;</span><span class="p">)</span>
-<div class="viewcode-block" id="uppercase_escaped_char"><a class="viewcode-back" href="../generated/cookielib.uppercase_escaped_char.html#cookielib.uppercase_escaped_char">[docs]</a><span class="k">def</span> <span class="nf">uppercase_escaped_char</span><span class="p">(</span><span class="n">match</span><span class="p">):</span>
+<div class="viewcode-block" id="uppercase_escaped_char"><a class="viewcode-back" href="../generated/generated/cookielib.uppercase_escaped_char.html#cookielib.uppercase_escaped_char">[docs]</a><span class="k">def</span> <span class="nf">uppercase_escaped_char</span><span class="p">(</span><span class="n">match</span><span class="p">):</span>
     <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%%%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span></div>
-<div class="viewcode-block" id="escape_path"><a class="viewcode-back" href="../generated/cookielib.escape_path.html#cookielib.escape_path">[docs]</a><span class="k">def</span> <span class="nf">escape_path</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="escape_path"><a class="viewcode-back" href="../generated/generated/cookielib.escape_path.html#cookielib.escape_path">[docs]</a><span class="k">def</span> <span class="nf">escape_path</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Escape any invalid characters in HTTP URL, and uppercase all escapes.&quot;&quot;&quot;</span>
     <span class="c1"># There&#39;s no knowing what character encoding was used to create URLs</span>
     <span class="c1"># containing %-escapes, but since we have to pick one to escape invalid</span>
@@ -815,7 +815,7 @@
     <span class="n">path</span> <span class="o">=</span> <span class="n">ESCAPED_CHAR_RE</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">uppercase_escaped_char</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">path</span></div>
 
-<div class="viewcode-block" id="reach"><a class="viewcode-back" href="../generated/cookielib.reach.html#cookielib.reach">[docs]</a><span class="k">def</span> <span class="nf">reach</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
+<div class="viewcode-block" id="reach"><a class="viewcode-back" href="../generated/generated/cookielib.reach.html#cookielib.reach">[docs]</a><span class="k">def</span> <span class="nf">reach</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return reach of host h, as defined by RFC 2965, section 1.</span>
 
 <span class="sd">    The reach R of a host name H is defined as follows:</span>
@@ -850,7 +850,7 @@
             <span class="k">return</span> <span class="s2">&quot;.&quot;</span><span class="o">+</span><span class="n">b</span>
     <span class="k">return</span> <span class="n">h</span></div>
 
-<div class="viewcode-block" id="is_third_party"><a class="viewcode-back" href="../generated/cookielib.is_third_party.html#cookielib.is_third_party">[docs]</a><span class="k">def</span> <span class="nf">is_third_party</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<div class="viewcode-block" id="is_third_party"><a class="viewcode-back" href="../generated/generated/cookielib.is_third_party.html#cookielib.is_third_party">[docs]</a><span class="k">def</span> <span class="nf">is_third_party</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 
 <span class="sd">    RFC 2965, section 3.3.6:</span>
@@ -1335,12 +1335,12 @@
         <span class="k">return</span> <span class="bp">True</span></div></div>
 
 
-<div class="viewcode-block" id="vals_sorted_by_key"><a class="viewcode-back" href="../generated/cookielib.vals_sorted_by_key.html#cookielib.vals_sorted_by_key">[docs]</a><span class="k">def</span> <span class="nf">vals_sorted_by_key</span><span class="p">(</span><span class="n">adict</span><span class="p">):</span>
+<div class="viewcode-block" id="vals_sorted_by_key"><a class="viewcode-back" href="../generated/generated/cookielib.vals_sorted_by_key.html#cookielib.vals_sorted_by_key">[docs]</a><span class="k">def</span> <span class="nf">vals_sorted_by_key</span><span class="p">(</span><span class="n">adict</span><span class="p">):</span>
     <span class="n">keys</span> <span class="o">=</span> <span class="n">adict</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
     <span class="n">keys</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
     <span class="k">return</span> <span class="nb">map</span><span class="p">(</span><span class="n">adict</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="n">keys</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="deepvalues"><a class="viewcode-back" href="../generated/cookielib.deepvalues.html#cookielib.deepvalues">[docs]</a><span class="k">def</span> <span class="nf">deepvalues</span><span class="p">(</span><span class="n">mapping</span><span class="p">):</span>
+<div class="viewcode-block" id="deepvalues"><a class="viewcode-back" href="../generated/generated/cookielib.deepvalues.html#cookielib.deepvalues">[docs]</a><span class="k">def</span> <span class="nf">deepvalues</span><span class="p">(</span><span class="n">mapping</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Iterates over nested mapping, depth-first, in sorted order by key.&quot;&quot;&quot;</span>
     <span class="n">values</span> <span class="o">=</span> <span class="n">vals_sorted_by_key</span><span class="p">(</span><span class="n">mapping</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>

@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       Comment
       PI
@@ -27,6 +27,28 @@
       register_namespace
       tostring
       tostringlist
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/xml.etree.ElementTree.Comment
+       generated/xml.etree.ElementTree.PI
+       generated/xml.etree.ElementTree.ProcessingInstruction
+       generated/xml.etree.ElementTree.SubElement
+       generated/xml.etree.ElementTree.XML
+       generated/xml.etree.ElementTree.XMLID
+       generated/xml.etree.ElementTree.dump
+       generated/xml.etree.ElementTree.fromstring
+       generated/xml.etree.ElementTree.fromstringlist
+       generated/xml.etree.ElementTree.iselement
+       generated/xml.etree.ElementTree.iterparse
+       generated/xml.etree.ElementTree.parse
+       generated/xml.etree.ElementTree.register_namespace
+       generated/xml.etree.ElementTree.tostring
+       generated/xml.etree.ElementTree.tostringlist
+      
    
    
 

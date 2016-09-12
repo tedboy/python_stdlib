@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       decode_long
       dis
@@ -32,6 +32,33 @@
       read_uint2
       read_unicodestring4
       read_unicodestringnl
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pickletools.decode_long
+       generated/pickletools.dis
+       generated/pickletools.genops
+       generated/pickletools.optimize
+       generated/pickletools.read_decimalnl_long
+       generated/pickletools.read_decimalnl_short
+       generated/pickletools.read_float8
+       generated/pickletools.read_floatnl
+       generated/pickletools.read_int4
+       generated/pickletools.read_long1
+       generated/pickletools.read_long4
+       generated/pickletools.read_string1
+       generated/pickletools.read_string4
+       generated/pickletools.read_stringnl
+       generated/pickletools.read_stringnl_noescape
+       generated/pickletools.read_stringnl_noescape_pair
+       generated/pickletools.read_uint1
+       generated/pickletools.read_uint2
+       generated/pickletools.read_unicodestring4
+       generated/pickletools.read_unicodestringnl
+      
    
    
 

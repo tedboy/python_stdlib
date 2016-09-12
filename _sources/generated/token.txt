@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       ISEOF
       ISNONTERMINAL
       ISTERMINAL
       main
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/token.ISEOF
+       generated/token.ISNONTERMINAL
+       generated/token.ISTERMINAL
+       generated/token.main
+      
    
    
 

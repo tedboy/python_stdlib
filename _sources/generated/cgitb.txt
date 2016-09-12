@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       enable
       grey
@@ -21,6 +21,22 @@
       small
       strong
       text
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/cgitb.enable
+       generated/cgitb.grey
+       generated/cgitb.html
+       generated/cgitb.lookup
+       generated/cgitb.reset
+       generated/cgitb.scanvars
+       generated/cgitb.small
+       generated/cgitb.strong
+       generated/cgitb.text
+      
    
    
 

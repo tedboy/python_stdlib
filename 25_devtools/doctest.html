@@ -380,26 +380,26 @@ number of examples that failed.</p>
 </div>
 <p>and a detailed report of all examples tried is printed to standard output, along
 with assorted summaries at the end.</p>
-<p>You can force verbose mode by passing <code class="docutils literal"><span class="pre">verbose=True</span></code> to <a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>, or
+<p>You can force verbose mode by passing <code class="docutils literal"><span class="pre">verbose=True</span></code> to <a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>, or
 prohibit it by passing <code class="docutils literal"><span class="pre">verbose=False</span></code>.  In either of those cases,
-<code class="docutils literal"><span class="pre">sys.argv</span></code> is not examined by <a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> (so passing <code class="docutils literal"><span class="pre">-v</span></code> or not
+<code class="docutils literal"><span class="pre">sys.argv</span></code> is not examined by <a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> (so passing <code class="docutils literal"><span class="pre">-v</span></code> or not
 has no effect).</p>
 <p>Since Python 2.6, there is also a command line shortcut for running
-<a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>.  You can instruct the Python interpreter to run the doctest
+<a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>.  You can instruct the Python interpreter to run the doctest
 module directly from the standard library and pass the module name(s) on the
 command line:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>python -m doctest -v example.py
 </pre></div>
 </div>
 <p>This will import <code class="file docutils literal"><span class="pre">example.py</span></code> as a standalone module and run
-<a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> on it.  Note that this may not work correctly if the file is
+<a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> on it.  Note that this may not work correctly if the file is
 part of a package and imports other submodules from that package.</p>
-<p>For more information on <a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>, see section <a class="reference internal" href="#doctest-basic-api"><span>Basic API</span></a>.</p>
+<p>For more information on <a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>, see section <a class="reference internal" href="#doctest-basic-api"><span>Basic API</span></a>.</p>
 </div>
 <div class="section" id="simple-usage-checking-examples-in-a-text-file">
 <span id="doctest-simple-testfile"></span><h2><a class="toc-backref" href="#id4">2.2. Simple Usage: Checking Examples in a Text File</a><a class="headerlink" href="#simple-usage-checking-examples-in-a-text-file" title="Permalink to this headline">¶</a></h2>
 <p>Another simple application of doctest is testing interactive examples in a text
-file.  This can be done with the <a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> function:</p>
+file.  This can be done with the <a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> function:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">doctest</span>
 <span class="n">doctest</span><span class="o">.</span><span class="n">testfile</span><span class="p">(</span><span class="s2">&quot;example.txt&quot;</span><span class="p">)</span>
 </pre></div>
@@ -436,26 +436,26 @@ Got:
     720
 </pre></div>
 </div>
-<p>As with <a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>, <a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> won&#8217;t display anything unless an
+<p>As with <a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>, <a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> won&#8217;t display anything unless an
 example fails.  If an example does fail, then the failing example(s) and the
 cause(s) of the failure(s) are printed to stdout, using the same format as
-<a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>.</p>
-<p>By default, <a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> looks for files in the calling module&#8217;s directory.
+<a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>.</p>
+<p>By default, <a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> looks for files in the calling module&#8217;s directory.
 See section <a class="reference internal" href="#doctest-basic-api"><span>Basic API</span></a> for a description of the optional arguments
 that can be used to tell it to look for files in other locations.</p>
-<p>Like <a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>, <a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a>&#8216;s verbosity can be set with the
+<p>Like <a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>, <a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a>&#8216;s verbosity can be set with the
 <code class="docutils literal"><span class="pre">-v</span></code> command-line switch or with the optional keyword argument
 <em>verbose</em>.</p>
 <p>Since Python 2.6, there is also a command line shortcut for running
-<a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a>.  You can instruct the Python interpreter to run the doctest
+<a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a>.  You can instruct the Python interpreter to run the doctest
 module directly from the standard library and pass the file name(s) on the
 command line:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>python -m doctest -v example.txt
 </pre></div>
 </div>
 <p>Because the file name does not end with <code class="file docutils literal"><span class="pre">.py</span></code>, <a class="reference internal" href="../generated/doctest.html#module-doctest" title="doctest"><code class="xref py py-mod docutils literal"><span class="pre">doctest</span></code></a> infers that
-it must be run with <a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a>, not <a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>.</p>
-<p>For more information on <a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a>, see section <a class="reference internal" href="#doctest-basic-api"><span>Basic API</span></a>.</p>
+it must be run with <a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a>, not <a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>.</p>
+<p>For more information on <a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a>, see section <a class="reference internal" href="#doctest-basic-api"><span>Basic API</span></a>.</p>
 </div>
 <div class="section" id="how-it-works">
 <span id="doctest-how-it-works"></span><h2><a class="toc-backref" href="#id5">2.3. How It Works</a><a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h2>
@@ -578,7 +578,7 @@ freely use any names defined at top-level in <code class="xref py py-mod docutil
 in the docstring being run. Examples cannot see names defined in other
 docstrings.</p>
 <p>You can force use of your own dict as the execution context by passing
-<code class="docutils literal"><span class="pre">globs=your_dict</span></code> to <a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> or <a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> instead.</p>
+<code class="docutils literal"><span class="pre">globs=your_dict</span></code> to <a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> or <a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> instead.</p>
 </div>
 <div class="section" id="what-about-exceptions">
 <span id="doctest-exceptions"></span><h3><a class="toc-backref" href="#id9">2.3.4. What About Exceptions?</a><a class="headerlink" href="#what-about-exceptions" title="Permalink to this headline">¶</a></h3>
@@ -855,9 +855,9 @@ unless you intend to extend <a class="reference internal" href="../generated/doc
 <dt id="doctest.register_optionflag">
 <code class="descclassname">doctest.</code><code class="descname">register_optionflag</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doctest.html#register_optionflag"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#doctest.register_optionflag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a new option flag with a given name, and return the new flag&#8217;s integer
-value.  <a class="reference internal" href="../generated/doctest.register_optionflag.html#doctest.register_optionflag" title="doctest.register_optionflag"><code class="xref py py-func docutils literal"><span class="pre">register_optionflag()</span></code></a> can be used when subclassing
+value.  <a class="reference internal" href="../generated/generated/doctest.register_optionflag.html#doctest.register_optionflag" title="doctest.register_optionflag"><code class="xref py py-func docutils literal"><span class="pre">register_optionflag()</span></code></a> can be used when subclassing
 <a class="reference internal" href="../generated/generated/doctest.OutputChecker.html#doctest.OutputChecker" title="doctest.OutputChecker"><code class="xref py py-class docutils literal"><span class="pre">OutputChecker</span></code></a> or <a class="reference internal" href="../generated/generated/doctest.DocTestRunner.html#doctest.DocTestRunner" title="doctest.DocTestRunner"><code class="xref py py-class docutils literal"><span class="pre">DocTestRunner</span></code></a> to create new options that are
-supported by your subclasses.  <a class="reference internal" href="../generated/doctest.register_optionflag.html#doctest.register_optionflag" title="doctest.register_optionflag"><code class="xref py py-func docutils literal"><span class="pre">register_optionflag()</span></code></a> should always be
+supported by your subclasses.  <a class="reference internal" href="../generated/generated/doctest.register_optionflag.html#doctest.register_optionflag" title="doctest.register_optionflag"><code class="xref py py-func docutils literal"><span class="pre">register_optionflag()</span></code></a> should always be
 called using the following idiom:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">MY_FLAG</span> <span class="o">=</span> <span class="n">register_optionflag</span><span class="p">(</span><span class="s1">&#39;MY_FLAG&#39;</span><span class="p">)</span>
 </pre></div>
@@ -989,7 +989,7 @@ better documentation.</p>
 </div>
 <div class="section" id="basic-api">
 <span id="doctest-basic-api"></span><h2><a class="toc-backref" href="#id13">2.4. Basic API</a><a class="headerlink" href="#basic-api" title="Permalink to this headline">¶</a></h2>
-<p>The functions <a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> and <a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> provide a simple interface to
+<p>The functions <a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> and <a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> provide a simple interface to
 doctest that should be sufficient for most basic uses.  For a less formal
 introduction to these two functions, see sections <a class="reference internal" href="#doctest-simple-testmod"><span>Simple Usage: Checking Examples in Docstrings</span></a>
 and <a class="reference internal" href="#doctest-simple-testfile"><span>Simple Usage: Checking Examples in a Text File</span></a>.</p>
@@ -1076,11 +1076,11 @@ searched directly, as if they were docstrings.</p>
 <p>Optional argument <em>exclude_empty</em> defaults to false.  If true, objects for which
 no doctests are found are excluded from consideration. The default is a backward
 compatibility hack, so that code still using <code class="xref py py-meth docutils literal"><span class="pre">doctest.master.summarize()</span></code> in
-conjunction with <a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> continues to get output for objects with no
+conjunction with <a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> continues to get output for objects with no
 tests. The <em>exclude_empty</em> argument to the newer <a class="reference internal" href="../generated/generated/doctest.DocTestFinder.html#doctest.DocTestFinder" title="doctest.DocTestFinder"><code class="xref py py-class docutils literal"><span class="pre">DocTestFinder</span></code></a>
 constructor defaults to true.</p>
 <p>Optional arguments <em>extraglobs</em>, <em>verbose</em>, <em>report</em>, <em>optionflags</em>,
-<em>raise_on_error</em>, and <em>globs</em> are the same as for function <a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a>
+<em>raise_on_error</em>, and <em>globs</em> are the same as for function <a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a>
 above, except that <em>globs</em> defaults to <code class="docutils literal"><span class="pre">m.__dict__</span></code>.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.3: </span>The parameter <em>optionflags</em> was added.</p>
@@ -1106,7 +1106,7 @@ failures.  By default, output is generated only in case of an example failure.</
 <p>Optional argument <em>compileflags</em> gives the set of flags that should be used by
 the Python compiler when running the examples.  By default, or if <code class="docutils literal"><span class="pre">None</span></code>,
 flags are deduced corresponding to the set of future features found in <em>globs</em>.</p>
-<p>Optional argument <em>optionflags</em> works as for function <a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> above.</p>
+<p>Optional argument <em>optionflags</em> works as for function <a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> above.</p>
 </dd></dl>
 
 </div>
@@ -1179,7 +1179,7 @@ variables for the tests.  A new copy of this dictionary is created for each
 test.  By default, <em>globs</em> is a new empty dictionary.</p>
 <p>Optional argument <em>optionflags</em> specifies the default doctest options for the
 tests, created by or-ing together individual option flags.  See section
-<a class="reference internal" href="#doctest-options"><span>Option Flags</span></a>. See function <a class="reference internal" href="../generated/doctest.set_unittest_reportflags.html#doctest.set_unittest_reportflags" title="doctest.set_unittest_reportflags"><code class="xref py py-func docutils literal"><span class="pre">set_unittest_reportflags()</span></code></a> below
+<a class="reference internal" href="#doctest-options"><span>Option Flags</span></a>. See function <a class="reference internal" href="../generated/generated/doctest.set_unittest_reportflags.html#doctest.set_unittest_reportflags" title="doctest.set_unittest_reportflags"><code class="xref py py-func docutils literal"><span class="pre">set_unittest_reportflags()</span></code></a> below
 for a better way to set reporting options.</p>
 <p>Optional argument <em>parser</em> specifies a <a class="reference internal" href="../generated/generated/doctest.DocTestParser.html#doctest.DocTestParser" title="doctest.DocTestParser"><code class="xref py py-class docutils literal"><span class="pre">DocTestParser</span></code></a> (or subclass)
 that should be used to extract tests from the files.  It defaults to a normal
@@ -1191,14 +1191,14 @@ convert the file to unicode.</p>
 </div>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.5: </span>The global <code class="docutils literal"><span class="pre">__file__</span></code> was added to the globals provided to doctests
-loaded from a text file using <a class="reference internal" href="../generated/doctest.DocFileSuite.html#doctest.DocFileSuite" title="doctest.DocFileSuite"><code class="xref py py-func docutils literal"><span class="pre">DocFileSuite()</span></code></a>.</p>
+loaded from a text file using <a class="reference internal" href="../generated/generated/doctest.DocFileSuite.html#doctest.DocFileSuite" title="doctest.DocFileSuite"><code class="xref py py-func docutils literal"><span class="pre">DocFileSuite()</span></code></a>.</p>
 </div>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.5: </span>The parameter <em>encoding</em> was added.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Unlike <a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> and <a class="reference internal" href="../generated/generated/doctest.DocTestFinder.html#doctest.DocTestFinder" title="doctest.DocTestFinder"><code class="xref py py-class docutils literal"><span class="pre">DocTestFinder</span></code></a>, this function raises
+<p>Unlike <a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a> and <a class="reference internal" href="../generated/generated/doctest.DocTestFinder.html#doctest.DocTestFinder" title="doctest.DocTestFinder"><code class="xref py py-class docutils literal"><span class="pre">DocTestFinder</span></code></a>, this function raises
 a <a class="reference internal" href="../generated/exceptions.ValueError.html#exceptions.ValueError" title="exceptions.ValueError"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code></a> if <em>module</em> contains no docstrings.  You can prevent
 this error by passing a <a class="reference internal" href="../generated/generated/doctest.DocTestFinder.html#doctest.DocTestFinder" title="doctest.DocTestFinder"><code class="xref py py-class docutils literal"><span class="pre">DocTestFinder</span></code></a> instance as the
 <em>test_finder</em> argument with its <em>exclude_empty</em> keyword argument set
@@ -1230,23 +1230,23 @@ is merged into <em>globs</em>.  By default, no extra globals are used.</p>
 <p>Optional argument <em>test_finder</em> is the <a class="reference internal" href="../generated/generated/doctest.DocTestFinder.html#doctest.DocTestFinder" title="doctest.DocTestFinder"><code class="xref py py-class docutils literal"><span class="pre">DocTestFinder</span></code></a> object (or a
 drop-in replacement) that is used to extract doctests from the module.</p>
 <p>Optional arguments <em>setUp</em>, <em>tearDown</em>, and <em>optionflags</em> are the same as for
-function <a class="reference internal" href="../generated/doctest.DocFileSuite.html#doctest.DocFileSuite" title="doctest.DocFileSuite"><code class="xref py py-func docutils literal"><span class="pre">DocFileSuite()</span></code></a> above.</p>
+function <a class="reference internal" href="../generated/generated/doctest.DocFileSuite.html#doctest.DocFileSuite" title="doctest.DocFileSuite"><code class="xref py py-func docutils literal"><span class="pre">DocFileSuite()</span></code></a> above.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.3.</span></p>
 </div>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.4: </span>The parameters <em>globs</em>, <em>extraglobs</em>, <em>test_finder</em>, <em>setUp</em>, <em>tearDown</em>, and
 <em>optionflags</em> were added; this function now uses the same search technique as
-<a class="reference internal" href="../generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/doctest.testmod.html#doctest.testmod" title="doctest.testmod"><code class="xref py py-func docutils literal"><span class="pre">testmod()</span></code></a>.</p>
 </div>
 </dd></dl>
 
-<p>Under the covers, <a class="reference internal" href="../generated/doctest.DocTestSuite.html#doctest.DocTestSuite" title="doctest.DocTestSuite"><code class="xref py py-func docutils literal"><span class="pre">DocTestSuite()</span></code></a> creates a <a class="reference internal" href="../generated/generated/unittest.TestSuite.html#unittest.TestSuite" title="unittest.TestSuite"><code class="xref py py-class docutils literal"><span class="pre">unittest.TestSuite</span></code></a> out
+<p>Under the covers, <a class="reference internal" href="../generated/generated/doctest.DocTestSuite.html#doctest.DocTestSuite" title="doctest.DocTestSuite"><code class="xref py py-func docutils literal"><span class="pre">DocTestSuite()</span></code></a> creates a <a class="reference internal" href="../generated/generated/unittest.TestSuite.html#unittest.TestSuite" title="unittest.TestSuite"><code class="xref py py-class docutils literal"><span class="pre">unittest.TestSuite</span></code></a> out
 of <a class="reference internal" href="../generated/generated/doctest.DocTestCase.html#doctest.DocTestCase" title="doctest.DocTestCase"><code class="xref py py-class docutils literal"><span class="pre">doctest.DocTestCase</span></code></a> instances, and <a class="reference internal" href="../generated/generated/doctest.DocTestCase.html#doctest.DocTestCase" title="doctest.DocTestCase"><code class="xref py py-class docutils literal"><span class="pre">DocTestCase</span></code></a> is a
 subclass of <a class="reference internal" href="../generated/generated/unittest.TestCase.html#unittest.TestCase" title="unittest.TestCase"><code class="xref py py-class docutils literal"><span class="pre">unittest.TestCase</span></code></a>. <a class="reference internal" href="../generated/generated/doctest.DocTestCase.html#doctest.DocTestCase" title="doctest.DocTestCase"><code class="xref py py-class docutils literal"><span class="pre">DocTestCase</span></code></a> isn&#8217;t documented
 here (it&#8217;s an internal detail), but studying its code can answer questions about
 the exact details of <a class="reference internal" href="../generated/unittest.html#module-unittest" title="unittest"><code class="xref py py-mod docutils literal"><span class="pre">unittest</span></code></a> integration.</p>
-<p>Similarly, <a class="reference internal" href="../generated/doctest.DocFileSuite.html#doctest.DocFileSuite" title="doctest.DocFileSuite"><code class="xref py py-func docutils literal"><span class="pre">DocFileSuite()</span></code></a> creates a <a class="reference internal" href="../generated/generated/unittest.TestSuite.html#unittest.TestSuite" title="unittest.TestSuite"><code class="xref py py-class docutils literal"><span class="pre">unittest.TestSuite</span></code></a> out of
+<p>Similarly, <a class="reference internal" href="../generated/generated/doctest.DocFileSuite.html#doctest.DocFileSuite" title="doctest.DocFileSuite"><code class="xref py py-func docutils literal"><span class="pre">DocFileSuite()</span></code></a> creates a <a class="reference internal" href="../generated/generated/unittest.TestSuite.html#unittest.TestSuite" title="unittest.TestSuite"><code class="xref py py-class docutils literal"><span class="pre">unittest.TestSuite</span></code></a> out of
 <a class="reference internal" href="../generated/generated/doctest.DocFileCase.html#doctest.DocFileCase" title="doctest.DocFileCase"><code class="xref py py-class docutils literal"><span class="pre">doctest.DocFileCase</span></code></a> instances, and <a class="reference internal" href="../generated/generated/doctest.DocFileCase.html#doctest.DocFileCase" title="doctest.DocFileCase"><code class="xref py py-class docutils literal"><span class="pre">DocFileCase</span></code></a> is a subclass
 of <a class="reference internal" href="../generated/generated/doctest.DocTestCase.html#doctest.DocTestCase" title="doctest.DocTestCase"><code class="xref py py-class docutils literal"><span class="pre">DocTestCase</span></code></a>.</p>
 <p>So both ways of creating a <a class="reference internal" href="../generated/generated/unittest.TestSuite.html#unittest.TestSuite" title="unittest.TestSuite"><code class="xref py py-class docutils literal"><span class="pre">unittest.TestSuite</span></code></a> run instances of
@@ -1419,7 +1419,7 @@ constructor adds a newline when necessary.</p>
 <dd><p>The exception message generated by the example, if the example is expected to
 generate an exception; or <code class="docutils literal"><span class="pre">None</span></code> if it is not expected to generate an
 exception.  This exception message is compared against the return value of
-<a class="reference internal" href="../generated/traceback.format_exception_only.html#traceback.format_exception_only" title="traceback.format_exception_only"><code class="xref py py-func docutils literal"><span class="pre">traceback.format_exception_only()</span></code></a>.  <a class="reference internal" href="#doctest.Example.exc_msg" title="doctest.Example.exc_msg"><code class="xref py py-attr docutils literal"><span class="pre">exc_msg</span></code></a> ends with a newline
+<a class="reference internal" href="../generated/generated/traceback.format_exception_only.html#traceback.format_exception_only" title="traceback.format_exception_only"><code class="xref py py-func docutils literal"><span class="pre">traceback.format_exception_only()</span></code></a>.  <a class="reference internal" href="#doctest.Example.exc_msg" title="doctest.Example.exc_msg"><code class="xref py py-attr docutils literal"><span class="pre">exc_msg</span></code></a> ends with a newline
 unless it&#8217;s <code class="docutils literal"><span class="pre">None</span></code>.  The constructor adds a newline if needed.</p>
 </dd></dl>
 
@@ -1623,7 +1623,7 @@ provided to allow subclasses of <a class="reference internal" href="../generated
 output; it should not be called directly.</p>
 <p><em>example</em> is the example about to be processed. <em>exc_info</em> is a tuple
 containing information about the unexpected exception (as returned by
-<a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>). <em>test</em> is the test containing <em>example</em>.  <em>out</em> is the
+<a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>). <em>test</em> is the test containing <em>example</em>.  <em>out</em> is the
 output function that was passed to <a class="reference internal" href="../generated/generated/doctest.DocTestRunner.run.html#doctest.DocTestRunner.run" title="doctest.DocTestRunner.run"><code class="xref py py-meth docutils literal"><span class="pre">DocTestRunner.run()</span></code></a>.</p>
 </dd></dl>
 
@@ -1708,10 +1708,10 @@ raises an exception for the first failing example, containing information about
 that example. This information can be used to perform post-mortem debugging on
 the example.</p>
 </li>
-<li><p class="first">The <a class="reference internal" href="../generated/unittest.html#module-unittest" title="unittest"><code class="xref py py-mod docutils literal"><span class="pre">unittest</span></code></a> cases generated by <a class="reference internal" href="../generated/doctest.DocTestSuite.html#doctest.DocTestSuite" title="doctest.DocTestSuite"><code class="xref py py-func docutils literal"><span class="pre">DocTestSuite()</span></code></a> support the
-<a class="reference internal" href="../generated/doctest.debug.html#doctest.debug" title="doctest.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a> method defined by <a class="reference internal" href="../generated/generated/unittest.TestCase.html#unittest.TestCase" title="unittest.TestCase"><code class="xref py py-class docutils literal"><span class="pre">unittest.TestCase</span></code></a>.</p>
+<li><p class="first">The <a class="reference internal" href="../generated/unittest.html#module-unittest" title="unittest"><code class="xref py py-mod docutils literal"><span class="pre">unittest</span></code></a> cases generated by <a class="reference internal" href="../generated/generated/doctest.DocTestSuite.html#doctest.DocTestSuite" title="doctest.DocTestSuite"><code class="xref py py-func docutils literal"><span class="pre">DocTestSuite()</span></code></a> support the
+<a class="reference internal" href="../generated/generated/doctest.debug.html#doctest.debug" title="doctest.debug"><code class="xref py py-meth docutils literal"><span class="pre">debug()</span></code></a> method defined by <a class="reference internal" href="../generated/generated/unittest.TestCase.html#unittest.TestCase" title="unittest.TestCase"><code class="xref py py-class docutils literal"><span class="pre">unittest.TestCase</span></code></a>.</p>
 </li>
-<li><p class="first">You can add a call to <a class="reference internal" href="../generated/pdb.set_trace.html#pdb.set_trace" title="pdb.set_trace"><code class="xref py py-func docutils literal"><span class="pre">pdb.set_trace()</span></code></a> in a doctest example, and you&#8217;ll
+<li><p class="first">You can add a call to <a class="reference internal" href="../generated/generated/pdb.set_trace.html#pdb.set_trace" title="pdb.set_trace"><code class="xref py py-func docutils literal"><span class="pre">pdb.set_trace()</span></code></a> in a doctest example, and you&#8217;ll
 drop into the Python debugger when that line is executed.  Then you can inspect
 current values of variables, and so on.  For example, suppose <code class="file docutils literal"><span class="pre">a.py</span></code>
 contains just this module docstring:</p>
@@ -1759,7 +1759,7 @@ contains just this module docstring:</p>
 </pre></div>
 </div>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.4: </span>The ability to use <a class="reference internal" href="../generated/pdb.set_trace.html#pdb.set_trace" title="pdb.set_trace"><code class="xref py py-func docutils literal"><span class="pre">pdb.set_trace()</span></code></a> usefully inside doctests was added.</p>
+<p><span class="versionmodified">Changed in version 2.4: </span>The ability to use <a class="reference internal" href="../generated/generated/pdb.set_trace.html#pdb.set_trace" title="pdb.set_trace"><code class="xref py py-func docutils literal"><span class="pre">pdb.set_trace()</span></code></a> usefully inside doctests was added.</p>
 </div>
 </li>
 </ul>
@@ -1810,7 +1810,7 @@ script.</p>
 object whose doctests are of interest.  Argument <em>name</em> is the name (within the
 module) of the object with the doctests of interest.  The result is a string,
 containing the object&#8217;s docstring converted to a Python script, as described for
-<a class="reference internal" href="../generated/doctest.script_from_examples.html#doctest.script_from_examples" title="doctest.script_from_examples"><code class="xref py py-func docutils literal"><span class="pre">script_from_examples()</span></code></a> above.  For example, if module <code class="file docutils literal"><span class="pre">a.py</span></code>
+<a class="reference internal" href="../generated/generated/doctest.script_from_examples.html#doctest.script_from_examples" title="doctest.script_from_examples"><code class="xref py py-func docutils literal"><span class="pre">script_from_examples()</span></code></a> above.  For example, if module <code class="file docutils literal"><span class="pre">a.py</span></code>
 contains a top-level function <code class="xref py py-func docutils literal"><span class="pre">f()</span></code>, then</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">a</span><span class="o">,</span> <span class="nn">doctest</span>
 <span class="k">print</span> <span class="n">doctest</span><span class="o">.</span><span class="n">testsource</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s2">&quot;a.f&quot;</span><span class="p">)</span>
@@ -1828,7 +1828,7 @@ converted to code, and the rest placed in comments.</p>
 <code class="descclassname">doctest.</code><code class="descname">debug</code><span class="sig-paren">(</span><em>module</em>, <em>name</em><span class="optional">[</span>, <em>pm</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doctest.html#debug"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#doctest.debug" title="Permalink to this definition">¶</a></dt>
 <dd><p>Debug the doctests for an object.</p>
 <p>The <em>module</em> and <em>name</em> arguments are the same as for function
-<a class="reference internal" href="../generated/doctest.testsource.html#doctest.testsource" title="doctest.testsource"><code class="xref py py-func docutils literal"><span class="pre">testsource()</span></code></a> above.  The synthesized Python script for the named object&#8217;s
+<a class="reference internal" href="../generated/generated/doctest.testsource.html#doctest.testsource" title="doctest.testsource"><code class="xref py py-func docutils literal"><span class="pre">testsource()</span></code></a> above.  The synthesized Python script for the named object&#8217;s
 docstring is written to a temporary file, and then that file is run under the
 control of the Python debugger, <a class="reference internal" href="../generated/pdb.html#module-pdb" title="pdb"><code class="xref py py-mod docutils literal"><span class="pre">pdb</span></code></a>.</p>
 <p>A shallow copy of <code class="docutils literal"><span class="pre">module.__dict__</span></code> is used for both local and global
@@ -1836,10 +1836,10 @@ execution context.</p>
 <p>Optional argument <em>pm</em> controls whether post-mortem debugging is used.  If <em>pm</em>
 has a true value, the script file is run directly, and the debugger gets
 involved only if the script terminates via raising an unhandled exception.  If
-it does, then post-mortem debugging is invoked, via <a class="reference internal" href="../generated/pdb.post_mortem.html#pdb.post_mortem" title="pdb.post_mortem"><code class="xref py py-func docutils literal"><span class="pre">pdb.post_mortem()</span></code></a>,
+it does, then post-mortem debugging is invoked, via <a class="reference internal" href="../generated/generated/pdb.post_mortem.html#pdb.post_mortem" title="pdb.post_mortem"><code class="xref py py-func docutils literal"><span class="pre">pdb.post_mortem()</span></code></a>,
 passing the traceback object from the unhandled exception.  If <em>pm</em> is not
 specified, or is false, the script is run under the debugger from the start, via
-passing an appropriate <a class="reference internal" href="../02_builtin_functions/02.html#execfile" title="execfile"><code class="xref py py-func docutils literal"><span class="pre">execfile()</span></code></a> call to <a class="reference internal" href="../generated/pdb.run.html#pdb.run" title="pdb.run"><code class="xref py py-func docutils literal"><span class="pre">pdb.run()</span></code></a>.</p>
+passing an appropriate <a class="reference internal" href="../02_builtin_functions/02.html#execfile" title="execfile"><code class="xref py py-func docutils literal"><span class="pre">execfile()</span></code></a> call to <a class="reference internal" href="../generated/generated/pdb.run.html#pdb.run" title="pdb.run"><code class="xref py py-func docutils literal"><span class="pre">pdb.run()</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.3.</span></p>
 </div>
@@ -1852,9 +1852,9 @@ passing an appropriate <a class="reference internal" href="../02_builtin_functio
 <dt id="doctest.debug_src">
 <code class="descclassname">doctest.</code><code class="descname">debug_src</code><span class="sig-paren">(</span><em>src[, pm][, globs]</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doctest.html#debug_src"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#doctest.debug_src" title="Permalink to this definition">¶</a></dt>
 <dd><p>Debug the doctests in a string.</p>
-<p>This is like function <a class="reference internal" href="../generated/doctest.debug.html#doctest.debug" title="doctest.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a> above, except that a string containing
+<p>This is like function <a class="reference internal" href="../generated/generated/doctest.debug.html#doctest.debug" title="doctest.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a> above, except that a string containing
 doctest examples is specified directly, via the <em>src</em> argument.</p>
-<p>Optional argument <em>pm</em> has the same meaning as in function <a class="reference internal" href="../generated/doctest.debug.html#doctest.debug" title="doctest.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a> above.</p>
+<p>Optional argument <em>pm</em> has the same meaning as in function <a class="reference internal" href="../generated/generated/doctest.debug.html#doctest.debug" title="doctest.debug"><code class="xref py py-func docutils literal"><span class="pre">debug()</span></code></a> above.</p>
 <p>Optional argument <em>globs</em> gives a dictionary to use as both local and global
 execution context.  If not specified, or <code class="docutils literal"><span class="pre">None</span></code>, an empty dictionary is used.
 If specified, a shallow copy of the dictionary is used.</p>
@@ -1933,7 +1933,7 @@ to initialize the attributes of the same names.</p>
 <dt id="doctest.UnexpectedException.exc_info">
 <code class="descclassname">UnexpectedException.</code><code class="descname">exc_info</code><a class="headerlink" href="#doctest.UnexpectedException.exc_info" title="Permalink to this definition">¶</a></dt>
 <dd><p>A tuple containing information about the unexpected exception, as returned by
-<a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>.</p>
 </dd></dl>
 
 </div>
@@ -1977,7 +1977,7 @@ explaining.</p>
 several options for organizing tests:</p>
 <ul class="simple">
 <li>Write text files containing test cases as interactive examples, and test the
-files using <a class="reference internal" href="../generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> or <a class="reference internal" href="../generated/doctest.DocFileSuite.html#doctest.DocFileSuite" title="doctest.DocFileSuite"><code class="xref py py-func docutils literal"><span class="pre">DocFileSuite()</span></code></a>.  This is recommended,
+files using <a class="reference internal" href="../generated/generated/doctest.testfile.html#doctest.testfile" title="doctest.testfile"><code class="xref py py-func docutils literal"><span class="pre">testfile()</span></code></a> or <a class="reference internal" href="../generated/generated/doctest.DocFileSuite.html#doctest.DocFileSuite" title="doctest.DocFileSuite"><code class="xref py py-func docutils literal"><span class="pre">DocFileSuite()</span></code></a>.  This is recommended,
 although is easiest to do for new projects, designed from the start to use
 doctest.</li>
 <li>Define functions named <code class="docutils literal"><span class="pre">_regrtest_topic</span></code> that consist of single docstrings,

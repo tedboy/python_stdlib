@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       extract_stack
       extract_tb
@@ -27,6 +27,28 @@
       print_stack
       print_tb
       tb_lineno
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/traceback.extract_stack
+       generated/traceback.extract_tb
+       generated/traceback.format_exc
+       generated/traceback.format_exception
+       generated/traceback.format_exception_only
+       generated/traceback.format_list
+       generated/traceback.format_stack
+       generated/traceback.format_tb
+       generated/traceback.print_exc
+       generated/traceback.print_exception
+       generated/traceback.print_last
+       generated/traceback.print_list
+       generated/traceback.print_stack
+       generated/traceback.print_tb
+       generated/traceback.tb_lineno
+      
    
    
 

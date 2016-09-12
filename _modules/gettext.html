@@ -207,7 +207,7 @@
 <span class="n">_default_localedir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">prefix</span><span class="p">,</span> <span class="s1">&#39;share&#39;</span><span class="p">,</span> <span class="s1">&#39;locale&#39;</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/gettext.test.html#gettext.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">condition</span><span class="p">,</span> <span class="n">true</span><span class="p">,</span> <span class="n">false</span><span class="p">):</span>
+<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/generated/gettext.test.html#gettext.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">condition</span><span class="p">,</span> <span class="n">true</span><span class="p">,</span> <span class="n">false</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Implements the C expression:</span>
 
@@ -221,7 +221,7 @@
         <span class="k">return</span> <span class="n">false</span></div>
 
 
-<div class="viewcode-block" id="c2py"><a class="viewcode-back" href="../generated/gettext.c2py.html#gettext.c2py">[docs]</a><span class="k">def</span> <span class="nf">c2py</span><span class="p">(</span><span class="n">plural</span><span class="p">):</span>
+<div class="viewcode-block" id="c2py"><a class="viewcode-back" href="../generated/generated/gettext.c2py.html#gettext.c2py">[docs]</a><span class="k">def</span> <span class="nf">c2py</span><span class="p">(</span><span class="n">plural</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Gets a C expression as used in PO files for plural forms and returns a</span>
 <span class="sd">    Python lambda function that implements an equivalent expression.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -568,7 +568,7 @@
 
 
 <span class="c1"># Locate a .mo file using the gettext strategy</span>
-<div class="viewcode-block" id="find"><a class="viewcode-back" href="../generated/gettext.find.html#gettext.find">[docs]</a><span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">localedir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">languages</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="nb">all</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="find"><a class="viewcode-back" href="../generated/generated/gettext.find.html#gettext.find">[docs]</a><span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">localedir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">languages</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="nb">all</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="c1"># Get some reasonable defaults for arguments that were not supplied</span>
     <span class="k">if</span> <span class="n">localedir</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">localedir</span> <span class="o">=</span> <span class="n">_default_localedir</span>
@@ -608,7 +608,7 @@
 <span class="c1"># a mapping between absolute .mo file path and Translation object</span>
 <span class="n">_translations</span> <span class="o">=</span> <span class="p">{}</span>
 
-<div class="viewcode-block" id="translation"><a class="viewcode-back" href="../generated/gettext.translation.html#gettext.translation">[docs]</a><span class="k">def</span> <span class="nf">translation</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">localedir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">languages</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="translation"><a class="viewcode-back" href="../generated/generated/gettext.translation.html#gettext.translation">[docs]</a><span class="k">def</span> <span class="nf">translation</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">localedir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">languages</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                 <span class="n">class_</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">fallback</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">codeset</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">class_</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">class_</span> <span class="o">=</span> <span class="n">GNUTranslations</span>
@@ -639,7 +639,7 @@
     <span class="k">return</span> <span class="n">result</span></div>
 
 
-<div class="viewcode-block" id="install"><a class="viewcode-back" href="../generated/gettext.install.html#gettext.install">[docs]</a><span class="k">def</span> <span class="nf">install</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">localedir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="nb">unicode</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">codeset</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="install"><a class="viewcode-back" href="../generated/generated/gettext.install.html#gettext.install">[docs]</a><span class="k">def</span> <span class="nf">install</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">localedir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="nb">unicode</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">codeset</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">t</span> <span class="o">=</span> <span class="n">translation</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">localedir</span><span class="p">,</span> <span class="n">fallback</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">codeset</span><span class="o">=</span><span class="n">codeset</span><span class="p">)</span>
     <span class="n">t</span><span class="o">.</span><span class="n">install</span><span class="p">(</span><span class="nb">unicode</span><span class="p">,</span> <span class="n">names</span><span class="p">)</span></div>
 
@@ -653,28 +653,28 @@
 <span class="n">_current_domain</span> <span class="o">=</span> <span class="s1">&#39;messages&#39;</span>
 
 
-<div class="viewcode-block" id="textdomain"><a class="viewcode-back" href="../generated/gettext.textdomain.html#gettext.textdomain">[docs]</a><span class="k">def</span> <span class="nf">textdomain</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="textdomain"><a class="viewcode-back" href="../generated/generated/gettext.textdomain.html#gettext.textdomain">[docs]</a><span class="k">def</span> <span class="nf">textdomain</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">global</span> <span class="n">_current_domain</span>
     <span class="k">if</span> <span class="n">domain</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">_current_domain</span> <span class="o">=</span> <span class="n">domain</span>
     <span class="k">return</span> <span class="n">_current_domain</span></div>
 
 
-<div class="viewcode-block" id="bindtextdomain"><a class="viewcode-back" href="../generated/gettext.bindtextdomain.html#gettext.bindtextdomain">[docs]</a><span class="k">def</span> <span class="nf">bindtextdomain</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">localedir</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="bindtextdomain"><a class="viewcode-back" href="../generated/generated/gettext.bindtextdomain.html#gettext.bindtextdomain">[docs]</a><span class="k">def</span> <span class="nf">bindtextdomain</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">localedir</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">global</span> <span class="n">_localedirs</span>
     <span class="k">if</span> <span class="n">localedir</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">_localedirs</span><span class="p">[</span><span class="n">domain</span><span class="p">]</span> <span class="o">=</span> <span class="n">localedir</span>
     <span class="k">return</span> <span class="n">_localedirs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">_default_localedir</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="bind_textdomain_codeset"><a class="viewcode-back" href="../generated/gettext.bind_textdomain_codeset.html#gettext.bind_textdomain_codeset">[docs]</a><span class="k">def</span> <span class="nf">bind_textdomain_codeset</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">codeset</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="bind_textdomain_codeset"><a class="viewcode-back" href="../generated/generated/gettext.bind_textdomain_codeset.html#gettext.bind_textdomain_codeset">[docs]</a><span class="k">def</span> <span class="nf">bind_textdomain_codeset</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">codeset</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">global</span> <span class="n">_localecodesets</span>
     <span class="k">if</span> <span class="n">codeset</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">_localecodesets</span><span class="p">[</span><span class="n">domain</span><span class="p">]</span> <span class="o">=</span> <span class="n">codeset</span>
     <span class="k">return</span> <span class="n">_localecodesets</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="dgettext"><a class="viewcode-back" href="../generated/gettext.dgettext.html#gettext.dgettext">[docs]</a><span class="k">def</span> <span class="nf">dgettext</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<div class="viewcode-block" id="dgettext"><a class="viewcode-back" href="../generated/generated/gettext.dgettext.html#gettext.dgettext">[docs]</a><span class="k">def</span> <span class="nf">dgettext</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">t</span> <span class="o">=</span> <span class="n">translation</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">_localedirs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="bp">None</span><span class="p">),</span>
                         <span class="n">codeset</span><span class="o">=</span><span class="n">_localecodesets</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
@@ -682,7 +682,7 @@
         <span class="k">return</span> <span class="n">message</span>
     <span class="k">return</span> <span class="n">t</span><span class="o">.</span><span class="n">gettext</span><span class="p">(</span><span class="n">message</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="ldgettext"><a class="viewcode-back" href="../generated/gettext.ldgettext.html#gettext.ldgettext">[docs]</a><span class="k">def</span> <span class="nf">ldgettext</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<div class="viewcode-block" id="ldgettext"><a class="viewcode-back" href="../generated/generated/gettext.ldgettext.html#gettext.ldgettext">[docs]</a><span class="k">def</span> <span class="nf">ldgettext</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">t</span> <span class="o">=</span> <span class="n">translation</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">_localedirs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="bp">None</span><span class="p">),</span>
                         <span class="n">codeset</span><span class="o">=</span><span class="n">_localecodesets</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
@@ -690,7 +690,7 @@
         <span class="k">return</span> <span class="n">message</span>
     <span class="k">return</span> <span class="n">t</span><span class="o">.</span><span class="n">lgettext</span><span class="p">(</span><span class="n">message</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="dngettext"><a class="viewcode-back" href="../generated/gettext.dngettext.html#gettext.dngettext">[docs]</a><span class="k">def</span> <span class="nf">dngettext</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<div class="viewcode-block" id="dngettext"><a class="viewcode-back" href="../generated/generated/gettext.dngettext.html#gettext.dngettext">[docs]</a><span class="k">def</span> <span class="nf">dngettext</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">t</span> <span class="o">=</span> <span class="n">translation</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">_localedirs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="bp">None</span><span class="p">),</span>
                         <span class="n">codeset</span><span class="o">=</span><span class="n">_localecodesets</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
@@ -701,7 +701,7 @@
             <span class="k">return</span> <span class="n">msgid2</span>
     <span class="k">return</span> <span class="n">t</span><span class="o">.</span><span class="n">ngettext</span><span class="p">(</span><span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="ldngettext"><a class="viewcode-back" href="../generated/gettext.ldngettext.html#gettext.ldngettext">[docs]</a><span class="k">def</span> <span class="nf">ldngettext</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<div class="viewcode-block" id="ldngettext"><a class="viewcode-back" href="../generated/generated/gettext.ldngettext.html#gettext.ldngettext">[docs]</a><span class="k">def</span> <span class="nf">ldngettext</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">t</span> <span class="o">=</span> <span class="n">translation</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">_localedirs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="bp">None</span><span class="p">),</span>
                         <span class="n">codeset</span><span class="o">=</span><span class="n">_localecodesets</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
@@ -712,16 +712,16 @@
             <span class="k">return</span> <span class="n">msgid2</span>
     <span class="k">return</span> <span class="n">t</span><span class="o">.</span><span class="n">lngettext</span><span class="p">(</span><span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="gettext"><a class="viewcode-back" href="../generated/optparse.gettext.html#gettext.gettext">[docs]</a><span class="k">def</span> <span class="nf">gettext</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+<div class="viewcode-block" id="gettext"><a class="viewcode-back" href="../generated/generated/optparse.gettext.html#gettext.gettext">[docs]</a><span class="k">def</span> <span class="nf">gettext</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">dgettext</span><span class="p">(</span><span class="n">_current_domain</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="lgettext"><a class="viewcode-back" href="../generated/gettext.lgettext.html#gettext.lgettext">[docs]</a><span class="k">def</span> <span class="nf">lgettext</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+<div class="viewcode-block" id="lgettext"><a class="viewcode-back" href="../generated/generated/gettext.lgettext.html#gettext.lgettext">[docs]</a><span class="k">def</span> <span class="nf">lgettext</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">ldgettext</span><span class="p">(</span><span class="n">_current_domain</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="ngettext"><a class="viewcode-back" href="../generated/gettext.ngettext.html#gettext.ngettext">[docs]</a><span class="k">def</span> <span class="nf">ngettext</span><span class="p">(</span><span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<div class="viewcode-block" id="ngettext"><a class="viewcode-back" href="../generated/generated/gettext.ngettext.html#gettext.ngettext">[docs]</a><span class="k">def</span> <span class="nf">ngettext</span><span class="p">(</span><span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">dngettext</span><span class="p">(</span><span class="n">_current_domain</span><span class="p">,</span> <span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="lngettext"><a class="viewcode-back" href="../generated/gettext.lngettext.html#gettext.lngettext">[docs]</a><span class="k">def</span> <span class="nf">lngettext</span><span class="p">(</span><span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<div class="viewcode-block" id="lngettext"><a class="viewcode-back" href="../generated/generated/gettext.lngettext.html#gettext.lngettext">[docs]</a><span class="k">def</span> <span class="nf">lngettext</span><span class="p">(</span><span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">ldngettext</span><span class="p">(</span><span class="n">_current_domain</span><span class="p">,</span> <span class="n">msgid1</span><span class="p">,</span> <span class="n">msgid2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span></div>
 
 <span class="c1"># dcgettext() has been deemed unnecessary and is not implemented.</span>

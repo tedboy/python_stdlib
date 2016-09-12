@@ -2060,7 +2060,7 @@
     <span class="n">events</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">rootNode</span>
 
-<div class="viewcode-block" id="parse"><a class="viewcode-back" href="../../../generated/xml.dom.minidom.parse.html#xml.dom.minidom.parse">[docs]</a><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="parse"><a class="viewcode-back" href="../../../generated/generated/xml.dom.minidom.parse.html#xml.dom.minidom.parse">[docs]</a><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Parse a file into a DOM by filename or file object.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">parser</span> <span class="ow">is</span> <span class="bp">None</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">bufsize</span><span class="p">:</span>
         <span class="kn">from</span> <span class="nn">xml.dom</span> <span class="kn">import</span> <span class="n">expatbuilder</span>
@@ -2070,7 +2070,7 @@
         <span class="k">return</span> <span class="n">_do_pulldom_parse</span><span class="p">(</span><span class="n">pulldom</span><span class="o">.</span><span class="n">parse</span><span class="p">,</span> <span class="p">(</span><span class="nb">file</span><span class="p">,),</span>
             <span class="p">{</span><span class="s1">&#39;parser&#39;</span><span class="p">:</span> <span class="n">parser</span><span class="p">,</span> <span class="s1">&#39;bufsize&#39;</span><span class="p">:</span> <span class="n">bufsize</span><span class="p">})</span></div>
 
-<div class="viewcode-block" id="parseString"><a class="viewcode-back" href="../../../generated/xml.dom.minidom.parseString.html#xml.dom.minidom.parseString">[docs]</a><span class="k">def</span> <span class="nf">parseString</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="parseString"><a class="viewcode-back" href="../../../generated/generated/xml.dom.minidom.parseString.html#xml.dom.minidom.parseString">[docs]</a><span class="k">def</span> <span class="nf">parseString</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Parse a file into a DOM from a string.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">parser</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="kn">from</span> <span class="nn">xml.dom</span> <span class="kn">import</span> <span class="n">expatbuilder</span>
@@ -2080,7 +2080,7 @@
         <span class="k">return</span> <span class="n">_do_pulldom_parse</span><span class="p">(</span><span class="n">pulldom</span><span class="o">.</span><span class="n">parseString</span><span class="p">,</span> <span class="p">(</span><span class="n">string</span><span class="p">,),</span>
                                  <span class="p">{</span><span class="s1">&#39;parser&#39;</span><span class="p">:</span> <span class="n">parser</span><span class="p">})</span></div>
 
-<div class="viewcode-block" id="getDOMImplementation"><a class="viewcode-back" href="../../../generated/xml.dom.minidom.getDOMImplementation.html#xml.dom.minidom.getDOMImplementation">[docs]</a><span class="k">def</span> <span class="nf">getDOMImplementation</span><span class="p">(</span><span class="n">features</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="getDOMImplementation"><a class="viewcode-back" href="../../../generated/generated/xml.dom.minidom.getDOMImplementation.html#xml.dom.minidom.getDOMImplementation">[docs]</a><span class="k">def</span> <span class="nf">getDOMImplementation</span><span class="p">(</span><span class="n">features</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">features</span><span class="p">:</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">StringTypes</span><span class="p">):</span>
             <span class="n">features</span> <span class="o">=</span> <span class="n">domreg</span><span class="o">.</span><span class="n">_parse_feature_string</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>

@@ -223,7 +223,7 @@
 <span class="n">USER_BASE</span> <span class="o">=</span> <span class="bp">None</span>
 
 
-<div class="viewcode-block" id="makepath"><a class="viewcode-back" href="../generated/site.makepath.html#site.makepath">[docs]</a><span class="k">def</span> <span class="nf">makepath</span><span class="p">(</span><span class="o">*</span><span class="n">paths</span><span class="p">):</span>
+<div class="viewcode-block" id="makepath"><a class="viewcode-back" href="../generated/generated/site.makepath.html#site.makepath">[docs]</a><span class="k">def</span> <span class="nf">makepath</span><span class="p">(</span><span class="o">*</span><span class="n">paths</span><span class="p">):</span>
     <span class="nb">dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="o">*</span><span class="n">paths</span><span class="p">)</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="nb">dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span>
@@ -232,7 +232,7 @@
     <span class="k">return</span> <span class="nb">dir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normcase</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="abs__file__"><a class="viewcode-back" href="../generated/site.abs__file__.html#site.abs__file__">[docs]</a><span class="k">def</span> <span class="nf">abs__file__</span><span class="p">():</span>
+<div class="viewcode-block" id="abs__file__"><a class="viewcode-back" href="../generated/generated/site.abs__file__.html#site.abs__file__">[docs]</a><span class="k">def</span> <span class="nf">abs__file__</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Set all module&#39; __file__ attribute to an absolute path&quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
         <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="s1">&#39;__loader__&#39;</span><span class="p">):</span>
@@ -243,7 +243,7 @@
             <span class="k">pass</span></div>
 
 
-<div class="viewcode-block" id="removeduppaths"><a class="viewcode-back" href="../generated/site.removeduppaths.html#site.removeduppaths">[docs]</a><span class="k">def</span> <span class="nf">removeduppaths</span><span class="p">():</span>
+<div class="viewcode-block" id="removeduppaths"><a class="viewcode-back" href="../generated/generated/site.removeduppaths.html#site.removeduppaths">[docs]</a><span class="k">def</span> <span class="nf">removeduppaths</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot; Remove duplicate entries from sys.path along with making them</span>
 <span class="sd">    absolute&quot;&quot;&quot;</span>
     <span class="c1"># This ensures that the initial path provided by the interpreter contains</span>
@@ -275,7 +275,7 @@
     <span class="k">return</span> <span class="n">d</span>
 
 
-<div class="viewcode-block" id="addpackage"><a class="viewcode-back" href="../generated/site.addpackage.html#site.addpackage">[docs]</a><span class="k">def</span> <span class="nf">addpackage</span><span class="p">(</span><span class="n">sitedir</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">known_paths</span><span class="p">):</span>
+<div class="viewcode-block" id="addpackage"><a class="viewcode-back" href="../generated/generated/site.addpackage.html#site.addpackage">[docs]</a><span class="k">def</span> <span class="nf">addpackage</span><span class="p">(</span><span class="n">sitedir</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">known_paths</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Process a .pth file within the site-packages directory:</span>
 <span class="sd">       For each line in the file, either combine it with sitedir to a path</span>
 <span class="sd">       and add that to known_paths, or execute it if it starts with &#39;import &#39;.</span>
@@ -316,7 +316,7 @@
     <span class="k">return</span> <span class="n">known_paths</span></div>
 
 
-<div class="viewcode-block" id="addsitedir"><a class="viewcode-back" href="../generated/site.addsitedir.html#site.addsitedir">[docs]</a><span class="k">def</span> <span class="nf">addsitedir</span><span class="p">(</span><span class="n">sitedir</span><span class="p">,</span> <span class="n">known_paths</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="addsitedir"><a class="viewcode-back" href="../generated/generated/site.addsitedir.html#site.addsitedir">[docs]</a><span class="k">def</span> <span class="nf">addsitedir</span><span class="p">(</span><span class="n">sitedir</span><span class="p">,</span> <span class="n">known_paths</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Add &#39;sitedir&#39; argument to sys.path if missing and handle .pth files in</span>
 <span class="sd">    &#39;sitedir&#39;&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">known_paths</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -340,7 +340,7 @@
     <span class="k">return</span> <span class="n">known_paths</span></div>
 
 
-<div class="viewcode-block" id="check_enableusersite"><a class="viewcode-back" href="../generated/site.check_enableusersite.html#site.check_enableusersite">[docs]</a><span class="k">def</span> <span class="nf">check_enableusersite</span><span class="p">():</span>
+<div class="viewcode-block" id="check_enableusersite"><a class="viewcode-back" href="../generated/generated/site.check_enableusersite.html#site.check_enableusersite">[docs]</a><span class="k">def</span> <span class="nf">check_enableusersite</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Check if user site directory is safe for inclusion</span>
 
 <span class="sd">    The function tests for the command line flag (including environment var),</span>
@@ -364,7 +364,7 @@
 
     <span class="k">return</span> <span class="bp">True</span></div>
 
-<div class="viewcode-block" id="getuserbase"><a class="viewcode-back" href="../generated/site.getuserbase.html#site.getuserbase">[docs]</a><span class="k">def</span> <span class="nf">getuserbase</span><span class="p">():</span>
+<div class="viewcode-block" id="getuserbase"><a class="viewcode-back" href="../generated/generated/site.getuserbase.html#site.getuserbase">[docs]</a><span class="k">def</span> <span class="nf">getuserbase</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Returns the `user base` directory path.</span>
 
 <span class="sd">    The `user base` directory can be used to store data. If the global</span>
@@ -378,7 +378,7 @@
     <span class="n">USER_BASE</span> <span class="o">=</span> <span class="n">get_config_var</span><span class="p">(</span><span class="s1">&#39;userbase&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">USER_BASE</span></div>
 
-<div class="viewcode-block" id="getusersitepackages"><a class="viewcode-back" href="../generated/site.getusersitepackages.html#site.getusersitepackages">[docs]</a><span class="k">def</span> <span class="nf">getusersitepackages</span><span class="p">():</span>
+<div class="viewcode-block" id="getusersitepackages"><a class="viewcode-back" href="../generated/generated/site.getusersitepackages.html#site.getusersitepackages">[docs]</a><span class="k">def</span> <span class="nf">getusersitepackages</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Returns the user-specific site-packages directory path.</span>
 
 <span class="sd">    If the global variable ``USER_SITE`` is not initialized yet, this</span>
@@ -402,7 +402,7 @@
     <span class="n">USER_SITE</span> <span class="o">=</span> <span class="n">get_path</span><span class="p">(</span><span class="s1">&#39;purelib&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">_user&#39;</span> <span class="o">%</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">USER_SITE</span></div>
 
-<div class="viewcode-block" id="addusersitepackages"><a class="viewcode-back" href="../generated/site.addusersitepackages.html#site.addusersitepackages">[docs]</a><span class="k">def</span> <span class="nf">addusersitepackages</span><span class="p">(</span><span class="n">known_paths</span><span class="p">):</span>
+<div class="viewcode-block" id="addusersitepackages"><a class="viewcode-back" href="../generated/generated/site.addusersitepackages.html#site.addusersitepackages">[docs]</a><span class="k">def</span> <span class="nf">addusersitepackages</span><span class="p">(</span><span class="n">known_paths</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Add a per user site-package to sys.path</span>
 
 <span class="sd">    Each user has its own python directory with site-packages in the</span>
@@ -416,7 +416,7 @@
         <span class="n">addsitedir</span><span class="p">(</span><span class="n">user_site</span><span class="p">,</span> <span class="n">known_paths</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">known_paths</span></div>
 
-<div class="viewcode-block" id="getsitepackages"><a class="viewcode-back" href="../generated/site.getsitepackages.html#site.getsitepackages">[docs]</a><span class="k">def</span> <span class="nf">getsitepackages</span><span class="p">():</span>
+<div class="viewcode-block" id="getsitepackages"><a class="viewcode-back" href="../generated/generated/site.getsitepackages.html#site.getsitepackages">[docs]</a><span class="k">def</span> <span class="nf">getsitepackages</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Returns a list containing all global site-packages directories</span>
 <span class="sd">    (and possibly site-python).</span>
 
@@ -453,7 +453,7 @@
                             <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">[:</span><span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;site-packages&quot;</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">sitepackages</span></div>
 
-<div class="viewcode-block" id="addsitepackages"><a class="viewcode-back" href="../generated/site.addsitepackages.html#site.addsitepackages">[docs]</a><span class="k">def</span> <span class="nf">addsitepackages</span><span class="p">(</span><span class="n">known_paths</span><span class="p">):</span>
+<div class="viewcode-block" id="addsitepackages"><a class="viewcode-back" href="../generated/generated/site.addsitepackages.html#site.addsitepackages">[docs]</a><span class="k">def</span> <span class="nf">addsitepackages</span><span class="p">(</span><span class="n">known_paths</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Add site-packages (and possibly site-python) to sys.path&quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">sitedir</span> <span class="ow">in</span> <span class="n">getsitepackages</span><span class="p">():</span>
         <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">sitedir</span><span class="p">):</span>
@@ -461,7 +461,7 @@
 
     <span class="k">return</span> <span class="n">known_paths</span></div>
 
-<div class="viewcode-block" id="setBEGINLIBPATH"><a class="viewcode-back" href="../generated/site.setBEGINLIBPATH.html#site.setBEGINLIBPATH">[docs]</a><span class="k">def</span> <span class="nf">setBEGINLIBPATH</span><span class="p">():</span>
+<div class="viewcode-block" id="setBEGINLIBPATH"><a class="viewcode-back" href="../generated/generated/site.setBEGINLIBPATH.html#site.setBEGINLIBPATH">[docs]</a><span class="k">def</span> <span class="nf">setBEGINLIBPATH</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;The OS/2 EMX port has optional extension modules that do double duty</span>
 <span class="sd">    as DLLs (and must use the .DLL file extension) for other extensions.</span>
 <span class="sd">    The library search path needs to be amended so these will be found</span>
@@ -478,7 +478,7 @@
     <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;BEGINLIBPATH&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">libpath</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="setquit"><a class="viewcode-back" href="../generated/site.setquit.html#site.setquit">[docs]</a><span class="k">def</span> <span class="nf">setquit</span><span class="p">():</span>
+<div class="viewcode-block" id="setquit"><a class="viewcode-back" href="../generated/generated/site.setquit.html#site.setquit">[docs]</a><span class="k">def</span> <span class="nf">setquit</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Define new builtins &#39;quit&#39; and &#39;exit&#39;.</span>
 
 <span class="sd">    These are objects which make the interpreter exit when called.</span>
@@ -570,7 +570,7 @@
                 <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;q&#39;</span><span class="p">:</span>
                     <span class="k">break</span>
 
-<div class="viewcode-block" id="setcopyright"><a class="viewcode-back" href="../generated/site.setcopyright.html#site.setcopyright">[docs]</a><span class="k">def</span> <span class="nf">setcopyright</span><span class="p">():</span>
+<div class="viewcode-block" id="setcopyright"><a class="viewcode-back" href="../generated/generated/site.setcopyright.html#site.setcopyright">[docs]</a><span class="k">def</span> <span class="nf">setcopyright</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Set &#39;copyright&#39; and &#39;credits&#39; in __builtin__&quot;&quot;&quot;</span>
     <span class="n">__builtin__</span><span class="o">.</span><span class="n">copyright</span> <span class="o">=</span> <span class="n">_Printer</span><span class="p">(</span><span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">copyright</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;java&#39;</span><span class="p">:</span>
@@ -601,10 +601,10 @@
         <span class="kn">import</span> <span class="nn">pydoc</span>
         <span class="k">return</span> <span class="n">pydoc</span><span class="o">.</span><span class="n">help</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
 
-<div class="viewcode-block" id="sethelper"><a class="viewcode-back" href="../generated/site.sethelper.html#site.sethelper">[docs]</a><span class="k">def</span> <span class="nf">sethelper</span><span class="p">():</span>
+<div class="viewcode-block" id="sethelper"><a class="viewcode-back" href="../generated/generated/site.sethelper.html#site.sethelper">[docs]</a><span class="k">def</span> <span class="nf">sethelper</span><span class="p">():</span>
     <span class="n">__builtin__</span><span class="o">.</span><span class="n">help</span> <span class="o">=</span> <span class="n">_Helper</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="aliasmbcs"><a class="viewcode-back" href="../generated/site.aliasmbcs.html#site.aliasmbcs">[docs]</a><span class="k">def</span> <span class="nf">aliasmbcs</span><span class="p">():</span>
+<div class="viewcode-block" id="aliasmbcs"><a class="viewcode-back" href="../generated/generated/site.aliasmbcs.html#site.aliasmbcs">[docs]</a><span class="k">def</span> <span class="nf">aliasmbcs</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;On Windows, some default encodings are not provided by Python,</span>
 <span class="sd">    while they are always available as &quot;mbcs&quot; in each locale. Make</span>
 <span class="sd">    them usable by aliasing to &quot;mbcs&quot; in such a case.&quot;&quot;&quot;</span>
@@ -619,7 +619,7 @@
                 <span class="n">encodings</span><span class="o">.</span><span class="n">_cache</span><span class="p">[</span><span class="n">enc</span><span class="p">]</span> <span class="o">=</span> <span class="n">encodings</span><span class="o">.</span><span class="n">_unknown</span>
                 <span class="n">encodings</span><span class="o">.</span><span class="n">aliases</span><span class="o">.</span><span class="n">aliases</span><span class="p">[</span><span class="n">enc</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;mbcs&#39;</span></div>
 
-<div class="viewcode-block" id="setencoding"><a class="viewcode-back" href="../generated/site.setencoding.html#site.setencoding">[docs]</a><span class="k">def</span> <span class="nf">setencoding</span><span class="p">():</span>
+<div class="viewcode-block" id="setencoding"><a class="viewcode-back" href="../generated/generated/site.setencoding.html#site.setencoding">[docs]</a><span class="k">def</span> <span class="nf">setencoding</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Set the string encoding used by the Unicode implementation.  The</span>
 <span class="sd">    default is &#39;ascii&#39;, but if you&#39;re willing to experiment, you can</span>
 <span class="sd">    change this.&quot;&quot;&quot;</span>
@@ -639,7 +639,7 @@
         <span class="n">sys</span><span class="o">.</span><span class="n">setdefaultencoding</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span> <span class="c1"># Needs Python Unicode build !</span></div>
 
 
-<div class="viewcode-block" id="execsitecustomize"><a class="viewcode-back" href="../generated/site.execsitecustomize.html#site.execsitecustomize">[docs]</a><span class="k">def</span> <span class="nf">execsitecustomize</span><span class="p">():</span>
+<div class="viewcode-block" id="execsitecustomize"><a class="viewcode-back" href="../generated/generated/site.execsitecustomize.html#site.execsitecustomize">[docs]</a><span class="k">def</span> <span class="nf">execsitecustomize</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Run custom site specific code, if available.&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="kn">import</span> <span class="nn">sitecustomize</span>
@@ -653,7 +653,7 @@
                 <span class="s2">&quot;&#39;import sitecustomize&#39; failed; use -v for traceback&quot;</span></div>
 
 
-<div class="viewcode-block" id="execusercustomize"><a class="viewcode-back" href="../generated/site.execusercustomize.html#site.execusercustomize">[docs]</a><span class="k">def</span> <span class="nf">execusercustomize</span><span class="p">():</span>
+<div class="viewcode-block" id="execusercustomize"><a class="viewcode-back" href="../generated/generated/site.execusercustomize.html#site.execusercustomize">[docs]</a><span class="k">def</span> <span class="nf">execusercustomize</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Run custom user specific code, if available.&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="kn">import</span> <span class="nn">usercustomize</span>
@@ -667,7 +667,7 @@
                 <span class="s2">&quot;&#39;import usercustomize&#39; failed; use -v for traceback&quot;</span></div>
 
 
-<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/site.main.html#site.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/generated/site.main.html#site.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="k">global</span> <span class="n">ENABLE_USER_SITE</span>
 
     <span class="n">abs__file__</span><span class="p">()</span>

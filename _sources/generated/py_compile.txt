@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       compile
       main
       wr_long
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/py_compile.compile
+       generated/py_compile.main
+       generated/py_compile.wr_long
+      
    
    
 

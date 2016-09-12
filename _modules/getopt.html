@@ -195,7 +195,7 @@
 
 <span class="n">error</span> <span class="o">=</span> <span class="n">GetoptError</span> <span class="c1"># backward compatibility</span>
 
-<div class="viewcode-block" id="getopt"><a class="viewcode-back" href="../generated/getopt.getopt.html#getopt.getopt">[docs]</a><span class="k">def</span> <span class="nf">getopt</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">shortopts</span><span class="p">,</span> <span class="n">longopts</span> <span class="o">=</span> <span class="p">[]):</span>
+<div class="viewcode-block" id="getopt"><a class="viewcode-back" href="../generated/generated/getopt.getopt.html#getopt.getopt">[docs]</a><span class="k">def</span> <span class="nf">getopt</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">shortopts</span><span class="p">,</span> <span class="n">longopts</span> <span class="o">=</span> <span class="p">[]):</span>
     <span class="sd">&quot;&quot;&quot;getopt(args, options[, long_options]) -&gt; opts, args</span>
 
 <span class="sd">    Parses command line options and parameter list.  args is the</span>
@@ -238,7 +238,7 @@
 
     <span class="k">return</span> <span class="n">opts</span><span class="p">,</span> <span class="n">args</span></div>
 
-<div class="viewcode-block" id="gnu_getopt"><a class="viewcode-back" href="../generated/getopt.gnu_getopt.html#getopt.gnu_getopt">[docs]</a><span class="k">def</span> <span class="nf">gnu_getopt</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">shortopts</span><span class="p">,</span> <span class="n">longopts</span> <span class="o">=</span> <span class="p">[]):</span>
+<div class="viewcode-block" id="gnu_getopt"><a class="viewcode-back" href="../generated/generated/getopt.gnu_getopt.html#getopt.gnu_getopt">[docs]</a><span class="k">def</span> <span class="nf">gnu_getopt</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">shortopts</span><span class="p">,</span> <span class="n">longopts</span> <span class="o">=</span> <span class="p">[]):</span>
     <span class="sd">&quot;&quot;&quot;getopt(args, options[, long_options]) -&gt; opts, args</span>
 
 <span class="sd">    This function works like getopt(), except that GNU style scanning</span>
@@ -288,7 +288,7 @@
 
     <span class="k">return</span> <span class="n">opts</span><span class="p">,</span> <span class="n">prog_args</span></div>
 
-<div class="viewcode-block" id="do_longs"><a class="viewcode-back" href="../generated/getopt.do_longs.html#getopt.do_longs">[docs]</a><span class="k">def</span> <span class="nf">do_longs</span><span class="p">(</span><span class="n">opts</span><span class="p">,</span> <span class="n">opt</span><span class="p">,</span> <span class="n">longopts</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="do_longs"><a class="viewcode-back" href="../generated/generated/getopt.do_longs.html#getopt.do_longs">[docs]</a><span class="k">def</span> <span class="nf">do_longs</span><span class="p">(</span><span class="n">opts</span><span class="p">,</span> <span class="n">opt</span><span class="p">,</span> <span class="n">longopts</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">i</span> <span class="o">=</span> <span class="n">opt</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)</span>
     <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
@@ -310,7 +310,7 @@
 <span class="c1"># Return:</span>
 <span class="c1">#   has_arg?</span>
 <span class="c1">#   full option name</span>
-<div class="viewcode-block" id="long_has_args"><a class="viewcode-back" href="../generated/getopt.long_has_args.html#getopt.long_has_args">[docs]</a><span class="k">def</span> <span class="nf">long_has_args</span><span class="p">(</span><span class="n">opt</span><span class="p">,</span> <span class="n">longopts</span><span class="p">):</span>
+<div class="viewcode-block" id="long_has_args"><a class="viewcode-back" href="../generated/generated/getopt.long_has_args.html#getopt.long_has_args">[docs]</a><span class="k">def</span> <span class="nf">long_has_args</span><span class="p">(</span><span class="n">opt</span><span class="p">,</span> <span class="n">longopts</span><span class="p">):</span>
     <span class="n">possibilities</span> <span class="o">=</span> <span class="p">[</span><span class="n">o</span> <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">longopts</span> <span class="k">if</span> <span class="n">o</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">opt</span><span class="p">)]</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">possibilities</span><span class="p">:</span>
         <span class="k">raise</span> <span class="n">GetoptError</span><span class="p">(</span><span class="s1">&#39;option --</span><span class="si">%s</span><span class="s1"> not recognized&#39;</span> <span class="o">%</span> <span class="n">opt</span><span class="p">,</span> <span class="n">opt</span><span class="p">)</span>
@@ -331,7 +331,7 @@
         <span class="n">unique_match</span> <span class="o">=</span> <span class="n">unique_match</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">has_arg</span><span class="p">,</span> <span class="n">unique_match</span></div>
 
-<div class="viewcode-block" id="do_shorts"><a class="viewcode-back" href="../generated/getopt.do_shorts.html#getopt.do_shorts">[docs]</a><span class="k">def</span> <span class="nf">do_shorts</span><span class="p">(</span><span class="n">opts</span><span class="p">,</span> <span class="n">optstring</span><span class="p">,</span> <span class="n">shortopts</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="do_shorts"><a class="viewcode-back" href="../generated/generated/getopt.do_shorts.html#getopt.do_shorts">[docs]</a><span class="k">def</span> <span class="nf">do_shorts</span><span class="p">(</span><span class="n">opts</span><span class="p">,</span> <span class="n">optstring</span><span class="p">,</span> <span class="n">shortopts</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
     <span class="k">while</span> <span class="n">optstring</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
         <span class="n">opt</span><span class="p">,</span> <span class="n">optstring</span> <span class="o">=</span> <span class="n">optstring</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">optstring</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
         <span class="k">if</span> <span class="n">short_has_arg</span><span class="p">(</span><span class="n">opt</span><span class="p">,</span> <span class="n">shortopts</span><span class="p">):</span>
@@ -346,7 +346,7 @@
         <span class="n">opts</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">&#39;-&#39;</span> <span class="o">+</span> <span class="n">opt</span><span class="p">,</span> <span class="n">optarg</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">opts</span><span class="p">,</span> <span class="n">args</span></div>
 
-<div class="viewcode-block" id="short_has_arg"><a class="viewcode-back" href="../generated/getopt.short_has_arg.html#getopt.short_has_arg">[docs]</a><span class="k">def</span> <span class="nf">short_has_arg</span><span class="p">(</span><span class="n">opt</span><span class="p">,</span> <span class="n">shortopts</span><span class="p">):</span>
+<div class="viewcode-block" id="short_has_arg"><a class="viewcode-back" href="../generated/generated/getopt.short_has_arg.html#getopt.short_has_arg">[docs]</a><span class="k">def</span> <span class="nf">short_has_arg</span><span class="p">(</span><span class="n">opt</span><span class="p">,</span> <span class="n">shortopts</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">shortopts</span><span class="p">)):</span>
         <span class="k">if</span> <span class="n">opt</span> <span class="o">==</span> <span class="n">shortopts</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;:&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">shortopts</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>

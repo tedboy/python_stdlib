@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       fork
       master_open
@@ -18,6 +18,19 @@
       select
       slave_open
       spawn
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/pty.fork
+       generated/pty.master_open
+       generated/pty.openpty
+       generated/pty.select
+       generated/pty.slave_open
+       generated/pty.spawn
+      
    
    
 

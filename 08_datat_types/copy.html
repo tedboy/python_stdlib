@@ -225,7 +225,7 @@ reference to themselves) may cause a recursive loop.</li>
 <li>Because deep copy copies <em>everything</em> it may copy too much, e.g.,
 administrative data structures that should be shared even between copies.</li>
 </ul>
-<p>The <a class="reference internal" href="../generated/copy.deepcopy.html#copy.deepcopy" title="copy.deepcopy"><code class="xref py py-func docutils literal"><span class="pre">deepcopy()</span></code></a> function avoids these problems by:</p>
+<p>The <a class="reference internal" href="../generated/generated/copy.deepcopy.html#copy.deepcopy" title="copy.deepcopy"><code class="xref py py-func docutils literal"><span class="pre">deepcopy()</span></code></a> function avoids these problems by:</p>
 <ul class="simple">
 <li>keeping a &#8220;memo&#8221; dictionary of objects already copied during the current
 copying pass; and</li>
@@ -251,7 +251,7 @@ special methods <code class="xref py py-meth docutils literal"><span class="pre"
 to implement the shallow copy operation; no additional arguments are passed.
 The latter is called to implement the deep copy operation; it is passed one
 argument, the memo dictionary.  If the <code class="xref py py-meth docutils literal"><span class="pre">__deepcopy__()</span></code> implementation needs
-to make a deep copy of a component, it should call the <a class="reference internal" href="../generated/copy.deepcopy.html#copy.deepcopy" title="copy.deepcopy"><code class="xref py py-func docutils literal"><span class="pre">deepcopy()</span></code></a> function
+to make a deep copy of a component, it should call the <a class="reference internal" href="../generated/generated/copy.deepcopy.html#copy.deepcopy" title="copy.deepcopy"><code class="xref py py-func docutils literal"><span class="pre">deepcopy()</span></code></a> function
 with the component as first argument and the memo dictionary as second argument.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>

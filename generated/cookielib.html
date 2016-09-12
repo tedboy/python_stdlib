@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="cookielib.Absent" href="generated/cookielib.Absent.html"/>
+        <link rel="next" title="cookielib.deepvalues()" href="generated/cookielib.deepvalues.html"/>
         <link rel="prev" title="CGIHTTPServer.CGIHTTPRequestHandler.weekdayname" href="generated/CGIHTTPServer.CGIHTTPRequestHandler.weekdayname.html"/> 
 
   
@@ -82,12 +82,118 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="webbrowser.html"><code class="docutils literal"><span class="pre">webbrowser</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cgi.html"><code class="docutils literal"><span class="pre">cgi</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cgitb.html"><code class="docutils literal"><span class="pre">cgitb</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsgiref.html"><code class="docutils literal"><span class="pre">wsgiref</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="urllib.html"><code class="docutils literal"><span class="pre">urllib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="urllib2.html"><code class="docutils literal"><span class="pre">urllib2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="httplib.html"><code class="docutils literal"><span class="pre">httplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ftplib.html"><code class="docutils literal"><span class="pre">ftplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="poplib.html"><code class="docutils literal"><span class="pre">poplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="imaplib.html"><code class="docutils literal"><span class="pre">imaplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="nntplib.html"><code class="docutils literal"><span class="pre">nntplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="smtplib.html"><code class="docutils literal"><span class="pre">smtplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="smtpd.html"><code class="docutils literal"><span class="pre">smtpd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="telnetlib.html"><code class="docutils literal"><span class="pre">telnetlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="uuid.html"><code class="docutils literal"><span class="pre">uuid</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="urlparse.html"><code class="docutils literal"><span class="pre">urlparse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="SocketServer.html"><code class="docutils literal"><span class="pre">SocketServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="BaseHTTPServer.html"><code class="docutils literal"><span class="pre">BaseHTTPServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="SimpleHTTPServer.html"><code class="docutils literal"><span class="pre">SimpleHTTPServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="CGIHTTPServer.html"><code class="docutils literal"><span class="pre">CGIHTTPServer</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">cookielib</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.deepvalues.html"><code class="docutils literal"><span class="pre">cookielib.deepvalues()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.domain_match.html"><code class="docutils literal"><span class="pre">cookielib.domain_match()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.eff_request_host.html"><code class="docutils literal"><span class="pre">cookielib.eff_request_host()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.escape_path.html"><code class="docutils literal"><span class="pre">cookielib.escape_path()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.http2time.html"><code class="docutils literal"><span class="pre">cookielib.http2time()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.is_HDN.html"><code class="docutils literal"><span class="pre">cookielib.is_HDN()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.is_third_party.html"><code class="docutils literal"><span class="pre">cookielib.is_third_party()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.iso2time.html"><code class="docutils literal"><span class="pre">cookielib.iso2time()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.join_header_words.html"><code class="docutils literal"><span class="pre">cookielib.join_header_words()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.liberal_is_HDN.html"><code class="docutils literal"><span class="pre">cookielib.liberal_is_HDN()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.lwp_cookie_str.html"><code class="docutils literal"><span class="pre">cookielib.lwp_cookie_str()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.offset_from_tz_string.html"><code class="docutils literal"><span class="pre">cookielib.offset_from_tz_string()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.parse_ns_headers.html"><code class="docutils literal"><span class="pre">cookielib.parse_ns_headers()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.reach.html"><code class="docutils literal"><span class="pre">cookielib.reach()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.request_host.html"><code class="docutils literal"><span class="pre">cookielib.request_host()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.request_path.html"><code class="docutils literal"><span class="pre">cookielib.request_path()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.request_port.html"><code class="docutils literal"><span class="pre">cookielib.request_port()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.split_header_words.html"><code class="docutils literal"><span class="pre">cookielib.split_header_words()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.time2isoz.html"><code class="docutils literal"><span class="pre">cookielib.time2isoz()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.time2netscape.html"><code class="docutils literal"><span class="pre">cookielib.time2netscape()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.timegm.html"><code class="docutils literal"><span class="pre">cookielib.timegm()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.unmatched.html"><code class="docutils literal"><span class="pre">cookielib.unmatched()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.uppercase_escaped_char.html"><code class="docutils literal"><span class="pre">cookielib.uppercase_escaped_char()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.user_domain_match.html"><code class="docutils literal"><span class="pre">cookielib.user_domain_match()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.vals_sorted_by_key.html"><code class="docutils literal"><span class="pre">cookielib.vals_sorted_by_key()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.Absent.html"><code class="docutils literal"><span class="pre">cookielib.Absent</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.Cookie.html"><code class="docutils literal"><span class="pre">cookielib.Cookie</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.CookieJar.html"><code class="docutils literal"><span class="pre">cookielib.CookieJar</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.CookiePolicy.html"><code class="docutils literal"><span class="pre">cookielib.CookiePolicy</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.DefaultCookiePolicy.html"><code class="docutils literal"><span class="pre">cookielib.DefaultCookiePolicy</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.FileCookieJar.html"><code class="docutils literal"><span class="pre">cookielib.FileCookieJar</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.LWPCookieJar.html"><code class="docutils literal"><span class="pre">cookielib.LWPCookieJar</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/cookielib.MozillaCookieJar.html"><code class="docutils literal"><span class="pre">cookielib.MozillaCookieJar</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="cookielib.LoadError.html">cookielib.LoadError</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Cookie.html"><code class="docutils literal"><span class="pre">Cookie</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="xmlrpclib.html"><code class="docutils literal"><span class="pre">xmlrpclib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="SimpleXMLRPCServer.html"><code class="docutils literal"><span class="pre">SimpleXMLRPCServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="DocXMLRPCServer.html"><code class="docutils literal"><span class="pre">DocXMLRPCServer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -192,6 +298,91 @@ distributed with the Python standard library, but are available from
 </div></blockquote>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.deepvalues.html#cookielib.deepvalues" title="cookielib.deepvalues"><code class="xref py py-obj docutils literal"><span class="pre">deepvalues</span></code></a>(mapping)</td>
+<td>Iterates over nested mapping, depth-first, in sorted order by key.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.domain_match.html#cookielib.domain_match" title="cookielib.domain_match"><code class="xref py py-obj docutils literal"><span class="pre">domain_match</span></code></a>(A,&nbsp;B)</td>
+<td>Return True if domain A domain-matches domain B, according to RFC 2965.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.eff_request_host.html#cookielib.eff_request_host" title="cookielib.eff_request_host"><code class="xref py py-obj docutils literal"><span class="pre">eff_request_host</span></code></a>(request)</td>
+<td>Return a tuple (request-host, effective request-host name).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.escape_path.html#cookielib.escape_path" title="cookielib.escape_path"><code class="xref py py-obj docutils literal"><span class="pre">escape_path</span></code></a>(path)</td>
+<td>Escape any invalid characters in HTTP URL, and uppercase all escapes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.http2time.html#cookielib.http2time" title="cookielib.http2time"><code class="xref py py-obj docutils literal"><span class="pre">http2time</span></code></a>(text)</td>
+<td>Returns time in seconds since epoch of time represented by a string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.is_HDN.html#cookielib.is_HDN" title="cookielib.is_HDN"><code class="xref py py-obj docutils literal"><span class="pre">is_HDN</span></code></a>(text)</td>
+<td>Return True if text is a host domain name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.is_third_party.html#cookielib.is_third_party" title="cookielib.is_third_party"><code class="xref py py-obj docutils literal"><span class="pre">is_third_party</span></code></a>(request)</td>
+<td>RFC 2965, section 3.3.6:</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.iso2time.html#cookielib.iso2time" title="cookielib.iso2time"><code class="xref py py-obj docutils literal"><span class="pre">iso2time</span></code></a>(text)</td>
+<td>As for http2time, but parses the ISO 8601 formats:</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.join_header_words.html#cookielib.join_header_words" title="cookielib.join_header_words"><code class="xref py py-obj docutils literal"><span class="pre">join_header_words</span></code></a>(lists)</td>
+<td>Do the inverse (almost) of the conversion done by split_header_words.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.liberal_is_HDN.html#cookielib.liberal_is_HDN" title="cookielib.liberal_is_HDN"><code class="xref py py-obj docutils literal"><span class="pre">liberal_is_HDN</span></code></a>(text)</td>
+<td>Return True if text is a sort-of-like a host domain name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.lwp_cookie_str.html#cookielib.lwp_cookie_str" title="cookielib.lwp_cookie_str"><code class="xref py py-obj docutils literal"><span class="pre">lwp_cookie_str</span></code></a>(cookie)</td>
+<td>Return string representation of Cookie in the LWP cookie file format.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.offset_from_tz_string.html#cookielib.offset_from_tz_string" title="cookielib.offset_from_tz_string"><code class="xref py py-obj docutils literal"><span class="pre">offset_from_tz_string</span></code></a>(tz)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.parse_ns_headers.html#cookielib.parse_ns_headers" title="cookielib.parse_ns_headers"><code class="xref py py-obj docutils literal"><span class="pre">parse_ns_headers</span></code></a>(ns_headers)</td>
+<td>Ad-hoc parser for Netscape protocol cookie-attributes.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.reach.html#cookielib.reach" title="cookielib.reach"><code class="xref py py-obj docutils literal"><span class="pre">reach</span></code></a>(h)</td>
+<td>Return reach of host h, as defined by RFC 2965, section 1.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.request_host.html#cookielib.request_host" title="cookielib.request_host"><code class="xref py py-obj docutils literal"><span class="pre">request_host</span></code></a>(request)</td>
+<td>Return request-host, as defined by RFC 2965.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.request_path.html#cookielib.request_path" title="cookielib.request_path"><code class="xref py py-obj docutils literal"><span class="pre">request_path</span></code></a>(request)</td>
+<td>Path component of request-URI, as defined by RFC 2965.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.request_port.html#cookielib.request_port" title="cookielib.request_port"><code class="xref py py-obj docutils literal"><span class="pre">request_port</span></code></a>(request)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.split_header_words.html#cookielib.split_header_words" title="cookielib.split_header_words"><code class="xref py py-obj docutils literal"><span class="pre">split_header_words</span></code></a>(header_values)</td>
+<td>Parse header values into a list of lists containing key,value pairs.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.time2isoz.html#cookielib.time2isoz" title="cookielib.time2isoz"><code class="xref py py-obj docutils literal"><span class="pre">time2isoz</span></code></a>([t])</td>
+<td>Return a string representing time in seconds since epoch, t.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.time2netscape.html#cookielib.time2netscape" title="cookielib.time2netscape"><code class="xref py py-obj docutils literal"><span class="pre">time2netscape</span></code></a>([t])</td>
+<td>Return a string representing time in seconds since epoch, t.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.timegm.html#cookielib.timegm" title="cookielib.timegm"><code class="xref py py-obj docutils literal"><span class="pre">timegm</span></code></a>(tuple)</td>
+<td>Unrelated but handy function to calculate Unix timestamp from GMT.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.unmatched.html#cookielib.unmatched" title="cookielib.unmatched"><code class="xref py py-obj docutils literal"><span class="pre">unmatched</span></code></a>(match)</td>
+<td>Return unmatched part of re.Match object.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.uppercase_escaped_char.html#cookielib.uppercase_escaped_char" title="cookielib.uppercase_escaped_char"><code class="xref py py-obj docutils literal"><span class="pre">uppercase_escaped_char</span></code></a>(match)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/cookielib.user_domain_match.html#cookielib.user_domain_match" title="cookielib.user_domain_match"><code class="xref py py-obj docutils literal"><span class="pre">user_domain_match</span></code></a>(A,&nbsp;B)</td>
+<td>For blocking/accepting domains.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/cookielib.vals_sorted_by_key.html#cookielib.vals_sorted_by_key" title="cookielib.vals_sorted_by_key"><code class="xref py py-obj docutils literal"><span class="pre">vals_sorted_by_key</span></code></a>(adict)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -253,7 +444,7 @@ distributed with the Python standard library, but are available from
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/cookielib.Absent.html" class="btn btn-neutral float-right" title="cookielib.Absent" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/cookielib.deepvalues.html" class="btn btn-neutral float-right" title="cookielib.deepvalues()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="generated/CGIHTTPServer.CGIHTTPRequestHandler.weekdayname.html" class="btn btn-neutral" title="CGIHTTPServer.CGIHTTPRequestHandler.weekdayname" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

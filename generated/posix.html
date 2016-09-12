@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="posix.stat_result" href="generated/posix.stat_result.html"/>
+        <link rel="next" title="posix.WCOREDUMP()" href="generated/posix.WCOREDUMP.html"/>
         <link rel="prev" title="formatter.NullWriter.send_paragraph" href="generated/formatter.NullWriter.send_paragraph.html"/> 
 
   
@@ -82,12 +82,191 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">posix</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.WCOREDUMP.html"><code class="docutils literal"><span class="pre">posix.WCOREDUMP()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.WEXITSTATUS.html"><code class="docutils literal"><span class="pre">posix.WEXITSTATUS()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.WIFCONTINUED.html"><code class="docutils literal"><span class="pre">posix.WIFCONTINUED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.WIFEXITED.html"><code class="docutils literal"><span class="pre">posix.WIFEXITED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.WIFSIGNALED.html"><code class="docutils literal"><span class="pre">posix.WIFSIGNALED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.WIFSTOPPED.html"><code class="docutils literal"><span class="pre">posix.WIFSTOPPED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.WSTOPSIG.html"><code class="docutils literal"><span class="pre">posix.WSTOPSIG()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.WTERMSIG.html"><code class="docutils literal"><span class="pre">posix.WTERMSIG()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.abort.html"><code class="docutils literal"><span class="pre">posix.abort()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.access.html"><code class="docutils literal"><span class="pre">posix.access()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.chdir.html"><code class="docutils literal"><span class="pre">posix.chdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.chmod.html"><code class="docutils literal"><span class="pre">posix.chmod()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.chown.html"><code class="docutils literal"><span class="pre">posix.chown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.chroot.html"><code class="docutils literal"><span class="pre">posix.chroot()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.close.html"><code class="docutils literal"><span class="pre">posix.close()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.closerange.html"><code class="docutils literal"><span class="pre">posix.closerange()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.confstr.html"><code class="docutils literal"><span class="pre">posix.confstr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.ctermid.html"><code class="docutils literal"><span class="pre">posix.ctermid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.dup.html"><code class="docutils literal"><span class="pre">posix.dup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.dup2.html"><code class="docutils literal"><span class="pre">posix.dup2()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.execv.html"><code class="docutils literal"><span class="pre">posix.execv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.execve.html"><code class="docutils literal"><span class="pre">posix.execve()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.fchdir.html"><code class="docutils literal"><span class="pre">posix.fchdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.fchmod.html"><code class="docutils literal"><span class="pre">posix.fchmod()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.fchown.html"><code class="docutils literal"><span class="pre">posix.fchown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.fdatasync.html"><code class="docutils literal"><span class="pre">posix.fdatasync()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.fdopen.html"><code class="docutils literal"><span class="pre">posix.fdopen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.fork.html"><code class="docutils literal"><span class="pre">posix.fork()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.forkpty.html"><code class="docutils literal"><span class="pre">posix.forkpty()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.fpathconf.html"><code class="docutils literal"><span class="pre">posix.fpathconf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.fstat.html"><code class="docutils literal"><span class="pre">posix.fstat()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.fstatvfs.html"><code class="docutils literal"><span class="pre">posix.fstatvfs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.fsync.html"><code class="docutils literal"><span class="pre">posix.fsync()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.ftruncate.html"><code class="docutils literal"><span class="pre">posix.ftruncate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getcwd.html"><code class="docutils literal"><span class="pre">posix.getcwd()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getcwdu.html"><code class="docutils literal"><span class="pre">posix.getcwdu()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getegid.html"><code class="docutils literal"><span class="pre">posix.getegid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.geteuid.html"><code class="docutils literal"><span class="pre">posix.geteuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getgid.html"><code class="docutils literal"><span class="pre">posix.getgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getgroups.html"><code class="docutils literal"><span class="pre">posix.getgroups()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getloadavg.html"><code class="docutils literal"><span class="pre">posix.getloadavg()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getlogin.html"><code class="docutils literal"><span class="pre">posix.getlogin()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getpgid.html"><code class="docutils literal"><span class="pre">posix.getpgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getpgrp.html"><code class="docutils literal"><span class="pre">posix.getpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getpid.html"><code class="docutils literal"><span class="pre">posix.getpid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getppid.html"><code class="docutils literal"><span class="pre">posix.getppid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getresgid.html"><code class="docutils literal"><span class="pre">posix.getresgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getresuid.html"><code class="docutils literal"><span class="pre">posix.getresuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getsid.html"><code class="docutils literal"><span class="pre">posix.getsid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.getuid.html"><code class="docutils literal"><span class="pre">posix.getuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.initgroups.html"><code class="docutils literal"><span class="pre">posix.initgroups()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.isatty.html"><code class="docutils literal"><span class="pre">posix.isatty()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.kill.html"><code class="docutils literal"><span class="pre">posix.kill()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.killpg.html"><code class="docutils literal"><span class="pre">posix.killpg()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.lchown.html"><code class="docutils literal"><span class="pre">posix.lchown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.link.html"><code class="docutils literal"><span class="pre">posix.link()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.listdir.html"><code class="docutils literal"><span class="pre">posix.listdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.lseek.html"><code class="docutils literal"><span class="pre">posix.lseek()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.lstat.html"><code class="docutils literal"><span class="pre">posix.lstat()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.major.html"><code class="docutils literal"><span class="pre">posix.major()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.makedev.html"><code class="docutils literal"><span class="pre">posix.makedev()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.minor.html"><code class="docutils literal"><span class="pre">posix.minor()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.mkdir.html"><code class="docutils literal"><span class="pre">posix.mkdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.mkfifo.html"><code class="docutils literal"><span class="pre">posix.mkfifo()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.mknod.html"><code class="docutils literal"><span class="pre">posix.mknod()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.nice.html"><code class="docutils literal"><span class="pre">posix.nice()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.open.html"><code class="docutils literal"><span class="pre">posix.open()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.openpty.html"><code class="docutils literal"><span class="pre">posix.openpty()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.pathconf.html"><code class="docutils literal"><span class="pre">posix.pathconf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.pipe.html"><code class="docutils literal"><span class="pre">posix.pipe()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.popen.html"><code class="docutils literal"><span class="pre">posix.popen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.putenv.html"><code class="docutils literal"><span class="pre">posix.putenv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.read.html"><code class="docutils literal"><span class="pre">posix.read()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.readlink.html"><code class="docutils literal"><span class="pre">posix.readlink()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.remove.html"><code class="docutils literal"><span class="pre">posix.remove()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.rename.html"><code class="docutils literal"><span class="pre">posix.rename()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.rmdir.html"><code class="docutils literal"><span class="pre">posix.rmdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.setegid.html"><code class="docutils literal"><span class="pre">posix.setegid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.seteuid.html"><code class="docutils literal"><span class="pre">posix.seteuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.setgid.html"><code class="docutils literal"><span class="pre">posix.setgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.setgroups.html"><code class="docutils literal"><span class="pre">posix.setgroups()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.setpgid.html"><code class="docutils literal"><span class="pre">posix.setpgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.setpgrp.html"><code class="docutils literal"><span class="pre">posix.setpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.setregid.html"><code class="docutils literal"><span class="pre">posix.setregid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.setresgid.html"><code class="docutils literal"><span class="pre">posix.setresgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.setresuid.html"><code class="docutils literal"><span class="pre">posix.setresuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.setreuid.html"><code class="docutils literal"><span class="pre">posix.setreuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.setsid.html"><code class="docutils literal"><span class="pre">posix.setsid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.setuid.html"><code class="docutils literal"><span class="pre">posix.setuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.stat.html"><code class="docutils literal"><span class="pre">posix.stat()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.stat_float_times.html"><code class="docutils literal"><span class="pre">posix.stat_float_times()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.statvfs.html"><code class="docutils literal"><span class="pre">posix.statvfs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.strerror.html"><code class="docutils literal"><span class="pre">posix.strerror()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.symlink.html"><code class="docutils literal"><span class="pre">posix.symlink()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.sysconf.html"><code class="docutils literal"><span class="pre">posix.sysconf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.system.html"><code class="docutils literal"><span class="pre">posix.system()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.tcgetpgrp.html"><code class="docutils literal"><span class="pre">posix.tcgetpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.tcsetpgrp.html"><code class="docutils literal"><span class="pre">posix.tcsetpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.tempnam.html"><code class="docutils literal"><span class="pre">posix.tempnam()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.times.html"><code class="docutils literal"><span class="pre">posix.times()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.tmpfile.html"><code class="docutils literal"><span class="pre">posix.tmpfile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.tmpnam.html"><code class="docutils literal"><span class="pre">posix.tmpnam()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.ttyname.html"><code class="docutils literal"><span class="pre">posix.ttyname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.umask.html"><code class="docutils literal"><span class="pre">posix.umask()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.uname.html"><code class="docutils literal"><span class="pre">posix.uname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.unlink.html"><code class="docutils literal"><span class="pre">posix.unlink()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.unsetenv.html"><code class="docutils literal"><span class="pre">posix.unsetenv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.urandom.html"><code class="docutils literal"><span class="pre">posix.urandom()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.utime.html"><code class="docutils literal"><span class="pre">posix.utime()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.wait.html"><code class="docutils literal"><span class="pre">posix.wait()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.wait3.html"><code class="docutils literal"><span class="pre">posix.wait3()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.wait4.html"><code class="docutils literal"><span class="pre">posix.wait4()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.waitpid.html"><code class="docutils literal"><span class="pre">posix.waitpid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.write.html"><code class="docutils literal"><span class="pre">posix.write()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.stat_result.html"><code class="docutils literal"><span class="pre">posix.stat_result</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/posix.statvfs_result.html"><code class="docutils literal"><span class="pre">posix.statvfs_result</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="posix.error.html">posix.error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pwd.html"><code class="docutils literal"><span class="pre">pwd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="spwd.html"><code class="docutils literal"><span class="pre">spwd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="grp.html"><code class="docutils literal"><span class="pre">grp</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="crypt.html"><code class="docutils literal"><span class="pre">crypt</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="termios.html"><code class="docutils literal"><span class="pre">termios</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tty.html"><code class="docutils literal"><span class="pre">tty</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pty.html"><code class="docutils literal"><span class="pre">pty</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="fcntl.html"><code class="docutils literal"><span class="pre">fcntl</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipes.html"><code class="docutils literal"><span class="pre">pipes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="posixfile.html"><code class="docutils literal"><span class="pre">posixfile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="resource.html"><code class="docutils literal"><span class="pre">resource</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="nis.html"><code class="docutils literal"><span class="pre">nis</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="syslog.html"><code class="docutils literal"><span class="pre">syslog</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="commands.html"><code class="docutils literal"><span class="pre">commands</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -156,6 +335,358 @@ disguised Unix interface).  Refer to the library manual and
 corresponding Unix manual entries for more information on calls.</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.WCOREDUMP.html#posix.WCOREDUMP" title="posix.WCOREDUMP"><code class="xref py py-obj docutils literal"><span class="pre">WCOREDUMP</span></code></a>((status)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if the process returning &#8216;status&#8217; was dumped to a core file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.WEXITSTATUS.html#posix.WEXITSTATUS" title="posix.WEXITSTATUS"><code class="xref py py-obj docutils literal"><span class="pre">WEXITSTATUS</span></code></a>((status)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the process return code from &#8216;status&#8217;.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.WIFCONTINUED.html#posix.WIFCONTINUED" title="posix.WIFCONTINUED"><code class="xref py py-obj docutils literal"><span class="pre">WIFCONTINUED</span></code></a>((status)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if the process returning &#8216;status&#8217; was continued from a job control stop.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.WIFEXITED.html#posix.WIFEXITED" title="posix.WIFEXITED"><code class="xref py py-obj docutils literal"><span class="pre">WIFEXITED</span></code></a>((status)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return true if the process returning &#8216;status&#8217; exited using the exit() system call.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.WIFSIGNALED.html#posix.WIFSIGNALED" title="posix.WIFSIGNALED"><code class="xref py py-obj docutils literal"><span class="pre">WIFSIGNALED</span></code></a>((status)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if the process returning &#8216;status&#8217; was terminated by a signal.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.WIFSTOPPED.html#posix.WIFSTOPPED" title="posix.WIFSTOPPED"><code class="xref py py-obj docutils literal"><span class="pre">WIFSTOPPED</span></code></a>((status)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if the process returning &#8216;status&#8217; was stopped.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.WSTOPSIG.html#posix.WSTOPSIG" title="posix.WSTOPSIG"><code class="xref py py-obj docutils literal"><span class="pre">WSTOPSIG</span></code></a>((status)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the signal that stopped the process that provided the &#8216;status&#8217; value.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.WTERMSIG.html#posix.WTERMSIG" title="posix.WTERMSIG"><code class="xref py py-obj docutils literal"><span class="pre">WTERMSIG</span></code></a>((status)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the signal that terminated the process that provided the &#8216;status&#8217; value.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.abort.html#posix.abort" title="posix.abort"><code class="xref py py-obj docutils literal"><span class="pre">abort</span></code></a>(()&nbsp;-&gt;&nbsp;does&nbsp;not&nbsp;return!)</td>
+<td>Abort the interpreter immediately.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.access.html#posix.access" title="posix.access"><code class="xref py py-obj docutils literal"><span class="pre">access</span></code></a>((path,&nbsp;mode)&nbsp;-&gt;&nbsp;True&nbsp;if&nbsp;granted,&nbsp;...)</td>
+<td>Use the real uid/gid to test for access to a path.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.chdir.html#posix.chdir" title="posix.chdir"><code class="xref py py-obj docutils literal"><span class="pre">chdir</span></code></a>(path)</td>
+<td>Change the current working directory to the specified path.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.chmod.html#posix.chmod" title="posix.chmod"><code class="xref py py-obj docutils literal"><span class="pre">chmod</span></code></a>(path,&nbsp;mode)</td>
+<td>Change the access permissions of a file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.chown.html#posix.chown" title="posix.chown"><code class="xref py py-obj docutils literal"><span class="pre">chown</span></code></a>(path,&nbsp;uid,&nbsp;gid)</td>
+<td>Change the owner and group id of path to the numeric uid and gid.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.chroot.html#posix.chroot" title="posix.chroot"><code class="xref py py-obj docutils literal"><span class="pre">chroot</span></code></a>(path)</td>
+<td>Change root directory to path.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.close.html#posix.close" title="posix.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>(fd)</td>
+<td>Close a file descriptor (for low level IO).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.closerange.html#posix.closerange" title="posix.closerange"><code class="xref py py-obj docutils literal"><span class="pre">closerange</span></code></a>(fd_low,&nbsp;fd_high)</td>
+<td>Closes all file descriptors in [fd_low, fd_high), ignoring errors.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.confstr.html#posix.confstr" title="posix.confstr"><code class="xref py py-obj docutils literal"><span class="pre">confstr</span></code></a>((name)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a string-valued system configuration variable.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.ctermid.html#posix.ctermid" title="posix.ctermid"><code class="xref py py-obj docutils literal"><span class="pre">ctermid</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the name of the controlling terminal for this process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.dup.html#posix.dup" title="posix.dup"><code class="xref py py-obj docutils literal"><span class="pre">dup</span></code></a>((fd)&nbsp;-&gt;&nbsp;fd2)</td>
+<td>Return a duplicate of a file descriptor.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.dup2.html#posix.dup2" title="posix.dup2"><code class="xref py py-obj docutils literal"><span class="pre">dup2</span></code></a>(old_fd,&nbsp;new_fd)</td>
+<td>Duplicate file descriptor.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.execv.html#posix.execv" title="posix.execv"><code class="xref py py-obj docutils literal"><span class="pre">execv</span></code></a>(path,&nbsp;args)</td>
+<td>Execute an executable path with arguments, replacing current process.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.execve.html#posix.execve" title="posix.execve"><code class="xref py py-obj docutils literal"><span class="pre">execve</span></code></a>(path,&nbsp;args,&nbsp;env)</td>
+<td>Execute a path with arguments and environment, replacing current process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.fchdir.html#posix.fchdir" title="posix.fchdir"><code class="xref py py-obj docutils literal"><span class="pre">fchdir</span></code></a>(fildes)</td>
+<td>Change to the directory of the given file descriptor.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.fchmod.html#posix.fchmod" title="posix.fchmod"><code class="xref py py-obj docutils literal"><span class="pre">fchmod</span></code></a>(fd,&nbsp;mode)</td>
+<td>Change the access permissions of the file given by file descriptor fd.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.fchown.html#posix.fchown" title="posix.fchown"><code class="xref py py-obj docutils literal"><span class="pre">fchown</span></code></a>(fd,&nbsp;uid,&nbsp;gid)</td>
+<td>Change the owner and group id of the file given by file descriptor fd to the numeric uid and gid.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.fdatasync.html#posix.fdatasync" title="posix.fdatasync"><code class="xref py py-obj docutils literal"><span class="pre">fdatasync</span></code></a>(fildes)</td>
+<td>force write of file with filedescriptor to disk.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.fdopen.html#posix.fdopen" title="posix.fdopen"><code class="xref py py-obj docutils literal"><span class="pre">fdopen</span></code></a>((fd&nbsp;[[,&nbsp;mode])</td>
+<td>Return an open file object connected to a file descriptor.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.fork.html#posix.fork" title="posix.fork"><code class="xref py py-obj docutils literal"><span class="pre">fork</span></code></a>(()&nbsp;-&gt;&nbsp;pid)</td>
+<td>Fork a child process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.forkpty.html#posix.forkpty" title="posix.forkpty"><code class="xref py py-obj docutils literal"><span class="pre">forkpty</span></code></a>()&nbsp;-&gt;&nbsp;(pid,&nbsp;master_fd)</td>
+<td>Fork a new process with a new pseudo-terminal as controlling tty.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.fpathconf.html#posix.fpathconf" title="posix.fpathconf"><code class="xref py py-obj docutils literal"><span class="pre">fpathconf</span></code></a>((fd,&nbsp;name)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the configuration limit name for the file descriptor fd.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.fstat.html#posix.fstat" title="posix.fstat"><code class="xref py py-obj docutils literal"><span class="pre">fstat</span></code></a>((fd)&nbsp;-&gt;&nbsp;stat&nbsp;result)</td>
+<td>Like stat(), but for an open file descriptor.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.fstatvfs.html#posix.fstatvfs" title="posix.fstatvfs"><code class="xref py py-obj docutils literal"><span class="pre">fstatvfs</span></code></a>((fd)&nbsp;-&gt;&nbsp;statvfs&nbsp;result)</td>
+<td>Perform an fstatvfs system call on the given fd.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.fsync.html#posix.fsync" title="posix.fsync"><code class="xref py py-obj docutils literal"><span class="pre">fsync</span></code></a>(fildes)</td>
+<td>force write of file with filedescriptor to disk.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.ftruncate.html#posix.ftruncate" title="posix.ftruncate"><code class="xref py py-obj docutils literal"><span class="pre">ftruncate</span></code></a>(fd,&nbsp;length)</td>
+<td>Truncate a file to a specified length.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.getcwd.html#posix.getcwd" title="posix.getcwd"><code class="xref py py-obj docutils literal"><span class="pre">getcwd</span></code></a>(()&nbsp;-&gt;&nbsp;path)</td>
+<td>Return a string representing the current working directory.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.getcwdu.html#posix.getcwdu" title="posix.getcwdu"><code class="xref py py-obj docutils literal"><span class="pre">getcwdu</span></code></a>(()&nbsp;-&gt;&nbsp;path)</td>
+<td>Return a unicode string representing the current working directory.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.getegid.html#posix.getegid" title="posix.getegid"><code class="xref py py-obj docutils literal"><span class="pre">getegid</span></code></a>(()&nbsp;-&gt;&nbsp;egid)</td>
+<td>Return the current process&#8217;s effective group id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.geteuid.html#posix.geteuid" title="posix.geteuid"><code class="xref py py-obj docutils literal"><span class="pre">geteuid</span></code></a>(()&nbsp;-&gt;&nbsp;euid)</td>
+<td>Return the current process&#8217;s effective user id.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.getgid.html#posix.getgid" title="posix.getgid"><code class="xref py py-obj docutils literal"><span class="pre">getgid</span></code></a>(()&nbsp;-&gt;&nbsp;gid)</td>
+<td>Return the current process&#8217;s group id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.getgroups.html#posix.getgroups" title="posix.getgroups"><code class="xref py py-obj docutils literal"><span class="pre">getgroups</span></code></a>(()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;group&nbsp;IDs)</td>
+<td>Return list of supplemental group IDs for the process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.getloadavg.html#posix.getloadavg" title="posix.getloadavg"><code class="xref py py-obj docutils literal"><span class="pre">getloadavg</span></code></a>()&nbsp;-&gt;&nbsp;(float,&nbsp;float,&nbsp;float)</td>
+<td>Return the number of processes in the system run queue averaged over</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.getlogin.html#posix.getlogin" title="posix.getlogin"><code class="xref py py-obj docutils literal"><span class="pre">getlogin</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the actual login name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.getpgid.html#posix.getpgid" title="posix.getpgid"><code class="xref py py-obj docutils literal"><span class="pre">getpgid</span></code></a>((pid)&nbsp;-&gt;&nbsp;pgid)</td>
+<td>Call the system call getpgid().</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.getpgrp.html#posix.getpgrp" title="posix.getpgrp"><code class="xref py py-obj docutils literal"><span class="pre">getpgrp</span></code></a>(()&nbsp;-&gt;&nbsp;pgrp)</td>
+<td>Return the current process group id.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.getpid.html#posix.getpid" title="posix.getpid"><code class="xref py py-obj docutils literal"><span class="pre">getpid</span></code></a>(()&nbsp;-&gt;&nbsp;pid)</td>
+<td>Return the current process id</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.getppid.html#posix.getppid" title="posix.getppid"><code class="xref py py-obj docutils literal"><span class="pre">getppid</span></code></a>(()&nbsp;-&gt;&nbsp;ppid)</td>
+<td>Return the parent&#8217;s process id.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.getresgid.html#posix.getresgid" title="posix.getresgid"><code class="xref py py-obj docutils literal"><span class="pre">getresgid</span></code></a>()&nbsp;-&gt;&nbsp;(rgid,&nbsp;egid,&nbsp;sgid)</td>
+<td>Get tuple of the current process&#8217;s real, effective, and saved group ids.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.getresuid.html#posix.getresuid" title="posix.getresuid"><code class="xref py py-obj docutils literal"><span class="pre">getresuid</span></code></a>()&nbsp;-&gt;&nbsp;(ruid,&nbsp;euid,&nbsp;suid)</td>
+<td>Get tuple of the current process&#8217;s real, effective, and saved user ids.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.getsid.html#posix.getsid" title="posix.getsid"><code class="xref py py-obj docutils literal"><span class="pre">getsid</span></code></a>((pid)&nbsp;-&gt;&nbsp;sid)</td>
+<td>Call the system call getsid().</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.getuid.html#posix.getuid" title="posix.getuid"><code class="xref py py-obj docutils literal"><span class="pre">getuid</span></code></a>(()&nbsp;-&gt;&nbsp;uid)</td>
+<td>Return the current process&#8217;s user id.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.initgroups.html#posix.initgroups" title="posix.initgroups"><code class="xref py py-obj docutils literal"><span class="pre">initgroups</span></code></a>((username,&nbsp;gid)&nbsp;-&gt;&nbsp;None)</td>
+<td>Call the system initgroups() to initialize the group access list with all of the groups of which the specified username is a member, plus the specified group id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.isatty.html#posix.isatty" title="posix.isatty"><code class="xref py py-obj docutils literal"><span class="pre">isatty</span></code></a>((fd)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if the file descriptor &#8216;fd&#8217; is an open file descriptor connected to the slave end of a terminal.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.kill.html#posix.kill" title="posix.kill"><code class="xref py py-obj docutils literal"><span class="pre">kill</span></code></a>(pid,&nbsp;sig)</td>
+<td>Kill a process with a signal.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.killpg.html#posix.killpg" title="posix.killpg"><code class="xref py py-obj docutils literal"><span class="pre">killpg</span></code></a>(pgid,&nbsp;sig)</td>
+<td>Kill a process group with a signal.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.lchown.html#posix.lchown" title="posix.lchown"><code class="xref py py-obj docutils literal"><span class="pre">lchown</span></code></a>(path,&nbsp;uid,&nbsp;gid)</td>
+<td>Change the owner and group id of path to the numeric uid and gid.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.link.html#posix.link" title="posix.link"><code class="xref py py-obj docutils literal"><span class="pre">link</span></code></a>(src,&nbsp;dst)</td>
+<td>Create a hard link to a file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.listdir.html#posix.listdir" title="posix.listdir"><code class="xref py py-obj docutils literal"><span class="pre">listdir</span></code></a>((path)&nbsp;-&gt;&nbsp;list_of_strings)</td>
+<td>Return a list containing the names of the entries in the directory.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.lseek.html#posix.lseek" title="posix.lseek"><code class="xref py py-obj docutils literal"><span class="pre">lseek</span></code></a>((fd,&nbsp;pos,&nbsp;how)&nbsp;-&gt;&nbsp;newpos)</td>
+<td>Set the current position of a file descriptor.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.lstat.html#posix.lstat" title="posix.lstat"><code class="xref py py-obj docutils literal"><span class="pre">lstat</span></code></a>((path)&nbsp;-&gt;&nbsp;stat&nbsp;result)</td>
+<td>Like stat(path), but do not follow symbolic links.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.major.html#posix.major" title="posix.major"><code class="xref py py-obj docutils literal"><span class="pre">major</span></code></a>((device)&nbsp;-&gt;&nbsp;major&nbsp;number)</td>
+<td>Extracts a device major number from a raw device number.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.makedev.html#posix.makedev" title="posix.makedev"><code class="xref py py-obj docutils literal"><span class="pre">makedev</span></code></a>((major,&nbsp;minor)&nbsp;-&gt;&nbsp;device&nbsp;number)</td>
+<td>Composes a raw device number from the major and minor device numbers.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.minor.html#posix.minor" title="posix.minor"><code class="xref py py-obj docutils literal"><span class="pre">minor</span></code></a>((device)&nbsp;-&gt;&nbsp;minor&nbsp;number)</td>
+<td>Extracts a device minor number from a raw device number.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.mkdir.html#posix.mkdir" title="posix.mkdir"><code class="xref py py-obj docutils literal"><span class="pre">mkdir</span></code></a>(path&nbsp;[[,&nbsp;mode])</td>
+<td>Create a directory.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.mkfifo.html#posix.mkfifo" title="posix.mkfifo"><code class="xref py py-obj docutils literal"><span class="pre">mkfifo</span></code></a>(filename&nbsp;[[,&nbsp;mode])</td>
+<td>Create a FIFO (a POSIX named pipe).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.mknod.html#posix.mknod" title="posix.mknod"><code class="xref py py-obj docutils literal"><span class="pre">mknod</span></code></a>(filename&nbsp;[[,&nbsp;mode])</td>
+<td>Create a filesystem node (file, device special file or named pipe) named filename.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.nice.html#posix.nice" title="posix.nice"><code class="xref py py-obj docutils literal"><span class="pre">nice</span></code></a>((inc)&nbsp;-&gt;&nbsp;new_priority)</td>
+<td>Decrease the priority of process by inc and return the new priority.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.open.html#posix.open" title="posix.open"><code class="xref py py-obj docutils literal"><span class="pre">open</span></code></a>((filename,&nbsp;flag&nbsp;[[,&nbsp;mode])</td>
+<td>Open a file (for low level IO).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.openpty.html#posix.openpty" title="posix.openpty"><code class="xref py py-obj docutils literal"><span class="pre">openpty</span></code></a>()&nbsp;-&gt;&nbsp;(master_fd,&nbsp;slave_fd)</td>
+<td>Open a pseudo-terminal, returning open fd&#8217;s for both master and slave end.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.pathconf.html#posix.pathconf" title="posix.pathconf"><code class="xref py py-obj docutils literal"><span class="pre">pathconf</span></code></a>((path,&nbsp;name)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the configuration limit name for the file or directory path.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.pipe.html#posix.pipe" title="posix.pipe"><code class="xref py py-obj docutils literal"><span class="pre">pipe</span></code></a>()&nbsp;-&gt;&nbsp;(read_end,&nbsp;write_end)</td>
+<td>Create a pipe.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.popen.html#posix.popen" title="posix.popen"><code class="xref py py-obj docutils literal"><span class="pre">popen</span></code></a>((command&nbsp;[[,&nbsp;mode])</td>
+<td>Open a pipe to/from a command returning a file object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.putenv.html#posix.putenv" title="posix.putenv"><code class="xref py py-obj docutils literal"><span class="pre">putenv</span></code></a>(key,&nbsp;value)</td>
+<td>Change or add an environment variable.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.read.html#posix.read" title="posix.read"><code class="xref py py-obj docutils literal"><span class="pre">read</span></code></a>((fd,&nbsp;buffersize)&nbsp;-&gt;&nbsp;string)</td>
+<td>Read a file descriptor.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.readlink.html#posix.readlink" title="posix.readlink"><code class="xref py py-obj docutils literal"><span class="pre">readlink</span></code></a>((path)&nbsp;-&gt;&nbsp;path)</td>
+<td>Return a string representing the path to which the symbolic link points.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.remove.html#posix.remove" title="posix.remove"><code class="xref py py-obj docutils literal"><span class="pre">remove</span></code></a>(path)</td>
+<td>Remove a file (same as unlink(path)).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.rename.html#posix.rename" title="posix.rename"><code class="xref py py-obj docutils literal"><span class="pre">rename</span></code></a>(old,&nbsp;new)</td>
+<td>Rename a file or directory.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.rmdir.html#posix.rmdir" title="posix.rmdir"><code class="xref py py-obj docutils literal"><span class="pre">rmdir</span></code></a>(path)</td>
+<td>Remove a directory.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.setegid.html#posix.setegid" title="posix.setegid"><code class="xref py py-obj docutils literal"><span class="pre">setegid</span></code></a>(gid)</td>
+<td>Set the current process&#8217;s effective group id.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.seteuid.html#posix.seteuid" title="posix.seteuid"><code class="xref py py-obj docutils literal"><span class="pre">seteuid</span></code></a>(uid)</td>
+<td>Set the current process&#8217;s effective user id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.setgid.html#posix.setgid" title="posix.setgid"><code class="xref py py-obj docutils literal"><span class="pre">setgid</span></code></a>(gid)</td>
+<td>Set the current process&#8217;s group id.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.setgroups.html#posix.setgroups" title="posix.setgroups"><code class="xref py py-obj docutils literal"><span class="pre">setgroups</span></code></a>(list)</td>
+<td>Set the groups of the current process to list.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.setpgid.html#posix.setpgid" title="posix.setpgid"><code class="xref py py-obj docutils literal"><span class="pre">setpgid</span></code></a>(pid,&nbsp;pgrp)</td>
+<td>Call the system call setpgid().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.setpgrp.html#posix.setpgrp" title="posix.setpgrp"><code class="xref py py-obj docutils literal"><span class="pre">setpgrp</span></code></a>()</td>
+<td>Make this process the process group leader.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.setregid.html#posix.setregid" title="posix.setregid"><code class="xref py py-obj docutils literal"><span class="pre">setregid</span></code></a>(rgid,&nbsp;egid)</td>
+<td>Set the current process&#8217;s real and effective group ids.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.setresgid.html#posix.setresgid" title="posix.setresgid"><code class="xref py py-obj docutils literal"><span class="pre">setresgid</span></code></a>(rgid,&nbsp;egid,&nbsp;sgid)</td>
+<td>Set the current process&#8217;s real, effective, and saved group ids.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.setresuid.html#posix.setresuid" title="posix.setresuid"><code class="xref py py-obj docutils literal"><span class="pre">setresuid</span></code></a>(ruid,&nbsp;euid,&nbsp;suid)</td>
+<td>Set the current process&#8217;s real, effective, and saved user ids.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.setreuid.html#posix.setreuid" title="posix.setreuid"><code class="xref py py-obj docutils literal"><span class="pre">setreuid</span></code></a>(ruid,&nbsp;euid)</td>
+<td>Set the current process&#8217;s real and effective user ids.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.setsid.html#posix.setsid" title="posix.setsid"><code class="xref py py-obj docutils literal"><span class="pre">setsid</span></code></a>()</td>
+<td>Call the system call setsid().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.setuid.html#posix.setuid" title="posix.setuid"><code class="xref py py-obj docutils literal"><span class="pre">setuid</span></code></a>(uid)</td>
+<td>Set the current process&#8217;s user id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.stat.html#posix.stat" title="posix.stat"><code class="xref py py-obj docutils literal"><span class="pre">stat</span></code></a>((path)&nbsp;-&gt;&nbsp;stat&nbsp;result)</td>
+<td>Perform a stat system call on the given path.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.stat_float_times.html#posix.stat_float_times" title="posix.stat_float_times"><code class="xref py py-obj docutils literal"><span class="pre">stat_float_times</span></code></a>(([newval])&nbsp;-&gt;&nbsp;oldval)</td>
+<td>Determine whether os.[lf]stat represents time stamps as float objects.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.statvfs.html#posix.statvfs" title="posix.statvfs"><code class="xref py py-obj docutils literal"><span class="pre">statvfs</span></code></a>((path)&nbsp;-&gt;&nbsp;statvfs&nbsp;result)</td>
+<td>Perform a statvfs system call on the given path.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.strerror.html#posix.strerror" title="posix.strerror"><code class="xref py py-obj docutils literal"><span class="pre">strerror</span></code></a>((code)&nbsp;-&gt;&nbsp;string)</td>
+<td>Translate an error code to a message string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.symlink.html#posix.symlink" title="posix.symlink"><code class="xref py py-obj docutils literal"><span class="pre">symlink</span></code></a>(src,&nbsp;dst)</td>
+<td>Create a symbolic link pointing to src named dst.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.sysconf.html#posix.sysconf" title="posix.sysconf"><code class="xref py py-obj docutils literal"><span class="pre">sysconf</span></code></a>((name)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return an integer-valued system configuration variable.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.system.html#posix.system" title="posix.system"><code class="xref py py-obj docutils literal"><span class="pre">system</span></code></a>((command)&nbsp;-&gt;&nbsp;exit_status)</td>
+<td>Execute the command (a string) in a subshell.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.tcgetpgrp.html#posix.tcgetpgrp" title="posix.tcgetpgrp"><code class="xref py py-obj docutils literal"><span class="pre">tcgetpgrp</span></code></a>((fd)&nbsp;-&gt;&nbsp;pgid)</td>
+<td>Return the process group associated with the terminal given by a fd.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.tcsetpgrp.html#posix.tcsetpgrp" title="posix.tcsetpgrp"><code class="xref py py-obj docutils literal"><span class="pre">tcsetpgrp</span></code></a>(fd,&nbsp;pgid)</td>
+<td>Set the process group associated with the terminal given by a fd.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.tempnam.html#posix.tempnam" title="posix.tempnam"><code class="xref py py-obj docutils literal"><span class="pre">tempnam</span></code></a>(([dir[,&nbsp;prefix]])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a unique name for a temporary file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.times.html#posix.times" title="posix.times"><code class="xref py py-obj docutils literal"><span class="pre">times</span></code></a>()&nbsp;-&gt;&nbsp;(utime,&nbsp;stime,&nbsp;cutime,&nbsp;cstime,&nbsp;...)</td>
+<td>Return a tuple of floating point numbers indicating process times.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.tmpfile.html#posix.tmpfile" title="posix.tmpfile"><code class="xref py py-obj docutils literal"><span class="pre">tmpfile</span></code></a>(()&nbsp;-&gt;&nbsp;file&nbsp;object)</td>
+<td>Create a temporary file with no directory entries.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.tmpnam.html#posix.tmpnam" title="posix.tmpnam"><code class="xref py py-obj docutils literal"><span class="pre">tmpnam</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a unique name for a temporary file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.ttyname.html#posix.ttyname" title="posix.ttyname"><code class="xref py py-obj docutils literal"><span class="pre">ttyname</span></code></a>((fd)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the name of the terminal device connected to &#8216;fd&#8217;.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.umask.html#posix.umask" title="posix.umask"><code class="xref py py-obj docutils literal"><span class="pre">umask</span></code></a>((new_mask)&nbsp;-&gt;&nbsp;old_mask)</td>
+<td>Set the current numeric umask and return the previous umask.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.uname.html#posix.uname" title="posix.uname"><code class="xref py py-obj docutils literal"><span class="pre">uname</span></code></a>()&nbsp;-&gt;&nbsp;(sysname,&nbsp;nodename,&nbsp;release,&nbsp;...)</td>
+<td>Return a tuple identifying the current operating system.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.unlink.html#posix.unlink" title="posix.unlink"><code class="xref py py-obj docutils literal"><span class="pre">unlink</span></code></a>(path)</td>
+<td>Remove a file (same as remove(path)).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.unsetenv.html#posix.unsetenv" title="posix.unsetenv"><code class="xref py py-obj docutils literal"><span class="pre">unsetenv</span></code></a>(key)</td>
+<td>Delete an environment variable.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.urandom.html#posix.urandom" title="posix.urandom"><code class="xref py py-obj docutils literal"><span class="pre">urandom</span></code></a>((n)&nbsp;-&gt;&nbsp;str)</td>
+<td>Return n random bytes suitable for cryptographic use.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.utime.html#posix.utime" title="posix.utime"><code class="xref py py-obj docutils literal"><span class="pre">utime</span></code></a>(path,&nbsp;(atime,&nbsp;mtime))&nbsp;utime(path,&nbsp;None)</td>
+<td>Set the access and modified time of the file to the given values.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.wait.html#posix.wait" title="posix.wait"><code class="xref py py-obj docutils literal"><span class="pre">wait</span></code></a>()&nbsp;-&gt;&nbsp;(pid,&nbsp;status)</td>
+<td>Wait for completion of a child process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.wait3.html#posix.wait3" title="posix.wait3"><code class="xref py py-obj docutils literal"><span class="pre">wait3</span></code></a>(options)&nbsp;-&gt;&nbsp;(pid,&nbsp;status,&nbsp;rusage)</td>
+<td>Wait for completion of a child process.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.wait4.html#posix.wait4" title="posix.wait4"><code class="xref py py-obj docutils literal"><span class="pre">wait4</span></code></a>(pid,&nbsp;options)&nbsp;-&gt;&nbsp;(pid,&nbsp;status,&nbsp;rusage)</td>
+<td>Wait for completion of a given child process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/posix.waitpid.html#posix.waitpid" title="posix.waitpid"><code class="xref py py-obj docutils literal"><span class="pre">waitpid</span></code></a>(pid,&nbsp;options)&nbsp;-&gt;&nbsp;(pid,&nbsp;status)</td>
+<td>Wait for completion of a given child process.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/posix.write.html#posix.write" title="posix.write"><code class="xref py py-obj docutils literal"><span class="pre">write</span></code></a>((fd,&nbsp;string)&nbsp;-&gt;&nbsp;byteswritten)</td>
+<td>Write a string to a file descriptor.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -199,7 +730,7 @@ corresponding Unix manual entries for more information on calls.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/posix.stat_result.html" class="btn btn-neutral float-right" title="posix.stat_result" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/posix.WCOREDUMP.html" class="btn btn-neutral float-right" title="posix.WCOREDUMP()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="generated/formatter.NullWriter.send_paragraph.html" class="btn btn-neutral" title="formatter.NullWriter.send_paragraph" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

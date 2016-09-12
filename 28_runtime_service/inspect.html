@@ -212,9 +212,9 @@ getting source code, inspecting classes and functions, and examining the
 interpreter stack.</p>
 <div class="section" id="types-and-members">
 <span id="inspect-types"></span><h2><a class="toc-backref" href="#id1">13.1. Types and members</a><a class="headerlink" href="#types-and-members" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="../generated/inspect.getmembers.html#inspect.getmembers" title="inspect.getmembers"><code class="xref py py-func docutils literal"><span class="pre">getmembers()</span></code></a> function retrieves the members of an object such as a
+<p>The <a class="reference internal" href="../generated/generated/inspect.getmembers.html#inspect.getmembers" title="inspect.getmembers"><code class="xref py py-func docutils literal"><span class="pre">getmembers()</span></code></a> function retrieves the members of an object such as a
 class or module. The sixteen functions whose names begin with &#8220;is&#8221; are mainly
-provided as convenient choices for the second argument to <a class="reference internal" href="../generated/inspect.getmembers.html#inspect.getmembers" title="inspect.getmembers"><code class="xref py py-func docutils literal"><span class="pre">getmembers()</span></code></a>.
+provided as convenient choices for the second argument to <a class="reference internal" href="../generated/generated/inspect.getmembers.html#inspect.getmembers" title="inspect.getmembers"><code class="xref py py-func docutils literal"><span class="pre">getmembers()</span></code></a>.
 They also help you determine when you can expect to find the following special
 attributes:</p>
 <table border="1" class="docutils">
@@ -590,7 +590,7 @@ name.  If the optional <em>predicate</em> argument is supplied, only members for
 the predicate returns a true value are included.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last"><a class="reference internal" href="../generated/inspect.getmembers.html#inspect.getmembers" title="inspect.getmembers"><code class="xref py py-func docutils literal"><span class="pre">getmembers()</span></code></a> does not return metaclass attributes when the argument
+<p class="last"><a class="reference internal" href="../generated/generated/inspect.getmembers.html#inspect.getmembers" title="inspect.getmembers"><code class="xref py py-func docutils literal"><span class="pre">getmembers()</span></code></a> does not return metaclass attributes when the argument
 is a class (this behavior is inherited from the <a class="reference internal" href="../02_builtin_functions/02.html#dir" title="dir"><code class="xref py py-func docutils literal"><span class="pre">dir()</span></code></a> function).</p>
 </div>
 </dd></dl>
@@ -710,16 +710,16 @@ created by a <span class="xref std std-term">lambda</span> expression.</p>
 <dt id="inspect.ismethoddescriptor">
 <code class="descclassname">inspect.</code><code class="descname">ismethoddescriptor</code><span class="sig-paren">(</span><em>object</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/inspect.html#ismethoddescriptor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#inspect.ismethoddescriptor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return true if the object is a method descriptor, but not if
-<a class="reference internal" href="../generated/inspect.ismethod.html#inspect.ismethod" title="inspect.ismethod"><code class="xref py py-func docutils literal"><span class="pre">ismethod()</span></code></a>, <a class="reference internal" href="../generated/inspect.isclass.html#inspect.isclass" title="inspect.isclass"><code class="xref py py-func docutils literal"><span class="pre">isclass()</span></code></a>, <a class="reference internal" href="../generated/inspect.isfunction.html#inspect.isfunction" title="inspect.isfunction"><code class="xref py py-func docutils literal"><span class="pre">isfunction()</span></code></a> or <a class="reference internal" href="../generated/inspect.isbuiltin.html#inspect.isbuiltin" title="inspect.isbuiltin"><code class="xref py py-func docutils literal"><span class="pre">isbuiltin()</span></code></a>
+<a class="reference internal" href="../generated/generated/inspect.ismethod.html#inspect.ismethod" title="inspect.ismethod"><code class="xref py py-func docutils literal"><span class="pre">ismethod()</span></code></a>, <a class="reference internal" href="../generated/generated/inspect.isclass.html#inspect.isclass" title="inspect.isclass"><code class="xref py py-func docutils literal"><span class="pre">isclass()</span></code></a>, <a class="reference internal" href="../generated/generated/inspect.isfunction.html#inspect.isfunction" title="inspect.isfunction"><code class="xref py py-func docutils literal"><span class="pre">isfunction()</span></code></a> or <a class="reference internal" href="../generated/generated/inspect.isbuiltin.html#inspect.isbuiltin" title="inspect.isbuiltin"><code class="xref py py-func docutils literal"><span class="pre">isbuiltin()</span></code></a>
 are true.</p>
 <p>This is new as of Python 2.2, and, for example, is true of
 <code class="docutils literal"><span class="pre">int.__add__</span></code>. An object passing this test has a <code class="xref py py-attr docutils literal"><span class="pre">__get__</span></code> attribute
 but not a <code class="xref py py-attr docutils literal"><span class="pre">__set__</span></code> attribute, but beyond that the set of attributes
 varies.  <code class="xref py py-attr docutils literal"><span class="pre">__name__</span></code> is usually sensible, and <code class="xref py py-attr docutils literal"><span class="pre">__doc__</span></code> often is.</p>
 <p>Methods implemented via descriptors that also pass one of the other tests
-return false from the <a class="reference internal" href="../generated/inspect.ismethoddescriptor.html#inspect.ismethoddescriptor" title="inspect.ismethoddescriptor"><code class="xref py py-func docutils literal"><span class="pre">ismethoddescriptor()</span></code></a> test, simply because the
+return false from the <a class="reference internal" href="../generated/generated/inspect.ismethoddescriptor.html#inspect.ismethoddescriptor" title="inspect.ismethoddescriptor"><code class="xref py py-func docutils literal"><span class="pre">ismethoddescriptor()</span></code></a> test, simply because the
 other tests promise more &#8211; you can, e.g., count on having the
-<code class="xref py py-attr docutils literal"><span class="pre">im_func</span></code> attribute (etc) when an object passes <a class="reference internal" href="../generated/inspect.ismethod.html#inspect.ismethod" title="inspect.ismethod"><code class="xref py py-func docutils literal"><span class="pre">ismethod()</span></code></a>.</p>
+<code class="xref py py-attr docutils literal"><span class="pre">im_func</span></code> attribute (etc) when an object passes <a class="reference internal" href="../generated/generated/inspect.ismethod.html#inspect.ismethod" title="inspect.ismethod"><code class="xref py py-func docutils literal"><span class="pre">ismethod()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -762,7 +762,7 @@ not guaranteed.</p>
 <dl class="function">
 <dt id="inspect.getdoc">
 <code class="descclassname">inspect.</code><code class="descname">getdoc</code><span class="sig-paren">(</span><em>object</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/inspect.html#getdoc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#inspect.getdoc" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the documentation string for an object, cleaned up with <a class="reference internal" href="../generated/inspect.cleandoc.html#inspect.cleandoc" title="inspect.cleandoc"><code class="xref py py-func docutils literal"><span class="pre">cleandoc()</span></code></a>.</p>
+<dd><p>Get the documentation string for an object, cleaned up with <a class="reference internal" href="../generated/generated/inspect.cleandoc.html#inspect.cleandoc" title="inspect.cleandoc"><code class="xref py py-func docutils literal"><span class="pre">cleandoc()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -875,7 +875,7 @@ list of the argument names (it may contain nested lists). <em>varargs</em> and
 <dt id="inspect.formatargspec">
 <code class="descclassname">inspect.</code><code class="descname">formatargspec</code><span class="sig-paren">(</span><em>args</em><span class="optional">[</span>, <em>varargs</em>, <em>varkw</em>, <em>defaults</em>, <em>formatarg</em>, <em>formatvarargs</em>, <em>formatvarkw</em>, <em>formatvalue</em>, <em>join</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/inspect.html#formatargspec"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#inspect.formatargspec" title="Permalink to this definition">¶</a></dt>
 <dd><p>Format a pretty argument spec from the four values returned by
-<a class="reference internal" href="../generated/inspect.getargspec.html#inspect.getargspec" title="inspect.getargspec"><code class="xref py py-func docutils literal"><span class="pre">getargspec()</span></code></a>.  The format* arguments are the corresponding optional
+<a class="reference internal" href="../generated/generated/inspect.getargspec.html#inspect.getargspec" title="inspect.getargspec"><code class="xref py py-func docutils literal"><span class="pre">getargspec()</span></code></a>.  The format* arguments are the corresponding optional
 formatting functions that are called to turn names and values into strings.</p>
 </dd></dl>
 
@@ -883,7 +883,7 @@ formatting functions that are called to turn names and values into strings.</p>
 <dt id="inspect.formatargvalues">
 <code class="descclassname">inspect.</code><code class="descname">formatargvalues</code><span class="sig-paren">(</span><em>args</em><span class="optional">[</span>, <em>varargs</em>, <em>varkw</em>, <em>locals</em>, <em>formatarg</em>, <em>formatvarargs</em>, <em>formatvarkw</em>, <em>formatvalue</em>, <em>join</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/inspect.html#formatargvalues"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#inspect.formatargvalues" title="Permalink to this definition">¶</a></dt>
 <dd><p>Format a pretty argument spec from the four values returned by
-<a class="reference internal" href="../generated/inspect.getargvalues.html#inspect.getargvalues" title="inspect.getargvalues"><code class="xref py py-func docutils literal"><span class="pre">getargvalues()</span></code></a>.  The format* arguments are the corresponding optional
+<a class="reference internal" href="../generated/generated/inspect.getargvalues.html#inspect.getargvalues" title="inspect.getargvalues"><code class="xref py py-func docutils literal"><span class="pre">getargvalues()</span></code></a>.  The format* arguments are the corresponding optional
 formatting functions that are called to turn names and values into strings.</p>
 </dd></dl>
 
@@ -944,7 +944,7 @@ delayed destruction of objects and increased memory consumption which occurs.</p
 <p>Though the cycle detector will catch these, destruction of the frames (and local
 variables) can be made deterministic by removing the cycle in a
 <code class="xref std std-keyword docutils literal"><span class="pre">finally</span></code> clause.  This is also important if the cycle detector was
-disabled when Python was compiled or using <a class="reference internal" href="../generated/gc.disable.html#gc.disable" title="gc.disable"><code class="xref py py-func docutils literal"><span class="pre">gc.disable()</span></code></a>.  For example:</p>
+disabled when Python was compiled or using <a class="reference internal" href="../generated/generated/gc.disable.html#gc.disable" title="gc.disable"><code class="xref py py-func docutils literal"><span class="pre">gc.disable()</span></code></a>.  For example:</p>
 <div class="last highlight-python"><div class="highlight"><pre><span></span>def handle_stackframe_without_leak():
     frame = inspect.currentframe()
     try:

@@ -446,20 +446,20 @@ algorithms implemented in this module in other circumstances.</p>
 <code class="descclassname">cgi.</code><code class="descname">parse</code><span class="sig-paren">(</span><em>fp</em><span class="optional">[</span>, <em>environ</em><span class="optional">[</span>, <em>keep_blank_values</em><span class="optional">[</span>, <em>strict_parsing</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgi.html#parse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgi.parse" title="Permalink to this definition">¶</a></dt>
 <dd><p>Parse a query in the environment or from a file (the file defaults to
 <code class="docutils literal"><span class="pre">sys.stdin</span></code> and environment defaults to <code class="docutils literal"><span class="pre">os.environ</span></code>).  The <em>keep_blank_values</em> and <em>strict_parsing</em> parameters are
-passed to <a class="reference internal" href="../generated/urlparse.parse_qs.html#urlparse.parse_qs" title="urlparse.parse_qs"><code class="xref py py-func docutils literal"><span class="pre">urlparse.parse_qs()</span></code></a> unchanged.</p>
+passed to <a class="reference internal" href="../generated/generated/urlparse.parse_qs.html#urlparse.parse_qs" title="urlparse.parse_qs"><code class="xref py py-func docutils literal"><span class="pre">urlparse.parse_qs()</span></code></a> unchanged.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="cgi.parse_qs">
 <code class="descclassname">cgi.</code><code class="descname">parse_qs</code><span class="sig-paren">(</span><em>qs</em><span class="optional">[</span>, <em>keep_blank_values</em><span class="optional">[</span>, <em>strict_parsing</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgi.html#parse_qs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgi.parse_qs" title="Permalink to this definition">¶</a></dt>
-<dd><p>This function is deprecated in this module. Use <a class="reference internal" href="../generated/urlparse.parse_qs.html#urlparse.parse_qs" title="urlparse.parse_qs"><code class="xref py py-func docutils literal"><span class="pre">urlparse.parse_qs()</span></code></a>
+<dd><p>This function is deprecated in this module. Use <a class="reference internal" href="../generated/generated/urlparse.parse_qs.html#urlparse.parse_qs" title="urlparse.parse_qs"><code class="xref py py-func docutils literal"><span class="pre">urlparse.parse_qs()</span></code></a>
 instead. It is maintained here only for backward compatibility.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="cgi.parse_qsl">
 <code class="descclassname">cgi.</code><code class="descname">parse_qsl</code><span class="sig-paren">(</span><em>qs</em><span class="optional">[</span>, <em>keep_blank_values</em><span class="optional">[</span>, <em>strict_parsing</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/cgi.html#parse_qsl"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cgi.parse_qsl" title="Permalink to this definition">¶</a></dt>
-<dd><p>This function is deprecated in this module. Use <a class="reference internal" href="../generated/urlparse.parse_qsl.html#urlparse.parse_qsl" title="urlparse.parse_qsl"><code class="xref py py-func docutils literal"><span class="pre">urlparse.parse_qsl()</span></code></a>
+<dd><p>This function is deprecated in this module. Use <a class="reference internal" href="../generated/generated/urlparse.parse_qsl.html#urlparse.parse_qsl" title="urlparse.parse_qsl"><code class="xref py py-func docutils literal"><span class="pre">urlparse.parse_qsl()</span></code></a>
 instead. It is maintained here only for backward compatibility.</p>
 </dd></dl>
 
@@ -469,7 +469,7 @@ instead. It is maintained here only for backward compatibility.</p>
 <dd><p>Parse input of type <em class="mimetype">multipart/form-data</em> (for  file uploads).
 Arguments are <em>fp</em> for the input file and <em>pdict</em> for a dictionary containing
 other parameters in the <em class="mailheader">Content-Type</em> header.</p>
-<p>Returns a dictionary just like <a class="reference internal" href="../generated/urlparse.parse_qs.html#urlparse.parse_qs" title="urlparse.parse_qs"><code class="xref py py-func docutils literal"><span class="pre">urlparse.parse_qs()</span></code></a> keys are the field names, each
+<p>Returns a dictionary just like <a class="reference internal" href="../generated/generated/urlparse.parse_qs.html#urlparse.parse_qs" title="urlparse.parse_qs"><code class="xref py py-func docutils literal"><span class="pre">urlparse.parse_qs()</span></code></a> keys are the field names, each
 value is a list of values for that field.  This is easy to use but not much good
 if you are expecting megabytes to be uploaded &#8212; in that case, use the
 <a class="reference internal" href="../generated/generated/cgi.FieldStorage.html#cgi.FieldStorage" title="cgi.FieldStorage"><code class="xref py py-class docutils literal"><span class="pre">FieldStorage</span></code></a> class instead which is much more flexible.</p>
@@ -525,7 +525,7 @@ character (<code class="docutils literal"><span class="pre">&quot;</span></code>
 attribute value delimited by double quotes, as in <code class="docutils literal"><span class="pre">&lt;a</span> <span class="pre">href=&quot;...&quot;&gt;</span></code>.  Note
 that single quotes are never translated.</p>
 <p>If the value to be quoted might include single- or double-quote characters,
-or both, consider using the <a class="reference internal" href="../generated/xml.sax.saxutils.quoteattr.html#xml.sax.saxutils.quoteattr" title="xml.sax.saxutils.quoteattr"><code class="xref py py-func docutils literal"><span class="pre">quoteattr()</span></code></a> function in the
+or both, consider using the <a class="reference internal" href="../generated/generated/xml.sax.saxutils.quoteattr.html#xml.sax.saxutils.quoteattr" title="xml.sax.saxutils.quoteattr"><code class="xref py py-func docutils literal"><span class="pre">quoteattr()</span></code></a> function in the
 <a class="reference internal" href="../generated/xml.sax.saxutils.html#module-xml.sax.saxutils" title="xml.sax.saxutils"><code class="xref py py-mod docutils literal"><span class="pre">xml.sax.saxutils</span></code></a> module instead.</p>
 </dd></dl>
 
@@ -533,7 +533,7 @@ or both, consider using the <a class="reference internal" href="../generated/xml
 <div class="section" id="caring-about-security">
 <span id="cgi-security"></span><h2><a class="toc-backref" href="#id9">2.6. Caring about security</a><a class="headerlink" href="#caring-about-security" title="Permalink to this headline">¶</a></h2>
 <p id="index-1">There&#8217;s one important rule: if you invoke an external program (via the
-<a class="reference internal" href="../generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a> or <a class="reference internal" href="../generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">os.popen()</span></code></a> functions. or others with similar
+<a class="reference internal" href="../generated/generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a> or <a class="reference internal" href="../generated/generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-func docutils literal"><span class="pre">os.popen()</span></code></a> functions. or others with similar
 functionality), make very sure you don&#8217;t pass arbitrary strings received from
 the client to the shell.  This is a well-known security hole whereby clever
 hackers anywhere on the Web can exploit a gullible CGI script to invoke

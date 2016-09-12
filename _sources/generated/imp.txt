@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       acquire_lock
       find_module
@@ -30,6 +30,31 @@
       new_module
       release_lock
       reload
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/imp.acquire_lock
+       generated/imp.find_module
+       generated/imp.get_frozen_object
+       generated/imp.get_magic
+       generated/imp.get_suffixes
+       generated/imp.init_builtin
+       generated/imp.init_frozen
+       generated/imp.is_builtin
+       generated/imp.is_frozen
+       generated/imp.load_compiled
+       generated/imp.load_dynamic
+       generated/imp.load_module
+       generated/imp.load_package
+       generated/imp.load_source
+       generated/imp.lock_held
+       generated/imp.new_module
+       generated/imp.release_lock
+       generated/imp.reload
+      
    
    
 

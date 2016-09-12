@@ -8,12 +8,21 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       filterwarnings
       test
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/BaseHTTPServer.filterwarnings
+       generated/BaseHTTPServer.test
+      
    
    
 

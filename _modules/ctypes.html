@@ -193,7 +193,7 @@
 <span class="sd">STDAPICALLTYPE</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="create_string_buffer"><a class="viewcode-back" href="../generated/ctypes.create_string_buffer.html#ctypes.create_string_buffer">[docs]</a><span class="k">def</span> <span class="nf">create_string_buffer</span><span class="p">(</span><span class="n">init</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="create_string_buffer"><a class="viewcode-back" href="../generated/generated/ctypes.create_string_buffer.html#ctypes.create_string_buffer">[docs]</a><span class="k">def</span> <span class="nf">create_string_buffer</span><span class="p">(</span><span class="n">init</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;create_string_buffer(aString) -&gt; character array</span>
 <span class="sd">    create_string_buffer(anInteger) -&gt; character array</span>
 <span class="sd">    create_string_buffer(aString, anInteger) -&gt; character array</span>
@@ -211,7 +211,7 @@
         <span class="k">return</span> <span class="n">buf</span>
     <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">init</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="c_buffer"><a class="viewcode-back" href="../generated/ctypes.c_buffer.html#ctypes.c_buffer">[docs]</a><span class="k">def</span> <span class="nf">c_buffer</span><span class="p">(</span><span class="n">init</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="c_buffer"><a class="viewcode-back" href="../generated/generated/ctypes.c_buffer.html#ctypes.c_buffer">[docs]</a><span class="k">def</span> <span class="nf">c_buffer</span><span class="p">(</span><span class="n">init</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
 <span class="c1">##    &quot;deprecated, use create_string_buffer instead&quot;</span>
 <span class="c1">##    import warnings</span>
 <span class="c1">##    warnings.warn(&quot;c_buffer is deprecated, use create_string_buffer instead&quot;,</span>
@@ -219,7 +219,7 @@
     <span class="k">return</span> <span class="n">create_string_buffer</span><span class="p">(</span><span class="n">init</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span></div>
 
 <span class="n">_c_functype_cache</span> <span class="o">=</span> <span class="p">{}</span>
-<div class="viewcode-block" id="CFUNCTYPE"><a class="viewcode-back" href="../generated/ctypes.CFUNCTYPE.html#ctypes.CFUNCTYPE">[docs]</a><span class="k">def</span> <span class="nf">CFUNCTYPE</span><span class="p">(</span><span class="n">restype</span><span class="p">,</span> <span class="o">*</span><span class="n">argtypes</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+<div class="viewcode-block" id="CFUNCTYPE"><a class="viewcode-back" href="../generated/generated/ctypes.CFUNCTYPE.html#ctypes.CFUNCTYPE">[docs]</a><span class="k">def</span> <span class="nf">CFUNCTYPE</span><span class="p">(</span><span class="n">restype</span><span class="p">,</span> <span class="o">*</span><span class="n">argtypes</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;CFUNCTYPE(restype, *argtypes,</span>
 <span class="sd">                 use_errno=False, use_last_error=False) -&gt; function prototype.</span>
 
@@ -438,7 +438,7 @@
 <div class="viewcode-block" id="c_wchar"><a class="viewcode-back" href="../generated/generated/ctypes.c_wchar.html#ctypes.c_wchar">[docs]</a>    <span class="k">class</span> <span class="nc">c_wchar</span><span class="p">(</span><span class="n">_SimpleCData</span><span class="p">):</span>
         <span class="n">_type_</span> <span class="o">=</span> <span class="s2">&quot;u&quot;</span></div>
 
-<div class="viewcode-block" id="create_unicode_buffer"><a class="viewcode-back" href="../generated/ctypes.create_unicode_buffer.html#ctypes.create_unicode_buffer">[docs]</a>    <span class="k">def</span> <span class="nf">create_unicode_buffer</span><span class="p">(</span><span class="n">init</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="create_unicode_buffer"><a class="viewcode-back" href="../generated/generated/ctypes.create_unicode_buffer.html#ctypes.create_unicode_buffer">[docs]</a>    <span class="k">def</span> <span class="nf">create_unicode_buffer</span><span class="p">(</span><span class="n">init</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;create_unicode_buffer(aString) -&gt; character array</span>
 <span class="sd">        create_unicode_buffer(anInteger) -&gt; character array</span>
 <span class="sd">        create_unicode_buffer(aString, anInteger) -&gt; character array</span>
@@ -457,7 +457,7 @@
         <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">init</span><span class="p">)</span></div>
 
 <span class="c1"># XXX Deprecated</span>
-<div class="viewcode-block" id="SetPointerType"><a class="viewcode-back" href="../generated/ctypes.SetPointerType.html#ctypes.SetPointerType">[docs]</a><span class="k">def</span> <span class="nf">SetPointerType</span><span class="p">(</span><span class="n">pointer</span><span class="p">,</span> <span class="n">cls</span><span class="p">):</span>
+<div class="viewcode-block" id="SetPointerType"><a class="viewcode-back" href="../generated/generated/ctypes.SetPointerType.html#ctypes.SetPointerType">[docs]</a><span class="k">def</span> <span class="nf">SetPointerType</span><span class="p">(</span><span class="n">pointer</span><span class="p">,</span> <span class="n">cls</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">_pointer_type_cache</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;This type already exists in the cache&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="nb">id</span><span class="p">(</span><span class="n">pointer</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">_pointer_type_cache</span><span class="p">:</span>
@@ -467,7 +467,7 @@
     <span class="k">del</span> <span class="n">_pointer_type_cache</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">pointer</span><span class="p">)]</span></div>
 
 <span class="c1"># XXX Deprecated</span>
-<div class="viewcode-block" id="ARRAY"><a class="viewcode-back" href="../generated/ctypes.ARRAY.html#ctypes.ARRAY">[docs]</a><span class="k">def</span> <span class="nf">ARRAY</span><span class="p">(</span><span class="n">typ</span><span class="p">,</span> <span class="nb">len</span><span class="p">):</span>
+<div class="viewcode-block" id="ARRAY"><a class="viewcode-back" href="../generated/generated/ctypes.ARRAY.html#ctypes.ARRAY">[docs]</a><span class="k">def</span> <span class="nf">ARRAY</span><span class="p">(</span><span class="n">typ</span><span class="p">,</span> <span class="nb">len</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">typ</span> <span class="o">*</span> <span class="nb">len</span></div>
 
 <span class="c1">################################################################</span>
@@ -634,7 +634,7 @@
 <span class="c1">## void *memset(void *, int, size_t)</span>
 <span class="n">memset</span> <span class="o">=</span> <span class="n">CFUNCTYPE</span><span class="p">(</span><span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_int</span><span class="p">,</span> <span class="n">c_size_t</span><span class="p">)(</span><span class="n">_memset_addr</span><span class="p">)</span>
 
-<div class="viewcode-block" id="PYFUNCTYPE"><a class="viewcode-back" href="../generated/ctypes.PYFUNCTYPE.html#ctypes.PYFUNCTYPE">[docs]</a><span class="k">def</span> <span class="nf">PYFUNCTYPE</span><span class="p">(</span><span class="n">restype</span><span class="p">,</span> <span class="o">*</span><span class="n">argtypes</span><span class="p">):</span>
+<div class="viewcode-block" id="PYFUNCTYPE"><a class="viewcode-back" href="../generated/generated/ctypes.PYFUNCTYPE.html#ctypes.PYFUNCTYPE">[docs]</a><span class="k">def</span> <span class="nf">PYFUNCTYPE</span><span class="p">(</span><span class="n">restype</span><span class="p">,</span> <span class="o">*</span><span class="n">argtypes</span><span class="p">):</span>
     <span class="k">class</span> <span class="nc">CFunctionType</span><span class="p">(</span><span class="n">_CFuncPtr</span><span class="p">):</span>
         <span class="n">_argtypes_</span> <span class="o">=</span> <span class="n">argtypes</span>
         <span class="n">_restype_</span> <span class="o">=</span> <span class="n">restype</span>
@@ -642,11 +642,11 @@
     <span class="k">return</span> <span class="n">CFunctionType</span></div>
 
 <span class="n">_cast</span> <span class="o">=</span> <span class="n">PYFUNCTYPE</span><span class="p">(</span><span class="n">py_object</span><span class="p">,</span> <span class="n">c_void_p</span><span class="p">,</span> <span class="n">py_object</span><span class="p">,</span> <span class="n">py_object</span><span class="p">)(</span><span class="n">_cast_addr</span><span class="p">)</span>
-<div class="viewcode-block" id="cast"><a class="viewcode-back" href="../generated/ctypes.cast.html#ctypes.cast">[docs]</a><span class="k">def</span> <span class="nf">cast</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">typ</span><span class="p">):</span>
+<div class="viewcode-block" id="cast"><a class="viewcode-back" href="../generated/generated/ctypes.cast.html#ctypes.cast">[docs]</a><span class="k">def</span> <span class="nf">cast</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">typ</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">_cast</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">typ</span><span class="p">)</span></div>
 
 <span class="n">_string_at</span> <span class="o">=</span> <span class="n">PYFUNCTYPE</span><span class="p">(</span><span class="n">py_object</span><span class="p">,</span> <span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_int</span><span class="p">)(</span><span class="n">_string_at_addr</span><span class="p">)</span>
-<div class="viewcode-block" id="string_at"><a class="viewcode-back" href="../generated/ctypes.string_at.html#ctypes.string_at">[docs]</a><span class="k">def</span> <span class="nf">string_at</span><span class="p">(</span><span class="n">ptr</span><span class="p">,</span> <span class="n">size</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="string_at"><a class="viewcode-back" href="../generated/generated/ctypes.string_at.html#ctypes.string_at">[docs]</a><span class="k">def</span> <span class="nf">string_at</span><span class="p">(</span><span class="n">ptr</span><span class="p">,</span> <span class="n">size</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;string_at(addr[, size]) -&gt; string</span>
 
 <span class="sd">    Return the string at addr.&quot;&quot;&quot;</span>
@@ -658,7 +658,7 @@
     <span class="k">pass</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">_wstring_at</span> <span class="o">=</span> <span class="n">PYFUNCTYPE</span><span class="p">(</span><span class="n">py_object</span><span class="p">,</span> <span class="n">c_void_p</span><span class="p">,</span> <span class="n">c_int</span><span class="p">)(</span><span class="n">_wstring_at_addr</span><span class="p">)</span>
-<div class="viewcode-block" id="wstring_at"><a class="viewcode-back" href="../generated/ctypes.wstring_at.html#ctypes.wstring_at">[docs]</a>    <span class="k">def</span> <span class="nf">wstring_at</span><span class="p">(</span><span class="n">ptr</span><span class="p">,</span> <span class="n">size</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="wstring_at"><a class="viewcode-back" href="../generated/generated/ctypes.wstring_at.html#ctypes.wstring_at">[docs]</a>    <span class="k">def</span> <span class="nf">wstring_at</span><span class="p">(</span><span class="n">ptr</span><span class="p">,</span> <span class="n">size</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;wstring_at(addr[, size]) -&gt; string</span>
 
 <span class="sd">        Return the string at addr.&quot;&quot;&quot;</span>

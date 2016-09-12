@@ -181,15 +181,15 @@
 <span id="posixfile-file-like-objects-with-locking-support"></span><h1>12. <a class="reference internal" href="../generated/posixfile.html#module-posixfile" title="posixfile"><code class="xref py py-mod docutils literal"><span class="pre">posixfile</span></code></a> &#8212; File-like objects with locking support<a class="headerlink" href="#module-posixfile" title="Permalink to this headline">¶</a></h1>
 <div class="deprecated" id="index-0">
 <p><span class="versionmodified">Deprecated since version 1.5: </span>The locking operation that this module provides is done better and more portably
-by the <a class="reference internal" href="../generated/fcntl.lockf.html#fcntl.lockf" title="fcntl.lockf"><code class="xref py py-func docutils literal"><span class="pre">fcntl.lockf()</span></code></a> call.</p>
+by the <a class="reference internal" href="../generated/generated/fcntl.lockf.html#fcntl.lockf" title="fcntl.lockf"><code class="xref py py-func docutils literal"><span class="pre">fcntl.lockf()</span></code></a> call.</p>
 </div>
 <p id="index-1">This module implements some additional functionality over the built-in file
 objects.  In particular, it implements file locking, control over the file
 flags, and an easy interface to duplicate the file object. The module defines a
 new file object, the posixfile object.  It has all the standard file object
 methods and adds the methods described below.  This module only works for
-certain flavors of Unix, since it uses <a class="reference internal" href="../generated/fcntl.fcntl.html#fcntl.fcntl" title="fcntl.fcntl"><code class="xref py py-func docutils literal"><span class="pre">fcntl.fcntl()</span></code></a> for file locking.</p>
-<p>To instantiate a posixfile object, use the <a class="reference internal" href="../generated/posixfile.open.html#posixfile.open" title="posixfile.open"><code class="xref py py-func docutils literal"><span class="pre">posixfile.open()</span></code></a> function.  The
+certain flavors of Unix, since it uses <a class="reference internal" href="../generated/generated/fcntl.fcntl.html#fcntl.fcntl" title="fcntl.fcntl"><code class="xref py py-func docutils literal"><span class="pre">fcntl.fcntl()</span></code></a> for file locking.</p>
+<p>To instantiate a posixfile object, use the <a class="reference internal" href="../generated/generated/posixfile.open.html#posixfile.open" title="posixfile.open"><code class="xref py py-func docutils literal"><span class="pre">posixfile.open()</span></code></a> function.  The
 resulting object looks and feels roughly the same as a standard file object.</p>
 <p>The <a class="reference internal" href="../generated/posixfile.html#module-posixfile" title="posixfile"><code class="xref py py-mod docutils literal"><span class="pre">posixfile</span></code></a> module defines the following constants:</p>
 <dl class="data">

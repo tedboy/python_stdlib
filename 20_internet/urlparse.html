@@ -346,7 +346,7 @@ not included.</p>
 <p>The optional argument <em>strict_parsing</em> is a flag indicating what to do with
 parsing errors.  If false (the default), errors are silently ignored.  If true,
 errors raise a <a class="reference internal" href="../generated/exceptions.ValueError.html#exceptions.ValueError" title="exceptions.ValueError"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code></a> exception.</p>
-<p>Use the <a class="reference internal" href="../generated/urllib.urlencode.html#urllib.urlencode" title="urllib.urlencode"><code class="xref py py-func docutils literal"><span class="pre">urllib.urlencode()</span></code></a> function to convert such dictionaries into
+<p>Use the <a class="reference internal" href="../generated/generated/urllib.urlencode.html#urllib.urlencode" title="urllib.urlencode"><code class="xref py py-func docutils literal"><span class="pre">urllib.urlencode()</span></code></a> function to convert such dictionaries into
 query strings.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.6: </span>Copied from the <a class="reference internal" href="../generated/cgi.html#module-cgi" title="cgi"><code class="xref py py-mod docutils literal"><span class="pre">cgi</span></code></a> module.</p>
@@ -367,7 +367,7 @@ not included.</p>
 <p>The optional argument <em>strict_parsing</em> is a flag indicating what to do with
 parsing errors.  If false (the default), errors are silently ignored.  If true,
 errors raise a <a class="reference internal" href="../generated/exceptions.ValueError.html#exceptions.ValueError" title="exceptions.ValueError"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code></a> exception.</p>
-<p>Use the <a class="reference internal" href="../generated/urllib.urlencode.html#urllib.urlencode" title="urllib.urlencode"><code class="xref py py-func docutils literal"><span class="pre">urllib.urlencode()</span></code></a> function to convert such lists of pairs into
+<p>Use the <a class="reference internal" href="../generated/generated/urllib.urlencode.html#urllib.urlencode" title="urllib.urlencode"><code class="xref py py-func docutils literal"><span class="pre">urllib.urlencode()</span></code></a> function to convert such lists of pairs into
 query strings.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.6: </span>Copied from the <a class="reference internal" href="../generated/cgi.html#module-cgi" title="cgi"><code class="xref py py-mod docutils literal"><span class="pre">cgi</span></code></a> module.</p>
@@ -471,7 +471,7 @@ object.</p>
 <dl class="function">
 <dt id="urlparse.urlunsplit">
 <code class="descclassname">urlparse.</code><code class="descname">urlunsplit</code><span class="sig-paren">(</span><em>parts</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/urlparse.html#urlunsplit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#urlparse.urlunsplit" title="Permalink to this definition">¶</a></dt>
-<dd><p>Combine the elements of a tuple as returned by <a class="reference internal" href="../generated/urlparse.urlsplit.html#urlparse.urlsplit" title="urlparse.urlsplit"><code class="xref py py-func docutils literal"><span class="pre">urlsplit()</span></code></a> into a complete
+<dd><p>Combine the elements of a tuple as returned by <a class="reference internal" href="../generated/generated/urlparse.urlsplit.html#urlparse.urlsplit" title="urlparse.urlsplit"><code class="xref py py-func docutils literal"><span class="pre">urlsplit()</span></code></a> into a complete
 URL as a string. The <em>parts</em> argument can be any five-item iterable. This may
 result in a slightly different, but equivalent URL, if the URL that was parsed
 originally had unnecessary delimiters (for example, a ? with an empty query; the
@@ -500,8 +500,8 @@ to provide missing components in the relative URL.  For example:</p>
 <p class="last">If <em>url</em> is an absolute URL (that is, starting with <code class="docutils literal"><span class="pre">//</span></code> or <code class="docutils literal"><span class="pre">scheme://</span></code>),
 the <em>url</em>&#8216;s host name and/or scheme will be present in the result.  For example:</p>
 </div>
-<p>If you do not want that behavior, preprocess the <em>url</em> with <a class="reference internal" href="../generated/urlparse.urlsplit.html#urlparse.urlsplit" title="urlparse.urlsplit"><code class="xref py py-func docutils literal"><span class="pre">urlsplit()</span></code></a> and
-<a class="reference internal" href="../generated/urlparse.urlunsplit.html#urlparse.urlunsplit" title="urlparse.urlunsplit"><code class="xref py py-func docutils literal"><span class="pre">urlunsplit()</span></code></a>, removing possible <em>scheme</em> and <em>netloc</em> parts.</p>
+<p>If you do not want that behavior, preprocess the <em>url</em> with <a class="reference internal" href="../generated/generated/urlparse.urlsplit.html#urlparse.urlsplit" title="urlparse.urlsplit"><code class="xref py py-func docutils literal"><span class="pre">urlsplit()</span></code></a> and
+<a class="reference internal" href="../generated/generated/urlparse.urlunsplit.html#urlparse.urlunsplit" title="urlparse.urlunsplit"><code class="xref py py-func docutils literal"><span class="pre">urlunsplit()</span></code></a>, removing possible <em>scheme</em> and <em>netloc</em> parts.</p>
 </dd></dl>
 
 <dl class="function">
@@ -537,8 +537,8 @@ treatment of border cases.</dd>
 </dl>
 </div>
 <div class="section" id="results-of-urlparse-and-urlsplit">
-<span id="urlparse-result-object"></span><h2>3.1. Results of <a class="reference internal" href="../generated/urlparse.html#module-urlparse" title="urlparse"><code class="xref py py-func docutils literal"><span class="pre">urlparse()</span></code></a> and <a class="reference internal" href="../generated/urlparse.urlsplit.html#urlparse.urlsplit" title="urlparse.urlsplit"><code class="xref py py-func docutils literal"><span class="pre">urlsplit()</span></code></a><a class="headerlink" href="#results-of-urlparse-and-urlsplit" title="Permalink to this headline">¶</a></h2>
-<p>The result objects from the <a class="reference internal" href="../generated/urlparse.html#module-urlparse" title="urlparse"><code class="xref py py-func docutils literal"><span class="pre">urlparse()</span></code></a> and <a class="reference internal" href="../generated/urlparse.urlsplit.html#urlparse.urlsplit" title="urlparse.urlsplit"><code class="xref py py-func docutils literal"><span class="pre">urlsplit()</span></code></a> functions are
+<span id="urlparse-result-object"></span><h2>3.1. Results of <a class="reference internal" href="../generated/urlparse.html#module-urlparse" title="urlparse"><code class="xref py py-func docutils literal"><span class="pre">urlparse()</span></code></a> and <a class="reference internal" href="../generated/generated/urlparse.urlsplit.html#urlparse.urlsplit" title="urlparse.urlsplit"><code class="xref py py-func docutils literal"><span class="pre">urlsplit()</span></code></a><a class="headerlink" href="#results-of-urlparse-and-urlsplit" title="Permalink to this headline">¶</a></h2>
+<p>The result objects from the <a class="reference internal" href="../generated/urlparse.html#module-urlparse" title="urlparse"><code class="xref py py-func docutils literal"><span class="pre">urlparse()</span></code></a> and <a class="reference internal" href="../generated/generated/urlparse.urlsplit.html#urlparse.urlsplit" title="urlparse.urlsplit"><code class="xref py py-func docutils literal"><span class="pre">urlsplit()</span></code></a> functions are
 subclasses of the <a class="reference internal" href="../02_builtin_functions/02.html#tuple" title="tuple"><code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></a> type.  These subclasses add the attributes
 described in those functions, as well as provide an additional method:</p>
 <dl class="method">
@@ -579,7 +579,7 @@ parsing function:</p>
 <dl class="class">
 <dt id="urlparse.SplitResult">
 <em class="property">class </em><code class="descclassname">urlparse.</code><code class="descname">SplitResult</code><span class="sig-paren">(</span><em>scheme</em>, <em>netloc</em>, <em>path</em>, <em>query</em>, <em>fragment</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/urlparse.html#SplitResult"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#urlparse.SplitResult" title="Permalink to this definition">¶</a></dt>
-<dd><p>Concrete class for <a class="reference internal" href="../generated/urlparse.urlsplit.html#urlparse.urlsplit" title="urlparse.urlsplit"><code class="xref py py-func docutils literal"><span class="pre">urlsplit()</span></code></a> results.</p>
+<dd><p>Concrete class for <a class="reference internal" href="../generated/generated/urlparse.urlsplit.html#urlparse.urlsplit" title="urlparse.urlsplit"><code class="xref py py-func docutils literal"><span class="pre">urlsplit()</span></code></a> results.</p>
 </dd></dl>
 
 </div>

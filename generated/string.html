@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="string.Formatter" href="generated/string.Formatter.html"/>
+        <link rel="next" title="string.atof()" href="generated/string.atof.html"/>
         <link rel="prev" title="exceptions.ZeroDivisionError" href="exceptions.ZeroDivisionError.html"/> 
 
   
@@ -82,12 +82,108 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">string</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.atof.html"><code class="docutils literal"><span class="pre">string.atof()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.atoi.html"><code class="docutils literal"><span class="pre">string.atoi()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.atol.html"><code class="docutils literal"><span class="pre">string.atol()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.capitalize.html"><code class="docutils literal"><span class="pre">string.capitalize()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.capwords.html"><code class="docutils literal"><span class="pre">string.capwords()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.center.html"><code class="docutils literal"><span class="pre">string.center()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.count.html"><code class="docutils literal"><span class="pre">string.count()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.expandtabs.html"><code class="docutils literal"><span class="pre">string.expandtabs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.find.html"><code class="docutils literal"><span class="pre">string.find()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.index.html"><code class="docutils literal"><span class="pre">string.index()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.join.html"><code class="docutils literal"><span class="pre">string.join()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.joinfields.html"><code class="docutils literal"><span class="pre">string.joinfields()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.ljust.html"><code class="docutils literal"><span class="pre">string.ljust()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.lower.html"><code class="docutils literal"><span class="pre">string.lower()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.lstrip.html"><code class="docutils literal"><span class="pre">string.lstrip()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.maketrans.html"><code class="docutils literal"><span class="pre">string.maketrans()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.replace.html"><code class="docutils literal"><span class="pre">string.replace()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.rfind.html"><code class="docutils literal"><span class="pre">string.rfind()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.rindex.html"><code class="docutils literal"><span class="pre">string.rindex()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.rjust.html"><code class="docutils literal"><span class="pre">string.rjust()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.rsplit.html"><code class="docutils literal"><span class="pre">string.rsplit()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.rstrip.html"><code class="docutils literal"><span class="pre">string.rstrip()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.split.html"><code class="docutils literal"><span class="pre">string.split()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.splitfields.html"><code class="docutils literal"><span class="pre">string.splitfields()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.strip.html"><code class="docutils literal"><span class="pre">string.strip()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.swapcase.html"><code class="docutils literal"><span class="pre">string.swapcase()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.translate.html"><code class="docutils literal"><span class="pre">string.translate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.upper.html"><code class="docutils literal"><span class="pre">string.upper()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.zfill.html"><code class="docutils literal"><span class="pre">string.zfill()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.Formatter.html"><code class="docutils literal"><span class="pre">string.Formatter</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/string.Template.html"><code class="docutils literal"><span class="pre">string.Template</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="string.atof_error.html">string.atof_error</a></li>
+<li class="toctree-l5"><a class="reference internal" href="string.atoi_error.html">string.atoi_error</a></li>
+<li class="toctree-l5"><a class="reference internal" href="string.atol_error.html">string.atol_error</a></li>
+<li class="toctree-l5"><a class="reference internal" href="string.index_error.html">string.index_error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="re.html"><code class="docutils literal"><span class="pre">re</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="struct.html"><code class="docutils literal"><span class="pre">struct</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="difflib.html"><code class="docutils literal"><span class="pre">difflib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="StringIO.html"><code class="docutils literal"><span class="pre">StringIO</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cStringIO.html"><code class="docutils literal"><span class="pre">cStringIO</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="textwrap.html"><code class="docutils literal"><span class="pre">textwrap</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="codecs.html"><code class="docutils literal"><span class="pre">codecs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="encodings.html"><code class="docutils literal"><span class="pre">encodings</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="encodings.idna.html"><code class="docutils literal"><span class="pre">encodings.idna</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="encodings.utf_8_sig.html"><code class="docutils literal"><span class="pre">encodings.utf_8_sig</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unicodedata.html"><code class="docutils literal"><span class="pre">unicodedata</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="stringprep.html"><code class="docutils literal"><span class="pre">stringprep</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="fpformat.html"><code class="docutils literal"><span class="pre">fpformat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -167,6 +263,103 @@ punctuation &#8211; a string containing all characters considered punctuation
 printable &#8211; a string containing all characters considered printable</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.atof.html#string.atof" title="string.atof"><code class="xref py py-obj docutils literal"><span class="pre">atof</span></code></a>((s)&nbsp;-&gt;&nbsp;float)</td>
+<td>Return the floating point number represented by the string s.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.atoi.html#string.atoi" title="string.atoi"><code class="xref py py-obj docutils literal"><span class="pre">atoi</span></code></a>((s&nbsp;[,base])&nbsp;-&gt;&nbsp;int)</td>
+<td>Return the integer represented by the string s in the given base, which defaults to 10.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.atol.html#string.atol" title="string.atol"><code class="xref py py-obj docutils literal"><span class="pre">atol</span></code></a>((s&nbsp;[,base])&nbsp;-&gt;&nbsp;long)</td>
+<td>Return the long integer represented by the string s in the given base, which defaults to 10.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.capitalize.html#string.capitalize" title="string.capitalize"><code class="xref py py-obj docutils literal"><span class="pre">capitalize</span></code></a>((s)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string s with only its first character capitalized.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.capwords.html#string.capwords" title="string.capwords"><code class="xref py py-obj docutils literal"><span class="pre">capwords</span></code></a>((s&nbsp;[,sep])&nbsp;-&gt;&nbsp;string)</td>
+<td>Split the argument into words using split, capitalize each word using capitalize, and join the capitalized words using join.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.center.html#string.center" title="string.center"><code class="xref py py-obj docutils literal"><span class="pre">center</span></code></a>((s,&nbsp;width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a center version of s, in a field of the specified width.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.count.html#string.count" title="string.count"><code class="xref py py-obj docutils literal"><span class="pre">count</span></code></a>((s,&nbsp;sub[,&nbsp;start[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<td>Return the number of occurrences of substring sub in string s[start:end].</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.expandtabs.html#string.expandtabs" title="string.expandtabs"><code class="xref py py-obj docutils literal"><span class="pre">expandtabs</span></code></a>((s&nbsp;[,tabsize])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string s with all tab characters replaced by the appropriate number of spaces, depending on the current column, and the tabsize (default 8).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.find.html#string.find" title="string.find"><code class="xref py py-obj docutils literal"><span class="pre">find</span></code></a>((s,&nbsp;sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;in)</td>
+<td>Return the lowest index in s where substring sub is found, such that sub is contained within s[start,end].</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.index.html#string.index" title="string.index"><code class="xref py py-obj docutils literal"><span class="pre">index</span></code></a>((s,&nbsp;sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<td>Like find but raises ValueError when the substring is not found.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.join.html#string.join" title="string.join"><code class="xref py py-obj docutils literal"><span class="pre">join</span></code></a>((list&nbsp;[,sep])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a string composed of the words in list, with intervening occurrences of sep.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.joinfields.html#string.joinfields" title="string.joinfields"><code class="xref py py-obj docutils literal"><span class="pre">joinfields</span></code></a>(words[,&nbsp;sep])</td>
+<td>join(list [,sep]) -&gt; string</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.ljust.html#string.ljust" title="string.ljust"><code class="xref py py-obj docutils literal"><span class="pre">ljust</span></code></a>((s,&nbsp;width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a left-justified version of s, in a field of the specified width, padded with spaces as needed.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.lower.html#string.lower" title="string.lower"><code class="xref py py-obj docutils literal"><span class="pre">lower</span></code></a>((s)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string s converted to lowercase.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.lstrip.html#string.lstrip" title="string.lstrip"><code class="xref py py-obj docutils literal"><span class="pre">lstrip</span></code></a>((s&nbsp;[,chars])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string s with leading whitespace removed.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.maketrans.html#string.maketrans" title="string.maketrans"><code class="xref py py-obj docutils literal"><span class="pre">maketrans</span></code></a>((frm,&nbsp;to)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a translation table (a string of 256 bytes long) suitable for use in string.translate.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.replace.html#string.replace" title="string.replace"><code class="xref py py-obj docutils literal"><span class="pre">replace</span></code></a>((str,&nbsp;old,&nbsp;new[,&nbsp;maxreplace])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of string str with all occurrences of substring old replaced by new.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.rfind.html#string.rfind" title="string.rfind"><code class="xref py py-obj docutils literal"><span class="pre">rfind</span></code></a>((s,&nbsp;sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<td>Return the highest index in s where substring sub is found, such that sub is contained within s[start,end].</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.rindex.html#string.rindex" title="string.rindex"><code class="xref py py-obj docutils literal"><span class="pre">rindex</span></code></a>((s,&nbsp;sub&nbsp;[,start&nbsp;[,end]])&nbsp;-&gt;&nbsp;int)</td>
+<td>Like rfind but raises ValueError when the substring is not found.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.rjust.html#string.rjust" title="string.rjust"><code class="xref py py-obj docutils literal"><span class="pre">rjust</span></code></a>((s,&nbsp;width[,&nbsp;fillchar])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a right-justified version of s, in a field of the specified width, padded with spaces as needed.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.rsplit.html#string.rsplit" title="string.rsplit"><code class="xref py py-obj docutils literal"><span class="pre">rsplit</span></code></a>((s&nbsp;[,sep&nbsp;[,maxsplit]])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
+<td>Return a list of the words in the string s, using sep as the delimiter string, starting at the end of the string and working to the front.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.rstrip.html#string.rstrip" title="string.rstrip"><code class="xref py py-obj docutils literal"><span class="pre">rstrip</span></code></a>((s&nbsp;[,chars])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string s with trailing whitespace removed.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.split.html#string.split" title="string.split"><code class="xref py py-obj docutils literal"><span class="pre">split</span></code></a>((s&nbsp;[,sep&nbsp;[,maxsplit]])&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;strings)</td>
+<td>Return a list of the words in the string s, using sep as the delimiter string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.splitfields.html#string.splitfields" title="string.splitfields"><code class="xref py py-obj docutils literal"><span class="pre">splitfields</span></code></a>(s[,&nbsp;sep,&nbsp;maxsplit])</td>
+<td>split(s [,sep [,maxsplit]]) -&gt; list of strings</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.strip.html#string.strip" title="string.strip"><code class="xref py py-obj docutils literal"><span class="pre">strip</span></code></a>((s&nbsp;[,chars])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string s with leading and trailing whitespace removed.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.swapcase.html#string.swapcase" title="string.swapcase"><code class="xref py py-obj docutils literal"><span class="pre">swapcase</span></code></a>((s)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string s with upper case characters converted to lowercase and vice versa.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.translate.html#string.translate" title="string.translate"><code class="xref py py-obj docutils literal"><span class="pre">translate</span></code></a>((s,table&nbsp;[,deletions])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string s, where all characters occurring in the optional argument deletions are removed, and the remaining characters have been mapped through the given translation table, which must be a string of length 256.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/string.upper.html#string.upper" title="string.upper"><code class="xref py py-obj docutils literal"><span class="pre">upper</span></code></a>((s)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a copy of the string s converted to uppercase.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/string.zfill.html#string.zfill" title="string.zfill"><code class="xref py py-obj docutils literal"><span class="pre">zfill</span></code></a>((x,&nbsp;width)&nbsp;-&gt;&nbsp;string)</td>
+<td>Pad a numeric string x with zeros on the left, to fill a field of the specified width.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -219,7 +412,7 @@ printable &#8211; a string containing all characters considered printable</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/string.Formatter.html" class="btn btn-neutral float-right" title="string.Formatter" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/string.atof.html" class="btn btn-neutral float-right" title="string.atof()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="exceptions.ZeroDivisionError.html" class="btn btn-neutral" title="exceptions.ZeroDivisionError" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

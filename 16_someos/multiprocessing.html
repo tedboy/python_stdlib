@@ -270,12 +270,12 @@ leverage multiple processors on a given machine.  It runs on both Unix and
 Windows.</p>
 <p>The <a class="reference internal" href="../generated/multiprocessing.html#module-multiprocessing" title="multiprocessing"><code class="xref py py-mod docutils literal"><span class="pre">multiprocessing</span></code></a> module also introduces APIs which do not have
 analogs in the <a class="reference internal" href="../generated/threading.html#module-threading" title="threading"><code class="xref py py-mod docutils literal"><span class="pre">threading</span></code></a> module.  A prime example of this is the
-<a class="reference internal" href="../generated/multiprocessing.Pool.html#multiprocessing.Pool" title="multiprocessing.Pool"><code class="xref py py-class docutils literal"><span class="pre">Pool</span></code></a> object which offers a convenient means of parallelizing the
+<a class="reference internal" href="../generated/generated/multiprocessing.Pool.html#multiprocessing.Pool" title="multiprocessing.Pool"><code class="xref py py-class docutils literal"><span class="pre">Pool</span></code></a> object which offers a convenient means of parallelizing the
 execution of a function across multiple input values, distributing the
 input data across processes (data parallelism).  The following example
 demonstrates the common practice of defining such functions in a module so
 that child processes can successfully import that module.  This basic example
-of data parallelism using <a class="reference internal" href="../generated/multiprocessing.Pool.html#multiprocessing.Pool" title="multiprocessing.Pool"><code class="xref py py-class docutils literal"><span class="pre">Pool</span></code></a>,</p>
+of data parallelism using <a class="reference internal" href="../generated/generated/multiprocessing.Pool.html#multiprocessing.Pool" title="multiprocessing.Pool"><code class="xref py py-class docutils literal"><span class="pre">Pool</span></code></a>,</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span>
 
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -338,7 +338,7 @@ necessary, see <a class="reference internal" href="#multiprocessing-programming"
 processes:</p>
 <p><strong>Queues</strong></p>
 <blockquote>
-<div><p>The <a class="reference internal" href="../generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> class is a near clone of <a class="reference internal" href="../generated/generated/Queue.Queue.html#Queue.Queue" title="Queue.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue.Queue</span></code></a>.  For
+<div><p>The <a class="reference internal" href="../generated/generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> class is a near clone of <a class="reference internal" href="../generated/generated/Queue.Queue.html#Queue.Queue" title="Queue.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue.Queue</span></code></a>.  For
 example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Process</span><span class="p">,</span> <span class="n">Queue</span>
 
@@ -357,7 +357,7 @@ example:</p>
 </div></blockquote>
 <p><strong>Pipes</strong></p>
 <blockquote>
-<div><p>The <a class="reference internal" href="../generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a> function returns a pair of connection objects connected by a
+<div><p>The <a class="reference internal" href="../generated/generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a> function returns a pair of connection objects connected by a
 pipe which by default is duplex (two-way).  For example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Process</span><span class="p">,</span> <span class="n">Pipe</span>
 
@@ -373,7 +373,7 @@ pipe which by default is duplex (two-way).  For example:</p>
     <span class="n">p</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>The two connection objects returned by <a class="reference internal" href="../generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a> represent the two ends of
+<p>The two connection objects returned by <a class="reference internal" href="../generated/generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a> represent the two ends of
 the pipe.  Each connection object has <a class="reference internal" href="#multiprocessing.Connection.send" title="multiprocessing.Connection.send"><code class="xref py py-meth docutils literal"><span class="pre">send()</span></code></a> and
 <a class="reference internal" href="#multiprocessing.Connection.recv" title="multiprocessing.Connection.recv"><code class="xref py py-meth docutils literal"><span class="pre">recv()</span></code></a> methods (among others).  Note that data in a pipe
 may become corrupted if two processes (or threads) try to read from or write
@@ -413,8 +413,8 @@ using multiple processes.</p>
 <a class="reference internal" href="../generated/multiprocessing.html#module-multiprocessing" title="multiprocessing"><code class="xref py py-mod docutils literal"><span class="pre">multiprocessing</span></code></a> provides a couple of ways of doing so.</p>
 <p><strong>Shared memory</strong></p>
 <blockquote>
-<div><p>Data can be stored in a shared memory map using <a class="reference internal" href="../generated/multiprocessing.Value.html#multiprocessing.Value" title="multiprocessing.Value"><code class="xref py py-class docutils literal"><span class="pre">Value</span></code></a> or
-<a class="reference internal" href="../generated/multiprocessing.Array.html#multiprocessing.Array" title="multiprocessing.Array"><code class="xref py py-class docutils literal"><span class="pre">Array</span></code></a>.  For example, the following code</p>
+<div><p>Data can be stored in a shared memory map using <a class="reference internal" href="../generated/generated/multiprocessing.Value.html#multiprocessing.Value" title="multiprocessing.Value"><code class="xref py py-class docutils literal"><span class="pre">Value</span></code></a> or
+<a class="reference internal" href="../generated/generated/multiprocessing.Array.html#multiprocessing.Array" title="multiprocessing.Array"><code class="xref py py-class docutils literal"><span class="pre">Array</span></code></a>.  For example, the following code</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Process</span><span class="p">,</span> <span class="n">Value</span><span class="p">,</span> <span class="n">Array</span>
 
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
@@ -449,13 +449,13 @@ arbitrary ctypes objects allocated from shared memory.</p>
 </div></blockquote>
 <p><strong>Server process</strong></p>
 <blockquote>
-<div><p>A manager object returned by <a class="reference internal" href="../generated/multiprocessing.Manager.html#multiprocessing.Manager" title="multiprocessing.Manager"><code class="xref py py-func docutils literal"><span class="pre">Manager()</span></code></a> controls a server process which
+<div><p>A manager object returned by <a class="reference internal" href="../generated/generated/multiprocessing.Manager.html#multiprocessing.Manager" title="multiprocessing.Manager"><code class="xref py py-func docutils literal"><span class="pre">Manager()</span></code></a> controls a server process which
 holds Python objects and allows other processes to manipulate them using
 proxies.</p>
-<p>A manager returned by <a class="reference internal" href="../generated/multiprocessing.Manager.html#multiprocessing.Manager" title="multiprocessing.Manager"><code class="xref py py-func docutils literal"><span class="pre">Manager()</span></code></a> will support types <a class="reference internal" href="../02_builtin_functions/02.html#list" title="list"><code class="xref py py-class docutils literal"><span class="pre">list</span></code></a>,
-<a class="reference internal" href="../05_builtin_types/mapping_types.html#dict" title="dict"><code class="xref py py-class docutils literal"><span class="pre">dict</span></code></a>, <a class="reference internal" href="#multiprocessing.managers.Namespace" title="multiprocessing.managers.Namespace"><code class="xref py py-class docutils literal"><span class="pre">Namespace</span></code></a>, <a class="reference internal" href="../generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a>, <a class="reference internal" href="../generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a>,
-<a class="reference internal" href="../generated/multiprocessing.Semaphore.html#multiprocessing.Semaphore" title="multiprocessing.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a>, <a class="reference internal" href="../generated/multiprocessing.BoundedSemaphore.html#multiprocessing.BoundedSemaphore" title="multiprocessing.BoundedSemaphore"><code class="xref py py-class docutils literal"><span class="pre">BoundedSemaphore</span></code></a>, <a class="reference internal" href="../generated/multiprocessing.Condition.html#multiprocessing.Condition" title="multiprocessing.Condition"><code class="xref py py-class docutils literal"><span class="pre">Condition</span></code></a>,
-<a class="reference internal" href="../generated/multiprocessing.Event.html#multiprocessing.Event" title="multiprocessing.Event"><code class="xref py py-class docutils literal"><span class="pre">Event</span></code></a>, <a class="reference internal" href="../generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a>, <a class="reference internal" href="../generated/multiprocessing.Value.html#multiprocessing.Value" title="multiprocessing.Value"><code class="xref py py-class docutils literal"><span class="pre">Value</span></code></a> and <a class="reference internal" href="../generated/multiprocessing.Array.html#multiprocessing.Array" title="multiprocessing.Array"><code class="xref py py-class docutils literal"><span class="pre">Array</span></code></a>.  For
+<p>A manager returned by <a class="reference internal" href="../generated/generated/multiprocessing.Manager.html#multiprocessing.Manager" title="multiprocessing.Manager"><code class="xref py py-func docutils literal"><span class="pre">Manager()</span></code></a> will support types <a class="reference internal" href="../02_builtin_functions/02.html#list" title="list"><code class="xref py py-class docutils literal"><span class="pre">list</span></code></a>,
+<a class="reference internal" href="../05_builtin_types/mapping_types.html#dict" title="dict"><code class="xref py py-class docutils literal"><span class="pre">dict</span></code></a>, <a class="reference internal" href="#multiprocessing.managers.Namespace" title="multiprocessing.managers.Namespace"><code class="xref py py-class docutils literal"><span class="pre">Namespace</span></code></a>, <a class="reference internal" href="../generated/generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a>, <a class="reference internal" href="../generated/generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a>,
+<a class="reference internal" href="../generated/generated/multiprocessing.Semaphore.html#multiprocessing.Semaphore" title="multiprocessing.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a>, <a class="reference internal" href="../generated/generated/multiprocessing.BoundedSemaphore.html#multiprocessing.BoundedSemaphore" title="multiprocessing.BoundedSemaphore"><code class="xref py py-class docutils literal"><span class="pre">BoundedSemaphore</span></code></a>, <a class="reference internal" href="../generated/generated/multiprocessing.Condition.html#multiprocessing.Condition" title="multiprocessing.Condition"><code class="xref py py-class docutils literal"><span class="pre">Condition</span></code></a>,
+<a class="reference internal" href="../generated/generated/multiprocessing.Event.html#multiprocessing.Event" title="multiprocessing.Event"><code class="xref py py-class docutils literal"><span class="pre">Event</span></code></a>, <a class="reference internal" href="../generated/generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a>, <a class="reference internal" href="../generated/generated/multiprocessing.Value.html#multiprocessing.Value" title="multiprocessing.Value"><code class="xref py py-class docutils literal"><span class="pre">Value</span></code></a> and <a class="reference internal" href="../generated/generated/multiprocessing.Array.html#multiprocessing.Array" title="multiprocessing.Array"><code class="xref py py-class docutils literal"><span class="pre">Array</span></code></a>.  For
 example,</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Process</span><span class="p">,</span> <span class="n">Manager</span>
 
@@ -540,7 +540,7 @@ process which created it.</p>
 <p>Functionality within this package requires that the <code class="docutils literal"><span class="pre">__main__</span></code> module be
 importable by the children. This is covered in <a class="reference internal" href="#multiprocessing-programming"><span>Programming guidelines</span></a>
 however it is worth pointing out here. This means that some examples, such
-as the <a class="reference internal" href="../generated/multiprocessing.Pool.html#multiprocessing.Pool" title="multiprocessing.Pool"><code class="xref py py-class docutils literal"><span class="pre">Pool</span></code></a> examples will not work in the interactive interpreter.
+as the <a class="reference internal" href="../generated/generated/multiprocessing.Pool.html#multiprocessing.Pool" title="multiprocessing.Pool"><code class="xref py py-class docutils literal"><span class="pre">Pool</span></code></a> examples will not work in the interactive interpreter.
 For example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Pool</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -671,7 +671,7 @@ by signal <em>N</em>.</p>
 <code class="descname">authkey</code><a class="headerlink" href="#multiprocessing.Process.authkey" title="Permalink to this definition">¶</a></dt>
 <dd><p>The process&#8217;s authentication key (a byte string).</p>
 <p>When <a class="reference internal" href="../generated/multiprocessing.html#module-multiprocessing" title="multiprocessing"><code class="xref py py-mod docutils literal"><span class="pre">multiprocessing</span></code></a> is initialized the main process is assigned a
-random string using <a class="reference internal" href="../generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a>.</p>
+random string using <a class="reference internal" href="../generated/generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a>.</p>
 <p>When a <a class="reference internal" href="../generated/generated/multiprocessing.Process.html#multiprocessing.Process" title="multiprocessing.Process"><code class="xref py py-class docutils literal"><span class="pre">Process</span></code></a> object is created, it will inherit the
 authentication key of its parent process, although this may be changed by
 setting <a class="reference internal" href="../generated/generated/multiprocessing.Process.authkey.html#multiprocessing.Process.authkey" title="multiprocessing.Process.authkey"><code class="xref py py-attr docutils literal"><span class="pre">authkey</span></code></a> to another byte string.</p>
@@ -717,14 +717,14 @@ the message as a byte string.</p>
 <p>When using multiple processes, one generally uses message passing for
 communication between processes and avoids having to use any synchronization
 primitives like locks.</p>
-<p>For passing messages one can use <a class="reference internal" href="../generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a> (for a connection between two
+<p>For passing messages one can use <a class="reference internal" href="../generated/generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a> (for a connection between two
 processes) or a queue (which allows multiple producers and consumers).</p>
-<p>The <a class="reference internal" href="../generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a>, <a class="reference internal" href="#multiprocessing.multiprocessing.queues.SimpleQueue" title="multiprocessing.multiprocessing.queues.SimpleQueue"><code class="xref py py-class docutils literal"><span class="pre">multiprocessing.queues.SimpleQueue</span></code></a> and <a class="reference internal" href="../generated/multiprocessing.JoinableQueue.html#multiprocessing.JoinableQueue" title="multiprocessing.JoinableQueue"><code class="xref py py-class docutils literal"><span class="pre">JoinableQueue</span></code></a> types are multi-producer,
+<p>The <a class="reference internal" href="../generated/generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a>, <a class="reference internal" href="#multiprocessing.multiprocessing.queues.SimpleQueue" title="multiprocessing.multiprocessing.queues.SimpleQueue"><code class="xref py py-class docutils literal"><span class="pre">multiprocessing.queues.SimpleQueue</span></code></a> and <a class="reference internal" href="../generated/generated/multiprocessing.JoinableQueue.html#multiprocessing.JoinableQueue" title="multiprocessing.JoinableQueue"><code class="xref py py-class docutils literal"><span class="pre">JoinableQueue</span></code></a> types are multi-producer,
 multi-consumer FIFO queues modelled on the <a class="reference internal" href="../generated/generated/Queue.Queue.html#Queue.Queue" title="Queue.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue.Queue</span></code></a> class in the
-standard library.  They differ in that <a class="reference internal" href="../generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> lacks the
+standard library.  They differ in that <a class="reference internal" href="../generated/generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> lacks the
 <a class="reference internal" href="../08_datat_types/queue.html#Queue.Queue.task_done" title="Queue.Queue.task_done"><code class="xref py py-meth docutils literal"><span class="pre">task_done()</span></code></a> and <a class="reference internal" href="../08_datat_types/queue.html#Queue.Queue.join" title="Queue.Queue.join"><code class="xref py py-meth docutils literal"><span class="pre">join()</span></code></a> methods introduced
 into Python 2.5&#8217;s <a class="reference internal" href="../generated/generated/Queue.Queue.html#Queue.Queue" title="Queue.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue.Queue</span></code></a> class.</p>
-<p>If you use <a class="reference internal" href="../generated/multiprocessing.JoinableQueue.html#multiprocessing.JoinableQueue" title="multiprocessing.JoinableQueue"><code class="xref py py-class docutils literal"><span class="pre">JoinableQueue</span></code></a> then you <strong>must</strong> call
+<p>If you use <a class="reference internal" href="../generated/generated/multiprocessing.JoinableQueue.html#multiprocessing.JoinableQueue" title="multiprocessing.JoinableQueue"><code class="xref py py-class docutils literal"><span class="pre">JoinableQueue</span></code></a> then you <strong>must</strong> call
 <a class="reference internal" href="#multiprocessing.JoinableQueue.task_done" title="multiprocessing.JoinableQueue.task_done"><code class="xref py py-meth docutils literal"><span class="pre">JoinableQueue.task_done()</span></code></a> for each task removed from the queue or else the
 semaphore used to count the number of unfinished tasks may eventually overflow,
 raising an exception.</p>
@@ -758,8 +758,8 @@ the expected order with respect to each other.</li>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">If a process is killed using <a class="reference internal" href="../generated/generated/multiprocessing.Process.terminate.html#multiprocessing.Process.terminate" title="multiprocessing.Process.terminate"><code class="xref py py-meth docutils literal"><span class="pre">Process.terminate()</span></code></a> or <a class="reference internal" href="../generated/os.kill.html#os.kill" title="os.kill"><code class="xref py py-func docutils literal"><span class="pre">os.kill()</span></code></a>
-while it is trying to use a <a class="reference internal" href="../generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a>, then the data in the queue is
+<p class="last">If a process is killed using <a class="reference internal" href="../generated/generated/multiprocessing.Process.terminate.html#multiprocessing.Process.terminate" title="multiprocessing.Process.terminate"><code class="xref py py-meth docutils literal"><span class="pre">Process.terminate()</span></code></a> or <a class="reference internal" href="../generated/generated/os.kill.html#os.kill" title="os.kill"><code class="xref py py-func docutils literal"><span class="pre">os.kill()</span></code></a>
+while it is trying to use a <a class="reference internal" href="../generated/generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a>, then the data in the queue is
 likely to become corrupted.  This may cause any other process to get an
 exception when it tries to use the queue later on.</p>
 </div>
@@ -796,7 +796,7 @@ locks/semaphores.  When a process first puts an item on the queue a feeder
 thread is started which transfers objects from a buffer into the pipe.</p>
 <p>The usual <a class="reference internal" href="../generated/Queue.Empty.html#Queue.Empty" title="Queue.Empty"><code class="xref py py-exc docutils literal"><span class="pre">Queue.Empty</span></code></a> and <a class="reference internal" href="../generated/Queue.Full.html#Queue.Full" title="Queue.Full"><code class="xref py py-exc docutils literal"><span class="pre">Queue.Full</span></code></a> exceptions from the
 standard library&#8217;s <a class="reference internal" href="../generated/Queue.html#module-Queue" title="Queue"><code class="xref py py-mod docutils literal"><span class="pre">Queue</span></code></a> module are raised to signal timeouts.</p>
-<p><a class="reference internal" href="../generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> implements all the methods of <a class="reference internal" href="../generated/generated/Queue.Queue.html#Queue.Queue" title="Queue.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue.Queue</span></code></a> except for
+<p><a class="reference internal" href="../generated/generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> implements all the methods of <a class="reference internal" href="../generated/generated/Queue.Queue.html#Queue.Queue" title="Queue.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue.Queue</span></code></a> except for
 <a class="reference internal" href="../08_datat_types/queue.html#Queue.Queue.task_done" title="Queue.Queue.task_done"><code class="xref py py-meth docutils literal"><span class="pre">task_done()</span></code></a> and <a class="reference internal" href="../08_datat_types/queue.html#Queue.Queue.join" title="Queue.Queue.join"><code class="xref py py-meth docutils literal"><span class="pre">join()</span></code></a>.</p>
 <dl class="method">
 <dt id="multiprocessing.Queue.qsize">
@@ -858,7 +858,7 @@ exception if no item was available within that time.  Otherwise (block is
 <dd><p>Equivalent to <code class="docutils literal"><span class="pre">get(False)</span></code>.</p>
 </dd></dl>
 
-<p><a class="reference internal" href="../generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> has a few additional methods not found in
+<p><a class="reference internal" href="../generated/generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> has a few additional methods not found in
 <a class="reference internal" href="../generated/generated/Queue.Queue.html#Queue.Queue" title="Queue.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue.Queue</span></code></a>.  These methods are usually unnecessary for most
 code:</p>
 <dl class="method">
@@ -909,7 +909,7 @@ of the specialized queue types listed below.</p>
 <dl class="class">
 <dt id="multiprocessing.multiprocessing.queues.SimpleQueue">
 <em class="property">class </em><code class="descclassname">multiprocessing.queues.</code><code class="descname">SimpleQueue</code><a class="headerlink" href="#multiprocessing.multiprocessing.queues.SimpleQueue" title="Permalink to this definition">¶</a></dt>
-<dd><p>It is a simplified <a class="reference internal" href="../generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> type, very close to a locked <a class="reference internal" href="../generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-class docutils literal"><span class="pre">Pipe</span></code></a>.</p>
+<dd><p>It is a simplified <a class="reference internal" href="../generated/generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> type, very close to a locked <a class="reference internal" href="../generated/generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-class docutils literal"><span class="pre">Pipe</span></code></a>.</p>
 <dl class="method">
 <dt id="multiprocessing.multiprocessing.queues.SimpleQueue.empty">
 <code class="descname">empty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#multiprocessing.multiprocessing.queues.SimpleQueue.empty" title="Permalink to this definition">¶</a></dt>
@@ -933,7 +933,7 @@ of the specialized queue types listed below.</p>
 <dl class="class">
 <dt id="multiprocessing.JoinableQueue">
 <em class="property">class </em><code class="descclassname">multiprocessing.</code><code class="descname">JoinableQueue</code><span class="sig-paren">(</span><span class="optional">[</span><em>maxsize</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/multiprocessing.html#JoinableQueue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#multiprocessing.JoinableQueue" title="Permalink to this definition">¶</a></dt>
-<dd><p><a class="reference internal" href="../generated/multiprocessing.JoinableQueue.html#multiprocessing.JoinableQueue" title="multiprocessing.JoinableQueue"><code class="xref py py-class docutils literal"><span class="pre">JoinableQueue</span></code></a>, a <a class="reference internal" href="../generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> subclass, is a queue which
+<dd><p><a class="reference internal" href="../generated/generated/multiprocessing.JoinableQueue.html#multiprocessing.JoinableQueue" title="multiprocessing.JoinableQueue"><code class="xref py py-class docutils literal"><span class="pre">JoinableQueue</span></code></a>, a <a class="reference internal" href="../generated/generated/multiprocessing.Queue.html#multiprocessing.Queue" title="multiprocessing.Queue"><code class="xref py py-class docutils literal"><span class="pre">Queue</span></code></a> subclass, is a queue which
 additionally has <a class="reference internal" href="#multiprocessing.JoinableQueue.task_done" title="multiprocessing.JoinableQueue.task_done"><code class="xref py py-meth docutils literal"><span class="pre">task_done()</span></code></a> and <a class="reference internal" href="#multiprocessing.JoinableQueue.join" title="multiprocessing.JoinableQueue.join"><code class="xref py py-meth docutils literal"><span class="pre">join()</span></code></a> methods.</p>
 <dl class="method">
 <dt id="multiprocessing.JoinableQueue.task_done">
@@ -984,7 +984,7 @@ already finished.</p>
 <dt id="multiprocessing.current_process">
 <code class="descclassname">multiprocessing.</code><code class="descname">current_process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/multiprocessing/process.html#current_process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#multiprocessing.current_process" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the <a class="reference internal" href="../generated/generated/multiprocessing.Process.html#multiprocessing.Process" title="multiprocessing.Process"><code class="xref py py-class docutils literal"><span class="pre">Process</span></code></a> object corresponding to the current process.</p>
-<p>An analogue of <a class="reference internal" href="../generated/threading.current_thread.html#threading.current_thread" title="threading.current_thread"><code class="xref py py-func docutils literal"><span class="pre">threading.current_thread()</span></code></a>.</p>
+<p>An analogue of <a class="reference internal" href="../generated/generated/threading.current_thread.html#threading.current_thread" title="threading.current_thread"><code class="xref py py-func docutils literal"><span class="pre">threading.current_thread()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1028,16 +1028,16 @@ do some thing like</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last"><a class="reference internal" href="../generated/multiprocessing.html#module-multiprocessing" title="multiprocessing"><code class="xref py py-mod docutils literal"><span class="pre">multiprocessing</span></code></a> contains no analogues of
-<a class="reference internal" href="../generated/threading.active_count.html#threading.active_count" title="threading.active_count"><code class="xref py py-func docutils literal"><span class="pre">threading.active_count()</span></code></a>, <a class="reference internal" href="../generated/threading.enumerate.html#threading.enumerate" title="threading.enumerate"><code class="xref py py-func docutils literal"><span class="pre">threading.enumerate()</span></code></a>,
-<a class="reference internal" href="../generated/threading.settrace.html#threading.settrace" title="threading.settrace"><code class="xref py py-func docutils literal"><span class="pre">threading.settrace()</span></code></a>, <a class="reference internal" href="../generated/threading.setprofile.html#threading.setprofile" title="threading.setprofile"><code class="xref py py-func docutils literal"><span class="pre">threading.setprofile()</span></code></a>,
-<a class="reference internal" href="../generated/threading.Timer.html#threading.Timer" title="threading.Timer"><code class="xref py py-class docutils literal"><span class="pre">threading.Timer</span></code></a>, or <a class="reference internal" href="../generated/generated/threading.local.html#threading.local" title="threading.local"><code class="xref py py-class docutils literal"><span class="pre">threading.local</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/threading.active_count.html#threading.active_count" title="threading.active_count"><code class="xref py py-func docutils literal"><span class="pre">threading.active_count()</span></code></a>, <a class="reference internal" href="../generated/generated/threading.enumerate.html#threading.enumerate" title="threading.enumerate"><code class="xref py py-func docutils literal"><span class="pre">threading.enumerate()</span></code></a>,
+<a class="reference internal" href="../generated/generated/threading.settrace.html#threading.settrace" title="threading.settrace"><code class="xref py py-func docutils literal"><span class="pre">threading.settrace()</span></code></a>, <a class="reference internal" href="../generated/generated/threading.setprofile.html#threading.setprofile" title="threading.setprofile"><code class="xref py py-func docutils literal"><span class="pre">threading.setprofile()</span></code></a>,
+<a class="reference internal" href="../generated/generated/threading.Timer.html#threading.Timer" title="threading.Timer"><code class="xref py py-class docutils literal"><span class="pre">threading.Timer</span></code></a>, or <a class="reference internal" href="../generated/generated/threading.local.html#threading.local" title="threading.local"><code class="xref py py-class docutils literal"><span class="pre">threading.local</span></code></a>.</p>
 </div>
 </div>
 <div class="section" id="connection-objects">
 <h3><a class="toc-backref" href="#id21">6.2.4. Connection Objects</a><a class="headerlink" href="#connection-objects" title="Permalink to this headline">¶</a></h3>
 <p>Connection objects allow the sending and receiving of picklable objects or
 strings.  They can be thought of as message oriented connected sockets.</p>
-<p>Connection objects are usually created using <a class="reference internal" href="../generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a> &#8211; see also
+<p>Connection objects are usually created using <a class="reference internal" href="../generated/generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a> &#8211; see also
 <a class="reference internal" href="#multiprocessing-listeners-clients"><span>Listeners and Clients</span></a>.</p>
 <dl class="class">
 <dt id="multiprocessing.Connection">
@@ -1130,7 +1130,7 @@ is the exception instance.</p>
 <p>The <a class="reference internal" href="#multiprocessing.Connection.recv" title="multiprocessing.Connection.recv"><code class="xref py py-meth docutils literal"><span class="pre">Connection.recv()</span></code></a> method automatically unpickles the data it
 receives, which can be a security risk unless you can trust the process
 which sent the message.</p>
-<p class="last">Therefore, unless the connection object was produced using <a class="reference internal" href="../generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a> you
+<p class="last">Therefore, unless the connection object was produced using <a class="reference internal" href="../generated/generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a> you
 should only use the <a class="reference internal" href="#multiprocessing.Connection.recv" title="multiprocessing.Connection.recv"><code class="xref py py-meth docutils literal"><span class="pre">recv()</span></code></a> and <a class="reference internal" href="#multiprocessing.Connection.send" title="multiprocessing.Connection.send"><code class="xref py py-meth docutils literal"><span class="pre">send()</span></code></a>
 methods after performing some sort of authentication.  See
 <a class="reference internal" href="#multiprocessing-auth-keys"><span>Authentication keys</span></a>.</p>
@@ -1153,13 +1153,13 @@ object &#8211; see <a class="reference internal" href="#multiprocessing-managers
 <dt id="multiprocessing.BoundedSemaphore">
 <em class="property">class </em><code class="descclassname">multiprocessing.</code><code class="descname">BoundedSemaphore</code><span class="sig-paren">(</span><span class="optional">[</span><em>value</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/multiprocessing.html#BoundedSemaphore"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#multiprocessing.BoundedSemaphore" title="Permalink to this definition">¶</a></dt>
 <dd><p>A bounded semaphore object: a close analog of
-<a class="reference internal" href="../generated/threading.BoundedSemaphore.html#threading.BoundedSemaphore" title="threading.BoundedSemaphore"><code class="xref py py-class docutils literal"><span class="pre">threading.BoundedSemaphore</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/threading.BoundedSemaphore.html#threading.BoundedSemaphore" title="threading.BoundedSemaphore"><code class="xref py py-class docutils literal"><span class="pre">threading.BoundedSemaphore</span></code></a>.</p>
 <p>A solitary difference from its close analog exists: its <code class="docutils literal"><span class="pre">acquire</span></code> method&#8217;s
 first argument is named <em>block</em> and it supports an optional second argument
 <em>timeout</em>, as is consistent with <a class="reference internal" href="#multiprocessing.Lock.acquire" title="multiprocessing.Lock.acquire"><code class="xref py py-meth docutils literal"><span class="pre">Lock.acquire()</span></code></a>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">On Mac OS X, this is indistinguishable from <a class="reference internal" href="../generated/multiprocessing.Semaphore.html#multiprocessing.Semaphore" title="multiprocessing.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a> because
+<p class="last">On Mac OS X, this is indistinguishable from <a class="reference internal" href="../generated/generated/multiprocessing.Semaphore.html#multiprocessing.Semaphore" title="multiprocessing.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a> because
 <code class="docutils literal"><span class="pre">sem_getvalue()</span></code> is not implemented on that platform.</p>
 </div>
 </dd></dl>
@@ -1167,15 +1167,15 @@ first argument is named <em>block</em> and it supports an optional second argume
 <dl class="class">
 <dt id="multiprocessing.Condition">
 <em class="property">class </em><code class="descclassname">multiprocessing.</code><code class="descname">Condition</code><span class="sig-paren">(</span><span class="optional">[</span><em>lock</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/multiprocessing.html#Condition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#multiprocessing.Condition" title="Permalink to this definition">¶</a></dt>
-<dd><p>A condition variable: a clone of <a class="reference internal" href="../generated/threading.Condition.html#threading.Condition" title="threading.Condition"><code class="xref py py-class docutils literal"><span class="pre">threading.Condition</span></code></a>.</p>
-<p>If <em>lock</em> is specified then it should be a <a class="reference internal" href="../generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> or <a class="reference internal" href="../generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a>
+<dd><p>A condition variable: a clone of <a class="reference internal" href="../generated/generated/threading.Condition.html#threading.Condition" title="threading.Condition"><code class="xref py py-class docutils literal"><span class="pre">threading.Condition</span></code></a>.</p>
+<p>If <em>lock</em> is specified then it should be a <a class="reference internal" href="../generated/generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> or <a class="reference internal" href="../generated/generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a>
 object from <a class="reference internal" href="../generated/multiprocessing.html#module-multiprocessing" title="multiprocessing"><code class="xref py py-mod docutils literal"><span class="pre">multiprocessing</span></code></a>.</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="multiprocessing.Event">
 <em class="property">class </em><code class="descclassname">multiprocessing.</code><code class="descname">Event</code><a class="reference internal" href="../_modules/multiprocessing.html#Event"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#multiprocessing.Event" title="Permalink to this definition">¶</a></dt>
-<dd><p>A clone of <a class="reference internal" href="../generated/threading.Event.html#threading.Event" title="threading.Event"><code class="xref py py-class docutils literal"><span class="pre">threading.Event</span></code></a>.
+<dd><p>A clone of <a class="reference internal" href="../generated/generated/threading.Event.html#threading.Event" title="threading.Event"><code class="xref py py-class docutils literal"><span class="pre">threading.Event</span></code></a>.
 This method returns the state of the internal semaphore on exit, so it
 will always return <code class="docutils literal"><span class="pre">True</span></code> except if a timeout is given and the operation
 times out.</p>
@@ -1187,17 +1187,17 @@ times out.</p>
 <dl class="class">
 <dt id="multiprocessing.Lock">
 <em class="property">class </em><code class="descclassname">multiprocessing.</code><code class="descname">Lock</code><a class="reference internal" href="../_modules/multiprocessing.html#Lock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#multiprocessing.Lock" title="Permalink to this definition">¶</a></dt>
-<dd><p>A non-recursive lock object: a close analog of <a class="reference internal" href="../generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">threading.Lock</span></code></a>.
+<dd><p>A non-recursive lock object: a close analog of <a class="reference internal" href="../generated/generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">threading.Lock</span></code></a>.
 Once a process or thread has acquired a lock, subsequent attempts to
 acquire it from any process or thread will block until it is released;
 any process or thread may release it.  The concepts and behaviors of
-<a class="reference internal" href="../generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">threading.Lock</span></code></a> as it applies to threads are replicated here in
-<a class="reference internal" href="../generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">multiprocessing.Lock</span></code></a> as it applies to either processes or threads,
+<a class="reference internal" href="../generated/generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">threading.Lock</span></code></a> as it applies to threads are replicated here in
+<a class="reference internal" href="../generated/generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">multiprocessing.Lock</span></code></a> as it applies to either processes or threads,
 except as noted.</p>
-<p>Note that <a class="reference internal" href="../generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> is actually a factory function which returns an
+<p>Note that <a class="reference internal" href="../generated/generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> is actually a factory function which returns an
 instance of <code class="docutils literal"><span class="pre">multiprocessing.synchronize.Lock</span></code> initialized with a
 default context.</p>
-<p><a class="reference internal" href="../generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> supports the <span class="xref std std-term">context manager</span> protocol and thus may be
+<p><a class="reference internal" href="../generated/generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> supports the <span class="xref std std-term">context manager</span> protocol and thus may be
 used in <code class="xref std std-keyword docutils literal"><span class="pre">with</span></code> statements.</p>
 <dl class="method">
 <dt id="multiprocessing.Lock.acquire">
@@ -1236,15 +1236,15 @@ when invoked on an unlocked lock, a <a class="reference internal" href="../gener
 <dl class="class">
 <dt id="multiprocessing.RLock">
 <em class="property">class </em><code class="descclassname">multiprocessing.</code><code class="descname">RLock</code><a class="reference internal" href="../_modules/multiprocessing.html#RLock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#multiprocessing.RLock" title="Permalink to this definition">¶</a></dt>
-<dd><p>A recursive lock object: a close analog of <a class="reference internal" href="../generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">threading.RLock</span></code></a>.  A
+<dd><p>A recursive lock object: a close analog of <a class="reference internal" href="../generated/generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">threading.RLock</span></code></a>.  A
 recursive lock must be released by the process or thread that acquired it.
 Once a process or thread has acquired a recursive lock, the same process
 or thread may acquire it again without blocking; that process or thread
 must release it once for each time it has been acquired.</p>
-<p>Note that <a class="reference internal" href="../generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> is actually a factory function which returns an
+<p>Note that <a class="reference internal" href="../generated/generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> is actually a factory function which returns an
 instance of <code class="docutils literal"><span class="pre">multiprocessing.synchronize.RLock</span></code> initialized with a
 default context.</p>
-<p><a class="reference internal" href="../generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> supports the <span class="xref std std-term">context manager</span> protocol and thus may be
+<p><a class="reference internal" href="../generated/generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> supports the <span class="xref std std-term">context manager</span> protocol and thus may be
 used in <code class="xref std std-keyword docutils literal"><span class="pre">with</span></code> statements.</p>
 <dl class="method">
 <dt id="multiprocessing.RLock.acquire">
@@ -1293,7 +1293,7 @@ differs from the implemented behavior in <a class="reference internal" href="thr
 <dl class="class">
 <dt id="multiprocessing.Semaphore">
 <em class="property">class </em><code class="descclassname">multiprocessing.</code><code class="descname">Semaphore</code><span class="sig-paren">(</span><span class="optional">[</span><em>value</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/multiprocessing.html#Semaphore"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#multiprocessing.Semaphore" title="Permalink to this definition">¶</a></dt>
-<dd><p>A semaphore object: a close analog of <a class="reference internal" href="../generated/threading.Semaphore.html#threading.Semaphore" title="threading.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">threading.Semaphore</span></code></a>.</p>
+<dd><p>A semaphore object: a close analog of <a class="reference internal" href="../generated/generated/threading.Semaphore.html#threading.Semaphore" title="threading.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">threading.Semaphore</span></code></a>.</p>
 <p>A solitary difference from its close analog exists: its <code class="docutils literal"><span class="pre">acquire</span></code> method&#8217;s
 first argument is named <em>block</em> and it supports an optional second argument
 <em>timeout</em>, as is consistent with <a class="reference internal" href="#multiprocessing.Lock.acquire" title="multiprocessing.Lock.acquire"><code class="xref py py-meth docutils literal"><span class="pre">Lock.acquire()</span></code></a>.</p>
@@ -1301,8 +1301,8 @@ first argument is named <em>block</em> and it supports an optional second argume
 
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>The <code class="xref py py-meth docutils literal"><span class="pre">acquire()</span></code> method of <a class="reference internal" href="../generated/multiprocessing.BoundedSemaphore.html#multiprocessing.BoundedSemaphore" title="multiprocessing.BoundedSemaphore"><code class="xref py py-class docutils literal"><span class="pre">BoundedSemaphore</span></code></a>, <a class="reference internal" href="../generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a>,
-<a class="reference internal" href="../generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> and <a class="reference internal" href="../generated/multiprocessing.Semaphore.html#multiprocessing.Semaphore" title="multiprocessing.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a> has a timeout parameter not supported
+<p>The <code class="xref py py-meth docutils literal"><span class="pre">acquire()</span></code> method of <a class="reference internal" href="../generated/generated/multiprocessing.BoundedSemaphore.html#multiprocessing.BoundedSemaphore" title="multiprocessing.BoundedSemaphore"><code class="xref py py-class docutils literal"><span class="pre">BoundedSemaphore</span></code></a>, <a class="reference internal" href="../generated/generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a>,
+<a class="reference internal" href="../generated/generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> and <a class="reference internal" href="../generated/generated/multiprocessing.Semaphore.html#multiprocessing.Semaphore" title="multiprocessing.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">Semaphore</span></code></a> has a timeout parameter not supported
 by the equivalents in <a class="reference internal" href="../generated/threading.html#module-threading" title="threading"><code class="xref py py-mod docutils literal"><span class="pre">threading</span></code></a>.  The signature is
 <code class="docutils literal"><span class="pre">acquire(block=True,</span> <span class="pre">timeout=None)</span></code> with keyword parameters being
 acceptable.  If <em>block</em> is <code class="docutils literal"><span class="pre">True</span></code> and <em>timeout</em> is not <code class="docutils literal"><span class="pre">None</span></code> then it
@@ -1344,7 +1344,7 @@ ctypes type or a one character typecode of the kind used by the <a class="refere
 module.  <em>*args</em> is passed on to the constructor for the type.</p>
 <p>If <em>lock</em> is <code class="docutils literal"><span class="pre">True</span></code> (the default) then a new recursive lock
 object is created to synchronize access to the value.  If <em>lock</em> is
-a <a class="reference internal" href="../generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> or <a class="reference internal" href="../generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object then that will be used to
+a <a class="reference internal" href="../generated/generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> or <a class="reference internal" href="../generated/generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object then that will be used to
 synchronize access to the value.  If <em>lock</em> is <code class="docutils literal"><span class="pre">False</span></code> then
 access to the returned object will not be automatically protected
 by a lock, so it will not necessarily be &#8220;process-safe&#8221;.</p>
@@ -1375,8 +1375,8 @@ determines the length of the array, and the array will be initially zeroed.
 Otherwise, <em>size_or_initializer</em> is a sequence which is used to initialize
 the array and whose length determines the length of the array.</p>
 <p>If <em>lock</em> is <code class="docutils literal"><span class="pre">True</span></code> (the default) then a new lock object is created to
-synchronize access to the value.  If <em>lock</em> is a <a class="reference internal" href="../generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> or
-<a class="reference internal" href="../generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object then that will be used to synchronize access to the
+synchronize access to the value.  If <em>lock</em> is a <a class="reference internal" href="../generated/generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> or
+<a class="reference internal" href="../generated/generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object then that will be used to synchronize access to the
 value.  If <em>lock</em> is <code class="docutils literal"><span class="pre">False</span></code> then access to the returned object will not be
 automatically protected by a lock, so it will not necessarily be
 &#8220;process-safe&#8221;.</p>
@@ -1436,7 +1436,7 @@ process-safe synchronization wrapper may be returned instead of a raw ctypes
 array.</p>
 <p>If <em>lock</em> is <code class="docutils literal"><span class="pre">True</span></code> (the default) then a new lock object is created to
 synchronize access to the value.  If <em>lock</em> is a
-<a class="reference internal" href="../generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> or <a class="reference internal" href="../generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object
+<a class="reference internal" href="../generated/generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> or <a class="reference internal" href="../generated/generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object
 then that will be used to synchronize access to the
 value.  If <em>lock</em> is <code class="docutils literal"><span class="pre">False</span></code> then access to the returned object will not be
 automatically protected by a lock, so it will not necessarily be
@@ -1451,8 +1451,8 @@ automatically protected by a lock, so it will not necessarily be
 process-safe synchronization wrapper may be returned instead of a raw ctypes
 object.</p>
 <p>If <em>lock</em> is <code class="docutils literal"><span class="pre">True</span></code> (the default) then a new lock object is created to
-synchronize access to the value.  If <em>lock</em> is a <a class="reference internal" href="../generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> or
-<a class="reference internal" href="../generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object then that will be used to synchronize access to the
+synchronize access to the value.  If <em>lock</em> is a <a class="reference internal" href="../generated/generated/multiprocessing.Lock.html#multiprocessing.Lock" title="multiprocessing.Lock"><code class="xref py py-class docutils literal"><span class="pre">Lock</span></code></a> or
+<a class="reference internal" href="../generated/generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">RLock</span></code></a> object then that will be used to synchronize access to the
 value.  If <em>lock</em> is <code class="docutils literal"><span class="pre">False</span></code> then access to the returned object will not be
 automatically protected by a lock, so it will not necessarily be
 &#8220;process-safe&#8221;.</p>
@@ -1471,7 +1471,7 @@ ctypes object <em>obj</em>.</p>
 <code class="descclassname">multiprocessing.sharedctypes.</code><code class="descname">synchronized</code><span class="sig-paren">(</span><em>obj</em><span class="optional">[</span>, <em>lock</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/multiprocessing/sharedctypes.html#synchronized"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#multiprocessing.sharedctypes.synchronized" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a process-safe wrapper object for a ctypes object which uses <em>lock</em> to
 synchronize access.  If <em>lock</em> is <code class="docutils literal"><span class="pre">None</span></code> (the default) then a
-<a class="reference internal" href="../generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">multiprocessing.RLock</span></code></a> object is created automatically.</p>
+<a class="reference internal" href="../generated/generated/multiprocessing.RLock.html#multiprocessing.RLock" title="multiprocessing.RLock"><code class="xref py py-class docutils literal"><span class="pre">multiprocessing.RLock</span></code></a> object is created automatically.</p>
 <p>A synchronized wrapper will have two methods in addition to those of the
 object it wraps: <code class="xref py py-meth docutils literal"><span class="pre">get_obj()</span></code> returns the wrapped object and
 <code class="xref py py-meth docutils literal"><span class="pre">get_lock()</span></code> returns the lock object used for synchronization.</p>
@@ -1674,34 +1674,34 @@ shared object and return a proxy for it.  By default it is <code class="docutils
 <em class="property">class </em><code class="descclassname">multiprocessing.managers.</code><code class="descname">SyncManager</code><a class="reference internal" href="../_modules/multiprocessing/managers.html#SyncManager"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#multiprocessing.managers.SyncManager" title="Permalink to this definition">¶</a></dt>
 <dd><p>A subclass of <a class="reference internal" href="#multiprocessing.managers.BaseManager" title="multiprocessing.managers.BaseManager"><code class="xref py py-class docutils literal"><span class="pre">BaseManager</span></code></a> which can be used for the synchronization
 of processes.  Objects of this type are returned by
-<a class="reference internal" href="../generated/multiprocessing.Manager.html#multiprocessing.Manager" title="multiprocessing.Manager"><code class="xref py py-func docutils literal"><span class="pre">multiprocessing.Manager()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/multiprocessing.Manager.html#multiprocessing.Manager" title="multiprocessing.Manager"><code class="xref py py-func docutils literal"><span class="pre">multiprocessing.Manager()</span></code></a>.</p>
 <p>It also supports creation of shared lists and dictionaries.</p>
 <dl class="method">
 <dt id="multiprocessing.managers.SyncManager.BoundedSemaphore">
 <code class="descname">BoundedSemaphore</code><span class="sig-paren">(</span><span class="optional">[</span><em>value</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#multiprocessing.managers.SyncManager.BoundedSemaphore" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a shared <a class="reference internal" href="../generated/threading.BoundedSemaphore.html#threading.BoundedSemaphore" title="threading.BoundedSemaphore"><code class="xref py py-class docutils literal"><span class="pre">threading.BoundedSemaphore</span></code></a> object and return a
+<dd><p>Create a shared <a class="reference internal" href="../generated/generated/threading.BoundedSemaphore.html#threading.BoundedSemaphore" title="threading.BoundedSemaphore"><code class="xref py py-class docutils literal"><span class="pre">threading.BoundedSemaphore</span></code></a> object and return a
 proxy for it.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="multiprocessing.managers.SyncManager.Condition">
 <code class="descname">Condition</code><span class="sig-paren">(</span><span class="optional">[</span><em>lock</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#multiprocessing.managers.SyncManager.Condition" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a shared <a class="reference internal" href="../generated/threading.Condition.html#threading.Condition" title="threading.Condition"><code class="xref py py-class docutils literal"><span class="pre">threading.Condition</span></code></a> object and return a proxy for
+<dd><p>Create a shared <a class="reference internal" href="../generated/generated/threading.Condition.html#threading.Condition" title="threading.Condition"><code class="xref py py-class docutils literal"><span class="pre">threading.Condition</span></code></a> object and return a proxy for
 it.</p>
 <p>If <em>lock</em> is supplied then it should be a proxy for a
-<a class="reference internal" href="../generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">threading.Lock</span></code></a> or <a class="reference internal" href="../generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">threading.RLock</span></code></a> object.</p>
+<a class="reference internal" href="../generated/generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">threading.Lock</span></code></a> or <a class="reference internal" href="../generated/generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">threading.RLock</span></code></a> object.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="multiprocessing.managers.SyncManager.Event">
 <code class="descname">Event</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#multiprocessing.managers.SyncManager.Event" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a shared <a class="reference internal" href="../generated/threading.Event.html#threading.Event" title="threading.Event"><code class="xref py py-class docutils literal"><span class="pre">threading.Event</span></code></a> object and return a proxy for it.</p>
+<dd><p>Create a shared <a class="reference internal" href="../generated/generated/threading.Event.html#threading.Event" title="threading.Event"><code class="xref py py-class docutils literal"><span class="pre">threading.Event</span></code></a> object and return a proxy for it.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="multiprocessing.managers.SyncManager.Lock">
 <code class="descname">Lock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#multiprocessing.managers.SyncManager.Lock" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a shared <a class="reference internal" href="../generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">threading.Lock</span></code></a> object and return a proxy for it.</p>
+<dd><p>Create a shared <a class="reference internal" href="../generated/generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-class docutils literal"><span class="pre">threading.Lock</span></code></a> object and return a proxy for it.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1719,13 +1719,13 @@ it.</p>
 <dl class="method">
 <dt id="multiprocessing.managers.SyncManager.RLock">
 <code class="descname">RLock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#multiprocessing.managers.SyncManager.RLock" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a shared <a class="reference internal" href="../generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">threading.RLock</span></code></a> object and return a proxy for it.</p>
+<dd><p>Create a shared <a class="reference internal" href="../generated/generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-class docutils literal"><span class="pre">threading.RLock</span></code></a> object and return a proxy for it.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="multiprocessing.managers.SyncManager.Semaphore">
 <code class="descname">Semaphore</code><span class="sig-paren">(</span><span class="optional">[</span><em>value</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#multiprocessing.managers.SyncManager.Semaphore" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a shared <a class="reference internal" href="../generated/threading.Semaphore.html#threading.Semaphore" title="threading.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">threading.Semaphore</span></code></a> object and return a proxy for
+<dd><p>Create a shared <a class="reference internal" href="../generated/generated/threading.Semaphore.html#threading.Semaphore" title="threading.Semaphore"><code class="xref py py-class docutils literal"><span class="pre">threading.Semaphore</span></code></a> object and return a proxy for
 it.</p>
 </dd></dl>
 
@@ -2140,7 +2140,7 @@ raise <a class="reference internal" href="../generated/exceptions.AssertionError
 <span id="listeners-and-clients"></span><span id="multiprocessing-listeners-clients"></span><h3><a class="toc-backref" href="#id27">6.2.10. Listeners and Clients</a><a class="headerlink" href="#module-multiprocessing.connection" title="Permalink to this headline">¶</a></h3>
 <p>Usually message passing between processes is done using queues or by using
 <a class="reference internal" href="#multiprocessing.Connection" title="multiprocessing.Connection"><code class="xref py py-class docutils literal"><span class="pre">Connection</span></code></a> objects returned by
-<a class="reference internal" href="../generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/multiprocessing.Pipe.html#multiprocessing.Pipe" title="multiprocessing.Pipe"><code class="xref py py-func docutils literal"><span class="pre">Pipe()</span></code></a>.</p>
 <p>However, the <a class="reference internal" href="#module-multiprocessing.connection" title="multiprocessing.connection: API for dealing with sockets."><code class="xref py py-mod docutils literal"><span class="pre">multiprocessing.connection</span></code></a> module allows some extra
 flexibility.  It basically gives a high level message oriented API for dealing
 with sockets or Windows named pipes, and also has support for <em>digest
@@ -2201,7 +2201,7 @@ family is inferred from the format of <em>address</em>.  If <em>address</em> is 
 assumed to be the fastest available.  See
 <a class="reference internal" href="#multiprocessing-address-formats"><span>Address Formats</span></a>.  Note that if <em>family</em> is
 <code class="docutils literal"><span class="pre">'AF_UNIX'</span></code> and address is <code class="docutils literal"><span class="pre">None</span></code> then the socket will be created in a
-private temporary directory created using <a class="reference internal" href="../generated/tempfile.mkstemp.html#tempfile.mkstemp" title="tempfile.mkstemp"><code class="xref py py-func docutils literal"><span class="pre">tempfile.mkstemp()</span></code></a>.</p>
+private temporary directory created using <a class="reference internal" href="../generated/generated/tempfile.mkstemp.html#tempfile.mkstemp" title="tempfile.mkstemp"><code class="xref py py-func docutils literal"><span class="pre">tempfile.mkstemp()</span></code></a>.</p>
 <p>If the listener object uses a socket then <em>backlog</em> (1 by default) is passed
 to the <a class="reference internal" href="../17_ipc/socket.html#socket.socket.listen" title="socket.socket.listen"><code class="xref py py-meth docutils literal"><span class="pre">listen()</span></code></a> method of the socket once it has been
 bound.</p>
@@ -2336,7 +2336,7 @@ any <a class="reference internal" href="../generated/generated/multiprocessing.P
 This means that (by default) all processes of a multi-process program will share
 a single authentication key which can be used when setting up connections
 between themselves.</p>
-<p>Suitable authentication keys can also be generated by using <a class="reference internal" href="../generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a>.</p>
+<p>Suitable authentication keys can also be generated by using <a class="reference internal" href="../generated/generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a>.</p>
 </div>
 <div class="section" id="logging">
 <h3><a class="toc-backref" href="#id29">6.2.12. Logging</a><a class="headerlink" href="#logging" title="Permalink to this headline">¶</a></h3>
@@ -2359,7 +2359,7 @@ inherited.</p>
 <dl class="function">
 <dt id="multiprocessing.log_to_stderr">
 <code class="descclassname">multiprocessing.</code><code class="descname">log_to_stderr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/multiprocessing.html#log_to_stderr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#multiprocessing.log_to_stderr" title="Permalink to this definition">¶</a></dt>
-<dd><p>This function performs a call to <a class="reference internal" href="../generated/multiprocessing.get_logger.html#multiprocessing.get_logger" title="multiprocessing.get_logger"><code class="xref py py-func docutils literal"><span class="pre">get_logger()</span></code></a> but in addition to
+<dd><p>This function performs a call to <a class="reference internal" href="../generated/generated/multiprocessing.get_logger.html#multiprocessing.get_logger" title="multiprocessing.get_logger"><code class="xref py py-func docutils literal"><span class="pre">get_logger()</span></code></a> but in addition to
 returning the logger created by get_logger, it adds a handler which sends
 output to <a class="reference internal" href="../28_runtime_service/sys.html#sys.stderr" title="sys.stderr"><code class="xref py py-data docutils literal"><span class="pre">sys.stderr</span></code></a> using format
 <code class="docutils literal"><span class="pre">'[%(levelname)s/%(processName)s]</span> <span class="pre">%(message)s'</span></code>.</p>
@@ -2461,7 +2461,7 @@ with a lock.</p>
 <blockquote>
 <div>On Unix when a process finishes but has not been joined it becomes a zombie.
 There should never be very many because each time a new process starts (or
-<a class="reference internal" href="../generated/multiprocessing.active_children.html#multiprocessing.active_children" title="multiprocessing.active_children"><code class="xref py py-func docutils literal"><span class="pre">active_children()</span></code></a> is called) all completed processes
+<a class="reference internal" href="../generated/generated/multiprocessing.active_children.html#multiprocessing.active_children" title="multiprocessing.active_children"><code class="xref py py-func docutils literal"><span class="pre">active_children()</span></code></a> is called) all completed processes
 which have not yet been joined will be joined.  Also calling a finished
 process&#8217;s <a class="reference internal" href="../generated/generated/multiprocessing.Process.is_alive.html#multiprocessing.Process.is_alive" title="multiprocessing.Process.is_alive"><code class="xref py py-meth docutils literal"><span class="pre">Process.is_alive</span></code></a> will
 join the process.  Even so it is probably good
@@ -2582,7 +2582,7 @@ and discarding the cache when the pid changes. For example:</p>
 </div>
 <div class="section" id="windows">
 <h3><a class="toc-backref" href="#id33">6.3.2. Windows</a><a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
-<p>Since Windows lacks <a class="reference internal" href="../generated/os.fork.html#os.fork" title="os.fork"><code class="xref py py-func docutils literal"><span class="pre">os.fork()</span></code></a> it has a few extra restrictions:</p>
+<p>Since Windows lacks <a class="reference internal" href="../generated/generated/os.fork.html#os.fork" title="os.fork"><code class="xref py py-func docutils literal"><span class="pre">os.fork()</span></code></a> it has a few extra restrictions:</p>
 <p>More picklability</p>
 <blockquote>
 <div><p>Ensure that all arguments to <code class="xref py py-meth docutils literal"><span class="pre">Process.__init__()</span></code> are picklable.  This

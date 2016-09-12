@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       calcsize
       pack
       pack_into
       unpack
       unpack_from
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/struct.calcsize
+       generated/struct.pack
+       generated/struct.pack_into
+       generated/struct.unpack
+       generated/struct.unpack_from
+      
    
    
 

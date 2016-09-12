@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       choose_boundary
       copybinary
@@ -21,6 +21,22 @@
       pipethrough
       pipeto
       warnpy3k
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/mimetools.choose_boundary
+       generated/mimetools.copybinary
+       generated/mimetools.copyliteral
+       generated/mimetools.decode
+       generated/mimetools.encode
+       generated/mimetools.filterwarnings
+       generated/mimetools.pipethrough
+       generated/mimetools.pipeto
+       generated/mimetools.warnpy3k
+      
    
    
 

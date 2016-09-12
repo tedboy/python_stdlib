@@ -403,7 +403,7 @@ objects.</p>
 <dt id="tarfile.ENCODING">
 <code class="descclassname">tarfile.</code><code class="descname">ENCODING</code><a class="headerlink" href="#tarfile.ENCODING" title="Permalink to this definition">¶</a></dt>
 <dd><p>The default character encoding: <code class="docutils literal"><span class="pre">'utf-8'</span></code> on Windows, the value returned by
-<a class="reference internal" href="../generated/sys.getfilesystemencoding.html#sys.getfilesystemencoding" title="sys.getfilesystemencoding"><code class="xref py py-func docutils literal"><span class="pre">sys.getfilesystemencoding()</span></code></a> otherwise.</p>
+<a class="reference internal" href="../generated/generated/sys.getfilesystemencoding.html#sys.getfilesystemencoding" title="sys.getfilesystemencoding"><code class="xref py py-func docutils literal"><span class="pre">sys.getfilesystemencoding()</span></code></a> otherwise.</p>
 </dd></dl>
 
 <dl class="exception">
@@ -671,7 +671,7 @@ avoid irritation about the file size.</p>
 <dl class="method">
 <dt id="tarfile.TarFile.gettarinfo">
 <code class="descclassname">TarFile.</code><code class="descname">gettarinfo</code><span class="sig-paren">(</span><em>name=None</em>, <em>arcname=None</em>, <em>fileobj=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tarfile.html#TarFile.gettarinfo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tarfile.TarFile.gettarinfo" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a <a class="reference internal" href="../generated/generated/tarfile.TarInfo.html#tarfile.TarInfo" title="tarfile.TarInfo"><code class="xref py py-class docutils literal"><span class="pre">TarInfo</span></code></a> object from the result of <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a> or
+<dd><p>Create a <a class="reference internal" href="../generated/generated/tarfile.TarInfo.html#tarfile.TarInfo" title="tarfile.TarInfo"><code class="xref py py-class docutils literal"><span class="pre">TarInfo</span></code></a> object from the result of <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a> or
 equivalent on an existing file.  The file is either named by <em>name</em>, or
 specified as a file object <em>fileobj</em> with a file descriptor.  If
 given, <em>arcname</em> specifies an alternative name for the file in the
@@ -1011,7 +1011,7 @@ these <em>UTF-8</em> names are converted to the encoding of the local file syste
 <p>The details of unicode conversion are controlled by the <em>encoding</em> and <em>errors</em>
 keyword arguments of the <a class="reference internal" href="../generated/generated/tarfile.TarFile.html#tarfile.TarFile" title="tarfile.TarFile"><code class="xref py py-class docutils literal"><span class="pre">TarFile</span></code></a> class.</p>
 <p>The default value for <em>encoding</em> is the local character encoding. It is deduced
-from <a class="reference internal" href="../generated/sys.getfilesystemencoding.html#sys.getfilesystemencoding" title="sys.getfilesystemencoding"><code class="xref py py-func docutils literal"><span class="pre">sys.getfilesystemencoding()</span></code></a> and <a class="reference internal" href="../generated/sys.getdefaultencoding.html#sys.getdefaultencoding" title="sys.getdefaultencoding"><code class="xref py py-func docutils literal"><span class="pre">sys.getdefaultencoding()</span></code></a>. In
+from <a class="reference internal" href="../generated/generated/sys.getfilesystemencoding.html#sys.getfilesystemencoding" title="sys.getfilesystemencoding"><code class="xref py py-func docutils literal"><span class="pre">sys.getfilesystemencoding()</span></code></a> and <a class="reference internal" href="../generated/generated/sys.getdefaultencoding.html#sys.getdefaultencoding" title="sys.getdefaultencoding"><code class="xref py py-func docutils literal"><span class="pre">sys.getdefaultencoding()</span></code></a>. In
 read mode, <em>encoding</em> is used exclusively to convert unicode names from a pax
 archive to strings in the local character encoding. In write mode, the use of
 <em>encoding</em> depends on the chosen archive format. In case of <a class="reference internal" href="#tarfile.PAX_FORMAT" title="tarfile.PAX_FORMAT"><code class="xref py py-const docutils literal"><span class="pre">PAX_FORMAT</span></code></a>,

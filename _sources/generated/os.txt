@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       WCOREDUMP
       WEXITSTATUS
@@ -148,6 +148,149 @@
       waitpid
       walk
       write
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/os.WCOREDUMP
+       generated/os.WEXITSTATUS
+       generated/os.WIFCONTINUED
+       generated/os.WIFEXITED
+       generated/os.WIFSIGNALED
+       generated/os.WIFSTOPPED
+       generated/os.WSTOPSIG
+       generated/os.WTERMSIG
+       generated/os.abort
+       generated/os.access
+       generated/os.chdir
+       generated/os.chmod
+       generated/os.chown
+       generated/os.chroot
+       generated/os.close
+       generated/os.closerange
+       generated/os.confstr
+       generated/os.ctermid
+       generated/os.dup
+       generated/os.dup2
+       generated/os.execl
+       generated/os.execle
+       generated/os.execlp
+       generated/os.execlpe
+       generated/os.execv
+       generated/os.execve
+       generated/os.execvp
+       generated/os.execvpe
+       generated/os.fchdir
+       generated/os.fchmod
+       generated/os.fchown
+       generated/os.fdatasync
+       generated/os.fdopen
+       generated/os.fork
+       generated/os.forkpty
+       generated/os.fpathconf
+       generated/os.fstat
+       generated/os.fstatvfs
+       generated/os.fsync
+       generated/os.ftruncate
+       generated/os.getcwd
+       generated/os.getcwdu
+       generated/os.getegid
+       generated/os.getenv
+       generated/os.geteuid
+       generated/os.getgid
+       generated/os.getgroups
+       generated/os.getloadavg
+       generated/os.getlogin
+       generated/os.getpgid
+       generated/os.getpgrp
+       generated/os.getpid
+       generated/os.getppid
+       generated/os.getresgid
+       generated/os.getresuid
+       generated/os.getsid
+       generated/os.getuid
+       generated/os.initgroups
+       generated/os.isatty
+       generated/os.kill
+       generated/os.killpg
+       generated/os.lchown
+       generated/os.link
+       generated/os.listdir
+       generated/os.lseek
+       generated/os.lstat
+       generated/os.major
+       generated/os.makedev
+       generated/os.makedirs
+       generated/os.minor
+       generated/os.mkdir
+       generated/os.mkfifo
+       generated/os.mknod
+       generated/os.nice
+       generated/os.open
+       generated/os.openpty
+       generated/os.pathconf
+       generated/os.pipe
+       generated/os.popen
+       generated/os.popen2
+       generated/os.popen3
+       generated/os.popen4
+       generated/os.putenv
+       generated/os.read
+       generated/os.readlink
+       generated/os.remove
+       generated/os.removedirs
+       generated/os.rename
+       generated/os.renames
+       generated/os.rmdir
+       generated/os.setegid
+       generated/os.seteuid
+       generated/os.setgid
+       generated/os.setgroups
+       generated/os.setpgid
+       generated/os.setpgrp
+       generated/os.setregid
+       generated/os.setresgid
+       generated/os.setresuid
+       generated/os.setreuid
+       generated/os.setsid
+       generated/os.setuid
+       generated/os.spawnl
+       generated/os.spawnle
+       generated/os.spawnlp
+       generated/os.spawnlpe
+       generated/os.spawnv
+       generated/os.spawnve
+       generated/os.spawnvp
+       generated/os.spawnvpe
+       generated/os.stat
+       generated/os.stat_float_times
+       generated/os.statvfs
+       generated/os.strerror
+       generated/os.symlink
+       generated/os.sysconf
+       generated/os.system
+       generated/os.tcgetpgrp
+       generated/os.tcsetpgrp
+       generated/os.tempnam
+       generated/os.times
+       generated/os.tmpfile
+       generated/os.tmpnam
+       generated/os.ttyname
+       generated/os.umask
+       generated/os.uname
+       generated/os.unlink
+       generated/os.unsetenv
+       generated/os.urandom
+       generated/os.utime
+       generated/os.wait
+       generated/os.wait3
+       generated/os.wait4
+       generated/os.waitpid
+       generated/os.walk
+       generated/os.write
+      
    
    
 

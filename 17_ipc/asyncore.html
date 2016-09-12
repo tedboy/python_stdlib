@@ -209,9 +209,9 @@ module is invaluable.</p>
 <p>The basic idea behind both modules is to create one or more network
 <em>channels</em>, instances of class <a class="reference internal" href="../generated/generated/asyncore.dispatcher.html#asyncore.dispatcher" title="asyncore.dispatcher"><code class="xref py py-class docutils literal"><span class="pre">asyncore.dispatcher</span></code></a> and
 <a class="reference internal" href="../generated/generated/asynchat.async_chat.html#asynchat.async_chat" title="asynchat.async_chat"><code class="xref py py-class docutils literal"><span class="pre">asynchat.async_chat</span></code></a>.  Creating the channels adds them to a global
-map, used by the <a class="reference internal" href="../generated/asyncore.loop.html#asyncore.loop" title="asyncore.loop"><code class="xref py py-func docutils literal"><span class="pre">loop()</span></code></a> function if you do not provide it with your own
+map, used by the <a class="reference internal" href="../generated/generated/asyncore.loop.html#asyncore.loop" title="asyncore.loop"><code class="xref py py-func docutils literal"><span class="pre">loop()</span></code></a> function if you do not provide it with your own
 <em>map</em>.</p>
-<p>Once the initial channel(s) is(are) created, calling the <a class="reference internal" href="../generated/asyncore.loop.html#asyncore.loop" title="asyncore.loop"><code class="xref py py-func docutils literal"><span class="pre">loop()</span></code></a> function
+<p>Once the initial channel(s) is(are) created, calling the <a class="reference internal" href="../generated/generated/asyncore.loop.html#asyncore.loop" title="asyncore.loop"><code class="xref py py-func docutils literal"><span class="pre">loop()</span></code></a> function
 activates channel service, which continues until the last channel (including
 any that have been added to the map during asynchronous service) is closed.</p>
 <dl class="function">
@@ -221,10 +221,10 @@ any that have been added to the map during asynchronous service) is closed.</p>
 channels have been closed.  All arguments are optional.  The <em>count</em>
 parameter defaults to None, resulting in the loop terminating only when all
 channels have been closed.  The <em>timeout</em> argument sets the timeout
-parameter for the appropriate <a class="reference internal" href="../generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a> or <a class="reference internal" href="../generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-func docutils literal"><span class="pre">poll()</span></code></a>
+parameter for the appropriate <a class="reference internal" href="../generated/generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a> or <a class="reference internal" href="../generated/generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-func docutils literal"><span class="pre">poll()</span></code></a>
 call, measured in seconds; the default is 30 seconds.  The <em>use_poll</em>
-parameter, if true, indicates that <a class="reference internal" href="../generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-func docutils literal"><span class="pre">poll()</span></code></a> should be used in
-preference to <a class="reference internal" href="../generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a> (the default is <code class="docutils literal"><span class="pre">False</span></code>).</p>
+parameter, if true, indicates that <a class="reference internal" href="../generated/generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-func docutils literal"><span class="pre">poll()</span></code></a> should be used in
+preference to <a class="reference internal" href="../generated/generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a> (the default is <code class="docutils literal"><span class="pre">False</span></code>).</p>
 <p>The <em>map</em> parameter is a dictionary whose items are the channels to watch.
 As channels are closed they are deleted from their map.  If <em>map</em> is
 omitted, a global map is used. Channels (instances of
@@ -280,7 +280,7 @@ full set of methods that can be overridden in your subclass follows:</p>
 <dl class="method">
 <dt id="asyncore.dispatcher.handle_read">
 <code class="descname">handle_read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/asyncore.html#dispatcher.handle_read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#asyncore.dispatcher.handle_read" title="Permalink to this definition">¶</a></dt>
-<dd><p>Called when the asynchronous loop detects that a <a class="reference internal" href="../generated/asyncore.read.html#asyncore.read" title="asyncore.read"><code class="xref py py-meth docutils literal"><span class="pre">read()</span></code></a> call on the
+<dd><p>Called when the asynchronous loop detects that a <a class="reference internal" href="../generated/generated/asyncore.read.html#asyncore.read" title="asyncore.read"><code class="xref py py-meth docutils literal"><span class="pre">read()</span></code></a> call on the
 channel&#8217;s socket will succeed.</p>
 </dd></dl>
 
@@ -381,7 +381,7 @@ element the host to connect to, and the second the port number.</p>
 empty string implies that the channel has been closed from the other end.</p>
 <p>Note that <a class="reference internal" href="../generated/generated/asyncore.dispatcher.recv.html#asyncore.dispatcher.recv" title="asyncore.dispatcher.recv"><code class="xref py py-meth docutils literal"><span class="pre">recv()</span></code></a> may raise <a class="reference internal" href="../generated/socket.error.html#socket.error" title="socket.error"><code class="xref py py-exc docutils literal"><span class="pre">socket.error</span></code></a> with
 <a class="reference internal" href="../15_allos/errno.html#errno.EAGAIN" title="errno.EAGAIN"><code class="xref py py-data docutils literal"><span class="pre">EAGAIN</span></code></a> or <a class="reference internal" href="../15_allos/errno.html#errno.EWOULDBLOCK" title="errno.EWOULDBLOCK"><code class="xref py py-data docutils literal"><span class="pre">EWOULDBLOCK</span></code></a>, even though
-<a class="reference internal" href="../generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select.select()</span></code></a> or <a class="reference internal" href="../generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-func docutils literal"><span class="pre">select.poll()</span></code></a> has reported the socket
+<a class="reference internal" href="../generated/generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select.select()</span></code></a> or <a class="reference internal" href="../generated/generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-func docutils literal"><span class="pre">select.poll()</span></code></a> has reported the socket
 ready for reading.</p>
 </dd></dl>
 
@@ -448,7 +448,7 @@ optional map argument and wraps it for use with the <code class="xref c c-func d
 <dl class="class">
 <dt id="asyncore.file_wrapper">
 <em class="property">class </em><code class="descclassname">asyncore.</code><code class="descname">file_wrapper</code><a class="reference internal" href="../_modules/asyncore.html#file_wrapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#asyncore.file_wrapper" title="Permalink to this definition">¶</a></dt>
-<dd><p>A file_wrapper takes an integer file descriptor and calls <a class="reference internal" href="../generated/os.dup.html#os.dup" title="os.dup"><code class="xref py py-func docutils literal"><span class="pre">os.dup()</span></code></a> to
+<dd><p>A file_wrapper takes an integer file descriptor and calls <a class="reference internal" href="../generated/generated/os.dup.html#os.dup" title="os.dup"><code class="xref py py-func docutils literal"><span class="pre">os.dup()</span></code></a> to
 duplicate the handle so that the original handle may be closed independently
 of the file_wrapper.  This class implements sufficient methods to emulate a
 socket for use by the <a class="reference internal" href="../generated/generated/asyncore.file_dispatcher.html#asyncore.file_dispatcher" title="asyncore.file_dispatcher"><code class="xref py py-class docutils literal"><span class="pre">file_dispatcher</span></code></a> class.  Availability: UNIX.</p>

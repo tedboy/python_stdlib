@@ -331,7 +331,7 @@
 <span class="n">_percent_re</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">r&#39;%(?:\((?P&lt;key&gt;.*?)\))?&#39;</span>
                          <span class="s1">r&#39;(?P&lt;modifiers&gt;[-#0-9 +*.hlL]*?)[eEfFgGdiouxXcrs%]&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="format"><a class="viewcode-back" href="../generated/locale.format.html#locale.format">[docs]</a><span class="k">def</span> <span class="nf">format</span><span class="p">(</span><span class="n">percent</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">grouping</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">monetary</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="o">*</span><span class="n">additional</span><span class="p">):</span>
+<div class="viewcode-block" id="format"><a class="viewcode-back" href="../generated/generated/locale.format.html#locale.format">[docs]</a><span class="k">def</span> <span class="nf">format</span><span class="p">(</span><span class="n">percent</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">grouping</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">monetary</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="o">*</span><span class="n">additional</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Returns the locale-aware substitution of a %? specifier</span>
 <span class="sd">    (percent).</span>
 
@@ -368,7 +368,7 @@
             <span class="n">formatted</span> <span class="o">=</span> <span class="n">_strip_padding</span><span class="p">(</span><span class="n">formatted</span><span class="p">,</span> <span class="n">seps</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">formatted</span>
 
-<div class="viewcode-block" id="format_string"><a class="viewcode-back" href="../generated/locale.format_string.html#locale.format_string">[docs]</a><span class="k">def</span> <span class="nf">format_string</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">grouping</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+<div class="viewcode-block" id="format_string"><a class="viewcode-back" href="../generated/generated/locale.format_string.html#locale.format_string">[docs]</a><span class="k">def</span> <span class="nf">format_string</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">grouping</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Formats a string in the same way that the % formatting would use,</span>
 <span class="sd">    but takes the current locale into account.</span>
 <span class="sd">    Grouping is applied if the third parameter is true.&quot;&quot;&quot;</span>
@@ -402,7 +402,7 @@
 
     <span class="k">return</span> <span class="n">new_f</span> <span class="o">%</span> <span class="n">val</span></div>
 
-<div class="viewcode-block" id="currency"><a class="viewcode-back" href="../generated/locale.currency.html#locale.currency">[docs]</a><span class="k">def</span> <span class="nf">currency</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">symbol</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">grouping</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">international</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+<div class="viewcode-block" id="currency"><a class="viewcode-back" href="../generated/generated/locale.currency.html#locale.currency">[docs]</a><span class="k">def</span> <span class="nf">currency</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">symbol</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">grouping</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">international</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Formats val according to the currency settings</span>
 <span class="sd">    in the current locale.&quot;&quot;&quot;</span>
     <span class="n">conv</span> <span class="o">=</span> <span class="n">localeconv</span><span class="p">()</span>
@@ -447,11 +447,11 @@
 
     <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&lt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="str"><a class="viewcode-back" href="../generated/locale.str.html#locale.str">[docs]</a><span class="k">def</span> <span class="nf">str</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+<div class="viewcode-block" id="str"><a class="viewcode-back" href="../generated/generated/locale.str.html#locale.str">[docs]</a><span class="k">def</span> <span class="nf">str</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert float to string, taking the locale into account.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">format</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.12g</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="atof"><a class="viewcode-back" href="../generated/locale.atof.html#locale.atof">[docs]</a><span class="k">def</span> <span class="nf">atof</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="nb">float</span><span class="p">):</span>
+<div class="viewcode-block" id="atof"><a class="viewcode-back" href="../generated/generated/locale.atof.html#locale.atof">[docs]</a><span class="k">def</span> <span class="nf">atof</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="nb">float</span><span class="p">):</span>
     <span class="s2">&quot;Parses a string as a float according to the locale settings.&quot;</span>
     <span class="c1">#First, get rid of the grouping</span>
     <span class="n">ts</span> <span class="o">=</span> <span class="n">localeconv</span><span class="p">()[</span><span class="s1">&#39;thousands_sep&#39;</span><span class="p">]</span>
@@ -464,7 +464,7 @@
     <span class="c1">#finally, parse the string</span>
     <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="n">string</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="atoi"><a class="viewcode-back" href="../generated/locale.atoi.html#locale.atoi">[docs]</a><span class="k">def</span> <span class="nf">atoi</span><span class="p">(</span><span class="nb">str</span><span class="p">):</span>
+<div class="viewcode-block" id="atoi"><a class="viewcode-back" href="../generated/generated/locale.atoi.html#locale.atoi">[docs]</a><span class="k">def</span> <span class="nf">atoi</span><span class="p">(</span><span class="nb">str</span><span class="p">):</span>
     <span class="s2">&quot;Converts a string to an integer according to the locale settings.&quot;</span>
     <span class="k">return</span> <span class="n">atof</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span></div>
 
@@ -509,7 +509,7 @@
     <span class="c1">#print(&#39;found encoding %r&#39; % encoding)</span>
     <span class="k">return</span> <span class="n">langname</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span> <span class="o">+</span> <span class="n">encoding</span>
 
-<div class="viewcode-block" id="normalize"><a class="viewcode-back" href="../generated/locale.normalize.html#locale.normalize">[docs]</a><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">localename</span><span class="p">):</span>
+<div class="viewcode-block" id="normalize"><a class="viewcode-back" href="../generated/generated/locale.normalize.html#locale.normalize">[docs]</a><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">localename</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Returns a normalized locale code for the given locale</span>
 <span class="sd">        name.</span>
@@ -639,7 +639,7 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">language</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span> <span class="o">+</span> <span class="n">encoding</span>
 
-<div class="viewcode-block" id="getdefaultlocale"><a class="viewcode-back" href="../generated/locale.getdefaultlocale.html#locale.getdefaultlocale">[docs]</a><span class="k">def</span> <span class="nf">getdefaultlocale</span><span class="p">(</span><span class="n">envvars</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;LC_ALL&#39;</span><span class="p">,</span> <span class="s1">&#39;LC_CTYPE&#39;</span><span class="p">,</span> <span class="s1">&#39;LANG&#39;</span><span class="p">,</span> <span class="s1">&#39;LANGUAGE&#39;</span><span class="p">)):</span>
+<div class="viewcode-block" id="getdefaultlocale"><a class="viewcode-back" href="../generated/generated/locale.getdefaultlocale.html#locale.getdefaultlocale">[docs]</a><span class="k">def</span> <span class="nf">getdefaultlocale</span><span class="p">(</span><span class="n">envvars</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;LC_ALL&#39;</span><span class="p">,</span> <span class="s1">&#39;LC_CTYPE&#39;</span><span class="p">,</span> <span class="s1">&#39;LANG&#39;</span><span class="p">,</span> <span class="s1">&#39;LANGUAGE&#39;</span><span class="p">)):</span>
 
     <span class="sd">&quot;&quot;&quot; Tries to determine the default locale settings and returns</span>
 <span class="sd">        them as tuple (language code, encoding).</span>
@@ -692,7 +692,7 @@
     <span class="k">return</span> <span class="n">_parse_localename</span><span class="p">(</span><span class="n">localename</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="getlocale"><a class="viewcode-back" href="../generated/locale.getlocale.html#locale.getlocale">[docs]</a><span class="k">def</span> <span class="nf">getlocale</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">LC_CTYPE</span><span class="p">):</span>
+<div class="viewcode-block" id="getlocale"><a class="viewcode-back" href="../generated/generated/locale.getlocale.html#locale.getlocale">[docs]</a><span class="k">def</span> <span class="nf">getlocale</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">LC_CTYPE</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Returns the current setting for the given locale category as</span>
 <span class="sd">        tuple (language code, encoding).</span>
@@ -710,7 +710,7 @@
         <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">,</span> <span class="s1">&#39;category LC_ALL is not supported&#39;</span>
     <span class="k">return</span> <span class="n">_parse_localename</span><span class="p">(</span><span class="n">localename</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="setlocale"><a class="viewcode-back" href="../generated/locale.setlocale.html#locale.setlocale">[docs]</a><span class="k">def</span> <span class="nf">setlocale</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="n">locale</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="setlocale"><a class="viewcode-back" href="../generated/generated/locale.setlocale.html#locale.setlocale">[docs]</a><span class="k">def</span> <span class="nf">setlocale</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="n">locale</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Set the locale for the given category.  The locale can be</span>
 <span class="sd">        a string, an iterable of two strings (language code and encoding),</span>
@@ -727,7 +727,7 @@
         <span class="n">locale</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">_build_localename</span><span class="p">(</span><span class="n">locale</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">_setlocale</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="n">locale</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="resetlocale"><a class="viewcode-back" href="../generated/locale.resetlocale.html#locale.resetlocale">[docs]</a><span class="k">def</span> <span class="nf">resetlocale</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">LC_ALL</span><span class="p">):</span>
+<div class="viewcode-block" id="resetlocale"><a class="viewcode-back" href="../generated/generated/locale.resetlocale.html#locale.resetlocale">[docs]</a><span class="k">def</span> <span class="nf">resetlocale</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">LC_ALL</span><span class="p">):</span>
 
     <span class="sd">&quot;&quot;&quot; Sets the locale for category to the default setting.</span>
 
@@ -754,7 +754,7 @@
 <span class="sd">            by looking at environment variables.&quot;&quot;&quot;</span>
             <span class="k">return</span> <span class="n">getdefaultlocale</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
     <span class="k">else</span><span class="p">:</span>
-<div class="viewcode-block" id="getpreferredencoding"><a class="viewcode-back" href="../generated/locale.getpreferredencoding.html#locale.getpreferredencoding">[docs]</a>        <span class="k">def</span> <span class="nf">getpreferredencoding</span><span class="p">(</span><span class="n">do_setlocale</span> <span class="o">=</span> <span class="bp">True</span><span class="p">):</span>
+<div class="viewcode-block" id="getpreferredencoding"><a class="viewcode-back" href="../generated/generated/locale.getpreferredencoding.html#locale.getpreferredencoding">[docs]</a>        <span class="k">def</span> <span class="nf">getpreferredencoding</span><span class="p">(</span><span class="n">do_setlocale</span> <span class="o">=</span> <span class="bp">True</span><span class="p">):</span>
             <span class="sd">&quot;&quot;&quot;Return the charset that the user is likely using,</span>
 <span class="sd">            according to the system configuration.&quot;&quot;&quot;</span>
             <span class="k">if</span> <span class="n">do_setlocale</span><span class="p">:</span>

@@ -945,7 +945,7 @@
 
 <span class="n">_150_re</span> <span class="o">=</span> <span class="bp">None</span>
 
-<div class="viewcode-block" id="parse150"><a class="viewcode-back" href="../generated/ftplib.parse150.html#ftplib.parse150">[docs]</a><span class="k">def</span> <span class="nf">parse150</span><span class="p">(</span><span class="n">resp</span><span class="p">):</span>
+<div class="viewcode-block" id="parse150"><a class="viewcode-back" href="../generated/generated/ftplib.parse150.html#ftplib.parse150">[docs]</a><span class="k">def</span> <span class="nf">parse150</span><span class="p">(</span><span class="n">resp</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Parse the &#39;150&#39; response for a RETR request.</span>
 <span class="sd">    Returns the expected transfer size or None; size is not guaranteed to</span>
 <span class="sd">    be present in the 150 message.</span>
@@ -968,7 +968,7 @@
 
 <span class="n">_227_re</span> <span class="o">=</span> <span class="bp">None</span>
 
-<div class="viewcode-block" id="parse227"><a class="viewcode-back" href="../generated/ftplib.parse227.html#ftplib.parse227">[docs]</a><span class="k">def</span> <span class="nf">parse227</span><span class="p">(</span><span class="n">resp</span><span class="p">):</span>
+<div class="viewcode-block" id="parse227"><a class="viewcode-back" href="../generated/generated/ftplib.parse227.html#ftplib.parse227">[docs]</a><span class="k">def</span> <span class="nf">parse227</span><span class="p">(</span><span class="n">resp</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Parse the &#39;227&#39; response for a PASV request.</span>
 <span class="sd">    Raises error_proto if it does not contain &#39;(h1,h2,h3,h4,p1,p2)&#39;</span>
 <span class="sd">    Return (&#39;host.addr.as.numbers&#39;, port#) tuple.&#39;&#39;&#39;</span>
@@ -988,7 +988,7 @@
     <span class="k">return</span> <span class="n">host</span><span class="p">,</span> <span class="n">port</span></div>
 
 
-<div class="viewcode-block" id="parse229"><a class="viewcode-back" href="../generated/ftplib.parse229.html#ftplib.parse229">[docs]</a><span class="k">def</span> <span class="nf">parse229</span><span class="p">(</span><span class="n">resp</span><span class="p">,</span> <span class="n">peer</span><span class="p">):</span>
+<div class="viewcode-block" id="parse229"><a class="viewcode-back" href="../generated/generated/ftplib.parse229.html#ftplib.parse229">[docs]</a><span class="k">def</span> <span class="nf">parse229</span><span class="p">(</span><span class="n">resp</span><span class="p">,</span> <span class="n">peer</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Parse the &#39;229&#39; response for a EPSV request.</span>
 <span class="sd">    Raises error_proto if it does not contain &#39;(|||port|)&#39;</span>
 <span class="sd">    Return (&#39;host.addr.as.numbers&#39;, port#) tuple.&#39;&#39;&#39;</span>
@@ -1010,7 +1010,7 @@
     <span class="k">return</span> <span class="n">host</span><span class="p">,</span> <span class="n">port</span></div>
 
 
-<div class="viewcode-block" id="parse257"><a class="viewcode-back" href="../generated/ftplib.parse257.html#ftplib.parse257">[docs]</a><span class="k">def</span> <span class="nf">parse257</span><span class="p">(</span><span class="n">resp</span><span class="p">):</span>
+<div class="viewcode-block" id="parse257"><a class="viewcode-back" href="../generated/generated/ftplib.parse257.html#ftplib.parse257">[docs]</a><span class="k">def</span> <span class="nf">parse257</span><span class="p">(</span><span class="n">resp</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Parse the &#39;257&#39; response for a MKD or PWD request.</span>
 <span class="sd">    This is a response to a MKD or PWD request: a directory name.</span>
 <span class="sd">    Returns the directoryname in the 257 reply.&#39;&#39;&#39;</span>
@@ -1033,12 +1033,12 @@
     <span class="k">return</span> <span class="n">dirname</span></div>
 
 
-<div class="viewcode-block" id="print_line"><a class="viewcode-back" href="../generated/ftplib.print_line.html#ftplib.print_line">[docs]</a><span class="k">def</span> <span class="nf">print_line</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+<div class="viewcode-block" id="print_line"><a class="viewcode-back" href="../generated/generated/ftplib.print_line.html#ftplib.print_line">[docs]</a><span class="k">def</span> <span class="nf">print_line</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Default retrlines callback to print a line.&#39;&#39;&#39;</span>
     <span class="k">print</span> <span class="n">line</span></div>
 
 
-<div class="viewcode-block" id="ftpcp"><a class="viewcode-back" href="../generated/ftplib.ftpcp.html#ftplib.ftpcp">[docs]</a><span class="k">def</span> <span class="nf">ftpcp</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">sourcename</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">targetname</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s1">&#39;I&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="ftpcp"><a class="viewcode-back" href="../generated/generated/ftplib.ftpcp.html#ftplib.ftpcp">[docs]</a><span class="k">def</span> <span class="nf">ftpcp</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">sourcename</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">targetname</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s1">&#39;I&#39;</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Copy file from one FTP-instance to another.&#39;&#39;&#39;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">targetname</span><span class="p">:</span> <span class="n">targetname</span> <span class="o">=</span> <span class="n">sourcename</span>
     <span class="nb">type</span> <span class="o">=</span> <span class="s1">&#39;TYPE &#39;</span> <span class="o">+</span> <span class="nb">type</span>
@@ -1166,7 +1166,7 @@
 
 
 
-<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/ftplib.test.html#ftplib.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
+<div class="viewcode-block" id="test"><a class="viewcode-back" href="../generated/generated/ftplib.test.html#ftplib.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
     <span class="sd">&#39;&#39;&#39;Test program.</span>
 <span class="sd">    Usage: ftp [-d] [-r[file]] host [-l[dir]] [-d[dir]] [-p] [file] ...</span>
 

@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       Pickler
       Unpickler
@@ -18,6 +18,19 @@
       dumps
       load
       loads
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/cPickle.Pickler
+       generated/cPickle.Unpickler
+       generated/cPickle.dump
+       generated/cPickle.dumps
+       generated/cPickle.load
+       generated/cPickle.loads
+      
    
    
 

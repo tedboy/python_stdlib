@@ -184,10 +184,10 @@ write files see <a class="reference internal" href="../02_builtin_functions/02.h
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">On Windows, many of these functions do not properly support UNC pathnames.
-<a class="reference internal" href="#os.path.splitunc" title="os.path.splitunc"><code class="xref py py-func docutils literal"><span class="pre">splitunc()</span></code></a> and <a class="reference internal" href="../generated/os.path.ismount.html#os.path.ismount" title="os.path.ismount"><code class="xref py py-func docutils literal"><span class="pre">ismount()</span></code></a> do handle them correctly.</p>
+<a class="reference internal" href="#os.path.splitunc" title="os.path.splitunc"><code class="xref py py-func docutils literal"><span class="pre">splitunc()</span></code></a> and <a class="reference internal" href="../generated/generated/os.path.ismount.html#os.path.ismount" title="os.path.ismount"><code class="xref py py-func docutils literal"><span class="pre">ismount()</span></code></a> do handle them correctly.</p>
 </div>
 <p>Unlike a unix shell, Python does not do any <em>automatic</em> path expansions.
-Functions such as <a class="reference internal" href="../generated/os.path.expanduser.html#os.path.expanduser" title="os.path.expanduser"><code class="xref py py-func docutils literal"><span class="pre">expanduser()</span></code></a> and <a class="reference internal" href="../generated/os.path.expandvars.html#os.path.expandvars" title="os.path.expandvars"><code class="xref py py-func docutils literal"><span class="pre">expandvars()</span></code></a> can be invoked
+Functions such as <a class="reference internal" href="../generated/generated/os.path.expanduser.html#os.path.expanduser" title="os.path.expanduser"><code class="xref py py-func docutils literal"><span class="pre">expanduser()</span></code></a> and <a class="reference internal" href="../generated/generated/os.path.expandvars.html#os.path.expandvars" title="os.path.expandvars"><code class="xref py py-func docutils literal"><span class="pre">expandvars()</span></code></a> can be invoked
 explicitly when an application desires shell-like path expansion.  (See also
 the <a class="reference internal" href="../generated/glob.html#module-glob" title="glob"><code class="xref py py-mod docutils literal"><span class="pre">glob</span></code></a> module.)</p>
 <div class="admonition note">
@@ -210,7 +210,7 @@ same interface:</p>
 <dt id="os.path.abspath">
 <code class="descclassname">os.path.</code><code class="descname">abspath</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/posixpath.html#abspath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#os.path.abspath" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a normalized absolutized version of the pathname <em>path</em>. On most
-platforms, this is equivalent to calling the function <a class="reference internal" href="../generated/os.path.normpath.html#os.path.normpath" title="os.path.normpath"><code class="xref py py-func docutils literal"><span class="pre">normpath()</span></code></a> as
+platforms, this is equivalent to calling the function <a class="reference internal" href="../generated/generated/os.path.normpath.html#os.path.normpath" title="os.path.normpath"><code class="xref py py-func docutils literal"><span class="pre">normpath()</span></code></a> as
 follows: <code class="docutils literal"><span class="pre">normpath(join(os.getcwd(),</span> <span class="pre">path))</span></code>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.5.2.</span></p>
@@ -221,10 +221,10 @@ follows: <code class="docutils literal"><span class="pre">normpath(join(os.getcw
 <dt id="os.path.basename">
 <code class="descclassname">os.path.</code><code class="descname">basename</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/posixpath.html#basename"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#os.path.basename" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the base name of pathname <em>path</em>.  This is the second element of the
-pair returned by passing <em>path</em> to the function <a class="reference internal" href="../generated/os.path.split.html#os.path.split" title="os.path.split"><code class="xref py py-func docutils literal"><span class="pre">split()</span></code></a>.  Note that
+pair returned by passing <em>path</em> to the function <a class="reference internal" href="../generated/generated/os.path.split.html#os.path.split" title="os.path.split"><code class="xref py py-func docutils literal"><span class="pre">split()</span></code></a>.  Note that
 the result of this function is different
 from the Unix <strong class="program">basename</strong> program; where <strong class="program">basename</strong> for
-<code class="docutils literal"><span class="pre">'/foo/bar/'</span></code> returns <code class="docutils literal"><span class="pre">'bar'</span></code>, the <a class="reference internal" href="../generated/os.path.basename.html#os.path.basename" title="os.path.basename"><code class="xref py py-func docutils literal"><span class="pre">basename()</span></code></a> function returns an
+<code class="docutils literal"><span class="pre">'/foo/bar/'</span></code> returns <code class="docutils literal"><span class="pre">'bar'</span></code>, the <a class="reference internal" href="../generated/generated/os.path.basename.html#os.path.basename" title="os.path.basename"><code class="xref py py-func docutils literal"><span class="pre">basename()</span></code></a> function returns an
 empty string (<code class="docutils literal"><span class="pre">''</span></code>).</p>
 </dd></dl>
 
@@ -240,7 +240,7 @@ Note that this may return invalid paths because it works a character at a time.<
 <dt id="os.path.dirname">
 <code class="descclassname">os.path.</code><code class="descname">dirname</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/posixpath.html#dirname"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#os.path.dirname" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the directory name of pathname <em>path</em>.  This is the first element of
-the pair returned by passing <em>path</em> to the function <a class="reference internal" href="../generated/os.path.split.html#os.path.split" title="os.path.split"><code class="xref py py-func docutils literal"><span class="pre">split()</span></code></a>.</p>
+the pair returned by passing <em>path</em> to the function <a class="reference internal" href="../generated/generated/os.path.split.html#os.path.split" title="os.path.split"><code class="xref py py-func docutils literal"><span class="pre">split()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -248,7 +248,7 @@ the pair returned by passing <em>path</em> to the function <a class="reference i
 <code class="descclassname">os.path.</code><code class="descname">exists</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/genericpath.html#exists"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#os.path.exists" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if <em>path</em> refers to an existing path.  Returns <code class="docutils literal"><span class="pre">False</span></code> for
 broken symbolic links. On some platforms, this function may return <code class="docutils literal"><span class="pre">False</span></code> if
-permission is not granted to execute <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a> on the requested file, even
+permission is not granted to execute <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a> on the requested file, even
 if the <em>path</em> physically exists.</p>
 </dd></dl>
 
@@ -256,8 +256,8 @@ if the <em>path</em> physically exists.</p>
 <dt id="os.path.lexists">
 <code class="descclassname">os.path.</code><code class="descname">lexists</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/posixpath.html#lexists"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#os.path.lexists" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if <em>path</em> refers to an existing path. Returns <code class="docutils literal"><span class="pre">True</span></code> for
-broken symbolic links.   Equivalent to <a class="reference internal" href="../generated/os.path.exists.html#os.path.exists" title="os.path.exists"><code class="xref py py-func docutils literal"><span class="pre">exists()</span></code></a> on platforms lacking
-<a class="reference internal" href="../generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">os.lstat()</span></code></a>.</p>
+broken symbolic links.   Equivalent to <a class="reference internal" href="../generated/generated/os.path.exists.html#os.path.exists" title="os.path.exists"><code class="xref py py-func docutils literal"><span class="pre">exists()</span></code></a> on platforms lacking
+<a class="reference internal" href="../generated/generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">os.lstat()</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.4.</span></p>
 </div>
@@ -291,7 +291,7 @@ the number of seconds since the epoch (see the  <a class="reference internal" hr
 <p><span class="versionmodified">New in version 1.5.2.</span></p>
 </div>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.3: </span>If <a class="reference internal" href="../generated/os.stat_float_times.html#os.stat_float_times" title="os.stat_float_times"><code class="xref py py-func docutils literal"><span class="pre">os.stat_float_times()</span></code></a> returns <code class="docutils literal"><span class="pre">True</span></code>, the result is a floating point
+<p><span class="versionmodified">Changed in version 2.3: </span>If <a class="reference internal" href="../generated/generated/os.stat_float_times.html#os.stat_float_times" title="os.stat_float_times"><code class="xref py py-func docutils literal"><span class="pre">os.stat_float_times()</span></code></a> returns <code class="docutils literal"><span class="pre">True</span></code>, the result is a floating point
 number.</p>
 </div>
 </dd></dl>
@@ -306,7 +306,7 @@ Raise <a class="reference internal" href="../generated/os.error.html#os.error" t
 <p><span class="versionmodified">New in version 1.5.2.</span></p>
 </div>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.3: </span>If <a class="reference internal" href="../generated/os.stat_float_times.html#os.stat_float_times" title="os.stat_float_times"><code class="xref py py-func docutils literal"><span class="pre">os.stat_float_times()</span></code></a> returns <code class="docutils literal"><span class="pre">True</span></code>, the result is a floating point
+<p><span class="versionmodified">Changed in version 2.3: </span>If <a class="reference internal" href="../generated/generated/os.stat_float_times.html#os.stat_float_times" title="os.stat_float_times"><code class="xref py py-func docutils literal"><span class="pre">os.stat_float_times()</span></code></a> returns <code class="docutils literal"><span class="pre">True</span></code>, the result is a floating point
 number.</p>
 </div>
 </dd></dl>
@@ -346,14 +346,14 @@ off a potential drive letter.</p>
 <dt id="os.path.isfile">
 <code class="descclassname">os.path.</code><code class="descname">isfile</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/genericpath.html#isfile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#os.path.isfile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if <em>path</em> is an existing regular file.  This follows symbolic
-links, so both <a class="reference internal" href="../generated/os.path.islink.html#os.path.islink" title="os.path.islink"><code class="xref py py-func docutils literal"><span class="pre">islink()</span></code></a> and <a class="reference internal" href="../generated/os.path.isfile.html#os.path.isfile" title="os.path.isfile"><code class="xref py py-func docutils literal"><span class="pre">isfile()</span></code></a> can be true for the same path.</p>
+links, so both <a class="reference internal" href="../generated/generated/os.path.islink.html#os.path.islink" title="os.path.islink"><code class="xref py py-func docutils literal"><span class="pre">islink()</span></code></a> and <a class="reference internal" href="../generated/generated/os.path.isfile.html#os.path.isfile" title="os.path.isfile"><code class="xref py py-func docutils literal"><span class="pre">isfile()</span></code></a> can be true for the same path.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="os.path.isdir">
 <code class="descclassname">os.path.</code><code class="descname">isdir</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/genericpath.html#isdir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#os.path.isdir" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if <em>path</em> is an existing directory.  This follows symbolic
-links, so both <a class="reference internal" href="../generated/os.path.islink.html#os.path.islink" title="os.path.islink"><code class="xref py py-func docutils literal"><span class="pre">islink()</span></code></a> and <a class="reference internal" href="../generated/os.path.isdir.html#os.path.isdir" title="os.path.isdir"><code class="xref py py-func docutils literal"><span class="pre">isdir()</span></code></a> can be true for the same path.</p>
+links, so both <a class="reference internal" href="../generated/generated/os.path.islink.html#os.path.islink" title="os.path.islink"><code class="xref py py-func docutils literal"><span class="pre">islink()</span></code></a> and <a class="reference internal" href="../generated/generated/os.path.isdir.html#os.path.isdir" title="os.path.isdir"><code class="xref py py-func docutils literal"><span class="pre">isdir()</span></code></a> can be true for the same path.</p>
 </dd></dl>
 
 <dl class="function">
@@ -406,7 +406,7 @@ lowercase.  On Windows, it also converts forward slashes to backward slashes.</p
 references so that <code class="docutils literal"><span class="pre">A//B</span></code>, <code class="docutils literal"><span class="pre">A/B/</span></code>, <code class="docutils literal"><span class="pre">A/./B</span></code> and <code class="docutils literal"><span class="pre">A/foo/../B</span></code> all
 become <code class="docutils literal"><span class="pre">A/B</span></code>.  This string manipulation may change the meaning of a path
 that contains symbolic links.  On Windows, it converts forward slashes to
-backward slashes. To normalize case, use <a class="reference internal" href="../generated/os.path.normcase.html#os.path.normcase" title="os.path.normcase"><code class="xref py py-func docutils literal"><span class="pre">normcase()</span></code></a>.</p>
+backward slashes. To normalize case, use <a class="reference internal" href="../generated/generated/os.path.normcase.html#os.path.normcase" title="os.path.normcase"><code class="xref py py-func docutils literal"><span class="pre">normcase()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -438,7 +438,7 @@ filesystem is not accessed to confirm the existence or nature of <em>path</em> o
 <code class="descclassname">os.path.</code><code class="descname">samefile</code><span class="sig-paren">(</span><em>path1</em>, <em>path2</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/posixpath.html#samefile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#os.path.samefile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if both pathname arguments refer to the same file or directory
 (as indicated by device number and i-node number). Raise an exception if a
-<a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a> call on either pathname fails.</p>
+<a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a> call on either pathname fails.</p>
 <p>Availability: Unix.</p>
 </dd></dl>
 
@@ -453,9 +453,9 @@ filesystem is not accessed to confirm the existence or nature of <em>path</em> o
 <dt id="os.path.samestat">
 <code class="descclassname">os.path.</code><code class="descname">samestat</code><span class="sig-paren">(</span><em>stat1</em>, <em>stat2</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/posixpath.html#samestat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#os.path.samestat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if the stat tuples <em>stat1</em> and <em>stat2</em> refer to the same file.
-These structures may have been returned by <a class="reference internal" href="../generated/os.fstat.html#os.fstat" title="os.fstat"><code class="xref py py-func docutils literal"><span class="pre">os.fstat()</span></code></a>,
-<a class="reference internal" href="../generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">os.lstat()</span></code></a>, or <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>.  This function implements the
-underlying comparison used by <a class="reference internal" href="../generated/os.path.samefile.html#os.path.samefile" title="os.path.samefile"><code class="xref py py-func docutils literal"><span class="pre">samefile()</span></code></a> and <a class="reference internal" href="../generated/os.path.sameopenfile.html#os.path.sameopenfile" title="os.path.sameopenfile"><code class="xref py py-func docutils literal"><span class="pre">sameopenfile()</span></code></a>.</p>
+These structures may have been returned by <a class="reference internal" href="../generated/generated/os.fstat.html#os.fstat" title="os.fstat"><code class="xref py py-func docutils literal"><span class="pre">os.fstat()</span></code></a>,
+<a class="reference internal" href="../generated/generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">os.lstat()</span></code></a>, or <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>.  This function implements the
+underlying comparison used by <a class="reference internal" href="../generated/generated/os.path.samefile.html#os.path.samefile" title="os.path.samefile"><code class="xref py py-func docutils literal"><span class="pre">samefile()</span></code></a> and <a class="reference internal" href="../generated/generated/os.path.sameopenfile.html#os.path.sameopenfile" title="os.path.sameopenfile"><code class="xref py py-func docutils literal"><span class="pre">sameopenfile()</span></code></a>.</p>
 <p>Availability: Unix.</p>
 </dd></dl>
 
@@ -469,8 +469,8 @@ will be empty.  If there is no slash in <em>path</em>, <em>head</em> will be emp
 <em>path</em> is empty, both <em>head</em> and <em>tail</em> are empty.  Trailing slashes are
 stripped from <em>head</em> unless it is the root (one or more slashes only).  In
 all cases, <code class="docutils literal"><span class="pre">join(head,</span> <span class="pre">tail)</span></code> returns a path to the same location as <em>path</em>
-(but the strings may differ).  Also see the functions <a class="reference internal" href="../generated/os.path.dirname.html#os.path.dirname" title="os.path.dirname"><code class="xref py py-func docutils literal"><span class="pre">dirname()</span></code></a> and
-<a class="reference internal" href="../generated/os.path.basename.html#os.path.basename" title="os.path.basename"><code class="xref py py-func docutils literal"><span class="pre">basename()</span></code></a>.</p>
+(but the strings may differ).  Also see the functions <a class="reference internal" href="../generated/generated/os.path.dirname.html#os.path.dirname" title="os.path.dirname"><code class="xref py py-func docutils literal"><span class="pre">dirname()</span></code></a> and
+<a class="reference internal" href="../generated/generated/os.path.basename.html#os.path.basename" title="os.path.basename"><code class="xref py py-func docutils literal"><span class="pre">basename()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -522,14 +522,14 @@ place, using <code class="xref std std-keyword docutils literal"><span class="pr
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Symbolic links to directories are not treated as subdirectories, and that
-<a class="reference internal" href="../generated/os.path.walk.html#os.path.walk" title="os.path.walk"><code class="xref py py-func docutils literal"><span class="pre">walk()</span></code></a> therefore will not visit them. To visit linked directories you must
+<a class="reference internal" href="../generated/generated/os.path.walk.html#os.path.walk" title="os.path.walk"><code class="xref py py-func docutils literal"><span class="pre">walk()</span></code></a> therefore will not visit them. To visit linked directories you must
 identify them with <code class="docutils literal"><span class="pre">os.path.islink(file)</span></code> and <code class="docutils literal"><span class="pre">os.path.isdir(file)</span></code>, and
-invoke <a class="reference internal" href="../generated/os.path.walk.html#os.path.walk" title="os.path.walk"><code class="xref py py-func docutils literal"><span class="pre">walk()</span></code></a> as necessary.</p>
+invoke <a class="reference internal" href="../generated/generated/os.path.walk.html#os.path.walk" title="os.path.walk"><code class="xref py py-func docutils literal"><span class="pre">walk()</span></code></a> as necessary.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This function is deprecated and has been removed in Python 3 in favor of
-<a class="reference internal" href="../generated/os.walk.html#os.walk" title="os.walk"><code class="xref py py-func docutils literal"><span class="pre">os.walk()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/os.walk.html#os.walk" title="os.walk"><code class="xref py py-func docutils literal"><span class="pre">os.walk()</span></code></a>.</p>
 </div>
 </dd></dl>
 

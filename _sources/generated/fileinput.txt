@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       close
       filelineno
@@ -23,6 +23,24 @@
       isstdin
       lineno
       nextfile
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/fileinput.close
+       generated/fileinput.filelineno
+       generated/fileinput.filename
+       generated/fileinput.fileno
+       generated/fileinput.hook_compressed
+       generated/fileinput.hook_encoded
+       generated/fileinput.input
+       generated/fileinput.isfirstline
+       generated/fileinput.isstdin
+       generated/fileinput.lineno
+       generated/fileinput.nextfile
+      
    
    
 

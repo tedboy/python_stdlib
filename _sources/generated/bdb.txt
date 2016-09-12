@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       bar
       checkfuncname
@@ -18,6 +18,19 @@
       foo
       set_trace
       test
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/bdb.bar
+       generated/bdb.checkfuncname
+       generated/bdb.effective
+       generated/bdb.foo
+       generated/bdb.set_trace
+       generated/bdb.test
+      
    
    
 

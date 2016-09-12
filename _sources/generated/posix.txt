@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       WCOREDUMP
       WEXITSTATUS
@@ -126,6 +126,127 @@
       wait4
       waitpid
       write
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/posix.WCOREDUMP
+       generated/posix.WEXITSTATUS
+       generated/posix.WIFCONTINUED
+       generated/posix.WIFEXITED
+       generated/posix.WIFSIGNALED
+       generated/posix.WIFSTOPPED
+       generated/posix.WSTOPSIG
+       generated/posix.WTERMSIG
+       generated/posix.abort
+       generated/posix.access
+       generated/posix.chdir
+       generated/posix.chmod
+       generated/posix.chown
+       generated/posix.chroot
+       generated/posix.close
+       generated/posix.closerange
+       generated/posix.confstr
+       generated/posix.ctermid
+       generated/posix.dup
+       generated/posix.dup2
+       generated/posix.execv
+       generated/posix.execve
+       generated/posix.fchdir
+       generated/posix.fchmod
+       generated/posix.fchown
+       generated/posix.fdatasync
+       generated/posix.fdopen
+       generated/posix.fork
+       generated/posix.forkpty
+       generated/posix.fpathconf
+       generated/posix.fstat
+       generated/posix.fstatvfs
+       generated/posix.fsync
+       generated/posix.ftruncate
+       generated/posix.getcwd
+       generated/posix.getcwdu
+       generated/posix.getegid
+       generated/posix.geteuid
+       generated/posix.getgid
+       generated/posix.getgroups
+       generated/posix.getloadavg
+       generated/posix.getlogin
+       generated/posix.getpgid
+       generated/posix.getpgrp
+       generated/posix.getpid
+       generated/posix.getppid
+       generated/posix.getresgid
+       generated/posix.getresuid
+       generated/posix.getsid
+       generated/posix.getuid
+       generated/posix.initgroups
+       generated/posix.isatty
+       generated/posix.kill
+       generated/posix.killpg
+       generated/posix.lchown
+       generated/posix.link
+       generated/posix.listdir
+       generated/posix.lseek
+       generated/posix.lstat
+       generated/posix.major
+       generated/posix.makedev
+       generated/posix.minor
+       generated/posix.mkdir
+       generated/posix.mkfifo
+       generated/posix.mknod
+       generated/posix.nice
+       generated/posix.open
+       generated/posix.openpty
+       generated/posix.pathconf
+       generated/posix.pipe
+       generated/posix.popen
+       generated/posix.putenv
+       generated/posix.read
+       generated/posix.readlink
+       generated/posix.remove
+       generated/posix.rename
+       generated/posix.rmdir
+       generated/posix.setegid
+       generated/posix.seteuid
+       generated/posix.setgid
+       generated/posix.setgroups
+       generated/posix.setpgid
+       generated/posix.setpgrp
+       generated/posix.setregid
+       generated/posix.setresgid
+       generated/posix.setresuid
+       generated/posix.setreuid
+       generated/posix.setsid
+       generated/posix.setuid
+       generated/posix.stat
+       generated/posix.stat_float_times
+       generated/posix.statvfs
+       generated/posix.strerror
+       generated/posix.symlink
+       generated/posix.sysconf
+       generated/posix.system
+       generated/posix.tcgetpgrp
+       generated/posix.tcsetpgrp
+       generated/posix.tempnam
+       generated/posix.times
+       generated/posix.tmpfile
+       generated/posix.tmpnam
+       generated/posix.ttyname
+       generated/posix.umask
+       generated/posix.uname
+       generated/posix.unlink
+       generated/posix.unsetenv
+       generated/posix.urandom
+       generated/posix.utime
+       generated/posix.wait
+       generated/posix.wait3
+       generated/posix.wait4
+       generated/posix.waitpid
+       generated/posix.write
+      
    
    
 

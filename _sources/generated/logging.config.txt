@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       dictConfig
       fileConfig
       listen
       stopListening
       valid_ident
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/logging.config.dictConfig
+       generated/logging.config.fileConfig
+       generated/logging.config.listen
+       generated/logging.config.stopListening
+       generated/logging.config.valid_ident
+      
    
    
 

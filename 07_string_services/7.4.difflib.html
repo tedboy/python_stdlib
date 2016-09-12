@@ -285,9 +285,9 @@ either full or contextual difference mode.</p>
 defaults to <code class="docutils literal"><span class="pre">8</span></code>.</p>
 <p><em>wrapcolumn</em> is an optional keyword to specify column number where lines are
 broken and wrapped, defaults to <code class="docutils literal"><span class="pre">None</span></code> where lines are not wrapped.</p>
-<p><em>linejunk</em> and <em>charjunk</em> are optional keyword arguments passed into <a class="reference internal" href="../generated/difflib.ndiff.html#difflib.ndiff" title="difflib.ndiff"><code class="xref py py-func docutils literal"><span class="pre">ndiff()</span></code></a>
+<p><em>linejunk</em> and <em>charjunk</em> are optional keyword arguments passed into <a class="reference internal" href="../generated/generated/difflib.ndiff.html#difflib.ndiff" title="difflib.ndiff"><code class="xref py py-func docutils literal"><span class="pre">ndiff()</span></code></a>
 (used by <a class="reference internal" href="../generated/generated/difflib.HtmlDiff.html#difflib.HtmlDiff" title="difflib.HtmlDiff"><code class="xref py py-class docutils literal"><span class="pre">HtmlDiff</span></code></a> to generate the side by side HTML differences).  See
-<a class="reference internal" href="../generated/difflib.ndiff.html#difflib.ndiff" title="difflib.ndiff"><code class="xref py py-func docutils literal"><span class="pre">ndiff()</span></code></a> documentation for argument default values and descriptions.</p>
+<a class="reference internal" href="../generated/generated/difflib.ndiff.html#difflib.ndiff" title="difflib.ndiff"><code class="xref py py-func docutils literal"><span class="pre">ndiff()</span></code></a> documentation for argument default values and descriptions.</p>
 </dd></dl>
 
 <p>The following methods are public:</p>
@@ -407,14 +407,14 @@ delta (a <span class="xref std std-term">generator</span> generating the delta l
 <p><em>linejunk</em>: A function that accepts a single string argument, and returns true
 if the string is junk, or false if not. The default is (<code class="docutils literal"><span class="pre">None</span></code>), starting with
 Python 2.3.  Before then, the default was the module-level function
-<a class="reference internal" href="../generated/difflib.IS_LINE_JUNK.html#difflib.IS_LINE_JUNK" title="difflib.IS_LINE_JUNK"><code class="xref py py-func docutils literal"><span class="pre">IS_LINE_JUNK()</span></code></a>, which filters out lines without visible characters, except
+<a class="reference internal" href="../generated/generated/difflib.IS_LINE_JUNK.html#difflib.IS_LINE_JUNK" title="difflib.IS_LINE_JUNK"><code class="xref py py-func docutils literal"><span class="pre">IS_LINE_JUNK()</span></code></a>, which filters out lines without visible characters, except
 for at most one pound character (<code class="docutils literal"><span class="pre">'#'</span></code>). As of Python 2.3, the underlying
 <a class="reference internal" href="../generated/generated/difflib.SequenceMatcher.html#difflib.SequenceMatcher" title="difflib.SequenceMatcher"><code class="xref py py-class docutils literal"><span class="pre">SequenceMatcher</span></code></a> class does a dynamic analysis of which lines are so
 frequent as to constitute noise, and this usually works better than the pre-2.3
 default.</p>
 <p><em>charjunk</em>: A function that accepts a character (a string of length 1), and
 returns if the character is junk, or false if not. The default is module-level
-function <a class="reference internal" href="../generated/difflib.IS_CHARACTER_JUNK.html#difflib.IS_CHARACTER_JUNK" title="difflib.IS_CHARACTER_JUNK"><code class="xref py py-func docutils literal"><span class="pre">IS_CHARACTER_JUNK()</span></code></a>, which filters out whitespace characters (a
+function <a class="reference internal" href="../generated/generated/difflib.IS_CHARACTER_JUNK.html#difflib.IS_CHARACTER_JUNK" title="difflib.IS_CHARACTER_JUNK"><code class="xref py py-func docutils literal"><span class="pre">IS_CHARACTER_JUNK()</span></code></a>, which filters out whitespace characters (a
 blank or tab; note: bad idea to include newline in this!).</p>
 <p><code class="file docutils literal"><span class="pre">Tools/scripts/ndiff.py</span></code> is a command-line front-end to this function.</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">diff</span> <span class="o">=</span> <span class="n">ndiff</span><span class="p">(</span><span class="s1">&#39;one</span><span class="se">\n</span><span class="s1">two</span><span class="se">\n</span><span class="s1">three</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">splitlines</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
@@ -437,7 +437,7 @@ blank or tab; note: bad idea to include newline in this!).</p>
 <dt id="difflib.restore">
 <code class="descclassname">difflib.</code><code class="descname">restore</code><span class="sig-paren">(</span><em>sequence</em>, <em>which</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/difflib.html#restore"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#difflib.restore" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return one of the two sequences that generated a delta.</p>
-<p>Given a <em>sequence</em> produced by <a class="reference internal" href="../generated/generated/difflib.Differ.compare.html#difflib.Differ.compare" title="difflib.Differ.compare"><code class="xref py py-meth docutils literal"><span class="pre">Differ.compare()</span></code></a> or <a class="reference internal" href="../generated/difflib.ndiff.html#difflib.ndiff" title="difflib.ndiff"><code class="xref py py-func docutils literal"><span class="pre">ndiff()</span></code></a>, extract
+<p>Given a <em>sequence</em> produced by <a class="reference internal" href="../generated/generated/difflib.Differ.compare.html#difflib.Differ.compare" title="difflib.Differ.compare"><code class="xref py py-meth docutils literal"><span class="pre">Differ.compare()</span></code></a> or <a class="reference internal" href="../generated/generated/difflib.ndiff.html#difflib.ndiff" title="difflib.ndiff"><code class="xref py py-func docutils literal"><span class="pre">ndiff()</span></code></a>, extract
 lines originating from file 1 or 2 (parameter <em>which</em>), stripping off line
 prefixes.</p>
 <p>Example:</p>
@@ -504,7 +504,7 @@ strings default to blanks.</p>
 <code class="descclassname">difflib.</code><code class="descname">IS_LINE_JUNK</code><span class="sig-paren">(</span><em>line</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/difflib.html#IS_LINE_JUNK"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#difflib.IS_LINE_JUNK" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return true for ignorable lines.  The line <em>line</em> is ignorable if <em>line</em> is
 blank or contains a single <code class="docutils literal"><span class="pre">'#'</span></code>, otherwise it is not ignorable.  Used as a
-default for parameter <em>linejunk</em> in <a class="reference internal" href="../generated/difflib.ndiff.html#difflib.ndiff" title="difflib.ndiff"><code class="xref py py-func docutils literal"><span class="pre">ndiff()</span></code></a> before Python 2.3.</p>
+default for parameter <em>linejunk</em> in <a class="reference internal" href="../generated/generated/difflib.ndiff.html#difflib.ndiff" title="difflib.ndiff"><code class="xref py py-func docutils literal"><span class="pre">ndiff()</span></code></a> before Python 2.3.</p>
 </dd></dl>
 
 <dl class="function">
@@ -512,7 +512,7 @@ default for parameter <em>linejunk</em> in <a class="reference internal" href=".
 <code class="descclassname">difflib.</code><code class="descname">IS_CHARACTER_JUNK</code><span class="sig-paren">(</span><em>ch</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/difflib.html#IS_CHARACTER_JUNK"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#difflib.IS_CHARACTER_JUNK" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return true for ignorable characters.  The character <em>ch</em> is ignorable if <em>ch</em>
 is a space or tab, otherwise it is not ignorable.  Used as a default for
-parameter <em>charjunk</em> in <a class="reference internal" href="../generated/difflib.ndiff.html#difflib.ndiff" title="difflib.ndiff"><code class="xref py py-func docutils literal"><span class="pre">ndiff()</span></code></a>.</p>
+parameter <em>charjunk</em> in <a class="reference internal" href="../generated/generated/difflib.ndiff.html#difflib.ndiff" title="difflib.ndiff"><code class="xref py py-func docutils literal"><span class="pre">ndiff()</span></code></a>.</p>
 </dd></dl>
 
 <div class="admonition seealso">
@@ -774,7 +774,7 @@ tuple element (number of elements matched) is <code class="docutils literal"><sp
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <ul class="last simple">
-<li>The <a class="reference internal" href="../generated/difflib.get_close_matches.html#difflib.get_close_matches" title="difflib.get_close_matches"><code class="xref py py-func docutils literal"><span class="pre">get_close_matches()</span></code></a> function in this module which shows how
+<li>The <a class="reference internal" href="../generated/generated/difflib.get_close_matches.html#difflib.get_close_matches" title="difflib.get_close_matches"><code class="xref py py-func docutils literal"><span class="pre">get_close_matches()</span></code></a> function in this module which shows how
 simple code building on <a class="reference internal" href="../generated/generated/difflib.SequenceMatcher.html#difflib.SequenceMatcher" title="difflib.SequenceMatcher"><code class="xref py py-class docutils literal"><span class="pre">SequenceMatcher</span></code></a> can be used to do useful
 work.</li>
 <li><a class="reference external" href="https://code.activestate.com/recipes/576729/">Simple version control recipe</a> for a small application

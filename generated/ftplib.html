@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="ftplib.FTP" href="generated/ftplib.FTP.html"/>
+        <link rel="next" title="ftplib.ftpcp()" href="generated/ftplib.ftpcp.html"/>
         <link rel="prev" title="httplib.error" href="httplib.error.html"/> 
 
   
@@ -82,12 +82,99 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="webbrowser.html"><code class="docutils literal"><span class="pre">webbrowser</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cgi.html"><code class="docutils literal"><span class="pre">cgi</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cgitb.html"><code class="docutils literal"><span class="pre">cgitb</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsgiref.html"><code class="docutils literal"><span class="pre">wsgiref</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="urllib.html"><code class="docutils literal"><span class="pre">urllib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="urllib2.html"><code class="docutils literal"><span class="pre">urllib2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="httplib.html"><code class="docutils literal"><span class="pre">httplib</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">ftplib</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/ftplib.ftpcp.html"><code class="docutils literal"><span class="pre">ftplib.ftpcp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ftplib.parse150.html"><code class="docutils literal"><span class="pre">ftplib.parse150()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ftplib.parse227.html"><code class="docutils literal"><span class="pre">ftplib.parse227()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ftplib.parse229.html"><code class="docutils literal"><span class="pre">ftplib.parse229()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ftplib.parse257.html"><code class="docutils literal"><span class="pre">ftplib.parse257()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ftplib.print_line.html"><code class="docutils literal"><span class="pre">ftplib.print_line()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ftplib.test.html"><code class="docutils literal"><span class="pre">ftplib.test()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/ftplib.FTP.html"><code class="docutils literal"><span class="pre">ftplib.FTP</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ftplib.FTP_TLS.html"><code class="docutils literal"><span class="pre">ftplib.FTP_TLS</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ftplib.Netrc.html"><code class="docutils literal"><span class="pre">ftplib.Netrc</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ftplib.Error.html">ftplib.Error</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ftplib.error_perm.html">ftplib.error_perm</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ftplib.error_proto.html">ftplib.error_proto</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ftplib.error_reply.html">ftplib.error_reply</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ftplib.error_temp.html">ftplib.error_temp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="poplib.html"><code class="docutils literal"><span class="pre">poplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="imaplib.html"><code class="docutils literal"><span class="pre">imaplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="nntplib.html"><code class="docutils literal"><span class="pre">nntplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="smtplib.html"><code class="docutils literal"><span class="pre">smtplib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="smtpd.html"><code class="docutils literal"><span class="pre">smtpd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="telnetlib.html"><code class="docutils literal"><span class="pre">telnetlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="uuid.html"><code class="docutils literal"><span class="pre">uuid</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="urlparse.html"><code class="docutils literal"><span class="pre">urlparse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="SocketServer.html"><code class="docutils literal"><span class="pre">SocketServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="BaseHTTPServer.html"><code class="docutils literal"><span class="pre">BaseHTTPServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="SimpleHTTPServer.html"><code class="docutils literal"><span class="pre">SimpleHTTPServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="CGIHTTPServer.html"><code class="docutils literal"><span class="pre">CGIHTTPServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cookielib.html"><code class="docutils literal"><span class="pre">cookielib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cookie.html"><code class="docutils literal"><span class="pre">Cookie</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="xmlrpclib.html"><code class="docutils literal"><span class="pre">xmlrpclib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="SimpleXMLRPCServer.html"><code class="docutils literal"><span class="pre">SimpleXMLRPCServer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="DocXMLRPCServer.html"><code class="docutils literal"><span class="pre">DocXMLRPCServer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -178,6 +265,37 @@
 python ftplib.py -d localhost -l -p -l</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ftplib.ftpcp.html#ftplib.ftpcp" title="ftplib.ftpcp"><code class="xref py py-obj docutils literal"><span class="pre">ftpcp</span></code></a>(source,&nbsp;sourcename,&nbsp;target[,&nbsp;...])</td>
+<td>Copy file from one FTP-instance to another.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ftplib.parse150.html#ftplib.parse150" title="ftplib.parse150"><code class="xref py py-obj docutils literal"><span class="pre">parse150</span></code></a>(resp)</td>
+<td>Parse the &#8216;150&#8217; response for a RETR request.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ftplib.parse227.html#ftplib.parse227" title="ftplib.parse227"><code class="xref py py-obj docutils literal"><span class="pre">parse227</span></code></a>(resp)</td>
+<td>Parse the &#8216;227&#8217; response for a PASV request.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ftplib.parse229.html#ftplib.parse229" title="ftplib.parse229"><code class="xref py py-obj docutils literal"><span class="pre">parse229</span></code></a>(resp,&nbsp;peer)</td>
+<td>Parse the &#8216;229&#8217; response for a EPSV request.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ftplib.parse257.html#ftplib.parse257" title="ftplib.parse257"><code class="xref py py-obj docutils literal"><span class="pre">parse257</span></code></a>(resp)</td>
+<td>Parse the &#8216;257&#8217; response for a MKD or PWD request.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ftplib.print_line.html#ftplib.print_line" title="ftplib.print_line"><code class="xref py py-obj docutils literal"><span class="pre">print_line</span></code></a>(line)</td>
+<td>Default retrlines callback to print a line.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ftplib.test.html#ftplib.test" title="ftplib.test"><code class="xref py py-obj docutils literal"><span class="pre">test</span></code></a>()</td>
+<td>Test program.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -236,7 +354,7 @@ python ftplib.py -d localhost -l -p -l</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/ftplib.FTP.html" class="btn btn-neutral float-right" title="ftplib.FTP" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/ftplib.ftpcp.html" class="btn btn-neutral float-right" title="ftplib.ftpcp()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="httplib.error.html" class="btn btn-neutral" title="httplib.error" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

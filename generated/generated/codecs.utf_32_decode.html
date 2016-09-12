@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>codecs.utf_32_decode() &mdash; Python Standard Library</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="codecs" href="../codecs.html"/>
+        <link rel="next" title="codecs.utf_32_encode()" href="codecs.utf_32_encode.html"/>
+        <link rel="prev" title="codecs.utf_32_be_encode()" href="codecs.utf_32_be_encode.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../api_all.html#string-services">07 String Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../string.html"><code class="docutils literal"><span class="pre">string</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../re.html"><code class="docutils literal"><span class="pre">re</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../struct.html"><code class="docutils literal"><span class="pre">struct</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../difflib.html"><code class="docutils literal"><span class="pre">difflib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../StringIO.html"><code class="docutils literal"><span class="pre">StringIO</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cStringIO.html"><code class="docutils literal"><span class="pre">cStringIO</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../textwrap.html"><code class="docutils literal"><span class="pre">textwrap</span></code></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../codecs.html"><code class="docutils literal"><span class="pre">codecs</span></code></a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../codecs.html#functions">Functions</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="codecs.EncodedFile.html"><code class="docutils literal"><span class="pre">codecs.EncodedFile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.ascii_decode.html"><code class="docutils literal"><span class="pre">codecs.ascii_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.ascii_encode.html"><code class="docutils literal"><span class="pre">codecs.ascii_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.backslashreplace_errors.html"><code class="docutils literal"><span class="pre">codecs.backslashreplace_errors()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.charbuffer_encode.html"><code class="docutils literal"><span class="pre">codecs.charbuffer_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.charmap_build.html"><code class="docutils literal"><span class="pre">codecs.charmap_build()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.charmap_decode.html"><code class="docutils literal"><span class="pre">codecs.charmap_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.charmap_encode.html"><code class="docutils literal"><span class="pre">codecs.charmap_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.decode.html"><code class="docutils literal"><span class="pre">codecs.decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.encode.html"><code class="docutils literal"><span class="pre">codecs.encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.escape_decode.html"><code class="docutils literal"><span class="pre">codecs.escape_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.escape_encode.html"><code class="docutils literal"><span class="pre">codecs.escape_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.getdecoder.html"><code class="docutils literal"><span class="pre">codecs.getdecoder()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.getencoder.html"><code class="docutils literal"><span class="pre">codecs.getencoder()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.getincrementaldecoder.html"><code class="docutils literal"><span class="pre">codecs.getincrementaldecoder()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.getincrementalencoder.html"><code class="docutils literal"><span class="pre">codecs.getincrementalencoder()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.getreader.html"><code class="docutils literal"><span class="pre">codecs.getreader()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.getwriter.html"><code class="docutils literal"><span class="pre">codecs.getwriter()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.ignore_errors.html"><code class="docutils literal"><span class="pre">codecs.ignore_errors()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.iterdecode.html"><code class="docutils literal"><span class="pre">codecs.iterdecode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.iterencode.html"><code class="docutils literal"><span class="pre">codecs.iterencode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.latin_1_decode.html"><code class="docutils literal"><span class="pre">codecs.latin_1_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.latin_1_encode.html"><code class="docutils literal"><span class="pre">codecs.latin_1_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.lookup.html"><code class="docutils literal"><span class="pre">codecs.lookup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.lookup_error.html"><code class="docutils literal"><span class="pre">codecs.lookup_error()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.make_encoding_map.html"><code class="docutils literal"><span class="pre">codecs.make_encoding_map()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.make_identity_dict.html"><code class="docutils literal"><span class="pre">codecs.make_identity_dict()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.open.html"><code class="docutils literal"><span class="pre">codecs.open()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.raw_unicode_escape_decode.html"><code class="docutils literal"><span class="pre">codecs.raw_unicode_escape_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.raw_unicode_escape_encode.html"><code class="docutils literal"><span class="pre">codecs.raw_unicode_escape_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.readbuffer_encode.html"><code class="docutils literal"><span class="pre">codecs.readbuffer_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.register.html"><code class="docutils literal"><span class="pre">codecs.register()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.register_error.html"><code class="docutils literal"><span class="pre">codecs.register_error()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.replace_errors.html"><code class="docutils literal"><span class="pre">codecs.replace_errors()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.strict_errors.html"><code class="docutils literal"><span class="pre">codecs.strict_errors()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.unicode_escape_decode.html"><code class="docutils literal"><span class="pre">codecs.unicode_escape_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.unicode_escape_encode.html"><code class="docutils literal"><span class="pre">codecs.unicode_escape_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.unicode_internal_decode.html"><code class="docutils literal"><span class="pre">codecs.unicode_internal_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.unicode_internal_encode.html"><code class="docutils literal"><span class="pre">codecs.unicode_internal_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_16_be_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_be_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_16_be_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_be_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_16_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_16_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_16_ex_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_ex_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_16_le_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_le_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_16_le_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_le_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_32_be_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_be_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_32_be_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_be_encode()</span></code></a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">codecs.utf_32_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_32_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_32_ex_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_ex_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_32_le_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_le_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_32_le_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_le_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_7_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_7_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_7_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_7_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_8_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_8_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.utf_8_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_8_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="codecs.xmlcharrefreplace_errors.html"><code class="docutils literal"><span class="pre">codecs.xmlcharrefreplace_errors()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../codecs.html#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../encodings.html"><code class="docutils literal"><span class="pre">encodings</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../encodings.idna.html"><code class="docutils literal"><span class="pre">encodings.idna</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../encodings.utf_8_sig.html"><code class="docutils literal"><span class="pre">encodings.utf_8_sig</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../unicodedata.html"><code class="docutils literal"><span class="pre">unicodedata</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../stringprep.html"><code class="docutils literal"><span class="pre">stringprep</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fpformat.html"><code class="docutils literal"><span class="pre">fpformat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../api_all.html">api</a> &raquo;</li>
+        
+          <li><a href="../codecs.html"><code class="docutils literal"><span class="pre">codecs</span></code></a> &raquo;</li>
+        
+      <li><code class="docutils literal"><span class="pre">codecs.utf_32_decode()</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/codecs.utf_32_decode.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="codecs-utf-32-decode">
+<h1><a class="reference internal" href="#codecs.utf_32_decode" title="codecs.utf_32_decode"><code class="xref py py-func docutils literal"><span class="pre">codecs.utf_32_decode()</span></code></a><a class="headerlink" href="#codecs-utf-32-decode" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="codecs.utf_32_decode">
+<code class="descclassname">codecs.</code><code class="descname">utf_32_decode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#codecs.utf_32_decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="codecs.utf_32_encode.html" class="btn btn-neutral float-right" title="codecs.utf_32_encode()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="codecs.utf_32_be_encode.html" class="btn btn-neutral" title="codecs.utf_32_be_encode()" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

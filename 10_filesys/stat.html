@@ -177,11 +177,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="module-stat">
-<span id="stat-interpreting-stat-results"></span><h1>3. <a class="reference internal" href="../generated/stat.html#module-stat" title="stat"><code class="xref py py-mod docutils literal"><span class="pre">stat</span></code></a> &#8212; Interpreting <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a> results<a class="headerlink" href="#module-stat" title="Permalink to this headline">¶</a></h1>
+<span id="stat-interpreting-stat-results"></span><h1>3. <a class="reference internal" href="../generated/stat.html#module-stat" title="stat"><code class="xref py py-mod docutils literal"><span class="pre">stat</span></code></a> &#8212; Interpreting <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">stat()</span></code></a> results<a class="headerlink" href="#module-stat" title="Permalink to this headline">¶</a></h1>
 <p><strong>Source code:</strong> <a href="#id1"><span class="problematic" id="id2">:source:`Lib/stat.py`</span></a></p>
 <hr class="docutils" />
 <p>The <a class="reference internal" href="../generated/stat.html#module-stat" title="stat"><code class="xref py py-mod docutils literal"><span class="pre">stat</span></code></a> module defines constants and functions for interpreting the
-results of <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>, <a class="reference internal" href="../generated/os.fstat.html#os.fstat" title="os.fstat"><code class="xref py py-func docutils literal"><span class="pre">os.fstat()</span></code></a> and <a class="reference internal" href="../generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">os.lstat()</span></code></a> (if they
+results of <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>, <a class="reference internal" href="../generated/generated/os.fstat.html#os.fstat" title="os.fstat"><code class="xref py py-func docutils literal"><span class="pre">os.fstat()</span></code></a> and <a class="reference internal" href="../generated/generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">os.lstat()</span></code></a> (if they
 exist).  For complete details about the <code class="xref c c-func docutils literal"><span class="pre">stat()</span></code>, <code class="xref c c-func docutils literal"><span class="pre">fstat()</span></code> and
 <code class="xref c c-func docutils literal"><span class="pre">lstat()</span></code> calls, consult the documentation for your system.</p>
 <p>The <a class="reference internal" href="../generated/stat.html#module-stat" title="stat"><code class="xref py py-mod docutils literal"><span class="pre">stat</span></code></a> module defines the following functions to test for specific file
@@ -233,7 +233,7 @@ mode:</p>
 <dl class="function">
 <dt id="stat.S_IMODE">
 <code class="descclassname">stat.</code><code class="descname">S_IMODE</code><span class="sig-paren">(</span><em>mode</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/stat.html#S_IMODE"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stat.S_IMODE" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the portion of the file&#8217;s mode that can be set by <a class="reference internal" href="../generated/os.chmod.html#os.chmod" title="os.chmod"><code class="xref py py-func docutils literal"><span class="pre">os.chmod()</span></code></a>&#8212;that is, the file&#8217;s permission bits, plus the sticky bit, set-group-id, and
+<dd><p>Return the portion of the file&#8217;s mode that can be set by <a class="reference internal" href="../generated/generated/os.chmod.html#os.chmod" title="os.chmod"><code class="xref py py-func docutils literal"><span class="pre">os.chmod()</span></code></a>&#8212;that is, the file&#8217;s permission bits, plus the sticky bit, set-group-id, and
 set-user-id bits (on systems that support them).</p>
 </dd></dl>
 
@@ -279,7 +279,7 @@ devices.</p>
 </pre></div>
 </div>
 <p>All the variables below are simply symbolic indexes into the 10-tuple returned
-by <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>, <a class="reference internal" href="../generated/os.fstat.html#os.fstat" title="os.fstat"><code class="xref py py-func docutils literal"><span class="pre">os.fstat()</span></code></a> or <a class="reference internal" href="../generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">os.lstat()</span></code></a>.</p>
+by <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>, <a class="reference internal" href="../generated/generated/os.fstat.html#os.fstat" title="os.fstat"><code class="xref py py-func docutils literal"><span class="pre">os.fstat()</span></code></a> or <a class="reference internal" href="../generated/generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">os.lstat()</span></code></a>.</p>
 <dl class="data">
 <dt id="stat.ST_MODE">
 <code class="descclassname">stat.</code><code class="descname">ST_MODE</code><a class="headerlink" href="#stat.ST_MODE" title="Permalink to this definition">¶</a></dt>
@@ -345,8 +345,8 @@ creation time (see platform documentation for details).</p>
 <p>The interpretation of &#8220;file size&#8221; changes according to the file type.  For plain
 files this is the size of the file in bytes.  For FIFOs and sockets under most
 flavors of Unix (including Linux in particular), the &#8220;size&#8221; is the number of
-bytes waiting to be read at the time of the call to <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>,
-<a class="reference internal" href="../generated/os.fstat.html#os.fstat" title="os.fstat"><code class="xref py py-func docutils literal"><span class="pre">os.fstat()</span></code></a>, or <a class="reference internal" href="../generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">os.lstat()</span></code></a>; this can sometimes be useful, especially
+bytes waiting to be read at the time of the call to <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>,
+<a class="reference internal" href="../generated/generated/os.fstat.html#os.fstat" title="os.fstat"><code class="xref py py-func docutils literal"><span class="pre">os.fstat()</span></code></a>, or <a class="reference internal" href="../generated/generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-func docutils literal"><span class="pre">os.lstat()</span></code></a>; this can sometimes be useful, especially
 for polling one of these special files after a non-blocking open.  The meaning
 of the size field for other character and block devices varies more, depending
 on the implementation of the underlying system call.</p>
@@ -394,7 +394,7 @@ on the implementation of the underlying system call.</p>
 <dd><p>FIFO.</p>
 </dd></dl>
 
-<p>The following flags can also be used in the <em>mode</em> argument of <a class="reference internal" href="../generated/os.chmod.html#os.chmod" title="os.chmod"><code class="xref py py-func docutils literal"><span class="pre">os.chmod()</span></code></a>:</p>
+<p>The following flags can also be used in the <em>mode</em> argument of <a class="reference internal" href="../generated/generated/os.chmod.html#os.chmod" title="os.chmod"><code class="xref py py-func docutils literal"><span class="pre">os.chmod()</span></code></a>:</p>
 <dl class="data">
 <dt id="stat.S_ISUID">
 <code class="descclassname">stat.</code><code class="descname">S_ISUID</code><a class="headerlink" href="#stat.S_ISUID" title="Permalink to this definition">¶</a></dt>

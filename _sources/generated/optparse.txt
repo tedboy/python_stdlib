@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       check_builtin
       check_choice
       gettext
       isbasestring
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/optparse.check_builtin
+       generated/optparse.check_choice
+       generated/optparse.gettext
+       generated/optparse.isbasestring
+      
    
    
 

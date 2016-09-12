@@ -8,12 +8,21 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       StringIO
       split
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/shlex.StringIO
+       generated/shlex.split
+      
    
    
 

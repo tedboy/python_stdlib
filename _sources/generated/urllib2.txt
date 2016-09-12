@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       StringIO
       build_opener
@@ -36,6 +36,37 @@
       unwrap
       url2pathname
       urlopen
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/urllib2.StringIO
+       generated/urllib2.build_opener
+       generated/urllib2.getproxies
+       generated/urllib2.install_opener
+       generated/urllib2.localhost
+       generated/urllib2.parse_http_list
+       generated/urllib2.parse_keqv_list
+       generated/urllib2.proxy_bypass
+       generated/urllib2.quote
+       generated/urllib2.randombytes
+       generated/urllib2.request_host
+       generated/urllib2.splitattr
+       generated/urllib2.splithost
+       generated/urllib2.splitpasswd
+       generated/urllib2.splitport
+       generated/urllib2.splittag
+       generated/urllib2.splittype
+       generated/urllib2.splituser
+       generated/urllib2.splitvalue
+       generated/urllib2.toBytes
+       generated/urllib2.unquote
+       generated/urllib2.unwrap
+       generated/urllib2.url2pathname
+       generated/urllib2.urlopen
+      
    
    
 

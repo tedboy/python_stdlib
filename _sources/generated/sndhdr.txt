@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       get_long_be
       get_long_le
@@ -28,6 +28,29 @@
       testall
       what
       whathdr
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/sndhdr.get_long_be
+       generated/sndhdr.get_long_le
+       generated/sndhdr.get_short_be
+       generated/sndhdr.get_short_le
+       generated/sndhdr.test
+       generated/sndhdr.test_8svx
+       generated/sndhdr.test_aifc
+       generated/sndhdr.test_au
+       generated/sndhdr.test_hcom
+       generated/sndhdr.test_sndr
+       generated/sndhdr.test_sndt
+       generated/sndhdr.test_voc
+       generated/sndhdr.test_wav
+       generated/sndhdr.testall
+       generated/sndhdr.what
+       generated/sndhdr.whathdr
+      
    
    
 

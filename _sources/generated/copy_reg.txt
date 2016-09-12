@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       add_extension
       clear_extension_cache
@@ -18,6 +18,19 @@
       pickle
       pickle_complex
       remove_extension
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/copy_reg.add_extension
+       generated/copy_reg.clear_extension_cache
+       generated/copy_reg.constructor
+       generated/copy_reg.pickle
+       generated/copy_reg.pickle_complex
+       generated/copy_reg.remove_extension
+      
    
    
 

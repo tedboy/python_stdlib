@@ -367,7 +367,7 @@ version of the SQLite library.</p>
 <dt id="sqlite3.PARSE_DECLTYPES">
 <code class="descclassname">sqlite3.</code><code class="descname">PARSE_DECLTYPES</code><a class="headerlink" href="#sqlite3.PARSE_DECLTYPES" title="Permalink to this definition">¶</a></dt>
 <dd><p>This constant is meant to be used with the <em>detect_types</em> parameter of the
-<a class="reference internal" href="../generated/sqlite3.connect.html#sqlite3.connect" title="sqlite3.connect"><code class="xref py py-func docutils literal"><span class="pre">connect()</span></code></a> function.</p>
+<a class="reference internal" href="../generated/generated/sqlite3.connect.html#sqlite3.connect" title="sqlite3.connect"><code class="xref py py-func docutils literal"><span class="pre">connect()</span></code></a> function.</p>
 <p>Setting it makes the <a class="reference internal" href="../generated/sqlite3.html#module-sqlite3" title="sqlite3"><code class="xref py py-mod docutils literal"><span class="pre">sqlite3</span></code></a> module parse the declared type for each
 column it returns.  It will parse out the first word of the declared type,
 i. e.  for &#8220;integer primary key&#8221;, it will parse out &#8220;integer&#8221;, or for
@@ -380,7 +380,7 @@ that type there.</p>
 <dt id="sqlite3.PARSE_COLNAMES">
 <code class="descclassname">sqlite3.</code><code class="descname">PARSE_COLNAMES</code><a class="headerlink" href="#sqlite3.PARSE_COLNAMES" title="Permalink to this definition">¶</a></dt>
 <dd><p>This constant is meant to be used with the <em>detect_types</em> parameter of the
-<a class="reference internal" href="../generated/sqlite3.connect.html#sqlite3.connect" title="sqlite3.connect"><code class="xref py py-func docutils literal"><span class="pre">connect()</span></code></a> function.</p>
+<a class="reference internal" href="../generated/generated/sqlite3.connect.html#sqlite3.connect" title="sqlite3.connect"><code class="xref py py-func docutils literal"><span class="pre">connect()</span></code></a> function.</p>
 <p>Setting this makes the SQLite interface parse the column name for each column it
 returns.  It will look for a string formed [mytype] in there, and then decide
 that &#8216;mytype&#8217; is the type of the column. It will try to find an entry of
@@ -407,13 +407,13 @@ parameter is 5.0 (five seconds).</p>
 <p>SQLite natively supports only the types TEXT, INTEGER, REAL, BLOB and NULL. If
 you want to use other types you must add support for them yourself. The
 <em>detect_types</em> parameter and the using custom <strong>converters</strong> registered with the
-module-level <a class="reference internal" href="../generated/sqlite3.register_converter.html#sqlite3.register_converter" title="sqlite3.register_converter"><code class="xref py py-func docutils literal"><span class="pre">register_converter()</span></code></a> function allow you to easily do that.</p>
+module-level <a class="reference internal" href="../generated/generated/sqlite3.register_converter.html#sqlite3.register_converter" title="sqlite3.register_converter"><code class="xref py py-func docutils literal"><span class="pre">register_converter()</span></code></a> function allow you to easily do that.</p>
 <p><em>detect_types</em> defaults to 0 (i. e. off, no type detection), you can set it to
 any combination of <a class="reference internal" href="#sqlite3.PARSE_DECLTYPES" title="sqlite3.PARSE_DECLTYPES"><code class="xref py py-const docutils literal"><span class="pre">PARSE_DECLTYPES</span></code></a> and <a class="reference internal" href="#sqlite3.PARSE_COLNAMES" title="sqlite3.PARSE_COLNAMES"><code class="xref py py-const docutils literal"><span class="pre">PARSE_COLNAMES</span></code></a> to turn
 type detection on.</p>
 <p>By default, the <a class="reference internal" href="../generated/sqlite3.html#module-sqlite3" title="sqlite3"><code class="xref py py-mod docutils literal"><span class="pre">sqlite3</span></code></a> module uses its <a class="reference internal" href="../generated/generated/sqlite3.Connection.html#sqlite3.Connection" title="sqlite3.Connection"><code class="xref py py-class docutils literal"><span class="pre">Connection</span></code></a> class for the
 connect call.  You can, however, subclass the <a class="reference internal" href="../generated/generated/sqlite3.Connection.html#sqlite3.Connection" title="sqlite3.Connection"><code class="xref py py-class docutils literal"><span class="pre">Connection</span></code></a> class and make
-<a class="reference internal" href="../generated/sqlite3.connect.html#sqlite3.connect" title="sqlite3.connect"><code class="xref py py-func docutils literal"><span class="pre">connect()</span></code></a> use your class instead by providing your class for the <em>factory</em>
+<a class="reference internal" href="../generated/generated/sqlite3.connect.html#sqlite3.connect" title="sqlite3.connect"><code class="xref py py-func docutils literal"><span class="pre">connect()</span></code></a> use your class instead by providing your class for the <em>factory</em>
 parameter.</p>
 <p>Consult the section <a class="reference internal" href="#sqlite3-types"><span>SQLite and Python types</span></a> of this manual for details.</p>
 <p>The <a class="reference internal" href="../generated/sqlite3.html#module-sqlite3" title="sqlite3"><code class="xref py py-mod docutils literal"><span class="pre">sqlite3</span></code></a> module internally uses a statement cache to avoid SQL parsing
@@ -427,7 +427,7 @@ implemented default is to cache 100 statements.</p>
 <code class="descclassname">sqlite3.</code><code class="descname">register_converter</code><span class="sig-paren">(</span><em>typename</em>, <em>callable</em><span class="sig-paren">)</span><a class="headerlink" href="#sqlite3.register_converter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers a callable to convert a bytestring from the database into a custom
 Python type. The callable will be invoked for all database values that are of
-the type <em>typename</em>. Confer the parameter <em>detect_types</em> of the <a class="reference internal" href="../generated/sqlite3.connect.html#sqlite3.connect" title="sqlite3.connect"><code class="xref py py-func docutils literal"><span class="pre">connect()</span></code></a>
+the type <em>typename</em>. Confer the parameter <em>detect_types</em> of the <a class="reference internal" href="../generated/generated/sqlite3.connect.html#sqlite3.connect" title="sqlite3.connect"><code class="xref py py-func docutils literal"><span class="pre">connect()</span></code></a>
 function for how the type detection works. Note that the case of <em>typename</em> and
 the name of the type in your query must match!</p>
 </dd></dl>
@@ -994,7 +994,7 @@ the converted value. The parameter <em>protocol</em> will be <a class="reference
 <div class="section" id="registering-an-adapter-callable">
 <h4>13.5.2.2. Registering an adapter callable<a class="headerlink" href="#registering-an-adapter-callable" title="Permalink to this headline">¶</a></h4>
 <p>The other possibility is to create a function that converts the type to the
-string representation and register the function with <a class="reference internal" href="../generated/sqlite3.register_adapter.html#sqlite3.register_adapter" title="sqlite3.register_adapter"><code class="xref py py-meth docutils literal"><span class="pre">register_adapter()</span></code></a>.</p>
+string representation and register the function with <a class="reference internal" href="../generated/generated/sqlite3.register_adapter.html#sqlite3.register_adapter" title="sqlite3.register_adapter"><code class="xref py py-meth docutils literal"><span class="pre">register_adapter()</span></code></a>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The type/class to adapt must be a <span class="xref std std-term">new-style class</span>, i. e. it must have
@@ -1065,7 +1065,7 @@ is that some of these commands don&#8217;t work within transactions. The other r
 is that sqlite3 needs to keep track of the transaction state (if a transaction
 is active or not).</p>
 <p>You can control which kind of <code class="docutils literal"><span class="pre">BEGIN</span></code> statements sqlite3 implicitly executes
-(or none at all) via the <em>isolation_level</em> parameter to the <a class="reference internal" href="../generated/sqlite3.connect.html#sqlite3.connect" title="sqlite3.connect"><code class="xref py py-func docutils literal"><span class="pre">connect()</span></code></a>
+(or none at all) via the <em>isolation_level</em> parameter to the <a class="reference internal" href="../generated/generated/sqlite3.connect.html#sqlite3.connect" title="sqlite3.connect"><code class="xref py py-func docutils literal"><span class="pre">connect()</span></code></a>
 call, or via the <code class="xref py py-attr docutils literal"><span class="pre">isolation_level</span></code> property of connections.</p>
 <p>If you want <strong>autocommit mode</strong>, then set <code class="xref py py-attr docutils literal"><span class="pre">isolation_level</span></code> to None.</p>
 <p>Otherwise leave it at its default, which will result in a plain &#8220;BEGIN&#8221;

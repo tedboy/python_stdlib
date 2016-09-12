@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       fallback_getpass
       getpass
       getuser
       unix_getpass
       win_getpass
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/getpass.fallback_getpass
+       generated/getpass.getpass
+       generated/getpass.getuser
+       generated/getpass.unix_getpass
+       generated/getpass.win_getpass
+      
    
    
 

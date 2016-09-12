@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       encode_base64
       quoteaddr
       quotedata
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/smtplib.encode_base64
+       generated/smtplib.quoteaddr
+       generated/smtplib.quotedata
+      
    
    
 

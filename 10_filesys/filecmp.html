@@ -197,10 +197,10 @@ see also the <a class="reference internal" href="../generated/difflib.html#modul
 <code class="descclassname">filecmp.</code><code class="descname">cmp</code><span class="sig-paren">(</span><em>f1</em>, <em>f2</em><span class="optional">[</span>, <em>shallow</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/filecmp.html#cmp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#filecmp.cmp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compare the files named <em>f1</em> and <em>f2</em>, returning <code class="docutils literal"><span class="pre">True</span></code> if they seem equal,
 <code class="docutils literal"><span class="pre">False</span></code> otherwise.</p>
-<p>Unless <em>shallow</em> is given and is false, files with identical <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>
+<p>Unless <em>shallow</em> is given and is false, files with identical <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>
 signatures are taken to be equal.</p>
 <p>Files that were compared using this function will not be compared again unless
-their <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a> signature changes.</p>
+their <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a> signature changes.</p>
 <p>Note that no external programs are called from this function, giving it
 portability and efficiency.</p>
 </dd></dl>
@@ -217,7 +217,7 @@ could not be compared.  Files are listed in <em>errors</em> if they don&#8217;t 
 one of the directories, the user lacks permission to read them or if the
 comparison could not be done for some other reason.</p>
 <p>The <em>shallow</em> parameter has the same meaning and default value as for
-<a class="reference internal" href="../generated/filecmp.cmp.html#filecmp.cmp" title="filecmp.cmp"><code class="xref py py-func docutils literal"><span class="pre">filecmp.cmp()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/filecmp.cmp.html#filecmp.cmp" title="filecmp.cmp"><code class="xref py py-func docutils literal"><span class="pre">filecmp.cmp()</span></code></a>.</p>
 <p>For example, <code class="docutils literal"><span class="pre">cmpfiles('a',</span> <span class="pre">'b',</span> <span class="pre">['c',</span> <span class="pre">'d/e'])</span></code> will compare <code class="docutils literal"><span class="pre">a/c</span></code> with
 <code class="docutils literal"><span class="pre">b/c</span></code> and <code class="docutils literal"><span class="pre">a/d/e</span></code> with <code class="docutils literal"><span class="pre">b/d/e</span></code>.  <code class="docutils literal"><span class="pre">'c'</span></code> and <code class="docutils literal"><span class="pre">'d/e'</span></code> will each be in
 one of the three returned lists.</p>
@@ -242,7 +242,7 @@ one of the three returned lists.</p>
 <span class="pre">'tags']</span></code>. <em>hide</em> is a list of names to hide, and defaults to <code class="docutils literal"><span class="pre">[os.curdir,</span>
 <span class="pre">os.pardir]</span></code>.</p>
 <p>The <a class="reference internal" href="../generated/generated/filecmp.dircmp.html#filecmp.dircmp" title="filecmp.dircmp"><code class="xref py py-class docutils literal"><span class="pre">dircmp</span></code></a> class compares files by doing <em>shallow</em> comparisons
-as described for <a class="reference internal" href="../generated/filecmp.cmp.html#filecmp.cmp" title="filecmp.cmp"><code class="xref py py-func docutils literal"><span class="pre">filecmp.cmp()</span></code></a>.</p>
+as described for <a class="reference internal" href="../generated/generated/filecmp.cmp.html#filecmp.cmp" title="filecmp.cmp"><code class="xref py py-func docutils literal"><span class="pre">filecmp.cmp()</span></code></a>.</p>
 <p>The <a class="reference internal" href="../generated/generated/filecmp.dircmp.html#filecmp.dircmp" title="filecmp.dircmp"><code class="xref py py-class docutils literal"><span class="pre">dircmp</span></code></a> class provides the following methods:</p>
 <dl class="method">
 <dt id="filecmp.dircmp.report">
@@ -328,7 +328,7 @@ to compute are used.</p>
 <dt id="filecmp.dircmp.common_funny">
 <code class="descname">common_funny</code><a class="headerlink" href="#filecmp.dircmp.common_funny" title="Permalink to this definition">¶</a></dt>
 <dd><p>Names in both <em>a</em> and <em>b</em>, such that the type differs between the
-directories, or names for which <a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a> reports an error.</p>
+directories, or names for which <a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a> reports an error.</p>
 </dd></dl>
 
 <dl class="attribute">

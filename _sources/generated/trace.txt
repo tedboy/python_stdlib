@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       find_executable_linenos
       find_lines
@@ -20,6 +20,21 @@
       main
       modname
       usage
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/trace.find_executable_linenos
+       generated/trace.find_lines
+       generated/trace.find_lines_from_code
+       generated/trace.find_strings
+       generated/trace.fullmodname
+       generated/trace.main
+       generated/trace.modname
+       generated/trace.usage
+      
    
    
 

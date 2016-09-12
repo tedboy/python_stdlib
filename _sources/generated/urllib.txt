@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       basejoin
       ftperrors
@@ -45,6 +45,46 @@
       urlencode
       urlopen
       urlretrieve
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/urllib.basejoin
+       generated/urllib.ftperrors
+       generated/urllib.getproxies
+       generated/urllib.getproxies_environment
+       generated/urllib.localhost
+       generated/urllib.noheaders
+       generated/urllib.pathname2url
+       generated/urllib.proxy_bypass
+       generated/urllib.proxy_bypass_environment
+       generated/urllib.quote
+       generated/urllib.quote_plus
+       generated/urllib.reporthook
+       generated/urllib.splitattr
+       generated/urllib.splithost
+       generated/urllib.splitnport
+       generated/urllib.splitpasswd
+       generated/urllib.splitport
+       generated/urllib.splitquery
+       generated/urllib.splittag
+       generated/urllib.splittype
+       generated/urllib.splituser
+       generated/urllib.splitvalue
+       generated/urllib.test1
+       generated/urllib.thishost
+       generated/urllib.toBytes
+       generated/urllib.unquote
+       generated/urllib.unquote_plus
+       generated/urllib.unwrap
+       generated/urllib.url2pathname
+       generated/urllib.urlcleanup
+       generated/urllib.urlencode
+       generated/urllib.urlopen
+       generated/urllib.urlretrieve
+      
    
    
 

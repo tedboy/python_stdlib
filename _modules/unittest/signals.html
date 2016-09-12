@@ -186,14 +186,14 @@
             <span class="n">result</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
 
 <span class="n">_results</span> <span class="o">=</span> <span class="n">weakref</span><span class="o">.</span><span class="n">WeakKeyDictionary</span><span class="p">()</span>
-<div class="viewcode-block" id="registerResult"><a class="viewcode-back" href="../../generated/unittest.registerResult.html#unittest.registerResult">[docs]</a><span class="k">def</span> <span class="nf">registerResult</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+<div class="viewcode-block" id="registerResult"><a class="viewcode-back" href="../../generated/generated/unittest.registerResult.html#unittest.registerResult">[docs]</a><span class="k">def</span> <span class="nf">registerResult</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
     <span class="n">_results</span><span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span></div>
 
-<div class="viewcode-block" id="removeResult"><a class="viewcode-back" href="../../generated/unittest.removeResult.html#unittest.removeResult">[docs]</a><span class="k">def</span> <span class="nf">removeResult</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+<div class="viewcode-block" id="removeResult"><a class="viewcode-back" href="../../generated/generated/unittest.removeResult.html#unittest.removeResult">[docs]</a><span class="k">def</span> <span class="nf">removeResult</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="n">_results</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="bp">None</span><span class="p">))</span></div>
 
 <span class="n">_interrupt_handler</span> <span class="o">=</span> <span class="bp">None</span>
-<div class="viewcode-block" id="installHandler"><a class="viewcode-back" href="../../generated/unittest.installHandler.html#unittest.installHandler">[docs]</a><span class="k">def</span> <span class="nf">installHandler</span><span class="p">():</span>
+<div class="viewcode-block" id="installHandler"><a class="viewcode-back" href="../../generated/generated/unittest.installHandler.html#unittest.installHandler">[docs]</a><span class="k">def</span> <span class="nf">installHandler</span><span class="p">():</span>
     <span class="k">global</span> <span class="n">_interrupt_handler</span>
     <span class="k">if</span> <span class="n">_interrupt_handler</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">default_handler</span> <span class="o">=</span> <span class="n">signal</span><span class="o">.</span><span class="n">getsignal</span><span class="p">(</span><span class="n">signal</span><span class="o">.</span><span class="n">SIGINT</span><span class="p">)</span>
@@ -201,7 +201,7 @@
         <span class="n">signal</span><span class="o">.</span><span class="n">signal</span><span class="p">(</span><span class="n">signal</span><span class="o">.</span><span class="n">SIGINT</span><span class="p">,</span> <span class="n">_interrupt_handler</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="removeHandler"><a class="viewcode-back" href="../../generated/unittest.removeHandler.html#unittest.removeHandler">[docs]</a><span class="k">def</span> <span class="nf">removeHandler</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="removeHandler"><a class="viewcode-back" href="../../generated/generated/unittest.removeHandler.html#unittest.removeHandler">[docs]</a><span class="k">def</span> <span class="nf">removeHandler</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="nd">@wraps</span><span class="p">(</span><span class="n">method</span><span class="p">)</span>
         <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>

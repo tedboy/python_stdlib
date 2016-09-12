@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       AddPackagePath
       ReplacePackage
       test
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/modulefinder.AddPackagePath
+       generated/modulefinder.ReplacePackage
+       generated/modulefinder.test
+      
    
    
 

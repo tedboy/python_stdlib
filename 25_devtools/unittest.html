@@ -734,7 +734,7 @@ automatically build <a class="reference internal" href="../generated/generated/u
 tests.  In addition, it supports marking a test as an &#8220;expected failure,&#8221; a test
 that is broken and will fail, but shouldn&#8217;t be counted as a failure on a
 <a class="reference internal" href="../generated/generated/unittest.TestResult.html#unittest.TestResult" title="unittest.TestResult"><code class="xref py py-class docutils literal"><span class="pre">TestResult</span></code></a>.</p>
-<p>Skipping a test is simply a matter of using the <a class="reference internal" href="../generated/unittest.skip.html#unittest.skip" title="unittest.skip"><code class="xref py py-func docutils literal"><span class="pre">skip()</span></code></a> <span class="xref std std-term">decorator</span>
+<p>Skipping a test is simply a matter of using the <a class="reference internal" href="../generated/generated/unittest.skip.html#unittest.skip" title="unittest.skip"><code class="xref py py-func docutils literal"><span class="pre">skip()</span></code></a> <span class="xref std std-term">decorator</span>
 or one of its conditional variants.</p>
 <p>Basic skipping looks like this:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyTestCase</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
@@ -775,7 +775,7 @@ OK (skipped=3)
 </div>
 <p><a class="reference internal" href="../generated/generated/unittest.TestCase.setUp.html#unittest.TestCase.setUp" title="unittest.TestCase.setUp"><code class="xref py py-meth docutils literal"><span class="pre">TestCase.setUp()</span></code></a> can also skip the test.  This is useful when a resource
 that needs to be set up is not available.</p>
-<p>Expected failures use the <a class="reference internal" href="../generated/unittest.expectedFailure.html#unittest.expectedFailure" title="unittest.expectedFailure"><code class="xref py py-func docutils literal"><span class="pre">expectedFailure()</span></code></a> decorator.</p>
+<p>Expected failures use the <a class="reference internal" href="../generated/generated/unittest.expectedFailure.html#unittest.expectedFailure" title="unittest.expectedFailure"><code class="xref py py-func docutils literal"><span class="pre">expectedFailure()</span></code></a> decorator.</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ExpectedFailureTestCase</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
     <span class="nd">@unittest.expectedFailure</span>
     <span class="k">def</span> <span class="nf">test_fail</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -783,7 +783,7 @@ that needs to be set up is not available.</p>
 </pre></div>
 </div>
 <p>It&#8217;s easy to roll your own skipping decorators by making a decorator that calls
-<a class="reference internal" href="../generated/unittest.skip.html#unittest.skip" title="unittest.skip"><code class="xref py py-func docutils literal"><span class="pre">skip()</span></code></a> on the test when it wants it to be skipped.  This decorator skips
+<a class="reference internal" href="../generated/generated/unittest.skip.html#unittest.skip" title="unittest.skip"><code class="xref py py-func docutils literal"><span class="pre">skip()</span></code></a> on the test when it wants it to be skipped.  This decorator skips
 the test unless the passed object has a certain attribute:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">skipUnlessHasattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
@@ -1164,7 +1164,7 @@ is to perform additional checks on the exception raised:</p>
 <dd><p>Like <a class="reference internal" href="../generated/generated/unittest.TestCase.assertRaises.html#unittest.TestCase.assertRaises" title="unittest.TestCase.assertRaises"><code class="xref py py-meth docutils literal"><span class="pre">assertRaises()</span></code></a> but also tests that <em>regexp</em> matches
 on the string representation of the raised exception.  <em>regexp</em> may be
 a regular expression object or a string containing a regular expression
-suitable for use by <a class="reference internal" href="../generated/re.search.html#re.search" title="re.search"><code class="xref py py-func docutils literal"><span class="pre">re.search()</span></code></a>.  Examples:</p>
+suitable for use by <a class="reference internal" href="../generated/generated/re.search.html#re.search" title="re.search"><code class="xref py py-func docutils literal"><span class="pre">re.search()</span></code></a>.  Examples:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">assertRaisesRegexp</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;invalid literal for.*XYZ&#39;$&quot;</span><span class="p">,</span>
                         <span class="nb">int</span><span class="p">,</span> <span class="s1">&#39;XYZ&#39;</span><span class="p">)</span>
 </pre></div>
@@ -1284,7 +1284,7 @@ on the method name.  If not, the test will fail:</p>
 of failure, the error message will include the pattern and the <em>text</em> (or
 the pattern and the part of <em>text</em> that unexpectedly matched).  <em>regexp</em>
 may be a regular expression object or a string containing a regular
-expression suitable for use by <a class="reference internal" href="../generated/re.search.html#re.search" title="re.search"><code class="xref py py-func docutils literal"><span class="pre">re.search()</span></code></a>.</p>
+expression suitable for use by <a class="reference internal" href="../generated/generated/re.search.html#re.search" title="re.search"><code class="xref py py-func docutils literal"><span class="pre">re.search()</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.7.</span></p>
 </div>
@@ -1296,7 +1296,7 @@ expression suitable for use by <a class="reference internal" href="../generated/
 <dd><p>Verifies that a <em>regexp</em> search does not match <em>text</em>.  Fails with an error
 message including the pattern and the part of <em>text</em> that matches.  <em>regexp</em>
 may be a regular expression object or a string containing a regular
-expression suitable for use by <a class="reference internal" href="../generated/re.search.html#re.search" title="re.search"><code class="xref py py-func docutils literal"><span class="pre">re.search()</span></code></a>.</p>
+expression suitable for use by <a class="reference internal" href="../generated/generated/re.search.html#re.search" title="re.search"><code class="xref py py-func docutils literal"><span class="pre">re.search()</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.7.</span></p>
 </div>
@@ -1831,7 +1831,7 @@ subclassing or assignment on an instance:</p>
 <code class="descname">testMethodPrefix</code><a class="headerlink" href="#unittest.TestLoader.testMethodPrefix" title="Permalink to this definition">¶</a></dt>
 <dd><p>String giving the prefix of method names which will be interpreted as test
 methods.  The default value is <code class="docutils literal"><span class="pre">'test'</span></code>.</p>
-<p>This affects <a class="reference internal" href="../generated/unittest.getTestCaseNames.html#unittest.getTestCaseNames" title="unittest.getTestCaseNames"><code class="xref py py-meth docutils literal"><span class="pre">getTestCaseNames()</span></code></a> and all the <code class="xref py py-meth docutils literal"><span class="pre">loadTestsFrom*()</span></code>
+<p>This affects <a class="reference internal" href="../generated/generated/unittest.getTestCaseNames.html#unittest.getTestCaseNames" title="unittest.getTestCaseNames"><code class="xref py py-meth docutils literal"><span class="pre">getTestCaseNames()</span></code></a> and all the <code class="xref py py-meth docutils literal"><span class="pre">loadTestsFrom*()</span></code>
 methods.</p>
 </dd></dl>
 
@@ -1839,7 +1839,7 @@ methods.</p>
 <dt id="unittest.TestLoader.sortTestMethodsUsing">
 <code class="descname">sortTestMethodsUsing</code><a class="headerlink" href="#unittest.TestLoader.sortTestMethodsUsing" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function to be used to compare method names when sorting them in
-<a class="reference internal" href="../generated/unittest.getTestCaseNames.html#unittest.getTestCaseNames" title="unittest.getTestCaseNames"><code class="xref py py-meth docutils literal"><span class="pre">getTestCaseNames()</span></code></a> and all the <code class="xref py py-meth docutils literal"><span class="pre">loadTestsFrom*()</span></code> methods. The
+<a class="reference internal" href="../generated/generated/unittest.getTestCaseNames.html#unittest.getTestCaseNames" title="unittest.getTestCaseNames"><code class="xref py py-meth docutils literal"><span class="pre">getTestCaseNames()</span></code></a> and all the <code class="xref py py-meth docutils literal"><span class="pre">loadTestsFrom*()</span></code> methods. The
 default value is the built-in <a class="reference internal" href="../02_builtin_functions/02.html#cmp" title="cmp"><code class="xref py py-func docutils literal"><span class="pre">cmp()</span></code></a> function; the attribute can also
 be set to <a class="reference internal" href="../04_builtin_constants/04.html#None" title="None"><code class="xref py py-const docutils literal"><span class="pre">None</span></code></a> to disable the sort.</p>
 </dd></dl>
@@ -1877,7 +1877,7 @@ interest when inspecting the results of running a set of tests:</p>
 holding formatted tracebacks. Each tuple represents a test which raised an
 unexpected exception.</p>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.2: </span>Contains formatted tracebacks instead of <a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a> results.</p>
+<p><span class="versionmodified">Changed in version 2.2: </span>Contains formatted tracebacks instead of <a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a> results.</p>
 </div>
 </dd></dl>
 
@@ -1888,7 +1888,7 @@ unexpected exception.</p>
 holding formatted tracebacks. Each tuple represents a test where a failure
 was explicitly signalled using the <code class="xref py py-meth docutils literal"><span class="pre">TestCase.assert*()</span></code> methods.</p>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.2: </span>Contains formatted tracebacks instead of <a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a> results.</p>
+<p><span class="versionmodified">Changed in version 2.2: </span>Contains formatted tracebacks instead of <a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a> results.</p>
 </div>
 </dd></dl>
 
@@ -2010,7 +2010,7 @@ outcome.</p>
 <dt id="unittest.TestResult.addError">
 <code class="descname">addError</code><span class="sig-paren">(</span><em>test</em>, <em>err</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/unittest/result.html#TestResult.addError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#unittest.TestResult.addError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Called when the test case <em>test</em> raises an unexpected exception. <em>err</em> is a
-tuple of the form returned by <a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>: <code class="docutils literal"><span class="pre">(type,</span> <span class="pre">value,</span>
+tuple of the form returned by <a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>: <code class="docutils literal"><span class="pre">(type,</span> <span class="pre">value,</span>
 <span class="pre">traceback)</span></code>.</p>
 <p>The default implementation appends a tuple <code class="docutils literal"><span class="pre">(test,</span> <span class="pre">formatted_err)</span></code> to
 the instance&#8217;s <a class="reference internal" href="#unittest.TestResult.errors" title="unittest.TestResult.errors"><code class="xref py py-attr docutils literal"><span class="pre">errors</span></code></a> attribute, where <em>formatted_err</em> is a
@@ -2021,7 +2021,7 @@ formatted traceback derived from <em>err</em>.</p>
 <dt id="unittest.TestResult.addFailure">
 <code class="descname">addFailure</code><span class="sig-paren">(</span><em>test</em>, <em>err</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/unittest/result.html#TestResult.addFailure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#unittest.TestResult.addFailure" title="Permalink to this definition">¶</a></dt>
 <dd><p>Called when the test case <em>test</em> signals a failure. <em>err</em> is a tuple of
-the form returned by <a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>: <code class="docutils literal"><span class="pre">(type,</span> <span class="pre">value,</span> <span class="pre">traceback)</span></code>.</p>
+the form returned by <a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>: <code class="docutils literal"><span class="pre">(type,</span> <span class="pre">value,</span> <span class="pre">traceback)</span></code>.</p>
 <p>The default implementation appends a tuple <code class="docutils literal"><span class="pre">(test,</span> <span class="pre">formatted_err)</span></code> to
 the instance&#8217;s <a class="reference internal" href="#unittest.TestResult.failures" title="unittest.TestResult.failures"><code class="xref py py-attr docutils literal"><span class="pre">failures</span></code></a> attribute, where <em>formatted_err</em> is a
 formatted traceback derived from <em>err</em>.</p>
@@ -2047,7 +2047,7 @@ instance&#8217;s <a class="reference internal" href="#unittest.TestResult.skippe
 <dt id="unittest.TestResult.addExpectedFailure">
 <code class="descname">addExpectedFailure</code><span class="sig-paren">(</span><em>test</em>, <em>err</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/unittest/result.html#TestResult.addExpectedFailure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#unittest.TestResult.addExpectedFailure" title="Permalink to this definition">¶</a></dt>
 <dd><p>Called when the test case <em>test</em> fails, but was marked with the
-<a class="reference internal" href="../generated/unittest.expectedFailure.html#unittest.expectedFailure" title="unittest.expectedFailure"><code class="xref py py-func docutils literal"><span class="pre">expectedFailure()</span></code></a> decorator.</p>
+<a class="reference internal" href="../generated/generated/unittest.expectedFailure.html#unittest.expectedFailure" title="unittest.expectedFailure"><code class="xref py py-func docutils literal"><span class="pre">expectedFailure()</span></code></a> decorator.</p>
 <p>The default implementation appends a tuple <code class="docutils literal"><span class="pre">(test,</span> <span class="pre">formatted_err)</span></code> to
 the instance&#8217;s <a class="reference internal" href="#unittest.TestResult.expectedFailures" title="unittest.TestResult.expectedFailures"><code class="xref py py-attr docutils literal"><span class="pre">expectedFailures</span></code></a> attribute, where <em>formatted_err</em>
 is a formatted traceback derived from <em>err</em>.</p>
@@ -2057,7 +2057,7 @@ is a formatted traceback derived from <em>err</em>.</p>
 <dt id="unittest.TestResult.addUnexpectedSuccess">
 <code class="descname">addUnexpectedSuccess</code><span class="sig-paren">(</span><em>test</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/unittest/result.html#TestResult.addUnexpectedSuccess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#unittest.TestResult.addUnexpectedSuccess" title="Permalink to this definition">¶</a></dt>
 <dd><p>Called when the test case <em>test</em> was marked with the
-<a class="reference internal" href="../generated/unittest.expectedFailure.html#unittest.expectedFailure" title="unittest.expectedFailure"><code class="xref py py-func docutils literal"><span class="pre">expectedFailure()</span></code></a> decorator, but succeeded.</p>
+<a class="reference internal" href="../generated/generated/unittest.expectedFailure.html#unittest.expectedFailure" title="unittest.expectedFailure"><code class="xref py py-func docutils literal"><span class="pre">expectedFailure()</span></code></a> decorator, but succeeded.</p>
 <p>The default implementation appends the test to the instance&#8217;s
 <a class="reference internal" href="#unittest.TestResult.unexpectedSuccesses" title="unittest.TestResult.unexpectedSuccesses"><code class="xref py py-attr docutils literal"><span class="pre">unexpectedSuccesses</span></code></a> attribute.</p>
 </dd></dl>
@@ -2130,13 +2130,13 @@ provided via <em>argv</em>, all tests found in <em>module</em> are run.</p>
 first element being the program name.  If not specified or <code class="docutils literal"><span class="pre">None</span></code>,
 the values of <a class="reference internal" href="../28_runtime_service/sys.html#sys.argv" title="sys.argv"><code class="xref py py-data docutils literal"><span class="pre">sys.argv</span></code></a> are used.</p>
 <p>The <em>testRunner</em> argument can either be a test runner class or an already
-created instance of it. By default <code class="docutils literal"><span class="pre">main</span></code> calls <a class="reference internal" href="../generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a> with
+created instance of it. By default <code class="docutils literal"><span class="pre">main</span></code> calls <a class="reference internal" href="../generated/generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a> with
 an exit code indicating success or failure of the tests run.</p>
 <p>The <em>testLoader</em> argument has to be a <a class="reference internal" href="../generated/generated/unittest.TestLoader.html#unittest.TestLoader" title="unittest.TestLoader"><code class="xref py py-class docutils literal"><span class="pre">TestLoader</span></code></a> instance,
 and defaults to <a class="reference internal" href="#unittest.defaultTestLoader" title="unittest.defaultTestLoader"><code class="xref py py-data docutils literal"><span class="pre">defaultTestLoader</span></code></a>.</p>
 <p><code class="docutils literal"><span class="pre">main</span></code> supports being used from the interactive interpreter by passing in the
 argument <code class="docutils literal"><span class="pre">exit=False</span></code>. This displays the result on standard output without
-calling <a class="reference internal" href="../generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a>:</p>
+calling <a class="reference internal" href="../generated/generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">unittest</span> <span class="kn">import</span> <span class="n">main</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">main</span><span class="p">(</span><span class="n">module</span><span class="o">=</span><span class="s1">&#39;test_module&#39;</span><span class="p">,</span> <span class="nb">exit</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 </pre></div>
@@ -2296,7 +2296,7 @@ handler is called but <em>isn&#8217;t</em> the installed <code class="xref py py
 i.e. it has been replaced by the system under test and delegated to, then it
 calls the default handler. This will normally be the expected behavior by code
 that replaces an installed handler and delegates to it. For individual tests
-that need <code class="docutils literal"><span class="pre">unittest</span></code> control-c handling disabled the <a class="reference internal" href="../generated/unittest.removeHandler.html#unittest.removeHandler" title="unittest.removeHandler"><code class="xref py py-func docutils literal"><span class="pre">removeHandler()</span></code></a>
+that need <code class="docutils literal"><span class="pre">unittest</span></code> control-c handling disabled the <a class="reference internal" href="../generated/generated/unittest.removeHandler.html#unittest.removeHandler" title="unittest.removeHandler"><code class="xref py py-func docutils literal"><span class="pre">removeHandler()</span></code></a>
 decorator can be used.</p>
 <p>There are a few utility functions for framework authors to enable control-c
 handling functionality within test frameworks.</p>

@@ -225,7 +225,7 @@
 
 <span class="n">_reraised_exceptions</span> <span class="o">=</span> <span class="p">(</span><span class="n">ExitNow</span><span class="p">,</span> <span class="ne">KeyboardInterrupt</span><span class="p">,</span> <span class="ne">SystemExit</span><span class="p">)</span>
 
-<div class="viewcode-block" id="read"><a class="viewcode-back" href="../generated/asyncore.read.html#asyncore.read">[docs]</a><span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+<div class="viewcode-block" id="read"><a class="viewcode-back" href="../generated/generated/asyncore.read.html#asyncore.read">[docs]</a><span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">obj</span><span class="o">.</span><span class="n">handle_read_event</span><span class="p">()</span>
     <span class="k">except</span> <span class="n">_reraised_exceptions</span><span class="p">:</span>
@@ -233,7 +233,7 @@
     <span class="k">except</span><span class="p">:</span>
         <span class="n">obj</span><span class="o">.</span><span class="n">handle_error</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="write"><a class="viewcode-back" href="../generated/asyncore.write.html#asyncore.write">[docs]</a><span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+<div class="viewcode-block" id="write"><a class="viewcode-back" href="../generated/generated/asyncore.write.html#asyncore.write">[docs]</a><span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">obj</span><span class="o">.</span><span class="n">handle_write_event</span><span class="p">()</span>
     <span class="k">except</span> <span class="n">_reraised_exceptions</span><span class="p">:</span>
@@ -249,7 +249,7 @@
     <span class="k">except</span><span class="p">:</span>
         <span class="n">obj</span><span class="o">.</span><span class="n">handle_error</span><span class="p">()</span>
 
-<div class="viewcode-block" id="readwrite"><a class="viewcode-back" href="../generated/asyncore.readwrite.html#asyncore.readwrite">[docs]</a><span class="k">def</span> <span class="nf">readwrite</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">flags</span><span class="p">):</span>
+<div class="viewcode-block" id="readwrite"><a class="viewcode-back" href="../generated/generated/asyncore.readwrite.html#asyncore.readwrite">[docs]</a><span class="k">def</span> <span class="nf">readwrite</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">flags</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">flags</span> <span class="o">&amp;</span> <span class="n">select</span><span class="o">.</span><span class="n">POLLIN</span><span class="p">:</span>
             <span class="n">obj</span><span class="o">.</span><span class="n">handle_read_event</span><span class="p">()</span>
@@ -269,7 +269,7 @@
     <span class="k">except</span><span class="p">:</span>
         <span class="n">obj</span><span class="o">.</span><span class="n">handle_error</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="poll"><a class="viewcode-back" href="../generated/asyncore.poll.html#asyncore.poll">[docs]</a><span class="k">def</span> <span class="nf">poll</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="nb">map</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="poll"><a class="viewcode-back" href="../generated/generated/asyncore.poll.html#asyncore.poll">[docs]</a><span class="k">def</span> <span class="nf">poll</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="nb">map</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">map</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="nb">map</span> <span class="o">=</span> <span class="n">socket_map</span>
     <span class="k">if</span> <span class="nb">map</span><span class="p">:</span>
@@ -314,7 +314,7 @@
                 <span class="k">continue</span>
             <span class="n">_exception</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="poll2"><a class="viewcode-back" href="../generated/asyncore.poll2.html#asyncore.poll2">[docs]</a><span class="k">def</span> <span class="nf">poll2</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="nb">map</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="poll2"><a class="viewcode-back" href="../generated/generated/asyncore.poll2.html#asyncore.poll2">[docs]</a><span class="k">def</span> <span class="nf">poll2</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="nb">map</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="c1"># Use the poll() support added to the select module in Python 2.0</span>
     <span class="k">if</span> <span class="nb">map</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="nb">map</span> <span class="o">=</span> <span class="n">socket_map</span>
@@ -349,7 +349,7 @@
 
 <span class="n">poll3</span> <span class="o">=</span> <span class="n">poll2</span>                           <span class="c1"># Alias for backward compatibility</span>
 
-<div class="viewcode-block" id="loop"><a class="viewcode-back" href="../generated/asyncore.loop.html#asyncore.loop">[docs]</a><span class="k">def</span> <span class="nf">loop</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mf">30.0</span><span class="p">,</span> <span class="n">use_poll</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="nb">map</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="loop"><a class="viewcode-back" href="../generated/generated/asyncore.loop.html#asyncore.loop">[docs]</a><span class="k">def</span> <span class="nf">loop</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mf">30.0</span><span class="p">,</span> <span class="n">use_poll</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="nb">map</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">map</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="nb">map</span> <span class="o">=</span> <span class="n">socket_map</span>
 
@@ -700,7 +700,7 @@
 <span class="c1"># used for debugging.</span>
 <span class="c1"># ---------------------------------------------------------------------------</span>
 
-<div class="viewcode-block" id="compact_traceback"><a class="viewcode-back" href="../generated/asyncore.compact_traceback.html#asyncore.compact_traceback">[docs]</a><span class="k">def</span> <span class="nf">compact_traceback</span><span class="p">():</span>
+<div class="viewcode-block" id="compact_traceback"><a class="viewcode-back" href="../generated/generated/asyncore.compact_traceback.html#asyncore.compact_traceback">[docs]</a><span class="k">def</span> <span class="nf">compact_traceback</span><span class="p">():</span>
     <span class="n">t</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">tb</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
     <span class="n">tbinfo</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">tb</span><span class="p">:</span> <span class="c1"># Must have a traceback</span>
@@ -720,7 +720,7 @@
     <span class="n">info</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">|</span><span class="si">%s</span><span class="s1">|</span><span class="si">%s</span><span class="s1">]&#39;</span> <span class="o">%</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tbinfo</span><span class="p">])</span>
     <span class="k">return</span> <span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">function</span><span class="p">,</span> <span class="n">line</span><span class="p">),</span> <span class="n">t</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">info</span></div>
 
-<div class="viewcode-block" id="close_all"><a class="viewcode-back" href="../generated/asyncore.close_all.html#asyncore.close_all">[docs]</a><span class="k">def</span> <span class="nf">close_all</span><span class="p">(</span><span class="nb">map</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">ignore_all</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+<div class="viewcode-block" id="close_all"><a class="viewcode-back" href="../generated/generated/asyncore.close_all.html#asyncore.close_all">[docs]</a><span class="k">def</span> <span class="nf">close_all</span><span class="p">(</span><span class="nb">map</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">ignore_all</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">map</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="nb">map</span> <span class="o">=</span> <span class="n">socket_map</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">map</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>

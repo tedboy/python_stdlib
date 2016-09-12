@@ -187,7 +187,7 @@
 <hr class="docutils" />
 <p>The <a class="reference internal" href="../generated/webbrowser.html#module-webbrowser" title="webbrowser"><code class="xref py py-mod docutils literal"><span class="pre">webbrowser</span></code></a> module provides a high-level interface to allow displaying
 Web-based documents to users. Under most circumstances, simply calling the
-<a class="reference internal" href="../generated/webbrowser.open.html#webbrowser.open" title="webbrowser.open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> function from this module will do the right thing.</p>
+<a class="reference internal" href="../generated/generated/webbrowser.open.html#webbrowser.open" title="webbrowser.open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> function from this module will do the right thing.</p>
 <p>Under Unix, graphical browsers are preferred under X11, but text-mode browsers
 will be used if graphical browsers are not available or an X11 display isn&#8217;t
 available.  If text-mode browsers are used, the calling process will block until
@@ -247,7 +247,7 @@ is neither supported nor portable.</p>
 <dt id="webbrowser.open_new_tab">
 <code class="descclassname">webbrowser.</code><code class="descname">open_new_tab</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/webbrowser.html#open_new_tab"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#webbrowser.open_new_tab" title="Permalink to this definition">¶</a></dt>
 <dd><p>Open <em>url</em> in a new page (&#8220;tab&#8221;) of the default browser, if possible, otherwise
-equivalent to <a class="reference internal" href="../generated/webbrowser.open_new.html#webbrowser.open_new" title="webbrowser.open_new"><code class="xref py py-func docutils literal"><span class="pre">open_new()</span></code></a>.</p>
+equivalent to <a class="reference internal" href="../generated/generated/webbrowser.open_new.html#webbrowser.open_new" title="webbrowser.open_new"><code class="xref py py-func docutils literal"><span class="pre">open_new()</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.5.</span></p>
 </div>
@@ -265,17 +265,17 @@ environment.</p>
 <dt id="webbrowser.register">
 <code class="descclassname">webbrowser.</code><code class="descname">register</code><span class="sig-paren">(</span><em>name</em>, <em>constructor</em><span class="optional">[</span>, <em>instance</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/webbrowser.html#register"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#webbrowser.register" title="Permalink to this definition">¶</a></dt>
 <dd><p>Register the browser type <em>name</em>.  Once a browser type is registered, the
-<a class="reference internal" href="../generated/webbrowser.get.html#webbrowser.get" title="webbrowser.get"><code class="xref py py-func docutils literal"><span class="pre">get()</span></code></a> function can return a controller for that browser type.  If
+<a class="reference internal" href="../generated/generated/webbrowser.get.html#webbrowser.get" title="webbrowser.get"><code class="xref py py-func docutils literal"><span class="pre">get()</span></code></a> function can return a controller for that browser type.  If
 <em>instance</em> is not provided, or is <code class="docutils literal"><span class="pre">None</span></code>, <em>constructor</em> will be called without
 parameters to create an instance when needed.  If <em>instance</em> is provided,
 <em>constructor</em> will never be called, and may be <code class="docutils literal"><span class="pre">None</span></code>.</p>
 <p>This entry point is only useful if you plan to either set the <span class="target" id="index-1"></span><code class="xref std std-envvar docutils literal"><span class="pre">BROWSER</span></code>
-variable or call <a class="reference internal" href="../generated/webbrowser.get.html#webbrowser.get" title="webbrowser.get"><code class="xref py py-func docutils literal"><span class="pre">get()</span></code></a> with a nonempty argument matching the name of a
+variable or call <a class="reference internal" href="../generated/generated/webbrowser.get.html#webbrowser.get" title="webbrowser.get"><code class="xref py py-func docutils literal"><span class="pre">get()</span></code></a> with a nonempty argument matching the name of a
 handler you declare.</p>
 </dd></dl>
 
 <p>A number of browser types are predefined.  This table gives the type names that
-may be passed to the <a class="reference internal" href="../generated/webbrowser.get.html#webbrowser.get" title="webbrowser.get"><code class="xref py py-func docutils literal"><span class="pre">get()</span></code></a> function and the corresponding instantiations
+may be passed to the <a class="reference internal" href="../generated/generated/webbrowser.get.html#webbrowser.get" title="webbrowser.get"><code class="xref py py-func docutils literal"><span class="pre">get()</span></code></a> function and the corresponding instantiations
 for the controller classes, all defined in this module.</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -422,14 +422,14 @@ is opened if possible.</p>
 <code class="descclassname">controller.</code><code class="descname">open_new</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#webbrowser.controller.open_new" title="Permalink to this definition">¶</a></dt>
 <dd><p>Open <em>url</em> in a new window of the browser handled by this controller, if
 possible, otherwise, open <em>url</em> in the only browser window.  Alias
-<a class="reference internal" href="../generated/webbrowser.open_new.html#webbrowser.open_new" title="webbrowser.open_new"><code class="xref py py-func docutils literal"><span class="pre">open_new()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/webbrowser.open_new.html#webbrowser.open_new" title="webbrowser.open_new"><code class="xref py py-func docutils literal"><span class="pre">open_new()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="webbrowser.controller.open_new_tab">
 <code class="descclassname">controller.</code><code class="descname">open_new_tab</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#webbrowser.controller.open_new_tab" title="Permalink to this definition">¶</a></dt>
 <dd><p>Open <em>url</em> in a new page (&#8220;tab&#8221;) of the browser handled by this controller, if
-possible, otherwise equivalent to <a class="reference internal" href="../generated/webbrowser.open_new.html#webbrowser.open_new" title="webbrowser.open_new"><code class="xref py py-func docutils literal"><span class="pre">open_new()</span></code></a>.</p>
+possible, otherwise equivalent to <a class="reference internal" href="../generated/generated/webbrowser.open_new.html#webbrowser.open_new" title="webbrowser.open_new"><code class="xref py py-func docutils literal"><span class="pre">open_new()</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.5.</span></p>
 </div>

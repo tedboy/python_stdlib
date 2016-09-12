@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       DateFromTicks
       TimeFromTicks
@@ -22,6 +22,23 @@
       enable_shared_cache
       register_adapter
       register_converter
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/sqlite3.DateFromTicks
+       generated/sqlite3.TimeFromTicks
+       generated/sqlite3.TimestampFromTicks
+       generated/sqlite3.adapt
+       generated/sqlite3.complete_statement
+       generated/sqlite3.connect
+       generated/sqlite3.enable_callback_tracebacks
+       generated/sqlite3.enable_shared_cache
+       generated/sqlite3.register_adapter
+       generated/sqlite3.register_converter
+      
    
    
 

@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       executable
       nobody_uid
       test
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/CGIHTTPServer.executable
+       generated/CGIHTTPServer.nobody_uid
+       generated/CGIHTTPServer.test
+      
    
    
 

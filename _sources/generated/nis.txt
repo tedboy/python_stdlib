@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       cat
       get_default_domain
       maps
       match
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/nis.cat
+       generated/nis.get_default_domain
+       generated/nis.maps
+       generated/nis.match
+      
    
    
 

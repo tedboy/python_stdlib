@@ -8,12 +8,21 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       compare_digest
       new
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/hmac.compare_digest
+       generated/hmac.new
+      
    
    
 

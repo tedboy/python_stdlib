@@ -181,9 +181,9 @@
 <p><span class="versionmodified">New in version 2.3.</span></p>
 </div>
 <hr class="docutils" />
-<p>The <a class="reference internal" href="../generated/textwrap.html#module-textwrap" title="textwrap"><code class="xref py py-mod docutils literal"><span class="pre">textwrap</span></code></a> module provides two convenience functions, <a class="reference internal" href="../generated/textwrap.wrap.html#textwrap.wrap" title="textwrap.wrap"><code class="xref py py-func docutils literal"><span class="pre">wrap()</span></code></a> and
-<a class="reference internal" href="../generated/textwrap.fill.html#textwrap.fill" title="textwrap.fill"><code class="xref py py-func docutils literal"><span class="pre">fill()</span></code></a>, as well as <a class="reference internal" href="../generated/generated/textwrap.TextWrapper.html#textwrap.TextWrapper" title="textwrap.TextWrapper"><code class="xref py py-class docutils literal"><span class="pre">TextWrapper</span></code></a>, the class that does all the work,
-and a utility function  <a class="reference internal" href="../generated/textwrap.dedent.html#textwrap.dedent" title="textwrap.dedent"><code class="xref py py-func docutils literal"><span class="pre">dedent()</span></code></a>.  If you&#8217;re just wrapping or filling one
+<p>The <a class="reference internal" href="../generated/textwrap.html#module-textwrap" title="textwrap"><code class="xref py py-mod docutils literal"><span class="pre">textwrap</span></code></a> module provides two convenience functions, <a class="reference internal" href="../generated/generated/textwrap.wrap.html#textwrap.wrap" title="textwrap.wrap"><code class="xref py py-func docutils literal"><span class="pre">wrap()</span></code></a> and
+<a class="reference internal" href="../generated/generated/textwrap.fill.html#textwrap.fill" title="textwrap.fill"><code class="xref py py-func docutils literal"><span class="pre">fill()</span></code></a>, as well as <a class="reference internal" href="../generated/generated/textwrap.TextWrapper.html#textwrap.TextWrapper" title="textwrap.TextWrapper"><code class="xref py py-class docutils literal"><span class="pre">TextWrapper</span></code></a>, the class that does all the work,
+and a utility function  <a class="reference internal" href="../generated/generated/textwrap.dedent.html#textwrap.dedent" title="textwrap.dedent"><code class="xref py py-func docutils literal"><span class="pre">dedent()</span></code></a>.  If you&#8217;re just wrapping or filling one
 or two  text strings, the convenience functions should be good enough;
 otherwise,  you should use an instance of <a class="reference internal" href="../generated/generated/textwrap.TextWrapper.html#textwrap.TextWrapper" title="textwrap.TextWrapper"><code class="xref py py-class docutils literal"><span class="pre">TextWrapper</span></code></a> for efficiency.</p>
 <dl class="function">
@@ -194,29 +194,29 @@ characters long.  Returns a list of output lines, without final newlines.</p>
 <p>Optional keyword arguments correspond to the instance attributes of
 <a class="reference internal" href="../generated/generated/textwrap.TextWrapper.html#textwrap.TextWrapper" title="textwrap.TextWrapper"><code class="xref py py-class docutils literal"><span class="pre">TextWrapper</span></code></a>, documented below.  <em>width</em> defaults to <code class="docutils literal"><span class="pre">70</span></code>.</p>
 <p>See the <a class="reference internal" href="../generated/generated/textwrap.TextWrapper.wrap.html#textwrap.TextWrapper.wrap" title="textwrap.TextWrapper.wrap"><code class="xref py py-meth docutils literal"><span class="pre">TextWrapper.wrap()</span></code></a> method for additional details on how
-<a class="reference internal" href="../generated/textwrap.wrap.html#textwrap.wrap" title="textwrap.wrap"><code class="xref py py-func docutils literal"><span class="pre">wrap()</span></code></a> behaves.</p>
+<a class="reference internal" href="../generated/generated/textwrap.wrap.html#textwrap.wrap" title="textwrap.wrap"><code class="xref py py-func docutils literal"><span class="pre">wrap()</span></code></a> behaves.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="textwrap.fill">
 <code class="descclassname">textwrap.</code><code class="descname">fill</code><span class="sig-paren">(</span><em>text</em><span class="optional">[</span>, <em>width</em><span class="optional">[</span>, <em>...</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/textwrap.html#fill"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#textwrap.fill" title="Permalink to this definition">¶</a></dt>
 <dd><p>Wraps the single paragraph in <em>text</em>, and returns a single string containing the
-wrapped paragraph.  <a class="reference internal" href="../generated/textwrap.fill.html#textwrap.fill" title="textwrap.fill"><code class="xref py py-func docutils literal"><span class="pre">fill()</span></code></a> is shorthand for</p>
+wrapped paragraph.  <a class="reference internal" href="../generated/generated/textwrap.fill.html#textwrap.fill" title="textwrap.fill"><code class="xref py py-func docutils literal"><span class="pre">fill()</span></code></a> is shorthand for</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">wrap</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="o">...</span><span class="p">))</span>
 </pre></div>
 </div>
-<p>In particular, <a class="reference internal" href="../generated/textwrap.fill.html#textwrap.fill" title="textwrap.fill"><code class="xref py py-func docutils literal"><span class="pre">fill()</span></code></a> accepts exactly the same keyword arguments as
-<a class="reference internal" href="../generated/textwrap.wrap.html#textwrap.wrap" title="textwrap.wrap"><code class="xref py py-func docutils literal"><span class="pre">wrap()</span></code></a>.</p>
+<p>In particular, <a class="reference internal" href="../generated/generated/textwrap.fill.html#textwrap.fill" title="textwrap.fill"><code class="xref py py-func docutils literal"><span class="pre">fill()</span></code></a> accepts exactly the same keyword arguments as
+<a class="reference internal" href="../generated/generated/textwrap.wrap.html#textwrap.wrap" title="textwrap.wrap"><code class="xref py py-func docutils literal"><span class="pre">wrap()</span></code></a>.</p>
 </dd></dl>
 
-<p>Both <a class="reference internal" href="../generated/textwrap.wrap.html#textwrap.wrap" title="textwrap.wrap"><code class="xref py py-func docutils literal"><span class="pre">wrap()</span></code></a> and <a class="reference internal" href="../generated/textwrap.fill.html#textwrap.fill" title="textwrap.fill"><code class="xref py py-func docutils literal"><span class="pre">fill()</span></code></a> work by creating a <a class="reference internal" href="../generated/generated/textwrap.TextWrapper.html#textwrap.TextWrapper" title="textwrap.TextWrapper"><code class="xref py py-class docutils literal"><span class="pre">TextWrapper</span></code></a>
+<p>Both <a class="reference internal" href="../generated/generated/textwrap.wrap.html#textwrap.wrap" title="textwrap.wrap"><code class="xref py py-func docutils literal"><span class="pre">wrap()</span></code></a> and <a class="reference internal" href="../generated/generated/textwrap.fill.html#textwrap.fill" title="textwrap.fill"><code class="xref py py-func docutils literal"><span class="pre">fill()</span></code></a> work by creating a <a class="reference internal" href="../generated/generated/textwrap.TextWrapper.html#textwrap.TextWrapper" title="textwrap.TextWrapper"><code class="xref py py-class docutils literal"><span class="pre">TextWrapper</span></code></a>
 instance and calling a single method on it.  That instance is not reused, so for
 applications that wrap/fill many text strings, it will be more efficient for you
 to create your own <a class="reference internal" href="../generated/generated/textwrap.TextWrapper.html#textwrap.TextWrapper" title="textwrap.TextWrapper"><code class="xref py py-class docutils literal"><span class="pre">TextWrapper</span></code></a> object.</p>
 <p>Text is preferably wrapped on whitespaces and right after the hyphens in
 hyphenated words; only then will long words be broken if necessary, unless
 <a class="reference internal" href="#textwrap.TextWrapper.break_long_words" title="textwrap.TextWrapper.break_long_words"><code class="xref py py-attr docutils literal"><span class="pre">TextWrapper.break_long_words</span></code></a> is set to false.</p>
-<p>An additional utility function, <a class="reference internal" href="../generated/textwrap.dedent.html#textwrap.dedent" title="textwrap.dedent"><code class="xref py py-func docutils literal"><span class="pre">dedent()</span></code></a>, is provided to remove
+<p>An additional utility function, <a class="reference internal" href="../generated/generated/textwrap.dedent.html#textwrap.dedent" title="textwrap.dedent"><code class="xref py py-func docutils literal"><span class="pre">dedent()</span></code></a>, is provided to remove
 indentation from strings that have unwanted whitespace to the left of the text.</p>
 <dl class="function">
 <dt id="textwrap.dedent">
@@ -280,7 +280,7 @@ expanded to spaces using the <code class="xref py py-meth docutils literal"><spa
 <dt id="textwrap.TextWrapper.replace_whitespace">
 <code class="descname">replace_whitespace</code><a class="headerlink" href="#textwrap.TextWrapper.replace_whitespace" title="Permalink to this definition">¶</a></dt>
 <dd><p>(default: <code class="docutils literal"><span class="pre">True</span></code>) If true, after tab expansion but before wrapping,
-the <a class="reference internal" href="../generated/textwrap.wrap.html#textwrap.wrap" title="textwrap.wrap"><code class="xref py py-meth docutils literal"><span class="pre">wrap()</span></code></a> method will replace each whitespace character
+the <a class="reference internal" href="../generated/generated/textwrap.wrap.html#textwrap.wrap" title="textwrap.wrap"><code class="xref py py-meth docutils literal"><span class="pre">wrap()</span></code></a> method will replace each whitespace character
 with a single space.  The whitespace characters replaced are
 as follows: tab, newline, vertical tab, formfeed, and carriage
 return (<code class="docutils literal"><span class="pre">'\t\n\v\f\r'</span></code>).</p>

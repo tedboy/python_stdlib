@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       atof
       atoi
@@ -41,6 +41,42 @@
       translate
       upper
       zfill
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/string.atof
+       generated/string.atoi
+       generated/string.atol
+       generated/string.capitalize
+       generated/string.capwords
+       generated/string.center
+       generated/string.count
+       generated/string.expandtabs
+       generated/string.find
+       generated/string.index
+       generated/string.join
+       generated/string.joinfields
+       generated/string.ljust
+       generated/string.lower
+       generated/string.lstrip
+       generated/string.maketrans
+       generated/string.replace
+       generated/string.rfind
+       generated/string.rindex
+       generated/string.rjust
+       generated/string.rsplit
+       generated/string.rstrip
+       generated/string.split
+       generated/string.splitfields
+       generated/string.strip
+       generated/string.swapcase
+       generated/string.translate
+       generated/string.upper
+       generated/string.zfill
+      
    
    
 

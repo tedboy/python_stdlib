@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       getoutput
       getstatus
       getstatusoutput
       mk2arg
       mkarg
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/commands.getoutput
+       generated/commands.getstatus
+       generated/commands.getstatusoutput
+       generated/commands.mk2arg
+       generated/commands.mkarg
+      
    
    
 

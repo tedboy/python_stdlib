@@ -158,7 +158,7 @@
 <span class="c1"># ____________________________________________________________</span>
 <span class="c1"># Simple interface</span>
 
-<div class="viewcode-block" id="run"><a class="viewcode-back" href="../generated/cProfile.run.html#cProfile.run">[docs]</a><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">sort</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="run"><a class="viewcode-back" href="../generated/generated/cProfile.run.html#cProfile.run">[docs]</a><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">sort</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Run statement under profiler optionally saving results in filename</span>
 
 <span class="sd">    This function takes a single argument that can be passed to the</span>
@@ -183,7 +183,7 @@
             <span class="n">result</span> <span class="o">=</span> <span class="n">prof</span><span class="o">.</span><span class="n">print_stats</span><span class="p">(</span><span class="n">sort</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">result</span></div>
 
-<div class="viewcode-block" id="runctx"><a class="viewcode-back" href="../generated/cProfile.runctx.html#cProfile.runctx">[docs]</a><span class="k">def</span> <span class="nf">runctx</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="nb">globals</span><span class="p">,</span> <span class="nb">locals</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">sort</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="runctx"><a class="viewcode-back" href="../generated/generated/cProfile.runctx.html#cProfile.runctx">[docs]</a><span class="k">def</span> <span class="nf">runctx</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="nb">globals</span><span class="p">,</span> <span class="nb">locals</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">sort</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Run statement under profiler, supplying your own globals and locals,</span>
 <span class="sd">    optionally saving results in filename.</span>
 
@@ -204,7 +204,7 @@
     <span class="k">return</span> <span class="n">result</span></div>
 
 <span class="c1"># Backwards compatibility.</span>
-<div class="viewcode-block" id="help"><a class="viewcode-back" href="../generated/cProfile.help.html#cProfile.help">[docs]</a><span class="k">def</span> <span class="nf">help</span><span class="p">():</span>
+<div class="viewcode-block" id="help"><a class="viewcode-back" href="../generated/generated/cProfile.help.html#cProfile.help">[docs]</a><span class="k">def</span> <span class="nf">help</span><span class="p">():</span>
     <span class="k">print</span> <span class="s2">&quot;Documentation for the profile/cProfile modules can be found &quot;</span>
     <span class="k">print</span> <span class="s2">&quot;in the Python Library Reference, section &#39;The Python Profiler&#39;.&quot;</span></div>
 
@@ -299,7 +299,7 @@
 
 <span class="c1"># ____________________________________________________________</span>
 
-<div class="viewcode-block" id="label"><a class="viewcode-back" href="../generated/cProfile.label.html#cProfile.label">[docs]</a><span class="k">def</span> <span class="nf">label</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
+<div class="viewcode-block" id="label"><a class="viewcode-back" href="../generated/generated/cProfile.label.html#cProfile.label">[docs]</a><span class="k">def</span> <span class="nf">label</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
         <span class="k">return</span> <span class="p">(</span><span class="s1">&#39;~&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">code</span><span class="p">)</span>    <span class="c1"># built-in functions (&#39;~&#39; sorts at the end)</span>
     <span class="k">else</span><span class="p">:</span>
@@ -307,7 +307,7 @@
 
 <span class="c1"># ____________________________________________________________</span>
 
-<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/cProfile.main.html#cProfile.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/generated/cProfile.main.html#cProfile.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
     <span class="kn">from</span> <span class="nn">optparse</span> <span class="kn">import</span> <span class="n">OptionParser</span>
     <span class="n">usage</span> <span class="o">=</span> <span class="s2">&quot;cProfile.py [-o output_file_path] [-s sort] scriptfile [arg] ...&quot;</span>

@@ -234,7 +234,7 @@
 <span class="n">_profile_hook</span> <span class="o">=</span> <span class="bp">None</span>
 <span class="n">_trace_hook</span> <span class="o">=</span> <span class="bp">None</span>
 
-<div class="viewcode-block" id="setprofile"><a class="viewcode-back" href="../generated/threading.setprofile.html#threading.setprofile">[docs]</a><span class="k">def</span> <span class="nf">setprofile</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+<div class="viewcode-block" id="setprofile"><a class="viewcode-back" href="../generated/generated/threading.setprofile.html#threading.setprofile">[docs]</a><span class="k">def</span> <span class="nf">setprofile</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Set a profile function for all threads started from the threading module.</span>
 
 <span class="sd">    The func will be passed to sys.setprofile() for each thread, before its</span>
@@ -244,7 +244,7 @@
     <span class="k">global</span> <span class="n">_profile_hook</span>
     <span class="n">_profile_hook</span> <span class="o">=</span> <span class="n">func</span></div>
 
-<div class="viewcode-block" id="settrace"><a class="viewcode-back" href="../generated/threading.settrace.html#threading.settrace">[docs]</a><span class="k">def</span> <span class="nf">settrace</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+<div class="viewcode-block" id="settrace"><a class="viewcode-back" href="../generated/generated/threading.settrace.html#threading.settrace">[docs]</a><span class="k">def</span> <span class="nf">settrace</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Set a trace function for all threads started from the threading module.</span>
 
 <span class="sd">    The func will be passed to sys.settrace() for each thread, before its run()</span>
@@ -258,7 +258,7 @@
 
 <span class="n">Lock</span> <span class="o">=</span> <span class="n">_allocate_lock</span>
 
-<div class="viewcode-block" id="RLock"><a class="viewcode-back" href="../generated/threading.RLock.html#threading.RLock">[docs]</a><span class="k">def</span> <span class="nf">RLock</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="RLock"><a class="viewcode-back" href="../generated/generated/threading.RLock.html#threading.RLock">[docs]</a><span class="k">def</span> <span class="nf">RLock</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Factory function that returns a new reentrant lock.</span>
 
 <span class="sd">    A reentrant lock must be released by the thread that acquired it. Once a</span>
@@ -386,7 +386,7 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__owner</span> <span class="o">==</span> <span class="n">_get_ident</span><span class="p">()</span>
 
 
-<div class="viewcode-block" id="Condition"><a class="viewcode-back" href="../generated/threading.Condition.html#threading.Condition">[docs]</a><span class="k">def</span> <span class="nf">Condition</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="Condition"><a class="viewcode-back" href="../generated/generated/threading.Condition.html#threading.Condition">[docs]</a><span class="k">def</span> <span class="nf">Condition</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Factory function that returns a new condition variable object.</span>
 
 <span class="sd">    A condition variable allows one or more threads to wait until they are</span>
@@ -556,7 +556,7 @@
     <span class="n">notify_all</span> <span class="o">=</span> <span class="n">notifyAll</span>
 
 
-<div class="viewcode-block" id="Semaphore"><a class="viewcode-back" href="../generated/threading.Semaphore.html#threading.Semaphore">[docs]</a><span class="k">def</span> <span class="nf">Semaphore</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="Semaphore"><a class="viewcode-back" href="../generated/generated/threading.Semaphore.html#threading.Semaphore">[docs]</a><span class="k">def</span> <span class="nf">Semaphore</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A factory function that returns a new semaphore.</span>
 
 <span class="sd">    Semaphores manage a counter representing the number of release() calls minus</span>
@@ -641,7 +641,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
 
 
-<div class="viewcode-block" id="BoundedSemaphore"><a class="viewcode-back" href="../generated/threading.BoundedSemaphore.html#threading.BoundedSemaphore">[docs]</a><span class="k">def</span> <span class="nf">BoundedSemaphore</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="BoundedSemaphore"><a class="viewcode-back" href="../generated/generated/threading.BoundedSemaphore.html#threading.BoundedSemaphore">[docs]</a><span class="k">def</span> <span class="nf">BoundedSemaphore</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A factory function that returns a new bounded semaphore.</span>
 
 <span class="sd">    A bounded semaphore checks to make sure its current value doesn&#39;t exceed its</span>
@@ -686,7 +686,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">_Semaphore__cond</span><span class="o">.</span><span class="n">notify</span><span class="p">()</span>
 
 
-<div class="viewcode-block" id="Event"><a class="viewcode-back" href="../generated/threading.Event.html#threading.Event">[docs]</a><span class="k">def</span> <span class="nf">Event</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="Event"><a class="viewcode-back" href="../generated/generated/threading.Event.html#threading.Event">[docs]</a><span class="k">def</span> <span class="nf">Event</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A factory function that returns a new event.</span>
 
 <span class="sd">    Events manage a flag that can be set to true with the set() method and reset</span>
@@ -1181,7 +1181,7 @@
 
 <span class="c1"># The timer class was contributed by Itamar Shtull-Trauring</span>
 
-<div class="viewcode-block" id="Timer"><a class="viewcode-back" href="../generated/threading.Timer.html#threading.Timer">[docs]</a><span class="k">def</span> <span class="nf">Timer</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="Timer"><a class="viewcode-back" href="../generated/generated/threading.Timer.html#threading.Timer">[docs]</a><span class="k">def</span> <span class="nf">Timer</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Factory function to create a Timer object.</span>
 
 <span class="sd">    Timers call a function after a specified number of seconds:</span>
@@ -1287,7 +1287,7 @@
 
 <span class="c1"># Global API functions</span>
 
-<div class="viewcode-block" id="currentThread"><a class="viewcode-back" href="../generated/threading.currentThread.html#threading.currentThread">[docs]</a><span class="k">def</span> <span class="nf">currentThread</span><span class="p">():</span>
+<div class="viewcode-block" id="currentThread"><a class="viewcode-back" href="../generated/generated/threading.currentThread.html#threading.currentThread">[docs]</a><span class="k">def</span> <span class="nf">currentThread</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return the current Thread object, corresponding to the caller&#39;s thread of control.</span>
 
 <span class="sd">    If the caller&#39;s thread of control was not created through the threading</span>
@@ -1302,7 +1302,7 @@
 
 <span class="n">current_thread</span> <span class="o">=</span> <span class="n">currentThread</span>
 
-<div class="viewcode-block" id="activeCount"><a class="viewcode-back" href="../generated/threading.activeCount.html#threading.activeCount">[docs]</a><span class="k">def</span> <span class="nf">activeCount</span><span class="p">():</span>
+<div class="viewcode-block" id="activeCount"><a class="viewcode-back" href="../generated/generated/threading.activeCount.html#threading.activeCount">[docs]</a><span class="k">def</span> <span class="nf">activeCount</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return the number of Thread objects currently alive.</span>
 
 <span class="sd">    The returned count is equal to the length of the list returned by</span>
@@ -1318,7 +1318,7 @@
     <span class="c1"># Same as enumerate(), but without the lock. Internal use only.</span>
     <span class="k">return</span> <span class="n">_active</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="o">+</span> <span class="n">_limbo</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
 
-<div class="viewcode-block" id="enumerate"><a class="viewcode-back" href="../generated/threading.enumerate.html#threading.enumerate">[docs]</a><span class="k">def</span> <span class="nf">enumerate</span><span class="p">():</span>
+<div class="viewcode-block" id="enumerate"><a class="viewcode-back" href="../generated/generated/threading.enumerate.html#threading.enumerate">[docs]</a><span class="k">def</span> <span class="nf">enumerate</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Return a list of all Thread objects currently alive.</span>
 
 <span class="sd">    The list includes daemonic threads, dummy thread objects created by</span>

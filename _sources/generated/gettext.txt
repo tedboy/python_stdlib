@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       Catalog
       bind_textdomain_codeset
@@ -29,6 +29,30 @@
       test
       textdomain
       translation
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/gettext.Catalog
+       generated/gettext.bind_textdomain_codeset
+       generated/gettext.bindtextdomain
+       generated/gettext.c2py
+       generated/gettext.dgettext
+       generated/gettext.dngettext
+       generated/gettext.find
+       generated/gettext.gettext
+       generated/gettext.install
+       generated/gettext.ldgettext
+       generated/gettext.ldngettext
+       generated/gettext.lgettext
+       generated/gettext.lngettext
+       generated/gettext.ngettext
+       generated/gettext.test
+       generated/gettext.textdomain
+       generated/gettext.translation
+      
    
    
 

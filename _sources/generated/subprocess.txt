@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       call
       check_call
       check_output
       list2cmdline
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/subprocess.call
+       generated/subprocess.check_call
+       generated/subprocess.check_output
+       generated/subprocess.list2cmdline
+      
    
    
 

@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       DER_cert_to_PEM_cert
       PEM_cert_to_DER_cert
@@ -27,6 +27,28 @@
       namedtuple
       sslwrap_simple
       wrap_socket
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/ssl.DER_cert_to_PEM_cert
+       generated/ssl.PEM_cert_to_DER_cert
+       generated/ssl.RAND_add
+       generated/ssl.RAND_egd
+       generated/ssl.RAND_status
+       generated/ssl.cert_time_to_seconds
+       generated/ssl.create_connection
+       generated/ssl.create_default_context
+       generated/ssl.get_default_verify_paths
+       generated/ssl.get_protocol_name
+       generated/ssl.get_server_certificate
+       generated/ssl.match_hostname
+       generated/ssl.namedtuple
+       generated/ssl.sslwrap_simple
+       generated/ssl.wrap_socket
+      
    
    
 

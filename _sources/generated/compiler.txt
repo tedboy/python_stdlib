@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       compile
       compileFile
       parse
       parseFile
       walk
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/compiler.compile
+       generated/compiler.compileFile
+       generated/compiler.parse
+       generated/compiler.parseFile
+       generated/compiler.walk
+      
    
    
 

@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="logging.BufferingFormatter" href="generated/logging.BufferingFormatter.html"/>
+        <link rel="next" title="logging.addLevelName()" href="generated/logging.addLevelName.html"/>
         <link rel="prev" title="getopt.error" href="getopt.error.html"/> 
 
   
@@ -82,12 +82,106 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="os.html"><code class="docutils literal"><span class="pre">os</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="io.html"><code class="docutils literal"><span class="pre">io</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="time.html"><code class="docutils literal"><span class="pre">time</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="argparse.html"><code class="docutils literal"><span class="pre">argparse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="optparse.html"><code class="docutils literal"><span class="pre">optparse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="getopt.html"><code class="docutils literal"><span class="pre">getopt</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">logging</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.addLevelName.html"><code class="docutils literal"><span class="pre">logging.addLevelName()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.basicConfig.html"><code class="docutils literal"><span class="pre">logging.basicConfig()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.captureWarnings.html"><code class="docutils literal"><span class="pre">logging.captureWarnings()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.critical.html"><code class="docutils literal"><span class="pre">logging.critical()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.currentframe.html"><code class="docutils literal"><span class="pre">logging.currentframe()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.debug.html"><code class="docutils literal"><span class="pre">logging.debug()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.disable.html"><code class="docutils literal"><span class="pre">logging.disable()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.error.html"><code class="docutils literal"><span class="pre">logging.error()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.exception.html"><code class="docutils literal"><span class="pre">logging.exception()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.fatal.html"><code class="docutils literal"><span class="pre">logging.fatal()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.getLevelName.html"><code class="docutils literal"><span class="pre">logging.getLevelName()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.getLogger.html"><code class="docutils literal"><span class="pre">logging.getLogger()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.getLoggerClass.html"><code class="docutils literal"><span class="pre">logging.getLoggerClass()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.info.html"><code class="docutils literal"><span class="pre">logging.info()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.log.html"><code class="docutils literal"><span class="pre">logging.log()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.makeLogRecord.html"><code class="docutils literal"><span class="pre">logging.makeLogRecord()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.setLoggerClass.html"><code class="docutils literal"><span class="pre">logging.setLoggerClass()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.shutdown.html"><code class="docutils literal"><span class="pre">logging.shutdown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.warn.html"><code class="docutils literal"><span class="pre">logging.warn()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.warning.html"><code class="docutils literal"><span class="pre">logging.warning()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.BufferingFormatter.html"><code class="docutils literal"><span class="pre">logging.BufferingFormatter</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.FileHandler.html"><code class="docutils literal"><span class="pre">logging.FileHandler</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.Filter.html"><code class="docutils literal"><span class="pre">logging.Filter</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.Filterer.html"><code class="docutils literal"><span class="pre">logging.Filterer</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.Formatter.html"><code class="docutils literal"><span class="pre">logging.Formatter</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.Handler.html"><code class="docutils literal"><span class="pre">logging.Handler</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.LogRecord.html"><code class="docutils literal"><span class="pre">logging.LogRecord</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.Logger.html"><code class="docutils literal"><span class="pre">logging.Logger</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.LoggerAdapter.html"><code class="docutils literal"><span class="pre">logging.LoggerAdapter</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.Manager.html"><code class="docutils literal"><span class="pre">logging.Manager</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.NullHandler.html"><code class="docutils literal"><span class="pre">logging.NullHandler</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.PlaceHolder.html"><code class="docutils literal"><span class="pre">logging.PlaceHolder</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.RootLogger.html"><code class="docutils literal"><span class="pre">logging.RootLogger</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/logging.StreamHandler.html"><code class="docutils literal"><span class="pre">logging.StreamHandler</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="logging.config.html"><code class="docutils literal"><span class="pre">logging.config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="logging.handlers.html"><code class="docutils literal"><span class="pre">logging.handlers</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="getpass.html"><code class="docutils literal"><span class="pre">getpass</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="curses.html"><code class="docutils literal"><span class="pre">curses</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="curses.ascii.html"><code class="docutils literal"><span class="pre">curses.ascii</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="curses.panel.html"><code class="docutils literal"><span class="pre">curses.panel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="platform.html"><code class="docutils literal"><span class="pre">platform</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="errno.html"><code class="docutils literal"><span class="pre">errno</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ctypes.html"><code class="docutils literal"><span class="pre">ctypes</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -156,6 +250,76 @@ comp.lang.python.</p>
 <p>To use, simply &#8216;import logging&#8217; and log away!</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.addLevelName.html#logging.addLevelName" title="logging.addLevelName"><code class="xref py py-obj docutils literal"><span class="pre">addLevelName</span></code></a>(level,&nbsp;levelName)</td>
+<td>Associate &#8216;levelName&#8217; with &#8216;level&#8217;.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/logging.basicConfig.html#logging.basicConfig" title="logging.basicConfig"><code class="xref py py-obj docutils literal"><span class="pre">basicConfig</span></code></a>(**kwargs)</td>
+<td>Do basic configuration for the logging system.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.captureWarnings.html#logging.captureWarnings" title="logging.captureWarnings"><code class="xref py py-obj docutils literal"><span class="pre">captureWarnings</span></code></a>(capture)</td>
+<td>If capture is true, redirect all warnings to the logging package.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/logging.critical.html#logging.critical" title="logging.critical"><code class="xref py py-obj docutils literal"><span class="pre">critical</span></code></a>(msg,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Log a message with severity &#8216;CRITICAL&#8217; on the root logger.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.currentframe.html#logging.currentframe" title="logging.currentframe"><code class="xref py py-obj docutils literal"><span class="pre">currentframe</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/logging.debug.html#logging.debug" title="logging.debug"><code class="xref py py-obj docutils literal"><span class="pre">debug</span></code></a>(msg,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Log a message with severity &#8216;DEBUG&#8217; on the root logger.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.disable.html#logging.disable" title="logging.disable"><code class="xref py py-obj docutils literal"><span class="pre">disable</span></code></a>(level)</td>
+<td>Disable all logging calls of severity &#8216;level&#8217; and below.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/logging.error.html#logging.error" title="logging.error"><code class="xref py py-obj docutils literal"><span class="pre">error</span></code></a>(msg,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Log a message with severity &#8216;ERROR&#8217; on the root logger.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.exception.html#logging.exception" title="logging.exception"><code class="xref py py-obj docutils literal"><span class="pre">exception</span></code></a>(msg,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Log a message with severity &#8216;ERROR&#8217; on the root logger, with exception information.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/logging.fatal.html#logging.fatal" title="logging.fatal"><code class="xref py py-obj docutils literal"><span class="pre">fatal</span></code></a>(msg,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Log a message with severity &#8216;CRITICAL&#8217; on the root logger.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.getLevelName.html#logging.getLevelName" title="logging.getLevelName"><code class="xref py py-obj docutils literal"><span class="pre">getLevelName</span></code></a>(level)</td>
+<td>Return the textual representation of logging level &#8216;level&#8217;.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/logging.getLogger.html#logging.getLogger" title="logging.getLogger"><code class="xref py py-obj docutils literal"><span class="pre">getLogger</span></code></a>([name])</td>
+<td>Return a logger with the specified name, creating it if necessary.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.getLoggerClass.html#logging.getLoggerClass" title="logging.getLoggerClass"><code class="xref py py-obj docutils literal"><span class="pre">getLoggerClass</span></code></a>()</td>
+<td>Return the class to be used when instantiating a logger.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/logging.info.html#logging.info" title="logging.info"><code class="xref py py-obj docutils literal"><span class="pre">info</span></code></a>(msg,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Log a message with severity &#8216;INFO&#8217; on the root logger.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.log.html#logging.log" title="logging.log"><code class="xref py py-obj docutils literal"><span class="pre">log</span></code></a>(level,&nbsp;msg,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Log &#8216;msg % args&#8217; with the integer severity &#8216;level&#8217; on the root logger.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/logging.makeLogRecord.html#logging.makeLogRecord" title="logging.makeLogRecord"><code class="xref py py-obj docutils literal"><span class="pre">makeLogRecord</span></code></a>(dict)</td>
+<td>Make a LogRecord whose attributes are defined by the specified dictionary, This function is useful for converting a logging event received over a socket connection (which is sent as a dictionary) into a LogRecord instance.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.setLoggerClass.html#logging.setLoggerClass" title="logging.setLoggerClass"><code class="xref py py-obj docutils literal"><span class="pre">setLoggerClass</span></code></a>(klass)</td>
+<td>Set the class to be used when instantiating a logger.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/logging.shutdown.html#logging.shutdown" title="logging.shutdown"><code class="xref py py-obj docutils literal"><span class="pre">shutdown</span></code></a>([handlerList])</td>
+<td>Perform any cleanup actions in the logging system (e.g.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/logging.warn.html#logging.warn" title="logging.warn"><code class="xref py py-obj docutils literal"><span class="pre">warn</span></code></a>(msg,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Log a message with severity &#8216;WARNING&#8217; on the root logger.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/logging.warning.html#logging.warning" title="logging.warning"><code class="xref py py-obj docutils literal"><span class="pre">warning</span></code></a>(msg,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Log a message with severity &#8216;WARNING&#8217; on the root logger.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -221,7 +385,7 @@ comp.lang.python.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/logging.BufferingFormatter.html" class="btn btn-neutral float-right" title="logging.BufferingFormatter" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/logging.addLevelName.html" class="btn btn-neutral float-right" title="logging.addLevelName()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="getopt.error.html" class="btn btn-neutral" title="getopt.error" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

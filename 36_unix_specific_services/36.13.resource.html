@@ -205,7 +205,7 @@ failures unexpectedly.</p>
 
 <div class="section" id="resource-limits">
 <h2><a class="toc-backref" href="#id1">13.1. Resource Limits</a><a class="headerlink" href="#resource-limits" title="Permalink to this headline">¶</a></h2>
-<p>Resources usage can be limited using the <a class="reference internal" href="../generated/resource.setrlimit.html#resource.setrlimit" title="resource.setrlimit"><code class="xref py py-func docutils literal"><span class="pre">setrlimit()</span></code></a> function described
+<p>Resources usage can be limited using the <a class="reference internal" href="../generated/generated/resource.setrlimit.html#resource.setrlimit" title="resource.setrlimit"><code class="xref py py-func docutils literal"><span class="pre">setrlimit()</span></code></a> function described
 below. Each resource is controlled by a pair of limits: a soft limit and a hard
 limit. The soft limit is the current limit, and may be lowered or raised by a
 process over time. The soft limit can never exceed the hard limit. The hard
@@ -251,7 +251,7 @@ fails.</p>
 </dd></dl>
 
 <p>These symbols define resources whose consumption can be controlled using the
-<a class="reference internal" href="../generated/resource.setrlimit.html#resource.setrlimit" title="resource.setrlimit"><code class="xref py py-func docutils literal"><span class="pre">setrlimit()</span></code></a> and <a class="reference internal" href="../generated/resource.getrlimit.html#resource.getrlimit" title="resource.getrlimit"><code class="xref py py-func docutils literal"><span class="pre">getrlimit()</span></code></a> functions described below. The values of
+<a class="reference internal" href="../generated/generated/resource.setrlimit.html#resource.setrlimit" title="resource.setrlimit"><code class="xref py py-func docutils literal"><span class="pre">setrlimit()</span></code></a> and <a class="reference internal" href="../generated/generated/resource.getrlimit.html#resource.getrlimit" title="resource.getrlimit"><code class="xref py py-func docutils literal"><span class="pre">getrlimit()</span></code></a> functions described below. The values of
 these symbols are exactly the constants used by C programs.</p>
 <p>The Unix man page for <em class="manpage">getrlimit(2)</em> lists the available resources.
 Note that not all systems use the same symbol or same value to denote the same
@@ -451,7 +451,7 @@ specified. It may also raise <a class="reference internal" href="../generated/re
 hardware page size.)</p>
 </dd></dl>
 
-<p>The following <code class="xref py py-const docutils literal"><span class="pre">RUSAGE_*</span></code> symbols are passed to the <a class="reference internal" href="../generated/resource.getrusage.html#resource.getrusage" title="resource.getrusage"><code class="xref py py-func docutils literal"><span class="pre">getrusage()</span></code></a>
+<p>The following <code class="xref py py-const docutils literal"><span class="pre">RUSAGE_*</span></code> symbols are passed to the <a class="reference internal" href="../generated/generated/resource.getrusage.html#resource.getrusage" title="resource.getrusage"><code class="xref py py-func docutils literal"><span class="pre">getrusage()</span></code></a>
 function to specify which processes information should be provided for.</p>
 <dl class="data">
 <dt id="resource.RUSAGE_SELF">
@@ -463,14 +463,14 @@ the process itself.</p>
 <dl class="data">
 <dt id="resource.RUSAGE_CHILDREN">
 <code class="descclassname">resource.</code><code class="descname">RUSAGE_CHILDREN</code><a class="headerlink" href="#resource.RUSAGE_CHILDREN" title="Permalink to this definition">¶</a></dt>
-<dd><p>Pass to <a class="reference internal" href="../generated/resource.getrusage.html#resource.getrusage" title="resource.getrusage"><code class="xref py py-func docutils literal"><span class="pre">getrusage()</span></code></a> to request resource information for child processes of
+<dd><p>Pass to <a class="reference internal" href="../generated/generated/resource.getrusage.html#resource.getrusage" title="resource.getrusage"><code class="xref py py-func docutils literal"><span class="pre">getrusage()</span></code></a> to request resource information for child processes of
 the calling process.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="resource.RUSAGE_BOTH">
 <code class="descclassname">resource.</code><code class="descname">RUSAGE_BOTH</code><a class="headerlink" href="#resource.RUSAGE_BOTH" title="Permalink to this definition">¶</a></dt>
-<dd><p>Pass to <a class="reference internal" href="../generated/resource.getrusage.html#resource.getrusage" title="resource.getrusage"><code class="xref py py-func docutils literal"><span class="pre">getrusage()</span></code></a> to request resources consumed by both the current
+<dd><p>Pass to <a class="reference internal" href="../generated/generated/resource.getrusage.html#resource.getrusage" title="resource.getrusage"><code class="xref py py-func docutils literal"><span class="pre">getrusage()</span></code></a> to request resources consumed by both the current
 process and child processes.  May not be available on all systems.</p>
 </dd></dl>
 

@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       bidirectional
       category
@@ -24,6 +24,25 @@
       name
       normalize
       numeric
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/unicodedata.bidirectional
+       generated/unicodedata.category
+       generated/unicodedata.combining
+       generated/unicodedata.decimal
+       generated/unicodedata.decomposition
+       generated/unicodedata.digit
+       generated/unicodedata.east_asian_width
+       generated/unicodedata.lookup
+       generated/unicodedata.mirrored
+       generated/unicodedata.name
+       generated/unicodedata.normalize
+       generated/unicodedata.numeric
+      
    
    
 

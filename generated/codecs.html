@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="codecs.BufferedIncrementalDecoder" href="generated/codecs.BufferedIncrementalDecoder.html"/>
+        <link rel="next" title="codecs.EncodedFile()" href="generated/codecs.EncodedFile.html"/>
         <link rel="prev" title="textwrap.TextWrapper.x" href="generated/textwrap.TextWrapper.x.html"/> 
 
   
@@ -82,12 +82,138 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="string.html"><code class="docutils literal"><span class="pre">string</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="re.html"><code class="docutils literal"><span class="pre">re</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="struct.html"><code class="docutils literal"><span class="pre">struct</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="difflib.html"><code class="docutils literal"><span class="pre">difflib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="StringIO.html"><code class="docutils literal"><span class="pre">StringIO</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cStringIO.html"><code class="docutils literal"><span class="pre">cStringIO</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="textwrap.html"><code class="docutils literal"><span class="pre">textwrap</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">codecs</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.EncodedFile.html"><code class="docutils literal"><span class="pre">codecs.EncodedFile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.ascii_decode.html"><code class="docutils literal"><span class="pre">codecs.ascii_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.ascii_encode.html"><code class="docutils literal"><span class="pre">codecs.ascii_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.backslashreplace_errors.html"><code class="docutils literal"><span class="pre">codecs.backslashreplace_errors()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.charbuffer_encode.html"><code class="docutils literal"><span class="pre">codecs.charbuffer_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.charmap_build.html"><code class="docutils literal"><span class="pre">codecs.charmap_build()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.charmap_decode.html"><code class="docutils literal"><span class="pre">codecs.charmap_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.charmap_encode.html"><code class="docutils literal"><span class="pre">codecs.charmap_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.decode.html"><code class="docutils literal"><span class="pre">codecs.decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.encode.html"><code class="docutils literal"><span class="pre">codecs.encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.escape_decode.html"><code class="docutils literal"><span class="pre">codecs.escape_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.escape_encode.html"><code class="docutils literal"><span class="pre">codecs.escape_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.getdecoder.html"><code class="docutils literal"><span class="pre">codecs.getdecoder()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.getencoder.html"><code class="docutils literal"><span class="pre">codecs.getencoder()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.getincrementaldecoder.html"><code class="docutils literal"><span class="pre">codecs.getincrementaldecoder()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.getincrementalencoder.html"><code class="docutils literal"><span class="pre">codecs.getincrementalencoder()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.getreader.html"><code class="docutils literal"><span class="pre">codecs.getreader()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.getwriter.html"><code class="docutils literal"><span class="pre">codecs.getwriter()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.ignore_errors.html"><code class="docutils literal"><span class="pre">codecs.ignore_errors()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.iterdecode.html"><code class="docutils literal"><span class="pre">codecs.iterdecode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.iterencode.html"><code class="docutils literal"><span class="pre">codecs.iterencode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.latin_1_decode.html"><code class="docutils literal"><span class="pre">codecs.latin_1_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.latin_1_encode.html"><code class="docutils literal"><span class="pre">codecs.latin_1_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.lookup.html"><code class="docutils literal"><span class="pre">codecs.lookup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.lookup_error.html"><code class="docutils literal"><span class="pre">codecs.lookup_error()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.make_encoding_map.html"><code class="docutils literal"><span class="pre">codecs.make_encoding_map()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.make_identity_dict.html"><code class="docutils literal"><span class="pre">codecs.make_identity_dict()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.open.html"><code class="docutils literal"><span class="pre">codecs.open()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.raw_unicode_escape_decode.html"><code class="docutils literal"><span class="pre">codecs.raw_unicode_escape_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.raw_unicode_escape_encode.html"><code class="docutils literal"><span class="pre">codecs.raw_unicode_escape_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.readbuffer_encode.html"><code class="docutils literal"><span class="pre">codecs.readbuffer_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.register.html"><code class="docutils literal"><span class="pre">codecs.register()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.register_error.html"><code class="docutils literal"><span class="pre">codecs.register_error()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.replace_errors.html"><code class="docutils literal"><span class="pre">codecs.replace_errors()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.strict_errors.html"><code class="docutils literal"><span class="pre">codecs.strict_errors()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.unicode_escape_decode.html"><code class="docutils literal"><span class="pre">codecs.unicode_escape_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.unicode_escape_encode.html"><code class="docutils literal"><span class="pre">codecs.unicode_escape_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.unicode_internal_decode.html"><code class="docutils literal"><span class="pre">codecs.unicode_internal_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.unicode_internal_encode.html"><code class="docutils literal"><span class="pre">codecs.unicode_internal_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_16_be_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_be_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_16_be_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_be_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_16_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_16_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_16_ex_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_ex_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_16_le_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_le_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_16_le_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_16_le_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_32_be_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_be_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_32_be_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_be_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_32_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_32_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_32_ex_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_ex_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_32_le_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_le_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_32_le_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_32_le_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_7_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_7_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_7_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_7_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_8_decode.html"><code class="docutils literal"><span class="pre">codecs.utf_8_decode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.utf_8_encode.html"><code class="docutils literal"><span class="pre">codecs.utf_8_encode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.xmlcharrefreplace_errors.html"><code class="docutils literal"><span class="pre">codecs.xmlcharrefreplace_errors()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.BufferedIncrementalDecoder.html"><code class="docutils literal"><span class="pre">codecs.BufferedIncrementalDecoder</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.BufferedIncrementalEncoder.html"><code class="docutils literal"><span class="pre">codecs.BufferedIncrementalEncoder</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.Codec.html"><code class="docutils literal"><span class="pre">codecs.Codec</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.CodecInfo.html"><code class="docutils literal"><span class="pre">codecs.CodecInfo</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.IncrementalDecoder.html"><code class="docutils literal"><span class="pre">codecs.IncrementalDecoder</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.IncrementalEncoder.html"><code class="docutils literal"><span class="pre">codecs.IncrementalEncoder</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.StreamReader.html"><code class="docutils literal"><span class="pre">codecs.StreamReader</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.StreamReaderWriter.html"><code class="docutils literal"><span class="pre">codecs.StreamReaderWriter</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.StreamRecoder.html"><code class="docutils literal"><span class="pre">codecs.StreamRecoder</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/codecs.StreamWriter.html"><code class="docutils literal"><span class="pre">codecs.StreamWriter</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="encodings.html"><code class="docutils literal"><span class="pre">encodings</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="encodings.idna.html"><code class="docutils literal"><span class="pre">encodings.idna</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="encodings.utf_8_sig.html"><code class="docutils literal"><span class="pre">encodings.utf_8_sig</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unicodedata.html"><code class="docutils literal"><span class="pre">unicodedata</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="stringprep.html"><code class="docutils literal"><span class="pre">stringprep</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="fpformat.html"><code class="docutils literal"><span class="pre">fpformat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -157,6 +283,190 @@
 </ol>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.EncodedFile.html#codecs.EncodedFile" title="codecs.EncodedFile"><code class="xref py py-obj docutils literal"><span class="pre">EncodedFile</span></code></a>(file,&nbsp;data_encoding[,&nbsp;...])</td>
+<td>Return a wrapped version of file which provides transparent encoding translation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.ascii_decode.html#codecs.ascii_decode" title="codecs.ascii_decode"><code class="xref py py-obj docutils literal"><span class="pre">ascii_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.ascii_encode.html#codecs.ascii_encode" title="codecs.ascii_encode"><code class="xref py py-obj docutils literal"><span class="pre">ascii_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.backslashreplace_errors.html#codecs.backslashreplace_errors" title="codecs.backslashreplace_errors"><code class="xref py py-obj docutils literal"><span class="pre">backslashreplace_errors</span></code></a></td>
+<td>Implements the &#8216;backslashreplace&#8217; error handling, which replaces an unencodable character with a backslashed escape sequence.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.charbuffer_encode.html#codecs.charbuffer_encode" title="codecs.charbuffer_encode"><code class="xref py py-obj docutils literal"><span class="pre">charbuffer_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.charmap_build.html#codecs.charmap_build" title="codecs.charmap_build"><code class="xref py py-obj docutils literal"><span class="pre">charmap_build</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.charmap_decode.html#codecs.charmap_decode" title="codecs.charmap_decode"><code class="xref py py-obj docutils literal"><span class="pre">charmap_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.charmap_encode.html#codecs.charmap_encode" title="codecs.charmap_encode"><code class="xref py py-obj docutils literal"><span class="pre">charmap_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.decode.html#codecs.decode" title="codecs.decode"><code class="xref py py-obj docutils literal"><span class="pre">decode</span></code></a>((obj,&nbsp;[encoding[,errors]])&nbsp;-&gt;&nbsp;object)</td>
+<td>Decodes obj using the codec registered for encoding.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.encode.html#codecs.encode" title="codecs.encode"><code class="xref py py-obj docutils literal"><span class="pre">encode</span></code></a>((obj,&nbsp;[encoding[,errors]])&nbsp;-&gt;&nbsp;object)</td>
+<td>Encodes obj using the codec registered for encoding.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.escape_decode.html#codecs.escape_decode" title="codecs.escape_decode"><code class="xref py py-obj docutils literal"><span class="pre">escape_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.escape_encode.html#codecs.escape_encode" title="codecs.escape_encode"><code class="xref py py-obj docutils literal"><span class="pre">escape_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.getdecoder.html#codecs.getdecoder" title="codecs.getdecoder"><code class="xref py py-obj docutils literal"><span class="pre">getdecoder</span></code></a>(encoding)</td>
+<td>Lookup up the codec for the given encoding and return its decoder function.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.getencoder.html#codecs.getencoder" title="codecs.getencoder"><code class="xref py py-obj docutils literal"><span class="pre">getencoder</span></code></a>(encoding)</td>
+<td>Lookup up the codec for the given encoding and return its encoder function.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.getincrementaldecoder.html#codecs.getincrementaldecoder" title="codecs.getincrementaldecoder"><code class="xref py py-obj docutils literal"><span class="pre">getincrementaldecoder</span></code></a>(encoding)</td>
+<td>Lookup up the codec for the given encoding and return its IncrementalDecoder class or factory function.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.getincrementalencoder.html#codecs.getincrementalencoder" title="codecs.getincrementalencoder"><code class="xref py py-obj docutils literal"><span class="pre">getincrementalencoder</span></code></a>(encoding)</td>
+<td>Lookup up the codec for the given encoding and return its IncrementalEncoder class or factory function.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.getreader.html#codecs.getreader" title="codecs.getreader"><code class="xref py py-obj docutils literal"><span class="pre">getreader</span></code></a>(encoding)</td>
+<td>Lookup up the codec for the given encoding and return its StreamReader class or factory function.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.getwriter.html#codecs.getwriter" title="codecs.getwriter"><code class="xref py py-obj docutils literal"><span class="pre">getwriter</span></code></a>(encoding)</td>
+<td>Lookup up the codec for the given encoding and return its StreamWriter class or factory function.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.ignore_errors.html#codecs.ignore_errors" title="codecs.ignore_errors"><code class="xref py py-obj docutils literal"><span class="pre">ignore_errors</span></code></a></td>
+<td>Implements the &#8216;ignore&#8217; error handling, which ignores malformed data and continues.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.iterdecode.html#codecs.iterdecode" title="codecs.iterdecode"><code class="xref py py-obj docutils literal"><span class="pre">iterdecode</span></code></a>(iterator,&nbsp;encoding[,&nbsp;errors])</td>
+<td>Decoding iterator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.iterencode.html#codecs.iterencode" title="codecs.iterencode"><code class="xref py py-obj docutils literal"><span class="pre">iterencode</span></code></a>(iterator,&nbsp;encoding[,&nbsp;errors])</td>
+<td>Encoding iterator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.latin_1_decode.html#codecs.latin_1_decode" title="codecs.latin_1_decode"><code class="xref py py-obj docutils literal"><span class="pre">latin_1_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.latin_1_encode.html#codecs.latin_1_encode" title="codecs.latin_1_encode"><code class="xref py py-obj docutils literal"><span class="pre">latin_1_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.lookup.html#codecs.lookup" title="codecs.lookup"><code class="xref py py-obj docutils literal"><span class="pre">lookup</span></code></a>((encoding)&nbsp;-&gt;&nbsp;CodecInfo)</td>
+<td>Looks up a codec tuple in the Python codec registry and returns a CodecInfo object.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.lookup_error.html#codecs.lookup_error" title="codecs.lookup_error"><code class="xref py py-obj docutils literal"><span class="pre">lookup_error</span></code></a>((errors)&nbsp;-&gt;&nbsp;handler)</td>
+<td>Return the error handler for the specified error handling name or raise a LookupError, if no handler exists under this name.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.make_encoding_map.html#codecs.make_encoding_map" title="codecs.make_encoding_map"><code class="xref py py-obj docutils literal"><span class="pre">make_encoding_map</span></code></a>(decoding_map)</td>
+<td>Creates an encoding map from a decoding map.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.make_identity_dict.html#codecs.make_identity_dict" title="codecs.make_identity_dict"><code class="xref py py-obj docutils literal"><span class="pre">make_identity_dict</span></code></a>((rng)&nbsp;-&gt;&nbsp;dict)</td>
+<td>Return a dictionary where elements of the rng sequence are mapped to themselves.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.open.html#codecs.open" title="codecs.open"><code class="xref py py-obj docutils literal"><span class="pre">open</span></code></a>(filename[,&nbsp;mode,&nbsp;encoding,&nbsp;errors,&nbsp;...])</td>
+<td>Open an encoded file using the given mode and return a wrapped version providing transparent encoding/decoding.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.raw_unicode_escape_decode.html#codecs.raw_unicode_escape_decode" title="codecs.raw_unicode_escape_decode"><code class="xref py py-obj docutils literal"><span class="pre">raw_unicode_escape_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.raw_unicode_escape_encode.html#codecs.raw_unicode_escape_encode" title="codecs.raw_unicode_escape_encode"><code class="xref py py-obj docutils literal"><span class="pre">raw_unicode_escape_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.readbuffer_encode.html#codecs.readbuffer_encode" title="codecs.readbuffer_encode"><code class="xref py py-obj docutils literal"><span class="pre">readbuffer_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.register.html#codecs.register" title="codecs.register"><code class="xref py py-obj docutils literal"><span class="pre">register</span></code></a>(search_function)</td>
+<td>Register a codec search function.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-obj docutils literal"><span class="pre">register_error</span></code></a>(errors,&nbsp;handler)</td>
+<td>Register the specified error handler under the name errors.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.replace_errors.html#codecs.replace_errors" title="codecs.replace_errors"><code class="xref py py-obj docutils literal"><span class="pre">replace_errors</span></code></a></td>
+<td>Implements the &#8216;replace&#8217; error handling, which replaces malformed data with a replacement marker.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.strict_errors.html#codecs.strict_errors" title="codecs.strict_errors"><code class="xref py py-obj docutils literal"><span class="pre">strict_errors</span></code></a></td>
+<td>Implements the &#8216;strict&#8217; error handling, which raises a UnicodeError on coding errors.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.unicode_escape_decode.html#codecs.unicode_escape_decode" title="codecs.unicode_escape_decode"><code class="xref py py-obj docutils literal"><span class="pre">unicode_escape_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.unicode_escape_encode.html#codecs.unicode_escape_encode" title="codecs.unicode_escape_encode"><code class="xref py py-obj docutils literal"><span class="pre">unicode_escape_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.unicode_internal_decode.html#codecs.unicode_internal_decode" title="codecs.unicode_internal_decode"><code class="xref py py-obj docutils literal"><span class="pre">unicode_internal_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.unicode_internal_encode.html#codecs.unicode_internal_encode" title="codecs.unicode_internal_encode"><code class="xref py py-obj docutils literal"><span class="pre">unicode_internal_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.utf_16_be_decode.html#codecs.utf_16_be_decode" title="codecs.utf_16_be_decode"><code class="xref py py-obj docutils literal"><span class="pre">utf_16_be_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.utf_16_be_encode.html#codecs.utf_16_be_encode" title="codecs.utf_16_be_encode"><code class="xref py py-obj docutils literal"><span class="pre">utf_16_be_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.utf_16_decode.html#codecs.utf_16_decode" title="codecs.utf_16_decode"><code class="xref py py-obj docutils literal"><span class="pre">utf_16_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.utf_16_encode.html#codecs.utf_16_encode" title="codecs.utf_16_encode"><code class="xref py py-obj docutils literal"><span class="pre">utf_16_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.utf_16_ex_decode.html#codecs.utf_16_ex_decode" title="codecs.utf_16_ex_decode"><code class="xref py py-obj docutils literal"><span class="pre">utf_16_ex_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.utf_16_le_decode.html#codecs.utf_16_le_decode" title="codecs.utf_16_le_decode"><code class="xref py py-obj docutils literal"><span class="pre">utf_16_le_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.utf_16_le_encode.html#codecs.utf_16_le_encode" title="codecs.utf_16_le_encode"><code class="xref py py-obj docutils literal"><span class="pre">utf_16_le_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.utf_32_be_decode.html#codecs.utf_32_be_decode" title="codecs.utf_32_be_decode"><code class="xref py py-obj docutils literal"><span class="pre">utf_32_be_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.utf_32_be_encode.html#codecs.utf_32_be_encode" title="codecs.utf_32_be_encode"><code class="xref py py-obj docutils literal"><span class="pre">utf_32_be_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.utf_32_decode.html#codecs.utf_32_decode" title="codecs.utf_32_decode"><code class="xref py py-obj docutils literal"><span class="pre">utf_32_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.utf_32_encode.html#codecs.utf_32_encode" title="codecs.utf_32_encode"><code class="xref py py-obj docutils literal"><span class="pre">utf_32_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.utf_32_ex_decode.html#codecs.utf_32_ex_decode" title="codecs.utf_32_ex_decode"><code class="xref py py-obj docutils literal"><span class="pre">utf_32_ex_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.utf_32_le_decode.html#codecs.utf_32_le_decode" title="codecs.utf_32_le_decode"><code class="xref py py-obj docutils literal"><span class="pre">utf_32_le_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.utf_32_le_encode.html#codecs.utf_32_le_encode" title="codecs.utf_32_le_encode"><code class="xref py py-obj docutils literal"><span class="pre">utf_32_le_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.utf_7_decode.html#codecs.utf_7_decode" title="codecs.utf_7_decode"><code class="xref py py-obj docutils literal"><span class="pre">utf_7_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.utf_7_encode.html#codecs.utf_7_encode" title="codecs.utf_7_encode"><code class="xref py py-obj docutils literal"><span class="pre">utf_7_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.utf_8_decode.html#codecs.utf_8_decode" title="codecs.utf_8_decode"><code class="xref py py-obj docutils literal"><span class="pre">utf_8_decode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/codecs.utf_8_encode.html#codecs.utf_8_encode" title="codecs.utf_8_encode"><code class="xref py py-obj docutils literal"><span class="pre">utf_8_encode</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/codecs.xmlcharrefreplace_errors.html#codecs.xmlcharrefreplace_errors" title="codecs.xmlcharrefreplace_errors"><code class="xref py py-obj docutils literal"><span class="pre">xmlcharrefreplace_errors</span></code></a></td>
+<td>Implements the &#8216;xmlcharrefreplace&#8217; error handling, which replaces an unencodable character with the appropriate XML character reference.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -210,7 +520,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/codecs.BufferedIncrementalDecoder.html" class="btn btn-neutral float-right" title="codecs.BufferedIncrementalDecoder" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/codecs.EncodedFile.html" class="btn btn-neutral float-right" title="codecs.EncodedFile()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="generated/textwrap.TextWrapper.x.html" class="btn btn-neutral" title="textwrap.TextWrapper.x" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

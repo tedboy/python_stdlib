@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       decode
       encode
       getregentry
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/encodings.utf_8_sig.decode
+       generated/encodings.utf_8_sig.encode
+       generated/encodings.utf_8_sig.getregentry
+      
    
    
 

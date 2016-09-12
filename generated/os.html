@@ -34,8 +34,8 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="os.stat_result" href="generated/os.stat_result.html"/>
-        <link rel="prev" title="sha" href="sha.html"/> 
+        <link rel="next" title="os.WCOREDUMP()" href="generated/os.WCOREDUMP.html"/>
+        <link rel="prev" title="sha.sha()" href="generated/sha.sha.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -82,12 +82,214 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">os</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.WCOREDUMP.html"><code class="docutils literal"><span class="pre">os.WCOREDUMP()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.WEXITSTATUS.html"><code class="docutils literal"><span class="pre">os.WEXITSTATUS()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.WIFCONTINUED.html"><code class="docutils literal"><span class="pre">os.WIFCONTINUED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.WIFEXITED.html"><code class="docutils literal"><span class="pre">os.WIFEXITED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.WIFSIGNALED.html"><code class="docutils literal"><span class="pre">os.WIFSIGNALED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.WIFSTOPPED.html"><code class="docutils literal"><span class="pre">os.WIFSTOPPED()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.WSTOPSIG.html"><code class="docutils literal"><span class="pre">os.WSTOPSIG()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.WTERMSIG.html"><code class="docutils literal"><span class="pre">os.WTERMSIG()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.abort.html"><code class="docutils literal"><span class="pre">os.abort()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.access.html"><code class="docutils literal"><span class="pre">os.access()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.chdir.html"><code class="docutils literal"><span class="pre">os.chdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.chmod.html"><code class="docutils literal"><span class="pre">os.chmod()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.chown.html"><code class="docutils literal"><span class="pre">os.chown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.chroot.html"><code class="docutils literal"><span class="pre">os.chroot()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.close.html"><code class="docutils literal"><span class="pre">os.close()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.closerange.html"><code class="docutils literal"><span class="pre">os.closerange()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.confstr.html"><code class="docutils literal"><span class="pre">os.confstr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.ctermid.html"><code class="docutils literal"><span class="pre">os.ctermid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.dup.html"><code class="docutils literal"><span class="pre">os.dup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.dup2.html"><code class="docutils literal"><span class="pre">os.dup2()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.execl.html"><code class="docutils literal"><span class="pre">os.execl()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.execle.html"><code class="docutils literal"><span class="pre">os.execle()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.execlp.html"><code class="docutils literal"><span class="pre">os.execlp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.execlpe.html"><code class="docutils literal"><span class="pre">os.execlpe()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.execv.html"><code class="docutils literal"><span class="pre">os.execv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.execve.html"><code class="docutils literal"><span class="pre">os.execve()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.execvp.html"><code class="docutils literal"><span class="pre">os.execvp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.execvpe.html"><code class="docutils literal"><span class="pre">os.execvpe()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.fchdir.html"><code class="docutils literal"><span class="pre">os.fchdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.fchmod.html"><code class="docutils literal"><span class="pre">os.fchmod()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.fchown.html"><code class="docutils literal"><span class="pre">os.fchown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.fdatasync.html"><code class="docutils literal"><span class="pre">os.fdatasync()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.fdopen.html"><code class="docutils literal"><span class="pre">os.fdopen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.fork.html"><code class="docutils literal"><span class="pre">os.fork()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.forkpty.html"><code class="docutils literal"><span class="pre">os.forkpty()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.fpathconf.html"><code class="docutils literal"><span class="pre">os.fpathconf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.fstat.html"><code class="docutils literal"><span class="pre">os.fstat()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.fstatvfs.html"><code class="docutils literal"><span class="pre">os.fstatvfs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.fsync.html"><code class="docutils literal"><span class="pre">os.fsync()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.ftruncate.html"><code class="docutils literal"><span class="pre">os.ftruncate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getcwd.html"><code class="docutils literal"><span class="pre">os.getcwd()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getcwdu.html"><code class="docutils literal"><span class="pre">os.getcwdu()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getegid.html"><code class="docutils literal"><span class="pre">os.getegid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getenv.html"><code class="docutils literal"><span class="pre">os.getenv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.geteuid.html"><code class="docutils literal"><span class="pre">os.geteuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getgid.html"><code class="docutils literal"><span class="pre">os.getgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getgroups.html"><code class="docutils literal"><span class="pre">os.getgroups()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getloadavg.html"><code class="docutils literal"><span class="pre">os.getloadavg()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getlogin.html"><code class="docutils literal"><span class="pre">os.getlogin()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getpgid.html"><code class="docutils literal"><span class="pre">os.getpgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getpgrp.html"><code class="docutils literal"><span class="pre">os.getpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getpid.html"><code class="docutils literal"><span class="pre">os.getpid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getppid.html"><code class="docutils literal"><span class="pre">os.getppid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getresgid.html"><code class="docutils literal"><span class="pre">os.getresgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getresuid.html"><code class="docutils literal"><span class="pre">os.getresuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getsid.html"><code class="docutils literal"><span class="pre">os.getsid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.getuid.html"><code class="docutils literal"><span class="pre">os.getuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.initgroups.html"><code class="docutils literal"><span class="pre">os.initgroups()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.isatty.html"><code class="docutils literal"><span class="pre">os.isatty()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.kill.html"><code class="docutils literal"><span class="pre">os.kill()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.killpg.html"><code class="docutils literal"><span class="pre">os.killpg()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.lchown.html"><code class="docutils literal"><span class="pre">os.lchown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.link.html"><code class="docutils literal"><span class="pre">os.link()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.listdir.html"><code class="docutils literal"><span class="pre">os.listdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.lseek.html"><code class="docutils literal"><span class="pre">os.lseek()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.lstat.html"><code class="docutils literal"><span class="pre">os.lstat()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.major.html"><code class="docutils literal"><span class="pre">os.major()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.makedev.html"><code class="docutils literal"><span class="pre">os.makedev()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.makedirs.html"><code class="docutils literal"><span class="pre">os.makedirs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.minor.html"><code class="docutils literal"><span class="pre">os.minor()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.mkdir.html"><code class="docutils literal"><span class="pre">os.mkdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.mkfifo.html"><code class="docutils literal"><span class="pre">os.mkfifo()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.mknod.html"><code class="docutils literal"><span class="pre">os.mknod()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.nice.html"><code class="docutils literal"><span class="pre">os.nice()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.open.html"><code class="docutils literal"><span class="pre">os.open()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.openpty.html"><code class="docutils literal"><span class="pre">os.openpty()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.pathconf.html"><code class="docutils literal"><span class="pre">os.pathconf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.pipe.html"><code class="docutils literal"><span class="pre">os.pipe()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.popen.html"><code class="docutils literal"><span class="pre">os.popen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.popen2.html"><code class="docutils literal"><span class="pre">os.popen2()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.popen3.html"><code class="docutils literal"><span class="pre">os.popen3()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.popen4.html"><code class="docutils literal"><span class="pre">os.popen4()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.putenv.html"><code class="docutils literal"><span class="pre">os.putenv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.read.html"><code class="docutils literal"><span class="pre">os.read()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.readlink.html"><code class="docutils literal"><span class="pre">os.readlink()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.remove.html"><code class="docutils literal"><span class="pre">os.remove()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.removedirs.html"><code class="docutils literal"><span class="pre">os.removedirs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.rename.html"><code class="docutils literal"><span class="pre">os.rename()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.renames.html"><code class="docutils literal"><span class="pre">os.renames()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.rmdir.html"><code class="docutils literal"><span class="pre">os.rmdir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.setegid.html"><code class="docutils literal"><span class="pre">os.setegid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.seteuid.html"><code class="docutils literal"><span class="pre">os.seteuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.setgid.html"><code class="docutils literal"><span class="pre">os.setgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.setgroups.html"><code class="docutils literal"><span class="pre">os.setgroups()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.setpgid.html"><code class="docutils literal"><span class="pre">os.setpgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.setpgrp.html"><code class="docutils literal"><span class="pre">os.setpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.setregid.html"><code class="docutils literal"><span class="pre">os.setregid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.setresgid.html"><code class="docutils literal"><span class="pre">os.setresgid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.setresuid.html"><code class="docutils literal"><span class="pre">os.setresuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.setreuid.html"><code class="docutils literal"><span class="pre">os.setreuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.setsid.html"><code class="docutils literal"><span class="pre">os.setsid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.setuid.html"><code class="docutils literal"><span class="pre">os.setuid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.spawnl.html"><code class="docutils literal"><span class="pre">os.spawnl()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.spawnle.html"><code class="docutils literal"><span class="pre">os.spawnle()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.spawnlp.html"><code class="docutils literal"><span class="pre">os.spawnlp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.spawnlpe.html"><code class="docutils literal"><span class="pre">os.spawnlpe()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.spawnv.html"><code class="docutils literal"><span class="pre">os.spawnv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.spawnve.html"><code class="docutils literal"><span class="pre">os.spawnve()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.spawnvp.html"><code class="docutils literal"><span class="pre">os.spawnvp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.spawnvpe.html"><code class="docutils literal"><span class="pre">os.spawnvpe()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.stat.html"><code class="docutils literal"><span class="pre">os.stat()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.stat_float_times.html"><code class="docutils literal"><span class="pre">os.stat_float_times()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.statvfs.html"><code class="docutils literal"><span class="pre">os.statvfs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.strerror.html"><code class="docutils literal"><span class="pre">os.strerror()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.symlink.html"><code class="docutils literal"><span class="pre">os.symlink()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.sysconf.html"><code class="docutils literal"><span class="pre">os.sysconf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.system.html"><code class="docutils literal"><span class="pre">os.system()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.tcgetpgrp.html"><code class="docutils literal"><span class="pre">os.tcgetpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.tcsetpgrp.html"><code class="docutils literal"><span class="pre">os.tcsetpgrp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.tempnam.html"><code class="docutils literal"><span class="pre">os.tempnam()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.times.html"><code class="docutils literal"><span class="pre">os.times()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.tmpfile.html"><code class="docutils literal"><span class="pre">os.tmpfile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.tmpnam.html"><code class="docutils literal"><span class="pre">os.tmpnam()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.ttyname.html"><code class="docutils literal"><span class="pre">os.ttyname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.umask.html"><code class="docutils literal"><span class="pre">os.umask()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.uname.html"><code class="docutils literal"><span class="pre">os.uname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.unlink.html"><code class="docutils literal"><span class="pre">os.unlink()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.unsetenv.html"><code class="docutils literal"><span class="pre">os.unsetenv()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.urandom.html"><code class="docutils literal"><span class="pre">os.urandom()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.utime.html"><code class="docutils literal"><span class="pre">os.utime()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.wait.html"><code class="docutils literal"><span class="pre">os.wait()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.wait3.html"><code class="docutils literal"><span class="pre">os.wait3()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.wait4.html"><code class="docutils literal"><span class="pre">os.wait4()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.waitpid.html"><code class="docutils literal"><span class="pre">os.waitpid()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.walk.html"><code class="docutils literal"><span class="pre">os.walk()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.write.html"><code class="docutils literal"><span class="pre">os.write()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.stat_result.html"><code class="docutils literal"><span class="pre">os.stat_result</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/os.statvfs_result.html"><code class="docutils literal"><span class="pre">os.statvfs_result</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="os.error.html">os.error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="io.html"><code class="docutils literal"><span class="pre">io</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="time.html"><code class="docutils literal"><span class="pre">time</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="argparse.html"><code class="docutils literal"><span class="pre">argparse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="optparse.html"><code class="docutils literal"><span class="pre">optparse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="getopt.html"><code class="docutils literal"><span class="pre">getopt</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="logging.html"><code class="docutils literal"><span class="pre">logging</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="logging.config.html"><code class="docutils literal"><span class="pre">logging.config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="logging.handlers.html"><code class="docutils literal"><span class="pre">logging.handlers</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="getpass.html"><code class="docutils literal"><span class="pre">getpass</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="curses.html"><code class="docutils literal"><span class="pre">curses</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="curses.ascii.html"><code class="docutils literal"><span class="pre">curses.ascii</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="curses.panel.html"><code class="docutils literal"><span class="pre">curses.panel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="platform.html"><code class="docutils literal"><span class="pre">platform</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="errno.html"><code class="docutils literal"><span class="pre">errno</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ctypes.html"><code class="docutils literal"><span class="pre">ctypes</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -176,6 +378,424 @@ and opendir), and leave all pathname manipulation to os.path
 (e.g., split and join).</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.WCOREDUMP.html#os.WCOREDUMP" title="os.WCOREDUMP"><code class="xref py py-obj docutils literal"><span class="pre">WCOREDUMP</span></code></a>((status)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if the process returning &#8216;status&#8217; was dumped to a core file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.WEXITSTATUS.html#os.WEXITSTATUS" title="os.WEXITSTATUS"><code class="xref py py-obj docutils literal"><span class="pre">WEXITSTATUS</span></code></a>((status)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the process return code from &#8216;status&#8217;.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.WIFCONTINUED.html#os.WIFCONTINUED" title="os.WIFCONTINUED"><code class="xref py py-obj docutils literal"><span class="pre">WIFCONTINUED</span></code></a>((status)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if the process returning &#8216;status&#8217; was continued from a job control stop.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.WIFEXITED.html#os.WIFEXITED" title="os.WIFEXITED"><code class="xref py py-obj docutils literal"><span class="pre">WIFEXITED</span></code></a>((status)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return true if the process returning &#8216;status&#8217; exited using the exit() system call.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.WIFSIGNALED.html#os.WIFSIGNALED" title="os.WIFSIGNALED"><code class="xref py py-obj docutils literal"><span class="pre">WIFSIGNALED</span></code></a>((status)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if the process returning &#8216;status&#8217; was terminated by a signal.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.WIFSTOPPED.html#os.WIFSTOPPED" title="os.WIFSTOPPED"><code class="xref py py-obj docutils literal"><span class="pre">WIFSTOPPED</span></code></a>((status)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if the process returning &#8216;status&#8217; was stopped.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.WSTOPSIG.html#os.WSTOPSIG" title="os.WSTOPSIG"><code class="xref py py-obj docutils literal"><span class="pre">WSTOPSIG</span></code></a>((status)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the signal that stopped the process that provided the &#8216;status&#8217; value.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.WTERMSIG.html#os.WTERMSIG" title="os.WTERMSIG"><code class="xref py py-obj docutils literal"><span class="pre">WTERMSIG</span></code></a>((status)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the signal that terminated the process that provided the &#8216;status&#8217; value.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.abort.html#os.abort" title="os.abort"><code class="xref py py-obj docutils literal"><span class="pre">abort</span></code></a>(()&nbsp;-&gt;&nbsp;does&nbsp;not&nbsp;return!)</td>
+<td>Abort the interpreter immediately.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.access.html#os.access" title="os.access"><code class="xref py py-obj docutils literal"><span class="pre">access</span></code></a>((path,&nbsp;mode)&nbsp;-&gt;&nbsp;True&nbsp;if&nbsp;granted,&nbsp;...)</td>
+<td>Use the real uid/gid to test for access to a path.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.chdir.html#os.chdir" title="os.chdir"><code class="xref py py-obj docutils literal"><span class="pre">chdir</span></code></a>(path)</td>
+<td>Change the current working directory to the specified path.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.chmod.html#os.chmod" title="os.chmod"><code class="xref py py-obj docutils literal"><span class="pre">chmod</span></code></a>(path,&nbsp;mode)</td>
+<td>Change the access permissions of a file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.chown.html#os.chown" title="os.chown"><code class="xref py py-obj docutils literal"><span class="pre">chown</span></code></a>(path,&nbsp;uid,&nbsp;gid)</td>
+<td>Change the owner and group id of path to the numeric uid and gid.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.chroot.html#os.chroot" title="os.chroot"><code class="xref py py-obj docutils literal"><span class="pre">chroot</span></code></a>(path)</td>
+<td>Change root directory to path.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.close.html#os.close" title="os.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>(fd)</td>
+<td>Close a file descriptor (for low level IO).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.closerange.html#os.closerange" title="os.closerange"><code class="xref py py-obj docutils literal"><span class="pre">closerange</span></code></a>(fd_low,&nbsp;fd_high)</td>
+<td>Closes all file descriptors in [fd_low, fd_high), ignoring errors.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.confstr.html#os.confstr" title="os.confstr"><code class="xref py py-obj docutils literal"><span class="pre">confstr</span></code></a>((name)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a string-valued system configuration variable.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.ctermid.html#os.ctermid" title="os.ctermid"><code class="xref py py-obj docutils literal"><span class="pre">ctermid</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the name of the controlling terminal for this process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.dup.html#os.dup" title="os.dup"><code class="xref py py-obj docutils literal"><span class="pre">dup</span></code></a>((fd)&nbsp;-&gt;&nbsp;fd2)</td>
+<td>Return a duplicate of a file descriptor.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.dup2.html#os.dup2" title="os.dup2"><code class="xref py py-obj docutils literal"><span class="pre">dup2</span></code></a>(old_fd,&nbsp;new_fd)</td>
+<td>Duplicate file descriptor.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.execl.html#os.execl" title="os.execl"><code class="xref py py-obj docutils literal"><span class="pre">execl</span></code></a>(file,&nbsp;*args)</td>
+<td>Execute the executable file with argument list args, replacing the current process.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.execle.html#os.execle" title="os.execle"><code class="xref py py-obj docutils literal"><span class="pre">execle</span></code></a>(file,&nbsp;*args,&nbsp;env)</td>
+<td>Execute the executable file with argument list args and environment env, replacing the current process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.execlp.html#os.execlp" title="os.execlp"><code class="xref py py-obj docutils literal"><span class="pre">execlp</span></code></a>(file,&nbsp;*args)</td>
+<td>Execute the executable file (which is searched for along $PATH) with argument list args, replacing the current process.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.execlpe.html#os.execlpe" title="os.execlpe"><code class="xref py py-obj docutils literal"><span class="pre">execlpe</span></code></a>(file,&nbsp;*args,&nbsp;env)</td>
+<td>Execute the executable file (which is searched for along $PATH) with argument list args and environment env, replacing the current process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.execv.html#os.execv" title="os.execv"><code class="xref py py-obj docutils literal"><span class="pre">execv</span></code></a>(path,&nbsp;args)</td>
+<td>Execute an executable path with arguments, replacing current process.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.execve.html#os.execve" title="os.execve"><code class="xref py py-obj docutils literal"><span class="pre">execve</span></code></a>(path,&nbsp;args,&nbsp;env)</td>
+<td>Execute a path with arguments and environment, replacing current process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.execvp.html#os.execvp" title="os.execvp"><code class="xref py py-obj docutils literal"><span class="pre">execvp</span></code></a>(file,&nbsp;args)</td>
+<td>Execute the executable file (which is searched for along $PATH) with argument list args, replacing the current process.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.execvpe.html#os.execvpe" title="os.execvpe"><code class="xref py py-obj docutils literal"><span class="pre">execvpe</span></code></a>(file,&nbsp;args,&nbsp;env)</td>
+<td>Execute the executable file (which is searched for along $PATH) with argument list args and environment env , replacing the current process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.fchdir.html#os.fchdir" title="os.fchdir"><code class="xref py py-obj docutils literal"><span class="pre">fchdir</span></code></a>(fildes)</td>
+<td>Change to the directory of the given file descriptor.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.fchmod.html#os.fchmod" title="os.fchmod"><code class="xref py py-obj docutils literal"><span class="pre">fchmod</span></code></a>(fd,&nbsp;mode)</td>
+<td>Change the access permissions of the file given by file descriptor fd.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.fchown.html#os.fchown" title="os.fchown"><code class="xref py py-obj docutils literal"><span class="pre">fchown</span></code></a>(fd,&nbsp;uid,&nbsp;gid)</td>
+<td>Change the owner and group id of the file given by file descriptor fd to the numeric uid and gid.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.fdatasync.html#os.fdatasync" title="os.fdatasync"><code class="xref py py-obj docutils literal"><span class="pre">fdatasync</span></code></a>(fildes)</td>
+<td>force write of file with filedescriptor to disk.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.fdopen.html#os.fdopen" title="os.fdopen"><code class="xref py py-obj docutils literal"><span class="pre">fdopen</span></code></a>((fd&nbsp;[[,&nbsp;mode])</td>
+<td>Return an open file object connected to a file descriptor.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.fork.html#os.fork" title="os.fork"><code class="xref py py-obj docutils literal"><span class="pre">fork</span></code></a>(()&nbsp;-&gt;&nbsp;pid)</td>
+<td>Fork a child process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.forkpty.html#os.forkpty" title="os.forkpty"><code class="xref py py-obj docutils literal"><span class="pre">forkpty</span></code></a>()&nbsp;-&gt;&nbsp;(pid,&nbsp;master_fd)</td>
+<td>Fork a new process with a new pseudo-terminal as controlling tty.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.fpathconf.html#os.fpathconf" title="os.fpathconf"><code class="xref py py-obj docutils literal"><span class="pre">fpathconf</span></code></a>((fd,&nbsp;name)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the configuration limit name for the file descriptor fd.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.fstat.html#os.fstat" title="os.fstat"><code class="xref py py-obj docutils literal"><span class="pre">fstat</span></code></a>((fd)&nbsp;-&gt;&nbsp;stat&nbsp;result)</td>
+<td>Like stat(), but for an open file descriptor.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.fstatvfs.html#os.fstatvfs" title="os.fstatvfs"><code class="xref py py-obj docutils literal"><span class="pre">fstatvfs</span></code></a>((fd)&nbsp;-&gt;&nbsp;statvfs&nbsp;result)</td>
+<td>Perform an fstatvfs system call on the given fd.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.fsync.html#os.fsync" title="os.fsync"><code class="xref py py-obj docutils literal"><span class="pre">fsync</span></code></a>(fildes)</td>
+<td>force write of file with filedescriptor to disk.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.ftruncate.html#os.ftruncate" title="os.ftruncate"><code class="xref py py-obj docutils literal"><span class="pre">ftruncate</span></code></a>(fd,&nbsp;length)</td>
+<td>Truncate a file to a specified length.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.getcwd.html#os.getcwd" title="os.getcwd"><code class="xref py py-obj docutils literal"><span class="pre">getcwd</span></code></a>(()&nbsp;-&gt;&nbsp;path)</td>
+<td>Return a string representing the current working directory.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.getcwdu.html#os.getcwdu" title="os.getcwdu"><code class="xref py py-obj docutils literal"><span class="pre">getcwdu</span></code></a>(()&nbsp;-&gt;&nbsp;path)</td>
+<td>Return a unicode string representing the current working directory.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.getegid.html#os.getegid" title="os.getegid"><code class="xref py py-obj docutils literal"><span class="pre">getegid</span></code></a>(()&nbsp;-&gt;&nbsp;egid)</td>
+<td>Return the current process&#8217;s effective group id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.getenv.html#os.getenv" title="os.getenv"><code class="xref py py-obj docutils literal"><span class="pre">getenv</span></code></a>(key[,&nbsp;default])</td>
+<td>Get an environment variable, return None if it doesn&#8217;t exist.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.geteuid.html#os.geteuid" title="os.geteuid"><code class="xref py py-obj docutils literal"><span class="pre">geteuid</span></code></a>(()&nbsp;-&gt;&nbsp;euid)</td>
+<td>Return the current process&#8217;s effective user id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.getgid.html#os.getgid" title="os.getgid"><code class="xref py py-obj docutils literal"><span class="pre">getgid</span></code></a>(()&nbsp;-&gt;&nbsp;gid)</td>
+<td>Return the current process&#8217;s group id.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.getgroups.html#os.getgroups" title="os.getgroups"><code class="xref py py-obj docutils literal"><span class="pre">getgroups</span></code></a>(()&nbsp;-&gt;&nbsp;list&nbsp;of&nbsp;group&nbsp;IDs)</td>
+<td>Return list of supplemental group IDs for the process.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.getloadavg.html#os.getloadavg" title="os.getloadavg"><code class="xref py py-obj docutils literal"><span class="pre">getloadavg</span></code></a>()&nbsp;-&gt;&nbsp;(float,&nbsp;float,&nbsp;float)</td>
+<td>Return the number of processes in the system run queue averaged over</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.getlogin.html#os.getlogin" title="os.getlogin"><code class="xref py py-obj docutils literal"><span class="pre">getlogin</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the actual login name.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.getpgid.html#os.getpgid" title="os.getpgid"><code class="xref py py-obj docutils literal"><span class="pre">getpgid</span></code></a>((pid)&nbsp;-&gt;&nbsp;pgid)</td>
+<td>Call the system call getpgid().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.getpgrp.html#os.getpgrp" title="os.getpgrp"><code class="xref py py-obj docutils literal"><span class="pre">getpgrp</span></code></a>(()&nbsp;-&gt;&nbsp;pgrp)</td>
+<td>Return the current process group id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.getpid.html#os.getpid" title="os.getpid"><code class="xref py py-obj docutils literal"><span class="pre">getpid</span></code></a>(()&nbsp;-&gt;&nbsp;pid)</td>
+<td>Return the current process id</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.getppid.html#os.getppid" title="os.getppid"><code class="xref py py-obj docutils literal"><span class="pre">getppid</span></code></a>(()&nbsp;-&gt;&nbsp;ppid)</td>
+<td>Return the parent&#8217;s process id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.getresgid.html#os.getresgid" title="os.getresgid"><code class="xref py py-obj docutils literal"><span class="pre">getresgid</span></code></a>()&nbsp;-&gt;&nbsp;(rgid,&nbsp;egid,&nbsp;sgid)</td>
+<td>Get tuple of the current process&#8217;s real, effective, and saved group ids.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.getresuid.html#os.getresuid" title="os.getresuid"><code class="xref py py-obj docutils literal"><span class="pre">getresuid</span></code></a>()&nbsp;-&gt;&nbsp;(ruid,&nbsp;euid,&nbsp;suid)</td>
+<td>Get tuple of the current process&#8217;s real, effective, and saved user ids.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.getsid.html#os.getsid" title="os.getsid"><code class="xref py py-obj docutils literal"><span class="pre">getsid</span></code></a>((pid)&nbsp;-&gt;&nbsp;sid)</td>
+<td>Call the system call getsid().</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.getuid.html#os.getuid" title="os.getuid"><code class="xref py py-obj docutils literal"><span class="pre">getuid</span></code></a>(()&nbsp;-&gt;&nbsp;uid)</td>
+<td>Return the current process&#8217;s user id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.initgroups.html#os.initgroups" title="os.initgroups"><code class="xref py py-obj docutils literal"><span class="pre">initgroups</span></code></a>((username,&nbsp;gid)&nbsp;-&gt;&nbsp;None)</td>
+<td>Call the system initgroups() to initialize the group access list with all of the groups of which the specified username is a member, plus the specified group id.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.isatty.html#os.isatty" title="os.isatty"><code class="xref py py-obj docutils literal"><span class="pre">isatty</span></code></a>((fd)&nbsp;-&gt;&nbsp;bool)</td>
+<td>Return True if the file descriptor &#8216;fd&#8217; is an open file descriptor connected to the slave end of a terminal.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.kill.html#os.kill" title="os.kill"><code class="xref py py-obj docutils literal"><span class="pre">kill</span></code></a>(pid,&nbsp;sig)</td>
+<td>Kill a process with a signal.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.killpg.html#os.killpg" title="os.killpg"><code class="xref py py-obj docutils literal"><span class="pre">killpg</span></code></a>(pgid,&nbsp;sig)</td>
+<td>Kill a process group with a signal.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.lchown.html#os.lchown" title="os.lchown"><code class="xref py py-obj docutils literal"><span class="pre">lchown</span></code></a>(path,&nbsp;uid,&nbsp;gid)</td>
+<td>Change the owner and group id of path to the numeric uid and gid.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.link.html#os.link" title="os.link"><code class="xref py py-obj docutils literal"><span class="pre">link</span></code></a>(src,&nbsp;dst)</td>
+<td>Create a hard link to a file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.listdir.html#os.listdir" title="os.listdir"><code class="xref py py-obj docutils literal"><span class="pre">listdir</span></code></a>((path)&nbsp;-&gt;&nbsp;list_of_strings)</td>
+<td>Return a list containing the names of the entries in the directory.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.lseek.html#os.lseek" title="os.lseek"><code class="xref py py-obj docutils literal"><span class="pre">lseek</span></code></a>((fd,&nbsp;pos,&nbsp;how)&nbsp;-&gt;&nbsp;newpos)</td>
+<td>Set the current position of a file descriptor.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.lstat.html#os.lstat" title="os.lstat"><code class="xref py py-obj docutils literal"><span class="pre">lstat</span></code></a>((path)&nbsp;-&gt;&nbsp;stat&nbsp;result)</td>
+<td>Like stat(path), but do not follow symbolic links.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.major.html#os.major" title="os.major"><code class="xref py py-obj docutils literal"><span class="pre">major</span></code></a>((device)&nbsp;-&gt;&nbsp;major&nbsp;number)</td>
+<td>Extracts a device major number from a raw device number.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.makedev.html#os.makedev" title="os.makedev"><code class="xref py py-obj docutils literal"><span class="pre">makedev</span></code></a>((major,&nbsp;minor)&nbsp;-&gt;&nbsp;device&nbsp;number)</td>
+<td>Composes a raw device number from the major and minor device numbers.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.makedirs.html#os.makedirs" title="os.makedirs"><code class="xref py py-obj docutils literal"><span class="pre">makedirs</span></code></a>(path&nbsp;[[,&nbsp;mode])</td>
+<td>Super-mkdir; create a leaf directory and all intermediate ones.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.minor.html#os.minor" title="os.minor"><code class="xref py py-obj docutils literal"><span class="pre">minor</span></code></a>((device)&nbsp;-&gt;&nbsp;minor&nbsp;number)</td>
+<td>Extracts a device minor number from a raw device number.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.mkdir.html#os.mkdir" title="os.mkdir"><code class="xref py py-obj docutils literal"><span class="pre">mkdir</span></code></a>(path&nbsp;[[,&nbsp;mode])</td>
+<td>Create a directory.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.mkfifo.html#os.mkfifo" title="os.mkfifo"><code class="xref py py-obj docutils literal"><span class="pre">mkfifo</span></code></a>(filename&nbsp;[[,&nbsp;mode])</td>
+<td>Create a FIFO (a POSIX named pipe).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.mknod.html#os.mknod" title="os.mknod"><code class="xref py py-obj docutils literal"><span class="pre">mknod</span></code></a>(filename&nbsp;[[,&nbsp;mode])</td>
+<td>Create a filesystem node (file, device special file or named pipe) named filename.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.nice.html#os.nice" title="os.nice"><code class="xref py py-obj docutils literal"><span class="pre">nice</span></code></a>((inc)&nbsp;-&gt;&nbsp;new_priority)</td>
+<td>Decrease the priority of process by inc and return the new priority.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.open.html#os.open" title="os.open"><code class="xref py py-obj docutils literal"><span class="pre">open</span></code></a>((filename,&nbsp;flag&nbsp;[[,&nbsp;mode])</td>
+<td>Open a file (for low level IO).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.openpty.html#os.openpty" title="os.openpty"><code class="xref py py-obj docutils literal"><span class="pre">openpty</span></code></a>()&nbsp;-&gt;&nbsp;(master_fd,&nbsp;slave_fd)</td>
+<td>Open a pseudo-terminal, returning open fd&#8217;s for both master and slave end.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.pathconf.html#os.pathconf" title="os.pathconf"><code class="xref py py-obj docutils literal"><span class="pre">pathconf</span></code></a>((path,&nbsp;name)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return the configuration limit name for the file or directory path.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.pipe.html#os.pipe" title="os.pipe"><code class="xref py py-obj docutils literal"><span class="pre">pipe</span></code></a>()&nbsp;-&gt;&nbsp;(read_end,&nbsp;write_end)</td>
+<td>Create a pipe.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.popen.html#os.popen" title="os.popen"><code class="xref py py-obj docutils literal"><span class="pre">popen</span></code></a>((command&nbsp;[[,&nbsp;mode])</td>
+<td>Open a pipe to/from a command returning a file object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.popen2.html#os.popen2" title="os.popen2"><code class="xref py py-obj docutils literal"><span class="pre">popen2</span></code></a>(cmd[,&nbsp;mode,&nbsp;bufsize])</td>
+<td>Execute the shell command &#8216;cmd&#8217; in a sub-process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.popen3.html#os.popen3" title="os.popen3"><code class="xref py py-obj docutils literal"><span class="pre">popen3</span></code></a>(cmd[,&nbsp;mode,&nbsp;bufsize])</td>
+<td>Execute the shell command &#8216;cmd&#8217; in a sub-process.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.popen4.html#os.popen4" title="os.popen4"><code class="xref py py-obj docutils literal"><span class="pre">popen4</span></code></a>(cmd[,&nbsp;mode,&nbsp;bufsize])</td>
+<td>Execute the shell command &#8216;cmd&#8217; in a sub-process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.putenv.html#os.putenv" title="os.putenv"><code class="xref py py-obj docutils literal"><span class="pre">putenv</span></code></a>(key,&nbsp;value)</td>
+<td>Change or add an environment variable.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.read.html#os.read" title="os.read"><code class="xref py py-obj docutils literal"><span class="pre">read</span></code></a>((fd,&nbsp;buffersize)&nbsp;-&gt;&nbsp;string)</td>
+<td>Read a file descriptor.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.readlink.html#os.readlink" title="os.readlink"><code class="xref py py-obj docutils literal"><span class="pre">readlink</span></code></a>((path)&nbsp;-&gt;&nbsp;path)</td>
+<td>Return a string representing the path to which the symbolic link points.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.remove.html#os.remove" title="os.remove"><code class="xref py py-obj docutils literal"><span class="pre">remove</span></code></a>(path)</td>
+<td>Remove a file (same as unlink(path)).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.removedirs.html#os.removedirs" title="os.removedirs"><code class="xref py py-obj docutils literal"><span class="pre">removedirs</span></code></a>(path)</td>
+<td>Super-rmdir; remove a leaf directory and all empty intermediate ones.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.rename.html#os.rename" title="os.rename"><code class="xref py py-obj docutils literal"><span class="pre">rename</span></code></a>(old,&nbsp;new)</td>
+<td>Rename a file or directory.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.renames.html#os.renames" title="os.renames"><code class="xref py py-obj docutils literal"><span class="pre">renames</span></code></a>(old,&nbsp;new)</td>
+<td>Super-rename; create directories as necessary and delete any left empty.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.rmdir.html#os.rmdir" title="os.rmdir"><code class="xref py py-obj docutils literal"><span class="pre">rmdir</span></code></a>(path)</td>
+<td>Remove a directory.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.setegid.html#os.setegid" title="os.setegid"><code class="xref py py-obj docutils literal"><span class="pre">setegid</span></code></a>(gid)</td>
+<td>Set the current process&#8217;s effective group id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.seteuid.html#os.seteuid" title="os.seteuid"><code class="xref py py-obj docutils literal"><span class="pre">seteuid</span></code></a>(uid)</td>
+<td>Set the current process&#8217;s effective user id.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.setgid.html#os.setgid" title="os.setgid"><code class="xref py py-obj docutils literal"><span class="pre">setgid</span></code></a>(gid)</td>
+<td>Set the current process&#8217;s group id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.setgroups.html#os.setgroups" title="os.setgroups"><code class="xref py py-obj docutils literal"><span class="pre">setgroups</span></code></a>(list)</td>
+<td>Set the groups of the current process to list.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.setpgid.html#os.setpgid" title="os.setpgid"><code class="xref py py-obj docutils literal"><span class="pre">setpgid</span></code></a>(pid,&nbsp;pgrp)</td>
+<td>Call the system call setpgid().</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.setpgrp.html#os.setpgrp" title="os.setpgrp"><code class="xref py py-obj docutils literal"><span class="pre">setpgrp</span></code></a>()</td>
+<td>Make this process the process group leader.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.setregid.html#os.setregid" title="os.setregid"><code class="xref py py-obj docutils literal"><span class="pre">setregid</span></code></a>(rgid,&nbsp;egid)</td>
+<td>Set the current process&#8217;s real and effective group ids.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.setresgid.html#os.setresgid" title="os.setresgid"><code class="xref py py-obj docutils literal"><span class="pre">setresgid</span></code></a>(rgid,&nbsp;egid,&nbsp;sgid)</td>
+<td>Set the current process&#8217;s real, effective, and saved group ids.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.setresuid.html#os.setresuid" title="os.setresuid"><code class="xref py py-obj docutils literal"><span class="pre">setresuid</span></code></a>(ruid,&nbsp;euid,&nbsp;suid)</td>
+<td>Set the current process&#8217;s real, effective, and saved user ids.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.setreuid.html#os.setreuid" title="os.setreuid"><code class="xref py py-obj docutils literal"><span class="pre">setreuid</span></code></a>(ruid,&nbsp;euid)</td>
+<td>Set the current process&#8217;s real and effective user ids.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.setsid.html#os.setsid" title="os.setsid"><code class="xref py py-obj docutils literal"><span class="pre">setsid</span></code></a>()</td>
+<td>Call the system call setsid().</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.setuid.html#os.setuid" title="os.setuid"><code class="xref py py-obj docutils literal"><span class="pre">setuid</span></code></a>(uid)</td>
+<td>Set the current process&#8217;s user id.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.spawnl.html#os.spawnl" title="os.spawnl"><code class="xref py py-obj docutils literal"><span class="pre">spawnl</span></code></a>((mode,&nbsp;file,&nbsp;*args)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Execute file with arguments from args in a subprocess.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.spawnle.html#os.spawnle" title="os.spawnle"><code class="xref py py-obj docutils literal"><span class="pre">spawnle</span></code></a>((mode,&nbsp;file,&nbsp;*args,&nbsp;env)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Execute file with arguments from args in a subprocess with the supplied environment.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.spawnlp.html#os.spawnlp" title="os.spawnlp"><code class="xref py py-obj docutils literal"><span class="pre">spawnlp</span></code></a>((mode,&nbsp;file,&nbsp;*args)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Execute file (which is looked for along $PATH) with arguments from args in a subprocess with the supplied environment.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.spawnlpe.html#os.spawnlpe" title="os.spawnlpe"><code class="xref py py-obj docutils literal"><span class="pre">spawnlpe</span></code></a>((mode,&nbsp;file,&nbsp;*args,&nbsp;env)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Execute file (which is looked for along $PATH) with arguments from args in a subprocess with the supplied environment.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.spawnv.html#os.spawnv" title="os.spawnv"><code class="xref py py-obj docutils literal"><span class="pre">spawnv</span></code></a>((mode,&nbsp;file,&nbsp;args)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Execute file with arguments from args in a subprocess.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.spawnve.html#os.spawnve" title="os.spawnve"><code class="xref py py-obj docutils literal"><span class="pre">spawnve</span></code></a>((mode,&nbsp;file,&nbsp;args,&nbsp;env)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Execute file with arguments from args in a subprocess with the specified environment.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.spawnvp.html#os.spawnvp" title="os.spawnvp"><code class="xref py py-obj docutils literal"><span class="pre">spawnvp</span></code></a>((mode,&nbsp;file,&nbsp;args)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Execute file (which is looked for along $PATH) with arguments from args in a subprocess.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.spawnvpe.html#os.spawnvpe" title="os.spawnvpe"><code class="xref py py-obj docutils literal"><span class="pre">spawnvpe</span></code></a>((mode,&nbsp;file,&nbsp;args,&nbsp;env)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Execute file (which is looked for along $PATH) with arguments from args in a subprocess with the supplied environment.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-obj docutils literal"><span class="pre">stat</span></code></a>((path)&nbsp;-&gt;&nbsp;stat&nbsp;result)</td>
+<td>Perform a stat system call on the given path.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.stat_float_times.html#os.stat_float_times" title="os.stat_float_times"><code class="xref py py-obj docutils literal"><span class="pre">stat_float_times</span></code></a>(([newval])&nbsp;-&gt;&nbsp;oldval)</td>
+<td>Determine whether os.[lf]stat represents time stamps as float objects.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.statvfs.html#os.statvfs" title="os.statvfs"><code class="xref py py-obj docutils literal"><span class="pre">statvfs</span></code></a>((path)&nbsp;-&gt;&nbsp;statvfs&nbsp;result)</td>
+<td>Perform a statvfs system call on the given path.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.strerror.html#os.strerror" title="os.strerror"><code class="xref py py-obj docutils literal"><span class="pre">strerror</span></code></a>((code)&nbsp;-&gt;&nbsp;string)</td>
+<td>Translate an error code to a message string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.symlink.html#os.symlink" title="os.symlink"><code class="xref py py-obj docutils literal"><span class="pre">symlink</span></code></a>(src,&nbsp;dst)</td>
+<td>Create a symbolic link pointing to src named dst.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.sysconf.html#os.sysconf" title="os.sysconf"><code class="xref py py-obj docutils literal"><span class="pre">sysconf</span></code></a>((name)&nbsp;-&gt;&nbsp;integer)</td>
+<td>Return an integer-valued system configuration variable.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.system.html#os.system" title="os.system"><code class="xref py py-obj docutils literal"><span class="pre">system</span></code></a>((command)&nbsp;-&gt;&nbsp;exit_status)</td>
+<td>Execute the command (a string) in a subshell.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.tcgetpgrp.html#os.tcgetpgrp" title="os.tcgetpgrp"><code class="xref py py-obj docutils literal"><span class="pre">tcgetpgrp</span></code></a>((fd)&nbsp;-&gt;&nbsp;pgid)</td>
+<td>Return the process group associated with the terminal given by a fd.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.tcsetpgrp.html#os.tcsetpgrp" title="os.tcsetpgrp"><code class="xref py py-obj docutils literal"><span class="pre">tcsetpgrp</span></code></a>(fd,&nbsp;pgid)</td>
+<td>Set the process group associated with the terminal given by a fd.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.tempnam.html#os.tempnam" title="os.tempnam"><code class="xref py py-obj docutils literal"><span class="pre">tempnam</span></code></a>(([dir[,&nbsp;prefix]])&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a unique name for a temporary file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.times.html#os.times" title="os.times"><code class="xref py py-obj docutils literal"><span class="pre">times</span></code></a>()&nbsp;-&gt;&nbsp;(utime,&nbsp;stime,&nbsp;cutime,&nbsp;cstime,&nbsp;...)</td>
+<td>Return a tuple of floating point numbers indicating process times.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.tmpfile.html#os.tmpfile" title="os.tmpfile"><code class="xref py py-obj docutils literal"><span class="pre">tmpfile</span></code></a>(()&nbsp;-&gt;&nbsp;file&nbsp;object)</td>
+<td>Create a temporary file with no directory entries.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.tmpnam.html#os.tmpnam" title="os.tmpnam"><code class="xref py py-obj docutils literal"><span class="pre">tmpnam</span></code></a>(()&nbsp;-&gt;&nbsp;string)</td>
+<td>Return a unique name for a temporary file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.ttyname.html#os.ttyname" title="os.ttyname"><code class="xref py py-obj docutils literal"><span class="pre">ttyname</span></code></a>((fd)&nbsp;-&gt;&nbsp;string)</td>
+<td>Return the name of the terminal device connected to &#8216;fd&#8217;.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.umask.html#os.umask" title="os.umask"><code class="xref py py-obj docutils literal"><span class="pre">umask</span></code></a>((new_mask)&nbsp;-&gt;&nbsp;old_mask)</td>
+<td>Set the current numeric umask and return the previous umask.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.uname.html#os.uname" title="os.uname"><code class="xref py py-obj docutils literal"><span class="pre">uname</span></code></a>()&nbsp;-&gt;&nbsp;(sysname,&nbsp;nodename,&nbsp;release,&nbsp;...)</td>
+<td>Return a tuple identifying the current operating system.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.unlink.html#os.unlink" title="os.unlink"><code class="xref py py-obj docutils literal"><span class="pre">unlink</span></code></a>(path)</td>
+<td>Remove a file (same as remove(path)).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.unsetenv.html#os.unsetenv" title="os.unsetenv"><code class="xref py py-obj docutils literal"><span class="pre">unsetenv</span></code></a>(key)</td>
+<td>Delete an environment variable.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-obj docutils literal"><span class="pre">urandom</span></code></a>((n)&nbsp;-&gt;&nbsp;str)</td>
+<td>Return n random bytes suitable for cryptographic use.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.utime.html#os.utime" title="os.utime"><code class="xref py py-obj docutils literal"><span class="pre">utime</span></code></a>(path,&nbsp;(atime,&nbsp;mtime))&nbsp;utime(path,&nbsp;None)</td>
+<td>Set the access and modified time of the file to the given values.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.wait.html#os.wait" title="os.wait"><code class="xref py py-obj docutils literal"><span class="pre">wait</span></code></a>()&nbsp;-&gt;&nbsp;(pid,&nbsp;status)</td>
+<td>Wait for completion of a child process.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.wait3.html#os.wait3" title="os.wait3"><code class="xref py py-obj docutils literal"><span class="pre">wait3</span></code></a>(options)&nbsp;-&gt;&nbsp;(pid,&nbsp;status,&nbsp;rusage)</td>
+<td>Wait for completion of a child process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.wait4.html#os.wait4" title="os.wait4"><code class="xref py py-obj docutils literal"><span class="pre">wait4</span></code></a>(pid,&nbsp;options)&nbsp;-&gt;&nbsp;(pid,&nbsp;status,&nbsp;rusage)</td>
+<td>Wait for completion of a given child process.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.waitpid.html#os.waitpid" title="os.waitpid"><code class="xref py py-obj docutils literal"><span class="pre">waitpid</span></code></a>(pid,&nbsp;options)&nbsp;-&gt;&nbsp;(pid,&nbsp;status)</td>
+<td>Wait for completion of a given child process.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/os.walk.html#os.walk" title="os.walk"><code class="xref py py-obj docutils literal"><span class="pre">walk</span></code></a>(top[,&nbsp;topdown,&nbsp;onerror,&nbsp;followlinks])</td>
+<td>Directory tree generator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/os.write.html#os.write" title="os.write"><code class="xref py py-obj docutils literal"><span class="pre">write</span></code></a>((fd,&nbsp;string)&nbsp;-&gt;&nbsp;byteswritten)</td>
+<td>Write a string to a file descriptor.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -219,10 +839,10 @@ and opendir), and leave all pathname manipulation to os.path
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/os.stat_result.html" class="btn btn-neutral float-right" title="os.stat_result" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/os.WCOREDUMP.html" class="btn btn-neutral float-right" title="os.WCOREDUMP()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="sha.html" class="btn btn-neutral" title="sha" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="generated/sha.sha.html" class="btn btn-neutral" title="sha.sha()" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

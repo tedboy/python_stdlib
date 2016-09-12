@@ -406,13 +406,13 @@
 
 <span class="c1"># User visible interfaces.</span>
 
-<div class="viewcode-block" id="gettempprefix"><a class="viewcode-back" href="../generated/tempfile.gettempprefix.html#tempfile.gettempprefix">[docs]</a><span class="k">def</span> <span class="nf">gettempprefix</span><span class="p">():</span>
+<div class="viewcode-block" id="gettempprefix"><a class="viewcode-back" href="../generated/generated/tempfile.gettempprefix.html#tempfile.gettempprefix">[docs]</a><span class="k">def</span> <span class="nf">gettempprefix</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Accessor for tempdir.template.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">template</span></div>
 
 <span class="n">tempdir</span> <span class="o">=</span> <span class="bp">None</span>
 
-<div class="viewcode-block" id="gettempdir"><a class="viewcode-back" href="../generated/tempfile.gettempdir.html#tempfile.gettempdir">[docs]</a><span class="k">def</span> <span class="nf">gettempdir</span><span class="p">():</span>
+<div class="viewcode-block" id="gettempdir"><a class="viewcode-back" href="../generated/generated/tempfile.gettempdir.html#tempfile.gettempdir">[docs]</a><span class="k">def</span> <span class="nf">gettempdir</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Accessor for tempfile.tempdir.&quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">tempdir</span>
     <span class="k">if</span> <span class="n">tempdir</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -424,7 +424,7 @@
             <span class="n">_once_lock</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">tempdir</span></div>
 
-<div class="viewcode-block" id="mkstemp"><a class="viewcode-back" href="../generated/tempfile.mkstemp.html#tempfile.mkstemp">[docs]</a><span class="k">def</span> <span class="nf">mkstemp</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="nb">dir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+<div class="viewcode-block" id="mkstemp"><a class="viewcode-back" href="../generated/generated/tempfile.mkstemp.html#tempfile.mkstemp">[docs]</a><span class="k">def</span> <span class="nf">mkstemp</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="nb">dir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;User-callable function to create and return a unique temporary</span>
 <span class="sd">    file.  The return value is a pair (fd, name) where fd is the</span>
 <span class="sd">    file descriptor returned by os.open, and name is the filename.</span>
@@ -461,7 +461,7 @@
     <span class="k">return</span> <span class="n">_mkstemp_inner</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">prefix</span><span class="p">,</span> <span class="n">suffix</span><span class="p">,</span> <span class="n">flags</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="mkdtemp"><a class="viewcode-back" href="../generated/tempfile.mkdtemp.html#tempfile.mkdtemp">[docs]</a><span class="k">def</span> <span class="nf">mkdtemp</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="nb">dir</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="mkdtemp"><a class="viewcode-back" href="../generated/generated/tempfile.mkdtemp.html#tempfile.mkdtemp">[docs]</a><span class="k">def</span> <span class="nf">mkdtemp</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="nb">dir</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;User-callable function to create and return a unique temporary</span>
 <span class="sd">    directory.  The return value is the pathname of the directory.</span>
 
@@ -497,7 +497,7 @@
 
     <span class="k">raise</span> <span class="ne">IOError</span><span class="p">,</span> <span class="p">(</span><span class="n">_errno</span><span class="o">.</span><span class="n">EEXIST</span><span class="p">,</span> <span class="s2">&quot;No usable temporary directory name found&quot;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="mktemp"><a class="viewcode-back" href="../generated/tempfile.mktemp.html#tempfile.mktemp">[docs]</a><span class="k">def</span> <span class="nf">mktemp</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="nb">dir</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="mktemp"><a class="viewcode-back" href="../generated/generated/tempfile.mktemp.html#tempfile.mktemp">[docs]</a><span class="k">def</span> <span class="nf">mktemp</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="nb">dir</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;User-callable function to return a unique temporary file name.  The</span>
 <span class="sd">    file is not created.</span>
 
@@ -591,7 +591,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">__exit__</span><span class="p">(</span><span class="n">exc</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">tb</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="NamedTemporaryFile"><a class="viewcode-back" href="../generated/tempfile.NamedTemporaryFile.html#tempfile.NamedTemporaryFile">[docs]</a><span class="k">def</span> <span class="nf">NamedTemporaryFile</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;w+b&#39;</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<div class="viewcode-block" id="NamedTemporaryFile"><a class="viewcode-back" href="../generated/generated/tempfile.NamedTemporaryFile.html#tempfile.NamedTemporaryFile">[docs]</a><span class="k">def</span> <span class="nf">NamedTemporaryFile</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;w+b&#39;</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
                        <span class="n">prefix</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="nb">dir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">delete</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Create and return a temporary file.</span>
 <span class="sd">    Arguments:</span>
@@ -634,7 +634,7 @@
     <span class="n">TemporaryFile</span> <span class="o">=</span> <span class="n">NamedTemporaryFile</span>
 
 <span class="k">else</span><span class="p">:</span>
-<div class="viewcode-block" id="TemporaryFile"><a class="viewcode-back" href="../generated/tempfile.TemporaryFile.html#tempfile.TemporaryFile">[docs]</a>    <span class="k">def</span> <span class="nf">TemporaryFile</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;w+b&#39;</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<div class="viewcode-block" id="TemporaryFile"><a class="viewcode-back" href="../generated/generated/tempfile.TemporaryFile.html#tempfile.TemporaryFile">[docs]</a>    <span class="k">def</span> <span class="nf">TemporaryFile</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;w+b&#39;</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
                       <span class="n">prefix</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="nb">dir</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Create and return a temporary file.</span>
 <span class="sd">        Arguments:</span>

@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       getnode
       uuid1
       uuid3
       uuid4
       uuid5
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/uuid.getnode
+       generated/uuid.uuid1
+       generated/uuid.uuid3
+       generated/uuid.uuid4
+       generated/uuid.uuid5
+      
    
    
 

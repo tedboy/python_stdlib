@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="ssl.DefaultVerifyPaths" href="generated/ssl.DefaultVerifyPaths.html"/>
+        <link rel="next" title="ssl.DER_cert_to_PEM_cert()" href="generated/ssl.DER_cert_to_PEM_cert.html"/>
         <link rel="prev" title="socket.timeout" href="socket.timeout.html"/> 
 
   
@@ -82,12 +82,95 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="subprocess.html"><code class="docutils literal"><span class="pre">subprocess</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="socket.html"><code class="docutils literal"><span class="pre">socket</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">ssl</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.DER_cert_to_PEM_cert.html"><code class="docutils literal"><span class="pre">ssl.DER_cert_to_PEM_cert()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.PEM_cert_to_DER_cert.html"><code class="docutils literal"><span class="pre">ssl.PEM_cert_to_DER_cert()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.RAND_add.html"><code class="docutils literal"><span class="pre">ssl.RAND_add()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.RAND_egd.html"><code class="docutils literal"><span class="pre">ssl.RAND_egd()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.RAND_status.html"><code class="docutils literal"><span class="pre">ssl.RAND_status()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.cert_time_to_seconds.html"><code class="docutils literal"><span class="pre">ssl.cert_time_to_seconds()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.create_connection.html"><code class="docutils literal"><span class="pre">ssl.create_connection()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.create_default_context.html"><code class="docutils literal"><span class="pre">ssl.create_default_context()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.get_default_verify_paths.html"><code class="docutils literal"><span class="pre">ssl.get_default_verify_paths()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.get_protocol_name.html"><code class="docutils literal"><span class="pre">ssl.get_protocol_name()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.get_server_certificate.html"><code class="docutils literal"><span class="pre">ssl.get_server_certificate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.match_hostname.html"><code class="docutils literal"><span class="pre">ssl.match_hostname()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.namedtuple.html"><code class="docutils literal"><span class="pre">ssl.namedtuple()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.sslwrap_simple.html"><code class="docutils literal"><span class="pre">ssl.sslwrap_simple()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.wrap_socket.html"><code class="docutils literal"><span class="pre">ssl.wrap_socket()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.DefaultVerifyPaths.html"><code class="docutils literal"><span class="pre">ssl.DefaultVerifyPaths</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.Purpose.html"><code class="docutils literal"><span class="pre">ssl.Purpose</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.SSLContext.html"><code class="docutils literal"><span class="pre">ssl.SSLContext</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.SSLSocket.html"><code class="docutils literal"><span class="pre">ssl.SSLSocket</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.closing.html"><code class="docutils literal"><span class="pre">ssl.closing</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/ssl.socket.html"><code class="docutils literal"><span class="pre">ssl.socket</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ssl.CertificateError.html">ssl.CertificateError</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssl.SSLEOFError.html">ssl.SSLEOFError</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssl.SSLError.html">ssl.SSLError</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssl.SSLSyscallError.html">ssl.SSLSyscallError</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssl.SSLWantReadError.html">ssl.SSLWantReadError</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssl.SSLWantWriteError.html">ssl.SSLWantWriteError</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssl.SSLZeroReturnError.html">ssl.SSLZeroReturnError</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssl.socket_error.html">ssl.socket_error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html"><code class="docutils literal"><span class="pre">signal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="popen2.html"><code class="docutils literal"><span class="pre">popen2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="asyncore.html"><code class="docutils literal"><span class="pre">asyncore</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="asynchat.html"><code class="docutils literal"><span class="pre">asynchat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -228,6 +311,61 @@ ALERT_DESCRIPTION_BAD_CERTIFICATE_HASH_VALUE
 ALERT_DESCRIPTION_UNKNOWN_PSK_IDENTITY</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ssl.DER_cert_to_PEM_cert.html#ssl.DER_cert_to_PEM_cert" title="ssl.DER_cert_to_PEM_cert"><code class="xref py py-obj docutils literal"><span class="pre">DER_cert_to_PEM_cert</span></code></a>(der_cert_bytes)</td>
+<td>Takes a certificate in binary DER format and returns the PEM version of it as a string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ssl.PEM_cert_to_DER_cert.html#ssl.PEM_cert_to_DER_cert" title="ssl.PEM_cert_to_DER_cert"><code class="xref py py-obj docutils literal"><span class="pre">PEM_cert_to_DER_cert</span></code></a>(pem_cert_string)</td>
+<td>Takes a certificate in ASCII PEM format and returns the</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ssl.RAND_add.html#ssl.RAND_add" title="ssl.RAND_add"><code class="xref py py-obj docutils literal"><span class="pre">RAND_add</span></code></a>(string,&nbsp;entropy)</td>
+<td>Mix string into the OpenSSL PRNG state.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ssl.RAND_egd.html#ssl.RAND_egd" title="ssl.RAND_egd"><code class="xref py py-obj docutils literal"><span class="pre">RAND_egd</span></code></a>((path)&nbsp;-&gt;&nbsp;bytes)</td>
+<td>Queries the entropy gather daemon (EGD) on the socket named by &#8216;path&#8217;.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ssl.RAND_status.html#ssl.RAND_status" title="ssl.RAND_status"><code class="xref py py-obj docutils literal"><span class="pre">RAND_status</span></code></a>(()&nbsp;-&gt;&nbsp;0&nbsp;or&nbsp;1)</td>
+<td>Returns 1 if the OpenSSL PRNG has been seeded with enough data and 0 if not.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ssl.cert_time_to_seconds.html#ssl.cert_time_to_seconds" title="ssl.cert_time_to_seconds"><code class="xref py py-obj docutils literal"><span class="pre">cert_time_to_seconds</span></code></a>(cert_time)</td>
+<td>Return the time in seconds since the Epoch, given the timestring representing the &#8220;notBefore&#8221; or &#8220;notAfter&#8221; date from a certificate in <code class="docutils literal"><span class="pre">&quot;%b</span> <span class="pre">%d</span> <span class="pre">%H:%M:%S</span> <span class="pre">%Y</span> <span class="pre">%Z&quot;</span></code> strptime format (C locale).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ssl.create_connection.html#ssl.create_connection" title="ssl.create_connection"><code class="xref py py-obj docutils literal"><span class="pre">create_connection</span></code></a>(address[,&nbsp;timeout,&nbsp;...])</td>
+<td>Connect to <em>address</em> and return the socket object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ssl.create_default_context.html#ssl.create_default_context" title="ssl.create_default_context"><code class="xref py py-obj docutils literal"><span class="pre">create_default_context</span></code></a>([purpose,&nbsp;shortname,&nbsp;...])</td>
+<td>Create a SSLContext object with default settings.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ssl.get_default_verify_paths.html#ssl.get_default_verify_paths" title="ssl.get_default_verify_paths"><code class="xref py py-obj docutils literal"><span class="pre">get_default_verify_paths</span></code></a>()</td>
+<td>Return paths to default cafile and capath.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ssl.get_protocol_name.html#ssl.get_protocol_name" title="ssl.get_protocol_name"><code class="xref py py-obj docutils literal"><span class="pre">get_protocol_name</span></code></a>(protocol_code)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ssl.get_server_certificate.html#ssl.get_server_certificate" title="ssl.get_server_certificate"><code class="xref py py-obj docutils literal"><span class="pre">get_server_certificate</span></code></a>(addr[,&nbsp;ssl_version,&nbsp;...])</td>
+<td>Retrieve the certificate from the server at the specified address, and return it as a PEM-encoded string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ssl.match_hostname.html#ssl.match_hostname" title="ssl.match_hostname"><code class="xref py py-obj docutils literal"><span class="pre">match_hostname</span></code></a>(cert,&nbsp;hostname)</td>
+<td>Verify that <em>cert</em> (in decoded format as returned by SSLSocket.getpeercert()) matches the <em>hostname</em>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ssl.namedtuple.html#ssl.namedtuple" title="ssl.namedtuple"><code class="xref py py-obj docutils literal"><span class="pre">namedtuple</span></code></a>(typename,&nbsp;field_names[,&nbsp;verbose,&nbsp;...])</td>
+<td>Returns a new subclass of tuple with named fields.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ssl.sslwrap_simple.html#ssl.sslwrap_simple" title="ssl.sslwrap_simple"><code class="xref py py-obj docutils literal"><span class="pre">sslwrap_simple</span></code></a>(sock[,&nbsp;keyfile,&nbsp;certfile])</td>
+<td>A replacement for the old socket.ssl function.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-obj docutils literal"><span class="pre">wrap_socket</span></code></a>(sock[,&nbsp;keyfile,&nbsp;certfile,&nbsp;...])</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -304,7 +442,7 @@ ALERT_DESCRIPTION_UNKNOWN_PSK_IDENTITY</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/ssl.DefaultVerifyPaths.html" class="btn btn-neutral float-right" title="ssl.DefaultVerifyPaths" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/ssl.DER_cert_to_PEM_cert.html" class="btn btn-neutral float-right" title="ssl.DER_cert_to_PEM_cert()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="socket.timeout.html" class="btn btn-neutral" title="socket.timeout" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

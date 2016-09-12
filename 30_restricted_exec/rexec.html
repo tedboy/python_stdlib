@@ -232,10 +232,10 @@ output.</p>
 </dd></dl>
 
 <p>It is important to be aware that code running in a restricted environment can
-still call the <a class="reference internal" href="../generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a> function.  To disallow restricted code from
+still call the <a class="reference internal" href="../generated/generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a> function.  To disallow restricted code from
 exiting the interpreter, always protect calls that cause restricted code to run
 with a <code class="xref std std-keyword docutils literal"><span class="pre">try</span></code>/<code class="xref std std-keyword docutils literal"><span class="pre">except</span></code> statement that catches the
-<a class="reference internal" href="../generated/exceptions.SystemExit.html#exceptions.SystemExit" title="exceptions.SystemExit"><code class="xref py py-exc docutils literal"><span class="pre">SystemExit</span></code></a> exception.  Removing the <a class="reference internal" href="../generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a> function from the
+<a class="reference internal" href="../generated/exceptions.SystemExit.html#exceptions.SystemExit" title="exceptions.SystemExit"><code class="xref py py-exc docutils literal"><span class="pre">SystemExit</span></code></a> exception.  Removing the <a class="reference internal" href="../generated/generated/sys.exit.html#sys.exit" title="sys.exit"><code class="xref py py-func docutils literal"><span class="pre">sys.exit()</span></code></a> function from the
 restricted environment is not sufficient &#8212; the restricted code could still use
 <code class="docutils literal"><span class="pre">raise</span> <span class="pre">SystemExit</span></code>.  Removing <a class="reference internal" href="../generated/exceptions.SystemExit.html#exceptions.SystemExit" title="exceptions.SystemExit"><code class="xref py py-exc docutils literal"><span class="pre">SystemExit</span></code></a> is not a reasonable option;
 some library code makes use of this and would break were it not available.</p>

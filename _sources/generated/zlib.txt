@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       adler32
       compress
@@ -18,6 +18,19 @@
       crc32
       decompress
       decompressobj
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/zlib.adler32
+       generated/zlib.compress
+       generated/zlib.compressobj
+       generated/zlib.crc32
+       generated/zlib.decompress
+       generated/zlib.decompressobj
+      
    
    
 

@@ -397,7 +397,7 @@ performed after <code class="xref py py-meth docutils literal"><span class="pre"
 server-side sockets, if the socket has no remote peer, it is assumed
 to be a listening socket, and the server-side SSL wrapping is
 automatically performed on client connections accepted via the
-<code class="xref py py-meth docutils literal"><span class="pre">accept()</span></code> method.  <a class="reference internal" href="../generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a> may raise <a class="reference internal" href="../generated/ssl.SSLError.html#ssl.SSLError" title="ssl.SSLError"><code class="xref py py-exc docutils literal"><span class="pre">SSLError</span></code></a>.</p>
+<code class="xref py py-meth docutils literal"><span class="pre">accept()</span></code> method.  <a class="reference internal" href="../generated/generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a> may raise <a class="reference internal" href="../generated/ssl.SSLError.html#ssl.SSLError" title="ssl.SSLError"><code class="xref py py-exc docutils literal"><span class="pre">SSLError</span></code></a>.</p>
 <p>The <code class="docutils literal"><span class="pre">keyfile</span></code> and <code class="docutils literal"><span class="pre">certfile</span></code> parameters specify optional files which
 contain a certificate to be used to identify the local side of the
 connection.  See the discussion of <a class="reference internal" href="#ssl-certificates"><span>Certificates</span></a> for more
@@ -621,7 +621,7 @@ client modules.</p>
 <code class="descclassname">ssl.</code><code class="descname">RAND_status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ssl.RAND_status" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal"><span class="pre">True</span></code> if the SSL pseudo-random number generator has been seeded
 with &#8216;enough&#8217; randomness, and <code class="docutils literal"><span class="pre">False</span></code> otherwise.  You can use
-<a class="reference internal" href="../generated/ssl.RAND_egd.html#ssl.RAND_egd" title="ssl.RAND_egd"><code class="xref py py-func docutils literal"><span class="pre">ssl.RAND_egd()</span></code></a> and <a class="reference internal" href="../generated/ssl.RAND_add.html#ssl.RAND_add" title="ssl.RAND_add"><code class="xref py py-func docutils literal"><span class="pre">ssl.RAND_add()</span></code></a> to increase the randomness of
+<a class="reference internal" href="../generated/generated/ssl.RAND_egd.html#ssl.RAND_egd" title="ssl.RAND_egd"><code class="xref py py-func docutils literal"><span class="pre">ssl.RAND_egd()</span></code></a> and <a class="reference internal" href="../generated/generated/ssl.RAND_add.html#ssl.RAND_add" title="ssl.RAND_add"><code class="xref py py-func docutils literal"><span class="pre">ssl.RAND_add()</span></code></a> to increase the randomness of
 the pseudo-random number generator.</p>
 </dd></dl>
 
@@ -701,7 +701,7 @@ input format)</p>
 PEM-encoded string.  If <code class="docutils literal"><span class="pre">ssl_version</span></code> is specified, uses that version of
 the SSL protocol to attempt to connect to the server.  If <code class="docutils literal"><span class="pre">ca_certs</span></code> is
 specified, it should be a file containing a list of root certificates, the
-same format as used for the same parameter in <a class="reference internal" href="../generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.  The call
+same format as used for the same parameter in <a class="reference internal" href="../generated/generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.  The call
 will attempt to validate the server certificate against that set of root
 certificates, and will fail if the validation attempt fails.</p>
 <div class="versionchanged">
@@ -792,7 +792,7 @@ PKCS#7 ASN.1 data.</p>
 <dt id="ssl.CERT_NONE">
 <code class="descclassname">ssl.</code><code class="descname">CERT_NONE</code><a class="headerlink" href="#ssl.CERT_NONE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Possible value for <a class="reference internal" href="../generated/generated/ssl.SSLContext.verify_mode.html#ssl.SSLContext.verify_mode" title="ssl.SSLContext.verify_mode"><code class="xref py py-attr docutils literal"><span class="pre">SSLContext.verify_mode</span></code></a>, or the <code class="docutils literal"><span class="pre">cert_reqs</span></code>
-parameter to <a class="reference internal" href="../generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.  In this mode (the default), no
+parameter to <a class="reference internal" href="../generated/generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.  In this mode (the default), no
 certificates will be required from the other side of the socket connection.
 If a certificate is received from the other end, no attempt to validate it
 is made.</p>
@@ -803,25 +803,25 @@ is made.</p>
 <dt id="ssl.CERT_OPTIONAL">
 <code class="descclassname">ssl.</code><code class="descname">CERT_OPTIONAL</code><a class="headerlink" href="#ssl.CERT_OPTIONAL" title="Permalink to this definition">¶</a></dt>
 <dd><p>Possible value for <a class="reference internal" href="../generated/generated/ssl.SSLContext.verify_mode.html#ssl.SSLContext.verify_mode" title="ssl.SSLContext.verify_mode"><code class="xref py py-attr docutils literal"><span class="pre">SSLContext.verify_mode</span></code></a>, or the <code class="docutils literal"><span class="pre">cert_reqs</span></code>
-parameter to <a class="reference internal" href="../generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.  In this mode no certificates will be
+parameter to <a class="reference internal" href="../generated/generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.  In this mode no certificates will be
 required from the other side of the socket connection; but if they
 are provided, validation will be attempted and an <a class="reference internal" href="../generated/ssl.SSLError.html#ssl.SSLError" title="ssl.SSLError"><code class="xref py py-class docutils literal"><span class="pre">SSLError</span></code></a>
 will be raised on failure.</p>
 <p>Use of this setting requires a valid set of CA certificates to
 be passed, either to <a class="reference internal" href="../generated/generated/ssl.SSLContext.load_verify_locations.html#ssl.SSLContext.load_verify_locations" title="ssl.SSLContext.load_verify_locations"><code class="xref py py-meth docutils literal"><span class="pre">SSLContext.load_verify_locations()</span></code></a> or as a
-value of the <code class="docutils literal"><span class="pre">ca_certs</span></code> parameter to <a class="reference internal" href="../generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.</p>
+value of the <code class="docutils literal"><span class="pre">ca_certs</span></code> parameter to <a class="reference internal" href="../generated/generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="ssl.CERT_REQUIRED">
 <code class="descclassname">ssl.</code><code class="descname">CERT_REQUIRED</code><a class="headerlink" href="#ssl.CERT_REQUIRED" title="Permalink to this definition">¶</a></dt>
 <dd><p>Possible value for <a class="reference internal" href="../generated/generated/ssl.SSLContext.verify_mode.html#ssl.SSLContext.verify_mode" title="ssl.SSLContext.verify_mode"><code class="xref py py-attr docutils literal"><span class="pre">SSLContext.verify_mode</span></code></a>, or the <code class="docutils literal"><span class="pre">cert_reqs</span></code>
-parameter to <a class="reference internal" href="../generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.  In this mode, certificates are
+parameter to <a class="reference internal" href="../generated/generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.  In this mode, certificates are
 required from the other side of the socket connection; an <a class="reference internal" href="../generated/ssl.SSLError.html#ssl.SSLError" title="ssl.SSLError"><code class="xref py py-class docutils literal"><span class="pre">SSLError</span></code></a>
 will be raised if no certificate is provided, or if its validation fails.</p>
 <p>Use of this setting requires a valid set of CA certificates to
 be passed, either to <a class="reference internal" href="../generated/generated/ssl.SSLContext.load_verify_locations.html#ssl.SSLContext.load_verify_locations" title="ssl.SSLContext.load_verify_locations"><code class="xref py py-meth docutils literal"><span class="pre">SSLContext.load_verify_locations()</span></code></a> or as a
-value of the <code class="docutils literal"><span class="pre">ca_certs</span></code> parameter to <a class="reference internal" href="../generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.</p>
+value of the <code class="docutils literal"><span class="pre">ca_certs</span></code> parameter to <a class="reference internal" href="../generated/generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="data">
@@ -1160,7 +1160,7 @@ contains this list and references to the RFCs where their meaning is defined.</p
 <dl class="data">
 <dt id="ssl.Purpose.SERVER_AUTH">
 <code class="descclassname">Purpose.</code><code class="descname">SERVER_AUTH</code><a class="headerlink" href="#ssl.Purpose.SERVER_AUTH" title="Permalink to this definition">¶</a></dt>
-<dd><p>Option for <a class="reference internal" href="../generated/ssl.create_default_context.html#ssl.create_default_context" title="ssl.create_default_context"><code class="xref py py-func docutils literal"><span class="pre">create_default_context()</span></code></a> and
+<dd><p>Option for <a class="reference internal" href="../generated/generated/ssl.create_default_context.html#ssl.create_default_context" title="ssl.create_default_context"><code class="xref py py-func docutils literal"><span class="pre">create_default_context()</span></code></a> and
 <a class="reference internal" href="../generated/generated/ssl.SSLContext.load_default_certs.html#ssl.SSLContext.load_default_certs" title="ssl.SSLContext.load_default_certs"><code class="xref py py-meth docutils literal"><span class="pre">SSLContext.load_default_certs()</span></code></a>.  This value indicates that the
 context may be used to authenticate Web servers (therefore, it will
 be used to create client-side sockets).</p>
@@ -1172,7 +1172,7 @@ be used to create client-side sockets).</p>
 <dl class="data">
 <dt id="ssl.Purpose.CLIENT_AUTH">
 <code class="descclassname">Purpose.</code><code class="descname">CLIENT_AUTH</code><a class="headerlink" href="#ssl.Purpose.CLIENT_AUTH" title="Permalink to this definition">¶</a></dt>
-<dd><p>Option for <a class="reference internal" href="../generated/ssl.create_default_context.html#ssl.create_default_context" title="ssl.create_default_context"><code class="xref py py-func docutils literal"><span class="pre">create_default_context()</span></code></a> and
+<dd><p>Option for <a class="reference internal" href="../generated/generated/ssl.create_default_context.html#ssl.create_default_context" title="ssl.create_default_context"><code class="xref py py-func docutils literal"><span class="pre">create_default_context()</span></code></a> and
 <a class="reference internal" href="../generated/generated/ssl.SSLContext.load_default_certs.html#ssl.SSLContext.load_default_certs" title="ssl.SSLContext.load_default_certs"><code class="xref py py-meth docutils literal"><span class="pre">SSLContext.load_default_certs()</span></code></a>.  This value indicates that the
 context may be used to authenticate Web clients (therefore, it will
 be used to create server-side sockets).</p>
@@ -1214,7 +1214,7 @@ the specification of normal, OS-level sockets.  See especially the
 <code class="descclassname">SSLSocket.</code><code class="descname">do_handshake</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/ssl.html#SSLSocket.do_handshake"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ssl.SSLSocket.do_handshake" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform the SSL setup handshake.</p>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.7.9: </span>The handshake method also performs <a class="reference internal" href="../generated/ssl.match_hostname.html#ssl.match_hostname" title="ssl.match_hostname"><code class="xref py py-func docutils literal"><span class="pre">match_hostname()</span></code></a> when the
+<p><span class="versionmodified">Changed in version 2.7.9: </span>The handshake method also performs <a class="reference internal" href="../generated/generated/ssl.match_hostname.html#ssl.match_hostname" title="ssl.match_hostname"><code class="xref py py-func docutils literal"><span class="pre">match_hostname()</span></code></a> when the
 <a class="reference internal" href="../generated/generated/ssl.SSLContext.check_hostname.html#ssl.SSLContext.check_hostname" title="ssl.SSLContext.check_hostname"><code class="xref py py-attr docutils literal"><span class="pre">check_hostname</span></code></a> attribute of the socket&#8217;s
 <a class="reference internal" href="../generated/generated/ssl.SSLSocket.context.html#ssl.SSLSocket.context" title="ssl.SSLSocket.context"><code class="xref py py-attr docutils literal"><span class="pre">context</span></code></a> is true.</p>
 </div>
@@ -1261,7 +1261,7 @@ name-value pairs.  Here is a real-world example:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">To validate a certificate for a particular service, you can use the
-<a class="reference internal" href="../generated/ssl.match_hostname.html#ssl.match_hostname" title="ssl.match_hostname"><code class="xref py py-func docutils literal"><span class="pre">match_hostname()</span></code></a> function.</p>
+<a class="reference internal" href="../generated/generated/ssl.match_hostname.html#ssl.match_hostname" title="ssl.match_hostname"><code class="xref py py-func docutils literal"><span class="pre">match_hostname()</span></code></a> function.</p>
 </div>
 <p>If the <code class="docutils literal"><span class="pre">binary_form</span></code> parameter is <a class="reference internal" href="../04_builtin_constants/04.html#True" title="True"><code class="xref py py-const docutils literal"><span class="pre">True</span></code></a>, and a certificate was
 provided, this method returns the DER-encoded form of the entire certificate
@@ -1371,7 +1371,7 @@ Recent OpenSSL versions may define more return values.</p>
 <dt id="ssl.SSLSocket.context">
 <code class="descclassname">SSLSocket.</code><code class="descname">context</code><a class="headerlink" href="#ssl.SSLSocket.context" title="Permalink to this definition">¶</a></dt>
 <dd><p>The <a class="reference internal" href="../generated/generated/ssl.SSLContext.html#ssl.SSLContext" title="ssl.SSLContext"><code class="xref py py-class docutils literal"><span class="pre">SSLContext</span></code></a> object this SSL socket is tied to.  If the SSL
-socket was created using the top-level <a class="reference internal" href="../generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a> function
+socket was created using the top-level <a class="reference internal" href="../generated/generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a> function
 (rather than <a class="reference internal" href="../generated/generated/ssl.SSLContext.wrap_socket.html#ssl.SSLContext.wrap_socket" title="ssl.SSLContext.wrap_socket"><code class="xref py py-meth docutils literal"><span class="pre">SSLContext.wrap_socket()</span></code></a>), this is a custom context
 object created for this SSL socket.</p>
 <div class="versionadded">
@@ -1398,7 +1398,7 @@ of the <code class="docutils literal"><span class="pre">PROTOCOL_*</span></code>
 interoperability.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="../generated/ssl.create_default_context.html#ssl.create_default_context" title="ssl.create_default_context"><code class="xref py py-func docutils literal"><span class="pre">create_default_context()</span></code></a> lets the <a class="reference internal" href="../generated/ssl.html#module-ssl" title="ssl"><code class="xref py py-mod docutils literal"><span class="pre">ssl</span></code></a> module choose
+<p class="last"><a class="reference internal" href="../generated/generated/ssl.create_default_context.html#ssl.create_default_context" title="ssl.create_default_context"><code class="xref py py-func docutils literal"><span class="pre">create_default_context()</span></code></a> lets the <a class="reference internal" href="../generated/ssl.html#module-ssl" title="ssl"><code class="xref py py-mod docutils literal"><span class="pre">ssl</span></code></a> module choose
 security settings for a given purpose.</p>
 </div>
 </dd></dl>
@@ -1629,7 +1629,7 @@ types are unsupported.</p>
 <p>The returned SSL socket is tied to the context, its settings and
 certificates.  The parameters <em>server_side</em>, <em>do_handshake_on_connect</em>
 and <em>suppress_ragged_eofs</em> have the same meaning as in the top-level
-<a class="reference internal" href="../generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a> function.</p>
+<a class="reference internal" href="../generated/generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a> function.</p>
 <p>On client connections, the optional parameter <em>server_hostname</em> specifies
 the hostname of the service which we are connecting to.  This allows a
 single server to host multiple SSL-based services with distinct certificates,
@@ -1671,7 +1671,7 @@ been used at least once.</p>
 <dl class="attribute">
 <dt id="ssl.SSLContext.check_hostname">
 <code class="descclassname">SSLContext.</code><code class="descname">check_hostname</code><a class="headerlink" href="#ssl.SSLContext.check_hostname" title="Permalink to this definition">¶</a></dt>
-<dd><p>Wether to match the peer cert&#8217;s hostname with <a class="reference internal" href="../generated/ssl.match_hostname.html#ssl.match_hostname" title="ssl.match_hostname"><code class="xref py py-func docutils literal"><span class="pre">match_hostname()</span></code></a> in
+<dd><p>Wether to match the peer cert&#8217;s hostname with <a class="reference internal" href="../generated/generated/ssl.match_hostname.html#ssl.match_hostname" title="ssl.match_hostname"><code class="xref py py-func docutils literal"><span class="pre">match_hostname()</span></code></a> in
 <a class="reference internal" href="../generated/generated/ssl.SSLSocket.do_handshake.html#ssl.SSLSocket.do_handshake" title="ssl.SSLSocket.do_handshake"><code class="xref py py-meth docutils literal"><span class="pre">SSLSocket.do_handshake()</span></code></a>. The context&#8217;s
 <a class="reference internal" href="../generated/generated/ssl.SSLContext.verify_mode.html#ssl.SSLContext.verify_mode" title="ssl.SSLContext.verify_mode"><code class="xref py py-attr docutils literal"><span class="pre">verify_mode</span></code></a> must be set to <a class="reference internal" href="#ssl.CERT_OPTIONAL" title="ssl.CERT_OPTIONAL"><code class="xref py py-data docutils literal"><span class="pre">CERT_OPTIONAL</span></code></a> or
 <a class="reference internal" href="#ssl.CERT_REQUIRED" title="ssl.CERT_REQUIRED"><code class="xref py py-data docutils literal"><span class="pre">CERT_REQUIRED</span></code></a>, and you must pass <em>server_hostname</em> to
@@ -1803,13 +1803,13 @@ chains for each issuer you are willing to trust.  Again, this file just contains
 these chains concatenated together.  For validation, Python will use the first
 chain it finds in the file which matches.  The platform&#8217;s certificates file can
 be used by calling <a class="reference internal" href="../generated/generated/ssl.SSLContext.load_default_certs.html#ssl.SSLContext.load_default_certs" title="ssl.SSLContext.load_default_certs"><code class="xref py py-meth docutils literal"><span class="pre">SSLContext.load_default_certs()</span></code></a>, this is done
-automatically with <a class="reference internal" href="../generated/ssl.create_default_context.html#ssl.create_default_context" title="ssl.create_default_context"><code class="xref py py-func docutils literal"><span class="pre">create_default_context()</span></code></a>.</p>
+automatically with <a class="reference internal" href="../generated/generated/ssl.create_default_context.html#ssl.create_default_context" title="ssl.create_default_context"><code class="xref py py-func docutils literal"><span class="pre">create_default_context()</span></code></a>.</p>
 </div>
 <div class="section" id="combined-key-and-certificate">
 <h3><a class="toc-backref" href="#id14">3.4.3. Combined key and certificate</a><a class="headerlink" href="#combined-key-and-certificate" title="Permalink to this headline">¶</a></h3>
 <p>Often the private key is stored in the same file as the certificate; in this
 case, only the <code class="docutils literal"><span class="pre">certfile</span></code> parameter to <a class="reference internal" href="../generated/generated/ssl.SSLContext.load_cert_chain.html#ssl.SSLContext.load_cert_chain" title="ssl.SSLContext.load_cert_chain"><code class="xref py py-meth docutils literal"><span class="pre">SSLContext.load_cert_chain()</span></code></a>
-and <a class="reference internal" href="../generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a> needs to be passed.  If the private key is stored
+and <a class="reference internal" href="../generated/generated/ssl.wrap_socket.html#ssl.wrap_socket" title="ssl.wrap_socket"><code class="xref py py-func docutils literal"><span class="pre">wrap_socket()</span></code></a> needs to be passed.  If the private key is stored
 with the certificate, it should come before the first certificate in
 the certificate chain:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>-----BEGIN RSA PRIVATE KEY-----
@@ -2026,24 +2026,24 @@ the sockets in non-blocking mode and use an event loop).</p>
 <p>When working with non-blocking sockets, there are several things you need
 to be aware of:</p>
 <ul>
-<li><p class="first">Calling <a class="reference internal" href="../generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a> tells you that the OS-level socket can be
+<li><p class="first">Calling <a class="reference internal" href="../generated/generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a> tells you that the OS-level socket can be
 read from (or written to), but it does not imply that there is sufficient
 data at the upper SSL layer.  For example, only part of an SSL frame might
 have arrived.  Therefore, you must be ready to handle <a class="reference internal" href="../generated/generated/ssl.SSLSocket.recv.html#ssl.SSLSocket.recv" title="ssl.SSLSocket.recv"><code class="xref py py-meth docutils literal"><span class="pre">SSLSocket.recv()</span></code></a>
 and <a class="reference internal" href="../generated/generated/ssl.SSLSocket.send.html#ssl.SSLSocket.send" title="ssl.SSLSocket.send"><code class="xref py py-meth docutils literal"><span class="pre">SSLSocket.send()</span></code></a> failures, and retry after another call to
-<a class="reference internal" href="../generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a>.</p>
 </li>
 <li><p class="first">Conversely, since the SSL layer has its own framing, a SSL socket may
-still have data available for reading without <a class="reference internal" href="../generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a>
+still have data available for reading without <a class="reference internal" href="../generated/generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a>
 being aware of it.  Therefore, you should first call
 <a class="reference internal" href="../generated/generated/ssl.SSLSocket.recv.html#ssl.SSLSocket.recv" title="ssl.SSLSocket.recv"><code class="xref py py-meth docutils literal"><span class="pre">SSLSocket.recv()</span></code></a> to drain any potentially available data, and then
-only block on a <a class="reference internal" href="../generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a> call if still necessary.</p>
+only block on a <a class="reference internal" href="../generated/generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a> call if still necessary.</p>
 <p>(of course, similar provisions apply when using other primitives such as
-<a class="reference internal" href="../generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-func docutils literal"><span class="pre">poll()</span></code></a>, or those in the <code class="xref py py-mod docutils literal"><span class="pre">selectors</span></code> module)</p>
+<a class="reference internal" href="../generated/generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-func docutils literal"><span class="pre">poll()</span></code></a>, or those in the <code class="xref py py-mod docutils literal"><span class="pre">selectors</span></code> module)</p>
 </li>
 <li><p class="first">The SSL handshake itself will be non-blocking: the
 <a class="reference internal" href="../generated/generated/ssl.SSLSocket.do_handshake.html#ssl.SSLSocket.do_handshake" title="ssl.SSLSocket.do_handshake"><code class="xref py py-meth docutils literal"><span class="pre">SSLSocket.do_handshake()</span></code></a> method has to be retried until it returns
-successfully.  Here is a synopsis using <a class="reference internal" href="../generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a> to wait for
+successfully.  Here is a synopsis using <a class="reference internal" href="../generated/generated/select.select.html#select.select" title="select.select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a> to wait for
 the socket&#8217;s readiness:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
     <span class="k">try</span><span class="p">:</span>
@@ -2064,7 +2064,7 @@ the socket&#8217;s readiness:</p>
 <h3><a class="toc-backref" href="#id22">3.7.1. Best defaults</a><a class="headerlink" href="#best-defaults" title="Permalink to this headline">¶</a></h3>
 <p>For <strong>client use</strong>, if you don&#8217;t have any special requirements for your
 security policy, it is highly recommended that you use the
-<a class="reference internal" href="../generated/ssl.create_default_context.html#ssl.create_default_context" title="ssl.create_default_context"><code class="xref py py-func docutils literal"><span class="pre">create_default_context()</span></code></a> function to create your SSL context.
+<a class="reference internal" href="../generated/generated/ssl.create_default_context.html#ssl.create_default_context" title="ssl.create_default_context"><code class="xref py py-func docutils literal"><span class="pre">create_default_context()</span></code></a> function to create your SSL context.
 It will load the system&#8217;s trusted CA certificates, enable certificate
 validation and hostname checking, and try to choose reasonably secure
 protocol and cipher settings.</p>
@@ -2088,7 +2088,7 @@ Therefore, when in client mode, it is highly recommended to use
 have to check that the server certificate, which can be obtained by calling
 <a class="reference internal" href="../generated/generated/ssl.SSLSocket.getpeercert.html#ssl.SSLSocket.getpeercert" title="ssl.SSLSocket.getpeercert"><code class="xref py py-meth docutils literal"><span class="pre">SSLSocket.getpeercert()</span></code></a>, matches the desired service.  For many
 protocols and applications, the service can be identified by the hostname;
-in this case, the <a class="reference internal" href="../generated/ssl.match_hostname.html#ssl.match_hostname" title="ssl.match_hostname"><code class="xref py py-func docutils literal"><span class="pre">match_hostname()</span></code></a> function can be used.  This common
+in this case, the <a class="reference internal" href="../generated/generated/ssl.match_hostname.html#ssl.match_hostname" title="ssl.match_hostname"><code class="xref py py-func docutils literal"><span class="pre">match_hostname()</span></code></a> function can be used.  This common
 check is automatically performed when <a class="reference internal" href="../generated/generated/ssl.SSLContext.check_hostname.html#ssl.SSLContext.check_hostname" title="ssl.SSLContext.check_hostname"><code class="xref py py-attr docutils literal"><span class="pre">SSLContext.check_hostname</span></code></a> is
 enabled.</p>
 <p>In server mode, if you want to authenticate your clients using the SSL layer
@@ -2136,8 +2136,8 @@ If you want to check which ciphers are enabled by a given cipher list, use the
 for example the <a class="reference internal" href="../generated/multiprocessing.html#module-multiprocessing" title="multiprocessing"><code class="xref py py-mod docutils literal"><span class="pre">multiprocessing</span></code></a> or <code class="xref py py-mod docutils literal"><span class="pre">concurrent.futures</span></code> modules),
 be aware that OpenSSL&#8217;s internal random number generator does not properly
 handle forked processes.  Applications must change the PRNG state of the
-parent process if they use any SSL feature with <a class="reference internal" href="../generated/os.fork.html#os.fork" title="os.fork"><code class="xref py py-func docutils literal"><span class="pre">os.fork()</span></code></a>.  Any
-successful call of <a class="reference internal" href="../generated/ssl.RAND_add.html#ssl.RAND_add" title="ssl.RAND_add"><code class="xref py py-func docutils literal"><span class="pre">RAND_add()</span></code></a>, <code class="xref py py-func docutils literal"><span class="pre">RAND_bytes()</span></code> or
+parent process if they use any SSL feature with <a class="reference internal" href="../generated/generated/os.fork.html#os.fork" title="os.fork"><code class="xref py py-func docutils literal"><span class="pre">os.fork()</span></code></a>.  Any
+successful call of <a class="reference internal" href="../generated/generated/ssl.RAND_add.html#ssl.RAND_add" title="ssl.RAND_add"><code class="xref py py-func docutils literal"><span class="pre">RAND_add()</span></code></a>, <code class="xref py py-func docutils literal"><span class="pre">RAND_bytes()</span></code> or
 <code class="xref py py-func docutils literal"><span class="pre">RAND_pseudo_bytes()</span></code> is sufficient.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>

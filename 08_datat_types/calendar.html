@@ -189,7 +189,7 @@
 <p>This module allows you to output calendars like the Unix <strong class="program">cal</strong> program,
 and provides additional useful functions related to the calendar. By default,
 these calendars have Monday as the first day of the week, and Sunday as the last
-(the European convention). Use <a class="reference internal" href="../generated/calendar.setfirstweekday.html#calendar.setfirstweekday" title="calendar.setfirstweekday"><code class="xref py py-func docutils literal"><span class="pre">setfirstweekday()</span></code></a> to set the first day of
+(the European convention). Use <a class="reference internal" href="../generated/generated/calendar.setfirstweekday.html#calendar.setfirstweekday" title="calendar.setfirstweekday"><code class="xref py py-func docutils literal"><span class="pre">setfirstweekday()</span></code></a> to set the first day of
 the week to Sunday (6) or to any other weekday.  Parameters that specify dates
 are given as integers. For related
 functionality, see also the <a class="reference internal" href="../generated/datetime.html#module-datetime" title="datetime"><code class="xref py py-mod docutils literal"><span class="pre">datetime</span></code></a> and <a class="reference internal" href="../generated/time.html#module-time" title="time"><code class="xref py py-mod docutils literal"><span class="pre">time</span></code></a> modules.</p>
@@ -306,7 +306,7 @@ numbers outside this month are zero.</p>
 specifies the width of the date columns, which are centered. If <em>l</em> is
 given, it specifies the number of lines that each week will use. Depends
 on the first weekday as specified in the constructor or set by the
-<a class="reference internal" href="../generated/calendar.setfirstweekday.html#calendar.setfirstweekday" title="calendar.setfirstweekday"><code class="xref py py-meth docutils literal"><span class="pre">setfirstweekday()</span></code></a> method.</p>
+<a class="reference internal" href="../generated/generated/calendar.setfirstweekday.html#calendar.setfirstweekday" title="calendar.setfirstweekday"><code class="xref py py-meth docutils literal"><span class="pre">setfirstweekday()</span></code></a> method.</p>
 </dd></dl>
 
 <dl class="method">
@@ -322,7 +322,7 @@ on the first weekday as specified in the constructor or set by the
 Optional parameters <em>w</em>, <em>l</em>, and <em>c</em> are for date column width, lines per
 week, and number of spaces between month columns, respectively. Depends on
 the first weekday as specified in the constructor or set by the
-<a class="reference internal" href="../generated/calendar.setfirstweekday.html#calendar.setfirstweekday" title="calendar.setfirstweekday"><code class="xref py py-meth docutils literal"><span class="pre">setfirstweekday()</span></code></a> method.  The earliest year for which a calendar
+<a class="reference internal" href="../generated/generated/calendar.setfirstweekday.html#calendar.setfirstweekday" title="calendar.setfirstweekday"><code class="xref py py-meth docutils literal"><span class="pre">setfirstweekday()</span></code></a> method.  The earliest year for which a calendar
 can be generated is platform-dependent.</p>
 </dd></dl>
 
@@ -468,7 +468,7 @@ specified <em>year</em> and <em>month</em>.</p>
 <code class="descclassname">calendar.</code><code class="descname">monthcalendar</code><span class="sig-paren">(</span><em>year</em>, <em>month</em><span class="sig-paren">)</span><a class="headerlink" href="#calendar.monthcalendar" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a matrix representing a month&#8217;s calendar.  Each row represents a week;
 days outside of the month a represented by zeros. Each week begins with Monday
-unless set by <a class="reference internal" href="../generated/calendar.setfirstweekday.html#calendar.setfirstweekday" title="calendar.setfirstweekday"><code class="xref py py-func docutils literal"><span class="pre">setfirstweekday()</span></code></a>.</p>
+unless set by <a class="reference internal" href="../generated/generated/calendar.setfirstweekday.html#calendar.setfirstweekday" title="calendar.setfirstweekday"><code class="xref py py-func docutils literal"><span class="pre">setfirstweekday()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -507,9 +507,9 @@ of the <a class="reference internal" href="../generated/generated/calendar.TextC
 <dt id="calendar.timegm">
 <code class="descclassname">calendar.</code><code class="descname">timegm</code><span class="sig-paren">(</span><em>tuple</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/calendar.html#timegm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#calendar.timegm" title="Permalink to this definition">¶</a></dt>
 <dd><p>An unrelated but handy function that takes a time tuple such as returned by
-the <a class="reference internal" href="../generated/time.gmtime.html#time.gmtime" title="time.gmtime"><code class="xref py py-func docutils literal"><span class="pre">gmtime()</span></code></a> function in the <a class="reference internal" href="../generated/time.html#module-time" title="time"><code class="xref py py-mod docutils literal"><span class="pre">time</span></code></a> module, and returns the
+the <a class="reference internal" href="../generated/generated/time.gmtime.html#time.gmtime" title="time.gmtime"><code class="xref py py-func docutils literal"><span class="pre">gmtime()</span></code></a> function in the <a class="reference internal" href="../generated/time.html#module-time" title="time"><code class="xref py py-mod docutils literal"><span class="pre">time</span></code></a> module, and returns the
 corresponding Unix timestamp value, assuming an epoch of 1970, and the POSIX
-encoding.  In fact, <a class="reference internal" href="../generated/time.gmtime.html#time.gmtime" title="time.gmtime"><code class="xref py py-func docutils literal"><span class="pre">time.gmtime()</span></code></a> and <a class="reference internal" href="../generated/calendar.timegm.html#calendar.timegm" title="calendar.timegm"><code class="xref py py-func docutils literal"><span class="pre">timegm()</span></code></a> are each others&#8217;
+encoding.  In fact, <a class="reference internal" href="../generated/generated/time.gmtime.html#time.gmtime" title="time.gmtime"><code class="xref py py-func docutils literal"><span class="pre">time.gmtime()</span></code></a> and <a class="reference internal" href="../generated/generated/calendar.timegm.html#calendar.timegm" title="calendar.timegm"><code class="xref py py-func docutils literal"><span class="pre">timegm()</span></code></a> are each others&#8217;
 inverse.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.0.</span></p>

@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       compile
       escape
@@ -23,6 +23,24 @@
       sub
       subn
       template
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/re.compile
+       generated/re.escape
+       generated/re.findall
+       generated/re.finditer
+       generated/re.match
+       generated/re.purge
+       generated/re.search
+       generated/re.split
+       generated/re.sub
+       generated/re.subn
+       generated/re.template
+      
    
    
 

@@ -655,7 +655,7 @@
 
 <span class="n">_node</span> <span class="o">=</span> <span class="bp">None</span>
 
-<div class="viewcode-block" id="getnode"><a class="viewcode-back" href="../generated/uuid.getnode.html#uuid.getnode">[docs]</a><span class="k">def</span> <span class="nf">getnode</span><span class="p">():</span>
+<div class="viewcode-block" id="getnode"><a class="viewcode-back" href="../generated/generated/uuid.getnode.html#uuid.getnode">[docs]</a><span class="k">def</span> <span class="nf">getnode</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Get the hardware address as a 48-bit positive integer.</span>
 
 <span class="sd">    The first time this runs, it may launch a separate program, which could</span>
@@ -685,7 +685,7 @@
 
 <span class="n">_last_timestamp</span> <span class="o">=</span> <span class="bp">None</span>
 
-<div class="viewcode-block" id="uuid1"><a class="viewcode-back" href="../generated/uuid.uuid1.html#uuid.uuid1">[docs]</a><span class="k">def</span> <span class="nf">uuid1</span><span class="p">(</span><span class="n">node</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">clock_seq</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="uuid1"><a class="viewcode-back" href="../generated/generated/uuid.uuid1.html#uuid.uuid1">[docs]</a><span class="k">def</span> <span class="nf">uuid1</span><span class="p">(</span><span class="n">node</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">clock_seq</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Generate a UUID from a host ID, sequence number, and the current time.</span>
 <span class="sd">    If &#39;node&#39; is not given, getnode() is used to obtain the hardware</span>
 <span class="sd">    address.  If &#39;clock_seq&#39; is given, it is used as the sequence number;</span>
@@ -720,17 +720,17 @@
     <span class="k">return</span> <span class="n">UUID</span><span class="p">(</span><span class="n">fields</span><span class="o">=</span><span class="p">(</span><span class="n">time_low</span><span class="p">,</span> <span class="n">time_mid</span><span class="p">,</span> <span class="n">time_hi_version</span><span class="p">,</span>
                         <span class="n">clock_seq_hi_variant</span><span class="p">,</span> <span class="n">clock_seq_low</span><span class="p">,</span> <span class="n">node</span><span class="p">),</span> <span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="uuid3"><a class="viewcode-back" href="../generated/uuid.uuid3.html#uuid.uuid3">[docs]</a><span class="k">def</span> <span class="nf">uuid3</span><span class="p">(</span><span class="n">namespace</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<div class="viewcode-block" id="uuid3"><a class="viewcode-back" href="../generated/generated/uuid.uuid3.html#uuid.uuid3">[docs]</a><span class="k">def</span> <span class="nf">uuid3</span><span class="p">(</span><span class="n">namespace</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Generate a UUID from the MD5 hash of a namespace UUID and a name.&quot;&quot;&quot;</span>
     <span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">md5</span>
     <span class="nb">hash</span> <span class="o">=</span> <span class="n">md5</span><span class="p">(</span><span class="n">namespace</span><span class="o">.</span><span class="n">bytes</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">digest</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">UUID</span><span class="p">(</span><span class="nb">bytes</span><span class="o">=</span><span class="nb">hash</span><span class="p">[:</span><span class="mi">16</span><span class="p">],</span> <span class="n">version</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="uuid4"><a class="viewcode-back" href="../generated/uuid.uuid4.html#uuid.uuid4">[docs]</a><span class="k">def</span> <span class="nf">uuid4</span><span class="p">():</span>
+<div class="viewcode-block" id="uuid4"><a class="viewcode-back" href="../generated/generated/uuid.uuid4.html#uuid.uuid4">[docs]</a><span class="k">def</span> <span class="nf">uuid4</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Generate a random UUID.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">UUID</span><span class="p">(</span><span class="nb">bytes</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">urandom</span><span class="p">(</span><span class="mi">16</span><span class="p">),</span> <span class="n">version</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="uuid5"><a class="viewcode-back" href="../generated/uuid.uuid5.html#uuid.uuid5">[docs]</a><span class="k">def</span> <span class="nf">uuid5</span><span class="p">(</span><span class="n">namespace</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<div class="viewcode-block" id="uuid5"><a class="viewcode-back" href="../generated/generated/uuid.uuid5.html#uuid.uuid5">[docs]</a><span class="k">def</span> <span class="nf">uuid5</span><span class="p">(</span><span class="n">namespace</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Generate a UUID from the SHA-1 hash of a namespace UUID and a name.&quot;&quot;&quot;</span>
     <span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">sha1</span>
     <span class="nb">hash</span> <span class="o">=</span> <span class="n">sha1</span><span class="p">(</span><span class="n">namespace</span><span class="o">.</span><span class="n">bytes</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">digest</span><span class="p">()</span>

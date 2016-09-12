@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       extract
       fix
@@ -18,6 +18,19 @@
       sci
       test
       unexpo
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/fpformat.extract
+       generated/fpformat.fix
+       generated/fpformat.roundfrac
+       generated/fpformat.sci
+       generated/fpformat.test
+       generated/fpformat.unexpo
+      
    
    
 

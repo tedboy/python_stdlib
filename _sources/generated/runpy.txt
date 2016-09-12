@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       get_loader
       read_code
       run_module
       run_path
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/runpy.get_loader
+       generated/runpy.read_code
+       generated/runpy.run_module
+       generated/runpy.run_path
+      
    
    
 

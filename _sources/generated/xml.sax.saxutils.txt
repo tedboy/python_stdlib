@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       escape
       prepare_input_source
       quoteattr
       unescape
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/xml.sax.saxutils.escape
+       generated/xml.sax.saxutils.prepare_input_source
+       generated/xml.sax.saxutils.quoteattr
+       generated/xml.sax.saxutils.unescape
+      
    
    
 

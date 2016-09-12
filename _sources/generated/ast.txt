@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       copy_location
       dump
@@ -22,6 +22,23 @@
       literal_eval
       parse
       walk
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/ast.copy_location
+       generated/ast.dump
+       generated/ast.fix_missing_locations
+       generated/ast.get_docstring
+       generated/ast.increment_lineno
+       generated/ast.iter_child_nodes
+       generated/ast.iter_fields
+       generated/ast.literal_eval
+       generated/ast.parse
+       generated/ast.walk
+      
    
    
 

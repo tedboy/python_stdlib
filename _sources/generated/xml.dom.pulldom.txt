@@ -8,12 +8,21 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       parse
       parseString
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/xml.dom.pulldom.parse
+       generated/xml.dom.pulldom.parseString
+      
    
    
 

@@ -584,7 +584,7 @@
     <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">local</span><span class="p">,</span> <span class="s1">&#39;__decimal_context__&#39;</span><span class="p">):</span>
         <span class="k">del</span> <span class="n">local</span><span class="o">.</span><span class="n">__decimal_context__</span>
 
-<div class="viewcode-block" id="getcontext"><a class="viewcode-back" href="../generated/decimal.getcontext.html#decimal.getcontext">[docs]</a>    <span class="k">def</span> <span class="nf">getcontext</span><span class="p">(</span><span class="n">_local</span><span class="o">=</span><span class="n">local</span><span class="p">):</span>
+<div class="viewcode-block" id="getcontext"><a class="viewcode-back" href="../generated/generated/decimal.getcontext.html#decimal.getcontext">[docs]</a>    <span class="k">def</span> <span class="nf">getcontext</span><span class="p">(</span><span class="n">_local</span><span class="o">=</span><span class="n">local</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Returns this thread&#39;s context.</span>
 
 <span class="sd">        If this thread does not yet have a context, returns</span>
@@ -598,7 +598,7 @@
             <span class="n">_local</span><span class="o">.</span><span class="n">__decimal_context__</span> <span class="o">=</span> <span class="n">context</span>
             <span class="k">return</span> <span class="n">context</span></div>
 
-<div class="viewcode-block" id="setcontext"><a class="viewcode-back" href="../generated/decimal.setcontext.html#decimal.setcontext">[docs]</a>    <span class="k">def</span> <span class="nf">setcontext</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">_local</span><span class="o">=</span><span class="n">local</span><span class="p">):</span>
+<div class="viewcode-block" id="setcontext"><a class="viewcode-back" href="../generated/generated/decimal.setcontext.html#decimal.setcontext">[docs]</a>    <span class="k">def</span> <span class="nf">setcontext</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">_local</span><span class="o">=</span><span class="n">local</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Set this thread&#39;s context to context.&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="n">context</span> <span class="ow">in</span> <span class="p">(</span><span class="n">DefaultContext</span><span class="p">,</span> <span class="n">BasicContext</span><span class="p">,</span> <span class="n">ExtendedContext</span><span class="p">):</span>
             <span class="n">context</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -607,7 +607,7 @@
 
     <span class="k">del</span> <span class="n">threading</span><span class="p">,</span> <span class="n">local</span>        <span class="c1"># Don&#39;t contaminate the namespace</span>
 
-<div class="viewcode-block" id="localcontext"><a class="viewcode-back" href="../generated/decimal.localcontext.html#decimal.localcontext">[docs]</a><span class="k">def</span> <span class="nf">localcontext</span><span class="p">(</span><span class="n">ctx</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="localcontext"><a class="viewcode-back" href="../generated/generated/decimal.localcontext.html#decimal.localcontext">[docs]</a><span class="k">def</span> <span class="nf">localcontext</span><span class="p">(</span><span class="n">ctx</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return a context manager for a copy of the supplied context</span>
 
 <span class="sd">    Uses a copy of the current context if no context is specified</span>

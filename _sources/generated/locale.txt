@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       atof
       atoi
@@ -34,6 +34,35 @@
       strcoll
       strxfrm
       textdomain
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/locale.atof
+       generated/locale.atoi
+       generated/locale.bind_textdomain_codeset
+       generated/locale.bindtextdomain
+       generated/locale.currency
+       generated/locale.dcgettext
+       generated/locale.dgettext
+       generated/locale.format
+       generated/locale.format_string
+       generated/locale.getdefaultlocale
+       generated/locale.getlocale
+       generated/locale.getpreferredencoding
+       generated/locale.gettext
+       generated/locale.localeconv
+       generated/locale.nl_langinfo
+       generated/locale.normalize
+       generated/locale.resetlocale
+       generated/locale.setlocale
+       generated/locale.str
+       generated/locale.strcoll
+       generated/locale.strxfrm
+       generated/locale.textdomain
+      
    
    
 

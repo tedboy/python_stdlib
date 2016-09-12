@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       addLevelName
       basicConfig
@@ -32,6 +32,33 @@
       shutdown
       warn
       warning
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/logging.addLevelName
+       generated/logging.basicConfig
+       generated/logging.captureWarnings
+       generated/logging.critical
+       generated/logging.currentframe
+       generated/logging.debug
+       generated/logging.disable
+       generated/logging.error
+       generated/logging.exception
+       generated/logging.fatal
+       generated/logging.getLevelName
+       generated/logging.getLogger
+       generated/logging.getLoggerClass
+       generated/logging.info
+       generated/logging.log
+       generated/logging.makeLogRecord
+       generated/logging.setLoggerClass
+       generated/logging.shutdown
+       generated/logging.warn
+       generated/logging.warning
+      
    
    
 

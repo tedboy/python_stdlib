@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>turtle.circle() &mdash; Python Standard Library</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/py.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python Standard Library" href="../../index.html"/>
+        <link rel="up" title="turtle" href="../turtle.html"/>
+        <link rel="next" title="turtle.clear()" href="turtle.clear.html"/>
+        <link rel="prev" title="turtle.ceil()" href="turtle.ceil.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python Standard Library
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../01to10.html">Ch 01 - 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11to20.html">Ch 11 - 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../21to30.html">Ch 21 - 30</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../31to37.html">Ch 31 - 37</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Tkinter.html"><code class="docutils literal"><span class="pre">Tkinter</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ttk.html"><code class="docutils literal"><span class="pre">ttk</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Tix.html"><code class="docutils literal"><span class="pre">Tix</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ScrolledText.html"><code class="docutils literal"><span class="pre">ScrolledText</span></code></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../turtle.html"><code class="docutils literal"><span class="pre">turtle</span></code></a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../turtle.html#functions">Functions</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="turtle.Screen.html"><code class="docutils literal"><span class="pre">turtle.Screen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.acos.html"><code class="docutils literal"><span class="pre">turtle.acos()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.acosh.html"><code class="docutils literal"><span class="pre">turtle.acosh()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.addshape.html"><code class="docutils literal"><span class="pre">turtle.addshape()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.asin.html"><code class="docutils literal"><span class="pre">turtle.asin()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.asinh.html"><code class="docutils literal"><span class="pre">turtle.asinh()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.atan.html"><code class="docutils literal"><span class="pre">turtle.atan()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.atan2.html"><code class="docutils literal"><span class="pre">turtle.atan2()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.atanh.html"><code class="docutils literal"><span class="pre">turtle.atanh()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.back.html"><code class="docutils literal"><span class="pre">turtle.back()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.backward.html"><code class="docutils literal"><span class="pre">turtle.backward()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.begin_fill.html"><code class="docutils literal"><span class="pre">turtle.begin_fill()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.begin_poly.html"><code class="docutils literal"><span class="pre">turtle.begin_poly()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.bgcolor.html"><code class="docutils literal"><span class="pre">turtle.bgcolor()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.bgpic.html"><code class="docutils literal"><span class="pre">turtle.bgpic()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.bk.html"><code class="docutils literal"><span class="pre">turtle.bk()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.bye.html"><code class="docutils literal"><span class="pre">turtle.bye()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.ceil.html"><code class="docutils literal"><span class="pre">turtle.ceil()</span></code></a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">turtle.circle()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.clear.html"><code class="docutils literal"><span class="pre">turtle.clear()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.clearscreen.html"><code class="docutils literal"><span class="pre">turtle.clearscreen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.clearstamp.html"><code class="docutils literal"><span class="pre">turtle.clearstamp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.clearstamps.html"><code class="docutils literal"><span class="pre">turtle.clearstamps()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.clone.html"><code class="docutils literal"><span class="pre">turtle.clone()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.color.html"><code class="docutils literal"><span class="pre">turtle.color()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.colormode.html"><code class="docutils literal"><span class="pre">turtle.colormode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.config_dict.html"><code class="docutils literal"><span class="pre">turtle.config_dict()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.copysign.html"><code class="docutils literal"><span class="pre">turtle.copysign()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.cos.html"><code class="docutils literal"><span class="pre">turtle.cos()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.cosh.html"><code class="docutils literal"><span class="pre">turtle.cosh()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.deepcopy.html"><code class="docutils literal"><span class="pre">turtle.deepcopy()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.degrees.html"><code class="docutils literal"><span class="pre">turtle.degrees()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.delay.html"><code class="docutils literal"><span class="pre">turtle.delay()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.distance.html"><code class="docutils literal"><span class="pre">turtle.distance()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.done.html"><code class="docutils literal"><span class="pre">turtle.done()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.dot.html"><code class="docutils literal"><span class="pre">turtle.dot()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.down.html"><code class="docutils literal"><span class="pre">turtle.down()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.end_fill.html"><code class="docutils literal"><span class="pre">turtle.end_fill()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.end_poly.html"><code class="docutils literal"><span class="pre">turtle.end_poly()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.erf.html"><code class="docutils literal"><span class="pre">turtle.erf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.erfc.html"><code class="docutils literal"><span class="pre">turtle.erfc()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.exitonclick.html"><code class="docutils literal"><span class="pre">turtle.exitonclick()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.exp.html"><code class="docutils literal"><span class="pre">turtle.exp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.expm1.html"><code class="docutils literal"><span class="pre">turtle.expm1()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.fabs.html"><code class="docutils literal"><span class="pre">turtle.fabs()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.factorial.html"><code class="docutils literal"><span class="pre">turtle.factorial()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.fd.html"><code class="docutils literal"><span class="pre">turtle.fd()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.fill.html"><code class="docutils literal"><span class="pre">turtle.fill()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.fillcolor.html"><code class="docutils literal"><span class="pre">turtle.fillcolor()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.floor.html"><code class="docutils literal"><span class="pre">turtle.floor()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.fmod.html"><code class="docutils literal"><span class="pre">turtle.fmod()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.forward.html"><code class="docutils literal"><span class="pre">turtle.forward()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.frexp.html"><code class="docutils literal"><span class="pre">turtle.frexp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.fsum.html"><code class="docutils literal"><span class="pre">turtle.fsum()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.gamma.html"><code class="docutils literal"><span class="pre">turtle.gamma()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.get_poly.html"><code class="docutils literal"><span class="pre">turtle.get_poly()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.getcanvas.html"><code class="docutils literal"><span class="pre">turtle.getcanvas()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.getmethparlist.html"><code class="docutils literal"><span class="pre">turtle.getmethparlist()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.getpen.html"><code class="docutils literal"><span class="pre">turtle.getpen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.getscreen.html"><code class="docutils literal"><span class="pre">turtle.getscreen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.getshapes.html"><code class="docutils literal"><span class="pre">turtle.getshapes()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.getturtle.html"><code class="docutils literal"><span class="pre">turtle.getturtle()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.goto.html"><code class="docutils literal"><span class="pre">turtle.goto()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.heading.html"><code class="docutils literal"><span class="pre">turtle.heading()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.hideturtle.html"><code class="docutils literal"><span class="pre">turtle.hideturtle()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.home.html"><code class="docutils literal"><span class="pre">turtle.home()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.ht.html"><code class="docutils literal"><span class="pre">turtle.ht()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.hypot.html"><code class="docutils literal"><span class="pre">turtle.hypot()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.isdown.html"><code class="docutils literal"><span class="pre">turtle.isdown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.isfile.html"><code class="docutils literal"><span class="pre">turtle.isfile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.isinf.html"><code class="docutils literal"><span class="pre">turtle.isinf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.isnan.html"><code class="docutils literal"><span class="pre">turtle.isnan()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.isvisible.html"><code class="docutils literal"><span class="pre">turtle.isvisible()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.join.html"><code class="docutils literal"><span class="pre">turtle.join()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.ldexp.html"><code class="docutils literal"><span class="pre">turtle.ldexp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.left.html"><code class="docutils literal"><span class="pre">turtle.left()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.lgamma.html"><code class="docutils literal"><span class="pre">turtle.lgamma()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.listen.html"><code class="docutils literal"><span class="pre">turtle.listen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.log.html"><code class="docutils literal"><span class="pre">turtle.log()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.log10.html"><code class="docutils literal"><span class="pre">turtle.log10()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.log1p.html"><code class="docutils literal"><span class="pre">turtle.log1p()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.lt.html"><code class="docutils literal"><span class="pre">turtle.lt()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.mainloop.html"><code class="docutils literal"><span class="pre">turtle.mainloop()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.mode.html"><code class="docutils literal"><span class="pre">turtle.mode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.modf.html"><code class="docutils literal"><span class="pre">turtle.modf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.onclick.html"><code class="docutils literal"><span class="pre">turtle.onclick()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.ondrag.html"><code class="docutils literal"><span class="pre">turtle.ondrag()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.onkey.html"><code class="docutils literal"><span class="pre">turtle.onkey()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.onrelease.html"><code class="docutils literal"><span class="pre">turtle.onrelease()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.onscreenclick.html"><code class="docutils literal"><span class="pre">turtle.onscreenclick()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.ontimer.html"><code class="docutils literal"><span class="pre">turtle.ontimer()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.pd.html"><code class="docutils literal"><span class="pre">turtle.pd()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.pen.html"><code class="docutils literal"><span class="pre">turtle.pen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.pencolor.html"><code class="docutils literal"><span class="pre">turtle.pencolor()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.pendown.html"><code class="docutils literal"><span class="pre">turtle.pendown()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.pensize.html"><code class="docutils literal"><span class="pre">turtle.pensize()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.penup.html"><code class="docutils literal"><span class="pre">turtle.penup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.pos.html"><code class="docutils literal"><span class="pre">turtle.pos()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.position.html"><code class="docutils literal"><span class="pre">turtle.position()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.pow.html"><code class="docutils literal"><span class="pre">turtle.pow()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.pu.html"><code class="docutils literal"><span class="pre">turtle.pu()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.radians.html"><code class="docutils literal"><span class="pre">turtle.radians()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.read_docstrings.html"><code class="docutils literal"><span class="pre">turtle.read_docstrings()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.readconfig.html"><code class="docutils literal"><span class="pre">turtle.readconfig()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.register_shape.html"><code class="docutils literal"><span class="pre">turtle.register_shape()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.reset.html"><code class="docutils literal"><span class="pre">turtle.reset()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.resetscreen.html"><code class="docutils literal"><span class="pre">turtle.resetscreen()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.resizemode.html"><code class="docutils literal"><span class="pre">turtle.resizemode()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.right.html"><code class="docutils literal"><span class="pre">turtle.right()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.rt.html"><code class="docutils literal"><span class="pre">turtle.rt()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.screensize.html"><code class="docutils literal"><span class="pre">turtle.screensize()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.seth.html"><code class="docutils literal"><span class="pre">turtle.seth()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.setheading.html"><code class="docutils literal"><span class="pre">turtle.setheading()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.setpos.html"><code class="docutils literal"><span class="pre">turtle.setpos()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.setposition.html"><code class="docutils literal"><span class="pre">turtle.setposition()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.settiltangle.html"><code class="docutils literal"><span class="pre">turtle.settiltangle()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.setundobuffer.html"><code class="docutils literal"><span class="pre">turtle.setundobuffer()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.setup.html"><code class="docutils literal"><span class="pre">turtle.setup()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.setworldcoordinates.html"><code class="docutils literal"><span class="pre">turtle.setworldcoordinates()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.setx.html"><code class="docutils literal"><span class="pre">turtle.setx()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.sety.html"><code class="docutils literal"><span class="pre">turtle.sety()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.shape.html"><code class="docutils literal"><span class="pre">turtle.shape()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.shapesize.html"><code class="docutils literal"><span class="pre">turtle.shapesize()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.showturtle.html"><code class="docutils literal"><span class="pre">turtle.showturtle()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.sin.html"><code class="docutils literal"><span class="pre">turtle.sin()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.sinh.html"><code class="docutils literal"><span class="pre">turtle.sinh()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.speed.html"><code class="docutils literal"><span class="pre">turtle.speed()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.split.html"><code class="docutils literal"><span class="pre">turtle.split()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.sqrt.html"><code class="docutils literal"><span class="pre">turtle.sqrt()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.st.html"><code class="docutils literal"><span class="pre">turtle.st()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.stamp.html"><code class="docutils literal"><span class="pre">turtle.stamp()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.tan.html"><code class="docutils literal"><span class="pre">turtle.tan()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.tanh.html"><code class="docutils literal"><span class="pre">turtle.tanh()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.tilt.html"><code class="docutils literal"><span class="pre">turtle.tilt()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.tiltangle.html"><code class="docutils literal"><span class="pre">turtle.tiltangle()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.title.html"><code class="docutils literal"><span class="pre">turtle.title()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.towards.html"><code class="docutils literal"><span class="pre">turtle.towards()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.tracer.html"><code class="docutils literal"><span class="pre">turtle.tracer()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.trunc.html"><code class="docutils literal"><span class="pre">turtle.trunc()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.turtles.html"><code class="docutils literal"><span class="pre">turtle.turtles()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.turtlesize.html"><code class="docutils literal"><span class="pre">turtle.turtlesize()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.undo.html"><code class="docutils literal"><span class="pre">turtle.undo()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.undobufferentries.html"><code class="docutils literal"><span class="pre">turtle.undobufferentries()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.up.html"><code class="docutils literal"><span class="pre">turtle.up()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.update.html"><code class="docutils literal"><span class="pre">turtle.update()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.width.html"><code class="docutils literal"><span class="pre">turtle.width()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.window_height.html"><code class="docutils literal"><span class="pre">turtle.window_height()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.window_width.html"><code class="docutils literal"><span class="pre">turtle.window_width()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.write.html"><code class="docutils literal"><span class="pre">turtle.write()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.write_docstringdict.html"><code class="docutils literal"><span class="pre">turtle.write_docstringdict()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.xcor.html"><code class="docutils literal"><span class="pre">turtle.xcor()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="turtle.ycor.html"><code class="docutils literal"><span class="pre">turtle.ycor()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../turtle.html#classes">Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../turtle.html#exceptions">Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python Standard Library</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../api_all.html">api</a> &raquo;</li>
+        
+          <li><a href="../turtle.html"><code class="docutils literal"><span class="pre">turtle</span></code></a> &raquo;</li>
+        
+      <li><code class="docutils literal"><span class="pre">turtle.circle()</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/turtle.circle.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="turtle-circle">
+<h1><a class="reference internal" href="#turtle.circle" title="turtle.circle"><code class="xref py py-func docutils literal"><span class="pre">turtle.circle()</span></code></a><a class="headerlink" href="#turtle-circle" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="turtle.circle">
+<code class="descclassname">turtle.</code><code class="descname">circle</code><span class="sig-paren">(</span><em>radius</em>, <em>extent=None</em>, <em>steps=None</em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.circle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a circle with given radius.</p>
+<p>Arguments:
+radius &#8211; a number
+extent (optional) &#8211; a number
+steps (optional) &#8211; an integer</p>
+<p>Draw a circle with given radius. The center is radius units left
+of the turtle; extent - an angle - determines which part of the
+circle is drawn. If extent is not given, draw the entire circle.
+If extent is not a full circle, one endpoint of the arc is the
+current pen position. Draw the arc in counterclockwise direction
+if radius is positive, otherwise in clockwise direction. Finally
+the direction of the turtle is changed by the amount of extent.</p>
+<p>As the circle is approximated by an inscribed regular polygon,
+steps determines the number of steps to use. If not given,
+it will be calculated automatically. Maybe used to draw regular
+polygons.</p>
+<p>call: circle(radius)                  # full circle
+&#8211;or: circle(radius, extent)          # arc
+&#8211;or: circle(radius, extent, steps)
+&#8211;or: circle(radius, steps=6)         # 6-sided polygon</p>
+<p>Example:
+&gt;&gt;&gt; circle(50)
+&gt;&gt;&gt; circle(120, 180)  # semicircle</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="turtle.clear.html" class="btn btn-neutral float-right" title="turtle.clear()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="turtle.ceil.html" class="btn btn-neutral" title="turtle.ceil()" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

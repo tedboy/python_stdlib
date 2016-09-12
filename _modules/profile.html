@@ -192,7 +192,7 @@
 <span class="c1"># Note that an instance of Profile() is *not* needed to call them.</span>
 <span class="c1">#**************************************************************************</span>
 
-<div class="viewcode-block" id="run"><a class="viewcode-back" href="../generated/profile.run.html#profile.run">[docs]</a><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">sort</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="run"><a class="viewcode-back" href="../generated/generated/profile.run.html#profile.run">[docs]</a><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">sort</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Run statement under profiler optionally saving results in filename</span>
 
 <span class="sd">    This function takes a single argument that can be passed to the</span>
@@ -213,7 +213,7 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">prof</span><span class="o">.</span><span class="n">print_stats</span><span class="p">(</span><span class="n">sort</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="runctx"><a class="viewcode-back" href="../generated/profile.runctx.html#profile.runctx">[docs]</a><span class="k">def</span> <span class="nf">runctx</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="nb">globals</span><span class="p">,</span> <span class="nb">locals</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">sort</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="runctx"><a class="viewcode-back" href="../generated/generated/profile.runctx.html#profile.runctx">[docs]</a><span class="k">def</span> <span class="nf">runctx</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="nb">globals</span><span class="p">,</span> <span class="nb">locals</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">sort</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Run statement under profiler, supplying your own globals and locals,</span>
 <span class="sd">    optionally saving results in filename.</span>
 
@@ -231,7 +231,7 @@
         <span class="k">return</span> <span class="n">prof</span><span class="o">.</span><span class="n">print_stats</span><span class="p">(</span><span class="n">sort</span><span class="p">)</span></div>
 
 <span class="c1"># Backwards compatibility.</span>
-<div class="viewcode-block" id="help"><a class="viewcode-back" href="../generated/profile.help.html#profile.help">[docs]</a><span class="k">def</span> <span class="nf">help</span><span class="p">():</span>
+<div class="viewcode-block" id="help"><a class="viewcode-back" href="../generated/generated/profile.help.html#profile.help">[docs]</a><span class="k">def</span> <span class="nf">help</span><span class="p">():</span>
     <span class="k">print</span> <span class="s2">&quot;Documentation for the profile module can be found &quot;</span>
     <span class="k">print</span> <span class="s2">&quot;in the Python Library Reference, section &#39;The Python Profiler&#39;.&quot;</span></div>
 
@@ -717,10 +717,10 @@
         <span class="k">return</span> <span class="n">mean</span></div></div>
 
 <span class="c1">#****************************************************************************</span>
-<div class="viewcode-block" id="Stats"><a class="viewcode-back" href="../generated/profile.Stats.html#profile.Stats">[docs]</a><span class="k">def</span> <span class="nf">Stats</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="Stats"><a class="viewcode-back" href="../generated/generated/profile.Stats.html#profile.Stats">[docs]</a><span class="k">def</span> <span class="nf">Stats</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="k">print</span> <span class="s1">&#39;Report generating functions are in the &quot;pstats&quot; module</span><span class="se">\a</span><span class="s1">&#39;</span></div>
 
-<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/profile.main.html#profile.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/generated/profile.main.html#profile.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="n">usage</span> <span class="o">=</span> <span class="s2">&quot;profile.py [-o output_file_path] [-s sort] scriptfile [arg] ...&quot;</span>
     <span class="n">parser</span> <span class="o">=</span> <span class="n">OptionParser</span><span class="p">(</span><span class="n">usage</span><span class="o">=</span><span class="n">usage</span><span class="p">)</span>
     <span class="n">parser</span><span class="o">.</span><span class="n">allow_interspersed_args</span> <span class="o">=</span> <span class="bp">False</span>

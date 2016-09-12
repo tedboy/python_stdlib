@@ -199,7 +199,7 @@ this context manager.</p>
 objects return themselves from __enter__() to allow <a class="reference internal" href="../02_builtin_functions/02.html#open" title="open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> to be used as
 the context expression in a <code class="xref std std-keyword docutils literal"><span class="pre">with</span></code> statement.</p>
 <p>An example of a context manager that returns a related object is the one
-returned by <a class="reference internal" href="../generated/decimal.localcontext.html#decimal.localcontext" title="decimal.localcontext"><code class="xref py py-func docutils literal"><span class="pre">decimal.localcontext()</span></code></a>. These managers set the active
+returned by <a class="reference internal" href="../generated/generated/decimal.localcontext.html#decimal.localcontext" title="decimal.localcontext"><code class="xref py py-func docutils literal"><span class="pre">decimal.localcontext()</span></code></a>. These managers set the active
 decimal context to a copy of the original decimal context and then return the
 copy. This allows changes to be made to the current decimal context in the body
 of the <code class="xref std std-keyword docutils literal"><span class="pre">with</span></code> statement without affecting code outside the

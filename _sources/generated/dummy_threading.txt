@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       BoundedSemaphore
       Condition
@@ -27,6 +27,28 @@
       setprofile
       settrace
       stack_size
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/dummy_threading.BoundedSemaphore
+       generated/dummy_threading.Condition
+       generated/dummy_threading.Event
+       generated/dummy_threading.Lock
+       generated/dummy_threading.RLock
+       generated/dummy_threading.Semaphore
+       generated/dummy_threading.Timer
+       generated/dummy_threading.activeCount
+       generated/dummy_threading.active_count
+       generated/dummy_threading.currentThread
+       generated/dummy_threading.current_thread
+       generated/dummy_threading.enumerate
+       generated/dummy_threading.setprofile
+       generated/dummy_threading.settrace
+       generated/dummy_threading.stack_size
+      
    
    
 

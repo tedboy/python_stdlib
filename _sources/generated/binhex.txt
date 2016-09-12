@@ -8,13 +8,23 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       binhex
       getfileinfo
       hexbin
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/binhex.binhex
+       generated/binhex.getfileinfo
+       generated/binhex.hexbin
+      
    
    
 

@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       mime_decode
       mime_decode_header
@@ -20,6 +20,21 @@
       mimify_part
       unmimify
       unmimify_part
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/mimify.mime_decode
+       generated/mimify.mime_decode_header
+       generated/mimify.mime_encode
+       generated/mimify.mime_encode_header
+       generated/mimify.mimify
+       generated/mimify.mimify_part
+       generated/mimify.unmimify
+       generated/mimify.unmimify_part
+      
    
    
 

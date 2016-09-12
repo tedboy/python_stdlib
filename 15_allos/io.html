@@ -253,15 +253,15 @@ it, is a buffered text interface to a buffered raw stream
 (<a class="reference internal" href="../generated/generated/io.BufferedIOBase.html#io.BufferedIOBase" title="io.BufferedIOBase"><code class="xref py py-class docutils literal"><span class="pre">BufferedIOBase</span></code></a>). Finally, <a class="reference internal" href="../generated/StringIO.html#module-StringIO" title="StringIO"><code class="xref py py-class docutils literal"><span class="pre">StringIO</span></code></a> is an in-memory
 stream for unicode text.</p>
 <p>Argument names are not part of the specification, and only the arguments of
-<a class="reference internal" href="../generated/io.open.html#io.open" title="io.open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> are intended to be used as keyword arguments.</p>
+<a class="reference internal" href="../generated/generated/io.open.html#io.open" title="io.open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> are intended to be used as keyword arguments.</p>
 <div class="section" id="module-interface">
 <h2><a class="toc-backref" href="#id2">2.1. Module Interface</a><a class="headerlink" href="#module-interface" title="Permalink to this headline">¶</a></h2>
 <dl class="data">
 <dt id="io.DEFAULT_BUFFER_SIZE">
 <code class="descclassname">io.</code><code class="descname">DEFAULT_BUFFER_SIZE</code><a class="headerlink" href="#io.DEFAULT_BUFFER_SIZE" title="Permalink to this definition">¶</a></dt>
 <dd><p>An int containing the default buffer size used by the module&#8217;s buffered I/O
-classes.  <a class="reference internal" href="../generated/io.open.html#io.open" title="io.open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> uses the file&#8217;s blksize (as obtained by
-<a class="reference internal" href="../generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>) if possible.</p>
+classes.  <a class="reference internal" href="../generated/generated/io.open.html#io.open" title="io.open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> uses the file&#8217;s blksize (as obtained by
+<a class="reference internal" href="../generated/generated/os.stat.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal"><span class="pre">os.stat()</span></code></a>) if possible.</p>
 </dd></dl>
 
 <dl class="function">
@@ -341,7 +341,7 @@ for binary files.</li>
 </ul>
 <p><em>encoding</em> is the name of the encoding used to decode or encode the file.
 This should only be used in text mode.  The default encoding is platform
-dependent (whatever <a class="reference internal" href="../generated/locale.getpreferredencoding.html#locale.getpreferredencoding" title="locale.getpreferredencoding"><code class="xref py py-func docutils literal"><span class="pre">locale.getpreferredencoding()</span></code></a> returns), but any
+dependent (whatever <a class="reference internal" href="../generated/generated/locale.getpreferredencoding.html#locale.getpreferredencoding" title="locale.getpreferredencoding"><code class="xref py py-func docutils literal"><span class="pre">locale.getpreferredencoding()</span></code></a> returns), but any
 encoding supported by Python can be used.  See the <a class="reference internal" href="../generated/codecs.html#module-codecs" title="codecs"><code class="xref py py-mod docutils literal"><span class="pre">codecs</span></code></a> module for
 the list of supported encodings.</p>
 <p><em>errors</em> is an optional string that specifies how encoding and decoding
@@ -354,7 +354,7 @@ where there is malformed data.  When writing, <code class="docutils literal"><sp
 (replace with the appropriate XML character reference) or
 <code class="docutils literal"><span class="pre">'backslashreplace'</span></code> (replace with backslashed escape sequences) can be
 used.  Any other error handling name that has been registered with
-<a class="reference internal" href="../generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">codecs.register_error()</span></code></a> is also valid.</p>
+<a class="reference internal" href="../generated/generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">codecs.register_error()</span></code></a> is also valid.</p>
 </dd></dl>
 
 <dl class="exception">
@@ -467,7 +467,7 @@ will raise <a class="reference internal" href="../generated/exceptions.IOError.h
 <dd><p>Read and return one line from the stream.  If <em>limit</em> is specified, at
 most <em>limit</em> bytes will be read.</p>
 <p>The line terminator is always <code class="docutils literal"><span class="pre">b'\n'</span></code> for binary files; for text files,
-the <em>newline</em> argument to <a class="reference internal" href="../generated/io.open.html#io.open" title="io.open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> can be used to select the line
+the <em>newline</em> argument to <a class="reference internal" href="../generated/generated/io.open.html#io.open" title="io.open"><code class="xref py py-func docutils literal"><span class="pre">open()</span></code></a> can be used to select the line
 terminator(s) recognized.</p>
 </dd></dl>
 
@@ -986,7 +986,7 @@ number of characters written.</p>
 <dd><p id="index-1">A buffered text stream over a <a class="reference internal" href="../generated/generated/io.BufferedIOBase.html#io.BufferedIOBase" title="io.BufferedIOBase"><code class="xref py py-class docutils literal"><span class="pre">BufferedIOBase</span></code></a> binary stream.
 It inherits <a class="reference internal" href="../generated/generated/io.TextIOBase.html#io.TextIOBase" title="io.TextIOBase"><code class="xref py py-class docutils literal"><span class="pre">TextIOBase</span></code></a>.</p>
 <p><em>encoding</em> gives the name of the encoding that the stream will be decoded or
-encoded with.  It defaults to <a class="reference internal" href="../generated/locale.getpreferredencoding.html#locale.getpreferredencoding" title="locale.getpreferredencoding"><code class="xref py py-func docutils literal"><span class="pre">locale.getpreferredencoding()</span></code></a>.</p>
+encoded with.  It defaults to <a class="reference internal" href="../generated/generated/locale.getpreferredencoding.html#locale.getpreferredencoding" title="locale.getpreferredencoding"><code class="xref py py-func docutils literal"><span class="pre">locale.getpreferredencoding()</span></code></a>.</p>
 <p><em>errors</em> is an optional string that specifies how encoding and decoding
 errors are to be handled.  Pass <code class="docutils literal"><span class="pre">'strict'</span></code> to raise a <a class="reference internal" href="../generated/exceptions.ValueError.html#exceptions.ValueError" title="exceptions.ValueError"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code></a>
 exception if there is an encoding error (the default of <code class="docutils literal"><span class="pre">None</span></code> has the same
@@ -996,7 +996,7 @@ errors can lead to data loss.)  <code class="docutils literal"><span class="pre"
 writing, <code class="docutils literal"><span class="pre">'xmlcharrefreplace'</span></code> (replace with the appropriate XML character
 reference) or <code class="docutils literal"><span class="pre">'backslashreplace'</span></code> (replace with backslashed escape
 sequences) can be used.  Any other error handling name that has been
-registered with <a class="reference internal" href="../generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">codecs.register_error()</span></code></a> is also valid.</p>
+registered with <a class="reference internal" href="../generated/generated/codecs.register_error.html#codecs.register_error" title="codecs.register_error"><code class="xref py py-func docutils literal"><span class="pre">codecs.register_error()</span></code></a> is also valid.</p>
 </dd></dl>
 
 <dl class="class">

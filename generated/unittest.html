@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="unittest.BaseTestSuite" href="generated/unittest.BaseTestSuite.html"/>
+        <link rel="next" title="unittest.expectedFailure()" href="generated/unittest.expectedFailure.html"/>
         <link rel="prev" title="doctest.UnexpectedException" href="doctest.UnexpectedException.html"/> 
 
   
@@ -82,12 +82,85 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pydoc.html"><code class="docutils literal"><span class="pre">pydoc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="doctest.html"><code class="docutils literal"><span class="pre">doctest</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">unittest</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.expectedFailure.html"><code class="docutils literal"><span class="pre">unittest.expectedFailure()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.findTestCases.html"><code class="docutils literal"><span class="pre">unittest.findTestCases()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.getTestCaseNames.html"><code class="docutils literal"><span class="pre">unittest.getTestCaseNames()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.installHandler.html"><code class="docutils literal"><span class="pre">unittest.installHandler()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.makeSuite.html"><code class="docutils literal"><span class="pre">unittest.makeSuite()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.registerResult.html"><code class="docutils literal"><span class="pre">unittest.registerResult()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.removeHandler.html"><code class="docutils literal"><span class="pre">unittest.removeHandler()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.removeResult.html"><code class="docutils literal"><span class="pre">unittest.removeResult()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.skip.html"><code class="docutils literal"><span class="pre">unittest.skip()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.skipIf.html"><code class="docutils literal"><span class="pre">unittest.skipIf()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.skipUnless.html"><code class="docutils literal"><span class="pre">unittest.skipUnless()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.BaseTestSuite.html"><code class="docutils literal"><span class="pre">unittest.BaseTestSuite</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.FunctionTestCase.html"><code class="docutils literal"><span class="pre">unittest.FunctionTestCase</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.TestCase.html"><code class="docutils literal"><span class="pre">unittest.TestCase</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.TestLoader.html"><code class="docutils literal"><span class="pre">unittest.TestLoader</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.TestProgram.html"><code class="docutils literal"><span class="pre">unittest.TestProgram</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.TestResult.html"><code class="docutils literal"><span class="pre">unittest.TestResult</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.TestSuite.html"><code class="docutils literal"><span class="pre">unittest.TestSuite</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.TextTestResult.html"><code class="docutils literal"><span class="pre">unittest.TextTestResult</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.TextTestRunner.html"><code class="docutils literal"><span class="pre">unittest.TextTestRunner</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/unittest.main.html"><code class="docutils literal"><span class="pre">unittest.main</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="unittest.SkipTest.html">unittest.SkipTest</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="test.html"><code class="docutils literal"><span class="pre">test</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -194,6 +267,49 @@ AND THERE IS NO OBLIGATION WHATSOEVER TO PROVIDE MAINTENANCE,
 SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/unittest.expectedFailure.html#unittest.expectedFailure" title="unittest.expectedFailure"><code class="xref py py-obj docutils literal"><span class="pre">expectedFailure</span></code></a>(func)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/unittest.findTestCases.html#unittest.findTestCases" title="unittest.findTestCases"><code class="xref py py-obj docutils literal"><span class="pre">findTestCases</span></code></a>(module[,&nbsp;prefix,&nbsp;sortUsing,&nbsp;...])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/unittest.getTestCaseNames.html#unittest.getTestCaseNames" title="unittest.getTestCaseNames"><code class="xref py py-obj docutils literal"><span class="pre">getTestCaseNames</span></code></a>(testCaseClass,&nbsp;prefix[,&nbsp;...])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/unittest.installHandler.html#unittest.installHandler" title="unittest.installHandler"><code class="xref py py-obj docutils literal"><span class="pre">installHandler</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/unittest.makeSuite.html#unittest.makeSuite" title="unittest.makeSuite"><code class="xref py py-obj docutils literal"><span class="pre">makeSuite</span></code></a>(testCaseClass[,&nbsp;prefix,&nbsp;...])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/unittest.registerResult.html#unittest.registerResult" title="unittest.registerResult"><code class="xref py py-obj docutils literal"><span class="pre">registerResult</span></code></a>(result)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/unittest.removeHandler.html#unittest.removeHandler" title="unittest.removeHandler"><code class="xref py py-obj docutils literal"><span class="pre">removeHandler</span></code></a>([method])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/unittest.removeResult.html#unittest.removeResult" title="unittest.removeResult"><code class="xref py py-obj docutils literal"><span class="pre">removeResult</span></code></a>(result)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/unittest.skip.html#unittest.skip" title="unittest.skip"><code class="xref py py-obj docutils literal"><span class="pre">skip</span></code></a>(reason)</td>
+<td>Unconditionally skip a test.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/unittest.skipIf.html#unittest.skipIf" title="unittest.skipIf"><code class="xref py py-obj docutils literal"><span class="pre">skipIf</span></code></a>(condition,&nbsp;reason)</td>
+<td>Skip a test if the condition is true.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/unittest.skipUnless.html#unittest.skipUnless" title="unittest.skipUnless"><code class="xref py py-obj docutils literal"><span class="pre">skipUnless</span></code></a>(condition,&nbsp;reason)</td>
+<td>Skip a test unless the condition is true.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -261,7 +377,7 @@ SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/unittest.BaseTestSuite.html" class="btn btn-neutral float-right" title="unittest.BaseTestSuite" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/unittest.expectedFailure.html" class="btn btn-neutral float-right" title="unittest.expectedFailure()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="doctest.UnexpectedException.html" class="btn btn-neutral" title="doctest.UnexpectedException" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

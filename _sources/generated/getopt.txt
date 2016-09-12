@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       do_longs
       do_shorts
@@ -18,6 +18,19 @@
       gnu_getopt
       long_has_args
       short_has_arg
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/getopt.do_longs
+       generated/getopt.do_shorts
+       generated/getopt.getopt
+       generated/getopt.gnu_getopt
+       generated/getopt.long_has_args
+       generated/getopt.short_has_arg
+      
    
    
 

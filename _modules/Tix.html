@@ -1884,7 +1884,7 @@
 
 <span class="c1">#mike Should tixDestroy be exposed as a wrapper? - but not for widgets.</span>
 
-<div class="viewcode-block" id="OptionName"><a class="viewcode-back" href="../generated/Tix.OptionName.html#Tix.OptionName">[docs]</a><span class="k">def</span> <span class="nf">OptionName</span><span class="p">(</span><span class="n">widget</span><span class="p">):</span>
+<div class="viewcode-block" id="OptionName"><a class="viewcode-back" href="../generated/generated/Tix.OptionName.html#Tix.OptionName">[docs]</a><span class="k">def</span> <span class="nf">OptionName</span><span class="p">(</span><span class="n">widget</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Returns the qualified path name for the widget. Normally used to set</span>
 <span class="sd">    default options for subwidgets. See tixwidgets.py&#39;&#39;&#39;</span>
     <span class="k">return</span> <span class="n">widget</span><span class="o">.</span><span class="n">tk</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;tixOptionName&#39;</span><span class="p">,</span> <span class="n">widget</span><span class="o">.</span><span class="n">_w</span><span class="p">)</span></div>
@@ -1894,7 +1894,7 @@
 <span class="c1"># returns a string which can be used to configure the fsbox file types</span>
 <span class="c1"># in an ExFileSelectBox. i.e.,</span>
 <span class="c1"># &#39;{{*} {* - All files}} {{*.c} {*.c - C source files}} {{*.txt} {*.txt - Text Files}}&#39;</span>
-<div class="viewcode-block" id="FileTypeList"><a class="viewcode-back" href="../generated/Tix.FileTypeList.html#Tix.FileTypeList">[docs]</a><span class="k">def</span> <span class="nf">FileTypeList</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
+<div class="viewcode-block" id="FileTypeList"><a class="viewcode-back" href="../generated/generated/Tix.FileTypeList.html#Tix.FileTypeList">[docs]</a><span class="k">def</span> <span class="nf">FileTypeList</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
     <span class="k">for</span> <span class="nb">type</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
         <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="s1">&#39;{{&#39;</span> <span class="o">+</span> <span class="nb">type</span> <span class="o">+</span> <span class="s1">&#39;} {&#39;</span> <span class="o">+</span> <span class="nb">type</span> <span class="o">+</span> <span class="s1">&#39; - &#39;</span> <span class="o">+</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">type</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;}} &#39;</span>

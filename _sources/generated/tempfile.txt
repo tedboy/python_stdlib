@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       NamedTemporaryFile
       TemporaryFile
@@ -19,6 +19,20 @@
       mkdtemp
       mkstemp
       mktemp
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/tempfile.NamedTemporaryFile
+       generated/tempfile.TemporaryFile
+       generated/tempfile.gettempdir
+       generated/tempfile.gettempprefix
+       generated/tempfile.mkdtemp
+       generated/tempfile.mkstemp
+       generated/tempfile.mktemp
+      
    
    
 

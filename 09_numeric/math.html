@@ -263,7 +263,7 @@ returns a result with the sign of <em>y</em> instead, and may not be exactly com
 for float arguments. For example, <code class="docutils literal"><span class="pre">fmod(-1e-100,</span> <span class="pre">1e100)</span></code> is <code class="docutils literal"><span class="pre">-1e-100</span></code>, but
 the result of Python&#8217;s <code class="docutils literal"><span class="pre">-1e-100</span> <span class="pre">%</span> <span class="pre">1e100</span></code> is <code class="docutils literal"><span class="pre">1e100-1e-100</span></code>, which cannot be
 represented exactly as a float, and rounds to the surprising <code class="docutils literal"><span class="pre">1e100</span></code>.  For
-this reason, function <a class="reference internal" href="../generated/math.fmod.html#math.fmod" title="math.fmod"><code class="xref py py-func docutils literal"><span class="pre">fmod()</span></code></a> is generally preferred when working with
+this reason, function <a class="reference internal" href="../generated/generated/math.fmod.html#math.fmod" title="math.fmod"><code class="xref py py-func docutils literal"><span class="pre">fmod()</span></code></a> is generally preferred when working with
 floats, while Python&#8217;s <code class="docutils literal"><span class="pre">x</span> <span class="pre">%</span> <span class="pre">y</span></code> is preferred when working with integers.</p>
 </dd></dl>
 
@@ -322,7 +322,7 @@ on NaNs, see the IEEE 754 standards.</p>
 <dt id="math.ldexp">
 <code class="descclassname">math.</code><code class="descname">ldexp</code><span class="sig-paren">(</span><em>x</em>, <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#math.ldexp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">(2**i)</span></code>.  This is essentially the inverse of function
-<a class="reference internal" href="../generated/math.frexp.html#math.frexp" title="math.frexp"><code class="xref py py-func docutils literal"><span class="pre">frexp()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/math.frexp.html#math.frexp" title="math.frexp"><code class="xref py py-func docutils literal"><span class="pre">frexp()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -343,11 +343,11 @@ of <em>x</em> and are floats.</p>
 </div>
 </dd></dl>
 
-<p>Note that <a class="reference internal" href="../generated/math.frexp.html#math.frexp" title="math.frexp"><code class="xref py py-func docutils literal"><span class="pre">frexp()</span></code></a> and <a class="reference internal" href="../generated/math.modf.html#math.modf" title="math.modf"><code class="xref py py-func docutils literal"><span class="pre">modf()</span></code></a> have a different call/return pattern
+<p>Note that <a class="reference internal" href="../generated/generated/math.frexp.html#math.frexp" title="math.frexp"><code class="xref py py-func docutils literal"><span class="pre">frexp()</span></code></a> and <a class="reference internal" href="../generated/generated/math.modf.html#math.modf" title="math.modf"><code class="xref py py-func docutils literal"><span class="pre">modf()</span></code></a> have a different call/return pattern
 than their C equivalents: they take a single argument and return a pair of
 values, rather than returning their second return value through an &#8216;output
 parameter&#8217; (there is no such thing in Python).</p>
-<p>For the <a class="reference internal" href="../generated/math.ceil.html#math.ceil" title="math.ceil"><code class="xref py py-func docutils literal"><span class="pre">ceil()</span></code></a>, <a class="reference internal" href="../generated/math.floor.html#math.floor" title="math.floor"><code class="xref py py-func docutils literal"><span class="pre">floor()</span></code></a>, and <a class="reference internal" href="../generated/math.modf.html#math.modf" title="math.modf"><code class="xref py py-func docutils literal"><span class="pre">modf()</span></code></a> functions, note that <em>all</em>
+<p>For the <a class="reference internal" href="../generated/generated/math.ceil.html#math.ceil" title="math.ceil"><code class="xref py py-func docutils literal"><span class="pre">ceil()</span></code></a>, <a class="reference internal" href="../generated/generated/math.floor.html#math.floor" title="math.floor"><code class="xref py py-func docutils literal"><span class="pre">floor()</span></code></a>, and <a class="reference internal" href="../generated/generated/math.modf.html#math.modf" title="math.modf"><code class="xref py py-func docutils literal"><span class="pre">modf()</span></code></a> functions, note that <em>all</em>
 floating-point numbers of sufficiently large magnitude are exact integers.
 Python floats typically carry no more than 53 bits of precision (the same as the
 platform C double type), in which case any float <em>x</em> with <code class="docutils literal"><span class="pre">abs(x)</span> <span class="pre">&gt;=</span> <span class="pre">2**52</span></code>
@@ -366,7 +366,7 @@ necessarily has no fractional bits.</p>
 <code class="descclassname">math.</code><code class="descname">expm1</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#math.expm1" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal"><span class="pre">e**x</span> <span class="pre">-</span> <span class="pre">1</span></code>.  For small floats <em>x</em>, the subtraction in
 <code class="docutils literal"><span class="pre">exp(x)</span> <span class="pre">-</span> <span class="pre">1</span></code> can result in a significant loss of precision; the
-<a class="reference internal" href="../generated/math.expm1.html#math.expm1" title="math.expm1"><code class="xref py py-func docutils literal"><span class="pre">expm1()</span></code></a> function provides a way to compute this quantity to
+<a class="reference internal" href="../generated/generated/math.expm1.html#math.expm1" title="math.expm1"><code class="xref py py-func docutils literal"><span class="pre">expm1()</span></code></a> function provides a way to compute this quantity to
 full precision:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">exp</span><span class="p">,</span> <span class="n">expm1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">exp</span><span class="p">(</span><span class="mf">1e-5</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>  <span class="c1"># gives result accurate to 11 places</span>
@@ -417,7 +417,7 @@ Annex &#8216;F&#8217; of the C99 standard as far as possible.  In particular,
 when <code class="docutils literal"><span class="pre">x</span></code> is a zero or a NaN.  If both <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">y</span></code> are finite,
 <code class="docutils literal"><span class="pre">x</span></code> is negative, and <code class="docutils literal"><span class="pre">y</span></code> is not an integer then <code class="docutils literal"><span class="pre">pow(x,</span> <span class="pre">y)</span></code>
 is undefined, and raises <a class="reference internal" href="../generated/exceptions.ValueError.html#exceptions.ValueError" title="exceptions.ValueError"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code></a>.</p>
-<p>Unlike the built-in <code class="docutils literal"><span class="pre">**</span></code> operator, <a class="reference internal" href="../generated/math.pow.html#math.pow" title="math.pow"><code class="xref py py-func docutils literal"><span class="pre">math.pow()</span></code></a> converts both
+<p>Unlike the built-in <code class="docutils literal"><span class="pre">**</span></code> operator, <a class="reference internal" href="../generated/generated/math.pow.html#math.pow" title="math.pow"><code class="xref py py-func docutils literal"><span class="pre">math.pow()</span></code></a> converts both
 its arguments to type <a class="reference internal" href="../02_builtin_functions/02.html#float" title="float"><code class="xref py py-class docutils literal"><span class="pre">float</span></code></a>.  Use <code class="docutils literal"><span class="pre">**</span></code> or the built-in
 <a class="reference internal" href="../02_builtin_functions/02.html#pow" title="pow"><code class="xref py py-func docutils literal"><span class="pre">pow()</span></code></a> function for computing exact integer powers.</p>
 <div class="versionchanged">
@@ -457,7 +457,7 @@ its arguments to type <a class="reference internal" href="../02_builtin_function
 <code class="descclassname">math.</code><code class="descname">atan2</code><span class="sig-paren">(</span><em>y</em>, <em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#math.atan2" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal"><span class="pre">atan(y</span> <span class="pre">/</span> <span class="pre">x)</span></code>, in radians. The result is between <code class="docutils literal"><span class="pre">-pi</span></code> and <code class="docutils literal"><span class="pre">pi</span></code>.
 The vector in the plane from the origin to point <code class="docutils literal"><span class="pre">(x,</span> <span class="pre">y)</span></code> makes this angle
-with the positive X axis. The point of <a class="reference internal" href="../generated/math.atan2.html#math.atan2" title="math.atan2"><code class="xref py py-func docutils literal"><span class="pre">atan2()</span></code></a> is that the signs of both
+with the positive X axis. The point of <a class="reference internal" href="../generated/generated/math.atan2.html#math.atan2" title="math.atan2"><code class="xref py py-func docutils literal"><span class="pre">atan2()</span></code></a> is that the signs of both
 inputs are known to it, so it can compute the correct quadrant for the angle.
 For example, <code class="docutils literal"><span class="pre">atan(1)</span></code> and <code class="docutils literal"><span class="pre">atan2(1,</span> <span class="pre">1)</span></code> are both <code class="docutils literal"><span class="pre">pi/4</span></code>, but <code class="docutils literal"><span class="pre">atan2(-1,</span>
 <span class="pre">-1)</span></code> is <code class="docutils literal"><span class="pre">-3*pi/4</span></code>.</p>

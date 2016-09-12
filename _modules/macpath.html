@@ -173,11 +173,11 @@
 
 <span class="c1"># Normalize the case of a pathname.  Dummy in Posix, but &lt;s&gt;.lower() here.</span>
 
-<div class="viewcode-block" id="normcase"><a class="viewcode-back" href="../generated/macpath.normcase.html#macpath.normcase">[docs]</a><span class="k">def</span> <span class="nf">normcase</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="normcase"><a class="viewcode-back" href="../generated/generated/macpath.normcase.html#macpath.normcase">[docs]</a><span class="k">def</span> <span class="nf">normcase</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">path</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span></div>
 
 
-<div class="viewcode-block" id="isabs"><a class="viewcode-back" href="../generated/macpath.isabs.html#macpath.isabs">[docs]</a><span class="k">def</span> <span class="nf">isabs</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="isabs"><a class="viewcode-back" href="../generated/generated/macpath.isabs.html#macpath.isabs">[docs]</a><span class="k">def</span> <span class="nf">isabs</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if a path is absolute.</span>
 <span class="sd">    On the Mac, relative paths begin with a colon,</span>
 <span class="sd">    but as a special case, paths with no colons at all are also relative.</span>
@@ -187,7 +187,7 @@
     <span class="k">return</span> <span class="s1">&#39;:&#39;</span> <span class="ow">in</span> <span class="n">s</span> <span class="ow">and</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;:&#39;</span></div>
 
 
-<div class="viewcode-block" id="join"><a class="viewcode-back" href="../generated/macpath.join.html#macpath.join">[docs]</a><span class="k">def</span> <span class="nf">join</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="o">*</span><span class="n">p</span><span class="p">):</span>
+<div class="viewcode-block" id="join"><a class="viewcode-back" href="../generated/generated/macpath.join.html#macpath.join">[docs]</a><span class="k">def</span> <span class="nf">join</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="o">*</span><span class="n">p</span><span class="p">):</span>
     <span class="n">path</span> <span class="o">=</span> <span class="n">s</span>
     <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">p</span><span class="p">:</span>
         <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">path</span><span class="p">)</span> <span class="ow">or</span> <span class="n">isabs</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
@@ -203,7 +203,7 @@
     <span class="k">return</span> <span class="n">path</span></div>
 
 
-<div class="viewcode-block" id="split"><a class="viewcode-back" href="../generated/macpath.split.html#macpath.split">[docs]</a><span class="k">def</span> <span class="nf">split</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="split"><a class="viewcode-back" href="../generated/generated/macpath.split.html#macpath.split">[docs]</a><span class="k">def</span> <span class="nf">split</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Split a pathname into two parts: the directory leading up to the final</span>
 <span class="sd">    bit, and the basename (the filename, without colons, in that directory).</span>
 <span class="sd">    The result (s, t) is such that join(s, t) yields the original argument.&quot;&quot;&quot;</span>
@@ -218,11 +218,11 @@
     <span class="k">return</span> <span class="n">path</span><span class="p">,</span> <span class="nb">file</span></div>
 
 
-<div class="viewcode-block" id="splitext"><a class="viewcode-back" href="../generated/macpath.splitext.html#macpath.splitext">[docs]</a><span class="k">def</span> <span class="nf">splitext</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
+<div class="viewcode-block" id="splitext"><a class="viewcode-back" href="../generated/generated/macpath.splitext.html#macpath.splitext">[docs]</a><span class="k">def</span> <span class="nf">splitext</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">genericpath</span><span class="o">.</span><span class="n">_splitext</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">sep</span><span class="p">,</span> <span class="n">altsep</span><span class="p">,</span> <span class="n">extsep</span><span class="p">)</span></div>
 <span class="n">splitext</span><span class="o">.</span><span class="n">__doc__</span> <span class="o">=</span> <span class="n">genericpath</span><span class="o">.</span><span class="n">_splitext</span><span class="o">.</span><span class="n">__doc__</span>
 
-<div class="viewcode-block" id="splitdrive"><a class="viewcode-back" href="../generated/macpath.splitdrive.html#macpath.splitdrive">[docs]</a><span class="k">def</span> <span class="nf">splitdrive</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
+<div class="viewcode-block" id="splitdrive"><a class="viewcode-back" href="../generated/generated/macpath.splitdrive.html#macpath.splitdrive">[docs]</a><span class="k">def</span> <span class="nf">splitdrive</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Split a pathname into a drive specification and the rest of the</span>
 <span class="sd">    path.  Useful on DOS/Windows/NT; on the Mac, the drive is always</span>
 <span class="sd">    empty (don&#39;t use the volume name -- it doesn&#39;t have the same</span>
@@ -234,16 +234,16 @@
 
 <span class="c1"># Short interfaces to split()</span>
 
-<div class="viewcode-block" id="dirname"><a class="viewcode-back" href="../generated/macpath.dirname.html#macpath.dirname">[docs]</a><span class="k">def</span> <span class="nf">dirname</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="k">return</span> <span class="n">split</span><span class="p">(</span><span class="n">s</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span></div>
-<div class="viewcode-block" id="basename"><a class="viewcode-back" href="../generated/macpath.basename.html#macpath.basename">[docs]</a><span class="k">def</span> <span class="nf">basename</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="k">return</span> <span class="n">split</span><span class="p">(</span><span class="n">s</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span></div>
+<div class="viewcode-block" id="dirname"><a class="viewcode-back" href="../generated/generated/macpath.dirname.html#macpath.dirname">[docs]</a><span class="k">def</span> <span class="nf">dirname</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="k">return</span> <span class="n">split</span><span class="p">(</span><span class="n">s</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span></div>
+<div class="viewcode-block" id="basename"><a class="viewcode-back" href="../generated/generated/macpath.basename.html#macpath.basename">[docs]</a><span class="k">def</span> <span class="nf">basename</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="k">return</span> <span class="n">split</span><span class="p">(</span><span class="n">s</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span></div>
 
-<div class="viewcode-block" id="ismount"><a class="viewcode-back" href="../generated/macpath.ismount.html#macpath.ismount">[docs]</a><span class="k">def</span> <span class="nf">ismount</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="ismount"><a class="viewcode-back" href="../generated/generated/macpath.ismount.html#macpath.ismount">[docs]</a><span class="k">def</span> <span class="nf">ismount</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">isabs</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">False</span>
     <span class="n">components</span> <span class="o">=</span> <span class="n">split</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
     <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">components</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">components</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span></div>
 
-<div class="viewcode-block" id="islink"><a class="viewcode-back" href="../generated/macpath.islink.html#macpath.islink">[docs]</a><span class="k">def</span> <span class="nf">islink</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="islink"><a class="viewcode-back" href="../generated/generated/macpath.islink.html#macpath.islink">[docs]</a><span class="k">def</span> <span class="nf">islink</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return true if the pathname refers to a symbolic link.&quot;&quot;&quot;</span>
 
     <span class="k">try</span><span class="p">:</span>
@@ -255,7 +255,7 @@
 <span class="c1"># Is `stat`/`lstat` a meaningful difference on the Mac?  This is safe in any</span>
 <span class="c1"># case.</span>
 
-<div class="viewcode-block" id="lexists"><a class="viewcode-back" href="../generated/macpath.lexists.html#macpath.lexists">[docs]</a><span class="k">def</span> <span class="nf">lexists</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="lexists"><a class="viewcode-back" href="../generated/generated/macpath.lexists.html#macpath.lexists">[docs]</a><span class="k">def</span> <span class="nf">lexists</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Test whether a path exists.  Returns True for broken symbolic links&quot;&quot;&quot;</span>
 
     <span class="k">try</span><span class="p">:</span>
@@ -264,19 +264,19 @@
         <span class="k">return</span> <span class="bp">False</span>
     <span class="k">return</span> <span class="bp">True</span></div>
 
-<div class="viewcode-block" id="expandvars"><a class="viewcode-back" href="../generated/macpath.expandvars.html#macpath.expandvars">[docs]</a><span class="k">def</span> <span class="nf">expandvars</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="expandvars"><a class="viewcode-back" href="../generated/generated/macpath.expandvars.html#macpath.expandvars">[docs]</a><span class="k">def</span> <span class="nf">expandvars</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Dummy to retain interface-compatibility with other operating systems.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">path</span></div>
 
 
-<div class="viewcode-block" id="expanduser"><a class="viewcode-back" href="../generated/macpath.expanduser.html#macpath.expanduser">[docs]</a><span class="k">def</span> <span class="nf">expanduser</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="expanduser"><a class="viewcode-back" href="../generated/generated/macpath.expanduser.html#macpath.expanduser">[docs]</a><span class="k">def</span> <span class="nf">expanduser</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Dummy to retain interface-compatibility with other operating systems.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">path</span></div>
 
 <div class="viewcode-block" id="norm_error"><a class="viewcode-back" href="../generated/macpath.norm_error.html#macpath.norm_error">[docs]</a><span class="k">class</span> <span class="nc">norm_error</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Path cannot be normalized&quot;&quot;&quot;</span></div>
 
-<div class="viewcode-block" id="normpath"><a class="viewcode-back" href="../generated/macpath.normpath.html#macpath.normpath">[docs]</a><span class="k">def</span> <span class="nf">normpath</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="viewcode-block" id="normpath"><a class="viewcode-back" href="../generated/generated/macpath.normpath.html#macpath.normpath">[docs]</a><span class="k">def</span> <span class="nf">normpath</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Normalize a pathname.  Will return the same result for</span>
 <span class="sd">    equivalent paths.&quot;&quot;&quot;</span>
 
@@ -304,7 +304,7 @@
     <span class="k">return</span> <span class="n">s</span></div>
 
 
-<div class="viewcode-block" id="walk"><a class="viewcode-back" href="../generated/macpath.walk.html#macpath.walk">[docs]</a><span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="n">top</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+<div class="viewcode-block" id="walk"><a class="viewcode-back" href="../generated/generated/macpath.walk.html#macpath.walk">[docs]</a><span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="n">top</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Directory tree walk with callback function.</span>
 
 <span class="sd">    For each directory in the directory tree rooted at top (including top</span>
@@ -331,7 +331,7 @@
             <span class="n">walk</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">arg</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="abspath"><a class="viewcode-back" href="../generated/macpath.abspath.html#macpath.abspath">[docs]</a><span class="k">def</span> <span class="nf">abspath</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="abspath"><a class="viewcode-back" href="../generated/generated/macpath.abspath.html#macpath.abspath">[docs]</a><span class="k">def</span> <span class="nf">abspath</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return an absolute path.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">isabs</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">_unicode</span><span class="p">):</span>
@@ -342,7 +342,7 @@
     <span class="k">return</span> <span class="n">normpath</span><span class="p">(</span><span class="n">path</span><span class="p">)</span></div>
 
 <span class="c1"># realpath is a no-op on systems without islink support</span>
-<div class="viewcode-block" id="realpath"><a class="viewcode-back" href="../generated/macpath.realpath.html#macpath.realpath">[docs]</a><span class="k">def</span> <span class="nf">realpath</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="realpath"><a class="viewcode-back" href="../generated/generated/macpath.realpath.html#macpath.realpath">[docs]</a><span class="k">def</span> <span class="nf">realpath</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="n">path</span> <span class="o">=</span> <span class="n">abspath</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="kn">import</span> <span class="nn">Carbon.File</span>

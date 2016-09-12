@@ -275,7 +275,7 @@ becoming ready, three empty lists are returned.</p>
 <dl class="attribute">
 <dt id="select.select.PIPE_BUF">
 <code class="descclassname">select.</code><code class="descname">PIPE_BUF</code><a class="headerlink" href="#select.select.PIPE_BUF" title="Permalink to this definition">¶</a></dt>
-<dd><p>Files reported as ready for writing by <a class="reference internal" href="../generated/select.html#module-select" title="select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a>, <a class="reference internal" href="../generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-func docutils literal"><span class="pre">poll()</span></code></a> or
+<dd><p>Files reported as ready for writing by <a class="reference internal" href="../generated/select.html#module-select" title="select"><code class="xref py py-func docutils literal"><span class="pre">select()</span></code></a>, <a class="reference internal" href="../generated/generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-func docutils literal"><span class="pre">poll()</span></code></a> or
 similar interfaces in this module are guaranteed to not block on a write
 of up to <a class="reference internal" href="#select.select.PIPE_BUF" title="select.select.PIPE_BUF"><code class="xref py py-const docutils literal"><span class="pre">PIPE_BUF</span></code></a> bytes.
 This value is guaranteed by POSIX to be at least 512.  Availability: Unix.</p>
@@ -402,7 +402,7 @@ linearly scanned again. <code class="xref c c-func docutils literal"><span class
 <dt id="select.poll.register">
 <code class="descclassname">poll.</code><code class="descname">register</code><span class="sig-paren">(</span><em>fd</em><span class="optional">[</span>, <em>eventmask</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#select.poll.register" title="Permalink to this definition">¶</a></dt>
 <dd><p>Register a file descriptor with the polling object.  Future calls to the
-<a class="reference internal" href="../generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-meth docutils literal"><span class="pre">poll()</span></code></a> method will then check whether the file descriptor has any
+<a class="reference internal" href="../generated/generated/select.poll.html#select.poll" title="select.poll"><code class="xref py py-meth docutils literal"><span class="pre">poll()</span></code></a> method will then check whether the file descriptor has any
 pending I/O events.  <em>fd</em> can be either an integer, or an object with a
 <a class="reference internal" href="../generated/generated/io.IOBase.fileno.html#io.IOBase.fileno" title="io.IOBase.fileno"><code class="xref py py-meth docutils literal"><span class="pre">fileno()</span></code></a> method that returns an integer.  File objects
 implement <code class="xref py py-meth docutils literal"><span class="pre">fileno()</span></code>, so they can also be used as the argument.</p>

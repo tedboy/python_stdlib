@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       filter
       fnmatch
       fnmatchcase
       translate
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/fnmatch.filter
+       generated/fnmatch.fnmatch
+       generated/fnmatch.fnmatchcase
+       generated/fnmatch.translate
+      
    
    
 

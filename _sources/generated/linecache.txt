@@ -8,15 +8,27 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       checkcache
       clearcache
       getline
       getlines
       updatecache
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/linecache.checkcache
+       generated/linecache.clearcache
+       generated/linecache.getline
+       generated/linecache.getlines
+       generated/linecache.updatecache
+      
    
    
 

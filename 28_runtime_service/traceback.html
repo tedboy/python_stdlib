@@ -199,7 +199,7 @@ interpreter.</p>
 <p id="index-0">The module uses traceback objects &#8212; this is the object type that is stored in
 the variables <a class="reference internal" href="sys.html#sys.exc_traceback" title="sys.exc_traceback"><code class="xref py py-data docutils literal"><span class="pre">sys.exc_traceback</span></code></a> (deprecated) and
 <a class="reference internal" href="sys.html#sys.last_traceback" title="sys.last_traceback"><code class="xref py py-data docutils literal"><span class="pre">sys.last_traceback</span></code></a> and returned as the third item from
-<a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a>.</p>
 <p>The module defines the following functions:</p>
 <dl class="function">
 <dt id="traceback.print_tb">
@@ -214,7 +214,7 @@ open file or file-like object to receive the output.</p>
 <dt id="traceback.print_exception">
 <code class="descclassname">traceback.</code><code class="descname">print_exception</code><span class="sig-paren">(</span><em>etype</em>, <em>value</em>, <em>tb</em><span class="optional">[</span>, <em>limit</em><span class="optional">[</span>, <em>file</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/traceback.html#print_exception"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#traceback.print_exception" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print exception information and up to <em>limit</em> stack trace entries from the
-traceback <em>tb</em> to <em>file</em>. This differs from <a class="reference internal" href="../generated/traceback.print_tb.html#traceback.print_tb" title="traceback.print_tb"><code class="xref py py-func docutils literal"><span class="pre">print_tb()</span></code></a> in the following
+traceback <em>tb</em> to <em>file</em>. This differs from <a class="reference internal" href="../generated/generated/traceback.print_tb.html#traceback.print_tb" title="traceback.print_tb"><code class="xref py py-func docutils literal"><span class="pre">print_tb()</span></code></a> in the following
 ways: (1) if <em>tb</em> is not <code class="docutils literal"><span class="pre">None</span></code>, it prints a header <code class="docutils literal"><span class="pre">Traceback</span> <span class="pre">(most</span>
 <span class="pre">recent</span> <span class="pre">call</span> <span class="pre">last):</span></code>; (2) it prints the exception <em>etype</em> and <em>value</em> after
 the stack trace; (3) if <em>etype</em> is <a class="reference internal" href="../generated/exceptions.SyntaxError.html#exceptions.SyntaxError" title="exceptions.SyntaxError"><code class="xref py py-exc docutils literal"><span class="pre">SyntaxError</span></code></a> and <em>value</em> has the
@@ -226,7 +226,7 @@ caret indicating the approximate position of the error.</p>
 <dt id="traceback.print_exc">
 <code class="descclassname">traceback.</code><code class="descname">print_exc</code><span class="sig-paren">(</span><span class="optional">[</span><em>limit</em><span class="optional">[</span>, <em>file</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/traceback.html#print_exc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#traceback.print_exc" title="Permalink to this definition">¶</a></dt>
 <dd><p>This is a shorthand for <code class="docutils literal"><span class="pre">print_exception(sys.exc_type,</span> <span class="pre">sys.exc_value,</span>
-<span class="pre">sys.exc_traceback,</span> <span class="pre">limit,</span> <span class="pre">file)</span></code>.  (In fact, it uses <a class="reference internal" href="../generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a> to
+<span class="pre">sys.exc_traceback,</span> <span class="pre">limit,</span> <span class="pre">file)</span></code>.  (In fact, it uses <a class="reference internal" href="../generated/generated/sys.exc_info.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal"><span class="pre">sys.exc_info()</span></code></a> to
 retrieve the same information in a thread-safe way instead of using the
 deprecated variables.)</p>
 </dd></dl>
@@ -255,7 +255,7 @@ an exception has reached an interactive prompt (see <a class="reference internal
 <dd><p>This function prints a stack trace from its invocation point. The optional
 <em>f</em> argument can be used to specify an alternate stack frame to start. The
 optional limit* and <em>file</em> arguments have the same meaning as for
-<a class="reference internal" href="../generated/traceback.print_exception.html#traceback.print_exception" title="traceback.print_exception"><code class="xref py py-func docutils literal"><span class="pre">print_exception()</span></code></a>.</p>
+<a class="reference internal" href="../generated/generated/traceback.print_exception.html#traceback.print_exception" title="traceback.print_exception"><code class="xref py py-func docutils literal"><span class="pre">print_exception()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -274,15 +274,15 @@ whitespace stripped; if the source is not available it is <code class="docutils 
 <dt id="traceback.extract_stack">
 <code class="descclassname">traceback.</code><code class="descname">extract_stack</code><span class="sig-paren">(</span><span class="optional">[</span><em>f</em><span class="optional">[</span>, <em>limit</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/traceback.html#extract_stack"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#traceback.extract_stack" title="Permalink to this definition">¶</a></dt>
 <dd><p>Extract the raw traceback from the current stack frame.  The return value has
-the same format as for <a class="reference internal" href="../generated/traceback.extract_tb.html#traceback.extract_tb" title="traceback.extract_tb"><code class="xref py py-func docutils literal"><span class="pre">extract_tb()</span></code></a>.  The optional <em>f</em> and <em>limit</em>
-arguments have the same meaning as for <a class="reference internal" href="../generated/traceback.print_stack.html#traceback.print_stack" title="traceback.print_stack"><code class="xref py py-func docutils literal"><span class="pre">print_stack()</span></code></a>.</p>
+the same format as for <a class="reference internal" href="../generated/generated/traceback.extract_tb.html#traceback.extract_tb" title="traceback.extract_tb"><code class="xref py py-func docutils literal"><span class="pre">extract_tb()</span></code></a>.  The optional <em>f</em> and <em>limit</em>
+arguments have the same meaning as for <a class="reference internal" href="../generated/generated/traceback.print_stack.html#traceback.print_stack" title="traceback.print_stack"><code class="xref py py-func docutils literal"><span class="pre">print_stack()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="traceback.format_list">
 <code class="descclassname">traceback.</code><code class="descname">format_list</code><span class="sig-paren">(</span><em>extracted_list</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/traceback.html#format_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#traceback.format_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given a list of tuples as returned by <a class="reference internal" href="../generated/traceback.extract_tb.html#traceback.extract_tb" title="traceback.extract_tb"><code class="xref py py-func docutils literal"><span class="pre">extract_tb()</span></code></a> or
-<a class="reference internal" href="../generated/traceback.extract_stack.html#traceback.extract_stack" title="traceback.extract_stack"><code class="xref py py-func docutils literal"><span class="pre">extract_stack()</span></code></a>, return a list of strings ready for printing.  Each
+<dd><p>Given a list of tuples as returned by <a class="reference internal" href="../generated/generated/traceback.extract_tb.html#traceback.extract_tb" title="traceback.extract_tb"><code class="xref py py-func docutils literal"><span class="pre">extract_tb()</span></code></a> or
+<a class="reference internal" href="../generated/generated/traceback.extract_stack.html#traceback.extract_stack" title="traceback.extract_stack"><code class="xref py py-func docutils literal"><span class="pre">extract_stack()</span></code></a>, return a list of strings ready for printing.  Each
 string in the resulting list corresponds to the item with the same index in
 the argument list.  Each string ends in a newline; the strings may contain
 internal newlines as well, for those items whose source text line is not
@@ -306,10 +306,10 @@ list.</p>
 <dt id="traceback.format_exception">
 <code class="descclassname">traceback.</code><code class="descname">format_exception</code><span class="sig-paren">(</span><em>etype</em>, <em>value</em>, <em>tb</em><span class="optional">[</span>, <em>limit</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/traceback.html#format_exception"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#traceback.format_exception" title="Permalink to this definition">¶</a></dt>
 <dd><p>Format a stack trace and the exception information.  The arguments  have the
-same meaning as the corresponding arguments to <a class="reference internal" href="../generated/traceback.print_exception.html#traceback.print_exception" title="traceback.print_exception"><code class="xref py py-func docutils literal"><span class="pre">print_exception()</span></code></a>.  The
+same meaning as the corresponding arguments to <a class="reference internal" href="../generated/generated/traceback.print_exception.html#traceback.print_exception" title="traceback.print_exception"><code class="xref py py-func docutils literal"><span class="pre">print_exception()</span></code></a>.  The
 return value is a list of strings, each ending in a newline and some
 containing internal newlines.  When these lines are concatenated and printed,
-exactly the same text is printed as does <a class="reference internal" href="../generated/traceback.print_exception.html#traceback.print_exception" title="traceback.print_exception"><code class="xref py py-func docutils literal"><span class="pre">print_exception()</span></code></a>.</p>
+exactly the same text is printed as does <a class="reference internal" href="../generated/generated/traceback.print_exception.html#traceback.print_exception" title="traceback.print_exception"><code class="xref py py-func docutils literal"><span class="pre">print_exception()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="function">

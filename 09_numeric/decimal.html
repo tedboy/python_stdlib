@@ -302,7 +302,7 @@ Specification</a>.</li>
 <div class="section" id="quick-start-tutorial">
 <span id="decimal-tutorial"></span><h2><a class="toc-backref" href="#id2">4.1. Quick-start Tutorial</a><a class="headerlink" href="#quick-start-tutorial" title="Permalink to this headline">¶</a></h2>
 <p>The usual start to using decimals is importing the module, viewing the current
-context with <a class="reference internal" href="../generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a> and, if necessary, setting new values for
+context with <a class="reference internal" href="../generated/generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a> and, if necessary, setting new values for
 precision, rounding, or enabled traps:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">decimal</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">getcontext</span><span class="p">()</span>
@@ -363,11 +363,11 @@ places:</p>
 <span class="go">Decimal(&#39;8&#39;)</span>
 </pre></div>
 </div>
-<p>As shown above, the <a class="reference internal" href="../generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a> function accesses the current context and
+<p>As shown above, the <a class="reference internal" href="../generated/generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a> function accesses the current context and
 allows the settings to be changed.  This approach meets the needs of most
 applications.</p>
 <p>For more advanced work, it may be useful to create alternate contexts using the
-Context() constructor.  To make an alternate active, use the <a class="reference internal" href="../generated/decimal.setcontext.html#decimal.setcontext" title="decimal.setcontext"><code class="xref py py-func docutils literal"><span class="pre">setcontext()</span></code></a>
+Context() constructor.  To make an alternate active, use the <a class="reference internal" href="../generated/generated/decimal.setcontext.html#decimal.setcontext" title="decimal.setcontext"><code class="xref py py-func docutils literal"><span class="pre">setcontext()</span></code></a>
 function.</p>
 <p>In accordance with the standard, the <a class="reference internal" href="../generated/decimal.html#module-decimal" title="decimal"><code class="xref py py-mod docutils literal"><span class="pre">decimal</span></code></a> module provides two ready to
 use standard contexts, <a class="reference internal" href="#decimal.BasicContext" title="decimal.BasicContext"><code class="xref py py-const docutils literal"><span class="pre">BasicContext</span></code></a> and <a class="reference internal" href="#decimal.ExtendedContext" title="decimal.ExtendedContext"><code class="xref py py-const docutils literal"><span class="pre">ExtendedContext</span></code></a>. The
@@ -1140,7 +1140,7 @@ exponent and sign are both zero, and whose digits are all either
 rules for rounding, determine which signals are treated as exceptions, and limit
 the range for exponents.</p>
 <p>Each thread has its own current context which is accessed or changed using the
-<a class="reference internal" href="../generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a> and <a class="reference internal" href="../generated/decimal.setcontext.html#decimal.setcontext" title="decimal.setcontext"><code class="xref py py-func docutils literal"><span class="pre">setcontext()</span></code></a> functions:</p>
+<a class="reference internal" href="../generated/generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a> and <a class="reference internal" href="../generated/generated/decimal.setcontext.html#decimal.setcontext" title="decimal.setcontext"><code class="xref py py-func docutils literal"><span class="pre">setcontext()</span></code></a> functions:</p>
 <dl class="function">
 <dt id="decimal.getcontext">
 <code class="descclassname">decimal.</code><code class="descname">getcontext</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/decimal.html#getcontext"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#decimal.getcontext" title="Permalink to this definition">¶</a></dt>
@@ -1154,7 +1154,7 @@ the range for exponents.</p>
 </dd></dl>
 
 <p>Beginning with Python 2.5, you can also use the <code class="xref std std-keyword docutils literal"><span class="pre">with</span></code> statement and
-the <a class="reference internal" href="../generated/decimal.localcontext.html#decimal.localcontext" title="decimal.localcontext"><code class="xref py py-func docutils literal"><span class="pre">localcontext()</span></code></a> function to temporarily change the active context.</p>
+the <a class="reference internal" href="../generated/generated/decimal.localcontext.html#decimal.localcontext" title="decimal.localcontext"><code class="xref py py-func docutils literal"><span class="pre">localcontext()</span></code></a> function to temporarily change the active context.</p>
 <dl class="function">
 <dt id="decimal.localcontext">
 <code class="descclassname">decimal.</code><code class="descname">localcontext</code><span class="sig-paren">(</span><span class="optional">[</span><em>c</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/decimal.html#localcontext"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#decimal.localcontext" title="Permalink to this definition">¶</a></dt>
@@ -1893,19 +1893,19 @@ the following calculation returns a value equal to zero:</p>
 </div>
 <div class="section" id="working-with-threads">
 <span id="decimal-threads"></span><h2><a class="toc-backref" href="#id10">4.6. Working with threads</a><a class="headerlink" href="#working-with-threads" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="../generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a> function accesses a different <a class="reference internal" href="../generated/generated/decimal.Context.html#decimal.Context" title="decimal.Context"><code class="xref py py-class docutils literal"><span class="pre">Context</span></code></a> object for
+<p>The <a class="reference internal" href="../generated/generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a> function accesses a different <a class="reference internal" href="../generated/generated/decimal.Context.html#decimal.Context" title="decimal.Context"><code class="xref py py-class docutils literal"><span class="pre">Context</span></code></a> object for
 each thread.  Having separate thread contexts means that threads may make
 changes (such as <code class="docutils literal"><span class="pre">getcontext.prec=10</span></code>) without interfering with other threads.</p>
-<p>Likewise, the <a class="reference internal" href="../generated/decimal.setcontext.html#decimal.setcontext" title="decimal.setcontext"><code class="xref py py-func docutils literal"><span class="pre">setcontext()</span></code></a> function automatically assigns its target to
+<p>Likewise, the <a class="reference internal" href="../generated/generated/decimal.setcontext.html#decimal.setcontext" title="decimal.setcontext"><code class="xref py py-func docutils literal"><span class="pre">setcontext()</span></code></a> function automatically assigns its target to
 the current thread.</p>
-<p>If <a class="reference internal" href="../generated/decimal.setcontext.html#decimal.setcontext" title="decimal.setcontext"><code class="xref py py-func docutils literal"><span class="pre">setcontext()</span></code></a> has not been called before <a class="reference internal" href="../generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a>, then
-<a class="reference internal" href="../generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a> will automatically create a new context for use in the
+<p>If <a class="reference internal" href="../generated/generated/decimal.setcontext.html#decimal.setcontext" title="decimal.setcontext"><code class="xref py py-func docutils literal"><span class="pre">setcontext()</span></code></a> has not been called before <a class="reference internal" href="../generated/generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a>, then
+<a class="reference internal" href="../generated/generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a> will automatically create a new context for use in the
 current thread.</p>
 <p>The new context is copied from a prototype context called <em>DefaultContext</em>. To
 control the defaults so that each thread will use the same values throughout the
 application, directly modify the <em>DefaultContext</em> object. This should be done
 <em>before</em> any threads are started so that there won&#8217;t be a race condition between
-threads calling <a class="reference internal" href="../generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a>. For example:</p>
+threads calling <a class="reference internal" href="../generated/generated/decimal.getcontext.html#decimal.getcontext" title="decimal.getcontext"><code class="xref py py-func docutils literal"><span class="pre">getcontext()</span></code></a>. For example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span># Set applicationwide defaults for all threads about to be launched
 DefaultContext.prec = 12
 DefaultContext.rounding = ROUND_DOWN

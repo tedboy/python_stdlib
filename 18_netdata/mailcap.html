@@ -200,7 +200,7 @@ standard.  However, mailcap files are supported on most Unix systems.</p>
 <dt id="mailcap.findmatch">
 <code class="descclassname">mailcap.</code><code class="descname">findmatch</code><span class="sig-paren">(</span><em>caps</em>, <em>MIMEtype</em><span class="optional">[</span>, <em>key</em><span class="optional">[</span>, <em>filename</em><span class="optional">[</span>, <em>plist</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mailcap.html#findmatch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mailcap.findmatch" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a 2-tuple; the first element is a string containing the command line to
-be executed (which can be passed to <a class="reference internal" href="../generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a>), and the second element
+be executed (which can be passed to <a class="reference internal" href="../generated/generated/os.system.html#os.system" title="os.system"><code class="xref py py-func docutils literal"><span class="pre">os.system()</span></code></a>), and the second element
 is the mailcap entry for a given MIME type.  If no matching MIME type can be
 found, <code class="docutils literal"><span class="pre">(None,</span> <span class="pre">None)</span></code> is returned.</p>
 <p><em>key</em> is the name of the field desired, which represents the type of activity to
@@ -222,7 +222,7 @@ of the parameter named &#8216;foo&#8217;.  For example, if the command line <cod
 <code class="docutils literal"><span class="pre">'showpartial</span> <span class="pre">1</span> <span class="pre">2</span> <span class="pre">3'</span></code>.</p>
 <p>In a mailcap file, the &#8220;test&#8221; field can optionally be specified to test some
 external condition (such as the machine architecture, or the window system in
-use) to determine whether or not the mailcap line applies.  <a class="reference internal" href="../generated/mailcap.findmatch.html#mailcap.findmatch" title="mailcap.findmatch"><code class="xref py py-func docutils literal"><span class="pre">findmatch()</span></code></a>
+use) to determine whether or not the mailcap line applies.  <a class="reference internal" href="../generated/generated/mailcap.findmatch.html#mailcap.findmatch" title="mailcap.findmatch"><code class="xref py py-func docutils literal"><span class="pre">findmatch()</span></code></a>
 will automatically check such conditions and skip the entry if the check fails.</p>
 </dd></dl>
 
@@ -230,7 +230,7 @@ will automatically check such conditions and skip the entry if the check fails.<
 <dt id="mailcap.getcaps">
 <code class="descclassname">mailcap.</code><code class="descname">getcaps</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mailcap.html#getcaps"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mailcap.getcaps" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a dictionary mapping MIME types to a list of mailcap file entries. This
-dictionary must be passed to the <a class="reference internal" href="../generated/mailcap.findmatch.html#mailcap.findmatch" title="mailcap.findmatch"><code class="xref py py-func docutils literal"><span class="pre">findmatch()</span></code></a> function.  An entry is stored
+dictionary must be passed to the <a class="reference internal" href="../generated/generated/mailcap.findmatch.html#mailcap.findmatch" title="mailcap.findmatch"><code class="xref py py-func docutils literal"><span class="pre">findmatch()</span></code></a> function.  An entry is stored
 as a list of dictionaries, but it shouldn&#8217;t be necessary to know the details of
 this representation.</p>
 <p>The information is derived from all of the mailcap files found on the system.

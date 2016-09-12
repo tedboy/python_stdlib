@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="threading.Thread" href="generated/threading.Thread.html"/>
+        <link rel="next" title="threading.BoundedSemaphore()" href="generated/threading.BoundedSemaphore.html"/>
         <link rel="prev" title="select.error" href="select.error.html"/> 
 
   
@@ -82,12 +82,86 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="select.html"><code class="docutils literal"><span class="pre">select</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">threading</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.BoundedSemaphore.html"><code class="docutils literal"><span class="pre">threading.BoundedSemaphore()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.Condition.html"><code class="docutils literal"><span class="pre">threading.Condition()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.Event.html"><code class="docutils literal"><span class="pre">threading.Event()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.Lock.html"><code class="docutils literal"><span class="pre">threading.Lock()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.RLock.html"><code class="docutils literal"><span class="pre">threading.RLock()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.Semaphore.html"><code class="docutils literal"><span class="pre">threading.Semaphore()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.Timer.html"><code class="docutils literal"><span class="pre">threading.Timer()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.activeCount.html"><code class="docutils literal"><span class="pre">threading.activeCount()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.active_count.html"><code class="docutils literal"><span class="pre">threading.active_count()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.currentThread.html"><code class="docutils literal"><span class="pre">threading.currentThread()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.current_thread.html"><code class="docutils literal"><span class="pre">threading.current_thread()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.enumerate.html"><code class="docutils literal"><span class="pre">threading.enumerate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.setprofile.html"><code class="docutils literal"><span class="pre">threading.setprofile()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.settrace.html"><code class="docutils literal"><span class="pre">threading.settrace()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.stack_size.html"><code class="docutils literal"><span class="pre">threading.stack_size()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.Thread.html"><code class="docutils literal"><span class="pre">threading.Thread</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/threading.local.html"><code class="docutils literal"><span class="pre">threading.local</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="threading.ThreadError.html">threading.ThreadError</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="thread.html"><code class="docutils literal"><span class="pre">thread</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="dummy_threading.html"><code class="docutils literal"><span class="pre">dummy_threading</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="dummy_thread.html"><code class="docutils literal"><span class="pre">dummy_thread</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="multiprocessing.html"><code class="docutils literal"><span class="pre">multiprocessing</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mmap.html"><code class="docutils literal"><span class="pre">mmap</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="readline.html"><code class="docutils literal"><span class="pre">readline</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="rlcompleter.html"><code class="docutils literal"><span class="pre">rlcompleter</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -153,6 +227,61 @@
 <p>Thread module emulating a subset of Java&#8217;s threading model.</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/threading.BoundedSemaphore.html#threading.BoundedSemaphore" title="threading.BoundedSemaphore"><code class="xref py py-obj docutils literal"><span class="pre">BoundedSemaphore</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>A factory function that returns a new bounded semaphore.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/threading.Condition.html#threading.Condition" title="threading.Condition"><code class="xref py py-obj docutils literal"><span class="pre">Condition</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Factory function that returns a new condition variable object.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/threading.Event.html#threading.Event" title="threading.Event"><code class="xref py py-obj docutils literal"><span class="pre">Event</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>A factory function that returns a new event.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/threading.Lock.html#threading.Lock" title="threading.Lock"><code class="xref py py-obj docutils literal"><span class="pre">Lock</span></code></a>(...)</td>
+<td>Create a new lock object.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/threading.RLock.html#threading.RLock" title="threading.RLock"><code class="xref py py-obj docutils literal"><span class="pre">RLock</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Factory function that returns a new reentrant lock.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/threading.Semaphore.html#threading.Semaphore" title="threading.Semaphore"><code class="xref py py-obj docutils literal"><span class="pre">Semaphore</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>A factory function that returns a new semaphore.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/threading.Timer.html#threading.Timer" title="threading.Timer"><code class="xref py py-obj docutils literal"><span class="pre">Timer</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Factory function to create a Timer object.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/threading.activeCount.html#threading.activeCount" title="threading.activeCount"><code class="xref py py-obj docutils literal"><span class="pre">activeCount</span></code></a>()</td>
+<td>Return the number of Thread objects currently alive.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/threading.active_count.html#threading.active_count" title="threading.active_count"><code class="xref py py-obj docutils literal"><span class="pre">active_count</span></code></a>()</td>
+<td>Return the number of Thread objects currently alive.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/threading.currentThread.html#threading.currentThread" title="threading.currentThread"><code class="xref py py-obj docutils literal"><span class="pre">currentThread</span></code></a>()</td>
+<td>Return the current Thread object, corresponding to the caller&#8217;s thread of control.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/threading.current_thread.html#threading.current_thread" title="threading.current_thread"><code class="xref py py-obj docutils literal"><span class="pre">current_thread</span></code></a>()</td>
+<td>Return the current Thread object, corresponding to the caller&#8217;s thread of control.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/threading.enumerate.html#threading.enumerate" title="threading.enumerate"><code class="xref py py-obj docutils literal"><span class="pre">enumerate</span></code></a>()</td>
+<td>Return a list of all Thread objects currently alive.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/threading.setprofile.html#threading.setprofile" title="threading.setprofile"><code class="xref py py-obj docutils literal"><span class="pre">setprofile</span></code></a>(func)</td>
+<td>Set a profile function for all threads started from the threading module.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/threading.settrace.html#threading.settrace" title="threading.settrace"><code class="xref py py-obj docutils literal"><span class="pre">settrace</span></code></a>(func)</td>
+<td>Set a trace function for all threads started from the threading module.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/threading.stack_size.html#threading.stack_size" title="threading.stack_size"><code class="xref py py-obj docutils literal"><span class="pre">stack_size</span></code></a>(([size])&nbsp;-&gt;&nbsp;size)</td>
+<td>Return the thread stack size used when creating new threads.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -196,7 +325,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/threading.Thread.html" class="btn btn-neutral float-right" title="threading.Thread" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/threading.BoundedSemaphore.html" class="btn btn-neutral float-right" title="threading.BoundedSemaphore()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="select.error.html" class="btn btn-neutral" title="select.error" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

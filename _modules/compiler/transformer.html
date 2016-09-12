@@ -183,7 +183,7 @@
 <span class="kn">from</span> <span class="nn">compiler.consts</span> <span class="kn">import</span> <span class="n">CO_VARARGS</span><span class="p">,</span> <span class="n">CO_VARKEYWORDS</span>
 <span class="kn">from</span> <span class="nn">compiler.consts</span> <span class="kn">import</span> <span class="n">OP_ASSIGN</span><span class="p">,</span> <span class="n">OP_DELETE</span><span class="p">,</span> <span class="n">OP_APPLY</span>
 
-<div class="viewcode-block" id="parseFile"><a class="viewcode-back" href="../../generated/compiler.parseFile.html#compiler.parseFile">[docs]</a><span class="k">def</span> <span class="nf">parseFile</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<div class="viewcode-block" id="parseFile"><a class="viewcode-back" href="../../generated/generated/compiler.parseFile.html#compiler.parseFile">[docs]</a><span class="k">def</span> <span class="nf">parseFile</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s2">&quot;U&quot;</span><span class="p">)</span>
     <span class="c1"># XXX The parser API tolerates files without a trailing newline,</span>
     <span class="c1"># but not strings without a trailing newline.  Always add an extra</span>
@@ -193,7 +193,7 @@
     <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">parse</span><span class="p">(</span><span class="n">src</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="parse"><a class="viewcode-back" href="../../generated/compiler.parse.html#compiler.parse">[docs]</a><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;exec&quot;</span><span class="p">):</span>
+<div class="viewcode-block" id="parse"><a class="viewcode-back" href="../../generated/generated/compiler.parse.html#compiler.parse">[docs]</a><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;exec&quot;</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;exec&quot;</span> <span class="ow">or</span> <span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;single&quot;</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">Transformer</span><span class="p">()</span><span class="o">.</span><span class="n">parsesuite</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;eval&quot;</span><span class="p">:</span>

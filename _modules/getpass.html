@@ -170,7 +170,7 @@
 <div class="viewcode-block" id="GetPassWarning"><a class="viewcode-back" href="../generated/getpass.GetPassWarning.html#getpass.GetPassWarning">[docs]</a><span class="k">class</span> <span class="nc">GetPassWarning</span><span class="p">(</span><span class="ne">UserWarning</span><span class="p">):</span> <span class="k">pass</span></div>
 
 
-<div class="viewcode-block" id="unix_getpass"><a class="viewcode-back" href="../generated/getpass.unix_getpass.html#getpass.unix_getpass">[docs]</a><span class="k">def</span> <span class="nf">unix_getpass</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;Password: &#39;</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="unix_getpass"><a class="viewcode-back" href="../generated/generated/getpass.unix_getpass.html#getpass.unix_getpass">[docs]</a><span class="k">def</span> <span class="nf">unix_getpass</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;Password: &#39;</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Prompt for a password, with echo turned off.</span>
 
 <span class="sd">    Args:</span>
@@ -233,7 +233,7 @@
     <span class="k">return</span> <span class="n">passwd</span></div>
 
 
-<div class="viewcode-block" id="win_getpass"><a class="viewcode-back" href="../generated/getpass.win_getpass.html#getpass.win_getpass">[docs]</a><span class="k">def</span> <span class="nf">win_getpass</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;Password: &#39;</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="win_getpass"><a class="viewcode-back" href="../generated/generated/getpass.win_getpass.html#getpass.win_getpass">[docs]</a><span class="k">def</span> <span class="nf">win_getpass</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;Password: &#39;</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Prompt for password with echo off, using Windows getch().&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">sys</span><span class="o">.</span><span class="n">__stdin__</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">fallback_getpass</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">stream</span><span class="p">)</span>
@@ -256,7 +256,7 @@
     <span class="k">return</span> <span class="n">pw</span></div>
 
 
-<div class="viewcode-block" id="fallback_getpass"><a class="viewcode-back" href="../generated/getpass.fallback_getpass.html#getpass.fallback_getpass">[docs]</a><span class="k">def</span> <span class="nf">fallback_getpass</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;Password: &#39;</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="fallback_getpass"><a class="viewcode-back" href="../generated/generated/getpass.fallback_getpass.html#getpass.fallback_getpass">[docs]</a><span class="k">def</span> <span class="nf">fallback_getpass</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;Password: &#39;</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;Can not control echo on the terminal.&quot;</span><span class="p">,</span> <span class="n">GetPassWarning</span><span class="p">,</span>
                   <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">stream</span><span class="p">:</span>
@@ -285,7 +285,7 @@
     <span class="k">return</span> <span class="n">line</span>
 
 
-<div class="viewcode-block" id="getuser"><a class="viewcode-back" href="../generated/getpass.getuser.html#getpass.getuser">[docs]</a><span class="k">def</span> <span class="nf">getuser</span><span class="p">():</span>
+<div class="viewcode-block" id="getuser"><a class="viewcode-back" href="../generated/generated/getpass.getuser.html#getpass.getuser">[docs]</a><span class="k">def</span> <span class="nf">getuser</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Get the username from the environment or password database.</span>
 
 <span class="sd">    First try various environment variables, then the password</span>

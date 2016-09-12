@@ -238,7 +238,7 @@
             <span class="n">line</span> <span class="o">=</span> <span class="n">line</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">peek</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">peek</span> <span class="o">=</span> <span class="bp">None</span></div></div>
 
-<div class="viewcode-block" id="mime_decode"><a class="viewcode-back" href="../generated/mimify.mime_decode.html#mimify.mime_decode">[docs]</a><span class="k">def</span> <span class="nf">mime_decode</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+<div class="viewcode-block" id="mime_decode"><a class="viewcode-back" href="../generated/generated/mimify.mime_decode.html#mimify.mime_decode">[docs]</a><span class="k">def</span> <span class="nf">mime_decode</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decode a single line of quoted-printable text to 8bit.&quot;&quot;&quot;</span>
     <span class="n">newline</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
     <span class="n">pos</span> <span class="o">=</span> <span class="mi">0</span>
@@ -251,7 +251,7 @@
         <span class="n">pos</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">end</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">newline</span> <span class="o">+</span> <span class="n">line</span><span class="p">[</span><span class="n">pos</span><span class="p">:]</span></div>
 
-<div class="viewcode-block" id="mime_decode_header"><a class="viewcode-back" href="../generated/mimify.mime_decode_header.html#mimify.mime_decode_header">[docs]</a><span class="k">def</span> <span class="nf">mime_decode_header</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+<div class="viewcode-block" id="mime_decode_header"><a class="viewcode-back" href="../generated/generated/mimify.mime_decode_header.html#mimify.mime_decode_header">[docs]</a><span class="k">def</span> <span class="nf">mime_decode_header</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Decode a header line to 8bit.&quot;&quot;&quot;</span>
     <span class="n">newline</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
     <span class="n">pos</span> <span class="o">=</span> <span class="mi">0</span>
@@ -266,7 +266,7 @@
         <span class="n">pos</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">end</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">newline</span> <span class="o">+</span> <span class="n">line</span><span class="p">[</span><span class="n">pos</span><span class="p">:]</span></div>
 
-<div class="viewcode-block" id="unmimify_part"><a class="viewcode-back" href="../generated/mimify.unmimify_part.html#mimify.unmimify_part">[docs]</a><span class="k">def</span> <span class="nf">unmimify_part</span><span class="p">(</span><span class="n">ifile</span><span class="p">,</span> <span class="n">ofile</span><span class="p">,</span> <span class="n">decode_base64</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="unmimify_part"><a class="viewcode-back" href="../generated/generated/mimify.unmimify_part.html#mimify.unmimify_part">[docs]</a><span class="k">def</span> <span class="nf">unmimify_part</span><span class="p">(</span><span class="n">ifile</span><span class="p">,</span> <span class="n">ofile</span><span class="p">,</span> <span class="n">decode_base64</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert a quoted-printable part of a MIME mail message to 8bit.&quot;&quot;&quot;</span>
     <span class="n">multipart</span> <span class="o">=</span> <span class="bp">None</span>
     <span class="n">quoted_printable</span> <span class="o">=</span> <span class="mi">0</span>
@@ -351,7 +351,7 @@
         <span class="k">if</span> <span class="n">line</span><span class="p">:</span>
             <span class="n">ofile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">pref</span> <span class="o">+</span> <span class="n">line</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="unmimify"><a class="viewcode-back" href="../generated/mimify.unmimify.html#mimify.unmimify">[docs]</a><span class="k">def</span> <span class="nf">unmimify</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span> <span class="n">outfile</span><span class="p">,</span> <span class="n">decode_base64</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="unmimify"><a class="viewcode-back" href="../generated/generated/mimify.unmimify.html#mimify.unmimify">[docs]</a><span class="k">def</span> <span class="nf">unmimify</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span> <span class="n">outfile</span><span class="p">,</span> <span class="n">decode_base64</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert quoted-printable parts of a MIME mail message to 8bit.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span> <span class="o">==</span> <span class="nb">type</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
         <span class="n">ifile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>
@@ -372,7 +372,7 @@
 <span class="n">mime_char</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;[=</span><span class="se">\177</span><span class="s1">-</span><span class="se">\377</span><span class="s1">]&#39;</span><span class="p">)</span> <span class="c1"># quote these chars in body</span>
 <span class="n">mime_header_char</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;[=?</span><span class="se">\177</span><span class="s1">-</span><span class="se">\377</span><span class="s1">]&#39;</span><span class="p">)</span> <span class="c1"># quote these in header</span>
 
-<div class="viewcode-block" id="mime_encode"><a class="viewcode-back" href="../generated/mimify.mime_encode.html#mimify.mime_encode">[docs]</a><span class="k">def</span> <span class="nf">mime_encode</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">header</span><span class="p">):</span>
+<div class="viewcode-block" id="mime_encode"><a class="viewcode-back" href="../generated/generated/mimify.mime_encode.html#mimify.mime_encode">[docs]</a><span class="k">def</span> <span class="nf">mime_encode</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">header</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Code a single line as quoted-printable.</span>
 <span class="sd">    If header is set, quote some extra characters.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">header</span><span class="p">:</span>
@@ -406,7 +406,7 @@
 
 <span class="n">mime_header</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;([ </span><span class="se">\t</span><span class="s1">(]|^)([-a-zA-Z0-9_+]*[</span><span class="se">\177</span><span class="s1">-</span><span class="se">\377</span><span class="s1">][-a-zA-Z0-9_+</span><span class="se">\177</span><span class="s1">-</span><span class="se">\377</span><span class="s1">]*)(?=[ </span><span class="se">\t</span><span class="s1">)]|</span><span class="se">\n</span><span class="s1">)&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="mime_encode_header"><a class="viewcode-back" href="../generated/mimify.mime_encode_header.html#mimify.mime_encode_header">[docs]</a><span class="k">def</span> <span class="nf">mime_encode_header</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+<div class="viewcode-block" id="mime_encode_header"><a class="viewcode-back" href="../generated/generated/mimify.mime_encode_header.html#mimify.mime_encode_header">[docs]</a><span class="k">def</span> <span class="nf">mime_encode_header</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Code a single header line as quoted-printable.&quot;&quot;&quot;</span>
     <span class="n">newline</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
     <span class="n">pos</span> <span class="o">=</span> <span class="mi">0</span>
@@ -424,7 +424,7 @@
 <span class="n">cte</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;^content-transfer-encoding:&#39;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="p">)</span>
 <span class="n">iso_char</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;[</span><span class="se">\177</span><span class="s1">-</span><span class="se">\377</span><span class="s1">]&#39;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="mimify_part"><a class="viewcode-back" href="../generated/mimify.mimify_part.html#mimify.mimify_part">[docs]</a><span class="k">def</span> <span class="nf">mimify_part</span><span class="p">(</span><span class="n">ifile</span><span class="p">,</span> <span class="n">ofile</span><span class="p">,</span> <span class="n">is_mime</span><span class="p">):</span>
+<div class="viewcode-block" id="mimify_part"><a class="viewcode-back" href="../generated/generated/mimify.mimify_part.html#mimify.mimify_part">[docs]</a><span class="k">def</span> <span class="nf">mimify_part</span><span class="p">(</span><span class="n">ifile</span><span class="p">,</span> <span class="n">ofile</span><span class="p">,</span> <span class="n">is_mime</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert an 8bit part of a MIME mail message to quoted-printable.&quot;&quot;&quot;</span>
     <span class="n">has_cte</span> <span class="o">=</span> <span class="n">is_qp</span> <span class="o">=</span> <span class="n">is_base64</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">multipart</span> <span class="o">=</span> <span class="bp">None</span>
@@ -559,7 +559,7 @@
                 <span class="n">line</span> <span class="o">=</span> <span class="n">mime_encode</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
             <span class="n">ofile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="mimify"><a class="viewcode-back" href="../generated/mimify.mimify.html#mimify.mimify">[docs]</a><span class="k">def</span> <span class="nf">mimify</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span> <span class="n">outfile</span><span class="p">):</span>
+<div class="viewcode-block" id="mimify"><a class="viewcode-back" href="../generated/generated/mimify.mimify.html#mimify.mimify">[docs]</a><span class="k">def</span> <span class="nf">mimify</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span> <span class="n">outfile</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Convert 8bit parts of a MIME mail message to quoted-printable.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span> <span class="o">==</span> <span class="nb">type</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
         <span class="n">ifile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>

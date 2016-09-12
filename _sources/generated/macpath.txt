@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       S_IFMT
       S_IMODE
@@ -46,6 +46,47 @@
       splitdrive
       splitext
       walk
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/macpath.S_IFMT
+       generated/macpath.S_IMODE
+       generated/macpath.S_ISBLK
+       generated/macpath.S_ISCHR
+       generated/macpath.S_ISDIR
+       generated/macpath.S_ISFIFO
+       generated/macpath.S_ISLNK
+       generated/macpath.S_ISREG
+       generated/macpath.S_ISSOCK
+       generated/macpath.abspath
+       generated/macpath.basename
+       generated/macpath.commonprefix
+       generated/macpath.dirname
+       generated/macpath.exists
+       generated/macpath.expanduser
+       generated/macpath.expandvars
+       generated/macpath.getatime
+       generated/macpath.getctime
+       generated/macpath.getmtime
+       generated/macpath.getsize
+       generated/macpath.isabs
+       generated/macpath.isdir
+       generated/macpath.isfile
+       generated/macpath.islink
+       generated/macpath.ismount
+       generated/macpath.join
+       generated/macpath.lexists
+       generated/macpath.normcase
+       generated/macpath.normpath
+       generated/macpath.realpath
+       generated/macpath.split
+       generated/macpath.splitdrive
+       generated/macpath.splitext
+       generated/macpath.walk
+      
    
    
 

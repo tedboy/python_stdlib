@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       format
       formatstring
@@ -21,6 +21,22 @@
       setfirstweekday
       timegm
       weekday
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/calendar.format
+       generated/calendar.formatstring
+       generated/calendar.isleap
+       generated/calendar.leapdays
+       generated/calendar.main
+       generated/calendar.monthrange
+       generated/calendar.setfirstweekday
+       generated/calendar.timegm
+       generated/calendar.weekday
+      
    
    
 

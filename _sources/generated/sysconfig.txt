@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       get_config_h_filename
       get_config_var
@@ -25,6 +25,26 @@
       is_python_build
       parse_config_h
       realpath
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/sysconfig.get_config_h_filename
+       generated/sysconfig.get_config_var
+       generated/sysconfig.get_config_vars
+       generated/sysconfig.get_makefile_filename
+       generated/sysconfig.get_path
+       generated/sysconfig.get_path_names
+       generated/sysconfig.get_paths
+       generated/sysconfig.get_platform
+       generated/sysconfig.get_python_version
+       generated/sysconfig.get_scheme_names
+       generated/sysconfig.is_python_build
+       generated/sysconfig.parse_config_h
+       generated/sysconfig.realpath
+      
    
    
 

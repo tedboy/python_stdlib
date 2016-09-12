@@ -185,7 +185,7 @@ in-place, and a function for random sampling without replacement.</p>
 <p>On the real line, there are functions to compute uniform, normal (Gaussian),
 lognormal, negative exponential, gamma, and beta distributions. For generating
 distributions of angles, the von Mises distribution is available.</p>
-<p>Almost all module functions depend on the basic function <a class="reference internal" href="../generated/random.random.html#random.random" title="random.random"><code class="xref py py-func docutils literal"><span class="pre">random()</span></code></a>, which
+<p>Almost all module functions depend on the basic function <a class="reference internal" href="../generated/generated/random.random.html#random.random" title="random.random"><code class="xref py py-func docutils literal"><span class="pre">random()</span></code></a>, which
 generates a random float uniformly in the semi-open range [0.0, 1.0).  Python
 uses the Mersenne Twister as the core generator.  It produces 53-bit precision
 floats and has a period of 2**19937-1.  The underlying implementation in C is
@@ -206,7 +206,7 @@ basic generator of your own devising: in that case, override the <a class="refer
 <a class="reference internal" href="../generated/generated/random.Random.getrandbits.html#random.Random.getrandbits" title="random.Random.getrandbits"><code class="xref py py-meth docutils literal"><span class="pre">getrandbits()</span></code></a> method &#8212; this
 allows <a class="reference internal" href="#random.randrange" title="random.randrange"><code class="xref py py-meth docutils literal"><span class="pre">randrange()</span></code></a> to produce selections over an arbitrarily large range.</p>
 <div class="versionadded">
-<p><span class="versionmodified">New in version 2.4: </span>the <a class="reference internal" href="../generated/random.getrandbits.html#random.getrandbits" title="random.getrandbits"><code class="xref py py-meth docutils literal"><span class="pre">getrandbits()</span></code></a> method.</p>
+<p><span class="versionmodified">New in version 2.4: </span>the <a class="reference internal" href="../generated/generated/random.getrandbits.html#random.getrandbits" title="random.getrandbits"><code class="xref py py-meth docutils literal"><span class="pre">getrandbits()</span></code></a> method.</p>
 </div>
 <p>As an example of subclassing, the <a class="reference internal" href="../generated/random.html#module-random" title="random"><code class="xref py py-mod docutils literal"><span class="pre">random</span></code></a> module provides the
 <a class="reference internal" href="../generated/generated/random.WichmannHill.html#random.WichmannHill" title="random.WichmannHill"><code class="xref py py-class docutils literal"><span class="pre">WichmannHill</span></code></a> class that implements an alternative generator in pure
@@ -220,12 +220,12 @@ recent variant that repairs these flaws.</p>
 <p><span class="versionmodified">Changed in version 2.3: </span>MersenneTwister replaced Wichmann-Hill as the default generator.</p>
 </div>
 <p>The <a class="reference internal" href="../generated/random.html#module-random" title="random"><code class="xref py py-mod docutils literal"><span class="pre">random</span></code></a> module also provides the <a class="reference internal" href="../generated/generated/random.SystemRandom.html#random.SystemRandom" title="random.SystemRandom"><code class="xref py py-class docutils literal"><span class="pre">SystemRandom</span></code></a> class which
-uses the system function <a class="reference internal" href="../generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a> to generate random numbers
+uses the system function <a class="reference internal" href="../generated/generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a> to generate random numbers
 from sources provided by the operating system.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">The pseudo-random generators of this module should not be used for
-security purposes.  Use <a class="reference internal" href="../generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a> or <a class="reference internal" href="../generated/generated/random.SystemRandom.html#random.SystemRandom" title="random.SystemRandom"><code class="xref py py-class docutils literal"><span class="pre">SystemRandom</span></code></a> if
+security purposes.  Use <a class="reference internal" href="../generated/generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a> or <a class="reference internal" href="../generated/generated/random.SystemRandom.html#random.SystemRandom" title="random.SystemRandom"><code class="xref py py-class docutils literal"><span class="pre">SystemRandom</span></code></a> if
 you require a cryptographically secure pseudo-random number generator.</p>
 </div>
 <p>Bookkeeping functions:</p>
@@ -236,7 +236,7 @@ you require a cryptographically secure pseudo-random number generator.</p>
 <span class="xref std std-term">hashable</span> object. If <em>x</em> is omitted or <code class="docutils literal"><span class="pre">None</span></code>, current system time is used;
 current system time is also used to initialize the generator when the module is
 first imported.  If randomness sources are provided by the operating system,
-they are used instead of the system time (see the <a class="reference internal" href="../generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a> function
+they are used instead of the system time (see the <a class="reference internal" href="../generated/generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a> function
 for details on availability).</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.4: </span>formerly, operating system resources were not used.</p>
@@ -291,7 +291,7 @@ jumps to another state likely to be separated by many steps.</p>
 <code class="descclassname">random.</code><code class="descname">getrandbits</code><span class="sig-paren">(</span><em>k</em><span class="sig-paren">)</span><a class="headerlink" href="#random.getrandbits" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a python <a class="reference internal" href="../02_builtin_functions/02.html#long" title="long"><code class="xref py py-class docutils literal"><span class="pre">long</span></code></a> int with <em>k</em> random bits. This method is supplied
 with the MersenneTwister generator and some other generators may also provide it
-as an optional part of the API. When available, <a class="reference internal" href="../generated/random.getrandbits.html#random.getrandbits" title="random.getrandbits"><code class="xref py py-meth docutils literal"><span class="pre">getrandbits()</span></code></a> enables
+as an optional part of the API. When available, <a class="reference internal" href="../generated/generated/random.getrandbits.html#random.getrandbits" title="random.getrandbits"><code class="xref py py-meth docutils literal"><span class="pre">getrandbits()</span></code></a> enables
 <a class="reference internal" href="#random.randrange" title="random.randrange"><code class="xref py py-meth docutils literal"><span class="pre">randrange()</span></code></a> to handle arbitrarily large ranges.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.4.</span></p>
@@ -331,7 +331,7 @@ raises <a class="reference internal" href="../generated/exceptions.IndexError.ht
 <code class="descclassname">random.</code><code class="descname">shuffle</code><span class="sig-paren">(</span><em>x</em><span class="optional">[</span>, <em>random</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#random.shuffle" title="Permalink to this definition">¶</a></dt>
 <dd><p>Shuffle the sequence <em>x</em> in place. The optional argument <em>random</em> is a
 0-argument function returning a random float in [0.0, 1.0); by default, this is
-the function <a class="reference internal" href="../generated/random.random.html#random.random" title="random.random"><code class="xref py py-func docutils literal"><span class="pre">random()</span></code></a>.</p>
+the function <a class="reference internal" href="../generated/generated/random.random.html#random.random" title="random.random"><code class="xref py py-func docutils literal"><span class="pre">random()</span></code></a>.</p>
 <p>Note that for even rather small <code class="docutils literal"><span class="pre">len(x)</span></code>, the total number of permutations of
 <em>x</em> is larger than the period of most random number generators; this implies
 that most permutations of a long sequence can never be generated.</p>
@@ -487,7 +487,7 @@ more than about 2**24 distinct internal states in all.</p>
 <dl class="class">
 <dt id="random.SystemRandom">
 <em class="property">class </em><code class="descclassname">random.</code><code class="descname">SystemRandom</code><span class="sig-paren">(</span><span class="optional">[</span><em>seed</em><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/random.html#SystemRandom"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#random.SystemRandom" title="Permalink to this definition">¶</a></dt>
-<dd><p>Class that uses the <a class="reference internal" href="../generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a> function for generating random numbers
+<dd><p>Class that uses the <a class="reference internal" href="../generated/generated/os.urandom.html#os.urandom" title="os.urandom"><code class="xref py py-func docutils literal"><span class="pre">os.urandom()</span></code></a> function for generating random numbers
 from sources provided by the operating system. Not available on all systems.
 Does not rely on software state and sequences are not reproducible. Accordingly,
 the <a class="reference internal" href="#random.seed" title="random.seed"><code class="xref py py-meth docutils literal"><span class="pre">seed()</span></code></a> and <a class="reference internal" href="#random.jumpahead" title="random.jumpahead"><code class="xref py py-meth docutils literal"><span class="pre">jumpahead()</span></code></a> methods have no effect and are ignored.

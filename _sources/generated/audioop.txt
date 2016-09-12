@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       add
       adpcm2lin
@@ -37,6 +37,38 @@
       tomono
       tostereo
       ulaw2lin
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/audioop.add
+       generated/audioop.adpcm2lin
+       generated/audioop.alaw2lin
+       generated/audioop.avg
+       generated/audioop.avgpp
+       generated/audioop.bias
+       generated/audioop.cross
+       generated/audioop.findfactor
+       generated/audioop.findfit
+       generated/audioop.findmax
+       generated/audioop.getsample
+       generated/audioop.lin2adpcm
+       generated/audioop.lin2alaw
+       generated/audioop.lin2lin
+       generated/audioop.lin2ulaw
+       generated/audioop.max
+       generated/audioop.maxpp
+       generated/audioop.minmax
+       generated/audioop.mul
+       generated/audioop.ratecv
+       generated/audioop.reverse
+       generated/audioop.rms
+       generated/audioop.tomono
+       generated/audioop.tostereo
+       generated/audioop.ulaw2lin
+      
    
    
 

@@ -201,8 +201,8 @@ supported for the latter conversion.</p>
 functions are the normal interface to this module, but some applications may be
 interested in the class as well.</p>
 <p>The functions described below provide the primary interface for this module.  If
-the module has not been initialized, they will call <a class="reference internal" href="../generated/mimetypes.init.html#mimetypes.init" title="mimetypes.init"><code class="xref py py-func docutils literal"><span class="pre">init()</span></code></a> if they rely on
-the information <a class="reference internal" href="../generated/mimetypes.init.html#mimetypes.init" title="mimetypes.init"><code class="xref py py-func docutils literal"><span class="pre">init()</span></code></a> sets up.</p>
+the module has not been initialized, they will call <a class="reference internal" href="../generated/generated/mimetypes.init.html#mimetypes.init" title="mimetypes.init"><code class="xref py py-func docutils literal"><span class="pre">init()</span></code></a> if they rely on
+the information <a class="reference internal" href="../generated/generated/mimetypes.init.html#mimetypes.init" title="mimetypes.init"><code class="xref py py-func docutils literal"><span class="pre">init()</span></code></a> sets up.</p>
 <dl class="function">
 <dt id="mimetypes.guess_type">
 <code class="descclassname">mimetypes.</code><code class="descname">guess_type</code><span class="sig-paren">(</span><em>url</em>, <em>strict=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mimetypes.html#guess_type"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mimetypes.guess_type" title="Permalink to this definition">¶</a></dt>
@@ -215,8 +215,8 @@ the information <a class="reference internal" href="../generated/mimetypes.init.
 return value is a list of strings giving all possible filename extensions,
 including the leading dot (<code class="docutils literal"><span class="pre">'.'</span></code>).  The extensions are not guaranteed to have
 been associated with any particular data stream, but would be mapped to the MIME
-type <em>type</em> by <a class="reference internal" href="../generated/mimetypes.guess_type.html#mimetypes.guess_type" title="mimetypes.guess_type"><code class="xref py py-func docutils literal"><span class="pre">guess_type()</span></code></a>.</p>
-<p>The optional <em>strict</em> argument has the same meaning as with the <a class="reference internal" href="../generated/mimetypes.guess_type.html#mimetypes.guess_type" title="mimetypes.guess_type"><code class="xref py py-func docutils literal"><span class="pre">guess_type()</span></code></a> function.</p>
+type <em>type</em> by <a class="reference internal" href="../generated/generated/mimetypes.guess_type.html#mimetypes.guess_type" title="mimetypes.guess_type"><code class="xref py py-func docutils literal"><span class="pre">guess_type()</span></code></a>.</p>
+<p>The optional <em>strict</em> argument has the same meaning as with the <a class="reference internal" href="../generated/generated/mimetypes.guess_type.html#mimetypes.guess_type" title="mimetypes.guess_type"><code class="xref py py-func docutils literal"><span class="pre">guess_type()</span></code></a> function.</p>
 </dd></dl>
 
 <dl class="function">
@@ -226,9 +226,9 @@ type <em>type</em> by <a class="reference internal" href="../generated/mimetypes
 return value is a string giving a filename extension, including the leading dot
 (<code class="docutils literal"><span class="pre">'.'</span></code>).  The extension is not guaranteed to have been associated with any
 particular data stream, but would be mapped to the MIME type <em>type</em> by
-<a class="reference internal" href="../generated/mimetypes.guess_type.html#mimetypes.guess_type" title="mimetypes.guess_type"><code class="xref py py-func docutils literal"><span class="pre">guess_type()</span></code></a>.  If no extension can be guessed for <em>type</em>, <code class="docutils literal"><span class="pre">None</span></code> is
+<a class="reference internal" href="../generated/generated/mimetypes.guess_type.html#mimetypes.guess_type" title="mimetypes.guess_type"><code class="xref py py-func docutils literal"><span class="pre">guess_type()</span></code></a>.  If no extension can be guessed for <em>type</em>, <code class="docutils literal"><span class="pre">None</span></code> is
 returned.</p>
-<p>The optional <em>strict</em> argument has the same meaning as with the <a class="reference internal" href="../generated/mimetypes.guess_type.html#mimetypes.guess_type" title="mimetypes.guess_type"><code class="xref py py-func docutils literal"><span class="pre">guess_type()</span></code></a> function.</p>
+<p>The optional <em>strict</em> argument has the same meaning as with the <a class="reference internal" href="../generated/generated/mimetypes.guess_type.html#mimetypes.guess_type" title="mimetypes.guess_type"><code class="xref py py-func docutils literal"><span class="pre">guess_type()</span></code></a> function.</p>
 </dd></dl>
 
 <p>Some additional functions and data items are available for controlling the
@@ -241,7 +241,7 @@ of file names which should be used to augment the default type map.  If omitted,
 the file names to use are taken from <a class="reference internal" href="#mimetypes.knownfiles" title="mimetypes.knownfiles"><code class="xref py py-const docutils literal"><span class="pre">knownfiles</span></code></a>; on Windows, the
 current registry settings are loaded.  Each file named in <em>files</em> or
 <a class="reference internal" href="#mimetypes.knownfiles" title="mimetypes.knownfiles"><code class="xref py py-const docutils literal"><span class="pre">knownfiles</span></code></a> takes precedence over those named before it.  Calling
-<a class="reference internal" href="../generated/mimetypes.init.html#mimetypes.init" title="mimetypes.init"><code class="xref py py-func docutils literal"><span class="pre">init()</span></code></a> repeatedly is allowed.</p>
+<a class="reference internal" href="../generated/generated/mimetypes.init.html#mimetypes.init" title="mimetypes.init"><code class="xref py py-func docutils literal"><span class="pre">init()</span></code></a> repeatedly is allowed.</p>
 <p>Specifying an empty list for <em>files</em> will prevent the system defaults from
 being applied: only the well-known values will be present from a built-in list.</p>
 <div class="versionchanged">
@@ -272,7 +272,7 @@ official MIME types, otherwise to the non-standard ones.</p>
 <dt id="mimetypes.inited">
 <code class="descclassname">mimetypes.</code><code class="descname">inited</code><a class="headerlink" href="#mimetypes.inited" title="Permalink to this definition">¶</a></dt>
 <dd><p>Flag indicating whether or not the global data structures have been initialized.
-This is set to <code class="docutils literal"><span class="pre">True</span></code> by <a class="reference internal" href="../generated/mimetypes.init.html#mimetypes.init" title="mimetypes.init"><code class="xref py py-func docutils literal"><span class="pre">init()</span></code></a>.</p>
+This is set to <code class="docutils literal"><span class="pre">True</span></code> by <a class="reference internal" href="../generated/generated/mimetypes.init.html#mimetypes.init" title="mimetypes.init"><code class="xref py py-func docutils literal"><span class="pre">init()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="data">
@@ -380,21 +380,21 @@ second one is for the standard types. They are initialized by
 <dl class="method">
 <dt id="mimetypes.MimeTypes.guess_extension">
 <code class="descclassname">MimeTypes.</code><code class="descname">guess_extension</code><span class="sig-paren">(</span><em>type</em>, <em>strict=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mimetypes.html#MimeTypes.guess_extension"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mimetypes.MimeTypes.guess_extension" title="Permalink to this definition">¶</a></dt>
-<dd><p>Similar to the <a class="reference internal" href="../generated/mimetypes.guess_extension.html#mimetypes.guess_extension" title="mimetypes.guess_extension"><code class="xref py py-func docutils literal"><span class="pre">guess_extension()</span></code></a> function, using the tables stored as part
+<dd><p>Similar to the <a class="reference internal" href="../generated/generated/mimetypes.guess_extension.html#mimetypes.guess_extension" title="mimetypes.guess_extension"><code class="xref py py-func docutils literal"><span class="pre">guess_extension()</span></code></a> function, using the tables stored as part
 of the object.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="mimetypes.MimeTypes.guess_type">
 <code class="descclassname">MimeTypes.</code><code class="descname">guess_type</code><span class="sig-paren">(</span><em>url</em>, <em>strict=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mimetypes.html#MimeTypes.guess_type"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mimetypes.MimeTypes.guess_type" title="Permalink to this definition">¶</a></dt>
-<dd><p>Similar to the <a class="reference internal" href="../generated/mimetypes.guess_type.html#mimetypes.guess_type" title="mimetypes.guess_type"><code class="xref py py-func docutils literal"><span class="pre">guess_type()</span></code></a> function, using the tables stored as part of
+<dd><p>Similar to the <a class="reference internal" href="../generated/generated/mimetypes.guess_type.html#mimetypes.guess_type" title="mimetypes.guess_type"><code class="xref py py-func docutils literal"><span class="pre">guess_type()</span></code></a> function, using the tables stored as part of
 the object.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="mimetypes.MimeTypes.guess_all_extensions">
 <code class="descclassname">MimeTypes.</code><code class="descname">guess_all_extensions</code><span class="sig-paren">(</span><em>type</em>, <em>strict=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mimetypes.html#MimeTypes.guess_all_extensions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mimetypes.MimeTypes.guess_all_extensions" title="Permalink to this definition">¶</a></dt>
-<dd><p>Similar to the <a class="reference internal" href="../generated/mimetypes.guess_all_extensions.html#mimetypes.guess_all_extensions" title="mimetypes.guess_all_extensions"><code class="xref py py-func docutils literal"><span class="pre">guess_all_extensions()</span></code></a> function, using the tables stored
+<dd><p>Similar to the <a class="reference internal" href="../generated/generated/mimetypes.guess_all_extensions.html#mimetypes.guess_all_extensions" title="mimetypes.guess_all_extensions"><code class="xref py py-func docutils literal"><span class="pre">guess_all_extensions()</span></code></a> function, using the tables stored
 as part of the object.</p>
 </dd></dl>
 

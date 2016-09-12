@@ -34,7 +34,7 @@
   
     <link rel="top" title="Python Standard Library" href="../index.html"/>
         <link rel="up" title="api" href="../api_all.html"/>
-        <link rel="next" title="rfc822.AddressList" href="generated/rfc822.AddressList.html"/>
+        <link rel="next" title="rfc822.dump_address_pair()" href="generated/rfc822.dump_address_pair.html"/>
         <link rel="prev" title="multifile.Error" href="multifile.Error.html"/> 
 
   
@@ -82,12 +82,84 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../01to10.html">Ch 01 - 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11to20.html">Ch 11 - 20</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../21to30.html">Ch 21 - 30</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../31to37.html">Ch 31 - 37</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_all.html">api</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_all.html">api</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#built-in-exceptions">06 Built-in Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#string-services">07 String Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-types">08 Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#numeric-and-mathematical-methods">09 Numeric and Mathematical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-and-directory-access">10 File and Directory Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-persistence">11 Data Persistence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#data-compression-and-archiving">12 Data Compression and Archiving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#file-formats">13 File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#cryptographic-services">14 Cryptographic Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#generic-operating-system-services">15 Generic Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#optional-operating-system-services">16 Optional Operating System Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#interprocess-communication-and-networking">17 Interprocess Communication and Networking</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api_all.html#internet-data-handling">18 Internet Data Handling</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="email.html"><code class="docutils literal"><span class="pre">email</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="json.html"><code class="docutils literal"><span class="pre">json</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mailcap.html"><code class="docutils literal"><span class="pre">mailcap</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mailbox.html"><code class="docutils literal"><span class="pre">mailbox</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mhlib.html"><code class="docutils literal"><span class="pre">mhlib</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mimetools.html"><code class="docutils literal"><span class="pre">mimetools</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mimetypes.html"><code class="docutils literal"><span class="pre">mimetypes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="MimeWriter.html"><code class="docutils literal"><span class="pre">MimeWriter</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mimify.html"><code class="docutils literal"><span class="pre">mimify</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="multifile.html"><code class="docutils literal"><span class="pre">multifile</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">rfc822</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.dump_address_pair.html"><code class="docutils literal"><span class="pre">rfc822.dump_address_pair()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.formatdate.html"><code class="docutils literal"><span class="pre">rfc822.formatdate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.mktime_tz.html"><code class="docutils literal"><span class="pre">rfc822.mktime_tz()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.parseaddr.html"><code class="docutils literal"><span class="pre">rfc822.parseaddr()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.parsedate.html"><code class="docutils literal"><span class="pre">rfc822.parsedate()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.parsedate_tz.html"><code class="docutils literal"><span class="pre">rfc822.parsedate_tz()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.quote.html"><code class="docutils literal"><span class="pre">rfc822.quote()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.unquote.html"><code class="docutils literal"><span class="pre">rfc822.unquote()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.warnpy3k.html"><code class="docutils literal"><span class="pre">rfc822.warnpy3k()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.AddressList.html"><code class="docutils literal"><span class="pre">rfc822.AddressList</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.AddrlistClass.html"><code class="docutils literal"><span class="pre">rfc822.AddrlistClass</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/rfc822.Message.html"><code class="docutils literal"><span class="pre">rfc822.Message</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="base64.html"><code class="docutils literal"><span class="pre">base64</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="binhex.html"><code class="docutils literal"><span class="pre">binhex</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="binascii.html"><code class="docutils literal"><span class="pre">binascii</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="quopri.html"><code class="docutils literal"><span class="pre">quopri</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="uu.html"><code class="docutils literal"><span class="pre">uu</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#structured-markup-processing-tools">19 Structured Markup Processing Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internet-protocols-and-support">20 Internet Protocols and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#multimedia-services">21 Multimedia Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#internationalization">22 Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#program-frameworks">23 Program Frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#graphical-user-interfaces-with-tk">24 Graphical User Interfaces with Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#development-tools">25 Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#debugging-and-profiling">26 Debugging and Profiling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#software-packaging-and-distribution">27 Software Packaging and Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-runtime-services">28 Python Runtime Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#custom-python-interpreters">29 Custom Python Interpreters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#restricted-execution">30 Restricted Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#importing-modules">31 Importing Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#python-language-services">32 Python Language Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#depr-python-compiler-package">33 (depr) Python compiler package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#miscellaneous-services">34 Miscellaneous Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#ms-windows-specific-services">35 MS Windows Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#unix-specific-services">36. Unix Specific Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_all.html#mac-os-x-specific-services">37 Mac OS X specific services</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -207,6 +279,43 @@ time.mktime().</p>
 <p>There are also some utility functions here.</p>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/rfc822.dump_address_pair.html#rfc822.dump_address_pair" title="rfc822.dump_address_pair"><code class="xref py py-obj docutils literal"><span class="pre">dump_address_pair</span></code></a>(pair)</td>
+<td>Dump a (name, address) pair in a canonicalized form.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/rfc822.formatdate.html#rfc822.formatdate" title="rfc822.formatdate"><code class="xref py py-obj docutils literal"><span class="pre">formatdate</span></code></a>([timeval])</td>
+<td>Returns time format preferred for Internet standards.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/rfc822.mktime_tz.html#rfc822.mktime_tz" title="rfc822.mktime_tz"><code class="xref py py-obj docutils literal"><span class="pre">mktime_tz</span></code></a>(data)</td>
+<td>Turn a 10-tuple as returned by parsedate_tz() into a UTC timestamp.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/rfc822.parseaddr.html#rfc822.parseaddr" title="rfc822.parseaddr"><code class="xref py py-obj docutils literal"><span class="pre">parseaddr</span></code></a>(address)</td>
+<td>Parse an address into a (realname, mailaddr) tuple.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/rfc822.parsedate.html#rfc822.parsedate" title="rfc822.parsedate"><code class="xref py py-obj docutils literal"><span class="pre">parsedate</span></code></a>(data)</td>
+<td>Convert a time string to a time tuple.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/rfc822.parsedate_tz.html#rfc822.parsedate_tz" title="rfc822.parsedate_tz"><code class="xref py py-obj docutils literal"><span class="pre">parsedate_tz</span></code></a>(data)</td>
+<td>Convert a date string to a time tuple.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/rfc822.quote.html#rfc822.quote" title="rfc822.quote"><code class="xref py py-obj docutils literal"><span class="pre">quote</span></code></a>(s)</td>
+<td>Add quotes around a string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/rfc822.unquote.html#rfc822.unquote" title="rfc822.unquote"><code class="xref py py-obj docutils literal"><span class="pre">unquote</span></code></a>(s)</td>
+<td>Remove quotes from a string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/rfc822.warnpy3k.html#rfc822.warnpy3k" title="rfc822.warnpy3k"><code class="xref py py-obj docutils literal"><span class="pre">warnpy3k</span></code></a>(message[,&nbsp;category,&nbsp;stacklevel])</td>
+<td>Issue a deprecation warning for Python 3.x related changes.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
@@ -239,7 +348,7 @@ time.mktime().</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="generated/rfc822.AddressList.html" class="btn btn-neutral float-right" title="rfc822.AddressList" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="generated/rfc822.dump_address_pair.html" class="btn btn-neutral float-right" title="rfc822.dump_address_pair()" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="multifile.Error.html" class="btn btn-neutral" title="multifile.Error" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

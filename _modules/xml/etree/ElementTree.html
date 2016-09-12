@@ -294,7 +294,7 @@
 <span class="c1"># @return A true value if this is an element object.</span>
 <span class="c1"># @defreturn flag</span>
 
-<div class="viewcode-block" id="iselement"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.iselement.html#xml.etree.ElementTree.iselement">[docs]</a><span class="k">def</span> <span class="nf">iselement</span><span class="p">(</span><span class="n">element</span><span class="p">):</span>
+<div class="viewcode-block" id="iselement"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.iselement.html#xml.etree.ElementTree.iselement">[docs]</a><span class="k">def</span> <span class="nf">iselement</span><span class="p">(</span><span class="n">element</span><span class="p">):</span>
     <span class="c1"># FIXME: not sure about this; might be a better idea to look</span>
     <span class="c1"># for tag/attrib/text attributes</span>
     <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">Element</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="s2">&quot;tag&quot;</span><span class="p">)</span></div>
@@ -671,7 +671,7 @@
 <span class="c1"># @return An element instance.</span>
 <span class="c1"># @defreturn Element</span>
 
-<div class="viewcode-block" id="SubElement"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.SubElement.html#xml.etree.ElementTree.SubElement">[docs]</a><span class="k">def</span> <span class="nf">SubElement</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">tag</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">extra</span><span class="p">):</span>
+<div class="viewcode-block" id="SubElement"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.SubElement.html#xml.etree.ElementTree.SubElement">[docs]</a><span class="k">def</span> <span class="nf">SubElement</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">tag</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">extra</span><span class="p">):</span>
     <span class="n">attrib</span> <span class="o">=</span> <span class="n">attrib</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     <span class="n">attrib</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">extra</span><span class="p">)</span>
     <span class="n">element</span> <span class="o">=</span> <span class="n">parent</span><span class="o">.</span><span class="n">makeelement</span><span class="p">(</span><span class="n">tag</span><span class="p">,</span> <span class="n">attrib</span><span class="p">)</span>
@@ -690,7 +690,7 @@
 <span class="c1"># @return An element instance, representing a comment.</span>
 <span class="c1"># @defreturn Element</span>
 
-<div class="viewcode-block" id="Comment"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.Comment.html#xml.etree.ElementTree.Comment">[docs]</a><span class="k">def</span> <span class="nf">Comment</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="Comment"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.Comment.html#xml.etree.ElementTree.Comment">[docs]</a><span class="k">def</span> <span class="nf">Comment</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">element</span> <span class="o">=</span> <span class="n">Element</span><span class="p">(</span><span class="n">Comment</span><span class="p">)</span>
     <span class="n">element</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">text</span>
     <span class="k">return</span> <span class="n">element</span></div>
@@ -705,7 +705,7 @@
 <span class="c1"># @return An element instance, representing a PI.</span>
 <span class="c1"># @defreturn Element</span>
 
-<div class="viewcode-block" id="ProcessingInstruction"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.ProcessingInstruction.html#xml.etree.ElementTree.ProcessingInstruction">[docs]</a><span class="k">def</span> <span class="nf">ProcessingInstruction</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="ProcessingInstruction"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.ProcessingInstruction.html#xml.etree.ElementTree.ProcessingInstruction">[docs]</a><span class="k">def</span> <span class="nf">ProcessingInstruction</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">element</span> <span class="o">=</span> <span class="n">Element</span><span class="p">(</span><span class="n">ProcessingInstruction</span><span class="p">)</span>
     <span class="n">element</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">target</span>
     <span class="k">if</span> <span class="n">text</span><span class="p">:</span>
@@ -1173,7 +1173,7 @@
 <span class="c1"># @exception ValueError If the prefix is reserved, or is otherwise</span>
 <span class="c1">#     invalid.</span>
 
-<div class="viewcode-block" id="register_namespace"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.register_namespace.html#xml.etree.ElementTree.register_namespace">[docs]</a><span class="k">def</span> <span class="nf">register_namespace</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">uri</span><span class="p">):</span>
+<div class="viewcode-block" id="register_namespace"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.register_namespace.html#xml.etree.ElementTree.register_namespace">[docs]</a><span class="k">def</span> <span class="nf">register_namespace</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">uri</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;ns\d+$&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="p">):</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Prefix format reserved for internal use&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">_namespace_map</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
@@ -1264,7 +1264,7 @@
 <span class="c1"># @return An encoded string containing the XML data.</span>
 <span class="c1"># @defreturn string</span>
 
-<div class="viewcode-block" id="tostring"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.tostring.html#xml.etree.ElementTree.tostring">[docs]</a><span class="k">def</span> <span class="nf">tostring</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="tostring"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.tostring.html#xml.etree.ElementTree.tostring">[docs]</a><span class="k">def</span> <span class="nf">tostring</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">class</span> <span class="nc">dummy</span><span class="p">:</span>
         <span class="k">pass</span>
     <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1285,7 +1285,7 @@
 <span class="c1"># @defreturn sequence</span>
 <span class="c1"># @since 1.3</span>
 
-<div class="viewcode-block" id="tostringlist"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.tostringlist.html#xml.etree.ElementTree.tostringlist">[docs]</a><span class="k">def</span> <span class="nf">tostringlist</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="tostringlist"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.tostringlist.html#xml.etree.ElementTree.tostringlist">[docs]</a><span class="k">def</span> <span class="nf">tostringlist</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">class</span> <span class="nc">dummy</span><span class="p">:</span>
         <span class="k">pass</span>
     <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1304,7 +1304,7 @@
 <span class="c1">#</span>
 <span class="c1"># @param elem An element tree or an individual element.</span>
 
-<div class="viewcode-block" id="dump"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.dump.html#xml.etree.ElementTree.dump">[docs]</a><span class="k">def</span> <span class="nf">dump</span><span class="p">(</span><span class="n">elem</span><span class="p">):</span>
+<div class="viewcode-block" id="dump"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.dump.html#xml.etree.ElementTree.dump">[docs]</a><span class="k">def</span> <span class="nf">dump</span><span class="p">(</span><span class="n">elem</span><span class="p">):</span>
     <span class="c1"># debugging</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="n">ElementTree</span><span class="p">):</span>
         <span class="n">elem</span> <span class="o">=</span> <span class="n">ElementTree</span><span class="p">(</span><span class="n">elem</span><span class="p">)</span>
@@ -1324,7 +1324,7 @@
 <span class="c1">#     standard {@link XMLParser} parser is used.</span>
 <span class="c1"># @return An ElementTree instance</span>
 
-<div class="viewcode-block" id="parse"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.parse.html#xml.etree.ElementTree.parse">[docs]</a><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="parse"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.parse.html#xml.etree.ElementTree.parse">[docs]</a><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">tree</span> <span class="o">=</span> <span class="n">ElementTree</span><span class="p">()</span>
     <span class="n">tree</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">parser</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">tree</span></div>
@@ -1340,7 +1340,7 @@
 <span class="c1">#     standard {@link XMLParser} parser is used.</span>
 <span class="c1"># @return A (event, elem) iterator.</span>
 
-<div class="viewcode-block" id="iterparse"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.iterparse.html#xml.etree.ElementTree.iterparse">[docs]</a><span class="k">def</span> <span class="nf">iterparse</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">events</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="iterparse"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.iterparse.html#xml.etree.ElementTree.iterparse">[docs]</a><span class="k">def</span> <span class="nf">iterparse</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">events</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">close_source</span> <span class="o">=</span> <span class="bp">False</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="s2">&quot;read&quot;</span><span class="p">):</span>
         <span class="n">source</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span>
@@ -1452,7 +1452,7 @@
 <span class="c1"># @return An Element instance.</span>
 <span class="c1"># @defreturn Element</span>
 
-<div class="viewcode-block" id="XML"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.XML.html#xml.etree.ElementTree.XML">[docs]</a><span class="k">def</span> <span class="nf">XML</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="XML"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.XML.html#xml.etree.ElementTree.XML">[docs]</a><span class="k">def</span> <span class="nf">XML</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">parser</span><span class="p">:</span>
         <span class="n">parser</span> <span class="o">=</span> <span class="n">XMLParser</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">TreeBuilder</span><span class="p">())</span>
     <span class="n">parser</span><span class="o">.</span><span class="n">feed</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
@@ -1468,7 +1468,7 @@
 <span class="c1"># @return A tuple containing an Element instance and a dictionary.</span>
 <span class="c1"># @defreturn (Element, dictionary)</span>
 
-<div class="viewcode-block" id="XMLID"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.XMLID.html#xml.etree.ElementTree.XMLID">[docs]</a><span class="k">def</span> <span class="nf">XMLID</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="XMLID"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.XMLID.html#xml.etree.ElementTree.XMLID">[docs]</a><span class="k">def</span> <span class="nf">XMLID</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">parser</span><span class="p">:</span>
         <span class="n">parser</span> <span class="o">=</span> <span class="n">XMLParser</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">TreeBuilder</span><span class="p">())</span>
     <span class="n">parser</span><span class="o">.</span><span class="n">feed</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
@@ -1500,7 +1500,7 @@
 <span class="c1"># @defreturn Element</span>
 <span class="c1"># @since 1.3</span>
 
-<div class="viewcode-block" id="fromstringlist"><a class="viewcode-back" href="../../../generated/xml.etree.ElementTree.fromstringlist.html#xml.etree.ElementTree.fromstringlist">[docs]</a><span class="k">def</span> <span class="nf">fromstringlist</span><span class="p">(</span><span class="n">sequence</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="fromstringlist"><a class="viewcode-back" href="../../../generated/generated/xml.etree.ElementTree.fromstringlist.html#xml.etree.ElementTree.fromstringlist">[docs]</a><span class="k">def</span> <span class="nf">fromstringlist</span><span class="p">(</span><span class="n">sequence</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">parser</span><span class="p">:</span>
         <span class="n">parser</span> <span class="o">=</span> <span class="n">XMLParser</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">TreeBuilder</span><span class="p">())</span>
     <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>

@@ -8,9 +8,9 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       At
       AtEnd
@@ -25,6 +25,26 @@
       image_names
       image_types
       mainloop
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/Tix.At
+       generated/Tix.AtEnd
+       generated/Tix.AtInsert
+       generated/Tix.AtSelFirst
+       generated/Tix.AtSelLast
+       generated/Tix.FileTypeList
+       generated/Tix.NoDefaultRoot
+       generated/Tix.OptionName
+       generated/Tix.Tcl
+       generated/Tix.getboolean
+       generated/Tix.image_names
+       generated/Tix.image_types
+       generated/Tix.mainloop
+      
    
    
 

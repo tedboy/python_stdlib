@@ -165,7 +165,7 @@
 
 <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;compile_dir&quot;</span><span class="p">,</span><span class="s2">&quot;compile_file&quot;</span><span class="p">,</span><span class="s2">&quot;compile_path&quot;</span><span class="p">]</span>
 
-<div class="viewcode-block" id="compile_dir"><a class="viewcode-back" href="../generated/compileall.compile_dir.html#compileall.compile_dir">[docs]</a><span class="k">def</span> <span class="nf">compile_dir</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">maxlevels</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">ddir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="compile_dir"><a class="viewcode-back" href="../generated/generated/compileall.compile_dir.html#compileall.compile_dir">[docs]</a><span class="k">def</span> <span class="nf">compile_dir</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">maxlevels</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">ddir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                 <span class="n">force</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">rx</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Byte-compile all modules in the given directory tree.</span>
 
@@ -205,7 +205,7 @@
                 <span class="n">success</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">return</span> <span class="n">success</span></div>
 
-<div class="viewcode-block" id="compile_file"><a class="viewcode-back" href="../generated/compileall.compile_file.html#compileall.compile_file">[docs]</a><span class="k">def</span> <span class="nf">compile_file</span><span class="p">(</span><span class="n">fullname</span><span class="p">,</span> <span class="n">ddir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">rx</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="compile_file"><a class="viewcode-back" href="../generated/generated/compileall.compile_file.html#compileall.compile_file">[docs]</a><span class="k">def</span> <span class="nf">compile_file</span><span class="p">(</span><span class="n">fullname</span><span class="p">,</span> <span class="n">ddir</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">rx</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Byte-compile one file.</span>
 
 <span class="sd">    Arguments (only fullname is required):</span>
@@ -257,7 +257,7 @@
                     <span class="n">success</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">return</span> <span class="n">success</span></div>
 
-<div class="viewcode-block" id="compile_path"><a class="viewcode-back" href="../generated/compileall.compile_path.html#compileall.compile_path">[docs]</a><span class="k">def</span> <span class="nf">compile_path</span><span class="p">(</span><span class="n">skip_curdir</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">maxlevels</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="compile_path"><a class="viewcode-back" href="../generated/generated/compileall.compile_path.html#compileall.compile_path">[docs]</a><span class="k">def</span> <span class="nf">compile_path</span><span class="p">(</span><span class="n">skip_curdir</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">maxlevels</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Byte-compile all module on sys.path.</span>
 
 <span class="sd">    Arguments (all optional):</span>
@@ -276,7 +276,7 @@
                                               <span class="n">force</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">success</span></div>
 
-<div class="viewcode-block" id="expand_args"><a class="viewcode-back" href="../generated/compileall.expand_args.html#compileall.expand_args">[docs]</a><span class="k">def</span> <span class="nf">expand_args</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">flist</span><span class="p">):</span>
+<div class="viewcode-block" id="expand_args"><a class="viewcode-back" href="../generated/generated/compileall.expand_args.html#compileall.expand_args">[docs]</a><span class="k">def</span> <span class="nf">expand_args</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">flist</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;read names in flist and append to args&quot;&quot;&quot;</span>
     <span class="n">expanded</span> <span class="o">=</span> <span class="n">args</span><span class="p">[:]</span>
     <span class="k">if</span> <span class="n">flist</span><span class="p">:</span>
@@ -295,7 +295,7 @@
             <span class="k">raise</span>
     <span class="k">return</span> <span class="n">expanded</span></div>
 
-<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/compileall.main.html#compileall.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/generated/compileall.main.html#compileall.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Script main program.&quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">getopt</span>
     <span class="k">try</span><span class="p">:</span>

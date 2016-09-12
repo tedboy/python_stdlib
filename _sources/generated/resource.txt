@@ -8,14 +8,25 @@
    Functions
    ---------
    .. autosummary::
-      :toctree:
+      :toctree:generated/
       :template:function_custom.rst
-      
+
    
       getpagesize
       getrlimit
       getrusage
       setrlimit
+
+   .. toctree::
+       :maxdepth: 1
+       :hidden:
+
+   
+       generated/resource.getpagesize
+       generated/resource.getrlimit
+       generated/resource.getrusage
+       generated/resource.setrlimit
+      
    
    
 

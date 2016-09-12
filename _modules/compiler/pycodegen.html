@@ -181,7 +181,7 @@
 <span class="n">TRY_FINALLY</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">END_FINALLY</span> <span class="o">=</span> <span class="mi">4</span>
 
-<div class="viewcode-block" id="compileFile"><a class="viewcode-back" href="../../generated/compiler.compileFile.html#compiler.compileFile">[docs]</a><span class="k">def</span> <span class="nf">compileFile</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<div class="viewcode-block" id="compileFile"><a class="viewcode-back" href="../../generated/generated/compiler.compileFile.html#compiler.compileFile">[docs]</a><span class="k">def</span> <span class="nf">compileFile</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">)</span>
     <span class="n">buf</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
     <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -195,7 +195,7 @@
         <span class="n">mod</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
         <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="compile"><a class="viewcode-back" href="../../generated/compiler.compile.html#compiler.compile">[docs]</a><span class="k">def</span> <span class="nf">compile</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">dont_inherit</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="viewcode-block" id="compile"><a class="viewcode-back" href="../../generated/generated/compiler.compile.html#compiler.compile">[docs]</a><span class="k">def</span> <span class="nf">compile</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">dont_inherit</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Replacement for builtin compile() function&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">flags</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span> <span class="ow">or</span> <span class="n">dont_inherit</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">,</span> <span class="s2">&quot;not implemented yet&quot;</span>

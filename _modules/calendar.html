@@ -241,12 +241,12 @@
 <span class="p">(</span><span class="n">MONDAY</span><span class="p">,</span> <span class="n">TUESDAY</span><span class="p">,</span> <span class="n">WEDNESDAY</span><span class="p">,</span> <span class="n">THURSDAY</span><span class="p">,</span> <span class="n">FRIDAY</span><span class="p">,</span> <span class="n">SATURDAY</span><span class="p">,</span> <span class="n">SUNDAY</span><span class="p">)</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="isleap"><a class="viewcode-back" href="../generated/calendar.isleap.html#calendar.isleap">[docs]</a><span class="k">def</span> <span class="nf">isleap</span><span class="p">(</span><span class="n">year</span><span class="p">):</span>
+<div class="viewcode-block" id="isleap"><a class="viewcode-back" href="../generated/generated/calendar.isleap.html#calendar.isleap">[docs]</a><span class="k">def</span> <span class="nf">isleap</span><span class="p">(</span><span class="n">year</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return True for leap years, False for non-leap years.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="leapdays"><a class="viewcode-back" href="../generated/calendar.leapdays.html#calendar.leapdays">[docs]</a><span class="k">def</span> <span class="nf">leapdays</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span> <span class="n">y2</span><span class="p">):</span>
+<div class="viewcode-block" id="leapdays"><a class="viewcode-back" href="../generated/generated/calendar.leapdays.html#calendar.leapdays">[docs]</a><span class="k">def</span> <span class="nf">leapdays</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span> <span class="n">y2</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return number of leap years in range [y1, y2).</span>
 <span class="sd">       Assume y1 &lt;= y2.&quot;&quot;&quot;</span>
     <span class="n">y1</span> <span class="o">-=</span> <span class="mi">1</span>
@@ -254,13 +254,13 @@
     <span class="k">return</span> <span class="p">(</span><span class="n">y2</span><span class="o">//</span><span class="mi">4</span> <span class="o">-</span> <span class="n">y1</span><span class="o">//</span><span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">y2</span><span class="o">//</span><span class="mi">100</span> <span class="o">-</span> <span class="n">y1</span><span class="o">//</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">y2</span><span class="o">//</span><span class="mi">400</span> <span class="o">-</span> <span class="n">y1</span><span class="o">//</span><span class="mi">400</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="weekday"><a class="viewcode-back" href="../generated/calendar.weekday.html#calendar.weekday">[docs]</a><span class="k">def</span> <span class="nf">weekday</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">):</span>
+<div class="viewcode-block" id="weekday"><a class="viewcode-back" href="../generated/generated/calendar.weekday.html#calendar.weekday">[docs]</a><span class="k">def</span> <span class="nf">weekday</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return weekday (0-6 ~ Mon-Sun) for year (1970-...), month (1-12),</span>
 <span class="sd">       day (1-31).&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">)</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span></div>
 
 
-<div class="viewcode-block" id="monthrange"><a class="viewcode-back" href="../generated/calendar.monthrange.html#calendar.monthrange">[docs]</a><span class="k">def</span> <span class="nf">monthrange</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">):</span>
+<div class="viewcode-block" id="monthrange"><a class="viewcode-back" href="../generated/generated/calendar.monthrange.html#calendar.monthrange">[docs]</a><span class="k">def</span> <span class="nf">monthrange</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return weekday (0-6 ~ Mon-Sun) and number of days (28-31) for</span>
 <span class="sd">       year, month.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="mi">1</span> <span class="o">&lt;=</span> <span class="n">month</span> <span class="o">&lt;=</span> <span class="mi">12</span><span class="p">:</span>
@@ -715,7 +715,7 @@
 
 <span class="n">firstweekday</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">getfirstweekday</span>
 
-<div class="viewcode-block" id="setfirstweekday"><a class="viewcode-back" href="../generated/calendar.setfirstweekday.html#calendar.setfirstweekday">[docs]</a><span class="k">def</span> <span class="nf">setfirstweekday</span><span class="p">(</span><span class="n">firstweekday</span><span class="p">):</span>
+<div class="viewcode-block" id="setfirstweekday"><a class="viewcode-back" href="../generated/generated/calendar.setfirstweekday.html#calendar.setfirstweekday">[docs]</a><span class="k">def</span> <span class="nf">setfirstweekday</span><span class="p">(</span><span class="n">firstweekday</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">firstweekday</span><span class="o">.</span><span class="n">__index__</span>
     <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
@@ -739,12 +739,12 @@
 <span class="n">_spacing</span> <span class="o">=</span> <span class="mi">6</span>                <span class="c1"># Number of spaces between columns</span>
 
 
-<div class="viewcode-block" id="format"><a class="viewcode-back" href="../generated/calendar.format.html#calendar.format">[docs]</a><span class="k">def</span> <span class="nf">format</span><span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="n">colwidth</span><span class="o">=</span><span class="n">_colwidth</span><span class="p">,</span> <span class="n">spacing</span><span class="o">=</span><span class="n">_spacing</span><span class="p">):</span>
+<div class="viewcode-block" id="format"><a class="viewcode-back" href="../generated/generated/calendar.format.html#calendar.format">[docs]</a><span class="k">def</span> <span class="nf">format</span><span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="n">colwidth</span><span class="o">=</span><span class="n">_colwidth</span><span class="p">,</span> <span class="n">spacing</span><span class="o">=</span><span class="n">_spacing</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Prints multi-column formatting for year calendars&quot;&quot;&quot;</span>
     <span class="k">print</span> <span class="n">formatstring</span><span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="n">colwidth</span><span class="p">,</span> <span class="n">spacing</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="formatstring"><a class="viewcode-back" href="../generated/calendar.formatstring.html#calendar.formatstring">[docs]</a><span class="k">def</span> <span class="nf">formatstring</span><span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="n">colwidth</span><span class="o">=</span><span class="n">_colwidth</span><span class="p">,</span> <span class="n">spacing</span><span class="o">=</span><span class="n">_spacing</span><span class="p">):</span>
+<div class="viewcode-block" id="formatstring"><a class="viewcode-back" href="../generated/generated/calendar.formatstring.html#calendar.formatstring">[docs]</a><span class="k">def</span> <span class="nf">formatstring</span><span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="n">colwidth</span><span class="o">=</span><span class="n">_colwidth</span><span class="p">,</span> <span class="n">spacing</span><span class="o">=</span><span class="n">_spacing</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Returns a string formatted from n strings, centered within n columns.&quot;&quot;&quot;</span>
     <span class="n">spacing</span> <span class="o">*=</span> <span class="s1">&#39; &#39;</span>
     <span class="k">return</span> <span class="n">spacing</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="n">colwidth</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cols</span><span class="p">)</span></div>
@@ -754,7 +754,7 @@
 <span class="n">_EPOCH_ORD</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="n">EPOCH</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">toordinal</span><span class="p">()</span>
 
 
-<div class="viewcode-block" id="timegm"><a class="viewcode-back" href="../generated/cookielib.timegm.html#calendar.timegm">[docs]</a><span class="k">def</span> <span class="nf">timegm</span><span class="p">(</span><span class="nb">tuple</span><span class="p">):</span>
+<div class="viewcode-block" id="timegm"><a class="viewcode-back" href="../generated/generated/cookielib.timegm.html#calendar.timegm">[docs]</a><span class="k">def</span> <span class="nf">timegm</span><span class="p">(</span><span class="nb">tuple</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Unrelated but handy function to calculate Unix timestamp from GMT.&quot;&quot;&quot;</span>
     <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">,</span> <span class="n">second</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>
     <span class="n">days</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">toordinal</span><span class="p">()</span> <span class="o">-</span> <span class="n">_EPOCH_ORD</span> <span class="o">+</span> <span class="n">day</span> <span class="o">-</span> <span class="mi">1</span>
@@ -764,7 +764,7 @@
     <span class="k">return</span> <span class="n">seconds</span></div>
 
 
-<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/calendar.main.html#calendar.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../generated/generated/calendar.main.html#calendar.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">optparse</span>
     <span class="n">parser</span> <span class="o">=</span> <span class="n">optparse</span><span class="o">.</span><span class="n">OptionParser</span><span class="p">(</span><span class="n">usage</span><span class="o">=</span><span class="s2">&quot;usage: %prog [options] [year [month]]&quot;</span><span class="p">)</span>
     <span class="n">parser</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span>
